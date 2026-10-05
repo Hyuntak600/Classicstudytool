@@ -270,29 +270,10 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   html, body { margin: 0; padding: 0; }
   body {
     font-family: var(--sans);
-    background:
-      radial-gradient(ellipse 900px 500px at 12% -8%, rgba(179, 144, 63, 0.10), transparent 60%),
-      radial-gradient(ellipse 800px 500px at 100% 0%, rgba(216, 189, 119, 0.10), transparent 55%),
-      radial-gradient(ellipse 700px 500px at 50% 110%, rgba(138, 106, 38, 0.05), transparent 60%),
-      var(--bg);
-    background-attachment: fixed;
+    background: var(--bg);
     color: var(--text-main);
     -webkit-font-smoothing: antialiased;
     position: relative;
-  }
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    background: radial-gradient(ellipse 1100px 620px at 50% 0%, rgba(184, 148, 68, 0.09), transparent 65%);
-    background-size: 180% 180%;
-    animation: bgShimmer 16s ease-in-out infinite;
-    z-index: 0;
-  }
-  @keyframes bgShimmer {
-    0%, 100% { background-position: 20% 0%; opacity: 0.7; }
-    50% { background-position: 80% 30%; opacity: 1; }
   }
   #view-hub, #view-iliad1, #view-iliad6, #view-meta1, #view-meta14, #view-genesis1, #view-cid1, #view-lusiadas1, #view-comingsoon { position: relative; z-index: 1; }
   ::selection { background: var(--accent-light); color: var(--accent-dark); }
@@ -619,9 +600,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
     position: sticky;
     top: 58px;
     z-index: 10;
-    background: color-mix(in srgb, var(--bg) 92%, transparent);
-    backdrop-filter: blur(10px) saturate(1.1);
-    -webkit-backdrop-filter: blur(10px) saturate(1.1);
+    background: color-mix(in srgb, var(--bg) 96%, transparent);
     padding: 14px 0;
     margin: 0 0 6px;
     border-bottom: 1px solid var(--border-soft);
@@ -646,11 +625,9 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
     max-height: 72vh;
     overflow-y: auto;
     padding: 8px 4px;
-    background: color-mix(in srgb, var(--card-bg) 88%, transparent);
+    background: color-mix(in srgb, var(--card-bg) 95%, transparent);
     border: 1px solid var(--border-soft);
     border-radius: 12px;
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
     scrollbar-width: thin;
   }
   .jump-nav::-webkit-scrollbar { width: 4px; }
@@ -2166,8 +2143,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   body { transition: background-color 0.4s ease, color 0.4s ease; }
   :root[data-theme="dark"] { --bg: #15110B; --bg-alt: #1D170F; --card-bg: #241C13; --border: #3C311E; --border-soft: #2B2216; --text-main: #F1E7D1; --text-sub: #B9AB86; --text-faint: #8B7D5E; --accent: #D9AC52; --accent-dark: #F0CE8C; --accent-light: #34280F; --accent-2: #C79A44; --ok: #85C293; --ok-light: #1C2C20; --bad: #E08E71; --bad-light: #33211B; --ink: #93A6CC; --ink-dark: #C3D0E8; --ink-light: #202B42; --gallery-wall: #241d13; --gallery-wall-deep: #16110a; --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35), 0 1px 1px rgba(0, 0, 0, 0.25); --shadow-md: 0 8px 24px -10px rgba(0, 0, 0, 0.55), 0 3px 8px -3px rgba(0, 0, 0, 0.35); --shadow-lg: 0 24px 56px -18px rgba(0, 0, 0, 0.65), 0 8px 20px -8px rgba(0, 0, 0, 0.4); --shadow-xl: 0 46px 90px -22px rgba(0, 0, 0, 0.72), 0 16px 36px -14px rgba(0, 0, 0, 0.48); --focus-ring: 0 0 0 3px color-mix(in srgb, var(--accent) 50%, transparent); color-scheme: dark; }
   html { scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
-  [data-theme="dark"] body { background: radial-gradient(ellipse 900px 500px at 12% -8%, rgba(217, 172, 82, 0.10), transparent 60%), radial-gradient(ellipse 800px 500px at 100% 0%, rgba(217, 172, 82, 0.07), transparent 55%), radial-gradient(ellipse 900px 600px at 50% 110%, rgba(217, 172, 82, 0.05), transparent 60%), var(--bg); }
-  [data-theme="dark"] body::before { background: radial-gradient(ellipse 1100px 620px at 50% 0%, rgba(217, 172, 82, 0.10), transparent 65%); }
+  [data-theme="dark"] body { background: var(--bg); }
   :focus-visible { outline: 2px solid var(--accent-dark); outline-offset: 2px; border-radius: 4px; }
   @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; } }
   ::-webkit-scrollbar { width: 11px; height: 11px; }
@@ -2269,6 +2245,53 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   .hub-kicker::before { display: none; }
   .hub-kicker .div-dot { color: var(--accent); font-style: normal; margin: 0 5px; opacity: 0.7; }
   @media (max-width: 480px) { .hub-kicker { font-size: 18px; } }
+  /* ===== 맥 스타일 통일 (헤더·단어장·단어 패널) ===== */
+  .site-header { background: color-mix(in srgb, var(--card-bg) 72%, transparent); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border-bottom: 0.5px solid var(--border); }
+  .site-nav-link { border: none; border-radius: 8px; font-weight: 500; background: color-mix(in srgb, var(--text-faint) 16%, transparent); padding: 7px 13px; transition: background .12s ease, color .12s ease, transform .15s ease; }
+  .site-nav-link:hover { background: color-mix(in srgb, var(--text-faint) 28%, transparent); }
+  .site-nav-link:active { transform: scale(.96); }
+  .vocab-work-list, .vocab-chapter-list { gap: 0; background: var(--card-bg); border: 1px solid var(--border-soft); border-radius: 12px; box-shadow: var(--shadow-sm); overflow: hidden; }
+  .vocab-work-item, .vocab-chapter-item { border: none; border-radius: 0; box-shadow: none; padding: 14px 18px; background: transparent; }
+  .vocab-work-item + .vocab-work-item, .vocab-chapter-item + .vocab-chapter-item { border-top: 0.5px solid var(--border); }
+  .vocab-work-item:hover, .vocab-chapter-item:hover { background: var(--bg-alt); transform: none; box-shadow: none; }
+  .vocab-backup-btn, .vocab-words-filter-btn, .vocab-flash-select, .vocab-range-btn, .vocab-save-btn { border: none; border-radius: 8px; background: color-mix(in srgb, var(--text-faint) 16%, transparent); }
+  .vocab-backup-btn:hover, .vocab-words-filter-btn:hover, .vocab-flash-select:hover, .vocab-range-btn:hover { background: color-mix(in srgb, var(--text-faint) 28%, transparent); }
+  .vocab-words-filter-btn.active { background: var(--accent); color: #fff; }
+  .vocab-flash-start-btn, .vocab-quiz-btn { border: none; border-radius: 8px; color: #fff; background: linear-gradient(180deg, color-mix(in srgb, var(--accent-2) 80%, #fff), var(--accent)); box-shadow: inset 0 0.5px 0 rgba(255,255,255,.55), 0 1px 3px rgba(0,0,0,.2); }
+  .vocab-search-input { border-radius: 8px; }
+  .info-panel-inner { border-radius: 12px; border: 0.5px solid var(--border); }
+  .info-panel .field-label { border-top: 0.5px solid var(--border-soft); }
+
+  /* ===== 권 아이콘 정보 / 이어 읽기 / 빠른 검색 ===== */
+  .kbd { font-size: 11px; opacity: .6; margin-left: 4px; }
+  #qsOverlay { position: fixed; inset: 0; z-index: 200; display: none; align-items: flex-start; justify-content: center; padding: 12vh 16px 0; background: rgba(30,26,18,.35); -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); }
+  #qsOverlay.show { display: flex; }
+  .qs-card { width: 100%; max-width: 560px; background: color-mix(in srgb, var(--card-bg) 92%, transparent); border: 0.5px solid var(--border); border-radius: 14px; box-shadow: var(--shadow-lg); overflow: hidden; font-family: var(--sans); }
+  .qs-input { width: 100%; border: none; outline: none; background: transparent; padding: 16px 18px; font: inherit; font-size: 16px; color: var(--text-main); border-bottom: 0.5px solid var(--border); }
+  .qs-list { max-height: 50vh; overflow-y: auto; padding: 6px; }
+  .qs-item { display: block; width: 100%; text-align: left; border: none; background: transparent; border-radius: 8px; padding: 9px 12px; cursor: pointer; font: inherit; color: var(--text-main); }
+  .qs-item:hover, .qs-item.sel { background: var(--accent-light); }
+  .qs-item .r { font-size: 12px; font-weight: 700; color: var(--accent-dark); } .qs-item .t { font-size: 13px; color: var(--text-sub); margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .qs-empty { padding: 18px; font-size: 13px; color: var(--text-faint); text-align: center; }
+  .line-block { content-visibility: auto; contain-intrinsic-size: auto 280px; }
+  .line-block.flash .greek-line { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-light); }
+  /* ===== 작품 배경 그림 (권별) — 그림 파일은 img/ 폴더 ===== */
+  body[data-bg="view-iliad6"]::before {
+    content: ''; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background: url(img/iliad6.jpg) center 28% / cover no-repeat;
+    opacity: 0.9;
+  }
+  [data-theme="dark"] body[data-bg="view-iliad6"]::before { opacity: 0.6; }
+  /* 일리아드 6권: 행 박스를 그림 위에 떠 있는 카드로 */
+  #view-iliad6 .line-block,
+  #view-iliad6 .line-block:first-of-type {
+    background: color-mix(in srgb, var(--card-bg) 93%, transparent);
+    border: 0.5px solid color-mix(in srgb, var(--border) 70%, transparent);
+    border-radius: 16px;
+    padding: 22px 26px;
+    margin: 0 0 18px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.12), 0 10px 28px -10px rgba(0,0,0,.45);
+  }
 </style>
 </head>
 <body>
@@ -2285,6 +2308,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   })();
 </script>
 
+<div id="qsOverlay" onclick="if(event.target===this)closeQuickSearch()"><div class="qs-card"><input class="qs-input" id="qsInput" placeholder="단어, 번역, 행 번호 검색 (예: 1.34)" autocomplete="off"><div class="qs-list" id="qsList"></div></div></div>
 <header class="site-header">
   <div class="site-header-inner">
     <button class="brand" onclick="showView('view-hub')">
@@ -2293,6 +2317,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
     </button>
     <button class="site-nav-link" onclick="showView('view-hub')">서재로 가기</button>
     <button class="site-nav-link" onclick="openVocabHome()">단어장</button>
+    <button class="site-nav-link" onclick="openQuickSearch()" aria-label="빠른 검색">검색<span class="kbd">⌘K</span></button>
     <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="야간 열람실 모드 전환" title="야간 열람실">
       <svg class="theme-toggle-icon icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
       <svg class="theme-toggle-icon icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.4A8.5 8.5 0 1 1 9.6 3.5a6.8 6.8 0 0 0 10.9 10.9z"/></svg>
@@ -5391,6 +5416,7 @@ function showView(viewId) {
   const target = document.getElementById(viewId);
   target.classList.add('active');
   document.body.classList.toggle('gallery-mode', target.classList.contains('study-view'));
+  document.body.dataset.bg = viewId;
   window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
 }
 
@@ -5516,7 +5542,7 @@ setupHebrewFontSelect();
 
 // 챕터 화면으로 들어갈 때 호출: 처음 열 때만 (1) 해당 작품 폰트 그룹, (2) 원문 데이터 파일을
 // 불러온 뒤 buildLines를 실행하고, 그 다음부터는 이미 그려진 내용을 그대로 재사용한다.
-function showStudyView(viewId) {
+function showStudyView(viewId, noRestore) {
   const ch = STUDY_CHAPTERS.find(c => c.viewId === viewId);
   if (!ch) { showView(viewId); return; }
 
@@ -5524,6 +5550,7 @@ function showStudyView(viewId) {
 
   if (ch.built) {
     showView(viewId);
+    if (!noRestore) restorePos(viewId);
     return;
   }
 
@@ -5532,6 +5559,7 @@ function showStudyView(viewId) {
   const container = document.getElementById(ch.containerId);
   if (container) container.innerHTML = '<p class="chapter-loading">원문을 불러오는 중…</p>';
   showView(viewId);
+  if (!noRestore) restorePos(viewId);
 
   loadChapterData(ch.dataVar).then(linesArr => {
     ch.built = true;
@@ -5549,30 +5577,118 @@ buildBookGrid('cidGrid', 3, { 1: 'view-cid1' }, '엘 시드의 노래', 'cid');
 buildBookGrid('lusiadasGrid', 10, { 1: 'view-lusiadas1' }, '우스 루지아다스', 'lusiadas');
 buildBookGrid('sanguoGrid', 120, { 1: 'view-sanguo1' }, '삼국지연의', 'sanguo');
 
-/* ---------- 배경 삽화 스크롤 패럴랙스 ----------
-   .bg-illust 세 점(헤더 앞에 있는 .bg-illustrations 안 svg)을 스크롤량에 비례해 아주 살짝
-   이동·회전시켜 "떠서 흔들리는" 느낌을 준다. rAF로 스크롤 이벤트를 한 프레임에 한 번만
-   처리하고, transform만 바꾸므로 리플로우 없이 합성만 발생한다. prefers-reduced-motion이면
-   리스너 자체를 걸지 않아 삽화는 처음 위치에 고정된다. */
+/* ---------- 읽기 상태 / 이어 읽기 / 빠른 검색 ---------- */
+const READ_KEY = 'readState';
+function readState() { try { return JSON.parse(localStorage.getItem(READ_KEY) || '{}'); } catch (e) { return {}; } }
+function writeState(st) { try { localStorage.setItem(READ_KEY, JSON.stringify(st)); } catch (e) {} }
+function chByView(viewId) { return STUDY_CHAPTERS.find(c => c.viewId === viewId); }
+function chLabel(viewId) { const h = document.querySelector('#' + viewId + ' h1'); return h ? h.textContent.replace(/\s+/g, ' ').trim() : viewId; }
+
+
+
+/* ---------- 읽던 행 자동 복원 ---------- */
+let __restoring = false;
+function restorePos(viewId) {
+  const ch = chByView(viewId), m = (readState().ch || {})[viewId];
+  if (!ch || !m || !(m.idx > 0)) return;
+  __restoring = true; let tries = 0;
+  const t = setInterval(() => {
+    const el = document.getElementById(ch.containerId + '-line-' + m.idx);
+    if (el || ++tries > 60) { clearInterval(t); if (el) el.scrollIntoView({ block: 'start' }); setTimeout(() => { __restoring = false; }, 1200); }
+  }, 100);
+}
+
+function goToLine(viewId, idx) {
+  showStudyView(viewId, true);
+  const ch = chByView(viewId); let tries = 0;
+  const t = setInterval(() => {
+    const el = document.getElementById(ch.containerId + '-line-' + idx);
+    if (el || ++tries > 50) {
+      clearInterval(t);
+      if (el) { el.scrollIntoView({ block: 'start' }); el.classList.add('flash'); setTimeout(() => el.classList.remove('flash'), 1800); }
+    }
+  }, 100);
+}
+
+// 현재 읽는 행 기억: 스크롤 시 화면 위쪽에 걸친 행을 저장
 (function () {
-  var layers = document.querySelectorAll('.bg-illust');
-  if (!layers.length) return;
-  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  var ticking = false;
-  function apply() {
-    var y = window.scrollY || window.pageYOffset || 0;
-    layers.forEach(function (el) {
-      var speed = parseFloat(el.dataset.speed || '0');
-      var rotate = parseFloat(el.dataset.rotate || '0');
-      el.style.transform = 'translate3d(0,' + (y * speed).toFixed(2) + 'px,0) rotate(' + (y * rotate).toFixed(3) + 'deg)';
-    });
-    ticking = false;
+  let tick = false;
+  function save() {
+    tick = false; if (__restoring) return;
+    const v = document.querySelector('.view.active.study-view'); if (!v) return;
+    const ch = chByView(v.id); const box = ch && document.getElementById(ch.containerId); if (!box) return;
+    const blocks = box.children; let lo = 0, hi = blocks.length - 1;
+    if (hi < 0) return;
+    while (lo < hi) { const mid = (lo + hi) >> 1; if (blocks[mid].getBoundingClientRect().bottom > 150) hi = mid; else lo = mid + 1; }
+    const cur = blocks[lo]; if (!cur || !cur.classList.contains('line-block')) return;
+    const st = readState(); st.ch = st.ch || {}; const m = st.ch[v.id] = st.ch[v.id] || {};
+    m.idx = parseInt(cur.id.split('-line-')[1], 10);
+    writeState(st);
   }
-  window.addEventListener('scroll', function () {
-    if (!ticking) { requestAnimationFrame(apply); ticking = true; }
-  }, { passive: true });
-  apply();
+  window.addEventListener('scroll', () => { if (!tick) { tick = true; setTimeout(save, 1000); } }, { passive: true });
 })();
+
+// 권별 범위(첫·끝 행, 행 수)는 한 번 불러와 캐시 → 허브 아이콘에 표시
+async function peekChapter(c, fn) {
+  const wasLoaded = !!window[c.dataVar];
+  const arr = await loadChapterData(c.dataVar);
+  const out = fn(arr);
+  if (!wasLoaded && !c.built) {   // 열어 보지 않은 권은 메모리에서 되돌려 놓는다
+    const id = CHAPTER_DATA_IDS[c.dataVar];
+    try { delete window[c.dataVar]; delete window.__RAW_CHAPTER_DATA[id]; delete __chapterScriptPromises[id]; } catch (e) {}
+    document.querySelectorAll('script[src="data/' + id + '.js"]').forEach(n => n.remove());
+  }
+  return out;
+}
+// ----- ⌘K 빠른 검색 -----
+let qsIndex = null, qsSel = 0, qsHits = [];
+const qsNorm = t => String(t || '').normalize('NFD').replace(/[\u0300-\u036f\u0591-\u05c7]/g, '').toLowerCase();
+function openQuickSearch() {
+  const ov = document.getElementById('qsOverlay'), inp = document.getElementById('qsInput'), list = document.getElementById('qsList');
+  ov.classList.add('show'); inp.value = ''; inp.focus();
+  if (qsIndex) { runQS(''); return; }
+  list.innerHTML = '<div class="qs-empty">원문을 불러오는 중…</div>';
+  (async () => {
+    const idx = [];
+    for (const c of STUDY_CHAPTERS) {
+      try {
+        await peekChapter(c, a => a.forEach((l, i) => idx.push({ v: c.viewId, i, ref: l.ref, trans: l.trans || '',
+          hay: qsNorm(l.ref + ' ' + (l.trans || '') + ' ' + (l.words || []).map(w => (w.g || '') + ' ' + (w.lemma || '') + ' ' + (w.gloss_kr || '') + ' ' + (w.gloss_en || '')).join(' ')) })));
+      } catch (e) {}
+    }
+    qsIndex = idx; runQS(inp.value);
+  })();
+}
+function closeQuickSearch() { document.getElementById('qsOverlay').classList.remove('show'); }
+function runQS(q) {
+  const list = document.getElementById('qsList'); if (!qsIndex) return;
+  const n = qsNorm(q).trim(); qsSel = 0;
+  qsHits = n ? qsIndex.filter(e => e.hay.includes(n)).sort((a, b) => (qsNorm(b.ref).includes(n)) - (qsNorm(a.ref).includes(n))).slice(0, 40) : [];
+  list.innerHTML = '';
+  if (!qsHits.length) { list.innerHTML = '<div class="qs-empty">' + (n ? '결과가 없습니다' : '검색어를 입력하세요') + '</div>'; return; }
+  qsHits.forEach((e, k) => {
+    const b = document.createElement('button'); b.className = 'qs-item' + (k === 0 ? ' sel' : '');
+    b.innerHTML = '<div class="r"></div><div class="t"></div>';
+    b.firstChild.textContent = chLabel(e.v) + ' · ' + e.ref; b.lastChild.textContent = e.trans;
+    b.onclick = () => pickQS(e); list.appendChild(b);
+  });
+}
+function pickQS(e) { closeQuickSearch(); goToLine(e.v, e.i); }
+function moveQS(d) {
+  const items = document.querySelectorAll('.qs-item'); if (!items.length) return;
+  items[qsSel].classList.remove('sel'); qsSel = (qsSel + d + items.length) % items.length;
+  items[qsSel].classList.add('sel'); items[qsSel].scrollIntoView({ block: 'nearest' });
+}
+document.getElementById('qsInput').addEventListener('input', e => runQS(e.target.value));
+document.addEventListener('keydown', e => {
+  const open = document.getElementById('qsOverlay').classList.contains('show');
+  if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); open ? closeQuickSearch() : openQuickSearch(); }
+  else if (open && e.key === 'Escape') closeQuickSearch();
+  else if (open && e.key === 'ArrowDown') { e.preventDefault(); moveQS(1); }
+  else if (open && e.key === 'ArrowUp') { e.preventDefault(); moveQS(-1); }
+  else if (open && e.key === 'Enter' && qsHits[qsSel]) pickQS(qsHits[qsSel]);
+});
+
 </script>
 
 </body>
