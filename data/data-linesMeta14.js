@@ -1,0 +1,21022 @@
+// 이 파일은 wrap_data.py가 data-linesMeta14.json 에서 자동 생성했습니다. 직접 고쳐도 되지만,
+// 다음에 wrap_data.py를 다시 돌리면 json 파일 내용으로 덮어써집니다.
+window.__RAW_CHAPTER_DATA = window.__RAW_CHAPTER_DATA || {};
+window.__RAW_CHAPTER_DATA['data-linesMeta14'] = [
+  {
+    "ref": "Metamorphoses 14.1",
+    "trans": "그리고 이제 거인들의 목구멍 위에 던져진 아이트나 산을,",
+    "words": [
+      {
+        "g": "Iamque",
+        "pos": "부사 + 접속사(접미)",
+        "lemma": "iam / que",
+        "parse": "부사 + 접미 접속사",
+        "gloss_kr": "그리고 이제",
+        "gloss_en": "and now",
+        "syntax": "문장 전체를 여는 시간 부사, liquerat(4행)의 시제를 이끔",
+        "background": "13권 끝(글라우코스가 바다의 신으로 변신하는 장면)에 곧바로 이어지는 서두로, 오비디우스는 iamque로 앞선 이야기와의 연속성을 자연스럽게 표시하며 14권을 연다.",
+        "etymology": "iam(PIE *(H)yeh₂m, '이미, 지금') + que('그리고')의 결합이다(iam, atque 항목 참조)."
+      },
+      {
+        "g": "Giganteis",
+        "pos": "형용사",
+        "lemma": "Giganteus, -a, -um",
+        "parse": "복수 여격 여성 (faucibus 수식)",
+        "gloss_kr": "거인들의",
+        "gloss_en": "of the Giants",
+        "syntax": "faucibus를 수식",
+        "background": "제우스가 기간테스(거인족)를 쓰러뜨린 뒤 그들을 시칠리아 아래 가두고 그 위에 아이트나 화산을 얹었다는 신화를 배경으로 하며, 이는 아이트나의 격렬한 분화를 설명하는 전통적 설화이다.",
+        "etymology": "그리스어 Γίγας('기간테스, 대지의 거인')에서 파생된 형용사로, 그리스어 내부 어원이 확립되어 있지 않아 선그리스어 기층 어휘일 가능성이 제기된다."
+      },
+      {
+        "g": "iniectam",
+        "pos": "분사",
+        "lemma": "inicio, inicere, inieci, iniectum",
+        "principalParts": "inicio – inicere – inieci – iniectum",
+        "parse": "완료수동분사 단수 대격 여성 (Aetnen 수식)",
+        "gloss_kr": "던져 얹힌",
+        "gloss_en": "thrown/cast upon",
+        "syntax": "Aetnen을 수식하는 형용사적 분사, faucibus를 지배하는 여격을 취함",
+        "background": "'위에 던지다'라는 동사 inicio는 산이 마치 뚜껑처럼 거인들의 목구멍 위에 강제로 얹혔다는 폭력적 이미지를 만들어내며, 이는 아이트나가 여전히 살아있는 거인의 숨결로 불타오른다는 고대인의 상상과 연결된다.",
+        "etymology": "in('안으로') + iacio('던지다')의 합성어이다(subicio, subicere, subieci, subiectum 항목의 iacio 참조)."
+      },
+      {
+        "g": "faucibus",
+        "pos": "명사",
+        "lemma": "fauces, faucium, f. (복수형으로만 사용)",
+        "parse": "복수 여격 여성",
+        "gloss_kr": "목구멍(협곡)에",
+        "gloss_en": "upon the throats/gorges",
+        "syntax": "iniectam이 지배하는 여격(inicio + 여격, '~위에 던지다')",
+        "background": "fauces는 신체의 '목구멍'과 지형의 '좁은 협곡·골짜기'를 동시에 뜻하는 단어로, 여기서는 거인의 목구멍이자 동시에 아이트나 산의 분화구로 이중적으로 읽힌다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '목구멍, 협곡'을 뜻하며 복수형으로만 쓰인다."
+      },
+      {
+        "g": "Aetnen",
+        "pos": "명사(고유)",
+        "lemma": "Aetna, Aetnae, f. (그리스식 대격 -en)",
+        "parse": "단수 대격 여성 (그리스식 어미)",
+        "gloss_kr": "아이트나 산을",
+        "gloss_en": "Mount Aetna",
+        "syntax": "4행 liquerat의 목적어",
+        "background": "그리스어에서 차용된 고유명사이기에 라틴어의 일반적인 -am 대신 그리스식 대격 어미 -en을 취하며, 이는 오비디우스가 그리스 신화적 소재를 다룰 때 즐겨 쓰는 이국적 어미 활용법이다.",
+        "etymology": "그리스어 Αἴτνη에서 차용된 지명으로, 그리스어 내부 어원이 불확실하여 선그리스어 기층 지명일 가능성이 제기된다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.2",
+    "trans": "키클롭스들의 들판을 — 쟁기가 무엇인지, 쟁기질이 무엇인지",
+    "words": [
+      {
+        "g": "arvaque",
+        "pos": "명사 + 접속사(접미)",
+        "lemma": "arvum, arvi, n. / que",
+        "parse": "복수 대격 중성 + 접미 접속사",
+        "gloss_kr": "그리고 들판들을",
+        "gloss_en": "and the fields",
+        "syntax": "-que가 1행 Aetnen과 연결, liquerat의 또 다른 목적어",
+        "background": "아이트나 산에 이어 그 주변, 키클롭스들이 살았다고 전해지는 시칠리아의 들판이 두 번째로 열거되는 지형으로 등장한다.",
+        "etymology": "aro('쟁기질하다')에서 파생된 명사로, '경작지'를 뜻한다(aratrum, aratri, n. 항목의 aro 참조)."
+      },
+      {
+        "g": "Cyclopum",
+        "pos": "명사",
+        "lemma": "Cyclops, Cyclopis, m.",
+        "parse": "복수 속격 남성",
+        "gloss_kr": "키클롭스들의",
+        "gloss_en": "of the Cyclopes",
+        "syntax": "arva를 수식하는 소유의 속격",
+        "background": "외눈박이 거인 키클롭스들은 전통적으로 불과 대장간의 신 불카누스(헤파이스토스)의 조수로 아이트나 산 아래에서 일하는 것으로 그려지며, 이들은 농사 대신 대장일에 종사하는 존재로 여겨졌다.",
+        "etymology": "그리스어 Κύκλωψ(κύκλος '원' + ὤψ '눈')의 합성어로, '둥근 눈을 가진 자'를 뜻하며 외눈박이 거인을 가리킨다."
+      },
+      {
+        "g": "quid",
+        "pos": "의문대명사",
+        "lemma": "quis, quid",
+        "parse": "단수 대격/주격 중성 (간접의문문을 이끎)",
+        "gloss_kr": "무엇인지",
+        "gloss_en": "what",
+        "syntax": "nescia(3행)에 걸리는 간접의문문을 이끎, rastra의 술어",
+        "background": "첫 번째 간접의문 'quid rastra (sint)'로, 키클롭스의 들판이 농기구인 쟁기날(rastra)조차 알지 못한다는 사실을 도입한다.",
+        "etymology": "qui와 같은 PIE 의문 어근 *kʷo-/*kʷi-에서 유래한 형태로, 대명사적 용법(누가/무엇)과 형용사적 용법 qui를 구분해 쓴다(qui 항목 참조)."
+      },
+      {
+        "g": "rastra",
+        "pos": "명사",
+        "lemma": "rastrum, rastri, n. (주로 복수형)",
+        "parse": "복수 주격/대격 중성",
+        "gloss_kr": "쟁기날, 갈퀴",
+        "gloss_en": "rakes, hoes",
+        "syntax": "quid의 보어이자 간접의문문(sint 생략)의 주어",
+        "background": "농기구를 가리키는 이 단어는 키클롭스들의 야만적이고 비문명적인 생활방식 — 농경을 알지 못하는 원시성 — 을 상징적으로 드러낸다.",
+        "etymology": "rado('긁다')에서 파생된 도구 명사로, rado는 PIE *h₂erH-('갈다, 파다')와 연관짓는 설이 있다."
+      },
+      {
+        "g": "quid",
+        "pos": "의문대명사",
+        "lemma": "quis, quid",
+        "parse": "단수 대격/주격 중성 (간접의문문을 이끎)",
+        "gloss_kr": "무엇인지",
+        "gloss_en": "what",
+        "syntax": "nescia에 걸리는 두 번째 간접의문문을 이끎, usus의 술어",
+        "background": "동일한 의문대명사가 반복되며(anaphora), '쟁기날이 무엇인지'에 이어 '쟁기의 용도가 무엇인지'까지 이중으로 무지함을 강조한다.",
+        "etymology": "qui와 같은 PIE 의문 어근 *kʷo-/*kʷi-에서 유래한 형태로, 대명사적 용법(누가/무엇)과 형용사적 용법 qui를 구분해 쓴다(qui 항목 참조)."
+      },
+      {
+        "g": "usus",
+        "pos": "명사",
+        "lemma": "usus, usus, m.",
+        "parse": "단수 주격 남성",
+        "gloss_kr": "사용, 용도",
+        "gloss_en": "use, practice",
+        "syntax": "quid의 보어이자 간접의문문(esset 생략)의 주어",
+        "background": "4격 명사 usus는 '사용, 실천'을 뜻하며, 여기서는 쟁기를 실제로 부리는 농사 기술 자체를 가리킨다.",
+        "etymology": "utor('사용하다')의 목적분사 usus가 명사화된 것이다(utor, uti, usus sum 항목 참조)."
+      },
+      {
+        "g": "aratri",
+        "pos": "명사",
+        "lemma": "aratrum, aratri, n.",
+        "parse": "단수 속격 중성",
+        "gloss_kr": "쟁기의",
+        "gloss_en": "of the plow",
+        "syntax": "usus를 수식하는 목적속격",
+        "background": "쟁기(aratrum)는 로마 시에서 흔히 문명화된 농경 생활의 상징으로 쓰이며, 키클롭스의 들판이 이를 전혀 모른다는 설정은 문명과 야만의 대비를 강화한다.",
+        "etymology": "aro('쟁기질하다')에서 파생된 도구 명사로, PIE *h₂erh₃-('쟁기질하다')에서 유래하며 그리스어 ἀρόω, 영어 arable과 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.3",
+    "trans": "전혀 알지 못하며 멍에 진 소들에게 아무것도 빚지지 않는 —",
+    "words": [
+      {
+        "g": "nescia",
+        "pos": "형용사",
+        "lemma": "nescius, -a, -um",
+        "parse": "복수 주격/대격 중성 (arva 수식)",
+        "gloss_kr": "알지 못하는",
+        "gloss_en": "not knowing, ignorant",
+        "syntax": "arva(2행)를 수식하며 두 간접의문문(quid rastra, quid usus)을 목적어로 취함",
+        "background": "'알지 못하는'을 뜻하는 이 형용사는 앞선 두 간접의문문을 논리적으로 지배하는 핵심어로, 키클롭스의 들판이 농경 문명 전반에 무지함을 압축적으로 요약한다.",
+        "etymology": "ne('아니') + scio('알다')의 합성어로, '알지 못하는'을 뜻한다."
+      },
+      {
+        "g": "nec",
+        "pos": "접속사",
+        "lemma": "nec (= et non)",
+        "parse": "부정 접속사",
+        "gloss_kr": "그리고 ~도 않는",
+        "gloss_en": "and not, nor",
+        "syntax": "nescia와 debentia를 부정적으로 연결",
+        "background": "nescia(무지함)에 이어 또 다른 결핍 — 소에게 빚진 것이 없음 — 을 nec로 덧붙여, 키클롭스의 들판이 농경의 모든 요소로부터 완전히 단절되어 있음을 겹겹이 강조한다.",
+        "etymology": "ne(부정소사) + que('그리고')의 결합으로, '그리고 ~아니다'를 뜻하는 접속사이다. et non('그리고 ~않다')과 같은 뜻으로 쓰인다."
+      },
+      {
+        "g": "quicquam",
+        "pos": "부정대명사",
+        "lemma": "quisquam, quicquam",
+        "parse": "단수 대격 중성",
+        "gloss_kr": "아무것도",
+        "gloss_en": "anything",
+        "syntax": "debentia의 직접목적어",
+        "background": "부정문에서만 주로 쓰이는 이 부정대명사는 '조금이라도, 무엇이든'이라는 뜻을 강조하며, 소의 힘을 조금도 빌리지 않는 완전한 무경작 상태를 나타낸다.",
+        "etymology": "quis + quam(강조 첨사)의 결합으로, 부정문에서 '누구든, 무엇이든'을 뜻하는 부정대명사이다(quis, quid 항목 참조)."
+      },
+      {
+        "g": "iunctis",
+        "pos": "분사",
+        "lemma": "iungo, iungere, iunxi, iunctum",
+        "principalParts": "iungo – iungere – iunxi – iunctum",
+        "parse": "완료수동분사 복수 여격 남성 (bubus 수식)",
+        "gloss_kr": "멍에에 매인, 짝지어진",
+        "gloss_en": "yoked",
+        "syntax": "bubus를 수식",
+        "background": "멍에에 매인 소는 로마 농경의 대표적 이미지로, 밭갈이에 소를 부리는 관습이 키클롭스의 세계에는 아예 존재하지 않음을 시각적으로 보여준다.",
+        "etymology": "PIE *yewg-('묶다, 연결하다')에서 유래하며, 그리스어 ζυγόν, 영어 yoke, join과 동계어이다."
+      },
+      {
+        "g": "debentia",
+        "pos": "분사",
+        "lemma": "debeo, debere, debui, debitum",
+        "principalParts": "debeo – debere – debui – debitum",
+        "parse": "현재능동분사 복수 주격/대격 중성 (arva 수식)",
+        "gloss_kr": "빚진, 신세 지는",
+        "gloss_en": "owing (anything to)",
+        "syntax": "arva를 수식하며 nescia와 병렬, 여격 bubus와 대격 quicquam을 지배",
+        "background": "'빚지다'라는 뜻의 debeo가 여기서는 들판이 밭갈이 소의 노동에 조금도 '신세 지지 않는다', 즉 경작된 적이 없다는 의미로 은유적으로 확장되어 쓰인다.",
+        "etymology": "de('~로부터') + habeo('가지다')의 합성어로, 원래 '~에게서 (빚으로) 가지고 있다'는 뜻에서 '~해야 한다'로 발달했다."
+      },
+      {
+        "g": "bubus",
+        "pos": "명사",
+        "lemma": "bos, bovis, m./f. (불규칙 복수 여격/탈격 bubus, 드물게 bobus)",
+        "parse": "복수 여격 남성",
+        "gloss_kr": "소들에게",
+        "gloss_en": "to the oxen",
+        "syntax": "debentia가 지배하는 여격",
+        "background": "bos의 복수 여격·탈격형 bubus는 라틴어에서 가장 불규칙한 명사 어미변화 중 하나로 꼽히며, 표준형 boves를 대신해 시적 운율에 맞춰 쓰인다.",
+        "etymology": "PIE *gʷṓws('소')에서 유래한다(bos, bovis, m./f. 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.4",
+    "trans": "에우보이아 출신, 부풀어 오르는 바다의 경작자(글라우코스)는 뒤로 하였다.",
+    "words": [
+      {
+        "g": "liquerat",
+        "pos": "동사",
+        "lemma": "linquo, linquere, liqui, lictum",
+        "principalParts": "linquo – linquere – liqui – lictum",
+        "parse": "과거완료 직설법 능동 3인칭 단수",
+        "gloss_kr": "뒤로 하였다, 떠나 있었다",
+        "gloss_en": "had left behind",
+        "syntax": "주어 cultor, 목적어는 1~2행의 Aetnen과 arva",
+        "background": "문장의 본동사가 여러 행에 걸친 목적어들(아이트나 산과 키클롭스의 들판) 뒤에 마지막으로 등장하는 전형적인 라틴 시어 어순으로, 과거완료 시제는 다음 사건(9행 도착)보다 앞서 일어난 일임을 나타낸다.",
+        "etymology": "PIE *leykʷ-('남기다, 떠나다')에서 유래하며, 그리스어 λείπω('떠나다'), 영어 loan, relinquish의 어원이 되는 어근과 동계어이다."
+      },
+      {
+        "g": "Euboicus",
+        "pos": "형용사",
+        "lemma": "Euboicus, -a, -um",
+        "parse": "단수 주격 남성 (cultor 수식)",
+        "gloss_kr": "에우보이아의",
+        "gloss_en": "Euboean",
+        "syntax": "cultor를 수식",
+        "background": "그리스 에우보이아 섬의 안테돈 출신 어부였던 글라우코스가 신비한 풀을 먹고 바다의 신으로 변신했다는 이야기가 13권 말미에 나오며, 이 형용사는 그의 인간이었을 때의 출신지를 상기시킨다.",
+        "etymology": "그리스 섬 에우보이아(Εὔβοια, '좋은 소 목초지')에서 파생된 형용사이다."
+      },
+      {
+        "g": "tumidarum",
+        "pos": "형용사",
+        "lemma": "tumidus, -a, -um",
+        "parse": "복수 속격 여성 (aquarum 수식)",
+        "gloss_kr": "부풀어 오르는, 물결치는",
+        "gloss_en": "swelling",
+        "syntax": "aquarum을 수식",
+        "background": "'부풀어 오르다'라는 이 형용사는 파도가 넘실대는 바다의 역동적 이미지를 형용하며, 이제는 바다의 신이 된 글라우코스의 영역을 시각적으로 그려낸다.",
+        "etymology": "tumeo('부풀다')에서 파생된 형용사로, PIE *tewh₂-('부풀다')에서 유래한다(tumulus, -i, m. 항목 참조)."
+      },
+      {
+        "g": "cultor",
+        "pos": "명사",
+        "lemma": "cultor, cultoris, m.",
+        "parse": "단수 주격 남성",
+        "gloss_kr": "경작자",
+        "gloss_en": "cultivator, tiller",
+        "syntax": "liquerat의 주어",
+        "background": "'경작자'라는 단어가 본래 농부에게 쓰이는 표현이지만 여기서는 바다(aquarum)에 적용되어, 원래 어부였던 글라우코스가 이제는 '바다를 경작하는 자', 즉 바다의 신이 되었음을 절묘한 역설적 은유로 표현한다.",
+        "etymology": "colo('경작하다, 돌보다')에서 파생된 행위자 명사로, colo는 PIE *kʷel-('돌다, 거주하다')에서 유래한다."
+      },
+      {
+        "g": "aquarum",
+        "pos": "명사",
+        "lemma": "aqua, aquae, f.",
+        "parse": "복수 속격 여성",
+        "gloss_kr": "물의, 바다의",
+        "gloss_en": "of the waters",
+        "syntax": "cultor의 목적어 역할을 하는 속격, tumidarum의 수식을 받음",
+        "background": "복수형 aquarum은 바다 전체의 광대함과 끊임없이 일렁이는 물결을 함축하며, 글라우코스가 다스리는 영역이 인간의 농토(1~3행)와 정반대되는 세계임을 대조적으로 드러낸다.",
+        "etymology": "PIE *h₂ekʷeh₂-('물')에서 유래하며, 게르만어파의 water 계열과는 다른 라틴/켈트어파 고유 어근으로, 영어 aquatic이 이 라틴어에서 파생되었다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.5",
+    "trans": "잔클레와 레기움의 맞은편 성벽도 뒤로 하였으며,",
+    "words": [
+      {
+        "g": "liquerat",
+        "pos": "동사",
+        "lemma": "linquo, linquere, liqui, lictum",
+        "principalParts": "linquo – linquere – liqui – lictum",
+        "parse": "과거완료 직설법 능동 3인칭 단수",
+        "gloss_kr": "뒤로 하였다",
+        "gloss_en": "had left behind",
+        "syntax": "주어 cultor(4행), 새로운 목적어 목록(Zanclen, moenia, fretum)을 취함",
+        "background": "동사 liquerat가 5행에서 다시 반복되며(anaphora), 아이트나 산 일대에 이어 이번에는 시칠리아 해협 일대를 떠나온 여정이 새로 열거된다.",
+        "etymology": "PIE *leykʷ-('남기다, 떠나다')에서 유래하며, 그리스어 λείπω('떠나다'), 영어 loan, relinquish의 어원이 되는 어근과 동계어이다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "등위접속사",
+        "gloss_kr": "그리고, 또한",
+        "gloss_en": "and, also",
+        "syntax": "새로운 목적어 목록의 시작을 도입",
+        "background": "앞 문장(1~4행)과 구별되는 두 번째 목적어 목록을 이어주는 접속사로, 글라우코스의 여정이 한 단계 더 나아감을 표시한다.",
+        "etymology": "PIE *eti('그 위에, 더하여')에서 유래한 접속사로, 산스크리트어 ati('넘어서'), 그리스어 ἔτι('여전히, 더욱이')와 동계어이다. 원래 '더하여, 넘어서'라는 부사적 의미에서 등위접속사 '그리고'로 문법화되었다."
+      },
+      {
+        "g": "Zanclen",
+        "pos": "명사(고유)",
+        "lemma": "Zancle, Zanclae, f. (그리스식 대격 -en)",
+        "parse": "단수 대격 여성 (그리스식 어미)",
+        "gloss_kr": "잔클레를",
+        "gloss_en": "Zancle",
+        "syntax": "liquerat의 목적어",
+        "background": "잔클레는 시칠리아 동북단, 지금의 메시나(Messina)의 옛 그리스식 이름으로, 낫 모양으로 굽은 지형 때문에 그리스어로 '낫'을 뜻하는 단어에서 유래했다고 전해진다.",
+        "etymology": "그리스어 Ζάγκλη에서 차용된 시칠리아 메시나의 옛 지명으로, 시켈어(고대 시칠리아 원주민어)로 '낫'을 뜻하는 단어에서 왔다는 고대 어원 전승이 있다."
+      },
+      {
+        "g": "adversaque",
+        "pos": "형용사 + 접속사(접미)",
+        "lemma": "adversus, -a, -um / que",
+        "parse": "복수 대격 중성 (moenia 수식) + 접미 접속사",
+        "gloss_kr": "그리고 맞은편의",
+        "gloss_en": "and facing, opposite",
+        "syntax": "moenia를 수식, -que는 Zanclen과 moenia를 연결",
+        "background": "'마주한'을 뜻하는 이 형용사는 시칠리아 해협을 사이에 두고 서로 바라보는 두 도시, 잔클레(시칠리아 쪽)와 레기움(이탈리아 본토 쪽)의 지리적 배치를 정확히 짚어낸다.",
+        "etymology": "ad + verto의 합성 형용사이다(adversus, -a, -um 항목 참조)."
+      },
+      {
+        "g": "moenia",
+        "pos": "명사",
+        "lemma": "moenia, moenium, n. (복수형으로만 사용)",
+        "parse": "복수 대격 중성",
+        "gloss_kr": "성벽들을",
+        "gloss_en": "the walls",
+        "syntax": "liquerat의 목적어",
+        "background": "고대 도시의 정체성을 대표하는 '성벽'은 여기서 레기움이라는 도시 자체를 환유적으로 가리키며, 잔클레와 나란히 언급되어 해협을 사이에 둔 두 도시의 대칭적 구도를 완성한다.",
+        "etymology": "munio와 같은 어근 *mei-('짓다, 쌓다')에서 파생되었다(moenia, -ium, n. 항목 참조)."
+      },
+      {
+        "g": "Regi",
+        "pos": "명사(고유)",
+        "lemma": "Regium, Regii, n. (속격 축약형 Regi)",
+        "parse": "단수 속격 중성 (축약형, moenia 수식)",
+        "gloss_kr": "레기움의",
+        "gloss_en": "of Rhegium",
+        "syntax": "moenia를 수식하는 소유의 속격",
+        "background": "이탈리아 본토 끝자락의 도시 레기움(오늘날의 레조 칼라브리아)을 가리키며, -ii로 끝나는 2변화 속격이 시의 운율에 맞춰 -i로 축약된 시적 형태이다.",
+        "etymology": "그리스어 Ῥήγιον에서 차용된 이탈리아 남부 도시명(현 레조 칼라브리아)으로, 그리스어 ῥήγνυμι('부서지다, 갈라지다')와 연관짓는 고대 어원 전승이 있으나 확증되지 않는다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.6",
+    "trans": "배를 부수는 해협도 — 두 해안에 눌려",
+    "words": [
+      {
+        "g": "navifragumque",
+        "pos": "형용사 + 접속사(접미)",
+        "lemma": "navifragus, -a, -um / que",
+        "parse": "단수 대격 중성 (fretum 수식) + 접미 접속사",
+        "gloss_kr": "그리고 배를 부수는",
+        "gloss_en": "and ship-wrecking",
+        "syntax": "fretum을 수식, -que는 5행 moenia와 fretum을 연결",
+        "background": "'배(navis)'와 '부수다(frango)'가 합쳐진 이 합성 형용사는 메시나 해협의 사나운 소용돌이(전설 속 스킬라와 카리브디스가 사는 곳)로 인해 예로부터 항해자들에게 악명 높았던 위험한 뱃길을 압축적으로 표현한다.",
+        "etymology": "navis + frango의 합성 형용사이다(navifragus, -a, -um 항목 참조)."
+      },
+      {
+        "g": "fretum",
+        "pos": "명사",
+        "lemma": "fretum, freti, n.",
+        "parse": "단수 대격 중성",
+        "gloss_kr": "해협을",
+        "gloss_en": "the strait",
+        "syntax": "liquerat(5행)의 세 번째 목적어",
+        "background": "시칠리아와 이탈리아 본토 사이의 메시나 해협을 가리키며, 이는 뒤이은 관계절(quod...tenet)에서 다시 주어로 이어받아져 그 지리적 성격이 상세히 설명된다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '해협, 격류'를 뜻한다."
+      },
+      {
+        "g": "gemino",
+        "pos": "형용사",
+        "lemma": "geminus, -a, -um",
+        "parse": "단수 탈격 중성 (litore 수식)",
+        "gloss_kr": "두 겹의, 쌍을 이루는",
+        "gloss_en": "twin, double",
+        "syntax": "litore를 수식",
+        "background": "'쌍둥이의'를 뜻하는 이 형용사는 해협을 사이에 두고 마주한 두 개의 해안 — 시칠리아 쪽과 이탈리아 쪽 — 을 나타내며, 5행의 Zancle과 Regium의 대칭 구도와 다시 조응한다.",
+        "etymology": "PIE *yem-('짝을 이루다')에서 유래하며, 산스크리트어 yamá('쌍둥이')와 동계어로 제시된다."
+      },
+      {
+        "g": "quod",
+        "pos": "관계대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "단수 주격 중성 (fretum을 선행사로 함)",
+        "gloss_kr": "그것은(=그 해협은)",
+        "gloss_en": "which",
+        "syntax": "7행 tenet의 주어",
+        "background": "앞서 언급된 fretum을 선행사로 받는 관계절이 시작되며, 이 해협이 구체적으로 어떤 지리적 경계를 이루는지 다음 행에서 설명된다.",
+        "etymology": "PIE 의문·관계 어간 *kʷo-/*kʷi-('누구, 무엇')에서 유래하며, 그리스어 관계대명사 및 영어 who, what, 산스크리트어 kaḥ와 동계어이다. 인도유럽어족 전반에 걸쳐 의문사와 관계사가 동일 어근을 공유하는 대표적 사례이다."
+      },
+      {
+        "g": "litore",
+        "pos": "명사",
+        "lemma": "litus, litoris, n.",
+        "parse": "단수 탈격 중성",
+        "gloss_kr": "해안으로",
+        "gloss_en": "by the shore",
+        "syntax": "pressum(수단의 탈격)이 지배하는 명사, gemino의 수식을 받음",
+        "background": "'해안'을 뜻하는 이 명사는 gemino와 결합해 '두 해안'이라는 하나의 표현을 이루며, 해협이 어떤 힘에 의해 좁게 눌려 있는지를 설명하는 수단의 탈격으로 기능한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, linere('바르다')와 연관짓는 민간어원이 있으나 형태·의미상 근거가 약해 학계에서는 대체로 받아들이지 않는다."
+      },
+      {
+        "g": "pressum",
+        "pos": "분사",
+        "lemma": "premo, premere, pressi, pressum",
+        "principalParts": "premo – premere – pressi – pressum",
+        "parse": "완료수동분사 단수 주격 중성 (quod=fretum 수식)",
+        "gloss_kr": "눌린, 압박된",
+        "gloss_en": "pressed, squeezed",
+        "syntax": "quod를 수식하는 형용사적 분사, gemino litore를 수단의 탈격으로 취함",
+        "background": "'누르다'라는 이 동사는 좁은 두 해안 사이에 협착된 해협의 지형을 마치 물리적으로 압박당한 듯 생생하게 형상화하며, 이는 이 해협이 왜 그토록 물살이 거세고 위험한지에 대한 지리적 설명이 된다.",
+        "etymology": "어원이 불확실한 라틴어 고유 동사로, 명확한 인도유럽 동계어가 확립되어 있지 않다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.7",
+    "trans": "아우소니아와 시칠리아 땅의 경계를 이루는 그 해협도 뒤로 하였다.",
+    "words": [
+      {
+        "g": "Ausoniae",
+        "pos": "형용사/명사",
+        "lemma": "Ausonius, -a, -um (또는 Ausonia, -ae, f.)",
+        "parse": "단수 속격 여성 (terrae 수식)",
+        "gloss_kr": "아우소니아(이탈리아)의",
+        "gloss_en": "of Ausonia (Italy)",
+        "syntax": "terrae를 수식, Siculae와 병렬",
+        "background": "아우소니아는 로마 시에서 이탈리아 본토를 가리키는 고풍스럽고 시적인 명칭으로, 오비디우스는 산문적인 'Italia' 대신 이 서사시적 어휘를 즐겨 사용한다.",
+        "etymology": "그리스어 Αὔσων에서 유래한 이탈리아 남부 원주민 명칭으로, 그리스 시인들이 이탈리아 전체를 가리키는 시적 표현으로 확장해 썼다."
+      },
+      {
+        "g": "Siculaeque",
+        "pos": "형용사 + 접속사(접미)",
+        "lemma": "Siculus, -a, -um / que",
+        "parse": "단수 속격 여성 (terrae 수식) + 접미 접속사",
+        "gloss_kr": "그리고 시칠리아의",
+        "gloss_en": "and Sicilian",
+        "syntax": "terrae를 수식, -que는 Ausoniae와 Siculae를 연결",
+        "background": "이탈리아 본토(Ausoniae)와 시칠리아(Siculae) 두 땅이 나란히 속격으로 병렬되며, 해협이 정확히 이 두 땅의 경계선임을 문법적으로도 대칭적으로 보여준다.",
+        "etymology": "그리스어 Σικελός에서 차용되었다(Siculus, -a, -um 항목 참조)."
+      },
+      {
+        "g": "tenet",
+        "pos": "동사",
+        "lemma": "teneo, tenere, tenui, tentum",
+        "principalParts": "teneo – tenere – tenui – tentum",
+        "parse": "현재 직설법 능동 3인칭 단수",
+        "gloss_kr": "차지하다, 이루다",
+        "gloss_en": "occupies, holds",
+        "syntax": "주어 quod(=fretum, 6행), 목적어 confinia",
+        "background": "'붙잡다, 차지하다'라는 뜻의 이 동사는 해협이 지리적으로 '경계 지점을 차지하고 있다'는 지속적·항구적 사실을 현재시제로 서술하여, 앞선 과거완료(liquerat) 서사와 대비되는 지리적 정보 제공의 문장임을 나타낸다.",
+        "etymology": "PIE *ten-('뻗다, 붙잡다')에서 유래하며, 그리스어 τείνω('뻗다'), 영어 tend, tenant와 동계어이다."
+      },
+      {
+        "g": "confinia",
+        "pos": "명사",
+        "lemma": "confinium, confinii, n.",
+        "parse": "복수 대격 중성",
+        "gloss_kr": "경계를, 접경 지대를",
+        "gloss_en": "the common boundary",
+        "syntax": "tenet의 목적어",
+        "background": "'함께 경계 지어진 곳'을 뜻하는 이 명사는 이탈리아와 시칠리아 두 땅이 서로 맞닿아 있으면서도 좁은 바닷길로 갈라져 있는 독특한 지리적 관계를 정확히 짚어낸다.",
+        "etymology": "con('함께') + finis('경계')의 합성어로, '공동 경계, 인접지'를 뜻한다(finis, finis, m. 항목 참조)."
+      },
+      {
+        "g": "terrae",
+        "pos": "명사",
+        "lemma": "terra, terrae, f.",
+        "parse": "단수 속격 여성",
+        "gloss_kr": "땅의",
+        "gloss_en": "of the land",
+        "syntax": "confinia를 수식하는 속격, Ausoniae와 Siculae의 수식을 받음",
+        "background": "단수형 terrae가 두 개의 형용사(Ausoniae, Siculae)에 동시에 걸리며, 서로 다른 두 땅이면서도 하나의 연속된 지형으로 인식되는 이중적 시각을 보여준다.",
+        "etymology": "PIE *ters-('마르다')에서 유래한 것으로 추정된다(terra, -ae, f. 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.8",
+    "trans": "그런 다음 강한 손으로 튀레니아 바다를 헤엄쳐 건너",
+    "words": [
+      {
+        "g": "inde",
+        "pos": "부사",
+        "lemma": "inde",
+        "parse": "부사",
+        "gloss_kr": "그곳에서, 그런 다음",
+        "gloss_en": "from there, thereafter",
+        "syntax": "문장 전체를 여는 장소·시간의 부사",
+        "background": "앞서 열거된 지형들(아이트나, 잔클레, 해협)을 모두 뒤로 한 지점을 가리키며, 이제 본격적으로 글라우코스의 항해 여정 자체로 서술의 초점이 옮겨간다.",
+        "etymology": "지시 어근 *(e)n-de(고졸 라틴어 in + de 방향 접미사)의 결합으로 추정되며, '거기서부터'를 뜻하는 부사이다."
+      },
+      {
+        "g": "manu",
+        "pos": "명사",
+        "lemma": "manus, manus, f.",
+        "parse": "단수 탈격 여성",
+        "gloss_kr": "손으로",
+        "gloss_en": "with (his) hand",
+        "syntax": "vectus를 수식하는 수단의 탈격",
+        "background": "바다의 신이 된 글라우코스가 자신의 팔과 손을 저어 헤엄쳐 나아가는 모습으로, 신이 되었음에도 여전히 신체적 노력을 통해 이동하는 인간적 면모를 남기고 있다.",
+        "etymology": "PIE *meh₂-('손')에서 유래하며, 게르만어파 hand와는 다른 어근이나 넓은 의미에서 '손, 힘'을 나타내는 인도유럽 어휘군에 속한다."
+      },
+      {
+        "g": "magna",
+        "pos": "형용사",
+        "lemma": "magnus, -a, -um",
+        "parse": "단수 탈격 여성 (manu 수식)",
+        "gloss_kr": "강한, 큰",
+        "gloss_en": "great, mighty",
+        "syntax": "manu를 수식",
+        "background": "'큰 손'이라는 표현은 신적인 힘을 지닌 글라우코스가 넓은 바다를 가로지르는 데 필요한 강력한 추진력을 강조한다.",
+        "etymology": "PIE *meǵh₂-('큰')에서 유래하며, 그리스어 μέγας, 산스크리트어 mahā́nt, 영어 much와 동계어이다."
+      },
+      {
+        "g": "Tyrrhena",
+        "pos": "형용사",
+        "lemma": "Tyrrhenus, -a, -um",
+        "parse": "복수 대격 중성 (aequora 수식)",
+        "gloss_kr": "튀레니아의",
+        "gloss_en": "Tyrrhenian",
+        "syntax": "aequora를 수식",
+        "background": "튀레니아 해는 이탈리아 서쪽, 시칠리아 북쪽에 펼쳐진 바다로, 글라우코스가 메시나 해협을 떠나 이탈리아 서해안을 따라 북상하는 항로를 지리적으로 구체화한다.",
+        "etymology": "그리스어 Τυρρηνός('에트루리아인')에서 차용된 형용사로, 에트루리아를 가리키는 그리스식 명칭에서 유래한다."
+      },
+      {
+        "g": "per",
+        "pos": "전치사",
+        "lemma": "per",
+        "parse": "전치사 (+ 대격, 경로)",
+        "gloss_kr": "~을 통하여, ~을 가로질러",
+        "gloss_en": "through, across",
+        "syntax": "aequora를 지배",
+        "background": "이동 경로를 나타내는 전치사로, 글라우코스가 튀레니아 바다의 수면을 가로질러 헤엄쳐 나아가는 궤적을 그려낸다.",
+        "etymology": "PIE *per-('앞으로, 통과하여')에서 유래하며, 그리스어 περί/παρά, 영어 for, through와 동계어이다. 공간적 '통과'의 의미에서 수단('~을 통해')과 강조 접두사(per-, '완전히')로 의미가 확장되었다."
+      },
+      {
+        "g": "aequora",
+        "pos": "명사",
+        "lemma": "aequor, aequoris, n.",
+        "parse": "복수 대격 중성",
+        "gloss_kr": "바다를, 수면을",
+        "gloss_en": "the (level) sea",
+        "syntax": "per의 목적어",
+        "background": "본래 '평평함'을 뜻하는 aequus에서 파생된 이 시어는 잔잔하게 펼쳐진 바다의 표면을 형상화하며, 라틴 서사시에서 '바다'를 가리키는 가장 대표적인 시적 어휘 중 하나이다.",
+        "etymology": "aequus('평평한, 공평한')에서 파생된 명사로, '평평한 면' 즉 잔잔한 바다를 뜻한다. aequus는 PIE *aik'-('닮다, 평평하다')에서 유래한다는 설이 있으나 불확실하다."
+      },
+      {
+        "g": "vectus",
+        "pos": "분사",
+        "lemma": "veho, vehere, vexi, vectum (수동/탈형적 용법)",
+        "principalParts": "veho – vehere – vexi – vectum",
+        "parse": "완료분사 단수 주격 남성 (Glaucus 수식)",
+        "gloss_kr": "실려서, 헤엄쳐 나아가서",
+        "gloss_en": "borne, conveyed",
+        "syntax": "9행 Glaucus를 수식하는 시간/방식의 분사, manu magna를 수단의 탈격으로 취함",
+        "background": "본래 '나르다, 태우다'를 뜻하는 veho가 수동형으로 쓰여 '실려가다'라는 뜻이 되는데, 여기서는 배가 아니라 자신의 손으로 스스로를 물 위로 '실어 나르는' 헤엄의 이미지로 절묘하게 전용되었다.",
+        "etymology": "PIE *weǵʰ-('나르다, 태우다')에서 유래한다(veho, vehere, vexi, vectum 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.9",
+    "trans": "글라우코스는 풀이 무성한 언덕들과 궁전에 다다랐으니",
+    "words": [
+      {
+        "g": "herbiferos",
+        "pos": "형용사",
+        "lemma": "herbifer, herbifera, herbiferum",
+        "parse": "복수 대격 남성 (colles 수식)",
+        "gloss_kr": "풀을 낳는, 풀이 무성한",
+        "gloss_en": "grass-bearing",
+        "syntax": "colles를 수식",
+        "background": "'풀(herba)'과 '낳다(fero)'의 합성 형용사로, 키르케의 섬(아이아이에)이 지닌 목가적이고 마법적인 식생을 예고하며, 이는 뒤이어 그녀가 온갖 약초로 사람과 짐승을 변신시키는 마녀임을 암시한다.",
+        "etymology": "herba('풀') + fero('나르다, 지니다')의 합성 형용사로, '풀이 무성한'을 뜻한다(herba, -ae, f.; fero 항목 참조)."
+      },
+      {
+        "g": "adiit",
+        "pos": "동사",
+        "lemma": "adeo, adire, adii, aditum",
+        "principalParts": "adeo – adire – adii – aditum",
+        "parse": "완료 직설법 능동 3인칭 단수",
+        "gloss_kr": "다다랐다, 도착했다",
+        "gloss_en": "approached, reached",
+        "syntax": "주어 Glaucus, 목적어 colles와 atria",
+        "background": "긴 과거완료(liquerat)의 배경 서술 끝에 마침내 단순완료 adiit가 등장하며, 여러 행에 걸친 여정 끝에 도착이라는 핵심 사건이 완결됨을 시제의 전환으로 알린다.",
+        "etymology": "ad('~로') + eo('가다')의 합성어이다(adeo 항목 참조)."
+      },
+      {
+        "g": "colles",
+        "pos": "명사",
+        "lemma": "collis, collis, m.",
+        "parse": "복수 대격 남성",
+        "gloss_kr": "언덕들을",
+        "gloss_en": "hills",
+        "syntax": "adiit의 목적어",
+        "background": "키르케가 사는 섬의 목가적 언덕은 이어지는 10행의 '온갖 야수들'과 함께, 그녀가 마법으로 인간을 짐승으로 변신시켜 기르는 신비롭고도 위험한 낙원의 이미지를 구성한다.",
+        "etymology": "PIE *kel-('솟아오르다, 높다')에서 유래하며, 영어 hill과 동계어이다."
+      },
+      {
+        "g": "atque",
+        "pos": "접속사",
+        "lemma": "atque",
+        "parse": "등위접속사",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "colles와 atria를 연결",
+        "background": "언덕(자연)과 궁전(인공 건축물)이라는 서로 다른 두 목적어를 나란히 잇는 접속사로, 글라우코스가 도착한 곳의 자연과 인공이 공존하는 풍경을 요약한다.",
+        "etymology": "ad('~로') + que('그리고')에서 발달한 접속사로, ac는 자음 앞에서 쓰이는 이형태이다."
+      },
+      {
+        "g": "atria",
+        "pos": "명사",
+        "lemma": "atrium, atrii, n.",
+        "parse": "복수 대격 중성",
+        "gloss_kr": "궁전을, 안뜰을",
+        "gloss_en": "the halls",
+        "syntax": "adiit의 또 다른 목적어",
+        "background": "본래 로마 저택의 중심 안뜰을 가리키는 atrium이 여기서는 신화 속 여신 키르케의 웅장한 궁전을 가리키는 시적 표현으로 확장되어 쓰였다.",
+        "etymology": "어원이 불확실하나, 에트루리아 도시 Atria(현 아드리아)에서 유래했다는 고대 전승이 있으며 확정적이지 않다."
+      },
+      {
+        "g": "Glaucus",
+        "pos": "명사(고유)",
+        "lemma": "Glaucus, Glauci, m.",
+        "parse": "단수 주격 남성",
+        "gloss_kr": "글라우코스가",
+        "gloss_en": "Glaucus",
+        "syntax": "adiit의 주어(4행 cultor와 동일 인물)",
+        "background": "4행에서 '경작자(cultor)'라는 완곡한 별칭으로만 지칭되었던 인물의 실제 이름이 9행에 이르러서야 비로소 명시되며, 이는 정체를 서서히 드러내는 오비디우스 특유의 서사 기법이다.",
+        "etymology": "그리스어 γλαυκός('회청색의, 빛나는')에서 차용된 형용사가 고유명사화된 것으로, 아테나의 별칭 γλαυκῶπις('회청색 눈의')와 같은 어근이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.10",
+    "trans": "태양신의 딸 키르케의, 온갖 짐승들로 가득한 궁전이었다.",
+    "words": [
+      {
+        "g": "Sole",
+        "pos": "명사",
+        "lemma": "Sol, Solis, m.",
+        "parse": "단수 탈격 남성",
+        "gloss_kr": "태양신에게서",
+        "gloss_en": "from the Sun (god)",
+        "syntax": "satae가 지배하는 기원의 탈격",
+        "background": "태양신 솔(그리스의 헬리오스)은 신화에서 키르케의 아버지로 전해지며, 이 계보는 키르케가 지닌 강력한 마법적 혈통의 근거가 된다.",
+        "etymology": "PIE *sóh₂wl̥('해')에서 유래한다(sol, solis, m. 항목 참조)."
+      },
+      {
+        "g": "satae",
+        "pos": "분사",
+        "lemma": "sero, serere, sevi, satum",
+        "principalParts": "sero – serere – sevi – satum",
+        "parse": "완료수동분사 단수 속격 여성 (Circes 수식)",
+        "gloss_kr": "낳아진, 태어난",
+        "gloss_en": "born, sprung (from)",
+        "syntax": "Circes를 수식",
+        "background": "본래 '씨 뿌리다, 심다'를 뜻하는 sero가 완료분사에서 '낳다, 태어나다'라는 뜻으로 관용화되어 쓰이며, '태양신에게서 태어난'이라는 표현으로 키르케의 신성한 태생을 밝힌다.",
+        "etymology": "PIE *seh₁-('씨 뿌리다')에서 유래하며, 영어 seed, sow와 동계어이다."
+      },
+      {
+        "g": "Circes",
+        "pos": "명사(고유)",
+        "lemma": "Circe, Circes, f. (그리스식 속격 -es)",
+        "parse": "단수 속격 여성 (그리스식 어미)",
+        "gloss_kr": "키르케의",
+        "gloss_en": "of Circe",
+        "syntax": "9행 atria를 수식하는 소유의 속격",
+        "background": "훗날 오뒷세우스 일행을 돼지로 변신시키는 것으로 유명한 마녀 여신 키르케가 여기서 처음 등장하며, 그리스식 속격 어미 -es는 그녀의 그리스 신화적 기원을 형태적으로도 드러낸다.",
+        "etymology": "그리스어 Κίρκη에서 차용된 고유명사이다(Circe, -es, f. 항목 참조)."
+      },
+      {
+        "g": "variarum",
+        "pos": "형용사",
+        "lemma": "varius, -a, -um",
+        "parse": "복수 속격 여성 (ferarum 수식)",
+        "gloss_kr": "다양한, 갖가지의",
+        "gloss_en": "of various, of many kinds",
+        "syntax": "ferarum을 수식",
+        "background": "'다양한'이라는 이 형용사는 키르케의 궁전에 모인 짐승들이 원래 여러 다른 인간들이었다가 그녀의 마법으로 각기 다른 동물로 변신당한 존재들임을 은근히 암시한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 형용사로, '다양한, 얼룩진'을 뜻한다."
+      },
+      {
+        "g": "plena",
+        "pos": "형용사",
+        "lemma": "plenus, -a, -um",
+        "parse": "복수 주격/대격 중성 (atria 수식)",
+        "gloss_kr": "가득한",
+        "gloss_en": "full (of)",
+        "syntax": "9행 atria를 수식, 속격 ferarum을 지배(plenus + 속격)",
+        "background": "'가득한'을 뜻하는 이 형용사는 소유·재료의 속격을 취하는 대표적 형용사로, 뒤이어 14권 전반에 펼쳐질 키르케의 변신 마법 에피소드들을 예고하는 복선 역할을 한다.",
+        "etymology": "PIE *pleh₁-('채우다')에서 유래하며, 그리스어 πλήρης, 영어 full과 동계어이다."
+      },
+      {
+        "g": "ferarum",
+        "pos": "명사",
+        "lemma": "fera, ferae, f.",
+        "parse": "복수 속격 여성",
+        "gloss_kr": "짐승들의",
+        "gloss_en": "of wild beasts",
+        "syntax": "plena가 지배하는 속격",
+        "background": "키르케의 궁전에 가득한 이 '짐승들'은 사실 그녀의 마법에 걸려 동물로 변한 이전의 인간·선원들이며, 이는 곧 이어질 오뒷세우스의 부하들 이야기(14권 중반)를 향한 강력한 복선이다.",
+        "etymology": "ferus의 여성형이 명사화된 것이다(fera, -ae, f. 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.11",
+    "trans": "그녀를 보자마자, 인사를 나눈 뒤,",
+    "words": [
+      {
+        "g": "quam",
+        "pos": "관계대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "단수 대격 여성 (Circes를 선행사로 함)",
+        "gloss_kr": "그녀를(키르케를)",
+        "gloss_en": "whom",
+        "syntax": "adspexit의 목적어",
+        "background": "10행 끝에서 언급된 키르케를 선행사로 받는 관계대명사로, 문장이 자연스럽게 다음 장면 — 글라우코스가 키르케를 발견하는 순간 — 으로 이어진다.",
+        "etymology": "PIE 의문·관계 어간 *kʷo-/*kʷi-('누구, 무엇')에서 유래하며, 그리스어 관계대명사 및 영어 who, what, 산스크리트어 kaḥ와 동계어이다. 인도유럽어족 전반에 걸쳐 의문사와 관계사가 동일 어근을 공유하는 대표적 사례이다."
+      },
+      {
+        "g": "simul",
+        "pos": "부사",
+        "lemma": "simul",
+        "parse": "부사(접속사적 용법, simul ac/atque의 생략형)",
+        "gloss_kr": "~하자마자",
+        "gloss_en": "as soon as",
+        "syntax": "adspexit를 수식하는 시간 부사",
+        "background": "simul은 종종 ac/atque 없이 단독으로도 '~하자마자'라는 시간절을 이끄는 접속사처럼 쓰이며, 여기서는 만남의 즉각성을 강조한다.",
+        "etymology": "similis('비슷한')와 같은 어근 *sem-('하나')에서 파생된 부사로, '동시에, 함께'를 뜻한다."
+      },
+      {
+        "g": "adspexit",
+        "pos": "동사",
+        "lemma": "adspicio, adspicere, adspexi, adspectum",
+        "principalParts": "adspicio – adspicere – adspexi – adspectum",
+        "parse": "완료 직설법 능동 3인칭 단수",
+        "gloss_kr": "바라보았다, 발견했다",
+        "gloss_en": "caught sight of",
+        "syntax": "주어 Glaucus(9행에서 이어짐), 목적어 quam",
+        "background": "13권 말미부터 이어지는 주어 글라우코스가 생략된 채 유지되며, 이 동사로 그가 키르케를 처음 마주하는 순간이 서술된다.",
+        "etymology": "ad('~을 향해') + specio('보다')의 합성어로, specio는 PIE *spek-('보다, 관찰하다')에서 유래하며 그리스어 σκέπτομαι, 영어 spy, spectacle과 동계어이다."
+      },
+      {
+        "g": "dicta",
+        "pos": "분사",
+        "lemma": "dico, dicere, dixi, dictum",
+        "principalParts": "dico – dicere – dixi – dictum",
+        "parse": "완료수동분사 단수 탈격 여성 (salute와 함께 절대탈격)",
+        "gloss_kr": "말해지고",
+        "gloss_en": "having been spoken",
+        "syntax": "salute와 함께 절대탈격(탈격독립구)을 이룸",
+        "background": "'말해진 인사'라는 절대탈격 구문은 통상적인 만남의 인사 절차 — 인사를 건네고 받는 것 — 를 간결하게 압축한 표현이다.",
+        "etymology": "PIE *deyḱ-('보여주다, 가리키다')에서 유래하며, 그리스어 δείκνυμι('보여주다'), 영어 teach, token과 동계어이다. '보여주다'에서 '말로 지시하다, 말하다'로 의미가 확장되었다."
+      },
+      {
+        "g": "acceptaque",
+        "pos": "분사 + 접속사(접미)",
+        "lemma": "accipio, accipere, accepi, acceptum / que",
+        "principalParts": "accipio – accipere – accepi – acceptum",
+        "parse": "완료수동분사 단수 탈격 여성 (salute 수식) + 접미 접속사",
+        "gloss_kr": "그리고 받아들여진",
+        "gloss_en": "and having been received",
+        "syntax": "dicta와 병렬되어 salute를 수식하는 절대탈격",
+        "background": "'말해지고 받아들여진 인사'라는 대구는 두 사람 사이에 형식적인 인사가 오간 뒤 곧바로 본론(글라우코스의 고백)으로 넘어감을 알리는 관용적 서사 전환구이다.",
+        "etymology": "ad + capio의 합성어이다(accipio, accipere, accepi, acceptum 항목 참조)."
+      },
+      {
+        "g": "salute",
+        "pos": "명사",
+        "lemma": "salus, salutis, f.",
+        "parse": "단수 탈격 여성",
+        "gloss_kr": "인사를",
+        "gloss_en": "greeting",
+        "syntax": "dicta acceptaque의 지배를 받는 절대탈격의 중심 명사",
+        "background": "salus는 본래 '안녕, 건강'을 뜻하지만 관용적으로 '인사말'을 가리키며, 로마인들의 인사 관습(salutatio)을 반영하는 표현이다.",
+        "etymology": "salvus('건강한, 무사한')에서 파생된 명사로, PIE *solh₂-('전체의, 온전한')에서 유래하며 영어 safe, salute와 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.12",
+    "trans": "'여신이여, 신이시여, 저를 불쌍히 여기소서, 간청하옵니다! 오직 그대만이",
+    "words": [
+      {
+        "g": "diva",
+        "pos": "명사",
+        "lemma": "diva, divae, f.",
+        "parse": "단수 호격 여성",
+        "gloss_kr": "여신이여",
+        "gloss_en": "goddess",
+        "syntax": "글라우코스가 키르케를 부르는 호격",
+        "background": "글라우코스의 직접 대사가 시작되는 지점으로, 그는 정중하게 키르케를 '여신'이라 칭하며 탄원을 시작한다.",
+        "etymology": "divus('신성한')의 여성형으로, deus와 같은 어근 *deiwós에서 파생되었다(dea, -ae, f. 항목 참조)."
+      },
+      {
+        "g": "dei",
+        "pos": "명사",
+        "lemma": "deus, dei, m.",
+        "parse": "단수 속격 남성",
+        "gloss_kr": "신인 나를",
+        "gloss_en": "of a god",
+        "syntax": "miserere가 지배하는 속격(misereor + 속격, '~을 불쌍히 여기다')",
+        "background": "misereor 동사는 불쌍히 여기는 대상을 속격으로 취하는 특수한 지배 구조를 가지며, 여기서 글라우코스는 자신을 3인칭으로 '(이) 신을'이라 지칭하며 겸손하게 탄원한다.",
+        "etymology": "PIE *deiwós에서 유래한다(deus, -i, m. 항목 참조)."
+      },
+      {
+        "g": "miserere",
+        "pos": "동사",
+        "lemma": "misereor, misereri, miseritus sum",
+        "principalParts": "misereor – misereri – miseritus sum (탈형동사)",
+        "parse": "현재 명령법 탈형 2인칭 단수",
+        "gloss_kr": "불쌍히 여기소서",
+        "gloss_en": "have pity (on)",
+        "syntax": "주어(생략된 2인칭=키르케), 목적어 dei(속격)",
+        "background": "misereor는 능동형 없이 수동형 어미로만 활용되는 탈형동사(deponent)로, 명령형 miserere는 라틴 시에서 흔히 쓰이는 탄원의 정형구이다.",
+        "etymology": "miser('불쌍한')에서 파생된 탈형동사로, miser는 어원이 불확실한 라틴어 고유 형용사이다."
+      },
+      {
+        "g": "precor",
+        "pos": "동사",
+        "lemma": "precor, precari, precatus sum",
+        "principalParts": "precor – precari – precatus sum (탈형동사)",
+        "parse": "현재 직설법 탈형 1인칭 단수",
+        "gloss_kr": "간청합니다",
+        "gloss_en": "I beg, I pray",
+        "syntax": "삽입된 독립 문장, 주어 ego(생략, 글라우코스)",
+        "background": "precor 역시 탈형동사로, 감탄사처럼 문장 중간에 삽입되어 탄원의 절박함을 강조하는 수사적 장치로 자주 쓰인다.",
+        "etymology": "prex('기도')에서 파생된 탈형동사로, PIE *preḱ-('묻다, 청하다')에서 유래하며 영어 pray가 이 어근에서 파생되었다."
+      },
+      {
+        "g": "nam",
+        "pos": "접속사",
+        "lemma": "nam",
+        "parse": "이유의 접속사",
+        "gloss_kr": "왜냐하면",
+        "gloss_en": "for",
+        "syntax": "글라우코스가 자신의 청을 정당화하는 이유절을 이끎",
+        "background": "글라우코스는 '왜 하필 키르케에게' 도움을 청하는지 그 이유 — 오직 그녀만이 자신을 도울 수 있다는 것 — 를 즉시 설명하기 시작한다.",
+        "etymology": "PIE 지시 어근에서 발달한 이유 접속사로, '왜냐하면'을 뜻한다."
+      },
+      {
+        "g": "sola",
+        "pos": "형용사",
+        "lemma": "solus, -a, -um",
+        "parse": "단수 주격 여성 (13행 tu 수식)",
+        "gloss_kr": "홀로, 오직 그대만이",
+        "gloss_en": "alone, only",
+        "syntax": "13행 tu를 수식하는 강조의 형용사",
+        "background": "'오직 그대만이'라는 강조는 키르케의 마법적 능력에 대한 찬사이자, 동시에 그녀 외에는 다른 선택지가 없다는 글라우코스의 절박함을 담고 있다.",
+        "etymology": "어원이 불확실한 라틴어 고유 형용사로, '홀로, 유일한'을 뜻한다."
+      },
+      {
+        "g": "levare",
+        "pos": "동사(부정사)",
+        "lemma": "levo, levare, levavi, levatum",
+        "principalParts": "levo – levare – levavi – levatum",
+        "parse": "현재 부정사 능동",
+        "gloss_kr": "덜어주다, 가볍게 하다",
+        "gloss_en": "to relieve, to lighten",
+        "syntax": "13행 potes에 걸리는 보충 부정사, 목적어 hunc...amorem",
+        "background": "'가볍게 하다'라는 뜻의 이 동사는 사랑의 괴로움을 짐(무게)에 비유하는 라틴 연애시의 전형적 은유를 담고 있다.",
+        "etymology": "levis('가벼운')에서 파생된 동사로, PIE *h₁leng ʷʰ-('가벼운')에서 유래하며 그리스어 ἐλαφρός, 영어 light와 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.13",
+    "trans": "이 사랑을 덜어주실 수 있나이다,' 그가 말했다, '제가 그럴 자격이 있는 것으로만 보인다면 말입니다.'",
+    "words": [
+      {
+        "g": "tu",
+        "pos": "대명사",
+        "lemma": "tu",
+        "parse": "단수 주격",
+        "gloss_kr": "그대는",
+        "gloss_en": "you",
+        "syntax": "potes의 주어",
+        "background": "글라우코스가 키르케를 2인칭으로 직접 지목하며 자신의 운명이 오직 그녀 손에 달려 있음을 강조한다.",
+        "etymology": "PIE 2인칭 단수 대명사 *tuH/*tū에서 유래하며, 그리스어 σύ, 산스크리트어 tvam, 영어 thou와 동계어이다. 인도유럽조어의 인칭대명사 체계 중 가장 안정적으로 보존된 형태 중 하나이다."
+      },
+      {
+        "g": "potes",
+        "pos": "동사",
+        "lemma": "possum, posse, potui",
+        "principalParts": "possum – posse – potui (목적분사 없음)",
+        "parse": "현재 직설법 능동 2인칭 단수",
+        "gloss_kr": "할 수 있다",
+        "gloss_en": "you are able",
+        "syntax": "주어 tu, 보충 부정사 levare(12행)",
+        "background": "possum은 부정사를 보충어로 취하는 조동사적 동사로, 이 문장의 핵심 술어 역할을 한다.",
+        "etymology": "potis('할 수 있는') + sum('이다')의 합성어로, potis는 PIE *poti-('주인, 지배자')에서 유래하며 그리스어 πόσις('남편, 주인'), 산스크리트어 páti와 동계어이다."
+      },
+      {
+        "g": "hunc",
+        "pos": "지시대명사",
+        "lemma": "hic, haec, hoc",
+        "parse": "단수 대격 남성 (amorem 수식)",
+        "gloss_kr": "이",
+        "gloss_en": "this",
+        "syntax": "amorem을 수식",
+        "background": "행 안에서 명사(amorem)와 멀리 떨어뜨려 배치된 이 지시형용사는 시적 강조를 위해 수식어와 명사를 벌려 놓는 라틴 시의 전형적 어순 기법을 보여준다.",
+        "etymology": "PIE 지시 어간 *ko-('이것')에 첨사 -ce가 결합된 형태로, 근칭 지시대명사이다. 게르만어파의 he(그)와 어원적으로 연결되는 지시 어근 계열에 속한다."
+      },
+      {
+        "g": "dixit",
+        "pos": "동사",
+        "lemma": "dico, dicere, dixi, dictum",
+        "principalParts": "dico – dicere – dixi – dictum",
+        "parse": "완료 직설법 능동 3인칭 단수",
+        "gloss_kr": "말했다",
+        "gloss_en": "he said",
+        "syntax": "삽입절로 직접화법 사이에 끼어든 서술 동사, 주어 Glaucus(생략)",
+        "background": "직접인용문 한가운데 삽입된 'dixit'는 베르길리우스와 호메로스에서도 흔한 서사시적 관습으로, 화자가 누구인지 독자에게 상기시키는 역할을 한다.",
+        "etymology": "PIE *deyḱ-('보여주다, 가리키다')에서 유래하며, 그리스어 δείκνυμι('보여주다'), 영어 teach, token과 동계어이다. '보여주다'에서 '말로 지시하다, 말하다'로 의미가 확장되었다."
+      },
+      {
+        "g": "videar",
+        "pos": "동사",
+        "lemma": "videor, videri, visus sum",
+        "principalParts": "videor – videri – visus sum (준탈형동사)",
+        "parse": "현재 접속법 수동(탈형적) 1인칭 단수",
+        "gloss_kr": "제가 보이기를(바라건대)",
+        "gloss_en": "may I seem",
+        "syntax": "modo와 함께 조건의 부사절을 이끄는 접속법",
+        "background": "videor는 '보이다, ~처럼 여겨지다'라는 뜻의 준탈형동사로, 여기서는 modo(다만 ~하다면)와 결합해 '내가 자격 있어 보이기만 한다면'이라는 겸손한 조건절을 형성한다.",
+        "etymology": "video의 수동태로, '보이다' 즉 '~로 여겨지다'를 뜻하며 능동형과 동일한 어근 *weyd-를 공유한다(video 항목 참조)."
+      },
+      {
+        "g": "modo",
+        "pos": "부사",
+        "lemma": "modo",
+        "parse": "부사(조건의 부사절을 이끎)",
+        "gloss_kr": "다만 ~하기만 하면",
+        "gloss_en": "provided that, only",
+        "syntax": "videar를 이끄는 조건의 부사(modo + 접속법)",
+        "background": "modo가 접속법과 결합하면 '오직 ~라는 조건 하에'라는 뜻의 제한적 조건절을 이루며, 글라우코스의 겸손하고도 간절한 어조를 완성한다.",
+        "etymology": "modus('척도, 방식')의 탈격이 부사화된 것으로, '단지, 방금'을 뜻한다."
+      },
+      {
+        "g": "dignus",
+        "pos": "형용사",
+        "lemma": "dignus, -a, -um",
+        "parse": "단수 주격 남성 (videar의 술어)",
+        "gloss_kr": "자격 있는, 합당한",
+        "gloss_en": "worthy",
+        "syntax": "videar의 술어형용사",
+        "background": "'자격 있는'이라는 형용사는 통상 탈격을 지배하지만 여기서는 절대적으로 쓰여, 글라우코스가 자신이 그 사랑을 누릴 자격이 있는지조차 확신하지 못하는 겸허한 태도를 드러낸다.",
+        "etymology": "decet('어울리다')와 같은 어근 *deḱ-('받아들이다, 어울리다')에서 파생되었으며, 그리스어 δοκέω('생각되다, ~로 보이다')와 동계어로 제시된다."
+      },
+      {
+        "g": "amorem",
+        "pos": "명사",
+        "lemma": "amor, amoris, m.",
+        "parse": "단수 대격 남성",
+        "gloss_kr": "사랑을",
+        "gloss_en": "love",
+        "syntax": "12행 levare의 목적어, hunc의 수식을 받음",
+        "background": "이 '사랑'이라는 단어로 비로소 글라우코스가 키르케를 찾아온 진짜 이유 — 실연의 고통 — 가 명확히 드러나며, 다음 행부터 그 사랑의 대상(스킬라)에 대한 설명이 이어진다.",
+        "etymology": "amo('사랑하다')에서 파생된 명사로, amo 자체는 명확한 인도유럽 동계어가 없는 라틴어(및 이탈리아어파) 고유 어휘로 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.14",
+    "trans": "약초들의 힘이 얼마나 큰지, 티탄의 따님이시여, 그 누구도",
+    "words": [
+      {
+        "g": "quanta",
+        "pos": "형용사(감탄/의문)",
+        "lemma": "quantus, -a, -um",
+        "parse": "단수 주격 여성 (potentia 수식, 간접의문문을 이끎)",
+        "gloss_kr": "얼마나 큰지",
+        "gloss_en": "how great",
+        "syntax": "sit의 술어, 간접의문문을 이끎(nulli...cognitius의 내용절)",
+        "background": "'얼마나 큰지'로 시작하는 감탄적 의문문은 약초의 힘에 대한 글라우코스의 경외감을 표현하며, 동시에 자신이 그 힘을 몸소 겪은 산증인임을 부각시키는 수사적 서두이다.",
+        "etymology": "PIE 의문·관계 어근에서 파생된 정도 형용사로, tantus와 상관 짝을 이룬다(tantum 항목 참조)."
+      },
+      {
+        "g": "sit",
+        "pos": "동사",
+        "lemma": "sum, esse, fui",
+        "principalParts": "sum – esse – fui",
+        "parse": "현재 접속법 3인칭 단수(간접의문문)",
+        "gloss_kr": "있는지",
+        "gloss_en": "is (subjunctive, indirect question)",
+        "syntax": "주어 potentia, 간접의문문의 동사",
+        "background": "간접의문문 안에서는 접속법을 쓰는 라틴어의 규칙에 따라 직설법 est 대신 sit가 사용되었다.",
+        "etymology": "PIE 계사 어근 *h₁es-에서 유래하며, 완료형 fui는 별개의 어근 *bʰuH-('자라다, 되다')에서 보충된 형태이다(sum, esse, fui, futurus 항목 참조)."
+      },
+      {
+        "g": "herbarum",
+        "pos": "명사",
+        "lemma": "herba, herbae, f.",
+        "parse": "복수 속격 여성",
+        "gloss_kr": "약초들의",
+        "gloss_en": "of herbs",
+        "syntax": "potentia를 수식하는 소유의 속격",
+        "background": "키르케는 약초(herbae)를 이용한 마법으로 유명한 여신이며, 이 단어는 곧이어 전개될 그녀의 마법적 정체성을 다시 한번 환기시킨다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘이다(herba, -ae, f. 항목 참조)."
+      },
+      {
+        "g": "Titani",
+        "pos": "명사(고유, 부칭)",
+        "lemma": "Titanis, Titanidis, f. (그리스식 호격 Titani)",
+        "parse": "단수 호격 여성",
+        "gloss_kr": "티탄의 따님이시여",
+        "gloss_en": "daughter of the Titan",
+        "syntax": "글라우코스가 키르케를 부르는 두 번째 호격",
+        "background": "키르케는 태양신 솔(그리스어로 헬리오스, 티탄 신족의 후예)의 딸이므로 '티타니스(티탄의 딸)'라 불리며, 이는 10행의 Sole satae와 다시 조응하는 호칭이다.",
+        "etymology": "그리스어 Τιτάν(티탄)의 여성형으로, 그리스어 내부에 확실한 어근이 없어 선그리스어 기층 신화 어휘일 가능성이 제기된다."
+      },
+      {
+        "g": "potentia",
+        "pos": "명사",
+        "lemma": "potentia, potentiae, f.",
+        "parse": "단수 주격 여성",
+        "gloss_kr": "힘, 위력",
+        "gloss_en": "power",
+        "syntax": "sit의 주어",
+        "background": "약초의 '힘'을 뜻하는 이 단어는 곧 글라우코스 자신의 변신 경험(15행)을 통해 입증되는 초자연적 능력을 가리킨다.",
+        "etymology": "possum의 현재분사 potens에서 파생된 명사로, '힘, 권능'을 뜻한다(possum 항목 참조)."
+      },
+      {
+        "g": "nulli",
+        "pos": "대명사/형용사",
+        "lemma": "nullus, -a, -um",
+        "parse": "단수 여격 (남성/중성 공용)",
+        "gloss_kr": "그 누구에게도 ~아니다",
+        "gloss_en": "to no one",
+        "syntax": "15행 cognitius에 걸리는 비교의 여격, quam mihi와 상관",
+        "background": "'아무에게도 (나보다 더) 알려지지 않았다'는 이 부정어는 이어지는 quam mihi(나보다)와 함께 강한 비교 구문을 이루며, 글라우코스가 이 주제의 최고 권위자임을 겸손한 듯 자부하는 표현이다.",
+        "etymology": "ne('아니') + ullus('어떤 하나')의 축약형으로, ullus는 unus('하나')의 지소형에서 발달했다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.15",
+    "trans": "저보다 더 잘 알지 못하니, 저는 바로 그 약초들에 의해 변신되었기 때문입니다.",
+    "words": [
+      {
+        "g": "quam",
+        "pos": "접속사(비교)",
+        "lemma": "quam",
+        "parse": "비교의 접속사",
+        "gloss_kr": "~보다",
+        "gloss_en": "than",
+        "syntax": "14행 nulli와 상관하여 비교구문을 이룸",
+        "background": "nulli...quam mihi는 '나에게보다 더 그 누구에게도 아니다', 즉 '나만큼 잘 아는 이가 없다'는 뜻의 전형적인 라틴어 비교 구문이다.",
+        "etymology": "qui의 여성 대격형이 비교 부사·접속사로 문법화된 것으로, '어떻게, ~보다'를 뜻한다(qui 항목 참조)."
+      },
+      {
+        "g": "mihi",
+        "pos": "대명사",
+        "lemma": "ego",
+        "parse": "단수 여격",
+        "gloss_kr": "나에게",
+        "gloss_en": "to me",
+        "syntax": "quam과 함께 비교의 대상, cognitius가 지배하는 여격",
+        "background": "글라우코스 자신을 비교의 기준점으로 내세우며, 자신이 약초의 힘에 대해 그 누구보다 절실하고 생생한 지식을 지녔음을 강조한다.",
+        "etymology": "PIE 1인칭 단수 대명사 *eǵ(oH)에서 유래하며, 그리스어 ἐγώ, 산스크리트어 ahám, 영어 I와 동계어이다."
+      },
+      {
+        "g": "cognitius",
+        "pos": "형용사(비교급)",
+        "lemma": "cognitus, -a, -um (비교급 cognitius, 분사의 형용사화)",
+        "parse": "비교급 중성 (술어적·부사적 용법, 14행 sit에 걸림)",
+        "gloss_kr": "더 잘 알려진, 더 절실히 체득된",
+        "gloss_en": "more (fully) known",
+        "syntax": "nulli...quam mihi와 결합하여 14행 potentia에 대한 서술을 완성",
+        "background": "본래 cognosco의 완료분사 cognitus가 이례적으로 비교급 형태(cognitius)로 사용되어, '더 잘 알려짐'이라는 정도를 표현하는 라틴 시어 특유의 활용이다.",
+        "etymology": "cognosco의 목적분사 형용사이다(cognitus, -a, -um 항목 참조)."
+      },
+      {
+        "g": "qui",
+        "pos": "관계대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "단수 주격 남성",
+        "gloss_kr": "나는(관계절 주어)",
+        "gloss_en": "who",
+        "syntax": "mihi를 선행사로 하는 관계절의 주어, sum mutatus의 주어",
+        "background": "mihi(나에게)를 선행사로 받아 '바로 그 나는'이라는 뜻의 관계절을 이끌며, 글라우코스 자신이 약초에 의해 변신당한 산증인임을 설명한다.",
+        "etymology": "PIE 의문·관계 어간 *kʷo-/*kʷi-('누구, 무엇')에서 유래하며, 그리스어 관계대명사 및 영어 who, what, 산스크리트어 kaḥ와 동계어이다. 인도유럽어족 전반에 걸쳐 의문사와 관계사가 동일 어근을 공유하는 대표적 사례이다."
+      },
+      {
+        "g": "sum",
+        "pos": "동사",
+        "lemma": "sum, esse, fui",
+        "principalParts": "sum – esse – fui",
+        "parse": "현재 직설법 1인칭 단수(완료수동 조동사)",
+        "gloss_kr": "~되었다(수동태 조동사)",
+        "gloss_en": "(am) been",
+        "syntax": "mutatus와 결합하여 완료수동 직설법을 이룸",
+        "background": "라틴어의 완료수동태는 sum동사의 현재형과 완료수동분사가 결합하여 만들어지며, 여기서는 글라우코스 자신이 겪은 변신이라는 완료된 사건을 나타낸다.",
+        "etymology": "PIE 계사 어근 *h₁es-에서 유래하며, 완료형 fui는 별개의 어근 *bʰuH-('자라다, 되다')에서 보충된 형태이다(sum, esse, fui, futurus 항목 참조)."
+      },
+      {
+        "g": "mutatus",
+        "pos": "분사",
+        "lemma": "muto, mutare, mutavi, mutatum",
+        "principalParts": "muto – mutare – mutavi – mutatum",
+        "parse": "완료수동분사 단수 주격 남성",
+        "gloss_kr": "변신되었다",
+        "gloss_en": "was transformed",
+        "syntax": "sum과 결합, 주어 qui(=글라우코스)",
+        "background": "13권 말미에서 서술된 글라우코스의 신적 변신(어부에서 바다의 신으로)이 여기서 다시 한번 명시적으로 언급되며, 그가 약초의 힘을 몸소 겪은 유일한 존재임을 확증한다.",
+        "etymology": "PIE *mei-('바꾸다')에서 유래한다(muto 항목 참조)."
+      },
+      {
+        "g": "ab",
+        "pos": "전치사",
+        "lemma": "ab",
+        "parse": "전치사 (+ 탈격, 행위자/원인)",
+        "gloss_kr": "~에 의해",
+        "gloss_en": "by",
+        "syntax": "illis를 지배하는 행위자의 탈격 전치사",
+        "background": "수동태 문장에서 원인·행위자를 나타내는 전치사 ab는 여기서 글라우코스를 변신시킨 주체가 다름 아닌 '그 약초들'이었음을 명시한다.",
+        "etymology": "PIE *h₂epo('~로부터 떨어져')에서 유래하며, 그리스어 ἀπό, 산스크리트어 apa, 영어 off, of와 동계어이다."
+      },
+      {
+        "g": "illis",
+        "pos": "대명사",
+        "lemma": "ille, illa, illud",
+        "parse": "복수 탈격 여성 (herbis를 가리킴)",
+        "gloss_kr": "그것들에 의해(=그 약초들)",
+        "gloss_en": "by those (herbs)",
+        "syntax": "ab의 목적어(탈격)",
+        "background": "14행의 herbarum(약초들)을 가리키는 지시대명사로, 글라우코스의 변신 신화 전체를 이 한 단어로 압축해서 상기시킨다.",
+        "etymology": "고전 이전 형태 *olle/*ollus에서 발달했으며, PIE 지시 어근 *al-('저것, 다른 것')과 연관짓는 견해가 있다. 로망스어파 정관사(프랑스어 le, 이탈리아어 il)의 직접적 기원이 되는 단어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.16",
+    "trans": "그리고 저의 광기의 원인이 그대에게 알려지지 않은 채로 있지 않게 하소서.",
+    "words": [
+      {
+        "g": "neve",
+        "pos": "접속사",
+        "lemma": "neve (ne + ve)",
+        "parse": "부정 접속사(기원/명령의 접속법과 결합)",
+        "gloss_kr": "그리고 ~하지 않게 하소서",
+        "gloss_en": "and let not, nor",
+        "syntax": "12행 miserere의 기원 어조를 이어받아 sit(접속법)를 이끎",
+        "background": "neve는 앞선 명령·기원문에 부정의 절을 추가로 이어붙일 때 쓰이는 접속사로, 글라우코스의 탄원이 계속됨을 나타낸다.",
+        "etymology": "ne('아니') + ve('또는')의 결합으로, '~하지도 말고'를 뜻하는 부정 이접 접속사이다."
+      },
+      {
+        "g": "mei",
+        "pos": "대명사",
+        "lemma": "ego",
+        "parse": "단수 속격",
+        "gloss_kr": "나의",
+        "gloss_en": "my",
+        "syntax": "furoris를 수식하는 소유의 속격",
+        "background": "1인칭 대명사의 속격형으로, 자신의 격정을 '광기(furor)'라 자조적으로 표현하는 글라우코스의 심경을 드러낸다.",
+        "etymology": "PIE 1인칭 단수 대명사 *eǵ(oH)에서 유래하며, 그리스어 ἐγώ, 산스크리트어 ahám, 영어 I와 동계어이다."
+      },
+      {
+        "g": "non",
+        "pos": "부사",
+        "lemma": "non",
+        "parse": "부정 부사",
+        "gloss_kr": "~아닌",
+        "gloss_en": "not",
+        "syntax": "nota를 부정, sit와 결합해 완곡한 이중부정(litotes)을 이룸",
+        "background": "non nota sit라는 이중부정 표현은 '알려지지 않은 것이 아니게 하라', 즉 '반드시 알게 하라'는 완곡하고 정중한 강조법(litotes)이다.",
+        "etymology": "고졸 라틴어 부정사 ne oenum('하나도 아니다', ne + oenum '하나')의 축약형으로 추정되며, 부정소사 ne(PIE *ne, 영어 no와 동계)에 수사 unus('하나')가 결합해 강조된 부정 표현이 관용화된 것이다."
+      },
+      {
+        "g": "nota",
+        "pos": "형용사",
+        "lemma": "notus, -a, -um",
+        "parse": "단수 주격 여성 (causa 수식, sit의 술어)",
+        "gloss_kr": "알려진",
+        "gloss_en": "known",
+        "syntax": "sit의 술어형용사, non과 결합",
+        "background": "'알려진'을 뜻하는 이 형용사는 notus(< nosco)에서 파생되었으며, 글라우코스가 자신의 사랑 이야기를 낱낱이 고백하려는 의지를 나타낸다.",
+        "etymology": "nosco('알다')의 목적분사 형용사로, cognosco와 같은 어근 *ǵneh₃-를 공유한다(cognitus 항목 참조)."
+      },
+      {
+        "g": "tibi",
+        "pos": "대명사",
+        "lemma": "tu",
+        "parse": "단수 여격",
+        "gloss_kr": "그대에게",
+        "gloss_en": "to you",
+        "syntax": "nota를 수식하는 여격(\"~에게 알려진\")",
+        "background": "키르케를 향해 직접 호소하는 여격으로, 자신의 고통의 원인을 그녀에게 숨김없이 털어놓겠다는 의지를 담고 있다.",
+        "etymology": "PIE 2인칭 단수 대명사 *tuH/*tū에서 유래하며, 그리스어 σύ, 산스크리트어 tvam, 영어 thou와 동계어이다. 인도유럽조어의 인칭대명사 체계 중 가장 안정적으로 보존된 형태 중 하나이다."
+      },
+      {
+        "g": "sit",
+        "pos": "동사",
+        "lemma": "sum, esse, fui",
+        "principalParts": "sum – esse – fui",
+        "parse": "현재 접속법 3인칭 단수(기원/명령)",
+        "gloss_kr": "있게 하소서",
+        "gloss_en": "let it be",
+        "syntax": "주어 causa, neve가 이끄는 기원의 접속법",
+        "background": "접속법 현재형이 명령·기원의 뜻(jussive subjunctive)으로 쓰여, 12행 miserere의 간청 어조가 문법적으로도 계속 이어지고 있음을 보여준다.",
+        "etymology": "PIE 계사 어근 *h₁es-에서 유래하며, 완료형 fui는 별개의 어근 *bʰuH-('자라다, 되다')에서 보충된 형태이다(sum, esse, fui, futurus 항목 참조)."
+      },
+      {
+        "g": "causa",
+        "pos": "명사",
+        "lemma": "causa, causae, f.",
+        "parse": "단수 주격 여성",
+        "gloss_kr": "원인이",
+        "gloss_en": "the cause",
+        "syntax": "sit의 주어",
+        "background": "이 '원인'이라는 단어 뒤로 17-18행에서 곧바로 스킬라와의 만남이라는 구체적 사연이 설명되기 시작한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, 프랑스어 chose, 영어 cause의 어원이 되었다."
+      },
+      {
+        "g": "furoris",
+        "pos": "명사",
+        "lemma": "furor, furoris, m.",
+        "parse": "단수 속격 남성",
+        "gloss_kr": "광기의",
+        "gloss_en": "of (my) madness",
+        "syntax": "causa를 수식하는 속격",
+        "background": "furor(광기, 격정)는 라틴 연애시에서 통제할 수 없는 사랑의 열정을 가리키는 상투적 어휘로, 글라우코스는 자신의 사랑을 이성을 잃은 상태로 규정한다.",
+        "etymology": "furo('미치다')에서 파생된 명사로, 어원이 불확실한 라틴어 고유 어근이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.17",
+    "trans": "이탈리아 해안에서, 메세니아의 성벽을 마주한 곳에서,",
+    "words": [
+      {
+        "g": "litore",
+        "pos": "명사",
+        "lemma": "litus, litoris, n.",
+        "parse": "단수 탈격 중성",
+        "gloss_kr": "해안에서",
+        "gloss_en": "on the shore",
+        "syntax": "in이 지배하는 탈격(장소)",
+        "background": "6행에서 이미 등장했던 litus(해안)라는 단어가 다시 쓰이며, 글라우코스의 회상이 이제 구체적인 지리적 배경 — 그가 스킬라를 처음 본 장소 — 로 이어진다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, linere('바르다')와 연관짓는 민간어원이 있으나 형태·의미상 근거가 약해 학계에서는 대체로 받아들이지 않는다."
+      },
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "전치사 (+ 탈격, 장소)",
+        "gloss_kr": "~에서",
+        "gloss_en": "on, at",
+        "syntax": "litore를 지배",
+        "background": "장소를 나타내는 전치사 in + 탈격의 표준적 용법이다.",
+        "etymology": "PIE *h₁en('~안에')에서 유래하며, 그리스어 ἐν, 영어 in과 동계어이다. 라틴어에서는 격에 따라 '~안에(탈격, 정적 위치)' 또는 '~안으로(대격, 방향)'의 이중 용법을 가진다."
+      },
+      {
+        "g": "Italico",
+        "pos": "형용사",
+        "lemma": "Italicus, -a, -um",
+        "parse": "단수 탈격 중성 (litore 수식)",
+        "gloss_kr": "이탈리아의",
+        "gloss_en": "Italian",
+        "syntax": "litore를 수식",
+        "background": "이탈리아 본토 쪽 해안, 즉 5-7행에서 언급된 레기움 인근을 가리키며, 스킬라와의 만남이 벌어진 장소를 구체적으로 특정한다.",
+        "etymology": "Italia에서 파생된 형용사로, Italia 자체는 오스크어로 '송아지 땅'을 뜻하는 vitelium과 연관짓는 고대 어원설이 있다."
+      },
+      {
+        "g": "Messenia",
+        "pos": "형용사",
+        "lemma": "Messenius, -a, -um",
+        "parse": "복수 대격 중성 (moenia 수식)",
+        "gloss_kr": "메세니아(잔클레)의",
+        "gloss_en": "Messenian",
+        "syntax": "moenia를 수식",
+        "background": "'메세니아'는 시칠리아의 잔클레(오늘날 메시나)를 가리키는 또 다른 이름으로, 5행에서 언급된 Zancle과 동일한 도시를 가리키며 지리적 서술의 일관성을 보여준다.",
+        "etymology": "그리스 지명 메세네(Μεσσήνη)에서 파생된 형용사이다."
+      },
+      {
+        "g": "moenia",
+        "pos": "명사",
+        "lemma": "moenia, moenium, n. (복수형으로만 사용)",
+        "parse": "복수 대격 중성",
+        "gloss_kr": "성벽들을",
+        "gloss_en": "the walls",
+        "syntax": "contra의 목적어(후치)",
+        "background": "5행에서와 마찬가지로 도시 전체를 환유적으로 가리키는 '성벽'이 다시 등장하며, 해협을 사이에 둔 두 해안(이탈리아와 시칠리아)이 이 장면의 배경임을 재확인시킨다.",
+        "etymology": "munio와 같은 어근 *mei-('짓다, 쌓다')에서 파생되었다(moenia, -ium, n. 항목 참조)."
+      },
+      {
+        "g": "contra",
+        "pos": "전치사",
+        "lemma": "contra",
+        "parse": "전치사 (+ 대격, 후치)",
+        "gloss_kr": "~을 마주하여",
+        "gloss_en": "opposite, facing",
+        "syntax": "moenia를 지배하는 후치 전치사(anastrophe)",
+        "background": "전치사가 그 목적어 뒤에 놓이는 도치(anastrophe)는 라틴 시에서 운율과 강조를 위해 흔히 쓰이는 어순 기법이다.",
+        "etymology": "com-('함께')에 방향 접미사 -tra가 결합한 형태에서 발달한 것으로 추정되며, '맞은편에, ~에 대항하여'를 뜻한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.18",
+    "trans": "스킬라가 제 눈에 띄었나이다. 부끄럽습니다, 저의 약속들과 애원들을,",
+    "words": [
+      {
+        "g": "Scylla",
+        "pos": "명사(고유)",
+        "lemma": "Scylla, Scyllae, f.",
+        "parse": "단수 주격 여성",
+        "gloss_kr": "스킬라가",
+        "gloss_en": "Scylla",
+        "syntax": "visa est의 주어",
+        "background": "글라우코스가 사랑에 빠진 대상, 님프 스킬라가 이 시행에서 처음으로 이름과 함께 등장한다. 그녀는 훗날 키르케의 질투로 인해 괴물로 변신하게 될 운명이다.",
+        "etymology": "그리스어 Σκύλλα에서 차용된 고유명사이다(Scylla, -ae, f. 항목 참조)."
+      },
+      {
+        "g": "mihi",
+        "pos": "대명사",
+        "lemma": "ego",
+        "parse": "단수 여격",
+        "gloss_kr": "나에게",
+        "gloss_en": "to me",
+        "syntax": "visa est에 걸리는 여격(경험의 대상)",
+        "background": "videor 동사와 결합하는 여격으로, '나에게 보였다', 즉 글라우코스의 시점에서 스킬라를 처음 목격한 순간을 나타낸다.",
+        "etymology": "PIE 1인칭 단수 대명사 *eǵ(oH)에서 유래하며, 그리스어 ἐγώ, 산스크리트어 ahám, 영어 I와 동계어이다."
+      },
+      {
+        "g": "visa",
+        "pos": "분사",
+        "lemma": "video, videre, vidi, visum (수동형 videor)",
+        "principalParts": "video – videre – vidi – visum",
+        "parse": "완료수동분사 단수 주격 여성",
+        "gloss_kr": "보였다(눈에 띄었다)",
+        "gloss_en": "was seen, appeared",
+        "syntax": "est와 결합하여 완료(수동/탈형적) 직설법을 이룸, 주어 Scylla",
+        "background": "video의 수동형 videor는 '보이다, ~처럼 여겨지다'라는 뜻이며, 여기서는 단순히 '눈에 띄었다'는 의미로 쓰여 극적인 첫 만남의 순간을 서술한다.",
+        "etymology": "PIE *weyd-('보다, 알다')에서 유래하며, 그리스어 εἶδον·οἶδα, 산스크리트어 véda, 영어 wit, wise와 동계어이다. 수동형 videor('~로 보이다')도 같은 어근을 공유한다."
+      },
+      {
+        "g": "est",
+        "pos": "동사",
+        "lemma": "sum, esse, fui",
+        "principalParts": "sum – esse – fui",
+        "parse": "현재 직설법 3인칭 단수(완료수동 조동사)",
+        "gloss_kr": "~되었다(수동태 조동사)",
+        "gloss_en": "was",
+        "syntax": "visa와 결합",
+        "background": "완료수동태를 이루는 조동사로, 이 문장의 시제를 완결시킨다.",
+        "etymology": "PIE 계사 어근 *h₁es-에서 유래하며, 완료형 fui는 별개의 어근 *bʰuH-('자라다, 되다')에서 보충된 형태이다(sum, esse, fui, futurus 항목 참조)."
+      },
+      {
+        "g": "pudor",
+        "pos": "명사",
+        "lemma": "pudor, pudoris, m.",
+        "parse": "단수 주격 남성",
+        "gloss_kr": "부끄러움",
+        "gloss_en": "shame",
+        "syntax": "다음 est의 주어(비인칭적 용법)",
+        "background": "'부끄럽다'는 뜻의 이 표현(pudor est + 부정사)은 글라우코스가 자신의 실연담 — 거절당한 사랑 고백 — 을 다시 이야기하기를 망설이는 심리를 드러낸다.",
+        "etymology": "pudeo('부끄러워하다')에서 파생된 명사로, 어원이 불확실한 라틴어 고유 어근이다."
+      },
+      {
+        "g": "est",
+        "pos": "동사",
+        "lemma": "sum, esse, fui",
+        "principalParts": "sum – esse – fui",
+        "parse": "현재 직설법 3인칭 단수",
+        "gloss_kr": "~이다",
+        "gloss_en": "is",
+        "syntax": "주어 pudor, 보어로 19행 referre(부정사)를 취함",
+        "background": "'pudor est + 부정사'는 '~하기가 부끄럽다'는 뜻의 관용적 비인칭 구문으로, 라틴어에서 감정을 나타내는 명사와 est가 결합해 이런 구조를 자주 만든다.",
+        "etymology": "PIE 계사 어근 *h₁es-에서 유래하며, 완료형 fui는 별개의 어근 *bʰuH-('자라다, 되다')에서 보충된 형태이다(sum, esse, fui, futurus 항목 참조)."
+      },
+      {
+        "g": "promissa",
+        "pos": "명사(분사의 명사화)",
+        "lemma": "promitto, promittere, promisi, promissum",
+        "principalParts": "promitto – promittere – promisi – promissum",
+        "parse": "완료수동분사(명사화) 복수 대격 중성",
+        "gloss_kr": "약속들을",
+        "gloss_en": "promises",
+        "syntax": "19행 referre의 목적어",
+        "background": "'약속된 것들'이라는 뜻의 분사가 명사화되어, 글라우코스가 스킬라에게 건넸던 사랑의 약속들을 가리킨다.",
+        "etymology": "pro('앞으로') + mitto('보내다')의 합성어로, mitto는 어원이 불확실한 라틴어 고유 동사이다."
+      },
+      {
+        "g": "precesque",
+        "pos": "명사 + 접속사(접미)",
+        "lemma": "prex, precis, f. (주로 복수 preces 사용) / que",
+        "parse": "복수 대격 여성 + 접미 접속사",
+        "gloss_kr": "그리고 애원들을",
+        "gloss_en": "and entreaties",
+        "syntax": "promissa와 -que로 연결, referre의 목적어",
+        "background": "prex(애원, 간청)의 복수형은 글라우코스가 스킬라에게 거듭 매달렸던 구애의 몸짓을 암시한다.",
+        "etymology": "PIE *preḱ-('청하다')에서 유래한다(prex, precis, f. 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.19",
+    "trans": "그리고 아첨의 말들과, 경멸당한 그 말들을 다시 전하기가.",
+    "words": [
+      {
+        "g": "blanditiasque",
+        "pos": "명사 + 접속사(접미)",
+        "lemma": "blanditia, blanditiae, f. / que",
+        "parse": "복수 대격 여성 + 접미 접속사",
+        "gloss_kr": "그리고 아첨의 말들을",
+        "gloss_en": "and flatteries",
+        "syntax": "18행 목록에 -que로 연결, referre의 목적어",
+        "background": "blanditiae(달콤한 말, 아첨)는 로마 연애시(elegy)에서 구애자가 사용하는 감언이설을 가리키는 전형적 어휘로, 글라우코스의 구애 방식이 인간적인 사랑의 수사와 다르지 않음을 보여준다.",
+        "etymology": "blandus에서 파생되었다(blanditia, blanditiae, f. 항목 참조)."
+      },
+      {
+        "g": "meas",
+        "pos": "형용사",
+        "lemma": "meus, -a, -um",
+        "parse": "복수 대격 여성 (blanditias 수식)",
+        "gloss_kr": "나의",
+        "gloss_en": "my",
+        "syntax": "blanditias를 수식",
+        "background": "자신의 구애 행위임을 명확히 하는 소유형용사이다.",
+        "etymology": "1인칭 대명사 ego의 소유형용사형으로, PIE *me-('나의')에서 유래한다(ego 항목 참조)."
+      },
+      {
+        "g": "contemptaque",
+        "pos": "분사 + 접속사(접미)",
+        "lemma": "contemno, contemnere, contempsi, contemptum / que",
+        "principalParts": "contemno – contemnere – contempsi – contemptum",
+        "parse": "완료수동분사 복수 대격 중성 (verba 수식) + 접미 접속사",
+        "gloss_kr": "그리고 경멸당한",
+        "gloss_en": "and scorned, despised",
+        "syntax": "verba를 수식, -que로 앞 목록과 연결",
+        "background": "'경멸당한 말들'이라는 표현은 스킬라가 글라우코스의 구애를 냉담하게 거절했음을 암시하며, 이는 곧이어 그가 마법의 힘을 빌려서라도 사랑을 이루려는 절박한 동기가 된다.",
+        "etymology": "con + temno의 합성어이다(contemno, contemnere, contempsi, contemptum 항목 참조)."
+      },
+      {
+        "g": "verba",
+        "pos": "명사",
+        "lemma": "verbum, verbi, n.",
+        "parse": "복수 대격 중성",
+        "gloss_kr": "말들을",
+        "gloss_en": "words",
+        "syntax": "referre의 목적어, contempta의 수식을 받음",
+        "background": "이 '말들'은 앞서 열거된 promissa, preces, blanditias 전체를 아우르는 포괄적 표현으로, 문장 전체의 목적어 목록을 마무리 짓는다.",
+        "etymology": "PIE *werdʰo-('말')에서 유래한다(verbum, -i, n. 항목 참조)."
+      },
+      {
+        "g": "referre",
+        "pos": "동사(부정사)",
+        "lemma": "refero, referre, rettuli, relatum",
+        "principalParts": "refero – referre – rettuli – relatum",
+        "parse": "현재 부정사 능동",
+        "gloss_kr": "다시 이야기하다, 전하다",
+        "gloss_en": "to relate, to recount",
+        "syntax": "18행 pudor est의 보어(주어적 부정사)",
+        "background": "'다시 전하다'라는 뜻의 이 부정사는 pudor est와 결합해 '그것들을 다시 이야기하기가 부끄럽다'는 문장을 완성하며, 글라우코스가 실연의 전말을 요약하는 대신 서둘러 넘어가려는 태도를 보여준다.",
+        "etymology": "re-('다시, 뒤로') + fero('나르다')의 합성어로, fero는 PIE *bʰer-('나르다')에서 유래하며 그리스어 φέρω, 영어 bear와 동계어이다(fero 항목 참조). 완료형 rettuli는 다른 어근 tollo/tuli 계열에서 보충된 형태이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.20",
+    "trans": "허나 그대는, 만약 노래(주문)에 어떤 힘이 있다면, 노래로…",
+    "words": [
+      {
+        "g": "at",
+        "pos": "접속사",
+        "lemma": "at",
+        "parse": "강한 대조의 접속사",
+        "gloss_kr": "그러나",
+        "gloss_en": "but",
+        "syntax": "앞선 자신의 실패담과 대조되는 새로운 요청(주문의 힘을 빌림)을 도입",
+        "background": "at은 앞선 좌절된 구애(17-19행)와 이제 그가 기대는 새로운 방법 — 키르케의 마법 — 사이의 강한 전환을 표시한다.",
+        "etymology": "고졸 라틴어의 대조 접속사로, 어원이 불확실하나 PIE 지시 어근과의 연관이 제기된다."
+      },
+      {
+        "g": "tu",
+        "pos": "대명사",
+        "lemma": "tu",
+        "parse": "단수 주격",
+        "gloss_kr": "그대는",
+        "gloss_en": "you",
+        "syntax": "이어지는(다음 행에 제시될) 명령형 동사의 주어",
+        "background": "글라우코스가 다시 한번 키르케를 직접 호명하며 마지막 간청 — 주문의 힘을 빌려달라는 요청 — 을 준비한다.",
+        "etymology": "PIE 2인칭 단수 대명사 *tuH/*tū에서 유래하며, 그리스어 σύ, 산스크리트어 tvam, 영어 thou와 동계어이다. 인도유럽조어의 인칭대명사 체계 중 가장 안정적으로 보존된 형태 중 하나이다."
+      },
+      {
+        "g": "sive",
+        "pos": "접속사",
+        "lemma": "sive (si + ve)",
+        "parse": "조건의 접속사",
+        "gloss_kr": "혹은 만약 ~라면",
+        "gloss_en": "or if",
+        "syntax": "aliquid...est(조건절)를 이끎",
+        "background": "sive는 '만약 ~이기라도 하다면'이라는 완곡하고 겸손한 조건을 다는 접속사로, 글라우코스가 키르케의 마법적 권능을 존중하면서도 겸허하게 요청하는 어조를 만든다.",
+        "etymology": "si + ve의 결합이다(sive 항목 참조)."
+      },
+      {
+        "g": "aliquid",
+        "pos": "대명사",
+        "lemma": "aliquis, aliquid",
+        "parse": "단수 주격 중성",
+        "gloss_kr": "얼마간의 것, 어떤 힘",
+        "gloss_en": "some (power)",
+        "syntax": "est의 주어",
+        "background": "'어떤 것, 얼마간'을 뜻하는 부정대명사로, 노래(주문)가 지닌 힘의 정도를 막연하게 표현하여 겸손한 어조를 더한다.",
+        "etymology": "alius('다른') + quis('누구')의 결합으로, '어떤 사람, 무엇인가'를 뜻하는 부정대명사이다."
+      },
+      {
+        "g": "regni",
+        "pos": "명사",
+        "lemma": "regnum, regni, n.",
+        "parse": "단수 속격 중성",
+        "gloss_kr": "힘의, 지배력의",
+        "gloss_en": "of power",
+        "syntax": "aliquid를 수식하는 부분속격",
+        "background": "본래 '왕권, 지배'를 뜻하는 regnum이 여기서는 '(주문이 지닌) 힘, 위력'이라는 은유적 의미로 확장되어 쓰였다.",
+        "etymology": "rex에서 파생되었다(regnum, -i, n. 항목 참조)."
+      },
+      {
+        "g": "est",
+        "pos": "동사",
+        "lemma": "sum, esse, fui",
+        "principalParts": "sum – esse – fui",
+        "parse": "현재 직설법 3인칭 단수",
+        "gloss_kr": "있다면",
+        "gloss_en": "there is",
+        "syntax": "주어 aliquid, sive가 이끄는 조건절의 동사",
+        "background": "조건절 안에서 사실 여부를 가정하는 표준적 직설법 현재형이다.",
+        "etymology": "PIE 계사 어근 *h₁es-에서 유래하며, 완료형 fui는 별개의 어근 *bʰuH-('자라다, 되다')에서 보충된 형태이다(sum, esse, fui, futurus 항목 참조)."
+      },
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "전치사 (+ 탈격, 영역)",
+        "gloss_kr": "~에",
+        "gloss_en": "in",
+        "syntax": "carmine을 지배",
+        "background": "추상적 영역(주문, 노래)에 내재하는 힘을 나타내는 처소적 용법의 in이다.",
+        "etymology": "PIE *h₁en('~안에')에서 유래하며, 그리스어 ἐν, 영어 in과 동계어이다. 라틴어에서는 격에 따라 '~안에(탈격, 정적 위치)' 또는 '~안으로(대격, 방향)'의 이중 용법을 가진다."
+      },
+      {
+        "g": "carmine",
+        "pos": "명사",
+        "lemma": "carmen, carminis, n.",
+        "parse": "단수 탈격 중성",
+        "gloss_kr": "노래(주문)에",
+        "gloss_en": "in a spell, incantation",
+        "syntax": "in의 목적어",
+        "background": "carmen은 '노래, 시'뿐 아니라 '주문, 마법의 문구'라는 뜻도 지니며, 키르케가 마녀로서 지닌 주술적 능력을 가리킨다.",
+        "etymology": "canere('노래하다')의 어근 *can-에 도구·결과를 나타내는 접미사 -men이 결합한 형태로, '노래됨, 노래' 즉 '노래, 시가, 주문'을 뜻한다. PIE 어근 *kan-('노래하다')은 영어 hen(원래 '노래하는 새')과도 먼 연관이 제기된다."
+      },
+      {
+        "g": "carmen",
+        "pos": "명사",
+        "lemma": "carmen, carminis, n.",
+        "parse": "단수 대격 중성 (다음 행에 이어질 동사의 목적어로 추정)",
+        "gloss_kr": "노래(주문)를",
+        "gloss_en": "a spell, incantation",
+        "syntax": "이어지는(다음 행에 제시될) 동사의 목적어로 행간걸침",
+        "background": "같은 단어 carmen이 탈격(carmine)에서 대격(carmen)으로 격을 바꾸어 반복되는 이 어구유희(polyptoton)는 '주문에 힘이 있다면, 바로 그 주문으로'라는 논리적 연결을 강조하며 다음 행으로 문장이 이어짐을 예고한다.",
+        "etymology": "canere('노래하다')의 어근 *can-에 도구·결과를 나타내는 접미사 -men이 결합한 형태로, '노래됨, 노래' 즉 '노래, 시가, 주문'을 뜻한다. PIE 어근 *kan-('노래하다')은 영어 hen(원래 '노래하는 새')과도 먼 연관이 제기된다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.21",
+    "trans": "“신성한 입으로 주문을 읊으시든, 아니면 효험이 더 강력한 약초가 있다면,”",
+    "words": [
+      {
+        "g": "ore",
+        "pos": "명사",
+        "lemma": "os, oris, n.",
+        "parse": "중성 단수 탈격",
+        "gloss_kr": "입으로",
+        "gloss_en": "with the mouth",
+        "syntax": "move의 수단/도구의 탈격",
+        "background": "주문이나 마법적 노랫가락을 읊조리는 유기적 도구로서의 입을 가리킨다.",
+        "etymology": "PIE *h₃eh₁-s-('입')에서 유래하며, 산스크리트어 ās, 히타이트어 aiš와 동계어로 제시된다. 뼈를 뜻하는 동음이의어 os, ossis(그리스어 ὀστέον과 동계)와는 별개의 어원이니 혼동하지 않아야 한다."
+      },
+      {
+        "g": "move",
+        "pos": "동사",
+        "lemma": "moveo",
+        "principalParts": "moveo – movēre – movi – motum",
+        "parse": "명령법 현재 능동태 2인칭 단수",
+        "gloss_kr": "읊으소서, 잣으소서",
+        "gloss_en": "move, utter",
+        "syntax": "주절의 술어 동사",
+        "background": "신성한 입을 움직여 마법의 노래나 주문을 소리 내어 읊으라는 명령형이다.",
+        "etymology": "PIE *meuh₁-('밀다, 옮기다')에서 유래하며, 그리스어 ἀμεύομαι와 동계어로 제시되며 영어 move, motion이 이 라틴어에서 파생되었다."
+      },
+      {
+        "g": "sacro",
+        "pos": "형용사",
+        "lemma": "sacer, sacra, sacrum",
+        "parse": "중성 단수 탈격",
+        "gloss_kr": "신성한",
+        "gloss_en": "sacred, holy",
+        "syntax": "ore를 수식하는 관형어",
+        "background": "마법의 여신 키르케가 사용하는 입과 말에 포함된 신성하고 신비로운 주술성을 부여한다.",
+        "etymology": "PIE *sak-('신성하게 하다')에서 유래하며, 영어 sacred, sanctify가 이 어근에서 파생되었다."
+      },
+      {
+        "g": "sive",
+        "pos": "접속사",
+        "lemma": "sive",
+        "parse": "선택 접속사",
+        "gloss_kr": "아니면, 혹은",
+        "gloss_en": "or if",
+        "syntax": "수단/방법의 대안 조건절을 이끄는 접속사",
+        "background": "음성적 주문(sacro ore) 외에 물성적 매개체인 약초(herba)를 사용하는 대안을 연결한다.",
+        "etymology": "si('만약') + ve('또는')의 결합으로, '혹은 만약'을 뜻하는 이접 접속사이다."
+      },
+      {
+        "g": "expugnacior",
+        "pos": "형용사",
+        "lemma": "expugnax, expugnacis",
+        "parse": "여성 단수 주격 (비교급)",
+        "gloss_kr": "더 강력한, 마음을 굴복시키는",
+        "gloss_en": "more powerful, more potent",
+        "syntax": "herba를 수식하는 관형어",
+        "background": "상대의 마음과 의지를 정복하고 사로잡는 데 효험이 더 뛰어나다는 의미의 비교급 형용사이다.",
+        "etymology": "ex('밖으로') + pugno('싸우다')의 합성 형용사로, '정복적인, 완강한'을 뜻한다."
+      },
+      {
+        "g": "herba",
+        "pos": "명사",
+        "lemma": "herba, -ae, f.",
+        "parse": "여성 단수 주격",
+        "gloss_kr": "약초가",
+        "gloss_en": "herb, magic plant",
+        "syntax": "sive 조건절의 주어",
+        "background": "키르케의 핵심 마법 수단인 신비로운 약초를 가리킨다.",
+        "etymology": "어원이 불확실하며, PIE 어근과 명확히 연결되지 않는 라틴어 고유 어휘로 남아 있다."
+      },
+      {
+        "g": "est",
+        "pos": "동사",
+        "lemma": "sum",
+        "principalParts": "sum – esse – fui – futurum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "있다면",
+        "gloss_en": "is, exists",
+        "syntax": "sive 조건절의 술어 동사",
+        "background": "대안의 존재 여부를 나타내는 존재 동사이다.",
+        "etymology": "PIE 계사 어근 *h₁es-('있다')에서 유래하며, 그리스어 εἰμί, 산스크리트어 asmi, 영어 is와 동계어이다(sum, esse, fui, futurus 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.22",
+    "trans": "“그 검증된 약초의 검증된 힘을 써 주소서.”",
+    "words": [
+      {
+        "g": "utere",
+        "pos": "동사",
+        "lemma": "utor",
+        "principalParts": "utor – uti – usus sum",
+        "parse": "명령법 현재 탈포동사 2인칭 단수",
+        "gloss_kr": "사용하소서",
+        "gloss_en": "use, employ",
+        "syntax": "주절의 술어 동사 (viribus를 목적어로 취함)",
+        "background": "고전 라틴어 탈포동사 utor는 대격 대신 탈격 목적어(viribus)를 요구한다.",
+        "etymology": "PIE *(H)owet-('익숙하다, 쓰다')에서 유래한 것으로 추정되는 탈형동사이다(utor, uti, usus sum 항목 참조)."
+      },
+      {
+        "g": "temptatis",
+        "pos": "분사",
+        "lemma": "tempto",
+        "principalParts": "tempto – temptare – temptavi – temptatum",
+        "parse": "분사 완료 수동태 여성 복수 탈격",
+        "gloss_kr": "시험받은, 효험이 입증된",
+        "gloss_en": "tried, tested",
+        "syntax": "viribus를 수식하는 관형어",
+        "background": "이미 여러 차례 임상을 거쳐 성능과 힘이 입증된 마법적 권능을 표현한다.",
+        "etymology": "temno('경멸하다, 시험하다')와 연관되는 어근에서 발달한 것으로 추정되며, '더듬어보다, 시험하다'를 뜻한다."
+      },
+      {
+        "g": "operosae",
+        "pos": "형용사",
+        "lemma": "operosus, -a, -um",
+        "parse": "여성 단수 속격",
+        "gloss_kr": "강력한, 공들인",
+        "gloss_en": "potent, efficacious",
+        "syntax": "herbae를 수식하는 관형어",
+        "background": "약효를 내기 위해 많은 정성과 마법적 처리가 가해진 상태를 서술한다.",
+        "etymology": "opus('일')에서 파생된 형용사로, '공들인, 수고로운'을 뜻한다(opus, operis, n. 항목 참조)."
+      },
+      {
+        "g": "viribus",
+        "pos": "명사",
+        "lemma": "vis, vis, f.",
+        "parse": "여성 복수 탈격",
+        "gloss_kr": "힘을, 효능을",
+        "gloss_en": "powers, forces",
+        "syntax": "동사 utere의 탈격 목적어",
+        "background": "단수 vis(힘)의 복수형 형태로, 약초에 내재된 신비롭고 복합적인 효능을 뜻한다.",
+        "etymology": "PIE *weyh₁-('추구하다, 몰아붙이다')에서 유래하며, 산스크리트어 véti('쫓다')와 동계어로 제시된다."
+      },
+      {
+        "g": "herbae",
+        "pos": "명사",
+        "lemma": "herba, -ae, f.",
+        "parse": "여성 단수 속격",
+        "gloss_kr": "약초의",
+        "gloss_en": "of the herb",
+        "syntax": "viribus를 수식하는 소유속격",
+        "background": "마법 약초에 속한 효능임을 보여준다.",
+        "etymology": "어원이 불확실하며, PIE 어근과 명확히 연결되지 않는 라틴어 고유 어휘로 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.23",
+    "trans": "“내 상처를 치유하거나 고쳐달라는 게 아닙니다.”",
+    "words": [
+      {
+        "g": "nec",
+        "pos": "접속사",
+        "lemma": "neque",
+        "parse": "부정 접속사",
+        "gloss_kr": "~도 아니고",
+        "gloss_en": "and not",
+        "syntax": "부정 목적절 연결 접속사",
+        "background": "자신의 요구가 일반적인 고통 해소나 치유가 아님을 선언적으로 부정한다.",
+        "etymology": "ne + que의 결합으로, nec의 완전형이다(nec 항목 참조)."
+      },
+      {
+        "g": "medeare",
+        "pos": "동사",
+        "lemma": "medeor",
+        "principalParts": "medeor – medēri",
+        "parse": "접속법 현재 탈포동사 2인칭 단수 (-re 어미)",
+        "gloss_kr": "치유해 달라는 게 [아닙니다]",
+        "gloss_en": "that you heal",
+        "syntax": "mando의 목적절 접속법 동사 (mihi를 목적어로 취함)",
+        "background": "접속법 2인칭 단수 어미 -ris의 이형 형태인 -re가 사용되었으며, 탈포동사 medeor는 여격 목적어를 취한다.",
+        "etymology": "PIE *med-('측정하다, 처방하다')에서 유래하며, 영어 medicine, remedy의 어원이 되는 어근과 동계어이다."
+      },
+      {
+        "g": "mihi",
+        "pos": "대명사",
+        "lemma": "ego, mei",
+        "parse": "1인칭 단수 여격",
+        "gloss_kr": "나를, 나에게",
+        "gloss_en": "me",
+        "syntax": "동사 medeare의 여격 목적어",
+        "background": "글라우코스 자신을 가리키는 1인칭 여격 대명사이다.",
+        "etymology": "PIE 1인칭 단수 대명사 *eǵ(oH)에서 유래하며, 그리스어 ἐγώ, 산스크리트어 ahám, 영어 I와 동계어이다."
+      },
+      {
+        "g": "sanesque",
+        "pos": "동사",
+        "lemma": "sano",
+        "principalParts": "sano – sanare – sanavi – sanatum",
+        "parse": "접속법 현재 능동태 2인칭 단수 (+ 접속사 -que)",
+        "gloss_kr": "고쳐달라거나",
+        "gloss_en": "and cure",
+        "syntax": "medeare와 병렬을 이루는 목적절 접속법 동사",
+        "background": "접속사 -que가 어미에 첨가되어 앞 동사 medeare와 완벽한 대등 병렬을 형성한다.",
+        "etymology": "sanus('건강한')에서 파생된 동사로, sanus는 어원이 불확실한 라틴어 고유 형용사이다."
+      },
+      {
+        "g": "haec",
+        "pos": "대명사",
+        "lemma": "hic, haec, hoc",
+        "parse": "중성 복수 대격 (지시대명사)",
+        "gloss_kr": "이",
+        "gloss_en": "these",
+        "syntax": "vulnera를 수식하는 관형어",
+        "background": "자신이 스킬라 때문에 현재 괴로워하고 있는 실체적인 사랑의 상처를 가리킨다.",
+        "etymology": "PIE 지시 어간 *ko-('이것')에 첨사 -ce가 결합된 형태로, 근칭 지시대명사이다. 게르만어파의 he(그)와 어원적으로 연결되는 지시 어근 계열에 속한다."
+      },
+      {
+        "g": "vulnera",
+        "pos": "명사",
+        "lemma": "vulnus, vulneris, n.",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "상처들을",
+        "gloss_en": "wounds",
+        "syntax": "동사 sanes의 직접목적어",
+        "background": "짝사랑으로 겪는 심리적·정서적 열패감을 은유적으로 비유한 명사이다.",
+        "etymology": "PIE *welh₁-('상처 입히다')에서 유래한 것으로 추정된다."
+      },
+      {
+        "g": "mando",
+        "pos": "동사",
+        "lemma": "mando",
+        "principalParts": "mando – mandare – mandavi – mandatum",
+        "parse": "직설법 현재 능동태 1인칭 단수",
+        "gloss_kr": "내가 청하는 바는 [이것이 아닙니다]",
+        "gloss_en": "I ask, I command",
+        "syntax": "주절의 술어 동사",
+        "background": "자신의 청원 내용과 범위를 지정하는 지시어 역할을 한다.",
+        "etymology": "manus('손') + do('주다')의 합성어로 추정되며, '위탁하다, 명령하다'를 뜻한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.24",
+    "trans": "“끝낼 필요는 없습니다. 그녀도 이 열정의 일부를 나누어 갖게 해주소서.”",
+    "words": [
+      {
+        "g": "fine",
+        "pos": "명사",
+        "lemma": "finis, finis, m.",
+        "parse": "남성 단수 탈격",
+        "gloss_kr": "끝이, 종식이",
+        "gloss_en": "an end",
+        "syntax": "opus est 구문의 탈격 보어",
+        "background": "사랑의 고통이나 열정을 끝내는 행위를 지칭한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, figo('고정하다, 박다')와 연관짓는 설이 있으나 확정적이지 않다."
+      },
+      {
+        "g": "nihil",
+        "pos": "대명사",
+        "lemma": "nihil, n.",
+        "parse": "중성 단수 주격 (부사적 용법)",
+        "gloss_kr": "전혀 ~않다",
+        "gloss_en": "not at all, nothing",
+        "syntax": "opus est 구문의 부정 강조어",
+        "background": "필요성의 완전한 부재를 드러내는 수사적 강조표현이다.",
+        "etymology": "ne('아니') + hilum('작은 것, 실오라기')의 결합으로, '아무 것도 아닌 것'을 뜻한다."
+      },
+      {
+        "g": "opus",
+        "pos": "명사",
+        "lemma": "opus, operis, n.",
+        "parse": "중성 단수 주격",
+        "gloss_kr": "필요가",
+        "gloss_en": "need",
+        "syntax": "opus est (+ 탈격) 관용적 구문의 필수 주어",
+        "background": "라틴어의 대표적 관용 표현으로 '~이 필요하다'를 뜻한다.",
+        "etymology": "PIE *h₃ep-('일하다, 성취하다')에서 유래하며, 영어 opulent, opus가 이 라틴어에서 파생되었다."
+      },
+      {
+        "g": "est",
+        "pos": "동사",
+        "lemma": "sum",
+        "principalParts": "sum – esse – fui – futurum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "있다",
+        "gloss_en": "is",
+        "syntax": "opus와 결합하여 술어 형성",
+        "background": "상태 서술 동사이다.",
+        "etymology": "PIE 계사 어근 *h₁es-('있다')에서 유래하며, 그리스어 εἰμί, 산스크리트어 asmi, 영어 is와 동계어이다(sum, esse, fui, futurus 항목 참조)."
+      },
+      {
+        "g": "partem",
+        "pos": "명사",
+        "lemma": "pars, partis, f.",
+        "parse": "여성 단수 대격",
+        "gloss_kr": "일부를",
+        "gloss_en": "a part, a share",
+        "syntax": "동사 ferat의 직접목적어",
+        "background": "자신의 열정을 완전히 전가하는 것이 아니라 감정의 공유를 바라는 마음을 담는다.",
+        "etymology": "PIE *per-('할당하다, 몫을 주다')에서 유래하며, 그리스어 πεῖρα('시도')와는 형태가 유사해 보이나 별개의 어근이다. 영어 part, portion이 이 라틴어에서 차용되었다."
+      },
+      {
+        "g": "ferat",
+        "pos": "동사",
+        "lemma": "fero",
+        "principalParts": "fero – ferre – tuli – latum",
+        "parse": "접속법 현재 능동태 3인칭 단수",
+        "gloss_kr": "가지게 해주소서, 짊어지게 하소서",
+        "gloss_en": "let her bear, let her share",
+        "syntax": "권고/희원의 권유 접속법 술어 동사",
+        "background": "스킬라 역시 자신과 동일하게 상사병의 열정을 분담하기를 간절히 요구하는 접속법이다.",
+        "etymology": "PIE *bʰer-('나르다')에서 유래하며 그리스어 φέρω, 산스크리트어 bhárati, 영어 bear와 동계어이다(fero, ferre, tuli, latum 항목 참조)."
+      },
+      {
+        "g": "illa",
+        "pos": "대명사",
+        "lemma": "ille, illa, illud",
+        "parse": "여성 단수 주격 (지시대명사)",
+        "gloss_kr": "그녀가",
+        "gloss_en": "she",
+        "syntax": "ferat절의 주어",
+        "background": "글라우코스가 열망하는 대상인 님프 스킬라(Scylla)를 가리킨다.",
+        "etymology": "고전 이전 형태 *olle/*ollus에서 발달했으며, PIE 지시 어근 *al-('저것, 다른 것')과 연관짓는 견해가 있다. 로망스어파 정관사(프랑스어 le, 이탈리아어 il)의 직접적 기원이 되는 단어이다."
+      },
+      {
+        "g": "caloris",
+        "pos": "명사",
+        "lemma": "calor, caloris, m.",
+        "parse": "남성 단수 속격",
+        "gloss_kr": "열정의, 불꽃의",
+        "gloss_en": "of the heat, of passion",
+        "syntax": "partem을 수식하는 부분속격",
+        "background": "사랑의 열기나 열정을 물리적 온기(calor)로 비유한 대표적 시적 수사법이다.",
+        "etymology": "caleo('뜨겁다')에서 파생된 명사로, PIE *kel-('따뜻한')에서 유래하며 영어 calorie가 이 라틴어에서 파생되었다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.25",
+    "trans": "그러나 키르케는 (이런 종류의 불꽃에 더 어울리는 성품을 지닌 여인은 아무도 없었으니,)",
+    "words": [
+      {
+        "g": "at",
+        "pos": "접속사",
+        "lemma": "at",
+        "parse": "대조 접속사",
+        "gloss_kr": "그러나",
+        "gloss_en": "but",
+        "syntax": "시선과 국면을 전환하는 접속사",
+        "background": "글라우코스의 호소 이후 키르케의 반응으로 서사의 중심을 돌린다.",
+        "etymology": "고졸 라틴어의 대조 접속사로, 어원이 불확실하나 PIE 지시 어근과의 연관이 제기된다."
+      },
+      {
+        "g": "Circe",
+        "pos": "명사",
+        "lemma": "Circe, -es, f.",
+        "parse": "여성 단수 주격 (그리스식 어미 -e)",
+        "gloss_kr": "키르케는",
+        "gloss_en": "Circe",
+        "syntax": "주절의 주어",
+        "background": "태양신 헬리오스의 딸이자 섬 아이아에(Aeaea)에 거주하는 마법사 여신이다.",
+        "etymology": "그리스어 Κίρκη에서 차용된 고유명사로, κίρκος('매, 송골매')와 연관짓는 설이 있으나 확정적이지 않다."
+      },
+      {
+        "g": "neque",
+        "pos": "접속사",
+        "lemma": "neque",
+        "parse": "부정 접속사",
+        "gloss_kr": "~도 아니다",
+        "gloss_en": "for not",
+        "syntax": "삽입절의 부정 접속사 (enim과 결합)",
+        "background": "키르케가 남성의 유혹과 애정에 극도로 취약함을 밝히는 부연 설명절을 연다.",
+        "etymology": "ne + que의 결합으로, nec의 완전형이다(nec 항목 참조)."
+      },
+      {
+        "g": "enim",
+        "pos": "접속사",
+        "lemma": "enim",
+        "parse": "이유 접속사 (후쇄사)",
+        "gloss_kr": "왜냐하면",
+        "gloss_en": "for",
+        "syntax": "이유 설명 삽입절 도입",
+        "background": "뒤따르는 키르케의 돌발적인 구애 행동의 개연성을 부여하는 이유 설명이다.",
+        "etymology": "고졸 라틴어에서 발달한 이유·강조 접속사로, 어원이 불확실하다."
+      },
+      {
+        "g": "flammis",
+        "pos": "명사",
+        "lemma": "flamma, -ae, f.",
+        "parse": "여성 복수 여격",
+        "gloss_kr": "불꽃들에",
+        "gloss_en": "for flames, for passions",
+        "syntax": "비교급 형용사 aptius의 목적 여격",
+        "background": "사랑의 욕망과 성적 열정을 불꽃(flammae)에 비유한 시적 상징이다.",
+        "etymology": "flagro('불타다')에서 파생된 명사로, PIE *bʰleg-('불타다, 빛나다')에서 유래하며 그리스어 φλέγω, 영어 flame과 동계어이다."
+      },
+      {
+        "g": "habet",
+        "pos": "동사",
+        "lemma": "habeo",
+        "principalParts": "habeo – habēre – habui – habitum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "지니고 있다",
+        "gloss_en": "has, possesses",
+        "syntax": "삽입절의 술어 동사",
+        "background": "소유의 상태를 나타낸다.",
+        "etymology": "PIE *gʰabʰ-('잡다, 가지다')에서 유래하며, 영어 give, have와 (논란이 있으나) 동계어로 제시된다."
+      },
+      {
+        "g": "aptius",
+        "pos": "형용사",
+        "lemma": "aptus, -a, -um",
+        "parse": "중성 단수 대격 (비교급)",
+        "gloss_kr": "더 어울리는, 더 잘 끌리는",
+        "gloss_en": "more suited, more prone",
+        "syntax": "ingenium을 수식하는 관형어",
+        "background": "사랑의 불꽃에 유난히 쉽게 사로잡히는 키르케의 본성적 성향을 부각한다.",
+        "etymology": "apio('묶다, 잇다')의 목적분사 형용사로, PIE *h₂ep-('붙잡다, 잇다')에서 유래한다."
+      },
+      {
+        "g": "ulla",
+        "pos": "형용사",
+        "lemma": "ullus, -a, -um",
+        "parse": "여성 단수 주격",
+        "gloss_kr": "어떤 여인도",
+        "gloss_en": "any woman",
+        "syntax": "삽입절의 주어 (neque와 호응하여 '아무도 ~않다')",
+        "background": "neque...ulla 구문으로 키르케의 유별난 정념 기질을 최상급적 뉘앙스로 부각한다.",
+        "etymology": "unus('하나')의 지소형에서 발달했다(nullus, -a, -um 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.26",
+    "trans": "“(그 원인이 그녀 자신의 본성에 있든,)",
+    "words": [
+      {
+        "g": "talibus",
+        "pos": "형용사",
+        "lemma": "talis, talis, tale",
+        "parse": "여성 복수 여격 (지시형용사)",
+        "gloss_kr": "이러한",
+        "gloss_en": "such",
+        "syntax": "flammis(25행)를 수식하는 관형어",
+        "background": "25행의 flammis와 도치되어 결합하는 격렬한 사랑의 열정을 가리킨다.",
+        "etymology": "PIE 지시 어근 *to-에서 유래한 성질부사적 대명사로, '그러한'을 뜻하며 qualis('어떠한')와 상관 짝을 이룬다."
+      },
+      {
+        "g": "ingenium",
+        "pos": "명사",
+        "lemma": "ingenium, -i, n.",
+        "parse": "중성 단수 대격",
+        "gloss_kr": "성품을, 기질을",
+        "gloss_en": "nature, disposition",
+        "syntax": "동사 habet(25행)의 직접목적어",
+        "background": "개인이 타고난 정서적, 성격적 기질을 가리킨다.",
+        "etymology": "in('안에') + gigno('낳다')의 합성어로, '타고난 성질, 재능'을 뜻한다(nascor 항목의 *ǵenh₁- 참조)."
+      },
+      {
+        "g": "seu",
+        "pos": "접속사",
+        "lemma": "sive",
+        "parse": "선택 접속사",
+        "gloss_kr": "~이든",
+        "gloss_en": "whether",
+        "syntax": "첫 번째 원인의 가능성 조건절을 이끎",
+        "background": "키르케가 열정에 약한 이유를 두 가지 각도(내적 기질 대 외적 저주)로 추정한다.",
+        "etymology": "si('만약') + ve('또는')의 결합으로, '혹은 만약'을 뜻하는 이접 접속사이다."
+      },
+      {
+        "g": "causa",
+        "pos": "명사",
+        "lemma": "causa, -ae, f.",
+        "parse": "여성 단수 주격",
+        "gloss_kr": "원인이",
+        "gloss_en": "the cause",
+        "syntax": "seu 절의 주어",
+        "background": "기질의 뿌리 및 신화적 근원을 묻는 핵심 명사이다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘이다(causa, causae, f. 항목 참조)."
+      },
+      {
+        "g": "est",
+        "pos": "동사",
+        "lemma": "sum",
+        "principalParts": "sum – esse – fui – futurum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "있든",
+        "gloss_en": "is",
+        "syntax": "seu 절의 술어 동사",
+        "background": "상태 서술 동사이다.",
+        "etymology": "PIE 계사 어근 *h₁es-('있다')에서 유래하며, 그리스어 εἰμί, 산스크리트어 asmi, 영어 is와 동계어이다(sum, esse, fui, futurus 항목 참조)."
+      },
+      {
+        "g": "huius",
+        "pos": "대명사",
+        "lemma": "hic, haec, hoc",
+        "parse": "중성 단수 속격 (지시대명사)",
+        "gloss_kr": "이것의 (이 성품의)",
+        "gloss_en": "of this",
+        "syntax": "causa를 수식하는 속격",
+        "background": "앞서 언급된 '쉽게 반하는 성품(ingenium)'을 가리킨다.",
+        "etymology": "PIE 지시 어간 *ko-('이것')에 첨사 -ce가 결합된 형태로, 근칭 지시대명사이다. 게르만어파의 he(그)와 어원적으로 연결되는 지시 어근 계열에 속한다."
+      },
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "전치사 (+ 탈격)",
+        "gloss_kr": "~ 안에",
+        "gloss_en": "in",
+        "syntax": "장소/소재를 나타내는 전치사",
+        "background": "원인의 내재적 존재 장소를 나타낸다.",
+        "etymology": "PIE *h₁en('~안에')에서 유래하며, 그리스어 ἐν, 영어 in과 동계어이다. 라틴어에서는 격에 따라 '~안에(탈격, 정적 위치)' 또는 '~안으로(대격, 방향)'의 이중 용법을 가진다."
+      },
+      {
+        "g": "ipsa",
+        "pos": "대명사",
+        "lemma": "ipse, ipsa, ipsum",
+        "parse": "여성 단수 탈격 (강조대명사)",
+        "gloss_kr": "그녀 자신 안에",
+        "gloss_en": "herself",
+        "syntax": "전치사 in의 목적어",
+        "background": "타자나 신의 개입이 아닌, 키르케 본인의 혈통 및 타고난 본성을 가리킨다.",
+        "etymology": "is + -pse(강조 첨사)의 결합으로, '바로 그 자신'을 뜻하는 강조 대명사이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.27",
+    "trans": "“아니면 아버지의 고발에 노한 비너스 여신이 이렇게 만든 것이든,)”",
+    "words": [
+      {
+        "g": "seu",
+        "pos": "접속사",
+        "lemma": "sive",
+        "parse": "선택 접속사",
+        "gloss_kr": "혹은",
+        "gloss_en": "or if",
+        "syntax": "두 번째 원인의 가능성 조건절을 이끎",
+        "background": "첫 번째 원인에 대비되는 두 번째 신화적 원인을 제시한다.",
+        "etymology": "si('만약') + ve('또는')의 결합으로, '혹은 만약'을 뜻하는 이접 접속사이다."
+      },
+      {
+        "g": "Venus",
+        "pos": "명사",
+        "lemma": "Venus, Veneris, f.",
+        "parse": "여성 단수 주격",
+        "gloss_kr": "비너스 여신이",
+        "gloss_en": "Venus",
+        "syntax": "seu 절의 주어",
+        "background": "사랑의 여신 아프로디테(비너스)를 가리킨다.",
+        "etymology": "PIE *wen-('바라다, 사랑하다')에서 유래하며, 영어 wish, win과 동계어로 제시된다. 원래는 '매력, 애정'을 뜻하는 보통명사였다가 여신 이름으로 고유화되었다."
+      },
+      {
+        "g": "indicio",
+        "pos": "명사",
+        "lemma": "indicium, -i, n.",
+        "parse": "중성 단수 탈격",
+        "gloss_kr": "고발 때문에, 밀고로 인해",
+        "gloss_en": "by the disclosure, by information",
+        "syntax": "offensa를 수식하는 원인의 탈격",
+        "background": "키르케의 부친 헬리오스가 비너스와 마르스의 불륜을 포착하여 불칸에게 밀고한 신화적 사건을 지칭한다.",
+        "etymology": "index('지시자')에서 파생된 명사로, in('~안으로') + dico('말하다, 가리키다')의 합성어이다(dico 항목 참조)."
+      },
+      {
+        "g": "facit",
+        "pos": "동사",
+        "lemma": "facio",
+        "principalParts": "facio – facere – feci – factum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "만든 것이든",
+        "gloss_en": "makes, causes",
+        "syntax": "seu 절의 술어 동사",
+        "background": "비너스가 저주를 가해 키르케로 하여금 격렬한 성적 정욕에 시달리게 한 사태를 의미한다.",
+        "etymology": "PIE *dʰeh₁-('놓다, 만들다')에서 유래한다(facio, facere, feci, factum 항목 참조)."
+      },
+      {
+        "g": "hoc",
+        "pos": "대명사",
+        "lemma": "hic, haec, hoc",
+        "parse": "중성 단수 대격 (지시대명사)",
+        "gloss_kr": "이것을 (이 경향을)",
+        "gloss_en": "this",
+        "syntax": "동사 facit의 직접목적어",
+        "background": "애욕에 쉽게 눈이 뒤집히는 키르케의 약점을 가리킨다.",
+        "etymology": "PIE 지시 어간 *ko-('이것')에 첨사 -ce가 결합된 형태로, 근칭 지시대명사이다. 게르만어파의 he(그)와 어원적으로 연결되는 지시 어근 계열에 속한다."
+      },
+      {
+        "g": "offensa",
+        "pos": "분사",
+        "lemma": "offendo",
+        "principalParts": "offendo – offendere – offendi – offensum",
+        "parse": "분사 완료 수동태 여성 단수 주격",
+        "gloss_kr": "분노하여, 감정이 상하여",
+        "gloss_en": "offended, angered",
+        "syntax": "주어 Venus를 수식하는 부대상황 분사",
+        "background": "밀고 사건으로 수치심과 분노를 느낀 비너스의 심리 상태를 설명한다.",
+        "etymology": "ob('~에 대항하여') + fendo('치다')의 합성어로, fendo는 PIE *gʷʰen-('치다')에서 유래하며 그리스어 θείνω와 동계어이다."
+      },
+      {
+        "g": "paterno",
+        "pos": "형용사",
+        "lemma": "paternus, -a, -um",
+        "parse": "중성 단수 탈격",
+        "gloss_kr": "아버지의",
+        "gloss_en": "paternal, of her father",
+        "syntax": "indicio를 수식하는 관형어",
+        "background": "키르케의 아버지인 태양신 솔(Sol/Helios)의 고발이었음을 명시한다.",
+        "etymology": "pater('아버지')에서 파생된 형용사로, pater는 PIE *ph₂tḗr에서 유래하며 그리스어 πατήρ, 산스크리트어 pitár, 영어 father와 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.28",
+    "trans": "다음과 같이 응답했다. “그대는 차라리 그대를 원하고 자신도 원하며 동등한 욕망에 사로잡힌 여인을 좇는 편이 나았을 것이오.”",
+    "words": [
+      {
+        "g": "talia",
+        "pos": "형용사",
+        "lemma": "talis, talis, tale",
+        "parse": "중성 복수 대격 (지시형용사)",
+        "gloss_kr": "이러한",
+        "gloss_en": "such",
+        "syntax": "verba를 수식하는 관형어",
+        "background": "키르케가 글라우코스에게 유혹조로 되돌려주는 말을 도모한다.",
+        "etymology": "PIE 지시 어근 *to-에서 유래한 성질부사적 대명사로, '그러한'을 뜻하며 qualis('어떠한')와 상관 짝을 이룬다."
+      },
+      {
+        "g": "verba",
+        "pos": "명사",
+        "lemma": "verbum, -i, n.",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "말들을",
+        "gloss_en": "words",
+        "syntax": "동사 refert의 직접목적어",
+        "background": "대화 음성 유닛을 지칭한다.",
+        "etymology": "PIE *werdʰo-('말')에서 유래하며, 영어 word, 그리스어 εἴρω('말하다')의 관련 어형과 동계어로 제시된다."
+      },
+      {
+        "g": "refert",
+        "pos": "동사",
+        "lemma": "refero",
+        "principalParts": "refero – referre – rettuli – relatum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "돌려주었다, 대답했다",
+        "gloss_en": "replies, returns",
+        "syntax": "주절의 술어 동사",
+        "background": "상대의 간청에 답을 건네는 동사이다.",
+        "etymology": "re('다시') + fero('나르다')의 합성어이다(refero, referre, rettuli, relatum 항목 참조)."
+      },
+      {
+        "g": "melius",
+        "pos": "부사",
+        "lemma": "bene",
+        "parse": "비교급 부사",
+        "gloss_kr": "더 잘, 차라리",
+        "gloss_en": "better",
+        "syntax": "동사 sequerere를 수식하는 부사",
+        "background": "자신을 거부하는 스킬라 대신 자신을 바라는 여인(키르케)을 택하는 것이 합리적이라는 충고를 담는다.",
+        "etymology": "bonus('좋은')의 고졸 부사형으로, bonus는 PIE *dw-en-elo-에서 발달한 것으로 추정되며 명확한 그리스어 동계어는 없다."
+      },
+      {
+        "g": "sequerere",
+        "pos": "동사",
+        "lemma": "sequor",
+        "principalParts": "sequor – sequi – secutus sum",
+        "parse": "접속법 미완료 탈포동사 2인칭 단수 (-re 어미)",
+        "gloss_kr": "따르는 편이 [나았을 것이오]",
+        "gloss_en": "you would follow",
+        "syntax": "충고/가정의 접속법 미완료 술어 동사",
+        "background": "과거 내지 현재의 바람직한 대안적 행동을 권유하는 접속법 미완료 형태이다.",
+        "etymology": "PIE *sekʷ-('따르다')에서 유래하며, 그리스어 ἕπομαι, 영어 sequence의 어원이 되는 어근과 동계어이다."
+      },
+      {
+        "g": "volentem",
+        "pos": "분사",
+        "lemma": "volo",
+        "principalParts": "volo – velle – volui",
+        "parse": "분사 현재 능동태 여성 단수 대격",
+        "gloss_kr": "원하는 여인을",
+        "gloss_en": "one who is willing / desires you",
+        "syntax": "동사 sequerere의 직접목적어로 쓰인 분사 (키르케 자신)",
+        "background": "거부하는 스킬라와 대조적으로 글라우코스를 적극적으로 바라는 키르케 자신을 은유한다.",
+        "etymology": "PIE *welh₁-('바라다, 원하다')에서 유래하며, 영어 will과 동계어로 제시된다(volo, velle, volui 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.29",
+    "trans": "“그대를 바라고 동등한 열망에 사로잡힌 여인을 말이오.”",
+    "words": [
+      {
+        "g": "optantemque",
+        "pos": "분사",
+        "lemma": "opto",
+        "principalParts": "opto – optare – optavi – optatum",
+        "parse": "분사 현재 능동태 여성 단수 대격 (+ 접속사 -que)",
+        "gloss_kr": "갈망하는 [여인을]",
+        "gloss_en": "and wishing, longing for you",
+        "syntax": "volentem과 -que로 연결되는 목적으로 쓰인 분사",
+        "background": "글라우코스를 얻고자 구애하는 키르케의 열망을 나타낸다.",
+        "etymology": "PIE *h₂ep-('선택하다, 얻다')에서 유래하며, 영어 option, opt가 이 라틴어에서 파생되었다."
+      },
+      {
+        "g": "eadem",
+        "pos": "대명사",
+        "lemma": "idem, eadem, idem",
+        "parse": "중성 복수 대격 (지시대명사)",
+        "gloss_kr": "같은 것들을",
+        "gloss_en": "the same things",
+        "syntax": "분사 optantem의 직접목적어",
+        "background": "글라우코스가 느끼는 사랑과 동일한 감정을 공유함을 알린다.",
+        "etymology": "is('그것') + dem(강조 첨사)의 결합으로, '바로 그것, 동일한 것'을 뜻한다."
+      },
+      {
+        "g": "parilique",
+        "pos": "형용사",
+        "lemma": "parilis, parilis, parile",
+        "parse": "여성/남성 단수 탈격 (+ 접속사 -que)",
+        "gloss_kr": "동등한, 같은 크기의",
+        "gloss_en": "equal, matching",
+        "syntax": "cupidine을 수식하는 관형어",
+        "background": "상호 간에 균형과 동등함을 이루는 정념을 바란다는 서사적 표현이다.",
+        "etymology": "par('동등한')에서 파생된 형용사로, par는 PIE *pere-('생산하다, 낳다')와 연관짓는 설이 있으나 불확실하다."
+      },
+      {
+        "g": "cupidine",
+        "pos": "명사",
+        "lemma": "cupido, cupidinis, f./m.",
+        "parse": "여성 단수 탈격",
+        "gloss_kr": "욕망에, 애정에",
+        "gloss_en": "by passion, by desire",
+        "syntax": "captam을 수식하는 원인/수단의 탈격",
+        "background": "사랑과 욕망의 열병을 뜻하는 명사이다.",
+        "etymology": "cupio('바라다')에서 파생된 명사로, cupio는 어원이 불확실한 라틴어 고유 동사이다."
+      },
+      {
+        "g": "captam",
+        "pos": "분사",
+        "lemma": "capio",
+        "principalParts": "capio – capere – cepi – captum",
+        "parse": "분사 완료 수동태 여성 단수 대격",
+        "gloss_kr": "사로잡힌 [여인을]",
+        "gloss_en": "captured, ensnared",
+        "syntax": "volentem, optantem과 병렬을 이루는 목적어 분사",
+        "background": "글라우코스를 향한 사랑에 완전히 포로가 되었음을 고백하는 형상화이다.",
+        "etymology": "PIE *kh₂p-('잡다')에서 유래하며, 그리스어 κάπτω, 영어 capture와 동계어이다(decipio 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.30",
+    "trans": "“그대는 먼저 구애를 받아 마땅한 이였소 (실로 그럴 능력이 있었고 말이오).”",
+    "words": [
+      {
+        "g": "dignus",
+        "pos": "형용사",
+        "lemma": "dignus, -a, -um",
+        "parse": "남성 단수 주격",
+        "gloss_kr": "~을 받을 자격이 있는",
+        "gloss_en": "worthy",
+        "syntax": "주어(글라우코스)를 서술하는 보어 형용사 (부정사 rogari를 취함)",
+        "background": "글라우코스가 가진 뛰어난 매력과 고귀함을 상기시키는 노골적인 찬사이다.",
+        "etymology": "decet('어울리다')와 같은 어근 *deḱ-('받아들이다, 어울리다')에서 파생되었으며, 그리스어 δοκέω('생각되다, ~로 보이다')와 동계어로 제시된다."
+      },
+      {
+        "g": "eras",
+        "pos": "동사",
+        "lemma": "sum",
+        "principalParts": "sum – esse – fui – futurum",
+        "parse": "직설법 미완료 능동태 2인칭 단수",
+        "gloss_kr": "그대는 ~이었다",
+        "gloss_en": "you were",
+        "syntax": "주절의 술어 동사",
+        "background": "과거부터 본질적으로 지속되어 온 매력적인 자질을 나타낸다.",
+        "etymology": "PIE 계사 어근 *h₁es-('있다')에서 유래하며, 그리스어 εἰμί, 산스크리트어 asmi, 영어 is와 동계어이다(sum, esse, fui, futurus 항목 참조)."
+      },
+      {
+        "g": "ultro",
+        "pos": "부사",
+        "lemma": "ultro",
+        "parse": "부사",
+        "gloss_kr": "스스로, 먼저, 자발적으로",
+        "gloss_en": "spontaneously, first",
+        "syntax": "부정사 rogari를 수식하는 부사",
+        "background": "남성이 구애하기도 전에 여성이 자발적으로 접근하게 만들 만한 우월한 매력을 드러낸다.",
+        "etymology": "ultra('그 너머로')와 같은 어근에서 파생된 부사로, '자진하여, 게다가'를 뜻한다."
+      },
+      {
+        "g": "poteras",
+        "pos": "동사",
+        "lemma": "possum",
+        "principalParts": "possum – posse – potui",
+        "parse": "직설법 미완료 능동태 2인칭 단수",
+        "gloss_kr": "그대는 [구애를 받을 수] 있었소",
+        "gloss_en": "you could have been",
+        "syntax": "삽입절의 술어 동사",
+        "background": "글라우코스가 구애받는 입장에 설 가능성과 정당성이 충분했음을 역설한다.",
+        "etymology": "potis('할 수 있는') + sum('이다')의 합성어이다(possum, posse, potui 항목 참조)."
+      },
+      {
+        "g": "certeque",
+        "pos": "부사",
+        "lemma": "certe",
+        "parse": "부사 (+ 접속사 -que)",
+        "gloss_kr": "그리고 분명히, 정녕",
+        "gloss_en": "and certainly",
+        "syntax": "poteras를 강조하는 부사",
+        "background": "자신의 주장에 대한 확실성과 강한 자신감을 보태는 접속 부사이다.",
+        "etymology": "certus('확실한')에서 파생된 부사로, certus는 cerno('구별하다')의 목적분사이며 PIE *krey-('체질하다, 가려내다')에서 유래해 그리스어 κρίνω, 영어 crisis와 동계어이다."
+      },
+      {
+        "g": "rogari",
+        "pos": "동사",
+        "lemma": "rogo",
+        "principalParts": "rogo – rogare – rogavi – rogatum",
+        "parse": "부정사 현재 수동태",
+        "gloss_kr": "구애를 받기에, 간청받기에",
+        "gloss_en": "to be asked, to be wooed",
+        "syntax": "형용사 dignus의 보충 부정사",
+        "background": "여인들로부터 구애나 사랑의 애원을 받는 대상이 됨을 나타낸다.",
+        "etymology": "PIE *h₃reǵ-('곧게 하다, 이끌다')에서 유래한 것으로 추정되며, rex('왕'), rectus('곧은')와 동일 어근을 공유한다는 설이 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.31",
+    "trans": "“그리고 만약 희망을 준다면, 내 말을 믿으시오, 그대는 먼저 구애를 받게 될 것이오.”",
+    "words": [
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "등이 접속사",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "문장 연결 접속사",
+        "background": "앞선 문장의 찬사(dignus eras)에 이어 조건부 약속을 연결한다.",
+        "etymology": "PIE *eti('그 위에, 더하여')에서 유래한 접속사로, 산스크리트어 ati('넘어서'), 그리스어 ἔτι('여전히, 더욱이')와 동계어이다. 원래 '더하여, 넘어서'라는 부사적 의미에서 등위접속사 '그리고'로 문법화되었다."
+      },
+      {
+        "g": "si",
+        "pos": "접속사",
+        "lemma": "si",
+        "parse": "조건 접속사",
+        "gloss_kr": "만약 ~라면",
+        "gloss_en": "if",
+        "syntax": "조건절을 이끄는 접속사",
+        "background": "글라우코스의 긍정적인 반응이나 마음의 여지를 전제로 설정한다.",
+        "etymology": "PIE 지시 어근 *swo-/*so-에서 유래한 조건 접속사로 추정된다."
+      },
+      {
+        "g": "spem",
+        "pos": "명사",
+        "lemma": "spes, spei, f.",
+        "parse": "여성 단수 대격",
+        "gloss_kr": "희망을",
+        "gloss_en": "hope",
+        "syntax": "동사 dederis의 직접목적어",
+        "background": "키르케에게 가능성의 여지(사랑의 희망)를 건네는 행위를 나타낸다.",
+        "etymology": "PIE *speh₁-('번영하다')에서 유래하며, '희망'을 뜻한다."
+      },
+      {
+        "g": "dederis",
+        "pos": "동사",
+        "lemma": "do",
+        "principalParts": "do – dare – dedi – datum",
+        "parse": "직설법 미래완료 능동태 2인칭 단수",
+        "gloss_kr": "준다면",
+        "gloss_en": "you give / shall have given",
+        "syntax": "si 조건절의 술어 동사",
+        "background": "미래의 행동 완성을 조건으로 제시하는 직설법 미래완료 형태이다.",
+        "etymology": "PIE *deh₃-('주다')에서 유래하며, 그리스어 δίδωμι, 산스크리트어 dádāti와 동계어이다(do, dare, dedi, datum 항목 참조)."
+      },
+      {
+        "g": "mihi",
+        "pos": "대명사",
+        "lemma": "ego, mei",
+        "parse": "1인칭 단수 여격",
+        "gloss_kr": "내 말을, 나를",
+        "gloss_en": "me",
+        "syntax": "동사 crede의 여격 목적어",
+        "background": "키르케 자신을 가리키며, 뒤따르는 수사적 약속의 진실성을 보증한다.",
+        "etymology": "PIE 1인칭 단수 대명사 *eǵ(oH)에서 유래하며, 그리스어 ἐγώ, 산스크리트어 ahám, 영어 I와 동계어이다."
+      },
+      {
+        "g": "crede",
+        "pos": "동사",
+        "lemma": "credo",
+        "principalParts": "credo – credere – credidi – creditum",
+        "parse": "명령법 현재 능동태 2인칭 단수",
+        "gloss_kr": "믿으시오",
+        "gloss_en": "believe",
+        "syntax": "삽입구 형태의 명령법 동사",
+        "background": "상대방의 신뢰를 유도하기 위한 구어체적 권유 표현이다.",
+        "etymology": "PIE *ḱred-dʰeh₁-('마음을 두다, 믿다')에서 유래하며, 산스크리트어 śrad-dhā('믿음')와 동계어로 제시된다."
+      },
+      {
+        "g": "rogaberis",
+        "pos": "동사",
+        "lemma": "rogo",
+        "principalParts": "rogo – rogare – rogavi – rogatum",
+        "parse": "직설법 미래 수동태 2인칭 단수",
+        "gloss_kr": "구애를 받게 될 것이오",
+        "gloss_en": "you will be wooed / asked",
+        "syntax": "주절의 술어 동사",
+        "background": "글라우코스가 직접 구애를 청하는 피동적 위치에서 사랑을 받는 주체가 될 것임을 약속한다.",
+        "etymology": "PIE *h₃reǵ-('곧게 하다, 이끌다')에서 유래한 것으로 추정되며, rex('왕'), rectus('곧은')와 동일 어근을 공유한다는 설이 있다."
+      },
+      {
+        "g": "ultro",
+        "pos": "부사",
+        "lemma": "ultro",
+        "parse": "부사",
+        "gloss_kr": "먼저, 자발적으로",
+        "gloss_en": "spontaneously, of her own accord",
+        "syntax": "동사 rogaberis를 수식하는 부사",
+        "background": "키르케가 여신으로서의 체면을 내려놓고 스스로 먼저 다가가 구애하겠다는 뜻을 명확히 한다.",
+        "etymology": "ultra('그 너머로')와 같은 어근에서 파생된 부사로, '자진하여, 게다가'를 뜻한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.32",
+    "trans": "“그대 미모에 대한 확신을 의심하거나 잃지 마시오.”",
+    "words": [
+      {
+        "g": "neu",
+        "pos": "접속사",
+        "lemma": "neve",
+        "parse": "부정 접속사",
+        "gloss_kr": "그리고 ~하지 마시오",
+        "gloss_en": "and do not",
+        "syntax": "부정 명령/접속법절을 이끄는 접속사",
+        "background": "금지의 접속법 구문을 이끌어 글라우코스의 의심을 경계한다.",
+        "etymology": "ne + ve의 결합이다(neve (ne + ve) 항목 참조)."
+      },
+      {
+        "g": "dubites",
+        "pos": "동사",
+        "lemma": "dubito",
+        "principalParts": "dubito – dubitare – dubitavi – dubitatum",
+        "parse": "접속법 현재 능동태 2인칭 단수",
+        "gloss_kr": "의심하지 마시오",
+        "gloss_en": "hesitate, doubt",
+        "syntax": "neu에 연결되는 금지 접속법 동사",
+        "background": "자신의 아름다움이나 매력에 대해 주저하지 말라는 정념적 권유이다.",
+        "etymology": "duo('둘') + habeo에서 발달한 것으로 추정되며, '둘 사이에서 흔들리다' 즉 '의심하다'를 뜻한다."
+      },
+      {
+        "g": "absitque",
+        "pos": "동사",
+        "lemma": "absum",
+        "principalParts": "absum – abesse – afui",
+        "parse": "접속법 현재 능동태 3인칭 단수 (+ 접속사 -que)",
+        "gloss_kr": "멀리하기를, 없기를",
+        "gloss_en": "and let be absent",
+        "syntax": "독립 접속법(희원/기원) 술어 동사",
+        "background": "fiducia(확신)가 결여되는 상황을 경계하는 접속법 구문이다.",
+        "etymology": "ab('~로부터') + sum('있다')의 합성어이다(ab, sum 항목 참조)."
+      },
+      {
+        "g": "tuae",
+        "pos": "대명사",
+        "lemma": "tuus, -a, -um",
+        "parse": "여성 단수 여격 (소유대명사)",
+        "gloss_kr": "그대의",
+        "gloss_en": "of your",
+        "syntax": "formae를 수식하는 관형어",
+        "background": "글라우코스 개인의 육체적·신성적 용모를 가리킨다.",
+        "etymology": "인칭대명사 tu의 소유형용사형으로, PIE 2인칭 어근 *tuH에서 파생되었다(tu 항목 참조)."
+      },
+      {
+        "g": "fiducia",
+        "pos": "명사",
+        "lemma": "fiducia, -ae, f.",
+        "parse": "여성 단수 주격",
+        "gloss_kr": "확신이, 자부심이",
+        "gloss_en": "confidence, trust",
+        "syntax": "absit절의 주어",
+        "background": "자신의 매력에 대한 자신감과 믿음을 뜻한다.",
+        "etymology": "fido('믿다')에서 파생된 명사로, PIE *bʰeydʰ-('설득하다, 믿다')에서 유래하며 그리스어 πείθω와 동계어이다."
+      },
+      {
+        "g": "formae",
+        "pos": "명사",
+        "lemma": "forma, -ae, f.",
+        "parse": "여성 단수 여격",
+        "gloss_kr": "미모에 대한, 아름다움에 대한",
+        "gloss_en": "in your beauty / form",
+        "syntax": "fiducia에 연결되는 목적여격(상대적 여격)",
+        "background": "인간에서 바다의 신으로 변형된 글라우코스의 수려한 외모를 지칭한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, 그리스어 μορφή와 형태가 유사해 차용어라는 설도 있으나 음운 대응상 난점이 있어 확정적이지 않다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.33",
+    "trans": "“보라, 나는 여신이고, 찬란한 태양의 딸이며,”",
+    "words": [
+      {
+        "g": "en",
+        "pos": "감탄사",
+        "lemma": "en",
+        "parse": "감탄사",
+        "gloss_kr": "보라!",
+        "gloss_en": "lo!, behold!",
+        "syntax": "주의를 환기하는 독립 감탄사",
+        "background": "자신의 위대한 신분과 권능을 제시하기 직전 강렬하게 주의를 집중시킨다.",
+        "etymology": "그리스어 감탄사 ἦν/ἐν에서 차용되었거나 독자적으로 발달한 지시 감탄사로, '보라'를 뜻한다."
+      },
+      {
+        "g": "ego",
+        "pos": "대명사",
+        "lemma": "ego, mei",
+        "parse": "1인칭 단수 주격",
+        "gloss_kr": "내가",
+        "gloss_en": "I",
+        "syntax": "voveo절의 주어",
+        "background": "키르케 자신을 강하게 부각하는 주격 대명사이다.",
+        "etymology": "PIE 1인칭 단수 대명사 *eǵ(oH)에서 유래하며, 그리스어 ἐγώ, 산스크리트어 ahám, 영어 I와 동계어이다."
+      },
+      {
+        "g": "cum",
+        "pos": "접속사",
+        "lemma": "cum",
+        "parse": "양보/양태 접속사",
+        "gloss_kr": "~임에도 불구하고, ~이듯",
+        "gloss_en": "although, since",
+        "syntax": "양보/이유를 나타내는 접속법절을 이끎",
+        "background": "높은 신분에도 불구하고 한 남성에게 구애한다는 역설적 상황을 강조한다.",
+        "etymology": "PIE *ko-('~과 함께')에서 유래한 전치사 겸 접속사로, 영어 co-, com- 접두사(< 라틴어 cum)와 동일 기원이다. 접속사 용법(~할 때, ~이므로)은 전치사 용법에서 문법화된 것으로 본다."
+      },
+      {
+        "g": "dea",
+        "pos": "명사",
+        "lemma": "dea, -ae, f.",
+        "parse": "여성 단수 주격",
+        "gloss_kr": "여신",
+        "gloss_en": "a goddess",
+        "syntax": "sim절의 보어",
+        "background": "키르케 본인의 불사의 신적 본성을 강조한다.",
+        "etymology": "deus('신')의 여성형으로, PIE *deiwós('빛나는 존재, 하늘의 신')에서 유래한다. 이 어근은 그리스어 Ζεύς(Zeus)의 주격 어간, 산스크리트어 devá, 영어 Tuesday(Tiw의 날)와 동계어이다."
+      },
+      {
+        "g": "sim",
+        "pos": "동사",
+        "lemma": "sum",
+        "principalParts": "sum – esse – fui – futurum",
+        "parse": "접속법 현재 능동태 1인칭 단수",
+        "gloss_kr": "이지만",
+        "gloss_en": "I am",
+        "syntax": "cum절의 술어 동사",
+        "background": "cum 양보절에 호응하는 접속법 형태이다.",
+        "etymology": "PIE 계사 어근 *h₁es-('있다')에서 유래하며, 그리스어 εἰμί, 산스크리트어 asmi, 영어 is와 동계어이다(sum, esse, fui, futurus 항목 참조)."
+      },
+      {
+        "g": "nitidi",
+        "pos": "형용사",
+        "lemma": "nitidus, -a, -um",
+        "parse": "남성 단수 속격",
+        "gloss_kr": "찬란한, 빛나는",
+        "gloss_en": "shining, radiant",
+        "syntax": "Solis를 수식하는 관형어",
+        "background": "태양신 헬리오스의 눈부신 광채와 신성을 묘사하는 수식어이다.",
+        "etymology": "niteo('빛나다')에서 파생된 형용사로, 어원이 불확실한 라틴어 고유 어근이다."
+      },
+      {
+        "g": "cum",
+        "pos": "접속사",
+        "lemma": "cum",
+        "parse": "양보/양태 접속사",
+        "gloss_kr": "~이자",
+        "gloss_en": "and although",
+        "syntax": "두 번째 cum 접속법절을 이끎",
+        "background": "첫 번째 cum절과 대등하게 연결되어 혈통의 고귀함을 거듭 부각한다.",
+        "etymology": "PIE *ko-('~과 함께')에서 유래한 전치사 겸 접속사로, 영어 co-, com- 접두사(< 라틴어 cum)와 동일 기원이다. 접속사 용법(~할 때, ~이므로)은 전치사 용법에서 문법화된 것으로 본다."
+      },
+      {
+        "g": "filia",
+        "pos": "명사",
+        "lemma": "filia, -ae, f.",
+        "parse": "여성 단수 주격",
+        "gloss_kr": "딸",
+        "gloss_en": "the daughter",
+        "syntax": "생략된 sim의 보어",
+        "background": "태양신 헬리오스(Sol)의 직계 후손임을 밝히는 혈관적 자부심이다.",
+        "etymology": "PIE *dʰeh₁(y)-('젖을 빨다, 기르다')에서 유래하며, filius('아들')의 여성형이다."
+      },
+      {
+        "g": "Solis",
+        "pos": "명사",
+        "lemma": "Sol, Solis, m.",
+        "parse": "남성 단수 속격",
+        "gloss_kr": "태양의",
+        "gloss_en": "of the Sun",
+        "syntax": "filia를 수식하는 소유속격",
+        "background": "로마 신화의 태양신 솔(Helios)을 가리킨다.",
+        "etymology": "PIE *sóh₂wl̥('해')에서 유래한다(sol, solis, m. 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.34",
+    "trans": "“주문으로도, 약초로도 그토록 엄청난 능력을 지녔음에도,”",
+    "words": [
+      {
+        "g": "carmine",
+        "pos": "명사",
+        "lemma": "carmen, carminis, n.",
+        "parse": "중성 단수 탈격",
+        "gloss_kr": "주문으로, 노래로",
+        "gloss_en": "by incantation, by song",
+        "syntax": "possim의 수단/도구의 탈격",
+        "background": "소리 내어 읊는 마법의 주문과 노래를 의미한다.",
+        "etymology": "canere('노래하다')의 어근 *can-에 도구·결과를 나타내는 접미사 -men이 결합한 형태로, '노래됨, 노래' 즉 '노래, 시가, 주문'을 뜻한다. PIE 어근 *kan-('노래하다')은 영어 hen(원래 '노래하는 새')과도 먼 연관이 제기된다."
+      },
+      {
+        "g": "cum",
+        "pos": "접속사",
+        "lemma": "cum",
+        "parse": "양보/양태 접속사",
+        "gloss_kr": "~함에도",
+        "gloss_en": "although",
+        "syntax": "세 번째 cum 접속법절을 이끎",
+        "background": "키르케가 지닌 엄청난 마법적 권능을 열거하는 절이다.",
+        "etymology": "PIE *ko-('~과 함께')에서 유래한 전치사 겸 접속사로, 영어 co-, com- 접두사(< 라틴어 cum)와 동일 기원이다. 접속사 용법(~할 때, ~이므로)은 전치사 용법에서 문법화된 것으로 본다."
+      },
+      {
+        "g": "tantum",
+        "pos": "부사",
+        "lemma": "tantum",
+        "parse": "부사",
+        "gloss_kr": "그토록 많이, 그 정도로",
+        "gloss_en": "so much",
+        "syntax": "possim을 수식하는 정도의 부사",
+        "background": "자신의 마법이 지닌 범접할 수 없는 위력을 수사적으로 부각한다.",
+        "etymology": "tantus('그만큼 큰')의 중성 단수형이 부사화된 것으로, quantus와 상관 짝을 이루는 지시 어근 계열이다."
+      },
+      {
+        "g": "tantum",
+        "pos": "부사",
+        "lemma": "tantum",
+        "parse": "부사",
+        "gloss_kr": "그만큼이나",
+        "gloss_en": "so much",
+        "syntax": "possim을 수식하는 부사 (앞의 tantum과 대칭)",
+        "background": "carmine(주문)과 gramine(약초) 두 영역 모두에서 균형 있게 전능함을 강조하는 반복법(anaphora)이다.",
+        "etymology": "tantus('그만큼 큰')의 중성 단수형이 부사화된 것으로, quantus와 상관 짝을 이루는 지시 어근 계열이다."
+      },
+      {
+        "g": "quoque",
+        "pos": "부사",
+        "lemma": "quoque",
+        "parse": "부사",
+        "gloss_kr": "또한, 역시",
+        "gloss_en": "also",
+        "syntax": "gramine을 강조하는 부사",
+        "background": "주문 외에 물성 매개체인 약초의 효능 또한 완벽함을 덧붙인다.",
+        "etymology": "quo(관계·의문 어간) + -que(첨가 첨사, PIE *kʷe '그리고')의 결합으로, '그 경우에도 역시'라는 뜻의 첨가 부사가 되었다."
+      },
+      {
+        "g": "gramine",
+        "pos": "명사",
+        "lemma": "gramen, graminis, n.",
+        "parse": "중성 단수 탈격",
+        "gloss_kr": "약초로, 풀로",
+        "gloss_en": "by herb, by magic plant",
+        "syntax": "possim의 수단/도구의 탈격",
+        "background": "키르케 마술의 핵심 재료인 신비한 약초를 가리킨다.",
+        "etymology": "PIE *gʰreh₁-('자라다')와 연관짓는 설이 있으며, '풀, 잔디'를 뜻한다."
+      },
+      {
+        "g": "possim",
+        "pos": "동사",
+        "lemma": "possum",
+        "principalParts": "possum – posse – potui",
+        "parse": "접속법 현재 능동태 1인칭 단수",
+        "gloss_kr": "능력이 있건만",
+        "gloss_en": "I am powerful / able",
+        "syntax": "cum절의 술어 동사",
+        "background": "자신의 강력한 주술적 위력을 표현하는 동사이다.",
+        "etymology": "potis('할 수 있는') + sum('이다')의 합성어이다(possum, posse, potui 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.35",
+    "trans": "“그대의 여인이 되기를 서원하오. 멸시하는 자는 멸시하고, 따르는 자에게는”",
+    "words": [
+      {
+        "g": "ut",
+        "pos": "접속사",
+        "lemma": "ut",
+        "parse": "결과/목적 접속사",
+        "gloss_kr": "~하도록, ~이 되기를",
+        "gloss_en": "that, so that",
+        "syntax": "voveo의 보충절(결과/목적절)을 이끄는 접속사",
+        "background": "자신의 모든 신성과 마법 권능을 오직 글라우코스를 얻는 데 바치겠다는 목적을 연다.",
+        "etymology": "고졸 라틴어 uti에서 축약된 형태로, PIE 관계 어간 *kʷu-ti에서 유래한 것으로 추정되며 quod, qui와 같은 어족에 속한다(qui 항목 참조)."
+      },
+      {
+        "g": "tua",
+        "pos": "대명사",
+        "lemma": "tuus, -a, -um",
+        "parse": "여성 단수 주격 (소유대명사)",
+        "gloss_kr": "그대의 여인이",
+        "gloss_en": "yours",
+        "syntax": "sim절의 보어",
+        "background": "글라우코스의 소유이자 연인이 되기를 바라는 헌신적 고백이다.",
+        "etymology": "인칭대명사 tu의 소유형용사형으로, PIE 2인칭 어근 *tuH에서 파생되었다(tu 항목 참조)."
+      },
+      {
+        "g": "sim",
+        "pos": "동사",
+        "lemma": "sum",
+        "principalParts": "sum – esse – fui – futurum",
+        "parse": "접속법 현재 능동태 1인칭 단수",
+        "gloss_kr": "되기를",
+        "gloss_en": "I may be",
+        "syntax": "ut절의 술어 동사",
+        "background": "서원의 내용을 이루는 접속법 구문이다.",
+        "etymology": "PIE 계사 어근 *h₁es-('있다')에서 유래하며, 그리스어 εἰμί, 산스크리트어 asmi, 영어 is와 동계어이다(sum, esse, fui, futurus 항목 참조)."
+      },
+      {
+        "g": "voveo",
+        "pos": "동사",
+        "lemma": "voveo",
+        "principalParts": "voveo – vovēre – vovi – votum",
+        "parse": "직설법 현재 능동태 1인칭 단수",
+        "gloss_kr": "내가 서원하오, 기도하오",
+        "gloss_en": "I vow, I pray",
+        "syntax": "주절의 문장 전체 술어 동사",
+        "background": "신성한 맹세나 서약을 세우는 서간체·주술적 어조의 핵심 동사이다.",
+        "etymology": "PIE *wegʷʰ-('말하다, 서약하다')에서 유래하며, votum('서약')의 동사형이다."
+      },
+      {
+        "g": "spernentem",
+        "pos": "분사",
+        "lemma": "sperno",
+        "principalParts": "sperno – spernere – sprevi – spretum",
+        "parse": "분사 현재 능동태 여성 단수 대격",
+        "gloss_kr": "[그대를] 멸시하는 여인을",
+        "gloss_en": "one who despises [you]",
+        "syntax": "동사 sperne의 직접목적어로 쓰인 분사 (스킬라)",
+        "background": "글라우코스의 구애를 차갑게 거절한 스킬라를 가리킨다.",
+        "etymology": "PIE *sper-('쫓아버리다, 걷어차다')에서 유래하며, '경멸하다, 물리치다'를 뜻한다."
+      },
+      {
+        "g": "sperne",
+        "pos": "동사",
+        "lemma": "sperno",
+        "principalParts": "sperno – spernere – sprevi – spretum",
+        "parse": "명령법 현재 능동태 2인칭 단수",
+        "gloss_kr": "멸시하시오",
+        "gloss_en": "spurn, despise",
+        "syntax": "독립 명령법 술어 동사",
+        "background": "자신을 거부하는 자에게 똑같이 차갑게 돌아서라는 상호주의적 권유이다.",
+        "etymology": "PIE *sper-('쫓아버리다, 걷어차다')에서 유래하며, '경멸하다, 물리치다'를 뜻한다."
+      },
+      {
+        "g": "sequenti",
+        "pos": "분사",
+        "lemma": "sequor",
+        "principalParts": "sequor – sequi – secutus sum",
+        "parse": "분사 현재 탈포동사 여성 단수 여격",
+        "gloss_kr": "[그대를] 따르는 여인에게",
+        "gloss_en": "to the one following [you]",
+        "syntax": "동사 redde의 간접목적어로 쓰인 분사 (키르케)",
+        "background": "글라우코스를 뒤따르고 갈망하는 키르케 자신을 뜻한다.",
+        "etymology": "PIE *sekʷ-('따르다')에서 유래하며, 그리스어 ἕπομαι, 영어 sequence의 어원이 되는 어근과 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.36",
+    "trans": "“보답을 돌려주고, 한 가지 행동으로 두 여인에게 복수하시오.”",
+    "words": [
+      {
+        "g": "redde",
+        "pos": "동사",
+        "lemma": "reddo",
+        "principalParts": "reddo – reddere – reddidi – redditum",
+        "parse": "명령법 현재 능동태 2인칭 단수",
+        "gloss_kr": "돌려주시오, 보답하시오",
+        "gloss_en": "return, render",
+        "syntax": "독립 명령법 술어 동사",
+        "background": "자신의 구애와 애정에 그에 상응하는 사랑으로 보답하라는 명령이다.",
+        "etymology": "red-('다시') + do('주다')의 합성어이다(do 항목 참조)."
+      },
+      {
+        "g": "vices",
+        "pos": "명사",
+        "lemma": "vicis, vicis, f.",
+        "parse": "여성 복수 대격",
+        "gloss_kr": "보답을, 상응하는 응답을",
+        "gloss_en": "returns, requital",
+        "syntax": "동사 redde의 직접목적어",
+        "background": "마음이나 행위에 대한 교환 및 응보를 뜻하는 명사이다.",
+        "etymology": "PIE *weyk-('바뀌다, 교대하다')에서 유래하며, 영어 week가 이 어근과 관련된다는 설이 있다."
+      },
+      {
+        "g": "unoque",
+        "pos": "형용사",
+        "lemma": "unus, -a, -um",
+        "parse": "중성 단수 탈격 (+ 접속사 -que)",
+        "gloss_kr": "단 하나의",
+        "gloss_en": "and by one",
+        "syntax": "facto를 수식하는 관형어",
+        "background": "키르케를 받아들이는 단 한 번의 결단 내지 행위를 수사적으로 단일화한다.",
+        "etymology": "PIE *oynos('하나')에서 유래하며, 영어 one과 동계어이다."
+      },
+      {
+        "g": "duas",
+        "pos": "형용사",
+        "lemma": "duo, duae, duo",
+        "parse": "여성 복수 대격",
+        "gloss_kr": "두 여인에게",
+        "gloss_en": "two [women]",
+        "syntax": "ulciscere의 직접목적어로 쓰인 수형용사",
+        "background": "스킬라(거절에 대한 복수)와 키르케(구애 수용을 통한 사랑의 성취) 두 여인 모두에게 미칠 수사적 결과를 가리킨다.",
+        "etymology": "PIE *dwoh₁('둘')에서 유래하며, 그리스어 δύο, 영어 two와 동계어이다."
+      },
+      {
+        "g": "ulciscere",
+        "pos": "동사",
+        "lemma": "ulciscor",
+        "principalParts": "ulciscor – ulcisci – ultus sum",
+        "parse": "명령법 현재 탈포동사 2인칭 단수 (-re 어미)",
+        "gloss_kr": "복수하시오",
+        "gloss_en": "avenge, punish",
+        "syntax": "독립 명령법 술어 동사",
+        "background": "자신을 거절한 스킬라에게는 상처를 주고, 자신을 태운 키르케에게는 응답을 줌으로써 정념의 균형을 맞추라는 지략적 설득이다.",
+        "etymology": "PIE 어근에서 유래한 탈형동사로 추정되며, '복수하다'를 뜻한다. 명확한 동계어는 확립되어 있지 않다."
+      },
+      {
+        "g": "facto",
+        "pos": "명사",
+        "lemma": "factum, -i, n.",
+        "parse": "중성 단수 탈격",
+        "gloss_kr": "행동으로",
+        "gloss_en": "by a deed, by an action",
+        "syntax": "ulciscere의 수단/도구의 탈격",
+        "background": "마음의 전환과 수용이라는 결단을 의미한다.",
+        "etymology": "facio('만들다, 행하다')의 목적분사가 명사화된 것으로, '이루어진 일, 사실, 업적'을 뜻한다(facio, facere, feci, factum 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.37",
+    "trans": "그렇게 유혹하는 그녀에게 글라우코스는 말했다. “바다 위에 나뭇잎이 자라고,”",
+    "words": [
+      {
+        "g": "talia",
+        "pos": "형용사",
+        "lemma": "talis, talis, tale",
+        "parse": "중성 복수 대격 (지시형용사)",
+        "gloss_kr": "이러한 것들을",
+        "gloss_en": "such things",
+        "syntax": "분사 temptanti의 직접목적어",
+        "background": "앞서 키르케가 늘어놓은 유혹의 대화 내용을 종합하여 가리킨다.",
+        "etymology": "PIE 지시 어근 *to-에서 유래한 성질부사적 대명사로, '그러한'을 뜻하며 qualis('어떠한')와 상관 짝을 이룬다."
+      },
+      {
+        "g": "temptanti",
+        "pos": "분사",
+        "lemma": "tempto",
+        "principalParts": "tempto – temptare – temptavi – temptatum",
+        "parse": "분사 현재 능동태 여성 단수 여격",
+        "gloss_kr": "유혹하는 [키르케]에게",
+        "gloss_en": "to the one trying / tempting",
+        "syntax": "inquit의 간접목적어 성격으로 쓰인 분사",
+        "background": "글라우코스의 마음을 시험하고 달콤하게 유혹하는 키르케의 시도를 서술한다.",
+        "etymology": "temno('경멸하다, 시험하다')와 연관되는 어근에서 발달한 것으로 추정되며, '더듬어보다, 시험하다'를 뜻한다."
+      },
+      {
+        "g": "prius",
+        "pos": "부사",
+        "lemma": "prius",
+        "parse": "비교급 부사",
+        "gloss_kr": "먼저, 차라리",
+        "gloss_en": "sooner, first",
+        "syntax": "39행의 quam과 호응하는 시간 비교 부사 구문 (prius ... quam)",
+        "background": "아디나톤(adynaton, 불가능한 일의 제시) 수사법을 도입하여 자신의 사랑이 절대 변하지 않을 것임을 선언한다.",
+        "etymology": "PIE 비교급 어근 *preyos-(*per-'앞')에서 유래하며, '더 앞에, 먼저'를 뜻한다."
+      },
+      {
+        "g": "inquit",
+        "pos": "동사",
+        "lemma": "inquam",
+        "parse": "직설법 현재 능동태 3인칭 단수 (결함동사)",
+        "gloss_kr": "말했다",
+        "gloss_en": "said",
+        "syntax": "인용문 사이에 삽입되는 술어 동사",
+        "background": "직접 인용문을 이끄는 관용적 결함동사이다.",
+        "etymology": "PIE *(s)kʷeh₁-와 연관짓는 설이 있는 방어형 동사로, '말하다'를 뜻하며 인용문에 삽입되어 쓰인다."
+      },
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "전치사 (+ 탈격)",
+        "gloss_kr": "~ 위에",
+        "gloss_en": "in, on",
+        "syntax": "장소를 나타내는 전치사",
+        "background": "자연의 질서에 위배되는 장소를 지정한다.",
+        "etymology": "PIE *h₁en('~안에')에서 유래하며, 그리스어 ἐν, 영어 in과 동계어이다. 라틴어에서는 격에 따라 '~안에(탈격, 정적 위치)' 또는 '~안으로(대격, 방향)'의 이중 용법을 가진다."
+      },
+      {
+        "g": "aequore",
+        "pos": "명사",
+        "lemma": "aequor, aequoris, n.",
+        "parse": "중성 단수 탈격",
+        "gloss_kr": "바다 위에",
+        "gloss_en": "on the sea",
+        "syntax": "전치사 in의 목적어",
+        "background": "평평한 바다 수면을 뜻하며, 육지 식물이 자랄 수 없는 공간적 대조를 이룬다.",
+        "etymology": "aequus('평평한, 공평한')에서 파생된 명사로, '평평한 면' 즉 잔잔한 바다를 뜻한다. aequus는 PIE *aik'-('닮다, 평평하다')에서 유래한다는 설이 있으나 불확실하다."
+      },
+      {
+        "g": "frondes",
+        "pos": "명사",
+        "lemma": "frons, frondis, f.",
+        "parse": "여성 복수 주격",
+        "gloss_kr": "나뭇잎들이",
+        "gloss_en": "leaves, foliage",
+        "syntax": "nascentur절의 주어",
+        "background": "바다 위에서는 결코 돋아날 수 없는 육상 식물의 잎을 지칭한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '잎, 잎사귀'를 뜻하며 '이마'를 뜻하는 동음이의어 frons, frontis와는 별개의 단어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.38",
+    "trans": "“가장 높은 산꼭대기에 해조류가 자라날 것입니다,”",
+    "words": [
+      {
+        "g": "Glaucus",
+        "pos": "명사",
+        "lemma": "Glaucus, -i, m.",
+        "parse": "남성 단수 주격",
+        "gloss_kr": "글라우코스가",
+        "gloss_en": "Glaucus",
+        "syntax": "inquit절의 명시적 주어",
+        "background": "본래 어부였으나 신비한 약초를 먹고 바다의 신이 되어 스킬라를 순애하는 인물이다.",
+        "etymology": "그리스어 γλαυκός('회청색의, 빛나는')에서 차용된 형용사가 고유명사화된 것으로, 아테나의 별칭 γλαυκῶπις('회청색 눈의')와 같은 어근이다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "등이 접속사",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "두 번째 불가능한 자연 현상 절을 연결",
+        "background": "아디나톤 수사법의 두 번째 대칭 요소를 구체화한다.",
+        "etymology": "PIE *eti('그 위에, 더하여')에서 유래한 접속사로, 산스크리트어 ati('넘어서'), 그리스어 ἔτι('여전히, 더욱이')와 동계어이다. 원래 '더하여, 넘어서'라는 부사적 의미에서 등위접속사 '그리고'로 문법화되었다."
+      },
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "전치사 (+ 탈격)",
+        "gloss_kr": "~ 위에",
+        "gloss_en": "in, on",
+        "syntax": "장소를 나타내는 전치사",
+        "background": "해조류가 있을 수 없는 산꼭대기라는 장소를 설정한다.",
+        "etymology": "PIE *h₁en('~안에')에서 유래하며, 그리스어 ἐν, 영어 in과 동계어이다. 라틴어에서는 격에 따라 '~안에(탈격, 정적 위치)' 또는 '~안으로(대격, 방향)'의 이중 용법을 가진다."
+      },
+      {
+        "g": "summis",
+        "pos": "형용사",
+        "lemma": "summus, -a, -um",
+        "parse": "남성 복수 탈격 (최상급)",
+        "gloss_kr": "가장 높은",
+        "gloss_en": "highest",
+        "syntax": "montibus를 수식하는 관형어",
+        "background": "바다와 가장 멀리 떨어진 극단적 고도를 강조한다.",
+        "etymology": "super('~위에')의 최상급형으로, PIE *upo/*uper 어근에서 유래한다(super 계열은 그리스어 ὑπέρ와 동계)."
+      },
+      {
+        "g": "nascentur",
+        "pos": "동사",
+        "lemma": "nascor",
+        "principalParts": "nascor – nasci – natus sum",
+        "parse": "직설법 미래 탈포동사 3인칭 복수",
+        "gloss_kr": "자라날 것입니다",
+        "gloss_en": "will grow, arise",
+        "syntax": "frondes 및 algae를 공통 주어로 취하는 술어 동사",
+        "background": "자연의 이치를 역행하는 불가능한 생장이 일어남을 표상한다.",
+        "etymology": "gigno('낳다')와 같은 어근 *ǵenh₁-('낳다, 태어나다')에서 유래한 탈형동사로, 그리스어 γίγνομαι, 영어 kin, gene와 동계어이다."
+      },
+      {
+        "g": "montibus",
+        "pos": "명사",
+        "lemma": "mons, montis, m.",
+        "parse": "남성 복수 탈격",
+        "gloss_kr": "산들에",
+        "gloss_en": "mountains",
+        "syntax": "전치사 in의 목적어",
+        "background": "높은 육지 산악 지대를 뜻한다.",
+        "etymology": "PIE *men-('솟아나다')에서 유래하며, 영어 mount, mountain이 이 라틴어에서 파생되었다."
+      },
+      {
+        "g": "algae",
+        "pos": "명사",
+        "lemma": "alga, -ae, f.",
+        "parse": "여성 복수 주격",
+        "gloss_kr": "해조류가, 바닷풀이",
+        "gloss_en": "seaweeds",
+        "syntax": "nascentur의 주어",
+        "background": "바다 깊은 곳에서만 자라는 해초가 높은 산에 자라는 역설을 형성한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '해초'를 뜻한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.39",
+    "trans": "“스킬라가 무사한 한 내 사랑이 변하는 것보다.”",
+    "words": [
+      {
+        "g": "Sospite",
+        "pos": "형용사",
+        "lemma": "sospes, sospitis",
+        "parse": "여성 단수 탈격",
+        "gloss_kr": "무사한 한, 살아있는 한",
+        "gloss_en": "safe, unharmed",
+        "syntax": "Scylla와 결합한 독립탈격 구문",
+        "background": "스킬라가 안전하게 살아있음을 전제로 하는 독립탈격(Ablative Absolute) 구조이다.",
+        "etymology": "salvus와 같은 어근 *solh₂-('전체의')에서 파생된 것으로 추정되며, '무사한, 안전한'을 뜻한다(salus, salutis, f. 항목 참조)."
+      },
+      {
+        "g": "quam",
+        "pos": "접속사",
+        "lemma": "quam",
+        "parse": "비교 접속사",
+        "gloss_kr": "~보다, ~하기 전에",
+        "gloss_en": "than, before",
+        "syntax": "37행의 prius와 호응하여 비교/시점절을 형성 (prius...quam)",
+        "background": "앞서 열거된 자연의 기적이 일어나는 시점과 자신의 마음에 변심이 생기는 시점을 비교한다.",
+        "etymology": "qui의 여성 대격형이 비교 부사·접속사로 문법화된 것으로, '어떻게, ~보다'를 뜻한다(qui 항목 참조)."
+      },
+      {
+        "g": "Scylla",
+        "pos": "명사",
+        "lemma": "Scylla, -ae, f.",
+        "parse": "여성 단수 탈격",
+        "gloss_kr": "스킬라가",
+        "gloss_en": "Scylla",
+        "syntax": "독립탈격 구문의 주어 명사",
+        "background": "글라우코스가 일심으로 짝사랑하는 아름다운 님프이다.",
+        "etymology": "그리스어 Σκύλλα에서 차용된 고유명사로, 그리스어 내부에서도 확실한 인도유럽 어근이 밝혀지지 않아 베이크스는 선그리스어 기원의 가능성을 배제하지 않는다. σκύλαξ('강아지')와 연관짓는 통속적 해석도 있으나 확증되지 않는다."
+      },
+      {
+        "g": "nostri",
+        "pos": "대명사",
+        "lemma": "noster, nostra, nostrum",
+        "parse": "남성 복수 주격 (소유대명사)",
+        "gloss_kr": "나의, 우리들의",
+        "gloss_en": "my, our",
+        "syntax": "amores를 수식하는 관형어",
+        "background": "1인칭 복수형 표현(nos/noster)을 단수 의미(시적 장엄 복수)로 사용하였다.",
+        "etymology": "1인칭 복수 대명사 nos의 소유형용사형으로, PIE *n̥s-에서 유래한다."
+      },
+      {
+        "g": "mutentur",
+        "pos": "동사",
+        "lemma": "muto",
+        "principalParts": "muto – mutare – mutavi – mutatum",
+        "parse": "접속법 현재 수동태 3인칭 복수",
+        "gloss_kr": "변하는 것보다",
+        "gloss_en": "should change",
+        "syntax": "prius...quam 절의 접속법 술어 동사",
+        "background": "스킬라를 향한 자신의 연정이 결코 바뀌지 않을 것임을 단언하는 접속법 구문이다.",
+        "etymology": "PIE *mei-('바꾸다, 교환하다')에서 유래하며, 영어 mutual, mutate의 어원이 되는 어근과 동계어이다."
+      },
+      {
+        "g": "amores",
+        "pos": "명사",
+        "lemma": "amor, amoris, m.",
+        "parse": "남성 복수 주격",
+        "gloss_kr": "사랑이, 마음이",
+        "gloss_en": "love, affection",
+        "syntax": "mutentur절의 주어",
+        "background": "단수 amor 대신 복수형을 사용하여 사랑의 강렬함과 헌신을 부각한다.",
+        "etymology": "amo('사랑하다')에서 파생된 명사로, amo 자체는 명확한 인도유럽 동계어가 없는 라틴어(및 이탈리아어파) 고유 어휘로 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.40",
+    "trans": "여신은 분노했다. 그러나 그 단단한 그 자신에게 해를 입힐 수는 없었기에 (또한 원치도 않았기에)",
+    "words": [
+      {
+        "g": "indignata",
+        "pos": "분사",
+        "lemma": "indignor",
+        "principalParts": "indignor – indignari – indignatus sum",
+        "parse": "분사 완료 탈포동사 여성 단수 주격",
+        "gloss_kr": "분노하여, 모욕감을 느껴",
+        "gloss_en": "indignant, angered",
+        "syntax": "dea를 수식하며 est와 결합해 완료 형태 구성",
+        "background": "구애를 거절당한 키르케 여신의 자존심 손상과 자극받은 모욕감을 서술한다.",
+        "etymology": "in('아니') + dignus('어울리는')의 합성어로, '부당하게 여기다, 분노하다'를 뜻한다(dignus, -a, -um 항목 참조)."
+      },
+      {
+        "g": "dea",
+        "pos": "명사",
+        "lemma": "dea, -ae, f.",
+        "parse": "여성 단수 주격",
+        "gloss_kr": "여신은",
+        "gloss_en": "the goddess",
+        "syntax": "주절의 주어 (키르케)",
+        "background": "거절당한 마법사 여신 키르케를 가리킨다.",
+        "etymology": "deus('신')의 여성형으로, PIE *deiwós('빛나는 존재, 하늘의 신')에서 유래한다. 이 어근은 그리스어 Ζεύς(Zeus)의 주격 어간, 산스크리트어 devá, 영어 Tuesday(Tiw의 날)와 동계어이다."
+      },
+      {
+        "g": "est",
+        "pos": "동사",
+        "lemma": "sum",
+        "principalParts": "sum – esse – fui – futurum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "~했다",
+        "gloss_en": "was",
+        "syntax": "indignata와 결합하여 직설법 완료 수동/탈포 시제 형성",
+        "background": "indignata est 형태로 '분노했다'라는 완료적 과거 사실을 나타낸다.",
+        "etymology": "PIE 계사 어근 *h₁es-('있다')에서 유래하며, 그리스어 εἰμί, 산스크리트어 asmi, 영어 is와 동계어이다(sum, esse, fui, futurus 항목 참조)."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "등이 접속사",
+        "gloss_kr": "그리고, 그러나",
+        "gloss_en": "and / but",
+        "syntax": "분노의 상태와 뒤따르는 보복 행위의 한계를 연결",
+        "background": "여신의 분노가 직접적인 대상(글라우코스) 대신 간접적 대상(스킬라)에게 방향을 틀게 되는 계기를 이끈다.",
+        "etymology": "PIE *eti('그 위에, 더하여')에서 유래한 접속사로, 산스크리트어 ati('넘어서'), 그리스어 ἔτι('여전히, 더욱이')와 동계어이다. 원래 '더하여, 넘어서'라는 부사적 의미에서 등위접속사 '그리고'로 문법화되었다."
+      },
+      {
+        "g": "laedere",
+        "pos": "동사",
+        "lemma": "laedo",
+        "principalParts": "laedo – laedere – laesi – laesum",
+        "parse": "부정사 현재 능동태",
+        "gloss_kr": "해를 입히다, 상처주다",
+        "gloss_en": "to hurt, to harm",
+        "syntax": "quatenus 절 내에서 보충 부정사 용법으로 쓰임",
+        "background": "글라우코스 본인에게 직접 물리적·마법적 위해를 가하는 행위를 의미한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 동사로, '상처 입히다'를 뜻한다."
+      },
+      {
+        "g": "quatenus",
+        "pos": "접속사",
+        "lemma": "quatenus",
+        "parse": "이유/범위 접속사",
+        "gloss_kr": "~하는 한, ~이므로",
+        "gloss_en": "since, insofar as",
+        "syntax": "이유/한계 절을 이끄는 접속사",
+        "background": "글라우코스 본인을 해칠 수 없었던 원인이나 정도의 제한을 설명한다.",
+        "etymology": "qua('어느 길로') + tenus('~까지')의 결합으로, '얼마만큼, ~하는 한'을 뜻한다."
+      },
+      {
+        "g": "ipsum",
+        "pos": "대명사",
+        "lemma": "ipse, ipsa, ipsum",
+        "parse": "남성 단수 대격 (강조대명사)",
+        "gloss_kr": "그 사람 자신을",
+        "gloss_en": "himself",
+        "syntax": "부정사 laedere의 직접목적어 (글라우코스)",
+        "background": "스킬라와 대조되는, 글라우코스 본인을 강조하여 지칭한다.",
+        "etymology": "is + -pse(강조 첨사)의 결합으로, '바로 그 자신'을 뜻하는 강조 대명사이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.41",
+    "trans": "사랑하고 있었기에 그럴 수도, 바라지도 않았던 그는 자신이 후순위로 밀려난 여인에게 분노했다.",
+    "words": [
+      {
+        "g": "non",
+        "pos": "부사",
+        "lemma": "non",
+        "parse": "부정 부사",
+        "gloss_kr": "~않다",
+        "gloss_en": "not",
+        "syntax": "동사 poterat를 부정하는 부정 부사",
+        "background": "부정문 문두에 위치하여 부정의 의미를 강조한다.",
+        "etymology": "고졸 라틴어 부정사 ne oenum('하나도 아니다', ne + oenum '하나')의 축약형으로 추정되며, 부정소사 ne(PIE *ne, 영어 no와 동계)에 수사 unus('하나')가 결합해 강조된 부정 표현이 관용화된 것이다."
+      },
+      {
+        "g": "poterat",
+        "pos": "동사",
+        "lemma": "possum, posse, potui",
+        "principalParts": "possum–posse–potui",
+        "parse": "직설법 미완료 능동태 3인칭 단수",
+        "gloss_kr": "~할 수 있었다",
+        "gloss_en": "was able to",
+        "syntax": "주절의 보조 동사 (irascitur와 연결되거나 독립적인 상태 표현)",
+        "background": "글라우코스(Glaucus)가 키르케의 유혹에도 불구하고 스킬라를 향한 마음을 바꿀 수 없었음을 나타낸다.",
+        "etymology": "potis('할 수 있는') + sum('이다')의 합성어로, potis는 PIE *poti-('주인, 지배자')에서 유래하며 그리스어 πόσις('남편, 주인'), 산스크리트어 páti와 동계어이다."
+      },
+      {
+        "g": "(nec",
+        "pos": "접속사",
+        "lemma": "nec",
+        "parse": "등이 접속사",
+        "gloss_kr": "그리고 ~않다",
+        "gloss_en": "nor / and not",
+        "syntax": "vellet을 부정하며 앞 문장에 덧붙이는 접속사",
+        "background": "괄호 삽입절 내에서 능력이 없을 뿐만 아니라 의지조차 없었음을 첨가적으로 설명한다.",
+        "etymology": "ne(부정소사) + que('그리고')의 결합으로, '그리고 ~아니다'를 뜻하는 접속사이다."
+      },
+      {
+        "g": "vellet",
+        "pos": "동사",
+        "lemma": "volo, velle, volui",
+        "principalParts": "volo–velle–volui",
+        "parse": "접속법 미완료 능동태 3인칭 단수",
+        "gloss_kr": "원하다 / 바라다",
+        "gloss_en": "wished / wanted",
+        "syntax": "nec과 결합하여 '원하지도 않았다'를 나타내는 접속법 동사",
+        "background": "접속법 미완료 형태가 쓰여 가정적 또는 심리적 상태를 반영한다.",
+        "etymology": "PIE *welh₁-('바라다, 원하다')에서 유래하며, 영어 will, 그리스어 βούλομαι(방언 변이형)와 동계어로 제시된다."
+      },
+      {
+        "g": "amans),",
+        "pos": "분사",
+        "lemma": "amo, amare, amavi, amatum",
+        "principalParts": "amo–amare–amavi–amatum",
+        "parse": "현재 분사 능동태 남성 단수 주격",
+        "gloss_kr": "사랑하는 (사람으로서)",
+        "gloss_en": "loving / as a lover",
+        "syntax": "주어(글라우코스)의 상태를 설명하는 분사 구문",
+        "background": "현재분사가 실체화되거나 이유/상태를 나타내어 '사랑에 빠진 자로서'라는 의미를 형성한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 동사로, 명확한 인도유럽 동계어가 확립되어 있지 않다(amor, amoris, m. 항목 참조)."
+      },
+      {
+        "g": "irascitur",
+        "pos": "동사",
+        "lemma": "irascor, irasci, iratus sum",
+        "principalParts": "irascor–irasci–iratus sum",
+        "parse": "직설법 현재 이형동사(능동 의미) 3인칭 단수",
+        "gloss_kr": "화내다 / 분노하다",
+        "gloss_en": "becomes angry at",
+        "syntax": "주절의 핵심 술어 동사",
+        "background": "이형동사(deponent verb)로 형태는 수동태이지만 의미는 능동이다. 키르케의 거절당한 자존심과 분노가 서사의 전환점이 된다.",
+        "etymology": "ira('분노')에서 파생된 탈형동사로, ira는 어원이 불확실한 라틴어 고유 어휘이다."
+      },
+      {
+        "g": "illi,",
+        "pos": "대명사",
+        "lemma": "ille, illa, illud",
+        "parse": "지시대명사 여성 단수 여격",
+        "gloss_kr": "그 그녀에게 (스킬라에게)",
+        "gloss_en": "at her",
+        "syntax": "동사 irascitur의 간접목적어(여격 보어)",
+        "background": "irascitur 동사는 분노의 대상을 여격으로 취한다. 여기서 illi는 경쟁자인 스킬라를 가리킨다.",
+        "etymology": "고전 이전 형태 *olle/*ollus에서 발달했으며, PIE 지시 어근 *al-('저것, 다른 것')과 연관짓는 견해가 있다. 로망스어파 정관사(프랑스어 le, 이탈리아어 il)의 직접적 기원이 되는 단어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.42",
+    "trans": "자신보다 선호된 여인에게; 그리고 사랑이 거절당하자 분노하여,",
+    "words": [
+      {
+        "g": "quae",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "관계대명사 여성 단수 주격",
+        "gloss_kr": "~한 그녀",
+        "gloss_en": "who",
+        "syntax": "선행사 illi를 수식하는 관계대명사 절의 주어",
+        "background": "관계절을 이끌어 경쟁자 스킬라가 처한 상황을 설명한다.",
+        "etymology": "PIE 의문·관계 어간 *kʷo-/*kʷi-('누구, 무엇')에서 유래하며, 그리스어 관계대명사 및 영어 who, what, 산스크리트어 kaḥ와 동계어이다. 인도유럽어족 전반에 걸쳐 의문사와 관계사가 동일 어근을 공유하는 대표적 사례이다."
+      },
+      {
+        "g": "sibi",
+        "pos": "대명사",
+        "lemma": "sui",
+        "parse": "재기대명사 3인칭 단수 여격",
+        "gloss_kr": "자신보다 / 자신에게",
+        "gloss_en": "to herself",
+        "syntax": "praelata est와 함께 쓰여 비교/선호의 기준이 되는 여격",
+        "background": "주어인 키르케 자신을 지칭하는 재기대명사이다.",
+        "etymology": "PIE 재귀대명사 어근 *swe-에서 유래하며, 그리스어 재귀 접두사 및 영어 self와 동계어이다."
+      },
+      {
+        "g": "praelata",
+        "pos": "분사",
+        "lemma": "praefero, praeferre, praetuli, praelatum",
+        "principalParts": "praefero–praeferre–praetuli–praelatum",
+        "parse": "완료 분사 수동태 여성 단수 주격",
+        "gloss_kr": "더 선호된 / 우선시된",
+        "gloss_en": "preferred",
+        "syntax": "quae를 수식하거나 praelata est로 완료 수동태 동사 형성",
+        "background": "praefero는 '~보다 더 좋아하다'라는 뜻으로 키르케보다 스킬라가 선택받았음을 의미한다.",
+        "etymology": "prae('앞에') + fero('나르다')의 합성어이다(fero, ferre, tuli, latum 항목 참조)."
+      },
+      {
+        "g": "est;",
+        "pos": "동사",
+        "lemma": "sum, esse, fui, futurus",
+        "principalParts": "sum–esse–fui–futurus",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "이다",
+        "gloss_en": "is",
+        "syntax": "praelata와 결합하여 praelata est(직설법 완료 수동태) 구성",
+        "background": "완료 수동태 조동사 역할을 한다.",
+        "etymology": "PIE 계사 어근 *h₁es-('있다')에서 유래하며, 그리스어 εἰμί, 산스크리트어 asmi, 영어 is와 동계어이다. 완료형 fui는 별개의 어근 *bʰuH-('자라다, 되다')에서 온 것으로, 그리스어 φύω('낳다, 자라다')와 동계어이며 라틴어 계사 활용이 두 어근의 보충법(suppletion)으로 이루어짐을 보여준다."
+      },
+      {
+        "g": "venerisque",
+        "pos": "명사",
+        "lemma": "Venus, Veneris, f.",
+        "parse": "고유명사 여성 단수 속격 + 접속사 -que",
+        "gloss_kr": "사랑의 / 베누스의 (그리고)",
+        "gloss_en": "of love / Venus (and)",
+        "syntax": "repulsa를 수식하는 목적격 속격 또는 제한의 속격",
+        "background": "사랑의 여신 베누스의 이름을 환유적으로 사용하여 '애정' 또는 '성적 유혹'을 뜻한다.",
+        "etymology": "PIE *wen-('바라다, 사랑하다')에서 유래하며, 영어 wish, win과 동계어로 제시된다. 원래는 '매력, 애정'을 뜻하는 보통명사였다가 여신 이름으로 고유화되었다."
+      },
+      {
+        "g": "offensa",
+        "pos": "분사",
+        "lemma": "offendo, offendere, offendi, offensum",
+        "principalParts": "offendo–offendere–offendi–offensum",
+        "parse": "완료 분사 수동태 여성 단수 주격",
+        "gloss_kr": "상처입은 / 모욕당한",
+        "gloss_en": "offended / slurred",
+        "syntax": "주어(키르케)의 심리 상태를 나타내는 부사적/관형사적 분사",
+        "background": "거절당한 여신의 자존심과 치욕감을 형상화한다.",
+        "etymology": "ob + fendo의 합성어이다(offendo 항목 참조)."
+      },
+      {
+        "g": "repulsa,",
+        "pos": "명사",
+        "lemma": "repulsa, -ae, f.",
+        "parse": "보통명사 여성 단수 탈격",
+        "gloss_kr": "거절 / 거부로 인해",
+        "gloss_en": "by the rejection",
+        "syntax": "offensa의 원인/수단을 나타내는 원인의 탈격",
+        "background": "정치적 구직 거절이나 구애 거절에 쓰이던 단어로, 키르케의 애정적 실패를 뜻한다.",
+        "etymology": "repello('물리치다')의 과거분사 여성형이 명사화된 것으로, re('뒤로') + pello('밀다')의 합성어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.43",
+    "trans": "즉시 무서운 즙을 가진 악명 높은 마법 약초들을",
+    "words": [
+      {
+        "g": "protinus",
+        "pos": "부사",
+        "lemma": "protinus",
+        "parse": "시간 부사",
+        "gloss_kr": "즉시 / 지체 없이",
+        "gloss_en": "immediately / at once",
+        "syntax": "동사 conterit을 수식하는 부사",
+        "background": "키르케의 분노가 망설임 없이 행동으로 분출됨을 빠른 전개로 보여준다.",
+        "etymology": "pro('앞으로') + tenus('~까지')와 연관되는 결합으로, '즉시, 곧바로'를 뜻한다."
+      },
+      {
+        "g": "horrendis",
+        "pos": "형용사",
+        "lemma": "horrendus, -a, -um",
+        "parse": "형용사 혼합 변혁 남성/중성 복수 탈격",
+        "gloss_kr": "무서운 / 끔찍한",
+        "gloss_en": "horrible / dreadful",
+        "syntax": "sucis를 수식하는 관형어",
+        "background": "horreo(치밀어 오르다, 소름 돋다)에서 유래한 미래수동분사 출신 형용사로, 공포감을 자아내는 특성을 가진다.",
+        "etymology": "horreo('곤두서다, 소름끼치다')의 동형사 형용사로, PIE *ǵʰers-('곤두서다, 뻣뻣해지다')에서 유래하며 영어 horror가 이 어근에서 파생되었다."
+      },
+      {
+        "g": "infamia",
+        "pos": "형용사",
+        "lemma": "infamis, -e",
+        "parse": "형용사 3변혁 중성 복수 대격",
+        "gloss_kr": "악명 높은 / 불명예스러운",
+        "gloss_en": "infamous / ill-famed",
+        "syntax": "pabula를 수식하는 형용사",
+        "background": "키르케 마법의 불길하고 악의적인 성격을 강조한다.",
+        "etymology": "in('아니') + fama('명성')의 합성 형용사로, '악명 높은'을 뜻한다."
+      },
+      {
+        "g": "pabula",
+        "pos": "명사",
+        "lemma": "pabulum, -i, n.",
+        "parse": "보통명사 중성 복수 대격",
+        "gloss_kr": "풀 / 약초 / 마법 재료",
+        "gloss_en": "herbs / magical plants",
+        "syntax": "동사 conterit의 직접목적어",
+        "background": "본래 가축의 먹이나 풀을 뜻하나 마법 서사에서는 마법약의 재료가 되는 주술용 약초를 지칭한다.",
+        "etymology": "pasco('먹이다')에서 파생된 명사로, PIE *peh₂-('먹이다, 지키다')에서 유래하며 영어 food, pasture와 동계어이다."
+      },
+      {
+        "g": "sucis",
+        "pos": "명사",
+        "lemma": "sucus, -i, m.",
+        "parse": "보통명사 남성 복수 탈격",
+        "gloss_kr": "즙 / 진액으로",
+        "gloss_en": "juices / extracts",
+        "syntax": "속성/소유 또는 수단을 나타내는 탈격 (horrendis sucis)",
+        "background": "약초 추출물 및 유독한 즙을 의미한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '즙, 수액'을 뜻한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.44",
+    "trans": "짓빻고, 빻아 놓은 재료에 헤카테의 주문을 섞는다.",
+    "words": [
+      {
+        "g": "conterit",
+        "pos": "동사",
+        "lemma": "contero, conterere, contrivi, contritum",
+        "principalParts": "contero–conterere–contrivi–contritum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "짓빻다 / 갈다",
+        "gloss_en": "grinds up / crushes",
+        "syntax": "주절의 술어 동사",
+        "background": "약초의 유효 성분을 추출하기 위해 절구 등으로 물리적으로 빻는 마법 조제 과정을 묘사한다.",
+        "etymology": "con(강조) + tero('문지르다')의 합성어이다(tero, terere, trivi, tritum 항목 참조)."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "등이 접속사",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "conterit과 miscet 두 동사를 연결",
+        "background": "순차적인 마법 의식 행위를 연결한다.",
+        "etymology": "PIE *eti('그 위에, 더하여')에서 유래한 접속사로, 산스크리트어 ati('넘어서'), 그리스어 ἔτι('여전히, 더욱이')와 동계어이다. 원래 '더하여, 넘어서'라는 부사적 의미에서 등위접속사 '그리고'로 문법화되었다."
+      },
+      {
+        "g": "tritis",
+        "pos": "분사",
+        "lemma": "tero, terere, trivi, tritum",
+        "principalParts": "tero–terere–trivi–tritum",
+        "parse": "완료 분사 수동태 중성 복수 여격",
+        "gloss_kr": "빻아 놓은 것들에",
+        "gloss_en": "to the crushed ingredients",
+        "syntax": "동사 miscet의 간접목적어(여격 보어)",
+        "background": "완료분사의 실체화. 앞 행에서 짓빻은 마법 약초 재료들을 지칭한다.",
+        "etymology": "PIE *terh₁-('문지르다, 갈다')에서 유래하며, 그리스어 τείρω, 영어 throw와 동계어로 제시된다."
+      },
+      {
+        "g": "Hecateia",
+        "pos": "형용사",
+        "lemma": "Hecateius, -a, -um",
+        "parse": "형용사 중성 복수 대격",
+        "gloss_kr": "헤카테의",
+        "gloss_en": "of Hecate / Hecatean",
+        "syntax": "carmina를 수식하는 형용사",
+        "background": "밤과 마법, 주술의 여신인 헤카테(Hecate)에 속하거나 바쳐진 강력한 주술적 속성을 뜻한다.",
+        "etymology": "여신 헤카테(Ἑκάτη)에서 파생된 형용사로, 그리스어 어원 자체는 ἑκάς('멀리') 또는 ἑκών('자발적인')과 연관짓는 설이 있으나 불확실하다."
+      },
+      {
+        "g": "carmina",
+        "pos": "명사",
+        "lemma": "carmen, carminis, n.",
+        "parse": "보통명사 중성 복수 대격",
+        "gloss_kr": "주문 / 시 / 노래",
+        "gloss_en": "incantations / spells",
+        "syntax": "동사 miscet의 직접목적어",
+        "background": "carmen은 운율 있는 노래뿐만 아니라 마법적 주술문(spell)을 가리킨다. 오비디우스는 언어적 주술과 약물의 결합을 강조한다.",
+        "etymology": "canere('노래하다')의 어근 *can-에 도구·결과를 나타내는 접미사 -men이 결합한 형태로, '노래됨, 노래' 즉 '노래, 시가, 주문'을 뜻한다. PIE 어근 *kan-('노래하다')은 영어 hen(원래 '노래하는 새')과도 먼 연관이 제기된다."
+      },
+      {
+        "g": "miscet",
+        "pos": "동사",
+        "lemma": "misceo, miscere, miscui, mixtum",
+        "principalParts": "misceo–miscere–miscui–mixtum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "섞다 / 혼합하다",
+        "gloss_en": "mixes / blends",
+        "syntax": "주절의 술어 동사",
+        "background": "물리적 재료와 음성적 주문을 융합하는 마법 의식의 완성을 표현한다.",
+        "etymology": "PIE *meyk-('섞다')에서 유래하며, 그리스어 μίσγω, 영어 mix와 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.45",
+    "trans": "푸른 옷을 입고서, 맹수들의",
+    "words": [
+      {
+        "g": "caerulaque",
+        "pos": "형용사",
+        "lemma": "caerulus, -a, -um",
+        "parse": "형용사 중성 복수 대격 + 접속사 -que",
+        "gloss_kr": "푸른 / 짙은 청색의 (그리고)",
+        "gloss_en": "dark blue / sea-green (and)",
+        "syntax": "velamina를 수식하는 형용사",
+        "background": "바다나 지하 세계, 마법과 관련된 어두운 푸른빛을 띤다. 키르케가 바다로 이동하는 서사적 분위기와 부합한다.",
+        "etymology": "caelum('하늘')과 연관짓는 민간어원이 있으나, 실제로는 caeruleus의 변이형으로 어원이 불확실하다."
+      },
+      {
+        "g": "induitur",
+        "pos": "동사",
+        "lemma": "induo, induere, indui, indutum",
+        "principalParts": "induo–induere–indui–indutum",
+        "parse": "직설법 현재 중간태/수동태 3인칭 단수",
+        "gloss_kr": "(옷을) 입다",
+        "gloss_en": "puts on / is clothed in",
+        "syntax": "대격 목적어(velamina)를 취하는 희랍어식 재기/중간태(Greek middle voice) 용법",
+        "background": "고전 라틴어 시에서 동사가 재기적 의미를 가져 '스스로 ~을 입다'라는 뜻으로 직접목적어 대격을 거느린다.",
+        "etymology": "ind-(in의 이형태) + uo('입다')의 합성어로, uo는 PIE *ews-('입다')에서 유래하며 exuo('벗다')와 짝을 이룬다."
+      },
+      {
+        "g": "velamina",
+        "pos": "명사",
+        "lemma": "velamen, velaminis, n.",
+        "parse": "보통명사 중성 복수 대격",
+        "gloss_kr": "의복 / 덮개 / 로브",
+        "gloss_en": "garments / robes",
+        "syntax": "동사 induitur의 직접목적어",
+        "background": "의식이나 외출 시 갖춰 입는 의복을 나타낸다.",
+        "etymology": "velo('덮다, 가리다')에서 파생된 명사로, velum('베일')과 같은 어근이다."
+      },
+      {
+        "g": "perque",
+        "pos": "전치사",
+        "lemma": "per",
+        "parse": "전치사 (대격 지배) + 접속사 -que",
+        "gloss_kr": "~을 통과하여 (그리고)",
+        "gloss_en": "through (and)",
+        "syntax": "agmen을 지배하는 통로/장소의 전치사",
+        "background": "공간적 통과를 나타낸다.",
+        "etymology": "PIE *per-('앞으로, 통과하여')에서 유래하며, 그리스어 περί/παρά, 영어 for, through와 동계어이다. 공간적 '통과'의 의미에서 수단('~을 통해')과 강조 접두사(per-, '완전히')로 의미가 확장되었다."
+      },
+      {
+        "g": "ferarum",
+        "pos": "명사",
+        "lemma": "fera, -ae, f.",
+        "parse": "보통명사 여성 복수 속격",
+        "gloss_kr": "맹수들의 / 짐승들의",
+        "gloss_en": "of wild beasts",
+        "syntax": "agmen을 수식하는 속격",
+        "background": "키르케의 궁전 주변을 둘러싸고 있는, 키르케의 마법에 의해 짐승으로 변한 인간들을 가리킨다.",
+        "etymology": "ferus('야생의')의 여성형이 명사화된 것으로, PIE *ǵʰwer-('야생동물')에서 유래하며 그리스어 θήρ('짐승')와 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.46",
+    "trans": "아첨하는 무리 한가운데를 지나 궁전에서 나온다.",
+    "words": [
+      {
+        "g": "agmen",
+        "pos": "명사",
+        "lemma": "agmen, agminis, n.",
+        "parse": "보통명사 중성 단수 대격",
+        "gloss_kr": "무리 / 대열",
+        "gloss_en": "throng / crowd",
+        "syntax": "전치사 per의 목적어",
+        "background": "본래 행렬이나 군대의 대열을 뜻하며, 맹수들이 무리 지어 있음을 묘사한다.",
+        "etymology": "ago('몰다, 이끌다')에서 파생된 명사로, ago는 PIE *h₂eǵ-('몰다')에서 유래하며 그리스어 ἄγω, 영어 act, agent와 동계어이다."
+      },
+      {
+        "g": "adulantum",
+        "pos": "분사",
+        "lemma": "adulor, adulari, adulatus sum",
+        "principalParts": "adulor–adulari–adulatus sum",
+        "parse": "현재 분사 (능동 의미) 남성/여성 복수 속격",
+        "gloss_kr": "아양 떠는 / 교태 부리는",
+        "gloss_en": "fawning / flattering",
+        "syntax": "ferarum 또는 무리를 구성하는 존재들을 수식하는 속격 (adulantium의 약형)",
+        "background": "야수들이 주인의 환심을 사기 위해 꼬리를 치며 아양 떠는 모습을 묘사한다. 3변혁 속격 복수 어미 -um 형태가 쓰였다.",
+        "etymology": "어원이 불확실한 라틴어 고유 탈형동사로, '아첨하다'를 뜻한다."
+      },
+      {
+        "g": "media",
+        "pos": "형용사",
+        "lemma": "medius, -a, -um",
+        "parse": "형용사 여성 단수 탈격",
+        "gloss_kr": "한가운데의",
+        "gloss_en": "middle / central",
+        "syntax": "aula를 수식하는 관형어",
+        "background": "장소의 중앙을 가리키는 형용사의 한정적 용법이다.",
+        "etymology": "PIE *medʰyo-('중간의')에서 유래하며, 그리스어 μέσος, 산스크리트어 mádhya, 영어 mid와 동계어이다."
+      },
+      {
+        "g": "procedit",
+        "pos": "동사",
+        "lemma": "procedo, procedere, processi, processum",
+        "principalParts": "procedo–procedere–processi–processum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "나아가다 / 걸어나오다",
+        "gloss_en": "advances / steps forth",
+        "syntax": "주절의 술어 동사",
+        "background": "장엄하고 위협적인 행진을 묘사한다.",
+        "etymology": "pro('앞으로') + cedo('가다')의 합성어로, cedo는 PIE *ked-('가다, 물러나다')에서 유래한다."
+      },
+      {
+        "g": "ab",
+        "pos": "전치사",
+        "lemma": "ab",
+        "parse": "전치사 (탈격 지배)",
+        "gloss_kr": "~로부터",
+        "gloss_en": "from",
+        "syntax": "aula를 지배하는 기점의 전치사",
+        "background": "출발 지점을 나타낸다.",
+        "etymology": "PIE *h₂epo('~로부터 떨어져')에서 유래하며, 그리스어 ἀπό, 산스크리트어 apa, 영어 off, of와 동계어이다."
+      },
+      {
+        "g": "aula",
+        "pos": "명사",
+        "lemma": "aula, -ae, f.",
+        "parse": "보통명사 여성 단수 탈격",
+        "gloss_kr": "궁전 / 뜰",
+        "gloss_en": "hall / palace",
+        "syntax": "전치사 ab의 목적어",
+        "background": "키르케의 호화로우면서도 기괴한 거처(아이아이에 섬의 궁전)를 뜻한다.",
+        "etymology": "그리스어 αὐλή('안뜰, 궁정')에서 차용된 명사이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.47",
+    "trans": "마주 보이는 잔클레의 바위 맞은편을 향하여",
+    "words": [
+      {
+        "g": "oppositumque",
+        "pos": "분사",
+        "lemma": "oppono, opponere, opposui, oppositum",
+        "principalParts": "oppono–opponere–opposui–oppositum",
+        "parse": "완료 분사 수동태 중성 단수 대격 + 접속사 -que",
+        "gloss_kr": "마주 보고 있는 / 맞은편의 (그리고)",
+        "gloss_en": "opposite / facing (and)",
+        "syntax": "Region 또는 바다 장소를 수식하는 관형어",
+        "background": "이탈리아 본토와 시칠리아 섬이 서로 맞닿아 대치하고 있는 지리적 형상을 뜻한다.",
+        "etymology": "ob('~에 대항하여') + pono('놓다')의 합성어이다(pono, ponere, posui, positum 항목 참조)."
+      },
+      {
+        "g": "petens",
+        "pos": "분사",
+        "lemma": "peto, petere, petivi, petitum",
+        "principalParts": "peto–petere–petivi–petitum",
+        "parse": "현재 분사 능동태 여성 단수 주격",
+        "gloss_kr": "향하면서 / 찾아가면서",
+        "gloss_en": "seeking / heading for",
+        "syntax": "주어 키르케의 이동 목적과 방향을 나타내는 분사 구문",
+        "background": "목적지를 향해 일직선으로 나아가는 의지적 이동을 가리킨다.",
+        "etymology": "PIE *peth₂-('날다, 서두르다')에서 유래한다(peto 항목 참조)."
+      },
+      {
+        "g": "contra",
+        "pos": "전치사",
+        "lemma": "contra",
+        "parse": "전치사 (대격 지배)",
+        "gloss_kr": "~맞은편에 / ~을 향하여",
+        "gloss_en": "opposite / against",
+        "syntax": "saxa를 지배하는 위치/방향의 전치사",
+        "background": "잔클레 바위의 건너편 위치를 명확히 한다.",
+        "etymology": "com-('함께')에 방향 접미사 -tra가 결합한 형태에서 발달한 것으로 추정되며, '맞은편에, ~에 대항하여'를 뜻한다."
+      },
+      {
+        "g": "Zancleia",
+        "pos": "형용사",
+        "lemma": "Zancleius, -a, -um",
+        "parse": "형용사 중성 복수 대격",
+        "gloss_kr": "잔클레의 (메시나의)",
+        "gloss_en": "Zanclean / of Zancle",
+        "syntax": "saxa를 수식하는 형용사",
+        "background": "잔클레(Zancle)는 시칠리아 메시나(Messina)의 옛 이름으로, 낫(sickle) 형태의 지형에서 유래했다. 메시나 해협의 스킬라 건너편을 가리킨다.",
+        "etymology": "Zancle에서 파생된 형용사이다(Zancle, Zanclae, f. 항목 참조)."
+      },
+      {
+        "g": "saxa",
+        "pos": "명사",
+        "lemma": "saxum, -i, n.",
+        "parse": "보통명사 중성 복수 대격",
+        "gloss_kr": "바위들",
+        "gloss_en": "rocks / cliffs",
+        "syntax": "전치사 contra의 목적어",
+        "background": "메시나 해협의 험준한 암초 지대를 의미한다.",
+        "etymology": "seco('자르다')와 같은 어근 *sek-('자르다')에서 파생된 것으로 추정되며, '(잘라낸) 바위'를 뜻한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.48",
+    "trans": "레기온으로 들어가 소용돌이치는 파도 속으로 들어가니,",
+    "words": [
+      {
+        "g": "Region",
+        "pos": "명사",
+        "lemma": "Rhegium, -i, n. (그리스어 대격 형태 Region)",
+        "parse": "고유명사 중성 단수 대격",
+        "gloss_kr": "레기온 (레조 칼라브리아)",
+        "gloss_en": "Rhegium",
+        "syntax": "ingreditur의 직접목적어 (지명 대격)",
+        "background": "이탈리아 장화 장식 끝부분에 위치한 도시 레기온(Rhegium, 현 Rhegio Calabria). 그리스어 어휘 변혁 대격 어미 -on을 유지하고 있다.",
+        "etymology": "그리스어 Ῥήγιον에서 차용된 지명이다(Regium, Regii, n. 항목 참조)."
+      },
+      {
+        "g": "ingreditur",
+        "pos": "동사",
+        "lemma": "ingredior, ingredi, ingressus sum",
+        "principalParts": "ingredior–ingredi–ingressus sum",
+        "parse": "직설법 현재 이형동사(능동 의미) 3인칭 단수",
+        "gloss_kr": "들어서다 / 진입하다",
+        "gloss_en": "enters / steps into",
+        "syntax": "주절의 술어 동사",
+        "background": "이형동사로 장소 대격(Region, undas)을 직접 목적어로 취하여 들어가는 동작을 나타낸다.",
+        "etymology": "in('안으로') + gradior('걷다')의 합성어로, gradior는 PIE *gʰredʰ-('걷다')에서 유래한다."
+      },
+      {
+        "g": "ferventes",
+        "pos": "분사",
+        "lemma": "ferveo, fervere, ferbui",
+        "principalParts": "ferveo–fervere–ferbui",
+        "parse": "현재 분사 능동태 여성 복수 대격",
+        "gloss_kr": "끓어오르는 / 꿈틀거리는 / 소용돌이치는",
+        "gloss_en": "boiling / churning / raging",
+        "syntax": "undas를 수식하는 관형어",
+        "background": "메시나 해협 특유의 거센 거품과 소용돌이치는 파도의 격동을 '끓어오름'으로 묘사한다.",
+        "etymology": "PIE *bʰrewh₁-('끓다, 부글거리다')에서 유래하며, 영어 brew, broth와 동계어이다."
+      },
+      {
+        "g": "aestibus",
+        "pos": "명사",
+        "lemma": "aestus, -us, m.",
+        "parse": "보통명사 남성 복수 탈격",
+        "gloss_kr": "조류로 / 소용돌이로",
+        "gloss_en": "with tides / surges",
+        "syntax": "ferventes의 원인/수단을 나타내는 탈격",
+        "background": "해류의 밀물과 썰물, 혹은 열기를 뜻하며 해협의 격렬한 물살을 의미한다.",
+        "etymology": "PIE *aidʰ-('불타다')에서 유래하며, 그리스어 αἴθω('불태우다')와 동계어로 제시된다. '타는 듯한 열기'에서 '(바다의) 조류, 파도'로 의미가 확장되었다."
+      },
+      {
+        "g": "undas,",
+        "pos": "명사",
+        "lemma": "unda, -ae, f.",
+        "parse": "보통명사 여성 복수 대격",
+        "gloss_kr": "파도 속으로 / 물결 속으로",
+        "gloss_en": "waves / waters",
+        "syntax": "동사 ingreditur의 목적어",
+        "background": "키르케가 육지뿐만 아니라 바다 물결 속으로 직접 걸어 들어감을 보여준다.",
+        "etymology": "PIE *wed-('물')에서 유래하며, 그리스어 ὕδωρ, 영어 water와 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.49",
+    "trans": "그 물속을 그녀는 단단한 땅 위에서처럼 발걸음을 내딛고",
+    "words": [
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "전치사 (탈격 지배)",
+        "gloss_kr": "~안에서 / ~위에서",
+        "gloss_en": "in / on",
+        "syntax": "quibus를 지배하는 장소의 전치사",
+        "background": "장소적 배경을 나타낸다.",
+        "etymology": "PIE *h₁en('~안에')에서 유래하며, 그리스어 ἐν, 영어 in과 동계어이다. 라틴어에서는 격에 따라 '~안에(탈격, 정적 위치)' 또는 '~안으로(대격, 방향)'의 이중 용법을 가진다."
+      },
+      {
+        "g": "quibus",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "관계대명사 여성 복수 탈격",
+        "gloss_kr": "그 파도들 속에서",
+        "gloss_en": "which (waves)",
+        "syntax": "선행사 undas를 받는 관계대명사",
+        "background": "앞 행의 undas를 받아 키르케가 바다 위를 걷는 초자연적 배경이 됨을 설명한다.",
+        "etymology": "PIE 의문·관계 어간 *kʷo-/*kʷi-('누구, 무엇')에서 유래하며, 그리스어 관계대명사 및 영어 who, what, 산스크리트어 kaḥ와 동계어이다. 인도유럽어족 전반에 걸쳐 의문사와 관계사가 동일 어근을 공유하는 대표적 사례이다."
+      },
+      {
+        "g": "ut",
+        "pos": "접속사/부사",
+        "lemma": "ut",
+        "parse": "비교 부사/접속사",
+        "gloss_kr": "~처럼 / 마치 ~같이",
+        "gloss_en": "as if / just as",
+        "syntax": "양태/비교 구문을 이끄는 부사",
+        "background": "바다 위를 걷는 모습이 뭍을 걷는 것과 다름없음을 비유한다.",
+        "etymology": "고졸 라틴어 uti에서 축약된 형태로, PIE 관계 어간 *kʷu-ti에서 유래한 것으로 추정되며 quod, qui와 같은 어족에 속한다(qui 항목 참조)."
+      },
+      {
+        "g": "solida",
+        "pos": "형용사",
+        "lemma": "solidus, -a, -um",
+        "parse": "형용사 여성 단수 탈격",
+        "gloss_kr": "단단한 / 견고한",
+        "gloss_en": "solid / firm",
+        "syntax": "terra를 수식하는 형용사",
+        "background": "액체인 바다와 대비되는 단단한 대지의 질감을 강조한다.",
+        "etymology": "sollus('완전한, 온전한')와 같은 어근 *solh₂-에서 파생되었다(salus, salutis, f. 항목 참조)."
+      },
+      {
+        "g": "ponit",
+        "pos": "동사",
+        "lemma": "pono, ponere, posui, positum",
+        "principalParts": "pono–ponere–posui–positum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "놓다 / 내딛다",
+        "gloss_en": "places / sets",
+        "syntax": "주절의 술어 동사 (ponit vestigia = 발걸음을 내딛다)",
+        "background": "vestigia와 결합하여 '걸어가다'라는 숙어적 표현을 이룬다.",
+        "etymology": "po-('앞에') + sino('놓다')의 합성어로 발달한 것으로 추정되며, sino는 PIE *seh₁-('놓다, 두다')에서 유래한다."
+      },
+      {
+        "g": "vestigia",
+        "pos": "명사",
+        "lemma": "vestigium, -(i)i, n.",
+        "parse": "보통명사 중성 복수 대격",
+        "gloss_kr": "발자국 / 발걸음",
+        "gloss_en": "footsteps / tracks",
+        "syntax": "동사 ponit의 직접목적어",
+        "background": "신성하거나 초자연적인 존재의 보행을 묘사할 때 자주 쓰이는 시적 어휘이다.",
+        "etymology": "vestigo('추적하다')와 관련되는 명사로, '발자국, 흔적'을 뜻하며 어원이 불확실하다."
+      },
+      {
+        "g": "terra",
+        "pos": "명사",
+        "lemma": "terra, -ae, f.",
+        "parse": "보통명사 여성 단수 탈격",
+        "gloss_kr": "땅 위에서",
+        "gloss_en": "ground / earth",
+        "syntax": "전치사 in(생략된 채 solida와 결합) 또는 비교의 탈격 용법",
+        "background": "ut solida terra 문맥에서 '단단한 땅에서처럼'이라는 비유를 완성한다.",
+        "etymology": "PIE *ters-('마르다')에서 유래한 것으로 추정되며, '마른 땅(물과 대비되는)'이라는 원의미에서 '땅, 대지'로 발달했다는 설이 유력하나, 일부 학자는 이 연결에 신중한 입장을 취한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.50",
+    "trans": "젖지 않은 발로 바다 수면 위를 달려간 다.",
+    "words": [
+      {
+        "g": "summaque",
+        "pos": "형용사",
+        "lemma": "summus, -a, -um",
+        "parse": "최상급 형용사 중성 복수 대격 + 접속사 -que",
+        "gloss_kr": "수면 최상부의 / 가장 위의 (그리고)",
+        "gloss_en": "surface of / highest (and)",
+        "syntax": "aequora를 수식하는 최상급 형용사",
+        "background": "Super aequora와 함께 바다 물속으로 빠지지 않고 표면(수면)만을 스쳐 지나감을 뜻한다.",
+        "etymology": "super('~위에')의 최상급형으로, PIE *upo/*uper 어근에서 유래한다(super 계열은 그리스어 ὑπέρ와 동계)."
+      },
+      {
+        "g": "decurrit",
+        "pos": "동사",
+        "lemma": "decurro, decurrere, decucurri, decursum",
+        "principalParts": "decurro–decurrere–decucurri–decursum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "달려가다 / 쾌속으로 가다",
+        "gloss_en": "runs down / skims over",
+        "syntax": "주절의 술어 동사",
+        "background": "키르케의 신성한 능력과 신속한 이동을 생생하게 형상화한다.",
+        "etymology": "de('아래로') + curro('달리다')의 합성어로, curro는 PIE *ḱers-('달리다')에서 유래하며 영어 car, current와 동계어이다."
+      },
+      {
+        "g": "pedibus",
+        "pos": "명사",
+        "lemma": "pes, pedis, m.",
+        "parse": "보통명사 남성 복수 탈격",
+        "gloss_kr": "발로 / 발을 가지고",
+        "gloss_en": "with feet",
+        "syntax": "수단/도구의 탈격 (siccis pedibus)",
+        "background": "신성한 보행 표현으로 siccis와 함께 쓰였다.",
+        "etymology": "PIE *ped-('발')에서 유래하며, 그리스어 πούς/ποδός, 산스크리트어 pā́d, 영어 foot와 동계어이다."
+      },
+      {
+        "g": "super",
+        "pos": "전치사",
+        "lemma": "super",
+        "parse": "전치사 (대격 지배)",
+        "gloss_kr": "~위로 / ~수면 위에",
+        "gloss_en": "over / above",
+        "syntax": "aequora를 지배하는 위치 전치사",
+        "background": "수면 위를 자유롭게 이동하는 초자연성을 강조한다.",
+        "etymology": "PIE *upér('~위에')에서 유래하며, 그리스어 ὑπέρ, 영어 over, super와 동계어이다."
+      },
+      {
+        "g": "aequora",
+        "pos": "명사",
+        "lemma": "aequor, aequoris, n.",
+        "parse": "보통명사 중성 복수 대격",
+        "gloss_kr": "바다 / 평평한 수면",
+        "gloss_en": "waters / sea surface",
+        "syntax": "전치사 super의 목적어",
+        "background": "본래 '평평한 것(aequus)'을 의미하며, 시문학에서는 잔잔하거나 넓게 펼쳐진 바다 표면을 뜻한다.",
+        "etymology": "aequus('평평한, 공평한')에서 파생된 명사로, '평평한 면' 즉 잔잔한 바다를 뜻한다. aequus는 PIE *aik'-('닮다, 평평하다')에서 유래한다는 설이 있으나 불확실하다."
+      },
+      {
+        "g": "siccis.",
+        "pos": "형용사",
+        "lemma": "siccus, -a, -um",
+        "parse": "형용사 남성 복수 탈격",
+        "gloss_kr": "마른 / 젖지 않은",
+        "gloss_en": "dry / unwetted",
+        "syntax": "pedibus를 수식하는 형용사",
+        "background": "바다 위를 달려감에도 불구하고 발이 물에 전혀 젖지 않음(pedibus siccis)을 표현하여 키르케의 마법적·신적 위엄을 강조하는 호메로스적/고전적 전통 모티프이다.",
+        "etymology": "어원이 불확실한 라틴어 고유 형용사로, '마른'을 뜻한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.51",
+    "trans": "굽어진 활 모양으로 굽어 있는 조그마한 웅덩이가 하나 있었는데,",
+    "words": [
+      {
+        "g": "parvus",
+        "pos": "형용사",
+        "lemma": "parvus, -a, -um",
+        "parse": "형용사 남성 단수 주격",
+        "gloss_kr": "작은 / 조그마한",
+        "gloss_en": "small / little",
+        "syntax": "gurges를 수식하는 형용사",
+        "background": "스킬라가 마법의 독에 오염될 한정되고 고요한 장소임을 암시한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 형용사로, '작은'을 뜻한다."
+      },
+      {
+        "g": "erat",
+        "pos": "동사",
+        "lemma": "sum, esse, fui, futurus",
+        "principalParts": "sum–esse–fui–futurus",
+        "parse": "직설법 미완료 능동태 3인칭 단수",
+        "gloss_kr": "있었다",
+        "gloss_en": "there was",
+        "syntax": "주절의 술어 동사",
+        "background": "새로운 서사 공간을 도입하는 개사적(선언적) 동사 표현이다.",
+        "etymology": "PIE 계사 어근 *h₁es-('있다')에서 유래하며, 그리스어 εἰμί, 산스크리트어 asmi, 영어 is와 동계어이다. 완료형 fui는 별개의 어근 *bʰuH-('자라다, 되다')에서 온 것으로, 그리스어 φύω('낳다, 자라다')와 동계어이며 라틴어 계사 활용이 두 어근의 보충법(suppletion)으로 이루어짐을 보여준다."
+      },
+      {
+        "g": "gurges,",
+        "pos": "명사",
+        "lemma": "gurges, gurgitis, m.",
+        "parse": "보통명사 남성 단수 주격",
+        "gloss_kr": "웅덩이 / 바다 만 / 소용돌이",
+        "gloss_en": "pool / cove / waters",
+        "syntax": "주절의 주어",
+        "background": "본래 깊은 소용돌이나 물굽이를 뜻하며, 여기서는 스킬라가 목욕하던 고요한 바위 웅덩이를 의미한다.",
+        "etymology": "PIE *gʷerh₃-('삼키다')에서 유래하며, gurgulio('목구멍'), 영어 gorge와 동계어로 제시된다."
+      },
+      {
+        "g": "curvos",
+        "pos": "형용사",
+        "lemma": "curvus, -a, -um",
+        "parse": "형용사 남성 복수 대격",
+        "gloss_kr": "굽어진 / 곡선의",
+        "gloss_en": "curved / bent",
+        "syntax": "arcus를 수식하는 형용사",
+        "background": "지형이 활처럼 곡선을 이루며 둘러싸여 있음을 묘사한다.",
+        "etymology": "PIE *(s)ker-('굽다, 돌다')에서 유래하며, 그리스어 κυρτός, 영어 curve와 동계어이다."
+      },
+      {
+        "g": "sinuatus",
+        "pos": "분사",
+        "lemma": "sinuo, sinuare, sinuavi, sinuatum",
+        "principalParts": "sinuo–sinuare–sinuavi–sinuatum",
+        "parse": "완료 분사 수동태 남성 단수 주격",
+        "gloss_kr": "굽어져 있는 / 휘어진",
+        "gloss_en": "curved / bent into",
+        "syntax": "주어 gurges를 수식하는 분사 구문",
+        "background": "sinus(품, 만)에서 유래한 동사로, 해안선이 움푹 들어간 모양을 시적으로 표현한다.",
+        "etymology": "sinus('굽이, 만')에서 파생된 동사로, sinus는 어원이 불확실한 라틴어 고유 어휘이다."
+      },
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "전치사 (대격 지배)",
+        "gloss_kr": "~의 형태로 / ~로",
+        "gloss_en": "into",
+        "syntax": "arcus를 지배하여 결과를 나타내는 전치사",
+        "background": "지형이 어떤 모양으로 굽어지는지 결과를 보여준다.",
+        "etymology": "PIE *h₁en('~안에')에서 유래하며, 그리스어 ἐν, 영어 in과 동계어이다. 라틴어에서는 격에 따라 '~안에(탈격, 정적 위치)' 또는 '~안으로(대격, 방향)'의 이중 용법을 가진다."
+      },
+      {
+        "g": "arcus,",
+        "pos": "명사",
+        "lemma": "arcus, -us, m.",
+        "parse": "보통명사 남성 복수 대격",
+        "gloss_kr": "활 모양으로",
+        "gloss_en": "arcs / bows",
+        "syntax": "전치사 in의 목적어",
+        "background": "4변혁 명사. 해안선이 활처럼 둥글게 둘러싸인 형태(만)를 묘사한다.",
+        "etymology": "PIE *h₂erkʷ-('활, 화살')에서 유래하는 것으로 추정된다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.52",
+    "trans": "스킬라가 좋아하는 휴식처였다. 그곳으로 그녀는 바다와",
+    "words": [
+      {
+        "g": "grata",
+        "pos": "형용사",
+        "lemma": "gratus, -a, -um",
+        "parse": "형용사 여성 단수 주격",
+        "gloss_kr": "즐거운 / 마음에 드는",
+        "gloss_en": "welcome / pleasant",
+        "syntax": "quies를 수식하는 관형어 (동격 서술)",
+        "background": "스킬라가 평소에 즐겨 찾아 휴식을 취하던 장소임을 나타낸다.",
+        "etymology": "PIE *gʷerh₂-('칭찬하다, 환영하다')에서 유래하며, 산스크리트어 gr̥ṇā́ti('찬양하다')와 동계어로 제시된다."
+      },
+      {
+        "g": "quies",
+        "pos": "명사",
+        "lemma": "quies, quietis, f.",
+        "parse": "보통명사 여성 단수 주격",
+        "gloss_kr": "휴식 / 휴식처",
+        "gloss_en": "resting-place / repose",
+        "syntax": "gurges와 동격을 이루는 주격 보어",
+        "background": "장소 자체가 '휴식'이라는 추상명사로 변용되어 스킬라에게 주는 안식의 의미를 강조한다.",
+        "etymology": "PIE *kʷyeh₁-('쉬다')에서 유래하며, 영어 quiet, quiescent가 이 라틴어에서 파생되었다."
+      },
+      {
+        "g": "Scyllae:",
+        "pos": "명사",
+        "lemma": "Scylla, -ae, f.",
+        "parse": "고유명사 여성 단수 여격",
+        "gloss_kr": "스킬라에게",
+        "gloss_en": "to Scylla",
+        "syntax": "grata quies에 부속되는 소유/이익의 여격",
+        "background": "아직 몬스터로 변하기 전 아름다운 님프였던 스킬라를 가리킨다.",
+        "etymology": "그리스어 Σκύλλα에서 차용된 고유명사로, 그리스어 내부에서도 확실한 인도유럽 어근이 밝혀지지 않아 베이크스는 선그리스어 기원의 가능성을 배제하지 않는다. σκύλαξ('강아지')와 연관짓는 통속적 해석도 있으나 확증되지 않는다."
+      },
+      {
+        "g": "quo",
+        "pos": "부사",
+        "lemma": "quo",
+        "parse": "관계 부사",
+        "gloss_kr": "그곳으로",
+        "gloss_en": "whither / to which place",
+        "syntax": "gurges를 선행사로 받는 장소 방향의 관계부사",
+        "background": "스킬라가 이동하는 목적지 장소를 이끈다.",
+        "etymology": "qui의 탈격형이 부사화된 것이다(qui 항목 참조)."
+      },
+      {
+        "g": "se",
+        "pos": "대명사",
+        "lemma": "sui",
+        "parse": "재기대명사 3인칭 여성 단수 대격",
+        "gloss_kr": "자기 자신을",
+        "gloss_en": "herself",
+        "syntax": "동사 referebat의 직접목적어 (se referre = 물러나다/몸을 피하다)",
+        "background": "주어 스킬라 자신을 가리킨다.",
+        "etymology": "PIE 재귀대명사 어근 *swe-에서 유래하며, 그리스어 재귀 접두사 및 영어 self와 동계어이다."
+      },
+      {
+        "g": "referebat",
+        "pos": "동사",
+        "lemma": "refero, referre, rettuli, relatum",
+        "principalParts": "refero–referre–rettuli–relatum",
+        "parse": "직설법 미완료 능동태 3인칭 단수",
+        "gloss_kr": "몸을 피하곤 했다 / 돌아가곤 했다",
+        "gloss_en": "was wont to withdraw",
+        "syntax": "관계절의 술어 동사",
+        "background": "미완료 시제가 쓰여 스킬라가 한낮마다 이 웅덩이를 찾았던 '반복적 습관'을 보여준다.",
+        "etymology": "re-('다시, 뒤로') + fero('나르다')의 합성어로, fero는 PIE *bʰer-('나르다')에서 유래하며 그리스어 φέρω, 영어 bear와 동계어이다(fero 항목 참조). 완료형 rettuli는 다른 어근 tollo/tuli 계열에서 보충된 형태이다."
+      },
+      {
+        "g": "ab",
+        "pos": "전치사",
+        "lemma": "ab",
+        "parse": "전치사 (탈격 지배)",
+        "gloss_kr": "~로부터 / ~을 피하여",
+        "gloss_en": "from",
+        "syntax": "aestu를 지배하는 이탈/회피의 전치사",
+        "background": "무더위나 열기를 피해 물러남을 뜻한다.",
+        "etymology": "PIE *h₂epo('~로부터 떨어져')에서 유래하며, 그리스어 ἀπό, 산스크리트어 apa, 영어 off, of와 동계어이다."
+      },
+      {
+        "g": "aestu",
+        "pos": "명사",
+        "lemma": "aestus, -us, m.",
+        "parse": "보통명사 남성 단수 탈격",
+        "gloss_kr": "열기로부터 / 무더위로부터",
+        "gloss_en": "from the heat",
+        "syntax": "전치사 ab의 목적어",
+        "background": "한낮의 찌는 듯한 태양열과 바다의 무더위를 뜻한다.",
+        "etymology": "PIE *aidʰ-('불타다')에서 유래하며, 그리스어 αἴθω('불태우다')와 동계어로 제시된다. '타는 듯한 열기'에서 '(바다의) 조류, 파도'로 의미가 확장되었다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.53",
+    "trans": "하늘의 무더위를 피해 물러나곤 했다, 태양이 하늘 한가운데에서",
+    "words": [
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "등이 접속사",
+        "gloss_kr": "~와",
+        "gloss_en": "both",
+        "syntax": "et A et B 구조로 maris와 caeli를 대등하게 연결",
+        "background": "바다와 하늘 양쪽의 열기를 대등하게 묶어준다.",
+        "etymology": "PIE *eti('그 위에, 더하여')에서 유래한 접속사로, 산스크리트어 ati('넘어서'), 그리스어 ἔτι('여전히, 더욱이')와 동계어이다. 원래 '더하여, 넘어서'라는 부사적 의미에서 등위접속사 '그리고'로 문법화되었다."
+      },
+      {
+        "g": "maris",
+        "pos": "명사",
+        "lemma": "mare, maris, n.",
+        "parse": "보통명사 중성 단수 속격",
+        "gloss_kr": "바다의",
+        "gloss_en": "of the sea",
+        "syntax": "aestu를 수식하는 속격",
+        "background": "바다 수면에서 반사되는 열기를 의미한다.",
+        "etymology": "PIE *móri('바다, 호수')에서 유래하며, 영어 mere, marine과 동계어이다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "등이 접속사",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "caeli를 연결하는 접속사",
+        "background": "상응 접속사 역할을 한다.",
+        "etymology": "PIE *eti('그 위에, 더하여')에서 유래한 접속사로, 산스크리트어 ati('넘어서'), 그리스어 ἔτι('여전히, 더욱이')와 동계어이다. 원래 '더하여, 넘어서'라는 부사적 의미에서 등위접속사 '그리고'로 문법화되었다."
+      },
+      {
+        "g": "caeli,",
+        "pos": "명사",
+        "lemma": "caelum, -i, n.",
+        "parse": "보통명사 중성 단수 속격",
+        "gloss_kr": "하늘의",
+        "gloss_en": "of the sky",
+        "syntax": "aestu를 수식하는 속격",
+        "background": "내리쬐는 햇볕을 가리킨다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '하늘'을 뜻한다."
+      },
+      {
+        "g": "medio",
+        "pos": "형용사",
+        "lemma": "medius, -a, -um",
+        "parse": "형용사 남성 단수 탈격",
+        "gloss_kr": "한가운데의",
+        "gloss_en": "middle of",
+        "syntax": "orbe를 수식하는 관형어",
+        "background": "하늘 전체 운행 궤도 중 정중앙(남중)을 가리킨다.",
+        "etymology": "PIE *medʰyo-('중간의')에서 유래하며, 그리스어 μέσος, 산스크리트어 mádhya, 영어 mid와 동계어이다."
+      },
+      {
+        "g": "cum",
+        "pos": "접속사",
+        "lemma": "cum",
+        "parse": "시간 접속사",
+        "gloss_kr": "~할 때",
+        "gloss_en": "when",
+        "syntax": "시간의 접속사절을 이끎",
+        "background": "정확한 시간적 배경(정오)을 설정한다.",
+        "etymology": "PIE *ko-('~과 함께')에서 유래한 전치사 겸 접속사로, 영어 co-, com- 접두사(< 라틴어 cum)와 동일 기원이다. 접속사 용법(~할 때, ~이므로)은 전치사 용법에서 문법화된 것으로 본다."
+      },
+      {
+        "g": "plurimus",
+        "pos": "형용사",
+        "lemma": "multus, -a, -um (최상급 plurimus)",
+        "parse": "최상급 형용사 남성 단수 주격",
+        "gloss_kr": "가장 강렬한 / 드높은",
+        "gloss_en": "at its height / strongest",
+        "syntax": "sol을 수식하는 형용사 (서술적 용법)",
+        "background": "태양이 중천에 떠올라 빛과 열기가 가장 극에 달한 정오(noon) 상태를 표현한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 형용사로, '많은'을 뜻한다."
+      },
+      {
+        "g": "orbe",
+        "pos": "명사",
+        "lemma": "orbis, orbis, m.",
+        "parse": "보통명사 남성 단수 탈격",
+        "gloss_kr": "천구에서 / 하늘 궤도에서",
+        "gloss_en": "in the sky / orbit",
+        "syntax": "장소의 탈격 (in 생략)",
+        "background": "orbis terrarum(대지)이 아니라 orbis caeli(천구, 하늘의 궤도)를 뜻한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '원, 원반'을 뜻하며 영어 orb, orbit이 이 라틴어에서 파생되었다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.54",
+    "trans": "가장 강렬히 빛나며 머리 위에서 그림자를 가장 짧게 만들 때에.",
+    "words": [
+      {
+        "g": "sol",
+        "pos": "명사",
+        "lemma": "sol, solis, m.",
+        "parse": "보통명사 남성 단수 주격",
+        "gloss_kr": "태양이",
+        "gloss_en": "sun",
+        "syntax": "cum 절의 주어",
+        "background": "신화적 서사에서 시각을 나타내는 주요 자연적 요소이다.",
+        "etymology": "PIE *sóh₂wl̥('해')에서 유래하며, 그리스어 ἥλιος, 산스크리트어 sū́rya, 영어 sun과 동계어이다."
+      },
+      {
+        "g": "erat",
+        "pos": "동사",
+        "lemma": "sum, esse, fui, futurus",
+        "principalParts": "sum–esse–fui–futurus",
+        "parse": "직설법 미완료 능동태 3인칭 단수",
+        "gloss_kr": "있었다",
+        "gloss_en": "was",
+        "syntax": "cum 절의 첫 번째 술어 동사",
+        "background": "태양의 위치 상태를 나타낸다.",
+        "etymology": "PIE 계사 어근 *h₁es-('있다')에서 유래하며, 그리스어 εἰμί, 산스크리트어 asmi, 영어 is와 동계어이다. 완료형 fui는 별개의 어근 *bʰuH-('자라다, 되다')에서 온 것으로, 그리스어 φύω('낳다, 자라다')와 동계어이며 라틴어 계사 활용이 두 어근의 보충법(suppletion)으로 이루어짐을 보여준다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "등이 접속사",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "erat과 fecerat을 연결",
+        "background": "정오의 상황을 덧붙여 설명한다.",
+        "etymology": "PIE *eti('그 위에, 더하여')에서 유래한 접속사로, 산스크리트어 ati('넘어서'), 그리스어 ἔτι('여전히, 더욱이')와 동계어이다. 원래 '더하여, 넘어서'라는 부사적 의미에서 등위접속사 '그리고'로 문법화되었다."
+      },
+      {
+        "g": "minimas",
+        "pos": "형용사",
+        "lemma": "parvus, -a, -um (최상급 minimus)",
+        "parse": "최상급 형용사 여성 복수 대격",
+        "gloss_kr": "가장 작은 / 제일 짧은",
+        "gloss_en": "smallest / shortest",
+        "syntax": "umbras를 수식하는 형용사",
+        "background": "태양이 정수리 바로 위에 위치하여 그림자가 가장 짧아지는 정오의 순간을 시적으로 정밀히 묘사한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 형용사이다(parvus, -a, -um 항목 참조)."
+      },
+      {
+        "g": "a",
+        "pos": "전치사",
+        "lemma": "ab",
+        "parse": "전치사 (탈격 지배)",
+        "gloss_kr": "~로부터",
+        "gloss_en": "from",
+        "syntax": "vertice를 지배하는 출발점의 전치사",
+        "background": "머리 꼭대기(남중 고도)로부터 수직으로 내리쬐는 위치를 뜻한다.",
+        "etymology": "PIE *h₂epo('~로부터 떨어져')에서 유래하며, 그리스어 ἀπό, 산스크리트어 apa, 영어 off, of와 동계어이다."
+      },
+      {
+        "g": "vertice",
+        "pos": "명사",
+        "lemma": "vertex, verticis, m.",
+        "parse": "보통명사 남성 단수 탈격",
+        "gloss_kr": "정수리로부터 / 머리 위로부터",
+        "gloss_en": "from the zenith / top of the head",
+        "syntax": "전치사 a의 목적어",
+        "background": "천정(zenith) 또는 사람의 머리 정수리를 뜻하며, 태양이 수직으로 비춤을 의미한다.",
+        "etymology": "verto('돌다')에서 파생된 명사로, verto는 PIE *wert-('돌다')에서 유래하며 영어 verse, vertex와 동계어이다."
+      },
+      {
+        "g": "fecerat",
+        "pos": "동사",
+        "lemma": "facio, facere, feci, factum",
+        "principalParts": "facio–facere–feci–factum",
+        "parse": "직설법 대과거 능동태 3인칭 단수",
+        "gloss_kr": "만들었을 때",
+        "gloss_en": "had made",
+        "syntax": "cum 절의 두 번째 술어 동사",
+        "background": "대과거 시제로 태양이 그 시점에 이미 그림자를 가장 짧게 축소시킨 상태임을 강조한다.",
+        "etymology": "PIE *dʰeh₁-('놓다, 두다, 만들다')에서 유래하며, 그리스어 τίθημι, 영어 do와 동계어이다."
+      },
+      {
+        "g": "umbras.",
+        "pos": "명사",
+        "lemma": "umbra, -ae, f.",
+        "parse": "보통명사 여성 복수 대격",
+        "gloss_kr": "그림자들을",
+        "gloss_en": "shadows",
+        "syntax": "동사 fecerat의 직접목적어",
+        "background": "정오의 현상을 시각화하는 시적 어휘이다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '그림자'를 뜻하며 영어 umbrella가 이 라틴어에서 파생되었다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.55",
+    "trans": "이곳을 여신(키르케)이 먼저 오염시키고 기괴한 독으로",
+    "words": [
+      {
+        "g": "hunc",
+        "pos": "대명사",
+        "lemma": "hic, haec, hoc",
+        "parse": "지시대명사 남성 단수 대격",
+        "gloss_kr": "이곳을 (웅덩이를)",
+        "gloss_en": "this (place/pool)",
+        "syntax": "동사 praevitiat과 inquinat의 직접목적어",
+        "background": "앞서 언급된 gurges(웅덩이)를 가리킨다.",
+        "etymology": "PIE 지시 어간 *ko-('이것')에 첨사 -ce가 결합된 형태로, 근칭 지시대명사이다. 게르만어파의 he(그)와 어원적으로 연결되는 지시 어근 계열에 속한다."
+      },
+      {
+        "g": "dea",
+        "pos": "명사",
+        "lemma": "dea, -ae, f.",
+        "parse": "보통명사 여성 단수 주격",
+        "gloss_kr": "여신이 (키르케가)",
+        "gloss_en": "goddess",
+        "syntax": "주절의 주어",
+        "background": "태양신 솔(Sol)의 딸인 여신 키르케를 지칭한다.",
+        "etymology": "deus('신')의 여성형으로, PIE *deiwós('빛나는 존재, 하늘의 신')에서 유래한다. 이 어근은 그리스어 Ζεύς(Zeus)의 주격 어간, 산스크리트어 devá, 영어 Tuesday(Tiw의 날)와 동계어이다."
+      },
+      {
+        "g": "praevitiat",
+        "pos": "동사",
+        "lemma": "praevitio, praevitiare, praevitiavi, praevitiatum",
+        "principalParts": "praevitio–praevitiare–praevitiavi–praevitiatum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "미리 오염시키다 / 미리 손상시키다",
+        "gloss_en": "corrupts in advance / taints beforehand",
+        "syntax": "주절의 첫 번째 술어 동사",
+        "background": "prae-(미리) + vitio(손상시키다)의 합성어로, 스킬라가 오기 전에 먼저 독을 풀어놓는 선제적 공작을 뜻한다.",
+        "etymology": "prae('미리') + vitio('오염시키다')의 합성어로, vitium('결함')에서 파생되었다."
+      },
+      {
+        "g": "portentificisque",
+        "pos": "형용사",
+        "lemma": "portentificus, -a, -um",
+        "parse": "형용사 중성 복수 탈격 + 접속사 -que",
+        "gloss_kr": "괴물을 만드는 / 기이한 (그리고)",
+        "gloss_en": "monstrous / portent-working (and)",
+        "syntax": "venenis를 수식하는 형용사",
+        "background": "portentum(괴물, 징조) + facio(만들다)의 합성어로, 오비디우스 특유의 기괴하고 변형을 일으키는 마법적 독의 성질을 표현하는 희귀 어휘이다.",
+        "etymology": "portentum('전조, 기이한 징조') + facio('만들다')의 합성 형용사로, '기이한 조짐을 일으키는'을 뜻한다."
+      },
+      {
+        "g": "venenis",
+        "pos": "명사",
+        "lemma": "venenum, -i, n.",
+        "parse": "보통명사 중성 복수 탈격",
+        "gloss_kr": "독약으로 / 마법의 약으로",
+        "gloss_en": "with poisons / potent herbs",
+        "syntax": "inquinat의 수단/도구의 탈격",
+        "background": "치명적인 해를 끼치거나 괴물로 변형시키는 마력의 즙을 뜻한다.",
+        "etymology": "venus('매력, 사랑의 힘')와 같은 어근 *wen-에서 발달한 것으로 추정되며, 원래 '(사랑의) 묘약'에서 '독약'으로 의미가 부정적으로 변화했다(venus, veneris, f. 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.56",
+    "trans": "더럽힌다; 여기에 유독한 뿌리에서 짠 즙을",
+    "words": [
+      {
+        "g": "inquinat;",
+        "pos": "동사",
+        "lemma": "inquino, inquinare, inquinavi, inquinatum",
+        "principalParts": "inquino–inquinare–inquinavi–inquinatum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "더럽히다 / 오염시키다",
+        "gloss_en": "defiles / pollutes",
+        "syntax": "주절의 두 번째 술어 동사",
+        "background": "깨끗한 웅덩이 물을 마법의 독으로 불결하게 오염시키는 행위를 뜻한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 동사로, '더럽히다, 오염시키다'를 뜻한다."
+      },
+      {
+        "g": "hic",
+        "pos": "부사",
+        "lemma": "hic",
+        "parse": "장소 부사",
+        "gloss_kr": "여기에 / 이 웅덩이에",
+        "gloss_en": "here / in this place",
+        "syntax": "동사 spargit을 수식하는 부사",
+        "background": "마법 의식이 벌어지는 구체적 장소를 가리킨다.",
+        "etymology": "부사 용법으로, 지시대명사 hic와 같은 어근에서 파생되었다(hic, haec, hoc 항목 참조)."
+      },
+      {
+        "g": "pressos",
+        "pos": "분사",
+        "lemma": "premo, premere, pressi, pressum",
+        "principalParts": "premo–premere–pressi–pressum",
+        "parse": "완료 분사 수동태 남성 복수 대격",
+        "gloss_kr": "짜낸 / 짓눌러 즙을 낸",
+        "gloss_en": "pressed / squeezed out",
+        "syntax": "latices를 수식하는 분사",
+        "background": "독초를 짓눌러 즙액을 추출했음을 의미한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 동사로, 명확한 인도유럽 동계어가 확립되어 있지 않다."
+      },
+      {
+        "g": "latices",
+        "pos": "명사",
+        "lemma": "latex, laticis, m.",
+        "parse": "보통명사 남성 복수 대격",
+        "gloss_kr": "액체를 / 즙을",
+        "gloss_en": "liquids / juices",
+        "syntax": "동사 spargit의 직접목적어",
+        "background": "시적 용어로 물, 포도주, 즙 등 액체류를 통칭하며, 여기서는 추출된 유독한 약물을 뜻한다.",
+        "etymology": "그리스어 λάταξ('한 방울')와 연관짓는 설이 있으나 불확실하며, '액체'를 뜻한다."
+      },
+      {
+        "g": "radice",
+        "pos": "명사",
+        "lemma": "radix, radicis, f.",
+        "parse": "보통명사 여성 단수 탈격",
+        "gloss_kr": "뿌리로부터",
+        "gloss_en": "from root",
+        "syntax": "출처/원천의 탈격",
+        "background": "마법 재료로 쓰인 치명적인 약초의 뿌리를 뜻한다.",
+        "etymology": "PIE *wréh₂ds('뿌리')에서 유래하며, 영어 root, radish가 이 어근과 관련된다."
+      },
+      {
+        "g": "nocenti",
+        "pos": "형용사/분사",
+        "lemma": "noceo, nocere, nocui, nocitum",
+        "principalParts": "noceo–nocere–nocui–nocitum",
+        "parse": "현재 분사 능동태 (형용사적) 여성 단수 탈격",
+        "gloss_kr": "해로운 / 유독한",
+        "gloss_en": "harmful / poisonous",
+        "syntax": "radice를 수식하는 관형어",
+        "background": "생명이나 신체에 해를 미치는 악성 독성을 가졌음을 나타낸다.",
+        "etymology": "PIE *nek-('죽다, 해치다')에서 유래하며, 그리스어 νέκυς('시체'), 영어 necromancy와 동계어로 제시된다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.57",
+    "trans": "뿌리고, 생소한 단어들의 모호한 꼬임으로",
+    "words": [
+      {
+        "g": "spargit",
+        "pos": "동사",
+        "lemma": "spargo, spargere, sparsi, sparsum",
+        "principalParts": "spargo–spargere–sparsi–sparsum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "뿌리다 / 흩뿌리다",
+        "gloss_en": "sprinkles / scatters",
+        "syntax": "주절의 술어 동사",
+        "background": "독액을 웅덩이 물 표면에 뿌리는 의식적 동작이다.",
+        "etymology": "PIE *sperg-('흩뿌리다')에서 유래하며, 영어 sparse가 이 라틴어에서 파생되었다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "등이 접속사",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "spargit과 demurmurat을 연결",
+        "background": "약물 투여와 주문 낭송이라는 두 가지 마법 절차를 연결한다.",
+        "etymology": "PIE *eti('그 위에, 더하여')에서 유래한 접속사로, 산스크리트어 ati('넘어서'), 그리스어 ἔτι('여전히, 더욱이')와 동계어이다. 원래 '더하여, 넘어서'라는 부사적 의미에서 등위접속사 '그리고'로 문법화되었다."
+      },
+      {
+        "g": "obscurum",
+        "pos": "형용사",
+        "lemma": "obscurus, -a, -um",
+        "parse": "형용사 중성 단수 대격",
+        "gloss_kr": "어두운 / 모호한 / 어스레한",
+        "gloss_en": "obscure / dark",
+        "syntax": "carmen을 수식하는 형용사",
+        "background": "이해하기 어렵고 불길한 주술문(carmen)의 어둡고 오컬트적인 성격을 묘사한다.",
+        "etymology": "ob('~을 가리는') + -scurus(그리스어 σκιά '그림자'와 연관짓는 설)의 결합으로 추정되며, '어두운, 불분명한'을 뜻한다."
+      },
+      {
+        "g": "verborum",
+        "pos": "명사",
+        "lemma": "verbum, -i, n.",
+        "parse": "보통명사 중성 복수 속격",
+        "gloss_kr": "단어들의 / 말들의",
+        "gloss_en": "of words",
+        "syntax": "ambage를 수식하는 속격",
+        "background": "주문 속에 포함된 비밀스러운 언어 요소를 뜻한다.",
+        "etymology": "PIE *werdʰo-('말')에서 유래하며, 영어 word, 그리스어 εἴρω('말하다')의 관련 어형과 동계어로 제시된다."
+      },
+      {
+        "g": "ambage",
+        "pos": "명사",
+        "lemma": "ambages, ambagis, f.",
+        "parse": "보통명사 여성 단수 탈격 (복수 형태로 자주 쓰이나 단수 탈격)",
+        "gloss_kr": "우회 / 모호함 / 꼬임으로",
+        "gloss_en": "with winding / ambiguity",
+        "syntax": "수단/방법의 탈격",
+        "background": "직설적이지 않고 꼬아 만든 신비하고 비밀스러운 주문의 구성을 의미한다.",
+        "etymology": "amb('양쪽으로') + ago('몰다, 이끌다')의 합성어로, '에두른 말, 애매함'을 뜻한다(agmen, agminis, n. 항목의 ago 참조)."
+      },
+      {
+        "g": "novorum",
+        "pos": "형용사",
+        "lemma": "novus, -a, -um",
+        "parse": "형용사 중성 복수 속격",
+        "gloss_kr": "낯선 / 새로운 / 생소한",
+        "gloss_en": "strange / unusual / new",
+        "syntax": "verborum을 수식하는 형용사",
+        "background": "일반적 언어가 아닌, 마법 의식을 위해 창조되거나 전래된 생소하고 신비로운 주문 단어들을 가리킨다.",
+        "etymology": "PIE *newos('새로운')에서 유래하며, 그리스어 νέος, 산스크리트어 náva, 영어 new와 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.58",
+    "trans": "스물일곱 번이나 마법의 입으로 주문을 중얼거린다.",
+    "words": [
+      {
+        "g": "ter",
+        "pos": "부사",
+        "lemma": "ter",
+        "parse": "배수 부사",
+        "gloss_kr": "세 번",
+        "gloss_en": "thrice / three times",
+        "syntax": "noviens를 수식하는 부사 (ter noviens = 3 x 9 = 27)",
+        "background": "고대 주술과 신화에서 숫자 3과 9, 그리고 그 곱인 27은 강력한 마법적 효력을 가진 신성한 수로 여겨졌다.",
+        "etymology": "tres('셋')에서 파생된 부사로, '세 번'을 뜻한다."
+      },
+      {
+        "g": "noviens",
+        "pos": "부사",
+        "lemma": "noviens (또는 novies)",
+        "parse": "배수 부사",
+        "gloss_kr": "아홉 번",
+        "gloss_en": "nine times",
+        "syntax": "ter와 결합하여 27회를 나타냄",
+        "background": "아홉 번씩 세 번, 즉 27번 반복하여 주문의 마법적 위력을 극대화한다.",
+        "etymology": "novem('아홉')에서 파생된 부사로, '아홉 번'을 뜻한다."
+      },
+      {
+        "g": "carmen",
+        "pos": "명사",
+        "lemma": "carmen, carminis, n.",
+        "parse": "보통명사 중성 단수 대격",
+        "gloss_kr": "주문을",
+        "gloss_en": "spell / incantation",
+        "syntax": "동사 demurmurat의 직접목적어",
+        "background": "마법의 효력을 발동시키는 주술적 문장이다.",
+        "etymology": "canere('노래하다')의 어근 *can-에 도구·결과를 나타내는 접미사 -men이 결합한 형태로, '노래됨, 노래' 즉 '노래, 시가, 주문'을 뜻한다. PIE 어근 *kan-('노래하다')은 영어 hen(원래 '노래하는 새')과도 먼 연관이 제기된다."
+      },
+      {
+        "g": "magico",
+        "pos": "형용사",
+        "lemma": "magicus, -a, -um",
+        "parse": "형용사 중성 단수 탈격",
+        "gloss_kr": "마법의 / 주술적인",
+        "gloss_en": "magical",
+        "syntax": "ore를 수식하는 형용사",
+        "background": "주문을 읊조리는 입의 신비로운 성격을 강조한다.",
+        "etymology": "그리스어 μαγικός(< μάγος '마술사')에서 차용된 형용사로, 이는 다시 고대 페르시아어 magu-에서 온 근동 차용어이다."
+      },
+      {
+        "g": "demurmurat",
+        "pos": "동사",
+        "lemma": "demurmuro, demurmurare",
+        "principalParts": "demurmuro–demurmurare",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "나지막이 읊조리다 / 중얼거리다",
+        "gloss_en": "mumbles / murmurs down",
+        "syntax": "주절의 술어 동사",
+        "background": "de-(아래로) + murmuro(웅얼거리다)의 합성어로, 낮은 음성으로 나지막하게 주문을 외우는 마법사의 모습을 생생하게 표현한다.",
+        "etymology": "de(강조) + murmuro('중얼거리다')의 합성어로, murmuro는 의성어적 기원의 동사이다."
+      },
+      {
+        "g": "ore.",
+        "pos": "명사",
+        "lemma": "os, oris, n.",
+        "parse": "보통명사 중성 단수 탈격",
+        "gloss_kr": "입으로",
+        "gloss_en": "with mouth",
+        "syntax": "수단/도구의 탈격",
+        "background": "주문을 발성하는 신체 부위이다.",
+        "etymology": "PIE *h₃eh₁-s-('입')에서 유래하며, 산스크리트어 ās, 히타이트어 aiš와 동계어로 제시된다. 뼈를 뜻하는 동음이의어 os, ossis(그리스어 ὀστέον과 동계)와는 별개의 어원이니 혼동하지 않아야 한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.59",
+    "trans": "스킬라가 찾아와 허리 깊이까지 물속으로 들어갔는데,",
+    "words": [
+      {
+        "g": "Scylla",
+        "pos": "명사",
+        "lemma": "Scylla, -ae, f.",
+        "parse": "고유명사 여성 단수 주격",
+        "gloss_kr": "스킬라가",
+        "gloss_en": "Scylla",
+        "syntax": "주절의 주어",
+        "background": "아무것도 모른 채 평소처럼 휴식처를 찾아온 희생자 스킬라를 지칭한다.",
+        "etymology": "그리스어 Σκύλλα에서 차용된 고유명사로, 그리스어 내부에서도 확실한 인도유럽 어근이 밝혀지지 않아 베이크스는 선그리스어 기원의 가능성을 배제하지 않는다. σκύλαξ('강아지')와 연관짓는 통속적 해석도 있으나 확증되지 않는다."
+      },
+      {
+        "g": "venit",
+        "pos": "동사",
+        "lemma": "venio, venire, veni, ventum",
+        "principalParts": "venio–venire–veni–ventum",
+        "parse": "직설법 현재(또는 완료) 능동태 3인칭 단수",
+        "gloss_kr": "온다 / 다가온다",
+        "gloss_en": "comes",
+        "syntax": "주절의 첫 번째 술어 동사",
+        "background": "역사적 현재(historical present)로 긴박감을 더한다.",
+        "etymology": "PIE *gʷem-('가다, 오다')에서 유래하며, 그리스어 βαίνω, 영어 come과 동계어이다."
+      },
+      {
+        "g": "mediaque",
+        "pos": "형용사",
+        "lemma": "medius, -a, -um",
+        "parse": "형용사 여성 단수 탈격 + 접속사 -que",
+        "gloss_kr": "허리 한가운데 (그리고)",
+        "gloss_en": "middle (and)",
+        "syntax": "alvo를 수식하는 형용사",
+        "background": "신체의 중간 부위인 허리/사타구니 위치를 뜻한다.",
+        "etymology": "PIE *medʰyo-('중간의')에서 유래하며, 그리스어 μέσος, 산스크리트어 mádhya, 영어 mid와 동계어이다."
+      },
+      {
+        "g": "tenus",
+        "pos": "전치사",
+        "lemma": "tenus",
+        "parse": "후치사 (탈격/속격 지배)",
+        "gloss_kr": "~까지",
+        "gloss_en": "up to / as far as",
+        "syntax": "alvo 뒤에 위치하여 미치는 한계를 나타내는 후치사",
+        "background": "명사 뒤에 와서 '~에 이르기까지'라는 한계를 표시한다.",
+        "etymology": "teneo와 같은 어근 *ten-에서 파생된 후치 전치사로, '~까지'를 뜻한다(teneo, tenere, tenui, tentum 항목 참조)."
+      },
+      {
+        "g": "descenderat",
+        "pos": "동사",
+        "lemma": "descendo, descendere, descendi, descensum",
+        "principalParts": "descendo–descendere–descendi–descensum",
+        "parse": "직설법 대과거 능동태 3인칭 단수",
+        "gloss_kr": "내려갔었을 때",
+        "gloss_en": "had descended",
+        "syntax": "cum절과 연결되는 대과거 술어 동사",
+        "background": "스킬라가 물속으로 허리까지 잠겨 들어간 상태에서 마법의 변형이 일어났음을 대과거로 나타낸다.",
+        "etymology": "de('아래로') + scando('오르다')의 합성어로, scando는 PIE *skend-('오르다')에서 유래한다."
+      },
+      {
+        "g": "alvo,",
+        "pos": "명사",
+        "lemma": "alvus, -i, f.",
+        "parse": "보통명사 여성 단수 탈격",
+        "gloss_kr": "허리까지 / 배까지",
+        "gloss_en": "waist / belly",
+        "syntax": "후치사 tenus의 목적어",
+        "background": "2변혁 여성 명사. 허리 및 하체 부위를 뜻한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '배, 복부'를 뜻한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.60",
+    "trans": "자신의 허벅지와 사타구니가 짖어대는 괴물들로 오염되는 것을 (보았을 때)",
+    "words": [
+      {
+        "g": "cum",
+        "pos": "접속사",
+        "lemma": "cum",
+        "parse": "시간 접속사 (cum inversum)",
+        "gloss_kr": "바로 그때 / ~했을 때",
+        "gloss_en": "when (suddenly)",
+        "syntax": "역전의 cum절(cum inversum)을 이끌어 돌발적 사건을 연출",
+        "background": "주절의 동작이 진행되던 중 돌발적으로 주절보다 더 중요한 사건(변신)이 일어남을 강조하는 문법 구조이다.",
+        "etymology": "PIE *ko-('~과 함께')에서 유래한 전치사 겸 접속사로, 영어 co-, com- 접두사(< 라틴어 cum)와 동일 기원이다. 접속사 용법(~할 때, ~이므로)은 전치사 용법에서 문법화된 것으로 본다."
+      },
+      {
+        "g": "sua",
+        "pos": "대명사",
+        "lemma": "suus, -a, -um",
+        "parse": "재기소유대명사 중성 복수 대격",
+        "gloss_kr": "자신의",
+        "gloss_en": "her own",
+        "syntax": "inguina를 수식하는 소유 형용사",
+        "background": "스킬라 자신의 신체 부위임을 강조한다.",
+        "etymology": "재귀대명사 sui의 소유형용사형으로, PIE *swe- 어근에서 파생되었다(sui 항목 참조)."
+      },
+      {
+        "g": "foedari",
+        "pos": "동사",
+        "lemma": "foedo, foedare, foedavi, foedatum",
+        "principalParts": "foedo–foedare–foedavi–foedatum",
+        "parse": "부정사 현재 수동태",
+        "gloss_kr": "흉측하게 변하다 / 오염되다",
+        "gloss_en": "to be defiled / deformed",
+        "syntax": "대격 권능 구문(ACI)에서 부정사 술어 (videt 동사 생략 상태 또는 상리 문맥)",
+        "background": "아름다웠던 스킬라의 하체가 흉측하고 징그러운 괴물로 변형되는 공포를 묘사한다.",
+        "etymology": "foedus('추한')에서 파생된 동사로, foedus는 어원이 불확실한 라틴어 고유 형용사이다."
+      },
+      {
+        "g": "latrantibus",
+        "pos": "분사",
+        "lemma": "latro, latrare, latravi, latratum",
+        "principalParts": "latro–latrare–latravi–latratum",
+        "parse": "현재 분사 능동태 중성 복수 탈격",
+        "gloss_kr": "짖어대는",
+        "gloss_en": "barking",
+        "syntax": "monstris를 수식하는 관형어",
+        "background": "스킬라의 하체에서 돋아난 개 머리 모양의 괴물들이 사납게 짖는 소리를 청각적으로 형상화한다.",
+        "etymology": "PIE *leh₂-('짖다')에서 유래한 것으로 추정되는 의성어적 동사이다."
+      },
+      {
+        "g": "inguina",
+        "pos": "명사",
+        "lemma": "inguen, inguinis, n.",
+        "parse": "보통명사 중성 복수 대격",
+        "gloss_kr": "사타구니가 / 허벅지가",
+        "gloss_en": "groin / loins",
+        "syntax": "부정사 foedari의 의미상 주어 (대격)",
+        "background": "하체 및 사타구니 부위로, 바로 이 위치에서 여러 마리의 개 머리 괴물들이 솟아나게 된다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, 명확한 인도유럽 동계어가 확립되어 있지 않다."
+      },
+      {
+        "g": "monstris",
+        "pos": "명사",
+        "lemma": "monstrum, -i, n.",
+        "parse": "보통명사 중성 복수 탈격",
+        "gloss_kr": "괴물들로",
+        "gloss_en": "by monsters",
+        "syntax": "foedari의 원인/수단을 나타내는 탈격",
+        "background": "자연의 질서를 벗어난 기이하고 불길한 존재(괴물)를 의미한다.",
+        "etymology": "moneo('경고하다')에서 파생된 명사로, '경고의 징조' 즉 '괴이한 것'을 뜻하며 영어 monster가 이 라틴어에서 파생되었다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.61",
+    "trans": "그녀는 바라보고, 처음에는 그것들이 자기 몸의 일부가 아니라고 생각하며,",
+    "words": [
+      {
+        "g": "adspicit",
+        "pos": "동사",
+        "lemma": "adspicio, adspicere, adspexi, adspectum",
+        "principalParts": "adspicio–adspicere–adspexi–adspectum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "바라보다 / 목격하다",
+        "gloss_en": "beholds / sees",
+        "syntax": "주절의 술어 동사",
+        "background": "스킬라가 자신의 하체에 일어난 기괴한 변화를 눈으로 확인하는 첫 순간을 나타낸다.",
+        "etymology": "ad('~을 향해') + specio('보다')의 합성어로, specio는 PIE *spek-('보다, 관찰하다')에서 유래하며 그리스어 σκέπτομαι, 영어 spy, spectacle과 동계어이다."
+      },
+      {
+        "g": "ac",
+        "pos": "접속사",
+        "lemma": "atque / ac",
+        "parse": "등이 접속사",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "adspicit과 내포된 인식 동사 구문을 연결",
+        "background": "시각적 인식과 심리적 판단의 선후 관계를 신속하게 연결한다.",
+        "etymology": "ad + que에서 발달했다(atque 항목 참조)."
+      },
+      {
+        "g": "primo",
+        "pos": "부사",
+        "lemma": "primo",
+        "parse": "시간 부사",
+        "gloss_kr": "처음에는 / 처음으로",
+        "gloss_en": "at first",
+        "syntax": "credens 분사를 수식하는 시간 부사",
+        "background": "현실을 부정하고 싶어 하는 스킬라의 초기 심리 상태를 나타낸다.",
+        "etymology": "primus('첫째')의 탈격이 부사화된 것으로, primus는 PIE *per-('앞')의 최상급형이다."
+      },
+      {
+        "g": "credens",
+        "pos": "분사",
+        "lemma": "credo, credere, credidi, creditum",
+        "principalParts": "credo–credere–credidi–creditum",
+        "parse": "현재 분사 능동태 여성 단수 주격",
+        "gloss_kr": "믿으면서 / 생각하면서",
+        "gloss_en": "believing / thinking",
+        "syntax": "주어 스킬라를 수식하는 분사 구문으로 간접화법(대격 부정사 구문)을 이끎",
+        "background": "자신의 눈앞에 펼쳐진 공포를 현실로 받아들이지 못하는 인지 부조화를 보여준다.",
+        "etymology": "PIE *ḱred-dʰeh₁-에서 유래한다(credo 항목 참조)."
+      },
+      {
+        "g": "non",
+        "pos": "부사",
+        "lemma": "non",
+        "parse": "부정 부사",
+        "gloss_kr": "~이 아니다",
+        "gloss_en": "not",
+        "syntax": "부정사 esse를 부정",
+        "background": "자기 신체와의 연관성을 부정하는 표현이다.",
+        "etymology": "고졸 라틴어 부정사 ne oenum('하나도 아니다', ne + oenum '하나')의 축약형으로 추정되며, 부정소사 ne(PIE *ne, 영어 no와 동계)에 수사 unus('하나')가 결합해 강조된 부정 표현이 관용화된 것이다."
+      },
+      {
+        "g": "corporis",
+        "pos": "명사",
+        "lemma": "corpus, corporis, n.",
+        "parse": "보통명사 중성 단수 속격",
+        "gloss_kr": "신체의 / 몸의",
+        "gloss_en": "of the body",
+        "syntax": "partes를 수식하는 속격 (소유/속성)",
+        "background": "sui와 함께 쓰여 '자기 자신의 몸'을 의미한다.",
+        "etymology": "PIE *kʷrep-('몸, 형체')에서 유래하며, 산스크리트어 kr̥p('형태, 아름다움')와 동계어로 제시된다. 영어 corpse, corporate가 이 라틴어에서 파생되었다."
+      },
+      {
+        "g": "illas",
+        "pos": "대명사",
+        "lemma": "ille, illa, illud",
+        "parse": "지시대명사 여성 복수 대격",
+        "gloss_kr": "저것들이 (개 머리 괴물들이)",
+        "gloss_en": "those (monsters)",
+        "syntax": "간접화법(대격 부정사 구문) 내 부정사 esse의 의미상 주어",
+        "background": "자신의 몸에 붙어있는 괴물들을 자신과 분리된 외부의 존재(illas)로 인식하려는 소외감을 나타낸다.",
+        "etymology": "고전 이전 형태 *olle/*ollus에서 발달했으며, PIE 지시 어근 *al-('저것, 다른 것')과 연관짓는 견해가 있다. 로망스어파 정관사(프랑스어 le, 이탈리아어 il)의 직접적 기원이 되는 단어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.62",
+    "trans": "자기 몸의 부위가 아니라고 믿으며, 사나운 개들의 주둥이를 물러서며 쫓아내고 두려워하지만,",
+    "words": [
+      {
+        "g": "esse",
+        "pos": "동사",
+        "lemma": "sum, esse, fui, futurus",
+        "principalParts": "sum–esse–fui–futurus",
+        "parse": "부정사 현재 능동태",
+        "gloss_kr": "이다 / 존재하다",
+        "gloss_en": "to be",
+        "syntax": "credens에 걸리는 간접화법의 술어 부정사",
+        "background": "대격 주어 illas와 결합하여 '저것들이 ~가 아니다'라는 문장을 완성한다.",
+        "etymology": "PIE 계사 어근 *h₁es-('있다')에서 유래하며, 그리스어 εἰμί, 산스크리트어 asmi, 영어 is와 동계어이다. 완료형 fui는 별개의 어근 *bʰuH-('자라다, 되다')에서 온 것으로, 그리스어 φύω('낳다, 자라다')와 동계어이며 라틴어 계사 활용이 두 어근의 보충법(suppletion)으로 이루어짐을 보여준다."
+      },
+      {
+        "g": "sui",
+        "pos": "대명사",
+        "lemma": "sui",
+        "parse": "재기대명사 3인칭 여성 단수 속격",
+        "gloss_kr": "자신의",
+        "gloss_en": "her own",
+        "syntax": "corporis를 수식하는 속격",
+        "background": "주어 자신(스킬라)을 가리키는 재기 대명사이다.",
+        "etymology": "PIE 재귀대명사 어근 *swe-에서 유래하며, 그리스어 재귀 접두사 및 영어 self와 동계어이다."
+      },
+      {
+        "g": "partes,",
+        "pos": "명사",
+        "lemma": "pars, partis, f.",
+        "parse": "보통명사 여성 복수 대격",
+        "gloss_kr": "부위들 / 부분들",
+        "gloss_en": "parts",
+        "syntax": "부정사 esse의 대격 주격 보어",
+        "background": "신체의 구성 부위를 의미한다.",
+        "etymology": "PIE *per-('할당하다, 몫을 주다')에서 유래하며, 그리스어 πεῖρα('시도')와는 형태가 유사해 보이나 별개의 어근이다. 영어 part, portion이 이 라틴어에서 차용되었다."
+      },
+      {
+        "g": "refugitque",
+        "pos": "동사",
+        "lemma": "refugio, refugere, refugi",
+        "principalParts": "refugio–refugere–refugi",
+        "parse": "직설법 현재 능동태 3인칭 단수 + 접속사 -que",
+        "gloss_kr": "물러서다 / 움츠러들다 (그리고)",
+        "gloss_en": "recoils / shrinks back (and)",
+        "syntax": "주절의 첫 번째 본동사",
+        "background": "본능적으로 솟아난 괴물 머리들을 피해 뒤로 물러서는 반응을 보여준다.",
+        "etymology": "re('뒤로') + fugio('달아나다')의 합성어이다(fugio, fugere, fugi, fugitum 항목 참조)."
+      },
+      {
+        "g": "abigitque",
+        "pos": "동사",
+        "lemma": "abigo, abigere, abegi, abactum",
+        "principalParts": "abigo–abigere–abegi–abactum",
+        "parse": "직설법 현재 능동태 3인칭 단수 + 접속사 -que",
+        "gloss_kr": "쫓아내다 / 밀쳐내다 (그리고)",
+        "gloss_en": "drives away / pushes off (and)",
+        "syntax": "주절의 두 번째 본동사",
+        "background": "ab-(떨어져) + ago(밀다)의 합성어로, 손으로 괴물 개들을 밀어내려는 무익한 시도를 나타낸다.",
+        "etymology": "ab('~로부터') + ago('몰다')의 합성어이다(agmen, agminis, n. 항목의 ago 참조)."
+      },
+      {
+        "g": "timetque",
+        "pos": "동사",
+        "lemma": "timeo, timere, timui",
+        "principalParts": "timeo–timere–timui",
+        "parse": "직설법 현재 능동태 3인칭 단수 + 접속사 -que",
+        "gloss_kr": "두려워하다 (그리고)",
+        "gloss_en": "fears (and)",
+        "syntax": "주절의 세 번째 본동사 (-que ... -que ... -que 다중 연결)",
+        "background": "동사 3개가 나열되며 스킬라의 패닉 상태와 공포감을 극적으로 연출한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 동사로, '두려워하다'를 뜻한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.63",
+    "trans": "그러나 그녀가 도망치는 대상들을 그녀는 함께 끌고 가며,",
+    "words": [
+      {
+        "g": "ora",
+        "pos": "명사",
+        "lemma": "os, oris, n.",
+        "parse": "보통명사 중성 복수 대격",
+        "gloss_kr": "주둥이들을 / 입들을",
+        "gloss_en": "jaws / muzzles",
+        "syntax": "동사 refugit, abigit, timet의 공통 직접목적어",
+        "background": "개들의 사나운 주둥이와 이빨을 강조한다.",
+        "etymology": "PIE *h₃eh₁-s-('입')에서 유래하며, 산스크리트어 ās, 히타이트어 aiš와 동계어로 제시된다. 뼈를 뜻하는 동음이의어 os, ossis(그리스어 ὀστέον과 동계)와는 별개의 어원이니 혼동하지 않아야 한다."
+      },
+      {
+        "g": "proterva",
+        "pos": "형용사",
+        "lemma": "protervus, -a, -um",
+        "parse": "형용사 중성 복수 대격",
+        "gloss_kr": "사나운 / 뻔뻔스러운 / 날뛰는",
+        "gloss_en": "violent / insolent / fierce",
+        "syntax": "ora를 수식하는 관형어",
+        "background": "통제되지 않고 사랍게 물어뜯으려 드는 개 머리들의 성질을 묘사한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 형용사로, '뻔뻔한, 대담한'을 뜻한다."
+      },
+      {
+        "g": "canum,",
+        "pos": "명사",
+        "lemma": "canis, canis, m./f.",
+        "parse": "보통명사 남성/여성 복수 속격",
+        "gloss_kr": "개들의",
+        "gloss_en": "of dogs",
+        "syntax": "ora를 수식하는 속격",
+        "background": "스킬라의 하체에서 자라난 개 형상의 괴물들을 나타낸다.",
+        "etymology": "PIE *ḱwṓ('개')에서 유래하며, 그리스어 κύων, 산스크리트어 śvā́, 영어 hound와 동계어이다."
+      },
+      {
+        "g": "sed",
+        "pos": "접속사",
+        "lemma": "sed",
+        "parse": "등이 접속사 (반대)",
+        "gloss_kr": "그러나",
+        "gloss_en": "but",
+        "syntax": "비극적 역설의 관계절을 도입하는 접속사",
+        "background": "도망치려 하지만 탈출할 수 없는 신체적 모순과 비극을 극대화한다.",
+        "etymology": "고졸 라틴어 se(따로) + -d에서 발달한 대조 접속사로, se-는 se(재귀대명사, '따로')와 같은 어근이다(sui 항목 참조)."
+      },
+      {
+        "g": "quos",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "관계대명사 남성 복수 대격",
+        "gloss_kr": "그녀가 도망치는 대상들을",
+        "gloss_en": "those whom",
+        "syntax": "관계절(fugit) 내의 목적어이자 선행사(attrahit의 목적어)를 겸함",
+        "background": "피하고자 하는 대상(개들)이 곧 자기 신체라는 기괴한 비극을 이끈다.",
+        "etymology": "PIE 의문·관계 어간 *kʷo-/*kʷi-('누구, 무엇')에서 유래하며, 그리스어 관계대명사 및 영어 who, what, 산스크리트어 kaḥ와 동계어이다. 인도유럽어족 전반에 걸쳐 의문사와 관계사가 동일 어근을 공유하는 대표적 사례이다."
+      },
+      {
+        "g": "fugit,",
+        "pos": "동사",
+        "lemma": "fugio, fugere, fugi, fugitum",
+        "principalParts": "fugio–fugere–fugi–fugitum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "도망치다 / 피하다",
+        "gloss_en": "she flees from",
+        "syntax": "관계절의 술어 동사",
+        "background": "자신의 하체로부터 도망치려는 불가능한 행동을 의미한다.",
+        "etymology": "PIE *bʰeug-('달아나다')에서 유래하며, 그리스어 φεύγω('달아나다')와 직접 동계어이다."
+      },
+      {
+        "g": "attrahit",
+        "pos": "동사",
+        "lemma": "attraho, attrahere, attraxi, attractum",
+        "principalParts": "attraho–attrahere–attraxi–attractum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "끌어당기다 / 함께 끌고 가다",
+        "gloss_en": "drags along",
+        "syntax": "주절의 술어 동사",
+        "background": "ad-(~로) + traho(끌다)의 합성어로, 도망치기 위해 움직일 때마다 그 괴물 부위도 함께 딸려옴을 뜻한다.",
+        "etymology": "ad('~로') + traho('끌다')의 합성어로, traho는 PIE *dʰregʰ-('끌다')에서 유래하며 영어 draw, drag와 동계어이다."
+      },
+      {
+        "g": "una",
+        "pos": "부사",
+        "lemma": "una",
+        "parse": "양태 부사",
+        "gloss_kr": "함께 / 동시에",
+        "gloss_en": "together / along with her",
+        "syntax": "attrahit을 수식하는 부사",
+        "background": "떨어질 수 없이 결합되어 있음을 명확히 한다.",
+        "etymology": "unus의 탈격 여성형이 부사화된 것으로, '함께'를 뜻한다(unus, -a, -um 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.64",
+    "trans": "넓적다리와 종아리와 발의 형체를 찾아 더듬어보지만,",
+    "words": [
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "등이 접속사",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "앞절과 문장을 연결",
+        "background": "스킬라의 두 번째 확인 동작을 연결한다.",
+        "etymology": "PIE *eti('그 위에, 더하여')에서 유래한 접속사로, 산스크리트어 ati('넘어서'), 그리스어 ἔτι('여전히, 더욱이')와 동계어이다. 원래 '더하여, 넘어서'라는 부사적 의미에서 등위접속사 '그리고'로 문법화되었다."
+      },
+      {
+        "g": "corpus",
+        "pos": "명사",
+        "lemma": "corpus, corporis, n.",
+        "parse": "보통명사 중성 단수 대격",
+        "gloss_kr": "신체의 형체를 / 몸을",
+        "gloss_en": "substance of body / limbs",
+        "syntax": "quaerens 분사의 직접목적어",
+        "background": "정상적인 인간 여성의 하체 형체를 의미한다.",
+        "etymology": "PIE *kʷrep-('몸, 형체')에서 유래하며, 산스크리트어 kr̥p('형태, 아름다움')와 동계어로 제시된다. 영어 corpse, corporate가 이 라틴어에서 파생되었다."
+      },
+      {
+        "g": "quaerens",
+        "pos": "분사",
+        "lemma": "quaero, quaerere, quaesivi, quaesitum",
+        "principalParts": "quaero–quaerere–quaesivi–quaesitum",
+        "parse": "현재 분사 능동태 여성 단수 주격",
+        "gloss_kr": "찾으면서 / 더듬으면서",
+        "gloss_en": "seeking / looking for",
+        "syntax": "주어 스킬라를 수식하는 분사 구문",
+        "background": "잃어버린 자신의 다리와 발을 손으로 더듬어 확인하려는 처절한 시도를 묘사한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 동사로, '찾다, 묻다'를 뜻하며 영어 question, query가 이 라틴어에서 파생되었다."
+      },
+      {
+        "g": "femorum",
+        "pos": "명사",
+        "lemma": "femur, femoris / feminis, n.",
+        "parse": "보통명사 중성 복수 속격",
+        "gloss_kr": "넓적다리들의 / 허벅지들의",
+        "gloss_en": "of thighs",
+        "syntax": "corpus를 제한하는 속격",
+        "background": "하체의 구체적인 신체 부위를 나열한다.",
+        "etymology": "PIE *dʰeh₁-mr̥('허벅지')에서 유래한 것으로 추정되며, '넓적다리'를 뜻한다."
+      },
+      {
+        "g": "crurumque",
+        "pos": "명사",
+        "lemma": "crus, cruris, n.",
+        "parse": "보통명사 중성 복수 속격 + 접속사 -que",
+        "gloss_kr": "종아리들의 (그리고)",
+        "gloss_en": "of legs / shanks (and)",
+        "syntax": "femorum과 대등하게 corpus를 제한하는 속격",
+        "background": "무릎 아래 종아리 부위이다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '정강이'를 뜻한다."
+      },
+      {
+        "g": "pedumque",
+        "pos": "명사",
+        "lemma": "pes, pedis, m.",
+        "parse": "보통명사 남성 복수 속격 + 접속사 -que",
+        "gloss_kr": "발들의 (그리고)",
+        "gloss_en": "of feet (and)",
+        "syntax": "femorum, crurum과 함께 나열되는 속격 (-que ... -que의 나열)",
+        "background": "신체의 맨 밑부분인 발까지 모두 상실되었음을 보여준다.",
+        "etymology": "PIE *ped-('발')에서 유래하며, 그리스어 πούς/ποδός, 산스크리트어 pā́d, 영어 foot와 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.65",
+    "trans": "그 부위들 대신 케르베로스 같은 찢어진 입들만을 발견할 뿐이다.",
+    "words": [
+      {
+        "g": "Cerbereos",
+        "pos": "형용사",
+        "lemma": "Cerbereus, -a, -um",
+        "parse": "형용사 남성 복수 대격",
+        "gloss_kr": "케르베로스 같은 / 지옥 개 모양의",
+        "gloss_en": "Cerberan / infernal dog-like",
+        "syntax": "rictus를 수식하는 형용사",
+        "background": "하데스의 문을 지키는 머리 셋 달린 지옥의 개 케르베로스(Cerberus)를 인용하여 괴물 개 입들의 기괴함과 저승적 공포를 상징한다.",
+        "etymology": "저승의 개 케르베로스(Κέρβερος)에서 파생된 형용사로, 케르베로스 자체는 선그리스어 기층 어휘일 가능성이 베이크스에 의해 제기된다."
+      },
+      {
+        "g": "rictus",
+        "pos": "명사",
+        "lemma": "rictus, -us, m.",
+        "parse": "보통명사 남성 복수 대격",
+        "gloss_kr": "벌린 입들을 / 찢어진 주둥이들을",
+        "gloss_en": "gaping jaws / muzzles",
+        "syntax": "동사 invenit의 직접목적어",
+        "background": "4변혁 명사. 이빨을 드러내고 크게 벌린 짐승의 입 모양을 뜻한다.",
+        "etymology": "ringor('이를 드러내다')에서 파생된 명사로, '벌린 입, 아가리'를 뜻한다."
+      },
+      {
+        "g": "pro",
+        "pos": "전치사",
+        "lemma": "pro",
+        "parse": "전치사 (탈격 지배)",
+        "gloss_kr": "~대신에",
+        "gloss_en": "instead of / in place of",
+        "syntax": "partibus를 지배하는 대체/대상의 전치사",
+        "background": "정상적인 신체 부위가 괴물의 입으로 대체되었음을 나타낸다.",
+        "etymology": "PIE *pro-('앞으로')에서 유래하며, 그리스어 πρό, 영어 for와 동계어이다."
+      },
+      {
+        "g": "partibus",
+        "pos": "명사",
+        "lemma": "pars, partis, f.",
+        "parse": "보통명사 여성 복수 탈격",
+        "gloss_kr": "부위들 대신에",
+        "gloss_en": "parts",
+        "syntax": "전치사 pro의 목적어",
+        "background": "앞 행의 넓적다리, 종아리, 발을 가리킨다.",
+        "etymology": "PIE *per-('할당하다, 몫을 주다')에서 유래하며, 그리스어 πεῖρα('시도')와는 형태가 유사해 보이나 별개의 어근이다. 영어 part, portion이 이 라틴어에서 차용되었다."
+      },
+      {
+        "g": "invenit",
+        "pos": "동사",
+        "lemma": "invenio, invenire, inveni, inventum",
+        "principalParts": "invenio–invenire–inveni–inventum",
+        "parse": "직설법 현재(또는 완료) 능동태 3인칭 단수",
+        "gloss_kr": "발견하다 / 마주하다",
+        "gloss_en": "finds",
+        "syntax": "주절의 술어 동사",
+        "background": "더듬어 찾아낸 비극적 결과를 나타낸다.",
+        "etymology": "in('안으로') + venio('오다')의 합성어이다(venio, venire, veni, ventum 항목 참조)."
+      },
+      {
+        "g": "illis:",
+        "pos": "대명사",
+        "lemma": "ille, illa, illud",
+        "parse": "지시대명사 여성 복수 탈격",
+        "gloss_kr": "저 (원래 있어야 할)",
+        "gloss_en": "those (expected ones)",
+        "syntax": "partibus를 수식하는 지시형용사",
+        "background": "원래 스킬라에게 있어야 했던 다리와 발을 지칭한다.",
+        "etymology": "고전 이전 형태 *olle/*ollus에서 발달했으며, PIE 지시 어근 *al-('저것, 다른 것')과 연관짓는 견해가 있다. 로망스어파 정관사(프랑스어 le, 이탈리아어 il)의 직접적 기원이 되는 단어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.66",
+    "trans": "그녀는 광포한 개들 위에 서 있고, 그 밑에 놓인 맹수들의 등허리를",
+    "words": [
+      {
+        "g": "statque",
+        "pos": "동사",
+        "lemma": "sto, stare, steti, statum",
+        "principalParts": "sto–stare–steti–statum",
+        "parse": "직설법 현재 능동태 3인칭 단수 + 접속사 -que",
+        "gloss_kr": "서 있다 (그리고)",
+        "gloss_en": "and stands",
+        "syntax": "주절의 첫 번째 술어 동사",
+        "background": "스킬라의 하체 전체가 개들로 변해 그 개들의 등과 머리 위에 자신의 상체가 서 있는 기이한 형상을 고정된 자세로 묘사한다.",
+        "etymology": "PIE *steh₂-('서다')에서 유래한다(exsto, exstare 항목 참조)."
+      },
+      {
+        "g": "canum",
+        "pos": "명사",
+        "lemma": "canis, canis, m./f.",
+        "parse": "보통명사 남성/여성 복수 속격",
+        "gloss_kr": "개들의",
+        "gloss_en": "of dogs",
+        "syntax": "rabie를 수식하는 속격",
+        "background": "개들의 광란을 뜻한다.",
+        "etymology": "PIE *ḱwṓ('개')에서 유래하며, 그리스어 κύων, 산스크리트어 śvā́, 영어 hound와 동계어이다."
+      },
+      {
+        "g": "rabie",
+        "pos": "명사",
+        "lemma": "rabies, rabiei, f.",
+        "parse": "보통명사 여성 단수 탈격",
+        "gloss_kr": "광란 위에 / 사나움 위에",
+        "gloss_en": "upon the rage / madness",
+        "syntax": "장소 또는 상태를 나타내는 탈격 (stat과 결합)",
+        "background": "5변혁 명사. 단순한 신체가 아니라 '광란하는 개들'의 상태 위에 상체가 떠받쳐져 있음을 뜻한다.",
+        "etymology": "rabo('미쳐 날뛰다')에서 파생된 명사로, 어원이 불확실한 라틴어 고유 어근이다."
+      },
+      {
+        "g": "subiectaque",
+        "pos": "분사",
+        "lemma": "subicio, subicere, subieci, subiectum",
+        "principalParts": "subicio–subicere–subieci–subiectum",
+        "parse": "완료 분사 수동태 중성 복수 대격 + 접속사 -que",
+        "gloss_kr": "아래에 놓인 / 밑에 받쳐진 (그리고)",
+        "gloss_en": "placed underneath (and)",
+        "syntax": "terga를 수식하는 분사",
+        "background": "sub-(아래에) + iacio(던지다)의 합성어로, 스킬라의 상체 밑에 기저하고 있는 짐승들의 몸통을 가리킨다.",
+        "etymology": "sub('아래로') + iacio('던지다')의 합성어로, iacio는 PIE *yeh₁-('던지다')에서 유래한다."
+      },
+      {
+        "g": "terga",
+        "pos": "명사",
+        "lemma": "tergum, -i, n.",
+        "parse": "보통명사 중성 복수 대격",
+        "gloss_kr": "등허리들을 / 몸통들을",
+        "gloss_en": "backs / bodies",
+        "syntax": "동사 coercet의 직접목적어",
+        "background": "짐승들의 등이나 몸체 부위를 의미한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '등'을 뜻한다."
+      },
+      {
+        "g": "ferarum",
+        "pos": "명사",
+        "lemma": "fera, -ae, f.",
+        "parse": "보통명사 여성 복수 속격",
+        "gloss_kr": "맹수들의",
+        "gloss_en": "of wild beasts",
+        "syntax": "terga를 수식하는 속격",
+        "background": "개 머리를 한 괴물 짐승들을 가리킨다.",
+        "etymology": "ferus('야생의')의 여성형이 명사화된 것으로, PIE *ǵʰwer-('야생동물')에서 유래하며 그리스어 θήρ('짐승')와 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.67",
+    "trans": "짤린 사타구니와 불룩 튀어나온 배로 가두어 통제하고 있다.",
+    "words": [
+      {
+        "g": "inguinibus",
+        "pos": "명사",
+        "lemma": "inguen, inguinis, n.",
+        "parse": "보통명사 중성 복수 탈격",
+        "gloss_kr": "사타구니로 / 허벅지 그루터기로",
+        "gloss_en": "with loins / groin",
+        "syntax": "coercet의 수단/도구의 탈격",
+        "background": "괴물들이 솟아나오며 잘려 나가고 변형된 사타구니 부위이다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, 명확한 인도유럽 동계어가 확립되어 있지 않다."
+      },
+      {
+        "g": "truncis",
+        "pos": "형용사",
+        "lemma": "truncus, -a, -um",
+        "parse": "형용사 중성 복수 탈격",
+        "gloss_kr": "짤려 나간 / 잘려진 / 밑동만 남은",
+        "gloss_en": "mutilated / truncated",
+        "syntax": "inguinibus를 수식하는 형용사",
+        "background": "정상적인 다리가 잘려 나가고 괴물의 형상만 남은 불구의 모습을 강조한다.",
+        "etymology": "PIE *trewk-('자르다')와 연관짓는 설이 있으며, '잘려나간, 몸통만 남은'을 뜻한다."
+      },
+      {
+        "g": "uteroque",
+        "pos": "명사",
+        "lemma": "uterus, -i, m.",
+        "parse": "보통명사 남성 단수 탈격 + 접속사 -que",
+        "gloss_kr": "배로 / 복부로 (그리고)",
+        "gloss_en": "and with belly",
+        "syntax": "inguinibus와 대등하게 coercet의 수단을 나타내는 탈격",
+        "background": "하체와 괴물 개들이 연결되는 배/복부 부위이다.",
+        "etymology": "PIE *udero-('배, 복부')에서 유래하며, 산스크리트어 udara와 동계어로 제시된다."
+      },
+      {
+        "g": "exstante",
+        "pos": "분사",
+        "lemma": "exsto, exstare",
+        "principalParts": "exsto–exstare",
+        "parse": "현재 분사 능동태 남성 단수 탈격",
+        "gloss_kr": "불룩 튀어나온 / 솟아 있는",
+        "gloss_en": "protruding / prominent",
+        "syntax": "utero를 수식하는 분사",
+        "background": "ex-(밖으로) + sto(서다)의 합성어로, 괴물들의 몸통 위로 스킬라의 배와 상체가 기괴하게 튀어나와 결합되어 있음을 형상화한다.",
+        "etymology": "ex('밖으로') + sto('서다')의 합성어로, sto는 PIE *steh₂-('서다')에서 유래하며 그리스어 ἵστημι, 영어 stand와 동계어이다."
+      },
+      {
+        "g": "coercet.",
+        "pos": "동사",
+        "lemma": "coerceo, coercere, coercui, coercitum",
+        "principalParts": "coerceo–coercere–coercui–coercitum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "가두다 / 하나로 묶다 / 통제하다",
+        "gloss_en": "confines / holds together",
+        "syntax": "주절의 술어 동사",
+        "background": "con-(함께) + arceo(가두다)의 합성어로, 스킬라의 상체가 그 밑의 맹수 등허리들을 잘린 사타구니와 배로 누르며 하나로 억눌러 묶고 있음을 표현한다.",
+        "etymology": "co-(강조) + arceo('막다')의 합성어로, arceo는 PIE *h₂erk-('막다, 지키다')에서 유래한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.68",
+    "trans": "사랑하는 글라우코스는 울었고, 너무나 적대적으로 사용된",
+    "words": [
+      {
+        "g": "Flevit",
+        "pos": "동사",
+        "lemma": "fleo, flere, flevi, fletum",
+        "principalParts": "fleo–flere–flevi–fletum",
+        "parse": "직설법 완료 능동태 3인칭 단수",
+        "gloss_kr": "울었다 / 눈물 흘렸다",
+        "gloss_en": "wept / mourned",
+        "syntax": "주절의 도치된 술어 동사",
+        "background": "문두에 배치되어 스킬라의 비극적 변신을 목격한 글라우코스의 슬픔과 절망을 강조한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 동사로, '울다'를 뜻한다."
+      },
+      {
+        "g": "amans",
+        "pos": "분사",
+        "lemma": "amo, amare, amavi, amatum",
+        "principalParts": "amo–amare–amavi–amatum",
+        "parse": "현재 분사 능동태 남성 단수 주격",
+        "gloss_kr": "사랑하는",
+        "gloss_en": "loving / lover",
+        "syntax": "Glaucus를 수식하는 분사",
+        "background": "스킬라를 향한 진실한 애정을 가지고 있었음을 재확인한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 동사로, 명확한 인도유럽 동계어가 확립되어 있지 않다(amor, amoris, m. 항목 참조)."
+      },
+      {
+        "g": "Glaucus",
+        "pos": "명사",
+        "lemma": "Glaucus, -i, m.",
+        "parse": "고유명사 남성 단수 주격",
+        "gloss_kr": "글라우코스는",
+        "gloss_en": "Glaucus",
+        "syntax": "주절의 주어",
+        "background": "원래 어부였으나 신비한 풀을 먹고 바다의 신이 된 인물로, 스킬라를 사랑하여 키르케에게 도움을 청했다가 비극을 자초했다.",
+        "etymology": "그리스어 γλαυκός('회청색의, 빛나는')에서 차용된 형용사가 고유명사화된 것으로, 아테나의 별칭 γλαυκῶπις('회청색 눈의')와 같은 어근이다."
+      },
+      {
+        "g": "nimiumque",
+        "pos": "부사",
+        "lemma": "nimium",
+        "parse": "정도 부사 + 접속사 -que",
+        "gloss_kr": "지나치게 / 너무나 (그리고)",
+        "gloss_en": "too much / excessively (and)",
+        "syntax": "hostiliter를 수식하는 부사",
+        "background": "키르케의 질투와 복수가 과도했음을 지적한다.",
+        "etymology": "nimis('너무')에서 파생된 부사로, 어원이 불확실한 라틴어 고유 어근이다."
+      },
+      {
+        "g": "hostiliter",
+        "pos": "부사",
+        "lemma": "hostiliter",
+        "parse": "양태 부사",
+        "gloss_kr": "적대적으로 / 잔혹하게",
+        "gloss_en": "hostilely / hatefully",
+        "syntax": "usae 분사를 수식하는 부사",
+        "background": "hostis(적)에서 유래하여 적을 대하듯 잔인하게 마법을 휘둘렀음을 의미한다.",
+        "etymology": "hostis('적')에서 파생된 부사로, hostis는 PIE *ǵʰóstis('낯선 사람, 손님')에서 유래하며 영어 guest, host와 동계어이다."
+      },
+      {
+        "g": "usae",
+        "pos": "분사",
+        "lemma": "utor, uti, usus sum",
+        "principalParts": "utor–uti–usus sum",
+        "parse": "완료 분사 (능동 의미) 여성 단수 속격",
+        "gloss_kr": "사용한 (키르케의)",
+        "gloss_en": "having used / who used",
+        "syntax": "Circes를 수식하는 이형동사 완료분사",
+        "background": "이형동사 utor는 완료분사 형태가 능동의 의미('사용했던')를 가진다. 마법 약초의 힘을 남용한 키르케를 수식한다.",
+        "etymology": "PIE *(H)owet-('익숙하다')에서 유래한 것으로 추정되는 탈형동사이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.69",
+    "trans": "약초의 힘을 본 키르케와의 결합(동침)을 거부하고 달아났다;",
+    "words": [
+      {
+        "g": "viribus",
+        "pos": "명사",
+        "lemma": "vis, vis, f. (복수 vires, virium)",
+        "parse": "보통명사 여성 복수 탈격",
+        "gloss_kr": "힘을 / 효능을",
+        "gloss_en": "powers / potency",
+        "syntax": "동사적 분사 usae의 목적어 (utor 동사는 탈격 목적어를 취함)",
+        "background": "약초가 지닌 치명적이고 강력한 마법의 힘을 뜻한다.",
+        "etymology": "PIE *weyh₁-에서 유래한다(vis, vis, f. 항목 참조)."
+      },
+      {
+        "g": "herbarum",
+        "pos": "명사",
+        "lemma": "herba, -ae, f.",
+        "parse": "보통명사 여성 복수 속격",
+        "gloss_kr": "약초들의 / 풀들의",
+        "gloss_en": "of herbs / plants",
+        "syntax": "viribus를 수식하는 속격",
+        "background": "키르케가 짓빻아 사용한 독초들을 의미한다.",
+        "etymology": "어원이 불확실하며, PIE 어근과 명확히 연결되지 않는 라틴어 고유 어휘로 남아 있다."
+      },
+      {
+        "g": "fugit",
+        "pos": "동사",
+        "lemma": "fugio, fugere, fugi, fugitum",
+        "principalParts": "fugio–fugere–fugi–fugitum",
+        "parse": "직설법 완료(또는 현재) 능동태 3인칭 단수",
+        "gloss_kr": "피했다 / 거부하고 떠났다",
+        "gloss_en": "fled / shunned",
+        "syntax": "주절의 두 번째 술어 동사",
+        "background": "키르케의 잔혹함에 정이 떨어져 그녀의 애정 고백과 결합을 외면하고 떠났음을 나타낸다.",
+        "etymology": "PIE *bʰeug-('달아나다')에서 유래하며, 그리스어 φεύγω('달아나다')와 직접 동계어이다."
+      },
+      {
+        "g": "conubia",
+        "pos": "명사",
+        "lemma": "conubium, -(i)i, n.",
+        "parse": "보통명사 중성 복수 대격",
+        "gloss_kr": "결합을 / 육체적 사랑을 / 결혼을",
+        "gloss_en": "union / marriage / embraces",
+        "syntax": "동사 fugit의 직접목적어",
+        "background": "con-(함께) + nubo(시집가다)에서 유래하여 혼인이나 성적 결합을 의미한다.",
+        "etymology": "con('함께') + nubo('결혼하다')의 합성어로, nubo는 '베일을 씌우다'라는 원의미에서 발달했다."
+      },
+      {
+        "g": "Circes;",
+        "pos": "명사",
+        "lemma": "Circe, -es, f.",
+        "parse": "고유명사 여성 단수 속격",
+        "gloss_kr": "키르케의",
+        "gloss_en": "of Circe",
+        "syntax": "conubia 및 usae를 수식하는 속격 (그리스어 단수 속격 어미 -es)",
+        "background": "마법사 키르케. 그리스어 변혁 속격 어미 -es를 유지하고 있다.",
+        "etymology": "그리스어 Κίρκη에서 차용된 고유명사로, κίρκος('매, 송골매')와 연관짓는 설이 있으나 확정적이지 않다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.70",
+    "trans": "스킬라는 그 자리에 머물렀고, 기회가 주어졌을 때, 가장 먼저",
+    "words": [
+      {
+        "g": "Scylla",
+        "pos": "명사",
+        "lemma": "Scylla, -ae, f.",
+        "parse": "고유명사 여성 단수 주격",
+        "gloss_kr": "스킬라는",
+        "gloss_en": "Scylla",
+        "syntax": "주절의 주어",
+        "background": "괴물로 변한 후 그 웅덩이/해협에 영구히 갇히게 된 스킬라를 가리킨다.",
+        "etymology": "그리스어 Σκύλλα에서 차용된 고유명사로, 그리스어 내부에서도 확실한 인도유럽 어근이 밝혀지지 않아 베이크스는 선그리스어 기원의 가능성을 배제하지 않는다. σκύλαξ('강아지')와 연관짓는 통속적 해석도 있으나 확증되지 않는다."
+      },
+      {
+        "g": "loco",
+        "pos": "명사",
+        "lemma": "locus, -i, m.",
+        "parse": "보통명사 남성 단수 탈격",
+        "gloss_kr": "그 장소에 / 그 자리에",
+        "gloss_en": "in the place",
+        "syntax": "장소의 탈격 (in 생략)",
+        "background": "자신이 괴물로 변한 메시나 해협의 그 바위 지대를 벗어나지 못하고 고착되었음을 의미한다.",
+        "etymology": "고졸 라틴어 stlocus에서 발달한 것으로 추정되며, 어원이 불확실하다. 복수형 loca(중성)와 loci(남성, '문헌 구절들')가 의미에 따라 구분되어 쓰인다."
+      },
+      {
+        "g": "mansit",
+        "pos": "동사",
+        "lemma": "maneo, manere, mansi, mansum",
+        "principalParts": "maneo–manere–mansi–mansum",
+        "parse": "직설법 완료 능동태 3인칭 단수",
+        "gloss_kr": "머물렀다 / 남아 있었다",
+        "gloss_en": "remained / stayed",
+        "syntax": "주절의 술어 동사",
+        "background": "움직이는 항해자들을 위협하는 거대한 암초/괴물로 정착했음을 뜻한다.",
+        "etymology": "PIE *men-('머무르다')에서 유래하며, 그리스어 μένω, 영어 remain(< 라틴어)과 동계어이다."
+      },
+      {
+        "g": "cumque",
+        "pos": "접속사",
+        "lemma": "cum",
+        "parse": "시간 접속사 + 접속사 -que",
+        "gloss_kr": "~했을 때 (그리고)",
+        "gloss_en": "and when",
+        "syntax": "시간의 종속절을 이끎",
+        "background": "스킬라가 복수할 기회를 잡게 되는 시점을 이끈다.",
+        "etymology": "PIE *ko-('~과 함께')에서 유래한 전치사 겸 접속사로, 영어 co-, com- 접두사(< 라틴어 cum)와 동일 기원이다. 접속사 용법(~할 때, ~이므로)은 전치사 용법에서 문법화된 것으로 본다."
+      },
+      {
+        "g": "est",
+        "pos": "동사",
+        "lemma": "sum, esse, fui, futurus",
+        "principalParts": "sum–esse–fui–futurus",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "이다",
+        "gloss_en": "was",
+        "syntax": "data와 결합하여 직설법 완료 수동태 data est 형성",
+        "background": "완료 수동태 조동사이다.",
+        "etymology": "PIE 계사 어근 *h₁es-('있다')에서 유래하며, 그리스어 εἰμί, 산스크리트어 asmi, 영어 is와 동계어이다. 완료형 fui는 별개의 어근 *bʰuH-('자라다, 되다')에서 온 것으로, 그리스어 φύω('낳다, 자라다')와 동계어이며 라틴어 계사 활용이 두 어근의 보충법(suppletion)으로 이루어짐을 보여준다."
+      },
+      {
+        "g": "data",
+        "pos": "분사",
+        "lemma": "do, dare, dedi, datum",
+        "principalParts": "do–dare–dedi–datum",
+        "parse": "완료 분사 수동태 여성 단수 주격",
+        "gloss_kr": "주어진 / 허용된",
+        "gloss_en": "given / granted",
+        "syntax": "copia를 수식하며 data est 완료 수동태 형성",
+        "background": "기회가 찾아왔음을 뜻한다.",
+        "etymology": "PIE *deh₃-('주다')에서 유래하며, 그리스어 δίδωμι, 산스크리트어 dádāti와 동계어이다."
+      },
+      {
+        "g": "copia,",
+        "pos": "명사",
+        "lemma": "copia, -ae, f.",
+        "parse": "보통명사 여성 단수 주격",
+        "gloss_kr": "기회가 / 수단이",
+        "gloss_en": "opportunity / means",
+        "syntax": "cum절의 주어 (copia est data = 기회가 주어졌다)",
+        "background": "복수나 화풀이를 실행할 수 있는 관문/기회를 의미한다.",
+        "etymology": "co-(강조) + ops('힘, 자원')의 합성어로, ops는 PIE *h₃ep-('일하다, 성취하다')에서 유래한다(opus, operis, n. 항목 참조)."
+      },
+      {
+        "g": "primum",
+        "pos": "부사",
+        "lemma": "primum",
+        "parse": "순서/시간 부사",
+        "gloss_kr": "가장 먼저 / 첫 번째로",
+        "gloss_en": "first of all / first",
+        "syntax": "뒤이어 나오는 복수 행위를 수식하는 부사",
+        "background": "스킬라가 마법사 키르케에게 직접 복수하지 못하자, 키르케가 사랑하는 율리시스(오디세우스)의 동료들을 표적으로 삼아 첫 복수를 감행함을 암시한다.",
+        "etymology": "primus의 중성 단수 대격이 부사화된 것이다(primo 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.71",
+    "trans": "키르케에 대한 미움으로 율리시스에게서 동료들을 빼앗았고;",
+    "words": [
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "전치사 (대격 지배)",
+        "gloss_kr": "~에 대한 / ~을 향한",
+        "gloss_en": "against / towards",
+        "syntax": "Circes를 지배하여 odium의 방향/대상을 나타냄",
+        "background": "감정의 대상을 가리키는 전치사 용법이다.",
+        "etymology": "PIE *h₁en('~안에')에서 유래하며, 그리스어 ἐν, 영어 in과 동계어이다. 라틴어에서는 격에 따라 '~안에(탈격, 정적 위치)' 또는 '~안으로(대격, 방향)'의 이중 용법을 가진다."
+      },
+      {
+        "g": "Circes",
+        "pos": "명사",
+        "lemma": "Circe, -es, f.",
+        "parse": "고유명사 여성 단수 대격",
+        "gloss_kr": "키르케에 대한",
+        "gloss_en": "Circe",
+        "syntax": "전치사 in의 목적어 (그리스어 단수 대격 어미 -es/-en 중 -es 형태)",
+        "background": "스킬라를 괴물로 만든 원흉인 마법사 키르케이다.",
+        "etymology": "그리스어 Κίρκη에서 차용된 고유명사로, κίρκος('매, 송골매')와 연관짓는 설이 있으나 확정적이지 않다."
+      },
+      {
+        "g": "odium",
+        "pos": "명사",
+        "lemma": "odium, -ii, n.",
+        "parse": "보통명사 중성 단수 대격",
+        "gloss_kr": "증오로 / 미움으로",
+        "gloss_en": "hatred / ill-will",
+        "syntax": "동작의 동기/이유를 나타내는 대격 구문 (또는 in odium = 증오심에서)",
+        "background": "자신을 기괴한 괴물로 만든 키르케를 향한 원한이다.",
+        "etymology": "odi('미워하다')에서 파생된 명사로, odi는 어원이 불확실한 라틴어 고유 동사이다."
+      },
+      {
+        "g": "sociis",
+        "pos": "명사",
+        "lemma": "socius, -ii, m.",
+        "parse": "보통명사 남성 복수 탈격",
+        "gloss_kr": "동료들을",
+        "gloss_en": "of companions / of allies",
+        "syntax": "spoliavit의 박탈/분리의 탈격 (spolio A B = A에게서 B를 빼앗다)",
+        "background": "율리시스(오디세우스)의 선원들을 뜻한다.",
+        "etymology": "sequor('따르다')와 같은 어근 *sekʷ-에서 파생된 것으로 추정되며, '동료, 동맹'을 뜻한다(sequor 항목 참조)."
+      },
+      {
+        "g": "spoliavit",
+        "pos": "동사",
+        "lemma": "spolio, spoliare, spoliavi, spoliatum",
+        "principalParts": "spolio–spoliare–spoliavi–spoliatum",
+        "parse": "직설법 완료 능동태 3인칭 단수",
+        "gloss_kr": "강탈했다 / 빼앗았다",
+        "gloss_en": "robbed / deprived",
+        "syntax": "주절의 술어 동사",
+        "background": "스킬라가 배를 덮쳐 선원 6명을 차례로 물어뜯어 삼켜버린 사건을 의미한다.",
+        "etymology": "spolium('전리품, 벗긴 가죽')에서 파생된 동사로, spolium은 어원이 불확실한 라틴어 고유 어근이다."
+      },
+      {
+        "g": "Ulixem;",
+        "pos": "명사",
+        "lemma": "Ulixes, Ulixis / Ulixi, m.",
+        "parse": "고유명사 남성 단수 대격",
+        "gloss_kr": "율리시스에게서 / 오디세우스에게서",
+        "gloss_en": "Ulysses",
+        "syntax": "동사 spoliavit의 직접목적어",
+        "background": "키르케가 한때 사랑했던 영웅 율리시스에게 피해를 줌으로써 키르케에게 간접적으로 복수했음을 보여준다.",
+        "etymology": "그리스어 Ὀδυσσεύς가 이탈리아 방언을 거쳐 변형된 라틴어형으로, 라틴 서부 방언에서 d>l 음변화를 겪은 것으로 설명된다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.72",
+    "trans": "머지않아 같은 그녀가 트로이의 배들을 침몰시켰을 것이나,",
+    "words": [
+      {
+        "g": "mox",
+        "pos": "부사",
+        "lemma": "mox",
+        "parse": "시간 부사",
+        "gloss_kr": "머지않아 / 곧이어",
+        "gloss_en": "soon / presently",
+        "syntax": "fuerat mersura를 수식하는 부사",
+        "background": "율리시스의 배를 공격한 이후 얼마 지나지 않은 시점을 가리킨다.",
+        "etymology": "PIE *moksu-('곧, 빨리')에서 유래하는 것으로 추정된다."
+      },
+      {
+        "g": "eadem",
+        "pos": "대명사",
+        "lemma": "idem, eadem, idem",
+        "parse": "지시대명사 여성 단수 주격",
+        "gloss_kr": "같은 그녀가 (스킬라가)",
+        "gloss_en": "the same (she)",
+        "syntax": "주절의 주어 (스킬라를 강조)",
+        "background": "동일한 괴물 스킬라가 다음 타깃으로 트로이 함대를 노렸음을 나타낸다.",
+        "etymology": "is('그것') + dem(강조 첨사)의 결합으로, '바로 그것, 동일한 것'을 뜻한다."
+      },
+      {
+        "g": "Teucras",
+        "pos": "형용사",
+        "lemma": "Teucrus, -a, -um",
+        "parse": "형용사 여성 복수 대격",
+        "gloss_kr": "트로이의 / 테우크로스의",
+        "gloss_en": "Trojan / Teucrian",
+        "syntax": "carinas를 수식하는 수식어",
+        "background": "트로이의 전설적 시조 테우크로스(Teucer)의 이름에서 유래한 트로이의 시적 표현이다.",
+        "etymology": "그리스어 Τεῦκρος(트로이아의 시조왕 테우크로스)에서 파생된 형용사로, 트로이아인을 가리키는 시적 표현이다."
+      },
+      {
+        "g": "fuerat",
+        "pos": "동사",
+        "lemma": "sum, esse, fui, futurus",
+        "principalParts": "sum–esse–fui–futurus",
+        "parse": "직설법 과거완료 능동태 3인칭 단수",
+        "gloss_kr": "이었을 것이다",
+        "gloss_en": "would have been",
+        "syntax": "mersura와 결합하여 가정법 과거완료 귀결절을 대신하는 구문 (fuerat + 미래분사)",
+        "background": "실제로 일어나지는 않았으나 일어날 뻔했던 강한 의도/경향을 나타낸다.",
+        "etymology": "PIE 계사 어근 *h₁es-('있다')에서 유래하며, 그리스어 εἰμί, 산스크리트어 asmi, 영어 is와 동계어이다. 완료형 fui는 별개의 어근 *bʰuH-('자라다, 되다')에서 온 것으로, 그리스어 φύω('낳다, 자라다')와 동계어이며 라틴어 계사 활용이 두 어근의 보충법(suppletion)으로 이루어짐을 보여준다."
+      },
+      {
+        "g": "mersura",
+        "pos": "분사",
+        "lemma": "mergo, mergere, mersi, mersum",
+        "principalParts": "mergo–mergere–mersi–mersum",
+        "parse": "미래 분사 능동태 여성 단수 주격",
+        "gloss_kr": "침몰시키려 했던 / 수장하려 했던",
+        "gloss_en": "about to sink / drown",
+        "syntax": "eadem을 수식하며 fuerat과 함께 능동 주의적 서술 구문 형성",
+        "background": "트로이 함대(아이네아스의 배들)까지 가라앉히려는 일보 직전이었음을 뜻한다.",
+        "etymology": "PIE *mezg-('담그다, 씻다')에서 유래하며, 산스크리트어 majjati와 동계어로 제시된다."
+      },
+      {
+        "g": "carinas,",
+        "pos": "명사",
+        "lemma": "carina, -ae, f.",
+        "parse": "보통명사 여성 복수 대격",
+        "gloss_kr": "배들을 / 용골들을",
+        "gloss_en": "keels / ships",
+        "syntax": "mersura 분사의 직접목적어 (제유법: 용골 → 배 전체)",
+        "background": "아이네아스가 이끄는 트로이 유랑민들의 함대를 의미한다.",
+        "etymology": "그리스어 κάρυον('견과류')과 연관짓는 설이 있으나 불확실하며, '용골, 배'를 뜻한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.73",
+    "trans": "그전에 그녀가 암초로 변하지 않았더라면; 그 암초는 지금도 돌로 솟아 있으며,",
+    "words": [
+      {
+        "g": "ni",
+        "pos": "접속사",
+        "lemma": "nisi / ni",
+        "parse": "조건 접속사 (부정)",
+        "gloss_kr": "~하지 않았더라면",
+        "gloss_en": "unless / if not",
+        "syntax": "반대 사실을 가정하는 비현실 조건절(가정법 과거완료)을 도입",
+        "background": "스킬라가 화석화되지 않았다면 트로이인들도 무사하지 못했을 것임을 조건절로 연결한다.",
+        "etymology": "ne('아니') + si('만약')의 결합으로, '만약 ~아니면'을 뜻한다."
+      },
+      {
+        "g": "prius",
+        "pos": "부사",
+        "lemma": "prius",
+        "parse": "시간 부사",
+        "gloss_kr": "그전에 / 먼저",
+        "gloss_en": "beforehand / previously",
+        "syntax": "transformata foret을 수식하는 부사",
+        "background": "트로이 배들이 지나가기 직전의 타이밍을 나타낸다.",
+        "etymology": "PIE 비교급 어근 *preyos-(*per-'앞')에서 유래하며, '더 앞에, 먼저'를 뜻한다."
+      },
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "전치사 (대격 지배)",
+        "gloss_kr": "~로",
+        "gloss_en": "into",
+        "syntax": "scopulum을 지배하여 변신의 결과 상태를 나타냄",
+        "background": "생명체에서 돌/암초 형태로의 상태 변화를 나타낸다.",
+        "etymology": "PIE *h₁en('~안에')에서 유래하며, 그리스어 ἐν, 영어 in과 동계어이다. 라틴어에서는 격에 따라 '~안에(탈격, 정적 위치)' 또는 '~안으로(대격, 방향)'의 이중 용법을 가진다."
+      },
+      {
+        "g": "scopulum,",
+        "pos": "명사",
+        "lemma": "scopulus, -i, m.",
+        "parse": "보통명사 남성 단수 대격",
+        "gloss_kr": "암초로 / 바위산으로",
+        "gloss_en": "reef / rock",
+        "syntax": "전치사 in의 목적어이자 관계대명사 qui의 선행사",
+        "background": "스킬라가 결국 미지의 신성 혹은 자연의 힘에 의해 진짜 돌 암초로 굳어버렸음을 뜻한다.",
+        "etymology": "그리스어 σκόπελος('바위, 암초')에서 차용된 단어로, σκοπός('감시자, 목표')와 연관되는 σκέπτομαι('보다') 어근과 관련된다."
+      },
+      {
+        "g": "qui",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "관계대명사 남성 단수 주격",
+        "gloss_kr": "그것은 (암초는)",
+        "gloss_en": "which",
+        "syntax": "관계절 내의 주어 (선행사 scopulum)",
+        "background": "현재 시점까지 존재하는 원인 모를 해상 암초의 원인을 지형설화적(etiological)으로 설명한다.",
+        "etymology": "PIE 의문·관계 어간 *kʷo-/*kʷi-('누구, 무엇')에서 유래하며, 그리스어 관계대명사 및 영어 who, what, 산스크리트어 kaḥ와 동계어이다. 인도유럽어족 전반에 걸쳐 의문사와 관계사가 동일 어근을 공유하는 대표적 사례이다."
+      },
+      {
+        "g": "nunc",
+        "pos": "부사",
+        "lemma": "nunc",
+        "parse": "시간 부사",
+        "gloss_kr": "지금도",
+        "gloss_en": "now",
+        "syntax": "exstat을 수식하는 부사",
+        "background": "오비디우스 당대 시점까지 신화의 흔적이 남아있음을 보여준다.",
+        "etymology": "고졸 라틴어 nu(PIE *nu '지금') + -c(강조 첨사)의 결합으로, 그리스어 νῦν, 영어 now와 동계어이다."
+      },
+      {
+        "g": "quoque",
+        "pos": "부사",
+        "lemma": "quoque",
+        "parse": "양태 부사",
+        "gloss_kr": "역시 / 또한",
+        "gloss_en": "also / even",
+        "syntax": "nunc를 강조",
+        "background": "과거뿐만 아니라 현재에도 적용됨을 강조한다.",
+        "etymology": "quo(관계·의문 어간) + -que(첨가 첨사, PIE *kʷe '그리고')의 결합으로, '그 경우에도 역시'라는 뜻의 첨가 부사가 되었다."
+      },
+      {
+        "g": "saxeus",
+        "pos": "형용사",
+        "lemma": "saxeus, -a, -um",
+        "parse": "형용사 남성 단수 주격",
+        "gloss_kr": "돌로 된 / 바위의",
+        "gloss_en": "stony / made of rock",
+        "syntax": "exstat의 주격 보어",
+        "background": "살아 움직이던 괴물이 완벽하게 돌로 굳어졌음을 명시한다.",
+        "etymology": "saxum에서 파생된 형용사이다(saxum, -i, n. 항목 참조)."
+      },
+      {
+        "g": "exstat,",
+        "pos": "동사",
+        "lemma": "exsto, exstare",
+        "principalParts": "exsto–exstare",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "솟아 있다 / 우뚝 서 있다",
+        "gloss_en": "stands out / exists",
+        "syntax": "관계절의 술어 동사",
+        "background": "바다 표면 위로 바위가 솟아나 있는 모습을 묘사한다.",
+        "etymology": "ex('밖으로') + sto('서다')의 합성어로, sto는 PIE *steh₂-('서다')에서 유래하며 그리스어 ἵστημι, 영어 stand와 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.74",
+    "trans": "변하지 않았더라면: 뱃사공은 그 암초 또한 피한다.",
+    "words": [
+      {
+        "g": "transformata",
+        "pos": "분사",
+        "lemma": "transformo, transformare, transformavi, transformatum",
+        "principalParts": "transformo–transformare–transformavi–transformatum",
+        "parse": "완료 분사 수동태 여성 단수 주격",
+        "gloss_kr": "변형된 / 변신한",
+        "gloss_en": "transformed / changed",
+        "syntax": "foret과 결합하여 가정법 과거완료 수동태 transformata foret 형성",
+        "background": "trans-(너머로) + forma(모양)의 합성어로 모양이 완전히 바뀌었음을 가리킨다.",
+        "etymology": "trans('건너, 넘어') + formo('형태를 만들다')의 합성어이다(forma, -ae, f. 항목 참조)."
+      },
+      {
+        "g": "foret:",
+        "pos": "동사",
+        "lemma": "sum, esse, fui, futurus",
+        "principalParts": "sum–esse–fui–futurus",
+        "parse": "가정법 미완료(여기서는 과거완료 완곡대체) 능동태 3인칭 단수 (=esset)",
+        "gloss_kr": "되었었더라면",
+        "gloss_en": "had been",
+        "syntax": "조건절(ni)의 술어 동사 (transformata foret = transformata esset)",
+        "background": "foret은 esset의 시적 대안 형태이다.",
+        "etymology": "PIE 계사 어근 *h₁es-('있다')에서 유래하며, 그리스어 εἰμί, 산스크리트어 asmi, 영어 is와 동계어이다. 완료형 fui는 별개의 어근 *bʰuH-('자라다, 되다')에서 온 것으로, 그리스어 φύω('낳다, 자라다')와 동계어이며 라틴어 계사 활용이 두 어근의 보충법(suppletion)으로 이루어짐을 보여준다."
+      },
+      {
+        "g": "scopulum",
+        "pos": "명사",
+        "lemma": "scopulus, -i, m.",
+        "parse": "보통명사 남성 단수 대격",
+        "gloss_kr": "그 암초를",
+        "gloss_en": "reef / rock",
+        "syntax": "동사 vitat의 직접목적어",
+        "background": "스킬라가 변한 바위 산이다.",
+        "etymology": "그리스어 σκόπελος('바위, 암초')에서 차용된 단어로, σκοπός('감시자, 목표')와 연관되는 σκέπτομαι('보다') 어근과 관련된다."
+      },
+      {
+        "g": "quoque",
+        "pos": "부사",
+        "lemma": "quoque",
+        "parse": "양태 부사",
+        "gloss_kr": "또한 / 역시",
+        "gloss_en": "also / even",
+        "syntax": "scopulum을 수식",
+        "background": "괴물이었을 때 뿐만 아니라 돌로 변한 지금도 위험 대상임을 뜻한다.",
+        "etymology": "quo(관계·의문 어간) + -que(첨가 첨사, PIE *kʷe '그리고')의 결합으로, '그 경우에도 역시'라는 뜻의 첨가 부사가 되었다."
+      },
+      {
+        "g": "navita",
+        "pos": "명사",
+        "lemma": "nauta / navita, -ae, m.",
+        "parse": "보통명사 남성 단수 주격",
+        "gloss_kr": "뱃사공은 / 항해자는",
+        "gloss_en": "sailor / mariner",
+        "syntax": "주절의 주어",
+        "background": "nauta의 시적 어형(navita)이다.",
+        "etymology": "navis('배')에서 파생된 행위자 명사로, navis는 PIE *neh₂w-('배')에서 유래하며 그리스어 ναῦς, 영어 navy와 동계어이다."
+      },
+      {
+        "g": "vitat.",
+        "pos": "동사",
+        "lemma": "vito, vitare, vitavi, vitatum",
+        "principalParts": "vito–vitare–vitavi–vitatum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "피한다 / 회피한다",
+        "gloss_en": "avoids / shuns",
+        "syntax": "주절의 술어 동사",
+        "background": "오늘날의 선원들도 여전히 스킬라 바위를 조심해서 항해함을 말한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 동사로, '피하다'를 뜻한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.75",
+    "trans": "트로이의 배들이 노를 저어 이 암초와 탐욕스러운 카리브디스를",
+    "words": [
+      {
+        "g": "Hunc",
+        "pos": "대명사",
+        "lemma": "hic, haec, hoc",
+        "parse": "지시대명사 남성 단수 대격",
+        "gloss_kr": "이 암초를",
+        "gloss_en": "this (reef)",
+        "syntax": "evicere 동사의 첫 번째 직접목적어 (선행 암초 scopulum을 가리킴)",
+        "background": "지시 대명사로서 스킬라 바위를 가리킨다.",
+        "etymology": "PIE 지시 어간 *ko-('이것')에 첨사 -ce가 결합된 형태로, 근칭 지시대명사이다. 게르만어파의 he(그)와 어원적으로 연결되는 지시 어근 계열에 속한다."
+      },
+      {
+        "g": "ubi",
+        "pos": "접속사",
+        "lemma": "ubi",
+        "parse": "시간 접속사",
+        "gloss_kr": "~했을 때 / ~하자",
+        "gloss_en": "when / as soon as",
+        "syntax": "종속절(evicere)을 이끄는 시간 접속사",
+        "background": "트로이 함대가 위험 구역을 마침내 빠져나온 시점을 전환점으로 삼는다.",
+        "etymology": "PIE 의문·관계 어근 *kʷu-('어디')에 처소 접미사가 결합한 형태로, qui와 같은 계열에 속한다(qui 항목 참조)."
+      },
+      {
+        "g": "Troianae",
+        "pos": "형용사",
+        "lemma": "Troianus, -a, -um",
+        "parse": "형용사 여성 복수 주격",
+        "gloss_kr": "트로이의",
+        "gloss_en": "Trojan",
+        "syntax": "rates를 수식하는 형용사",
+        "background": "아이네아스의 트로이 유민 함대이다.",
+        "etymology": "그리스어 Τρώς('트로이아인')의 라틴어 형용사형으로, 히타이트 문헌의 왕국명 Wiluša=일리오스와 연관짓는 학설이 있다(일리아드 관련 항목 참조)."
+      },
+      {
+        "g": "remis",
+        "pos": "명사",
+        "lemma": "remus, -i, m.",
+        "parse": "보통명사 남성 복수 탈격",
+        "gloss_kr": "노들로 / 노를 저어",
+        "gloss_en": "with oars",
+        "syntax": "evicere의 수단/도구의 탈격",
+        "background": "바람이 아닌 선원들의 목숨 건 노젓기로 험난한 해협을 탈출했음을 나타낸다.",
+        "etymology": "PIE *h₁reh₁-('노 젓다')에서 유래하며, 그리스어 ἐρετμός, 영어 row와 동계어이다."
+      },
+      {
+        "g": "avidamque",
+        "pos": "형용사",
+        "lemma": "avidus, -a, -um",
+        "parse": "형용사 여성 단수 대격 + 접속사 -que",
+        "gloss_kr": "탐욕스러운 / 모든 것을 삼키는 (그리고)",
+        "gloss_en": "greedy / voracious (and)",
+        "syntax": "Charybdin을 수식하는 형용사",
+        "background": "바닷물을 삼켰다 내뱉는 거대한 소용돌이 괴물 카리브디스의 대식성(貪食性)을 표현한다.",
+        "etymology": "aveo('갈망하다')에서 파생된 형용사로, aveo는 어원이 불확실한 라틴어 고유 동사이다."
+      },
+      {
+        "g": "Charybdin",
+        "pos": "명사",
+        "lemma": "Charybdis, -is, f.",
+        "parse": "고유명사 여성 단수 대격",
+        "gloss_kr": "카리브디스를",
+        "gloss_en": "Charybdis",
+        "syntax": "evicere의 두 번째 직접목적어 (그리스어 단수 대격 어미 -in)",
+        "background": "스킬라 맞은편에 위치한 치명적인 바다 소용돌이 괴물이다.",
+        "etymology": "그리스어 Χάρυβδις에서 차용된 고유명사로, 그리스어 내부 어원이 확립되어 있지 않아 선그리스어 기층 어휘일 가능성이 제기된다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.76",
+    "trans": "이겨내고, 이미 아우소니아 해안 근처에 다다랐을 때,",
+    "words": [
+      {
+        "g": "evicere",
+        "pos": "동사",
+        "lemma": "evinco, evincere, evici, evictum",
+        "principalParts": "evinco–evincere–evici–evictum",
+        "parse": "직설법 완료 능동태 3인칭 복수 (=evicerunt)",
+        "gloss_kr": "이겨냈다 / 극복하여 지나쳤다",
+        "gloss_en": "passed / overcame",
+        "syntax": "ubi 종속절의 술어 동사",
+        "background": "e-(완전히) + vinco(이기다)의 합성어로 사투 끝에 해협을 무사히 빠져나왔음을 뜻한다.",
+        "etymology": "e('밖으로') + vinco('이기다')의 합성어로, vinco는 PIE 어근에서 유래한 라틴어 고유 동사로 추정된다."
+      },
+      {
+        "g": "rates,",
+        "pos": "명사",
+        "lemma": "ratis, ratis, f.",
+        "parse": "보통명사 여성 복수 주격",
+        "gloss_kr": "배들이",
+        "gloss_en": "ships / rafts",
+        "syntax": "ubi절의 주어",
+        "background": "트로이의 배들을 지칭한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '뗏목, 배'를 뜻한다."
+      },
+      {
+        "g": "cum",
+        "pos": "접속사",
+        "lemma": "cum",
+        "parse": "시간 접속사",
+        "gloss_kr": "~했을 때",
+        "gloss_en": "when",
+        "syntax": "가정법 미완료(adessent)와 함께 쓰인 시간/상황의 cum절",
+        "background": "목적지 이탈리아에 거의 도달한 순간을 설정한다.",
+        "etymology": "PIE *ko-('~과 함께')에서 유래한 전치사 겸 접속사로, 영어 co-, com- 접두사(< 라틴어 cum)와 동일 기원이다. 접속사 용법(~할 때, ~이므로)은 전치사 용법에서 문법화된 것으로 본다."
+      },
+      {
+        "g": "iam",
+        "pos": "부사",
+        "lemma": "iam",
+        "parse": "시간 부사",
+        "gloss_kr": "이미 / 마침내",
+        "gloss_en": "already",
+        "syntax": "adessent를 수식",
+        "background": "긴 유랑의 끝이 눈앞에 왔음을 강조한다.",
+        "etymology": "PIE *(H)yeh₂m('이미, 지금')에서 유래한다."
+      },
+      {
+        "g": "prope",
+        "pos": "전치사",
+        "lemma": "prope",
+        "parse": "전치사 (대격 지배)",
+        "gloss_kr": "~ 근처에 / ~에 가까이",
+        "gloss_en": "near to",
+        "syntax": "litus를 지배하는 장소의 전치사",
+        "background": "목적지에 거의 근접했음을 나타낸다.",
+        "etymology": "PIE *pro-에서 발달한 것으로 추정되는 전치사로, '가까이'를 뜻한다."
+      },
+      {
+        "g": "litus",
+        "pos": "명사",
+        "lemma": "litus, litoris, n.",
+        "parse": "보통명사 중성 단수 대격",
+        "gloss_kr": "해안에",
+        "gloss_en": "shore / coast",
+        "syntax": "전치사 prope의 목적어",
+        "background": "이탈리아의 해안이다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, linere('바르다')와 연관짓는 민간어원이 있으나 형태·의미상 근거가 약해 학계에서는 대체로 받아들이지 않는다."
+      },
+      {
+        "g": "adessent",
+        "pos": "동사",
+        "lemma": "adsum, adesse, adfui",
+        "principalParts": "adsum–adesse–adfui",
+        "parse": "가정법 미완료 능동태 3인칭 복수",
+        "gloss_kr": "다다랐을 때 / 접근했을 때",
+        "gloss_en": "they were near",
+        "syntax": "cum절의 술어 동사",
+        "background": "ad-(~에) + sum(있다)의 합성어로 도달 상태를 나타낸다.",
+        "etymology": "ad('~에') + sum('있다')의 합성어이다(sum, esse, fui, futurus 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.77",
+    "trans": "바람에 밀려 리비아 해안으로 다시 표류하게 된다.",
+    "words": [
+      {
+        "g": "Ausonium,",
+        "pos": "형용사",
+        "lemma": "Ausonius, -a, -um",
+        "parse": "형용사 중성 단수 대격",
+        "gloss_kr": "아우소니아의 (이탈리아의)",
+        "gloss_en": "Ausonian / Italian",
+        "syntax": "litus를 수식하는 수식어",
+        "background": "이탈리아 남부의 옛 부족 아우소네스(Ausones)에서 유래한 이탈리아의 시적 명칭이다.",
+        "etymology": "그리스어 Αὔσων에서 유래한다(Ausonius, -a, -um (또는 Ausonia, -ae, f.) 항목 참조)."
+      },
+      {
+        "g": "Libycas",
+        "pos": "형용사",
+        "lemma": "Libycus, -a, -um",
+        "parse": "형용사 여성 복수 대격",
+        "gloss_kr": "리비아의 (북아프리카의)",
+        "gloss_en": "Libyan / North African",
+        "syntax": "oras를 수식하는 형용사",
+        "background": "북아프리카 카르타고 지역을 뜻한다.",
+        "etymology": "그리스어 Λιβύη(리비아)에서 파생된 형용사로, 그리스어 자체의 어원은 확립되어 있지 않다."
+      },
+      {
+        "g": "vento",
+        "pos": "명사",
+        "lemma": "ventus, -i, m.",
+        "parse": "보통명사 남성 단수 탈격",
+        "gloss_kr": "바람에 의해 / 폭풍에",
+        "gloss_en": "by wind / storm",
+        "syntax": "referuntur의 원인/수단의 탈격",
+        "background": "유노(헤라) 여신이 일으킨 거센 남풍/폭풍을 가리킨다.",
+        "etymology": "PIE *h₂weh₁-('불다')의 현재분사형에서 유래하며, 그리스어 ἄημι('불다'), 영어 wind와 동계어이다."
+      },
+      {
+        "g": "referuntur",
+        "pos": "동사",
+        "lemma": "refero, referre, rettuli, relatum",
+        "principalParts": "refero–referre–rettuli–relatum",
+        "parse": "직설법 현재 수동태 3인칭 복수",
+        "gloss_kr": "다시 밀려가다 / 휩쓸려가다",
+        "gloss_en": "are driven back",
+        "syntax": "주절의 술어 동사",
+        "background": "re-(뒤로) + fero(나르다)의 수동태로, 의지와 상관없이 이탈리아에서 아프리카로 도로 튕겨 나갔음을 의미한다.",
+        "etymology": "re-('다시, 뒤로') + fero('나르다')의 합성어로, fero는 PIE *bʰer-('나르다')에서 유래하며 그리스어 φέρω, 영어 bear와 동계어이다(fero 항목 참조). 완료형 rettuli는 다른 어근 tollo/tuli 계열에서 보충된 형태이다."
+      },
+      {
+        "g": "ad",
+        "pos": "전치사",
+        "lemma": "ad",
+        "parse": "전치사 (대격 지배)",
+        "gloss_kr": "~로 / ~를 향해",
+        "gloss_en": "to / towards",
+        "syntax": "oras를 지배하는 방향의 전치사",
+        "background": "표류의 도달점을 나타낸다.",
+        "etymology": "PIE *ad-('~로, ~에')에서 유래하며, 영어 at과 동계어로 제시된다."
+      },
+      {
+        "g": "oras.",
+        "pos": "명사",
+        "lemma": "ora, -ae, f.",
+        "parse": "보통명사 여성 복수 대격",
+        "gloss_kr": "해안으로 / 가장자리로",
+        "gloss_en": "shores / coasts",
+        "syntax": "전치사 ad의 목적어",
+        "background": "카르타고가 위치한 아프리카 해안가이다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '해안, 가장자리'를 뜻한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.78",
+    "trans": "거기서 시돈 여인(디도)은 마음과 집으로 아이네아스를 맞이하지만,",
+    "words": [
+      {
+        "g": "excipit",
+        "pos": "동사",
+        "lemma": "excipio, excipere, excepi, exceptum",
+        "principalParts": "excipio–excipere–excepi–exceptum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "맞이하다 / 환대하다",
+        "gloss_en": "receives / welcomes",
+        "syntax": "주절의 술어 동사",
+        "background": "ex-(밖으로) + capio(잡다)의 합성어로 표류해 온 손님을 받아들여 환대함을 뜻한다.",
+        "etymology": "ex('밖으로') + capio('잡다')의 합성어이다(decipio 항목의 capio 참조)."
+      },
+      {
+        "g": "Aenean",
+        "pos": "명사",
+        "lemma": "Aeneas, -ae, m.",
+        "parse": "고유명사 남성 단수 대격",
+        "gloss_kr": "아이네아스를",
+        "gloss_en": "Aeneas",
+        "syntax": "excipit의 직접목적어 (그리스어 단수 대격 어미 -an)",
+        "background": "트로이의 영웅이자 베르길리우스 《아이네이스》의 주인공.",
+        "etymology": "그리스어 Αἰνείας에서 차용된 고유명사로, αἰνός('무서운, 끔찍한')와 연관짓는 통속적 어원이 있으나 확증되지 않는다."
+      },
+      {
+        "g": "illic",
+        "pos": "부사",
+        "lemma": "illic",
+        "parse": "장소 부사",
+        "gloss_kr": "거기서 / 그곳(카르타고)에서",
+        "gloss_en": "there / in that place",
+        "syntax": "excipit을 수식하는 부사",
+        "background": "카르타고를 가리킨다.",
+        "etymology": "ille('저것') + hic(방향 접미사 -c)의 결합으로, '저기에'를 뜻한다(ille, illa, illud 항목 참조)."
+      },
+      {
+        "g": "animoque",
+        "pos": "명사",
+        "lemma": "animus, -i, m.",
+        "parse": "보통명사 남성 단수 탈격 + 접속사 -que",
+        "gloss_kr": "마음으로 (그리고)",
+        "gloss_en": "with heart / mind (and)",
+        "syntax": "excipit의 방법/태도의 탈격",
+        "background": "진심 어린 애정과 환대를 의미한다.",
+        "etymology": "PIE *h₂enh₁-('숨쉬다')에서 유래하며, 그리스어 ἄνεμος('바람'), 산스크리트어 aniti('숨쉬다')와 동계어이다."
+      },
+      {
+        "g": "domoque",
+        "pos": "명사",
+        "lemma": "domus, -us / -i, f.",
+        "parse": "보통명사 여성 단수 탈격 + 접속사 -que",
+        "gloss_kr": "집으로 / 궁전으로 (그리고)",
+        "gloss_en": "and with home / palace",
+        "syntax": "animo와 함께 excipit의 수단/장소의 탈격",
+        "background": "자신의 궁전과 거처를 내어주었음을 나타낸다.",
+        "etymology": "PIE *dṓm('집')에서 유래하며, 그리스어 δόμος, 산스크리트어 dáma와 동계어이며 영어 domestic이 이 라틴어에서 파생되었다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.79",
+    "trans": "프리기아인 남편과의 결별을 결코 의연하게 견뎌내지 못할 자였으니;",
+    "words": [
+      {
+        "g": "non",
+        "pos": "부사",
+        "lemma": "non",
+        "parse": "부정 부사",
+        "gloss_kr": "잘 ~하지 못할",
+        "gloss_en": "not",
+        "syntax": "bene을 부정",
+        "background": "결별의 고통을 견디지 못하고 자살에 이르게 될 디도의 비극적 운명을 암시한다.",
+        "etymology": "고졸 라틴어 부정사 ne oenum('하나도 아니다', ne + oenum '하나')의 축약형으로 추정되며, 부정소사 ne(PIE *ne, 영어 no와 동계)에 수사 unus('하나')가 결합해 강조된 부정 표현이 관용화된 것이다."
+      },
+      {
+        "g": "bene",
+        "pos": "부사",
+        "lemma": "bene",
+        "parse": "양태 부사",
+        "gloss_kr": "잘 / 의연하게 / 무사히",
+        "gloss_en": "well / patiently",
+        "syntax": "latura 분사를 수식하는 부사 (non bene = 차마 견디지 못하고)",
+        "background": "이별의 상처를 극복하지 못함을 뜻한다.",
+        "etymology": "bonus('좋은')의 고졸 부사형으로, bonus는 PIE *dw-en-elo-에서 발달한 것으로 추정되며 명확한 그리스어 동계어는 없다."
+      },
+      {
+        "g": "discidium",
+        "pos": "명사",
+        "lemma": "discidium, -(i)i, n.",
+        "parse": "보통명사 중성 단수 대격",
+        "gloss_kr": "결별을 / 이별을 / 갈라섬을",
+        "gloss_en": "separation / parting",
+        "syntax": "latura 분사의 직접목적어",
+        "background": "dis-(갈라져) + caedo(잘라내다)에서 유래하여 연인/부부간의 가슴 찢어지는 이별을 의미한다.",
+        "etymology": "dis('떨어져') + caedo('자르다')의 합성어로, '분리, 이혼'을 뜻한다."
+      },
+      {
+        "g": "Phrygii",
+        "pos": "형용사",
+        "lemma": "Phrygius, -a, -um",
+        "parse": "형용사 남성 단수 속격",
+        "gloss_kr": "프리기아의 (트로이의)",
+        "gloss_en": "Phrygian / Trojan",
+        "syntax": "mariti를 수식하는 형용사",
+        "background": "소아시아 프리기아 지방 출신인 트로이인(아이네아스)을 가리킨다.",
+        "etymology": "그리스어 Φρυγία(프리기아)에서 파생된 형용사로, 트로이아와 인접한 아나톨리아 지역명에서 왔다(트로이아 관련 항목 참조)."
+      },
+      {
+        "g": "latura",
+        "pos": "분사",
+        "lemma": "fero, ferre, tuli, latum",
+        "principalParts": "fero–ferre–tuli–latum",
+        "parse": "미래 분사 능동태 여성 단수 주격",
+        "gloss_kr": "견뎌낼 / 짊어질",
+        "gloss_en": "destined to bear / endure",
+        "syntax": "주어 Sidonis(디도)를 수식하는 성향/운명의 미래분사",
+        "background": "미래에 일어날 디도의 자살 비극을 미리 예고하는 복선적 분사이다.",
+        "etymology": "PIE *bʰer-('나르다')에서 유래하며, 그리스어 φέρω, 산스크리트어 bhárati, 영어 bear와 직접 동계어이다. 완료형 tuli와 목적분사 latum(< *tlatum)은 별개 어근에서 보충된 형태이다."
+      },
+      {
+        "g": "mariti",
+        "pos": "명사",
+        "lemma": "maritus, -i, m.",
+        "parse": "보통명사 남성 단수 속격",
+        "gloss_kr": "남편과의 (아이네아스의)",
+        "gloss_en": "of husband",
+        "syntax": "discidium을 제한하는 속격",
+        "background": "디도는 아이네아스와의 관계를 사실상 결혼으로 여겼음을 보여준다.",
+        "etymology": "mas, maris('남성')에서 파생된 명사로, '남편'을 뜻한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.80",
+    "trans": "시돈 여인은; 제의의 명목으로 만들어진 화장작대 위에서",
+    "words": [
+      {
+        "g": "Sidonis;",
+        "pos": "명사",
+        "lemma": "Sidonis, Sidonidos / Sidonidis, f.",
+        "parse": "고유명사 여성 단수 주격",
+        "gloss_kr": "시돈 여인은 (디도는)",
+        "gloss_en": "Sidonian woman (Dido)",
+        "syntax": "앞행 excipit 및 latura의 주어",
+        "background": "페니키아 시돈(Sidon) 출신의 여왕 디도(Dido)를 가리키는 시적 칭호이다.",
+        "etymology": "페니키아 도시 시돈(Σιδών)에서 파생된 여성 명사로, 셈어 기원의 지명이다."
+      },
+      {
+        "g": "inque",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "전치사 (탈격 지배) + 접속사 -que",
+        "gloss_kr": "~ 위에서 (그리고)",
+        "gloss_en": "and upon",
+        "syntax": "pyra를 지배하는 장소의 전치사",
+        "background": "장소를 나타낸다.",
+        "etymology": "PIE *h₁en('~안에')에서 유래하며, 그리스어 ἐν, 영어 in과 동계어이다. 라틴어에서는 격에 따라 '~안에(탈격, 정적 위치)' 또는 '~안으로(대격, 방향)'의 이중 용법을 가진다."
+      },
+      {
+        "g": "pyra",
+        "pos": "명사",
+        "lemma": "pyra, -ae, f.",
+        "parse": "보통명사 여성 단수 탈격",
+        "gloss_kr": "화장작대 위에서 / 장작더미 위에서",
+        "gloss_en": "pyre",
+        "syntax": "전치사 in의 목적어",
+        "background": "디도가 자살을 위해 쌓아 올린 장작더미이다.",
+        "etymology": "그리스어 πυρά('화장용 장작더미', < πῦρ '불')에서 차용되었으며, πῦρ는 PIE *péh₂wr̥('불')에서 유래해 영어 fire와 동계어이다."
+      },
+      {
+        "g": "sacri",
+        "pos": "명사",
+        "lemma": "sacrum, -i, n.",
+        "parse": "보통명사 중성 단수 속격 (또는 형용사 속격)",
+        "gloss_kr": "신성한 제의의 / 제사의",
+        "gloss_en": "of a sacred rite",
+        "syntax": "imagine을 수식하는 속격",
+        "background": "디도는 아이네아스의 물건들을 태워 그를 잊기 위한 '마법 제의'를 올린다는 구실(구실/명목)로 장작을 쌓게 했다.",
+        "etymology": "sacer의 중성형이 명사화된 것이다(sacer, sacra, sacrum 항목 참조)."
+      },
+      {
+        "g": "sub",
+        "pos": "전치사",
+        "lemma": "sub",
+        "parse": "전치사 (탈격 지배)",
+        "gloss_kr": "~의 명목으로 / ~의 구실 아래",
+        "gloss_en": "under (the guise/pretext of)",
+        "syntax": "imagine을 지배하는 비유적/조건의 전치사",
+        "background": "겉으로는 제사를 지낸다는 구실을 댔음을 뜻한다.",
+        "etymology": "PIE *upo('아래에')에서 유래하며, 그리스어 ὑπό와 동계어이다."
+      },
+      {
+        "g": "imagine",
+        "pos": "명사",
+        "lemma": "imago, imaginis, f.",
+        "parse": "보통명사 여성 단수 탈격",
+        "gloss_kr": "명목 아래 / 구실 아래 / 겉모습 아래",
+        "gloss_en": "guise / pretext / show",
+        "syntax": "전치사 sub의 목적어",
+        "background": "진짜 목적(자살)을 숨기기 위한 거짓 명목을 가리킨다.",
+        "etymology": "imitor('모방하다')와 관련되는 명사로, 어원이 불확실한 라틴어 고유 어근이다."
+      },
+      {
+        "g": "facta",
+        "pos": "분사",
+        "lemma": "facio, facere, feci, factum",
+        "principalParts": "facio–facere–feci–factum",
+        "parse": "완료 분사 수동태 여성 단수 탈격",
+        "gloss_kr": "지어진 / 만들어진",
+        "gloss_en": "built / constructed",
+        "syntax": "pyra를 수식하는 분사",
+        "background": "화장작대가 수립되었음을 나타낸다.",
+        "etymology": "PIE *dʰeh₁-('놓다, 두다, 만들다')에서 유래하며, 그리스어 τίθημι, 영어 do와 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.81",
+    "trans": "칼 위로 엎어졌으니, 속았기에 모두를 속인 것이다.",
+    "words": [
+      {
+        "g": "incubuit",
+        "pos": "동사",
+        "lemma": "incumbo, incumbere, incubui, incubitum",
+        "principalParts": "incumbo–incumbere–incubui–incubitum",
+        "parse": "직설법 완료 능동태 3인칭 단수",
+        "gloss_kr": "엎어졌다 / 쓰러졌다",
+        "gloss_en": "fell upon / leaned on",
+        "syntax": "주절의 술어 동사 (주어: 디도)",
+        "background": "in-(위에) + cubo(눕다)의 합성어로, 칼날 위에 스스로 몸을 던져 자살하는 동작을 가리킨다.",
+        "etymology": "in('안에') + cubo('눕다')의 합성어로, cubo는 PIE *kewb-('눕다')에서 유래한다."
+      },
+      {
+        "g": "ferro",
+        "pos": "명사",
+        "lemma": "ferrum, -i, n.",
+        "parse": "보통명사 중성 단수 여격/탈격",
+        "gloss_kr": "칼 위에 / 철검에",
+        "gloss_en": "upon the sword / steel",
+        "syntax": "incumbo 동사가 지배하는 여격/탈격",
+        "background": "아이네아스가 두고 간 칼(검)을 가리키는 환유적 표현이다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, 켈트어 차용어일 가능성이 제기되나 확정적이지 않다."
+      },
+      {
+        "g": "deceptaque",
+        "pos": "분사",
+        "lemma": "decipio, decipere, decepi, deceptum",
+        "principalParts": "decipio–decipere–decepi–deceptum",
+        "parse": "완료 분사 수동태 여성 단수 주격 + 접속사 -que",
+        "gloss_kr": "속았기에 (그리고)",
+        "gloss_en": "having been deceived (and)",
+        "syntax": "주어 디도를 수식하는 원인의 분사 구문",
+        "background": "아이네아스의 영원한 사랑과 체류 약속에 속아 넘어간 디도의 처지를 나타낸다.",
+        "etymology": "de('아래로, 부정적으로') + capio('잡다')의 합성어로, capio는 PIE *kh₂p-('잡다')에서 유래하며 영어 capture와 동계어이다."
+      },
+      {
+        "g": "decipit",
+        "pos": "동사",
+        "lemma": "decipio, decipere, decepi, deceptum",
+        "principalParts": "decipio–decipere–decepi–deceptum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "속이다 / 기만하다",
+        "gloss_en": "deceives / tricks",
+        "syntax": "주절의 두 번째 술어 동사",
+        "background": "자신의 자살 의도를 제사 구실로 속여 신하들과 여동생 안나 등 주변 사람 모두를 속였음을 뜻한다 (언어유희: decepta decipit).",
+        "etymology": "de('아래로, 부정적으로') + capio('잡다')의 합성어로, capio는 PIE *kh₂p-('잡다')에서 유래하며 영어 capture와 동계어이다."
+      },
+      {
+        "g": "omnes.",
+        "pos": "대명사",
+        "lemma": "omnis, -e",
+        "parse": "대형용사/대명사 남성/여성 복수 대격",
+        "gloss_kr": "모두를 / 사람들을",
+        "gloss_en": "everyone / all",
+        "syntax": "decipit의 직접목적어",
+        "background": "카르타고의 모든 백성과 친지들을 가리킨다.",
+        "etymology": "어원이 불확실한 라틴어 고유 형용사로, '모든'을 뜻한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.82",
+    "trans": "모래 땅의 새로운 성벽(카르타고)을 피하여 다시 떠나,",
+    "words": [
+      {
+        "g": "rursus",
+        "pos": "부사",
+        "lemma": "rursus",
+        "parse": "시간/양태 부사",
+        "gloss_kr": "다시 / 또다시",
+        "gloss_en": "again / back",
+        "syntax": "relatus 및 fugiens을 수식하는 부사",
+        "background": "트로이 함대가 카르타고를 떠나 항해를 재개함을 나타낸다.",
+        "etymology": "re('다시') + vorsus(verto '돌다'의 분사)의 축약형으로, '다시, 반대로'를 뜻한다(vertex, verticis, m. 항목의 verto 참조)."
+      },
+      {
+        "g": "harenosae",
+        "pos": "형용사",
+        "lemma": "harenosus, -a, -um",
+        "parse": "형용사 여성 단수 속격",
+        "gloss_kr": "모래가 많은 / 모래 땅의",
+        "gloss_en": "sandy",
+        "syntax": "terrae를 수식하는 형용사",
+        "background": "북아프리카 카르타고 지대의 지형적 특성을 묘사한다.",
+        "etymology": "harena('모래')에서 파생된 형용사로, harena는 어원이 불확실한 라틴어 고유 어휘이다."
+      },
+      {
+        "g": "fugiens",
+        "pos": "분사",
+        "lemma": "fugio, fugere, fugi, fugitum",
+        "principalParts": "fugio–fugere–fugi–fugitum",
+        "parse": "현재 분사 능동태 남성 단수 주격",
+        "gloss_kr": "피하면서 / 떠나면서",
+        "gloss_en": "fleeing / leaving behind",
+        "syntax": "주어(아이네아스)를 수식하는 분사 구문",
+        "background": "디도의 비극이 일어난 카르타고를 뒤로하고 떠나는 모습을 표현한다.",
+        "etymology": "PIE *bʰeug-('달아나다')에서 유래하며, 그리스어 φεύγω('달아나다')와 직접 동계어이다."
+      },
+      {
+        "g": "nova",
+        "pos": "형용사",
+        "lemma": "novus, -a, -um",
+        "parse": "형용사 중성 복수 대격",
+        "gloss_kr": "새로운",
+        "gloss_en": "new",
+        "syntax": "moenia를 수식하는 형용사",
+        "background": "디도가 새로 건설 중이던 도시 카르타고를 가리킨다.",
+        "etymology": "PIE *newos('새로운')에서 유래하며, 그리스어 νέος, 산스크리트어 náva, 영어 new와 동계어이다."
+      },
+      {
+        "g": "moenia",
+        "pos": "명사",
+        "lemma": "moenia, -ium, n. pl.",
+        "parse": "보통명사 중성 복수 대격",
+        "gloss_kr": "성벽을 / 도시를",
+        "gloss_en": "walls / city walls",
+        "syntax": "fugiens 분사의 직접목적어",
+        "background": "건설 중인 카르타고의 성벽이다.",
+        "etymology": "munio('요새화하다')와 같은 어근 *mei-('짓다, 쌓다')에서 파생된 것으로 추정되며, 복수형으로만 쓰여 '성벽, 방벽'을 집합적으로 가리킨다."
+      },
+      {
+        "g": "terrae",
+        "pos": "명사",
+        "lemma": "terra, -ae, f.",
+        "parse": "보통명사 여성 단수 속격",
+        "gloss_kr": "땅의 / 지역의",
+        "gloss_en": "of the land",
+        "syntax": "moenia를 수식하는 속격",
+        "background": "아프리카 대륙의 땅을 가리킨다.",
+        "etymology": "PIE *ters-('마르다')에서 유래한 것으로 추정되며, '마른 땅(물과 대비되는)'이라는 원의미에서 '땅, 대지'로 발달했다는 설이 유력하나, 일부 학자는 이 연결에 신중한 입장을 취한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.83",
+    "trans": "에릭스의 거처와 충직한 아케스테스에게로 돌아와",
+    "words": [
+      {
+        "g": "ad",
+        "pos": "전치사",
+        "lemma": "ad",
+        "parse": "전치사 (대격 지배)",
+        "gloss_kr": "~로 / ~에게로",
+        "gloss_en": "to / towards",
+        "syntax": "sedem 및 Acesten을 지배하는 방향의 전치사",
+        "background": "목적지인 시칠리아섬을 향한 귀환을 나타낸다.",
+        "etymology": "PIE *ad-('~로, ~에')에서 유래하며, 영어 at과 동계어로 제시된다."
+      },
+      {
+        "g": "sedemque",
+        "pos": "명사",
+        "lemma": "sedes, sedis, f.",
+        "parse": "보통명사 여성 단수 대격 + 접속사 -que",
+        "gloss_kr": "거처로 / 영지로 (그리고)",
+        "gloss_en": "abode / seat (and)",
+        "syntax": "전치사 ad의 첫 번째 목적어",
+        "background": "에릭스 산이 위치한 시칠리아 서부 지역이다.",
+        "etymology": "PIE *sed-('앉다')에서 유래하며, 그리스어 ἕδος, 영어 sit, seat와 동계어이다."
+      },
+      {
+        "g": "Erycis",
+        "pos": "명사",
+        "lemma": "Eryx, Erycis, m.",
+        "parse": "고유명사 남성 단수 속격",
+        "gloss_kr": "에릭스의",
+        "gloss_en": "of Eryx",
+        "syntax": "sedem을 수식하는 속격",
+        "background": "비너스와 부테스의 아들이자 아이네아스의 이복형제로, 시칠리아 에릭스 산의 영웅/신이다.",
+        "etymology": "시칠리아의 산이자 신화 속 인물명으로, 그리스어 Ἔρυξ에서 차용되었으며 어원은 불확실하다."
+      },
+      {
+        "g": "fidumque",
+        "pos": "형용사",
+        "lemma": "fidus, -a, -um",
+        "parse": "형용사 남성 단수 대격 + 접속사 -que",
+        "gloss_kr": "충직한 / 미더운 (그리고)",
+        "gloss_en": "faithful / loyal (and)",
+        "syntax": "Acesten을 수식하는 형용사",
+        "background": "트로이 혈통으로서 아이네아스를 따뜻하게 맞이해 준 시칠리아의 왕 아케스테스를 수식한다.",
+        "etymology": "fido('믿다')에서 파생된 형용사이다(fiducia, -ae, f. 항목 참조)."
+      },
+      {
+        "g": "relatus",
+        "pos": "분사",
+        "lemma": "refero, referre, rettuli, relatum",
+        "principalParts": "refero–referre–rettuli–relatum",
+        "parse": "완료 분사 수동태(재기적 의미) 남성 단수 주격",
+        "gloss_kr": "돌아와 / 다시 이르러",
+        "gloss_en": "having returned / brought back",
+        "syntax": "주어 아이네아스를 수식하는 분사 구문",
+        "background": "re-(다시) + fero(나르다)의 완료분사로, 시칠리아로 되돌아온 상황을 뜻한다.",
+        "etymology": "re-('다시, 뒤로') + fero('나르다')의 합성어로, fero는 PIE *bʰer-('나르다')에서 유래하며 그리스어 φέρω, 영어 bear와 동계어이다(fero 항목 참조). 완료형 rettuli는 다른 어근 tollo/tuli 계열에서 보충된 형태이다."
+      },
+      {
+        "g": "Acesten",
+        "pos": "명사",
+        "lemma": "Acestes, -ae, m.",
+        "parse": "고유명사 남성 단수 대격",
+        "gloss_kr": "아케스테스에게로",
+        "gloss_en": "Acestes",
+        "syntax": "전치사 ad의 두 번째 목적어 (그리스어 단수 대격 어미 -en)",
+        "background": "시칠리아의 트로이계 국왕 아케스테스이다.",
+        "etymology": "그리스어 Ἀκέστης에서 차용된 고유명사로, 시칠리아 원주민 왕의 이름이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.84",
+    "trans": "제사를 올리고 자기 아버지의 무덤을 기린다.",
+    "words": [
+      {
+        "g": "sacrificat",
+        "pos": "동사",
+        "lemma": "sacrifico, sacrificare, sacrificavi, sacrificatum",
+        "principalParts": "sacrifico–sacrificare–sacrificavi–sacrificatum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "제사를 지내다 / 희생제물을 바치다",
+        "gloss_en": "offering sacrifice / sacrifices",
+        "syntax": "주절의 첫 번째 술어 동사",
+        "background": "sacrum(제물) + facio(만들다)의 합성어. 안키세스의 서거 1주기를 맞아 추모 제사를 드림을 의미한다.",
+        "etymology": "sacer('신성한') + facio('만들다')의 합성어이다(sacer, sacra, sacrum 항목 참조)."
+      },
+      {
+        "g": "tumulumque",
+        "pos": "명사",
+        "lemma": "tumulus, -i, m.",
+        "parse": "보통명사 남성 단수 대격 + 접속사 -que",
+        "gloss_kr": "무덤을 (그리고)",
+        "gloss_en": "tomb / mound (and)",
+        "syntax": "honorat의 직접목적어",
+        "background": "시칠리아 드레파눔에 묻힌 안키세스의 무덤/ 묘총이다.",
+        "etymology": "tumeo('부풀다')와 같은 어근 *tewh₂-('부풀다')에서 파생되었으며, '부풀어 오른 것' 즉 '봉분, 무덤'을 뜻한다."
+      },
+      {
+        "g": "sui",
+        "pos": "대명사",
+        "lemma": "sui",
+        "parse": "재기대명사 3인칭 남성 단수 속격",
+        "gloss_kr": "자신의",
+        "gloss_en": "his own",
+        "syntax": "genitoris를 수식하는 속격",
+        "background": "주어 아이네아스 자신을 지칭한다.",
+        "etymology": "PIE 재귀대명사 어근 *swe-에서 유래하며, 그리스어 재귀 접두사 및 영어 self와 동계어이다."
+      },
+      {
+        "g": "genitoris",
+        "pos": "명사",
+        "lemma": "genitor, genitoris, m.",
+        "parse": "보통명사 남성 단수 속격",
+        "gloss_kr": "아버지의 / 낳아준 이의",
+        "gloss_en": "of father / sire",
+        "syntax": "tumulum을 수식하는 속격",
+        "background": "아이네아스의 부친 안키세스(Anchises)를 가리킨다.",
+        "etymology": "gigno('낳다')에서 파생된 행위자 명사이다(nascor 항목의 *ǵenh₁- 참조)."
+      },
+      {
+        "g": "honorat.",
+        "pos": "동사",
+        "lemma": "honoro, honorare, honoravi, honoratum",
+        "principalParts": "honoro–honorare–honoravi–honoratum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "기리다 / 영예롭게 하다",
+        "gloss_en": "honors / pays respect to",
+        "syntax": "주절의 두 번째 술어 동사",
+        "background": "베르길리우스 《아이네이스》 5권에 묘사된 추모 경기와 제사를 축약하여 언급한다.",
+        "etymology": "honor에서 파생된 동사이다(honor, honoris, m. 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.85",
+    "trans": "유노의 사자 이리스가 하마터면 불태울 뻔했던 배들을",
+    "words": [
+      {
+        "g": "quasque",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "관계대명사 여성 복수 대격 + 접속사 -que",
+        "gloss_kr": "어떤 ~들을 (그리고)",
+        "gloss_en": "and which (ships)",
+        "syntax": "관계절(cremarat) 내의 목적어이자 선행사 rates를 수식하는 관계형용사",
+        "background": "선행사 rates가 관계절 속에 포함된 도치 구조이다.",
+        "etymology": "PIE 의문·관계 어간 *kʷo-/*kʷi-('누구, 무엇')에서 유래하며, 그리스어 관계대명사 및 영어 who, what, 산스크리트어 kaḥ와 동계어이다. 인도유럽어족 전반에 걸쳐 의문사와 관계사가 동일 어근을 공유하는 대표적 사례이다."
+      },
+      {
+        "g": "rates",
+        "pos": "명사",
+        "lemma": "ratis, ratis, f.",
+        "parse": "보통명사 여성 복수 대격",
+        "gloss_kr": "배들을",
+        "gloss_en": "ships",
+        "syntax": "관계절 안으로 끌려 들어간 목적어 (동사 solvit의 목적어 역할을 겸함)",
+        "background": "트로이의 여인들이 지쳐서 이리스의 부추김으로 불태우려 했던 트로이 함대를 뜻한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '뗏목, 배'를 뜻한다."
+      },
+      {
+        "g": "Iris",
+        "pos": "명사",
+        "lemma": "Iris, Iridis / Iridos, f.",
+        "parse": "고유명사 여성 단수 주격",
+        "gloss_kr": "이리스가 (무지개의 여신이)",
+        "gloss_en": "Iris",
+        "syntax": "관계절 내의 주어",
+        "background": "유노 여신의 명령을 받고 내려와 트로이 여인들을 선동해 배에 불을 지르게 한 무지개의 전령 여신이다.",
+        "etymology": "그리스어 Ἶρις('무지개')에서 차용된 고유명사로, 그리스어 내부 어원은 확립되어 있지 않다."
+      },
+      {
+        "g": "Iunonia",
+        "pos": "형용사",
+        "lemma": "Iunonius, -a, -um",
+        "parse": "형용사 여성 단수 주격",
+        "gloss_kr": "유노의 / 유노 여신에 속한",
+        "gloss_en": "Juno's / Junonian",
+        "syntax": "Iris를 수식하는 형용사",
+        "background": "이리스가 유노의 심복이자 전령임을 나타낸다.",
+        "etymology": "여신 유노(Iuno)에서 파생된 형용사이다(Iuno, Iunonis, f. 항목 참조)."
+      },
+      {
+        "g": "paene",
+        "pos": "부사",
+        "lemma": "paene",
+        "parse": "정도 부사",
+        "gloss_kr": "하마터면 / 거의",
+        "gloss_en": "almost / nearly",
+        "syntax": "cremarat을 수식하는 부사",
+        "background": "아이네아스의 기도로 소나기가 내려 배들이 완패하지 않고 겨우 목숨을 건졌음을 시사한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 부사로, '거의'를 뜻한다."
+      },
+      {
+        "g": "cremarat,",
+        "pos": "동사",
+        "lemma": "cremo, cremare, cremavi, crematum",
+        "principalParts": "cremo–cremare–cremavi–crematum",
+        "parse": "직설법 과거완료 능동태 3인칭 단수 (=cremaverat)",
+        "gloss_kr": "불태웠었다 / 소진시켰었다",
+        "gloss_en": "had burned / consumed",
+        "syntax": "관계절의 술어 동사",
+        "background": "화재 사건이 과거에 완결될 뻔했던 상황을 나타낸다.",
+        "etymology": "PIE *ker-('불태우다')에서 유래하는 것으로 추정된다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.86",
+    "trans": "닻을 올리고, 히포타데스(에올로스)의 왕국과 뜨거운",
+    "words": [
+      {
+        "g": "solvit",
+        "pos": "동사",
+        "lemma": "solvo, solvere, solvi, solutum",
+        "principalParts": "solvo–solvere–solvi–solutum",
+        "parse": "직설법 현재(또는 완료) 능동태 3인칭 단수",
+        "gloss_kr": "풀다 / 닻을 올리고 출항시키다",
+        "gloss_en": "loosens / sets sail",
+        "syntax": "주절의 첫 번째 술어 동사 (solvere rates = 배를 띄우다/닻을 올리다)",
+        "background": "배를 묶어둔 밧줄을 풀어 출발시키는 해양 관용 표현이다.",
+        "etymology": "se('떨어져') + luo('풀다')의 합성어로, luo는 PIE *lewH-('풀다')에서 유래하며 영어 loose, lose와 동계어이다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "등이 접속사",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "solvit과 relinquit 동사를 연결",
+        "background": "출항하여 여러 지역을 통과해 뒤로 남겨두는 항해 과정을 연결한다.",
+        "etymology": "PIE *eti('그 위에, 더하여')에서 유래한 접속사로, 산스크리트어 ati('넘어서'), 그리스어 ἔτι('여전히, 더욱이')와 동계어이다. 원래 '더하여, 넘어서'라는 부사적 의미에서 등위접속사 '그리고'로 문법화되었다."
+      },
+      {
+        "g": "Hippotadae",
+        "pos": "명사",
+        "lemma": "Hippotades, -ae, m.",
+        "parse": "고유명사 남성 단수 속격",
+        "gloss_kr": "히포타데스의 (히포테스의 아들 에올로스의)",
+        "gloss_en": "of the son of Hippotes (Aeolus)",
+        "syntax": "regnum을 수식하는 부계명(Patronymic) 속격",
+        "background": "바람의 신 에올로스(Aeolus)를 그 아버지 히포테스(Hippotes)의 이름을 딴 부계 성씨 '히포타데스'로 부른 것이다.",
+        "etymology": "그리스어 Ἱππότης('말을 부리는 자')의 부칭형으로, 바람의 신 아이올로스의 아버지 이름에서 유래한 별칭이다."
+      },
+      {
+        "g": "regnum",
+        "pos": "명사",
+        "lemma": "regnum, -i, n.",
+        "parse": "보통명사 중성 단수 대격",
+        "gloss_kr": "왕국을 / 영지를",
+        "gloss_en": "kingdom / realm",
+        "syntax": "relinquit의 첫 번째 직접목적어",
+        "background": "에올리아 제도(에올로스의 바람 섬들)를 가리킨다.",
+        "etymology": "rex('왕')에서 파생된 명사로, PIE *h₃reǵ-('곧게 하다, 다스리다')에서 유래하며 산스크리트어 rā́jan, 영어 right와 동계어이다."
+      },
+      {
+        "g": "terrasque",
+        "pos": "명사",
+        "lemma": "terra, -ae, f.",
+        "parse": "보통명사 여성 복수 대격 + 접속사 -que",
+        "gloss_kr": "땅들을 (그리고)",
+        "gloss_en": "lands (and)",
+        "syntax": "relinquit의 두 번째 직접목적어",
+        "background": "화산 활동이 활발한 캄파니아/이스키아 주변의 지열 지대이다.",
+        "etymology": "PIE *ters-('마르다')에서 유래한 것으로 추정되며, '마른 땅(물과 대비되는)'이라는 원의미에서 '땅, 대지'로 발달했다는 설이 유력하나, 일부 학자는 이 연결에 신중한 입장을 취한다."
+      },
+      {
+        "g": "calenti",
+        "pos": "분사",
+        "lemma": "caleo, calere, calui",
+        "principalParts": "caleo–calere–calui",
+        "parse": "현재 분사 능동태 중성 단수 탈격",
+        "gloss_kr": "뜨거운 / 뜨겁게 달구어진",
+        "gloss_en": "burning / hot",
+        "syntax": "sulphure를 수식하는 분사",
+        "background": "지열과 유황으로 열기가 피어오르는 상태를 묘사한다.",
+        "etymology": "PIE *kel-('따뜻한')에서 유래한다(calor, caloris, m. 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.87",
+    "trans": "유황으로 연기 피어오르는 땅들과 아켈로오스의 딸들인",
+    "words": [
+      {
+        "g": "sulphure",
+        "pos": "명사",
+        "lemma": "sulphur, sulphuris, n.",
+        "parse": "보통명사 중성 단수 탈격",
+        "gloss_kr": "유황으로",
+        "gloss_en": "with sulphur",
+        "syntax": "fumantis 분사의 수단/원인의 탈격",
+        "background": "화산 지대(쿠마이, 플레그라이 평원) 특유의 유황 성분을 뜻한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, 오스크·움브리아어 등 이탈리아 방언에서 차용되었을 가능성이 제기된다."
+      },
+      {
+        "g": "fumantis",
+        "pos": "분사",
+        "lemma": "fumo, fumare",
+        "principalParts": "fumo–fumare",
+        "parse": "현재 분사 능동태 여성 복수 대격 (=fumantes)",
+        "gloss_kr": "연기를 내뿜는 / 연기 나는",
+        "gloss_en": "smoking / steaming",
+        "syntax": "terras를 수식하는 분사",
+        "background": "유황 연기가 피어오르는 화산 지대를 형상화한다.",
+        "etymology": "fumus('연기')에서 파생된 동사로, PIE *dʰuh₂mós('연기')에서 유래하며 그리스어 θυμός와 동계어로 제시된다."
+      },
+      {
+        "g": "Acheloiadumque",
+        "pos": "명사",
+        "lemma": "Acheloias, Acheloiados, f.",
+        "parse": "고유명사 여성 복수 속격 + 접속사 -que",
+        "gloss_kr": "아켈로오스 딸들의 (그리고)",
+        "gloss_en": "of the daughters of Achelous (Sirens)",
+        "syntax": "Sirenum을 수식하는 부계명 속격",
+        "background": "세이렌(Sirens)들이 강신 아켈로오스(Achelous)의 딸들이라는 신화적 출신을 명시한다.",
+        "etymology": "강의 신 아켈로오스(Ἀχελῷος)의 부칭형 여성 명사로, 그의 딸들(세이렌)을 가리킨다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.88",
+    "trans": "세이렌들의 암초를 뒤로하고 떠나며, 조타수를 잃은 배는",
+    "words": [
+      {
+        "g": "Sirenum",
+        "pos": "명사",
+        "lemma": "Siren, Sirenis, f.",
+        "parse": "고유명사 여성 복수 속격",
+        "gloss_kr": "세이렌들의",
+        "gloss_en": "of the Sirens",
+        "syntax": "scopulos를 수식하는 속격",
+        "background": "감화로운 노래로 항해자들을 유혹해 뼈를 남기고 죽게 만드는 괴물 요정 세이렌들의 거처이다.",
+        "etymology": "그리스어 Σειρήν에서 차용된 고유명사으로, 그리스어 내부 어원은 확립되어 있지 않다."
+      },
+      {
+        "g": "scopulos,",
+        "pos": "명사",
+        "lemma": "scopulus, -i, m.",
+        "parse": "보통명사 남성 복수 대격",
+        "gloss_kr": "암초들을",
+        "gloss_en": "rocks / cliffs",
+        "syntax": "relinquit의 세 번째 직접목적어",
+        "background": "세이렌들이 거주하는 바위 섬(Sirenum scopuli)을 뜻한다.",
+        "etymology": "그리스어 σκόπελος('바위, 암초')에서 차용된 단어로, σκοπός('감시자, 목표')와 연관되는 σκέπτομαι('보다') 어근과 관련된다."
+      },
+      {
+        "g": "orbataque",
+        "pos": "분사",
+        "lemma": "orbo, orbare, orbavi, orbatum",
+        "principalParts": "orbo–orbare–orbavi–orbatum",
+        "parse": "완료 분사 수동태 여성 단수 주격 + 접속사 -que",
+        "gloss_kr": "빼앗긴 / 잃어버린 (그리고)",
+        "gloss_en": "bereft / deprived of (and)",
+        "syntax": "pinus(배)를 수식하는 분사",
+        "background": "조타수 팔리누루스(Palinurus)가 밤중에 바다에 빠져 사망한 사건을 지칭한다.",
+        "etymology": "orbus('잃은, 고아가 된')에서 파생된 동사로, orbus는 PIE *h₃erbʰ-('고아가 되다, 빼앗기다')에서 유래하며 영어 orphan과 동계어이다."
+      },
+      {
+        "g": "praeside",
+        "pos": "명사",
+        "lemma": "praeses, praesidis, m./f.",
+        "parse": "보통명사 남성/여성 단수 탈격",
+        "gloss_kr": "조타수를 / 안내자를 / 키잡이를",
+        "gloss_en": "helmsman / pilot",
+        "syntax": "orbata 분사가 지배하는 결여/박탈의 탈격",
+        "background": "배를 조종하던 키잡이 팔리누루스를 의미한다.",
+        "etymology": "prae('앞에') + sedeo('앉다')의 합성어로, '앞에 앉은 자, 수호자'를 뜻한다(sedes, sedis, f. 항목의 *sed- 참조)."
+      },
+      {
+        "g": "pinus",
+        "pos": "명사",
+        "lemma": "pinus, -us / -i, f.",
+        "parse": "보통명사 여성 단수 주격",
+        "gloss_kr": "소나무 배는 / 함대는",
+        "gloss_en": "pine-ship / vessel",
+        "syntax": "동사 legit의 주어 (제유법: 소나무 → 소나무로 만든 배)",
+        "background": "배를 만드는 재료인 소나무(pinus)로 배 자체를 표현한 환유적 용법이다.",
+        "etymology": "PIE *peyk-('수지, 소나무')에서 유래하는 것으로 추정된다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.89",
+    "trans": "이나리메와 프로키테를 스쳐지나가고, 결실 없는",
+    "words": [
+      {
+        "g": "Inarimen",
+        "pos": "명사",
+        "lemma": "Inarime, -es, f.",
+        "parse": "고유명사 여성 단수 대격",
+        "gloss_kr": "이나리메를 (이스키아 섬을)",
+        "gloss_en": "Inarime (Ischia)",
+        "syntax": "legit 동사의 첫 번째 직접목적어 (그리스어 단수 대격 어미 -en)",
+        "background": "나폴리 만 입구에 있는 섬 이스키아(Ischia)의 시적 이름이다.",
+        "etymology": "그리스어에서 차용된 이스키아 섬의 옛 이름으로, 어원은 불확실하다."
+      },
+      {
+        "g": "Prochytenque",
+        "pos": "명사",
+        "lemma": "Prochyte, -es, f.",
+        "parse": "고유명사 여성 단수 대격 + 접속사 -que",
+        "gloss_kr": "프로키테를 (프로치다 섬을) (그리고)",
+        "gloss_en": "Prochyte (Procida) (and)",
+        "syntax": "legit 동사의 두 번째 직접목적어 (그리스어 단수 대격 어미 -en)",
+        "background": "오늘날의 프로치다(Procida) 섬을 가리킨다.",
+        "etymology": "그리스어 Προχύτη(현 프로키다 섬)에서 차용된 지명으로, προχέω('앞으로 쏟다')와 연관짓는 설이 있다."
+      },
+      {
+        "g": "legit",
+        "pos": "동사",
+        "lemma": "lego, legere, legi, lectum",
+        "principalParts": "lego–legere–legi–lectum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "항해하여 지나가다 / 해안을 따라 훑고 지나가다",
+        "gloss_en": "skirts / sails past",
+        "syntax": "주절의 술어 동사",
+        "background": "lego 동사가 항해 맥락에서 쓰일 때 '해안가를 바짝 붙어 지나가다'라는 뜻을 지닌다.",
+        "etymology": "PIE *leǵ-('모으다, 고르다')에서 유래하며, 그리스어 λέγω('모으다, 말하다'), 영어 legend, lecture와 동계어이다."
+      },
+      {
+        "g": "sterilique",
+        "pos": "형용사",
+        "lemma": "sterilis, -e",
+        "parse": "형용사 남성 단수 탈격 + 접속사 -que",
+        "gloss_kr": "결실 없는 / 메마른 (그리고)",
+        "gloss_en": "barren / sterile (and)",
+        "syntax": "colle를 수식하는 형용사",
+        "background": "농경에 적합하지 않은 피테쿠사이의 메마른 언덕 지형을 나타낸다.",
+        "etymology": "PIE *ster-('불모의')에서 유래하며, 영어 sterile이 이 라틴어에서 파생되었다."
+      },
+      {
+        "g": "locatas",
+        "pos": "분사",
+        "lemma": "loco, locare, locavi, locatum",
+        "principalParts": "loco–locare–locavi–locatum",
+        "parse": "완료 분사 수동태 여성 복수 대격",
+        "gloss_kr": "자리 잡은 / 위치한",
+        "gloss_en": "placed / situated",
+        "syntax": "Pithecusas를 수식하는 분사",
+        "background": "언덕 위에 위치해 있음을 뜻한다.",
+        "etymology": "locus에서 파생된 동사이다(locus, -i, m. 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.90",
+    "trans": "주민들의 이름을 따서 이름 붙여진 피테쿠사이 언덕을 지나쳤다.",
+    "words": [
+      {
+        "g": "colle",
+        "pos": "명사",
+        "lemma": "collis, -is, m.",
+        "parse": "남성 단수 탈격",
+        "gloss_kr": "언덕을",
+        "gloss_en": "hill",
+        "syntax": "생략된 이동 동사의 목적어 방향 또는 지나는 장소를 나타내는 탈격",
+        "background": "collis는 3변화 남성 명사로, 여기서는 피테쿠사이 섬의 지형적 특징인 언덕을 가리킨다. 행위자들이 항해하며 지나쳐 가는 장소적 배경을 형성한다.",
+        "etymology": "PIE *kel-('솟아오르다')에서 유래한다(collis, collis, m. 항목 참조)."
+      },
+      {
+        "g": "Pithecusas,",
+        "pos": "명사",
+        "lemma": "Pithecusa, -ae, f.",
+        "parse": "여성 복수 대격",
+        "gloss_kr": "피테쿠사이를",
+        "gloss_en": "Pithecusae",
+        "syntax": "colle와 동격 관계에 있는 장소 대격/수식어",
+        "background": "오늘날 이스키아(Ischia) 섬을 가리키는 고대 지명으로, 그리스어 πιθηκος(원숭이)에서 유래했다. 오비디우스는 지명의 언어학적/신화적 어원을 제시하기 위해 이 단어를 명시한다.",
+        "etymology": "그리스어 πίθηκος('원숭이')에서 차용된 이스키아 섬의 옛 이름으로, '원숭이 섬'을 뜻한다."
+      },
+      {
+        "g": "habitantum",
+        "pos": "분사",
+        "lemma": "habito",
+        "principalParts": "habito–habitare–habitavi–habitatum",
+        "parse": "현재분사 능동태 남성/여성 복수 속격",
+        "gloss_kr": "주민들의",
+        "gloss_en": "of the inhabitants",
+        "syntax": "nomine을 수식하는 속격(소유/주체 속격)",
+        "background": "habito(거주하다)의 현재분사 복수 속격 형태로, 명사적으로 쓰여 '거주하는 자들(주민들)'을 의미한다. 원숭이로 변한 케르코페스 족을 돌려 말하는 표현이다.",
+        "etymology": "habeo('가지다')의 강세형 동사로, '거주하다'를 뜻한다(habeo 항목 참조)."
+      },
+      {
+        "g": "nomine",
+        "pos": "명사",
+        "lemma": "nomen, -inis, n.",
+        "parse": "중성 단수 탈격",
+        "gloss_kr": "이름으로 / 이름을 따서",
+        "gloss_en": "by name",
+        "syntax": "dictas를 수식하는 수단/수량의 탈격",
+        "background": "nomen의 탈격 형태로, dictas와 결합하여 '~라는 이름으로 불리는'이라는 어원적 설명 구문을 완성한다.",
+        "etymology": "PIE *h₁neh₃mn̥('이름')에서 유래하며, 그리스어 ὄνομα, 영어 name과 동계어이다."
+      },
+      {
+        "g": "dictas.",
+        "pos": "분사",
+        "lemma": "dico",
+        "principalParts": "dico–dicere–dixi–dictum",
+        "parse": "완료분사 수동태 여성 복수 대격",
+        "gloss_kr": "이름 붙여진 / 불리는",
+        "gloss_en": "called / named",
+        "syntax": "Pithecusas를 수식하는 분사 형용사",
+        "background": "Pithecusas(여성 복수 대격)에 격·성·수를 일치시킨 완료수동분사다. 지명의 유래를 설명하는 에티올로지(etiology, 어원적 전설) 수사법의 핵심 요소다.",
+        "etymology": "PIE *deyḱ-('보여주다, 가리키다')에서 유래하며, 그리스어 δείκνυμι, 영어 teach, token과 동계어이다(dico, dicere, dixi, dictum 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.91",
+    "trans": "이는 신들의 아버지께서 일찍이 케르코페스 족의 기만과 위증을",
+    "words": [
+      {
+        "g": "quippe",
+        "pos": "접속사",
+        "lemma": "quippe",
+        "parse": "불변화사",
+        "gloss_kr": "왜냐하면 / 진실로",
+        "gloss_en": "for / indeed",
+        "syntax": "앞 행의 지명 어원에 대한 이유를 도입하는 접속사",
+        "background": "앞서 언급한 피테쿠사이(원숭이의 섬)라는 지명이 왜 붙게 되었는지 그 신화적 원인을 설명하기 위해 사용된 자명한 이유 제시의 접속사다.",
+        "etymology": "quid('무엇') + pe(강조 첨사)의 결합으로, '실로, 왜냐하면'을 뜻한다."
+      },
+      {
+        "g": "deum",
+        "pos": "명사",
+        "lemma": "deus, -i, m.",
+        "parse": "남성 복수 속격 (축약형, deorum대신 쓰임)",
+        "gloss_kr": "신들의",
+        "gloss_en": "of gods",
+        "syntax": "genitor를 수식하는 속격",
+        "background": "deorum의 고형(archaic) 또는 시적 축약형인 deum이다. 주피터(제우스)를 칭송하는 시적 격조를 높여준다.",
+        "etymology": "PIE *deiwós('빛나는 존재, 하늘의 신')에서 유래하며, 산스크리트어 devá, 영어 Tuesday와 동계어이다(dea, -ae, f. 항목 참조)."
+      },
+      {
+        "g": "genitor,",
+        "pos": "명사",
+        "lemma": "genitor, -oris, m.",
+        "parse": "남성 단수 주격",
+        "gloss_kr": "아버지께서 / 창조자께서",
+        "gloss_en": "begetter / father",
+        "syntax": "주절의 주어 (mutavit의 주어)",
+        "background": "deum genitor는 '신들의 아버지' 즉 주피터를 가리키는 칭호다. 우주의 질서를 수호하는 최고의 신이 케르코페스 족의 도덕적 죄악을 벌한다는 당위성을 강조한다.",
+        "etymology": "gigno에서 파생되었다(genitor, genitoris, m. 항목 참조)."
+      },
+      {
+        "g": "fraudem",
+        "pos": "명사",
+        "lemma": "fraus, fraudis, f.",
+        "parse": "여성 단수 대격",
+        "gloss_kr": "기만을",
+        "gloss_en": "fraud / deceit",
+        "syntax": "exosus의 직접목적어",
+        "background": "케르코페스 족이 지은 주요 죄악 중 하나인 '사기/기만'을 뜻한다. periuria와 병렬 배치되어 그들의 사악함을 부각한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '기만, 사기'를 뜻하며 영어 fraud가 이 라틴어에서 파생되었다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "등이접속사",
+        "gloss_kr": "과 / 그리고",
+        "gloss_en": "and",
+        "syntax": "fraudem과 periuria를 연결",
+        "background": "두 명사적 목적어를 결합하는 단순 접속사다.",
+        "etymology": "PIE *eti('그 위에, 더하여')에서 유래한 접속사로, 산스크리트어 ati('넘어서'), 그리스어 ἔτι('여전히, 더욱이')와 동계어이다. 원래 '더하여, 넘어서'라는 부사적 의미에서 등위접속사 '그리고'로 문법화되었다."
+      },
+      {
+        "g": "periuria",
+        "pos": "명사",
+        "lemma": "periurium, -i, n.",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "위증들을 / 거짓 맹세들을",
+        "gloss_en": "perjuries",
+        "syntax": "exosus의 직접목적어",
+        "background": "신을 두고 한 맹세를 어기는 행위인 '위증'을 뜻한다. 복수형으로 쓰여 그들이 저지른 위증이 수없이 반복되었음을 암시한다.",
+        "etymology": "per('완전히, 잘못되게') + ius('법, 맹세')의 합성어로, '거짓 맹세, 위증'을 뜻한다."
+      },
+      {
+        "g": "quondam",
+        "pos": "부사",
+        "lemma": "quondam",
+        "parse": "부사",
+        "gloss_kr": "일찍이 / 한때",
+        "gloss_en": "once / formerly",
+        "syntax": "mutavit 또는 exosus를 수식하는 시간 부사",
+        "background": "과거의 신화적 사건으로 시점을 전환하는 전형적인 서사시적 부사다.",
+        "etymology": "quom(cum의 고졸형) + -dam(강조 첨사)의 결합으로, '한때, 언젠가'를 뜻한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.92",
+    "trans": "그리고 간교한 종족이 저지른 죄악을 몹시 혐오하시어,",
+    "words": [
+      {
+        "g": "Cercopum",
+        "pos": "명사",
+        "lemma": "Cercopes, -um, m.",
+        "parse": "남성 복수 속격",
+        "gloss_kr": "케르코페스 족의",
+        "gloss_en": "of the Cercopes",
+        "syntax": "gentis를 수식하는 속격",
+        "background": "헤라클레스와 주피터를 속이려 했던 신화 속 도둑/사기꾼 종족이다. 그들의 이름 자체가 원숭이와 연관된 징벌의 복선이 된다.",
+        "etymology": "그리스어 Κέρκωψ('원숭이 인간, 사기꾼')에서 차용된 고유명사로, κέρκος('꼬리')와 연관짓는 설이 있다."
+      },
+      {
+        "g": "exosus",
+        "pos": "분사",
+        "lemma": "exodi",
+        "principalParts": "exodi–exosurus",
+        "parse": "능동 의미의 완료분사형 형용사 남성 단수 주격",
+        "gloss_kr": "몹시 혐오하시어 / 미워하시어",
+        "gloss_en": "hating / loathing",
+        "syntax": "주어 genitor를 수식하며 원인을 나타내는 분사 구문",
+        "background": "형태는 수동 완료분사 같으나 능동의 의미('몹시 미워하는')를 지닌 불완전동사의 형용사적 분사다. 최고신 주피터가 느낀 신성한 분노의 깊이를 표현한다.",
+        "etymology": "ex(강조) + odi('미워하다')의 합성어로 추정된다(odium, -ii, n. 항목 참조)."
+      },
+      {
+        "g": "gentisque",
+        "pos": "명사",
+        "lemma": "gens, gentis, f. (-que)",
+        "parse": "여성 단수 속격 + 접속사",
+        "gloss_kr": "그리고 종족의",
+        "gloss_en": "and of the race",
+        "syntax": "Cercopum과 동격이거나 commissa를 수식하는 속격; -que는 앞 문맥과 연결",
+        "background": "gens는 혈통이나 종족을 뜻한다. 뒤에 붙은 -que는 선행 문맥의 명사구들을 확장한다.",
+        "etymology": "gigno에서 파생된 명사로, '태생, 씨족, 민족'을 뜻한다(nascor 항목의 *ǵenh₁- 참조)."
+      },
+      {
+        "g": "admissa",
+        "pos": "분사",
+        "lemma": "admitto",
+        "principalParts": "admitto–admittere–admisi–admissum",
+        "parse": "완료분사 수동태 중성 복수 대격 (명사적 용법)",
+        "gloss_kr": "저지른 죄악들을",
+        "gloss_en": "crimes committed",
+        "syntax": "exosus의 직접목적어 (fraudem, periuria와 병렬)",
+        "background": "admitto(범하다, 저지르다)의 완료수동분사가 명사화되어 '저지른 범죄들/잘못들'을 뜻한다.",
+        "etymology": "ad('~로') + mitto('보내다')의 합성어이다(mitto 항목 참조)."
+      },
+      {
+        "g": "dolosae,",
+        "pos": "형용사",
+        "lemma": "dolosus, -a, -um",
+        "parse": "여성 단수 속격",
+        "gloss_kr": "간교한 / 교활한",
+        "gloss_en": "treacherous / deceitful",
+        "syntax": "gentis를 수식하는 형용사",
+        "background": "dolus(교활, 속임수)에서 파생된 형용사로, 케르코페스 종족의 도덕적 결함을 규정하는 수식어다.",
+        "etymology": "dolus('속임수')에서 파생된 형용사로, dolus는 그리스어 δόλος에서 차용되었을 가능성이 제기된다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.93",
+    "trans": "그 남자들을 흉측한 동물로 바꾸셨으니, 이는 그들이",
+    "words": [
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "전치사 (+대격)",
+        "gloss_kr": "~로 (변화의 결과)",
+        "gloss_en": "into",
+        "syntax": "mutavit과 결합하여 변화의 결과 상태를 이끎",
+        "background": "'변신(Metamorphosis)'의 모티프에서 결과적 상태를 나타낼 때 mutare 전치사와 함께 전형적으로 쓰이는 전치사다.",
+        "etymology": "PIE *h₁en('~안에')에서 유래하며, 그리스어 ἐν, 영어 in과 동계어이다. 라틴어에서는 격에 따라 '~안에(탈격, 정적 위치)' 또는 '~안으로(대격, 방향)'의 이중 용법을 가진다."
+      },
+      {
+        "g": "deforme",
+        "pos": "형용사",
+        "lemma": "deformis, -e",
+        "parse": "중성 단수 대격",
+        "gloss_kr": "흉측한 / 기형의",
+        "gloss_en": "hideous / misshapen",
+        "syntax": "animal을 수식하는 형용사",
+        "background": "de- + forma(형태)에서 유래하여 아름다운 형태를 잃어버린 '흉측함'을 뜻한다. 인간의 존엄성을 상실한 신벌의 결과를 시각화한다.",
+        "etymology": "de('아니') + forma('형태')의 합성 형용사로, '흉한, 볼품없는'을 뜻한다(forma, -ae, f. 항목 참조)."
+      },
+      {
+        "g": "viros",
+        "pos": "명사",
+        "lemma": "vir, viri, m.",
+        "parse": "남성 복수 대격",
+        "gloss_kr": "남자들을 / 사람들을",
+        "gloss_en": "men",
+        "syntax": "mutavit의 직접목적어",
+        "background": "변신 이전의 상태인 '인간 남자들'을 가리킨다.",
+        "etymology": "PIE *wiHrós('남자')에서 유래하며, 산스크리트어 vīra, 영어 werewolf의 wer-와 동계어이다."
+      },
+      {
+        "g": "animal",
+        "pos": "명사",
+        "lemma": "animal, -alis, n.",
+        "parse": "중성 단수 대격",
+        "gloss_kr": "동물로",
+        "gloss_en": "animal / creature",
+        "syntax": "전치사 in의 목적어",
+        "background": "anima(숨, 영혼)에서 파생된 단어로, 여기서는 이성을 잃고 짐승의 상태로 떨어진 원숭이를 뜻한다.",
+        "etymology": "anima('숨, 생명')에서 파생된 명사로, animus와 같은 어근 *h₂enh₁-를 공유한다(animus, -i, m. 항목 참조)."
+      },
+      {
+        "g": "mutavit,",
+        "pos": "동사",
+        "lemma": "muto",
+        "principalParts": "muto–mutare–mutavi–mutatum",
+        "parse": "직설법 완료 능동태 3인칭 단수",
+        "gloss_kr": "바꾸셨다",
+        "gloss_en": "transformed / changed",
+        "syntax": "주절의 술어 동사 (주어: genitor)",
+        "background": "작품 전체의 주제인 '변신'을 직접적으로 나타내는 핵심 동사다.",
+        "etymology": "PIE *mei-('바꾸다, 교환하다')에서 유래하며, 영어 mutual, mutate의 어원이 되는 어근과 동계어이다."
+      },
+      {
+        "g": "ut",
+        "pos": "접속사",
+        "lemma": "ut",
+        "parse": "접속사 (+접속법)",
+        "gloss_kr": "~하도록 / ~하기 위하여",
+        "gloss_en": "so that / in order that",
+        "syntax": "목적절(possent)을 이끄는 접속사",
+        "background": "주피터가 이들을 변신시킨 신학적/도덕적 목적을 제시하는 접속사다.",
+        "etymology": "고졸 라틴어 uti에서 축약된 형태로, PIE 관계 어간 *kʷu-ti에서 유래한 것으로 추정되며 quod, qui와 같은 어족에 속한다(qui 항목 참조)."
+      },
+      {
+        "g": "idem",
+        "pos": "대명사",
+        "lemma": "idem, eadem, idem",
+        "parse": "남성 복수 주격 (동일인들)",
+        "gloss_kr": "동시에 그들이 / 똑같은 그들이",
+        "gloss_en": "the same (men)",
+        "syntax": "목적절(possent) 내의 주어",
+        "background": "변신 전의 사람들과 변신 후의 동물 상태가 '동일한 존재'임을 부각하여, 그들이 스스로의 수치스러움을 인지할 수 있게 했음을 암시한다.",
+        "etymology": "is('그것') + dem(강조 첨사)의 결합으로, '바로 그것, 동일한 것'을 뜻한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.94",
+    "trans": "인간과 닮지 않은 듯하면서도 닮아 보이게 하려는 것이었다.",
+    "words": [
+      {
+        "g": "dissimiles",
+        "pos": "형용사",
+        "lemma": "dissimilis, -e",
+        "parse": "남성 복수 주격",
+        "gloss_kr": "닮지 않은 / 다른",
+        "gloss_en": "unlike / dissimilar",
+        "syntax": "videri의 보어로서 homini와 결합 (similesque와 대조)",
+        "background": "dis- + similis의 구조로, 원숭이가 인간의 완전한 형태에서 벗어나 있음을 뜻한다.",
+        "etymology": "dis('아니') + similis('비슷한')의 합성 형용사이다(similis, -e 항목 참조)."
+      },
+      {
+        "g": "homini",
+        "pos": "명사",
+        "lemma": "homo, -inis, m.",
+        "parse": "남성 단수 여격",
+        "gloss_kr": "인간과",
+        "gloss_en": "to a man / to human",
+        "syntax": "dissimiles 및 similes가 요구하는 여격 보어",
+        "background": "유사성/비유사성을 나타내는 형용사와 함께 쓰이는 여격이다. 원숭이라는 존재가 지닌 '인간성과의 기괴한 거리감'을 표현한다.",
+        "etymology": "PIE *dʰǵʰemon-('땅의 존재')에서 유래하며, humus('땅')와 같은 어근이고 영어 human이 이 라틴어에서 파생되었다."
+      },
+      {
+        "g": "possent",
+        "pos": "동사",
+        "lemma": "possum",
+        "principalParts": "possum–posse–potui",
+        "parse": "접속법 미완료 능동태 3인칭 복수",
+        "gloss_kr": "~할 수 있도록",
+        "gloss_en": "they might be able",
+        "syntax": "ut절의 술어 동사 (+보충 부정사 videri)",
+        "background": "주절의 시제(mutavit, 완료)에 맞추어 접속법 미완료 시제가 사용되었다.",
+        "etymology": "potis('할 수 있는') + sum('이다')의 합성어이다(possum, posse, potui 항목 참조)."
+      },
+      {
+        "g": "similesque",
+        "pos": "형용사",
+        "lemma": "similis, -e (-que)",
+        "parse": "남성 복수 주격 + 접속사",
+        "gloss_kr": "그리고 닮은 듯",
+        "gloss_en": "and like / similar",
+        "syntax": "videri의 두 번째 보어; -que는 dissimiles와 연결",
+        "background": "dissimiles와 similes라는 모순적 형용사를 -que로 직연결하여 원숭이라는 동물이 주는 그로테스크함과 우스꽝스러움(인간을 흉내 냄)을 언어적 아이로니로 극대화한다.",
+        "etymology": "PIE *sem-('하나')에서 유래하며, simul과 같은 어근이다(simul 항목 참조)."
+      },
+      {
+        "g": "videri,",
+        "pos": "동사",
+        "lemma": "video",
+        "principalParts": "video–videre–vidi–visum",
+        "parse": "부정사 수동태 (수동 수용적/수동 형태의 능동 의미 '보이다')",
+        "gloss_kr": "보이게 (되도록)",
+        "gloss_en": "to seem / to appear",
+        "syntax": "possent의 보충 부정사",
+        "background": "video의 수동태 부정사로 '~처럼 보이다(seem)'라는 뜻의 수동 형태 동사(passive/deponent usage)로 쓰였다.",
+        "etymology": "PIE *weyd-('보다, 알다')에서 유래하며, 그리스어 εἶδον('보았다')·οἶδα('안다'), 산스크리트어 véda, 영어 wit, wise와 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.95",
+    "trans": "(주피터는) 그들의 사지를 쪼그라뜨리고 이마 아래 콧구멍을 쳐올려 납작하게 만들었으며,",
+    "words": [
+      {
+        "g": "membraque",
+        "pos": "명사",
+        "lemma": "membrum, -i, n. (-que)",
+        "parse": "중성 복수 대격 + 접속사",
+        "gloss_kr": "사지를 그리고",
+        "gloss_en": "and the limbs",
+        "syntax": "contraxit의 직접목적어; -que는 앞 절과 이 구절을 연결",
+        "background": "인간의 팔다리/신체를 뜻한다. 원숭이의 짧아지고 굽은 신체적 변형을 시각화하기 시작한다.",
+        "etymology": "PIE *mems-('살')과 연관짓는 설이 있으며, '팔다리, 신체 부위'를 뜻한다."
+      },
+      {
+        "g": "contraxit",
+        "pos": "동사",
+        "lemma": "contraho",
+        "principalParts": "contraho–contrahere–contraxi–contractum",
+        "parse": "직설법 완료 능동태 3인칭 단수",
+        "gloss_kr": "쪼그라뜨리셨고 / 오므리셨고",
+        "gloss_en": "shrank / contracted",
+        "syntax": "주절의 첫 번째 술어 동사 (주어: 주피터)",
+        "background": "cum- + traho(함께 끌어당기다)에서 나와 신체를 축소시키고 웅크리게 만드는 신체 변형의 동작을 신속하게 묘사한다.",
+        "etymology": "con('함께') + traho('끌다')의 합성어이다(attraho, attrahere, attraxi, attractum 항목의 traho 참조)."
+      },
+      {
+        "g": "naresque",
+        "pos": "명사",
+        "lemma": "naris, -is, f. (-que)",
+        "parse": "여성 복수 대격 + 접속사",
+        "gloss_kr": "그리고 콧구멍을 / 코를",
+        "gloss_en": "and the nostrils",
+        "syntax": "contudit의 직접목적어",
+        "background": "복수형 nares는 콧구멍 혹은 코 전체를 의미하며, 원숭이의 납작한 들창코 모양을 묘사하는 대상이 된다.",
+        "etymology": "PIE *nas-('코')에서 유래하며, 영어 nose와 동계어이다."
+      },
+      {
+        "g": "a",
+        "pos": "전치사",
+        "lemma": "ab",
+        "parse": "전치사 (+탈격)",
+        "gloss_kr": "~로부터",
+        "gloss_en": "from",
+        "syntax": "fronte와 결합하여 출발점/기준 위치를 나타냄",
+        "background": "이마(frons)로부터 코가 눌려 뒤로 젖혀졌음을 나타내는 위치 전치사다.",
+        "etymology": "PIE *h₂epo('~로부터 떨어져')에서 유래하며, 그리스어 ἀπό, 산스크리트어 apa, 영어 off, of와 동계어이다."
+      },
+      {
+        "g": "fronte",
+        "pos": "명사",
+        "lemma": "frons, frontis, f.",
+        "parse": "여성 단수 탈격",
+        "gloss_kr": "이마로부터",
+        "gloss_en": "forehead",
+        "syntax": "전치사 a의 목적어",
+        "background": "인간의 지성을 상징하는 '이마'가 코와 뭉개지며 얼굴의 입체감을 잃는 비참한 변형 과정을 보여준다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '이마'를 뜻하며 '잎'을 뜻하는 동음이의어 frons, frondis와는 별개의 단어이다(frons, frondis, f. 항목 참조)."
+      },
+      {
+        "g": "resimas",
+        "pos": "형용사",
+        "lemma": "resimus, -a, -um",
+        "parse": "여성 복수 대격",
+        "gloss_kr": "위로 꺾인 / 뒤로 젖혀진",
+        "gloss_en": "turned-up / snub",
+        "syntax": "nares를 수식하는 서술적 형용사",
+        "background": "re- + simus(납작한)의 구조로, 코끝이 위로 젖혀진 들창코 형태를 정확히 묘사하는 고전 시어다.",
+        "etymology": "re('뒤로') + simus(그리스어 σιμός '들창코의'에서 차용)의 결합으로 추정되며, '위로 들린'을 뜻한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.96",
+    "trans": "얼굴 전체를 노파의 찌푸린 주름으로 밭 갈듯 파놓으셨다.",
+    "words": [
+      {
+        "g": "contudit",
+        "pos": "동사",
+        "lemma": "contundo",
+        "principalParts": "contundo–contundere–contudi–contusum",
+        "parse": "직설법 완료 능동태 3인칭 단수",
+        "gloss_kr": "짓뭉개 놓으셨으며",
+        "gloss_en": "crushed / flattened",
+        "syntax": "두 번째 술어 동사 (목적어: nares)",
+        "background": "망치 따위로 강하게 쳐서 뭉개버리는 폭력적인 단쇄(단타) 동작을 뜻하는 동사로, 신의 물리적 징벌을 생생하게 전달한다.",
+        "etymology": "con(강조) + tundo('두드리다')의 합성어로, tundo는 PIE *(s)tewd-('밀치다, 두드리다')에서 유래한다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "등이접속사",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "동사구들을 연결",
+        "background": "연속적인 징벌 동작을 이어주는 단순 접속사다.",
+        "etymology": "PIE *eti('그 위에, 더하여')에서 유래한 접속사로, 산스크리트어 ati('넘어서'), 그리스어 ἔτι('여전히, 더욱이')와 동계어이다. 원래 '더하여, 넘어서'라는 부사적 의미에서 등위접속사 '그리고'로 문법화되었다."
+      },
+      {
+        "g": "rugis",
+        "pos": "명사",
+        "lemma": "ruga, -ae, f.",
+        "parse": "여성 복수 탈격",
+        "gloss_kr": "주름들로",
+        "gloss_en": "with wrinkles",
+        "syntax": "peraravit의 수단/도구 탈격",
+        "background": "얼굴에 깊게 패인 주름을 뜻한다. 원숭이 얼굴 특유의 잔주름을 의미한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '주름'을 뜻한다."
+      },
+      {
+        "g": "peraravit",
+        "pos": "동사",
+        "lemma": "peraro",
+        "principalParts": "peraro–perarare–peraravi–peraratum",
+        "parse": "직설법 완료 능동태 3인칭 단수",
+        "gloss_kr": "(밭을 갈듯) 깊게 파놓으셨다",
+        "gloss_en": "ploughed through / furrowed",
+        "syntax": "세 번째 술어 동사 (목적어: ora)",
+        "background": "per(철저히) + aro(밭을 갈다)의 합성어로, 농부가 쟁기로 밭이랑을 깊이 파내듯 얼굴 전체에 흉측한 주름을 깊게 골 내어 새겨놓았다는 독창적이고 시적인 비유다.",
+        "etymology": "per(강조) + aro('쟁기질하다')의 합성어로, '갈아엎듯 새기다'를 뜻한다(aratrum, aratri, n. 항목의 aro 참조)."
+      },
+      {
+        "g": "anilibus",
+        "pos": "형용사",
+        "lemma": "anilis, -e",
+        "parse": "여성 복수 탈격",
+        "gloss_kr": "노파의 / 할머니 같은",
+        "gloss_en": "old-womanish / anile",
+        "syntax": "rugis를 수식하는 형용사",
+        "background": "anus(노파)에서 유래한 형용사로, 늙고 자글자글한 노파의 주름을 연상시키는 흉측함을 원숭이 얼굴과 결합시킨다.",
+        "etymology": "anus('노파')에서 파생된 형용사로, anus는 어원이 불확실한 라틴어 고유 어휘이다."
+      },
+      {
+        "g": "ora",
+        "pos": "명사",
+        "lemma": "os, oris, n.",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "얼굴을",
+        "gloss_en": "faces",
+        "syntax": "peraravit의 직접목적어",
+        "background": "os(입, 얼굴)의 시적 복수형으로, 그들의 얼굴 전체를 가리킨다.",
+        "etymology": "PIE *h₃eh₁-s-('입')에서 유래하며, 산스크리트어 ās, 히타이트어 aiš와 동계어로 제시된다. 뼈를 뜻하는 동음이의어 os, ossis(그리스어 ὀστέον과 동계)와는 별개의 어원이니 혼동하지 않아야 한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.97",
+    "trans": "온몸을 노르스름한 털로 덮어씌운 채",
+    "words": [
+      {
+        "g": "totaque",
+        "pos": "형용사",
+        "lemma": "totus, -a, -um (-que)",
+        "parse": "중성 복수 대격 + 접속사",
+        "gloss_kr": "그리고 전신의 / 온",
+        "gloss_en": "and whole / entire",
+        "syntax": "corpora를 수식하는 형용사; -que는 전체 구문을 문맥에 연결",
+        "background": "신체의 일부가 아닌 '몸 전체'가 야만적인 털로 덮였음을 강조한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 형용사로, '전체의'를 뜻한다."
+      },
+      {
+        "g": "velatos",
+        "pos": "분사",
+        "lemma": "velo",
+        "principalParts": "velo–velare–velavi–velatum",
+        "parse": "완료분사 수동태 남성 복수 대격",
+        "gloss_kr": "덮어씌운 / 감싸인",
+        "gloss_en": "clothed / covered",
+        "syntax": "misit의 목적어인 그들(viros/Cercopas)을 수식하는 부대상황 분사",
+        "background": "원래 옷이나 베일로 몸을 가릴 때 쓰는 단어(velo)를 '동물의 털(villus)'로 몸을 가리는 상황에 비유적으로 사용했다.",
+        "etymology": "velum('베일')에서 파생된 동사이다(velamen, velaminis, n. 항목 참조)."
+      },
+      {
+        "g": "flaventi",
+        "pos": "분사",
+        "lemma": "flaveo",
+        "principalParts": "flaveo–flavere",
+        "parse": "현재분사 능동태 중성 단수 탈격 (형용사적 용법)",
+        "gloss_kr": "노르스름한 / 황갈색의",
+        "gloss_en": "yellowish / tawny",
+        "syntax": "villo를 수식하는 분사 형용사",
+        "background": "노란빛이나 황갈색을 띠는 상태를 나타낸다. 원숭이 특유의 털 색깔을 묘사한다.",
+        "etymology": "flavus('금빛의')에서 파생된 동사로, PIE *bʰleh₁-('빛나다, 노란')에서 유래한다."
+      },
+      {
+        "g": "corpora",
+        "pos": "명사",
+        "lemma": "corpus, -oris, n.",
+        "parse": "중성 복수 대격 (존재론적/관계 대격 또는 velatos의 세부 목적어)",
+        "gloss_kr": "몸들을",
+        "gloss_en": "bodies",
+        "syntax": "velatos 분사의 영향 아래 놓인 관계 대격(Accusative of respect/Greek accusative)",
+        "background": "그리스어 영향의 관계 대격 구조로 '몸에 관하여 감싸인' 즉 '온몸이 덮인'의 의미를 형성한다.",
+        "etymology": "PIE *kʷrep-('몸')에서 유래한다(corpus, corporis, n. 항목 참조)."
+      },
+      {
+        "g": "villo",
+        "pos": "명사",
+        "lemma": "villus, -i, m.",
+        "parse": "남성 단수 탈격",
+        "gloss_kr": "털로 / 거친 모피로",
+        "gloss_en": "shaggy hair / tuft",
+        "syntax": "velatos의 수단/도구 탈격",
+        "background": "동물의 거칠고 덥수룩한 털을 뜻하는 단어로, 인간의 매끄러운 피부와 대비되는 야만성의 상징이다.",
+        "etymology": "vellus('양털')와 같은 어근 *h₂welH-('털을 뽑다')에서 파생되었으며, '털, 솜털'을 뜻한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.98",
+    "trans": "이 거처로 보내셨다. 그뿐만 아니라 그 이전에 말의 사용과",
+    "words": [
+      {
+        "g": "misit",
+        "pos": "동사",
+        "lemma": "mitto",
+        "principalParts": "mitto–mittere–misi–missum",
+        "parse": "직설법 완료 능동태 3인칭 단수",
+        "gloss_kr": "보내셨다",
+        "gloss_en": "sent",
+        "syntax": "주절의 주요 술어 동사 (주어: 주피터)",
+        "background": "변신된 원숭이들을 그들의 새로운 서식지인 피테쿠사이 섬으로 추방하듯 내던진 동작을 뜻한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 동사로, '보내다'를 뜻한다(promitto, promittere, promisi, promissum 항목 참조)."
+      },
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "전치사 (+대격)",
+        "gloss_kr": "~로 / ~ 안으로",
+        "gloss_en": "into / to",
+        "syntax": "sedes 방향을 나타냄",
+        "background": "이동의 목적지를 지정한다.",
+        "etymology": "PIE *h₁en('~안에')에서 유래하며, 그리스어 ἐν, 영어 in과 동계어이다. 라틴어에서는 격에 따라 '~안에(탈격, 정적 위치)' 또는 '~안으로(대격, 방향)'의 이중 용법을 가진다."
+      },
+      {
+        "g": "has",
+        "pos": "대명사",
+        "lemma": "hic, haec, hoc",
+        "parse": "여성 복수 대격",
+        "gloss_kr": "이",
+        "gloss_en": "these",
+        "syntax": "sedes를 수식하는 지시대명사",
+        "background": "화자/시인이 관찰하고 있는 바로 그 장소(피테쿠사이/이스키아 섬)를 현장감 있게 지칭한다.",
+        "etymology": "PIE 지시 어간 *ko-('이것')에 첨사 -ce가 결합된 형태로, 근칭 지시대명사이다. 게르만어파의 he(그)와 어원적으로 연결되는 지시 어근 계열에 속한다."
+      },
+      {
+        "g": "sedes",
+        "pos": "명사",
+        "lemma": "sedes, -is, f.",
+        "parse": "여성 복수 대격",
+        "gloss_kr": "거처로 / 거주지로",
+        "gloss_en": "abodes / seats",
+        "syntax": "전치사 in의 목적어",
+        "background": "원래 '좌석, 자리를' 뜻하나 시에서 복수형으로 쓰여 '거주지, 서식지'를 의미한다.",
+        "etymology": "PIE *sed-('앉다')에서 유래한다(sedes, sedis, f. 항목 참조)."
+      },
+      {
+        "g": "nec",
+        "pos": "접속사",
+        "lemma": "nec",
+        "parse": "접속사/부사",
+        "gloss_kr": "그리고 ~않다",
+        "gloss_en": "and not",
+        "syntax": "non과 결합하여 강한 이중 부정 수사법 형성",
+        "background": "뒤의 non과 결합하여 'nec non'이라는 관용적 표현을 만든다.",
+        "etymology": "ne(부정소사) + que('그리고')의 결합으로, '그리고 ~아니다'를 뜻하는 접속사이다."
+      },
+      {
+        "g": "non",
+        "pos": "부사",
+        "lemma": "non",
+        "parse": "부사",
+        "gloss_kr": "아니다",
+        "gloss_en": "not",
+        "syntax": "nec와 함께 쓰임",
+        "background": "nec non은 '그뿐만 아니라, 또한(and indeed, furthermore)'이라는 강한 긍정적 연결 부사구로 기능한다.",
+        "etymology": "고졸 라틴어 부정사 ne oenum('하나도 아니다', ne + oenum '하나')의 축약형으로 추정되며, 부정소사 ne(PIE *ne, 영어 no와 동계)에 수사 unus('하나')가 결합해 강조된 부정 표현이 관용화된 것이다."
+      },
+      {
+        "g": "prius",
+        "pos": "부사",
+        "lemma": "prius",
+        "parse": "부사",
+        "gloss_kr": "먼저 / 그 이전에",
+        "gloss_en": "first / previously",
+        "syntax": "abstulit을 수식하는 시간 부사",
+        "background": "그들을 추방하여 보내기 전에 '먼저' 언어 능력을 박탈했음을 시점상으로 명시한다.",
+        "etymology": "PIE 비교급 어근 *preyos-(*per-'앞')에서 유래하며, '더 앞에, 먼저'를 뜻한다."
+      },
+      {
+        "g": "abstulit",
+        "pos": "동사",
+        "lemma": "aufero",
+        "principalParts": "aufero–auferre–abstuli–ablatum",
+        "parse": "직설법 완료 능동태 3인칭 단수",
+        "gloss_kr": "빼앗아 버리셨다",
+        "gloss_en": "took away / deprived",
+        "syntax": "이중 부정이 이끄는 절의 술어 동사",
+        "background": "ab(로부터) + fero(가져가다)의 합성어로, 소중한 능력을 강제로 박탈하여 되찾지 못하게 만든 신벌을 나타낸다.",
+        "etymology": "ab('~로부터') + fero('나르다')의 합성어이다(fero, ferre, tuli, latum 항목 참조)."
+      },
+      {
+        "g": "usum",
+        "pos": "명사",
+        "lemma": "usus, -us, m.",
+        "parse": "남성 단수 대격",
+        "gloss_kr": "사용을 / 능력을",
+        "gloss_en": "use / power of using",
+        "syntax": "abstulit의 직접목적어",
+        "background": "언어나 도구를 실질적으로 구사하는 능력을 뜻한다.",
+        "etymology": "utor의 목적분사가 명사화된 것이다(usus, usus, m. 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.99",
+    "trans": "끔찍한 위증을 위해 태어난 혀의 능력을 빼앗아 버리셨으니,",
+    "words": [
+      {
+        "g": "verborum",
+        "pos": "명사",
+        "lemma": "verbum, -i, n.",
+        "parse": "중성 복수 속격",
+        "gloss_kr": "말들의 / 언어의",
+        "gloss_en": "of words",
+        "syntax": "usum을 수식하는 목적속격",
+        "background": "'단어들/말의 구사'를 의미하며, 인간을 동물과 구분 짓는 이성적 언어 능력(Logos)을 상징한다.",
+        "etymology": "PIE *werdʰo-('말')에서 유래하며, 영어 word, 그리스어 εἴρω('말하다')의 관련 어형과 동계어로 제시된다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "등이접속사",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "verborum 속격구와 natae... linguae 속격구를 연결",
+        "background": "언어 사용권과 혀의 기능을 연이어 박탈했음을 이어준다.",
+        "etymology": "PIE *eti('그 위에, 더하여')에서 유래한 접속사로, 산스크리트어 ati('넘어서'), 그리스어 ἔτι('여전히, 더욱이')와 동계어이다. 원래 '더하여, 넘어서'라는 부사적 의미에서 등위접속사 '그리고'로 문법화되었다."
+      },
+      {
+        "g": "natae",
+        "pos": "분사",
+        "lemma": "nascor",
+        "principalParts": "nascor–nasci–natus sum",
+        "parse": "완료분사 탈형(능동 의미) 여성 단수 속격",
+        "gloss_kr": "태어난 / 맞추어진",
+        "gloss_en": "born / designed for",
+        "syntax": "linguae를 수식하는 분사 (전치사구 in periuria의 수식을 받음)",
+        "background": "nascor(태어나다)의 완료분사로, 그들의 혀가 올바른 말을 하기 위해 태어난 것이 아니라 오직 '위증을 위해 태어났다'는 목적성을 신화적/윤리적으로 규탄한다.",
+        "etymology": "gigno('낳다')와 같은 어근 *ǵenh₁-('낳다, 태어나다')에서 유래한 탈형동사로, 그리스어 γίγνομαι, 영어 kin, gene와 동계어이다."
+      },
+      {
+        "g": "dira",
+        "pos": "형용사",
+        "lemma": "dirus, -a, -um",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "끔찍한 / 불길한",
+        "gloss_en": "dreadful / horrible",
+        "syntax": "periuria를 수식하는 형용사",
+        "background": "신성모독적이거나 불길한 범죄를 묘사할 때 자주 쓰이는 강력한 수식어다.",
+        "etymology": "어원이 불확실한 라틴어 고유 형용사로, '무서운, 불길한'을 뜻한다."
+      },
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "전치사 (+대격)",
+        "gloss_kr": "~를 위해 / ~를 향해",
+        "gloss_en": "for / unto",
+        "syntax": "natae와 결합하여 목적/경향성을 나타냄",
+        "background": "natae in... 구문은 '~라는 목적을 위해 타고난/만들어진'이라는 뜻의 비유적 관형구다.",
+        "etymology": "PIE *h₁en('~안에')에서 유래하며, 그리스어 ἐν, 영어 in과 동계어이다. 라틴어에서는 격에 따라 '~안에(탈격, 정적 위치)' 또는 '~안으로(대격, 방향)'의 이중 용법을 가진다."
+      },
+      {
+        "g": "periuria",
+        "pos": "명사",
+        "lemma": "periurium, -i, n.",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "위증들을",
+        "gloss_en": "perjuries",
+        "syntax": "전치사 in의 목적어",
+        "background": "앞선 91행의 periuria가 다시 언급되며, 혀가 범한 죄악과 그에 따른 징벌(혀의 기능 박탈) 사이의 인과관계를 완성한다.",
+        "etymology": "per('완전히, 잘못되게') + ius('법, 맹세')의 합성어로, '거짓 맹세, 위증'을 뜻한다."
+      },
+      {
+        "g": "linguae;",
+        "pos": "명사",
+        "lemma": "lingua, -ae, f.",
+        "parse": "여성 단수 속격",
+        "gloss_kr": "혀의",
+        "gloss_en": "of the tongue",
+        "syntax": "usum을 수식하는 속격",
+        "background": "해부학적 기관으로서의 혀뿐만 아니라 '언어, 구변'을 뜻하는 제유법적 명사다.",
+        "etymology": "PIE *dn̥ǵʰwéh₂('혀')에서 발달했으며(초기 라틴어 dingua), l-형으로의 변화는 유음화(labialization) 유추로 설명된다. 영어 tongue과 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.100",
+    "trans": "오직 쉰 목소리의 끽끽거림으로 불평할 수 있는 능력만을 남겨놓으셨다.",
+    "words": [
+      {
+        "g": "posse",
+        "pos": "동사(부정사)",
+        "lemma": "possum",
+        "principalParts": "possum–posse–potui",
+        "parse": "현재 부정사 능동태 (명사적 용법)",
+        "gloss_kr": "할 수 있음만을 / 능력을",
+        "gloss_en": "to be able",
+        "syntax": "reliquit의 직접목적어 (명사화된 부정사)",
+        "background": "possum의 부정사가 명사처럼 쓰여 '가능함, 할 수 있는 상태' 자체를 reliquit의 목적어로 삼은 세련된 시적 통사 구조다.",
+        "etymology": "potis('할 수 있는') + sum('이다')의 합성어이다(possum, posse, potui 항목 참조)."
+      },
+      {
+        "g": "queri",
+        "pos": "동사",
+        "lemma": "queror",
+        "principalParts": "queror–queri–questus sum",
+        "parse": "현재 부정사 탈형동사(능동 의미)",
+        "gloss_kr": "불평하다 / 울부짖다",
+        "gloss_en": "to complain / to lament",
+        "syntax": "posse의 보충 부정사",
+        "background": "인간다운 언어로 소통하는 대신 오직 원숭이처럼 불평하고 낑낑거리는 단순한 동물적 소리만을 낼 수 있다는 수치스러운 한계를 보여준다.",
+        "etymology": "PIE *kʷes-('한숨쉬다, 헐떡이다')에서 유래하는 것으로 추정되는 탈형동사로, '불평하다'를 뜻한다."
+      },
+      {
+        "g": "tantum",
+        "pos": "부사",
+        "lemma": "tantum",
+        "parse": "부사",
+        "gloss_kr": "오직 / 겨우",
+        "gloss_en": "only / merely",
+        "syntax": "posse queri 구문을 수식 한정하는 부사",
+        "background": "언어 능력이 박탈된 후 남은 상실의 비참함을 '오직 그것뿐'이라는 제한 부사로 극대화한다.",
+        "etymology": "tantus('그만큼 큰')의 중성 단수형이 부사화된 것으로, quantus와 상관 짝을 이루는 지시 어근 계열이다."
+      },
+      {
+        "g": "rauco",
+        "pos": "형용사",
+        "lemma": "raucus, -a, -um",
+        "parse": "남성 단수 탈격",
+        "gloss_kr": "쉰 / 거친",
+        "gloss_en": "hoarse / harsh",
+        "syntax": "stridore를 수식하는 형용사",
+        "background": "원숭이 울음소리의 거칠고 쉰 음색을 성각적(auditory)으로 묘사한다.",
+        "etymology": "ravus('쉰 목소리의')와 관련되는 형용사로, 의성어적 기원으로 추정된다."
+      },
+      {
+        "g": "stridore",
+        "pos": "명사",
+        "lemma": "stridor, -oris, m.",
+        "parse": "남성 단수 탈격",
+        "gloss_kr": "끽끽거리며 소리냄으로 / 삐걱거림으로",
+        "gloss_en": "with a screech / harsh noise",
+        "syntax": "queri를 수식하는 수단/방식의 탈격",
+        "background": "새나 곤충, 짐승의 찌르는 듯한 날카롭고 기계적인 소리를 뜻하는 단어다. 인간의 아름다운 명료한 언어와 극명하게 대조된다.",
+        "etymology": "strido('삐걱거리다')에서 파생된 명사로, 의성어적 기원의 라틴어 고유 어휘이다."
+      },
+      {
+        "g": "reliquit.",
+        "pos": "동사",
+        "lemma": "relinquo",
+        "principalParts": "relinquo–relinquere–reliqui–relictum",
+        "parse": "직설법 완료 능동태 3인칭 단수",
+        "gloss_kr": "남겨놓으셨다",
+        "gloss_en": "left behind",
+        "syntax": "문장의 최종 술어 동사 (주어: 주피터)",
+        "background": "모든 것을 빼앗고 오직 원숭이로서의 소음만을 '유산으로 남겼다'는 형벌의 최종 선언을 내리며 단락을 마무리한다.",
+        "etymology": "re('뒤로') + linquo('남기다')의 합성어이다(linquo, linquere, liqui, lictum 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.101",
+    "trans": "아이네아스는 이곳을 지나친 뒤, 오른쪽으로 파르테노페의",
+    "words": [
+      {
+        "g": "Has",
+        "pos": "대명사",
+        "lemma": "hic, haec, hoc",
+        "parse": "여성 복수 대격",
+        "gloss_kr": "이곳들을 / 이 섬들을",
+        "gloss_en": "these (places/islands)",
+        "syntax": "praeteriit의 직접목적어 (앞 행의 피테쿠사이/이스키아를 가리킴)",
+        "background": "앞선 삽화(피테쿠사이)와 아이네아스의 항해를 이어주는 지시대명사이다.",
+        "etymology": "PIE 지시 어간 *ko-('이것')에 첨사 -ce가 결합된 형태로, 근칭 지시대명사이다. 게르만어파의 he(그)와 어원적으로 연결되는 지시 어근 계열에 속한다."
+      },
+      {
+        "g": "ubi",
+        "pos": "접속사",
+        "lemma": "ubi",
+        "parse": "접속사",
+        "gloss_kr": "~했을 때 / ~한 뒤",
+        "gloss_en": "when / as soon as",
+        "syntax": "서술절을 이끄는 시간 접속사",
+        "background": "일반적인 서사 전환의 시간 표지이다.",
+        "etymology": "PIE 의문·관계 어근 *kʷu-('어디')에 처소 접미사가 결합한 형태로, qui와 같은 계열에 속한다(qui 항목 참조)."
+      },
+      {
+        "g": "praeteriit",
+        "pos": "동사",
+        "lemma": "praetereo",
+        "principalParts": "praetereo–praeterire–praeterii–praeteritum",
+        "parse": "직설법 완료 능동태 3인칭 단수",
+        "gloss_kr": "지나쳤다",
+        "gloss_en": "passed by",
+        "syntax": "ubi절의 술어 동사 (생략된 주어: 아이네아스)",
+        "background": "praeter(지나서) + eo(가다)의 합성 동사로, 특정 지리적 장소를 항해하여 지나침을 뜻한다.",
+        "etymology": "praeter('지나서') + eo('가다')의 합성어이다(adeo 항목의 eo 참조)."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "등이접속사",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "praeteriit와 deseruit를 연결",
+        "background": "아이네아스 항해의 연속된 동작들을 연결한다.",
+        "etymology": "PIE *eti('그 위에, 더하여')에서 유래한 접속사로, 산스크리트어 ati('넘어서'), 그리스어 ἔτι('여전히, 더욱이')와 동계어이다. 원래 '더하여, 넘어서'라는 부사적 의미에서 등위접속사 '그리고'로 문법화되었다."
+      },
+      {
+        "g": "Parthenopeia",
+        "pos": "형용사",
+        "lemma": "Parthenopeius, -a, -um",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "파르테노페의",
+        "gloss_en": "Parthenopean / of Parthenope",
+        "syntax": "moenia를 수식하는 형용사",
+        "background": "세이렌 중 하나인 파르테노페의 이름을 딴 나폴리(네아폴리스)를 가리키는 시적 형용사다.",
+        "etymology": "그리스 도시 파르테노페(Παρθενόπη, 현 나폴리의 옛 이름)에서 파생된 형용사로, 세이렌 파르테노페의 이름에서 유래한다."
+      },
+      {
+        "g": "dextra",
+        "pos": "부사",
+        "lemma": "dextra (dextera)",
+        "parse": "여성 단수 탈격 (manu/parte 생략)",
+        "gloss_kr": "오른쪽에 / 오른편에",
+        "gloss_en": "on the right hand",
+        "syntax": "장소/방향을 나타내는 부사적 탈격",
+        "background": "해안을 따라 항해하며 방향을 나타내는 공간 표지이다.",
+        "etymology": "PIE *deḱs-('오른쪽의')에서 유래하며, 그리스어 δεξιός, 산스크리트어 dákṣiṇa와 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.102",
+    "trans": "성벽을 뒤로하고 떠났으며, 왼쪽 편으로는 목소리 고운",
+    "words": [
+      {
+        "g": "moenia",
+        "pos": "명사",
+        "lemma": "moenia, -ium, n.",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "성벽을",
+        "gloss_en": "walls / ramparts",
+        "syntax": "deseruit의 직접목적어",
+        "background": "나폴리(파르테노페) 도시를 가리키는 환유이다.",
+        "etymology": "munio('요새화하다')와 같은 어근 *mei-('짓다, 쌓다')에서 파생된 것으로 추정되며, 복수형으로만 쓰여 '성벽, 방벽'을 집합적으로 가리킨다."
+      },
+      {
+        "g": "deseruit",
+        "pos": "동사",
+        "lemma": "desero",
+        "principalParts": "desero–deserere–deserui–desertum",
+        "parse": "직설법 완료 능동태 3인칭 단수",
+        "gloss_kr": "뒤로하고 떠났다 / 남겨두었다",
+        "gloss_en": "left behind",
+        "syntax": "ubi절의 두 번째 술어 동사",
+        "background": "항해 용어로 '뒤로 하고 떠나다'라는 뜻이다.",
+        "etymology": "de('떨어져') + sero('잇다, 묶다')의 합성어로, '버리다, 유기하다'를 뜻한다(sero, serere, sevi, satum과는 동음이의어로 별개 기원이다)."
+      },
+      {
+        "g": "laeva",
+        "pos": "형용사",
+        "lemma": "laevus, -a, -um",
+        "parse": "여성 단수 탈격",
+        "gloss_kr": "왼쪽의",
+        "gloss_en": "left",
+        "syntax": "parte를 수식하는 형용사",
+        "background": "앞 101행의 dextra와 대조를 이룬다.",
+        "etymology": "PIE *leyh₂wo-('왼쪽의')에서 유래하며, 그리스어 λαιός와 동계어이다."
+      },
+      {
+        "g": "de",
+        "pos": "전치사",
+        "lemma": "de",
+        "parse": "전치사 (+탈격)",
+        "gloss_kr": "~에서 / ~쪽으로",
+        "gloss_en": "from / on",
+        "syntax": "parte를 지배하는 전치사",
+        "background": "공간적 방향을 나타낸다 (de parte = ~쪽에서).",
+        "etymology": "PIE *de('~로부터')에서 유래하는 것으로 추정되는 전치사이다."
+      },
+      {
+        "g": "parte",
+        "pos": "명사",
+        "lemma": "pars, partis, f.",
+        "parse": "여성 단수 탈격",
+        "gloss_kr": "편에서 / 쪽에서",
+        "gloss_en": "side / direction",
+        "syntax": "전치사 de의 목적어",
+        "background": "'de laeva parte'(왼쪽 편에서)라는 관용적 위치 표현이다.",
+        "etymology": "PIE *per-('할당하다, 몫을 주다')에서 유래하며, 그리스어 πεῖρα('시도')와는 형태가 유사해 보이나 별개의 어근이다. 영어 part, portion이 이 라틴어에서 차용되었다."
+      },
+      {
+        "g": "canori",
+        "pos": "형용사",
+        "lemma": "canorus, -a, -um",
+        "parse": "남성 단수 속격",
+        "gloss_kr": "목소리 고운 / 노래하는",
+        "gloss_en": "melodious / tuneful",
+        "syntax": "Aeolidae를 수식하는 형용사",
+        "background": "아이네아스의 유명한 나팔수 미세누스(Misenus)를 가리키는 별칭이다.",
+        "etymology": "cano('노래하다')에서 파생된 형용사이다(carmen, carminis, n. 항목의 cano 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.103",
+    "trans": "아이올로스의 아들의 무덤과, 갈대 풀숲이 가득한 지역이자",
+    "words": [
+      {
+        "g": "Aeolidae",
+        "pos": "명사",
+        "lemma": "Aeolides, -ae, m.",
+        "parse": "남성 단수 속격",
+        "gloss_kr": "아이올로스 아들의",
+        "gloss_en": "of the son of Aeolus",
+        "syntax": "tumulum을 수식하는 속격",
+        "background": "미세눔 산에 묻힌 아이올로스의 아들 미세누스를 가리키는 부칭이다.",
+        "etymology": "바람의 신 아이올로스(Αἴολος)의 부칭형으로, '아이올로스의 아들'을 뜻한다."
+      },
+      {
+        "g": "tumulum",
+        "pos": "명사",
+        "lemma": "tumulus, -i, m.",
+        "parse": "남성 단수 대격",
+        "gloss_kr": "무덤을 / 언덕을",
+        "gloss_en": "tomb / mound",
+        "syntax": "본동사 intrat의 첫 번째 직접목적어",
+        "background": "아이네아스의 나팔수의 무덤인 미세눔 곶을 가리킨다.",
+        "etymology": "tumeo('부풀다')와 같은 어근 *tewh₂-('부풀다')에서 파생되었으며, '부풀어 오른 것' 즉 '봉분, 무덤'을 뜻한다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "등이접속사",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "tumulum과 litora를 연결",
+        "background": "목적어들을 연결하는 등위접속사이다.",
+        "etymology": "PIE *eti('그 위에, 더하여')에서 유래한 접속사로, 산스크리트어 ati('넘어서'), 그리스어 ἔτι('여전히, 더욱이')와 동계어이다. 원래 '더하여, 넘어서'라는 부사적 의미에서 등위접속사 '그리고'로 문법화되었다."
+      },
+      {
+        "g": "loca",
+        "pos": "명사",
+        "lemma": "locus, -i, m. (복수 loca, -orum, n.)",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "장소들을 / 지역을",
+        "gloss_en": "places / region",
+        "syntax": "litora Cumarum과 동격",
+        "background": "아베르누스 호수 근처 늪지대를 구체적으로 서술하는 동격 표현이다.",
+        "etymology": "고졸 라틴어 stlocus에서 발달한 것으로 추정되며, 어원이 불확실하다(locus, -i, m. 항목 참조)."
+      },
+      {
+        "g": "feta",
+        "pos": "형용사",
+        "lemma": "fetus, -a, -um",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "가득 찬 / 번성하는",
+        "gloss_en": "teeming / pregnant with",
+        "syntax": "loca를 수식하며 탈격 ulvis를 지배하는 형용사",
+        "background": "문자 그대로 '~를 잉태한'이라는 뜻으로, 시적으로 '~가 무성한'을 의미한다.",
+        "etymology": "PIE *dʰeh₁(y)-('빨다, 낳다')에서 유래하며, filia와 같은 어근을 공유한다(filia, -ae, f. 항목 참조)."
+      },
+      {
+        "g": "palustribus",
+        "pos": "형용사",
+        "lemma": "palustris, -e",
+        "parse": "여성 복수 탈격",
+        "gloss_kr": "습지의 / 늪의",
+        "gloss_en": "marshy / swampy",
+        "syntax": "ulvis를 수식하는 형용사",
+        "background": "저승 입구로 다가가는 음산하고 늪진 분위기를 조성한다.",
+        "etymology": "palus('늪')에서 파생된 형용사로, palus는 어원이 불확실한 라틴어 고유 어휘이다."
+      },
+      {
+        "g": "ulvis",
+        "pos": "명사",
+        "lemma": "ulva, -ae, f.",
+        "parse": "여성 복수 탈격",
+        "gloss_kr": "갈대 풀들로 / 늪풀로",
+        "gloss_en": "sedge / marsh-grass",
+        "syntax": "형용사 feta가 지배하는 명시/원인의 탈격",
+        "background": "늪지의 식생을 가리킨다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '습지풀, 물풀'을 뜻한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.104",
+    "trans": "쿠마에의 해변 및 장수하는 무녀(시뷜라)의 동굴로",
+    "words": [
+      {
+        "g": "litora",
+        "pos": "명사",
+        "lemma": "litus, -oris, n.",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "해변들을 / 연안을",
+        "gloss_en": "shores / coasts",
+        "syntax": "본동사 intrat의 두 번째 직접목적어",
+        "background": "쿠마에의 해안을 가리킨다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘이다(litus, litoris, n. 항목 참조)."
+      },
+      {
+        "g": "Cumarum",
+        "pos": "명사",
+        "lemma": "Cumae, -arum, f.",
+        "parse": "여성 복수 속격",
+        "gloss_kr": "쿠마에의",
+        "gloss_en": "of Cumae",
+        "syntax": "litora를 수식하는 속격",
+        "background": "시뷜라의 고향인 캄파니아 지방의 고대 그리스 식민지이다.",
+        "etymology": "그리스어 Κύμη에서 차용된 이탈리아 남부 그리스 식민 도시명으로, 그리스어 자체의 어원은 확립되어 있지 않다."
+      },
+      {
+        "g": "vivacisque",
+        "pos": "형용사",
+        "lemma": "vivax, -acis (-que)",
+        "parse": "여성 단수 속격 + 접속사",
+        "gloss_kr": "그리고 장수하는 / 오랫동안 살아가는",
+        "gloss_en": "and long-lived",
+        "syntax": "Sibyllae를 수식하는 형용사; -que는 litora와 antra를 연결",
+        "background": "아폴로에게서 받은 장수(또는 저주)를 가리키며, 시뷜라는 천 년을 살았다.",
+        "etymology": "vivo('살다')에서 파생된 형용사로, vivo는 PIE *gʷeyh₃-('살다')에서 유래하며 그리스어 βίος, 영어 quick과 동계어이다."
+      },
+      {
+        "g": "antra",
+        "pos": "명사",
+        "lemma": "antrum, -i, n.",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "동굴들로",
+        "gloss_en": "caves / grottoes",
+        "syntax": "본동사 intrat의 세 번째 직접목적어",
+        "background": "유명한 쿠마에 시뷜라의 동굴을 가리킨다.",
+        "etymology": "그리스어 ἄντρον('동굴')에서 차용되었으며, 그리스어 내부 어원은 확립되어 있지 않다."
+      },
+      {
+        "g": "Sibyllae",
+        "pos": "명사",
+        "lemma": "Sibylla, -ae, f.",
+        "parse": "여성 단수 속격",
+        "gloss_kr": "시뷜라의 / 무녀의",
+        "gloss_en": "of the Sibyl",
+        "syntax": "antra를 수식하는 속격",
+        "background": "아이네아스를 저승으로 인도하는 쿠마에의 아폴로 여사제이다.",
+        "etymology": "그리스어 Σίβυλλα에서 차용된 고유명사으로, 그리스어 내부 어원이 확실하지 않아 선그리스어 또는 근동 기원의 가능성이 제기된다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.105",
+    "trans": "들어서며, 아베르누스를 통해 아버지의 저승 영혼을 찾아갈 수 있도록",
+    "words": [
+      {
+        "g": "intrat",
+        "pos": "동사",
+        "lemma": "intro",
+        "principalParts": "intro–intrare–intravi–intratum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "들어선다 / 진입한다",
+        "gloss_en": "enters",
+        "syntax": "본절의 술어 동사 (주어: 아이네아스, 생략)",
+        "background": "생생한 현장감을 주는 역사적 현재 시제로 주요 행동을 이끈다.",
+        "etymology": "intra(\"안에\") 계열에서 파생된 동사로, PIE *en(\"안에\") 어근과 연관되며 in과 같은 뿌리에서 발달했다(in 항목 참조)."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "등이접속사",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "본동사 intrat와 orat를 연결",
+        "background": "등위접속사이다.",
+        "etymology": "PIE *eti('그 위에, 더하여')에서 유래한 접속사로, 산스크리트어 ati('넘어서'), 그리스어 ἔτι('여전히, 더욱이')와 동계어이다. 원래 '더하여, 넘어서'라는 부사적 의미에서 등위접속사 '그리고'로 문법화되었다."
+      },
+      {
+        "g": "ut",
+        "pos": "접속사",
+        "lemma": "ut",
+        "parse": "접속사 (+접속법)",
+        "gloss_kr": "~하도록 / ~하기 위하여",
+        "gloss_en": "so that / in order that",
+        "syntax": "adeat를 지배하는 목적절을 이끔",
+        "background": "아이네아스의 목적을 나타내는 목적절이다.",
+        "etymology": "고졸 라틴어 uti에서 축약된 형태로, PIE 관계 어간 *kʷu-ti에서 유래한 것으로 추정되며 quod, qui와 같은 어족에 속한다(qui 항목 참조)."
+      },
+      {
+        "g": "manes",
+        "pos": "명사",
+        "lemma": "manes, -ium, m.",
+        "parse": "남성 복수 대격",
+        "gloss_kr": "저승 영혼을 / 넋을",
+        "gloss_en": "shade / spirit of the dead",
+        "syntax": "adeat의 직접목적어",
+        "background": "저승에 있는 안키세스의 영혼을 구체적으로 가리킨다.",
+        "etymology": "manus('좋은')와 연관짓는 설이 있는 완곡어로, '조상의 영혼, 저승신'을 뜻하며 어원은 불확실하다."
+      },
+      {
+        "g": "adeat",
+        "pos": "동사",
+        "lemma": "adeo",
+        "principalParts": "adeo–adire–adii–aditum",
+        "parse": "접속법 현재 능동태 3인칭 단수",
+        "gloss_kr": "찾아가도록 / 지체 없이 접근하도록",
+        "gloss_en": "he may approach / visit",
+        "syntax": "ut가 이끄는 목적절의 동사",
+        "background": "목적을 나타내는 접속법이다.",
+        "etymology": "ad('~로') + eo('가다')의 합성어로, eo는 PIE *ei-('가다')에서 유래하며 그리스어 εἶμι, 산스크리트어 e-ti와 동계어이다."
+      },
+      {
+        "g": "per",
+        "pos": "전치사",
+        "lemma": "per",
+        "parse": "전치사 (+대격)",
+        "gloss_kr": "~를 통하여",
+        "gloss_en": "through / by way of",
+        "syntax": "Averna를 지배하는 전치사",
+        "background": "저승으로 들어가는 공간적 경로를 나타낸다.",
+        "etymology": "PIE *per-('앞으로, 통과하여')에서 유래하며, 그리스어 περί/παρά, 영어 for, through와 동계어이다. 공간적 '통과'의 의미에서 수단('~을 통해')과 강조 접두사(per-, '완전히')로 의미가 확장되었다."
+      },
+      {
+        "g": "Averna",
+        "pos": "명사",
+        "lemma": "Averna, -orum, n.",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "아베르누스를 / 저승의 문을",
+        "gloss_en": "Avernus / the Underworld",
+        "syntax": "전치사 per의 목적어",
+        "background": "쿠마에 근처의 화산 호수로 저승의 입구로 여겨졌다.",
+        "etymology": "그리스어 ἄορνος('새 없는')에서 차용된 것으로 고대에 설명되었으나, 이는 민간어원이며 실제로는 이탈리아 고유 지명일 가능성이 크다."
+      },
+      {
+        "g": "paternos",
+        "pos": "형용사",
+        "lemma": "paternus, -a, -um",
+        "parse": "남성 복수 대격",
+        "gloss_kr": "아버지의",
+        "gloss_en": "paternal / of his father",
+        "syntax": "manes를 수식하는 형용사",
+        "background": "안키세스의 넋임을 명시한다.",
+        "etymology": "pater('아버지')에서 파생된 형용사로, pater는 PIE *ph₂tḗr에서 유래하며 그리스어 πατήρ, 산스크리트어 pitár, 영어 father와 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.106",
+    "trans": "간청한다. 그러자 그녀는 오랫동안 땅을 향해 고정하고 있던 얼굴을",
+    "words": [
+      {
+        "g": "orat",
+        "pos": "동사",
+        "lemma": "oro",
+        "principalParts": "oro–orare–oravi–oratum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "간청한다 / 청한다",
+        "gloss_en": "prays / begs",
+        "syntax": "intrat와 짝을 이루는 두 번째 본동사",
+        "background": "역사적 현재 시제이다.",
+        "etymology": "os, oris('입')에서 파생된 동사로, '말하다, 기도하다'를 뜻한다(os, oris, n. 항목 참조)."
+      },
+      {
+        "g": "at",
+        "pos": "접속사",
+        "lemma": "at",
+        "parse": "접속사",
+        "gloss_kr": "그러자 / 한편",
+        "gloss_en": "but / then",
+        "syntax": "시뷜라에게로 초점을 전환하는 역접 접속사",
+        "background": "아이네아스에서 시뷜라로 주어가 전환됨을 나타낸다.",
+        "etymology": "고졸 라틴어의 대조 접속사로, 어원이 불확실하나 PIE 지시 어근과의 연관이 제기된다."
+      },
+      {
+        "g": "illa",
+        "pos": "대명사",
+        "lemma": "ille, illa, illud",
+        "parse": "여성 단수 주격",
+        "gloss_kr": "그녀는 (시뷜라는)",
+        "gloss_en": "she (the Sibyl)",
+        "syntax": "erexit의 주어",
+        "background": "시뷜라를 가리킨다.",
+        "etymology": "고전 이전 형태 *olle/*ollus에서 발달했으며, PIE 지시 어근 *al-('저것, 다른 것')과 연관짓는 견해가 있다. 로망스어파 정관사(프랑스어 le, 이탈리아어 il)의 직접적 기원이 되는 단어이다."
+      },
+      {
+        "g": "diu",
+        "pos": "부사",
+        "lemma": "diu",
+        "parse": "부사",
+        "gloss_kr": "오랫동안",
+        "gloss_en": "for a long time",
+        "syntax": "moratum을 수식하는 시간 부사",
+        "background": "시뷜라가 오랫동안 무아지경 같은 자세로 있었음을 나타낸다.",
+        "etymology": "PIE *dyew-('낮, 하늘')에서 유래하며, 그리스어 Ζεύς, 영어 day와 동계어로 제시된다."
+      },
+      {
+        "g": "vultum",
+        "pos": "명사",
+        "lemma": "vultus, -us, m.",
+        "parse": "남성 단수 대격",
+        "gloss_kr": "얼굴을 / 시선을",
+        "gloss_en": "face / gaze",
+        "syntax": "erexit의 직접목적어",
+        "background": "시뷜라의 표정/얼굴을 가리킨다.",
+        "etymology": "volvo('굴리다, 돌리다')와 연관짓는 설이 있으며, '얼굴, 표정'을 뜻한다."
+      },
+      {
+        "g": "tellure",
+        "pos": "명사",
+        "lemma": "tellus, -uris, f.",
+        "parse": "여성 단수 탈격",
+        "gloss_kr": "땅에",
+        "gloss_en": "on the earth / ground",
+        "syntax": "moratum을 수식하는 장소의 탈격",
+        "background": "대지를 뜻하는 시어이다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '대지'를 뜻한다."
+      },
+      {
+        "g": "moratum",
+        "pos": "분사",
+        "lemma": "moror",
+        "principalParts": "moror–morari–moratus sum",
+        "parse": "완료 분사 탈형(능동 의미) 남성 단수 대격",
+        "gloss_kr": "지체된 / 고정되어 있던",
+        "gloss_en": "lingering / fixed",
+        "syntax": "vultum을 수식하는 분사",
+        "background": "예언 중 그녀의 숙인 얼굴이 땅을 향해 고정되어 있음을 묘사한다.",
+        "etymology": "mora('지체')에서 파생된 탈형동사로, mora는 어원이 불확실한 라틴어 고유 어휘이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.107",
+    "trans": "치켜들었고, 마침내 신을 받아들여 황홀경에 사로잡힌 채",
+    "words": [
+      {
+        "g": "erexit",
+        "pos": "동사",
+        "lemma": "erigo",
+        "principalParts": "erigo–erigere–erexi–erectum",
+        "parse": "직설법 완료 능동태 3인칭 단수",
+        "gloss_kr": "치켜들었다 / 일으켰다",
+        "gloss_en": "raised up",
+        "syntax": "본동사 (주어: illa/시뷜라)",
+        "background": "무아지경을 깨는 동작이다.",
+        "etymology": "e('밖으로') + rego('곧게 하다')의 합성어이다(regnum, -i, n. 항목의 rex 참조)."
+      },
+      {
+        "g": "tandemque",
+        "pos": "부사",
+        "lemma": "tandem (-que)",
+        "parse": "부사 + 접속사",
+        "gloss_kr": "그리고 마침내",
+        "gloss_en": "and at last",
+        "syntax": "시간 부사; -que는 erexit와 dixit를 연결",
+        "background": "오래 기다려온 예언의 발화를 알린다.",
+        "etymology": "tam('그만큼') + dem(강조 첨사)의 결합으로, '마침내'를 뜻한다."
+      },
+      {
+        "g": "deo",
+        "pos": "명사",
+        "lemma": "deus, -i, m.",
+        "parse": "남성 단수 탈격",
+        "gloss_kr": "신을",
+        "gloss_en": "the god (Apollo)",
+        "syntax": "recepto와 함께 절대탈격구를 이룸",
+        "background": "아폴로가 여사제에게 들어가 신들리게 함을 가리킨다.",
+        "etymology": "PIE *deiwós('빛나는 존재, 하늘의 신')에서 유래하며, 산스크리트어 devá, 영어 Tuesday와 동계어이다(dea, -ae, f. 항목 참조)."
+      },
+      {
+        "g": "furibunda",
+        "pos": "형용사",
+        "lemma": "furibundus, -a, -um",
+        "parse": "여성 단수 주격",
+        "gloss_kr": "광란에 사로잡혀 / 황홀경에 빠진",
+        "gloss_en": "frenzied / possessed",
+        "syntax": "주어 illa를 수식하는 서술적 형용사",
+        "background": "아폴로에 의한 신들림(예언 상태)을 나타내는 전문 용어이다.",
+        "etymology": "furo('미치다')에서 파생된 형용사로, furor와 같은 어근이다(furor, furoris, m. 항목 참조)."
+      },
+      {
+        "g": "recepto",
+        "pos": "분사",
+        "lemma": "recipio",
+        "principalParts": "recipio–recipere–recepi–receptum",
+        "parse": "완료 분사 수동태 남성 단수 탈격",
+        "gloss_kr": "수용하여 / 받아들인 채",
+        "gloss_en": "having been received",
+        "syntax": "deo와 함께 절대탈격을 이루는 분사",
+        "background": "'deo recepto'는 '몸 안에 신을 받아들인 채'라는 뜻이다.",
+        "etymology": "re('다시') + capio('잡다')의 합성어이다(decipio 항목의 capio 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.108",
+    "trans": "'위대한 것을 청하는구나,' 하고 말했다. '업적으로 가장 위대한 사나여, 그대의",
+    "words": [
+      {
+        "g": "magna",
+        "pos": "형용사",
+        "lemma": "magnus, -a, -um",
+        "parse": "중성 복수 대격 (명사적 용법)",
+        "gloss_kr": "위대한 것들을",
+        "gloss_en": "great things",
+        "syntax": "petis의 직접목적어",
+        "background": "형용사가 명사처럼 쓰인 복수 대격이다.",
+        "etymology": "PIE *meǵh₂-('큰')에서 유래하며, 그리스어 μέγας, 산스크리트어 mahā́nt, 영어 much와 동계어이다."
+      },
+      {
+        "g": "petis",
+        "pos": "동사",
+        "lemma": "peto",
+        "principalParts": "peto–petere–petivi–petitum",
+        "parse": "직설법 현재 능동태 2인칭 단수",
+        "gloss_kr": "너는 구하는구나 / 청하는구나",
+        "gloss_en": "you ask / seek",
+        "syntax": "직접화법의 술어 동사 (주어: 아이네아스, 2인칭)",
+        "background": "시뷜라의 직접 발화의 서두이다.",
+        "etymology": "PIE *peth₂-('날다, 서두르다, 떨어지다')에서 유래하며, 그리스어 πέτομαι('날다')와 동계어로 제시된다."
+      },
+      {
+        "g": "dixit",
+        "pos": "동사",
+        "lemma": "dico",
+        "principalParts": "dico–dicere–dixi–dictum",
+        "parse": "직설법 완료 능동태 3인칭 단수",
+        "gloss_kr": "말했다",
+        "gloss_en": "she said",
+        "syntax": "인용문을 도입하는 보고 동사",
+        "background": "직접 인용을 도입한다.",
+        "etymology": "PIE *deyḱ-('보여주다, 가리키다')에서 유래하며, 그리스어 δείκνυμι, 영어 teach, token과 동계어이다(dico, dicere, dixi, dictum 항목 참조)."
+      },
+      {
+        "g": "vir",
+        "pos": "명사",
+        "lemma": "vir, viri, m.",
+        "parse": "남성 단수 호격",
+        "gloss_kr": "사나여 / 용사여",
+        "gloss_en": "man / hero",
+        "syntax": "아이네아스를 부르는 호격",
+        "background": "직접적인 호격 호칭이다.",
+        "etymology": "PIE *wiHrós('남자')에서 유래하며, 산스크리트어 vīra, 영어 werewolf의 wer-와 동계어이다."
+      },
+      {
+        "g": "factis",
+        "pos": "명사",
+        "lemma": "factum, -i, n.",
+        "parse": "중성 복수 탈격",
+        "gloss_kr": "행위들로 / 업적으로",
+        "gloss_en": "in deeds / by achievements",
+        "syntax": "maxime를 수식하는 명시의 탈격",
+        "background": "아이네아스의 영웅적 업적을 찬양한다.",
+        "etymology": "facio('만들다, 행하다')의 목적분사가 명사화된 것으로, '이루어진 일, 사실, 업적'을 뜻한다(facio, facere, feci, factum 항목 참조)."
+      },
+      {
+        "g": "maxime",
+        "pos": "형용사",
+        "lemma": "maximus, -a, -um (magnus의 최상급)",
+        "parse": "남성 단수 호격",
+        "gloss_kr": "가장 위대한",
+        "gloss_en": "greatest",
+        "syntax": "호격 vir를 수식하는 최상급 형용사",
+        "background": "아이네아스에 대한 최상의 찬사이다.",
+        "etymology": "magnus의 불규칙 최상급으로, PIE *meǵh₂-에서 유래한다(magnus, -a, -um 항목 참조)."
+      },
+      {
+        "g": "cuius",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "남성 단수 속격",
+        "gloss_kr": "그의 / 그대의",
+        "gloss_en": "whose",
+        "syntax": "dextera와 pietas를 수식하는 소유 속격",
+        "background": "아이네아스의 두 영웅적 자질(무용과 경건함)을 도입하는 관계절이다.",
+        "etymology": "PIE 의문·관계 어간 *kʷo-/*kʷi-('누구, 무엇')에서 유래하며, 그리스어 관계대명사 및 영어 who, what, 산스크리트어 kaḥ와 동계어이다. 인도유럽어족 전반에 걸쳐 의문사와 관계사가 동일 어근을 공유하는 대표적 사례이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.109",
+    "trans": "오른손은 칼을 통해, 그대의 경건함은 불길을 통해 검증되었도다.",
+    "words": [
+      {
+        "g": "dextera",
+        "pos": "명사",
+        "lemma": "dextera, -ae, f.",
+        "parse": "여성 단수 주격",
+        "gloss_kr": "오른손은 / 무력은",
+        "gloss_en": "right hand",
+        "syntax": "관계절 내 spectata [est]의 첫 번째 주어",
+        "background": "무용과 용맹을 뜻하는 환유이다.",
+        "etymology": "dexter의 여성형이 명사화된 것이다(dextra (dextera) 항목 참조)."
+      },
+      {
+        "g": "per",
+        "pos": "전치사",
+        "lemma": "per",
+        "parse": "전치사 (+대격)",
+        "gloss_kr": "~를 통하여",
+        "gloss_en": "through / by means of",
+        "syntax": "ferrum을 지배하는 전치사",
+        "background": "수단/방법을 나타내는 전치사이다.",
+        "etymology": "PIE *per-('앞으로, 통과하여')에서 유래하며, 그리스어 περί/παρά, 영어 for, through와 동계어이다. 공간적 '통과'의 의미에서 수단('~을 통해')과 강조 접두사(per-, '완전히')로 의미가 확장되었다."
+      },
+      {
+        "g": "ferrum",
+        "pos": "명사",
+        "lemma": "ferrum, -i, n.",
+        "parse": "중성 단수 대격",
+        "gloss_kr": "칼을 / 무기를",
+        "gloss_en": "iron / sword",
+        "syntax": "전치사 per의 목적어",
+        "background": "쇠(=칼/전쟁)를 가리키는 환유이다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, 켈트어 차용어일 가능성이 제기되나 확정적이지 않다."
+      },
+      {
+        "g": "pietas",
+        "pos": "명사",
+        "lemma": "pietas, -atis, f.",
+        "parse": "여성 단수 주격",
+        "gloss_kr": "경건함은 / 효심은",
+        "gloss_en": "piety / devotion",
+        "syntax": "spectata [est]의 두 번째 주어",
+        "background": "불타는 트로이아에서 아버지를 구한 아이네아스의 대표적 미덕(pietas)이다.",
+        "etymology": "pius('경건한')에서 파생된 명사로, pius는 어원이 불확실한 라틴어 고유 형용사이다."
+      },
+      {
+        "g": "spectata",
+        "pos": "분사",
+        "lemma": "specto",
+        "principalParts": "specto–spectare–spectavi–spectatum",
+        "parse": "완료 분사 수동태 여성 단수 주격 (est 생략)",
+        "gloss_kr": "증명되었다 / 입증되었다",
+        "gloss_en": "tested / proven",
+        "syntax": "주어 dextera와 pietas에 대한 서술 분사 (est 생략)",
+        "background": "시험을 통해 증명되었음을 뜻한다.",
+        "etymology": "specio('보다')의 강세형 동사이다(adspicio, adspicere, adspexi, adspectum 항목의 specio 참조)."
+      },
+      {
+        "g": "per",
+        "pos": "전치사",
+        "lemma": "per",
+        "parse": "전치사 (+대격)",
+        "gloss_kr": "~를 통하여",
+        "gloss_en": "through",
+        "syntax": "ignes를 지배하는 전치사",
+        "background": "앞의 per ferrum과 대구를 이룬다.",
+        "etymology": "PIE *per-('앞으로, 통과하여')에서 유래하며, 그리스어 περί/παρά, 영어 for, through와 동계어이다. 공간적 '통과'의 의미에서 수단('~을 통해')과 강조 접두사(per-, '완전히')로 의미가 확장되었다."
+      },
+      {
+        "g": "ignes",
+        "pos": "명사",
+        "lemma": "ignis, -is, m.",
+        "parse": "남성 복수 대격",
+        "gloss_kr": "불길을",
+        "gloss_en": "fires / flames",
+        "syntax": "전치사 per의 목적어",
+        "background": "트로이아 함락 당시의 불길을 가리킨다.",
+        "etymology": "PIE *h₁ngʷnis('불')에서 유래하며, 산스크리트어 agní, 고대 슬라브어 ogню와 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.110",
+    "trans": "그러니 트로이아인이여, 두려움을 내려놓으라. 구하는 바를 얻게 되리라,",
+    "words": [
+      {
+        "g": "pone",
+        "pos": "동사",
+        "lemma": "pono",
+        "principalParts": "pono–ponere–posui–positum",
+        "parse": "명령법 현재 능동태 2인칭 단수",
+        "gloss_kr": "내려놓으라 / 버리라",
+        "gloss_en": "put away / lay aside",
+        "syntax": "명령형 동사 (주어: 트로이아인)",
+        "background": "'pone metum'(두려움을 내려놓으라)이라는 명령이다.",
+        "etymology": "po- + sino의 합성어이다(pono, ponere, posui, positum 항목 참조)."
+      },
+      {
+        "g": "tamen",
+        "pos": "부사",
+        "lemma": "tamen",
+        "parse": "부사",
+        "gloss_kr": "그럼에도 불구하고 / 그러니",
+        "gloss_en": "however / nevertheless",
+        "syntax": "위압적인 요청에도 아이네아스를 안심시키는 역접 불변화사",
+        "background": "'magna petis'의 무게를 누그러뜨린다.",
+        "etymology": "ta-(지시 어근) + -men(강조 첨사)의 결합으로, '그럼에도'를 뜻한다."
+      },
+      {
+        "g": "Troiane",
+        "pos": "명사",
+        "lemma": "Troianus, -a, -um",
+        "parse": "남성 단수 호격",
+        "gloss_kr": "트로이아인이여",
+        "gloss_en": "O Trojan",
+        "syntax": "아이네아스를 부르는 호격",
+        "background": "장엄한 영웅적 호칭이다.",
+        "etymology": "그리스어 Τρώς('트로이아인')의 라틴어 형용사형으로, 히타이트 문헌의 왕국명 Wiluša=일리오스와 연관짓는 학설이 있다(일리아드 관련 항목 참조)."
+      },
+      {
+        "g": "metum",
+        "pos": "명사",
+        "lemma": "metus, -us, m.",
+        "parse": "남성 단수 대격",
+        "gloss_kr": "두려움을",
+        "gloss_en": "fear",
+        "syntax": "명령형 pone의 직접목적어",
+        "background": "두려움의 대상이다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '두려움'을 뜻한다."
+      },
+      {
+        "g": "potiere",
+        "pos": "동사",
+        "lemma": "potior",
+        "principalParts": "potior–potiri–potitus sum",
+        "parse": "직설법 미래 능동(탈형) 2인칭 단수 (시적 어미 -ere = -eris)",
+        "gloss_kr": "너는 얻을 것이다 / 손에 넣을 것이다",
+        "gloss_en": "you will gain / obtain",
+        "syntax": "탈격 petitis를 지배하는 본동사",
+        "background": "2인칭 단수 미래 탈형동사('potiēre'='potieris')로 탈격 목적어를 취한다.",
+        "etymology": "potis('할 수 있는')에서 파생된 탈형동사로, '차지하다, 지배하다'를 뜻한다(possum 항목의 potis 참조)."
+      },
+      {
+        "g": "petitis",
+        "pos": "분사",
+        "lemma": "peto",
+        "parse": "완료 분사 수동태 중성 복수 탈격",
+        "gloss_kr": "구했던 것들을 / 청한 바를",
+        "gloss_en": "the things sought",
+        "syntax": "탈형동사 potiere가 지배하는 탈격 목적어",
+        "background": "명사화된 완료수동분사이다.",
+        "etymology": "PIE *peth₂-('날다, 서두르다, 떨어지다')에서 유래하며, 그리스어 πέτομαι('날다')와 동계어로 제시된다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.111",
+    "trans": "엘리시움의 거처들과 세상의 가장 먼 왕국들을,",
+    "words": [
+      {
+        "g": "Elysiasque",
+        "pos": "형용사",
+        "lemma": "Elysius, -a, -um (-que)",
+        "parse": "여성 복수 대격 + 접속사",
+        "gloss_kr": "그리고 엘리시움의",
+        "gloss_en": "and Elysian",
+        "syntax": "domos를 수식하는 형용사; -que는 앞 행(potiere)의 내용을 이어줌",
+        "background": "축복받은 자들이 머무는 저승의 낙원 엘리시움을 가리키는 형용사이다.",
+        "etymology": "그리스어 Ἠλύσιον(엘리시온, 축복받은 자들의 들판)에서 차용된 형용사로, 그리스어 내부 어원이 불확실해 선그리스어 또는 근동 기원의 가능성이 제기된다."
+      },
+      {
+        "g": "domos",
+        "pos": "명사",
+        "lemma": "domus, -us, f.",
+        "parse": "여성 복수 대격",
+        "gloss_kr": "거처들을 / 집들을",
+        "gloss_en": "dwellings / abodes",
+        "syntax": "cognosces의 첫 번째 직접목적어",
+        "background": "엘리시움의 거처, 즉 축복받은 영혼들의 안식처를 뜻한다.",
+        "etymology": "PIE *dṓm('집')에서 유래한다(domus, -us / -i, f. 항목 참조)."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "등이접속사",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "domos와 regna를 연결",
+        "background": "두 목적어를 연결하는 등위접속사이다.",
+        "etymology": "PIE *eti('그 위에, 더하여')에서 유래한 접속사로, 산스크리트어 ati('넘어서'), 그리스어 ἔτι('여전히, 더욱이')와 동계어이다. 원래 '더하여, 넘어서'라는 부사적 의미에서 등위접속사 '그리고'로 문법화되었다."
+      },
+      {
+        "g": "regna",
+        "pos": "명사",
+        "lemma": "regnum, -i, n.",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "왕국들을",
+        "gloss_en": "realms / kingdoms",
+        "syntax": "cognosces의 두 번째 직접목적어",
+        "background": "저승의 통치 영역을 가리킨다.",
+        "etymology": "rex('왕')에서 파생된 명사로, PIE *h₃reǵ-('곧게 하다, 다스리다')에서 유래하며 산스크리트어 rā́jan, 영어 right와 동계어이다."
+      },
+      {
+        "g": "novissima",
+        "pos": "형용사",
+        "lemma": "novissimus, -a, -um (novus의 최상급)",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "가장 먼 / 맨 끝의",
+        "gloss_en": "farthest / outermost",
+        "syntax": "regna를 수식하는 형용사",
+        "background": "novissimus는 시간상 '가장 최근의'라는 뜻 외에, 군사 용어에서 '맨 뒤의/가장 먼'이라는 공간적 의미로도 쓰여 세상의 끝자락에 있는 저승의 왕국을 가리킨다.",
+        "etymology": "novus의 최상급으로, PIE *newos에서 유래한다(novus, -a, -um 항목 참조)."
+      },
+      {
+        "g": "mundi",
+        "pos": "명사",
+        "lemma": "mundus, -i, m.",
+        "parse": "남성 단수 속격",
+        "gloss_kr": "세상의",
+        "gloss_en": "of the world",
+        "syntax": "regna를 수식하는 속격",
+        "background": "우주/세상 전체를 가리키며, 저승이 그 가장 먼 경계에 위치함을 암시한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '세계, 우주'를 뜻하며 원래 '장식, 질서'를 뜻하던 동음이의어에서 그리스어 κόσμος('질서, 세계')를 본떠 의미가 확장되었다는 설이 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.112",
+    "trans": "나를 안내자 삼아 알게 되리라, 그리고 아버지의 사랑스러운 모습도.",
+    "words": [
+      {
+        "g": "me",
+        "pos": "대명사",
+        "lemma": "ego, mei",
+        "parse": "단수 탈격",
+        "gloss_kr": "나를",
+        "gloss_en": "me",
+        "syntax": "duce와 함께 절대탈격구를 이룸",
+        "background": "'me duce'(내가 안내자가 되어)는 시뷜라 자신을 가리킨다.",
+        "etymology": "PIE 1인칭 단수 대명사 *eǵ(oH)에서 유래하며, 그리스어 ἐγώ, 산스크리트어 ahám, 영어 I와 동계어이다."
+      },
+      {
+        "g": "duce",
+        "pos": "명사",
+        "lemma": "dux, ducis, m.",
+        "parse": "남성 단수 탈격",
+        "gloss_kr": "안내자로 하여",
+        "gloss_en": "as guide",
+        "syntax": "me와 함께 절대탈격(무동사 절대구)을 이룸",
+        "background": "'me duce' = '내가 인도하는 가운데'라는 관용적 절대탈격 표현이다.",
+        "etymology": "duco('이끌다')에서 파생된 행위자 명사로, duco는 PIE *dewk-('이끌다')에서 유래하며 영어 duke, duct와 동계어이다."
+      },
+      {
+        "g": "cognosces",
+        "pos": "동사",
+        "lemma": "cognosco",
+        "principalParts": "cognosco–cognoscere–cognovi–cognitum",
+        "parse": "직설법 미래 능동태 2인칭 단수",
+        "gloss_kr": "너는 알게 될 것이다",
+        "gloss_en": "you will come to know",
+        "syntax": "본절의 술어 동사 (domos, regna, simulacra를 목적어로 취함)",
+        "background": "시뷜라가 아이네아스에게 저승 여정에서 알게 될 것들을 예고하는 동사이다.",
+        "etymology": "con('함께') + gnosco('알다')의 합성어이다(cognitus, -a, -um 항목 참조)."
+      },
+      {
+        "g": "simulacraque",
+        "pos": "명사",
+        "lemma": "simulacrum, -i, n. (-que)",
+        "parse": "중성 복수 대격 + 접속사",
+        "gloss_kr": "그리고 형상들을 / 모습들을",
+        "gloss_en": "and the likeness(es)",
+        "syntax": "cognosces의 세 번째 직접목적어",
+        "background": "죽은 자의 영적 형상, 즉 그림자를 뜻한다.",
+        "etymology": "simulo('닮게 하다, 흉내내다')에서 파생된 명사로, simulo는 similis와 같은 어근이다(similis, -e 항목 참조)."
+      },
+      {
+        "g": "cara",
+        "pos": "형용사",
+        "lemma": "carus, -a, -um",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "사랑스러운 / 소중한",
+        "gloss_en": "dear / beloved",
+        "syntax": "simulacra를 수식하는 형용사",
+        "background": "안키세스에 대한 아이네아스의 애정을 드러낸다.",
+        "etymology": "PIE *keh₂-('바라다, 좋아하다')에서 유래하며, 아일랜드어 caraid('사랑하다')와 동계어로 제시된다."
+      },
+      {
+        "g": "parentis",
+        "pos": "명사",
+        "lemma": "parens, parentis, c.",
+        "parse": "단수 속격",
+        "gloss_kr": "아버지의 / 부모의",
+        "gloss_en": "of his parent",
+        "syntax": "simulacra를 수식하는 속격",
+        "background": "아이네아스의 아버지 안키세스를 가리킨다.",
+        "etymology": "pario('낳다')의 현재분사가 명사화된 것으로, pario는 PIE *perh₃-('낳다, 산출하다')에서 유래한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.113",
+    "trans": "덕에게 다다르지 못할 길은 없다.' 그녀는 말했다. 그리고 황금으로",
+    "words": [
+      {
+        "g": "invia",
+        "pos": "형용사",
+        "lemma": "invius, -a, -um",
+        "parse": "여성 단수 주격",
+        "gloss_kr": "다닐 수 없는 / 통행 불가능한",
+        "gloss_en": "impassable",
+        "syntax": "via를 서술하는 주격보어",
+        "background": "in- + via(길)의 부정 합성어로, '길 없는'을 뜻한다.",
+        "etymology": "in('아니') + via('길')의 합성 형용사로, '길이 없는'을 뜻한다(via, -ae, f. 항목 참조)."
+      },
+      {
+        "g": "virtuti",
+        "pos": "명사",
+        "lemma": "virtus, virtutis, f.",
+        "parse": "여성 단수 여격",
+        "gloss_kr": "미덕에게는 / 덕에게는",
+        "gloss_en": "to virtue",
+        "syntax": "invia가 지배하는 관계/기준의 여격",
+        "background": "'invia virtuti'는 '덕에게 있어 통행 불가능한'이라는 뜻으로, 덕을 갖춘 자에게는 통과 못할 길이 없음을 함의한다.",
+        "etymology": "vir('남자')에서 파생된 명사로, '남자다움, 용기, 덕'을 뜻한다(vir, viri, m. 항목 참조)."
+      },
+      {
+        "g": "nulla",
+        "pos": "형용사",
+        "lemma": "nullus, -a, -um",
+        "parse": "여성 단수 주격",
+        "gloss_kr": "어떤 ~도 없는",
+        "gloss_en": "no",
+        "syntax": "via를 수식하며 문장을 부정함",
+        "background": "주어 via를 부정하는 형용사이다.",
+        "etymology": "ne('아니') + ullus('어떤 하나')의 축약형으로, ullus는 unus('하나')의 지소형에서 발달했다."
+      },
+      {
+        "g": "est",
+        "pos": "동사",
+        "lemma": "sum",
+        "principalParts": "sum–esse–fui",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "~이다",
+        "gloss_en": "is",
+        "syntax": "계사 (주어: via)",
+        "background": "존재를 나타내는 연결동사이다.",
+        "etymology": "PIE 계사 어근 *h₁es-('있다')에서 유래하며, 그리스어 εἰμί, 산스크리트어 asmi, 영어 is와 동계어이다(sum, esse, fui, futurus 항목 참조)."
+      },
+      {
+        "g": "via.'",
+        "pos": "명사",
+        "lemma": "via, -ae, f.",
+        "parse": "여성 단수 주격",
+        "gloss_kr": "길은",
+        "gloss_en": "path / way",
+        "syntax": "est의 주어",
+        "background": "시뷜라가 아이네아스에게 건네는 격언조의 문장을 마무리한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '길'을 뜻하며 영어 via, viaduct가 이 라틴어에서 파생되었다."
+      },
+      {
+        "g": "dixit",
+        "pos": "동사",
+        "lemma": "dico",
+        "principalParts": "dico–dicere–dixi–dictum",
+        "parse": "직설법 완료 능동태 3인칭 단수",
+        "gloss_kr": "말했다",
+        "gloss_en": "she said",
+        "syntax": "직접화법을 마무리하는 보고 동사",
+        "background": "시뷜라의 발화가 끝나고 서사가 재개됨을 알린다.",
+        "etymology": "PIE *deyḱ-('보여주다, 가리키다')에서 유래하며, 그리스어 δείκνυμι, 영어 teach, token과 동계어이다(dico, dicere, dixi, dictum 항목 참조)."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "등이접속사",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "dixit 이후의 새로운 행동을 연결",
+        "background": "서사의 다음 동작으로 넘어가는 접속사이다.",
+        "etymology": "PIE *eti('그 위에, 더하여')에서 유래한 접속사로, 산스크리트어 ati('넘어서'), 그리스어 ἔτι('여전히, 더욱이')와 동계어이다. 원래 '더하여, 넘어서'라는 부사적 의미에서 등위접속사 '그리고'로 문법화되었다."
+      },
+      {
+        "g": "auro",
+        "pos": "명사",
+        "lemma": "aurum, -i, n.",
+        "parse": "중성 단수 탈격",
+        "gloss_kr": "황금으로",
+        "gloss_en": "with gold",
+        "syntax": "다음 행의 fulgentem을 수식하는 수단의 탈격",
+        "background": "황금가지(ramus aureus)가 빛나는 재료임을 나타낸다.",
+        "etymology": "PIE *h₂ews-('빛나다')에서 유래하는 것으로 추정되며, '금'을 뜻한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.114",
+    "trans": "빛나는 가지를 아베르누스의 유노 숲에서",
+    "words": [
+      {
+        "g": "fulgentem",
+        "pos": "분사",
+        "lemma": "fulgeo",
+        "principalParts": "fulgeo–fulgere–fulsi",
+        "parse": "현재 분사 능동태 남성 단수 대격",
+        "gloss_kr": "빛나는",
+        "gloss_en": "gleaming / shining",
+        "syntax": "ramum을 수식하는 분사",
+        "background": "황금가지가 광채를 내는 모습을 묘사한다.",
+        "etymology": "PIE *bʰleg-('빛나다')에서 유래하며, flamma와 같은 어근을 공유한다(flamma, -ae, f. 항목 참조)."
+      },
+      {
+        "g": "ramum",
+        "pos": "명사",
+        "lemma": "ramus, -i, m.",
+        "parse": "남성 단수 대격",
+        "gloss_kr": "가지를",
+        "gloss_en": "bough / branch",
+        "syntax": "monstravit의 직접목적어 (다음 행)",
+        "background": "저승 진입에 필요한 유명한 '황금가지'를 가리킨다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '나뭇가지'를 뜻한다."
+      },
+      {
+        "g": "silva",
+        "pos": "명사",
+        "lemma": "silva, -ae, f.",
+        "parse": "여성 단수 탈격",
+        "gloss_kr": "숲에서",
+        "gloss_en": "in the grove / wood",
+        "syntax": "장소를 나타내는 탈격",
+        "background": "황금가지가 자라는 신성한 숲을 가리킨다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '숲'을 뜻하며 그리스어 ὕλη와 형태가 유사해 보이나 확실한 연관은 확립되어 있지 않다."
+      },
+      {
+        "g": "Iunonis",
+        "pos": "명사",
+        "lemma": "Iuno, Iunonis, f.",
+        "parse": "여성 단수 속격",
+        "gloss_kr": "유노의",
+        "gloss_en": "of Juno",
+        "syntax": "silva를 수식하는 속격",
+        "background": "저승의 유노(프로세르피나와 결부되는 지하의 유노)를 가리킨다.",
+        "etymology": "PIE *yuh₂n-('젊은')에서 유래하는 것으로 추정되며, iuvenis('젊은이')와 같은 어근을 공유한다는 설이 있다."
+      },
+      {
+        "g": "Avernae",
+        "pos": "형용사",
+        "lemma": "Avernus, -a, -um",
+        "parse": "여성 단수 속격",
+        "gloss_kr": "아베르누스의 / 저승의",
+        "gloss_en": "of Avernus / infernal",
+        "syntax": "Iunonis를 수식하는 형용사",
+        "background": "저승의 입구인 아베르누스와 결부된 유노, 즉 지하 세계의 유노임을 명시한다.",
+        "etymology": "Averna에서 파생된 형용사이다(Averna, -orum, n. 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.115",
+    "trans": "가리켜 보이며, 그 나무줄기에서 그것을 꺾어내라 명하였다.",
+    "words": [
+      {
+        "g": "monstravit",
+        "pos": "동사",
+        "lemma": "monstro",
+        "principalParts": "monstro–monstrare–monstravi–monstratum",
+        "parse": "직설법 완료 능동태 3인칭 단수",
+        "gloss_kr": "보여주었다 / 가리켜주었다",
+        "gloss_en": "showed / pointed out",
+        "syntax": "본절의 첫 번째 술어 동사 (주어: 시뷜라)",
+        "background": "시뷜라가 황금가지의 위치를 아이네아스에게 알려주는 행동이다.",
+        "etymology": "monstrum에서 파생된 동사이다(monstrum, -i, n. 항목 참조)."
+      },
+      {
+        "g": "iussitque",
+        "pos": "동사",
+        "lemma": "iubeo (-que)",
+        "principalParts": "iubeo–iubere–iussi–iussum",
+        "parse": "직설법 완료 능동태 3인칭 단수 + 접속사",
+        "gloss_kr": "그리고 명하였다",
+        "gloss_en": "and ordered",
+        "syntax": "monstravit와 병렬되는 두 번째 술어 동사",
+        "background": "시뷜라가 아이네아스에게 가지를 꺾도록 지시한다.",
+        "etymology": "PIE *yewdʰ-('결합하다, 명하다')와 연관짓는 설이 있으며, '명령하다'를 뜻한다."
+      },
+      {
+        "g": "suo",
+        "pos": "형용사",
+        "lemma": "suus, -a, -um",
+        "parse": "남성 단수 탈격",
+        "gloss_kr": "자신의",
+        "gloss_en": "its own",
+        "syntax": "trunco를 수식하는 형용사",
+        "background": "가지가 속한 바로 그 나무줄기를 가리킨다.",
+        "etymology": "재귀대명사 sui의 소유형용사형으로, PIE *swe- 어근에서 파생되었다(sui 항목 참조)."
+      },
+      {
+        "g": "divellere",
+        "pos": "동사",
+        "lemma": "divello",
+        "principalParts": "divello–divellere–divelli–divulsum",
+        "parse": "현재 부정사 능동태",
+        "gloss_kr": "뜯어내도록 / 꺾도록",
+        "gloss_en": "to tear off / pluck",
+        "syntax": "iussit의 보충 부정사",
+        "background": "황금가지를 나무에서 강제로 떼어내는 동작을 뜻한다.",
+        "etymology": "dis('떨어져') + vello('뽑다, 뜯다')의 합성어로, vello는 PIE *welH-('뽑다')에서 유래한다."
+      },
+      {
+        "g": "trunco.",
+        "pos": "명사",
+        "lemma": "truncus, -i, m.",
+        "parse": "남성 단수 탈격",
+        "gloss_kr": "줄기에서 / 그루터기에서",
+        "gloss_en": "from the trunk",
+        "syntax": "divellere가 지배하는 분리의 탈격",
+        "background": "가지가 잘려나오는 근원인 나무줄기를 가리킨다.",
+        "etymology": "PIE *trewk-('자르다')와 연관짓는다(truncus, -a, -um 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.116",
+    "trans": "아이네아스는 복종했고, 무시무시한 오르쿠스의",
+    "words": [
+      {
+        "g": "paruit",
+        "pos": "동사",
+        "lemma": "pareo",
+        "principalParts": "pareo–parere–parui",
+        "parse": "직설법 완료 능동태 3인칭 단수",
+        "gloss_kr": "복종했다 / 따랐다",
+        "gloss_en": "obeyed",
+        "syntax": "본절의 술어 동사 (주어: Aeneas)",
+        "background": "시뷜라의 명에 아이네아스가 순순히 따랐음을 나타낸다.",
+        "etymology": "어원이 불확실한 라틴어 고유 동사로, '나타나다, 복종하다'를 뜻하며 영어 appear, apparent가 이 라틴어에서 파생되었다."
+      },
+      {
+        "g": "Aeneas",
+        "pos": "명사",
+        "lemma": "Aeneas, -ae, m.",
+        "parse": "남성 단수 주격",
+        "gloss_kr": "아이네아스는",
+        "gloss_en": "Aeneas",
+        "syntax": "paruit와 (다음 행)vidit의 주어",
+        "background": "이 삽화의 주인공이다.",
+        "etymology": "그리스어 Αἰνείας에서 차용된 고유명사로, αἰνός('무서운, 끔찍한')와 연관짓는 통속적 어원이 있으나 확증되지 않는다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "등이접속사",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "paruit와 vidit(다음 행)를 연결",
+        "background": "연속된 행동을 이어주는 접속사이다.",
+        "etymology": "PIE *eti('그 위에, 더하여')에서 유래한 접속사로, 산스크리트어 ati('넘어서'), 그리스어 ἔτι('여전히, 더욱이')와 동계어이다. 원래 '더하여, 넘어서'라는 부사적 의미에서 등위접속사 '그리고'로 문법화되었다."
+      },
+      {
+        "g": "formidabilis",
+        "pos": "형용사",
+        "lemma": "formidabilis, -e",
+        "parse": "남성 단수 속격",
+        "gloss_kr": "무시무시한",
+        "gloss_en": "fearsome / dreadful",
+        "syntax": "Orci를 수식하는 형용사 (3변화 2어미 형용사로 속격형이 주격형과 동일함)",
+        "background": "저승의 신 오르쿠스(플루토)의 두려운 속성을 강조한다.",
+        "etymology": "formido('두려움')에서 파생된 형용사로, formido는 어원이 불확실한 라틴어 고유 어휘이다."
+      },
+      {
+        "g": "Orci",
+        "pos": "명사",
+        "lemma": "Orcus, -i, m.",
+        "parse": "남성 단수 속격",
+        "gloss_kr": "오르쿠스의",
+        "gloss_en": "of Orcus",
+        "syntax": "opes(다음 행)를 수식하는 속격",
+        "background": "저승과 죽음을 관장하는 신 오르쿠스(플루토)를 가리킨다.",
+        "etymology": "저승신의 이름으로, 에트루리아어 기원 가능성이 제기되며 그리스어 ὅρκος('맹세')와의 연관은 확증되지 않는다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.117",
+    "trans": "보물을 보았으며, 자신의 선조들과 늙은 그림자,",
+    "words": [
+      {
+        "g": "vidit",
+        "pos": "동사",
+        "lemma": "video",
+        "principalParts": "video–videre–vidi–visum",
+        "parse": "직설법 완료 능동태 3인칭 단수",
+        "gloss_kr": "보았다",
+        "gloss_en": "saw",
+        "syntax": "본절의 술어 동사 (주어: Aeneas)",
+        "background": "아이네아스가 저승에서 목격한 것들을 이끄는 동사이다.",
+        "etymology": "PIE *weyd-('보다, 알다')에서 유래하며, 그리스어 εἶδον('보았다')·οἶδα('안다'), 산스크리트어 véda, 영어 wit, wise와 동계어이다."
+      },
+      {
+        "g": "opes",
+        "pos": "명사",
+        "lemma": "ops, opis, f.",
+        "parse": "여성 복수 대격",
+        "gloss_kr": "보물을 / 재물을",
+        "gloss_en": "wealth / riches",
+        "syntax": "vidit의 첫 번째 직접목적어",
+        "background": "저승의 신 오르쿠스가 지닌 부(광물, 금속 등 지하의 재화)를 가리킨다.",
+        "etymology": "PIE *h₃ep-('일하다, 성취하다')에서 유래한다(opus, operis, n. 항목 참조)."
+      },
+      {
+        "g": "atavosque",
+        "pos": "명사",
+        "lemma": "atavus, -i, m. (-que)",
+        "parse": "남성 복수 대격 + 접속사",
+        "gloss_kr": "그리고 선조들을",
+        "gloss_en": "and ancestors",
+        "syntax": "vidit의 두 번째 직접목적어",
+        "background": "아이네아스가 저승에서 만난 먼 조상들을 가리킨다.",
+        "etymology": "at-(강조 접두사) + avus('할아버지')의 합성어로, avus는 PIE *h₂ewh₂os('할아버지')에서 유래하며 고트어 awo와 동계어이다."
+      },
+      {
+        "g": "suos",
+        "pos": "형용사",
+        "lemma": "suus, -a, -um",
+        "parse": "남성 복수 대격",
+        "gloss_kr": "자신의",
+        "gloss_en": "his own",
+        "syntax": "atavos를 수식하는 형용사",
+        "background": "아이네아스 자신의 혈통에 속한 선조들임을 명시한다.",
+        "etymology": "재귀대명사 sui의 소유형용사형으로, PIE *swe- 어근에서 파생되었다(sui 항목 참조)."
+      },
+      {
+        "g": "umbramque",
+        "pos": "명사",
+        "lemma": "umbra, -ae, f. (-que)",
+        "parse": "여성 단수 대격 + 접속사",
+        "gloss_kr": "그리고 그림자를 / 영혼을",
+        "gloss_en": "and the shade",
+        "syntax": "vidit의 세 번째 직접목적어",
+        "background": "저승에서 만난 죽은 자의 영혼을 가리킨다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘이다(umbra, -ae, f. 항목 참조)."
+      },
+      {
+        "g": "senilem",
+        "pos": "형용사",
+        "lemma": "senilis, -e",
+        "parse": "여성 단수 대격",
+        "gloss_kr": "노년의 / 늙은",
+        "gloss_en": "aged / of an old man",
+        "syntax": "umbram을 수식하는 형용사",
+        "background": "안키세스가 노년에 세상을 떠났음을 암시한다.",
+        "etymology": "senex('늙은')에서 파생된 형용사로, senex는 PIE *sénos('늙은')에서 유래하며 그리스어 ἕνη, 산스크리트어 sána와 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.118",
+    "trans": "위대한 영혼의 안키세스를 보았다. 또한 그 장소들의 법칙과,",
+    "words": [
+      {
+        "g": "magnanimi",
+        "pos": "형용사",
+        "lemma": "magnanimus, -a, -um",
+        "parse": "남성 단수 속격",
+        "gloss_kr": "위대한 영혼을 지닌 / 고결한",
+        "gloss_en": "great-souled / noble-spirited",
+        "syntax": "Anchisae를 수식하는 형용사",
+        "background": "magnus(위대한) + animus(영혼)의 합성어로 안키세스의 고결한 인품을 칭송한다.",
+        "etymology": "magnus('큰') + animus('영혼, 기개')의 합성 형용사이다(magnus, -a, -um; animus, -i, m. 항목 참조)."
+      },
+      {
+        "g": "Anchisae;",
+        "pos": "명사",
+        "lemma": "Anchises, -ae, m.",
+        "parse": "남성 단수 속격",
+        "gloss_kr": "안키세스의",
+        "gloss_en": "of Anchises",
+        "syntax": "앞 행의 umbram을 수식하는 속격",
+        "background": "아이네아스의 아버지 안키세스를 가리킨다.",
+        "etymology": "그리스어 Ἀγχίσης에서 차용된 고유명사로, 그리스어 내부 어원은 확립되어 있지 않다."
+      },
+      {
+        "g": "didicit",
+        "pos": "동사",
+        "lemma": "disco",
+        "principalParts": "disco–discere–didici",
+        "parse": "직설법 완료 능동태 3인칭 단수",
+        "gloss_kr": "배웠다 / 알게 되었다",
+        "gloss_en": "learned",
+        "syntax": "본절의 두 번째 술어 동사 (주어: Aeneas)",
+        "background": "아이네아스가 저승에서 얻은 지식을 이끄는 동사이다.",
+        "etymology": "PIE *dens-('배우다')와 연관짓는 설이 있는 라틴어 고유 동사로, '배우다'를 뜻한다."
+      },
+      {
+        "g": "quoque",
+        "pos": "부사",
+        "lemma": "quoque",
+        "parse": "부사",
+        "gloss_kr": "또한 / 역시",
+        "gloss_en": "also / too",
+        "syntax": "didicit를 수식하는 부사",
+        "background": "앞서 본 것들에 더하여 알게 된 것이 있음을 강조한다.",
+        "etymology": "quo(관계·의문 어간) + -que(첨가 첨사, PIE *kʷe '그리고')의 결합으로, '그 경우에도 역시'라는 뜻의 첨가 부사가 되었다."
+      },
+      {
+        "g": "iura",
+        "pos": "명사",
+        "lemma": "ius, iuris, n.",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "법칙들을 / 규범들을",
+        "gloss_en": "laws / ordinances",
+        "syntax": "didicit의 직접목적어",
+        "background": "저승 세계를 다스리는 규범과 질서를 가리킨다.",
+        "etymology": "PIE *h₂yew-('법, 규정')에서 유래하는 것으로 추정되며, '법, 권리'를 뜻한다."
+      },
+      {
+        "g": "locorum,",
+        "pos": "명사",
+        "lemma": "locus, -i, m.",
+        "parse": "남성 복수 속격",
+        "gloss_kr": "그 장소들의",
+        "gloss_en": "of those places",
+        "syntax": "iura를 수식하는 속격",
+        "background": "저승의 여러 구역들을 가리킨다.",
+        "etymology": "고졸 라틴어 stlocus에서 발달한 것으로 추정되며, 어원이 불확실하다. 복수형 loca(중성)와 loci(남성, '문헌 구절들')가 의미에 따라 구분되어 쓰인다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.119",
+    "trans": "새로운 전쟁들에서 맞닥뜨려야 할 위험들도 알게 되었다.",
+    "words": [
+      {
+        "g": "quaeque",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod (-que)",
+        "parse": "중성 복수 주격 + 접속사",
+        "gloss_kr": "그리고 어떤 ~들이",
+        "gloss_en": "and what (dangers)",
+        "syntax": "간접의문절을 이끄는 관계대명사; pericula를 선행",
+        "background": "didicit가 지배하는 간접의문절을 iura와 병렬로 이끈다.",
+        "etymology": "PIE 의문·관계 어간 *kʷo-/*kʷi-에서 유래한다(qui, quae, quod 항목 참조)."
+      },
+      {
+        "g": "novis",
+        "pos": "형용사",
+        "lemma": "novus, -a, -um",
+        "parse": "중성 복수 탈격",
+        "gloss_kr": "새로운",
+        "gloss_en": "new",
+        "syntax": "bellis를 수식하는 형용사",
+        "background": "앞으로 아이네아스가 이탈리아에서 치를 전쟁들을 가리킨다.",
+        "etymology": "PIE *newos('새로운')에서 유래하며, 그리스어 νέος, 산스크리트어 náva, 영어 new와 동계어이다."
+      },
+      {
+        "g": "essent",
+        "pos": "동사",
+        "lemma": "sum",
+        "principalParts": "sum–esse–fui",
+        "parse": "접속법 미완료 능동태 3인칭 복수",
+        "gloss_kr": "~이어야 했다",
+        "gloss_en": "were to be",
+        "syntax": "간접의문절의 계사; adeunda와 결합하여 수동태 완곡법(periphrastic)을 이룸",
+        "background": "didicit가 이끄는 간접의문문이므로 접속법이 사용되었다.",
+        "etymology": "PIE 계사 어근 *h₁es-('있다')에서 유래하며, 그리스어 εἰμί, 산스크리트어 asmi, 영어 is와 동계어이다(sum, esse, fui, futurus 항목 참조)."
+      },
+      {
+        "g": "adeunda",
+        "pos": "분사",
+        "lemma": "adeo",
+        "principalParts": "adeo–adire–adii–aditum",
+        "parse": "동형사(gerundive) 중성 복수 주격",
+        "gloss_kr": "맞닥뜨려야 할 / 직면해야 할",
+        "gloss_en": "to be faced / to be approached",
+        "syntax": "essent와 결합한 수동 완곡 용법(passive periphrastic)",
+        "background": "'essent adeunda'는 '맞서야만 했다'는 당위를 나타내는 수동적 필연 구문이다.",
+        "etymology": "ad('~로') + eo('가다')의 합성어로, eo는 PIE *ei-('가다')에서 유래하며 그리스어 εἶμι, 산스크리트어 e-ti와 동계어이다."
+      },
+      {
+        "g": "pericula",
+        "pos": "명사",
+        "lemma": "periculum, -i, n.",
+        "parse": "중성 복수 주격",
+        "gloss_kr": "위험들이",
+        "gloss_en": "dangers",
+        "syntax": "essent adeunda의 주어",
+        "background": "앞으로 닥칠 전란의 위험들을 가리킨다.",
+        "etymology": "PIE *per-('시도하다, 위험을 무릅쓰다')에서 유래하며, 그리스어 πεῖρα('시도'), 영어 peril, experience와 동계어이다."
+      },
+      {
+        "g": "bellis.",
+        "pos": "명사",
+        "lemma": "bellum, -i, n.",
+        "parse": "중성 복수 탈격",
+        "gloss_kr": "전쟁들에서",
+        "gloss_en": "in wars",
+        "syntax": "novis의 수식을 받는 탈격, 위험이 발생하는 상황을 나타냄",
+        "background": "이탈리아 정착을 둘러싼 미래의 전쟁들을 예고한다.",
+        "etymology": "고졸 라틴어 duellum('둘 사이의 다툼')에서 발달했으며, duo('둘')와 같은 어근에서 유래한다(duo, duae, duo 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.120",
+    "trans": "그런 다음 그는 지친 발걸음을 이끌고 반대편 샛길로",
+    "words": [
+      {
+        "g": "inde",
+        "pos": "부사",
+        "lemma": "inde",
+        "parse": "부사",
+        "gloss_kr": "그런 다음 / 그곳으로부터",
+        "gloss_en": "then / from there",
+        "syntax": "문장 전체를 이끄는 시간/장소 부사",
+        "background": "저승 여정 이후의 다음 장면으로 전환함을 나타낸다.",
+        "etymology": "지시 어근 *(e)n-de(고졸 라틴어 in + de 방향 접미사)의 결합으로 추정되며, '거기서부터'를 뜻하는 부사이다."
+      },
+      {
+        "g": "ferens",
+        "pos": "분사",
+        "lemma": "fero",
+        "principalParts": "fero–ferre–tuli–latum",
+        "parse": "현재 분사 능동태 남성 단수 주격",
+        "gloss_kr": "이끌며 / 나르며",
+        "gloss_en": "carrying / bearing",
+        "syntax": "생략된 주어(Aeneas)를 수식하는 분사, passus를 목적어로 취함",
+        "background": "아이네아스가 지친 몸을 이끌고 이동하는 모습을 묘사한다.",
+        "etymology": "PIE *bʰer-('나르다')에서 유래하며 그리스어 φέρω, 산스크리트어 bhárati, 영어 bear와 동계어이다(fero, ferre, tuli, latum 항목 참조)."
+      },
+      {
+        "g": "lassos",
+        "pos": "형용사",
+        "lemma": "lassus, -a, -um",
+        "parse": "남성 복수 대격",
+        "gloss_kr": "지친",
+        "gloss_en": "weary / tired",
+        "syntax": "passus를 수식하는 형용사",
+        "background": "저승 여정으로 인한 피로를 나타낸다.",
+        "etymology": "PIE *leh₂-('내버려두다, 늦추다')에서 유래하는 것으로 추정되며, '지친'을 뜻한다."
+      },
+      {
+        "g": "averso",
+        "pos": "형용사",
+        "lemma": "aversus, -a, -um",
+        "parse": "남성 단수 탈격",
+        "gloss_kr": "반대편의 / 되돌아가는",
+        "gloss_en": "opposite / turned away",
+        "syntax": "tramite를 수식하는 형용사",
+        "background": "저승으로 들어갈 때와는 다른 길로 돌아 나옴을 뜻한다.",
+        "etymology": "a('~로부터') + verto('돌다')의 합성 형용사로, '돌아선, 등을 돌린'을 뜻한다(vertex, verticis, m. 항목의 verto 참조)."
+      },
+      {
+        "g": "tramite",
+        "pos": "명사",
+        "lemma": "trames, tramitis, m.",
+        "parse": "남성 단수 탈격",
+        "gloss_kr": "샛길로 / 오솔길로",
+        "gloss_en": "by a path / byway",
+        "syntax": "이동 경로를 나타내는 탈격",
+        "background": "저승에서 지상으로 돌아 나오는 다른 통로를 가리킨다.",
+        "etymology": "trans('가로질러') + meo('가다')의 합성어로, '샛길, 지름길'을 뜻한다."
+      },
+      {
+        "g": "passus",
+        "pos": "명사",
+        "lemma": "passus, -us, m.",
+        "parse": "남성 복수 대격",
+        "gloss_kr": "발걸음을",
+        "gloss_en": "steps / paces",
+        "syntax": "ferens의 직접목적어",
+        "background": "지친 발걸음을 옮기는 모습을 구체적으로 묘사한다.",
+        "etymology": "pando('펼치다') 또는 patior('겪다')의 목적분사가 명사화된 것으로, 여기서는 pando('펼치다') 계열로 '걸음'을 뜻하며 PIE *peth₂-('펼치다')와 연관짓는 설이 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.121",
+    "trans": "쿠마에의 여동반자와 함께 이야기로 고단함을 달래네.",
+    "words": [
+      {
+        "g": "cum",
+        "pos": "전치사",
+        "lemma": "cum",
+        "parse": "전치사 (+탈격)",
+        "gloss_kr": "~와 함께",
+        "gloss_en": "with",
+        "syntax": "duce를 지배하는 전치사",
+        "background": "귀환길에서의 동반을 나타낸다.",
+        "etymology": "PIE *ko-('~과 함께')에서 유래한 전치사 겸 접속사로, 영어 co-, com- 접두사(< 라틴어 cum)와 동일 기원이다. 접속사 용법(~할 때, ~이므로)은 전치사 용법에서 문법화된 것으로 본다."
+      },
+      {
+        "g": "duce",
+        "pos": "명사",
+        "lemma": "dux, ducis, m./f.",
+        "parse": "여성 단수 탈격",
+        "gloss_kr": "길잡이와 / 안내자와",
+        "gloss_en": "guide / leader",
+        "syntax": "전치사 cum의 목적어",
+        "background": "시뷜라를 안내자로 지칭한다.",
+        "etymology": "duco에서 파생되었다(dux, ducis, m. 항목 참조)."
+      },
+      {
+        "g": "Cumaea",
+        "pos": "형용사",
+        "lemma": "Cumaeus, -a, -um",
+        "parse": "여성 단수 탈격",
+        "gloss_kr": "쿠마에의",
+        "gloss_en": "Cumaean",
+        "syntax": "duce를 수식하는 형용사",
+        "background": "시뷜라가 쿠마에 출신임을 명시한다.",
+        "etymology": "Cumae에서 파생된 형용사이다(Cumae, -arum, f. 항목 참조)."
+      },
+      {
+        "g": "mollit",
+        "pos": "동사",
+        "lemma": "mollio",
+        "principalParts": "mollio–mollire–mollivi–mollitum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "완화한다 / 달랜다",
+        "gloss_en": "softens / lightens",
+        "syntax": "본절의 술어 동사 (주어: 아이네아스)",
+        "background": "대화가 여정의 고단함을 덜어줌을 비유적으로 표현한다.",
+        "etymology": "mollis('부드러운')에서 파생된 동사로, mollis는 PIE *mel-('부드럽게 하다, 갈다')에서 유래하며 그리스어 μαλακός와 동계어이다."
+      },
+      {
+        "g": "sermone",
+        "pos": "명사",
+        "lemma": "sermo, sermonis, m.",
+        "parse": "남성 단수 탈격",
+        "gloss_kr": "대화로 / 이야기로",
+        "gloss_en": "by conversation",
+        "syntax": "mollit을 수식하는 수단의 탈격",
+        "background": "고난을 잊게 하는 대화를 가리킨다.",
+        "etymology": "sero('잇다, 엮다')와 같은 어근에서 파생된 것으로 추정되며, '말, 담화'를 뜻한다(sero, serere, sevi, satum과는 동음이의어이나 이 sermo는 '엮다'의 sero 계열)."
+      },
+      {
+        "g": "laborem",
+        "pos": "명사",
+        "lemma": "labor, laboris, m.",
+        "parse": "남성 단수 대격",
+        "gloss_kr": "고단함을 / 수고를",
+        "gloss_en": "toil / hardship",
+        "syntax": "mollit의 직접목적어",
+        "background": "저승 여행에서 겪은 육체적 피로를 가리킨다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, '노고, 수고'를 뜻한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.122",
+    "trans": "그리고 어두운 황혼 속을 뚫고 무서운 길을 나아가는 동안,",
+    "words": [
+      {
+        "g": "dumque",
+        "pos": "접속사",
+        "lemma": "dum (-que)",
+        "parse": "접속사 + 접속사",
+        "gloss_kr": "그리고 ~하는 동안",
+        "gloss_en": "and while",
+        "syntax": "시간절을 이끄는 접속사; -que는 앞 문장과 연결",
+        "background": "시간적 배경절을 도입한다.",
+        "etymology": "고졸 라틴어에서 발달한 시간 접속사로, quom(cum)과 연관짓는 설이 있으며 '~하는 동안'을 뜻한다."
+      },
+      {
+        "g": "iter",
+        "pos": "명사",
+        "lemma": "iter, itineris, n.",
+        "parse": "중성 단수 대격",
+        "gloss_kr": "길을 / 여정을",
+        "gloss_en": "journey / path",
+        "syntax": "carpit의 직접목적어",
+        "background": "저승을 지나는 여정을 가리킨다.",
+        "etymology": "eo('가다')에서 파생된 명사로, PIE *ei-('가다')에서 유래한다(adeo 항목의 eo 참조)."
+      },
+      {
+        "g": "horrendum",
+        "pos": "형용사",
+        "lemma": "horrendus, -a, -um",
+        "parse": "중성 단수 대격",
+        "gloss_kr": "무시무시한 / 끔찍한",
+        "gloss_en": "dreadful / horrible",
+        "syntax": "iter를 수식하는 형용사",
+        "background": "저승 여정의 공포스러운 성격을 강조한다.",
+        "etymology": "horreo('곤두서다, 소름끼치다')의 동형사 형용사로, PIE *ǵʰers-('곤두서다, 뻣뻣해지다')에서 유래하며 영어 horror가 이 어근에서 파생되었다."
+      },
+      {
+        "g": "per",
+        "pos": "전치사",
+        "lemma": "per",
+        "parse": "전치사 (+대격)",
+        "gloss_kr": "~를 통하여",
+        "gloss_en": "through",
+        "syntax": "crepuscula를 지배하는 전치사",
+        "background": "공간 이동을 나타낸다.",
+        "etymology": "PIE *per-('앞으로, 통과하여')에서 유래하며, 그리스어 περί/παρά, 영어 for, through와 동계어이다. 공간적 '통과'의 의미에서 수단('~을 통해')과 강조 접두사(per-, '완전히')로 의미가 확장되었다."
+      },
+      {
+        "g": "opaca",
+        "pos": "형용사",
+        "lemma": "opacus, -a, -um",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "어두운 / 그늘진",
+        "gloss_en": "shady / dark",
+        "syntax": "crepuscula를 수식하는 형용사",
+        "background": "저승의 음침한 어둠을 묘사한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 형용사로, '그늘진, 어두운'을 뜻한다."
+      },
+      {
+        "g": "crepuscula",
+        "pos": "명사",
+        "lemma": "crepusculum, -i, n.",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "황혼을 / 어둠을",
+        "gloss_en": "twilight / gloom",
+        "syntax": "전치사 per의 목적어",
+        "background": "저승 특유의 어스름한 빛을 가리키는 시적 복수형이다.",
+        "etymology": "creper('희미한, 불확실한')에서 파생된 명사로, '황혼, 땅거미'를 뜻한다."
+      },
+      {
+        "g": "carpit",
+        "pos": "동사",
+        "lemma": "carpo",
+        "principalParts": "carpo–carpere–carpsi–carptum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "나아간다 / 재촉한다",
+        "gloss_en": "makes his way / hurries along",
+        "syntax": "dum절의 술어 동사 (주어: 아이네아스)",
+        "background": "'iter carpere'(길을 나아가다)라는 관용구이다.",
+        "etymology": "PIE *kerp-('뜯다, 따다')에서 유래하며, 그리스어 καρπός('열매'), 영어 harvest와 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.123",
+    "trans": "'그대가 현현한 여신이든, 혹은 신들에게 가장 사랑받는 존재이든,' 그가 말했다.",
+    "words": [
+      {
+        "g": "seu",
+        "pos": "접속사",
+        "lemma": "seu",
+        "parse": "접속사",
+        "gloss_kr": "혹은 ~이든",
+        "gloss_en": "whether",
+        "syntax": "첫 번째 대안을 이끄는 상관접속사",
+        "background": "시뷜라의 정체에 대한 두 가능성 중 첫 번째를 제시한다.",
+        "etymology": "sive의 축약형이다(sive 항목 참조)."
+      },
+      {
+        "g": "dea",
+        "pos": "명사",
+        "lemma": "dea, -ae, f.",
+        "parse": "여성 단수 주격",
+        "gloss_kr": "여신이",
+        "gloss_en": "goddess",
+        "syntax": "생략된 es의 주격보어",
+        "background": "아이네아스가 시뷜라를 신격으로 높여 부르는 표현이다.",
+        "etymology": "deus('신')의 여성형으로, PIE *deiwós('빛나는 존재, 하늘의 신')에서 유래한다. 이 어근은 그리스어 Ζεύς(Zeus)의 주격 어간, 산스크리트어 devá, 영어 Tuesday(Tiw의 날)와 동계어이다."
+      },
+      {
+        "g": "tu",
+        "pos": "대명사",
+        "lemma": "tu",
+        "parse": "단수 주격",
+        "gloss_kr": "그대는",
+        "gloss_en": "you",
+        "syntax": "절의 주어",
+        "background": "시뷜라에 대한 직접 호칭이다.",
+        "etymology": "PIE 2인칭 단수 대명사 *tuH/*tū에서 유래하며, 그리스어 σύ, 산스크리트어 tvam, 영어 thou와 동계어이다. 인도유럽조어의 인칭대명사 체계 중 가장 안정적으로 보존된 형태 중 하나이다."
+      },
+      {
+        "g": "praesens",
+        "pos": "형용사",
+        "lemma": "praesens, -entis",
+        "parse": "여성 단수 주격",
+        "gloss_kr": "현현한 / 임재하는",
+        "gloss_en": "present / manifest",
+        "syntax": "dea를 수식하는 형용사",
+        "background": "지상에 실제로 현존하며 활동하는 신을 가리킨다.",
+        "etymology": "prae('앞에') + sum('있다')의 현재분사형으로, '현재의, 눈앞에 있는'을 뜻한다(sum, esse, fui, futurus 항목 참조)."
+      },
+      {
+        "g": "seu",
+        "pos": "접속사",
+        "lemma": "seu",
+        "parse": "접속사",
+        "gloss_kr": "혹은",
+        "gloss_en": "or whether",
+        "syntax": "두 번째 대안을 이끄는 상관접속사",
+        "background": "앞의 seu와 짝을 이룬다.",
+        "etymology": "sive의 축약형이다(sive 항목 참조)."
+      },
+      {
+        "g": "dis",
+        "pos": "명사",
+        "lemma": "deus, -i, m. (여격/탈격 복수 diis/dis)",
+        "parse": "남성 복수 여격",
+        "gloss_kr": "신들에게",
+        "gloss_en": "to the gods",
+        "syntax": "gratissima가 지배하는 여격",
+        "background": "올림포스 신들(혹은 아폴로)의 총애를 가리킨다.",
+        "etymology": "PIE *deiwós에서 유래한다(deus, -i, m. 항목 참조)."
+      },
+      {
+        "g": "gratissima",
+        "pos": "형용사",
+        "lemma": "gratus, -a, -um (최상급)",
+        "parse": "여성 단수 주격",
+        "gloss_kr": "가장 사랑받는 / 은총 입은",
+        "gloss_en": "most pleasing / dearest",
+        "syntax": "생략된 주어(tu)를 서술하는 최상급 형용사",
+        "background": "예언녀에 대한 최상의 찬사이다.",
+        "etymology": "PIE *gʷerh₂-에서 유래한다(gratus, -a, -um 항목 참조)."
+      },
+      {
+        "g": "dixit",
+        "pos": "동사",
+        "lemma": "dico",
+        "principalParts": "dico–dicere–dixi–dictum",
+        "parse": "직설법 완료 능동태 3인칭 단수",
+        "gloss_kr": "말했다",
+        "gloss_en": "he said",
+        "syntax": "직접화법을 도입하는 보고 동사",
+        "background": "아이네아스의 발화를 시작한다.",
+        "etymology": "PIE *deyḱ-('보여주다, 가리키다')에서 유래하며, 그리스어 δείκνυμι, 영어 teach, token과 동계어이다(dico, dicere, dixi, dictum 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.124",
+    "trans": "'그대는 내게 언제나 신령과 같을 것이며, 나는 자처하리라'",
+    "words": [
+      {
+        "g": "numinis",
+        "pos": "명사",
+        "lemma": "numen, numinis, n.",
+        "parse": "중성 단수 속격",
+        "gloss_kr": "신령의 / 신위의",
+        "gloss_en": "of a deity / divine power",
+        "syntax": "instar를 수식하는 소유 속격",
+        "background": "신적 위엄이나 현존을 가리킨다.",
+        "etymology": "nuo('고개를 끄덕이다')에서 파생된 명사로, '(신의) 뜻, 신성한 힘'을 뜻하며 nuo는 PIE *new-('고개를 끄덕이다')에서 유래한다."
+      },
+      {
+        "g": "instar",
+        "pos": "명사",
+        "lemma": "instar (불변화 명사)",
+        "parse": "불변화 명사 (서술어로 쓰임)",
+        "gloss_kr": "~와 같은 모습 / 동등함",
+        "gloss_en": "the equivalent of / like",
+        "syntax": "'instar eris' 구문의 서술 명사",
+        "background": "'~와 동등하다/~를 닮았다'는 뜻의 관용적 불변화 명사이다.",
+        "etymology": "in('안에') + sto('서다')와 연관짓는 설이 있으며, '~와 맞먹는 것, ~만큼'을 뜻하는 불변화 명사이다."
+      },
+      {
+        "g": "eris",
+        "pos": "동사",
+        "lemma": "sum",
+        "principalParts": "sum–esse–fui",
+        "parse": "직설법 미래 능동태 2인칭 단수",
+        "gloss_kr": "될 것이다 / 이리라",
+        "gloss_en": "you will be",
+        "syntax": "본절의 술어 동사 (주어: tu, 생략)",
+        "background": "영원한 경외를 약속하는 미래형이다.",
+        "etymology": "PIE 계사 어근 *h₁es-('있다')에서 유래하며, 그리스어 εἰμί, 산스크리트어 asmi, 영어 is와 동계어이다(sum, esse, fui, futurus 항목 참조)."
+      },
+      {
+        "g": "semper",
+        "pos": "부사",
+        "lemma": "semper",
+        "parse": "부사",
+        "gloss_kr": "언제나",
+        "gloss_en": "always",
+        "syntax": "eris를 수식하는 시간 부사",
+        "background": "변치 않을 감사의 마음을 강조한다.",
+        "etymology": "sem-('하나') + per('통하여')의 결합으로, '항상'을 뜻한다(simul 항목의 sem- 참조)."
+      },
+      {
+        "g": "mihi",
+        "pos": "대명사",
+        "lemma": "ego",
+        "parse": "단수 여격",
+        "gloss_kr": "내게",
+        "gloss_en": "to me",
+        "syntax": "관계/판단의 여격",
+        "background": "아이네아스 자신의 관점에서 하는 말이다.",
+        "etymology": "PIE 1인칭 단수 대명사 *eǵ(oH)에서 유래하며, 그리스어 ἐγώ, 산스크리트어 ahám, 영어 I와 동계어이다."
+      },
+      {
+        "g": "meque",
+        "pos": "대명사",
+        "lemma": "ego (-que)",
+        "parse": "단수 대격 + 접속사",
+        "gloss_kr": "그리고 나는",
+        "gloss_en": "and I",
+        "syntax": "미래 탈형동사 fatebor의 주어; -que는 절들을 연결",
+        "background": "자기 자신에 대한 다짐을 나타낸다.",
+        "etymology": "PIE 1인칭 대명사 *eǵ(oH)에서 유래한다(ego 항목 참조)."
+      },
+      {
+        "g": "fatebor",
+        "pos": "동사",
+        "lemma": "fateor",
+        "principalParts": "fateor–fateri–fassus sum",
+        "parse": "직설법 미래 능동(탈형) 1인칭 단수",
+        "gloss_kr": "고백할 것이다 / 자처하리라",
+        "gloss_en": "will confess / acknowledge",
+        "syntax": "본절의 술어 동사",
+        "background": "간접화법 또는 서술 구문을 취하는 미래 탈형동사이다.",
+        "etymology": "for, fari('말하다')와 같은 어근 *bʰeh₂-('말하다')에서 파생된 탈형동사로, '고백하다, 인정하다'를 뜻한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.125",
+    "trans": "그대의 은덕 덕분이라고, 당신이 내게 죽음의 장소들을 찾아가게 하고,",
+    "words": [
+      {
+        "g": "muneris",
+        "pos": "명사",
+        "lemma": "munus, muneris, n.",
+        "parse": "중성 단수 속격",
+        "gloss_kr": "은혜의 / 선물의",
+        "gloss_en": "of the gift / favor",
+        "syntax": "esse와 결합하는 성질의 속격(서술적 소유 속격)",
+        "background": "아이네아스가 자신의 생환을 시뷜라의 은덕으로 돌리는 표현이다.",
+        "etymology": "PIE *mey-('바꾸다, 교환하다')에서 유래하며, '의무, 선물, 직무'를 뜻하고 영어 municipal, immune이 이 어근에서 파생되었다."
+      },
+      {
+        "g": "esse",
+        "pos": "동사",
+        "lemma": "sum",
+        "principalParts": "sum–esse–fui",
+        "parse": "현재 부정사 능동태",
+        "gloss_kr": "~라고 (임을)",
+        "gloss_en": "to be",
+        "syntax": "fatebor가 지배하는 간접화법의 부정사",
+        "background": "간접화법 구문(me...esse tui muneris)을 완성한다.",
+        "etymology": "PIE 계사 어근 *h₁es-('있다')에서 유래하며, 그리스어 εἰμί, 산스크리트어 asmi, 영어 is와 동계어이다(sum, esse, fui, futurus 항목 참조)."
+      },
+      {
+        "g": "tui",
+        "pos": "대명사",
+        "lemma": "tu",
+        "parse": "단수 속격",
+        "gloss_kr": "그대의",
+        "gloss_en": "your",
+        "syntax": "muneris를 수식하는 소유 속격",
+        "background": "은혜의 주체가 시뷜라임을 명시한다.",
+        "etymology": "PIE 2인칭 단수 대명사 *tuH/*tū에서 유래하며, 그리스어 σύ, 산스크리트어 tvam, 영어 thou와 동계어이다. 인도유럽조어의 인칭대명사 체계 중 가장 안정적으로 보존된 형태 중 하나이다."
+      },
+      {
+        "g": "quae",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "어떤 ~을",
+        "gloss_en": "which",
+        "syntax": "부정사 adire의 직접목적어 (loca를 선행)",
+        "background": "시뷜라의 인도를 설명하는 관계절을 이끈다.",
+        "etymology": "PIE 의문·관계 어간 *kʷo-/*kʷi-('누구, 무엇')에서 유래하며, 그리스어 관계대명사 및 영어 who, what, 산스크리트어 kaḥ와 동계어이다. 인도유럽어족 전반에 걸쳐 의문사와 관계사가 동일 어근을 공유하는 대표적 사례이다."
+      },
+      {
+        "g": "me",
+        "pos": "대명사",
+        "lemma": "ego",
+        "parse": "단수 대격",
+        "gloss_kr": "나를",
+        "gloss_en": "me",
+        "syntax": "부정사 adire의 의미상 주어",
+        "background": "여행자인 아이네아스 자신을 가리킨다.",
+        "etymology": "PIE 1인칭 단수 대명사 *eǵ(oH)에서 유래하며, 그리스어 ἐγώ, 산스크리트어 ahám, 영어 I와 동계어이다."
+      },
+      {
+        "g": "loca",
+        "pos": "명사",
+        "lemma": "locus, -i, m. (복수 loca, -orum, n.)",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "장소들을",
+        "gloss_en": "places",
+        "syntax": "adire의 직접목적어",
+        "background": "저승의 영역을 가리킨다.",
+        "etymology": "고졸 라틴어 stlocus에서 발달한 것으로 추정되며, 어원이 불확실하다(locus, -i, m. 항목 참조)."
+      },
+      {
+        "g": "mortis",
+        "pos": "명사",
+        "lemma": "mors, mortis, f.",
+        "parse": "여성 단수 속격",
+        "gloss_kr": "죽음의",
+        "gloss_en": "of death",
+        "syntax": "loca를 수식하는 속격",
+        "background": "죽은 자들의 영역을 가리킨다.",
+        "etymology": "PIE *mr̥tis('죽음')에서 유래하며, 그리스어 βροτός('필멸의'), 산스크리트어 mr̥tí와 동계어이다."
+      },
+      {
+        "g": "adire",
+        "pos": "동사",
+        "lemma": "adeo",
+        "principalParts": "adeo–adire–adii–aditum",
+        "parse": "현재 부정사 능동태",
+        "gloss_kr": "찾아가도록 / 접근하도록",
+        "gloss_en": "to approach / visit",
+        "syntax": "voluisti(다음 행)가 지배하는 보충 부정사",
+        "background": "저승 방문을 가리킨다.",
+        "etymology": "ad('~로') + eo('가다')의 합성어로, eo는 PIE *ei-('가다')에서 유래하며 그리스어 εἶμι, 산스크리트어 e-ti와 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.126",
+    "trans": "목격된 죽음의 장소들에서 벗어나게 해 주었음을.",
+    "words": [
+      {
+        "g": "quae",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "어떤 ~을",
+        "gloss_en": "which",
+        "syntax": "부정사 evadere의 직접목적어",
+        "background": "125행과 병렬을 이루는 관계절이다.",
+        "etymology": "PIE 의문·관계 어간 *kʷo-/*kʷi-('누구, 무엇')에서 유래하며, 그리스어 관계대명사 및 영어 who, what, 산스크리트어 kaḥ와 동계어이다. 인도유럽어족 전반에 걸쳐 의문사와 관계사가 동일 어근을 공유하는 대표적 사례이다."
+      },
+      {
+        "g": "loca",
+        "pos": "명사",
+        "lemma": "locus, -i, m. (복수 loca, -orum, n.)",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "장소들을",
+        "gloss_en": "places",
+        "syntax": "evadere의 직접목적어",
+        "background": "저승의 영역들을 다시 가리킨다.",
+        "etymology": "고졸 라틴어 stlocus에서 발달한 것으로 추정되며, 어원이 불확실하다(locus, -i, m. 항목 참조)."
+      },
+      {
+        "g": "me",
+        "pos": "대명사",
+        "lemma": "ego",
+        "parse": "단수 대격",
+        "gloss_kr": "내가",
+        "gloss_en": "me",
+        "syntax": "부정사 evadere의 의미상 주어",
+        "background": "안전하게 빠져나온 아이네아스 자신을 가리킨다.",
+        "etymology": "PIE 1인칭 단수 대명사 *eǵ(oH)에서 유래하며, 그리스어 ἐγώ, 산스크리트어 ahám, 영어 I와 동계어이다."
+      },
+      {
+        "g": "visae",
+        "pos": "분사",
+        "lemma": "video",
+        "principalParts": "video–videre–vidi–visum",
+        "parse": "완료 분사 수동태 여성 단수 속격",
+        "gloss_kr": "목격된 / 본",
+        "gloss_en": "seen / witnessed",
+        "syntax": "mortis를 수식하는 분사",
+        "background": "직접 목격한 죽음의 광경을 뜻한다.",
+        "etymology": "PIE *weyd-('보다, 알다')에서 유래하며, 그리스어 εἶδον('보았다')·οἶδα('안다'), 산스크리트어 véda, 영어 wit, wise와 동계어이다."
+      },
+      {
+        "g": "voluisti",
+        "pos": "동사",
+        "lemma": "volo",
+        "principalParts": "volo–velle–volui",
+        "parse": "직설법 완료 능동태 2인칭 단수",
+        "gloss_kr": "원했던 / 허락했던",
+        "gloss_en": "you wished / willed",
+        "syntax": "관계절들의 본동사 (주어: tu)",
+        "background": "시뷜라의 신적인 뜻/인도를 나타낸다.",
+        "etymology": "PIE *welh₁-('바라다, 원하다')에서 유래하며, 영어 will과 동계어로 제시된다(volo, velle, volui 항목 참조)."
+      },
+      {
+        "g": "evadere",
+        "pos": "동사",
+        "lemma": "evado",
+        "principalParts": "evado–evadere–evasi–evasum",
+        "parse": "현재 부정사 능동태",
+        "gloss_kr": "빠져나오도록 / 벗어나도록",
+        "gloss_en": "to escape",
+        "syntax": "voluisti가 지배하는 보충 부정사",
+        "background": "지상 세계로 무사히 귀환함을 뜻한다.",
+        "etymology": "e('밖으로') + vado('가다')의 합성어로, vado는 PIE *weh₂dʰ-('걷다, 건너다')에서 유래한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.127",
+    "trans": "이러한 은덕들에 힘입어 공중의 대기 속으로 높이 올라간 뒤,",
+    "words": [
+      {
+        "g": "pro",
+        "pos": "전치사",
+        "lemma": "pro",
+        "parse": "전치사 (+탈격)",
+        "gloss_kr": "~에 보답하여 / ~를 위하여",
+        "gloss_en": "for / in return for",
+        "syntax": "meritis를 지배하는 전치사",
+        "background": "은혜에 대한 보답을 나타낸다.",
+        "etymology": "PIE *pro-('앞으로')에서 유래하며, 그리스어 πρό, 영어 for와 동계어이다."
+      },
+      {
+        "g": "quibus",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "중성 복수 탈격",
+        "gloss_kr": "이러한 ~에",
+        "gloss_en": "which",
+        "syntax": "전치사 pro의 목적어",
+        "background": "앞서 언급된 시뷜라의 은덕들을 가리킨다.",
+        "etymology": "PIE 의문·관계 어간 *kʷo-/*kʷi-('누구, 무엇')에서 유래하며, 그리스어 관계대명사 및 영어 who, what, 산스크리트어 kaḥ와 동계어이다. 인도유럽어족 전반에 걸쳐 의문사와 관계사가 동일 어근을 공유하는 대표적 사례이다."
+      },
+      {
+        "g": "meritis",
+        "pos": "명사",
+        "lemma": "meritum, -i, n.",
+        "parse": "중성 복수 탈격",
+        "gloss_kr": "은덕들에 / 공헌에",
+        "gloss_en": "services / favors",
+        "syntax": "전치사 pro의 목적어",
+        "background": "시뷜라가 베푼 도움을 가리킨다.",
+        "etymology": "mereo('받을 만하다, 얻다')의 목적분사가 명사화된 것으로, mereo는 PIE *(s)mer-('할당받다')에서 유래하며 그리스어 μείρομαι와 동계어로 제시된다."
+      },
+      {
+        "g": "evectus",
+        "pos": "분사",
+        "lemma": "eveho",
+        "principalParts": "eveho–evehere–evexi–evectum",
+        "parse": "완료 분사 수동태 남성 단수 주격",
+        "gloss_kr": "올라간 뒤 / 실려 나간 뒤",
+        "gloss_en": "having been carried up",
+        "syntax": "생략된 주어(아이네아스)를 수식하는 분사",
+        "background": "저승에서 지상의 대기로 올라옴을 뜻한다.",
+        "etymology": "e('밖으로') + veho('나르다')의 합성어이다(veho, vehere, vexi, vectum 항목 참조)."
+      },
+      {
+        "g": "ad",
+        "pos": "전치사",
+        "lemma": "ad",
+        "parse": "전치사 (+대격)",
+        "gloss_kr": "~로 / ~를 향하여",
+        "gloss_en": "to / toward",
+        "syntax": "auras를 지배하는 전치사",
+        "background": "상승의 방향을 나타낸다.",
+        "etymology": "PIE *ad-('~로, ~에')에서 유래하며, 영어 at과 동계어로 제시된다."
+      },
+      {
+        "g": "auras",
+        "pos": "명사",
+        "lemma": "aura, -ae, f.",
+        "parse": "여성 복수 대격",
+        "gloss_kr": "대기로 / 공기로",
+        "gloss_en": "breezes / upper air",
+        "syntax": "전치사 ad의 목적어",
+        "background": "산 자들의 세계, 즉 지상을 가리킨다.",
+        "etymology": "그리스어 αὔρα('산들바람')에서 차용되었으며, ἄημι('불다')와 관련된 어근에서 유래한다(ventus, -i, m. 항목의 *h₂weh₁- 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.128",
+    "trans": "나는 그대를 위해 신전을 세우고, 그대에게 향의 명예(제물)를 바치리라.'",
+    "words": [
+      {
+        "g": "templa",
+        "pos": "명사",
+        "lemma": "templum, -i, n.",
+        "parse": "중성 복수 대격",
+        "gloss_kr": "신전을",
+        "gloss_en": "temples",
+        "syntax": "statuam의 직접목적어",
+        "background": "시뷜라를 기리기 위한 신전 건립을 가리킨다.",
+        "etymology": "PIE *temh₁-('자르다, 구획하다')에서 유래하며, 하늘에서 관찰을 위해 구획한 공간이라는 원의미에서 '신전'으로 발달했다. 그리스어 τέμενος와 동계어이다."
+      },
+      {
+        "g": "tibi",
+        "pos": "대명사",
+        "lemma": "tu",
+        "parse": "단수 여격",
+        "gloss_kr": "그대에게",
+        "gloss_en": "to you",
+        "syntax": "statuam의 간접목적어",
+        "background": "시뷜라에게 바쳐질 것임을 나타낸다.",
+        "etymology": "PIE 2인칭 단수 대명사 *tuH/*tū에서 유래하며, 그리스어 σύ, 산스크리트어 tvam, 영어 thou와 동계어이다. 인도유럽조어의 인칭대명사 체계 중 가장 안정적으로 보존된 형태 중 하나이다."
+      },
+      {
+        "g": "statuam",
+        "pos": "동사",
+        "lemma": "statuo",
+        "principalParts": "statuo–statuere–statui–statutum",
+        "parse": "직설법 미래 능동태 1인칭 단수",
+        "gloss_kr": "세울 것이다",
+        "gloss_en": "will set up / establish",
+        "syntax": "본절의 첫 번째 술어 동사 (주어: 아이네아스)",
+        "background": "신전 건립의 서약이다.",
+        "etymology": "sto('서다')에서 파생된 동사로, '세우다, 정하다'를 뜻한다(sto, stare, steti, statum 항목의 *steh₂- 참조)."
+      },
+      {
+        "g": "tribuam",
+        "pos": "동사",
+        "lemma": "tribuo",
+        "principalParts": "tribuo–tribuere–tribui–tributum",
+        "parse": "직설법 미래 능동태 1인칭 단수",
+        "gloss_kr": "바칠 것이다 / 수여하겠다",
+        "gloss_en": "will grant / bestow",
+        "syntax": "본절의 두 번째 술어 동사 (주어: 아이네아스)",
+        "background": "제물을 바치겠다는 서약이다.",
+        "etymology": "tribus('부족')에서 파생된 동사로, '부족에 배분하다'라는 원의미에서 '나누어주다, 부여하다'로 발달했다."
+      },
+      {
+        "g": "tibi",
+        "pos": "대명사",
+        "lemma": "tu",
+        "parse": "단수 여격",
+        "gloss_kr": "그대에게",
+        "gloss_en": "to you",
+        "syntax": "tribuam의 간접목적어",
+        "background": "시뷜라를 향한 봉헌을 재차 명시한다.",
+        "etymology": "PIE 2인칭 단수 대명사 *tuH/*tū에서 유래하며, 그리스어 σύ, 산스크리트어 tvam, 영어 thou와 동계어이다. 인도유럽조어의 인칭대명사 체계 중 가장 안정적으로 보존된 형태 중 하나이다."
+      },
+      {
+        "g": "turis",
+        "pos": "명사",
+        "lemma": "tus (thuris), n.",
+        "parse": "중성 단수 속격",
+        "gloss_kr": "향(香)의",
+        "gloss_en": "of incense",
+        "syntax": "honores를 수식하는 속격",
+        "background": "제사에서 태우는 향을 가리킨다.",
+        "etymology": "그리스어 θύος('제물, 향')에서 차용된 것으로 추정되며, θύω('제물을 바치다, 태우다')와 동계어이다."
+      },
+      {
+        "g": "honores",
+        "pos": "명사",
+        "lemma": "honor, honoris, m.",
+        "parse": "남성 복수 대격",
+        "gloss_kr": "영예를 / 제물을",
+        "gloss_en": "honors / offerings",
+        "syntax": "tribuam의 직접목적어",
+        "background": "의례적 예우와 제물을 가리킨다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, 명확한 인도유럽 동계어가 확립되어 있지 않다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.129",
+    "trans": "예언녀는 그를 돌아보며 깊은 탄식을 내쉬고는",
+    "words": [
+      {
+        "g": "respicit",
+        "pos": "동사",
+        "lemma": "respicio",
+        "principalParts": "respicio–respicere–respexi–respectum",
+        "parse": "직설법 현재 능동태 3인칭 단수",
+        "gloss_kr": "돌아본다",
+        "gloss_en": "looks back at",
+        "syntax": "본절의 술어 동사 (주어: vates)",
+        "background": "시뷜라가 아이네아스를 돌아보는 동작이다.",
+        "etymology": "re('뒤로') + specio('보다')의 합성어이다(adspicio, adspicere, adspexi, adspectum 항목의 specio 참조)."
+      },
+      {
+        "g": "hunc",
+        "pos": "대명사",
+        "lemma": "hic, haec, hoc",
+        "parse": "남성 단수 대격",
+        "gloss_kr": "그를 (아이네아스를)",
+        "gloss_en": "him",
+        "syntax": "respicit의 직접목적어",
+        "background": "아이네아스를 가리킨다.",
+        "etymology": "PIE 지시 어간 *ko-('이것')에 첨사 -ce가 결합된 형태로, 근칭 지시대명사이다. 게르만어파의 he(그)와 어원적으로 연결되는 지시 어근 계열에 속한다."
+      },
+      {
+        "g": "vates",
+        "pos": "명사",
+        "lemma": "vates, vatis, m./f.",
+        "parse": "여성 단수 주격",
+        "gloss_kr": "예언녀는 / 여예언자가",
+        "gloss_en": "the prophetess",
+        "syntax": "respicit와 dixit의 주어",
+        "background": "쿠마에의 시뷜라를 가리킨다.",
+        "etymology": "PIE *weh₂t-('영감받다, 예언하다')에서 유래하며, 고대 아일랜드어 fáith('예언자')와 동계어이고 영어 wood('격노한')와도 연관짓는 설이 있다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "등이접속사",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "동사구를 연결",
+        "background": "연속 동작을 이어준다.",
+        "etymology": "PIE *eti('그 위에, 더하여')에서 유래한 접속사로, 산스크리트어 ati('넘어서'), 그리스어 ἔτι('여전히, 더욱이')와 동계어이다. 원래 '더하여, 넘어서'라는 부사적 의미에서 등위접속사 '그리고'로 문법화되었다."
+      },
+      {
+        "g": "suspiratibus",
+        "pos": "명사",
+        "lemma": "suspiratus, -us, m.",
+        "parse": "남성 복수 탈격",
+        "gloss_kr": "탄식들과 함께 / 한숨을 내쉬며",
+        "gloss_en": "with sighs",
+        "syntax": "haustis와 함께 절대탈격을 이루는 방식의 탈격",
+        "background": "그녀의 불멸의 고통을 반영하는 깊은 한숨이다.",
+        "etymology": "sub('아래로부터') + spiro('숨쉬다')의 합성어의 목적분사가 명사화된 것으로, spiro는 의성어적 기원으로 추정되며 영어 spirit, respire가 이 어근에서 파생되었다."
+      },
+      {
+        "g": "haustis",
+        "pos": "분사",
+        "lemma": "haurio",
+        "principalParts": "haurio–haurire–hausi–haustum",
+        "parse": "완료 분사 수동태 남성 복수 탈격",
+        "gloss_kr": "끌어낸 / 내쉰",
+        "gloss_en": "drawn / heaved",
+        "syntax": "suspiratibus와 함께 절대탈격을 이루는 분사",
+        "background": "가슴 속 깊은 곳에서 한숨을 끌어올리는 모습을 묘사한다.",
+        "etymology": "PIE 어근에서 유래한 것으로 추정되는 라틴어 고유 동사로, '(물을) 긷다, 퍼내다'를 뜻한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.130",
+    "trans": "'나는 여신도 아니요,' 그녀가 말했다, '거룩한 향의 영예도'",
+    "words": [
+      {
+        "g": "nec",
+        "pos": "접속사",
+        "lemma": "nec",
+        "parse": "접속사",
+        "gloss_kr": "~도 아니요",
+        "gloss_en": "neither / nor",
+        "syntax": "부정의 상관접속사 (nec...nec)의 첫 부분",
+        "background": "신성과 신성한 예우를 부정하는 구문의 시작이다.",
+        "etymology": "ne(부정소사) + que('그리고')의 결합으로, '그리고 ~아니다'를 뜻하는 접속사이다."
+      },
+      {
+        "g": "dea",
+        "pos": "명사",
+        "lemma": "dea, -ae, f.",
+        "parse": "여성 단수 주격",
+        "gloss_kr": "여신이",
+        "gloss_en": "goddess",
+        "syntax": "sum의 주격보어",
+        "background": "아이네아스의 그릇된 추측을 시뷜라가 바로잡는다.",
+        "etymology": "deus('신')의 여성형으로, PIE *deiwós('빛나는 존재, 하늘의 신')에서 유래한다. 이 어근은 그리스어 Ζεύς(Zeus)의 주격 어간, 산스크리트어 devá, 영어 Tuesday(Tiw의 날)와 동계어이다."
+      },
+      {
+        "g": "sum",
+        "pos": "동사",
+        "lemma": "sum",
+        "principalParts": "sum–esse–fui",
+        "parse": "직설법 현재 능동태 1인칭 단수",
+        "gloss_kr": "나는 ~이다",
+        "gloss_en": "I am",
+        "syntax": "본절의 술어 동사 (주어: ego, 생략)",
+        "background": "시뷜라의 직접 발화이다.",
+        "etymology": "PIE 계사 어근 *h₁es-('있다')에서 유래하며, 그리스어 εἰμί, 산스크리트어 asmi, 영어 is와 동계어이다(sum, esse, fui, futurus 항목 참조)."
+      },
+      {
+        "g": "dixit",
+        "pos": "동사",
+        "lemma": "dico",
+        "principalParts": "dico–dicere–dixi–dictum",
+        "parse": "직설법 완료 능동태 3인칭 단수",
+        "gloss_kr": "말했다",
+        "gloss_en": "she said",
+        "syntax": "직접화법 중간에 삽입된 보고 동사",
+        "background": "서사적 삽입구이다.",
+        "etymology": "PIE *deyḱ-('보여주다, 가리키다')에서 유래하며, 그리스어 δείκνυμι, 영어 teach, token과 동계어이다(dico, dicere, dixi, dictum 항목 참조)."
+      },
+      {
+        "g": "nec",
+        "pos": "접속사",
+        "lemma": "nec",
+        "parse": "접속사",
+        "gloss_kr": "또한 ~도",
+        "gloss_en": "nor",
+        "syntax": "부정의 상관접속사의 두 번째 부분",
+        "background": "앞의 nec와 짝을 이룬다.",
+        "etymology": "ne(부정소사) + que('그리고')의 결합으로, '그리고 ~아니다'를 뜻하는 접속사이다."
+      },
+      {
+        "g": "sacri",
+        "pos": "형용사",
+        "lemma": "sacer, sacra, sacrum",
+        "parse": "중성 단수 속격",
+        "gloss_kr": "거룩한 / 신성한",
+        "gloss_en": "sacred / holy",
+        "syntax": "turis를 수식하는 형용사",
+        "background": "신성한 향을 가리킨다.",
+        "etymology": "PIE *sak-('신성하게 하다')에서 유래하며, 영어 sacred, sanctify가 이 어근에서 파생되었다."
+      },
+      {
+        "g": "turis",
+        "pos": "명사",
+        "lemma": "tus (thuris), n.",
+        "parse": "중성 단수 속격",
+        "gloss_kr": "향의",
+        "gloss_en": "of incense",
+        "syntax": "honore를 수식하는 속격",
+        "background": "아이네아스가 서약한 향의 봉헌을 다시 언급한다.",
+        "etymology": "그리스어 θύος('제물, 향')에서 차용된 것으로 추정되며, θύω('제물을 바치다, 태우다')와 동계어이다."
+      },
+      {
+        "g": "honore",
+        "pos": "명사",
+        "lemma": "honor, honoris, m.",
+        "parse": "남성 단수 탈격",
+        "gloss_kr": "영예(제물)로써는",
+        "gloss_en": "with honor / offering",
+        "syntax": "생략된 서술어와 결합하는 관계/결여의 탈격",
+        "background": "신적 예우를 받을 자격이 없음을 부정한다.",
+        "etymology": "어원이 불확실한 라틴어 고유 어휘로, 명확한 인도유럽 동계어가 확립되어 있지 않다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.445",
+    "trans": "풀 덮인 언덕에 매어두었던 밧줄이 풀리고,",
+    "words": [
+      {
+        "g": "Solvitur",
+        "pos": "동사",
+        "lemma": "solvo, solvere, solvi, solutus",
+        "parse": "pres. pass. 3rd pers. sg.",
+        "gloss_kr": "풀리다",
+        "gloss_en": "is untied",
+        "syntax": "주절의 수동태 동사로서 문두에 위치하여 행동의 시작을 알리며, 주어인 funis와 호응한다.",
+        "background": "트로이아의 영웅들이 아이네이스의 여정을 이어가기 위해 키르케의 섬을 떠나 출항하는 장면을 묘사한다.",
+        "etymology": "인도유럽조어 재구형 *se-l- 또는 *leu-('풀다, 해제하다')에서 유래하였다. 산스크리트어 lūyati('자르다, 베다'), 고대 그리스어 λύω(luo, '풀다') 등이 동계어이다. 라틴어 안에서 접두사 se-와 결합하여 '떨어져 풀리다'라는 의미로 발달하였으며, 현대 영어의 solve, solution, dissolve 등에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "herboso",
+        "pos": "형용사",
+        "lemma": "herbosus, -a, -um",
+        "parse": "sg. abl. m.",
+        "gloss_kr": "풀이 우거진",
+        "gloss_en": "grassy",
+        "syntax": "뒤따르는 명사 aggere를 수식하는 탈격 형용사로, 장소를 수식하는 전치사적 의미를 보조한다.",
+        "background": "배가 정박해 있던 해안가 언덕의 자연스러운 풍경을 생생하게 그려내는 수식어이다.",
+        "etymology": "라틴어 명사 herba('풀, 채소')에 성질이 풍부함을 뜻하는 접미사 -osus가 결합하여 만들어졌다. 이탈리아어 erbososo, 프랑스어 herbeux 등이 동계(반사)어이다. 라틴어 herba 자체는 현대 영어의 herb, herbal 등에 남아 있다."
+      },
+      {
+        "g": "religatus",
+        "pos": "분사",
+        "lemma": "religo, religare, religavi, religatus",
+        "parse": "perf. pass. part. nom. m. sg.",
+        "gloss_kr": "단단히 매어둔",
+        "gloss_en": "tied back",
+        "syntax": "주어인 funis를 수식하는 수동완료 분사로, 밧줄이 언덕에 묶여 있던 이전의 상태를 나타낸다.",
+        "background": "항해를 멈추고 육지에 고정해 두었던 배의 예전 상황을 함축적으로 보여준다.",
+        "etymology": "라틴어 동사 ligo('묶다, 매다')에 강조와 반복을 뜻하는 접두사 re-가 결합한 religare에서 유래하였다. 이탈리아어 religare, 스페인어 religar 등이 동계어이다. 현대 영어의 religion(본래 '신과 인간을 다시 묶다'라는 어원적 의미)과 ligament 등에 이 어근이 살아 있다."
+      },
+      {
+        "g": "ab",
+        "pos": "전치사",
+        "lemma": "ab",
+        "parse": "prep. with abl.",
+        "gloss_kr": "~로부터",
+        "gloss_en": "from",
+        "syntax": "탈격 명사 aggere를 지배하여 분리 및 기원의 방향을 나타낸다.",
+        "background": "언덕이라는 기준점으로부터 밧줄이 떨어져 나가는 공간적 분리를 표현한다.",
+        "etymology": "인도유럽조어 재구형 *apo('~로부터, 멀리')에서 유래하였다. 산스크리트어 ápa('~로부터'), 고대 그리스어 ἀπό(apo) 등이 동계어이다. 로망스어군에서는 형태가 축약되거나 변형되었으며, 현대 영어의 prefix로 쓰이는 ab-(absent, abrupt 등)에 흔적이 남아 있다."
+      },
+      {
+        "g": "aggere",
+        "pos": "명사",
+        "lemma": "agger, aggeris, m.",
+        "parse": "sg. abl. m.",
+        "gloss_kr": "언덕, 둑",
+        "gloss_en": "mound",
+        "syntax": "전치사 ab의 목적어로 쓰인 탈격 명사로, 배를 묶어두었던 지형적 특성을 나타낸다.",
+        "background": "강가나 해안가의 불룩하게 솟은 지형이나 둑을 가리키는 시적 표현이다.",
+        "etymology": "동사 adgerere('~로 쌓아 올리다', ad- + gerere)에서 파생된 명사이다. 이탈리아어 aggere 등이 동계어이다. 어근 gerere('나르다, 쌓다')는 현대 영어의 gest, congest 등에 남아 있다."
+      },
+      {
+        "g": "funis",
+        "pos": "명사",
+        "lemma": "funis, funis, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "밧줄, 닻줄",
+        "gloss_en": "rope",
+        "syntax": "수동태 동사 Solvitur의 주어로 문장의 중심 행동을 받는 핵심 성분이다.",
+        "background": "출항을 위해 배를 육지에 고정하던 밧줄이 풀리는 순간을 상징한다.",
+        "etymology": "인도유럽조어 재구형 재구 형태에서 유래한 라틴어 고유어이다. 스페인어 funil(고어적 반사형) 및 이탈리아어 fune 등이 동계어이다. 현대 영어의 funicular(케이블카 등의 밧줄 시스템)에 직접적인 어원적 흔적이 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.446",
+    "trans": "그들은 악명 높은 여신(키르케)의 거처와 음모를 멀리 뒤로 한 채, 숲을 향해 나아간다.",
+    "words": [
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "앞서 밧줄이 풀리는 동작과 이어지는 두 번째 절의 행동(relinquunt)을 대등하게 연결한다.",
+        "background": "서사 속에서 장소가 전환되며 새로운 행동 단계로 넘어가는 연결 고리 역할을 한다.",
+        "etymology": "인도유럽조어 재구형 *eti('또한, 게다가')에서 유래하였다. 산스크리트어 áti('넘어서, 더욱'), 고대 그리스어 ἔτι(eti, '여전히, 더욱') 등이 동계어이다. 로망스어군에서는 라틴어 et가 축약되어 프랑스어 et, 이탈리아어 e 등으로 발전했다."
+      },
+      {
+        "g": "procul",
+        "pos": "부사",
+        "lemma": "procul",
+        "parse": "temp./loc. adv.",
+        "gloss_kr": "멀리",
+        "gloss_en": "far away",
+        "syntax": "동사 relinquunt를 수식하는 장소 부사로, 키르케의 거처로부터 공간적으로 멀어짐을 강조한다.",
+        "background": "마녀 키르케의 위험한 장소에서 벗어나는 영웅들의 안도감과 이동을 보여준다.",
+        "etymology": "라틴어 명사 pro('앞으로')와 관련된 어근에서 파생된 부사이다. 스페인어 procurar 등과 어원을 일부 공유한다. 현대 영어의 procul(드물게 쓰이는 차용어)이나 관련 파생 형태에 흔적이 있다."
+      },
+      {
+        "g": "insidias",
+        "pos": "명사",
+        "lemma": "insidiae, -arum, f.",
+        "parse": "pl. acc. f.",
+        "gloss_kr": "음모, 계략",
+        "gloss_en": "snares, plots",
+        "syntax": "동사 relinquunt의 직접목적어로, 이들이 떠나고자 하는 키르케의 위험한 속임수를 가리킨다.",
+        "background": "동료들을 야수로 변주시켰던 키르케의 마법과 위험한 계략들을 의미한다.",
+        "etymology": "동사 insidere('안에 앉아 노리다', in- + sedere)에서 유래한 명사이다. 이탈리아어 insidia, 스페인어 insidia 등이 동계어이다. 어근 sedere('앉다')는 현대 영어의 sit, session, insidious 등에 남아 있다."
+      },
+      {
+        "g": "infamataeque",
+        "pos": "형용사",
+        "lemma": "infamatus, -a, -um",
+        "parse": "pl. gen. f. (수식어-명사 결합의 소유격)",
+        "gloss_kr": "오명 쓴, 악명 높은",
+        "gloss_en": "infamous",
+        "syntax": "뒤의 tecta deae를 함께 수식하는 소유격(또는 대격 복수 수식) 형용사이며, 접미 enclitic -que로 앞 절과 연결된다.",
+        "background": "마법과 변신으로 악명이 자욱한 키르케의 거처를 수식하는 표현이다.",
+        "etymology": "부정 접두사 in-과 fama('소문, 명성')에서 유래한 동사 infamare의 과거분사형이다. 프랑스어 infamé, 이탈리아어 infamato 등이 동계어이다. 현대 영어의 infamous, defamation 등에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "relinquunt",
+        "pos": "동사",
+        "lemma": "relinquo, relinquere, reliqui relictus",
+        "parse": "pres. act. 3rd pers. pl.",
+        "gloss_kr": "떠나다, 남겨두다",
+        "gloss_en": "they leave",
+        "syntax": "복수 주어(생략된 아이네이스 일행)를 받는 능동태 본동사로, 악명 높은 장소를 뒤로하고 떠나는 행위를 서술한다.",
+        "background": "위험한 아이아이에 섬을 떠나 이탈리아 본토를 향해 나아가는 결정적 장면이다.",
+        "etymology": "동사 linquo('남기다')에 완전한 분리를 뜻하는 접두사 re-가 붙어 만들어졌다. 이탈리아어 relinquere(문어체), 프랑스어 relinquer 등이 동계어이다. 현대 영어의 relinquish, relic 등에 직접적인 어원이 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.447",
+    "trans": "여신의 거처를 뒤로 하고 숲을 향해 가는데, 황금빛 모래와 함께 불어나는 테베레 강이 그늘에 잠겨 바다로 쏟아져 들어가는 곳이었다.",
+    "words": [
+      {
+        "g": "tecta",
+        "pos": "명사",
+        "lemma": "tectum, -i, n.",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "건물, 거처",
+        "gloss_en": "roofs, dwelling",
+        "syntax": "앞 문장의 relinquunt에 걸리는 또 다른 목적어로, 여신의 궁궐과 저택을 의미한다.",
+        "background": "키르케가 거주하는 화려하면서도 위험한 마법의 저택을 가리킨다.",
+        "etymology": "동사 tegere('덮다, 지붕을 얹다')의 과거분사 중성형에서 명사화된 단어이다. 이탈리아어 tetto, 스페인어 techo 등이 동계어이다. 어근은 현대 영어의 protect, detect 등에 남아 있다."
+      },
+      {
+        "g": "deae",
+        "pos": "명사",
+        "lemma": "dea, -ae, f.",
+        "parse": "sg. gen. f.",
+        "gloss_kr": "여신의",
+        "gloss_en": "of the goddess",
+        "syntax": "앞의 tecta를 소유의 의미로 수식하는 속격 명사이다.",
+        "background": "태양신의 딸이자 강력한 마법사인 여신 키르케를 지칭한다.",
+        "etymology": "인도유럽조어 재구형 *deiwos('신')에서 유래한 deus의 여성형이다. 산스크리트어 devī('여신'), 고대 그리스어 θεά(thea) 등이 동계어이다. 현대 영어의 deity, divine 등에 그 흔적이 고스란히 남아 있다."
+      },
+      {
+        "g": "lucosque",
+        "pos": "명사",
+        "lemma": "lucus, -i, m.",
+        "parse": "pl. acc. m.",
+        "gloss_kr": "그리고 숲을",
+        "gloss_en": "and the groves",
+        "syntax": "동사 petunt의 목적어인 명사구이며, 접속사 -que가 붙어 앞 내용과 연결된다.",
+        "background": "신성하거나 울창한 자연의 숲을 의미하며, 이들이 새로 찾아가는 목적지를 뜻한다.",
+        "etymology": "인도유럽조어 재구형 *leuk-('빛나다, 밝다')에서 유래하여, 본래 '나무가 드문드문하여 햇빛이 드는 신성한 숲'을 뜻했다. 이탈리아어 luco 등이 동계어이다. 현대 영어의 translucent, lucid, illuminate 등의 어근과 동계이다."
+      },
+      {
+        "g": "petunt",
+        "pos": "동사",
+        "lemma": "peto, petere, petivi, petitus",
+        "parse": "pres. act. 3rd pers. pl.",
+        "gloss_kr": "향하여 나아간다",
+        "gloss_en": "they seek, head for",
+        "syntax": "복수 주어의 행동을 받는 능동태 본동사로, 목적지인 숲을 향해 항해함을 나타낸다.",
+        "background": "위험한 장소를 벗어나 새로운 목적지인 이탈리아의 강가와 숲으로 항로를 향하는 모습이다.",
+        "etymology": "인도유럽조어 재구형 *pet-('날다, 달려들다, 추구하다')에서 유래하였다. 산스크리트어 pátati('날다, 떨어진다'), 고대 그리스어 πίπτω(pipto) 등이 동계어이다. 현대 영어의 petition, compete, impetus 등에 그 어원이 남아 있다."
+      },
+      {
+        "g": "ubi",
+        "pos": "접속사",
+        "lemma": "ubi",
+        "parse": "temp./loc. conj.",
+        "gloss_kr": "~한 곳에, ~할 때",
+        "gloss_en": "where",
+        "syntax": "장소를 한정하는 관계부사(종속 접속사)로, 뒤의 절을 이끌어 강이 바다로 흘러드는 배경을 설명한다.",
+        "background": "테베레 강이 바다와 만나는 지리적 배경으로 무대를 전환한다.",
+        "etymology": "인도유럽조어 대명사 어근에서 유래한 라틴어 관계부사이다. 이탈리아어 ove, 스페인어 donde(변형) 등이 상응한다. 영어의 ubiquitous(어디에나 있는) 등의 단어와 어원적 연관성이 있다."
+      },
+      {
+        "g": "nubilus",
+        "pos": "형용사",
+        "lemma": "nubilus, -a, -um",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "구름 낀, 흐린",
+        "gloss_en": "cloudy, dark",
+        "syntax": "주어인 Thybris를 수식하거나 강물의 어두운 빛깔을 묘사하는 형용사이다.",
+        "background": "많은 흙탕물과 깊은 그늘을 품고 흘러내리는 강물의 모습을 시적으로 표현한다.",
+        "etymology": "라틴어 명사 nubes('구름')에서 유래한 형용사이다. 이탈리아어 nubilo, 스페인어 nublado 등이 동계어이다. 어근은 현대 영어의 nebula, nebulous 등에 남아 있다."
+      },
+      {
+        "g": "umbra",
+        "pos": "명사",
+        "lemma": "umbra, -ae, f.",
+        "parse": "sg. abl. f.",
+        "gloss_kr": "그늘로",
+        "gloss_en": "with shade",
+        "syntax": "수단이나 상태를 나타내는 탈격 명사로, 강 주변의 우거진 그늘을 표현한다.",
+        "background": "강둑의 무성한 나무와 짙은 그림자가 강물 위에 드리워진 분위기를 자아낸다.",
+        "etymology": "인도유럽조어 재구형에서 유래한 라틴어 고유 어휘이다. 이탈리아어 ombra, 스페인어 sombra 등이 동계(반사)어이다. 현대 영어의 umbrella(우산/그늘막), umbra(본그늘) 등에 직접 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.448",
+    "trans": "황금빛 모래를 품은 채 바다로 거칠게 쏟아져 내리는 테베레 강이 있는 곳으로.",
+    "words": [
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "prep. with acc.",
+        "gloss_kr": "~안으로, ~로",
+        "gloss_en": "into",
+        "syntax": "대격 명사 mare를 지배하여 강물이 바다 내부로 돌진하여 흘러드는 방향을 나타낸다.",
+        "background": "강이 바다와 합류하는 지형적 역동성을 보여준다.",
+        "etymology": "인도유럽조어 재구형 *en('~안에')에서 유래하였다. 산스크리트어 ára, 고대 그리스어 ἐν(en) 등이 동계어이다. 현대 영어의 in, into 등에 그대로 이어지고 있다."
+      },
+      {
+        "g": "mare",
+        "pos": "명사",
+        "lemma": "mare, maris, n.",
+        "parse": "sg. acc. n.",
+        "gloss_kr": "바다를",
+        "gloss_en": "sea",
+        "syntax": "전치사 in의 목적어로 쓰인 대격 명사이다.",
+        "background": "이탈리아 해안의 드넓은 지중해 바다를 가리킨다.",
+        "etymology": "인도유럽조어 재구형 *mori('바다, 습지')에서 유래하였다. 고대 아일랜드어 muir, 독일어 Meer 등이 동계어이다. 현대 영어의 marine, maritime, mermaid 등에 그 흔적이 깊이 남아 있다."
+      },
+      {
+        "g": "cum",
+        "pos": "전치사",
+        "lemma": "cum",
+        "parse": "prep. with abl.",
+        "gloss_kr": "~와 함께",
+        "gloss_en": "with",
+        "syntax": "탈격 명사 harena를 지배하여 동반의 관계를 나타낸다.",
+        "background": "강물이 모래를 함께 휩쓸며 바다로 흘러드는 모습을 묘사한다.",
+        "etymology": "인도유럽조어 재구형 *kom('~와 함께')에서 유래하였다. 산스크리트어 sám('함께'), 고대 그리스어 ξύν(xyn) 등이 동계어이다. 현대 영어의 co-, con- 등의 접두사 어원으로 기능한다."
+      },
+      {
+        "g": "flava",
+        "pos": "형용사",
+        "lemma": "flavus, -a, -um",
+        "parse": "sg. abl. f.",
+        "gloss_kr": "황금빛의, 노란",
+        "gloss_en": "yellow, golden",
+        "syntax": "뒤의 명사 harena를 수식하는 탈격 형용사이다.",
+        "background": "이탈리아의 유명한 테베레 강 특유의 황토색·황금빛 모래 퇴적물을 생생하게 표현한다.",
+        "etymology": "라틴어 고유의 색채 형용사이다. 이탈리아어 flavo(문어체) 등이 상응한다. 식물의 학명이나 전문 용어에서 노란색을 나타낼 때 종종 차용된다."
+      },
+      {
+        "g": "prorumpit",
+        "pos": "동사",
+        "lemma": "prorumpo, prorumpere, prorupi, proruptus",
+        "parse": "pres. act. 3rd pers. sg.",
+        "gloss_kr": "쏟아져 나오다, 돌진하다",
+        "gloss_en": "bursts forth",
+        "syntax": "관계절 내의 단수 주어(Thybris)를 받는 능동태 동사로, 강물이 힘차게 바다로 밀려드는 기세를 표현한다.",
+        "background": "테베레 강이 거센 세력으로 바다와 만나 터져 나가는 역동적인 자연 현상을 묘사한다.",
+        "etymology": "동사 rumpere('깨뜨리다, 터뜨리다')에 앞으로의 방향을 뜻하는 pro-가 결합하였다. 이탈리아어 prorompere 등이 동계어이다. 어근은 현대 영어의 rupture, interrupt, erupt 등에 남아 있다."
+      },
+      {
+        "g": "Thybris",
+        "pos": "명사",
+        "lemma": "Thybris, Thybridis, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "테베레 강",
+        "gloss_en": "Tiber",
+        "syntax": "동사 prorumpit의 주어로 쓰인 고유명사 명사이다.",
+        "background": "로마를 관통하여 흐르는 이탈리아의 유서 깊은 티베르(테베레) 강을 신격화하거나 지리적으로 지칭한다.",
+        "etymology": "지중해 지역의 선그리스어 또는 이탈리아 토착 기층 언어에서 유래한 지명으로 추정된다. 로마 역사와 문학에서 라틴 지역의 상징적인 강 이름으로 정착되었다."
+      },
+      {
+        "g": "harena",
+        "pos": "명사",
+        "lemma": "harena, -ae, f.",
+        "parse": "sg. abl. f.",
+        "gloss_kr": "모래",
+        "gloss_en": "sand",
+        "syntax": "동사 prorumpit의 주어로 쓰인 고유명사 명사이다.",
+        "background": "로마를 관통하여 흐르는 이탈리아의 유서 깊은 티베르(테베레) 강을 신격화하거나 지리적으로 지칭한다.",
+        "etymology": "지중해 지역의 선그리스어 또는 이탈리아 토착 기층 언어에서 유래한 지명으로 추정된다. 로마 역사와 문학에서 라틴 지역의 상징적인 강 이름으로 정착되었다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.449",
+    "trans": "파우누스의 땅과 라티누스의 딸이 차지하게 되나,",
+    "words": [
+      {
+        "g": "Faunigenaeque",
+        "pos": "명사",
+        "lemma": "Faunigena, -ae, m.",
+        "parse": "sg. gen. m. (혹은 소유 대격)",
+        "gloss_kr": "그리고 파우누스의 자손인 (이의 땅을)",
+        "gloss_en": "and of the Faun-born (land)",
+        "syntax": "뒤의 domo를 수식하는 소유격 형태이며, 접속사 -que로 앞 절과 연결된다.",
+        "background": "숲과 들판의 신 파우누스의 혈통을 이어받은 라티누스 왕의 가문과 영토를 가리킨다.",
+        "etymology": "신 이름 Faunus와 '태어나다'를 뜻하는 gignere(어간 gen-)의 결합으로 이루어진 합성어이다. 고전 라틴어의 시적 조어법에 속한다."
+      },
+      {
+        "g": "domo",
+        "pos": "명사",
+        "lemma": "domus, -us / -i, f.",
+        "parse": "sg. abl. f.",
+        "gloss_kr": "집안을, 영토를",
+        "gloss_en": "home, realm",
+        "syntax": "동사 potitur가 지배하는 탈격 목적어로, 영토나 가문의 주도권을 차지함을 나타낸다.",
+        "background": "아이네이스가 도달하여 결국 터를 잡게 되는 라티움의 왕국과 가문을 뜻한다.",
+        "etymology": "인도유럽조어 재구형 *domo-('집, 거처')에서 유래하였다. 산스크리트어 dáma('집'), 고대 그리스어 δόμος(domos) 등이 동계어이다. 현대 영어의 domestic, domicile 등에 그 어원이 살아 있다."
+      },
+      {
+        "g": "potitur",
+        "pos": "동사",
+        "lemma": "potior, potiri, potitus sum",
+        "parse": "pres. pass. (deponent) 3rd pers. sg.",
+        "gloss_kr": "차지하다",
+        "gloss_en": "gains possession of",
+        "syntax": "형태는 수동이나 의미는 능동인 탈형동사(deponent)로, 주어(아이네이스 혹은 트로이아인들)가 영토를 차지함을 서술한다.",
+        "background": "아이네as 일행이 마침내 라티움 땅에 정착하여 권리와 영토를 획득하는 과정을 보여준다.",
+        "etymology": "인도유럽조어 재구형 *poti-('힘 있는, 주인이 되는')에서 유래하였다. 산스크리트어 páti('남편, 주인'), 고대 그리스어 πόσις(posis) 등이 동계어이다. 영어의 potential, potent 등의 어원과 연결된다."
+      },
+      {
+        "g": "nataque",
+        "pos": "명사",
+        "lemma": "natus, -i / nata, -ae, f.",
+        "parse": "sg. abl. f. (domo와 대등 연결)",
+        "gloss_kr": "그리고 딸과 함께",
+        "gloss_en": "and with the daughter",
+        "syntax": "앞의 domo와 함께 potitur의 지배를 받는 탈격 명사이며, -que로 연결된다.",
+        "background": "라티누스 왕의 딸인 라비니아(Lavinia)를 가리키며, 아이네아스의 결혼과 정착의 정당성을 부여한다.",
+        "etymology": "동사 nasci('태어나다')의 과거분사형에서 유래한 명사이다. 이탈리아어 nata, 스페인어 nata 등이 동계어이다. 현대 영어의 innate, nation, native 등의 어근과 일치한다."
+      },
+      {
+        "g": "Latini",
+        "pos": "명사",
+        "lemma": "Latinus, -i, m.",
+        "parse": "sg. gen. m.",
+        "gloss_kr": "라티누스의",
+        "gloss_en": "of Latinus",
+        "syntax": "앞의 nata를 소유의 의미로 수식하는 속격 명사이다.",
+        "background": "라티움의 왕이자 라비니아의 아버지인 라티누스 왕을 가리킨다.",
+        "etymology": "이탈리아 중부의 고대 지역 이름 Latium에서 파생된 고유명사이다. 로마인들과 라틴 민족의 시조적 명칭으로 이어진다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.450",
+    "trans": "그것은 마르스의 힘(전쟁) 없이는 이루어지지 않았다. 사나운 민족과의 전쟁이",
+    "words": [
+      {
+        "g": "non",
+        "pos": "부사",
+        "lemma": "non",
+        "parse": "neg. adv.",
+        "gloss_kr": "아니한",
+        "gloss_en": "not",
+        "syntax": "뒤의 전치사구를 부정하여 평화로운 정착이 아님을 강조하는 부사이다.",
+        "background": "평화로운 양도가 아니라 피 흘리는 전쟁을 통해서만 정착이 가능했음을 시사한다.",
+        "etymology": "고대 라틴어 oenum(하나)과 ne(아니다)의 결합형 *ne oenum에서 축약되어 유래하였다. 이탈리아어 non, 스페인어 no 등이 동계어이다. 영어의 non- 접두사로 널리 쓰인다."
+      },
+      {
+        "g": "sine",
+        "pos": "전치사",
+        "lemma": "sine",
+        "parse": "prep. with abl.",
+        "gloss_kr": "~없이",
+        "gloss_en": "without",
+        "syntax": "탈격 명사 Marte를 지배하여 전쟁의 개입이 필수적이었음을 나타낸다.",
+        "background": "전쟁의 신 마르스의 개입, 즉 피비린내 나는 전쟁이 수반되었음을 강조한다.",
+        "etymology": "라틴어 전치사로 인도유럽조어적 기원을 갖는다. 이탈리아어 senza, 스페인어 sin 등이 동계어이다. 영어의 sinecure(직무 없는 자리) 등의 어근에 흔적이 남아 있다."
+      },
+      {
+        "g": "Marte",
+        "pos": "명사",
+        "lemma": "Mars, Martis, m.",
+        "parse": "sg. abl. m.",
+        "gloss_kr": "마르스(전쟁)로",
+        "gloss_en": "Mars (war)",
+        "syntax": "전치사 sine의 목적어인 탈격 명사로, 비유적으로 '전쟁' 자체를 의미한다.",
+        "background": "전쟁의 신 마르스의 이름을 빌려 라티움 정착 과정에서 벌어진 치열한 무력 충돌을 상징한다.",
+        "etymology": "이탈리아 고대 신화의 신 이름인 Mars에서 유래하였다. 프랑스어 mars(3월), 영어의 martial(전쟁의), Tuesday의 어원적 배경 등과 연결된다."
+      },
+      {
+        "g": "tamen",
+        "pos": "부사",
+        "lemma": "tamen",
+        "parse": "adv.",
+        "gloss_kr": "그러나, 그래도",
+        "gloss_en": "nevertheless",
+        "syntax": "앞선 평화로운 정착 분위기에 대조를 이루며 역접의 의미를 부여하는 부사이다.",
+        "background": "쉽게 땅을 얻은 것 같지만 실상은 혹독한 전쟁을 치러야 했음을 전환하는 역할이다.",
+        "etymology": "라틴어 대명사적 어근에서 발달한 부사이다. 고전 및 중세 라틴어를 거쳐 로망스어군 일부에 영향을 주었으며, 문어체에서 대조를 나타내는 표준 표현으로 쓰인다."
+      },
+      {
+        "g": "bellum",
+        "pos": "명사",
+        "lemma": "bellum, -i, n.",
+        "parse": "sg. nom. n.",
+        "gloss_kr": "전쟁이",
+        "gloss_en": "war",
+        "syntax": "비인칭 수동태 동사 suscipitur의 주어로 문장의 중심 화두를 제시한다.",
+        "background": "트로이아인들과 현지 루툴루이족 및 라틴족 간의 피할 수 없는 무력 충돌을 뜻한다.",
+        "etymology": "고대 라틴어 duellum('두 사람 사이의 싸움')에서 어두의 d가 탈락하여 변화한 형태이다. 이탈리아어 bello(고어), 스페인어 belico 등의 어근이다. 현대 영어의 rebellion, bellicose, antebellum 등에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "cum",
+        "pos": "전치사",
+        "lemma": "cum",
+        "parse": "prep. with abl.",
+        "gloss_kr": "~와 함께, ~와의",
+        "gloss_en": "with",
+        "syntax": "탈격 명사 gente를 지배하여 적대 세력과의 조우를 나타낸다.",
+        "background": "아이네아스 세력에 맞서는 라티움 토착 민족들의 적대적 결합을 설명한다.",
+        "etymology": "인도유럽조어 재구형 *kom에서 유래한 전치사이다."
+      },
+      {
+        "g": "feroci",
+        "pos": "형용사",
+        "lemma": "ferox, ferocis",
+        "parse": "sg. abl. f.",
+        "gloss_kr": "사나운, 호전적인",
+        "gloss_en": "fierce, savage",
+        "syntax": "명사 gente를 수식하는 3변화 형용사의 탈격 형태이다.",
+        "background": "트로이아인들에 맞서 싸우는 라티움 토착 민족들의 용맹하고 호전적인 성격을 묘사한다.",
+        "etymology": "라틴어 ferus('야생의, 사나운')에서 유래한 형용사이다. 이탈리아어 feroce, 스페인어 feroz 등이 동계어이다. 현대 영어의 fierce, ferocious 등에 직접적인 어원이 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.451",
+    "trans": "시작되고, 약속된 아내를 빼앗긴 턴루스는 분노하며 일어선다.",
+    "words": [
+      {
+        "g": "suscipitur",
+        "pos": "동사",
+        "lemma": "suscipio, suscipere, suscepi, susceptus",
+        "parse": "pres. pass. 3rd pers. sg.",
+        "gloss_kr": "시작된다",
+        "gloss_en": "is undertaken",
+        "syntax": "주어인 bellum을 받는 수동태 본동사로, 전쟁이 본격적으로 개시됨을 서술한다.",
+        "background": "이탈리아 정착을 둘러싼 거대한 무력 충돌의 막이 오르는 순간이다.",
+        "etymology": "동사 capere('잡다')에 아래에서 위로 받쳐 올린다는 뜻의 접두사 sub-가 음운 동화되어 sus-로 변형되어 결합했다. 이탈리아어 suscipere(문어체) 등이 있다. 현대 영어의 susceptible, susception 등에 남아 있다."
+      },
+      {
+        "g": "pactaque",
+        "pos": "형용사",
+        "lemma": "pactus, -a, -um",
+        "parse": "sg. abl. f.",
+        "gloss_kr": "그리고 약속된",
+        "gloss_en": "and promised",
+        "syntax": "뒤의 coniuge를 수식하는 탈격 분사형 형용사이며, 접미사 -que로 문장을 결합한다.",
+        "background": "원래 라비니아와 혼사가 약속되어 있었으나 아이네아스에게 빼앗긴 상황을 나타낸다.",
+        "etymology": "동사 pacisci('계약하다, 약속하다')의 과거분사형에서 유래하였다. 영어의 pact(협정)와 어원이 같다."
+      },
+      {
+        "g": "furit",
+        "pos": "동사",
+        "lemma": "furo, furere",
+        "parse": "pres. act. 3rd pers. sg.",
+        "gloss_kr": "격분하다, 미쳐 날뛰다",
+        "gloss_en": "rages",
+        "syntax": "주어인 Turnus를 받는 능동태 본동사로, 연인을 빼앗긴 이탈리아 영웅의 분노를 생생히 묘사한다.",
+        "background": "약혼녀를 잃고 분노에 눈이 멀어 전쟁을 일으키는 루툴루이족의 왕 투르누스의 심리 상태이다.",
+        "etymology": "인도유럽조어 재구형에서 유래한 라틴어 동사이다. 이탈리아어 furare와는 어원이 다르며, 영어의 furious, frenzy, fury 등에 직접적인 어원이 남아 있다."
+      },
+      {
+        "g": "pro",
+        "pos": "전치사",
+        "lemma": "pro",
+        "parse": "prep. with abl.",
+        "gloss_kr": "~를 위하여, ~를 두고",
+        "gloss_en": "for, on behalf of",
+        "syntax": "탈격 명사 coniuge를 지배하여 투르누스가 싸우는 목적(아내)을 나타낸다.",
+        "background": "자신의 정당한 아내(약혼녀)를 지키기 위해 목숨을 걸고 싸우는 투르누스의 명분을 보여준다.",
+        "etymology": "인도유럽조어 재구형 *pro('앞에, ~를 대신하여')에서 유래하였다. 산스크리트어 prá('앞으로'), 고대 그리스어 πρό(pro) 등이 동계어이다. 영어의 pro-, provide 등에 그 흔적이 있다."
+      },
+      {
+        "g": "coniuge",
+        "pos": "명사",
+        "lemma": "coniunx, coniugis, m. / f.",
+        "parse": "sg. abl. f.",
+        "gloss_kr": "아내를, 반려자를",
+        "gloss_en": "wife, spouse",
+        "syntax": "전치사 pro의 목적어로 쓰인 탈격 명사이다.",
+        "background": "약혼녀였으나 아이네아스에게 넘어가게 된 라비니아를 지칭한다.",
+        "etymology": "동사 iungere('멍에를 씌우다, 결합하다')에 접두사 con-이 붙어 만들어진 명사이다. 이탈리아어 congiuge, 스페인어 cónyuge 등이 동계어이다. 영어의 conjugal(부부의) 등에 그 어원이 남아 있다."
+      },
+      {
+        "g": "Turnus",
+        "pos": "명사",
+        "lemma": "Turnus, -i, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "투르누스가",
+        "gloss_en": "Turnus",
+        "syntax": "동사 furit의 주어로 쓰인 고유명사 명사이다.",
+        "background": "아이네아스의 이탈리아 정복에 결사 항전하는 루툴루이족의 용맹한 왕이다.",
+        "etymology": "고대 이탈리아 지역의 전설적인 인물 이름인 Turnus에서 유래한 고유명사이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.452",
+    "trans": "온 티레니아(에트루리아)가 라티움과 맞서고, 오랫동안",
+    "words": [
+      {
+        "g": "Concurrit",
+        "pos": "동사",
+        "lemma": "concurro, concurrere, concucurri, concursus",
+        "parse": "pres. act. 3rd pers. sg.",
+        "gloss_kr": "격돌하다, 맞서 싸우다",
+        "gloss_en": "clashes, runs together",
+        "syntax": "주어인 Tyrrhenia를 받는 능동태 본동사로, 양 세력이 전투에 돌입함을 나타낸다.",
+        "background": "이탈리아 전역의 세력들이 아이네아스 측과 투르누스 측으로 갈라져 격돌하는 거대한 전쟁 구도이다.",
+        "etymology": "동사 currere('달리다')에 함께라는 뜻의 con-이 결합하였다. 이탈리아어 concorrere, 스페인어 concurrir 등이 동계어이다. 현대 영어의 concur, concurrent 등에 어원이 남아 있다."
+      },
+      {
+        "g": "Latio",
+        "pos": "명사",
+        "lemma": "Latium, -ii, n.",
+        "parse": "sg. dat. n.",
+        "gloss_kr": "라티움을 향해, 라티움과",
+        "gloss_en": "with Latium",
+        "syntax": "동사 concurrit과 호응하는 여격 명사로, 충돌의 대상이나 방향을 나타낸다.",
+        "background": "로마가 세워질 이탈리아 중부의 핵심 지역인 라티움 땅과 그 세력들을 가리킨다.",
+        "etymology": "이탈리아 고대 지역 명칭인 Latium에서 유래하였다. 라틴어 및 로마 문화권 전체의 지리적 어원을 제공한다."
+      },
+      {
+        "g": "Tyrrhenia",
+        "pos": "명사",
+        "lemma": "Tyrrhenia, -ae, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "티레니아(에트루리아)가",
+        "gloss_en": "Tyrrhenia",
+        "syntax": "동사 Concurrit의 주어로 쓰인 고유명사 명사이다.",
+        "background": "에트루리아 지역을 가리키며, 아이네아스를 돕는 연합 세력의 한 축으로 참전한다.",
+        "etymology": "그리스어 Τυρρηνία(Tyrrhenia)에서 유래한 라틴어 고유명사이다. 이탈리아 서쪽 바다인 티레니아해의 어원이기도 하다."
+      },
+      {
+        "g": "tota",
+        "pos": "형용사",
+        "lemma": "totus, -a, -um",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "온통, 전체의",
+        "gloss_en": "whole, all",
+        "syntax": "주어인 Tyrrhenia를 수식하는 형용사로, 에트루리아 전역이 참전했음을 강조한다.",
+        "background": "지역 전체가 총력전 양상으로 전쟁에 휘말렸음을 보여준다.",
+        "etymology": "인도유럽조어 재구형에서 유래한 라틴어 형용사이다. 이탈리아어 tutto, 스페인어 todo 등이 동계어이다. 현대 영어의 total, totality 등에 그 어원이 살아 있다."
+      },
+      {
+        "g": "diuque",
+        "pos": "부사",
+        "lemma": "diu",
+        "parse": "temp. adv.",
+        "gloss_kr": "그리고 오랫동안",
+        "gloss_en": "and for a long time",
+        "syntax": "시간을 나타내는 부사 diu에 접속사 -que가 결합하여 다음 절의 지속성을 이끈다.",
+        "background": "승패가 쉽게 나지 않고 길게 이어지는 소모전의 양상을 예고한다.",
+        "etymology": "시간을 뜻하는 라틴어 어근에서 유래한 부사이다. 고전 라틴어의 시적·문어체 전통에서 지속적인 시간 개념을 나타내는 표준 부사로 쓰였다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.453",
+    "trans": "힘겨운 전쟁 무기 속에서 치열하게 승패가 다투어진다.",
+    "words": [
+      {
+        "g": "ardua",
+        "pos": "형용사",
+        "lemma": "arduus, -a, -um",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "힘겨운, 험난한",
+        "gloss_en": "arduous, difficult",
+        "syntax": "주어인 victoria를 수식하는 1·2변화 형용사의 주격 형태이다.",
+        "background": "누구나 쉽게 승리하지 못하고 피를 흘려야 하는 험난한 전쟁의 성격을 나타낸다.",
+        "etymology": "인도유럽조어 재구형 *h₃erdh-('높이 솟다, 가파르다')에서 유래하였다. 산스크리트어 ūrdhvá('높이 솟은') 등이 동계어이다. 현대 영어의 arduous(힘든, 험난한)에 직접적인 어원이 남아 있다."
+      },
+      {
+        "g": "sollicitis",
+        "pos": "형용사",
+        "lemma": "sollicitus, -a, -um",
+        "parse": "pl. abl. n.",
+        "gloss_kr": "근심 어린, 불안한",
+        "gloss_en": "anxious, troubled",
+        "syntax": "명사 armis를 수식하는 탈격 형용사이다.",
+        "background": "전쟁으로 인해 온갖 불안과 공포에 사로잡힌 군사들과 백성들의 심경을 대변한다.",
+        "etymology": "명사 sollus('전체의')와 cieere('흔들다')의 결합에서 유래하였다. 이탈리아어 sollecito, 스페인어 solícito 등이 동계어이다. 현대 영어의 solicit, sollicitude 등에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "victoria",
+        "pos": "명사",
+        "lemma": "victoria, -ae, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "승리가",
+        "gloss_en": "victory",
+        "syntax": "수동태 동사 quaeritur의 주어로 쓰인 명사이다.",
+        "background": "양측이 치열하게 다투는 궁극적인 목표이자 쉽게 허락되지 않는 승리를 뜻한다.",
+        "etymology": "정복을 뜻하는 동사 vincere에서 유래한 명사이다. 이탈리아어 vittoria, 스페인어 victoria 등이 동계어이다. 현대 영어의 victory, victorious 등에 그 어원이 고스란히 살아 있다."
+      },
+      {
+        "g": "quaeritur",
+        "pos": "동사",
+        "lemma": "quaero, quaerere, quaesivi, quaesitus",
+        "parse": "pres. pass. 3rd pers. sg.",
+        "gloss_kr": "구해지다, 추구되다",
+        "gloss_en": "is sought",
+        "syntax": "주어인 victoria를 받는 수동태 본동사로, 승리를 얻기 위한 피비린내 나는 노력을 서술한다.",
+        "background": "전장에서 쉽게 승부가 나지 않아 끊임없이 피를 흘리며 승리를 찾아 헤매는 양상이다.",
+        "etymology": "인도유럽조어 재구형에서 유래한 라틴어 동사이다. 이탈리아어 chiedere, 스페인어 querer 등이 동계어이다. 현대 영어의 acquire, conquer, inquire, query 등에 그 어원이 깊이 연관되어 있다."
+      },
+      {
+        "g": "armis",
+        "pos": "명사",
+        "lemma": "arma, -orum, n.",
+        "parse": "pl. abl. n.",
+        "gloss_kr": "무기로, 군사력으로",
+        "gloss_en": "with arms, weapons",
+        "syntax": "수단을 나타내는 탈격 명사로, 무력을 통한 전투 행위를 가리킨다.",
+        "background": "창과 칼이 부딪히는 실질적인 전장의 무기와 전투 수단을 상징한다.",
+        "etymology": "인도유럽조어 재구형 *ar-('맞추다, 결합하다')에서 유래하였다. 산스크리트어 ṛnoti, 고대 그리스어 ἁρμόζω(harmozo) 등이 동계어이다. 현대 영어의 arm(팔/무장하다), army, armor, armistice 등에 그 어원이 살아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.454",
+    "trans": "양측 모두 외부의 힘으로 각자의 세력을 키우고,",
+    "words": [
+      {
+        "g": "Auget",
+        "pos": "동사",
+        "lemma": "augeo, augere, auxi, auctus",
+        "parse": "pres. act. 3rd pers. sg.",
+        "gloss_kr": "늘리다, 강화하다",
+        "gloss_en": "augments, increases",
+        "syntax": "주어인 uterque를 받는 능동태 본동사로, 양 진영이 세력을 확장하는 모습을 묘사한다.",
+        "background": "동맹군을 끌어들이며 전쟁의 규모가 점점 더 커지고 확장되는 국면이다.",
+        "etymology": "인도유럽조어 재구형 *h₂eug-('자라다, 늘어나다')에서 유래하였다. 산스크리트어 ójas('힘'), 고대 그리스어 ἀέξω(aexo) 등이 동계어이다. 현대 영어의 augment, author, auction, august 등에 그 어원이 깊게 남아 있다."
+      },
+      {
+        "g": "uterque",
+        "pos": "대명사",
+        "lemma": "uterque, utraque, utrumque",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "양쪽 모두가",
+        "gloss_en": "each (of two), both",
+        "syntax": "동사 Auget의 주어로 쓰인 대명사로, 트로이아 연합과 루툴루이 연합 양측을 가리킨다.",
+        "background": "어 어느 한쪽도 물러서지 않고 외부 동맹을 끌어모아 군사력을 불리는 상황이다.",
+        "etymology": "의문대명사 uter('어느 쪽')에 양쪽을 뜻하는 접미사 -que가 결합한 형태이다. 라틴어 고유의 대명사 체계를 이어받았다."
+      },
+      {
+        "g": "suas",
+        "pos": "대명사",
+        "lemma": "suus, -a, -um",
+        "parse": "pl. acc. f.",
+        "gloss_kr": "자신의",
+        "gloss_en": "their own",
+        "syntax": "목적어인 vires를 수식하는 소유 형용사이다.",
+        "background": "각각의 진영이 자신들의 기본 군사력 외에 추가적인 힘을 동원함을 나타낸다.",
+        "etymology": "인도유럽조어 재구형 *s(w)e-('자기 자신')에서 유래하였다. 산스크리트어 svá('자신의'), 고대 그리스어 ós 등이 동계어이다. 현대 영어의 suicide, idiom 등의 어원적 배경과 연결된다."
+      },
+      {
+        "g": "externo",
+        "pos": "형용사",
+        "lemma": "externus, -a, -um",
+        "parse": "sg. abl. n.",
+        "gloss_kr": "외부의, 외국의",
+        "gloss_en": "external, foreign",
+        "syntax": "명사 robore를 수식하는 탈격 형용사이다.",
+        "background": "자국 내의 병력뿐만 아니라 다른 지역에서 온 용병이나 동맹군 같은 외래의 힘을 뜻한다.",
+        "etymology": "전치사/부사 extra('밖에')에서 파생된 형용사이다. 이탈리아어 esterno, 스페인어 externo 등이 동계어이다. 현대 영어의 external, exterior 등에 직접적인 어원이 남아 있다."
+      },
+      {
+        "g": "robore",
+        "pos": "명사",
+        "lemma": "robur, roboris, n.",
+        "parse": "sg. abl. n.",
+        "gloss_kr": "힘으로, 강인함으로",
+        "gloss_en": "with strength, power",
+        "syntax": "수단을 나타내는 탈격 명사로, 군사적 실질 역량을 의미한다.",
+        "background": "단단한 참나무를 뜻하던 단어에서 전용되어, 군대의 강력한 물리적 실체와 전투력을 상징한다.",
+        "etymology": "라틴어 고유 어휘로 단단한 참나무를 뜻했다가 '힘, 불굴의 의지'로 의미가 확장되었다. 이탈리아어 robur(문어체) 등이 있다. 현대 영어의 robust(건강한, 튼튼한), roborant 등에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "vires",
+        "pos": "명사",
+        "lemma": "vis, vis, f.",
+        "parse": "pl. acc. f.",
+        "gloss_kr": "세력을, 병력을",
+        "gloss_en": "forces, powers",
+        "syntax": "동사 Auget의 직접목적어로 쓰인 3변화 명사의 복수 대격 형태이다.",
+        "background": "전쟁을 수행하기 위해 끌어모은 양측의 총체적인 군사적 자원과 병력을 뜻한다.",
+        "etymology": "인도유럽조어 재구형에서 유래한 명사이다. 이탈리아어 vira(고어) 등과 연결된다. 현대 영어의 virile(남성적인, 힘센), virtue, violence 등에 그 어원이 닿아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.455",
+    "trans": "많은 이들이 루툴루이족을 지키고, 많은 이들이 트로이아인들을 보호한다.",
+    "words": [
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "앞 문장과 대구를 이루며 새로운 상황을 이끄는 대등 접속사이다.",
+        "background": "전쟁에 참여하여 각 진영을 돕는 동맹 세력의 양상을 대조적으로 보여준다.",
+        "etymology": "인도유럽조어 재구형 *eti에서 유래한 라틴어 접속사이다."
+      },
+      {
+        "g": "multi",
+        "pos": "형용사",
+        "lemma": "multus, -a, -um",
+        "parse": "pl. nom. m.",
+        "gloss_kr": "많은 이들이",
+        "gloss_en": "many (men)",
+        "syntax": "후반부 절의 생략된 동사적 맥락을 받거나 주어로 기능하는 복수 형용사 명사화 용법이다.",
+        "background": "투르누스의 루툴루이족 편에 서서 싸우는 수많은 이탈리아 동맹 도시들의 전사들을 가리킨다.",
+        "etymology": "인도유럽조어 재구형에서 유래하였다. 이탈리아어 molto, 스페인어 mucho 등이 동계어이다. 현대 영어의 multiform, multiply, multitude 등에 그 어원이 살아 있다."
+      },
+      {
+        "g": "Rutulos",
+        "pos": "명사",
+        "lemma": "Rutuli, -orum, m.",
+        "parse": "pl. acc. m.",
+        "gloss_kr": "루툴루이족을",
+        "gloss_en": "the Rutulians",
+        "syntax": "동사 tuentur의 직접목적어로 쓰인 고유명사 복수 대격이다.",
+        "background": "투르누스가 이끄는 이탈리아의 토착 부족으로 트로이아인들과 맞서 싸우는 주축 세력이다.",
+        "etymology": "고대 이탈리아 부족 명칭인 Rutuli에서 유래한 고유명사이다."
+      },
+      {
+        "g": "multi",
+        "pos": "형용사",
+        "lemma": "multus, -a, -um",
+        "parse": "pl. nom. m.",
+        "gloss_kr": "많은 이들이",
+        "gloss_en": "many (men)",
+        "syntax": "대구법을 이루며 트로이아 편에 선 이들을 가리키는 복수 주격 형용사이다.",
+        "background": "아이네아스를 도와 새로운 나라를 세우고자 참전한 우호적인 이탈리아 동맹 세력을 뜻한다.",
+        "etymology": "인도유럽조어 재구형에서 유래한 라틴어 형용사이다."
+      },
+      {
+        "g": "Troiana",
+        "pos": "형용사",
+        "lemma": "Troianus, -a, -um",
+        "parse": "pl. acc. n. (명사화)",
+        "gloss_kr": "트로이아의 것들을, 트로이아인들을",
+        "gloss_en": "Trojan (forces/men)",
+        "syntax": "동사 tuentur의 목적어인 중성 복수 대격 형태의 형용사 명사화 용법이다.",
+        "background": "고향을 잃고 이탈리아에 상륙하여 생존과 정착을 위해 싸우는 트로이아 생존자들을 가리킨다.",
+        "end_of_sentence": true,
+        "etymology": "고대 고유명사 Troia(트로이)에서 파생된 형용사이다. 영어의 Trojan 등에 그 어원이 그대로 이어진다."
+      },
+      {
+        "g": "tuentur",
+        "pos": "동사",
+        "lemma": "tueor, tueri, tuitus sum",
+        "parse": "pres. pass. (deponent) 3rd pers. pl.",
+        "gloss_kr": "지키다, 보호하다",
+        "gloss_en": "protect, defend",
+        "syntax": "형태는 수동이나 의미는 능동인 탈형동사(deponent)의 복수형으로, 각 진영을 지키는 동맹 세력의 행동을 서술한다.",
+        "background": "양측 진영에 각기 동맹과 지원군이 몰려들어 치열한 보호와 방어 전쟁이 전개됨을 압축적으로 보여준다.",
+        "etymology": "인도유럽조어 재구형에서 유래한 라틴어 동사이다. 직접적인 로망스어 반사형보다는 파생어 형태로 남아 있으며, 현대 영어의 tuition(수업/보호), tutor, intuitive 등에 그 어원이 깊게 연관되어 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.456",
+    "trans": "진영들을. 에아네아스는 에반드로스의 성벽으로 헛되이 가지 않았고,",
+    "words": [
+      {
+        "g": "castra",
+        "pos": "명사",
+        "lemma": "castrum, -i, n. (보통 복수 castra)",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "진영을",
+        "gloss_en": "camp",
+        "syntax": "앞 문장의 tuentur에 이어지는 목적어로, 양측의 군사 진영을 가리킨다.",
+        "background": "트로이아 진영과 루툴루이 진영이 각각 군대를 이끌고 대치하는 군사적 거점이다.",
+        "etymology": "인도유럽조어 재구형에서 유래한 라틴어 명사이다. 이탈리아어 castro 등이 동계어이며, 현대 영어의 Chester, Lancaster 등의 지명 접미사에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "Neque",
+        "pos": "접속사",
+        "lemma": "사/부사 neque (nec)",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고 ~도 아니다",
+        "gloss_en": "Nor, and not",
+        "syntax": "앞선 내용과 연결되며 부정의 의미를 대등하게 이끄는 접속사이다.",
+        "background": "동맹을 구하기 위한 양측의 사절 파견이 헛되지 않았거나 혹은 엇갈린 결과를 낳았음을 대조적으로 보여준다.",
+        "etymology": "접속사 -que와 부정사 ne의 결합으로 이루어졌다. 로망스어군에서 다양한 형태로 진화하였다."
+      },
+      {
+        "g": "Aeneas",
+        "pos": "명사",
+        "lemma": "Aeneas, -ae, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "아이네아스가",
+        "gloss_en": "Aeneas",
+        "syntax": "동사 veniabat (생략 혹은 후행 동사와의 호응)의 주어로 쓰인 고유명사이다.",
+        "background": "트로이아의 영웅으로, 아르카디아의 왕 에반드로스에게 도움을 청하러 간다.",
+        "etymology": "그리스어 Αἰνείας(Aineias)에서 유래한 라틴어 고유명사이다. 베르길이우스의 서사시 '아이네이스'의 주인공 이름이다."
+      },
+      {
+        "g": "Euandri",
+        "pos": "명사",
+        "lemma": "Euander, -dri, m.",
+        "parse": "sg. gen. m.",
+        "gloss_kr": "에반드로스의",
+        "gloss_en": "of Evander",
+        "syntax": "뒤의 moenia를 소유의 의미로 수식하는 속격 명사이다.",
+        "background": "팔레움(추후 로마가 될 지역)에 정착하여 살고 있던 아르카디아 출신의 왕 에반드로스를 가리킨다.",
+        "etymology": "그리스어 Εὔανδρος(Euandros, '좋은 남자의 아들' 또는 '용기 있는 자')에서 유래한 고유명사이다."
+      },
+      {
+        "g": "ad",
+        "pos": "전치사",
+        "lemma": "ad",
+        "parse": "prep. with acc.",
+        "gloss_kr": "~로, ~향하여",
+        "gloss_en": "to, toward",
+        "syntax": "대격 명사 moenia를 지배하여 이동의 방향을 나타낸다.",
+        "background": "아이네아스가 동맹을 구하기 위해 에반드로스의 성벽으로 향하는 여정이다.",
+        "etymology": "인도유럽조어 재구형 *ad('~를 향하여, ~에')에서 유래하였다. 산스크리트어 등과 동계어이며, 현대 영어의 ad- 접두사로 널리 쓰인다."
+      },
+      {
+        "g": "moenia",
+        "pos": "명사",
+        "lemma": "moenia, -ium, n.",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "성벽을, 성곽 도시를",
+        "gloss_en": "walls, city walls",
+        "syntax": "전치사 ad의 목적어로 쓰인 중성 복수 명사이다.",
+        "background": "에반드로스가 다스리는 도시의 방어용 성벽을 의미한다.",
+        "etymology": "라틴어 고유 어휘로 도시의 방어벽을 뜻한다. 이탈리아어 Mura 등의 단어와 의미적 계통을 같이한다."
+      },
+      {
+        "g": "frustra",
+        "pos": "부사",
+        "lemma": "frustra",
+        "parse": "adv.",
+        "gloss_kr": "헛되이, 보람 없이",
+        "gloss_en": "in vain",
+        "syntax": "동사적 맥락을 수식하는 부사로, 아이네아스의 방문은 헛되지 않았음(즉 성공했음)을 나타낸다.",
+        "background": "에반드로스가 기꺼이 아이네아스의 동맹 요청을 받아들였음을 암시한다.",
+        "etymology": "라틴어 어근에서 유래한 부사이다. 이탈리아어 frustrare 등의 동사형을 파생시켰으며, 현대 영어의 frustrate(좌절시키다), frustration 등에 그 어원이 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.457",
+    "trans": "그러나 베눌루스는 방랑하는 디오메데스의 도시로 헛되이 갔으니:",
+    "words": [
+      {
+        "g": "at",
+        "pos": "접속사",
+        "lemma": "at",
+        "parse": "coord. conj.",
+        "gloss_kr": "그러나, 반면에",
+        "gloss_en": "but",
+        "syntax": "앞선 아이네아스의 성공적 방문과 대조적으로 베눌루스의 실패를 잇는 역접 접속사이다.",
+        "background": "루툴루이족이 디오메데스에게 구원을 요청하러 사절을 보낸 상황으로 국면이 전환된다.",
+        "etymology": "인도유럽조어 재구형에서 유래한 라틴어 대조 접속사이다. 고전 라틴어 문장에서 강력한 전환을 나타낸다."
+      },
+      {
+        "g": "Venulus",
+        "pos": "명사",
+        "lemma": "Venulus, -i, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "베눌루스가",
+        "gloss_en": "Venulus",
+        "syntax": "후행 동사 venerat의 주어로 쓰인 고유명사이다.",
+        "background": "투르누스의 명을 받아 그리스 영웅 디오메데스에게 동맹을 청하러 파견된 루툴루이족 사절이다.",
+        "etymology": "로마 신화 및 베르길이우스의 작품에 등장하는 인물 이름인 Venulus에서 유래했다."
+      },
+      {
+        "g": "frustra",
+        "pos": "부사",
+        "lemma": "frustra",
+        "parse": "adv.",
+        "gloss_kr": "헛되이",
+        "gloss_en": "in vain",
+        "syntax": "베눌루스의 방문이 결실을 맺지 못했음을 강조하는 부사이다.",
+        "background": "디오메데스가 참전을 거절함으로써 루툴루이족의 외교적 노력이 실패로 돌아감을 보여준다.",
+        "etymology": "라틴어 부사 frustra(좌절, 헛됨)."
+      },
+      {
+        "g": "profugi",
+        "pos": "형용사",
+        "lemma": "profugus, -a, -um",
+        "parse": "sg. gen. m. (혹은 명사화)",
+        "gloss_kr": "방랑하는, 정처 없는",
+        "gloss_en": "exiled, fugitive",
+        "syntax": "뒤의 Diomedis를 수식하는 소유격 형용사 형태이다.",
+        "background": "트로이 전쟁 이후 고향으로 돌아가지 못하고 이탈리아 남부에 정착한 디오메데스의 처지를 나타낸다.",
+        "etymology": "동사 profugere('도망치다, 망명하다', pro- + fugere)에서 유래한 형용사이다. 영어의 fugitive(도망자)와 어원이 같다."
+      },
+      {
+        "g": "Diomedis",
+        "pos": "명사",
+        "lemma": "Diomedes, -is, m.",
+        "parse": "sg. gen. m.",
+        "gloss_kr": "디오메데스의",
+        "gloss_en": "of Diomedes",
+        "syntax": "뒤의 urbem을 소유의 의미로 수식하는 속격 명사이다.",
+        "background": "트로이 전쟁에서 혁명을 세웠던 아르고스의 왕이자 이탈리아 남부로 이주한 영웅 디오메데스이다.",
+        "etymology": "그리스어 Διομήδης(Diomedes, '제우스의 지혜')에서 유래한 고유명사이다."
+      },
+      {
+        "g": "ad",
+        "pos": "전치사",
+        "lemma": "ad",
+        "parse": "prep. with acc.",
+        "gloss_kr": "~로",
+        "gloss_en": "to",
+        "syntax": "대격 명사 urbem을 지배하는 방향 전치사이다.",
+        "background": "베눌루스가 디오메데스가 세운 도시로 찾아간 여정을 나타낸다.",
+        "etymology": "인도유럽조어 *ad."
+      },
+      {
+        "g": "urbem",
+        "pos": "명사",
+        "lemma": "urbs, urbis, f.",
+        "parse": "sg. acc. f.",
+        "gloss_kr": "도시를",
+        "gloss_en": "city",
+        "syntax": "전치사 ad의 목적어로 쓰인 3변화 명사이다.",
+        "background": "디오메데스가 이탈리아 남부에 새로 건설한 도시(아르기리파)를 가리킨다.",
+        "etymology": "라틴어 고유 어휘로 도시를 뜻한다. 이탈리아어 citta(어원적 교체), 스페인어 urbe 등이 있으며, 현대 영어의 urban, suburb 등에 그 어원이 살아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.458",
+    "trans": "그는 이미 이아피기아의 다우누스 아래서 거대한 성벽을 세웠고 지참금으로 얻은 들판을 소유하고 있었다.",
+    "words": [
+      {
+        "g": "venerat",
+        "pos": "동사",
+        "lemma": "venio, venire, veni, ventus",
+        "parse": "plup. act. 3rd pers. sg.",
+        "gloss_kr": "도착해 있었다",
+        "gloss_en": "had come",
+        "syntax": "과거완료 능동태 동사로, 베눌루스가 디오메데스의 도시에 도착했던 과거의 시점을 나타낸다.",
+        "background": "사절 베눌루스가 디오메데스를 찾아갔던 당시 상황을 회상하며 설명하는 대목이다.",
+        "etymology": "인도유럽조어 재구형 *gʷem-('오다')에서 유래하였다. 산스크리트어 gámati, 고대 그리스어 βαίνω(baino) 등이 동계어이다. 현대 영어의 come, convene, adventure 등에 그 어원이 깊게 박혀 있다."
+      },
+      {
+        "g": "ille",
+        "pos": "대명사",
+        "lemma": "ille, illa, illud",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "그는",
+        "gloss_en": "he",
+        "syntax": "주절의 주어로 쓰인 지시대명사로, 디오메데스를 지칭한다.",
+        "background": "도움을 청하러 온 사절을 맞이하는 디오메데스의 현 상황을 서술한다.",
+        "etymology": "라틴어 지시대명사로 로망스어군 정관사의 어원적 모태가 되었다. 스페인어 el, 프랑스어 le 등이 여기서 유래했다."
+      },
+      {
+        "g": "quidem",
+        "pos": "부사",
+        "lemma": "quidem",
+        "parse": "adv.",
+        "gloss_kr": "참으로, 과연",
+        "gloss_en": "indeed, certainly",
+        "syntax": "앞의 ille을 강조하며 양보나 사실의 확인을 나타내는 부사이다.",
+        "background": "디오메데스가 이탈리아에서 이미 강력한 왕국을 건설해 번영하고 있음을 강조한다.",
+        "etymology": "대명사적 어근에 강조 접미사가 붙어 형성된 라틴어 부사이다."
+      },
+      {
+        "g": "sub",
+        "pos": "전치사",
+        "lemma": "sub",
+        "parse": "prep. with abl.",
+        "gloss_kr": "~의 통치 아래, ~의 보호 아래",
+        "gloss_en": "under",
+        "syntax": "탈격 명사 Dauno를 지배하여 정치적 보호나 예속 관계를 나타낸다.",
+        "background": "현지 왕 다우누스의 딸과 결혼하여 그의 영토와 보호 아래 정착한 디오메데스의 내력이다.",
+        "etymology": "인도유럽조어 재구형 *upo('아래에')에서 유래하였다. 산스크리트어 úpa, 고대 그리스어 ὑπό(hypo) 등이 동계어이다. 현대 영어의 sub-, subway, submarine 등에 그 어원이 남아 있다."
+      },
+      {
+        "g": "Iapyge",
+        "pos": "형용사",
+        "lemma": "Iapygus, -a, -um (또는 Iapygius)",
+        "parse": "sg. abl. m.",
+        "gloss_kr": "이아피기아의, 아폴리아의",
+        "gloss_en": "Iapygian",
+        "syntax": "명사 Dauno를 수식하는 탈격 형용사이다.",
+        "background": "이탈리아 남동부 풀리아(아폴리아) 지역인 이아피기아의 지리적 특성을 나타낸다.",
+        "etymology": "그리스어 Ἰάπυγες(Iapydes/Iapygcs)에서 유래한 지명 형용사이다."
+      },
+      {
+        "g": "maxima",
+        "pos": "형용사",
+        "lemma": "magnus, -a, -um (최상급 magnus -> maximus)",
+        "parse": "pl. acc. n. (moenia 수식)",
+        "gloss_kr": "가장 거대한",
+        "gloss_en": "greatest, very large",
+        "syntax": "성벽을 뜻하는 moenia를 수식하는 최상급 형용사의 대격 형태이다.",
+        "background": "디오메데스가 이탈리아에 세운 도시가 매우 번창하고 거대함을 보여준다.",
+        "etymology": "인도유럽조어 재구형에서 유래한 라틴어 최상급 형용사이다. 이탈리아어 massimo, 스페인어 máximo 등이 동계어이며, 영어의 maximum, maximize 등에 그 어원이 남아 있다."
+      },
+      {
+        "g": "Dauno",
+        "pos": "명사",
+        "lemma": "Daunus, -i, m.",
+        "parse": "sg. abl. m.",
+        "gloss_kr": "다우누스 (왕)의",
+        "gloss_en": "of Daunus",
+        "syntax": "전치사 sub의 목적어로 쓰인 고유명사 탈격이다.",
+        "background": "이아피기아 지역의 왕인 다우누스를 가리키며, 디오메데스의 장인이 된다.",
+        "etymology": "이탈리아 남부의 전설적인 왕 이름인 Daunus에서 유래한 고유명사이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.459",
+    "trans": "성벽을 세웠고 지참금으로 얻은 들판을 소유하고 있었다.",
+    "words": [
+      {
+        "g": "moenia",
+        "pos": "명사",
+        "lemma": "moenia, -ium, n.",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "성벽을",
+        "gloss_en": "walls",
+        "syntax": "동사 condiderat의 직접목적어로 쓰인 중성 복수 명사이다.",
+        "background": "디오메데스가 이탈리아 땅에 축조한 견고한 요새와 도시를 의미한다.",
+        "etymology": "라틴어 고유의 성벽 명사이다."
+      },
+      {
+        "g": "condiderat",
+        "pos": "동사",
+        "lemma": "condo, condere, condidi, conditus",
+        "parse": "plup. act. 3rd pers. sg.",
+        "gloss_kr": "건설해 있었다, 세워두었다",
+        "gloss_en": "had founded",
+        "syntax": "과거완료 능동태 동사로, 사절이 방문하기 이전에 이미 도시를 건설한 완료된 상태를 나타낸다.",
+        "background": "트로이 전쟁 후 이탈리아에 정착하여 새로운 왕국과 도시를 일군 디오메데스의 업적이다.",
+        "etymology": "동사 dare('주다')에 함께라는 뜻의 con-이 결합하여 '함께 모아 두다, 건설하다'라는 뜻으로 발전했다. 이탈리아어 condire(의미 분화), 스페인어 condir 등이 있으며, 영어의 condiment, abscond 등에 어원이 연관된다."
+      },
+      {
+        "g": "dotaliaque",
+        "pos": "형용사",
+        "lemma": "dotalis, -e",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "그리고 지참금의",
+        "gloss_en": "and dotal, of a dowry",
+        "syntax": "뒤의 arva를 수식하는 형용사이며, 접속사 -que로 앞 내용과 연결된다.",
+        "background": "왕의 딸과 결혼하면서 처가로부터 재산이자 지참금으로 하사받은 영토를 뜻한다.",
+        "etymology": "라틴어 명사 dos('지참금')에서 파생된 형용사이다. 이탈리아어 dotalizio 등의 어원적 뿌리가 되며, 영어의 dower, dowry 등에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "arva",
+        "pos": "명사",
+        "lemma": "arvum, -i, n.",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "경작지를, 들판을",
+        "gloss_en": "fields, lands",
+        "syntax": "동사 tenebat의 직접목적어로 쓰인 중성 복수 명사이다.",
+        "background": "결혼을 통해 소유하게 된 비옥하고 넓은 농경지와 영토를 가리킨다.",
+        "etymology": "동사 arare('밭 갈다')에서 파생된 중성 명사이다. 영어의 arable(경작할 수 있는) 등에 그 어원이 고스란히 남아 있다."
+      },
+      {
+        "g": "tenebat",
+        "pos": "동사",
+        "lemma": "teneo, tenere, tenui, tentus",
+        "parse": "impf. act. 3rd pers. sg.",
+        "gloss_kr": "소유하고 있었다, 차지하고 있었다",
+        "gloss_en": "held, possessed",
+        "syntax": "미완료 능동태 동사로, 과거 일정 기간 동안 지속적으로 땅을 지배하고 있던 상태를 나타낸다.",
+        "background": "디오메데스가 안정적으로 영토를 장악하고 살아가고 있었음을 보여준다.",
+        "etymology": "인도유럽조어 재구형 *ten-('늘이다, 잡다')에서 유래하였다. 산스크리트어 tanóti, 고대 그리스어 τείνω(teino) 등이 동계어이다. 현대 영어의 tenant, tenacious, contain, retain 등에 그 어원이 깊게 박혀 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.460",
+    "trans": "그러나 베눌루스가 투르누스의 전갈을 완수하고",
+    "words": [
+      {
+        "g": "Sed",
+        "pos": "접속사",
+        "lemma": "sed",
+        "parse": "coord. conj.",
+        "gloss_kr": "그러나",
+        "gloss_en": "but",
+        "syntax": "디오메데스의 번영하던 상황에서 다시 사절의 임무 수행과 거절의 맥락으로 화제를 돌리는 역접 접속사이다.",
+        "background": "루툴루이족 사절이 디오메데스를 만나 직접 동맹을 요청하는 장면으로 돌아간다.",
+        "etymology": "고대 라틴어 se('자신으로부터, 따로')와 가치 중립적 어구의 결합에서 유래한 역접 접속사이다. 이탈리아어 se(조건)와는 어원이 다르며 문어체 역접을 이끈다."
+      },
+      {
+        "g": "Venulus",
+        "pos": "명사",
+        "lemma": "Venulus, -i, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "베눌루스가",
+        "gloss_en": "Venulus",
+        "syntax": "후행 동사 peregit의 주어로 쓰인 고유명사이다.",
+        "background": "투르누스의 명을 받고 디오메데스에게 파견된 사절이다.",
+        "etymology": "인물 고유명사."
+      },
+      {
+        "g": "Turni",
+        "pos": "명사",
+        "lemma": "Turnus, -i, m.",
+        "parse": "sg. gen. m.",
+        "gloss_kr": "투르누스의",
+        "gloss_en": "of Turnus",
+        "syntax": "뒤의 mandata를 소유의 의미로 수식하는 속격 명사이다.",
+        "background": "트로이아인들에 맞서 전쟁을 일으킨 루툴루이족의 왕 투르누스를 가리킨다.",
+        "etymology": "고유명사 Turnus."
+      },
+      {
+        "g": "postquam",
+        "pos": "접속사",
+        "lemma": "postquam",
+        "parse": "temp. conj.",
+        "gloss_kr": "~한 후에",
+        "gloss_en": "after",
+        "syntax": "시간을 나타내는 종속 접속사로, 임무 완수의 선후 관계를 이끈다.",
+        "background": "사절이 왕의 전갈을 다 전하고 나자마자 이어진 디오메데스의 답변을 이끌어낸다.",
+        "etymology": "전치사 post('~ 후에')와 접속사 quam('~보다, ~처럼')의 합성어이다. 로망스어군에서는 각 단어별로 분화하여 발달했다."
+      },
+      {
+        "g": "mandata",
+        "pos": "명사",
+        "lemma": "mandatum, -i, n.",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "지시를, 전갈을",
+        "gloss_en": "commands, messages",
+        "syntax": "동사 peregit의 직접목적어로 쓰인 중성 복수 명사이다.",
+        "background": "투르누스가 사절 편에 담아 보낸 동맹 요청과 지원 호소의 메시지이다.",
+        "etymology": "동사 mandare('손에 맡기다, 명령하다', manus + dare)에서 유래한 명사이다. 이탈리아어 mandato, 스페인어 mandato 등이 동계어이며, 현대 영어의 mandate, command 등에 그 어원이 남아 있다."
+      },
+      {
+        "g": "peregit",
+        "pos": "동사",
+        "lemma": "perago, peragere, peregi, peractus",
+        "parse": "perf. act. 3rd pers. sg.",
+        "gloss_kr": "완수했다, 다 전했다",
+        "gloss_en": "completed, carried out",
+        "syntax": "완료 능동태 동사로, 사절이 자신에게 주어진 임무를 끝마친 행동을 서술한다.",
+        "background": "투르누스의 편지 및 구두 전갈을 디오메데스 앞에서 모두 수행한 시점이다.",
+        "etymology": "동사 agere('행하다, 몰아가다')에 철저함을 뜻하는 접두사 per-가 결합하였다. 이탈리아어 peragere(문어체) 등이 있으며, 현대 영어의 act, agent 등의 어근 agere와 연결된다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.461",
+    "trans": "도움을 청하자, 에아톨리아의 영웅은 자신의 무력에 대해 변명하며 거절한다.",
+    "words": [
+      {
+        "g": "auxilium",
+        "pos": "명사",
+        "lemma": "auxilium, -ii, n.",
+        "parse": "sg. acc. n.",
+        "gloss_kr": "도움을, 원병을",
+        "gloss_en": "help, aid, assistance",
+        "syntax": "후행하는 동사적 맥락(또는 이전 구문의 연장)에서 청해진 대상을 가리키는 대격 명사이다.",
+        "background": "전쟁에서 승리하기 위해 루툴루이족이 디오메데스에게 간절히 원했던 군사적 지원이다.",
+        "etymology": "라틴어 어근에서 유래한 명사이다. 이탈리아어 ausilio, 스페인어 auxilio 등이 동계어이며, 현대 영어의 auxiliary(보조의, 예비의)에 직접적인 어원이 남아 있다."
+      },
+      {
+        "g": "petiit",
+        "pos": "동사",
+        "lemma": "peto, petere, petivi, petitus",
+        "parse": "perf. act. 3rd pers. sg.",
+        "gloss_kr": "요청했다, 구했다",
+        "gloss_en": "asked for, sought",
+        "syntax": "완료 능동태 동사로, 사절이 원병을 청원했던 행동을 나타낸다.",
+        "background": "투르누스의 사절이 디오메데스를 찾아가 참전과 군사 지원을 간청한 외교적 행위이다.",
+        "etymology": "인도유럽조어 재구형 *pet-('날다, 추구하다')에서 유래한 라틴어 동사이다."
+      },
+      {
+        "g": "vires",
+        "pos": "명사",
+        "lemma": "vis, vis, f.",
+        "parse": "pl. acc. f.",
+        "gloss_kr": "자신의 힘을, 군사력을",
+        "gloss_en": "forces, strength",
+        "syntax": "동사 excusat의 직접목적어로 쓰인 3변화 명사의 복수 대격 형태이다.",
+        "background": "자신이 동원할 수 있는 군사력이나 여건이 여의치 않음을 변명하는 근거이다.",
+        "etymology": "인도유럽조어 재구형에서 유래한 라틴어 명사이다."
+      },
+      {
+        "g": "Aetolius",
+        "pos": "형용사",
+        "lemma": "Aetolius, -a, -um",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "에아톨리아의, 그리스의",
+        "gloss_en": "Aetolian",
+        "syntax": "명사 heros를 수식하는 형용사이다.",
+        "background": "그리스 에아톨리아 출신의 영웅인 디오메데스의 출신 배경을 나타내는 수식어이다.",
+        "etymology": "그리스의 지역 이름 Αἰτωλία(Aetolia)에서 파생된 라틴어 형용사이다."
+      },
+      {
+        "g": "heros",
+        "pos": "명사",
+        "lemma": "heros, herois, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "영웅이",
+        "gloss_en": "hero",
+        "syntax": "동사 excusat의 주어로 쓰인 명사이다.",
+        "background": "트로이 전쟁에 참전했던 위대한 전사이자 현재 이탈리아 남부에 자리 잡은 디오메데스를 높여 부르는 호칭이다.",
+        "etymology": "그리스어 ἥρως(heros, '영웅, 반신')에서 차용된 라틴어 명사이다. 이탈리아어 eroe, 스페인어 héroe 등이 동계어이며, 현대 영어의 hero, heroic 등에 그 어원이 그대로 살아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.462",
+    "trans": "자신은 친족의 싸움에 자신의 백성들을 참여시키려 하지도 않고,",
+    "words": [
+      {
+        "g": "excusat",
+        "pos": "동사",
+        "lemma": "excuso, excusare, excusavi, excusatus",
+        "parse": "pres. act. 3rd pers. sg.",
+        "gloss_kr": "핑계 대다, 거절하며 변명하다",
+        "gloss_en": "excuses, declines",
+        "syntax": "주어인 heros를 받는 현재형 능동태 본동사로, 디오메데스가 정중히 참전을 거부하는 상황을 생생하게 전달한다.",
+        "background": "과거 트로이 전쟁에서의 뼈아픈 기억과 신들의 저주 때문에 다시 트로이아인들과 싸우기를 거부하는 디오메데스의 입장이다.",
+        "etymology": "명사 causa('이유, 원인')에서 파생된 동사로, 원인(causa) 밖으로(ex-) 벗어난다는 뜻에서 유래했다. 이탈리아어 scusare, 스페인어 excusar 등이 동계어이며, 현대 영어의 excuse 등에 그 어원이 남아 있다."
+      },
+      {
+        "g": "nec",
+        "pos": "접속사",
+        "lemma": "neque (nec)",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고 ~도 아니다",
+        "gloss_en": "nor, and not",
+        "syntax": "부정의 의미를 이어주는 대등 접속사로, 거절의 이유들을 열거한다.",
+        "background": "자신의 백성들을 전쟁에 내보내지 않겠다는 단호한 거부 의사 표현의 시작이다.",
+        "etymology": "ne + que의 축약형이다."
+      },
+      {
+        "g": "se",
+        "pos": "대명사",
+        "lemma": "sui, sibi, se, se",
+        "parse": "acc. m. sg./pl.",
+        "gloss_kr": "자신이",
+        "gloss_en": "himself",
+        "syntax": "간접 화법 속에서 주어 역할을 하는 재귀대명사이다.",
+        "background": "디오메데스 자신과 그의 백성들이 싸움에 말려들지 않겠다는 의도이다.",
+        "etymology": "인도유럽조어 재구형 *s(w)e-에서 유래한 라틴어 재귀대명사이다."
+      },
+      {
+        "g": "aut",
+        "pos": "접속사",
+        "lemma": "aut",
+        "parse": "coord. conj.",
+        "gloss_kr": "또는, 혹은",
+        "gloss_en": "or",
+        "syntax": "선택적 대등 접속사로, 이어지는 두 가지 부정적 선택지를 연결한다 (aut ... aut).",
+        "background": "백성들을 내보내지도 않고, 남은 무장한 부하도 없다는 이중의 거절 논리이다.",
+        "etymology": "라틴어 고유의 선택 접속사이다. 로망스어군에서는 이탈리아어 o, 스페인어 o 등으로 간소화되어 전해졌다."
+      },
+      {
+        "g": "soceri",
+        "pos": "명사",
+        "lemma": "socer, soceri, m.",
+        "parse": "sg. gen. m.",
+        "gloss_kr": "장인의",
+        "gloss_en": "of his father-in-law",
+        "syntax": "뒤의 pugnae를 수식하는 속격 명사이다.",
+        "background": "디오메데스의 아내의 아버지인 다우누스 왕 또는 루툴루이족과 연관된 친족 관계를 가리킨다.",
+        "etymology": "인도유럽조어 재구형 *swekuros('시아버지, 장인')에서 유래하였다. 산스크리트어 śváśura, 고대 그리스어 ἑκóρός 등과 동계어이다. 로망스어군에서는 형태가 많이 변형되었거나 소실되었다."
+      },
+      {
+        "g": "committere",
+        "pos": "동사",
+        "lemma": "committo, committere, commisi, commissus",
+        "parse": "pres. act. infinitive",
+        "gloss_kr": "참여시키다, 투입하다",
+        "gloss_en": "to commit, engage in",
+        "syntax": "동사 velle의 보조를 받는 능동태 부정사구이다.",
+        "background": "자신의 백성들을 전쟁터라는 위험한 상황에 밀어 넣지 않겠다는 뜻이다.",
+        "etymology": "동사 mittere('보내다')에 함께라는 뜻의 con-이 결합하였다. 이탈리아어 commettere, 스페인어 cometer 등이 동계어이며, 현대 영어의 commit, commission 등에 그 어원이 남아 있다."
+      },
+      {
+        "g": "pugnae",
+        "pos": "명사",
+        "lemma": "pugna, -ae, f.",
+        "parse": "sg. dat. f.",
+        "gloss_kr": "전쟁에, 전투에",
+        "gloss_en": "to battle, fight",
+        "syntax": "동사 committere와 호응하는 여격 명사이다.",
+        "background": "트로이아인들과 루툴루이족 사이에 벌어진 피비린내 나는 격전이다.",
+        "etymology": "라틴어 주먹을 뜻하는 명사 pugnus에서 파생된 전투 명사이다. 이탈리아어 pugna(고어), 스페인어 puña 등이 있으며, 현대 영어의 pugnacious(호전적인), pugilist 등에 그 어원이 깊게 박혀 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.463",
+    "trans": "자신들의 백성들 중 무장시킬 수 있는 이가 단 한 명도 없다고 말한다.",
+    "words": [
+      {
+        "g": "velle",
+        "pos": "동사",
+        "lemma": "volo, velle, volui",
+        "parse": "pres. act. infinitive",
+        "gloss_kr": "~하고자 하다, 원하다",
+        "gloss_en": "to wish, to want",
+        "syntax": "간접 화법 속에서 앞의 excusat(주요 동사 계열)에 이어지며 '원하지 않는다'는 의미를 형성하는 부정사이다.",
+        "background": "자신의 백성들이 전쟁에 휘말리는 것을 결코 원치 않는 디오메데스의 확고한 거부 의지이다.",
+        "etymology": "인도유럽조어 재구형 *wel-('바라다, 원하다')에서 유래하였다. 산스크리트어 vŕnoti, 고대 그리스어 βούλομαι(boulomai) 등이 동계어이다. 현대 영어의 volunteer, voluntary, volition 등에 그 어원이 살아 있다."
+      },
+      {
+        "g": "sui",
+        "pos": "대명사",
+        "lemma": "sui, sibi, se, se",
+        "parse": "pl. gen. m.",
+        "gloss_kr": "자신의",
+        "gloss_en": "his own",
+        "syntax": "뒤의 populos를 소유의 의미로 수식하는 소유격 형태이다.",
+        "background": "디오메데스 자신이 다스리는 아디아피기아 지역의 백성들을 가리킨다.",
+        "etymology": "인도유럽조어 재구형 *s(w)e-에서 유래한 라틴어 재귀대명사."
+      },
+      {
+        "g": "populos",
+        "pos": "명사",
+        "lemma": "populus, -i, m.",
+        "parse": "pl. acc. m.",
+        "gloss_kr": "백성들을",
+        "gloss_en": "peoples, nations",
+        "syntax": "부정사 committere의 직접목적어로 쓰인 명사이다.",
+        "background": "자신을 따르는 이탈리아 남부의 백성들과 군사들이다.",
+        "etymology": "인도유럽조어적 기원을 가진 라틴어 고유 어휘이다. 이탈리아어 popolo, 스페인어 pueblo 등이 동계어이며, 현대 영어의 population, public, people 등에 그 어원이 깊게 남아 있다."
+      },
+      {
+        "g": "aut",
+        "pos": "접속사",
+        "lemma": "aut",
+        "parse": "coord. conj.",
+        "gloss_kr": "또는",
+        "gloss_en": "or",
+        "syntax": "앞선 조건에 이어 두 번째 거절의 근거(무장시킬 남자가 없다)를 연결하는 선택 접속사이다.",
+        "background": "백성도 안 내보낼 뿐더러 보낼 만한 가용 병력도 전혀 없다는 변명의 연장선이다.",
+        "etymology": "라틴어 선택 접속사."
+      },
+      {
+        "g": "quos",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "pl. acc. m.",
+        "gloss_kr": "어떤 이들을",
+        "gloss_en": "whom",
+        "syntax": "관계절의 목적어로 쓰인 관계대명사이며, 선행사 ullos를 수식한다.",
+        "background": "전쟁터에 내보내기 위해 무장시킬 수 있는 병력의 유무를 설명하는 관계절이다.",
+        "etymology": "인도유럽조어 지시·관계대명사 어근에서 유래한 라틴어 대명사."
+      },
+      {
+        "g": "e",
+        "pos": "전치사",
+        "lemma": "ex (e)",
+        "parse": "prep. with abl.",
+        "gloss_kr": "~중에서, ~로부터",
+        "gloss_en": "out of, from",
+        "syntax": "탈격 명사 gente를 지배하여 전체 집단 중 일부를 추출하는 분리의 의미를 나타낸다.",
+        "background": "자신의 백성들 집단 가운데 무장 가능한 병력의 존재 여부를 뜻한다.",
+        "etymology": "인도유럽조어 재구형 *eghs('밖으로')에서 유래하였다. 로망스어군에서 프랑스어 é-, 이탈리아어 e-/ex- 등으로 발전했으며, 현대 영어의 exit, emit, evolve 등의 어근에 흔적이 남아 있다."
+      },
+      {
+        "g": "gente",
+        "pos": "명사",
+        "lemma": "gens, gentis, f.",
+        "parse": "sg. abl. f.",
+        "gloss_kr": "족속 중에서, 백성 가운데서",
+        "gloss_en": "from the race, people",
+        "syntax": "전치사 e의 목적어로 쓰인 3변화 명사이다.",
+        "background": "자신을 따르는 부족이나 종족의 집단을 의미한다.",
+        "etymology": "인도유럽조어 재구형 *gen-('태어나다, 생산하다')에서 유래하였다. 산스크리트어 jáyati, 고대 그리스어 γίγνομαι(gignomai) 등이 동계어이다. 현대 영어의 gentle, generation, genius, genre 등에 그 어원이 깊게 박혀 있다."
+      },
+      {
+        "g": "suorum",
+        "pos": "대명사",
+        "lemma": "suus, -a, -um (명사화된 소유격)",
+        "parse": "pl. gen. m.",
+        "gloss_kr": "자신들의 (사람들)",
+        "gloss_en": "of his own (people)",
+        "syntax": "앞의 gens를 수식하는 소유격 복수 형태이다.",
+        "background": "자신에게 속한 백성들과 동료 군사들을 가리킨다.",
+        "etymology": "인도유럽조어 재구형 *s(w)e-에서 유래한 라틴어 소유 형용사의 명사화 용법."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.464",
+    "trans": "“그리고 나의 이 말들을 꾸며낸 이야기라고 생각하지 마시오,",
+    "words": [
+      {
+        "g": "armet",
+        "pos": "동사",
+        "lemma": "armo, armare, armavi, armatus",
+        "parse": "pres. act. subj. 3rd pers. sg.",
+        "gloss_kr": "무장시키다",
+        "gloss_en": "may arm",
+        "syntax": "관계절 내에서 가능성이나 당위를 나타내는 접속법 현재 동사이다.",
+        "background": "전장에 내보내기 위해 투구와 갑옷으로 무장시킬 병사가 단 한 명도 없음을 강조한다.",
+        "etymology": "명사 arma('무기')에서 파생된 동사이다. 이탈리아어 armare, 스페인어 armar 등이 동계어이며, 현대 영어의 arm, army, armament 등에 그 어원이 살아 있다."
+      },
+      {
+        "g": "habere",
+        "pos": "동사",
+        "lemma": "habeo, habere, habui, habitus",
+        "parse": "pres. act. infinitive",
+        "gloss_kr": "가지고 있다",
+        "gloss_en": "to have",
+        "syntax": "간접 화법 속에서 주어(se)에 대한 서술을 이어가는 능동태 부정사이다.",
+        "background": "전쟁에 내보낼 만한 병력을 소유하고 있지 않다는 사실을 확언한다.",
+        "etymology": "인도유럽조어 재구형 *gʰabh-('가지다, 잡다')에서 유래하였다. 고대 그리스어 ℎάπτω(hapto) 등이 동계어이다. 현대 영어의 have, habit, exhibit, inhibit 등에 그 어원이 깊게 연관되어 있다."
+      },
+      {
+        "g": "ullos",
+        "pos": "형용사",
+        "lemma": "ullus, -a, -um",
+        "parse": "pl. acc. m.",
+        "gloss_kr": "어떤(사람들)을",
+        "gloss_en": "any (men)",
+        "syntax": "부정사 habere의 목적어 자리를 수식하거나 보조하는 형용사 명사화 용법이다.",
+        "background": "단 한 명의 병력조차 보유하고 있지 않다는 전면적인 부정 표현이다.",
+        "etymology": "라틴어 대명사형 형용사 unus('하나')의 지소사적 형태에서 발달하였다. 이탈리아어 alcuno, 스페인어 alguno 등의 어원적 배경과 연결된다."
+      },
+      {
+        "g": "“neve",
+        "pos": "접속사",
+        "lemma": "neve (neu)",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고 ~하지 않도록, 또한 ~가 아니라고",
+        "gloss_en": "and that not, nor",
+        "syntax": "명령이나 금지를 이끄는 종속 접속사로, 사절에게 자신의 말을 의심하지 말 것을 당부한다.",
+        "background": "자신이 거짓말을 하거나 핑계를 대는 것이 아니라 진심임을 사절에게 호소하는 대목이다.",
+        "etymology": "부정사 ne와 접속사 ve('또는')의 결합형이다."
+      },
+      {
+        "g": "haec",
+        "pos": "대명사",
+        "lemma": "hic, haec, hoc",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "이러한 것들을, 이 말을",
+        "gloss_en": "these things",
+        "syntax": "동사 putetis의 목적어로 쓰인 지시대명사이다.",
+        "background": "자신이 늘어놓는 참전 거절과 군사 부재의 변명을 가리킨다.",
+        "etymology": "인도유럽조어 지시 대명사 어근에서 유래한 라틴어 기본 지시사이다."
+      },
+      {
+        "g": "commenta",
+        "pos": "형용사",
+        "lemma": "commentus, -a, -um (또는 명사화)",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "꾸며낸 이야기들을, 핑계들을",
+        "gloss_en": "fictitious things, fabrications",
+        "syntax": "목적격 대명사 하에서 꾸며냄을 뜻하는 분사형 형용사의 명사화 용법이다.",
+        "background": "참전을 피하기 위해 지어낸 거짓말이나 핑계로 오해받지 않기를 바라는 디오메데스의 마음이다.",
+        "etymology": "동사 comminisci('발명하다, 지어내다')의 과거분사형에서 유래하였다. 현대 영어의 comment, commentary 등에 그 어원이 남아 있다."
+      },
+      {
+        "g": "putetis",
+        "pos": "동사",
+        "lemma": "puto, putare, putavi, putatus",
+        "parse": "pres. act. subj. 2nd pers. pl.",
+        "gloss_kr": "생각하다, 여기다",
+        "gloss_en": "you think, you suppose",
+        "syntax": "금지 및 당부를 나타내는 접속법 현재 동사로, 청자(사절)에게 당부하는 어조를 띤다.",
+        "background": "자신의 거절을 단순한 외교적 핑계나 거짓으로 치부하지 말아 달라는 당부이다.",
+        "etymology": "인도유럽조어 재구형 *pau-('자르다, 정돈하다')에서 유래하여 '셈하다, 생각하다'로 의미가 발달했다. 이탈리아어 putare(고어), 스페인어 putar 등이 있으며, 현대 영어의 compute, putative, amputate 등에 그 어원이 깊게 박혀 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.465",
+    "trans": "비록 이 경고로 인해 쓰라린 슬픔이 다시 새롭게 살아난다 할지라도 말이다.”",
+    "words": [
+      {
+        "g": "admonitu",
+        "pos": "명사",
+        "lemma": "admonitus, -us, m.",
+        "parse": "sg. abl. m.",
+        "gloss_kr": "경고로, 상기시킴으로",
+        "gloss_en": "by the reminder, warning",
+        "syntax": "수단을 나타내는 탈격 명사(4변화)로, 과거의 비극을 떠올리게 하는 계기를 나타낸다.",
+        "background": "트로이 전쟁 당시 겪었던 참혹한 상처와 신들의 저주를 다시 환기하는 기억이다.",
+        "etymology": "동사 admoneo('경고하다, 일깨우다')에서 파생된 명사이다. 이탈리아어 ammonito 등이 동계어이며, 현대 영어의 admonish, admonition 등에 그 어원이 남아 있다."
+      },
+      {
+        "g": "quamquam",
+        "pos": "접속사",
+        "lemma": "quamquam",
+        "parse": "subord. conj.",
+        "gloss_kr": "비록 ~일지라도",
+        "gloss_en": "although",
+        "syntax": "양보절을 이끄는 종속 접속사로, 슬픔이 되살아남에도 불구하고 진실을 말함을 나타낸다.",
+        "background": "과거의 아픈 기억을 꺼내는 것 자체가 자신에게 큰 고통임을 인정하는 전조이다.",
+        "etymology": "관계대명사 부사형의 중복에서 유래한 라틴어 양보 접속사이다."
+      },
+      {
+        "g": "luctus",
+        "pos": "명사",
+        "lemma": "luctus, -us, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "슬픔이, 비탄이",
+        "gloss_en": "grief, sorrow",
+        "syntax": "수동태 동사 renoventur의 주어로 쓰인 4변화 명사이다.",
+        "background": "트로이 전쟁에서 동료들을 잃고 겪었던 뼈아픈 슬픔과 고통이다.",
+        "etymology": "동사 lugere('슬퍼하다, 애도하다')에서 유래한 명사이다. 이탈리아어 lutto, 스페인어 luto 등이 동계어이며, 현대 영어의 lugubrious(침울한, 슬픈) 등에 그 어원이 남아 있다."
+      },
+      {
+        "g": "renoventur",
+        "pos": "동사",
+        "lemma": "renovo, renovare, renovavi, renovatus",
+        "parse": "pres. pass. subj. 3rd pers. pl.",
+        "gloss_kr": "새롭게 되다, 되살아나다",
+        "gloss_en": "are renewed",
+        "syntax": "양보절 내에서 주어 luctus를 받는 수동태 접속법 동사이다.",
+        "background": "과거의 끔찍했던 전쟁 기억과 상처가 현재의 이 요청으로 인해 다시 생생하게 되살아나는 과정이다.",
+        "etymology": "형용사 novus('새로운')에 반복을 뜻하는 접두사 re-가 결합하였다. 이탈리아어 rinnovare, 스페인어 renovar 등이 동계어이며, 현대 영어의 renovate, renovation 등에 그 어원이 고스란히 살아 있다."
+      },
+      {
+        "g": "amari",
+        "pos": "형용사",
+        "lemma": "amarus, -a, -um",
+        "parse": "pl. nom. m. (luctus를 수식하는 형용사 형태 혹은 보어)",
+        "gloss_kr": "쓰라린, 고통스러운",
+        "gloss_en": "bitter",
+        "syntax": "주어인 슬픔의 성격을 묘사하는 복수 주격 형태의 형용사이다.",
+        "end_of_sentence": true,
+        "etymology": "인도유럽조어 재구형에서 유래한 라틴어 고유의 맛·감정 형용사이다. 이탈리아어 amaro, 스페인어 amargo 등이 동계어이며, 현대 영어의 embitter, maret(일부 식물 용어) 등에 어원이 닿아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.466",
+    "trans": "그럼에도 불구하고 나는 견디며 그것을 이야기하리라. 높이 솟은 일리오(트로이)가 불타고",
+    "words": [
+      {
+        "g": "perpetiar",
+        "pos": "동사",
+        "lemma": "perpetior, perpeti, perpessus sum",
+        "parse": "pres. pass. (deponent) subj. 1st pers. sg.",
+        "gloss_kr": "견디다, 감수하다",
+        "gloss_en": "I will endure, suffer",
+        "syntax": "형태는 수동이나 의미는 능동인 탈형동사(deponent)의 접속법 현재 1인칭 단수형으로, 과거의 고통스러운 기억을 털어놓음을 다짐한다.",
+        "background": "디오메데스가 트로이 함락 이후 겪은 고난의 역사를 사절에게 회고하며 들려주기 시작하는 대목이다.",
+        "etymology": "동사 pati('견디다, 겪다')에 철저함을 뜻하는 접두사 per-가 결합하였다. 이탈리아어 perpetire(고어) 등이 있으며, 현대 영어의 perpetual(끊임없는), perpetrate 등에 그 어원이 닿아 있다."
+      },
+      {
+        "g": "memorare",
+        "pos": "동사",
+        "lemma": "memoro, memorare, memoravi, memoratus",
+        "parse": "pres. act. infinitive",
+        "gloss_kr": "기억하여 말하다, 회고하다",
+        "gloss_en": "to recount, mention",
+        "syntax": "주동사 perpetiar의 보조를 받는 능동태 부정사이다.",
+        "background": "자신의 입으로 과거 트로이아 전쟁의 비극과 전후의 고난을 꺼내어 말하는 행위이다.",
+        "etymology": "명사/형용사 memor('기억하는')에서 유래한 동사이다. 이탈리아어 memorare, 스페인어 memorar 등이 동계어이며, 현대 영어의 memory, commemorate, memorial 등에 그 어원이 깊게 박혀 있다."
+      },
+      {
+        "g": "tamen",
+        "pos": "부사",
+        "lemma": "tamen",
+        "parse": "adv.",
+        "gloss_kr": "그럼에도 불구하고, 그래도",
+        "gloss_en": "nevertheless, yet",
+        "syntax": "앞서 슬픔이 되살아난다고 경고했음에도 불구하고 기꺼이 말하겠다는 의지를 나타내는 부사이다.",
+        "background": "쓰라린 기억이지만 사절의 물음에 답하기 위해 마음을 다잡고 이야기를 꺼내는 대목이다.",
+        "etymology": "라틴어 대명사적 어근에서 발달한 부사이다."
+      },
+      {
+        "g": "Postquam",
+        "pos": "접속사",
+        "lemma": "postquam",
+        "parse": "temp. conj.",
+        "gloss_kr": "~한 후에",
+        "gloss_en": "after",
+        "syntax": "과거 완료 시제의 절을 이끄는 시간 종속 접속사이다.",
+        "background": "트로이아 성이 완전히 함락되고 불타버린 역사적 대사건 이후의 시간적 기점이다.",
+        "etymology": "전치사 post와 접속사 quam의 합성어이다."
+      },
+      {
+        "g": "alta",
+        "pos": "형용사",
+        "lemma": "altus, -a, -um",
+        "parse": "sg. nom. f. (혹은 n. pl.)",
+        "gloss_kr": "높이 솟은, 장엄한",
+        "gloss_en": "high, lofty",
+        "syntax": "명사 Ilion을 수식하는 형용사의 주격 형태이다.",
+        "background": "난공불락의 성벽을 자랑하던 웅장한 도시 트로이의 옛 모습을 상징한다.",
+        "etymology": "인도유럽조어 재구형 *al-('자라다, 키우다')에서 유래하였다. 이탈리아어 alto, 스페인어 alto 등이 동계어이며, 현대 영어의 altitude, exalt, alto 등에 그 어원이 고스란히 남아 있다."
+      },
+      {
+        "g": "cremata",
+        "pos": "동사",
+        "lemma": "cremo, cremare, cremavi, crematus",
+        "parse": "perf. pass. part. nom. f. sg.",
+        "gloss_kr": "불태워진",
+        "gloss_en": "burned, consumed by fire",
+        "syntax": "조동사와 결합하여 수동완료 시제를 이루며 주어인 Ilion의 상태를 나타낸다.",
+        "background": "그리스 연합군에 의해 무참히 약탈당하고 잿더미가 된 트로이아의 최후이다.",
+        "etymology": "인도유럽조어 재구형에서 유래한 라틴어 연소 동사이다. 이탈리아어 cremare, 스페인어 cremar 등이 동계어이며, 현대 영어의 cremate(화장하다), cremation 등에 그 어원이 직접 남아 있다."
+      },
+      {
+        "g": "est",
+        "pos": "동사",
+        "lemma": "sum, esse, fui",
+        "parse": "pres. act. 3rd pers. sg.",
+        "gloss_kr": "~이다",
+        "gloss_en": "is",
+        "syntax": "과거분사 cremata와 결합하여 완료 수동태를 구성하는 조동사이다.",
+        "background": "트로이아가 완전히 불에 타 소멸했음을 선언하는 서술어이다.",
+        "etymology": "인도유럽조어 재구형 *h₁es-('이다, 존재하다')에서 유래하였다. 산스크리트어 ásti, 고대 그리스어 ἐστί(esti) 등이 동계어이다. 현대 영어의 is, am, essence 등에 그 어원이 깊게 박혀 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.467",
+    "trans": "일리오(트로이)가 불타고 페르가마(트로이 성채)가 다나오이(그리스)의 불길에 먹혀버렸을 때,",
+    "words": [
+      {
+        "g": "Ilion",
+        "pos": "명사",
+        "lemma": "Ilion (Ilium), -i, n.",
+        "parse": "sg. nom. n.",
+        "gloss_kr": "일리오(트로이)가",
+        "gloss_en": "Ilion, Troy",
+        "syntax": "동사 cremata est의 주어로 쓰인 고유명사이다.",
+        "background": "호메로스의 서사시적 배경이 되는 트로이아 성과 도시의 이칭이다.",
+        "etymology": "그리스어 Ἴλιον(Ilion)에서 유래한 라틴어 고유명사로, 현대 영어의 Iliad(일리아스) 등의 어원적 배경이 된다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "앞선 주절과 이어지는 두 번째 주어 절을 연결하는 대등 접속사이다.",
+        "background": "트로이의 성채와 도시 전체가 불타는 대참사를 병치하여 강조한다.",
+        "etymology": "인도유럽조어 재구형 *eti에서 유래한 라틴어 접속사."
+      },
+      {
+        "g": "Danaas",
+        "pos": "형용사",
+        "lemma": "Danaus, -a, -um",
+        "parse": "pl. acc. f.",
+        "gloss_kr": "다나오이의, 그리스의",
+        "gloss_en": "Danaean, Greek",
+        "syntax": "명사 flammas를 수식하는 형용사의 복수 대격 형태이다.",
+        "background": "트로이를 침공하여 파괴한 그리스 연합군(다나오이)을 가리키는 시적 표현이다.",
+        "etymology": "그리스 신화의 조상 다나오스(Danaos)에서 유래한 고대 민족 명칭형 형용사이다."
+      },
+      {
+        "g": "paverunt",
+        "pos": "동사",
+        "lemma": "pasco, pascere, pavi, pastus",
+        "parse": "perf. act. 3rd pers. pl.",
+        "gloss_kr": "배불리 먹었다, 삼켰다",
+        "gloss_en": "fed upon, consumed",
+        "syntax": "복수 주어인 Pergama를 받는 완료 능동태 본동사로, 불길이 성채를 삼킨 모습을 비유적으로 표현한다.",
+        "background": "성채를 집어삼키며 맹렬하게 타오르는 파괴적인 화염의 기세이다.",
+        "etymology": "인도유럽조어 재구형 *peh₂-('기르다, 풀을 뜯다')에서 유래하였다. 산스크리트어 pásti, 고대 그리스어 πάομαι 등과 동계어이다. 현대 영어의 pasture, pastor, repast 등에 그 어원이 깊게 연관되어 있다."
+      },
+      {
+        "g": "Pergama",
+        "pos": "명사",
+        "lemma": "Pergama, -orum, n.",
+        "parse": "pl. nom. n.",
+        "gloss_kr": "페르가마(트로이 성채)가",
+        "gloss_en": "Pergama, the citadel of Troy",
+        "syntax": "동사 paverunt의 주어로 쓰인 중성 복수 명사이다.",
+        "background": "트로이아의 심장부이자 최고 성채인 페르가마를 가리킨다.",
+        "etymology": "그리스어 Πέργαμου(Pergamou)에서 유래한 라틴어 고유명사이다."
+      },
+      {
+        "g": "flammas",
+        "pos": "명사",
+        "lemma": "flamma, -ae, f.",
+        "parse": "pl. acc. f.",
+        "gloss_kr": "불길들을",
+        "gloss_en": "flames",
+        "syntax": "동사 paverunt의 직접목적어로 쓰인 1변화 명사의 복수 대격이다.",
+        "background": "그리스군이 도시 곳곳에 지른 거센 화염과 불길이다.",
+        "etymology": "인도유럽조어 재구형 *bʰleg-('불타다, 빛나다')에서 유래하였다. 산스크리트어 bhrā́jate, 고대 그리스어 φλέγω(phlego) 등이 동계어이다. 현대 영어의 flame, flamboyant, inflammation 등에 그 어원이 고스란히 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.468",
+    "trans": "나리키움의 영웅(아이아스)이, 처녀(카산드라)가 능욕당했을 때",
+    "words": [
+      {
+        "g": "Naryciusque",
+        "pos": "형용사",
+        "lemma": "Narycius, -a, -um",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "그리고 나리키움의",
+        "gloss_en": "and Narycian",
+        "syntax": "뒤의 heros를 수식하는 형용사이며, 접미사 -que로 앞 절과 연결된다.",
+        "background": "로크리스의 나리키움 출신인 소 아이아스(Ajax, son of Oileus)를 가리키는 수식어이다.",
+        "etymology": "그리스 로크리스의 도시 나리크스(Naryx)에서 유래한 지명 형용사이다."
+      },
+      {
+        "g": "heros",
+        "pos": "명사",
+        "lemma": "heros, herois, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "영웅(아이아스)이",
+        "gloss_en": "hero",
+        "syntax": "후행 동사 digessit의 주어로 쓰인 명사이다.",
+        "background": "트로이 함락 당시 아테나 신전에서 카산드라를 능욕하여 여신의 진노를 산 로크리스의 왕 소 아이아스이다.",
+        "etymology": "그리스어 ἥρως(heros)에서 차용된 라틴어 명사."
+      },
+      {
+        "g": "a",
+        "pos": "전치사",
+        "lemma": "ab",
+        "parse": "prep. with abl.",
+        "gloss_kr": "~에 의해, ~로부터",
+        "gloss_en": "by, from",
+        "syntax": "탈격 분사구문을 이끄는 분리·행위자 전치사이다.",
+        "background": "신성한 신전에서 처녀가 강탈당한 참혹한 사건을 가리킨다.",
+        "etymology": "인도유럽조어 *apo."
+      },
+      {
+        "g": "virgine",
+        "pos": "명사",
+        "lemma": "virgo, virginis, f.",
+        "parse": "sg. abl. f.",
+        "gloss_kr": "처녀에 의해 (능욕당함)",
+        "gloss_en": "virgin",
+        "syntax": "분사 rapta와 호응하는 탈격 명사이다.",
+        "background": "아테나의 여신관이자 트로이아의 공주인 카산드라를 가리킨다.",
+        "etymology": "라틴어 고유의 처녀 명사이다. 이탈리아어 vergine, 스페인어 virgen 등이 동계어이며, 현대 영어의 virgin, virginal 등에 그 어원이 살아 있다."
+      },
+      {
+        "g": "virgine",
+        "pos": "명사",
+        "lemma": "virgo, virginis, f.",
+        "parse": "sg. abl. f.",
+        "gloss_kr": "(문맥상 앞 단어의 중복 혹은 수식 구조)",
+        "gloss_en": "virgin",
+        "syntax": "시적 강조를 위해 동음의 명사가 연달아 쓰인 구문 속의 탈격형이다.",
+        "background": "순결한 처녀가 신전 안에서 유린당했던 비극적 사건을 강조한다.",
+        "etymology": "라틴어 고유 명사."
+      },
+      {
+        "g": "rapta",
+        "pos": "동사",
+        "lemma": "rapio, rapere, rapui, raptus",
+        "parse": "perf. pass. part. abl. f. sg.",
+        "gloss_kr": "강탈당한, 능욕당한",
+        "gloss_en": "snatched, violated",
+        "syntax": "독립탈격(ablativus absolutus) 구문을 이루며 사건의 배경 시점을 나타낸다.",
+        "background": "아이아스가 아테나 신전의 제단에서 카산드라를 붙잡아 강간한 신성 모독 행위이다.",
+        "etymology": "인도유럽조어 재구형 *rep-('채다, 움켜쥐다')에서 유래하였다. 고대 그리스어 ἁρπάζω(harpazo) 등이 동계어이다. 현대 영어의 rape, rapid, ravage, raptor 등에 그 어원이 깊게 박혀 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.469",
+    "trans": "자신 혼자서 받아야 마땅할 형벌을 모든 이들에게 나누어 놓았을 때,",
+    "words": [
+      {
+        "g": "quam",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "sg. acc. f.",
+        "gloss_kr": "그 형벌을",
+        "gloss_en": "which",
+        "syntax": "관계절의 목적어로 쓰인 관계대명사이며, 선행사 poenam을 받는다.",
+        "background": "신성 모독을 저지른 아이아스가 혼자 받아야 마땅했던 여신의 무서운 진노와 벌이다.",
+        "etymology": "인도유럽조어 대명사 어근에서 유래한 라틴어 관계대명사."
+      },
+      {
+        "g": "meruit",
+        "pos": "동사",
+        "lemma": "mereo, merere, merui, meritus (또는 mereor)",
+        "parse": "perf. act. 3rd pers. sg.",
+        "gloss_kr": "받아 마땅하다, 자초하다",
+        "gloss_en": "deserved, earned",
+        "syntax": "관계절 내의 완료 능동태 동사로, 아이아스가 죄를 지어 벌을 받아야 했던 당위성을 나타낸다.",
+        "background": "신전 모독죄로 인해 아이아스 개인이 져야 했던 엄중한 책임과 업보이다.",
+        "etymology": "인도유럽조어 재구형에서 유래한 라틴어 동사이다. 이탈리아어 meritare, 스페인어 merecer 등이 동계어이며, 현대 영어의 merit, emeritus, meretricious 등에 그 어원이 남아 있다."
+      },
+      {
+        "g": "poenam",
+        "pos": "명사",
+        "lemma": "poena, -ae, f.",
+        "parse": "sg. acc. f.",
+        "gloss_kr": "형벌을, 벌을",
+        "gloss_en": "penalty, punishment",
+        "syntax": "동사 meruit의 직접목적어로 쓰인 1변화 명사이다.",
+        "background": "신을 모독한 대가로 아테나 여신이 내리기로 작정한 혹독한 천벌이다.",
+        "etymology": "그리스어 ποινή(poine, '댓가, 형벌')에서 차용된 라틴어 명사이다. 이탈리아어 pena, 스페인어 pena 등이 동계어이며, 현대 영어의 pain, penal, penalty, repent 등에 그 어원이 깊게 박혀 있다."
+      },
+      {
+        "g": "solus",
+        "pos": "형용사",
+        "lemma": "solus, -a, -um",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "혼자서",
+        "gloss_en": "alone, by oneself",
+        "syntax": "주어인 아이아스를 수식하는 주격 형용사이다.",
+        "background": "죄를 지은 것은 아이아스 개인인데, 그로 인해 귀환하는 그리스 함대 전체가 재앙을 입게 됨을 대조한다.",
+        "etymology": "인도유럽조어 재구형에서 유래한 라틴어 형용사이다. 이탈리아어 solo, 스페인어 solo 등이 동계어이며, 현대 영어의 solo, solitary, solitude, desolate 등에 그 어원이 고스란히 남아 있다."
+      },
+      {
+        "g": "digessit",
+        "pos": "동사",
+        "lemma": "digero, digerere, digessi, digestus",
+        "parse": "perf. act. 3rd pers. sg.",
+        "gloss_kr": "나누어 놓았다, 퍼뜨렸다",
+        "gloss_en": "distributed, scattered",
+        "syntax": "주절의 완료 능동태 본동사로, 한 사람의 죄로 인한 재앙이 온 그리스 군대에 퍼지게 한 행동을 서술한다.",
+        "background": "아이아스의 죄 때문에 귀환길에 오른 모든 그리스 선단이 여신의 분노를 나누어 덮치게 된 상황이다.",
+        "etymology": "동사 gerere('나르다, 품다')에 분산을 뜻하는 접두사 dis-(di-)가 결합하였다. 이탈리아어 digerire, 스페인어 digerir 등이 동계어이며, 현대 영어의 digest(소화하다/분류하다), digestion 등에 그 어원이 남아 있다."
+      },
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "prep. with acc.",
+        "gloss_kr": "~에게로, ~속으로",
+        "gloss_en": "onto, among",
+        "syntax": "대격 명사 omnes를 지배하여 벌이 확산되는 방향을 나타낸다.",
+        "background": "재앙과 형벌이 온 그리스 군사들에게 골고루 미치게 되었음을 표현한다.",
+        "etymology": "인도유럽조어 *en."
+      },
+      {
+        "g": "omnes",
+        "pos": "형용사",
+        "lemma": "omnis, -e",
+        "parse": "pl. acc. m. (명사화)",
+        "gloss_kr": "모든 이들에게",
+        "gloss_en": "all (men)",
+        "syntax": "전치사 in의 목적어로 쓰인 3변화 형용사의 복수 대격 명사화 용법이다.",
+        "background": "트로이 전쟁에서 승리하고 고향으로 돌아가던 모든 그리스 연합군 병사들이다.",
+        "etymology": "라틴어 고유의 전칭 형용사이다. 이탈리아어 ogni, 스페인어 todo(형태 교체) 등이 있으며, 현대 영어의 omnipotent, omnipresent, omnibus 등에 그 어원이 깊게 박혀 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.470",
+    "trans": "우리는 뿔뿔이 흩어졌고, 적대적인 바다 위에서 바람에 휘둘려,",
+    "words": [
+      {
+        "g": "spargimur",
+        "pos": "동사",
+        "lemma": "spargo, spargere, sparsi, sparsus",
+        "parse": "pres. pass. 1st pers. pl.",
+        "gloss_kr": "우리는 흩어지다",
+        "gloss_en": "we are scattered",
+        "syntax": "1인칭 복수 수동태 본동사로, 그리스 함대가 바다 위에서 사방으로 흩어지는 참상을 나타낸다.",
+        "background": "여신의 진노와 폭풍으로 인해 대함대가 진형을 잃고 사방으로 표류하게 된 비극이다.",
+        "etymology": "인도유럽조어 재구형 *sperg-('뿌리다, 흩어지게 하다')에서 유래하였다. 산스크리트어 sphurati 등이 동계어이다. 현대 영어의 sparse(드문), disperse, sprinkle, aspersion 등에 그 어원이 고스란히 남아 있다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "흩어지는 동작과 바람에 붙잡혀 표류하는 상태를 대등하게 연결하는 접속사이다.",
+        "background": "바다 위에서 사방으로 흩어진 채 폭풍우를 맞닥뜨리는 급박한 상황이다.",
+        "etymology": "인도유럽조어 *eti."
+      },
+      {
+        "g": "ventis",
+        "pos": "명사",
+        "lemma": "ventus, -i, m.",
+        "parse": "pl. abl. m.",
+        "gloss_kr": "바람들에 의해",
+        "gloss_en": "by the winds",
+        "syntax": "수단을 나타내는 탈격 명사로, 배들을 사정없이 내리치는 거친 바다 바람을 가리킨다.",
+        "background": "아테네 여신과 포세이돈의 조종으로 함대를 덮친 거센 광풍이다.",
+        "etymology": "인도유럽조어 재구형 *hwēnt-('불다')에서 유래하였다. 산스크리트어 vātá, 고대 그리스어 ἄημα 등이 동계어이다. 현대 영어의 vent, ventilate, wind(바람) 등에 그 어원이 깊게 박혀 있다."
+      },
+      {
+        "g": "inimica",
+        "pos": "형용사",
+        "lemma": "inimicus, -a, -um",
+        "parse": "pl. acc. n. (aequora 수식)",
+        "gloss_kr": "적대적인, 해로운",
+        "gloss_en": "hostile, unfriendly",
+        "syntax": "명사 aequora를 수식하는 1·2변화 형용사의 중성 복수 대격이다.",
+        "background": "그리스인들을 향해 거칠게 포효하며 삼키려 드는 바다의 적의에 찬 모습이다.",
+        "etymology": "부정 접두사 in-과 친구를 뜻하는 amicus(amor에서 유래)의 결합으로 '친구 아닌 자, 적'에서 유래했다. 이탈리아어 nemico, 스페인어 enemigo 등이 동계어이며, 현대 영어의 enemy, inimical 등에 그 어원이 남아 있다."
+      },
+      {
+        "g": "per",
+        "pos": "전치사",
+        "lemma": "per",
+        "parse": "prep. with acc.",
+        "gloss_kr": "~를 통하여, ~전역에 걸쳐",
+        "gloss_en": "through, across",
+        "syntax": "대격 명사 aequora를 지배하여 바다를 가로지르는 이동 경로를 나타낸다.",
+        "background": "거친 파도가 몰아치는 광활한 바다를 표류하며 헤매는 과정이다.",
+        "etymology": "인도유럽조어 재구형 *per-('통하여, 앞으로')에서 유래하였다. 산스크리트어 pára, 고대 그리스어 περ(per) 등이 동계어이다. 현대 영어의 per, permit, persist, percolate 등에 그 어원이 살아 있다."
+      },
+      {
+        "g": "aequora",
+        "pos": "명사",
+        "lemma": "aequor, aequoris, n.",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "바다를, 수면을",
+        "gloss_en": "seas, waters",
+        "syntax": "전치사 per의 목적어로 쓰인 중성 복수 명사이다.",
+        "background": "끝없이 펼쳐진 평평하고도 험난한 지중해의 바다 표면이다.",
+        "etymology": "형용사 aequus('평평한, 공평한')에서 유래한 명사이다. 이탈리아어 aequora(문어체) 등이 있으며, 현대 영어의 equinox, equal 등의 어근과 일치한다."
+      },
+      {
+        "g": "rapti",
+        "pos": "동사",
+        "lemma": "rapio, rapere, rapui, raptus",
+        "parse": "perf. pass. part. nom. m. pl.",
+        "gloss_kr": "내몰린, 휩쓸려간",
+        "gloss_en": "snatched away, driven",
+        "syntax": "주어(우리들)의 상태를 수식하는 수동완료 분사의 복수 주격 형태이다.",
+        "background": "성난 광풍과 파도에 이리저리 떠밀려 갈피를 잡지 못하는 배와 선원들의 모습이다.",
+        "etymology": "인도유럽조어 재구형 *rep-."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.471",
+    "trans": "벼락과, 밤과, 비와, 하늘과 바다의 분노를,",
+    "words": [
+      {
+        "g": "fulmina",
+        "pos": "명사",
+        "lemma": "fulmen, fulminis, n.",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "벼락들을",
+        "gloss_en": "lightning bolts",
+        "syntax": "동사 perpetimur의 직접목적어로 쓰인 중성 복수 명사이다.",
+        "background": "폭풍우 속에서 내리치는 눈부신 번개와 벼락의 재앙이다.",
+        "etymology": "동사 fulgere('빛나다, 번쩍이다')에서 유래한 명사이다. 이탈리아어 fulmine, 스페인어 fulminante의 어원적 바탕이 되며, 현대 영어의 fulminate(맹렬히 비난하다/폭발하다) 등에 그 어원이 남아 있다."
+      },
+      {
+        "g": "noctem",
+        "pos": "명사",
+        "lemma": "nox, noctis, f.",
+        "parse": "sg. acc. f.",
+        "gloss_kr": "밤을",
+        "gloss_en": "night",
+        "syntax": "동사 perpetimur의 목적어 열거에 속하는 3변화 명사이다.",
+        "background": "폭풍으로 인해 대낮에도 칠흑같이 어두워져 앞을 볼 수 없었던 공포의 밤이다.",
+        "etymology": "인도유럽조어 재구형 *nókʷts('밤')에서 유래하였다. 산스크리트어 naktam, 고대 그리스어 νύξ(nyx) 등이 동계어이다. 현대 영어의 night, nocturnal, equinox 등에 그 어원이 깊게 박혀 있다."
+      },
+      {
+        "g": "imbres",
+        "pos": "명사",
+        "lemma": "imber, imbris, m.",
+        "parse": "pl. acc. m.",
+        "gloss_kr": "폭우들을",
+        "gloss_en": "rains, showers",
+        "syntax": "동사 perpetimur의 목적어로 쓰인 복수 대격 명사이다.",
+        "background": "하늘이 무너진 듯 쏟아져 내리며 배를 위협하는 거센 빗줄기이다.",
+        "etymology": "인도유럽조어 재구형 *mbʰro-('비, 습기')에서 유래하였다. 산스크리트어 ábhra('구름'), 고대 그리스어 ὄμβρος(ombros) 등이 동계어이다. 현대 영어의 imbricate 등의 파생어 어근과 연결된다."
+      },
+      {
+        "g": "iram",
+        "pos": "명사",
+        "lemma": "ira, -ae, f.",
+        "parse": "sg. acc. f.",
+        "gloss_kr": "분노를",
+        "gloss_en": "wrath, anger",
+        "syntax": "동사 perpetimur의 목적어로 쓰인 1변화 명사이다.",
+        "background": "신들의 거침없는 진노와 노여움이 자연재해의 형태로 터져 나오는 현상이다.",
+        "etymology": "인도유럽조어 재구형에서 유래한 라틴어 감정 명사이다. 이탈리아어 ira, 스페인어 ira 등이 동계어이며, 현대 영어의 ire, irate, irascible 등에 그 어원이 고스란히 살아 있다."
+      },
+      {
+        "g": "caelique",
+        "pos": "명사",
+        "lemma": "caelum, -i, n.",
+        "parse": "sg. gen. n.",
+        "gloss_kr": "그리고 하늘의",
+        "gloss_en": "and of the sky",
+        "syntax": "뒤의 iram을 수식하는 속격 명사이며, 접속사 -que로 연결된다.",
+        "background": "천둥과 폭풍을 관장하는 신들의 영역인 하늘의 분노이다.",
+        "etymology": "라틴어 고유의 하늘 명사이다. 이탈리아어 cielo, 스페인어 cielo 등이 동계어이며, 현대 영어의 ceiling(천장), celestial(하늘의) 등에 그 어원이 깊게 박혀 있다."
+      },
+      {
+        "g": "marisque",
+        "pos": "명사",
+        "lemma": "mare, maris, n.",
+        "parse": "sg. gen. n.",
+        "gloss_kr": "그리고 바다의",
+        "gloss_en": "and of the sea",
+        "syntax": "앞의 caeli와 대등하게 iram을 수식하는 속격 명사이며, -que로 연결된다.",
+        "background": "폭풍에 성난 바다 신들의 거센 노여움이다.",
+        "etymology": "인도유럽조어 재구형 *mori('바다')에서 유래한 라틴어 명사."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.472",
+    "trans": "그리고 카페레우스에서의 재앙이라는 절정을 우리 그리스인들은 겪었다.",
+    "words": [
+      {
+        "g": "perpetimur",
+        "pos": "동사",
+        "lemma": "perpetior, perpeti, perpessus sum",
+        "parse": "pres. pass. (deponent) 1st pers. pl.",
+        "gloss_kr": "우리는 겪다, 감수하다",
+        "gloss_en": "we endure, suffer",
+        "syntax": "형태는 수동이나 의미는 능동인 탈형동사(deponent)의 1인칭 복수 현재형으로, 앞서 열거한 모든 고통을 당했음을 서술한다.",
+        "background": "그리스 귀환 함대가 겪은 참혹한 수난의 절정을 생생하게 고백한다.",
+        "etymology": "동사 pati에 접두사 per-가 결합한 형태."
+      },
+      {
+        "g": "Danai",
+        "pos": "명사",
+        "lemma": "Danai, -orum, m.",
+        "parse": "pl. nom. m.",
+        "gloss_kr": "그리스인들이",
+        "gloss_en": "the Danai, Greeks",
+        "syntax": "동사 perpetimur의 주어로 쓰인 복수 명사이다.",
+        "background": "트로이를 함멸하고 고향으로 돌아가다 엄청난 천벌을 입은 그리스 연합군 전체이다.",
+        "etymology": "그리스 신화의 조상 다나오스에서 유래한 그리스인의 시적 호칭이다."
+      },
+      {
+        "g": "cumulumque",
+        "pos": "명사",
+        "lemma": "cumulus, -i, m.",
+        "parse": "sg. acc. m.",
+        "gloss_kr": "그리고 절정을, 최고조를",
+        "gloss_en": "and the peak, culmination",
+        "syntax": "동사 perpetimur의 마지막 목적어이며, 접속사 -que로 앞선 재난들의 목록과 연결된다.",
+        "background": "수많은 고난의 끝에 다다른 최악의 재앙 순간을 가리킨다.",
+        "etymology": "인도유럽조어 재구형에서 유래한 라틴어 명사이다. 이탈리아어 cumulo, 스페인어 cúmulo 등이 동계어이며, 현대 영어의 accumulate(축적하다), cumulus(적운) 등에 그 어원이 남아 있다."
+      },
+      {
+        "g": "Capherea",
+        "pos": "형용사",
+        "lemma": "Caphereus, -a, -um",
+        "parse": "sg. acc. m. (혹은 고유명사 속격/대격)",
+        "gloss_kr": "카페레우스의 (절벽)",
+        "gloss_en": "Capherean",
+        "syntax": "뒤의 cladis를 수식하는 형용사 또는 동격의 소유격/대격 형태이다.",
+        "background": "에우보이아 섬 남단의 험난한 곶인 카페레우스(Caphereus)를 가리키며, 나우플리오스가 거짓 불을 피워 그리스 함대를 암초로 유인해 대파시킨 비극의 현장이다.",
+        "etymology": "그리스어 Καφηρεύς(Caphereus)에서 유래한 고유명사 및 지명 형용사이다."
+      },
+      {
+        "g": "cladis",
+        "pos": "명사",
+        "lemma": "clades, cladis, f.",
+        "parse": "sg. gen. f.",
+        "gloss_kr": "재앙의, 학살의",
+        "gloss_en": "of disaster, slaughter",
+        "syntax": "앞의 cumulum을 소유의 의미로 수식하는 속격 명사이다.",
+        "background": "카페레우스 곶의 암초에 부딪혀 수많은 배와 병사들이 몰살당한 참혹한 패배이다.",
+        "etymology": "인도유럽조어 재구형에서 유래한 라틴어 파멸·재앙 명사이다. 이탈리아어 clade(문어체) 등이 있으며, 현대 영어의 conflagration 등의 어근적 배경이나 관련 단어와 연결된다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.473",
+    "trans": "슬픈 불행들을 순서대로 말하며 지루하게 하지 않기 위해,",
+    "words": [
+      {
+        "g": "Neve",
+        "pos": "접속사",
+        "lemma": "neve (neu)",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고 ~하지 않도록",
+        "gloss_en": "and that not, nor",
+        "syntax": "목적 및 금지를 이끄는 종속 접속사로, 이야기를 길게 늘어놓지 않겠다는 의도를 나타낸다.",
+        "background": "너무 많은 비극적 사연을 일일이 다 말하느라 시간을 끌지 않겠다는 화자의 배려이다.",
+        "etymology": "부정사 ne와 접속사 ve의 결합형."
+      },
+      {
+        "g": "morer",
+        "pos": "동사",
+        "lemma": "moror, morari, moratus sum",
+        "parse": "pres. pass. (deponent) subj. 1st pers. sg.",
+        "gloss_kr": "지체하다, 머무르다",
+        "gloss_en": "I delay, linger",
+        "syntax": "형태는 수동이나 의미는 능동인 탈형동사(deponent)의 접속법 현재 1인칭 단수형으로, 이야기를 길게 끌지 않겠다는 뜻을 나타낸다.",
+        "background": "슬픈 사연을 다 풀면 끝이 없으므로 요점만 전하겠다는 태도이다.",
+        "etymology": "명사 mora('지연, 멈춤')에서 유래한 동사이다. 이탈리아어 morare(고어), 스페인어 morar(살다/머무르다) 등이 동계어이며, 현대 영어의 demur, moratorium 등에 그 어원이 남아 있다."
+      },
+      {
+        "g": "referens",
+        "pos": "동사",
+        "lemma": "refero, referre, rettuli, relatus",
+        "parse": "pres. act. part. nom. m. sg.",
+        "gloss_kr": "언급하며, 이야기하면서",
+        "gloss_en": "recounting, reporting",
+        "syntax": "주어의 부대 상황을 나타내는 능동현재분사이다.",
+        "background": "지나간 슬픈 불행들을 차례대로 하나씩 되짚어 말하는 행위이다.",
+        "etymology": "동사 fero('나르다, 가져오다')에 뒤로 또는 반복을 뜻하는 re-가 결합하였다. 이탈리아어 riferire, 스페인어 referir 등이 동계어이며, 현대 영어의 refer, reference 등에 그 어원이 깊게 박혀 있다."
+      },
+      {
+        "g": "tristes",
+        "pos": "형용사",
+        "lemma": "tristis, -e",
+        "parse": "pl. acc. m.",
+        "gloss_kr": "슬픈, 비극적인",
+        "gloss_en": "sad, gloomy",
+        "syntax": "명사 casus를 수식하는 3변화 형용사의 복수 대격이다.",
+        "background": "귀환 길에 겪었던 온갖 암울하고 비참한 사건들이다.",
+        "etymology": "인도유럽조어 재구형에서 유래한 라틴어 감정 형용사이다. 이탈리아어 triste, 스페인어 triste 등이 동계어이며, 현대 영어의 tristful(시어), triste 등에 그 어원이 남아 있다."
+      },
+      {
+        "g": "ex",
+        "pos": "전치사",
+        "lemma": "ex (e)",
+        "parse": "prep. with abl.",
+        "gloss_kr": "~로부터, ~에 따라",
+        "gloss_en": "out of, from",
+        "syntax": "탈격 명사 ordine을 지배하여 순서에 따른 방식을 나타낸다.",
+        "background": "뒤죽박죽이 아니라 발생한 순서대로 차근차근 읊조리는 태도이다.",
+        "etymology": "인도유럽조어 *eghs."
+      },
+      {
+        "g": "ordine",
+        "pos": "명사",
+        "lemma": "ordo, ordinis, m.",
+        "parse": "sg. abl. m.",
+        "gloss_kr": "순서대로, 차례로",
+        "gloss_en": "in order, sequentially",
+        "syntax": "전치사 ex의 목적어로 쓰인 3변화 명사이다.",
+        "background": "수많은 비극적 사건들을 순서에 맞게 언급하려 함을 뜻한다.",
+        "etymology": "인도유럽조어 재구형 *ordh-('줄을 서다, 정돈되다')에서 유래하였다. 이탈리아어 ordine, 스페인어 orden 등이 동계어이며, 현대 영어의 order, ordinal, subordinate 등에 그 어원이 고스란히 살아 있다."
+      },
+      {
+        "g": "casus",
+        "pos": "명사",
+        "lemma": "casus, -us, m.",
+        "parse": "pl. acc. m.",
+        "gloss_kr": "불행들을, 사건들을",
+        "gloss_en": "misfortunes, events, downfalls",
+        "syntax": "분사 referens의 직접목적어로 쓰인 4변화 명사이다.",
+        "background": "그리스 함대가 맞닥뜨렸던 일련의 비극적 우연과 재앙들이다.",
+        "etymology": "동사 cadere('떨어지다')에서 파생된 명사이다. 이탈리아어 caso, 스페인어 caso 등이 동계어이며, 현대 영어의 case, casual, occasion, accident 등에 그 어원이 깊게 박혀 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.474",
+    "trans": "당시 그리스는 프리아모스에게조차 눈물겨운 것으로 보일 수 있었다.",
+    "words": [
+      {
+        "g": "Graecia",
+        "pos": "명사",
+        "lemma": "Graecia, -ae, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "그리스가",
+        "gloss_en": "Greece",
+        "syntax": "주절의 주어로 쓰인 고유명사 명사이다.",
+        "background": "트로이를 멸망시키고 승리하여 돌아가던 중 비참하게 몰락한 그리스 연합군과 그 고국이다.",
+        "etymology": "그리스의 고대 부족 명칭에서 유래한 라틴어 지명이다. 영어의 Greece, Greek 등에 그 어원이 이어진다."
+      },
+      {
+        "g": "tum",
+        "pos": "부사",
+        "lemma": "tum",
+        "parse": "temp. adv.",
+        "gloss_kr": "그때에",
+        "gloss_en": "then, at that time",
+        "syntax": "시간을 한정하는 부사로, 그리스 함대가 가장 비참한 수난을 겪던 시점을 가리킨다.",
+        "background": "원수였던 트로이의 왕 프리아모스조차 동정할 만큼 참혹했던 그리스의 몰락 시기이다.",
+        "etymology": "인도유럽조어 지시 대명사 어근에서 유래한 라틴어 시간 부사이다."
+      },
+      {
+        "g": "potuit",
+        "pos": "동사",
+        "lemma": "possum, posse, potui",
+        "parse": "perf. act. 3rd pers. sg.",
+        "gloss_kr": "~할 수 있었다",
+        "gloss_en": "could, was able",
+        "syntax": "완료 능동태 조동사로, 가능의 양상을 나타낸다.",
+        "background": "처지가 너무 비참하여 적의 눈에도 눈물이 고일 만큼 역전된 상황이다.",
+        "etymology": "형용사 potis('할 수 있는')와 동사 esse('이다')의 합성어이다. 이탈리아어 potere, 스페인어 poder 등이 동계어이며, 현대 영어의 potent, possible, potential 등에 그 어원이 남아 있다."
+      },
+      {
+        "g": "Priamo",
+        "pos": "명사",
+        "lemma": "Priamus, -i, m.",
+        "parse": "sg. dat. m.",
+        "gloss_kr": "프리아모스에게조차",
+        "gloss_en": "even to Priam",
+        "syntax": "수동적 감정의 주체나 대상인 여격 명사이다.",
+        "background": "트로이아의 늙은 왕으로, 그리스군에 의해 아들과 나라를 모두 잃었으나 오히려 파멸한 그리스의 처지를 보면 눈물을 흘렸을 것이라는 반전적 표현이다.",
+        "etymology": "그리스어 Πρίαμος(Priamos)에서 유래한 라틴어 고유명사이다."
+      },
+      {
+        "g": "quoque",
+        "pos": "부사",
+        "lemma": "quoque",
+        "parse": "adv.",
+        "gloss_kr": "~도 역시",
+        "gloss_en": "also, too",
+        "syntax": "앞의 Priamo를 강조하여 원수조차 예외가 아님을 나타내는 부사이다.",
+        "background": "철천지원수였던 트로이의 왕마저도 동정했을 만큼 처참했던 그리스의 몰락이다.",
+        "etymology": "라틴어 고유의 첨가 부사."
+      },
+      {
+        "g": "flenda",
+        "pos": "동사",
+        "lemma": "fleo, flere, flevi, fletus",
+        "parse": "fut. pass. part. (gerundive) nom. f. sg.",
+        "gloss_kr": "눈물 흘려야 할, 슬퍼할 만한",
+        "gloss_en": "to be wept over, lamentable",
+        "syntax": "주어인 Graecia를 서술하는 동형사(Gerundive)의 주격 형태이다.",
+        "background": "원수의 불행을 보고 통곡할 만큼 참담했던 그리스의 비극적 운명이다.",
+        "etymology": "인도유럽조어 재구형에서 유래한 라틴어 울음·눈물 동사이다. 이탈리아어 fioco(일부 연관형) 등이 있으며, 현대 영어의 feeble 등의 어원적 논의나 관련 어휘와 연결된다."
+      },
+      {
+        "g": "videri",
+        "pos": "동사",
+        "lemma": "videor, videri, visus sum",
+        "parse": "pres. pass. (deponent) infinitive",
+        "gloss_kr": "보이다, 여겨지다",
+        "gloss_en": "to seem, to appear",
+        "syntax": "조동사 potuit의 보조를 받는 수동태(형태상 탈형동사) 부정사이다.",
+        "background": "그리스의 처지가 프리아모스에게조차 슬픔의 대상인 것처럼 여겨질 수 있었다는 회고이다.",
+        "etymology": "인도유럽조어 재구형 *weid-('보다')에서 유래하였다. 산스크리트어 véda, 고대 그리스어 ἶδα(eida) 등이 동계어이다. 현대 영어의 video, vision, evident, provide 등에 그 어원이 깊게 박혀 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.475",
+    "trans": "그럼에도 나를 보호하셨던 무장한 미네르바의 보살핌이,",
+    "words": [
+      {
+        "g": "Me",
+        "pos": "대명사",
+        "lemma": "ego",
+        "parse": "sg. acc. m.",
+        "gloss_kr": "나를",
+        "gloss_en": "me",
+        "syntax": "분사 servatum의 목적어로 쓰인 1인칭 대명사의 대격 형태이다.",
+        "background": "다른 그리스 영웅들은 여신의 진노와 폭풍으로 파멸했으나 자신만은 살아남았음을 말하는 디오메데스 자신이다.",
+        "etymology": "인도유럽조어 재구형 *eghom('나')에서 유래하였다. 산스크리트어 ahám, 고대 그리스어 ἐγώ(ego) 등이 동계어이다. 현대 영어의 me, ego, egocentric 등에 그 어원이 깊게 박혀 있다."
+      },
+      {
+        "g": "tamen",
+        "pos": "부사",
+        "lemma": "tamen",
+        "parse": "adv.",
+        "gloss_kr": "그럼에도 불구하고",
+        "gloss_en": "nevertheless, yet",
+        "syntax": "다른 이들이 다 비참하게 무너졌음에도 자신은 구원받았음을 대조하는 역접 부사이다.",
+        "background": "동료들이 천벌을 받을 때 자신만큼은 여신의 보살핌으로 살아남았다는 사실을 강조한다.",
+        "etymology": "라틴어 대명사적 부사."
+      },
+      {
+        "g": "armiferae",
+        "pos": "형용사",
+        "lemma": "armifer, armifera, armiferum",
+        "parse": "sg. gen. f.",
+        "gloss_kr": "무기를 든, 무장한",
+        "gloss_en": "arms-bearing, armed",
+        "syntax": "명사 Minervae를 수식하는 소유격 형용사이다.",
+        "background": "창과 방패를 들고 전쟁을 수호하는 무장한 여신 미네르바의 속성이다.",
+        "etymology": "명사 arma('무기')와 동사 ferre('나르다')의 결합으로 이루어진 합성 형용사이다."
+      },
+      {
+        "g": "servatum",
+        "pos": "동사",
+        "lemma": "servo, servare, servavi, servatus",
+        "parse": "perf. pass. part. acc. m. sg.",
+        "gloss_kr": "구원받은, 보호받은",
+        "gloss_en": "saved, protected",
+        "syntax": "목적어인 나(Me)를 수식하는 수동완료 분사의 대격 형태이다.",
+        "background": "다른 모든 이들이 신들의 진노에 파멸할 때 미네르바 여신이 자신을 지켜준 은혜이다.",
+        "etymology": "인도유럽조어 재구형에서 유래한 라틴어 보호·유지 동사이다. 이탈리아어 salvare, 스페인어 salvar 등이 동계어이며, 현대 영어의 conserve, preserve, reserve, observe 등에 그 어원이 고스란히 남아 있다."
+      },
+      {
+        "g": "cura",
+        "pos": "명사",
+        "lemma": "cura, -ae, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "보살핌이, 관심이",
+        "gloss_en": "care, concern, protection",
+        "syntax": "후행하는 서술(또는 문맥상 이어지는 구절)과 호응하는 주격 명사이다.",
+        "background": "자신을 향했던 미네르바 여신의 각별한 보호와 배려이다.",
+        "etymology": "인도유럽조어 재구형에서 유래한 라틴어 염려·관리 명사이다. 이탈리아어 cura, 스페인어 cura 등이 동계어이며, 현대 영어의 cure, curate, accurate, secure 등에 그 어원이 깊게 박혀 있다."
+      },
+      {
+        "g": "Minervae",
+        "pos": "명사",
+        "lemma": "Minerva, -ae, f.",
+        "parse": "sg. gen. f.",
+        "gloss_kr": "미네르바의",
+        "gloss_en": "of Minerva",
+        "syntax": "앞의 cura를 소유의 의미로 수식하는 속격 명사이다.",
+        "end_of_sentence": true,
+        "background": "지혜와 전쟁의 여신 미네르바로, 비록 동료 아이아스의 죄로 다른 이들은 화를 입었으나 자신은 여신의 보살핌으로 구원받았음을 밝힌다.",
+        "etymology": "라틴어 고유의 지혜의 여신 이름으로, 에트루리아 기원의 명칭에서 유래한 것으로 추정된다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.476",
+    "trans": "(She) snatched me from the waves, but once again from my ancestral fields",
+    "words": [
+      {
+        "g": "fluctibus",
+        "pos": "명사",
+        "lemma": "fluctus, -us, m.",
+        "parse": "pl. abl. m.",
+        "gloss_kr": "파도, 물결",
+        "gloss_en": "waves, billows",
+        "syntax": "구조상 eripuit 동사의 수단을 나타내는 탈격 성분으로, 바다의 위험을 상징적으로 보여준다. 단수형이 아닌 복수형(pl. abl.)을 사용하여 거칠게 몰아치는 파도의 연속성과 격렬함을 강조하고 있다.",
+        "background": "트로이아 전쟁 이후 귀환 과정에서 그리스 영웅들이 겪은 혹독한 해상 조난과 시련을 집약하는 표현이다. 디오메데스는 펠로폰네소스 귀환길에서 파도에 휩쓸려 고국으로 바로 돌아가지 못하고 방황했던 비극적 처지를 회상하고 있다.",
+        "etymology": "흐르다라는 뜻의 라틴어 동사 fluere에서 유래한 명사로, PIE 재구형 *bhleuk-('흐르다, 붓다')에 기원을 둔다. 다른 로망스어군 반사형으로는 프랑스어 flot, 이탈리아어 flutto 등이 동계어로 존재한다. 라틴어 안에서 단순한 '흐름'을 넘어 거친 '파도'나 '동요'를 뜻하는 의미 심화 과정을 거쳤으며, 현대 영어의 fluctuation(변동)이나 플루이드(fluid) 같은 어휘 안에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "eripuit",
+        "pos": "동사",
+        "lemma": "eripio, -ere, -ui, -reptum",
+        "parse": "perf. act. 3rd pers. sg.",
+        "gloss_kr": "구해내다, 빼앗다",
+        "gloss_en": "snatched away, rescued",
+        "syntax": "주절의 본동사로, 주어는 명시되지 않았으나 문맥상 앞서 언급된 비너스(alma Venus)를 가리킨다. 완료시제(perf.)를 사용하여 과거 특정 시점에 일어난 구원의 사건을 단회적인 사실로 확정 지어 전달한다.",
+        "background": "비너스는 트로이아 패망의 혼란 속에서 자신의 아들 에네아스를 보호하듯, 미움받던 적장 디오메데스에게도 가혹한 운명을 부과하면서 동시에 죽음의 위기에서는 건져내는 모순적인 개입을 행했다. 이 구출은 은혜라기보다는 더 큰 고통을 위한 유예에 가깝게 묘사된다.",
+        "etymology": "탈취하다라는 뜻의 e-(밖으로)와 rapere(움켜쥐다, 강탈하다)가 결합한 복합동사로, PIE 재구형 *rep-('잡아채다')에서 유래했다. 이탈리아어 erigere 등과 어원을 같이하며, 라틴어 안에서 '힘으로 낚아채듯 건져내다'라는 의미로 전문화되었다. 현대 영어의 rapacious(강탈하는)나 raptor(맹금류) 같은 단어에서 그 어근의 흔적을 찾아볼 수 있다."
+      },
+      {
+        "g": "patriis",
+        "pos": "형용사",
+        "lemma": "patrius, -a, -um",
+        "parse": "pl. abl. f.",
+        "gloss_kr": "조국의, 선조의",
+        "gloss_en": "ancestral, native",
+        "syntax": "이어지는 명사 abris를 수식하는 여성 복수 여격/탈격 형태 중 탈격(abl.)으로, 장소의 이탈을 나타내는 전치사 ab와 호응한다. 수식어인 patriis가 명사 abris 사이에 위치하여 고향에 대한 애착과 강제 추방의 대비를 극대화한다.",
+        "background": "디오메데스는 아이톨리아의 왕 티데우스의 아들이나 아르고스에서 주로 활동했으며, 전쟁 후 고국 아르고스로 돌아갔으나 비너스의 저주와 아내의 배신으로 인해 결국 정착하지 못하고 쫓겨났다. 이 단어는 영웅이 누려야 할 마땅한 유산과 안식처를 상실했음을 보여준다.",
+        "etymology": "아버지라는 뜻의 라틴어 pater에서 유래한 형용사로, PIE 재구형 *peh₂ter-('아버지')에 기원을 둔다. 다른 로망스어군 반사형으로는 스페인어 patrio, 프랑스어 patrie 등이 동계어로 존재한다. 라틴어에서 '아버지의'라는 뜻에서 '조국(patria)의'라는 의미로 확장되었으며, 현대 영어의 patriotic(애국적인)이나 patron 같은 단어 안에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "sed",
+        "pos": "접속사",
+        "lemma": "sed",
+        "parse": "coord. conj.",
+        "gloss_kr": "그러나, 그렇지만",
+        "gloss_en": "but",
+        "syntax": "앞서 파도에서 건져졌다는 구원의 내용과 다시 고향에서 쫓겨난다는 비극적 현실을 강하게 대립시키는 등위접속사이다. 문장 중반에 위치해 화자의 처지가 반전되는 비장한 분위기를 극적으로 전환한다.",
+        "background": "서사시 문체에서 전환을 알리는 핵심 장치로, 신들의 변덕스럽고 가혹한 처사가 인간의 노력이나 일시적 구원을 어떻게 무위로 돌리는지 보여준다. 디오메데스의 불평은 단순한 투정이 아니라 신성한 분노에 사로잡힌 운명론적 비탄을 드러낸다.",
+        "etymology": "고대 라틴어의 se(분리)와 대명사 어근이 결합한 것으로 추정되며, PIE 재구형 *sed-('구별하다, 따로 두다')와 연관이 깊다. 이탈리아어 ma와는 달리 순수한 역접을 나타내며, 로망스어군에서는 다른 형태(스페인어 pero 등)로 대체되어 직접적인 반사형은 드물다. 라틴어 안에서 앞말을 부정하고 대조되는 뒷말을 이끌어내는 문법적 기능을 담당하도록 의미가 축소 정착되었다."
+      },
+      {
+        "g": "rursus",
+        "pos": "부사",
+        "lemma": "rursus",
+        "parse": "temp. adv.",
+        "gloss_kr": "다시금, 거듭",
+        "gloss_en": "again, anew",
+        "syntax": "동사 pellor를 수식하는 시간·양태 부사로, 시련이 일회성으로 끝나지 않고 반복되고 있음을 강조한다. 문장 내에서 동사 앞에 배치되어 비극의 지속성을 부각하는 리듬감을 형성한다.",
+        "background": "트로이아 전쟁의 고통을 겨우 견뎌냈음에도 불구하고 안식이 찾아오기는커녕 새로운 추방과 방황이 거듭되는 상황을 가리킨다. 영웅의 삶이 신들의 장난에 의해 끊임없는 반복 시험대에 오름을 보여준다.",
+        "etymology": "뒤를 뜻하는 re-와 얼굴/방향을 뜻하는 vorsus(vertere의 분사형)가 결합한 재구형 *re-vorsus('뒤로 향하여')에서 유래했다. 이탈리아어에서는 direkt 형태가 변형되었고, 라틴어 안에서 '뒤돌아보다'라는 물리적 방향에서 '다시'라는 시간적 반복 의미로 전이되었다. 현대 영어의 recursion(재귀)이나 reverse(역의) 같은 단어와 어원을 공유한다."
+      },
+      {
+        "g": "ab",
+        "pos": "전치사",
+        "lemma": "ab",
+        "parse": "prep. taking abl.",
+        "gloss_kr": "~로부터, ~에게서",
+        "gloss_en": "from, away from",
+        "syntax": "탈격(abl.) 명사인 agris를 지배하며 장소의 이탈과 기원을 나타내는 전치사이다. agris 앞에 놓여 조국 땅으로부터 강제로 밀려나고 격리되는 물리적 단절을 명확히 규정한다.",
+        "background": "그리스 영웅들이 트로이아 전후로 겪은 근원적 상실감, 즉 '내 자리'에서 배제되는 유배의 모티프를 강조한다. 디오메데스는 고국에 발을 붙이지 못하고 이탈리아 남부 등지로 떠돌며 새로운 도시를 세워야 하는 운명에 처해 있었다.",
+        "etymology": "인도유럽조어 재구형 *apo-('~로부터, 멀리')에서 유래한 전치사이다. 산스크리트어 ápa, 그리스어 apó 등이 직접적인 동계어로 존재한다. 라틴어 안에서 자음 앞에서는 a-, 모음이나 일부 자음 앞에서는 ab-로 음운 변화를 겪었으며, 현대 영어의 a-, ab- 접두사나 프랑어에서 유래한 단어들 속에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "agris",
+        "pos": "명사",
+        "lemma": "ager, agri, m.",
+        "parse": "pl. abl. m.",
+        "gloss_kr": "들판, 농지, 고국",
+        "gloss_en": "fields, lands, country",
+        "syntax": "전치사 ab의 지배를 받는 복수 탈격 명사로, 조상의 땅이라는 영토적 의미를 담고 있다. 단수형이 아닌 복수형(pl.)을 사용하여 광활한 조상의 영토 전역에서 배척당하는 비참함을 증폭한다.",
+        "background": "농경과 정착을 상징하는 고향의 땅으로, 영웅이 마침내 돌아와 평화를 누려야 할 공간이다. 그러나 비너스의 저주로 인해 디오메데스는 이 풍요로운 조상의 들판을 영원히 박탈당하고 이주의 길을 걸어야 했다.",
+        "etymology": "들판을 뜻하는 PIE 재구형 *h₂eg-ro-('들, 목초지')에서 유래했다. 그리스어 ἄγρος(agros), 산스크리트어 ajraḥ, 고트어 akrs 등이 동계어로 존재한다. 로망스어군에서는 스페인어 agro 등으로 이어지며, 라틴어에서 단순한 황무지나 들이 아니라 경작되는 '토지'와 '조국 영토'로 의미가 확장되었다. 현대 영어의 agriculture(농업)나 acre(에이커) 같은 단어 안에 그 흔적이 고스란히 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.477",
+    "trans": "I am driven, and for an ancient wound, mindful, penalties",
+    "words": [
+      {
+        "g": "pellor",
+        "pos": "동사",
+        "lemma": "pello, -ere, pepuli, pulsum",
+        "parse": "pres. pass. 1rd pers. sg.",
+        "gloss_kr": "쫓겨나다, 추방당하다",
+        "gloss_en": "I am driven, am banished",
+        "syntax": "1인칭 단수 현재 수동태 동사로, 화자 자신이 외부의 거대한 힘에 의해 지속적으로 밀려나고 있는 상태를 나타낸다. 수동태(pass.)를 사용하여 자신의 의지와 상관없이 신들의 의지에 지배당하는 무력한 처지를 부각한다.",
+        "background": "트로이아 전쟁 당시 디오메데스는 아테나의 가호를 받아 비너스(아프로디테)의 손을 창으로 찔러 상처를 입힌 전적이 있었다. 이 구절의 '추방'은 바로 그 신적 모욕에 대한 여신 베루스의 앙갚음이라는 서사적 맥락과 직결된다.",
+        "etymology": "치다, 몰아내다라는 뜻의 PIE 재구형 *pel-('치다, 흔들다')에서 유래했다. 그리스어 ῥάλλω 등의 유사 형태와 비교되나 라틴어 계통에서 독자적인 동사 체계를 확립했다. 라틴어 안에서 능동태의 '치다'에서 수동태의 '몰려나다, 쫓기다'로 의미가 전이되었으며, 현대 영어의 expel(추방하다), compel(강요하다), pulse(맥박) 같은 단어에 그 어근의 흔적이 남아 있다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고, 게다가",
+        "gloss_en": "and, also",
+        "syntax": "앞선 문장의 추방 사실과 비너스가 요구하는 보복 행위를 자연스럽게 이어주는 등위접속사이다. 문장들을 대등하게 연결하면서 동시에 화자의 한탄이 인과관계 속에서 확장되고 있음을 보여준다.",
+        "background": "신화적 인과응보의 연쇄를 보여주는 연결고리로, 단순한 지리적 유배가 감정적·신학적 형벌과 맞물려 있음을 시사한다. 디오메데스의 고난은 불운한 우연이 아니라 철저하게 계산된 신의 복수임을 강조하는 역할이다.",
+        "etymology": "그리고를 뜻하는 인도유럽조어 재구형 *eti('~도 또한, 게다가')에서 유래했다. 그리스어 ἔτι(eti, 게다가), 산스크리트어 áti(넘어서) 등이 동계어로 존재한다. 로망스어군에서는 스페인어 y(이탈리아어 e 등)로 변모하였으나 라틴어 고전 문체에서는 et가 기본 접속사로 광범위하게 쓰였다."
+      },
+      {
+        "g": "antiquo",
+        "pos": "형용사",
+        "lemma": "antiquus, -a, -um",
+        "parse": "sg. abl. m.",
+        "gloss_kr": "오래된, 옛날의",
+        "gloss_en": "ancient, old",
+        "syntax": "이어지는 명사 vulnere를 수식하는 남성 단수 탈격 형용사로, 시간의 깊이와 뿌리 깊은 원한을 나타낸다. 명사 앞에 놓여 상처가 일시적인 감정이 아니라 오랜 세월 동안 치유되지 않은 원한임을 강조한다.",
+        "background": "트로이아 전쟁 당시 디오메데스가 전장에서 비너스의 손에 상처를 입힌 사건은 수년이 지난 과거의 일이다. 그러나 불멸의 존재인 신들에게는 시간이 흘러도 그 모욕이 바래지 않음을 이 형용사가 날카롭게 포착하고 있다.",
+        "etymology": "앞을 뜻하는 ante에서 파생된 형용사로, PIE 재구형 *ant-('앞, ~의 앞에')에 기원을 둔다. 다른 로망스어군 반사형으로는 스페인어 antiguo, 프랑스어 antique 등이 동계어로 존재한다. 라틴어 안에서 단순히 '시간이 오래된' 것뿐만 아니라 '옛것의 가치'나 '오래된 기억'을 뜻하는 의미로 발전했으며, 현대 영어의 antique(골동품)나 antiquity(고대) 같은 단어 속에 그 흔적이 살아 있다."
+      },
+      {
+        "g": "memores",
+        "pos": "형용사",
+        "lemma": "memor, memoris",
+        "parse": "pl. nom. m.",
+        "gloss_kr": "기억하는, 잊지 않는",
+        "gloss_en": "mindful, remembering",
+        "syntax": "주어인 비너스를 수식하는 남성 복수 주격 형용사로, 문맥상 여신의 불변하는 기억력을 묘사한다. 분사의 성격을 지녀 과거의 상처를 생생하게 마음에 품고 복시하는 주체의 능동적 속성을 시각화한다.",
+        "background": "인간은 망각의 동물이지만 신들은 과거의 치욕을 결코 잊지 않는다는 신화적 냉혹함을 대변한다. 비너스는 트로이아 전장에서 당한 수모를 수년이 지난 지금까지도 잊지 않고 철저하게 대가를 요구하고 있다.",
+        "etymology": "마음이나 기억을 뜻하는 PIE 재구형 *smer-('기억하다, 생각하다')에서 유래했다. 산스크리트어 smarati(기억하다), 그리스어 μέρμερος(걱정스러운) 등이 동계어로 존재한다. 라틴어 안에서 '잊지 않고 마음에 새기는 자'라는 뜻으로 정착되었으며, 현대 영어의 memory(기억), commemorate(기념하다), memoir(회고록) 같은 단어에 그 어근의 흔적이 남아 있다."
+      },
+      {
+        "g": "de",
+        "pos": "전치사",
+        "lemma": "de",
+        "parse": "prep. taking abl.",
+        "gloss_kr": "~로부터, ~에 관하여, ~때문에",
+        "gloss_en": "from, concerning, on account of",
+        "syntax": "탈격 명사인 vulnere를 지배하며 원인이나 기원을 나타내는 전치사이다. 상처(vulnus)라는 물리적·정신적 사건이 복수(poenas)를 촉발하게 된 인과적 배경을 매개한다.",
+        "background": "신화 속에서 신들이 내리는 벌이 그냥 주어지는 것이 아니라, 과거의 특정한 사건과 원한이라는 명백한 '근거'에서 비롯됨을 보여주는 전치사적 용법이다. 디오메데스의 모든 고난은 그날 흘린 신의 피에서 비롯되었다.",
+        "etymology": "아래로의 분리와 기원을 뜻하는 라틴어 전치사로, PIE 재구형에서 파생된 로망스어 기초 어휘이다. 다른 로망스어군 반사형으로는 스페인어/포르투갈어의 de, 프랑스어 de 등이 동계어로 존재한다. 라틴어 안에서 공간적 아래쪽 방향뿐만 아니라 원인, 출처, 부분의 의미로 광범위하게 확장되었으며, 현대 영어의 detach(떼어내다)나 descend(내려가다) 같은 접두사 속에서 그 흔적을 찾을 수 있다."
+      },
+      {
+        "g": "vulnere",
+        "pos": "명사",
+        "lemma": "vulnus, vulneris, n.",
+        "parse": "sg. abl. n.",
+        "gloss_kr": "상처, 부상, 마음의 상처",
+        "gloss_en": "wound, hurt",
+        "syntax": "전치사 de의 지배를 받는 중성 단수 탈격 명사로, 복수의 원인이 되는 핵심 실체를 가리킨다. 탈격(abl.) 형태로 쓰여 비너스가 품고 있는 원한의 빌미가 무엇인지를 정확히 짚어낸다.",
+        "background": "트로이아 전쟁 당시 디오메데스가 아테나의 힘을 빌려 비너스의 손목을 찔러 상처를 입힌 신성모독적 사건을 가리킨다. 여신에게 상처는 육체적 아픔인 동시에 결코 용서받을 수 없는 명예의 손상이자 영원한 오점이었다.",
+        "etymology": "상처를 뜻하는 인도유럽조어 재구형 *welH-('상처를 입히다')에서 유래했다. 그리스어 alē 등과 비교되나 라틴어 고유의 어형 발전을 겪었다. 로망스어군에서는 스페인어 vulnerar(해치다) 등으로 이어지며, 라틴어에서 육체의 부상뿐만 아니라 정신적 타격이나 명예의 손상으로 의미가 확장되었다. 현대 영어의 vulnerable(상처 입기 쉬운), vulnerability 같은 단어 안에 그 생생한 흔적이 남아 있다."
+      },
+      {
+        "g": "poenas",
+        "pos": "명사",
+        "lemma": "poena, -ae, f.",
+        "parse": "pl. acc. f.",
+        "gloss_kr": "벌, 형벌, 대가",
+        "gloss_en": "punishments, penalties",
+        "syntax": "동사 exigit의 직접목적어로 쓰인 여성 복수 대격 명사이다. 복수형(pl.)을 통해 여신이 요구하는 대가가 단발성 처벌이 아니라 가혹하고 다면적인 형벌의 세례임을 강조한다.",
+        "background": "신들이 인간에게 가하는 가차 없는 응징과 보복의 정의를 상징한다. 디오메데스는 고국에서의 추방, 가족의 배신, 끊없는 방황이라는 형벌을 통해 자신의 젊은 시절 저지른 대가를 톡톡히 치르고 있다.",
+        "etymology": "대가나 벌을 뜻하는 그리스어 포이네(ποινή, 대가, 속죄금)에서 차용된 라틴어 명사로, PIE 재구형 *kʷei-('지불하다, 벌하다')에 기원을 둔다. 다른 로망스어군 반사형으로는 스페인어 pena, 프랑스어 peine 등이 동계어로 존재한다. 라틴어 안에서 법적·신학적 의미의 '처벌'과 '고통'으로 고착되었으며, 현대 영어의 penal(형벌의), penitent(참회하는), pain(고통) 같은 단어에 그 어근의 흔적이 깊게 박혀 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.478",
+    "trans": "nourishing (or kindly) Venus exacts; and through the deep labors so great",
+    "words": [
+      {
+        "g": "exigit",
+        "pos": "동사",
+        "lemma": "exigo, -ere, -exegi, -actum",
+        "parse": "pres. act. 3rd pers. sg.",
+        "gloss_kr": "요구하다, 받아내다, 집행하다",
+        "gloss_en": "exacts, demands, drives out",
+        "syntax": "문장의 주절 동사로, 주어는 alma Venus이며 목적어는 poenas이다. 현재시제(pres.)를 사용하여 과거의 상처에 대한 여신의 복수가 지금 이 순간에도 현재진행형으로 혹독하게 가해지고 있음을 생생하게 전달한다.",
+        "background": "비너스가 디오메데스를 향해 복수의 칼날을 거두지 않고 대가를 엄격하게 추심하는 모습을 법정적이고 단호한 어휘로 표현했다. 신의 노여움이 일과성으로 그치지 않고 끝까지 받아내고야 마는 집요함을 보여준다.",
+        "etymology": "밖을 뜻하는 ex-와 몰다라는 뜻의 agere가 결합한 복합동사로, PIE 재구형 *ag-('몰다, 끌다')에서 유래했다. 이탈리아어 esigere 등과 동계어이며, 라틴어 안에서 '밖으로 몰아내다'라는 뜻에서 세금이나 빚, 대가를 '엄격히 받아내다(추심하다)'라는 의미로 의미가 전이되었다. 현대 영어의 exact(요구하다, 엄격한)나 exaction(강요) 같은 단어 속에 그 어원의 흔적이 남아 있다."
+      },
+      {
+        "g": "alma",
+        "pos": "형용사",
+        "lemma": "almus, -a, -um",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "은혜로운, 생명을 주는, 자비로운",
+        "gloss_en": "nourishing, kindly, benign",
+        "syntax": "주어인 Venus를 수식하는 여성 단수 주격 형용사로, 여신의 전통적인 수식어이다. 냉혹한 복수를 감행하는 문맥에서 역설적으로 '자비롭고 생명을 기르는'이라는 수식어를 배치하여 신의 냉담함과 아이러니한 긴장감을 자아낸다.",
+        "background": "비너스는 본래 자연의 생명력과 사랑, 풍요를 관장하는 어머니이자 은혜로운 여신(alma Venus)으로 칭송받는다. 그러나 이 자비로운 여신이 디오메데스에게만큼은 가장 가혹한 복수의 집행자로 돌변한다는 점에서 신의 이중적이고 절대적인 권력이 강조된다.",
+        "etymology": "기르다라는 뜻의 라틴어 알레레(alere)에서 유래한 형용사로, PIE 재구형 *h₂el-('자라다, 기르다')에 기원을 둔다. 다른 로망스어군 반사형으로는 포르투갈어/스페인어 계통의 문어적 표현들이 존재한다. 라틴어 안에서 단순히 '양육하는' 물리적 의미를 넘어 신령스럽고 은혜로운 존재를 꾸미는 전형적인 시적 수식어로 정착되었으며, 대학 교가 등에 쓰이는 Alma Mater(자애로운 어머니)라는 표현에 그 흔적이 생생하게 살아 있다."
+      },
+      {
+        "g": "Venus",
+        "pos": "명사",
+        "lemma": "Venus, Veneris, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "비너스, 아프로디테",
+        "gloss_en": "Venus",
+        "syntax": "문장의 주어로, 동사 exigit의 주체이자 디오메데스 비극의 근원적 원인 제공자이다. 문장 후반부에 독립된 주어로 당당히 배치되어 여신의 압도적인 존재감과 절대적 권력을 부각한다.",
+        "background": "로마 신화의 사랑과 아름다움의 여신이자 트로이아 영웅 에네아스의 어머니이다. 트로이아 전쟁에서 디오메데스에게 부상을 입은 치욕을 잊지 않고, 그의 고국과 남은 삶 전반에 걸쳐 가혹한 저주를 내리는 복수심의 화신으로 그려진다.",
+        "etymology": "사랑과 매력을 뜻하는 PIE 재구형 *wenH-('소망하다, 사랑하다')에서 유래했다. 산스크리트어 vanati(사랑하다, 욕망하다), 고대 고지 독일어 wini(친구) 등이 동계어로 존재한다. 로망스어군에서는 스페인어 venerar(경배하다) 등의 어근으로 이어지며, 라틴어에서 인간의 매력과 성애, 그리고 그 신격화된 여신의 이름으로 고착되었다. 현대 영어의 venerate(경배하다)나 venereal 같은 단어에 그 어근의 흔적이 남아 있다."
+      },
+      {
+        "g": "tantosque",
+        "pos": "형용사",
+        "lemma": "tantus, -a, -um",
+        "parse": "pl. acc. m. (with -que)",
+        "gloss_kr": "그렇게 많은, 이처럼 막대한",
+        "gloss_en": "so great, so many",
+        "syntax": "뒤의 명사 labores를 수식하는 남성 복수 대격 형용사로, 후행 접속사 -que에 의해 앞 구절과 밀접하게 결합한다. 대격(acc.) 형태로 sustinui 동사의 목적어를 한층 구체화하며 시련의 규모가 엄청남을 강조한다.",
+        "background": "영웅이 겪은 고난의 물리적·정신적 크기가 얼마나 거대한지를 수식하여 디오메데스의 비장한 탄식을 뒷받침한다. 단순한 방황이 아니라 인간이 감당하기 버거운 방대하고 혹독한 시련의 연속이었음을 보여준다.",
+        "etymology": "지시적 크기를 나타내는 라틴어 대명사적 형용사로, PIE 재구형 대명사 어근에 기원을 둔다. 로망스어군에서는 이탈리아어 tanto, 스페인어 tanto 등으로 진화하여 '많이'를 뜻하는 부사 및 형용사로 널리 쓰이고 있다. 라틴어 문체에서 분량이나 정도의 극단성을 수량화하는 핵심 수단으로 기능했으며, 현대 영어의 tantamount(동등한) 같은 단어 속에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "per",
+        "pos": "전치사",
+        "lemma": "per",
+        "parse": "prep. taking acc.",
+        "gloss_kr": "~를 통하여, ~를 가로질러",
+        "gloss_en": "through, across",
+        "syntax": "대격 명사인 alta aequora를 지배하며 공간적 이동과 매개를 나타내는 전치사이다. 거대한 바다와 육지를 차례로 통과하며 끝없이 이어지는 고난의 여정을 입체적으로 그려낸다.",
+        "background": "영웅의 편력과 유배 여정이 단순한 한곳에 머무는 형벌이 아니라, 끝없는 공간적 이동과 방황의 과정임을 보여주는 필수 전치사이다. 바다와 육지라는 광활한 공간을 관통하는 순례자의 고통을 형상화한다.",
+        "etymology": "통과를 뜻하는 인도유럽조어 재구형 *per-('통하여, 앞으로, ~를 넘어')에서 유래한 전치사이다. 그리스어 πέρα(peran, 저편에), 산스크리트어 para(멀리, 저쪽에) 등이 동계어로 존재한다. 로망스어군에서는 스페인어 por, 이탈리아어 per 등으로 이어지며, 라틴어에서 공간적 관통뿐만 아니라 수단이나 시간의 경과를 나타내는 다양한 의미로 확장되었다. 현대 영어의 permit(허가하다), persist(지속하다) 등의 접두사 속에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "alta",
+        "pos": "형용사",
+        "lemma": "altus, -a, -um",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "높은, 깊은",
+        "gloss_en": "high, deep",
+        "syntax": "이어지는 명사 aequora를 수식하는 중성 복수 대격 형용사이다. 바다의 물리적 깊이와 아득함을 시각적으로 묘사하며, 항해자가 마주한 자연의 거대한 위압감을 전달한다.",
+        "background": "시적 문체에서 거칠고 깊은 바다를 가리킬 때 자주 쓰이는 관용적 수식어이다. 디오메데스가 건너야 했던 바다는 평온한 호수가 아니라 영웅을 집어삼킬 듯 깊고 위험한 미지의 공간임을 상기시킨다.",
+        "etymology": "자라다라는 동사 어근에서 파생된 라틴어 형용사로, PIE 재구형 *h₂el-('자라다')에 기원을 둔다. 다른 로망스어군 반사형으로는 스페인어/포르투갈어 alto(높은), 이탈리아어 alto 등이 동계어로 존재한다. 라틴어 안에서 물리적으로 '위로 자란(높은)' 뜻과 '아래로 깊은(깊은)' 뜻을 동시에 지니게 되었으며, 현대 영어의 altitude(고도)나 altimeter(고도계), 음악 용어인 alto(알토) 등에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "labores",
+        "pos": "명사",
+        "lemma": "labor, laboris, m.",
+        "parse": "pl. acc. m.",
+        "gloss_kr": "노고, 고생, 시련",
+        "gloss_en": "labors, toils, hardships",
+        "syntax": "전치사 per의 지배를 받는 남성 복수 대격 명사로, sustinui 동사의 목적어 역할을 함께 겸한다. 복수형(pl.)을 통해 한두 번의 시련이 아니라 영웅의 생애를 채운 끊임없는 고통의 총합을 강조한다.",
+        "background": "헤라클레스나 오디세우스 같은 신화 속 영웅들이 운명적으로 겪어야 하는 필연적 고난과 노고를 상징한다. 디오메데스 역시 트로이아 전장의 혈전과 해상 조난, 그리고 새로운 정착지에서의 갈등이라는 거대한 시련의 무게를 견뎌야 했다.",
+        "etymology": "흔들림이나 고단함을 뜻하는 PIE 재구형 *leb-('축 늘어지다, 흔들리다')에서 유래한 것으로 추정된다. 로망스어군에서는 스페인어 labor, 프랑스어 labeur 등으로 이어진다. 라틴어 안에서 단순한 신체적 노동을 넘어 영웅적 인내를 요구하는 거창한 '고난과 시련'으로 의미가 격상되었으며, 현대 영어의 laboratory(실험실), collaborate(협력하다), laborious(고생스러운) 같은 단어에 그 흔적이 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.479",
+    "trans": "across the high seas I have endured, so great [labors] by land arms,",
+    "words": [
+      {
+        "g": "aequora",
+        "pos": "명사",
+        "lemma": "aequor, aequoris, n.",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "평원, 바다, 수면",
+        "gloss_en": "expanse, sea, flat surface",
+        "syntax": "전치사 per의 지배를 받는 중성 복수 대격 명사로, 앞선 형용사 alta의 수식을 받는다. 평평하고 끝없는 대지의 평원이나 바다의 수평면을 가리키며, 여기서는 거대하게 펼쳐진 바다를 의미한다.",
+        "background": "시적 표현에서 거친 바다를 '평평한 들판'에 비유하여 시각적 확장감을 주는 대표적인 단어이다. 디오메데스가 지상뿐만 아니라 끝이 안 보이는 망망대해 위에서도 얼마나 많은 고통을 겪었음을 강조한다.",
+        "etymology": "같음을 뜻하는 aequus에서 유래한 명사로, PIE 재구형 *leikʷ- 또는 평평함을 뜻하는 어근과 연관된다. 이탈리아어 등에는 직접적인 명사 형태로 남기보다 형용사적 어근으로 잔존한다. 라틴어 안에서 '평평한 땅'에서부터 파도가 잠잠해진 평평한 '바다의 수면'으로 의미가 확장되었으며, 현대 영어의 equinox(춘추분)나 equate(동일시하다) 같은 단어들과 어원을 공유한다."
+      },
+      {
+        "g": "sustinui",
+        "pos": "동사",
+        "lemma": "sustineo, -ere, -ui, -tentum",
+        "parse": "perf. act. 1st pers. sg.",
+        "gloss_kr": "견뎌내다, 지탱하다, 버티다",
+        "gloss_en": "I have endured, sustained",
+        "syntax": "1인칭 단수 완료 능동태 동사로, 화자 자신이 기나긴 세월 동안 온갖 시련을 무너지지 않고 버텨왔음을 선언한다. 완료시제(perf.)를 사용하여 과거부터 현재까지 누적된 고통의 총량을 확정적으로 마무리지어 표현한다.",
+        "background": "영웅으로서 디오메데스가 신들의 가혹한 형벌과 육체적·정신적 한계 상황 속에서도 정신을 잃지 않고 버텨낸 불굴의 인내심을 드러낸다. 방대한 바다와 육지의 무기를 모두 견뎌냈다는 자부심과 한탄이 교차한다.",
+        "etymology": "아래를 뜻하는 sub-와 잡다라는 뜻의 tenere가 결합한 복합동사로, PIE 재구형 *ten-('뻗다, 늘이다')에서 유래했다. 이탈리아어 sostenere, 스페인어 sostener 등이 동계어로 존재한다. 라틴어 안에서 물리적으로 무게를 '아래에서 떠받치다'라는 뜻에서 추상적으로 고통이나 압박을 '견뎌내다'라는 의미로 깊이 전이되었으며, 현대 영어의 sustain(유지하다, 견디다), sustainable(지속 가능한) 같은 단어에 그 어근이 살아 있다."
+      },
+      {
+        "g": "tantos",
+        "pos": "형용사",
+        "lemma": "tantus, -a, -um",
+        "parse": "pl. acc. m.",
+        "gloss_kr": "그렇게 많은, 이처럼 막대한",
+        "gloss_en": "so great, so many",
+        "syntax": "이어지는 명사 armis의 의미 단위를 수식하는 남성 복수 대격 형용사로, 앞선 tantosque와 대구를 이루며 반복의 수사학을 완성한다. 지상의 무기와 전투가 얼마나 엄청났는지를 거듭 강조한다.",
+        "background": "바다에서의 조난뿐만 아니라 트로이아 전장에서부터 이어진 지상의 치열한 전투와 무기들의 위협이 얼마나 거대했는지를 환기한다. 지상과 해상을 막론하고 온 세상이 자신을 적대했던 상황을 증언한다.",
+        "etymology": "앞서 다룬 tantos와 동일한 어원을 지닌 지시적 수량 형용사로, PIE 대명사 어근에 기원을 둔다. 라틴어 문체에서 두 번 연속 대조를 이루며 시적 균형감을 잡는 핵심 수식어로 기능한다."
+      },
+      {
+        "g": "terrestribus",
+        "pos": "형용사",
+        "lemma": "terrestris, -e",
+        "parse": "pl. abl. m.",
+        "gloss_kr": "지상의, 육지의",
+        "gloss_en": "terrestrial, on land",
+        "syntax": "이어지는 명사 armis를 수식하는 남성 복수 탈격 형용사이다. 바다(alta aequora)와 대조되는 지리적 공간인 '육지'를 한정하며, 지상에서 벌어진 전쟁의 성격을 명확히 규정한다.",
+        "background": "앞서 언급된 해상의 시련(fluctibus, aequora)과 대비되는 지상의 전쟁과 무기들을 가리킨다. 디오메데스가 바다 위에서뿐만 아니라 굳은 땅 위에서도 무기와 폭력에 시달렸음을 보여주는 대조법의 축이다.",
+        "etymology": "땅을 뜻하는 라틴어 terra에서 유래한 형용사로, PIE 재구형 *ters-('마르다')에 기원을 둔다. 다른 로망스어군 반사형으로는 스페인어 terrestre, 프랑스어 terrestre 등이 동계어로 존재한다. 라틴어 안에서 '마른땅(terra)'에서 파생되어 지상에 속한 것을 뜻하는 형용사로 분화되었으며, 현대 영어의 terrestrial(지상의), terrain(지형), territory(영토) 같은 단어 속에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "armis",
+        "pos": "명사",
+        "lemma": "arma, -orum, n.",
+        "parse": "pl. abl. n.",
+        "gloss_kr": "무기, 군비, 전쟁",
+        "gloss_en": "arms, weapons, warfare",
+        "syntax": "형용사 terrestribus의 수식을 받는 중성 복수 탈격 명사로, 수단을 나타낸다. 탈격(abl.) 형태로 지상의 무력 충돌과 전쟁이 가져온 공포와 피해를 상징적으로 압축한다.",
+        "background": "그리스 영웅들을 위협했던 트로이아인들의 무기뿐만 아니라, 고향으로 돌아온 후 국내 정치적 갈등과 전쟁 속에서 마주한 폭력적 무기들을 모두 포괄한다. 영웅의 삶이 평화가 아닌 무기 속에서 점철되었음을 보여준다.",
+        "etymology": "맞추다라는 뜻의 PIE 재구형 *ar-('맞추다, 결합하다')에서 유래한 명사이다. 그리스어 ἄρμενα(장비) 등이 동계어로 존재한다. 로망스어군에서는 스페인어 arma, 프랑스어 arme 등으로 이어지며, 라틴어에서 신체에 장착하는 '방어구와 무기' 전반을 가리키는 복수 명사로 굳어졌다. 현대 영어의 arm(무장하다), army(군대), armor(갑옷) 같은 단어에 그 어근이 깊게 박혀 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.480",
+    "trans": "그 남성들이 공동의 폭풍과 무자비한 카페레우스에 의해 물결 속으로 가라앉았으니, 내가 그들 중 하나의 무리에 속했더라면 하고 자주 불렸던 그들이 내게는 얼마나 행복해 보이는지.",
+    "words": [
+      {
+        "g": "ut",
+        "pos": "부사",
+        "lemma": "ut",
+        "parse": "exclam. adv.",
+        "gloss_kr": "얼마나 ~한가",
+        "gloss_en": "how, how much",
+        "syntax": "감탄문을 이끄는 부사로, 직설법 동사 sint를 수식하여 화자의 한탄 섞인 감탄의 어조를 강조한다. 문장 맨 처음에 위치하여 청중의 이목을 집중시키고 뒤따르는 비극적 소망의 정서를 고조시킨다.",
+        "background": "이 대목은 트로이아 전쟁 후 귀환 길에 조난을 당한 디오메데스의 동료가 처한 극심한 절망을 보여준다. 이들은 영웅적인 귀환 대신 끝없는 방황과 고통 속에서, 차라리 고국으로 돌아오지 못하고 바다에 수장된 전우들을 부러워하고 있다.",
+        "etymology": "인도유럽조어(PIE) 대명사 어근에서 유래한 부사형 *kʷe-에서 비롯되었다. 라틴어 ubi, ut 등과 동계어이며, 산스크리트어의 의문·관계 대명사 계열과도 통한다. 라틴어 안에서 시간, 방법, 결과, 감탄 등 다양한 접속·부사 용법으로 분화되었으며, 현대 로망스어군(스페인어 등에서 como나 que로 대체되거나 일부 흔적 잔존)을 거쳐 영어의 어원적 직계는 아니나 유사한 의문·감탄 구조의 기원을 공유한다."
+      },
+      {
+        "g": "mihi",
+        "pos": "대명사",
+        "lemma": "ego",
+        "parse": "sg. dat. m./f.",
+        "gloss_kr": "나에게, 내가 느끼기에",
+        "gloss_en": "to me",
+        "syntax": "이익의 여격(dative of advantage) 또는 관점의 여격으로 쓰여, '내가 보기에는/내게는' 저들이 행복해 보인다는 화자의 주관적 평가를 나타낸다. 감탄문 안에서 심리적 주체를 명확히 하여 비극성을 더한다.",
+        "background": "화자는 생존자로서 겪는 육체적·정신적 고통이 너무나 가혹하여, 이미 죽은 자들의 운명마저 선망의 대상으로 바라보고 있다. 이는 전쟁의 영광 뒤에 가려진 참혹한 귀환 서사의 전형적인 정서이다.",
+        "etymology": "인도유럽조어 1인칭 단수 대명사 재구형 *mé-에서 유래하였다. 산스크리트어 mámah, 고대 그리스어 ἐμοί(emoí), 영어 me 등과 밀접한 동계어이다. 라틴어 계통을 거쳐 현대 스페인어 mí, 포르투갈어 mim, 영어 me 등에 그 형태와 의미가 온전히 보존되어 있다."
+      },
+      {
+        "g": "felices",
+        "pos": "형용사",
+        "lemma": "felix, -icis",
+        "parse": "pl. acc. m./f.",
+        "gloss_kr": "행복한, 복된",
+        "gloss_en": "fortunate, blessed",
+        "syntax": "복수 대격 형용사로, 감탄문 속에서 목적보어 역할을 하며, 뒤의 관계대명사절이 수식하는 ilyli를 꾸민다. 비극적 상황 속에서 '죽음'을 '행복'으로 역설적으로 뒤집는 핵심 수식어이다.",
+        "background": "고대 지중해 세계에서 바다에서의 수장은 가장 불행하고 비참한 죽음 중 하나로 여겨졌으나, 화자에게는 끝없는 방황이라는 형벌보다 차라리 파멸의 바다에 잠드는 것이 더 축복스럽게 느껴진다는 역설을 담고 있다.",
+        "etymology": "인도유럽조어 재구형 *dhe(i)-('젖을 먹이다, 풍요롭다')에서 파생된 어근에서 유래한 것으로 추정된다. 라틴어 femina(여성), fetus(태아) 등과 동계어이며, 원래는 '기름진, 풍성한, 비옥한'의 뜻에서 점차 '운이 좋은, 행복한'으로 의미가 확장되었다. 현대 영어의 felicity(행복), 산문·전문 용어인 felicitous 등에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "sint",
+        "pos": "동사",
+        "lemma": "sum, esse, fui",
+        "parse": "pres. act. subj. 3rd pers. pl.",
+        "gloss_kr": "~이다, ~라고 여겨진다",
+        "gloss_en": "they are / may they be",
+        "syntax": "접속법 현재 3인칭 복수형으로, 감탄문 속에서 화자의 주관적이고 가정적인 감정을 담아내는 양보 또는 잠재적 어조를 형성한다. 주어는 뒤의 복수 관계대명사 절이 가리키는 이들이다.",
+        "background": "오비디우스는 디오메데스 동료들의 입을 빌려 트로이아 전쟁 영웅들의 귀환이 얼마나 저주받은 여정이었는지를 생생하게 묘사한다. 단순한 직설법 대신 접속법을 사용하여 화자의 쓰라린 심정을 완곡하면서도 강렬하게 전달한다.",
+        "etymology": "인도유럽조어 존재를 뜻하는 어근 *es-에서 유래하였다. 산스크리트어 ásti, 고대 그리스어 ἐστί(estí), 영어 is 등과 완벽히 일치하는 대표적인 인도유럽어족 동계어이다. 라틴어 안에서 다양한 시제와 법으로 활용되며, 현대 로망스어군(스페인어 sea, 포르투갈어 seja 등)과 영어의 be 동사 계열 전반에 그 뿌리가 깊게 박혀 있다."
+      },
+      {
+        "g": "illi",
+        "pos": "대명사",
+        "lemma": "ille, -a, -ud",
+        "parse": "pl. nom. m.",
+        "gloss_kr": "저 사람들, 그 이들",
+        "gloss_en": "those men",
+        "syntax": "복수 주격 남성형 지시대명사로, 감탄문의 실질적 주어 역할을 한다. 뒤따르는 quos절의 선행사로서 바다에 수장된 전우들을 저 멀리 가리키는 지시적 어감을 띤다.",
+        "background": "트로이아 전쟁 후 아이아스(오일레우스의 아들)의 오만함과 관련된 신들의 분노로 인해 에부로아 해안에서 폭풍을 만난 그리스 함대의 희생자들을 가리킨다.",
+        "etymology": "라틴어 지시사 어근 *oll- / *ull-에서 발달한 형태이다. 고대 라틴어의 olle에서 유래하였으며, 다른 로망스어군에서 정관사나 지시사의 기원이 되었다(예: 스페인어 el/la, 포르투갈어 o/a의 고대 어원적 배경과 연결). 현대 영어에는 직접적인 동계 어형이 없으나 로망스어 계통의 단어들을 통해 널리 확인된다."
+      },
+      {
+        "g": "saepe",
+        "pos": "부사",
+        "lemma": "saepe",
+        "parse": "adv.",
+        "gloss_kr": "자주, 거듭",
+        "gloss_en": "often",
+        "syntax": "부사로 동사 vocati(또는 불리곤 하는 상태)를 수식하며, 그들이 살아생전 혹은 주변 사람들에 의해 '행복한 자들이라고 자주 호명되었다'는 빈도와 반복성을 나타낸다.",
+        "background": "동료들은 살아남아 고통받는 자신들과 대비하여, 이미 바다에서 목숨을 잃은 이들의 이름을 되뇌며 그들이 차라리 나았다고 반복해서 한탄하고 있음을 보여준다.",
+        "etymology": "어원적으로 고대 라틴어 형용사 saepus('빽빽한, 빈번한')의 대격 중성형에서 부사로 전용된 것으로 추정된다. 뚜렷한 인도유럽조어 재구형은 논쟁적이나, 라틴어 독자적인 의미 전이(공간적 밀집 -> 시간적 빈번함)를 겪었다. 현대 로망스어군에서는 스페인어 a menudo 등으로 대체되어 직접적인 어형은 드물지만, 영어의 repetitive 등과는 어원적 갈래가 다르며 라틴어 고유의 부사 유산으로 남았다."
+      },
+      {
+        "g": "vocati",
+        "pos": "동사",
+        "lemma": "voco, vocare, vocavi, vocatus",
+        "parse": "perf. pass. part. nom. m. pl.",
+        "gloss_kr": "이름 불린, 호명된",
+        "gloss_en": "called, named",
+        "syntax": "완료 수동 분사 주격 남성 복수형으로, 주어인 illi를 수식하며 '행복하다고 불렸던 사람들'이라는 의미의 서술적 보조 구문을 이룬다.",
+        "background": "비참한 현실 속에서 생존자들이 죽은 자들을 향해 부러움을 담아 '행복한 이들'이라 거듭 호칭하는 비극적 소통의 장면을 함축한다.",
+        "etymology": "인도유럽조어 재구형 *wekʷ-('말하다, 부르다')에서 유래한 어근에 바탕을 둔다. 산스크리트어 vāk('목소리, 말'), 고대 그리스어 ὄψ(ops, '목소리') 및 𐀀𐀏(wo-qe) 등과 동계어이다. 라틴어 안에서 명사 vox(목소리)와 동사 vocare(부르다)로 분화되었으며, 현대 영어의 vocal(목소리의), vocation(소명), evoke(환기하다) 등에 그 흔적이 뚜렷하게 남아 있다."
+      },
+      {
+        "g": "quos",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "pl. acc. m.",
+        "gloss_kr": "이들을, ~한 이들을",
+        "gloss_en": "whom",
+        "syntax": "복수 대격 남성형 관계대명사로, 선행사 ill를 받으며 관계절 안에서 동사 mersit의 직접목적어 역할을 한다.",
+        "background": "카페레우스 곶의 험난한 암초와 폭풍 속으로 빨려 들어간 그리스 전사들의 비극적 최후를 관계절 안에서 구체화한다.",
+        "etymology": "인도유럽조어 의문/관계 대명사 어근 *kʷo- / *kʷi-에서 유래하였다. 산스크리트어 káḥ, 고대 그리스어 τίς(tís, '누구'), 영어 who, what 등과 광범위하게 동계 관계를 맺는다. 라틴어 전반 및 로망스어군을 거쳐 현대 영어의 which, who 등의 대명사 체계와 깊은 역사적 뿌리를 공유한다."
+      },
+      {
+        "g": "communis",
+        "pos": "형용사",
+        "lemma": "communis, -e",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "공동의, 공통의",
+        "gloss_en": "common, shared",
+        "syntax": "단수 주격 여성형 형용사로 주어인 hiems를 수식하며, 개별적인 죽음이 아니라 함대 전체가 함께 겪은 대규모 재앙의 성격을 부각한다.",
+        "background": "그리스군 전체가 트로이아에서 돌아오는 길에 공통으로 맞닥뜨린 거대한 폭풍우를 가리키며, 개인이 아닌 집단적 운명의 비극성을 강조한다.",
+        "etymology": "인도유럽조어 *ko-m-('함께')와 *mói-('의무, 교환') 또는 공공의 뜻을 담은 어근의 결합으로 유래한 것으로 분석된다. 라틴어 munus(의무, 선물)와 연관되며, '함께 의무나 몫을 나누는 것'에서 뜻이 왔다. 현대 영어의 common(공통의), community(공동체), communicate(소통하다) 등에 그 흔적이 생생하게 살아 있다."
+      },
+      {
+        "g": "hiems",
+        "pos": "명사",
+        "lemma": "hiems, hiemis, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "폭풍우, 겨울",
+        "gloss_en": "storm, winter",
+        "syntax": "단수 주격 여성형 명사로, 문장의 주어 역할을 하며 importunusque Caphereus와 함께 동사 mersit을 주관한다.",
+        "background": "문맥상 단순한 계절로서의 '겨울'이 아니라, 그리스 함대를 집어삼킨 파괴적인 폭풍우와 궂은 날씨를 의미한다.",
+        "etymology": "인도유럽조어 재구형 *ghyéim-('겨울, 폭풍우')에서 유래하였다. 산스크리트어 himá('눈, 추위' - 히말라야의 어원), 고대 그리스어 χιών(khión, '눈') 등과 완벽히 일치하는 동계어이다. 라틴어에서 '겨울' 및 '폭풍'의 의미로 쓰였으며, 현대 스페인어의 invierno, 포르투갈어의 inverno 등은 어원적 갈래가 다르나(hibernus 유래), 영어의 hibernate(동면하다) 등에 그 어근의 흔적이 남아 있다."
+      },
+      {
+        "g": "importunusque",
+        "pos": "형용사",
+        "lemma": "importunus, -a, -um (+ que)",
+        "parse": "sg. nom. m. (modifier with enclitic coord. conj.)",
+        "gloss_kr": "그리고 가혹한, 무자비한",
+        "gloss_en": "and pitiless, harsh",
+        "syntax": "단수 주격 남성형 형용사 importunus에 등위접속사 -que가 결합한 형태로, hiems와 함께 복합 주어를 이루며 Caphereus를 수식하거나 꾸민다. 폭풍과 곶의 가혹한 성격을 강조한다.",
+        "background": "카페레우스 곶은 그리스 함대가 귀환할 때 나우플리오스가 거짓 불을 피워 암초로 유인해 수많은 배를 난파시킨 악명 높은 장소로, 자연의 폭풍과 인공적 계략이 결합된 무자비함을 상징한다.",
+        "etymology": "부정 접두사 in-과 항구·상륙지를 뜻하는 portus에서 유래하여, '항구에 닿기 힘든, 적합하지 않은, 험악한'에서 '무자비한, 가혹한'으로 의미가 전이되었다. 라틴어 portus(항구)와 동계이며, 현대 영어의 importune(귀찮게 조르다), opportunity(기회 - portus에서 유래) 등과 어원을 같이 한다."
+      },
+      {
+        "g": "Caphereus",
+        "pos": "명사",
+        "lemma": "Caphereus, -i, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "카페레우스 (곶)",
+        "gloss_en": "Caphereus (promontory)",
+        "syntax": "단수 주격 남성 고유명사로, 문장의 주어 중 하나로서 hiems와 대등하게mersit을 행하는 주체로 기능한다.",
+        "background": "에부로아(Euboea) 남동쪽 끝에 위치한 험준한 곶으로, 그리스군이 트로이아에서 돌아올 때 폭풍으로 인해 수많은 선박이 암초에 부딪혀 부서진 비극적인 장소이다.",
+        "etymology": "그리스어 Καφηρεύς(Kaphereús)에서 유래한 지명으로, 그리스어 내부의 확실한 인도유럽어적 투명성보다는 에게해 지역의 지명 기층(Pre-Greek) 요소를 담고 있을 가능성이 제기된다. 고전 그리스·로마 문헌 전반에 해상 재난의 대명사로 각인되어 오늘날 지리 명칭 및 고전 문헌학 연구 속에 그 이름이 전해진다."
+      },
+      {
+        "g": "mersit",
+        "pos": "동사",
+        "lemma": "mergo, mergere, mersi, mersus",
+        "parse": "perf. act. ind. 3rd pers. sg.",
+        "gloss_kr": "가라앉혔다, 수장시켰다",
+        "gloss_en": "swallowed, plunged",
+        "syntax": "완료 시제 능동태 직설법 3인칭 단수형으로, 관계절 안의 본동사이며 주어는 communis hiems importunusque Caphereus이다. 전사들을 바다 깊이 빠뜨린 파괴적 행위를 단호하게 전달한다.",
+        "background": "바다의 신과 험준한 자연이 결합하여 그리스 영웅들의 배를 원망 없이 집어삼킨 참혹한 해난 사고의 순간을 묘사한다.",
+        "etymology": "인도유럽조어 재구형 *mezg-('담그다, 가라앉히다')에서 유래하였다. 산스크리트어 májjati('가라앉다')와 직접적인 동계어이다. 라틴어 안에서 물에 빠지는 행위를 뜻하다가 후대에 다양한 파생어를 낳았으며, 현대 영어의 emerge(부상하다), submerge(잠수하다), immerse(몰입하다) 등에 그 어근이 고스란히 살아 있다."
+      },
+      {
+        "g": "aquis",
+        "pos": "명사",
+        "lemma": "aqua, aquae, f.",
+        "parse": "pl. abl. f.",
+        "gloss_kr": "물속에, 파도에",
+        "gloss_en": "in the waters, waves",
+        "syntax": "복수 탈격 형태(장소 또는 도구의 탈격)로, mersit 동사의 작용이 이루어지는 공간적 배경 혹은 수단을 나타내며 '물결에 잠겨'라는 의미를 완성한다.",
+        "background": "귀환하던 용사들이 생을 마감한 차갑고 거친 바다의 물결을 가리키며, 화자가 부러워하는 죽음의 공간이다.",
+        "etymology": "인도유럽조어 재구형 *h₂ekʷih₂-('물')에서 유래하였다. 고대 프러시아어 akka, 고딕어 ahwa('강') 등과 동계어이다. 라틴어 aqua는 로망스어군 전반에 걸쳐 직계로 이어져 스페인어 agua, 포르투갈어 água가 되었으며, 현대 영어의 aquarium(수족관), aquamarine(남옥색) 등의 차용어 안에도 그 흔적이 남아 있다."
+      },
+      {
+        "g": "vellemque",
+        "pos": "동사",
+        "lemma": "volo, velle, volui (+ que)",
+        "parse": "impf. act. subj. 1st pers. sg. (with enclitic coord. conj.)",
+        "gloss_kr": "그리고 원했을 텐데, ~였으면 좋았을 것을",
+        "gloss_en": "and I would that / I wish",
+        "syntax": "접속법 미완료 1인칭 단수형 vellem에 등위접속사 -que가 결합한 형태로, 현재나 과거의 실현될 수 없는 소망(반사실적 가정)을 나타내며 주절의 핵심 소망을 이끈다.",
+        "background": "살아남아 끝없는 고통과 방황을 겪는 현재의 처지를 비관하며, 차라리 그 바다에 함께 수장되었기를 바라는 화자의 깊은 염세적 정서를 드러낸다.",
+        "etymology": "인도유럽조어 재구형 *wel-('원하다, 선택하다')에서 유래하였다. 산스크리트어 váryati, 고대 그리스어 βούλομαι(boúlomai, '원하다'), 영어 will 등과 완벽히 대응하는 대표적 동계어이다. 라틴어 안에서 의지와 소망을 나타내는 핵심 동사로 발달하였으며, 현대 로망스어군(스페인어 vouloir/querer 계열과는 어원이 다르나 이탈리아어 voglia 등 제어) 및 영어의 will, voluntary(자발적인) 등에 그 뿌리가 깊게 박혀 있다."
+      },
+      {
+        "g": "horum",
+        "pos": "대명사",
+        "lemma": "hic, haec, hoc",
+        "parse": "pl. gen. m.",
+        "gloss_kr": "이들 중의",
+        "gloss_en": "of these men",
+        "syntax": "복수 속격 남성형 지시대명사로, 뒤의 pars una를 수식하는 부분 속격(partitive genitive) 역할을 하여 '이들(희생자들) 가운데 한 부분'이라는 소속을 나타낸다.",
+        "background": "바다에 먼저 잠든 동료들을 가리키며, 그 비극적 공동체의 일원이 되고 싶어 하는 생존자의 애틋한 소망을 연결한다.",
+        "etymology": "인도유럽조어 지시사 어근 *gʰi- 와 대명사 요소의 결합에서 유래하였다. 라틴어의 근접 지시사 hic, haec, hoc 체계를 이루는 기본 대명사 어형이다. 로망스어군에서는 고전 라틴어의 ille 계열에 자리를 내어주며 직계 형태는 축소되었으나, 고전 라틴어 문헌 전반의 문법 구조와 현대 영어의 라틴어 차용 표현 속에서 그 문법적 자취를 찾을 수 있다."
+      },
+      {
+        "g": "pars",
+        "pos": "명사",
+        "lemma": "pars, partis, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "부분, 일원",
+        "gloss_en": "part, member",
+        "syntax": "단수 주격 여성형 명사로, 소망절 내부에서 fuissem의 주격 보어 역할을 하며 '한 조각/일원'이 되었기를 바라는 마음을 표현한다.",
+        "background": "희생된 전우들과 운명을 같이하여 그 집단의 한 조각이 되고 싶다는 화자의 처절한 동체 의식을 나타낸다.",
+        "etymology": "인도유럽조어 재구형 *per-('나누다, 통과하다')에서 유래한 어근에서 파생되었다. 산스크리트어 pur-('몫'), 고대 그리스어 πείρω(peíro, '꿰뚫다') 등과 동계어이다. 라틴어에서 '몫, 부분'의 뜻으로 확립되어 현대 영어의 part(부분), particle(입자), participate(참여하다) 등에 그 어근이 명확히 살아 있다."
+      },
+      {
+        "g": "una",
+        "pos": "형용사",
+        "lemma": "unus, -a, -um",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "하나의, 함께하는",
+        "gloss_en": "one (of them)",
+        "syntax": "단수 주격 여성형 수사/형용사로, 앞의 pars와 성·수·격이 일치하며 수식하여 '오직 하나의 부분(그들 중 한 명)'이라는 의미를 강조한다.",
+        "background": "여럿 중에 파묻힌 무리가 아니라, 그 희생자들 가운데 온전한 하나가 되기를 바라는 배타적이고도 간절한 소망을 담고 있다.",
+        "etymology": "인도유럽조어 수사 재구형 *óinos('하나, 유일한')에서 유래하였다. 산스크리트어 ékaḥ, 고대 그리스어 oἴνη(oíne, 주사위의 '1'), 영어 one, 고대 영어 ān 등과 완벽히 일치하는 핵심 인도유럽어 동계어이다. 라틴어 unus는 현대 로망스어군에서 숫자 및 관사로 이어져 스페인어 uno, 포르투갈어 um이 되었으며, 현대 영어의 union(연합), universal(보편적인), unit(단위) 등에 그 뿌리가 깊게 박혀 있다."
+      },
+      {
+        "g": "fuissem",
+        "pos": "동사",
+        "lemma": "sum, esse, fui",
+        "parse": "plupf. act. subj. 1st pers. sg.",
+        "gloss_kr": "~였었기를",
+        "gloss_en": "I had been",
+        "syntax": "접속법 대과거 1인칭 단수형으로, vellem과 호응하여 과거 사실에 반대되는 가정을 나타내는 반사실적 소망절(counterfactual wish)의 술어를 이룬다.",
+        "background": "과거에 폭풍이 불던 그날, 자신도 그 바다에 함께 가라앉아 목숨을 잃었어야 했다는 뒤늦은 후회와 비극적 소망을 극적으로 표현한다.",
+        "etymology": "인도유럽조어 존재를 뜻하는 어근 *es-와 상태 변화를 나타내는 *bʰuH-의 결합에서 유래한 완료형 어간 fui에 기원한다. 산스크리트어 bhávati('존재하다, 되다'), 고대 그리스어 φύω(phúo, '자라나다, 생기다'), 영어 be 등과 동계어이다. 라틴어의 완료 및 과거 완료 시제 체계의 근간을 이루며, 현대 로망스어군과 영어의 동사 구조 연구에서 핵심적인 위치를 차지한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.483",
+    "trans": "이제 전쟁과 바다에서 극심한 고통을 겪은 동료들이 지쳐 방황의 끝을 구하고 있지만,",
+    "words": [
+      {
+        "g": "Ultima",
+        "pos": "형용사",
+        "lemma": "ultimus, -a, -um",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "극한의 것들, 최악의 고통을",
+        "gloss_en": "the utmost, extreme hardships",
+        "syntax": "복수 대격 중성형 형용사가 명사화되어, 분사 passi의 직접목적어 역할을 한다. 전쟁과 항해에서 겪을 수 있는 가장 극단적이고 참혹한 시련들을 총체적으로 가리킨다.",
+        "background": "트로이아에서의 10년 전쟁과 그 이후 이어진 파만(破蠻)의 해상 표류가 남긴 극한의 육체적·정신적 피로를 함축한다.",
+        "etymology": "라틴어 최상급 접미사 -timus가 결합한 형태의 어근에서 유래하였으며, 공간적·시간적 '가장 먼, 맨 위의'에서 '가장 심한, 극한의'로 의미가 확장되었다. 뚜렷한 PIE 재구형의 직접적 분파라기보다는 라틴어 내부의 비교급/최상급 형태소 발달 결과물이다. 현대 영어의 ultimate(최종의, 궁극적인), ultimatum(최후통첩) 등에 그 어근과 의미가 고스란히 살아 있다."
+      },
+      {
+        "g": "iam",
+        "pos": "부사",
+        "lemma": "iam",
+        "parse": "adv.",
+        "gloss_kr": "이미, 이제는",
+        "gloss_en": "already, now",
+        "syntax": "시간 부사로, 오랜 세월 동안 누적된 고통 끝에 마침내 한계에 다다른 현재의 시점을 강조하며 문장의 긴장감을 높인다.",
+        "background": "더 이상 버틸 수 없는 지경에 이르렀음을 알리는 시간적 표지로서, 동료들의 인내심이 바닥났음을 보여준다.",
+        "etymology": "라틴어 지시 및 시제 관련 어근에서 발달한 부사로, 고대 라틴어의 iam에서 형태 변화를 거쳤다. 로망스어군 전반에서 시간 부사 및 조동사 관련 요소로 변형되었으며, 현대 영어에는 직접 직계 어형이 차용되지 않았으나 인도유럽어 비교 언어학에서 시간성 표현의 중요한 연구 대상이다."
+      },
+      {
+        "g": "passi",
+        "pos": "동사",
+        "lemma": "patior, pati, passus sum",
+        "parse": "perf. dep. part. nom. m. pl.",
+        "gloss_kr": "겪은, 고통받은",
+        "gloss_en": "having suffered",
+        "syntax": "완료 탈형태동사(deponent) 분사 주격 남성 복수형으로, 주어인 comites를 수식하며 '극한의 고통을 겪은 뒤에'라는 시간·원인적 배경을 제공한다.",
+        "background": "전쟁터의 참상과 바다의 폭풍우를 온몸으로 견뎌낸 생존자들의 상처 입은 정체성을 대변한다.",
+        "etymology": "인도유럽조어 재구형 *peiH-('해치다, 고통을 주다, 겪다')에서 유래하였다. 그리스어 πένθος(pénthos, '슬픔') 등과 동계어이다. 라틴어 안에서 수동적 인내와 고통을 뜻하는 동사 patior로 발달하였으며, 현대 영어의 passion(수난, 열정), patient(환자, 참는 사람), passive(수동적인) 등에 그 뿌리가 깊게 박혀 있다."
+      },
+      {
+        "g": "comites",
+        "pos": "명사",
+        "lemma": "comes, comitis, m./f.",
+        "parse": "pl. nom. m.",
+        "gloss_kr": "동료들, 부하들",
+        "gloss_en": "companions, comrades",
+        "syntax": "복수 주격 남성형 명사로, 이 행과 다음 행에 걸치는 문장의 실질적 주어 역할을 하며 deficiunt 동사와 호응한다.",
+        "background": "디오메데스를 따르며 온갖 역경을 함께 헤쳐 온 충실한 부하들이자 전우들을 가리킨다.",
+        "etymology": "함께 간다는 뜻의 전치사 cum과 가다를 뜻하는 어근 *ei- 의 명사형(it-)이 결합하여 '함께 길을 가는 사람, 동반자'를 뜻하게 되었다. 라틴어 comitatus(수행원)의 기원이 되며, 현대 영어의 count(백작 - 본래 왕의 수행원에서 유래), concomitant(부수적인) 등에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "belloque",
+        "pos": "명사",
+        "lemma": "bellum, -i, n. (+ que)",
+        "parse": "sg. abl. n. (modifier with enclitic coord. conj.)",
+        "gloss_kr": "전쟁과 그리고",
+        "gloss_en": "and in war",
+        "syntax": "단수 중성 탈격 형태에 등위접속사 -que가 결합하여, 뒤의 fretoque와 함께 '전쟁에서 그리고 바다에서'라는 고통의 양대 영역을 이루는 수단/장소의 탈격을 구성한다.",
+        "background": "트로이의 성벽 아래서 치른 10년간의 처절한 공성전과 그 이후 바다에서 겪은 해상 재난을 대비시킨다.",
+        "etymology": "고대 라틴어 duellum('싸움, 결투')에서 어두의 d가 탈락하여 변형된 형태이다. 이탈리아어의 두 개의 힘을 뜻하는 어원적 감각과 연결되며, 현대 영어의 rebel(반란을 일으키다), rebellion, bellicose(호전적인) 등에 그 어근이 명확히 살아 있다."
+      },
+      {
+        "g": "fretoque",
+        "pos": "명사",
+        "lemma": "fretum, -i, n. (+ que)",
+        "parse": "sg. abl. n. (modifier with enclitic coord. conj.)",
+        "gloss_kr": "거친 바다와 그리고",
+        "gloss_en": "and on the sea",
+        "syntax": "단수 중성 탈격 형태에 등위접속사 -que가 결합하여, belloque와 대구를 이루며 동료들이 겪은 시련의 두 번째 축(해상)을 제시한다.",
+        "background": "지중해의 거친 물살과 연이은 폭풍우를 가리키며, 육지의 전쟁터만큼이나 가혹했던 바다의 위협을 상징한다.",
+        "etymology": "인도유럽조어 재구형에서 끓어오르거나 소용돌이치는 물결을 가리키는 어근에서 유래한 것으로 추정된다. 라틴어에서 좁은 해협이나 거친 바다를 뜻하는 전문 용어로 굳어졌으며, 현대 로망스어군 및 영어의 프리깃함(frigate - 해협 항해와 관련된 선박 명칭 설 등) 또는 지질학·해양학적 차용어 체계에서 그 자취를 찾을 수 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.484",
+    "trans": "지쳐가며 방황의 끝을 구하고 있지만, 아크몬은",
+    "words": [
+      {
+        "g": "deficiunt",
+        "pos": "동사",
+        "lemma": "deficio, deficere, defeci, defectus",
+        "parse": "pres. act. ind. 3rd pers. pl.",
+        "gloss_kr": "지쳐 쓰러진다, 기력이 다한다",
+        "gloss_en": "fail, are exhausted",
+        "syntax": "현재 시제 능동태 직설법 3인칭 복수형으로, comites를 주어로 받는 주절의 본동사이다. 오랜 고통으로 인해 부하들의 체력과 의지가 한계에 도달했음을 생생한 현재형으로 전달한다.",
+        "background": "끝없는 방황에 지친 동료들이 더 이상 항해를 지속할 의욕을 잃고 주저앉는 탈진의 상태를 묘사한다.",
+        "etymology": "아래로를 뜻하는 접두사 de-와 만들다/행하다를 뜻하는 facio가 결합하여 '아래로 떨어지다, 부족해지다, 기력이 꺾이다'라는 뜻으로 발달하였다. 라틴어에서 물리적 고갈과 심리적 포기를 모두 포괄하며, 현대 영어의 deficient(부족한), deficit(적자), deficiency(결핍) 등에 그 어근이 뚜렷하게 남아 있다."
+      },
+      {
+        "g": "finemque",
+        "pos": "명사",
+        "lemma": "finis, -is, m./f. (+ que)",
+        "parse": "sg. acc. m./f. (modifier with enclitic coord. conj.)",
+        "gloss_kr": "그리고 끝을, 한계를",
+        "gloss_en": "and an end",
+        "syntax": "단수 대격 형태에 등위접속사 -que가 결합하여, rogant 동사의 직접목적어 역할을 하며 '방황의 종결'을 갈구하는 대상을 지시한다.",
+        "background": "끝이 보이지 않는 유배와 표류의 생활에서 벗어나 안식을 찾고자 하는 간절한 염원을 대변한다.",
+        "etymology": "인도유럽조어 재구형에서 경계나 분할을 뜻하는 어근에서 유래하였다. 라틴어에서 땅의 경계나 시간의 종결을 뜻하는 단어로 확립되었으며, 현대 영어의 finish(끝내다), final(최종의), finite(유한한), confine(한정하다) 등에 그 어근이 광범위하게 살아 있다."
+      },
+      {
+        "g": "rogant",
+        "pos": "동사",
+        "lemma": "rogo, rogare, rogavi, rogatus",
+        "parse": "pres. act. ind. 3rd pers. pl.",
+        "gloss_kr": "구한다, 요청한다",
+        "gloss_en": "ask for, beg",
+        "syntax": "현재 시제 능동태 직설법 3인칭 복수형으로, 지친 동료들이 방황의 종결을 간청하고 있음을 나타내는 주절의 또 다른 동사이다.",
+        "background": "희망을 잃은 부하들이 지도자나 운명을 향해 더 이상의 방황을 멈추어 달라고 애원하는 절박한 상황을 보여준다.",
+        "etymology": "인도유럽조어 재구형에서 손을 내밀어 요청하거나 묻는 어근에서 유래하였다. 라틴어 법률 및 일상어에서 질문과 청원의 의미로 두루 쓰였으며, 현대 영어의 interrogate(심문하다), surrogate(대리인), abrogate(폐지하다) 등에 그 어근의 흔적이 남아 있다."
+      },
+      {
+        "g": "erroris",
+        "pos": "명사",
+        "lemma": "error, erroris, m.",
+        "parse": "sg. gen. m.",
+        "gloss_kr": "방황의, 헤맴의",
+        "gloss_en": "of wandering, of error",
+        "syntax": "단수 속격 남성형 명사로, 앞의 finem을 수식하는 소유 속격(possessive/objective genitive) 역할을 하여 '방황의 끝'이라는 의미를 완성한다.",
+        "background": "단순한 물리적 길 잃음을 넘어, 신들의 저주로 인해 목적지 없이 떠돌아야 했던 기나긴 유랑의 세월을 가리킨다.",
+        "etymology": "라틴어 동사 errare('헤매다, 잘못을 저지르다')에서 파생된 명사로, PIE 재구형 *ers-('방황하다, 움직이다')에 뿌리를 둔다. 길을 잃고 헤매는 물리적 동작에서 인지적 '오류'로 의미가 확장되었다. 현대 영어의 error(오류), erratic(변덕스러운), errant(방황하는) 등에 그 어근이 고스란히 남아 있다."
+      },
+      {
+        "g": "at",
+        "pos": "접속사",
+        "lemma": "at",
+        "parse": "coord. conj.",
+        "gloss_kr": "그러나, 반면에",
+        "gloss_en": "but",
+        "syntax": "대조를 나타내는 등위접속사로, 지치고 평화를 구하는 일반 동료들의 모습과 격분하여 반발하는 아크몬의 성격을 극적으로 전환시키는 문장 전환의 가교 역할을 한다.",
+        "background": "동료들은 지쳐서 방황을 끝내기를 애원하고 있는 반면, 격렬한 성정의 아크몬은 오히려 더 날뛰며 갈등을 유발하는 상황적 반전을 예고한다.",
+        "etymology": "인도유럽조어 대조·전환 대명사/부사 어근에서 유래한 라틴어 고유의 접속사이다. 고대 라틴어의 at에서 형태 변화 없이 이어져 문장 간의 대립과 반전을 명확히 드러내는 구문적 장치로 기능한다."
+      },
+      {
+        "g": "Acmon",
+        "pos": "명사",
+        "lemma": "Acmon, Acmonis, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "아크몬은",
+        "gloss_en": "Acmon",
+        "syntax": "단수 주격 남성 고유명사로, 다음 행의 동사들(또는 분사구문)과 연결되는 새로운 문장의 주어 역할을 하며 서사의 초점을 개인으로 좁힌다.",
+        "background": "디오메데스의 동료 중 한 명으로, 성격이 매우 불같고 재난을 겪으면서 더욱 난폭하고 불경한 성품으로 변모하여 훗날 비극적인 신들의 저주를 자초하게 되는 인물이다.",
+        "etymology": "그리스어 Ἄκμων(Akmon, '모루, 불멸의 존재' 등의 의미와 연관)에서 차용 혹은 유래한 이름이다. 인도유럽조어 돌이나 단단한 도구를 뜻하는 어근과 연관될 수 있으며, 오비디우스 서사시 속에서 거칠고 단단한 성정을 지닌 인물의 이름으로 적절히 배치되어 오늘날 신화 인명으로 전해진다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.485",
+    "trans": "성정이 불같고, 그야말로 재난으로 인해 더욱 거칠어진 아크몬은,",
+    "words": [
+      {
+        "g": "fervidus",
+        "pos": "형용사",
+        "lemma": "fervidus, -a, -um",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "불타는 듯한, 성급한, 열정적인",
+        "gloss_en": "fiery, hot-tempered",
+        "syntax": "단수 주격 남성형 형용사로, 주어인 Acmon을 수식하는 서술적 수식어 역할을 하며 그의 선천적이고 격렬한 기질을 묘사한다.",
+        "background": "차분하게 지쳐가는 동료들과 달리, 끓어오르는 분노와 성급함을 주체하지 못하는 아크몬의 폭발적인 성향을 시각적으로 드러낸다.",
+        "etymology": "끓다를 뜻하는 라틴어 동사 ferveo에서 파생된 형용사로, PIE 재구형 *bʰerw-('끓다, 거품이 일다')에 뿌리를 둔다. 산스크리트어 bhurati('떨리다, 동요하다'), 영어 brew(맥주를 酿다) 등과 동계어이다. 물리적인 끓는 성질에서 정서적인 '열정적임, 격렬함'으로 의미가 전이되었으며, 현대 영어의 fervent(열렬한), fervor(열정), fervid(열렬한) 등에 그 어근이 뚜렷하게 남아 있다."
+      },
+      {
+        "g": "ingenio",
+        "pos": "명사",
+        "lemma": "ingenium, -ii, n.",
+        "parse": "sg. abl. n.",
+        "gloss_kr": "기질로, 본성으로",
+        "gloss_en": "in temperament, by nature",
+        "syntax": "단수 중성 탈격 형태(원인/관점의 탈격)로, fervidus 형용사가 가리키는 성질의 영역을 한정하여 '타고난 성정 면에서 불같다'는 의미를 구체화한다.",
+        "background": "아크몬이 원래부터 다혈질적이고 통제하기 힘든 천성을 타고났음을 지적하며, 이후 그가 벌이는 불경한 언행의 근원적 성향을 설명한다.",
+        "etymology": "안을 뜻하는 in-과 나다/생겨나다를 뜻하는 gigno(어근 *genh₁-)가 결합하여 '태어날 때부터 안에 지닌 타고난 성품, 재능'을 뜻하게 되었다. 라틴어에서 지적·성격적 천성을 두루 가리켰으며, 현대 영어의 genius(천재), ingenious(기발한), engine(엔진 - 원래 창의적 기계 장치) 등에 그 어근이 깊게 박혀 있다."
+      },
+      {
+        "g": "tum",
+        "pos": "부사",
+        "lemma": "tum",
+        "parse": "adv.",
+        "gloss_kr": "그때에, 더욱이",
+        "gloss_en": "then, besides",
+        "syntax": "시간 및 첨가 부사로, 뒤의 등위적 강조어 vero와 결합하여 '그때에 비로소, 게다가 더욱'이라는 점층적 강조 구문을 이룬다.",
+        "background": "타고난 성정(ingenio)에 더해, 거듭된 재난과 시련이 그의 성격을 한 차원 더 가혹하고 공격적으로 변모시켰음을 강조하는 전환점 역할을 한다.",
+        "etymology": "인도유럽조어 지시사/대명사 어근에서 유래한 라틴어 시간 부사이다. 고대 라틴어의 tum에서 이어져 문맥 속에서 동시성이나 순차적 강조를 나타내는 기본 어휘로 정착하였으며, 로망스어 및 고전 라틴어 문헌의 접속·부사 체계에서 핵심적인 구실을 한다."
+      },
+      {
+        "g": "vero",
+        "pos": "부사",
+        "lemma": "verus, -a, -um (abl. sg. n. as adv.)",
+        "parse": "adv.",
+        "gloss_kr": "정말로, 진실로, 더욱이",
+        "gloss_en": "indeed, truly",
+        "syntax": "원래 형용사 verus의 중성 탈격 형태가 부사화된 것으로, 앞의 tum과 함께 쓰여 앞선 상태보다 한층 더 심화된 현실을 강조하는 담화 표지 역할을 한다.",
+        "background": "재난이 단순히 그를 지치게 한 것이 아니라, 실제로 그의 내면을 얼마나 포악하고 날카롭게 바꾸어 놓았는지를 진실되게 폭로하는 강조 장치이다.",
+        "etymology": "인도유럽조어 재구형 *wer-('진실한, 믿을 만한')에서 유래하였다. 게르만어파의 영어 true, 독일어 treu 등과 동계어이다. 라틴어 안에서 진실을 뜻하는 명사 veritas와 부사 vero로 발달하였으며, 현대 영어의 verify(검증하다), verdict(평결 - verus + dictus), very(매우) 등에 그 어근이 뚜렷하게 살아 있다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "등위접속사로, tum vero와 cladibus asper 사이를 연결하거나 문장의 수식 요소를 매끄럽게 이어주는 구문적 다리 역할을 한다.",
+        "background": "타고난 불같은 기질과 재난으로 인한 성격의 변모라는 두 가지 요소를 자연스럽게 결합하여 아크몬의 복합적인 인격 결함을 완성한다.",
+        "etymology": "인도유럽조어 첨가·연결 어근에서 유래한 라틴어의 가장 기본적인 등위접속사이다. 고대 라틴어부터 폭넓게 쓰였으며, 현대 로망스어군(스페인어 y/e, 포르투갈어 e 등)과 라틴어 차용 어휘들을 통해 서구 언어 전반에 그 기능과 형태의 흔적이 깊이 남아 있다."
+      },
+      {
+        "g": "cladibus",
+        "pos": "명사",
+        "lemma": "clades, cladis, f.",
+        "parse": "pl. abl. f.",
+        "gloss_kr": "재난들로 인해, 참화로",
+        "gloss_en": "by disasters, by calamities",
+        "syntax": "복수 탈격 형태(원인의 탈격)로, 형용사 asper가 지배하는 성질의 원천을 나타내어 '재난 때문에 거칠어진'이라는 인과 관계를 명확히 한다.",
+        "background": "전쟁의 패배, 동료들의 죽음, 바다에서의 표류 등 그들이 겪어온 연이은 참혹한 파멸의 사건들을 통틀어 가리킨다.",
+        "etymology": "인도유럽조어에서 부러지거나 파괴되는 것을 뜻하는 어근에서 유래한 것으로 추정된다. 라틴어에서 군사적 패배나 대규모 재난을 뜻하는 명사로 굳어졌으며, 현대 영어의 contagion(전염 - 어근적 연관성 논쟁 등)이나 라틴어 원전 인용구 및 전문 학술 용어 속에서 그 파생적 흔적을 찾을 수 있다."
+      },
+      {
+        "g": "asper",
+        "pos": "형용사",
+        "lemma": "asper, aspera, asperum",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "거친, 험악한, 날카로워진",
+        "gloss_en": "harsh, rugged, embittered",
+        "syntax": "단수 주격 남성형 형용사로, 주어인 Acmon을 서술하는 보어 역할을 하며 재난을 겪은 후 더욱 성정이 날카롭고 거칠어진 그의 현재 상태를 묘사한다.",
+        "background": "부드러움이나 이성 대신, 거듭된 불행으로 인해 뾰족하고 불경스러운 반항심으로 가득 찬 아크몬의 심리적 변질을 극적으로 마무리지으며 다음 행의 사건으로 이끈다.",
+        "etymology": "인도유럽조어 거칠고 돌출된 표면을 뜻하는 어근에서 유래한 것으로 추정되는 라틴어 형용사이다. 표면이 거칠거나 날씨·성격이 험악한 것을 두루 이르는 데 쓰였으며, 현대 로망스어군 및 영어의 exasperate(격분시키다 - ex- + asperare '거칠게 만들다') 등에 그 어근과 의미가 고스란히 살아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.486",
+    "trans": "“What remains, which now our endurance refuses",
+    "words": [
+      {
+        "g": "quid",
+        "pos": "대명사",
+        "lemma": "quis, quid",
+        "parse": "sg. nom./acc. n.",
+        "gloss_kr": "무엇",
+        "gloss_en": "what",
+        "syntax": "문장의 의문대명사로 주절에서 수사학적 의문의 주어 또는 목적어 역할을 한다. 더 이상 잃을 것이 없다는 자조적이고 반항적인 화자의 태도를 선두에서 강렬하게 이끌어낸다.",
+        "background": "디오메데스의 부하 아크몬이 동료들을 선동하며 더 이상 신들의 눈치를 볼 필요가 없다고 외치는 대사의 시작이다. 극한의 시련 끝에 마침내 공포가 도를 지나쳐 분노와 오만으로 전환되는 결정적 순간이다.",
+        "etymology": "의문대명사를 뜻하는 PIE 재구형 *kʷi-('누구, 무엇')에서 유래했다. 그리스어 τίς(tis), 산스크리트어 kaḥ 등이 동계어로 존재한다. 라틴어 안에서 성별과 무관하게 사물을 묻는 중성 대명사로 확고히 정착되었으며, 현대 영어의 quid나 파생어 속에서 그 문법적 흔적을 찾을 수 있다."
+      },
+      {
+        "g": "superest",
+        "pos": "동사",
+        "lemma": "supersum, -esse, -fui",
+        "parse": "pres. act. 3rd pers. sg.",
+        "gloss_kr": "남아 있다, 살아남다",
+        "gloss_en": "remains over, is left",
+        "syntax": "3인칭 단수 현재 능동태 동사로, 주어인 의문대명사 quid의 서술어를 이룬다. 현재시제(pres.)를 사용하여 이미 겪을 만큼 겪어 더 이상 추가로 당할 고통조차 남아 있지 않다는 절박한 현실을 강조한다.",
+        "background": "끝없는 방황과 비극 속에서 생명이나 명예가 바닥까지 떨어진 영웅의 부하들이 느끼는 허무주의적 반항을 대변한다. 남은 것이 없기에 두려움도 사라졌다는 역설적 상황을 함축한다.",
+        "etymology": "위 또는 초과를 뜻하는 super와 존재를 뜻하는 esse가 결합한 복합동사로, PIE 재구형 *es-('있다, 존재하다')에서 유래했다. 이탈리아어 sovrastare 등과 어원을 공유한다. 라틴어 안에서 물리적 잔여물뿐만 아니라 '어떤 상황 속에서도 살아남다'라는 추상적 의미로 확장되었으며, 현대 영어의 summit이나 essence 등의 관련 어휘와 뿌리를 같이한다."
+      },
+      {
+        "g": "quod",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "sg. acc. n.",
+        "gloss_kr": "것, ~하는 것",
+        "gloss_en": "which, that",
+        "syntax": "관계대명사 중성 단수 대격 형태로, 선행사인 quid가 지시하는 내용의 실체를 구체화하는 관계절을 이끈다. 내성적 인내가 더 이상 받아들일 수 있는 한계를 시험하는 절의 목적어 역할을 담당한다.",
+        "background": "참을성과 인내의 한계선을 시험하는 신들의 가혹한 처사를 가리키며, 인간이 더 이상 가불할 수 없는 고통의 총량을 상징적으로 엮어낸다.",
+        "etymology": "관계대명사 어근인 PIE 재구형 *kʷo- 에서 유래했다. 그리스어 to(정관사) 계통과 상응하며 로망스어군 전반에 걸쳐 대명사 및 접속사적 반사형으로 널리 퍼졌다. 라틴어 문체에서 절을 매개하는 가장 핵심적인 접속·관계 장치로 기능한다."
+      },
+      {
+        "g": "iam",
+        "pos": "부사",
+        "lemma": "iam",
+        "parse": "temp. adv.",
+        "gloss_kr": "이미, 이제는",
+        "gloss_en": "already, now",
+        "syntax": "시간 부사로 현재시제의 동사들과 호응하며 과거의 누적된 고통이 현재라는 임계점에 도달했음을 보여준다. 문장 속에서 긴장감을 고조시키는 전환점 역할을 한다.",
+        "background": "과거에는 참아 넘겼으나 '이제는 더 이상' 그럴 수 없다는 태도의 급격한 변화를 명시적으로 선언하는 시적 장치이다.",
+        "etymology": "지금이라는 시점을 나타내는 라틴어 기본 부사로, 고대 인도유럽어 계통의 시간 지시사에서 분화되었다. 라틴어 안에서 '이 시점부터'라는 확정적 의미로 굳어졌으며, 로망스어군의 여러 시간 관련 표현들에 직간접적인 영향을 주었다."
+      },
+      {
+        "g": "patientia",
+        "pos": "명사",
+        "lemma": "patientia, -ae, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "인내, 참을성, 수용",
+        "gloss_en": "patience, endurance",
+        "syntax": "문장의 주어로 쓰인 여성 단수 주격 명사이다. 의인화된 성격을 지니며, 그동안 부하들이 신들의 박해를 묵묵히 견뎌왔던 태도를 대변하되 이제는 그것이 거부당하고 있음을 보여준다.",
+        "background": "그리스 영웅들과 부하들이 오랜 세월 동안 운명과 여신의 핍박에 대항하지 않고 묵묵히 삼켜왔던 덕목이다. 그러나 이 인내는 이제 고갈되었으며 반역적 오만으로 변모할 참이다.",
+        "etymology": "견디다라는 동사 pati에서 파생된 명사로, PIE 재구형 *pei-('고통을 겪다, 상처 입다')에 기원을 둔다. 다른 로망스어군 반사형으로는 스페인어 paciencia, 프랑스어 patience 등이 동계어로 존재한다. 라틴어 안에서 수동적으로 고통을 받아들이는 내면적 자세를 뜻하는 철학적·문학적 명사로 정착되었으며, 현대 영어의 patience나 passion(수난) 같은 단어에 그 어근이 살아 있다."
+      },
+      {
+        "g": "nostra",
+        "pos": "대명사",
+        "lemma": "noster, nostra, nostrum",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "우리의",
+        "gloss_en": "our",
+        "syntax": "주어인 patientia를 수식하는 소유 형용사(1인칭 복수 여성 주격)이다. 개인의 불평이 아니라 디오메데스를 따르는 모든 부하 동료들의 공통된 집단적 인내심임을 강조한다.",
+        "background": "개별 영웅의 비탄을 넘어 전적으로 운명을 같이하는 추종자 무리 전체의 공동체적 경험과 정서를 하나로 묶어주는 수식어이다.",
+        "etymology": "1인칭 대명사 nos에서 파생된 소유 형용사로, PIE 재구형 *nos('우리')에 기원을 둔다. 로망스어군에서는 이탈리아어 nostro, 스페인어 nuestro 등으로 진화했다. 라틴어 문체에서 집단적 연대감을 표현하는 필수 요소로 쓰였다."
+      },
+      {
+        "g": "recuset",
+        "pos": "동사",
+        "lemma": "recuso, -are, -avi, -atum",
+        "parse": "pres. subj. 3rd pers. sg.",
+        "gloss_kr": "거부하다, 마다하다",
+        "gloss_en": "refuses, objects to",
+        "syntax": "접속법 현재 3인칭 단수 동사로, 관계절 안에서 인내심이 더 이상 복종하기를 거부하는 주체적 태도를 가정적·당위적으로 표현한다. 접속법(subj.)을 사용하여 단순 사실이 아니라 화자들의 거부 의지라는 내면 심리를 투영한다.",
+        "background": "더 이상 신들의 횡포를 잠잠히 감내하지 않겠다는 부하들의 단호한 거절 선언을 시각적으로 뒷받침하는 핵심 동사이다.",
+        "etymology": "뒤를 뜻하는 re-와 원인을 뜻하는 causa가 결합한 동사에서 유래했으며, PIE 재구형 어근과 연결된다. 로망스어군에서는 스페인어 reusar 등과 유사한 계통적 의미를 공유한다. 라틴어 안에서 '이유를 들어 반대하다, 거부하다'라는 법정적·수사적 의미로 고착되었으며, 현대 영어의 recuse(기피하다)나 excuse(변명하다) 같은 단어들과 어원을 공유한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.487",
+    "trans": "to bear, men?” he said; “what has Cytherea, that beyond",
+    "words": [
+      {
+        "g": "ferre",
+        "pos": "동사",
+        "lemma": "fero, ferre, tuli, latum",
+        "parse": "pres. act. inf.",
+        "gloss_kr": "견디다, 참아내다",
+        "gloss_en": "to bear, to endure",
+        "syntax": "현재 능동태 부정사로 앞선 동사 recuset의 목적어 역할을 보완한다. 고통을 감수하고 짐을 지는 행위 자체를 명사적으로 지칭하며 인내의 대상이 무엇이었는지를 밝힌다.",
+        "background": "지상과 해상에서 이들이 짊어져야 했던 기나긴 신적 형벌의 짐을 상징하며, 이제는 그 짐을 더 이상 지지 않겠다는 반발의 초점이 된다.",
+        "etymology": "나르다, 지탱하다라는 뜻의 PIE 재구형 *bher-('나르다, 짊어지다')에서 유래한 고대 불규칙 동사이다. 그리스어 φέρω(phero), 산스크리트어 bharati 등이 직계 동계어이다. 로망스어군에서는 형태가 분화되었으나 라틴어 전반에서 파생어의 모태가 되었다. 현대 영어의 transfer(이동하다), infer(추론하다), metaphor(은유) 같은 단어 속에 그 어근의 흔적이 깊게 박혀 있다."
+      },
+      {
+        "g": "viri",
+        "pos": "명사",
+        "lemma": "vir, viri, m.",
+        "parse": "pl. voc. m.",
+        "gloss_kr": "동지들이여, 사나이들이여, 남성들이여",
+        "gloss_en": "men, heroes, comrades",
+        "syntax": "혹격(voc.) 복수 남성 명사로, 아크몬이 청중인 동료 부하들을 직접 지목하여 부르는 호격이다. 영웅적 자존심을 자극하고 결속을 다지는 선동적 어조를 완성한다.",
+        "background": "비록 지금은 추방자와 방황하는 신세가 되었으나 한때 트로이아 전장을 누볐던 '사나이들'이라는 자부심을 일깨워 신들에 대한 굴종을 거부하도록 부추기는 호칭이다.",
+        "etymology": "사람이나 용감한 남성을 뜻하는 PIE 재구형 *wi-ro-('사람, 영웅')에서 유래했다. 산스크리트어 vīraḥ, 고대 아일랜드어 fer 등이 동계어로 존재한다. 로망스어군에서는 스페인어 varón 등으로 이어졌다. 라틴어 안에서 단순한 성별을 넘어 '명예롭고 용기 있는 남자, 군인'을 뜻하는 단어로 굳어졌으며, 현대 영어의 virile(남성적인), virtue(덕목) 같은 단어에 그 어근이 남아 있다."
+      },
+      {
+        "g": "dixit",
+        "pos": "동사",
+        "lemma": "dico, -ere, dixi, dictum",
+        "parse": "perf. act. 3rd pers. sg.",
+        "gloss_kr": "그가 말했다",
+        "gloss_en": "he said",
+        "syntax": "3인칭 단수 완료 능동태 동사로 직접 화법 중간에 삽입되어 발화의 주체가 누구인지 명확히 전달한다. 완료시제(perf.)를 통해 아크몬이 내뱉은 선동적 발언이 단호한 역사적 선언임을 강조한다.",
+        "background": "오비디우스의 서사시 속에서 인물의 대사를 생생하게 전달하기 위해 삽입된 전형적인 화법 표지이다. 아크몬의 불손하고 과격한 성격을 행동감 있게 드러낸다.",
+        "etymology": "말하다를 뜻하는 PIE 재구형 *deik-('가리키다, 보여주다, 선언하다')에서 유래했다. 그리스어 δεικνύω(보여주다), 산스크리트어 diśati 등이 동계어로 존재한다. 로망스어군에서는 스페인어 decir, 프랑스어 dire 등으로 진화했다. 라틴어 안에서 언어적 표현과 선언을 뜻하는 핵심 동사로 자리 잡았으며, 현대 영어의 dictate(구술하다), diction(발음), dictionary(사전) 같은 단어에 그 어근이 살아 있다."
+      },
+      {
+        "g": "quid",
+        "pos": "대명사",
+        "lemma": "quis, quid",
+        "parse": "sg. nom./acc. n.",
+        "gloss_kr": "무엇",
+        "gloss_en": "what",
+        "syntax": "두 번째 문장의 의문대명사로 새로 시작되는 반문의 주어 혹은 목적어로 쓰인다. 비너스가 더 이상 인간에게 가할 수 있는 수단이 한계에 달했음을 반증하는 수사적 의문을 이끈다.",
+        "background": "여신이 부릴 수 있는 권능이 비록 위대하다 할지라도 이미 최악의 고통을 겪은 인간들에게는 더 이상 위협이 되지 않는다는 오만한 확신을 담고 있다.",
+        "etymology": "앞서 다룬 의문대명사 quid와 동일한 어원을 지니며, PIE 재구형 *kʷi-에서 파생된 보편적 의문사이다."
+      },
+      {
+        "g": "habet",
+        "pos": "동사",
+        "lemma": "habeo, -ere, -ui, -itum",
+        "parse": "pres. act. 3rd pers. sg.",
+        "gloss_kr": "가지고 있다",
+        "gloss_en": "has, holds",
+        "syntax": "3인칭 단수 현재 능동태 동사로, 주어인 Cytherea가 행사할 수 있는 권능이나 수단이 무엇인지를 묻는 서술어이다. 현재시제(pres.)를 통해 여신의 잔재주가 한계에 봉착했음을 조롱한다.",
+        "background": "신들이 인간을 굴복시키기 위해 동원할 수 있는 방책이 이제 바닥났다고 오인하는 인간의 오만함을 보여주는 표현이다.",
+        "etymology": "소유를 뜻하는 PIE 재구형 *gʰabh-('가지다, 잡다')에서 유래했다. 독일어 haben, 영어 have 등이 직계 동계어이다. 로망스어군에서는 스페인어 haber, 프랑스어 avoir 등으로 변모하며 완료 조동사의 기초가 되었다. 라틴어 안에서 소유와 상태를 나타내는 기본 동사로 쓰였으며, 현대 영어의 habit(습관), exhibit(전시하다) 같은 단어에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "Cytherea",
+        "pos": "명사",
+        "lemma": "Cytherea, -ae, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "키테레이아 (비너스의 별칭)",
+        "gloss_en": "Cytherea (Venus)",
+        "syntax": "문장의 주어로 쓰인 여성 단수 주격 명사로, 비너스를 가리키는 대표적인 신화적 별칭이다. 문두에 가깝게 배치되어 신적 권능의 주체를 직접적으로 조명한다.",
+        "background": "비너스가 탄생하거나 각별히 숭배받던 섬 키테라(Cythera)에서 유래한 호칭이다. 오비디우스는 이 시점에서 여신의 고유 이름 대신 지리적 별칭을 사용하여 신성한 권위와 지리적 편협성을 동시에 암시한다.",
+        "etymology": "그리스어 지명 키테라(Κύθηρα)에서 유래한 라틴화된 고유명사로, 에게해의 섬 이름에 기원을 둔다. 지명 자체의 어원은 명확지 않으나 고대 그리스 신화 전통을 따라 로마 시가(詩歌)에 그대로 유입되었다. 비너스의 수많은 별칭 중 시적 품위를 높이는 대표적 명칭으로 쓰인다."
+      },
+      {
+        "g": "quod",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "sg. acc. n.",
+        "gloss_kr": "것, ~하는 것",
+        "gloss_en": "which, that",
+        "syntax": "목적어를 이끄는 관계대명사 중성 단수 대격으로, 여신이 추가로 해낼 수 있는 행동의 범위를 한정하는 관계절을 이끈다. 인간의 상상력을 뛰어넘는 형벌이 더 존재할 수 있는지 묻는 고리를 형성한다.",
+        "background": "비너스의 복수가 가질 수 있는 파괴력의 상한선을 시험하며, 인간이 이미 모든 최악의 상황을 통과했기 때문에 더는 두려울 것이 없다는 논리의 근거가 된다.",
+        "etymology": "앞서 다룬 관계대명사 quod와 동일한 어원을 지니며, 인도유럽어족 전반에 걸친 지시·관계 대명사 계통에 속한다."
+      },
+      {
+        "g": "ultra",
+        "pos": "부사",
+        "lemma": "ultra",
+        "parse": "adv.",
+        "gloss_kr": "더 나아가, 그 이상으로",
+        "gloss_en": "beyond, further",
+        "syntax": "동사 faciat을 수식하는 방향 및 정도 부사로, 여신이 행할 수 있는 복수의 한계를 넘어서는 지점을 가리킨다. 공간적·정도적 초월을 나타내며 더 이상 나아갈 수 없는 극단을 시사한다.",
+        "background": "신들의 분노에도 물리적·정한적 한계가 존재하며, 인간이 이미 그 한계선을 넘어선 고통을 겪었기에 그 바깥에는 아무것도 없다는 오만한 통찰을 보여준다.",
+        "etymology": "위와 건너편을 뜻하는 PIE 재구형 *nel- 또는 대명사적 격변화에서 유래한 전치사·부사 어근이다. 이탈리아어 oltre, 스페인어 ultra 등으로 이어지며 로망스어군에서 '극단적인' 뜻의 접두사로 널리 쓰인다. 현대 영어의 ultrasound(초음파), ultramodern(초현대적인) 같은 단어 속에 그 흔적이 살아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.488",
+    "trans": "(suppose you wish!) may do? For while worse things are feared,",
+    "words": [
+      {
+        "g": "velle",
+        "pos": "동사",
+        "lemma": "volo, velle, volui",
+        "parse": "pres. act. inf.",
+        "gloss_kr": "원하다, 바라다",
+        "gloss_en": "to wish, to want",
+        "syntax": "현재 능동태 부정사로 괄호 안의 가정적 삽입구(velle puta!)를 구성하며 화자의 양보적·가정적 어조를 이끈다. 여신이 마음껏 원하기만 한다면 무엇이든 해보라는 식의 도발적 태도를 드러낸다.",
+        "background": "인간이 신들의 의지를 조롱하며 '설령 네가 아무리 원한다 한들'이라는 식의 극단적인 가정법을 도입해 신의 전능성을 깎아내리는 대목이다.",
+        "etymology": "바라다와 의지를 뜻하는 PIE 재구형 *wel-('바라다, 좋아하다')에서 유래했다. 그리스어 βούλομαι(boulomai), 산스크리트어 vṛṇoti 등이 동계어로 존재한다. 로망스어군에서는 스페인어 querer, 프랑스어 vouloir 등으로 진화했다. 라틴어 안에서 개인의 의지와 소망을 나타내는 핵심 불규칙 동사로 쓰였으며, 현대 영어의 volunteer(자원봉사자), voluntary(자발적인) 같은 단어에 그 어근이 남아 있다."
+      },
+      {
+        "g": "puta",
+        "pos": "동사",
+        "lemma": "puto, -are, -avi, -atum",
+        "parse": "pres. impf. 2nd pers. sg.",
+        "gloss_kr": "상상해 보라, 가정해 보라",
+        "gloss_en": "suppose, imagine",
+        "syntax": "2인칭 단수 현재 명령법 능동태로, 괄호 안에서 독자나 청중에게 특정한 상황을 가정해 보도록 요구하는 삽입 구문이다. 명령법(imperative)의 어조를 빌려 논리의 허를 찌르는 수사적 효과를 낸다.",
+        "background": "비너스가 마음속으로 품을 수 있는 가장 지독한 악의와 복수심조차도 이미 현실이 된 최악의 상황 앞에서는 무력하다는 점을 강조하는 극적 장치이다.",
+        "etymology": "정돈하다, 헤아리다라는 뜻의 PIE 재구형 *pau-('치다, 자르다, 명확히 하다')에서 유래했다. 로망스어군에서는 스페인어 putar 계통 및 파생어로 이어졌다. 라틴어 안에서 '생각을 가다듬다, 계산하다'라는 뜻에서 '추론하다, 상상하다'로 의미가 전이되었으며, 현대 영어의 compute(계산하다), impute(전가하다), putative(추정되는) 같은 단어에 그 흔적이 깊게 박혀 있다."
+      },
+      {
+        "g": "faciat",
+        "pos": "동사",
+        "lemma": "facio, -ere, feci, factum",
+        "parse": "pres. subj. 3rd pers. sg.",
+        "gloss_kr": "행하다, 만들다",
+        "gloss_en": "may do, may make",
+        "syntax": "접속법 현재 3인칭 단수 능동태 동사로, 앞서 나온 의문사 구문(quid... faciat)의 서술어이다. 접속법을 사용하여 여신이 실제로 행할 수 있는 가능성에 대한 가정적이고 회의적인 의문을 강조한다.",
+        "background": "여신이 아무리 창의적이고 잔인한 벌을 고안해낸다 할지라도 이미 인간이 겪은 비극의 크기를 넘어설 수 없다는 오만한 도발을 시각화한다.",
+        "etymology": "만들다와 행하다를 뜻하는 PIE 재구형 *dheH-('놓다, 두다, 행하다')에서 유래했다. 그리스어 τίθημι(tithēmi) 등이 어원적으로 상응한다. 로망스어군에서는 스페인어 hacer, 프랑스어 faire 등으로 진화했다. 라틴어에서 모든 행위와 창조를 포괄하는 가장 핵심적인 동사로 쓰였으며, 현대 영어의 fact(사실), affect(영향을 미치다), manufacture(제조하다) 같은 단어에 그 어근이 고스란히 살아 있다."
+      },
+      {
+        "g": "Nam",
+        "pos": "접속사",
+        "lemma": "nam",
+        "parse": "coord. conj.",
+        "gloss_kr": "왜냐하면, 실로",
+        "gloss_en": "for, because",
+        "syntax": "앞서 던진 수사적 질문에 대한 근거와 이유를 설명하기 위해 문장 맨 앞에서 절을 이끄는 등위접속사이다. 왜 두려움이 사라졌는지에 대한 철학적이고 심리적인 논증을 시작한다.",
+        "background": "최악의 상황을 이미 겪은 자들에게는 미래의 공포가 더 이상 실효성이 없다는 논증을 전개하며, 인간 심리의 역설적인 해방감을 이론적으로 뒷받침한다.",
+        "etymology": "인도유럽조어의 지시·인과 대명사 어근에서 유래한 라틴어 기초 접속사이다. 로망스어군에서는 다른 형태들로 대체되었으나 고전 라틴어 문체에서 문장의 인과적 연결을 매끄럽게 잡아주는 필수 장치로 광범위하게 쓰였다."
+      },
+      {
+        "g": "dum",
+        "pos": "접속사",
+        "lemma": "dum",
+        "parse": "subord. conj.",
+        "gloss_kr": "~하는 동안에, ~할 때",
+        "gloss_en": "while, as long as",
+        "syntax": "종속접속사로 뒤의 직설법 동사 timentur와 함께 시간적 동시성을 나타내는 부사절을 이끈다. 더 나쁜 일이 닥칠까 봐 두려워 떨던 과거의 상태와 현재의 해방된 상태를 극적으로 대비시킨다.",
+        "background": "인간이 공포에 지배당하던 통상적인 심리 상태를 설명하며, 그 상태가 이미 깨어졌음을 역설적으로 증명하는 전제 조건으로 작용한다.",
+        "etymology": "시간을 뜻하는 인도유럽조어 명사·부사 어근에서 유래한 라틴어 접속사이다. 라틴어 안에서 동시 동작이나 한시적 기간을 나타내는 문법 기능으로 고정되었으며, 현대 언어학적 분석의 대상이 되는 대표적인 고전어 불변화사 중 하나이다."
+      },
+      {
+        "g": "peiora",
+        "pos": "형용사",
+        "lemma": "malus, peior, pessimus",
+        "parse": "pl. nom. n.",
+        "gloss_kr": "더 나쁜 것들, 최악의 일들",
+        "gloss_en": "worse things, worse",
+        "syntax": "형용사 malus의 비교급 중성 복수 주격 형태로, 종속절에서 두려움의 대상이 되는 '더 나쁜 상황들'을 가리킨다. 주격(nom.)으로 쓰여 두려움의 객체적 성격을 보여준다.",
+        "background": "아직 일어나지 않은 미래의 재앙이나 더 혹독한 형벌에 대한 공포를 의미하며, 인간을 굴복시키는 가장 강력한 심리적 무기이다.",
+        "etymology": "나쁨을 뜻하는 비교급 어근으로, 인도유럽조어의 평가·비교 대명사 계통에서 유래했다. 라틴어 비교급 규칙에 따라 malus의 불규칙 비교급 형태로 정착되었으며, 현대 영어의 pessimist(비관론자)나 pejorative(경멸적인) 같은 단어 속에 그 어원의 흔적이 남아 있다."
+      },
+      {
+        "g": "timentur",
+        "pos": "동사",
+        "lemma": "timeo, -ere, -ui",
+        "parse": "pres. pass. 3rd pers. pl.",
+        "gloss_kr": "두려워지다, 공포의 대상이 되다",
+        "gloss_en": "are feared",
+        "syntax": "3인칭 복수 현재 수동태 동사로 종속절의 서술어를 이룬다. 수동태(pass.)를 사용하여 나쁜 일들이 주체적으로 두려움을 불러일으키는 객관적 상황을 묘사한다.",
+        "background": "미래의 불확실한 재앙 앞에서 인간이 한없이 약해져 공포에 사로잡히는 일반적인 인간의 약점을 가리킨다.",
+        "etymology": "두려움을 뜻하는 PIE 재구형 *temh₁-('어둡다, 흐리다' 또는 마음이 흐려지다)와 연관된 것으로 추정된다. 로망스어군에서는 스페인어 temere(두려워하다), 프랑스어 craindre 등으로 진화했다. 라틴어 안에서 공포와 경외심을 나타내는 핵심 동사로 쓰였으며, 현대 영어의 timid(소심한), timidity(소심함), temerity(무모함) 같은 단어에 그 어근이 살아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.489",
+    "trans": "there is a place for a wound: but when the lot of things is worst,",
+    "words": [
+      {
+        "g": "est",
+        "pos": "동사",
+        "lemma": "sum, esse, fui",
+        "parse": "pres. act. 3rd pers. sg.",
+        "gloss_kr": "~가 있다, 존재하다",
+        "gloss_en": "there is, exists",
+        "syntax": "3인칭 단수 현재 능동태 동사로 주절의 존재를 알리는 핵심 서술어이다. 뒤의 명사 locus와 결합해 '상처를 입을 여지가 있다'는 명제적 진실을 선언한다.",
+        "background": "아직 최악의 상황에 도달하지 않은 상태에서는 새로운 타격이나 상처가 비집고 들어올 공간이 여전히 존재한다는 심리적 법칙을 설명한다.",
+        "etymology": "존재를 뜻하는 PIE 재구형 *es-('있다, 존재하다')에서 유래한 인도유럽어족의 가장 오래된 불규칙 동사이다. 영어 is, 그리스어 ἐστί(esti), 산스크리트어 ásti 등이 모두 직계 동계어이다. 로망스어군 전반에서 존재와 상태를 나타내는 필수 조동사 및 본동사로 깊게 뿌리내리고 있다."
+      },
+      {
+        "g": "locus",
+        "pos": "명사",
+        "lemma": "locus, -i, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "자리, 공간, 여지",
+        "gloss_en": "place, room, opportunity",
+        "syntax": "주절의 주어로 쓰인 남성 단수 주격 명사이다. 물리적 공간뿐만 아니라 타격이나 상처가 파고들 수 있는 추상적 '여지나 틈'을 의미한다.",
+        "background": "인간이 아직 완전한 절망에 이르지 않았을 때 겪는 심리적 취약성을 공간에 비유하여 설명하는 철학적 구절이다.",
+        "etymology": "특정한 장소를 뜻하는 라틴어 고유 명사로, 선사 시대 이탈리아어군 재구형에서 발전했다. 로망스어군에서는 스페인어 lugar, 프랑스어 lieu 등으로 진화했다. 라틴어 안에서 물리적 위치와 서적의 '구절'을 뜻하는 의미로 확장되었으며, 현대 영어의 local(지역의), locate(위치시키다), locality 같은 단어 속에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "prep. taking acc./abl.",
+        "gloss_kr": "~안에, ~로",
+        "gloss_en": "in, into, for",
+        "syntax": "탈격 명사인 vulnus를 지배하며 장소적 안쪽이나 방향, 목적을 나타내는 전치사이다. 상처가 파고들어 자리 잡을 수 있는 영역을 한정한다.",
+        "background": "상처와 타격이 비집고 들어갈 틈새가 존재한다는 점을 공간적 은유를 통해 구체화해 주는 전치사적 용법이다.",
+        "etymology": "안쪽을 뜻하는 PIE 재구형 *en('안에')에서 유래한 전치사이다. 그리스어 ἐν(en), 영어 in 등이 직계 동계어이다. 로망스어군에서 en, in 등으로 널리 퍼졌으며, 라틴어 안에서 정적 위치와 동적 방향을 모두 지배하는 핵심 불변화사로 쓰였다."
+      },
+      {
+        "g": "vulnus",
+        "pos": "명사",
+        "lemma": "vulnus, vulneris, n.",
+        "parse": "sg. acc. n.",
+        "gloss_kr": "상처, 타격",
+        "gloss_en": "wound, blow",
+        "syntax": "전치사 in의 지배를 받는 중성 단수 대격 명사이다. 물리적 부상이나 마음의 타격이 새로 가해질 수 있는 가능성을 상징한다.",
+        "background": "앞서 비너스의 상처와 연결되던 그 어휘가 이번에는 인간이 외부로부터 입을 수 있는 새로운 타격의 의미로 확장되어 나타난다.",
+        "etymology": "상처를 뜻하는 인도유럽조어 재구형 *welH-에서 유래한 명사로, 앞서 다룬 4.477행의 vulnere와 동일한 어원을 공유한다. 현대 영어의 vulnerable 등의 단어 속에 그 어근이 살아 있다."
+      },
+      {
+        "g": "sors",
+        "pos": "명사",
+        "lemma": "sors, sortis, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "운명, 몫, 제비",
+        "gloss_en": "lot, fate, destiny",
+        "syntax": "대조를 이루는 절의 주어로 쓰인 여성 단수 주격 명사이다. 인간에게 배당된 운명과 처우의 성격을 가리키며 상황의 판도를 결정하는 주체적 요소로 등장한다.",
+        "background": "신들이 인간에게 부과하는 일방적인 운명의 제비뽑기 결과를 뜻하며, 디오메데스와 부하들이 맞닥뜨린 처지가 바로 이 '최악의 운명'에 해당한다.",
+        "etymology": "제비나 운명을 뜻하는 PIE 재구형 *ser-('잇다, 엮다' 또는 뽑다)에서 유래했다. 로망스어군에서는 스페인어 suerte, 프랑스어 sort 등으로 진화했다. 라틴어 안에서 무작위로 주어지는 '운명의 몫'이나 '점괘'를 뜻하는 의미로 정착되었으며, 현대 영어의 sort(종류), sorcerer(마법사), assort(분류하다) 같은 단어에 그 어근이 남아 있다."
+      },
+      {
+        "g": "autem",
+        "pos": "접속사",
+        "lemma": "autem",
+        "parse": "coord. conj.",
+        "gloss_kr": "그러나, 반면에",
+        "gloss_en": "however, moreover, but",
+        "syntax": "문장 중간에 위치하여 앞선 일반적인 상황(상처의 여지가 있음)과 최악의 운명에 도달한 현재 상황을 예리하게 대조시키는 등위접속사이다.",
+        "background": "앞 문장의 논리와 반대되는 역설적 진실, 즉 '최악의 순간에는 오히려 두려움이 사라진다'는 깨달음으로 전환하는 핵심 접속사 역할을 한다.",
+        "etymology": "대조와 전환을 뜻하는 인도유럽조어 격변화 및 부사 어근에서 유래한 라틴어 고유 불변화사이다. 고전 라틴어 문체에서 문장과 문장을 부드럽게 이어주며 논리적 방향을 꺾어주는 필수적 역할을 수행한다."
+      },
+      {
+        "g": "ubi",
+        "pos": "접속사",
+        "lemma": "ubi",
+        "parse": "subord. conj.",
+        "gloss_kr": "~할 때, 어디에",
+        "gloss_en": "when, where",
+        "syntax": "시간 및 장소를 나타내는 종속접속사로, 최악의 운명이 도래하는 시점을 한정하는 절을 이끈다.",
+        "background": "상황이 허락하는 한계 중 가장 밑바닥, 즉 더 이상 추락할 곳이 없는 절대적 절망의 순간을 포착하는 배경 조건이다.",
+        "etymology": "장소와 시간을 묻는 PIE 재구형 대명사 어근에서 유래했다. 로망스어군에서는 이탈리아어 ove 등으로 변모했다. 라틴어 안에서 관계부사와 접속사로 두루 쓰이며 공간적 위치와 시간적 순간을 연결하는 데 기여했다."
+      },
+      {
+        "g": "pessima",
+        "pos": "형용사",
+        "lemma": "malus, peior, pessimus",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "가장 나쁜, 최악의",
+        "gloss_en": "worst",
+        "syntax": "주어인 sors를 수식하는 여성 단수 주격 최상급 형용사이다. 악의 극단, 즉 구제불능의 절대적 최악을 명시하며 문장의 긴장감을 최고조로 끌어올린다.",
+        "background": "인간이 상상할 수 있는 고통과 불행의 최고 한계선, 즉 신들이 내릴 수 있는 벌의 정점에 도달했음을 선언하는 핵심 형용사이다.",
+        "etymology": "나쁨을 뜻하는 최상급 어근으로, malus의 불규칙 최상급 형태이다. 라틴어 안에서 수량이나 상태의 절대적 극단을 나타내도록 정착되었으며, 현대 영어의 pessimist(비관론자), pessimism(비관주의) 같은 단어 속에 그 어원의 흔적이 뚜렷이 남아 있다."
+      },
+      {
+        "g": "rerum",
+        "pos": "명사",
+        "lemma": "res, rei, f.",
+        "parse": "pl. gen. f.",
+        "gloss_kr": "사물들의, 세상사의, 일들의",
+        "gloss_en": "of things, of the world",
+        "syntax": "최상급 형용사 pessima의 범위를 한정하는 여성 복수 속격 명사이다. '세상사 전체의 운명 중에서 가장 최악'이라는 의미를 완성하며 문맥의 거대한 스케일을 부여한다.",
+        "background": "개인의 불행을 넘어 세상에 존재하는 모든 일과 물질의 흐름 속에서 도출되는 보편적이고 절대적인 비극의 극치를 표현한다.",
+        "etymology": "사물이나 일을 뜻하는 PIE 재구형 *re-('재산, 소유물')에서 유래한 라틴어 핵심 명사이다. 로망스어군에서는 스페인어 real(실제의) 등의 어근으로 이어졌다. 라틴어 안에서 구체적 사물뿐만 아니라 '역사적 사건, 현실, 세상일'을 뜻하는 추상적 의미로 눈부시게 확장되었으며, 현대 영어의 real(실제의), reality(현실), realize(깨닫다) 같은 단어에 그 어근이 깊게 박혀 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.490",
+    "trans": "under feet is fear and the sum of evils is secure.",
+    "words": [
+      {
+        "g": "sub",
+        "pos": "전치사",
+        "lemma": "sub",
+        "parse": "prep. taking abl.",
+        "gloss_kr": "~아래에",
+        "gloss_en": "under, beneath",
+        "syntax": "탈격 명사인 pedibus를 지배하며 공간적 아래쪽 위치를 나타내는 전치사이다. 공포가 더 이상 인간의 머리 위를 짓누르지 못하고 오히려 발아래로 짓밟히는 역전된 권력 관계를 시각화한다.",
+        "background": "두려움의 주체였던 신들의 위협과 공포가 이제 인간의 발밑에 굴복당하여 아무런 실효성을 갖지 못하게 되었다는 당당하고 오만한 해방감을 상징한다.",
+        "etymology": "아래를 뜻하는 PIE 재구형 *upo-('아래에, ~의 밑에')에서 유래한 전치사이다. 그리스어 ὑπό(hypo), 산스크리트어 upa 등이 직계 동계어이다. 로망스어군에서는 스페인어/프랑스어의 sub- 및 sous 계통으로 이어졌다. 라틴어 안에서 물리적 아래 위치와 은유적 복종 관계를 나타내는 데 널리 쓰였으며, 현대 영어의 subway(지하철), submarine(잠수함), subject(주제, 신하) 같은 단어의 접두사 속에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "pedibus",
+        "pos": "명사",
+        "lemma": "pes, pedis, m.",
+        "parse": "pl. abl. m.",
+        "gloss_kr": "발 아래에",
+        "gloss_en": "feet",
+        "syntax": "전치사 sub의 지배를 받는 남성 복수 탈격 명사이다. 공포(timor)가 위치한 장소를 구체적인 신체 부위인 '발'로 설정하여 공포가 완전히 제압당했음을 생생하게 시각화한다.",
+        "background": "인간을 두려움에 떨게 만들었던 신들의 권능과 위협을 이제 발로 짓밟고 일어선 영웅 부하들의 불경스럽고 당찬 자세를 형상화한다.",
+        "etymology": "발을 뜻하는 PIE 재구형 *ped-('발, 걷다')에서 유래했다. 그리스어 πούς(pous), 산스크리트어 pādaḥ, 영어 foot 등이 모두 직계 동계어이다. 로망스어군에서는 스페인어 pie, 프랑스어 pied 등으로 진화했다. 라틴어 안에서 신체 부위의 기본어휘로 쓰였으며, 현대 영어의 pedal(페달), pedestrian(보행자), biped(이족 보행 동물), expedite(촉진하다) 같은 단어에 그 어근이 고스란히 살아 있다."
+      },
+      {
+        "g": "timor",
+        "pos": "명사",
+        "lemma": "timor, timoris, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "두려움, 공포",
+        "gloss_en": "fear, dread",
+        "syntax": "절의 주어로 쓰인 남성 단수 주격 명사이다. 그동안 인간의 영혼을 옥죄어 오던 공포가 이제는 주체적 지위를 잃고 발밑에 깔리는 수동적 객체로 전락했음을 보여준다.",
+        "background": "신들이 인간을 통제하는 가장 강력한 수단이었으나, 최악의 고통을 겪은 이들에게는 그 효력이 완전히 소멸해 버린 심리적 실체를 가리킨다.",
+        "etymology": "두려워하다라는 동사 timere에서 유래한 명사로, PIE 재구형 어근과 연결된다. 다른 로망스어군 반사형으로는 스페인어 temor, 프랑스어 terreur 계통의 유사 어휘가 존재한다. 라틴어 안에서 인간이 느끼는 본능적 경외와 공포를 나타내는 핵심 명사로 고착되었으며, 현대 영어의 timid(소심한), timorous(소심한) 같은 단어에 그 어근이 남아 있다."
+      },
+      {
+        "g": "secura",
+        "pos": "형용사",
+        "lemma": "securus, -a, -um",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "안전한, 염려 없는, 태평한",
+        "gloss_en": "secure, free from care, safe",
+        "syntax": "서술격 형용사로 주어인 summa malorum을 수식하는 여성 단수 주격 형태이다. 모든 악의 총합이 오히려 역설적으로 아무런 염려나 두려움이 없는 상태를 보장한다는 반전의 뉘앙스를 띤다.",
+        "background": "잃을 것이 없을 때 비로소 찾아오는 위험하고도 짜릿한 정신적 해방감과 무모한 평온함을 대변한다.",
+        "etymology": "떨어짐을 뜻하는 se-(~없이)와 염려·주의를 뜻하는 cura(걱정)가 결합한 합성형용사로, PIE 재구형 어근에 기원을 둔다. 다른 로망스어군 반사형으로는 스페인어 seguro, 프랑스어 sûr 등이 동계어로 존재한다. 라틴어 안에서 '걱정(cura)이 없는' 상태를 뜻하다가 점차 물리적 '안전'과 '확신'의 의미로 확장되었으며, 현대 영어의 secure(안전한), security(보안), cure(치료) 같은 단어 속에 그 어근의 흔적이 깊게 박혀 있다."
+      },
+      {
+        "g": "summa",
+        "pos": "명사",
+        "lemma": "summa, -ae, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "총합, 최고점, 대강",
+        "gloss_en": "sum, total, height",
+        "syntax": "주절의 주어로 쓰인 여성 단수 주격 명사이다. 세상에 존재하는 모든 악과 고통의 집합적 총산을 가리키며, 그 총합 자체가 아이러니하게도 안전을 담보하는 열쇠가 된다.",
+        "background": "인간이 겪은 모든 비극의 총량을 결산하며, 이만큼 당했으면 이제 신들도 더 이상 어찌할 수 없다는 비뚤어진 대단원의 논리를 완성한다.",
+        "etymology": "가장 높음을 뜻하는 super의 최상급 어근에서 파생된 명사로, PIE 재구형 어근에 기원을 둔다. 로망스어군에서는 스페인어 suma, 프랑스어 somme 등으로 진화했다. 라틴어 안에서 수량의 '합계'를 뜻하는 의미로 정착되었으며, 수학적 용어인 sum뿐만 아니라 현대 영어의 summit(정상), summary(요약) 같은 단어에 그 어근이 살아 있다."
+      },
+      {
+        "g": "malorum",
+        "pos": "명사",
+        "lemma": "malum, -i, n.",
+        "parse": "pl. gen. n.",
+        "gloss_kr": "악(惡)들의, 불행들의, 고통들의",
+        "gloss_en": "of evils, of misfortunes",
+        "syntax": "명사 summa의 범위를 한정하는 중성 복수 속격 명사이다. 세상의 온갖 불행과 재앙이 모여 거대한 총합을 이룬 상태를 객관화하여 지칭한다.",
+        "background": "디오메데스 일행이 트로이아 전쟁 이후 지금까지 겪어온 수많은 고난과 비극의 총체적 목록을 압축하는 표현이다.",
+        "etymology": "나쁨과 재앙을 뜻하는 라틴어 중성 명사로, 형용사 malus에서 실체화되었다. 로망스어군에서는 다양한 파생어로 이어졌다. 라틴어 안에서 인간에게 닥치는 온갖 도덕적·물리적 '악과 불행'을 가리키는 보편적 어휘로 쓰였으며, 현대 영어의 malice(악의), malady(질병), maltreat(학대하다) 같은 단어의 접두사 속에 그 어원이 고스란히 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.491",
+    "trans": "Let her listen herself though she may, and, what she does, may hate all",
+    "words": [
+      {
+        "g": "Audiat",
+        "pos": "동사",
+        "lemma": "audio, -ire, -ivi, -itum",
+        "parse": "pres. subj. 3rd pers. sg.",
+        "gloss_kr": "듣다, 귀 기울이다",
+        "gloss_en": "let her hear, may she listen",
+        "syntax": "접속법 현재 3인칭 단수 능동태 동사로 양보절(비록 ~할지라도)의 서술어를 이끈다. 접속법(subj.)을 사용하여 화자가 여신의 행동을 두려워하기는커녕 오히려 마음대로 들으라며 대담하게 허용하는 양보의 어조를 띤다.",
+        "background": "인간들이 여신을 향해 불경한 반역의 소리를 높이고 있을 때, 그 소리를 비너스 본인이 직접 듣든 말든 이제는 전혀 개의치 않겠다는 당돌하고 오만한 태도를 보여준다.",
+        "etymology": "듣다를 뜻하는 PIE 재구형 *ow- 또는 *kleu- 계통과 연관된 라틴어 감각 동사이다. 로망스어군에서는 스페인어 oír, 프랑스어 ouïr 등으로 진화했다. 라틴어 안에서 소리를 인지하는 기본적인 감각 동사로 널리 쓰였으며, 현대 영어의 audience(청중), audio(오디오), audition(오디션) 같은 단어 속에 그 어근이 깊게 박혀 있다."
+      },
+      {
+        "g": "ipsa",
+        "pos": "대명사",
+        "lemma": "ipse, ipsa, ipsum",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "바로 그 여신이, 스스로",
+        "gloss_en": "herself",
+        "syntax": "주어인 비너스를 강조하는 여성 단수 주격 대명사이다. 전능한 여신 본인이 직접 이 모욕적인 발언을 귀담아듣거나 지켜보게 될 것임을 강조하여 대결 구도를 선명하게 부각한다.",
+        "background": "부하들의 수괴인 아크몬이 하늘의 여신을 향해 조금도 굽히지 않고 정면으로 이름을 거론하며 도전장을 내미는 불경죄의 절정을 이룬다.",
+        "etymology": "강조를 나타내는 라틴어 대명사 어근으로, 고대 라틴어의 결합형에서 유래했다. 로망스어군에서는 스페인어 ese/esa 등의 지시사 계통과 연결된다. 라틴어 문체에서 주체의 정체성을 강력하게 부각하는 필수 한정사로 쓰였다."
+      },
+      {
+        "g": "licet",
+        "pos": "동사",
+        "lemma": "licet, -ere, licuit",
+        "parse": "pres. act. 3rd pers. sg.",
+        "gloss_kr": "비록 ~일지라도, 허용된다",
+        "gloss_en": "although, it is permitted",
+        "syntax": "비인칭 현재 능동태 동사로 접속법 동사 audiat과 결합해 양보절('비록 ~가 듣는다 할지라도')을 구성하는 관용적 표현이다. 상대방의 어떠한 행동도 우리의 기세를 꺾지 못한다는 대담한 양보를 이끌어낸다.",
+        "background": "신이 인간의 불경을 눈치채고 분노를 터뜨린들 이미 두려울 것이 없다는 사기 충천한 부하들의 반역적 배짱을 여과 없이 드러낸다.",
+        "etymology": "자유와 허용을 뜻하는 PIE 재구형 어근에서 유래한 무인칭 동사이다. 로망스어군에서는 이탈리아어 lecito 등의 형용사 형태로 잔존한다. 라틴어 안에서 합법적 허용을 나타내는 표현으로 굳어졌으며, 현대 영어의 illicit(불법의, 허용되지 않는) 같은 단어 속에 그 어근의 흔적이 남아 있다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "양보와 조건의 절 속에서 이어지는 두 가지 행동(듣는 것과 미워하는 것)을 대등하게 연결하는 등위접속사이다. 여신이 취할 수 있는 일련의 적대적 행동들을 자연스럽게 묶어준다.",
+        "background": "신이 귀를 기울여 우리의 말을 듣고 나아가 세상의 모든 영웅들을 미워하게 된다 하더라도, 그것이 우리에게 타격을 주지 못한다는 복합적 상황을 엮어낸다.",
+        "etymology": "앞서 다룬 등위접속사 et와 동일한 인도유럽조어 어근에서 유래했다."
+      },
+      {
+        "g": "quod",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "sg. acc. n.",
+        "gloss_kr": "것, ~하는 것",
+        "gloss_en": "what",
+        "syntax": "목적어를 이끄는 관계대명사 중성 단수 대격으로, 여신이 평소에 행하고 있는 적대적 행동의 내용을 가리키는 관계절의 목적어 역할을 한다.",
+        "background": "비너스가 이미 지상에서 디오메데스의 부하들을 상대로 벌이고 있는 온갖 방해 공작과 저주의 실체를 가리키는 지시적 성격을 띤다.",
+        "etymology": "앞서 여러 번 등장한 관계대명사 quod와 동일한 어원을 지니며 인도유럽어족 전반에 공통된 대명사 계통에 속한다."
+      },
+      {
+        "g": "facit",
+        "pos": "동사",
+        "lemma": "facio, -ere, feci, factum",
+        "parse": "pres. act. 3rd pers. sg.",
+        "gloss_kr": "행하다, 만들다",
+        "gloss_en": "does, makes",
+        "syntax": "3인칭 단수 현재 능동태 동사로 관계절의 서술어를 이룬다. 현재시제(pres.)를 사용하여 여신이 지금 이 순간에도 끊임없이 지상의 영웅들을 향해 적의를 실천하고 있음을 보여준다.",
+        "background": "신이 인간에게 가하고 있는 현재진행형의 악영향과 핍박을 가리키며, 인간들이 그것을 이미 알고 있으면서도 눈 하나 깜짝하지 않는 담대함을 강조한다.",
+        "etymology": "앞서 다룬 faciat과 동일한 어원을 가진 라틴어 핵심 동사로, 현대 영어의 fact나 affect 등의 모태가 된다."
+      },
+      {
+        "g": "oderit",
+        "pos": "동사",
+        "lemma": "odi, odisse",
+        "parse": "perf. subj. 3rd pers. sg. (with present meaning)",
+        "gloss_kr": "미워하다",
+        "gloss_en": "may hate",
+        "syntax": "완료형의 형태를 지니면서 현재의 의미를 갖는 결함동사(defective verb)의 접속법 완료(혹은 결과적 현재) 3인칭 단수 형태이다. 여신이 품고 있는 지속적인 증오심을 가정적·양보적 어조로 수용한다.",
+        "background": "비너스가 디오메데스의 무리에게 품고 있는 골수 깊은 증오를 인간들이 스스로 인지하면서도 그것을 두려워하기는커녕 오히려 대수롭지 않게 여긴다는 태도를 보여준다.",
+        "etymology": "증오를 뜻하는 라틴어 결함동사 어근으로, 완료 형태가 현재의 상태를 나타내는 특수한 문법적 성격을 지닌다. 로망스어군에서는 직접 반사형이 드물지만 라틴어 문학 작품에서 감정의 격변을 나타낼 때 빈번히 쓰였다. 현대 영어의 odious(혐오스러운), odium(증오) 같은 단어 속에 그 어원의 흔적이 깊게 박혀 있다."
+      },
+      {
+        "g": "omnes",
+        "pos": "형용사",
+        "lemma": "omnis, -e",
+        "parse": "pl. acc. m.",
+        "gloss_kr": "모든",
+        "gloss_en": "all",
+        "syntax": "이어지는 명사 viros를 수식하는 남성 복수 대격 형용사이다. 여신의 증오가 특정 개인에게만 국한되지 않고 디오메데스를 따르는 '모든' 부하들에게 무차별적으로 향하고 있음을 강조한다.",
+        "background": "신화 속에서 디오메데스를 추종하며 함께 유배와 방황을 겪은 집단 전체가 운명 공동체로서 여신의 표적이 되었음을 보여준다.",
+        "etymology": "전체와 모든 것을 뜻하는 라틴어 형용사로, 고대 이탈리아어군 계통에서 파생되었다. 로망스어군에서는 스페인어/포르투갈어 todo 계통으로 대체되었으나 프랑스어의 낱말 구성 요소 등에 흔적이 남았다. 라틴어 안에서 보편적 양을 나타내는 필수 어휘로 쓰였으며, 현대 영어의 omnipotent(전능한), omnipresent(무소불위의), omnivore(잡식동물) 같은 단어의 접두사 속에 그 흔적이 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.492",
+    "trans": "sub Diomede men, the hatred nevertheless of that woman all",
+    "words": [
+      {
+        "g": "sub",
+        "pos": "전치사",
+        "lemma": "sub",
+        "parse": "prep. taking abl.",
+        "kr_reading": "~아래에",
+        "gloss_kr": "~의 수하에, ~의 지휘 아래",
+        "gloss_en": "under",
+        "syntax": "탈격 명사인 Diomede를 지배하며 복종이나 귀속 관계를 나타내는 전치사이다. 디오메데스를 영웅적 지도자로 모시며 운명을 함께하는 부하들의 소속감을 명확히 규정한다.",
+        "background": "트로이아 전장의 위대한 영웅이자 여신을 상처 입혔던 디오메데스의 깃발 아래 모인 사나이들이라는 자부심과 연대감을 드러내는 표현이다.",
+        "etymology": "앞서 다룬 전치사 sub와 동일한 어원을 지니며, 공간적 아래쪽 의미에서 인적 신분이나 지휘 체계의 귀속을 나타내는 의미로 확장되었다."
+      },
+      {
+        "g": "Diomede",
+        "pos": "명사",
+        "lemma": "Diomedes, -is, m.",
+        "parse": "sg. abl. m.",
+        "gloss_kr": "디오메데스",
+        "gloss_en": "Diomedes",
+        "syntax": "전치사 sub의 지배를 받는 남성 단수 탈격 고유명사이다. 일행을 이끄는 지도자의 이름을 직접 제시하여 부하들이 누구의 수하에서 신들에 대항하고 있는지를 명백히 밝힌다.",
+        "background": "아르고스의 왕이자 트로이아 전쟁에서 아테나의 가호를 받아 신들까지 두려워하게 만들었던 용맹한 영웅이다. 비너스에게 상처를 입힌 장본인으로서 이 집단의 구심점 역할을 한다.",
+        "etymology": "그리스 신화의 영웅 이름 Διομήδης(디오메데스, '제우스의 지혜를 닮은 자')에서 유래한 라틴화된 고유명사이다. 그리스어 어근 디오(Zeus)와 메돈(조언자)의 결합에 기원을 두며 서사시 전반에 걸쳐 영웅적 무용의 상징으로 쓰였다."
+      },
+      {
+        "g": "viros",
+        "pos": "명사",
+        "lemma": "vir, viri, m.",
+        "parse": "pl. acc. m.",
+        "gloss_kr": "사나이들, 남자들, 영웅들",
+        "gloss_en": "men, heroes",
+        "syntax": "앞서 나온 형용사 omnes의 수식을 받는 남성 복수 대격 명사이다. 문장의 직접목적어인 odium과 대조를 이루며 여신의 미움을 받는 주체가 바로 이 '당당한 사나이들'임을 강조한다.",
+        "background": "비록 패배하고 쫓기는 신세이나 여전히 고개 숙이지 않는 전사로서의 자존심을 지킨 디오메데스의 부하들을 자랑스럽게 일컫는 호칭이다.",
+        "etymology": "앞서 다룬 vir의 복수 대격 형태로, PIE 재구형 *wi-ro-에서 유래한 남성 영웅을 뜻하는 라틴어 고유 어휘이다."
+      },
+      {
+        "g": "odium",
+        "pos": "명사",
+        "lemma": "odium, -ii, n.",
+        "parse": "sg. acc. n.",
+        "gloss_kr": "증오, 원한",
+        "gloss_en": "hatred, hostility",
+        "syntax": "문장의 주절 동사 spernimus의 직접목적어로 쓰인 중성 단수 대격 명사이다. 여신이 품고 있는 거대한 증오심을 객체화하여 문장 선두로 도치시켜 강조하고 있다.",
+        "background": "인간을 향한 신의 일방적이고 가혹한 적의를 가리키며, 부하들이 그 거대한 적의를 조금도 두려워하지 않고 정면으로 맞받아치는 대결의 핵심 매개체이다.",
+        "etymology": "증오를 뜻하는 라틴어 중성 명사로, 동사 odisse에서 파생되었다. 로망스어군에서는 스페인어 odio, 프랑스어 odieux 등의 어근으로 이어졌다. 라틴어 안에서 깊은 적개심과 혐오를 나타내는 표준 어휘로 굳어졌으며, 현대 영어의 odious(혐오스러운), odium(증오) 같은 단어에 그 어원이 살아 있다."
+      },
+      {
+        "g": "tamen",
+        "pos": "접속사",
+        "lemma": "tamen",
+        "parse": "coord. conj.",
+        "gloss_kr": "그럼에도 불구하고, 하지만",
+        "gloss_en": "nevertheless, yet",
+        "syntax": "문장 내에서 앞서 언급된 여신의 무서운 증오와 그럼에도 불구하고 그것을 무시하는 인간들의 태도를 강렬하게 대비시키는 등위접속사이다.",
+        "background": "신이 우리를 아무리 미워한다 한들 '그럼에도 불구하고' 우리는 그 증오를 전혀 두려워하지 않는다는 반역적 기백을 극적으로 전달하는 전환점이다.",
+        "etymology": "지시적 의미에서 발전한 라틴어 고유의 양보·대조 접속사로, 고대 이탈리아어군 계통에서 파생되었다. 고전 라틴어 문체에서 앞 절의 내용을 양보하면서 뒷절의 반전된 주장을 관철시키는 데 필수적으로 쓰인다."
+      },
+      {
+        "g": "illius",
+        "pos": "대명사",
+        "lemma": "ille, illa, illud",
+        "parse": "sg. gen. f./m./n.",
+        "gloss_kr": "그 여신의, 저자의",
+        "gloss_en": "of that (female), her",
+        "syntax": "명사 odium을 수식하는 소유격(속격) 대명사로, 문맥상 비너스를 가리킨다. 여신의 이름을 직접 부르는 대신 지시 대명사를 사용하여 거리를 두면서도 경멸하는 어조를 띤다.",
+        "background": "압도적인 권능을 가진 신이지만 우리에게는 더 이상 두려움의 대상이 아니라는 점을 강조하기 위해 여신을 '저 여자' 혹은 '그녀'라는 대명사로 낮추어 지칭하는 표현이다.",
+        "etymology": "원거리를 가리키는 라틴어 지시 대명사 어근에서 유래했다. 로망스어군에서는 정관사(스페인어 el/la, 프랑스어 le/la 등)의 어원적 모태가 되었다. 라틴어 안에서 저 멀리 있는 대상이나 화제가 된 인물을 가리키는 필수 지시사로 널리 쓰였다."
+      },
+      {
+        "g": "omnes",
+        "pos": "형용사",
+        "lemma": "omnis, -e",
+        "parse": "pl. nom. m.",
+        "gloss_kr": "우리 모두가",
+        "gloss_en": "all",
+        "syntax": "주절의 주어를 이루는 남성 복수 주격 형용사(명사적으로 쓰임)이다. 디오메데스의 부하들 전원이 예외 없이 여신의 증오를 일축하고 있다는 집단적 일체감을 보여준다.",
+        "background": "개인적인 두려움이나 변절자 없이 모든 부하들이 한마음으로 신들의 권위에 대항하고 있다는 단합된 반역의 기조를 선언한다.",
+        "etymology": "앞서 다룬 형용사 omnis의 복수 주격 형태로, 인도유럽조어 계통의 보편 양화사에서 유래했다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.493",
+    "trans": "we spurn: and great power stands great for us!”",
+    "words": [
+      {
+        "g": "spernimus",
+        "pos": "동사",
+        "lemma": "sperno, -ere, sprevi, spretum",
+        "parse": "pres. act. 1st pers. pl.",
+        "gloss_kr": "경멸하다, 짓밟다, 무시하다",
+        "gloss_en": "we spurn, we despise",
+        "syntax": "1인칭 복수 현재 능동태 동사로 주절의 핵심 서술어이다. 여신의 증오(odium)를 목적어로 취하며, 신의 권능을 두려워하기는커녕 발아래로 가볍게 밀쳐내는 오만한 거절의 태도를 선언한다.",
+        "background": "인간이 신의 진노를 향해 내뱉을 수 있는 가장 불경하고도 용기 있는 거부의 표현으로, 영웅적 오만이 극에 달했음을 보여주는 대목이다.",
+        "etymology": "물리치다와 경멸하다를 뜻하는 PIE 재구형 *sper-('떨쳐내다, 발로 차다')에서 유래했다. 산스크리트어 sphurati(차다, 박차다) 등이 동계어로 존재한다. 라틴어 안에서 물리적으로 차버리는 행동에서 추상적으로 가치를 '경멸하고 무시하다'라는 뜻으로 의미가 전이되었다. 현대 영어의 spurn(경멸하며 거절하다)이라는 단어에 그 고대의 어근과 형태가 그대로 살아 남아 있다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "앞서 신의 증오를 경멸한다는 선언과 자신들이 누리는 위대한 권능에 대한 확신을 이어주는 등위접속사이다. 대사의 클라이맥스를 장식하는 마지막 격언을 도입한다.",
+        "background": "신들의 분노에 맞서는 인간들 스스로도 결코 만만치 않은 거대한 힘과 자부심을 지니고 있다는 선언으로 대사를 웅장하게 매듭짓는 연결고리이다.",
+        "etymology": "앞서 여러 번 등장한 등위접속사 et와 동일한 어원을 지닌 라틴어 문체적 기본 불변화사이다."
+      },
+      {
+        "g": "magno",
+        "pos": "형용사",
+        "lemma": "magnus, -a, -um",
+        "parse": "sg. abl. n.",
+        "gloss_kr": "큰, 위대한",
+        "gloss_en": "great, at a great price",
+        "syntax": "형용사적 의미 혹은 대가(price)를 나타내는 중성 단수 탈격 형태로, 명사 stat의 상황을 보조한다. 위대한 힘이 거대한 대가 혹은 막강한 가치로 자신들에게 서 있음을 나타낸다.",
+        "background": "이들이 겪은 수많은 고난과 시련이 단순히 무의미한 고통이 아니라, 오히려 인간으로서 신과 당당히 맞설 수 있는 거대한 내면적 힘과 위대함으로 변모했음을 역설한다.",
+        "etymology": "크기를 뜻하는 PIE 재구형 *megh₂-('크다, 위대한')에서 유래했다. 그리스어 μέγας(megas), 산스크리트어 mahā 등이 직계 동계어이다. 로망스어군에서는 스페인어 mayor, 프랑스어 grand 계통으로 진화했다. 라틴어 안에서 물리적·추상적 크기를 나타내는 핵심 어휘로 쓰였으며, 현대 영어의 magnify(확대하다), magnitude(규모), magnificent(장대한) 같은 단어에 그 어근이 살아 있다."
+      },
+      {
+        "g": "stat",
+        "pos": "동사",
+        "lemma": "sto, stare, steti, statum",
+        "parse": "pres. act. 3rd pers. sg.",
+        "gloss_kr": "서 있다, 유지되다, 가치가 있다",
+        "gloss_en": "stands, remains firm, costs",
+        "syntax": "3인칭 단수 현재 능동태 동사로 주절의 서술어이다. 물리적으로 꼿꼿이 서 있는 모습에서 파생되어 가치가 유지되거나 확고부동하게 자리 잡고 있음을 뜻한다.",
+        "background": "신들의 맹렬한 공격 속에서도 디오메데스의 부하들이 영웅적 기개를 잃지 않고 꼿꼿이 버텨내어 스스로의 위대한 가치를 지켜내고 있음을 상징하는 동사이다.",
+        "etymology": "서 있음을 뜻하는 PIE 재구형 *stha-('서다, 확고하게 있다')에서 유래했다. 그리스어 ἵστημι(histēmi), 산스크리트어 tiṣṭhati 등이 직계 동계어이다. 로망스어군에서는 스페인어 estar, 프랑스어 ester 등으로 진화했다. 라틴어 안에서 고정된 상태와 존재의 확고함을 나타내는 핵심 동사로 쓰였으며, 현대 영어의 state(상태, 국가), station(위치), stable(안정된), distance(거리) 같은 수많은 단어에 그 어근이 깊게 박혀 있다."
+      },
+      {
+        "g": "magna",
+        "pos": "형용사",
+        "lemma": "magnus, -a, -um",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "위대한, 거대한",
+        "gloss_en": "great",
+        "syntax": "주어인 potentia를 수식하는 여성 단수 주격 형용사로 앞선 magno와 함께 격정적인 수사학적 대구를 형성한다. 이들이 지닌 권능과 자부심의 규모가 얼마나 거대한지 시각화한다.",
+        "background": "비록 패배한 유배자들이지만 신들에 맞서는 인간의 의지와 자부심만큼은 신들의 권능 못지않게 위대하다는 오만한 자화자찬을 담고 있다.",
+        "etymology": "앞서 다룬 magno와 동일한 어원을 지니며 PIE 재구형 *megh₂-에서 파생된 라틴어 최상급·기본 형용사 계통에 속한다."
+      },
+      {
+        "g": "potentia",
+        "pos": "명사",
+        "lemma": "potentia, -ae, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "힘, 권능, 능력",
+        "gloss_en": "power, might, force",
+        "syntax": "주절의 주어로 쓰인 여성 단수 주격 명사이다. 신들에게 맞서는 인간들 내면의 강력한 저항력과 잠재적 힘을 가리키며 대사의 마지막을 강렬하게 장식한다.",
+        "background": "인간이 신의 억압 속에서도 굴하지 않고 스스로 발견해낸 영웅적 잠재력과 자존심의 원천을 뜻하며, 아크몬의 선동 연설을 정점으로 이끄는 핵심 개념이다.",
+        "etymology": "힘세다를 뜻하는 분사 어근 potens에서 파생된 명사로, PIE 재구형 *poti-('력 있는, 주인인')에 기원을 둔다. 산스크리트어 pati(남편, 주인), 그리스어 δεσπότης 등의 어원과 연결된다. 로망스어군에서는 스페인어 potencia, 프랑스어 puissance 등으로 진화했다. 라틴어 안에서 실질적인 '힘과 권세'를 나타내는 추상명사로 굳어졌으며, 현대 영어의 potent(효력 있는), potential(잠재력), omnipotent(전능한) 같은 단어 속에 그 어근이 고스란히 살아 있다."
+      },
+      {
+        "g": "nobis",
+        "pos": "대명사",
+        "lemma": "nos",
+        "parse": "pl. dat.",
+        "kr_reading": "우리에게",
+        "gloss_kr": "우리에게, 우리를 위하여",
+        "gloss_en": "to us, for us",
+        "syntax": "1인칭 복수 여격 대명사로 이해관계나 소유를 나타내는 여격(dativus commodi)으로 쓰였다. 위대한 권능이 오직 우리들 자신을 위해 존재하고 귀속되어 있음을 선언한다.",
+        "background": "신들의 은총이나 자비에 의존하지 않고, 오직 우리들 자신(부하들 공동체)의 힘으로 삶의 주인이 되었다는 독립 선언을 완성하는 대명사이다.",
+        "etymology": "1인칭 복수 대명사 nos의 여격/탈격 형태로, PIE 재구형 *nos('우리')에 기원을 둔다. 로망스어군 전반에 걸쳐 1인칭 복수 대명사 체계의 핵심 골격을 형성하며 라틴어 문장 속에서 관계의 방향성을 나타내는 데 광범위하게 쓰였다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.494",
+    "trans": "With such words Pleuronian Acmon",
+    "words": [
+      {
+        "g": "Talibus",
+        "pos": "형용사",
+        "lemma": "talis, -e",
+        "parse": "pl. abl. n.",
+        "gloss_kr": "그러한, 이와 같은",
+        "gloss_en": "such",
+        "syntax": "이어지는 명사 verbis를 수식하는 중성 복수 탈격 형용사이다. 아크몬이 직전에 내뱉었던 불경하고도 선동적인 일련의 말들을 가리키며 인과적 배경을 매개한다.",
+        "background": "앞서 오만하게 늘어놓았던 아크몬의 연설 내용 전체를 응축하여, 그 발언들이 동료들에게 어떤 자극과 파장을 일으켰는지 연결해 주는 수사적 장치이다.",
+        "etymology": "지시적 성격을 지닌 라틴어 대명사적 형용사로, 인도유럽조어의 지시사 어근에서 파생되었다. 로망스어군에서는 이탈리아어 tale 등으로 이어지며, 라틴어 문체에서 앞서 언급된 내용이나 성격을 가리키는 지시사로 널리 쓰였다."
+      },
+      {
+        "g": "iratam",
+        "pos": "형용사",
+        "lemma": "iratus, -a, -um",
+        "parse": "sg. acc. f.",
+        "gloss_kr": "노여워하는, 분노한",
+        "gloss_en": "angry, wrathful",
+        "syntax": "고유명사 Venerem을 수식하는 여성 단수 대격 분사형 형용사이다. 디오메데스의 부하들의 도발 대상인 비너스가 이미 분노에 사로잡혀 있음을 시각화하며 갈등을 증폭한다.",
+        "background": "인간의 불경한 도발에 맞서 가만히 있지 않고 진노의 칼을 갈고 있는 여신의 심리적 상태를 포착하여 서사적 긴장감을 고조시키는 수식어이다.",
+        "etymology": "분노를 뜻하는 명사 ira에서 파생된 분사형 형용사로, PIE 재구형 어근에 기원을 둔다. 로망스어군에서는 스페인어 irado 등으로 이어졌다. 라틴어 안에서 감정적 격분을 나타내는 핵심 어휘로 굳어졌으며, 현대 영어의 ire(분노), irate(성난), irritate(짜증나게 하다) 같은 단어 속에 그 어근의 흔적이 남아 있다."
+      },
+      {
+        "g": "Venerem",
+        "pos": "명사",
+        "lemma": "Venus, Veneris, f.",
+        "parse": "sg. acc. f.",
+        "gloss_kr": "비너스를",
+        "gloss_en": "Venus",
+        "syntax": "분사형 형용사 iratam의 수식을 받는 여성 단수 대격 명사로, 문장의 직접목적어 역할을 한다. 아크몬의 선동적 언사가 겨냥하고 자극하는 궁극의 대상이 바로 사랑과 미의 여신 비너스임을 보여준다.",
+        "background": "과거에 이미 상처를 입어 분노로 가득 찬 여신의 심기를 아크몬의 과격한 연설이 다시 한번 정면으로 찌르고 자극하는 대결 구도를 선명하게 그려낸다.",
+        "etymology": "앞서 다룬 Venus의 대격 형태로, PIE 재구형 *wenH-('소망하다, 사랑하다')에서 유래한 여신의 이름이다."
+      },
+      {
+        "g": "Pleuronius",
+        "pos": "형용사",
+        "lemma": "Pleuronius, -a, -um",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "플레우론의, 아이톨리아의",
+        "gloss_en": "Pleuronian, of Pleuron",
+        "syntax": "주어인 Acmon을 수식하는 남성 단수 주격 고유형용사이다. 아크몬이 출신 지역인 플레우론(아이톨리아 지방의 고대 도시)과 연관되어 있음을 밝혀 인물의 정체성을 구체화한다.",
+        "background": "디오메데스의 고향이자 부하들이 뿌리를 두고 있던 아이톨리아의 주요 도시 플레우론을 환기하며, 이들이 신들에 맞서는 영웅적 혈통의 후예임을 암시한다.",
+        "etymology": "그리스 아이톨리아의 고대 도시 이름 플레우론(Πλευρών)에서 파생된 라틴어 고유형용사 접미사가 결합된 형태로, 지리적 기원을 나타내는 시적 명명법에 속한다."
+      },
+      {
+        "g": "Acmon",
+        "pos": "명사",
+        "lemma": "Acmon, -onis, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "아크몬",
+        "gloss_en": "Acmon",
+        "syntax": "문장의 주어로 쓰인 남성 단수 주격 고유명사이다. 동료들을 선동하여 비너스에 대한 불경한 발언을 주도한 문제적 인물의 이름을 당당하게 드러낸다.",
+        "background": "오비디우스의 <변신 이야기>에서 디오메데스의 부하 중 한 명으로 등장하며, 신들에 대한 경외심을 상실하고 오만하게 반항하다가 결국 비극적인 변신의 운명을 맞이하는 인물이다.",
+        "etymology": "그리스어 고유명사 Ἄκμων(아크몬, '모루'를 뜻하는 단어와 어원적 연관이 있음)에서 유래한 라틴화된 인명이다. 단단하고 굽히지 않는 성정을 상징하는 시적 어원을 품고 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.495",
+    "trans": "stirs up words and with goads revives her wrath.",
+    "words": [
+      {
+        "g": "instimulat",
+        "pos": "동사",
+        "lemma": "instimulo, -are, -avi, -atum",
+        "parse": "pres. act. 3rd pers. sg.",
+        "gloss_kr": "자극하다, 부추기다, 박차를 가하다",
+        "gloss_en": "stirs up, goads on, incites",
+        "syntax": "3인칭 단수 현재 능동태 동사로 주절의 핵심 서술어이다. 주어는 Pleuronius Acmon이며 목적어는 iratam Venerem이다. 현재시제(pres.)를 사용하여 아크몬의 선동이 여신의 분노를 실시간으로 지글지글 끓어오르게 만들고 있음을 생생하게 묘사한다.",
+        "background": "이미 가라앉거나 잠잠해질 수 있었던 신의 진노에 인간이 먼저 나서서 날카로운 막대기로 찌르듯 도발함으로써 화를 자초하는 어리석고 대담한 행동을 포착한다.",
+        "etymology": "안으로를 뜻하는 in-과 뾰족한 막대기(가축을 모는 막대기)를 뜻하는 stimulus가 결합한 파생동사로, PIE 재구형 어근에 기원을 둔다. 라틴어 안에서 짐승에게 박차를 가하듯 사람을 '자극하고 선동하다'라는 뜻으로 발전했으며, 현대 영어의 stimulate(자극하다) 같은 단어와 직계 어원을 공유한다."
+      },
+      {
+        "g": "verbis",
+        "pos": "명사",
+        "lemma": "verbum, -i, n.",
+        "parse": "pl. abl. n.",
+        "gloss_kr": "말들로, 언사로",
+        "gloss_en": "with words",
+        "syntax": "동사 instimulat의 수단을 나타내는 중성 복수 탈격 명사이다. 물리적인 무기가 아니라 불경하고 도발적인 '말' 그 자체가 여신의 분노를 자극하는 촉매제였음을 보여준다.",
+        "background": "인간의 오만한 언사가 신들의 귀를 파고들어 참을 수 없는 진노를 폭발시키는 방예(Stichomythia)적 매개체 역할을 한다.",
+        "etymology": "말을 뜻하는 라틴어 중성 명사로, PIE 재구형 *werH-('말하다')에서 유래했다. 로망스어군에서는 스페인어 verbo, 프랑스어 verbe 등으로 진화했다. 라틴어 안에서 구체적인 '단어와 말'을 뜻하는 핵심 어휘로 쓰였으며, 현대 영어의 verb(동사), verbal(언어의), verbose(말이 많은) 같은 단어에 그 어근이 깊게 박혀 있다."
+      },
+      {
+        "g": "stimulisque",
+        "pos": "명사",
+        "lemma": "stimulus, -i, m.",
+        "parse": "pl. abl. m. (with -que)",
+        "gloss_kr": "가시로, 채찍으로, 자극들로",
+        "gloss_en": "and with goads, with spurs",
+        "syntax": "수단을 나타내는 남성 복수 탈격 명사로 후행 등위접속사 -que에 의해 앞선 verbis와 병렬로 결합한다. 말뿐만 아니라 날카로운 가시 같은 자극들이 여신을 찔러대고 있음을 은유한다.",
+        "background": "가축을 몰 때 쓰는 뾰족한 막대기인 '자극(stimulus)'을 비유적으로 사용하여, 아크몬의 말이 여신의 분노에 채찍질을 가하는 형상을 시각적으로 극대화한다.",
+        "etymology": "뾰족한 막대나 가시를 뜻하는 PIE 재구형 *stig-('찌르다, 뾰족하다')에서 유래했다. 그리스어 στίγμα(상처 자국), 영어 stick(막대기) 등이 동계어로 존재한다. 라틴어 안에서 가축을 몰아치는 '자극제'라는 의미로 굳어졌으며, 현대 영어의 stimulus(자극), stimulate(자극하다) 같은 단어에 그 원형이 고스란히 남아 있다."
+      },
+      {
+        "g": "resuscitat",
+        "pos": "동사",
+        "lemma": "resuscito, -are, -avi, -atum",
+        "parse": "pres. act. 3rd pers. sg.",
+        "gloss_kr": "다시 깨우다, 소생시키다, 되살리다",
+        "gloss_en": "revives, rouses up anew",
+        "syntax": "3인칭 단수 현재 능동태 동사로, 앞선 instimulat와 함께 주어 아크몬이 행하는 두 번째 행동을 이끈다. 현재시제(pres.)를 통해 사그라들던 분노의 불씨가 다시 활활 타오르게 만드는 과정을 생생하게 중계한다.",
+        "background": "시간이 지나면서 희미해졌을지도 모르는 신의 진노를 인간 스스로의 손으로 다시 끄집어내어 화를 돋우는 파멸의 도화선 역할을 한다.",
+        "etymology": "다시를 뜻하는 re-와 아래에서 위로 일으키다를 뜻하는 suscitare(sub+citare, 흔들어 깨우다)가 결합한 복합동사로, PIE 재구형 *kei-('움직이다, 자극하다')에서 유래했다. 로망스어군에서는 스페인어 resuscitar, 프랑스어 ressusciter 등으로 진화했다. 라틴어 안에서 죽거나 가라앉았던 것을 '다시 깨워 살리다'라는 의미로 고착되었으며, 현대 영어의 resuscitate(소생시키다, 심폐소생하다), citation(인용) 같은 단어와 어원을 공유한다."
+      },
+      {
+        "g": "iram",
+        "pos": "명사",
+        "lemma": "ira, -ae, f.",
+        "parse": "sg. acc. f.",
+        "gloss_kr": "분노를, 진노를",
+        "gloss_en": "wrath, anger",
+        "syntax": "동사 resuscitat의 직접목적어로 쓰인 여성 단수 대격 명사이다. 문장의 맨 마지막에 배치되어 아크몬의 선동이 결국 무엇을 다시 불러일으켰는지를 극적으로 각인시킨다.",
+        "background": "인간의 불경한 도발이 결국 비너스의 가슴속에 잠자고 있던 거대한 진노의 불길을 완전히 되살려놓았음을 알리며, 곧 닥쳐올 파멸적 결말을 예고하는 결정적 명사이다.",
+        "etymology": "격분과 분노를 뜻하는 라틴어 고유 명사로, 고대 이탈리아어군 계통에서 파생되었다. 로망스어군에서는 이탈리아어 ira, 스페인어 ira 등으로 이어졌다. 라틴어 안에서 인간이나 신의 불타는 '진노'를 가리키는 표준 어휘로 쓰였으며, 현대 영어의 irate(성난), irascible(화 잘 내는), ire(분노) 같은 단어 속에 그 어원의 흔적이 뚜렷이 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.496",
+    "trans": "지혜로운 말은 소수에게만 마음에 든다; 더 많은 이들은 무리의 편이다.",
+    "words": [
+      {
+        "g": "Dicta",
+        "pos": "명사",
+        "lemma": "dictum, -i, n.",
+        "parse": "pl. nom. n.",
+        "gloss_kr": "말씀, 격언, 말",
+        "gloss_en": "words, sayings",
+        "syntax": "문장의 주어로 쓰인 중성 복수 분사/명사이며, 뒤의 복수 서술어 placent의 주체 역할을 한다.",
+        "background": "여기서 dicta는 디오메데스의 동료들이 앞서 나누었던 현명하고 신중한 조언이나 경고의 말을 가리킨다. 오비디우스는 다수의 무분별한 태도와 대비되는 소수의 지혜로운 발언을 강조하고 있다.",
+        "etymology": "라틴어 동사 dīcere('말하다, 고하다')의 중성 완료 수동 분사 dīctum이 명사화된 어휘이다. 인도유럽조어 재구형 *deik-('가리키다, 보여주다, 말하다')에서 유래하였으며, 영어의 dic-tate, diction, index 및 독일어 zeigen 등과 동계어이다. 어휘는 로마 시대 법정과 일상어를 거쳐 중세 라틴어를 거쳐 현대 여러 서구 언어의 어휘군으로 이어졌으며, 현대 영어의 'dictum(격언, 단언)'이라는 명사로 그 흔적이 고스란히 남아 있다."
+      },
+      {
+        "g": "placent",
+        "pos": "동사",
+        "lemma": "placeo, placere, placui, placitus",
+        "parse": "pres. act. ind. 3rd pers. pl.",
+        "gloss_kr": "마음에 들다, 기쁘게 하다",
+        "gloss_en": "please, are pleasing",
+        "syntax": "주어인 중성 복수 명사 dicta를 받는 3인칭 복수 현재형 본동사로 쓰였으며, paucis를 여격 목적어로 취한다.",
+        "background": "대다수의 사람들은 충고나 현명한 말을 귀담아듣지 않고 자신의 충동을 따르며, 참된 이치는 언제나 소수의 사람들에게만 받아들여진다는 고대 시적 통찰을 담고 있는 표현이다.",
+        "etymology": "인도유럽조어 재구형 *plāk-('차분하게 하다, 만족시키다, 동의하다')에서 유래한 라틴어 동사 placēre에서 비롯되었다. 영어의 placate, complacent, pleasure, 그리고 이탈리아어 piacere 등이 이와 같은 어근을 공유하는 동계어이다. 형태적으로는 고대 라틴어의 상태 동사형태가 유지되면서 의미의 큰 굴절 없이 로망스어군과 영어권 어휘로 이어졌으며, 현대 영어의 'placate(달래다)'나 'complacent(자기만족의)' 같은 단어 안에 그 흔적이 뚜렷이 남아 있다."
+      },
+      {
+        "g": "paucis",
+        "pos": "형용사",
+        "lemma": "paucus, -a, -um",
+        "parse": "pl. dat. m.",
+        "gloss_kr": "소수의, 몇 안 되는",
+        "gloss_en": "to few",
+        "syntax": "동사 placent의 간접목적어(여격)로 쓰여, 지혜로운 말을 받아들이는 대상이 전체 대중이 아니라 소수임을 한정한다.",
+        "background": "대중의 편협함이나 성급함에 대비되는 철학적 소수를 가리키며, 오비디우스가 서사 속 인물들의 경솔한 행동을 비판하기 위해 설정한 극적 배경의 기반이 된다.",
+        "etymology": "인도유럽조어 재구형 *pau-[1](*pū-, '적은, 작은, 부서진')에서 유래한 라틴어 paucus에서 기원한다. 산스크리트어 pūtá-(작은, 시든) 및 그리스어 pauros(적은, 사소한)가 대표적인 동계어이다. 라틴어에서 로망스어를 거치며 의미 축소와 전이를 겪었으며, 현대 영어의 paucity(소량, 결핍), pauper(빈민) 및 스페인어 poco 등의 단어 속에 그 어근의 흔적이 남아 있다."
+      },
+      {
+        "g": "numeri",
+        "pos": "명사",
+        "lemma": "numerus, -i, m.",
+        "parse": "sg. gen. m.",
+        "gloss_kr": "수, 무리, 대중",
+        "gloss_en": "of the number, of the crowd",
+        "syntax": "소유/질을 나타내는 속격으로 뒤의 maioris를 수식하며, 전체로서 '더 큰 무리(다수)'라는 의미를 형성한다.",
+        "background": "여기서 numerus는 단순한 숫자가 아니라 군중, 즉 대중의 다수파를 의미하며, 신들의 노여움을 사 변해가는 이들 주변의 무분별한 군중의 성격을 대변한다.",
+        "etymology": "인도유럽조어 재구형 *nem-('할당하다, 분배하다, 취하다')에서 유래한 라틴어 numerus에서 유래하였다. 그리스어 nomos(법, 관습) 등과 먼 동계 관계를 가지며, 수의 분배와 관련된 개념에서 발전했다. 라틴어에서 중세 거쳐 영어권으로 유입되면서 영어의 number, numeral, enumerate 등의 단어로 이어졌으며, 현대 언어에서 '수'나 '번호'를 뜻하는 핵심 어휘로 살아 있다."
+      },
+      {
+        "g": "maioris",
+        "pos": "형용사",
+        "lemma": "magnus, -a, -um (magnus의 비교급 maior, maius)",
+        "parse": "sg. gen. m.",
+        "gloss_kr": "더 큰, 더 많은",
+        "gloss_en": "of the greater",
+        "syntax": "여성/남성 단수 속격 형태로 명사 numeri를 수식하며, 소수의 지혜로운 자들과 대비되는 다수의 대중을 가리킨다.",
+        "background": "지혜로운 자들의 소수 정예와 충돌하는 '더 거대한 다수'의 무리를 수식하여, 아크몬을 비롯한 인물들이 대중적 충동과 경솔함에 휩쓸려 있음을 부각한다.",
+        "etymology": "인도유럽조어 재구형 *meǵh₂-('큰, 위대한')에서 파생된 라틴어 비교급 어간 maior에서 유래하였다. 그리스어 megas(큰) 및 산스크리트어 mahā-(위대한)가 대표적인 동계어이다. 라틴어에서 음운 변화를 거쳐 로망스어 및 영어권으로 유입되었으며, 현대 영어의 major(전공/더 큰), majority(대다수), mayor(시장) 등의 단어 안에 그 흔적이 깊게 남아 있다."
+      },
+      {
+        "g": "amici",
+        "pos": "명사",
+        "lemma": "amicus, -i, m.",
+        "parse": "pl. nom. m.",
+        "gloss_kr": "친구, 추종자, 동료",
+        "gloss_en": "friends (of)",
+        "syntax": "주격 복수 형태로 주절의 주어 역할을 하거나 혹은 앞구절의 내용을 받는 보어/격식적 주격으로 쓰여, 다수의 편을 드는 자들을 지칭한다.",
+        "background": "이들은 올바른 말에 귀 기울이지 않고 더 거대한 무리(다수)의 편에 서서 경솔하게 동조하는 아크몬과 그의 동료들을 가리키는 냉소적 표현이다.",
+        "etymology": "인도유럽조어 재구형 *am-[1](*am-2, '사랑하다, 어루만지다')에서 유래한 라틴어 amicus(친구)에서 유래하였다. 라틴어 동사 amāre('사랑하다')와 직접 연결되며, 다른 인도유럽어족에서는 동계어가 드물고 이탈리아어파 안에서 특화된 형태이다. 로망스어군 전체로 이어져 현대 스페인어 amigo, 프랑스어 ami 등으로 발전했으며, 영어의 amiable, amenity, inimical 등의 어근 속에도 그 흔적이 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.497",
+    "trans": "우리는 아크몬을 꾸짖었다; 그가 대답하려 하자",
+    "words": [
+      {
+        "g": "Acmona",
+        "pos": "명사",
+        "lemma": "Acmon, Acmonis, m. (그리스어 Ἄκμων)",
+        "parse": "sg. acc. m.",
+        "gloss_kr": "아크몬 (인명)",
+        "gloss_en": "Acmon",
+        "syntax": "주절의 동사 corripimus의 직접목적어(대격)로, 디오메데스의 동료 중 한 명인 아크몬의 이름을 가리킨다. 그리스어 계열 명사의 대격 어미 -a 형태를 유지하고 있다.",
+        "background": "아크몬은 디오메데스의 부하 중 한 명으로, 신성모독적 발언이나 경솔한 태도를 보이다가 비참하게 새(백조 또는 갈매기류의 새)로 변하는 형벌을 받는 인물이다.",
+        "etymology": "그리스어 Ἄκμων(akmōn, '모루, 운석')에서 유래한 고유명사로, 선그리스어 기층 어휘 혹은 인도유럽조어 재구형 *h₂ek-[1](*ak-, '날카로운, 뾰족한') 계열에서 모루를 뜻하는 단어로 분기된 어원적 배경을 갖는다. 그리스 신화 속에서 단단한 모루를 상징하거나 날카로운 성품을 비유하는 인명으로 차용되었다. 현대 서구 언어에서 일상적인 명사로는 거의 쓰이지 않으나 고전 신화 인명으로서 학술적·문학적 맥락에 고정되어 남아 있다."
+      },
+      {
+        "g": "corripimus",
+        "pos": "동사",
+        "lemma": "corripio, corripere, corripui, correptus",
+        "parse": "pres. act. ind. 1st pers. pl.",
+        "gloss_kr": "꾸짖다, 책망하다, 붙잡다",
+        "gloss_en": "we rebuke, we check",
+        "syntax": "1인칭 복수 현재형 주절 동사로서, 화자들(디오메데스와 그 무리)이 아크몬의 경솔한 언행을 제지하고 꾸짖는 행동을 나타낸다.",
+        "background": "디오메데스의 동료들이 비신앙적이거나 경솔한 말을 내뱉는 아크몬을 향해 즉각적으로 비판과 제동을 거는 긴장감 넘치는 장면을 묘사한다.",
+        "etymology": "전치사 com-(함께, 완전히)과 동사 rapere('움켜잡다, 채다')가 결합한 합성동사 conripere에서 유래하였다. 인도유럽조어 재구형 *rep-('잡아채다, 찢다')에서 비롯되었으며, 영어의 rapt, rapid, ravish 등이 동계어이다. 라틴어에서 강한 어조의 '움켜잡다'에서 '비난하다, 엄하게 꾸짖다'로 의미가 전이되었으며, 현대 영어의 corridor나 직접적 형태는 아니지만 라틴어 어근 계통의 문어적 표현으로 그 흔적이 남아 있다."
+      },
+      {
+        "g": "cui",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "sg. dat. m.",
+        "gloss_kr": "그에게, ~에게",
+        "gloss_en": "to whom",
+        "syntax": "관계대명사의 단수 남성 여격으로, 선행사 Acmona를 받으며 분사 volenti의 간접목적어로 기능한다.",
+        "background": "방금 꾸짖음을 들은 아크몬이 이에 반박하거나 해명하려고 입을 여는 순간을 포착하는 문법적 연결고리 역할을 한다.",
+        "etymology": "인도유럽조어 의문/관계대명사 재구형 *kʷi-/*kʷo-에서 유래한 라틴어 관계대명사 quī의 여격형이다. 산스크리트어 ka-, 그리스어 tis, 영어 who/what 등과 뿌리를 공유하는 전형적인 인도유럽어족 대명사이다. 라틴어에서 격변화 체계를 유지하며 로망스어로 이어졌고, 현대 영어의 who/whom의 어원적 친척으로서 서구 언어의 기본 지시·관계 기능의 핵심으로 남아 있다."
+      },
+      {
+        "g": "respondere",
+        "pos": "동사",
+        "lemma": "respondeo, respondere, respondi, responsus",
+        "parse": "pres. act. inf.",
+        "gloss_kr": "대답하다, 응수하다",
+        "gloss_en": "to reply, to answer",
+        "syntax": "현재 능동태 부정사로 쓰여, 앞의 형용사/분사 volenti('원하는')의 보조 목적어 역할을 수행한다.",
+        "background": "동료들의 꾸짖음에 대해 가만히 있지 않고 맞대응하여 말을 하려던 아크몬의 의지를 보여주며, 곧 이어질 신화적 변신의 결정적 계기가 된다.",
+        "etymology": "전치사 re-(다시, 대항하여)와 동사 spondere('약속하다, 서약하다')가 결합한 라틴어 respondēre에서 유래하였다. 인도유럽조어 재구형 *spend-('약속하다, 엄숙히 선언하다')에서 비롯되었으며, 영어의 sponsor, despond, response 등이 동계어이다. '상대방의 부름이나 비난에 대해 약속하듯 대답하다'는 의미로 발전하였으며, 현대 영어의 response(응답), responsible(책임 있는) 등의 단어 안에 그 흔적이 뚜렷이 살아 있다."
+      },
+      {
+        "g": "volenti",
+        "pos": "분사",
+        "lemma": "volo, velle, volui",
+        "parse": "pres. act. part. dat. m. sg.",
+        "gloss_kr": "원하는, ~하려고 하는",
+        "gloss_en": "wishing, willing",
+        "syntax": "현재 능동 분사의 단수 남성 여격으로 관계대명사 cui를 수식하며, '대답하려 하는 그에게'라는 의미의 여격 구문을 이룬다.",
+        "background": "아크몬이 자신의 입장을 항변하거나 반박하려는 의지를 가졌던 바로 그 찰나의 순간을 포착하여 신화적 변형의 급작스러움을 강조한다.",
+        "etymology": "인도유럽조어 재구형 *wel-[2]('원하다, 좋아하다')에서 유래한 라틴어 동사 velle의 현재 분사형이다. 산스크리트어 vṛṇoti(선택하다), 고대 그리스어 boulomai(원하다), 영어 will 등과 깊은 동계 관계에 있다. 라틴어에서 의지나 소망을 나타내는 핵심 어근으로 기능했으며, 현대 영어의 volunteer(자원봉사자), involuntary(부지불식간의) 및 프랑스어 vouloir 등의 어휘에 그 흔적이 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.498",
+    "trans": "목소리와 목소리의 통로가 똑같이 가늘어지고, 머리카락은",
+    "words": [
+      {
+        "g": "vox",
+        "pos": "명사",
+        "lemma": "vox, vocis, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "목소리, 말소리",
+        "gloss_en": "voice",
+        "syntax": "문장의 주어 중 하나로 쓰이며, 뒤의 동사 est tenuata의 주체로서 아크몬의 인간적 음성이 사라져 감을 나타낸다.",
+        "background": "인간의 언어와 소통 능력이 상실되고 새의 울음소리로 변해가는 변신의 첫 번째 신체적 징후를 생생하게 묘사하는 핵심 단어이다.",
+        "etymology": "인도유럽조어 재구형 *wekʷ-('말하다, 부르다')에서 유래한 라틴어 vōx에서 기원한다. 산스크리트어 vāk(말, 언어), 그리스어 epos(말) 및 영어의 vowel, vocative, voice 등이 모두 이 어근을 공유하는 동계어이다. 로망스어군과 영어권에 걸쳐 폭넓게 전파되었으며, 현대 영어의 voice(목소리), vocal(발성의) 등의 단어로 그 명맥이 이어지고 있다."
+      },
+      {
+        "g": "pariter",
+        "pos": "부사",
+        "lemma": "pariter",
+        "parse": "adverb",
+        "gloss_kr": "동시에, 똑같이, 함께",
+        "gloss_en": "equally, at the same time",
+        "syntax": "양태/시간 부사로 쓰여, 목소리 자체와 목소리가 통과하는 목구멍(via)이 동시에 가늘어지고 변하는 현상을 강조한다.",
+        "background": "신체 형태와 발성 기관이 동시에 조화롭고도 기괴하게 새의 구조로 변해가는 메타몰포시스의 동시성을 극적으로 표현한다.",
+        "etymology": "인도유럽조어 재구형 *pere-[1]('통과하다, 넘어가다, 채우다') 또는 평등을 뜻하는 어근에서 파생된 형용사 pār('동등한')에서 유래한 부사이다. 영어의 peer(동등한 사람), parity(동등) 등이 같은 어근 계통에 속한다. 라틴어에서 '동등하게, 나란히, 함께'라는 뜻으로 굳어졌으며, 현대 영어의 parity나 문어체 표현 속에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "vocisque",
+        "pos": "명사",
+        "lemma": "vox, vocis, f.",
+        "parse": "sg. gen. f.",
+        "gloss_kr": "그리고 목소리의",
+        "gloss_en": "and of the voice",
+        "syntax": "명사 vocis에 등위접속사 -que가 붙은 형태이며, 뒤의 명사 via를 수식하는 소유 속격으로 '목소리의 길(목구멍)'이라는 표현을 만든다.",
+        "background": "목소리 그 자체뿐만 아니라 그 소리가 빠져나오는 신체적 통로인 성대와 목구멍까지 함께 변화하고 있음을 세밀하게 해부하듯 묘사한다.",
+        "etymology": "인도유럽조어 재구형 *wekʷ-('말하다')에서 유래한 vox의 속격 vocis에, '그리고'를 뜻하는 enclitic 접속사 *-kʷe가 결합한 형태이다. 산스크리트어 -ca, 그리스어 te 등과 인도유럽조어 접속사 기원을 공유한다. 단어 내부에서 음성적 결합을 이루며 라틴어 시문학에서 연결감을 높이는 데 쓰였으며, 현대 언어에서는 어근 계통을 통해 voice 등의 단어로 이어진다."
+      },
+      {
+        "g": "via",
+        "pos": "명사",
+        "lemma": "via, viae, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "길, 통로, 도로",
+        "gloss_en": "pathway, way",
+        "syntax": "주절의 두 번째 주어로 쓰이며, 'vocis via'(목소리의 길, 즉 목구멍과 성도)라는 주어구를 이루어 est tenuata와 호응한다.",
+        "background": "공기가 지나가고 소리가 울리던 인간의 기도가 새의 가늘고 좁은 목구멍으로 변해가는 해부학적 변형 과정을 비유적이고도 구체적으로 나타낸다.",
+        "etymology": "인도유럽조어 재구형 *wegh-('나르다, 이동하다, 수레로 가다')에서 유래한 라틴어 via에서 기원한다. 산스크리트어 vahati(나르다), 영어의 weigh, wagon, vehicle 등이 모두 이 어근을 공유하는 동계어이다. 물리적인 길에서부터 추상적 통로의 의미로 확장되었으며, 현대 영어의 via(~을 경유하여), viaduct(고가교), 그리고 스페인어 vía 등의 단어 안에 그 흔적이 생생하게 살아 있다."
+      },
+      {
+        "g": "est",
+        "pos": "동사",
+        "lemma": "sum, esse, fui, futurus",
+        "parse": "pres. act. ind. 3rd pers. sg.",
+        "gloss_kr": "~이다, 존재하다",
+        "gloss_en": "is",
+        "syntax": "수동 완료 분사 tenuata와 결합하여 현재완료 수동태(tenuata est)를 구성하는 조동사 역할을 한다.",
+        "background": "변화가 현재 진행되거나 완료된 상태를 객관적이고 단호하게 선언하는 서술어 기능을 수행한다.",
+        "etymology": "인도유럽조어 코퓰라 동사 재구형 *h₁es-('이다, 존재하다')에서 유래한 라틴어 esse의 3인칭 단수 현재형이다. 산스크리트어 ásti, 그리스어 esti, 영어 is, 독일어 ist 등 인도유럽어족 전반에 걸쳐 가장 원형이 잘 보존된 어휘 중 하나이다. 라틴어와 로망스어군을 거쳐 오늘날 서구 언어의 존재와 상태를 나타내는 가장 기본적인 문법 요소로 남아 있다."
+      },
+      {
+        "g": "tenuata",
+        "pos": "분사",
+        "lemma": "tenuo, tenuare, tenuavi, tenuatus",
+        "parse": "perf. pass. part. nom. f. sg.",
+        "gloss_kr": "가늘어진, 좁아진, 희미해진",
+        "gloss_en": "thinned out, weakened",
+        "syntax": "여성 단수 주격 형태로 주어 vox와 via를 수식하며, 조동사 est와 함께 수동태 서술어를 완성한다.",
+        "background": "굵고 힘찬 인간의 발성이 새의 가늘고 날카로운 지저귐이나 쉰 소리로 쪼그라드는 급격한 신체적 변형을 시각적·청각적으로 형상화한다.",
+        "etymology": "인도유럽조어 재구형 *ten-('뻗치다, 늘어나다, 가늘게 만들다')에서 유래한 형용사 tenuis('가는, 얇은')에서 파생된 동사 tenuāre의 완료 수동 분사이다. 산스크리트어 tanoti(늘이다), 그리스어 teino(당기다), 영어의 thin, tend, extend 등이 모두 이 어근을 공유하는 동계어이다. 물리적 두께나 소리의 폭이 좁아지는 변화를 나타내며, 현대 영어의 attenuate(약화시키다, 가늘게 하다)라는 단어 속에 그 어근과 의미가 고스란히 남아 있다."
+      },
+      {
+        "g": "comaeque",
+        "pos": "명사",
+        "lemma": "coma, comae, f.",
+        "parse": "pl. nom. f.",
+        "gloss_kr": "그리고 머리카락은",
+        "gloss_en": "and the hair",
+        "syntax": "명사 comae에 등위접속사 -que가 결합한 형태이며, 다음 문장의 새로운 주어 역할을 하여 깃털로 변하는 신체 부위를 열거한다.",
+        "background": "머리카락이 부드러운 깃털로 변하는 오비디우스 특유의 세밀하고 감각적인 변신 묘사의 시작점을 알리는 핵심 소재이다.",
+        "etymology": "인도유럽조어 재구형 *kes-[1]('머리칼, 털')에서 유래한 그리스어 kómē(머리털)를 거쳐 라틴어 coma로 유입된 어휘이다. 식물의 잎이나 혜성의 꼬리 등을 비유할 때도 쓰였다. 로망스어군과 학술 용어로 이어졌으며, 현대 영어의 comma(원래는 문장의 마디나 털 가닥 같은 구획에서 유래)와의 관련성이나 생물학·천문학 용어(coma, 혜성의 머리 부분) 속에 그 흔적이 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.499",
+    "trans": "깃털로 변해 사라지고, 새로운 목은 깃털로 덮이며",
+    "words": [
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "prep. taking acc.",
+        "gloss_kr": "~로, 안으로",
+        "gloss_en": "into",
+        "syntax": "대격 명사구인 plumas를 지배하는 전치사로, 머리카락이 깃털이라는 전혀 다른 형태와 본질으로 '변해 들어가는' 방향과 결과를 나타낸다.",
+        "background": "인간의 신체적 정체성이 동물(새)의 형태와 질감으로 완전히 전이되는 변신의 방향성을 공간적·상태적 변화로 보여준다.",
+        "etymology": "인도유럽조어 재구형 *en('~안에, ~에서')에서 유래한 라틴어 전치사이다. 산스크리트어 án, 그리스어 en, 영어 in, 독일어 in 등과 완벽하게 일치하는 동계어이다. 인도유럽어족 전반에서 내부 위치나 방향 전환을 나타내는 기본 전치사로 기능해왔으며, 현대 영어의 in, into 및 로망스어군의 여러 전치사 형태로 널리 살아 있다."
+      },
+      {
+        "g": "plumas",
+        "pos": "명사",
+        "lemma": "pluma, plumae, f.",
+        "parse": "pl. acc. f.",
+        "gloss_kr": "깃털로",
+        "gloss_en": "into feathers",
+        "syntax": "전치사 in의 지배를 받는 여성 복수 대격 목적어로, 머리카락과 신체 부위가 변해가는 최종적인 물질적 결과물을 뜻한다.",
+        "background": "인간의 부드러운 머리카락이나 피부가 새의 깃털로 치환되는 Ovid 특유의 기괴하면서도 우아한 변신 미술의 절정을 보여준다.",
+        "etymology": "인도유럽조어 재구형 *pleu-('흐르다, 날다, 수영하다') 또는 가벼운 털을 뜻하는 어근에서 유래한 라틴어 plūma에서 기원한다. 영어의 plume(깃털), plumage(깃털 장식) 등이 직접적인 동계어이다. 라틴어에서 조류의 부드러운 깃털을 가리키는 전문 어휘로 정착되었으며, 현대 영어의 plume이나 파생 어휘들 속에 그 의미와 형태가 생생하게 남아 있다."
+      },
+      {
+        "g": "abeunt",
+        "pos": "동사",
+        "lemma": "abeo, abire, abii, abitus",
+        "parse": "pres. act. ind. 3rd pers. pl.",
+        "gloss_kr": "변해 사라지다, 넘어가다",
+        "gloss_en": "pass away, turn into",
+        "syntax": "3인칭 복수 현재형 동사로, 주어 comae를 받아 머리카락이 깃털이라는 형상으로 완전히 소멸하며 전환되는 과정을 서술한다.",
+        "background": "형태의 소멸과 새로운 형태의 출현이 동시에 일어나는 변신의 신비롭고도 섬뜩한 순간을 동사 abire('멀어져 가다, 변형되다')를 통해 포착한다.",
+        "etymology": "전치사 ab-(~로부터, 멀리)와 동사 īre('가다')가 결합한 합성동사 abīre에서 유래하였다. 인도유럽조어 재구형 *h₁ei-('가다')와 *apo('멀리')의 결합이다. 라틴어에서 물리적 이탈뿐만 아니라 다른 상태나 물질로의 '전환·소멸'을 뜻하는 관용적 용법으로 발전했으며, 현대 영어의 ambient나 로망스어군의 관련 동사 어근 속에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "plumis",
+        "pos": "명사",
+        "lemma": "pluma, plumae, f.",
+        "parse": "pl. abl. f.",
+        "gloss_kr": "깃털로",
+        "gloss_en": "with feathers",
+        "syntax": "수단/도구를 나타내는 탈격 형태로, 새로운 목이 어떤 재질로 덮이는지를 나타내는 도구적 부사어 역할을 한다.",
+        "background": "인간의 살결이 사라지고 그 위를 촘촘하고 가벼운 새의 깃털이 뒤덮는 신체 개조의 세부 묘사를 이어간다.",
+        "etymology": "인도유럽조어 재구형 *pleu-('날다, 흐르다') 계통에서 유래한 라틴어 plūma의 복수 탈격형이다. 영어의 plume, plumose(깃 모양의) 등과 같은 어근을 공유한다. 고대 라틴어 시문학에서 도구적 탈격 구문을 통해 신체 감각과 질감의 변화를 극적으로 전달하는 데 자주 활용되었다."
+      },
+      {
+        "g": "nova",
+        "pos": "형용사",
+        "lemma": "novus, -a, -um",
+        "parse": "sg. nom. n. (or pl. nom. n.)",
+        "gloss_kr": "새로운",
+        "gloss_en": "new",
+        "syntax": "중성 주격 복수 형태로서 뒤의 명사 colla를 수식하며, 변신으로 인해 새로 생겨난 목의 속성을 강조한다.",
+        "background": "인간의 신체 구조를 벗어나 새로서 새롭게 태어나는 신체 부위의 기괴한 신선함과 이질감을 극대화한다.",
+        "etymology": "인도유럽조어 재구형 *néwos('새로운')에서 유래한 라틴어 novus에서 기원한다. 산스크리트어 náva-, 그리스어 neos, 영어 new, 독일어 neu 등 인도유럽어족 전반에 걸쳐 가장 보존률이 높은 형용사 중 하나이다. 라틴어를 거쳐 로망스어군으로 이어졌으며, 현대 영어의 novel(소설/새로운), innovation(혁신), renew(새롭게 하다) 등의 단어 속에 그 어근이 깊게 박혀 있다."
+      },
+      {
+        "g": "colla",
+        "pos": "명사",
+        "lemma": "collum, -i, n.",
+        "parse": "pl. nom. n.",
+        "gloss_kr": "목들",
+        "gloss_en": "necks",
+        "syntax": "중성 복수 주격 명사로 문장의 주어 역할을 하며, 형용사 nova의 수식을 받으며 뒤의 동사 teguntur의 주체가 된다.",
+        "background": "사람의 목이 조류 특유의 유연하고 깃털로 둘러싸인 목으로 변형되는 신체적 변모의 중심 부위를 가리킨다.",
+        "etymology": "인도유럽조어 재구형 어근에서 유래한 것으로 추정되는 라틴어 collum(목)에서 유래하였다. 로망스어군으로 이어져 이탈리아어 collo, 프랑스어 col 등으로 발전했다. 영어권에서는 직접적인 형태보다는 파생어나 차용어를 통해 유입되었으며, 현대 영어의 collar(깃, 목줏가리), acolyte(시종, 어원상 목을 따르는 자에서 유래 등) 또는 biology의 접미사적 흔적 등에서 그 어근의 발자취를 찾아볼 수 있다."
+      },
+      {
+        "g": "teguntur",
+        "pos": "동사",
+        "lemma": "tego, tegere, texi, tectus",
+        "parse": "pres. pass. ind. 3rd pers. pl.",
+        "gloss_kr": "덮이다, 감싸이다",
+        "gloss_en": "are covered",
+        "syntax": "3인칭 복수 현재 수동태 동사로, 주어인 colla를 받아 목이 깃털에 의해 뒤덮이는 수동적이고 불가피한 변신의 과정을 묘사한다.",
+        "background": "자신의 의지와 상관없이 자연의 저주나 신들의 힘에 의해 신체 표면이 인간에서 조류의 외피로 완전히 은폐되고 변모하는 상황을 보여준다.",
+        "etymology": "인도유럽조어 재구형 *teǵʰ-('덮다, 짜다, 짓다')에서 유래한 라틴어 tegere에서 기원한다. 그리스어 stegō(덮다, 가리다), 산스크리트어 sthagayati(숨기다), 영어의 thatch(초가지붕의 이엉) 등이 동계어이다. 물리적으로 무언가를 덮거나 보호하는 행위에서 유래하였으며, 현대 영어의 protect(보호하다), detect(발견하다, 어원상 덮개를 벗기다), tile(타일) 등의 어휘 속에 그 깊은 어근적 흔적이 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.500",
+    "trans": "가슴과 등도 그러하며, 팔은 더 큰 날개로",
+    "words": [
+      {
+        "g": "pectoraque",
+        "pos": "명사",
+        "lemma": "pectus, pectoris, n.",
+        "parse": "pl. nom. n. (or acc. n.)",
+        "gloss_kr": "그리고 가슴들은",
+        "gloss_en": "and chests",
+        "syntax": "중성 복수 명사 pectora에 등위접속사 -que가 결합한 형태이며, 동사 teguntur의 생략된 주어(또는 목적어)로서 깃털에 덮이는 신체 부위를 열거한다.",
+        "background": "인간의 흉곽과 가슴 부위가 새의 단단한 근육과 깃털 갑옷 같은 구조로 변해가는 해부학적 변화의 광경을 확장한다.",
+        "etymology": "인도유럽조어 재구형 *pekt-('빗질하다, 자르다') 또는 가슴의 윤곽을 가리키는 어근에서 유래한 라틴어 pectus에서 기원한다. 영어의 pectoral(가슴의), expectorate(가래를 뱉다, 어원상 가슴에서 짜내다) 등이 직접적인 동계 파생어이다. 신체의 중심부이자 감정의 좌소로 여겨졌던 가슴을 뜻하며, 현대 영어의 의료 및 해부학 용어 속에 그 흔적이 고스란히 남아 있다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "등위접속사로서 가슴(pectora)과 등(tergum)이라는 신체 부위를 매끄럽게 연결하여 대등한 병렬 구조를 만든다.",
+        "background": "변신이 신체의 일부분에 국한되지 않고 전신으로 확산되어 감을 시각적으로 연결하는 문법적 장치이다.",
+        "etymology": "인도유럽조어 재구형 *eti('~도 또한, 게다가')에서 유래한 라틴어 et에서 기원한다. 그리스어 eti, 산스크리트어 áti 등과 완벽히 일치하는 동계어이다. 인도유럽어족 전반에서 가장 보편적인 첨가·연결 접속사로 기능해왔으며, 라틴어를 거쳐 현대 로망스어군(프랑스어 et 등)으로 이어졌다."
+      },
+      {
+        "g": "tergum",
+        "pos": "명사",
+        "lemma": "tergum, -i, n.",
+        "parse": "sg. nom. n. (or acc. n.)",
+        "gloss_kr": "등, 표면",
+        "gloss_en": "back",
+        "syntax": "중성 단수 명사(주격 또는 대격)로, 가슴과 함께 깃털로 덮이는 신체 후면부를 가리킨다.",
+        "background": "인간의 등허리가 새의 날개를 지탱하기 적합한 구조와 깃털로 뒤덮이는 전신적 변모의 과정을 보여준다.",
+        "etymology": "인도유럽조어 재구형 어근에서 유래한 라틴어 tergum(등, 가죽)에서 기원한다. 고대 로마 시대 동물의 가죽이나 등판을 가리키는 데도 자주 사용되었다. 현대 영어에서는 직접적인 일상어로 자주 쓰이지 않으나, 생물학 및 해부학 용어인 tergum(절지동물의 등판 등)이나 파생어 tergal 등의 학술적 어휘 속에 그 형태와 의미가 보존되어 있다."
+      },
+      {
+        "g": "maiores",
+        "pos": "형용사",
+        "lemma": "magnus, -a, -um (비교급 maior, maius)",
+        "parse": "pl. acc. f.",
+        "gloss_kr": "더 큰",
+        "gloss_en": "larger",
+        "syntax": "여성 복수 대격 형태로 명사 pennas를 수식하며, 일반적인 팔의 크기보다 훨씬 거대하게 뻗어나가는 새의 날개깃의 속성을 강조한다.",
+        "background": "인간의 팔이 새의 비행을 감당할 수 있도록 거대한 깃털과 날개 형태로 확장되는 극적인 신체적 스케일을 보여준다.",
+        "etymology": "인도유럽조어 재구형 *meǵh₂-('큰')에서 파생된 라틴어 비교급 어간 maior의 여성 복수 대격형이다. 산스크리트어 mahā-, 그리스어 megas와 동계이다. 라틴어를 거쳐 로망스어 및 영어권 어휘의 뿌리가 되었으며, 현대 영어의 major, majority 등의 단어 안에서 '더 큰, 주요한'이라는 의미적 핵심을 유지하고 있다."
+      },
+      {
+        "g": "bracchia",
+        "pos": "명사",
+        "lemma": "brachium, -i, n. (bracchium)",
+        "parse": "pl. nom. n. (or acc. n.)",
+        "gloss_kr": "팔들",
+        "gloss_en": "arms",
+        "syntax": "중성 복수 명사로 문장의 주어(또는 목적어) 역할을 하며, 뒤의 동사 accipiunt의 객체로서 날개로 변하는 신체 부위이다.",
+        "background": "사람의 두 팔이 하늘을 날기 위한 날개로 변모하기 위해 거대한 깃털을 받아들이는 신체적 변형의 핵심 국면이다.",
+        "etymology": "그리스어 βραχίων(brachiōn, 팔)에서 유래하여 라틴어 bracchium으로 차용된 어휘이다. 인도유럽조어 재구형 어근에서 출발하여 신체의 팔뚝 부위를 가리키는 전문 용어로 정착했다. 로망스어군으로 이어져 이탈리아어 braccio, 프랑스어 bras 등으로 발전했으며, 현대 영어의 brace(받침대, 팔로 안다), brachiate(나무 사이를 팔로 이동하다) 등의 단어 속에 그 어근이 살아 있다."
+      },
+      {
+        "g": "pennas",
+        "pos": "명사",
+        "lemma": "penna, pennae, f.",
+        "parse": "pl. acc. f.",
+        "gloss_kr": "날개깃을, 깃털들을",
+        "gloss_en": "feathers, pinions",
+        "syntax": "여성 복수 대격 명사로 accipiunt의 직접목적어 역할을 하며, 팔이 받아들이는 거대한 깃털의 실체를 나타낸다.",
+        "background": "단순한 솜털이 아니라 새가 하늘을 비행할 수 있게 해주는 길고 튼튼한 날개깃(pinion)으로 팔이 진화해 나가는 모습을 시각화한다.",
+        "etymology": "인도유럽조어 재구형 *pet-('날다, 떨어지다')에서 파생된 라틴어 penna(깃털, 날개)에서 기원한다. 산스크리트어 patati(날다), 그리스어 petomai(날다) 및 영어의 feather, pen(원래 깃펜에서 유래) 등이 먼 동계어이다. 라틴어에서 조류의 날개를 뜻하는 핵심 어휘로 쓰였으며, 현대 영어의 pennant(깃발), pinnacle(기점, 어원상 새의 날개나 뾰족한 끝에서 유래), 그리고 생물학 용어 penna 등에 그 흔적이 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.501",
+    "trans": "부드러운 팔꿈치는 날개로 부드럽게 굽어진다.",
+    "words": [
+      {
+        "g": "accipiunt",
+        "pos": "동사",
+        "lemma": "accipio, accipere, accepi, acceptus",
+        "parse": "pres. act. ind. 3rd pers. pl.",
+        "gloss_kr": "받아들이다, 얻다",
+        "gloss_en": "receive, take on",
+        "syntax": "3인칭 복수 현재형 주절 동사로, 주어인 bracchia가 더 큰 날개깃(maiores pennas)을 '받아들인다'는 능동적 형태의 서술을 이룬다.",
+        "background": "팔이 단순히 깃털로 덮이는 것을 넘어 비행을 위한 구조적 형태인 날개깃을 주체적으로 수용하며 새의 신체로 완성되어 가는 과정을 표현한다.",
+        "etymology": "전치사 ad-(~를 향해, 에)와 동사 capere('잡다, 취하다')가 결합한 합성동사 accipere에서 유래하였다. 인도유럽조어 재구형 *kap-('잡다, 보유하다')에서 비롯되었으며, 영어의 capture, capable, accept 등이 동계어이다. 물리적으로 무언가를 쥐거나 수용하는 의미에서 정보를 '이해하다' 또는 상태를 '받아들이다'로 의미가 확장되었으며, 현대 영어의 accept(수용하다) 등의 단어로 널리 쓰이고 있다."
+      },
+      {
+        "g": "cubitusque",
+        "pos": "명사",
+        "lemma": "cubitus, -i, m. (또는 cubitum)",
+        "parse": "pl. nom. m. (or acc.)",
+        "gloss_kr": "그리고 팔꿈치들은",
+        "gloss_en": "and elbows",
+        "syntax": "명사 cubitus에 등위접속사 -que가 붙은 형태이며, 날개로 변하는 신체 부위 중 팔꿈치 관절 부위를 주어로 지칭한다.",
+        "background": "인간의 관절 구조 중 하나인 팔꿈치가 조류의 날개 관절 곡선 형태로 부드럽게 휘어지는 해부학적 변형의 묘미를 보여준다.",
+        "etymology": "인도유럽조어 재구형 *keu-[1]('굽다, 부풀다')에서 파생된 라틴어 cubitus(팔꿈치, 눕다의 어근과 연관)에서 유래하였다. 그리스어 kybtos 등과 연관이 있으며, 신체가 굽어지는 부위를 가리킨다. 라틴어에서 팔꿈치 및 길이를 재는 단위(cubit, 규빗)로 쓰였으며, 현대 영어의 cubit(고대의 길이 단위) 및 관련 해부학 용어 속에 그 어근의 흔적이 남아 있다."
+      },
+      {
+        "g": "leves",
+        "pos": "형용사",
+        "lemma": "levis, leve",
+        "parse": "pl. nom. m. (or acc.)",
+        "gloss_kr": "가벼운, 매끄러운",
+        "gloss_en": "light, smooth",
+        "syntax": "남성 복수 주격 형태로 cubitus를 수식하며, 날개로 변하며 가벼워지고 유연해진 팔꿈치 관절의 물리적 성질을 묘사한다.",
+        "background": "무겁고 단단한 인간의 팔과 관절이 공중을 가르며 가볍게 움직이는 새의 날개 구조로 부드럽게 변화하는 감각적 특성을 드러낸다.",
+        "etymology": "인도유럽조어 재구형 *legʷh-('가벼운, 빠른, 민첩한')에서 유래한 라틴어 levis에서 기원한다. 산스크리트어 laghu-(가벼운), 그리스어 elachys(작은), 영어의 light(가벼운) 등이 완벽한 동계어이다. 물리적인 무게가 적거나 표면이 매끄러운 상태를 뜻하며, 현대 영어의 levity(가벼움, 경솔), alleviate(완화하다, 짐을 가볍게 하다) 등의 단어 속에 그 어근이 깊게 박혀 있다."
+      },
+      {
+        "g": "sinuatur",
+        "pos": "동사",
+        "lemma": "sinuo, sinuare, sinuavi, sinuatus",
+        "parse": "pres. pass. ind. 3rd pers. sg.",
+        "gloss_kr": "굽어지다, 곡선을 그리다",
+        "gloss_en": "is curved, is bent",
+        "syntax": "3인칭 단수 현재 수동태 동사로, 주어 cubitus(복수형이지만 시적 허용이나 집합적 단수 취급 또는 문맥상 호응)를 받아 날개 형태로 부드럽게 만곡을 그리며 휘어지는 과정을 묘사한다.",
+        "background": "직선적이거나 각진 인간의 팔뚝과 팔꿈치 관절이 새의 날개가 지닌 유려한 곡선 미학 형태로 변형되는 조형적 묘사를 완성한다.",
+        "etymology": "명사 sinus('곡선, 만, 품')에서 파생된 라틴어 동사 sinuāre에서 기원한다. 인도유럽조어 재구형 어근에서 유래하여 구부러진 공간이나 물결 모양의 형태를 가리킨다. 로망스어군으로 이어졌으며, 현대 영어의 sinuous(구불구불한, 우아한 곡선의), sinus(부비동, 몸의 움푹한 공간) 등의 단어 안에 그 형태와 의미가 생생하게 살아 있다."
+      },
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "prep. taking acc.",
+        "gloss_kr": "~로",
+        "gloss_en": "into",
+        "syntax": "대격 명사구 alas를 지배하는 전치사로, 팔꿈치가 굽어져 도달하게 되는 최종적인 형태인 '날개'로의 전환 방향을 나타낸다.",
+        "background": "인간의 신체 관절이 조류의 비행 기관인 날개로 완전히 귀결되는 변신의 최종 형태를 공간적 지향점으로 보여준다.",
+        "etymology": "인도유럽조어 재구형 *en('~안에, ~로')에서 유래한 라틴어 전치사이다. 산스크리트어 án, 그리스어 en, 영어 in 등과 완벽한 동계어로서, 상태의 변화나 결과 지점을 나타내는 구문에서 널리 사용된다."
+      },
+      {
+        "g": "alas",
+        "pos": "명사",
+        "lemma": "ala, alae, f.",
+        "parse": "pl. acc. f.",
+        "gloss_kr": "날개들로",
+        "gloss_en": "into wings",
+        "syntax": "전치사 in의 지배를 받는 여성 복수 대격 목적어로, 팔꿈치가 변형되어 최종적으로 완성된 날개를 가리킨다.",
+        "background": "인간의 상체가 새의 날개 구조로 완전히 치환되는 변신의 절정을 마무리하며, 더 이상 인간으로서의 형체를 남기지 않는 결정적 순간을 장식한다.",
+        "etymology": "인도유럽조어 재구형 *axsla-('어깨')에서 음운 축약과 변화를 거쳐 유래한 라틴어 āla(날개, 겨드랑이)에서 기원한다. 영어의 aisle(교회의 측면 복도, 어원상 날개 부분에서 유래), aileron(비행기의 보조날개) 등이 직접적인 동계 파생어이다. 새의 날개나 신체의 날개 모양 부위를 뜻하며, 현대 영어와 항공·생물학 용어 속에 그 어근이 뚜렷이 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.502",
+    "trans": "발의 발가락들은 거대한 부분이 차지하고, 뿔처럼 단단해진 입은",
+    "words": [
+      {
+        "g": "Magna",
+        "pos": "형용사",
+        "lemma": "magnus, -a, -um",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "거대한, 커다란",
+        "gloss_en": "great, large",
+        "syntax": "여성 단수 주격 형태로 명사 pars를 수식하며, 발가락 부위가 새의 발톱이나 발 구조로 변해가는 과정에서 차지하는 비중이나 크기를 강조한다.",
+        "background": "상체뿐만 아니라 하체와 발, 그리고 얼굴에까지 변신이 급속도로 전방위적으로 확산되는 신체적 압도감을 표현한다.",
+        "etymology": "인도유럽조어 재구형 *meǵh₂-('큰, 위대한')에서 유래한 라틴어 magnus에서 기원한다. 산스크리트어 mahā-, 그리스어 megas, 영어의 much 등과 동계 관계에 있다. 라틴어를 거쳐 로망스어 및 영어권 어휘의 뿌리가 되었으며, 현대 영어의 magnify(확대하다), magnitude(규모), magnificent(장대한) 등의 단어 속에 그 어근이 살아 있다."
+      },
+      {
+        "g": "pedis",
+        "pos": "명사",
+        "lemma": "pes, pedis, m.",
+        "parse": "sg. gen. m.",
+        "gloss_kr": "발의",
+        "gloss_en": "of the foot",
+        "syntax": "소유 속격으로 명사 digitos를 수식하며, '발의 발가락들'이라는 신체 부위의 소속 관계를 명확히 한다.",
+        "background": "인간의 발과 발가락이 새의 갈고리 발톱이나 물갈퀴 같은 조류의 발 구조로 변형되는 하체 변신의 단계를 보여준다.",
+        "etymology": "인도유럽조어 재구형 *ped-('발')에서 유래한 라틴어 pēs의 속격 형태이다. 산스크리트어 pād-, 그리스어 pous, 영어 foot, 독일어 Fuß 등 인도유럽어족 전반에서 완벽하게 일치하는 대표적인 신체 부위 어휘이다. 라틴어를 거쳐 현대 영어의 pedestrian(보행자), pedal(페달), biped(이족 보행 동물) 등의 단어 속에 그 어근이 생생하게 남아 있다."
+      },
+      {
+        "g": "digitos",
+        "pos": "명사",
+        "lemma": "digitus, -i, m.",
+        "parse": "pl. acc. m.",
+        "gloss_kr": "발가락들을",
+        "gloss_en": "toes, fingers",
+        "syntax": "남성 복수 대격 명사로 occupat의 직접목적어 역할을 하며, 발가락 부위가 거대한 변형의 대상이 됨을 나타낸다.",
+        "background": "인간의 섬세한 발가락들이 새의 날카롭고 단단한 발톱 구조로 변하기 위해 형태가 뒤틀리고 확장되는 신체적 변화를 묘사한다.",
+        "etymology": "인도유럽조어 재구형 *deyk-('가리키다')에서 파생된 라틴어 digitus(손가락, 발가락)에서 기원한다. 숫자를 셀 때 손가락을 사용하던 관점에서 유래했으며, 영어의 digit(숫자, 손/발가락), digital(디지털의) 등이 이와 같은 어근을 공유한다. 라틴어를 거쳐 현대 정보사회에 이르기까지 수의 단위와 신체 부위를 동시에 지칭하는 핵심 어휘로 살아 있다."
+      },
+      {
+        "g": "pars",
+        "pos": "명사",
+        "lemma": "pars, partis, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "부분, 몫",
+        "gloss_en": "part",
+        "syntax": "문장의 주어인 여성 단수 명사로, 동사 occupat과 호응하여 발가락의 상당 부분이 변형에 사로잡히는 양상을 나타낸다.",
+        "background": "신체의 각 구역이 차례대로 혹은 대규모로 새의 형상으로 잠식당해 들어가는 변신의 구체적 양상을 해부학적 구획으로 묘사한다.",
+        "etymology": "인도유럽조어 재구형 *per-[4]('나누다, 분배하다')에서 유래한 라틴어 pars에서 기원한다. 산스크리트어 pūrti(보상, 공헌) 등과 연관이 있다. 라틴어에서 분할된 몫이나 일부분을 뜻하는 어휘로 정착했으며, 현대 영어의 part, particle, particular, partition 등의 단어 속에 그 어근과 의미가 깊게 박혀 있다."
+      },
+      {
+        "g": "occupat",
+        "pos": "동사",
+        "lemma": "occupo, occupare, occupavi, occupatus",
+        "parse": "pres. act. ind. 3rd pers. sg.",
+        "gloss_kr": "차지하다, 엄습하다, 사로잡다",
+        "gloss_en": "occupies, seizes",
+        "syntax": "3인칭 단수 현재형 주절 동사로, 주어인 pars가 발가락 부위를 완전히 '장악하고 사로잡는' 능동적이고 침략적인 변화의 속성을 나타낸다.",
+        "background": "신체 변화가 단순한 물리적 성장의 결과가 아니라 외부의 거대한 힘이나 저주에 의해 신체가 강제로 점령당하는 듯한 극적인 공포감을 부여한다.",
+        "etymology": "전치사 ob-(~에 대항하여, 완전히)와 동사 capere('잡다')의 파생형이 결합한 occupāre에서 유래하였다. 인도유럽조어 재구형 *kap-('잡다')에서 비롯되었으며, 영어의 occupy, occupation 등이 동계어이다. 공간이나 상태를 무력이나 권리로 '가득 채우거나 점유하다'는 뜻으로 발전했으며, 현대 영어의 occupy(점유하다) 등의 단어로 널리 쓰이고 있다."
+      },
+      {
+        "g": "oraque",
+        "pos": "명사",
+        "lemma": "os, oris, n.",
+        "parse": "pl. nom. n. (or acc.)",
+        "gloss_kr": "그리고 입들은(입술과 얼굴은)",
+        "gloss_en": "and mouths, faces",
+        "syntax": "중성 복수 명사 ora에 등위접속사 -que가 붙은 형태이며, 다음 문장의 주어(또는 목적어)로서 안면부 변신의 주체가 된다.",
+        "background": "팔과 발에 이어 인간의 얼굴과 입술이 새의 부리(부정할 수 없는 조류의 상징)로 변형되는 가장 충격적인 얼굴의 변신 장면으로 이어진다.",
+        "etymology": "인도유럽조어 재구형 *h₃ōs-('입, 얼굴')에서 유래한 라틴어 ōs에서 기원한다. 산스크리트어 ās-, 영어의 oral, oration 등이 완벽한 동계어이다. 입술, 입안, 나아가 얼굴 전체나 해안의 어귀를 뜻하는 다중적 의미로 발전했으며, 현대 영어의 oral(구두의), oracle(신탁) 등의 단어 속에 그 어근이 고스란히 남아 있다."
+      },
+      {
+        "g": "cornu",
+        "pos": "명사",
+        "lemma": "cornu, -us, n.",
+        "parse": "sg. abl. n.",
+        "gloss_kr": "뿔로, 각질로",
+        "gloss_en": "with horn",
+        "syntax": "수단/도구를 나타내는 중성 단수 탈격 형태로, 입술과 턱이 어떤 단단한 물질로 굳어지는지를 나타내는 재질적 부사어이다.",
+        "background": "부드러운 인간의 입술과 턱 피부가 새의 부리를 이루는 단단하고 매끄러운 각질(뿔 성분) 재질로 변해가는 생물학적 메커니즘을 묘사한다.",
+        "etymology": "인도유럽조어 재구형 *ker-[1](*koru-, '뿔, 머리 끝, 꼭대기')에서 유래한 라틴어 cornū에서 기원한다. 산스크리트어 śrṛṅgá-, 그리스어 keras, 영어 horn, 독일어 Horn 등 인도유럽어족 전반에 걸쳐 널리 퍼진 대표적인 신체/동물 어휘이다. 라틴어를 거쳐 현대 영어의 corn(티눈, 각질화된 피부), unicorn(유니콘), cornea(각막, 눈의 뿔처럼 투명하고 단단한 부위) 등의 단어 안에 그 어근이 뚜렷이 살아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.503",
+    "trans": "단단하게 굳어져 빳빳해지고, 끝은 뾰족한 형태로 끝맺는다.",
+    "words": [
+      {
+        "g": "indurata",
+        "pos": "분사",
+        "lemma": "induro, indurare, induravi, induratus",
+        "parse": "perf. pass. part. nom. n. pl.",
+        "gloss_kr": "단단해진, 굳어진",
+        "gloss_en": "hardened",
+        "syntax": "중성 복수 주격 형태로 주어 ora를 수식하며, 부리 형태로 단단하게 경화된 안면부의 상태를 수동 완료 분사로 수식한다.",
+        "background": "사람의 부드러운 입과 턱 조직이 새의 부리와 같이 외부 충격에 견딜 수 있는 단단한 각질질의 부리로 굳어지는 생생한 화석화 과정을 보여준다.",
+        "etymology": "전치사 in-(안으로, 철저히)과 단단함을 뜻하는 형용사 dūrus('단단한, 가혹한')에서 파생된 동사 indurāre의 완료 수동 분사이다. 인도유럽조어 재구형 *dreu-('단단한 나무, 견고한')에서 유래한 dūrus와 연결되며, 영어의 durant, endure, obdurate 등이 동계어이다. 물리적 경화 현상을 뜻하며, 현대 영어의 indurate(단단하게 하다)나 의학 용어 속의 어근으로 그 흔적이 남아 있다."
+      },
+      {
+        "g": "rigent",
+        "pos": "동사",
+        "lemma": "rigeo, rigere",
+        "parse": "pres. act. ind. 3rd pers. pl.",
+        "gloss_kr": "빳빳해지다, 뻣뻣하게 굳다",
+        "gloss_en": "stiffen, grow rigid",
+        "syntax": "3인칭 복수 현재형 주절 동사로, 주어인 ora를 받아 단단해진 입이 유연성을 잃고 빳빳하게 경직되는 상태를 서술한다.",
+        "background": "변신 과정에서 신체 조직이 생명을 잃은 듯하면서도 조류의 단단한 부리 형태로 고정되어 버리는 공포스럽고도 엄숙한 경직을 시각화한다.",
+        "etymology": "인도유럽조어 재구형 *reǵ-('곧게 펴다, 뻗치다, 엄격하다')에서 유래한 라틴어 rigēre에서 기원한다. 라틴어 형용사 rigidus(빳빳한)의 어근이며, 영어의 rigid, rigor, direct 등이 모두 이 인도유럽어족 어근에서 파생된 동계어이다. 물리적으로 유연성이 없이 꼲꼲하게 굳는 상태를 뜻하며, 현대 영어의 rigid(엄격한, 빳빳한) 등의 단어 속에 그 어근이 고스란히 남아 있다."
+      },
+      {
+        "g": "finemque",
+        "pos": "명사",
+        "lemma": "finis, finis, m./f.",
+        "parse": "sg. acc. m. (or n. pl. 등 문맥상 단수 대격)",
+        "gloss_kr": "그리고 끝을",
+        "gloss_en": "and the end, the tip",
+        "syntax": "명사 finem에 등위접속사 -que가 결합한 형태이며, 동사 ponunt의 직접목적어(대격)로 쓰여 부리의 뾰족한 '끝부분'을 가리킨다.",
+        "background": "입술과 턱이 굳어져 마침내 새의 부리라는 완벽한 종착점(끝)을 형성하는 조형적 변신의 마침표를 찍는다.",
+        "etymology": "인도유럽조어 재구형 어근에서 유래한 라틴어 fīnis(경계, 끝, 목적)에서 기원한다. 영어의 finish, finite, confine, define 등이 모두 이 라틴어 어근에서 파생된 동계어이다. 공간적 한계나 물리적 끝맺음을 뜻하며, 현대 영어의 final(최종의), define(정의하다) 등의 단어 속에 그 어근이 깊게 박혀 있다."
+      },
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "prep. taking abl. or acc.",
+        "gloss_kr": "~안에, ~로",
+        "gloss_en": "in, into",
+        "syntax": "여기서는 탈격 acumine과 결합하여 '~안에, ~의 상태로' 위치하거나 귀결됨을 나타내는 전치사구 역할을 한다.",
+        "background": "부리의 끝이 뾰족한 침이나 날카로운 형태 속으로 모여들며 새의 부리로서의 기능적 형태를 완성하는 과정을 시각화한다.",
+        "etymology": "인도유럽조어 재구형 *en('~안에')에서 유래한 라틴어 기본 전치사이다. 공간적 내포나 상태의 귀결을 나타내는 용법으로 인도유럽어족 전반에 널리 퍼져 있다."
+      },
+      {
+        "g": "acumine",
+        "pos": "명사",
+        "lemma": "acumen, acuminis, n.",
+        "parse": "sg. abl. n.",
+        "gloss_kr": "뾰족한 끝, 날카로움으로",
+        "gloss_en": "in a sharp point, with a point",
+        "syntax": "중성 단수 탈격 명사로, 전치사 in의 지배를 받아 부리의 끝부분이 향하는 최종적이고 날카로운 형태적 특성을 구체화한다.",
+        "background": "뭉툭했던 인간의 입이 단단한 각질을 거쳐 날카롭고 뾰족한 새의 부리 끝으로 완벽하게 수렴되는 변신의 정점을 보여준다.",
+        "etymology": "인도유럽조어 재구형 *h₂ek-[1]('날카로운, 뾰족한')에서 파생된 라틴어 acumen(날카로움, 뾰족한 끝)에서 기원한다. 형용사 ācer(날카로운) 및 라틴어 동사 acuere(날카롭게 하다)와 직접 연결된다. 물리적인 뾰족함에서 추상적인 지적 예리함으로 의미가 확장되었으며, 현대 영어의 acumen(통찰력, 예리함)이라는 단어 속에 그 어근과 의미가 고스란히 살아 있다."
+      },
+      {
+        "g": "ponunt",
+        "pos": "동사",
+        "lemma": "pono, ponere, posui, positus",
+        "parse": "pres. act. ind. 3rd pers. pl.",
+        "gloss_kr": "놓다, 두다, 형성하다",
+        "gloss_en": "place, set, form",
+        "syntax": "3인칭 복수 현재형 주절 동사로, 주어인 ora가 굳어져 날카로운 끝부분을 형성한다는 서술 구조(finem in acumine ponunt: '끝을 뾰족한 곳에 둔다/형성한다')를 완성한다.",
+        "background": "신체의 부위가 새로운 생물학적 형태와 기능을 갖추며 자연의 법칙 속에서 변형의 결과물을 최종적으로 구축하는 순간을 묘사한다.",
+        "etymology": "고대 라틴어의 전치사 포스트(pos-)와 어근 *sinere('놓다, 두다')가 결합하여 축약된 동사 pōnere에서 유래하였다. 인도유럽조어 재구형 어근에서 파생되었으며, 영어의 position, deposit, postpone, component 등이 모두 이 어근을 공유하는 동계어이다. 물리적으로 물건이나 형태를 특정한 위치에 놓거나 구성하는 행위를 뜻하며, 현대 영어의 pose, position 등의 단어 속에 그 어근이 탄탄하게 자리 잡고 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.504",
+    "trans": "이렇듯 아크몬을, 이렇듯 이다스와 렉세노르를 동반한 닉테우스가, 이렇듯 아바스를",
+    "words": [
+      {
+        "g": "Hunc",
+        "pos": "대명사",
+        "lemma": "hic, haec, hoc",
+        "parse": "sg. acc. m.",
+        "gloss_kr": "이러한 그를, 이 사람을",
+        "gloss_en": "Him",
+        "syntax": "지시대명사의 남성 단수 대격 형태로, 문장의 목적어인 인물들(아크몬 등)을 가리키며 문두에서 반복되는 아나포라(anaphora) 구조를 이끈다.",
+        "background": "동료가 처참하게 새 로 변해가는 광경을 목격하고 경악하며 바라보는 주변 동료들의 개별 인물들을 하나씩 호명하는 극적 장치이다.",
+        "etymology": "인도유럽조어 지시사 어근 *ko-/*ke-와 대명사 요소가 결합한 라틴어 hīc에서 기원한다. 라틴어에서 가장 빈번하게 쓰이는 근접 지시사로, 로망스어군을 거쳐 다양한 지시어의 뿌리가 되었다. 영어권에서는 직접 유입보다는 고전 문헌 인용을 통해 그 문체적 효과가 전해진다."
+      },
+      {
+        "g": "Lycus",
+        "pos": "명사",
+        "lemma": "Lycus, -i, m. (그리스어 Λύκος)",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "리쿠스 (인명)",
+        "gloss_en": "Lycus",
+        "syntax": "문장의 주어 중 하나인 남성 단수 주격 고유명사로, 변해가는 아크몬을 보고 경악하는 동료들 중 첫 번째 인물이다.",
+        "background": "디오메데스의 부하이자 동료로 트로이아 전쟁 이후 방황하다가 신들의 노여움을 사 비극적인 조류 변신의 현장에 함께 연루된 인물 중 한 명이다.",
+        "etymology": "그리스어 Λύκος(lykos, '늑대')에서 유래한 고유명사로, 인도유럽조어 재구형 *wĺ̥kʷos('늑대')에서 기원한다. 산스크리트어 vṛka-, 영어 wolf 등과 완벽하게 일치하는 동계어이다. 고대 그리스-로마 세계에서 남성의 이름(인명)이나 지명으로 널리 사용되었으며, 생물학 용어나 신화적 맥락 속에 그 어근의 흔적이 남아 있다."
+      },
+      {
+        "g": "hunc",
+        "pos": "대명사",
+        "lemma": "hic, haec, hoc",
+        "parse": "sg. acc. m.",
+        "gloss_kr": "이 사람을",
+        "gloss_en": "him",
+        "syntax": "지시대명사의 단수 남성 대격 형태로, 거듭되는 아나포라 구조 속에서 놀라움의 대상이 되는 동료들의 목격 대상을 강조한다.",
+        "background": "눈앞에서 친구들이 차례로 새 로 변해가는 참혹한 광경을 하나하나 개별적으로 목격하며 공포에 질리는 인물들의 시선을 포착한다.",
+        "etymology": "인도유럽조어 근접 지시사 어근에서 기원한 라틴어 hic의 대격형이다."
+      },
+      {
+        "g": "Idas",
+        "pos": "명사",
+        "lemma": "Idas, -ae, m. (그리스어 Ἴδας)",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "이다스 (인명)",
+        "gloss_en": "Idas",
+        "syntax": "주어 역할을 하는 남성 단수 고유명사로, 아크몬의 변신을 지켜보며 경악하는 디오메데스의 동료 중 두 번째 인물이다.",
+        "background": "신화 속에서 영웅적 혹은 비극적 모험에 동참했던 디오메데스의 부하들 중 한 명으로, 동료의 기괴한 최후를 목격하는 증인 역할을 한다.",
+        "etymology": "그리스 신화 속 인명 Ἴδας(Idas)에서 유래한 그리스 계열 고유명사이다. 어원적으로는 이다 산(Mount Ida)과의 연관성이나 선그리스어 기층 인명의 흔적을 지니고 있으며, 고전 서사시 안에서 전통적인 영웅·동료들의 이름을 구성하는 고유명사로 고착되어 전해진다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "등위접속사로 인물들을 유기적으로 연결하여 목격자들의 명단을 팽팽한 리듬감으로 엮어낸다.",
+        "background": "변신의 공포가 단 한 사람에게 머물지 않고 주변의 모든 동료들에게 전방위적으로 확산되는 참혹한 현장의 복잡한 군상을 그려낸다.",
+        "etymology": "인도유럽조어 재구형 *eti('~도 또한')에서 유래한 라틴어 기본 접속사이다."
+      },
+      {
+        "g": "cum",
+        "pos": "전치사",
+        "lemma": "cum",
+        "parse": "prep. taking abl.",
+        "gloss_kr": "~와 함께",
+        "gloss_en": "with",
+        "syntax": "탈격 명사구 Rhexenore를 지배하는 전치사로, 닉테우스가 렉세노르와 '함께' 놀라워하고 있음을 나타내는 동반 관계를 이룬다.",
+        "background": "인물들이 개별적으로 고립되어 공포에 떨 뿐만 아니라 서로 무리지어 참혹한 광경을 공동으로 목격하는 연대감과 현장의 현장감을 더한다.",
+        "etymology": "인도유럽조어 재구형 *ḱóm('~와 함께, 가까이에')에서 유래한 라틴어 전치사이다. 산스크리트어 sam-, 그리스어 koine 등의 어근과 연결되며, 영어의 co-, com-, con- 접두사들의 어원적 조상이다. 라틴어를 거쳐 현대 영어의 companion(동반자, 어원상 빵을 함께 나누는 자), community 등의 단어 속에 그 어근과 흔적이 고스란히 남아 있다."
+      },
+      {
+        "g": "Rhexenore",
+        "pos": "명사",
+        "lemma": "Rhexenor, Rhexenoris, m. (그리스어 Ῥηξήνωρ)",
+        "parse": "sg. abl. m.",
+        "gloss_kr": "렉세노르와 (인명)",
+        "gloss_en": "with Rhexenor",
+        "syntax": "전치사 cum의 지배를 받는 남성 단수 탈격 형태의 고유명사로, 닉테우스와 동행하며 아크몬의 변신을 지켜보는 인물이다.",
+        "background": "이오니아 및 호메로스 전통에 등장하는 영웅적 이름 중 하나로, 디오메데스의 부하 무리 속에서 비극적 운명을 함께 맞이하는 동료이다.",
+        "etymology": "그리스어 Ῥηξήνωρ(Rhexēnor, '적의 전열을 부수는 자'라는 뜻의 화석화된 합성어: rhēg-, 깨다/부수다 + anēr, 남자/전사)에서 유래한 그리스 계열 고유명사이다. 인도유럽조어 *wreǵ-('부수다, 찢다') 및 *h₂nér('사람, 남자')의 합성 구조를 지니며, 호메로스 서사시 전통의 전형적인 영웅 작명법을 반영한다."
+      },
+      {
+        "g": "Nycteus",
+        "pos": "명사",
+        "lemma": "Nycteus, Nyctei, m. (그리스어 Νυκτεύς)",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "닉테우스 (인명)",
+        "gloss_en": "Nycteus",
+        "syntax": "문장의 주어 역할을 하는 남성 단수 고유명사로, 렉세노르와 함께 아크몬의 변신을 목격하는 또 다른 동료이다.",
+        "background": "신화 속 밤이나 어둠을 연상시키는 이름을 지닌 인물로, 디오메데스의 무리 속에서 동료들의 끔찍한 조류 변신을 지켜보는 증인 중 한 명이다.",
+        "etymology": "그리스어 Νυκτεύς(Nykteus, '밤의 사람, 밤과 관련된 자')에서 유래한 고유명사로, 밤을 뜻하는 그리스어 nyx(속격 nyktos)에서 파생되었다. 인도유럽조어 재구형 *nókʷt-('밤')에서 유래하였으며, 라틴어 nox, 영어 night, 독일어 Nacht 등과 완벽한 동계어이다. 신화 속 인명으로 차용되어 고전 문헌 속에서 명맥을 유지하고 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.505",
+    "trans": "이렇듯 아바스는 경탄한다: 그리고 그들이 경탄하는 동안, 똑같은",
+    "words": [
+      {
+        "g": "hunc",
+        "pos": "대명사",
+        "lemma": "hic, haec, hoc",
+        "parse": "sg. acc. m.",
+        "gloss_kr": "이 사람을",
+        "gloss_en": "him",
+        "syntax": "지시대명사의 남성 단수 대격 형태로, 앞서 시작된 아나포라 구조의 마지막을 장식하며 동료 아바스가 바라보는 대상을 지칭한다.",
+        "background": "친구의 변신을 눈앞에서 목격하고 경악하며 시선을 거두지 못하는 마지막 목격자의 긴장된 시선을 집중시킨다.",
+        "etymology": "인도유럽조어 근접 지시사 어근에서 기원한 라틴어 hic의 대격형이다."
+      },
+      {
+        "g": "miratur",
+        "pos": "동사",
+        "lemma": "miror, mirari, miratus sum",
+        "parse": "pres. pass. (deponent) ind. 3rd pers. sg.",
+        "gloss_kr": "경탄하다, 경악하다, 놀라다",
+        "gloss_en": "marvels at, wonders at",
+        "syntax": "3인칭 단수 디포넌트(deponent) 현재형 주절 동사로, 주어들(Lycus, Idas, Nycteus, Abas)이 경악과 놀라움 속에바라보는 태도를 서술한다.",
+        "background": "신화적 변신의 기괴함 앞에서 단순한 공포를 넘어 인간의 이성으로는 믿을 수 없는 초자연적 현상에 압도된 인물들의 정서적 경탄을 표현한다.",
+        "etymology": "인도유럽조어 재구형 *smei-('미소짓다, 놀라다, 감탄하다')에서 유래한 라틴어 dē-mīrārī 또는 mīrārī에서 기원한다. 산스크리트어 smayati(미소짓다) 등이 먼 동계어이다. 놀라움이나 경외감을 뜻하며, 현대 영어의 admire(존경하다), miracle(기적, 어원상 경탄스러운 일), mirror(거울, 비춰보며 감탄하는 도구) 등의 단어 속에 그 어근과 의미가 깊게 박혀 있다."
+      },
+      {
+        "g": "Abas",
+        "pos": "명사",
+        "lemma": "Abas, Abantis, m. (그리스어 Ἄβας)",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "아바스 (인명)",
+        "gloss_en": "Abas",
+        "syntax": "문장의 주어 역할을 하는 남성 단수 고유명사로, 아크몬의 변신을 목격하며 경탄하는 동료들의 명단을 완성하는 마지막 인물이다.",
+        "background": "디오메데스의 부하들 중 마지막으로 호명되는 동료로, 이들 모두가 순차적으로 똑같은 변신의 비극에 휘말리게 되는 서사적 복선을 제공한다.",
+        "etymology": "그리스어 Ἄβας(Abas)에서 유래한 고유명사로, 고대 그리스 신화 속 여러 영웅이나 왕들의 이름으로 쓰였다. 어원적으로는 동방 혹은 선그리스어 기층의 영향이나 고대 지명에서 유래한 것으로 학계에서 추정되며, 고전 서사시 속에서 인명으로서 고정되어 전해 내려온다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "등위접속사로 앞의 경탄하는 장면과 뒤이어 일어나는 동시적 사건을 매끄럽게 이어준다.",
+        "background": "인물들이 경탄하며 넋을 놓고 있는 그 찰나의 순간에, 자신들에게도 똑같은 저주와 변신이 덮쳐오는 급작스러운 반전을 예고한다.",
+        "etymology": "인도유럽조어 재구형 *eti('~도 또한')에서 유래한 라틴어 기본 접속사이다."
+      },
+      {
+        "g": "dum",
+        "pos": "접속사",
+        "lemma": "dum",
+        "parse": "subord. conj.",
+        "gloss_kr": "~하는 동안에",
+        "gloss_en": "while",
+        "syntax": "종속 접속사로 직설법 동사 mirantur를 이끌며 시간 부사절('그들이 경탄하는 동안에')을 구성한다.",
+        "background": "인간들이 타인의 변신을 보며 멍하니 경이로움에 사로잡혀 있던 바로 그 방심한 틈을 타서 운명이 그들 자신을 집어삼키는 극적 긴장감을 조성한다.",
+        "etymology": "인도유럽조어 시기 시간이나 동안을 나타내는 부사/접속사 어근에서 유래한 라틴어 dum에서 기원한다. 라틴어 구문에서 동시 동작을 나타내는 핵심 접속사로 기능해왔으며, 로망스어 및 고전 라틴 문법 구조 전반에 걸쳐 지속적으로 사용되어 온 필수 문법 요소이다."
+      },
+      {
+        "g": "mirantur",
+        "pos": "동사",
+        "lemma": "miror, mirari, miratus sum",
+        "parse": "pres. pass. (deponent) ind. 3rd pers. pl.",
+        "gloss_kr": "경탄하다, 놀라다",
+        "gloss_en": "they marvel",
+        "syntax": "3인칭 복수 디포넌트 현재형 종속절 동사로, 주어(그들, 즉 앞서 언급된 동료들)가 경탄하고 있는 상태를 나타낸다.",
+        "background": "친구들의 기괴한 변신을 목격하며 한 치 앞도 내다보지 못한 채 그저 경이로움과 공포에 사로잡혀 있는 인물들의 무력한 집단적 반응을 보여준다.",
+        "etymology": "인도유럽조어 재구형 *smei-('미소짓다, 감탄하다')에서 유래한 라틴어 mīrārī의 3인칭 복수형이다. 영어의 admire, miracle 등의 어근과 일치한다."
+      },
+      {
+        "g": "eandem",
+        "pos": "대명사",
+        "lemma": "idem, eadem, idem",
+        "parse": "sg. acc. f.",
+        "gloss_kr": "똑같은 (것을)",
+        "gloss_en": "the same (fate/change)",
+        "syntax": "여성 단수 대격 형태로, 생략된 명사(fatum, cladem 또는 formam 등 '똑같은 운명/변신')를 수식하거나 목적어 역할을 하여 동일한 변신이 이들에게도 닥침을 암시한다.",
+        "background": "타인의 변신을 구경하던 이들도 예외 없이 똑같은 새 로 변하는 저주의 형벌을 피할 수 없음을 보여주는 문장 종결부의 극적 복선이다.",
+        "etymology": "지시사 어근 *is 와 동일함을 뜻하는 접미사 *-dem이 결합한 라틴어 īdem, eadem, idem에서 유래하였다. 인도유럽조어 대명사 어근에 뿌리를 두고 있으며, 영어의 identity, identical, item 등이 모두 이와 같은 어근 계통에 속한다. 동일성과 반복을 나타내는 핵심 어휘로서 현대 영어와 서구 언어 전반에 깊게 스며들어 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.506",
+    "trans": "형태를 받아들이고, 무리 중 더 많은 이들이",
+    "words": [
+      {
+        "g": "accipiunt",
+        "pos": "동사",
+        "lemma": "accipio, accipere, accepi, acceptus",
+        "parse": "pres. act. ind. 3rd pers. pl.",
+        "gloss_kr": "받아들이다, 얻다",
+        "gloss_en": "they receive, they take on",
+        "syntax": "3인칭 복수 현재형 주절 동사로, 주어인 numerusque ex agmine maior가 새로운 형태(faciem)를 수용하는 과정을 서술한다.",
+        "background": "앞서 경탄하던 동료들 역시 예외 없이 신화적 저주에 휩싸여 인간의 형체를 버리고 새의 형상으로 전환되는 결정적 순간을 나타낸다.",
+        "etymology": "전치사 ad-(~를 향해)와 동사 capere('잡다, 취하다')가 결합한 합성동사 accipere에서 유래하였다. 인도유럽조어 재구형 *kap-('잡다, 보유하다')에서 비롯되었으며, 영어의 accept, capture, capable 등이 동계어이다. 물리적으로 무언가를 쥐거나 상태를 받아들이는 의미에서 현대 영어의 accept 등으로 널리 쓰이고 있다."
+      },
+      {
+        "g": "faciem",
+        "pos": "명사",
+        "lemma": "facies, faciei, f.",
+        "parse": "sg. acc. f.",
+        "gloss_kr": "모습을, 형체를",
+        "gloss_en": "form, appearance, face",
+        "syntax": "여성 단수 대격 명사로 accipiunt의 직접목적어 역할을 하며, 새로서 새롭게 부여받는 신체적 외양과 형상을 가리킨다.",
+        "background": "인간으로서의 고유한 얼굴과 몸매가 완전히 지워지고 조류의 형체로 외양이 바뀌는 오비디우스 변신 서사의 핵심 개념이다.",
+        "etymology": "인도유럽조어 재구형 *dheH₁-('놓다, 행하다') 또는 모양을 뜻하는 어근에서 파생된 라틴어 faciēs(모습, 얼굴)에서 기원한다. 영어의 face, facial, superficial 등이 모두 이와 같은 어근을 공유하는 동계어이다. 신체의 표면이나 생김새를 뜻하며, 현대 영어의 face(얼굴) 및 다양한 파생 어휘의 뿌리로 남아 있다."
+      },
+      {
+        "g": "numerusque",
+        "pos": "명사",
+        "lemma": "numerus, -i, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "그리고 무리는, 숫자는",
+        "gloss_en": "and the number, the company",
+        "syntax": "명사 numerus에 등위접속사 -que가 결합한 형태이며, 형용사 maior의 수식을 받으며 문장의 주어 역할을 한다.",
+        "background": "단순한 몇몇 개인이 아니라 디오메데스를 따르던 대부분의 무리가 단체로 새가 되어가는 거대한 변신의 군상을 표현한다.",
+        "etymology": "인도유럽조어 재구형 *nem-('할당하다, 분배하다')에서 유래한 라틴어 numerus에서 유래하였다. 영어의 number, numeral, enumerate 등의 단어로 이어졌으며, 현대 언어에서 '수'나 '무리'를 뜻하는 핵심 어휘로 살아 있다."
+      },
+      {
+        "g": "ex",
+        "pos": "전치사",
+        "lemma": "ex",
+        "parse": "prep. taking abl.",
+        "gloss_kr": "~로부터, 중에서",
+        "gloss_en": "out of, from",
+        "syntax": "탈격 명사구 agmine을 지배하는 전치사로, 거대한 무리(군대/행렬) 중에서 상당수가 변신함을 나타낸다.",
+        "background": "동료들의 대열 전체가 차례대로 신들의 노여움에 의해 조류로 전환되는 집단적 비극의 현장을 묘사한다.",
+        "etymology": "인도유럽조어 재구형 *eghs('밖으로, ~로부터')에서 유래한 라틴어 전치사이다. 그리스어 ex, ek 등과 동계어이며, 영어의 exit, extend, erupt 등의 접두사로 널리 쓰이고 있다."
+      },
+      {
+        "g": "agmine",
+        "pos": "명사",
+        "lemma": "agmen, agminis, n.",
+        "parse": "sg. abl. n.",
+        "gloss_kr": "무리에, 행렬에서",
+        "gloss_en": "from the band, from the column",
+        "syntax": "중성 단수 탈격 명사로, 전치사 ex의 지배를 받아 디오메데스의 동료들이 이루고 있던 행렬이나 무리를 가리킨다.",
+        "background": "트로이아 전쟁에서 살아남아 이탈리아에 정착했던 디오메데스의 부하들이 길을 떠나며 이루었던 대열을 의미한다.",
+        "etymology": "인도유럽조어 재구형 *ag-('이끌다, 몰다')에서 파생된 라틴어 agmen(행렬, 대열, 행군)에서 기원한다. 동사 agere('행하다, 몰다')와 직접 연결되며, 영어의 agent, active 등이 먼 동계어이다. 라틴어에서 무리 지어 이동하는 대열을 뜻하며, 문어적 표현 속에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "maior",
+        "pos": "형용사",
+        "lemma": "magnus, -a, -um (비교급 maior, maius)",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "더 큰, 대다수의",
+        "gloss_en": "the greater (part)",
+        "syntax": "남성 단수 주격 비교급 형태로 주어 numerus를 수식하며, 무리의 '대다수'가 새가 되었음을 강조한다.",
+        "background": "소수의 인물뿐만 아니라 대다수의 동료들이 이 형벌을 피해가지 못하고 참혹한 새의 무리로 전락했음을 보여준다.",
+        "etymology": "인도유럽조어 재구형 *meǵh₂-('큰')에서 파생된 라틴어 비교급 어간 maior에서 유래하였다. 영어의 major, majority 등의 어근이 된다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.507",
+    "trans": "위로 날아올라 찰싹이는 날개로 노를 젓듯 주위를 돈다.",
+    "words": [
+      {
+        "g": "subvolat",
+        "pos": "동사",
+        "lemma": "subvolo, subvolare, subvolavi, subvolatus",
+        "parse": "pres. act. ind. 3rd pers. sg.",
+        "gloss_kr": "위로 날아오르다",
+        "gloss_en": "flies up, soars up",
+        "syntax": "3인칭 단수 현재형 주절 동사로, 새가 되어 땅을 박차고 하늘 높이 솟아오르는 동작을 생생하게 묘사한다.",
+        "background": "인간의 육신을 완전히 벗어던진 이들이 새로서 하늘을 향해 날아오르는 변신의 비행 장면을 보여준다.",
+        "etymology": "전치사 sub-(~아래에서 위로)와 동사 volāre('날다')가 결합한 합성동사 subvolāre에서 유래하였다. 인도유럽조어 재구형 어근에서 출발했으며, 영어의 volatile(변덕스러운, 휘발성의), volley 등의 단어와 어원적 친척 관계에 있다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "등위접속사로 위로 날아오르는 동작과 주위를 선회하는 동작을 연결한다.",
+        "background": "하늘로 솟구친 새들이 디오메데스와 남은 이들의 머리 위를 맴돌며 날아다니는 역동적인 광경을 자아낸다.",
+        "etymology": "인도유럽조어 재구형 *eti('~도 또한')에서 유래한 라틴어 기본 접속사이다."
+      },
+      {
+        "g": "remos",
+        "pos": "명사",
+        "lemma": "remus, -i, m.",
+        "parse": "pl. acc. m.",
+        "gloss_kr": "노들을 (날개를 노에 비유)",
+        "gloss_en": "oars (wings)",
+        "syntax": "남성 복수 대격 명사로 circumvolat의 직접목적어 역할을 하며, 새의 날개를 배를 젓는 '노'에 비유한 시적 은유 표현이다.",
+        "background": "오비디우스 시문학 특유의 비유적 표현으로, 새들이 공중을 퍼덕이며 날아가는 모습을 바다를 항해하는 배의 노젓기에 빗대어 표현하고 있다.",
+        "etymology": "인도유럽조어 재구형 *eh₁- 또는 노를 젓는 어근에서 유래한 라틴어 rēmus(노)에서 기원한다. 산스크리트어 aritram(노), 그리스어 eressein(노를 젓다), 영어 row 등의 단어와 완벽한 동계어이다. 현대 영어의 row(노를 젓다), rudder(키) 등의 어근 속에서 그 형태와 의미가 살아 있다."
+      },
+      {
+        "g": "plausis",
+        "pos": "분사",
+        "lemma": "plaudo, plaudere, plausi, plausus",
+        "parse": "perf. pass. part. abl. f. pl.",
+        "gloss_kr": "퍼덕이는, 박수 치는",
+        "gloss_en": "beating, flapping",
+        "syntax": "여성 복수 탈격 수동 완료 분사로 명사 alis를 수식하며, 날개를 세차게 퍼덕이는 소리와 동작을 묘사한다.",
+        "background": "새들이 날개를 위아래로 힘차게 퍼덕이며 공기를 가르는 청각적·시각적 효과를 극대화한다.",
+        "etymology": "인도유럽조어 재구형 어근에서 유래한 라틴어 plaudere('손뼉을 치다, 박수 치다')에서 기원한다. 영어의 applaud(박수갈채하다), plaudit(갈채) 등이 직접적인 동계어이다. 손뼉을 치는 행위에서 날개를 퍼덕여 소리를 내는 동작으로 의미가 확장되어 시문학에서 쓰였다."
+      },
+      {
+        "g": "circumvolat",
+        "pos": "동사",
+        "lemma": "circumvolo, circumvolare, circumvolavi, circumvolatus",
+        "parse": "pres. act. ind. 3rd pers. sg.",
+        "gloss_kr": "주위를 날아다니다",
+        "gloss_en": "flies around, circles",
+        "syntax": "3인칭 단수 현재형 주절 동사로, 새들이 변신한 동료들 혹은 디오메데스 주변을 빙글빙글 선회하는 모습을 나타낸다.",
+        "background": "자신들의 옛 동료들 주위를 떠나지 못하고 새의 모습으로 날아다니며 슬프거나 기괴한 분위기를 연출하는 장면이다.",
+        "etymology": "전치사 circum(~의 주위에)과 동사 volāre('날다')가 결합한 합성동사 circumvolāre에서 유래하였다. 라틴어 전치사와 동사의 결합 형태가 고스란히 남아 있으며, 영어의 circumference, revolve 등의 어근 요소와 연결된다."
+      },
+      {
+        "g": "alis",
+        "pos": "명사",
+        "lemma": "ala, alae, f.",
+        "parse": "pl. abl. f.",
+        "gloss_kr": "날개들로",
+        "gloss_en": "with wings",
+        "syntax": "여성 복수 탈격 명사로 수단/도구를 나타내며, 퍼덕이는 날개의 힘으로 비행함을 나타낸다.",
+        "background": "인간의 팔에서 완전히 진화하여 거대한 깃털과 날개로 공중을 지배하게 된 새들의 신체 부위를 가리킨다.",
+        "etymology": "인도유럽조어 재구형 *axsla-('어깨')에서 유래한 라틴어 āla(날개)에서 기원한다. 영어의 aisle, aileron 등의 어원적 배경이 된다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.508",
+    "trans": "만약 그 새들의 형태가 어떠한 것인지 묻는다면,",
+    "words": [
+      {
+        "g": "Si",
+        "pos": "접속사",
+        "lemma": "si",
+        "parse": "subord. conj.",
+        "gloss_kr": "만약 ~라면",
+        "gloss_en": "if",
+        "syntax": "조건절을 이끄는 종속 접속사로, 독자나 청자에게 가정법적 질문을 건네는 문두를 이끈다.",
+        "background": "시인 오비디우스가 서사 속 화자(디오메데스의 후손 혹은 관련 인물)의 입을 빌려 독자에게 이 신화 속 새들의 생김새를 설명하는 전환점을 만든다.",
+        "etymology": "인도유럽조어 재구형 *swei-('만약 ~라면')에서 유래한 라틴어 조건 접속사이다. 로망스어군 및 영어의 구문 구조와 상응하며, 가정과 조건을 나타내는 보편적 언어 요소로 기능해왔다."
+      },
+      {
+        "g": "volucrum",
+        "pos": "명사",
+        "lemma": "volucris, volucris, f.",
+        "parse": "pl. gen. f.",
+        "gloss_kr": "새들의, 날짐승들의",
+        "gloss_en": "of birds",
+        "syntax": "여성 복수 속격 명사로, 뒤의 명사 forma를 수식하며 '새들의 형태'라는 소유 구문을 형성한다.",
+        "background": "앞서 인간에서 새 로 변해버린 디오메데스의 동료들이 어떤 종류의 새였는지에 대한 구체적인 묘사로 독자의 호기심을 유도한다.",
+        "etymology": "동사 volāre('날다')에서 파생된 형용사/명사 volucris('날아다니는 것, 새')의 복수 속격형이다. 인도유럽조어 어근에서 출발했으며, 현대 영어의 volatile 등의 단어와 어원적 친척 관계를 이룬다."
+      },
+      {
+        "g": "quae",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "어떠한, 어떤",
+        "gloss_en": "what, which",
+        "syntax": "여성 단수 주격 의문대명사(또는 관계대명사)로, 주어인 forma를 수식하며 새들의 생김새가 어떠한지를 묻는다.",
+        "background": "변신한 새들이 과연 어떤 조류의 형태를 닮았는지에 대한 독자들의 궁금증을 직접적으로 환기시키는 수사적문구이다.",
+        "etymology": "인도유럽조어 의문/관계대명사 어근 *kʷo-/*kʷi-에서 유래한 라틴어 quī의 여성 주격형이다. 영어의 who, what 등의 어원적 친척이다."
+      },
+      {
+        "g": "sit",
+        "pos": "동사",
+        "lemma": "sum, esse, fui, futurus",
+        "parse": "pres. act. subj. 3rd pers. sg.",
+        "gloss_kr": "~인지 (이다)",
+        "gloss_en": "might be, is",
+        "syntax": "3인칭 단수 현재 접속법 형태로, 간접의문문 속에서 서술어 역할을 수행한다.",
+        "background": "가정법 간접의문문을 구성하여 신화 속 괴기스러운 새의 정체에 대한 호기심과 객관적 묘사의 신빙성을 높인다.",
+        "etymology": "인도유럽조어 코퓰라 동사 재구형 *h₁es-('이다')에서 유래한 라틴어 esse의 접속법 현재형이다. 영어 is 등의 동계어이다."
+      },
+      {
+        "g": "dubiarum",
+        "pos": "형용사",
+        "lemma": "dubius, -a, -um",
+        "parse": "pl. gen. f.",
+        "gloss_kr": "분명치 않은, 기이한",
+        "gloss_en": "of doubtful (kind), strange",
+        "syntax": "여성 복수 속격 형태로 volucrum을 수식하며, 정체를 쉽게 단정하기 어려운 기괴하고 특수한 성격의 새임을 나타낸다.",
+        "background": "일반적인 새가 아니라 인간에서 변신하여 완벽한 조류로 분류하기 모호한 신화 속 기이한 새의 성격을 함축한다.",
+        "etymology": "인도유럽조어 재구형 어근(둘을 뜻하는 *dwōu에서 파생, 망설임)에서 유래한 라틴어 dubius(의심스러운)에서 기원한다. 영어의 doubt, dubious, dubious 등이 모두 이 어근을 공유하는 동계어이다."
+      },
+      {
+        "g": "forma",
+        "pos": "명사",
+        "lemma": "forma, formae, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "형태, 생김새",
+        "gloss_en": "form, shape",
+        "syntax": "여성 단수 주격 명사로 간접의문절의 주어 역할을 하며 새들의 외형적 특징을 가리킨다.",
+        "background": "변신한 생물들의 외형적 특징을 명확히 정의내림으로써 신화적 사실성을 부여하는 서술 구조를 만든다.",
+        "etymology": "고대 라틴어의 형태 관련 어근에서 유래한 라틴어 fōrma(모양, 형태)에서 기원한다. 영어의 form, format, formula 등이 모두 이 라틴어 어근에서 파생된 동계어이다."
+      },
+      {
+        "g": "requiris",
+        "pos": "동사",
+        "lemma": "requiro, requirere, requisivi, requisitus",
+        "parse": "pres. act. ind. 2nd pers. sg.",
+        "gloss_kr": "너는 묻다, 찾다",
+        "gloss_en": "you ask, you inquire",
+        "syntax": "2인칭 단수 현재형 주절 동사로, 청자나 독자가 그 생김새에 대해 질문하고 탐색하는 상황을 설정한다.",
+        "background": "서사 시인이 독자에게 직접 말을 건네는 듯한 메타포적 화법을 구사하여 시적 몰입도를 높이는 장치이다.",
+        "etymology": "전치사 re-(다시, 원위치로)와 동사 quaerere('찾다, 구하다')가 결합한 합성동사 requirere에서 유래하였다. 인도유럽조어 재구형 어근에서 비롯되었으며, 영어의 require, request 등이 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.509",
+    "trans": "백조는 아니지만, 하얀 백조와 가장 가깝다.",
+    "words": [
+      {
+        "g": "ut",
+        "pos": "접속사",
+        "lemma": "ut",
+        "parse": "subord. conj.",
+        "gloss_kr": "~처럼, ~와 같이",
+        "gloss_en": "as, like",
+        "syntax": "비교를 나타내는 종속 접속사로, 백조 그 자체는 아니라는 점을 대조적으로 이끈다.",
+        "background": "변신한 새들이 순백의 아름다운 백조는 아니지만, 그 색상과 깃털의 순수함에 있어서 백조에 버금갈 만큼 하얗다는 점을 정확히 비유한다.",
+        "etymology": "인도유럽조어 지시사/관계사 어근에서 유래한 라틴어 ut(처럼, ~할 때)에서 기원한다. 고전 라틴 문문헌 전반에 걸쳐 비교, 목적, 결과 등을 나타내는 다목적 접속사로 널리 쓰여 왔다."
+      },
+      {
+        "g": "non",
+        "pos": "부사",
+        "lemma": "non",
+        "parse": "adverb",
+        "gloss_kr": "~가 아닌",
+        "gloss_en": "not",
+        "syntax": "부정 부사로 cygnorum을 부정하여 백조 그 자체는 아님을 명백히 선언한다.",
+        "background": "신화 속 변신한 새들이 고귀한 백조와 완전히 동일종은 아니라는 점을 명시하여 신화적 사실의 정확성을 기한다.",
+        "etymology": "고대 라틴어의 강한 부정사 *noenum(아니오)에서 축약되어 유래한 라틴어 nōn이다. 영어의 no, none 및 로망스어군의 부정어들과 어원적 친척 관계에 있다."
+      },
+      {
+        "g": "cygnorum",
+        "pos": "명사",
+        "lemma": "cygnus, -i, m.",
+        "parse": "pl. gen. m.",
+        "gloss_kr": "백조들의",
+        "gloss_en": "of swans",
+        "syntax": "남성 복수 속격 명사로, 비유의 기준이 되는 백조들을 가리키며 ut non과 결합해 '백조들은 아니지만'이라는 구절을 이룬다.",
+        "background": "고대 그리스-로마 신화에서 순수함과 아름다움, 혹은 비극적 변신의 상징으로 자주 등장하는 백조를 비교 대상으로 소환한다.",
+        "etymology": "그리스어 κύκνος(cyknos, 백조)에서 유래한 라틴어 cygnus에서 기원한다. 인도유럽조어 재구형 어근에서 출발했으며, 영어의 cygnet(아기 백조) 등의 단어 안에 그 형태가 고스란히 남아 있다."
+      },
+      {
+        "g": "sic",
+        "pos": "부사",
+        "lemma": "sic",
+        "parse": "adverb",
+        "gloss_kr": "이와 같이, 그렇지만",
+        "gloss_en": "thus, so",
+        "syntax": "양태 부사로 앞의 부정 구문과 대조를 이루며 뒤의 최상급적 수식어(proxima)로 연결되는 가교 역할을 한다.",
+        "background": "백조는 아닐지라도 그에 못지않게 온몸이 눈부시게 하얗다는 사실을 극적으로 전환하여 강조한다.",
+        "etymology": "인도유럽조어 지시사 어근과 결합한 라틴어 sīc(이렇게, 이처럼)에서 기원한다. 영어의 such 등의 어원적 배경과 간접적 연관을 가지며, 라틴어의 대표적 지시·양태 부사이다."
+      },
+      {
+        "g": "albis",
+        "pos": "형용사",
+        "lemma": "albus, -a, -um",
+        "parse": "pl. abl. m.",
+        "gloss_kr": "하얀, 흰",
+        "gloss_en": "to/with white",
+        "syntax": "남성 복수 탈격 형용사로 형용사 proxima의 지배를 받아 '흰 백조들에게 가장 가까운'이라는 비교 구문을 완성한다.",
+        "background": "새들의 깃털이 지닌 압도적인 순백의 색채를 묘사하여 시각적인 아름다움과 신비로움을 더한다.",
+        "etymology": "인도유럽조어 재구형 *albho-('하얀')에서 유래한 라틴어 albus에서 기원한다. 산스크리트어 rohita- 등과 비교되며, 영어의 albino(백색증 환자), albumen(달걀 흰자) 등의 단어 속에 그 어근이 깊게 박혀 있다."
+      },
+      {
+        "g": "proxima",
+        "pos": "형용사",
+        "lemma": "proximus, -a, -um",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "가장 가까운, 버금가는",
+        "gloss_en": "closest to, very near",
+        "syntax": "여성 단수 주격 형용사로 생략된 주어(forma 또는 volucres)를 서술하며 백조에 가장 버금간다는 특성을 나타낸다.",
+        "background": "백조는 아니지만 백조의 순백함에 가장 필적할 만한 우아하고 하얀 깃털을 지닌 새임을 최종적으로 증언한다.",
+        "etymology": "형용사 propior(더 가까운)의 최상급 형태인 proximus에서 유래하였다. 인도유럽조어 어근에서 출발했으며, 영어의 proximate, proximity(가까움, 근접) 등의 단어 속에 그 어근과 의미가 고스란히 남아 있다."
+      },
+      {
+        "g": "cygnis",
+        "pos": "명사",
+        "lemma": "cygnus, -i, m.",
+        "parse": "pl. dat. m.",
+        "gloss_kr": "백조들에게",
+        "gloss_en": "to swans",
+        "syntax": "남성 복수 여격 명사로 형용사 proxima의 여격 지배를 받아 '~에 가장 가까운'이라는 관계를 완성한다.",
+        "background": "변신한 새들의 생김새와 색채가 백조와 얼마나 닮아 있는지를 비교 대조하는 문장의 종결부를 이룬다.",
+        "etymology": "그리스어 cyknos에서 유래한 라틴어 cygnus의 복수 여격형이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.510",
+    "trans": "겨우 나는 지금 이 거처와 야피기아의 메마른 다우누스의",
+    "words": [
+      {
+        "g": "Vix",
+        "pos": "부사",
+        "lemma": "vix",
+        "parse": "adverb",
+        "gloss_kr": "겨우, 간신히",
+        "gloss_en": "scarcely, hardly",
+        "syntax": "양태 부사로 문두에 와서 화자(디오메데스의 후손/인물)가 처한 고난과 영토의 협소함, 비참한 처지를 강조한다.",
+        "background": "트로이아 전쟁의 영웅 디오메데스가 고국으로 돌아가지 못하고 이탈리아 남부의 척박한 땅에 겨우 정착해 살아가는 비극적 망명자의 처지를 드러낸다.",
+        "etymology": "고대 라틴어의 힘겨움이나 어려움을 나타내는 어근에서 유래한 라틴어 vix(간신히, 겨우)에서 기원한다. 로망스어군 및 고전 문헌 전반에서 물리적·심리적 한계를 나타내는 필수 부사로 쓰여 왔다."
+      },
+      {
+        "g": "equidem",
+        "pos": "부사",
+        "lemma": "equidem",
+        "parse": "adverb",
+        "gloss_kr": "정말로, 나로서는, 참으로",
+        "gloss_en": "indeed, truly, for my part",
+        "syntax": "강조 부사로 화자 자신의 진술에 무게와 진실성을 부여하며 1인칭 동사 teneo와 결합한다.",
+        "background": "자신의 기나긴 방황과 영토 부족의 비참함을 청자에게 진솔하고 엄숙하게 고백하는 화자의 어조를 드러낸다.",
+        "etymology": "대명사 요소(ego, 나)와 강조 접미사 *-dem이 결합하여 축약된 라틴어 equidem(나로서는 참으로)에서 유래하였다. 고전 라틴어의 수사학과 서사시에서 화자의 주관적 확신을 나타낼 때 자주 사용되었다."
+      },
+      {
+        "g": "has",
+        "pos": "대명사",
+        "lemma": "hic, haec, hoc",
+        "parse": "pl. acc. f.",
+        "gloss_kr": "이러한, 이",
+        "gloss_en": "these",
+        "syntax": "지시대명사의 여성 복수 대격 형태로 명사 sedes를 수식하며, 현재 자신이 차지하고 있는 이 거처를 가리킨다.",
+        "background": "화자가 발을 딛고 서 있는 이탈리아 남부 아풀리아 지역의 영토를 손으로 가리키듯 현장감 있게 지칭한다.",
+        "etymology": "인도유럽조어 지시사 어근에서 기원한 라틴어 hic의 여성 복수 대격형이다."
+      },
+      {
+        "g": "sedes",
+        "pos": "명사",
+        "lemma": "sedes, sedis, f.",
+        "parse": "pl. acc. f. (or sg.)",
+        "gloss_kr": "거처를, 영토를",
+        "gloss_en": "seats, abodes, lands",
+        "syntax": "여성 복수 대격 명사로 동사 teneo의 직접목적어 역할을 하며 정착하여 사는 땅과 거처를 뜻한다.",
+        "background": "그리스 본토를 떠나 이탈리아 남부 메세피아와 다우누스 지방에 간신히 마련한 보잘것없는 정착지를 가리킨다.",
+        "etymology": "인도유럽조어 재구형 *sed-('앉다')에서 유래한 라틴어 sēdēs(자리, 거처, 거주지)에서 기원한다. 산스크리트어 sādanam, 영어 sit, seat, sediment 등이 모두 이 어근을 공유하는 동계어이다. 현대 영어의 sedentary(주로 앉아 있는), session(회의) 등의 단어 속에 그 어근이 깊게 박혀 있다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "등위접속사로 거처(sedes)와 땅(arva)이라는 영토의 요소를 병렬 연결한다.",
+        "background": "화자가 다스리거나 머무는 척박한 영토의 범위와 지리적 이름을 열거하는 서사적 호흡을 만든다.",
+        "etymology": "인도유럽조어 재구형 *eti('~도 또한')에서 유래한 라틴어 기본 접속사이다."
+      },
+      {
+        "g": "Iapygis",
+        "pos": "형용사",
+        "lemma": "Iapyx, Iapygis, m. / adj.",
+        "parse": "sg. gen. m.",
+        "gloss_kr": "야피기아의, 칼라브리아의",
+        "gloss_en": "of Iapygian, of Apulian",
+        "syntax": "남성 단수 속격 형태로 뒤의 명사 arva를 수식하며 이탈리아 남동부(칼라브리아/아풀리아)의 지리적 속성을 나타낸다.",
+        "background": "그리스 신화와 역사 속에서 이탈리아 남부의 고대 지명인 야피기아(Iapygia) 지역을 가리키는 고유 형용사이다.",
+        "etymology": "그리스어 Ἰάπυξ(Iapyx, 다이달로스의 아들 이아피그스에서 유래한 이탈리아 남부의 지명/부족명)에서 유래한 라틴어 지리 형용사이다. 고전 지리학 및 신화 서사시에서 남이탈리아의 지명을 특정하는 데 쓰였다."
+      },
+      {
+        "g": "arida",
+        "pos": "형용사",
+        "lemma": "aridus, -a, -um",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "메마른, 건조한",
+        "gloss_en": "arid, dry",
+        "syntax": "중성 복수 대격 형태로 명사 arva를 수식하며 비옥하지 못하고 척박한 땅의 성질을 강조한다.",
+        "background": "그리스의 풍요로운 고향 땅과 대비되는, 이탈리아 남부의 거칠고 메마른 자연환경을 묘사한다.",
+        "etymology": "인도유럽조어 재구형 어근에서 유래한 라틴어 arēre('마르다')에서 파생된 형용사 āridus(마른, 건조한)에서 기원한다. 영어의 arid(메마른), aridity(건조함) 등이 모두 이와 같은 어근을 공유하는 동계어이다."
+      },
+      {
+        "g": "Dauni",
+        "pos": "명사",
+        "lemma": "Daunus, -i, m.",
+        "parse": "sg. gen. m.",
+        "gloss_kr": "다우누스의",
+        "gloss_en": "of Daunus",
+        "syntax": "소유 속격으로 명사 arva를 수식하며, 다우누스(이탈리아 남부의 전설적인 왕이자 아풀리아의 영웅)의 영토임을 나타낸다.",
+        "background": "이탈리아 남부 아풀리아 지역의 고대 왕이자 신화적 시조인 다우누스의 이름을 딴 영토를 가리킨다.",
+        "etymology": "일리리아 계통 혹은 선로마 기층 언어에서 유래한 고유명사 다우누스(Daunus)의 속격형이다. 로마 신화와 오비디우스의 변신이야기 등에서 남이탈리아의 고대 왕국을 설명하는 지리·신화적 인명으로 고정되어 전해진다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.511",
+    "trans": "경작지와 내 백성들의 최소한의 부분만을 겨우 차지하고 있소.”",
+    "words": [
+      {
+        "g": "arva",
+        "pos": "명사",
+        "lemma": "arvum, -i, n.",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "경작지들을, 들판들을",
+        "gloss_en": "fields, lands",
+        "syntax": "중성 복수 대격 명사로 동사 teneo의 직접목적어로 이어지며, 야피기아와 다우누스의 척박한 들판을 가리킨다.",
+        "background": "화자가 영유하고 있는 이탈리아 남부의 농경지와 영토가 얼마나 협소하고 황량한지를 보여준다.",
+        "etymology": "인도유럽조어 재구형 *ar-('갈다, 경작하다')에서 파생된 라틴어 arvum(경작지, 들판)에서 기원한다. 라틴어 동사 arāre('밭을 갈다')와 직접 연결되며, 영어의 arable(경작할 수 있는) 등의 단어와 동계어이다."
+      },
+      {
+        "g": "gener",
+        "pos": "명사",
+        "lemma": "gener, generi, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "사위 (로서의 나)",
+        "gloss_en": "son-in-law",
+        "syntax": "남성 단수 주격 명사로 주절의 주어(화자 자신, 즉 디오메데스)의 신분이나 자격을 나타내는 주격 보어 역할을 한다.",
+        "background": "다우누스 왕의 사위가 된 디오메데스가 자신의 처지를 설명할 때 사용하는 신분적 호칭으로, 현지 왕실과의 혼맥을 통해 겨우 땅을 얻었음을 암시한다.",
+        "etymology": "인도유럽조어 재구형 *ǵnh₂-ro- 또는 친족 관계를 나타내는 어근에서 유래한 라틴어 gener(사위)에서 기원한다. 산스크리트어 jāmi-(친척) 등과 연관이 있으며, 라틴어 계통의 고유한 친족 명칭으로 로망스어군 일부에 흔적을 남겼다."
+      },
+      {
+        "g": "teneo",
+        "pos": "동사",
+        "lemma": "teneo, tenere, tenui, tentus",
+        "parse": "pres. act. ind. 1st pers. sg.",
+        "gloss_kr": "잡고 있다, 차지하고 다스리다",
+        "gloss_en": "I hold, I possess",
+        "syntax": "1인칭 단수 현재형 주절동사로, 화자(디오메데스)가 이 메마른 땅을 간신히 소유하고 다스리고 있음을 나타낸다.",
+        "background": "트로이아의 위대한 영웅이었던 디오메데스가 이탈리아 변방의 척박한 땅 한구석을 겨우 영유하고 있는 비참한 현실을 고백한다.",
+        "etymology": "인도유럽조어 재구형 *ten-('뻗치다, 잡다')에서 유래한 라틴어 tenēre에서 기원한다. 영어의 tenable(방어할 수 있는), tenant(소작농), contain, retain 등이 모두 이와 같은 어근을 공유하는 동계어이다."
+      },
+      {
+        "g": "minima",
+        "pos": "형용사",
+        "lemma": "parvus, -a, -um (최상급 minimus, -a, -um)",
+        "parse": "sg. abl. f.",
+        "gloss_kr": "가장 적은, 최소한의",
+        "gloss_en": "least, smallest",
+        "syntax": "여성 단수 탈격 최상급 형태로 명사 parte를 수식하며, 백성들 중 극히 적은 일부만을 겨우 거느리고 있음을 강조한다.",
+        "background": "전쟁과 기나긴 방황 속에서 부하들과 백성들을 거의 다 잃고, 명목상의 사위 신분으로 극소수의 무리만 데리고 살아가는 처연함을 드러낸다.",
+        "etymology": "인도유럽조어 재구형 어근에서 유래한 라틴어 최상급형 minimus(가장 작은)에서 기원한다. 영어의 minimum(최소값), miniature(축소 모델) 등이 모두 이 어근을 공유하는 동계어이다."
+      },
+      {
+        "g": "cum",
+        "pos": "전치사",
+        "lemma": "cum",
+        "parse": "prep. taking abl.",
+        "gloss_kr": "~와 함께",
+        "gloss_en": "with",
+        "syntax": "탈격 명사구 parte를 지배하는 전치사로, 최소한의 백성들과 '함께' 거주함을 나타내는 동반 구문을 이룬다.",
+        "background": "화자가 거느린 세력이 얼마나 초라해졌는지를 '최소한의 부분과 함께'라는 표현을 통해 극적으로 부각한다.",
+        "etymology": "인도유럽조어 재구형 *ḱóm('~와 함께')에서 유래한 라틴어 전치사이다. 영어의 co-, con- 등의 접두사 어원과 연결된다."
+      },
+      {
+        "g": "parte",
+        "pos": "명사",
+        "lemma": "pars, partis, f.",
+        "parse": "sg. abl. f.",
+        "gloss_kr": "부분으로, 분깃으로",
+        "gloss_en": "part, portion",
+        "syntax": "여성 단수 탈격 명사로, 전치사 cum의 지배를 받아 백성들의 극히 적은 '부분(일부)'을 뜻하는 부사구를 이룬다.",
+        "background": "방대한 트로이아 원정군과 백성들에 비해 이탈리아에 남은 무리가 얼마나 미미한지 대조적으로 보여준다.",
+        "etymology": "인도유럽조어 재구형 *per-[4]('나누다')에서 유래한 라틴어 pars의 탈격형이다. 영어의 part, particle 등의 어원이다."
+      },
+      {
+        "g": "meorum",
+        "pos": "대명사",
+        "lemma": "meus, -a, -um (명사화된 소유대명사)",
+        "parse": "pl. gen. m.",
+        "gloss_kr": "나의 사람들(부하들, 백성들)의",
+        "gloss_en": "of my men, of my people",
+        "syntax": "남성 복수 소유대명사의 속격 명사 용법으로, '나의 사람들(부하/백성)'이라는 집단을 가리키며 parte를 수식한다.",
+        "background": "디오메데스가 자신의 부하들과 백성들을 친밀하고 애틋하게 지칭하며 그들의 비참한 손실을 회상하는 표현이다.",
+        "etymology": "인도유럽조어 1인칭 대명사 속격에서 파생된 라틴어 meus(나의)에서 기원한다. 로망스어군 전반과 영어의 my 등에 대응하는 기본 소유 표현이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.512",
+    "trans": "오이네우스의 아들은 여기까지 말했다. 베눌루스는 칼리도니아의 왕국을",
+    "words": [
+      {
+        "g": "Hactenus",
+        "pos": "부사",
+        "lemma": "hactenus",
+        "parse": "adverb",
+        "gloss_kr": "여기까지, 이만큼까지",
+        "gloss_en": "thus far, to this point",
+        "syntax": "시간/거리 부사로 디오메데스의 긴 연설과 회상이 여기에서 끝맺음을 나타내는 서사적 마침표 역할을 한다.",
+        "background": "디오메데스(오이네우스의 손자/아들 계통)가 자신의 기나긴 신화적 내력과 동료들의 변신 이야기를 마무리하는 순간이다.",
+        "etymology": "지시사 대명사 hic(이것의)과 전치사/부사 tenus(~까지)가 결합한 합성 부사 hactenus에서 유래하였다. 고전 라틴 서사시에서 화자의 긴 연설이나 이야기를 끝맺을 때 쓰는 전형적인 수사학적 표현이다."
+      },
+      {
+        "g": "Oenides",
+        "pos": "명사",
+        "lemma": "Oenides, Oenidae, m. (그리스어 Οἰνίδης)",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "오이네우스의 자손 (디오메데스)",
+        "gloss_en": "the descendant of Oeneus (Diomedes)",
+        "syntax": "남성 단수 주격 고유명사(부칭어)로, 디오메데스를 가리키는 시적 호칭이며 문맥상 발화의 주체로 기능한다.",
+        "background": "디오메데스의 할아버지인 오이네우스(Oeneus)의 혈통을 나타내는 부칭(Patronymic)으로, 그의 영웅적 혈통과 비극적 운명을 동시에 환기한다.",
+        "etymology": "그리스어 Οἰνίδης(Oinidēs, 오이네우스의 아들/자손)에서 유래한 그리스 계열 부칭 접미사 명사이다. 고대 그리스-로마 서사시에서 영웅들의 가계를 나타내는 전통적인 작명 방식에 따라 차용되었다."
+      },
+      {
+        "g": "Venulus",
+        "pos": "명사",
+        "lemma": "Venulus, -i, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "베눌루스 (인명)",
+        "gloss_en": "Venulus",
+        "syntax": "문장의 주어인 남성 단수 고유명사로, 디오메데스를 찾아왔던 라틴인의 사신 베눌루스를 가리킨다.",
+        "background": "베일리스와 라틴 왕국의 사신으로 파견되어 디오메데스를 방문했던 베눌루스가 임무를 마치고 돌아가는 장면으로 전환된다.",
+        "etymology": "라틴어 고유명사 베눌루스(Venulus)에서 기원한다. 로마 건국 신화와 베르길리우스 및 오비디우스를 비롯한 고전 시가 속에서 이탈리아 지역의 인물 이름으로 고정되어 전해진다."
+      },
+      {
+        "g": "Calydonia",
+        "pos": "형용사",
+        "lemma": "Calydonius, -a, -um",
+        "parse": "sg. acc. n. (or abl. 등 문맥상 지리 형용사)",
+        "gloss_kr": "칼리도니아의",
+        "gloss_en": "Calydonian",
+        "syntax": "중성 단수 대격 형용사로 명사 regna를 수식하며 칼리도니아(디오메데스의 고향인 튈레/칼리도니아 지역)의 속성을 나타낸다.",
+        "background": "디오메데스가 영원히 떠나와 돌아갈 수 없는 고향 칼리도니아의 옛 왕국과 영토를 회상하게 만드는 지리적 배경이다.",
+        "etymology": "그리스의 고대 도시이자 칼리돈 멧돼지 신화로 유명한 지명 Καλυδών(Kalydōn)에서 파생된 라틴어 형용사 칼리도니우스(Calydonius)이다. 고전 신화 서사시에서 멜레아그로스의 고향이자 디오메데스의 가계와 연관된 지명 형용사로 쓰였다."
+      },
+      {
+        "g": "regna",
+        "pos": "명사",
+        "lemma": "regnum, -i, n.",
+        "parse": "sg. acc. n. (또는 복수 대격)",
+        "gloss_kr": "왕국을, 통치 지역을",
+        "gloss_en": "kingdom, realms",
+        "syntax": "중성 복수 대격 명사로 동사 relinquit의 직접목적어 역할을 하며, 베눌루스가 떠나거나 언급하는 왕국들의 영토를 가리킨다.",
+        "background": "디오메데스의 고향 칼리도니아의 왕국과 그가 거쳐 온 남이탈리아의 지리적 공간들을 교차시키는 서사적 배경이다.",
+        "etymology": "인도유럽조어 재구형 *reg-('올바르게 이끌다, 통치하다')에서 파생된 라틴어 regnum(왕국, 통치)에서 기원한다. 영어의 reign(통치하다), realm(왕국), regal(왕의) 등이 모두 이와 같은 어근을 공유하는 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.513",
+    "trans": "페우케티아의 만들과 메사피아의 들판을 뒤로하고 떠난다.",
+    "words": [
+      {
+        "g": "Peucetiosque",
+        "pos": "형용사",
+        "lemma": "Peucetius, -a, -um",
+        "parse": "pl. acc. m. (or n.)",
+        "gloss_kr": "그리고 페우케티아의",
+        "gloss_en": "and Peucetian",
+        "syntax": "남성/중성 복수 대격 형용사에 등위접속사 -que가 결합한 형태로, 명사 sinus를 수식하며 이탈리아 남부의 페우케티아 지역을 가리킨다.",
+        "background": "베눌루스가 디오메데스를 만나고 나서 돌아가는 길에 거쳐 가는 이탈리아 남부 아풀리아 지방의 고대 해안 지역이다.",
+        "etymology": "그리스어 Πευκέτιοι(Peuketioi, 이탈리아 남부의 고대 부족명 페우케티이)에서 유래한 라틴어 지리 형용사 Peucetius이다. 고전 지리학에서 아풀리아 중부 지역을 지칭하는 용어로 사용되었다."
+      },
+      {
+        "g": "sinus",
+        "pos": "명사",
+        "lemma": "sinus, -us, m.",
+        "parse": "pl. acc. m. (or sg.)",
+        "gloss_kr": "만들을, 해만들을",
+        "gloss_en": "gulfs, bays, curves",
+        "syntax": "남성 복수 대격 명사로 동사 relinquit의 목적어 중 하나이며, 해안선의 굽어진 만이나 지형을 뜻한다.",
+        "background": "이탈리아 남부 아드리아해 연안의 구불구불한 만과 해안 지형을 따라 이동하는 사신 베눌루스의 여정을 묘사한다.",
+        "etymology": "인도유럽조어 재구형 어근에서 유래한 라틴어 sinus(굽이, 품, 만)에서 기원한다. 현대 영어의 sinus(부비동), sinuous(구불구불한) 등의 어근이 되며, 지리적으로는 바다가 육지로 파고든 '만(灣)'을 뜻한다."
+      },
+      {
+        "g": "Messapiaque",
+        "pos": "형용사",
+        "lemma": "Messapius, -a, -um",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "그리고 메사피아의",
+        "gloss_en": "and Messapian",
+        "syntax": "중성 복수 대격 형용사에 등위접속사 -que가 결합하여 명사 arva를 수식하며 메사피아(이탈리아 남동부 살렌토 반도 지역)의 지리적 속성을 나타낸다.",
+        "background": "이탈리아 반도의 가장 동남쪽 끝부분에 위치한 고대 메사피아 지역의 지명으로, 베눌루스의 귀환 경로를 보여준다.",
+        "etymology": "그리스-로마 지명인 퓌아/메사피아(Messapia)에서 파생된 라틴어 지리 형용사 Messapius이다. 고대 남이탈리아의 역사적·지리적 명칭으로 고전문헌에 자주 등장한다."
+      },
+      {
+        "g": "arva",
+        "pos": "명사",
+        "lemma": "arvum, -i, n.",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "들판들을, 경작지들을",
+        "gloss_en": "fields, lands",
+        "syntax": "중성 복수 대격 명사로 relinquit의 직접목적어로 쓰이며, 메사피아의 들판과 영토를 가리킨다.",
+        "background": "사신 베눌루스가 디오메데스의 영토를 떠나 남이탈리아의 여러 고대 지역들을 지나쳐 가는 여정의 지리적 배경을 이룬다.",
+        "etymology": "인도유럽조어 *ar-('갈다')에서 유래한 라틴어 arvum(들판)에서 기원한다."
+      },
+      {
+        "g": "relinquit",
+        "pos": "동사",
+        "lemma": "relinquo, relinquere, reliqui, relictus",
+        "parse": "pres. act. ind. 3rd pers. sg.",
+        "gloss_kr": "떠나다, 뒤로하다",
+        "gloss_en": "leaves behind, abandons",
+        "syntax": "3인칭 단수 현재형 주절 동사로, 주어인 Venulus가 해당 지역들을 뒤로하고 떠나가는 이동 동작을 생생하게 서술한다.",
+        "background": "디오메데스와의 만남을 마친 베눌루스가 자신의 고향이나 목적지를 향해 남이탈리아의 지명들을 차례로 뒤로하며 이동하는 장면이다.",
+        "etymology": "전치사 re-(뒤에, 다시)와 동사 linquere('남겨두다, 떠나다')가 결합한 합성동사 relinquere에서 유래하였다. 인도유럽조어 재구형 *leikʷ-('남기다')에서 비롯되었으며, 영어의 relinquish, relic, delinquent 등이 모두 이와 같은 어근을 공유하는 동계어이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.514",
+    "trans": "그곳에서 그는 동굴을 보는데, 수많은 울창한 숲과",
+    "words": [
+      {
+        "g": "In",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "prep. taking abl.",
+        "gloss_kr": "~안에, ~에서",
+        "gloss_en": "in, among",
+        "syntax": "탈격 명사구 quibus를 지배하는 전치사로, 앞에서 언급된 메사피아와 페우케티아의 지역들 '그 안에서' 벌어지는 풍경을 도입한다.",
+        "background": "이탈리아 남부의 척박하고 거친 지형 속 숨겨진 신화적이고 신비로운 동굴 공간으로 독자의 시선을 안내한다.",
+        "etymology": "인도유럽조어 재구형 *en('~안에')에서 유래한 라틴어 전치사이다. 영어의 in 등의 동계어이다."
+      },
+      {
+        "g": "quibus",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "pl. abl. n. (or f.)",
+        "gloss_kr": "그것들 안에서, 그 지역들에서",
+        "gloss_en": "which, whom",
+        "syntax": "관계대명사의 복수 탈격 형태로, 선행사인 앞구절의 지역들(arva, sinus 등)을 받으며 전치사 In의 목적어가 된다.",
+        "background": "방금 베눌루스가 지나쳐 온 남이탈리아의 지리적 공간들 속에 숨겨진 특수한 신화적 장소를 가리키는 연결고리이다.",
+        "etymology": "인도유럽조어 관계대명사 어근에서 유래한 라틴어 quī의 복수 탈격형이다."
+      },
+      {
+        "g": "antra",
+        "pos": "명사",
+        "lemma": "antrum, -i, n.",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "동굴들을, 동굴을",
+        "gloss_en": "caves, caverns",
+        "syntax": "중성 복수 대격 명사로 동사 videt의 직접목적어 역할을 하며, 숲과 갈대 사이에 숨겨진 신비로운 동굴을 가리킨다.",
+        "background": "그리스-로마 신화에서 요정이나 신들, 혹은 목축의 신 판(Pan)이 머무는 원시적이고 신성한 자연 공간을 상징한다.",
+        "etymology": "그리스어 ἄντρον(antron, 동굴)에서 유래한 라틴어 antrum에서 기원한다. 시문학에서 자연의 깊숙한 동굴이나 은신처를 가리키는 고전 어휘로 널리 쓰였으며, 현대 영어의 antre(시적 표현으로 동굴) 등의 단어로 이어졌다."
+      },
+      {
+        "g": "videt",
+        "pos": "동사",
+        "lemma": "video, videre, vidi, visus",
+        "parse": "pres. act. ind. 3rd pers. sg.",
+        "gloss_kr": "보다",
+        "gloss_en": "sees",
+        "syntax": "3인칭 단수 현재형 주절 동사로, 주어인 Venulus가 이동 중에 우연히 신비로운 동굴과 풍경을 목격하는 장면을 묘사한다.",
+        "background": "사신 베눌루스가 귀환하는 길목에서 마주치는 기이하고 신화적인 장소의 발견을 생생하게 포착한다.",
+        "etymology": "인도유럽조어 재구형 *weyd-('보다, 알다')에서 유래한 라틴어 vidēre에서 기원한다. 산스크리트어 veda, 그리스어 eidos, 영어 wit, wise, video, vision, evident 등이 모두 이 어근을 공유하는 거대한 동계어 군을 이룬다."
+      },
+      {
+        "g": "quae",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "pl. nom. n.",
+        "gloss_kr": "그것들은, 그러한 것들이",
+        "gloss_en": "which",
+        "syntax": "중성 복수 주격 관계대명사로, 동굴을 둘러싼 울창한 숲과 갈대밭 등의 자연 환경적 요소를 주어로 이끈다.",
+        "background": "동굴 주변을 둘러싼 무성한 숲과 물기가 서린 갈대밭의 풍경을 상세히 묘사하기 위한 관계절의 시작점이다.",
+        "etymology": "인도유럽조어 관계대명사 어근에서 유래한 라틴어 quī의 중성 복수 주격형이다."
+      },
+      {
+        "g": "multa",
+        "pos": "형용사",
+        "lemma": "multus, -a, -um",
+        "parse": "sg. abl. f. (또는 복수 nom. 등 문맥상 silva를 수식)",
+        "gloss_kr": "울창한, 수많이 우거진",
+        "gloss_en": "abundant, thick, dense",
+        "syntax": "여성 단수 탈격 형태로 명사 silva를 수식하며, 숲이 깊고 울창하게 우거져 있음을 나타낸다.",
+        "background": "인간의 발길이 드문 원시림의 깊고 어두운 분위기를 조성하여 신화적 사건이 일어날 무대를 구축한다.",
+        "etymology": "인도유럽조어 재구형 어근에서 유래한 라틴어 multus(많은, 풍부한)에서 기원한다. 영어의 multiple, multiply 등이 이와 같은 어근을 공유하는 동계어이다."
+      },
+      {
+        "g": "nubila",
+        "pos": "형용사",
+        "lemma": "nubilus, -a, -um",
+        "parse": "sg. abl. f. (또는 중성 복수 등)",
+        "gloss_kr": "구름 낀, 그늘진, 어두운",
+        "gloss_en": "cloudy, shadowy, dark",
+        "syntax": "탈격 형태로 silva를 수식하며, 숲이 너무 우거져서 햇빛이 잘 들지 않고 그늘지고 어두운 상태를 묘사한다.",
+        "background": "신화 속 신성하거나 비밀스러운 공간 특유의 침침하고 신비로운 분위기를 시각적으로 연출한다.",
+        "etymology": "구름을 뜻하는 라틴어 nūbēs에서 파생된 형용사 nūbilus(구름 낀, 흐린)에서 기원한다. 영어의 nubilous(흐린, 모호한), connubial 등의 어원적 배경이 된다."
+      },
+      {
+        "g": "silva",
+        "pos": "명사",
+        "lemma": "silva, silvae, f.",
+        "parse": "sg. abl. f.",
+        "gloss_kr": "숲으로, 숲속에서",
+        "gloss_en": "with forest, in the woods",
+        "syntax": "여성 단수 탈격 명사로, 동반이나 수단을 나타내며 울창하고 어두운 숲의 존재감을 드러낸다.",
+        "background": "인간의 문명과 떨어진 깊은 자연 속에 자리 잡은 동굴의 은폐된 위치를 강조한다.",
+        "etymology": "인도유럽조어 재구형 어근에서 유래한 라틴어 silva(숲, 삼림)에서 기원한다. 영어의 sylvan(숲의, 숲에 사는), Pennsylvania(펜실베이니아, '펜의 숲'이라는 뜻) 등의 단어 속에 그 어근이 깊게 박혀 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.515",
+    "trans": "그리고 가벼운 갈대들 사이로 물이 솟아나는, 반은 염소인 판(Pan)이",
+    "words": [
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "등위접속사로 숲(silva)과 갈대/샘물(cannis manantia)이라는 동굴 주변의 자연 요소를 매끄럽게 연결한다.",
+        "background": "동굴 주변의 무성한 숲뿐만 아니라 물이 솟아나는 샘과 갈대밭의 풍경을 시각적·청각적으로 풍부하게 확장한다.",
+        "etymology": "인도유럽조어 재구형 *eti('~도 또한')에서 유래한 라틴어 기본 접속사이다."
+      },
+      {
+        "g": "levibus",
+        "pos": "형용사",
+        "lemma": "levis, leve",
+        "parse": "pl. abl. f.",
+        "gloss_kr": "가벼운, 산들거리는",
+        "gloss_en": "light, gentle",
+        "syntax": "여성 복수 탈격 형태로 명사 cannis를 수식하며, 바람에 가볍게 흔들리는 갈대의 성질을 묘사한다.",
+        "background": "샘가 주변에서 바람에 살랑이는 부드러운 갈대들의 풍경을 그려내어 목가적인 분위기를 자아낸다.",
+        "etymology": "인도유럽조어 재구형 *legʷh-('가벼운')에서 유래한 라틴어 levis에서 기원한다. 영어의 light, levity 등의 동계어이다."
+      },
+      {
+        "g": "cannis",
+        "pos": "명사",
+        "lemma": "canna, cannae, f.",
+        "parse": "pl. abl. f.",
+        "gloss_kr": "갈대들로, 갈대 사이로",
+        "gloss_en": "with reeds",
+        "syntax": "여성 복수 탈격 명사로, 물이 솟아나는 장소나 수단을 나타내며 샘가가 갈대들로 둘러싸여 있음을 보여준다.",
+        "background": "목축의 신 판(Pan)이 유래한 목가적 자연 환경이자 그리스 신화 속 요정들이 깃들어 살 만한 물가의 풍경을 완성한다.",
+        "etymology": "그리스어 κάννα(kanna, 갈대)를 거쳐 라틴어 canna로 유입된 어휘이다. 영어의 cane(지팡이, 대나무), canal(운하, 어원적으로 갈대나 관의 형태에서 유래) 등의 단어 속에 그 어근이 깊게 박혀 있다."
+      },
+      {
+        "g": "manantia",
+        "pos": "분사",
+        "lemma": "mano, manare, manavi, manatus",
+        "parse": "pres. act. part. nom. n. pl. (또는 대격)",
+        "kr": "흘러나오는, 샘솟는",
+        "gloss_en": "dripping, flowing, trickling",
+        "syntax": "현재 능동 분사의 중성 복수형태로 동굴 주변의 샘에서 물이 졸졸 흘러나오는 생생한 동적 상태를 수식한다.",
+        "background": "축축하고 물기가 감도는 동굴의 신비롭고 원시적인 생태적 환경을 청각적·시각적으로 묘사한다.",
+        "etymology": "인도유럽조어 재구형 어근에서 유래한 라틴어 manare(흐르다, 솟아나다)에서 기원한다. 영어의 emanate(발산하다, 뿜어져 나오다) 등의 단어 속에 그 어근과 의미가 깊게 박혀 있다."
+      },
+      {
+        "g": "semicaper",
+        "pos": "형용사",
+        "lemma": "semicaper, semicapri, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "반은 염소인 (반인반수)",
+        "gloss_en": "half-goat",
+        "syntax": "남성 단수 주격 형용사/명사로 문장의 주어인 Pan을 수식하며, 상반신은 인간이고 하반신은 염소인 판의 신화적 형상을 나타낸다.",
+        "background": "그리스 신화 속 목축과 자연, 들판의 신인 판(Pan)의 전통적인 생김새를 정확하게 묘사하는 독창적인 형용사 표현이다.",
+        "etymology": "절반을 뜻하는 접두사 sēmi-(그리스어 hemi-, 산스크리트어 sami-)와 염소를 뜻하는 caper가 결합한 라틴어 합성어이다. 영어의 semi-(절반의)와 Capricorn(염소자리) 등의 어원 요소와 결합하여 고전 문헌 속 판의 형상을 생생하게 전달한다."
+      },
+      {
+        "g": "Pan",
+        "pos": "명사",
+        "lemma": "Pan, Panis, m. (그리스어 Πάν)",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "판 (그리스 신화의 목축과 자연의 신)",
+        "gloss_en": "Pan (the god)",
+        "syntax": "문장의 주어 역할을 하는 남성 단수 고유명사로, 이 신비로운 동굴에 거주하거나 깃들어 있는 신격화된 존재이다.",
+        "background": "숲과 동굴, 샘물의 신이자 들판의 수호자인 판이 이탈리아 남부의 원시적 동굴 속에 살고 있거나 그곳을 관장하고 있음을 보여준다.",
+        "etymology": "그리스어 Πάν(Pan, 어원적으로 '모든 것'을 뜻하는 pas와 연관되거나 고대 목축신 호칭에서 유래)에서 기원한 고유명사이다. 영어의 panic(공황, 판 신이 일으키는 갑작스러운 공포에서 유래) 등의 단어 속에 그 신화적 어원이 깊게 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 5.516",
+    "trans": "지금은 그것이 물이지만, 옛날에는 님프들이 차지했던 때가 있었노라.",
+    "words": [
+      {
+        "g": "nunc",
+        "pos": "부사",
+        "lemma": "nunc",
+        "parse": "temporal adv.",
+        "gloss_kr": "지금, 이제",
+        "gloss_en": "now",
+        "syntax": "주절의 시점을 나타내는 시간 부사로, 문두에 위치하여 과거의 특정 시점(quodam tempore)과 현재의 상태를 대조하는 구문적 초점을 형성한다.",
+        "background": "화자가 피에리스 자매들의 노래 속에서 과거 아풀루스 파스토르의 변신 전설을 회상하며, 지형이나 자연물이 과거의 인간이나 신적 존재에서 비롯되었다는 오비디우스 특유의 변신 지형학적 관점을 도입하는 장면입니다.",
+        "etymology": "인도유럽조어 재구형 *nu-('지금')에서 유래한 부사이다. 산스크리트어 nú('이제'), 그리스어 nūn('지금'), 고대 영어 nū('now')가 동계어이다. 라틴어 안에서는 지시 대명사 기저와 결합하는 강화 과정을 겪어 현재 시점을 강조하는 형태인 nunc로 굳어졌다. 현대 영어의 now나 독일어의 nun 등에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "tenet",
+        "pos": "동사",
+        "lemma": "teneo, tenere, tenui, tentum",
+        "principalParts": "teneo – tenere – tenui – tentum",
+        "parse": "pres. act. 3rd pers. sg.",
+        "gloss_kr": "차지하고 있다, 보유하고 있다",
+        "gloss_en": "holds, occupies",
+        "syntax": "현재시제 능동태 동사로, 주어 없이 단독으로 쓰여 현재의 물리적 공간이나 장소를 점유하고 있는 상태를 주절에서 서술한다.",
+        "background": "신화 속에서 님프들이 뛰놀던 거룩한 장소가 시간이 흘러 물가나 샘으로 바뀐 현재의 모습을 극적으로 대비시키며 오비디우스의 서사가 공간에 얽힌 기억을 소환하는 방식을 보여줍니다.",
+        "etymology": "인도유럽조어 재구형 *ten-('뻗다, 늘이다')에서 유래한 동사이다. 산스크리트어 tanoti('뻗다'), 그리스어 teinein('팽팽하게 하다'), 고대 영어 þenian('늘이다')이 동계어이다. 라틴어 안에서 '잡다, 쥐다'에서 '공간이나 상태를 붙들어 유지하다'로 의미가 전이되었다. 현대 영어의 tenant(세입자), retain(유지하다), continue 등에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "at",
+        "pos": "접속사",
+        "lemma": "at",
+        "parse": "adversative conj.",
+        "gloss_kr": "그러나, 반면에",
+        "gloss_en": "but, on the other hand",
+        "syntax": "현재의 상태(nunc tenet)와 과거의 상태(quodam tenuerunt)를 극적으로 대비시키는 대립 접속사로, 절의 맨 앞에 위치해 화제 전환과 시점의 역전을 이끈다.",
+        "background": "현재의 잔해나 지형적 특징 뒤에 숨겨진 신화적이고 역동적인 과거의 원형을 파헤치며 오비디우스가 독자들의 주의를 고대 시대로 이끄는 전환점 역할을 합니다.",
+        "etymology": "인도유럽조어 재구형 *ad-('~에, 가까이에') 또는 의성·지시어 계통에서 출발한 것으로 추정되는 대립 접속사이다. 산스크리트어 adhi, 고대 라틴어의 대조 어근들과 비교되며, 고전 라틴어에 이르러서는 강한 전환이나 반대를 나타내는 기능으로 정착하였다. 로망스어군에서는 이 어근의 직계보다는 다른 형태(예: 스페인어 pero 등)가 주류가 되었으나 고전 문헌에서 대조 구문의 핵심으로 빈번히 확인된다."
+      },
+      {
+        "g": "quodam",
+        "pos": "형용사",
+        "lemma": "quidam, quaedam, quoddam",
+        "parse": "sg. abl. m.",
+        "gloss_kr": "어떤",
+        "gloss_en": "a certain",
+        "syntax": "시간을 나타내는 명사 tempore를 수식하는 부정형용사의 탈격 형태로, 특정한 시점을 불특정하면서도 실존했던 과거의 어느 때로 한정하는 수식 구조를 이룬다.",
+        "background": "신화적 시간의 모호성과 구체성을 동시에 부여하는 표현으로, 독자들로 하여금 아득한 옛날 신화적 시대에 실제로 그곳에서 일어났던 사건임을 암시합니다.",
+        "etymology": "의문·관계 대명사 어근 *kʷo-에 접미사 -dam이 결합하여 만들어진 형태이다. 산스크리트어 ká-, 고대 영어 hwā('who') 등과 동계인 어근에서 파생되었다. 라틴어 내에서 불특정한 대상을 가리키는 한정사 기능을 획득하는 의미 변화를 거쳤으며, 현대 영어의 certain이나 대명사적 용법의 일부 어원적 배경에 간접적으로 연결된다."
+      },
+      {
+        "g": "tempore",
+        "pos": "명사",
+        "lemma": "tempus, temporis, n.",
+        "parse": "sg. abl. n.",
+        "gloss_kr": "때, 시절, 시간",
+        "gloss_en": "time, season",
+        "syntax": "전치사 없이 단독으로 쓰인 시간의 탈격(ablativus temporis)으로, '어느 시절에'라는 의미를 지니며 tenuerunt 동사의 배경이 되는 시간적 단위를 제공한다.",
+        "background": "오비디우스의 변신 이야기에서 시간은 모든 것을 마모시키기도 하고 신화적 흔적을 지형에 새겨넣는 매개체로 작용하며, 이 구절에서는 과거의 영광스럽거나 신비로웠던 국면을 지칭합니다.",
+        "etymology": "인도유럽조어 재구형 *tem-('자르다')에서 유래하여 '잘라낸 시기나 기간'을 뜻하게 된 명사이다. 그리스어 temnein('자르다')이 동계어이며, 의미상 '잘라 구획 지어진 시간'에서 출발하였다. 현대 영어의 temporary(일시적인), contemporary(동시대의), 프랑스어 temps 등에 그 흔적이 뚜렷하게 남아 있다."
+      },
+      {
+        "g": "nymphae",
+        "pos": "명사",
+        "lemma": "nympha, nymphae, f.",
+        "parse": "pl. nom. f.",
+        "gloss_kr": "님프들, 요정들",
+        "gloss_en": "nymphs",
+        "syntax": "주절의 복수 주어로, 후행하는 동사 tenuerunt와 수와 인칭이 일치하며 과거에 그 장소를 지배하고 뛰놀던 주체임을 밝힌다.",
+        "background": "그리스·로마 신화에서 샘, 나무, 산 등을 수호하는 자연의 여신이자 정령들로, 아풀루스의 무례한 행동으로 인해 결국 나무나 다른 형태로 변신하거나 쫓겨나기 전의 평화로운 주인이었습니다.",
+        "etymology": "그리스어 νύμφη('신부, 님프')에서 유래한 차용어이다. 인도유럽조어 재구형 *snubha-('결혼하다, 덮다')와 연관이 있으며, 산스크리트어 snūsā('며느리') 등이 동계어로 거론된다. 라틴어를 거쳐 서유럽 언어에 정착하였으며, 현대 영어의 nymph(님프, 요정) 및 생물학 용어 등에서 그 형태가 그대로 유지되고 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 5.517",
+    "trans": "아풀리아의 한 목동이 그 지역에서 달아나는 이들을",
+    "words": [
+      {
+        "g": "Apulus",
+        "pos": "형용사",
+        "lemma": "Apulus, Apula, Apulum",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "아풀리아의, 아풀리아 출신의",
+        "gloss_en": "Apulian",
+        "syntax": "주어인 pastor를 수식하는 형용사로, 문두에 위치하여 이 사건이 벌어지는 지리적 배경인 이탈리아 남동부 아풀리아 지방의 지역색을 강하게 드러낸다.",
+        "background": "이탈리아 남부의 거칠고 메마른 목축 지대인 아풀리아(Apulia)를 배경으로 설정함으로써, 도시적 세련됨과 대비되는 거칠고 무례한 목동의 성격을 미리 암시하는 중요한 인물 속성입니다.",
+        "etymology": "선이탈리아어 기층 지명인 *Apula에서 유래한 형용사적 파생어이다. 그리스어 Απουλία 및 이탈리아 남부 토착 언어의 지명 어근에서 비롯되었으며, 인도유럽조어 차원의 확실한 어근보다는 지리적 고유명사 기층에 속한다. 현대 이탈리아의 행정 구역인 Puglia(푸글리아) 및 지리 명칭 Apulia에 그 흔적이 직접 남아 있다."
+      },
+      {
+        "g": "has",
+        "pos": "대명사",
+        "lemma": "hic, haec, hoc",
+        "parse": "pl. acc. f.",
+        "gloss_kr": "이 여자들을, 이 님프들을",
+        "gloss_en": "these (nymphs)",
+        "syntax": "직접목적어인 nymphae를 지칭하는 지시형용사(대명사적 용법)의 대격 복수 여성형으로, 앞 절의 님프들이 도망치는 대상임을 지시한다.",
+        "background": "목동의 갑작스러운 출현과 위협에 놀라 달아나는 님프들을 가리키며, 평화로운 자연의 정령들이 폭력적이거나 거친 인간 남성의 개입으로 위협받는 극적 긴장감을 유발합니다.",
+        "etymology": "인도유럽조어 지시사 대명사 어근 *gho- 또는 *ko-에 근접 지시 접미사가 결합한 형태이다. 산스크리트어 등과의 직접적 동계어 비교보다는 이탈리아어군 내부의 지시사 체계 안에서 발전하였다. 로망스어군의 다양한 지시사(예: 스페인어 este 등)의 기저에 영향을 주었으며 라틴어 문헌 전반에 걸쳐 가장 빈번히 쓰이는 핵심 문법 요소이다."
+      },
+      {
+        "g": "illa",
+        "pos": "부사",
+        "lemma": "illic",
+        "parse": "locatival adv.",
+        "gloss_kr": "거기에, 그곳에서",
+        "gloss_en": "there",
+        "syntax": "장소를 나타내는 부사로, 사건이 벌어지는 특정한 현장인 아풀리아의 들판이나 숲 속을 가리키며 문장의 공간적 배경을 구체화한다.",
+        "background": "목동이 님프들을 위협하고 쫓아내는 현장의 공간적 무대를 생생하게 그려내며, 서사의 초점을 특정 장소로 집중시키는 역할을 합니다.",
+        "etymology": "지시 대명사 ille의 탈격/처격 형태에서 발달한 부사이다. 인도유럽조어 원거리 지시사 어근에서 유래하였으며, 라틴어 속격·처격 형태의 음운 축약을 겪었다. 로망스어군의 원거리 장소 부사(예: 이탈리아어 là 등) 형성에 기여하였으며 고전 라틴어 전역에서 장소 지칭의 표준으로 쓰인다."
+      },
+      {
+        "g": "pastor",
+        "pos": "명사",
+        "lemma": "pastor, pastoris, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "목동, 양치기",
+        "gloss_en": "shepherd",
+        "syntax": "문장의 주어로, 뒤의 동사 terruit과 subita formidine movit의 행위 주체를 이룬다.",
+        "background": "고대 목가 문학에서 목동은 흔히 피리 소리를 불고 평화로운 존재로 그려지지만, 여기서는 문명화된 예의를 모르는 거칠고 파괴적인 농경·목축 사회의 야만성을 대변하는 인물로 등장합니다.",
+        "etymology": "동사 pasco('풀을 뜯기다')의 어간에 행위자 명사 접미사 -tor가 결합한 형태이다. 인도유럽조어 재구형 *peh₂-('보호하다, 풀을 먹이다')에서 유래하였으며, 산스크리트어 pāti('보호하다'), 그리스어 poimēn('목자')이 동계어이다. 현대 영어의 pastor(목사), pasture(목초지), paternal 등의 어근적 배경과 연결된다."
+      },
+      {
+        "g": "regione",
+        "pos": "명사",
+        "lemma": "regio, regionis, f.",
+        "parse": "sg. abl. f.",
+        "gloss_kr": "지역에서, 지방에서",
+        "gloss_en": "region, area",
+        "syntax": "장소의 탈격(ablativus loci)으로 전치사 in 없이 쓰여, 아풀리아라는 광대한 공간적 무대 속을 의미하는 배경 처소 역할을 한다.",
+        "background": "아풀리아의 황량하고 거친 지리적 특성이 목동의 거친 행동 양식과 직접적으로 연결됨을 시사하는 공간적 배경 설명입니다.",
+        "etymology": "동사 rego('다스리다, 곧게 펴다')의 어간에 명사 파생 접미사가 결합한 형태이다. 인도유럽조어 재구형 *reg-('곧게 하다, 이끌다')에서 유래하였으며, 산스크리트어 rájan('왕'), 영어 recht/right 등이 동계어이다. '지리적으로 구획된 구역'으로 의미가 전이되었으며, 현대 영어의 region(지역), regular 등에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "fugatas",
+        "pos": "분사",
+        "lemma": "fugo, fugare, fugavi, fugatum",
+        "parse": "perf. pass. part. acc. f. pl.",
+        "gloss_kr": "달아나게 된, 도망치는",
+        "gloss_en": "put to flight, chased",
+        "syntax": "대명사 has를 수식하는 완료 수동 분사의 대격 복수형으로, 목동의 위협에 의해 쫓기며 도망치는 님프들의 절박한 상태를 묘사한다.",
+        "background": "목동의 갑작스러운 출현으로 인해 평화롭게 춤추고 놀던 님프들이 황급히 도망치는 급박한 상황을 시각적으로 포착해 줍니다.",
+        "etymology": "동사 fugio('도망치다')의 사역형 파생동사 fugare에서 유래한 분사이다. 인도유럽조어 재구형 *bheug-('도망치다, 피하다')에서 유래하였으며, 그리스어 pheugein('도망치다')이 동계어이다. 의미상 '도망치게 만들다'라는 사역적 의미를 획득하였고, 현대 영어의 fugitive(도망자), refuge(피난처) 등에 그 흔적이 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 5.518",
+    "trans": "공포에 떨게 하고 갑작스러운 두려움으로 처음에는 놀라게 하였으나,",
+    "words": [
+      {
+        "g": "terruit",
+        "pos": "동사",
+        "lemma": "terreo, terrere, terrui, territum",
+        "principalParts": "terreo – terrere – terrui – territum",
+        "parse": "perf. act. 3rd pers. sg.",
+        "gloss_kr": "겁주었다, 놀라게 했다",
+        "gloss_en": "terrified, frightened",
+        "syntax": "주절의 완료시제 능동태 동사로, 주어인 pastor의 갑작스러운 행동이 님프들에게 가한 즉각적인 심리적 충격을 서술한다.",
+        "background": "목동의 거친 등장과 난폭한 태도가 평화로운 님프들에게 안겨준 초기 반응을 강렬한 동사로 표현하여 이후의 반전과 대조를 이룹니다.",
+        "etymology": "인도유럽조어 재구형 *ters-('마르다, 떨다')에서 유래한 동사이다. 산스크리트어 tṛṣyati('목마르다'), 그리스어 treinein('떨다') 등이 동계어이며, 공포로 인해 입이 마르고 몸이 떨리는 생리적 현상에서 의미가 발전하였다. 현대 영어의 terror(공포), terrify(겁주다) 등에 그 어원이 직접 살아 있다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "동사 terruit과 movit을 대등하게 연결하는 등위 접속사로, 목동이 가한 공포의 두 가지 측면(겁줌과 동요시킴)을 순차적으로 엮어준다.",
+        "background": "문장의 호흡을 이어주며 목동의 일방적인 위협 행위가 님프들의 마음에 일으킨 파문이 단순한 겁을 넘어 행동의 변화로 이어지는 과정을 매끄럽게 연결합니다.",
+        "etymology": "인도유럽조어 재구형 *eti('또한, 게다가')에서 유래한 접속사이다. 산스크리트어 áti('넘어서, 더욱이'), 그리스어 eti('여전히')가 동계어이다. 라틴어 전역에서 가장 기본적인 대등 접속사로 자리 잡았으며, 로망스어군에서는 다른 형태(예: 스페인어 y 등)로 대체되거나 일부 흔적을 남겼다."
+      },
+      {
+        "g": "primo",
+        "pos": "부사",
+        "lemma": "primus, prima, primum",
+        "parse": "abl. n. sg. (used adverbially)",
+        "gloss_kr": "처음에, 맨 먼저",
+        "gloss_en": "at first, firstly",
+        "syntax": "시간적 순서를 나타내는 부사적 대격/탈격 형태로 쓰여, 님프들이 처음에는 두려워했으나 나중에 태도를 바꾸게 되는 시간적 전환 구조의 기점이 된다.",
+        "background": "사건의 전개 과정을 '처음에는 두려워함'에서 '나중에는 정신을 차리고 무시함'으로 이어지는 심리적 변화의 첫 단계를 열어줍니다.",
+        "etymology": "최상급 형용사 primus의 중성 탈격 형태에서 발달한 부사이다. 인도유럽조어 재구형 *pr-mo-('앞의, 첫 번째의')에서 유래하였으며, 산스크리트어 prathamá-, 그리스어 prōtos가 동계어이다. 현대 영어의 premier, primary, prime 등의 어근적 배경이 되는 기초 어휘이다."
+      },
+      {
+        "g": "subita",
+        "pos": "형용사",
+        "lemma": "subitus, subita, subitum",
+        "parse": "sg. abl. f.",
+        "gloss_kr": "갑작스러운, 돌발적인",
+        "gloss_en": "sudden, unexpected",
+        "syntax": "여성 단수 탈격 명사 formidine을 수식하는 형용사로, 목동의 등장이 예상치 못한 충격이었음을 강조하는 수식 성분이다.",
+        "background": "평온하던 숲속에서 예고 없이 튀어나온 목동의 무례한 출현이 가져온 당혹감과 충격을 생생하게 전달합니다.",
+        "etymology": "동사 subeo('밑에서 올라오다, 불쑥 나타나다')의 과거분사에서 기원한 형용사이다. 인도유럽조어 전치사 어근과 가다(ei-)의 조합에서 발전하였으며, '갑자기 아래에서 치밀어 오르다'라는 의미 전이를 겪었다. 현대 영어의 sudden, subtitue 등의 복합적 어원 경로와 연결된다."
+      },
+      {
+        "g": "formidine",
+        "pos": "명사",
+        "lemma": "formido, formidinis, f.",
+        "parse": "sg. abl. f.",
+        "gloss_kr": "두려움, 공포, 경악",
+        "gloss_en": "fear, terror, dread",
+        "syntax": "수단의 탈격(ablativus instrumenti)으로 쓰여, 목동이 님프들을 움직이게 만든 원동력이 바로 '갑작스러운 공포'였음을 도구적으로 설명한다.",
+        "background": "단순한 놀람을 넘어 영혼을 위축시키는 깊은 두려움을 뜻하며, 신화 속 신성한 존재들이 인간의 무례함 앞에 일시적으로 위축되는 정서적 상태를 가리킵니다.",
+        "etymology": "인도유럽조어 재구형상 떨림을 나타내는 의성적·음성상징적 어근에서 출발한 것으로 추정되는 명사이다. 라틴어 내부에서 두려움으로 인한 떨림을 뜻하는 동사 formidare의 모체가 되었으며, 현대 영어의 formidable(무서운, 만만찮은)이라는 단어 속에 그 어원적 흔적이 뚜렷하게 살아 있다."
+      },
+      {
+        "g": "movit",
+        "pos": "동사",
+        "lemma": "moveo, movere, movi, motum",
+        "principalParts": "moveo – movere – movi – motum",
+        "parse": "perf. act. 3rd pers. sg.",
+        "gloss_kr": "움직이게 했다, 동요시켰다",
+        "gloss_en": "moved, startled, disturbed",
+        "syntax": "완료시제 능동태 동사로, 주어인 pastor와 함께 님프들의 평정을 깨뜨리고 도망치도록 자극했음을 완결된 행동으로 서술한다.",
+        "background": "공포라는 내면의 감정이 님프들로 하여금 자리에서 도망치거나 몸을 피하는 외적 행동으로 전환되도록 만든 결정적인 작용을 표현합니다.",
+        "etymology": "인도유럽조어 재구형 *meu-('밀다, 움직이다')에서 유래한 동사이다. 산스크리트어 mávati('밀다')가 동계어이다. 라틴어 안에서 물리적 이동뿐만 아니라 마음을 동요시키는 심리적 자극의 뜻으로 의미가 확장되었다. 현대 영어의 move(움직이다), motion(운동), remove 등에 그 어원이 생생하게 살아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 5.519",
+    "trans": "머지않아 정신이 돌아오고 뒤쫓는 자를 업신여기게 되자,",
+    "words": [
+      {
+        "g": "mox",
+        "pos": "부사",
+        "lemma": "mox",
+        "parse": "temporal adv.",
+        "gloss_kr": "곧, 얼마 안 되어, 머지않아",
+        "gloss_en": "soon, presently",
+        "syntax": "시간 부사로 문두에 위치하여, 공포에 질려 도망치던 초기 반응에서 벗어나 태도가 반전되는 시점의 급격한 전환을 매개한다.",
+        "background": "일시적인 공포에 압도되었던 님프들이 이내 신적 존재로서의 자존감과 여유를 되찾는 심리적 국면 전환의 속도감을 부여합니다.",
+        "etymology": "인도유럽조어 재구형에서 파생된 시간 부사로, 고대 라틴어의 미래 지향적 혹은 근접 미래를 뜻하는 어근에서 유래하였다. 산스크리트어 등의 직접적 대응어보다는 라틴어군 고유의 시간 부사 체계 안에서 정착하였다. 로망스어군에서는 다른 형태(예: 스페인어 pronto 등)로 대체되었으나 고전 라틴어 문학에서 짧은 간격을 두고 벌어지는 일을 묘사하는 데 핵심적으로 쓰인다."
+      },
+      {
+        "g": "ubi",
+        "pos": "접속사",
+        "lemma": "ubi",
+        "parse": "temporal conj.",
+        "gloss_kr": "~할 때, ~하자마자",
+        "gloss_en": "when, as soon as",
+        "syntax": "시간적 종속절을 이끄는 접속사로, 뒤의 직설법 완료동사들(rediit, contempsere)과 결합해 주된 행동이 일어난 배경 조건을 제시한다.",
+        "background": "님프들이 공포에서 벗어나 마음의 안정을 찾고 목동을 바라보는 심리적 전환의 계기를 시간적 조건으로 깔아주는 핵심 접속사입니다.",
+        "etymology": "인도유럽조어 관계·의문 대명사 어근 *kʷo-에 장소/시간 처격 접미사가 결합한 형태이다. 산스크리트어 kúha('어디에')와 동계이며, 공간적 의미에서 시간적 의미(~할 때)로의 전이가 일어났다. 현대 영어의 where 등의 어원적 계열과 뿌리를 같이하며, 라틴어 종속절 구문의 필수 요소이다."
+      },
+      {
+        "g": "mens",
+        "pos": "명사",
+        "lemma": "mens, mentis, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "마음, 정신, 이성",
+        "gloss_en": "mind, reason, wits",
+        "syntax": "종속절의 주어로, 공포로 인해 흐려졌던 정신이 제자리로 돌아오는 주체로서 능동적 주격 자리를 차지한다.",
+        "background": "단순한 감정이 아니라 이성과 자아를 가리키며, 님프들이 더 이상 무서워 도망칠 필요가 없음을 깨닫고 이성적 판단을 회복했음을 보여줍니다.",
+        "etymology": "인도유럽조어 재구형 *men-('생각하다, 마음에 품다')에서 유래한 명사이다. 산스크리트어 mányate('생각하다'), 그리스어 menos('기개, 마음'), 고대 영어 gemynd('마음')가 동계어이다. 현대 영어의 mind(마음), mental(정신의), comment 등에 그 어원이 뚜렷하게 남아 있다."
+      },
+      {
+        "g": "rediit",
+        "pos": "동사",
+        "lemma": "redeo, redire, redii, reditum",
+        "principalParts": "redeo – redire – redii – reditum",
+        "parse": "perf. act. 3rd pers. sg.",
+        "gloss_kr": "돌아왔다",
+        "gloss_en": "returned, came back",
+        "syntax": "종속절의 완료시제 능동태 동사로, 주어인 mens와 결합해 달아났던 정신이나 이성이 제자리로 되돌아온 상태를 역동적으로 표현한다.",
+        "background": "일시적인 패닉 상태가 가시고 님프들이 원래의 침착함과 신성한 오만함을 되찾는 심리적 복원 과정을 극적으로 포착합니다.",
+        "etymology": "접두사 re-('다시, 뒤로')와 동사 eo(가다, ire)가 합쳐진 합성동사이다. 인도유럽조어 재구형 *ei-('가다')에서 유래하였으며, 산스크리트어 éti('간다'), 그리스어 ienai('가다')가 동계어이다. 현대 영어의 exit, ion 등의 어근적 배경과 연결되며, '제자리로 다시 돌아오다'라는 의미를 형성한다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "두 개의 종속절 동사 rediit과 contempsere를 대등하게 연결하는 접속사로, 정신이 돌아온 것과 목동을 업신여기기 시작한 행동을 인과적·시간적으로 묶어준다.",
+        "background": "정신적 회복(rediit)이 곧바로 감정적 오만함과 경멸(contempsere)로 이어지는 자연스러운 심리적 비약을 매끄럽게 잇습니다.",
+        "etymology": "인도유럽조어 재구형 *eti('또한')에서 유래한 접속사이다. (5.518의 et 항목 참조)"
+      },
+      {
+        "g": "contempsere",
+        "pos": "동사",
+        "lemma": "contemno, contemnere, contempsi, contemptum",
+        "principalParts": "contemno – contemnere – contempsi – contemptum",
+        "parse": "perf. act. 3rd pers. pl. (syncopated form for contempserunt)",
+        "gloss_kr": "업신여겼다, 경멸했다",
+        "gloss_en": "despised, scorned, disdained",
+        "syntax": "완료시제 능동태의 축약형(contempserunt 대신 쓰인 운문적 이형태)으로, 주어인 님프들이 자신들을 쫓던 목동을 두려움의 대상이 아닌 하찮은 존재로 깔보게 된 태도를 나타낸다.",
+        "background": "공포가 사라지자마자 님프들이 인간 목동을 향해 느끼는 신적 우월감과 경멸감을 보여주며, 이후 이들이 벌일 도발적인 춤(5.520)의 동기가 됩니다.",
+        "etymology": "전치사적 접두사 con-과 어근 temno('경멸하다, 자르다')가 결합한 동사이다. 인도유럽조어 어근에서 유래하였으며, 라틴어 안에서 가치 없게 여기다라는 의미로 분화되었다. 현대 영어의 contempt(경멸), contemplate 등의 어근적 계열과 깊은 연관이 있다."
+      },
+      {
+        "g": "sequentem",
+        "pos": "분사",
+        "lemma": "sequor, sequi, secutus sum",
+        "parse": "pres. act. part. acc. m. sg.",
+        "gloss_kr": "뒤쫓는 자를, 추격하는 이를",
+        "gloss_en": "the pursuer, the one following",
+        "syntax": "현재 능동 분사의 대격 남성 단수 형태로 명사처럼 쓰여(substantive participle), 님프들을 뒤따라오던 목동을 직접목적어로 지칭한다.",
+        "background": "자신들을 겁주며 쫓아오던 목동이 이제는 두려움의 대상이 아니라 자신들의 비웃음과 오만한 경멸의 대상이 되었음을 보여주는 핵심 대상입니다.",
+        "etymology": "인도유럽조어 재구형 *sekʷ-('따라가다')에서 유래한 동사 sequor의 분사형이다. 산스크리트어 sácate('함께 가다'), 그리스어 hephesthai('따라가다')가 동계어이다. 현대 영어의 follow(음운 변화를 거침), sequence(순서), consecutive 등에 그 어원이 뚜렷하게 살아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 5.520",
+    "trans": "발을 움직여 박자에 맞춰 춤을 추었노라.",
+    "words": [
+      {
+        "g": "ad",
+        "pos": "전치사",
+        "lemma": "ad",
+        "parse": "prep. + acc.",
+        "gloss_kr": "~에 맞춰서, ~에 응하여",
+        "gloss_en": "to, in accordance with, to the accompaniment of",
+        "syntax": "대격 명사 numerum을 지배하는 전치사로, 춤의 동작(duxere choreas)이 박자나 리듬에 정확히 맞추어져 진행됨을 나타내는 기준·방향의 관계를 이룬다.",
+        "background": "두려움을 떨쳐낸 님프들이 목동을 비웃으며 일사불란하고 우아한 자신들만의 리듬에 맞춰 춤을 추는 도발적이고 여유로운 장면을 연출합니다.",
+        "etymology": "인도유럽조어 재구형 *ad-('~를 향하여, 근처에')에서 유래한 전치사이다. 산스크리트어 adhi, 고대 영어 æt('at')과 동계어이다. 라틴어 전역에서 방향, 목적, 기준을 나타내는 가장 핵심적인 전치사 중 하나로 기능하며, 현대 영어의 adapt, adhere 등의 접두사 형태로 남아 있다."
+      },
+      {
+        "g": "numerum",
+        "pos": "명사",
+        "lemma": "numerus, numeri, m.",
+        "parse": "sg. acc. m.",
+        "gloss_kr": "수, 박자, 리듬",
+        "gloss_en": "number, rhythm, beat",
+        "syntax": "전치사 ad의 지배를 받는 대격 단수 남성 명사로, 여기서는 단순한 숫자가 아니라 음악이나 춤의 '박자'와 '율격적 리듬'을 뜻하는 전문적 의미로 쓰인다.",
+        "background": "님프들이 무례한 목동을 조롱하기 위해 의도적으로 완벽한 리듬과 박자에 맞춰 우아한 춤사위를 선보이며 그를 예술적·신적으로 압도하는 상황을 묘사합니다.",
+        "etymology": "인도유럽조어 재구형 *nem-('나누다, 할당하다')에서 유래한 명사이다. 그리스어 nemein('분배하다')이 동계어이며, '규칙적으로 할당된 단위나 셈'에서 '음악의 박자, 리듬'으로 의미가 전이되었다. 현대 영어의 number(숫자), numerous(많은), numeral 등에 그 어원이 생생하게 살아 있다."
+      },
+      {
+        "g": "motis",
+        "pos": "분사",
+        "lemma": "moveo, movere, movi, motum",
+        "parse": "perf. pass. part. abl. m. pl.",
+        "gloss_kr": "움직여진, 박자에 맞춰 움직이는",
+        "gloss_en": "moved, set in motion",
+        "syntax": "복수 탈격 남성 명사 pedibus를 수식하는 완료 수동 분사로, 리듬에 맞춰 끊임없이 움직이는 발의 상태를 묘사한다.",
+        "background": "정지해 있거나 두려움에 떨던 발이 아니라, 이제는 경멸을 담아 우아하고 능동적으로 움직이는 님프들의 율동적인 발놀림을 생생하게 그려냅니다.",
+        "etymology": "동사 moveo('움직이다')의 완료 수동 분사형이다. 인도유럽조어 재구형 *meu-('밀다, 움직이다')에서 유래하였다. (5.518의 movit 항목 참조)"
+      },
+      {
+        "g": "pedibus",
+        "pos": "명사",
+        "lemma": "pes, pedis, m.",
+        "parse": "pl. abl. m.",
+        "gloss_kr": "발로",
+        "gloss_en": "with feet",
+        "syntax": "도구의 탈격(ablativus instrumenti)으로 쓰여, 춤을 추는 수단이자 도구가 되는 발의 움직임을 구체적으로 명시한다.",
+        "background": "지상을 가볍게 디디며 춤추는 님프들의 신체적 동작을 강조하며, 투박한 목동의 '농경적/거친 춤'과 대비되는 우아한 신적 움직임을 부각합니다.",
+        "etymology": "인도유럽조어 재구형 *ped-('발')에서 유래한 명사이다. 산스크리트어 pad-, 그리스어 pous(pod-), 고대 영어 fōt('foot')가 동계어이다. 현대 영어의 foot, pedal(페달), pedestrian(보행자), biped 등에 그 어원이 뚜렷하게 남아 있다."
+      },
+      {
+        "g": "duxere",
+        "pos": "동사",
+        "lemma": "duco, ducere, duxi, ductum",
+        "principalParts": "duco – ducere – duxi – ductum",
+        "parse": "perf. act. 3rd pers. pl. (syncopated form for duxerunt)",
+        "gloss_kr": "이끌었다, 춤추었다",
+        "gloss_en": "led, danced (a dance)",
+        "syntax": "완료시제 능동태의 축약형(duxerunt 대신 쓰인 운문적 이형태)으로, 주어인 님프들이 발의 박자에 맞춰 춤(choreas)을 주도하고 이끌어 나갔음을 서술한다.",
+        "background": "단순히 발을 구르는 것을 넘어 둥글게 원을 그리며 춤을 이끌어가는 정교하고 전통적인 님프들의 군무(群舞)를 표현하는 고전시가의 관용적 표현입니다.",
+        "etymology": "인도유럽조어 재구형 *deuk-('이끌다, 끌다')에서 유래한 동사이다. 고대 영어 tēon('끌다'), 독일어 zeihen과 동계어이다. 라틴어 안에서 물리적인 이끔뿐만 아니라 행렬이나 춤을 이끌다(ducere choreas)라는 관용적 표현으로 널리 쓰였다. 현대 영어의 duke(공작), conduct(지휘하다), educate 등에 그 어원이 깊게 박혀 있다."
+      },
+      {
+        "g": "choreas",
+        "pos": "명사",
+        "lemma": "chorea, choreae, f.",
+        "parse": "pl. acc. f.",
+        "gloss_kr": "원무, 춤",
+        "gloss_en": "dances, choral dances",
+        "syntax": "동사 duxere의 직접목적어로 쓰인 대격 복수 여성 명사로, 님프들이 발맞춰 추는 집단적인 춤의 형태를 가리킨다.",
+        "background": "신화 속에서 님프들이 모여 아폴론이나 무사이의 노래에 맞춰 추는 전통적이고 조화로운 춤을 뜻하며, 목동의 투박한 행동과 극단적인 대조를 이룹니다.",
+        "etymology": "그리스어 χορεία(choreia, '원형 무도, 춤')에서 유래한 차용어이다. 그리스어 χόρος(choros, 합창단/무대)에서 파생되었으며, 라틴어 시문학에서 차용되어 고풍스럽고 우아한 춤을 뜻하는 시어러 정착하였다. 현대 영어의 choreo-(안무 관련 접두사) 및 라틴어계 어휘에 그 흔적이 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 5.521",
+    "trans": "목동은 이들을 못마땅하게 여기며, 촌스러운 짓궂은 춤으로 흉내 내며",
+    "words": [
+      {
+        "g": "Improbat",
+        "pos": "동사",
+        "lemma": "improbo, improbare, improbavi, improbatum",
+        "principalParts": "improbo – improbare – improbavi – improbatum",
+        "parse": "pres. act. 3rd pers. sg.",
+        "gloss_kr": "못마땅해하다, 비난하다, 힐난하다",
+        "gloss_en": "disapproves of, condemns, rejects",
+        "syntax": "현재시제 능동태 동사로, 주어인 pastor가 님프들의 우아하고 자신을 조롱하는 듯한 춤을 보고 불쾌하게 여기며 배척하는 태도를 현장감 있게 서술한다.",
+        "background": "자신을 무시하며 우아하게 춤추는 님프들을 보며 열등감과 불쾌감을 느낀 목동이 품위 없는 방식으로 그들을 조롱하고 따라 하기 시작하는 갈등의 촉발점입니다.",
+        "etymology": "반대를 나타내는 접두사 in-과 형용사 probus('정직한, 훌륭한')에서 파생된 동사 probare('좋게 여기다, 인정하다')가 결합한 형태이다. 인도유럽조어 어근에서 유래하였으며, '좋지 않다고 판정하다, 거부하다'로 의미가 발전하였다. 현대 영어의 improbable(있을 법하지 않은), probation 등의 어근적 배경이 된다."
+      },
+      {
+        "g": "has",
+        "pos": "대명사",
+        "lemma": "hic, haec, hoc",
+        "parse": "pl. acc. f.",
+        "gloss_kr": "이 여자들을, 이 님프들을",
+        "gloss_en": "these (nymphs)",
+        "syntax": "동사 Improbat의 직접목적어로 쓰인 지시형용사(대명사적 용법)의 대격 복수 여성형으로, 목동이 못마땅해하며 주시하는 대상이 바로 그 님프들임을 가리킨다.",
+        "background": "자신을 멸시하며 춤추는 님프들을 향한 목동의 시선과 불만이 직접적으로 향하는 대상이며, 이어지는 그의 거친 행동의 빌미가 됩니다.",
+        "etymology": "인도유럽조어 지시 대명사 어근에서 유래한 형태이다. (5.517의 has 항목 참조)"
+      },
+      {
+        "g": "pastor",
+        "pos": "명사",
+        "lemma": "pastor, pastoris, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "목동, 양치기",
+        "gloss_en": "shepherd",
+        "syntax": "주절의 주어로, 님프들의 우아한 춤에 반발하여 저급하고 거친 방식으로 대응하는 행위의 주체이다.",
+        "background": "세련된 님프들의 예술적 춤에 맞서 자신만의 투박하고 저속한 시골 농부의 몸짓을 꺼내어 그들을 조롱하는 옹졸한 목동의 면모를 보여줍니다.",
+        "etymology": "동사 pasco의 어간에 행위자 명사 접미사가 결합한 형태이다. (5.517의 pastor 항목 참조)"
+      },
+      {
+        "g": "saltuque",
+        "pos": "명사",
+        "lemma": "saltus, saltus, m.",
+        "parse": "sg. abl. m. + enclitic conj. -que",
+        "syntax": "수단의 탈격(ablativus instrumenti) 명사 saltu에 등위접속사 -que가 붙은 형태로, '도약하며' 혹은 '거친 춤사위로'라는 수단을 나타내며 뒤의 imitatus를 보조한다.",
+        "background": "우아한 님프들의 원무(chorea)와 대비되는, 목동 특유의 쿵쾅거리며 투박하게 뛰어오르는 시골뜨기식 막춤(saltus)의 성격을 적나라하게 드러냅니다.",
+        "etymology": "인도유럽조어 재구형 *sel- 또는 *sal-('뛰다, 도약하다')에서 유래한 명사이다. 산스크리트어 sálati('뛰다'), 그리스어 hallesthai('도약하다')가 동계어이다. 라틴어에서 '도약'과 '거친 춤'의 의미를 동시에 갖게 되었으며, 현대 영어의 assault(공격하다, 뛰어들다), insult, salient 등의 어원적 뿌리가 된다.",
+        "gloss_kr": "그리고 거친 도약으로, 껑충거림으로",
+        "gloss_en": "and with a bound, by leaping"
+      },
+      {
+        "g": "imitatus",
+        "pos": "분사",
+        "lemma": "imitor, imitari, imitatus sum",
+        "parse": "perf. dep. part. nom. m. sg.",
+        "gloss_kr": "흉내 내어, 모방하여",
+        "gloss_en": "imitating, mimicking",
+        "syntax": "주격 남성 단수 형식의 탈형태(deponent) 완료분사로, 주어인 pastor가 님프들의 춤을 조롱조로 따라 하고 있음을 주절 동사적 성격으로 서술한다.",
+        "background": "님프들의 고귀하고 우아한 춤을 품위 없이 비틀어 흉내 냄으로써 목동이 신성모독적이거나 무례한 도발을 감행하고 있음을 보여줍니다.",
+        "etymology": "인도유럽조어 재구형 *im-('비슷하다, 모방하다') 계통의 어근에서 유래한 디포넌트 동사 imitor의 분사이다. 산스크리트어 등과 연관되며 형태적 유사성을 본뜨는 행위를 뜻한다. 현대 영어의 imitate(모방하다), imitation(모조품), image 등의 어원적 근간이 된다."
+      },
+      {
+        "g": "agresti",
+        "pos": "형용사",
+        "lemma": "agrestis, agreste",
+        "parse": "sg. abl. m.",
+        "gloss_kr": "시골의, 촌스러운, 야만적인",
+        "gloss_en": "rustic, country-style, uncouth",
+        "syntax": "탈격 명사 saltu를 수식하는 제3변화 형용사의 탈격 단수 남성형으로, 목동의 춤이 지닌 투박하고 세련되지 못한 속성을 강조한다.",
+        "background": "도시적이거나 신성한 님프들의 문화와 완전히 대척점에 있는, 거칠고 세련되지 못한 목축민의 촌스러움과 야만성을 시각적으로 부각합니다.",
+        "etymology": "명사 ager('들판, 농경지')에서 파생된 형용사이다. 인도유럽조어 재구형 *agro-('들판')에서 유래하였으며, 그리스어 agros, 영어 acre('에이커')가 동계어이다. '들판에 속한'에서 '시골스러운, 야만적인'으로 의미가 전이되었으며, 현대 영어의 agriculture(농업), peregrine 등의 어원과 연결된다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 5.522",
+    "trans": "외설스러운 말로 시골스러운 욕설을 덧붙였으니,",
+    "words": [
+      {
+        "g": "addidit",
+        "pos": "동사",
+        "lemma": "addo, addere, addidi, additum",
+        "principalParts": "addo – addere – addidi – additum",
+        "parse": "perf. act. 3rd pers. sg.",
+        "gloss_kr": "덧붙였다, 보태었다",
+        "gloss_en": "added, appended",
+        "syntax": "완료시제 능동태 동사로, 춤을 흉내 내는 것에 그치지 않고 저속한 말과 욕설까지 추가로 퍼붓는 목동의 행동을 점층적으로 확대한다.",
+        "background": "몸짓으로 시작된 조롱이 입으로 내뱉는 저속한 욕설과 외설스러운 언어로 격화되며 신성한 님프들을 향한 모욕의 수위가 최고조에 달함을 보여줍니다.",
+        "etymology": "전치사적 접두사 ad-('~에')와 동사 do(dare, '주다')가 결합한 합성동사이다. 인도유럽조어 재구형 *deh₃-('주다')에서 유래하였으며, 산스크리트어 dádāti('준다')가 동계어이다. '어떤 것에 더하여 주다'에서 현재의 의미로 발전하였으며, 현대 영어의 addition(추가), additive 등에 그 어원이 남아 있다."
+      },
+      {
+        "g": "obscenis",
+        "pos": "형용사",
+        "lemma": "obscenus, obscena, obscurum",
+        "parse": "pl. abl. n.",
+        "gloss_kr": "외설스러운, 음란한, 부정한",
+        "gloss_en": "obscene, foul, lewd",
+        "syntax": "복수 탈격 중성 명사 dictis를 수식하는 형용사로, 목동이 입에 담은 말들의 저속하고 불쾌한 도덕적·성적 성격을 규정한다.",
+        "background": "목동이 내뱉은 말들이 단순한 촌구석의 투박한 농담을 넘어 신성한 존재인 님프들이 듣기에 참을 수 없을 만큼 음란하고 모욕적인 언어 폭력이었음을 고발합니다.",
+        "etymology": "어원적으로 불명확한 부분이 있으나 고대 라틴어에서 불길함, 부정함, 그리고 나중에는 성적으로 부정한 외설스러움을 뜻하게 된 형용사이다. 연극이나 제의에서 불길한 전조를 뜻하던 용법에서 의미가 전이되었으며, 현대 영어의 obscene(외설적인), obscenity 등의 직접적인 어원이 된다."
+      },
+      {
+        "g": "convicia",
+        "pos": "명사",
+        "lemma": "convicium, convicii, n.",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "욕설, 힐난, 짖어댐",
+        "gloss_en": "taunts, abuses, reproaches",
+        "syntax": "동사 addidit의 직접목적어로 쓰인 대격 복수 중성 명사로, 목동이 쏟아낸 모욕적이고 소란스러운 비난의 말들을 가리킨다.",
+        "background": "목동이 님프들을 향해 고함치며 퍼붓는 거칠고 모욕적인 삿대질과 악다구니를 생생하게 청각적으로 묘사합니다.",
+        "etymology": "함께라는 뜻의 접두사 con-과 소리치다라는 어근 vox/voco('부르다, 소리치다')가 결합한 명사이다. 인도유럽조어 재구형 *wekʷ-('말하다, 목소리')에서 유래하였다. '여러 사람이 함께 소리 질러 비난하다'에서 의미가 발전하였으며, 고전 라틴어에서 거센 욕설이나 항의를 뜻하는 법률·문학 용어로 쓰였다."
+      },
+      {
+        "g": "rustica",
+        "pos": "형용사",
+        "lemma": "rusticus, rustica, rusticum",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "시골의, 촌스러운, 농촌의",
+        "gloss_en": "rustic, country-style, boorish",
+        "syntax": "중성 대격 복수 명사 dictis를 수식하는 형용사로, 그 욕설들이 세련된 도시나 궁정의 언어가 아니라 메마른 들판의 목동에게서 나온 투박한 시골풍임을 강조한다.",
+        "background": "도시적 예의나 신성한 경외심을 전혀 모르는 시골 목축민 특유의 무교양함과 상스러움이 그의 언행 전반에 배어 있음을 나타냅니다.",
+        "etymology": "명사 rus('시골, 들판')에서 파생된 형용사이다. 인도유럽조어 재구형 어근에서 유래하였으며, 산스크리트어 등과의 비교를 거쳐 이탈리아 농경 사회의 기본 어휘로 정착하였다. 현대 영어의 rustic(시골풍의), rural(라틴어 유사 어근 계열), 르네상스적 어휘인 rural/rusticate 등에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "dictis",
+        "pos": "분사/명사",
+        "lemma": "dictum, dicti, n.",
+        "parse": "pl. abl. n.",
+        "gloss_kr": "말들로, 발언들로",
+        "gloss_en": "words, remarks, sayings",
+        "syntax": "수단의 탈격(ablativus instrumenti)으로 쓰인 중성 명사(동사 dico의 완료 수동 분사에서 명사화됨)로, 욕설이 구체적인 말의 형태로 표현되었음을 나타낸다.",
+        "background": "목동이 입을 열어 쏟아낸 모욕적인 언행들이 결국 그 자신의 신체적 파멸(나무로의 변신)을 불러오는 직접적인 도화선이 되는 결정적 발언들입니다.",
+        "etymology": "동사 dico('말하다')의 완료 수동 분사 dictum(말해진 것)의 명사 용법이다. 인도유럽조어 재구형 *deik-('가리키다, 말하다')에서 유래하였으며, 그리스어 deiknynai('보이다'), 영어 teach('가르치다')가 동계어이다. 현대 영어의 dictionary(사전), dictate(받아쓰게 하다), verdict 등에 그 어원이 뚜렷하게 살아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 5.523",
+    "trans": "목구멍이 나무로 뒤덮여 굳어질 때까지 그의 입은 다물어지지 않았으니,",
+    "words": [
+      {
+        "g": "nec",
+        "pos": "접속사",
+        "lemma": "neque / nec",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고 ~않았다, 마침내 ~않기까지 했다",
+        "gloss_en": "nor, and not",
+        "syntax": "등위접속사로, 앞의 모욕적 언행이 멈추지 않고 신들의 벌을 받아 침묵하게 될 때까지 지속되었음을 부정의 대등 연결로 이끈다.",
+        "background": "목동의 멈출 줄 모르는 오만하고 저속한 혀가 결국 신성한 응징에 부딪혀 강제로 침묵당하는 인과응보의 순간을 극적으로 반전시킵니다.",
+        "etymology": "부정 부사 ne와 등위 접속사 -que가 결합한 축약형태이다. 인도유럽조어 부정사 어근과 결합 어근에서 유래하였으며, 라틴어 문학 전반에서 지속적인 부정과 대등 연결의 기능을 담당해 왔다."
+      },
+      {
+        "g": "prius",
+        "pos": "부사",
+        "lemma": "prior, prius",
+        "parse": "adverbial neuter accusative (used as comparative adv.)",
+        "gloss_kr": "먼저, ~보다 전에",
+        "gloss_en": "sooner, before",
+        "syntax": "비교급 부사로, 후행하는 접속사 quam과 호응하여 'quam prius' 구문(참조: nec prius ... quam ...)을 이루며 '그 일이 일어나기 전에는 결코 입이 멈추지 않았다'는 시간적 선후 관계를 규정한다.",
+        "background": "목동이 스스로 입을 다물거나 반성한 적이 전혀 없고, 오직 신들의 응징(나무로의 변신)이라는 물리적 강제력이 가해지고 나서야 비로소 그 멈출 수 없는 악다구니가 끝났음을 강조합니다.",
+        "etymology": "비교급 형용사 prior('더 앞의')의 중성 대격 형태에서 발달한 부사이다. 인도유럽조어 비교급 접미사 체계에서 유래하였으며, 라틴어 시문학에서 시간적 선후 관계를 나타내는 핵심 어휘로 쓰인다. 현대 영어의 prior(이전의), priority(우선순위) 등의 어근적 모체가 된다."
+      },
+      {
+        "g": "os",
+        "pos": "명사",
+        "lemma": "os, oris, n.",
+        "parse": "sg. nom. n.",
+        "gloss_kr": "입, 얼굴",
+        "gloss_en": "mouth, face",
+        "syntax": "주절의 주어로, 모욕적인 말을 쏟아내던 그의 '입' 또는 '얼굴'이 변신의 대상이 되어 목구멍 쪽부터 나무껍질로 뒤덮이는 신체 부위이다.",
+        "background": "남을 조롱하고 저속한 욕설을 내뱉던 그 입과 목구멍이 변신의 형벌을 받는 핵심 부위로 묘사되며, 신체적 형벌의 상징성을 극대화합니다.",
+        "etymology": "인도유럽조어 재구형 *ōs-('입, 얼굴')에서 유래한 명사이다. 산스크리트어 ās-, 고대 영어 ōþ('숨, 호흡') 등과 동계어이다. 라틴어에서 구강, 얼굴, 발음 기관 등을 뜻하는 기본 어휘로 쓰였으며, 현대 영어의 oral(구강의), 옥타브 등의 어원적 배경과 연결된다."
+      },
+      {
+        "g": "tacuit",
+        "pos": "동사",
+        "lemma": "taceo, tacere, tacui, tacitum",
+        "principalParts": "taceo – tacere – tacui – tacitum",
+        "parse": "perf. act. 3rd pers. sg.",
+        "gloss_kr": "침묵했다, 조용해졌다",
+        "gloss_en": "fell silent, was silent",
+        "syntax": "완료시제 능동태 동사로, 주어인 os와 결합하여 자의적으로는 절대 멈추지 않던 입이 신들의 벌로 인해 강제로 침묵하게 되었음을 나타낸다.",
+        "background": "자신의 의지로는 결코 멈출 줄 몰랐던 악다구니가 신성한 변신 형벌을 통해 영원히 침묵으로 봉인되는 극적인 정점입니다.",
+        "etymology": "인도유럽조어 재구형 *tak-('조용하다, 잠잠해지다')에서 유래한 동사이다. 고대 고지 독일어 thagēn('조용하다')과 동계어이다. 라틴어 안에서 자발적 혹은 강제적 침묵 상태를 나타내는 동사로 정착하였으며, 현대 영어의 tacit(암묵적인), taciturn(말없는) 등의 어원이 된다."
+      },
+      {
+        "g": "quam",
+        "pos": "접속사",
+        "lemma": "quam",
+        "parse": "comparative conj. / relative adv.",
+        "gloss_kr": "~보다, ~할 때까지",
+        "gloss_en": "than, until",
+        "syntax": "앞의 prius와 호응하여 시간적 한계를 설정하는 접속사로, '…하기 전에는 결코 ~않았다'는 상관 접속 구문(prius ... quam)을 완성한다.",
+        "background": "목동의 욕설이 멈춘 유일한 시점이 바로 목구멍이 나무로 변해버린 순간임을 한 치의 오차도 없이 맞물리게 연결해 줍니다.",
+        "etymology": "관계 대명사 기저에서 발달한 부사·접속사이다. 인도유럽조어 도구격 또는 대격 형태에서 유래하였으며, 비교 구문과 시간 종속절에서 기준점을 제시하는 필수 문법 요소로 기능해 왔다."
+      },
+      {
+        "g": "guttura",
+        "pos": "명사",
+        "lemma": "guttur, gutturis, n.",
+        "parse": "pl. acc. n. (often used in sing. sense)",
+        "gloss_kr": "목구멍, 목",
+        "gloss_en": "throat, neck",
+        "syntax": "동사 condidit의 직접목적어로 쓰인 대격 중성 명사(복수형이지만 단수 의미로 시적 허용 또는 관용적 사용)로, 나무로 뒤덮이기 시작하는 신체 내부의 통로이다.",
+        "background": "욕설과 외설스러운 말을 쏟아내던 바로 그 목구멍 속부터 단단한 식물의 목질과 나무껍질이 차오르며 소리를 완전히 질식시키는 형벌의 현장입니다.",
+        "etymology": "인도유럽조어 재구형에서 목이나 식도의 울림을 나타내는 음성상징적 어근에서 유래한 명사이다. 라틴어 안에서 신체 부위인 목구멍을 가리키는 고유어로 정착하였으며, 현대 영어의 goiter(갑상선종), guttural(목구멍소리의) 등의 어원적 모체가 된다."
+      },
+      {
+        "g": "condidit",
+        "pos": "동사",
+        "lemma": "condo, condere, condidi, conditum",
+        "principalParts": "condo – condere – condidi – conditum",
+        "parse": "perf. act. 3rd pers. sg.",
+        "gloss_kr": "감추었다, 숨겼다, 에워싸 가두었다",
+        "gloss_en": "hid, concealed, enclosed",
+        "syntax": "완료시제 능동태 동사로, 주어인 arbores(또는 문맥상 암시된 나무의 힘) 혹은 주어가 문장 내에서 나무가 목구멍을 단단히 감싸 안아 가두었음을 서술한다.",
+        "background": "목동의 목소리가 나오던 통로가 나무껍질과 수액 속에 완전히 파묻혀 세상과 단절되고 소리가 차단되는 변신의 과정을 시각적으로 묘사합니다.",
+        "etymology": "접두사 con-('함께, 완전히')과 동사 do(dare, '두다, 놓다')가 결합한 합성동사이다. 인도유럽조어 재구형 *deh₃-('두다, 놓다')에서 유래하였다. '어떤 곳에 완전히 집어넣어 감추다'에서 도시를 '건립하다'라는 뜻까지 폭넓게 분화되었으며, 현대 영어의 condition 등의 어원적 배경에 간접적으로 연결된다."
+      },
+      {
+        "g": "arbor",
+        "pos": "명사",
+        "lemma": "arbor, arboris, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "나무",
+        "gloss_en": "tree",
+        "syntax": "문장의 주어로, 목구멍을 삼켜버리고 그 자리에 대신 솟아나거나 목동의 신체를 감싸 안은 주체인 '나무'를 지칭한다.",
+        "background": "인간의 오만한 목소리와 춤이 결국 자연의 서늘한 신성함 앞에서 나무라는 식물적 형체로 영원히 고착되는 오비디우스 변신 신화의 핵심 매개체입니다.",
+        "etymology": "인도유럽조어 재구형 기저에서 나무를 뜻하는 오래된 이탈리아어파 고유 명사이다. 그리스어 등의 확실한 동계어 매칭보다는 라틴어 지형·식물 기층 어휘의 전통을 잇는다. 현대 영어의 arboreal(나무의), arboretum(수목원), arbor 등에 그 형태와 의미가 온전히 보존되어 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 5.524",
+    "trans": "나무와 그 수액을 통해 그의 성품을 알 수 있으니,",
+    "words": [
+      {
+        "g": "arbore",
+        "pos": "명사",
+        "lemma": "arbor, arboris, f.",
+        "parse": "sg. abl. f.",
+        "gloss_kr": "나무로",
+        "gloss_en": "by the tree",
+        "syntax": "수단/원인의 탈격(ablativus instrumenti/causae)으로, 뒤의 suco와 함께 목동의 본래 성품이 무엇이었는지를 드러내는 인식의 매개체 역할을 한다.",
+        "background": "목동이 변해버린 나무의 형태와 속성을 통해 그가 살아생전에 얼마나 씁쓸하고 고집스러운 성품을 가졌는지 후세 사람들이 알 수 있다는 변신 신화의 교훈적 결론입니다.",
+        "etymology": "인도유럽조어 계통의 식물 명사 arbor의 탈격 형태이다. (5.523의 arbor 항목 참조)"
+      },
+      {
+        "g": "enim",
+        "pos": "접속사",
+        "lemma": "enim",
+        "parse": "explanatory conj.",
+        "gloss_kr": "왜냐하면, 실로, 과연",
+        "gloss_en": "for, indeed, truly",
+        "syntax": "설명의 접속사로, 앞서 언급한 결론(나무를 통해 성품을 알 수 있다)에 대한 구체적인 근거와 이유를 화자(또는 시인)가 독자에게 설득력 있게 제시한다.",
+        "background": "신화적 변신이 단순히 기괴한 현상으로 끝나지 않고, 인간의 성품이 자연물(식물의 맛과 열매)의 특성에 영원히 각인된다는 자연 철학적·상징적 인과관계를 강조합니다.",
+        "etymology": "인도유럽조어 강조·긍정 입자에서 유래한 접속사이다. 고대 라틴어의 구문 전개 과정에서 확실성과 이유를 나타내는 삽입·설명 접속사로 고착되었다. 로망스어군에서는 직계 형태가 쇠퇴했으나 고전 라틴어 산문과 운문에서 문장 논리를 긴밀하게 엮어주는 필수 기능을 담당한다."
+      },
+      {
+        "g": "sucoque",
+        "pos": "명사",
+        "lemma": "sucus, suci, m.",
+        "parse": "sg. abl. m. + enclitic conj. -que",
+        "syntax": "수단/원인의 탈격 명사 suco에 등위접속사 -que가 붙은 형태로, 나무의 '수액'을 통하여 성품을 알 수 있음을 arbore와 대등하게 묶어준다.",
+        "background": "나무의 겉모습뿐만 아니라 그 수액이 지닌 특유의 쓴맛(amarus)을 통해 목동의 내면에 도사렸던 씁쓸하고 악독한 본성이 그대로 배어 있음을 예증합니다.",
+        "etymology": "동사 sugo('빨다, 흡수하다')의 어근에서 파생된 명사이다. 인도유럽조어 재구형 *sug-('빨다')에서 유래하였으며, 산스크리트어 등과 연관된다. '식물이나 유기체의 액즙'을 뜻하며, 현대 영어의 juice(주스, 수액), succulent(즙이 많은) 등의 어원적 근간이 된다.",
+        "gloss_kr": "그리고 수액으로, 액즙으로",
+        "gloss_en": "and by its juice"
+      },
+      {
+        "g": "licet",
+        "pos": "동사",
+        "lemma": "licet, licere, licuit (impersonal)",
+        "principalParts": "licet – licere – licuit",
+        "parse": "pres. act. 3rd pers. sg. (impersonal)",
+        "gloss_kr": "~할 수 있다, ~하는 것이 허락된다",
+        "gloss_en": "it is permitted, one can, it is possible",
+        "syntax": "비인칭 동사로 쓰여, 뒤의 부정사 구문(cognoscere)을 주어로 취하며 '독자들이 나무와 수액을 통해 그의 본성을 파악하는 것이 가능하다'는 객관적 가능성을 진술한다.",
+        "background": "신화적 변신의 결과물이 단순한 전설 속 이야기가 아니라, 오늘날에도 그 지역의 올리브나무 종류를 보면 그 진실을 직접 확인할 수 있다는 실증적 설득력을 부여합니다.",
+        "etymology": "인도유럽조어 재구형에서 '자유롭다, 허용되다'를 뜻하는 어근에서 유래한 비인칭 동사이다. 라틴어 안에서 법적·사회적 혹은 자연적 허용을 나타내는 비인칭 구문의 대표격으로 정착하였으며, 현대 영어의 license(면허), illicit(불법의), leisure 등의 어원적 배경이 된다."
+      },
+      {
+        "g": "cognoscere",
+        "pos": "동사",
+        "lemma": "cognosco, cognoscere, cognovi, cognitum",
+        "principalParts": "cognoscere – cognovi – cognitum",
+        "parse": "pres. act. infinitive",
+        "gloss_kr": "알다, 파악하다, 인식하다",
+        "gloss_en": "to know, to recognize, to learn",
+        "syntax": "비인칭 동사 licet의 실질적 주어로 쓰인 현재 능동태 부정사로, 나무의 특성을 통해 목동의 본성을 알아내는 인식 주체의 행위를 나타낸다.",
+        "background": "독자나 관조자가 변신한 식물의 생태적 특성 속에서 인간의 옛 도덕적 결함과 신의 심판의 흔적을 읽어내는 인식론적 행위를 완성합니다.",
+        "etymology": "접두사 con-과 안다라는 뜻의 동사 nosco(gnosco, '알다')가 결합한 동사이다. 인도유럽조어 재구형 *gno-('알다')에서 유래하였으며, 산스크리트어 jānāti, 그리스어 gignōskein, 영어 know가 동계어이다. 현대 영어의 recognize(인식하다), cognition(인지), incognito 등에 그 어원이 뚜렷하게 살아 있다."
+      },
+      {
+        "g": "mores",
+        "pos": "명사",
+        "lemma": "mos, moris, m.",
+        "parse": "pl. acc. m.",
+        "gloss_kr": "성품, 습관, 기질, 도덕적 태도",
+        "gloss_en": "character, habits, morals, disposition",
+        "syntax": "동사 cognoscere의 직접목적어로 쓰인 대격 복수 남성 명사로, 목동이 살아생전에 지녔던 삐뚤어지고 거친 본성과 품성을 가리킨다.",
+        "background": "신체적 변신은 외형뿐만 아니라 인간의 영혼과 도덕적 성품(mos)이 그들이 변해버린 식물의 본질 속에 영원히 유전된다는 오비디우스 변신론의 철학적 주제를 응축하고 있습니다.",
+        "etymology": "인도유럽조어 재구형 *meh- 또는 *mor-('스스로 향하다, 습관을 들이다') 계통에서 유래한 명사이다. 라틴어에서 인간의 관습, 도덕, 성품을 뜻하는 핵심 어휘가 되었으며, 현대 영어의 moral(도덕적인), morals, mores(사회적 풍습) 등에 그 어원이 고스란히 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 5.525",
+    "trans": "왜냐하면 올리브나무의 쓴 열매 속에는 그의 혀의 흔적이 남아 있기 때문이라.",
+    "words": [
+      {
+        "g": "quippe",
+        "pos": "부사/접속사",
+        "lemma": "quippe",
+        "parse": "causal particle / adv.",
+        "gloss_kr": "왜냐하면, 실로, 과연",
+        "gloss_en": "for indeed, of course, because",
+        "syntax": "인과관계를 이끄는 부사적 입자로, 앞선 주장에 대한 명백하고 당연한 자연의 증거(올리브 열매의 쓴맛)를 뒷받침하는 설명적 어조를 강화한다.",
+        "background": "목동이 변한 나무가 평범한 나무가 아니라 쓴 열매를 맺는 올리브나무(oleaster)라는 점을 들어, 그의 험하고 독설을 내뱉던 혀의 성질이 열매 속의 쓴맛으로 고스란히 옮겨왔다는 신화적 인과법칙을 확증합니다.",
+        "etymology": "의문 대명사 quī에 성격을 뜻하는 강조 입자 -ppe가 결합한 형태이다. 고대 라틴어에서 이유나 당연한 귀결을 나타내는 담화 표지로 굳어졌으며, 고전 시문학에서 논리적 필연성을 부여하는 수사적 장치로 빈번히 쓰인다."
+      },
+      {
+        "g": "notam",
+        "pos": "명사",
+        "lemma": "nota, notae, f.",
+        "parse": "sg. acc. f.",
+        "gloss_kr": "표시, 흔적, 낙인, 특성",
+        "gloss_en": "mark, sign, trace, stigma",
+        "syntax": "동사(또는 문맥상 내포된 존재사)의 목적어로 쓰인 대격 단수 여성 명사로, 쓴 열매 속에 깃들어 있는 목동의 '혀'가 남긴 영원한 낙인이나 흔적을 가리킨다.",
+        "background": "목동이 거친 혀로 내뱉었던 모욕적인 언행의 자국이 식물의 열매 속에 '쓴맛(amara)'이라는 지울 수 없는 생태적 낙인으로 박혀 있음을 상징적으로 보여줍니다.",
+        "etymology": "알다라는 뜻의 동사 nosco의 어간에서 파생된 명사이다. 인도유럽조어 재구형 *gno-('알다')와 어원을 같이하며, '어떤 것을 식별하게 해주는 표식이나 낙인'으로 의미가 발전하였다. 현대 영어의 note(쪽지, 주목하다), notarize(공인하다), notable 등에 그 어원이 뚜렷하게 남아 있다."
+      },
+      {
+        "g": "linguae",
+        "pos": "명사",
+        "lemma": "lingua, linguae, f.",
+        "parse": "sg. gen. f.",
+        "gloss_kr": "혀의, 말의",
+        "gloss_en": "of the tongue, of speech",
+        "syntax": "소유격(genetivus possessivus/subiectivus)으로 명사 notam을 수식하며, 그 흔적과 낙인이 목동이 욕설을 퍼붓던 '그 혀'에서 유래했음을 명시한다.",
+        "background": "화가 나면 통제력을 잃고 거친 욕설과 저주를 퍼붓던 목동의 혀가 변신의 형벌을 거쳐 올리브나무 열매의 쓴 성분 속에 해부학적 흔적으로 남게 되었다는 신화적 해부학을 완성합니다.",
+        "etymology": "인도유럽조어 재구형 *dn̥ghū-('혀, 언어')에서 유래한 명사이다. 고대 영어 tunge('tongue')와 동계어이며, 음운 변화를 거쳐 라틴어 lingua가 되었다. 현대 영어의 tongue, language(프랑스어 경유), linguistics(언어학) 등에 그 어원이 생생하게 살아 있다."
+      },
+      {
+        "g": "bacis",
+        "pos": "명사",
+        "lemma": "bacca, baccae, f.",
+        "parse": "pl. abl. f.",
+        "gloss_kr": "열매들로, 열매 속에",
+        "gloss_en": "in the berries, with berries",
+        "syntax": "장소/수단의 탈격(ablativus loci/instrumenti)으로, 쓴맛이라는 흔적(notam)이 구체적으로 머물러 있는 장소가 바로 그 나무의 열매(올리브열매)들임을 밝힌다.",
+        "background": "거친 목동의 혀가 변한 나무가 맺는 열매의 맛을 통해, 자연 속에서 인간의 부끄러운 과거가 어떻게 생태적 특징으로 영구 보존되는지 보여주는 인상적인 대목입니다.",
+        "etymology": "인도유럽조어 재구형에서 나무의 작은 열매나 씨앗을 가리키는 기층 어근에서 유래한 명사이다. 라틴어 식물 용어에서 포도송이나 나무의 열매를 뜻하는 단어로 정착하였으며, 현대 영어의 bay(월계수 열매)나 식물학적 용어인 bacciferous(열매를 맺는) 등의 어원적 배경에 간접적으로 연결된다."
+      },
+      {
+        "g": "oleaster",
+        "pos": "명사",
+        "lemma": "oleaster, oleastri, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "산올리브나무, 개올리브나무",
+        "gloss_en": "wild olive tree, oleaster",
+        "syntax": "문장의 주어로, 쓴 열매를 맺으며 목동의 혀의 흔적을 간직한 채 아풀리아 들판에 자라나는 최종적인 식물의 종류를 명명한다.",
+        "background": "재배된 부드럽고 유용한 올리브나무가 아니라 거칠고 열매가 쓰며 쓸모가 적은 야생 올리브나무(oleaster)야말로 목동의 천박하고 야만적인 본성이 변한 최적의 식물임을 시사하며 신화의 대미를 장식합니다.",
+        "etymology": "올리브를 뜻하는 라틴어 olea에 야생성이나 열등한 상태를 뜻하는 접미사 -aster가 결합한 명사이다. 그리스어 elaia(올리브)와 인도유럽조어 지중해 기층 어휘의 접목에서 유래하였으며, 현대 영어의 oleaster(보리수나무속의 일종, 야생 올리브) 등에 그 학명적 명칭과 어원이 그대로 보존되어 있다."
+      },
+      {
+        "g": "amaris",
+        "pos": "형용사",
+        "lemma": "amarus, amara, amarum",
+        "parse": "pl. abl. f.",
+        "gloss_kr": "쓴, 씁쓸한, 괴로운",
+        "gloss_en": "bitter, sour, harsh",
+        "syntax": "복수 탈격 여성 명사 bacis를 수식하는 형용사로, 올리브 열매가 지닌 맛의 특성이 '쓰다'는 점을 강조하며 목동의 성품과 혀의 속성을 시각적·미각적으로 연결한다.",
+        "background": "목동이 내뱉었던 독설의 독성과 씁쓸함이 그대로 열매의 맛으로 응축되어, 이 나무의 열매를 맛보는 이들마다 그의 옛 성품을 떠올리게 만든다는 오비디우스 특유의 위트 있는 에필로그입니다.",
+        "etymology": "인도유럽조어 재구형상 혀를 찌르는 듯한 강한 자극이나 맛을 나타내는 어근에서 유래한 형용사이다. 라틴어 안에서 미각적 쓴맛과 감정적 괴로움을 동시에 뜻하는 어휘로 분화되었으며, 현대 영어의 emic 계열이나 화학 용어, 이탈리아어 amaro(쓴 술) 등에 그 어원이 뚜렷하게 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 13.526",
+    "trans": "말의 거친 가시 돋친 언사가 그 여자들에게 가라앉았네.",
+    "words": [
+      {
+        "g": "asperitas",
+        "pos": "명사",
+        "lemma": "asperitas, asperitatis, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "거칠음, ätz함, 가시 돋친 언사",
+        "gloss_en": "roughness, harshness, severity",
+        "syntax": "LFG f-구조에서 asperitas는 동사 cessit의 SUBJ(주어) 논항으로 기능하며, 지배 주격(nominative of subject) 자리를 차지한다. c-구조상 NP 기저위치인 [Spec, IP]에 병합되며, 명사구 내부 수식어 없이 단독으로 핵(head) 노드를 구성한다. 통사적 성분 구조 분석에서 이 주어 NP는 문장 초두에 위치하여 후행하는 술어와의 사이에 대조적 정보구조를 형성한다.",
+        "background": "이 구절은 트로이 전쟁 이후 헤쿠바와 트로이아 여인들이 겪는 비극적 몰락과 복수의 서사 속에서 등장한다. 폴리세나의 희생과 폴리오도로스의 죽음으로 고통받는 여인들의 분노와 비난이 헤쿠바의 비통한 복수를 통해 최고조에 달한 장면이다. '거친 언사'라는 표현은 헤쿠바가 트라키아의 왕 폴리메스토르에게 쏟아부은 맹렬한 저주와 비난의 격렬함을 대변한다.",
+        "etymology": "① PIE 재구형 *asper-('거친, 울퉁불퉁한')에서 파생된 형용사 asper에 추상명사 파생 접미사 -itas가 결합하여 '거칠음'이라는 원뜻을 형성했다. ② 동계어로 라틴어 asper(거친), 이탈리아어 asprezza(거칠음, 떫음), 스페인어 aspereza(거친 성격, 지형의 험함) 등이 존재한다. ③ 어간 asper에 -tas 접미사가 첨가되면서 모음 축약 및 음절 탈락 없이 그대로 접합되었고, 후대에 형태론적으로 품사가 명사로 전이되면서 추상적 의미로 확장되었다. ④ 현대 영어의 asperity(거칠음, 험악함)와 로망스어군 제어의 유사 어휘들 속에 그 흔적이 직접 고스란히 남아 있다."
+      },
+      {
+        "g": "verborum",
+        "pos": "명사",
+        "lemma": "verbum, verbi, n.",
+        "parse": "pl. gen. n.",
+        "gloss_kr": "말의, 단어들의",
+        "gloss_en": "of words",
+        "syntax": "LFG f-구조에서 verborum은 명사 asperitas를 수식하는 ADJUNCT 내부의 POSS 혹은 속격 명사구(genitive nominal phrase)로서 비귀속적 소유·속격 관계를 형성한다. c-구조상 NP 내의 N' 하위 노드에 위치하며, 격 지배 원리에 따라 선행하는 명사 asperitas로부터 소유격(genitive case) 지배를 받는다. 생성문법의 DP 가설에 따르면 이 속격 구문은 [Spec, DP] 혹은 NP 속성 위치에 병합되어 의미론적 아규먼트를 보완한다.",
+        "background": "여기서 말(verbum)은 단순한 의사소통의 수단을 넘어, 헤쿠바가 폴리메스토르를 향해 내뱉은 복수심에 찬 비난과 저주의 언어적 실체를 가리킨다. 여인들의 거친 말은 폴리메스토르의 양심을 찌르고 진실을 폭로하는 무기로 기능한다. 오비디우스는 언어의 힘을 통해 물리적 폭력에 맞서는 여인들의 비장함을 이 단어를 통해 강조하고 있다.",
+        "etymology": "① PIE 재구형 *werh₁-('말하다, 외치다')에서 유래한 명사 어간에 중성 명사 어미가 결합하여 '말, 낱말'이라는 원뜻을 지닌다. ② 동계어로 영어 word, 독일어 Wort, 그리스어 ῥῆμα(ῥη- 어근을 통한 간접 연계) 등이 있다. ③ 음운론적으로 PIE 후설 마찰음 *h₁이 라틴어 내부에서 소실되면서 단모음화 및 어간 재구조화를 겪었다. ④ 현대 영어의 verb(동사), verbal(말의), 그리고 로망스어군의 다양한 어휘(스페인어 verbo 등)에 직접적인 어원이 되어 남아 있다."
+      },
+      {
+        "g": "cessit",
+        "pos": "동사",
+        "lemma": "cedo, cessi, cessum, ere",
+        "principalParts": "cedo – cessere – cessi – cessum",
+        "parse": "perf. act. ind. 3rd pers. sg.",
+        "gloss_kr": "가라앉았다, 물러갔다, 사그라들었다",
+        "gloss_en": "ceased, subsided, yielded",
+        "syntax": "LFG f-구조상 이 동사는 PRED이며, 주어 asperitas verborum과 결합하여 1항 자동사 구문을 완성한다. c-구조상 I'의 핵을 이루며, 완료시제를 나타내는 형태론적 굴절 형태소를 반영한다. 생성문법의 관점에서 이 동사는 완료 시제 특유의 상적(aspectual) 특성을 지니며, 결과 상태를 나타내는 완료성(telicity)을 문장에 부여한다.",
+        "background": "cessit은 겉으로는 헤쿠바와 여인들의 분노와 거친 말이 한풀 꺾이거나 잠잠해진 상황을 묘사하지만, 이는 실제 감정의 소멸이 아니라 더 잔혹한 복수를 위한 폭풍 전야의 침묵을 뜻한다. 폴리메스토르를 향한 여인들의 분노가 물리적 행동으로 전환되기 직전의 정적을 포착하는 서사적 전환점이다. 오비디우스는 이 동사를 통해 긴장감을 고조시킨다.",
+        "etymology": "① PIE 재구형 *ked-('가다, 물러나다, 걷다')에서 기원하며, '양보하다, 물러서다'가 원뜻이다. ② 동계어로 고대 교회 슬라브어 choditi(걷다), 산스크리트어차용 관련 어근 및 영어의 cede 등의 어원적 기반이 공유된다. ③ 완료형 파생 과정에서 치조음화 및 음운적 강화에 의해 d가 s로 동화되어 cess- 어간이 확립되는 형태론적 변천을 거쳤다. ④ 현대 영어의 accede(동의하다), exceed(초과하다), process(진행하다) 및 로망스어군의 관련 어휘들에 그 어근이 선명하게 남아 있다."
+      },
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "prep. taking acc. or abl.",
+        "gloss_kr": "~에게로, ~안으로",
+        "gloss_en": "into, against",
+        "syntax": "LFG f-구조에서 이 전치사는 OBL(지관사/사격 보어) 또는 ADJUNCT의 방향성을 나타내는 기능적 핵으로 작동하며, 지배하는 명사구 illas에 대격(accusative)을 할당한다. c-구조상 PP의 핵으로 병합되며, 후행하는 지시대명사 NP를 보어(complement)로 취한다. 통사적 격 할당 이론에 따라 [Spec, PP] 혹은 투사 구조 내에서 대격 지배 속성을 만족시킨다.",
+        "background": "여기서 전치사 in은 단순한 공간적 위치 이동을 넘어, 여인들의 거친 언사가 향하는 대상과의 직접적인 대립과 감정의 투사를 나타낸다. 복수의 화살처럼 트라키아 왕을 향해 쏟아지는 언어적 공세의 방향성을 설정하는 핵심적인 통사·의미적 연결고리다. 오비디우스의 서사 속에서 공간적 지향은 인물 간의 심리적 충돌과 정확히 일치한다.",
+        "etymology": "① PIE 재구형 *en('~안에, ~에')에서 유래한 전치사로, 공간적 내재성과 방향성을 본래 의미로 가진다. ② 동계어로 영어 in, 그리스어 ἐν, 고대 고지 독일어 in 등이 있다. ③ 라틴어 체계 안에서 대격과 결합할 때는 '운동의 방향(~로)'을, 탈격과 결합할 때는 '위치의 정지(~안에)'를 나타내는 방향성 분화 과정을 겪었다. ④ 현대 영어의 in, into 및 로망스어군의 전치사(스페인어 en, 포르투갈어 em)로 직접 이어져 쓰이고 있다."
+      },
+      {
+        "g": "illas",
+        "pos": "대명사",
+        "lemma": "ille, illa, illud",
+        "parse": "pl. acc. f.",
+        "gloss_kr": "그 여자들에게, 저 여자들을",
+        "gloss_en": "those (women)",
+        "syntax": "LFG f-구조상 illas는 전치사 in의 보어(OBJ 혹은 OBL 내부의 대상)로서 대격 기능을 수행하며, θ-역할로는 GOl(목표) 혹은 recipient/experiencer 성격을 띤다. c-구조상 PP 내부의 NP 핵을 이루며, 지시대명사로서 담화 맥락 속에서 이미 언급된 트로이아 여인들을 가리키는 결속 이론(Binding Theory)의 대용사적 지시어 기능을 한다. 통사적으로 전치사의 격 지배 규칙에 따라 여성 복수 대격 형태를 취한다.",
+        "background": "illas는 비극의 중심에 서 있는 트로이아의 불행한 여인들, 즉 헤쿠바와 동료 시녀들을 가리킨다. 남성들의 전쟁 속에서 모든 것을 잃고 노예로 전락했으나 마지막 자존심과 복수심을 품은 이 여인들은 이 장면에서 수동적 피해자를 넘어 능동적 단죄자로 변모한다. 대명사 지시를 통해 독자의 시선이 자연스럽게 여인들의 집단적 행동으로 이동한다.",
+        "etymology": "① 고대 라틴어 ollus에서 유래한 지시사 체계로, PIE 지시 대명사 어근에서 발달하여 원거리 지시 기능을 담당했다. ② 동계어로 오스칸어 ullic 및 여타 이탈리아어파의 원거리 지시 대명사들이 존재한다. ③ 고대 라틴어의 롤루스(ollus) 형태에서 모음 탈락과 강세 이동을 겪으며 classical 형태인 ille, illa, illud로 정착했다. ④ 현대 로망스어군의 정관사 체계의 기원(예: 스페인어 el/la/los/las, 포르투갈어 o/a/os/as) 및 프랑스어의 3인칭 대명사 il/elle의 어원적 모태가 되었다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 13.527",
+    "trans": "여기서 사절들이 돌아와 아이톨리아인들이 그에게 무기를 거절했다고 전하자,",
+    "words": [
+      {
+        "g": "Hinc",
+        "pos": "부사",
+        "lemma": "hinc",
+        "parse": "adverb",
+        "gloss_kr": "여기서, 이로부터, 이 때에",
+        "gloss_en": "from here, hence, thereupon",
+        "syntax": "LFG f-구조에서 hinc는 전체 문장의 ADJUNCT로 작용하여 시간적·인과적 선후 관계를 수식한다. c-구조상 VP 혹은 IP의 외곽에 위치하는 부사구(AdvP)로서 문장수식어 기능을 수행하며, 전후 맥락을 매개하는 담화 표지(discourse marker) 역할을 한다. 통사적 이동 관점에서 문두에 전위되어 정보구조상 배경(background/theme) 정보를 도입한다.",
+        "background": "Hinc는 앞선 여인들의 사건과 루툴루스 진영의 움직임을 시공간적으로 연결해 주는 접속 고리 역할을 한다. 사절들이 아이톨리아의 디오메데스에게 파견되었다가 빈손으로 돌아오는 이 시점은, 라틴족과 트로이아인(아에네아스 측) 사이의 전면전이 피할 수 없는 국면으로 치닫는 결정적인 전환점을 이룬다.",
+        "etymology": "① 지시 대명사 어근 *hi-에 장소·출발을 뜻하는 접미사 -ce가 결합하여 '이곳으로부터'라는 원뜻을 형성했다. ② 동계어로 라틴어 hic(여기), huc(이쪽으로) 등이 있다. ③ 음운론적으로 어말의 자음 탈락과 강세 고정을 거치며 고전 라틴어 형태인 hinc로 축약되었다. ④ 현대 영어의 hence(이로부터, 그러므로)의 형성과 유사한 어원적 발달 경로를 공유하며, 직접적인 로망스어 유전형보다는 문학적·격식적 어휘로 명맥을 이었다."
+      },
+      {
+        "g": "ubi",
+        "pos": "접속사",
+        "lemma": "ubi",
+        "parse": "subordinating conjunction",
+        "gloss_kr": "~할 때, 어디서",
+        "gloss_en": "when, where",
+        "syntax": "LFG f-구조에서 ubi는 종속절의 기능을 이끄는 접속사(subordinator)로서 주절과의 시제적·상황적 관계를 매개한다. c-구조상 종속절(CP)의 핵 자리를 점유하며, 후행하는 주절과의 통사적 종속 관계를 확립한다. 통사론적으로 이 종속절 내부의 동사 rediere는 직설법 완료시제를 취하여 역사적 사실의 시점적 선후를 명확히 규정한다.",
+        "background": "ubi가 이끄는 종속절은 사절단의 외교적 실패라는 외부 정세의 변화를 신속하게 전달한다. Turnus(투르누스)가 처한 정치적·군사적 고립을 부각시키는 장치로, 외부 원조가 끊어진 상태에서 루툴루스인들이 자체적인 병력만으로 전쟁을 수행해야 하는 절박한 배경을 조성한다.",
+        "etymology": "① PIE 의문/관계 대명사 어근 *kʷo-에서 파생된 장소부사 형태 *クbo에서 유래했다. ② 동계어로 산스크리트어 kúha(어디에), 라틴어 alibi(다른 곳에) 등이 있다. ③ 어두의 의문사 성분이 관계사 및 접속사 용법으로 기능 전이를 겪으면서 시점과 장소를 동시에 지시하는 문법화 과정을 거쳤다. ④ 현대 영어의 ubiquitous(어디에나 있는)의 어원적 뿌리인 ubique('어디에나')의 기본 구성 요소로 남아 있다."
+      },
+      {
+        "g": "legati",
+        "pos": "명사",
+        "lemma": "legatus, legati, m.",
+        "parse": "pl. nom. m.",
+        "gloss_kr": "사절들이, 특사들이",
+        "gloss_en": "ambassadors, envoys",
+        "syntax": "LFG f-구조에서 legati는 종속절 내의 동사 rediere의 SUBJ 논항으로 기능하며, 주격 격 지배를 받는다. c-구조상 종속절 내의 [Spec, IP] 위치에 병합된다. 생성문법 관점에서 이 주어 NP는 비대격 혹은 능격 동사의 논항으로서 표면 주어 자리에 도달하며, 담화 맥락에서 이미 활성화된 구정보(given information)로서 주제적 연속성을 유지한다.",
+        "background": "여기서 사절들은 투르누스가 그리스 영웅 디오메데스(아이톨리아의 왕)에게 보내어 동맹을 청하고자 파견했던 특사들이다. 디오메데스는 트로이 전쟁의 상처를 기억하며 트로이아인들과 싸우기를 거부했고, 사절들은 결국 거절 통보를 들고 빈손으로 돌아오게 된다. 이들의 귀환은 투르누스에게 치명적인 외교적 고립을 의미한다.",
+        "etymology": "① 동사 lego, legare(임명하다, 위임하다, 사절로 보내다)의 과거분사 명사화에서 유래했다. ② 동계어로 라틴어 lex(법), collegium(동료 조합) 등이 동일 어근 계열에 속한다. ③ 법적·외교적 권한을 위임받아 파견된 사람을 뜻하는 의미로 전이되면서 전문 명사로 고착되었다. ④ 현대 영어의 legate(교황 특사), delegate(대표), delegation(대표단) 및 로망스어군의 관련 어휘(스페인어 legado 등)로 생생하게 전해진다."
+      },
+      {
+        "g": "rediere",
+        "pos": "동사",
+        "lemma": "redeo, redire, redii, reditum",
+        "principalParts": "redeo – redire – redii (redivi) – reditum",
+        "parse": "perf. act. ind. 3rd pers. pl.",
+        "gloss_kr": "돌아왔다",
+        "gloss_en": "returned",
+        "syntax": "LFG f-구조상 rediere는 종속절의 PRED이며, 복수 주어 legati와 수-인칭 일치(agreement)를 이룬다. c-구조상 종속절의 V 핵을 형성한다. 고전 라틴어 시적 허용(poetic license) 혹은 고어적 축약형으로서 완료 어미 -ērunt 대신 -ēre가 쓰였으며, 이는 운율적 제약(Dactylic Hexameter의 척주 맞춤)을 통사적·음운론적으로 충족시키기 위한 통사-운율 상호작용의 결과다.",
+        "background": "rediere는 임무를 완수하지 못한 채 발걸음을 돌려야 했던 사절들의 쓸쓸하고 긴박한 귀환을 생생하게 그려낸다. 외교적 실패를 안고 돌아오는 이들의 귀환은 곧바로 전쟁의 주도권이 아에네아스 측으로 넘어가고 루툴루스 진영이 방어적·자력갱생의 위기에 처하게 되는 서사적 국면 전환을 예고한다.",
+        "etymology": "① 접두사 re-('다시, 뒤로')와 동사 eo, ire('가다')의 합성어로 '뒤로 가다, 돌아오다'가 원뜻이다. ② 동계어로 영어의 exit(나오다) 속 어근 및 그리스어의 이동 동사 계열과 비교된다. ③ 합성 과정에서 모음 약화 현상(i-stem 변화)과 완료형의 불규칙적 어간 교체(ire -> ii)를 겪었다. ④ 현대 영어의 redeploy(재배치하다의 re- 접두사적 생산성) 및 로망스어군의 복합 동사 형태들 속에 그 구조적 흔적이 남아 있다."
+      },
+      {
+        "g": "negata",
+        "pos": "동사",
+        "lemma": "nego, negare, negavi, negatum",
+        "principalParts": "nego – negare – negavi – negatum",
+        "parse": "perf. pass. part. acc. n. pl.",
+        "gloss_kr": "거절당한, 거부된",
+        "gloss_en": "denied, refused",
+        "syntax": "LFG f-구조에서 negata는 분사구(participial phrase)의 핵으로서 명사 arma를 수식하며, 수·성·격(중성 복수 대격) 일치를 이룬다. c-구조상 부대 상황이나 원인을 나타내는 분사구문(Ablative/Accusative absolute 유사 구문 혹은 목적격 보어 확장) 내부에서 수식어 역할을 수행한다. 생성문법적으로 이 수동 분사는 투사된 VP 내부에서 내적 목적어의 θ-역할(THEME)을 수용하면서 명사구와 격 일치를 맺는다.",
+        "background": "negata는 아이톨리아인들이 투르누스의 요청을 매몰차게 거절했음을 압축적으로 보여주는 핵심 형용사적 분사다. 무기와 원조를 요청했으나 거부당했다는 사실(arma... negata)은 루툴루스 진영이 처한 극심한 군사적 열세와 고립무원의 처지를 상징적으로 드러낸다.",
+        "etymology": "① 부정 부사 ne와 동사 aio('말하다,긍정하다')의 어근 조합에서 파생되어 '아니다라고 말하다, 거부하다'가 원뜻이다. ② 동계어로 영어 deny, negation의 어원적 기반과 연결된다. ③ 어두의 부정사와 어근의 융합 과정에서 의미가 강화되어 공식적인 거절이나 부정을 뜻하는 동사로 정착했다. ④ 현대 영어의 deny, negative, negation 및 스페인어 negar 등 로망스어군의 수많은 어휘에 직접적인 유전형으로 살아 있다."
+      },
+      {
+        "g": "ferentes",
+        "pos": "동사",
+        "lemma": "fero, ferre, tuli, latum",
+        "principalParts": "fero – ferre – tuli – latum",
+        "parse": "pres. act. part. nom. m. pl.",
+        "gloss_kr": "가져오는, 전하는, 지니고 온",
+        "gloss_en": "bringing, bearing",
+        "syntax": "LFG f-구조상 ferentes는 주절의 주어 legati(생략되었거나 문맥상 지시되는)를 수식하는 현재분사로서, ADJUNCT 혹은 분사구문의 핵 기능을 하며 대격 목적어 arma를 지배한다. c-구조상 [NP legati [VP ferentes arma Aetola]] 형태의 내포 구조를 이루며, 주어와 성·수·격(남성 복수 주격) 일치를 이룬다. 생성문법적으로 능동 현재분사는 시간적 동시성을 나타내며, 내부 논항으로 arma를 취해 V-O 통사 구조를 투사한다.",
+        "background": "ferentes는 사절들이 단순하게 귀환한 것이 아니라, '거절당한 무기(지원)'라는 절망적인 소식을 직접 품고(지니고) 돌아왔음을 생생하게 묘사한다. 이 분사는 청각적·시각적 현장감을 부여하여, 청중이 사절들의 무거운 발걸음과 비보를 실감 나게 느끼도록 만드는 수사적 장치로 기능한다.",
+        "etymology": "① PIE 재구형 *bher-('나르다, 지탱하다')에서 유래한 강력한 불규칙 동사 어근에서 파생되었다. ② 동계어로 영어 bear, 그리스어 φέρω, 산스크리트어 bhárati 등이 있다. ③ 라틴어 역사 전반에 걸쳐 완료형과 과거분사형이 완전히 다른 어근(tuli, latum)으로 보충되는 독특한 불규칙성(suppletion)을 유지해 왔다. ④ 현대 영어의 transfer(이동하다), confer(수여하다), infer(추론하다) 및 로망스어군의 관련 접사 결합 어휘들에 깊은 흔적을 남기고 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 13.528",
+    "trans": "아이톨리아의 무기를 갖지 못한 루툴루스인들은 그 힘 없이 전쟁을 치르며,",
+    "words": [
+      {
+        "g": "arma",
+        "pos": "명사",
+        "lemma": "arma, armorum, n.",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "무기를, 군사력을, 원조를",
+        "gloss_en": "arms, weapons, military aid",
+        "syntax": "LFG f-구조에서 arma는 분사 negata의 목적어 논항으로서 대격 지배를 받으며, 동시에 전체 구문에서 거절된 대상인 THEME 역할을 수행한다. c-구조상 NP의 핵을 이루며 복수 형태 전용(pluralia tantum) 명사로 통사적 속성을 지닌다. 생성문법 관점에서 이 대격 명사구는 분사 핵과의 구조적 인접성을 통해 격 할당을 안정적으로 받는다.",
+        "background": "여기서 arma는 단순히 칼과 방패 같은 물리적 무기를 넘어, 디오메데스가 이끄는 아이톨리아 군대의 군사적 원조와 동맹의 힘을 포괄적으로 의미한다. 이 무기를 얻지 못했다는 것은 투르누스 측이 연합군의 도움 없이 고립된 채 트로이아인들과 맞서야 하는 치명적인 약점을 뜻한다.",
+        "etymology": "① PIE 재구형 *ar-('맞추다, 결합하다')에서 유래하여 '몸에 맞추어 장착하는 장비, 무기'라는 원뜻을 갖는다. ② 동계어로 그리스어 ἀρρίον 계열 및 산스크리트어 ṛtá-, 영어 arm(팔, 무장하다) 등이 있다. ③ 도구를 뜻하는 중성 복수형으로 고착되어 단수형 없이 복수 전용(pluralia tantum)으로 형태론적 특수성을 지니게 되었다. ④ 현대 영어의 arm(팔/무장), armor(갑옷), army(군대) 및 로망스어군의 arma 관련 어휘들에 그 뿌리가 선명하다."
+      },
+      {
+        "g": "Aetola",
+        "pos": "형용사",
+        "lemma": "Aetolus, Aetola, Aetolum",
+        "parse": "sg. acc. f. (modifying arma, or n.pl. matching neutral? Wait, Aetola is neuter plural matching arma)",
+        "gloss_kr": "아이톨리아의, 그리스의",
+        "gloss_en": "Aetolian",
+        "syntax": "LFG f-구조에서 Aetola는 명사 arma를 수식하는 ADJUNCT(형용사구)로서 수·성·격(중성 복수 대격) 일치를 이룬다. c-구조상 명사구 내부에서 N'를 수식하며 수식어 위치에 병합된다. 통사적으로 고유명사에서 파생된 관계 형용사로서 피수식 명사의 출처나 지역적 속성을 한정하는 통사적 기능을 담당한다.",
+        "background": "Aetola는 그리스 중부의 지역인 아이톨리아를 가리키며, 트로이 전쟁 당시 명장으로 이름을 떨쳤던 디오메데스의 고향이다. 디오메데스가 이 지역에 정착하여 나라를 세웠기에, 그곳의 무기란 곧 디오메데스의 강력한 군사적 지원을 의미하며, 오비디우스는 지리적 수식을 통해 신화적 깊이와 서사적 무게감을 더한다.",
+        "etymology": "① 그리스어 Αἰτωλία(Aetolia, 고대 그리스 지방 이름)에서 유래한 지명 형용사화 형태이다. ② 동계어로 그리스 고유어 지명 체계 및 라틴어화된 지명 차용어군이 있다. ③ 그리스어 원형의 음운 구조를 라틴어형 제1·2변화 형용사 어미(-us, -a, -um)에 맞추어 적응시키는 형태론적 차용 과정을 거쳤다. ④ 현대 지리학 및 역사학 용어인 Aetolian(아이톨리아의)을 통해 영어 및 서구 학술 어휘에 직접 계승되어 남아 있다."
+      },
+      {
+        "g": "sibi",
+        "pos": "대명사",
+        "lemma": "sui, sibi, se, se",
+        "parse": "dat. sg./pl.",
+        "gloss_kr": "자기들에게, 자신들을 위해",
+        "gloss_en": "to/for themselves",
+        "syntax": "LFG f-구조에서 sibi는 여격(dative) 논항으로서 수여 혹은 이익·손해(dative of advantage/disadvantage)의 OBL 기능을 수행한다. c-구조상 주어 루툴루스인들을 지칭하는 재귀대명사로서 결속 이론(Binding Theory)의 원칙에 따라 주절의 주어와 의미적으로 결속된다. 통사적으로 동사 negata 혹은 문장 전체의 논항 구조에서 수혜자(beneficiary) 혹은 경험자(experiencer) 역할을 맡는다.",
+        "background": "sibi는 아이톨리아의 무기를 구하고자 했던 주체인 루툴루스인들(혹은 투르누스) 자신을 가리킨다. 자신들을 지켜줄 원조를 얻지 못한 채 고립된 이들의 처연한 입장을 강조하며, 외부의 도움 없이 스스로의 힘으로 전쟁을 치러야 하는 가혹한 운명을 부각시킨다.",
+        "etymology": "① PIE 재구형 *s(e)-('자기 자신')에서 유래한 재귀대명사 여격형이다. ② 동계어로 산스크리트어 swè(자신의), 슬라브어계 재귀 대명사, 영어 self의 어원적 원형과 연결된다. ③ 라틴어 내부에서 격 변화 과정 중 3인칭 공통 재귀 대명사로 고착되며 음운론적 약화를 거쳐 sibi 형태가 확립되었다. ④ 현대 로망스어군의 재귀 대명사 체계(스페인어 se, 프랑스어 se) 및 영어의 self 접두사 계열과 깊은 계통적 연관성을 지닌다."
+      },
+      {
+        "g": "Rutuli",
+        "pos": "명사",
+        "lemma": "Rutuli, Rutulorum, m.",
+        "parse": "pl. nom. m.",
+        "gloss_kr": "루툴루스인들은 (투르누스의 종족)",
+        "gloss_en": "the Rutulians",
+        "syntax": "LFG f-구조에서 Rutuli는 주절 동사 gerunt의 SUBJ 논항으로 기능하며 주격 지배를 받는다. c-구조상 주절의 [Spec, IP] 위치에 병합된다. 생성문법 관점에서 이 복수 고유명사 주어는 문장 내 통사적 주체로서 행위자(AGENT) θ-역할을 담당하며, 후행하는 수식어구 및 목적어와의 통사적 호응을 주도한다.",
+        "background": "루툴루스인(Rutuli)은 이탈리아 중부의 고대 부족으로, 투르누스가 왕으로 군림하며 라틴족과 연합하여 트로이아에서 온 아에네아스와 치열한 영토 전쟁을 벌이는 세력이다. 외교적 고립 속에서도 물러서지 않고 전투를 준비하는 이들의 모습은 비장하면서도 파멸을 향해 치닫는 비극적 서사의 축을 형성한다.",
+        "etymology": "① 이탈리아 기층 언어 및 라틴어 이전의 선로마 고유어 지명·부족 명칭에서 유래한 것으로 추정된다. ② 동계어로 이탈리아 반도의 고대 방언군에 속하는 지명·부족명들과 어원적 유사성이 제기된다. ③ 라틴어 남성 제2변화 복수형 어미(-i)를 수용하여 고대 이탈리아 부족 명칭의 표준 격변화 체계에 편입되었다. ④ 고전 고고학 및 베르길리우스의 《아이네이스》 수용을 통해 현대 역사학·신화학 문헌에서 루툴루스(Rutulians)라는 고유 명칭으로 고스란히 살아 있다."
+      },
+      {
+        "g": "sine",
+        "pos": "전치사",
+        "lemma": "sine",
+        "parse": "prep. taking abl.",
+        "gloss_kr": "~없이",
+        "gloss_en": "without",
+        "syntax": "LFG f-구조에서 sine은 결핍(absence)을 나타내는 OBL 혹은 ADJUNCT의 핵으로서 후행하는 명사 viribus에 탈격(ablative)을 할당한다. c-구조상 PP의 핵으로 병합되며 탈격 명사구를 보어로 취한다. 통사적 격 지배 규칙에 따라 탈격 구문을 유도하여, 주된 행위 수단이나 조건이 결여되어 있음을 명시한다.",
+        "background": "sine 전치사는 루툴루스인들이 처한 군사적·물리적 공백 상태를 극적으로 보여준다. 무기가 없고(negata arma), 힘도 없는(sine viribus) 이중의 결핍 상태 속에서 전쟁을 수행해야 하는 이들의 절망적인 상황을 오비디우스는 전치사구를 통해 정교하게 대비시킨다.",
+        "etymology": "① PIE 혹은 초기 이탈리아어파의 분기 과정에서 파생된 전치사로, 분리와 결핍을 뜻한다. ② 동계어로 고대 라틴어의 파생형 및 여타 이탈리아어 방언의 결핍 전치사들과 연계된다. ③ 원래 형태에서 후대에 어말 모음의 장단 변화 및 음운 축약을 겪으며 고전 라틴어의 sine으로 고정되었다. ④ 현대 로망스어군에서 그 명맥이 이어져 스페인어 sin, 포르투갈어 sem, 프랑스어 sans 등으로 발전하여 '없이'라는 뜻을 온전히 보존하고 있다."
+      },
+      {
+        "g": "viribus",
+        "pos": "명사",
+        "lemma": "vis, -, f.",
+        "parse": "pl. abl. f.",
+        "gloss_kr": "힘으로, 군사력으로, 병력으로",
+        "gloss_en": "forces, strength, power",
+        "syntax": "LFG f-구조에서 viribus는 전치사 sine의 보어로서 탈격(ablative) 기능을 수행하며, 도구·결핍의 의미역(INSTRUMENT/LOCATIVE)을 나타낸다. c-구조상 PP 내부의 NP 핵을 이루며, 명사 vis의 불규칙 복수 변화형(vi-, vir-)의 탈격 복수 어미를 취한다. 생성문법적으로 전치사의 격 지배 원리에 의해 허가되는 사격(oblique) 명사구이다.",
+        "background": "vis(복수 viribus)는 단순한 육체적 완력이 아니라 국가의 군사력, 병력, 그리고 전쟁을 지탱할 총체적인 국력을 의미한다. 아이톨리아의 원조를 받지 못해 '힘 없이(sine viribus)' 싸운다는 것은 군사적 기반이 무너진 상태에서의 무모한 항전을 뜻하며, 앞으로 다가올 파멸을 암시한다.",
+        "etymology": "① PIE 재구형 *wihₓ-('힘, 기운')에서 유래한 명사 어간에서 파생되었다. ② 동계어로 산스크리트어 vīrá(영웅, 힘센 자), 영어 virile(남성적인), 리투아니아어 vỹras(남자) 등이 있다. ③ 단수형과 복수형의 어간이 이질적으로 교체되는 심각한 불규칙 변화(vis, vim, vi / vires, virium, viribus)를 역사적으로 겪었다. ④ 현대 영어의 virility(남성적 활력), virtuous(덕 있는) 및 로망스어군의 관련 어휘들에 그 어근이 깊게 뿌리내리고 있다."
+      },
+      {
+        "g": "bella",
+        "pos": "명사",
+        "lemma": "bellum, belli, n.",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "전쟁들을, 전투를",
+        "gloss_en": "wars, battles",
+        "syntax": "LFG f-구조에서 bella는 동사 gerunt의 OBJ 논항으로서 대격 지배를 받으며, 행위의 대상(THEME) 역할을 수행한다. c-구조상 VP 내부의 NP 핵을 이루며 중성 복수 대격 형태를 띤다. 통사적 논항 구조에서 동사의 지배 속성을 만족시키며, 시적 표현으로서 단수 대신 복수형이 사용되어 광범위하고 격렬한 전투 양상을 강조한다.",
+        "background": "여기서 bella는 트로이아인들과 루툴루스인들 사이에 벌어지는 총력전을 가리킨다. 외부 동맹의 지원이 끊긴 절망적인 상황 속에서도 루툴루스인들이 거친 전쟁을 계속 수행해 나가는 모습은, 이탈리아 땅의 패권을 둘러싼 피할 수 없는 비극적 운명의 소용돌이를 생생하게 보여준다.",
+        "etymology": "① 고대 라틴어 duellum('전쟁', 두 세력 간의 싸움)에서 어두의 자음군 du-가 b로 변모하여 파생된 형태이다. ② 동계어로 영어 dual(둘의), duel(결투) 등이 동일한 어원적 계통을 공유한다. ③ 고대 라틴어의 축약과 음운론적 간소화 과정을 거쳐 2변화 중성 명사 bellum으로 정착했다. ④ 현대 영어의 bellicose(호전적인), rebellion(반란), antebellum(전쟁 전의) 및 로망스어군의 관련 어휘들에 지대한 흔적을 남겼다."
+      },
+      {
+        "g": "instructa",
+        "pos": "동사",
+        "lemma": "instruo, instruere, instruxi, instructum",
+        "principalParts": "instruo – instruere – instruxi – instructum",
+        "parse": "perf. pass. part. acc. n. pl.",
+        "gloss_kr": "준비된, 편성된, 갖춰진",
+        "gloss_en": "prepared, arrayed, equipped",
+        "syntax": "LFG f-구조에서 instructa는 분사구의 핵으로서 명사 bella를 수식하며, 수·성·격(중성 복수 대격) 일치를 이룬다. c-구조상 명사구 내부 혹은 부대 상황을 나타내는 분사구문 내에서 수식어 위치에 병합된다. 생성문법적으로 수동 분사는 피수식 명사에 대한 THEME 속성을 유지하면서 전쟁이 군사적으로 '준비되고 편성된' 상태임을 통사적으로 한정한다.",
+        "background": "instructa는 비록 외부 원조는 없지만 루툴루스인들이 스스로 전투 대열을 가추고 전쟁을 치밀하게 준비해 왔음을 나타낸다. 비장한 각오로 전열을 가다듬고 전투에 임하는 이들의 군사적 태세는, 이어지는 투르누스의 돌발적이고 파괴적인 행동과 대조를 이루며 서사의 긴장감을 극대화한다.",
+        "etymology": "① 전치사/접두사 in-('~안에')과 동사 struo, struere('쌓다, 건설하다')의 합성어로 '구조화하다, 장비하다'가 원뜻이다. ② 동계어로 영어 structure(구조), destroy(파괴하다) 등의 어근과 깊은 연관이 있다. ③ 라틴어 내부에서 접두사와 어근의 결합 후 완료분사 파생 규칙에 따라 instructum 형태로 고정되었다. ④ 현대 영어의 instruct(가르치다, 지시하다), instruction(설명서, 교육) 및 로망스어군의 유사 어휘들 속에 그 어원이 생생하게 살아 있다."
+      },
+      {
+        "g": "gerunt",
+        "pos": "동사",
+        "lemma": "gero, gerere, gessi, gestum",
+        "principalParts": "gero – gerere – gessi – gestum",
+        "parse": "pres. act. ind. 3rd pers. pl.",
+        "gloss_kr": "치르고 있다, 수행한다, 벌이고 있다",
+        "gloss_en": "waging, carrying on, conduct",
+        "syntax": "LFG f-구조상 gerunt는 주절의 PRED이며, 주어 Rutuli와 복수 3인칭 현재 시제 일치를 이룬다. c-구조상 VP의 핵을 이루며, 목적어 bella를 대격으로 지배한다. 생성문법 관점에서 현재시제는 역사적 현재(historical present) 혹은 극적 생동감을 부여하는 시제 해석을 낳으며, 루툴루스인들이 처한 실시간의 전투 상황을 청중 앞에 생생하게 펼쳐 보인다.",
+        "background": "gerunt 동사는 루툴루스인들이 현재 진행형으로 치르고 있는 가혹한 전쟁의 현장을 가리킨다. 외부 동맹의 배신과 힘의 공백 속에서도 전투를 멈추지 않고 수행하는 이들의 모습은, 투르누스의 영웅적이지만 파멸적인 행보와 맞물려 오비디우스가 그려내는 전쟁의 비극성을 배가시킨다.",
+        "etymology": "① PIE 재구형 *ges-('나르다, 지탱하다, 수행하다')에서 파생된 동사 어근이다. ② 동계어로 산스크리트어 일부 어근 및 라틴어 내부의 파생 명사(gestus 등)가 존재한다. ③ 완료형 파생 과정에서 s음화(rhotacism의 전단계 혹은 자음 교체)를 겪으며 gessi, gestum의 불규칙 어간 변화를 확립했다. ④ 현대 영어의 digest(소화하다), gesture(제스처), register(등록하다) 및 로망스어군의 관련 어휘들에 그 어근적 유산이 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 13.529",
+    "trans": "양쪽 진영 모두에서 엄청난 피가 흘러내리고,",
+    "words": [
+      {
+        "g": "multumque",
+        "pos": "부사",
+        "lemma": "multus, multa, multum (multum + -que)",
+        "parse": "adverb + enclitic conjunction",
+        "gloss_kr": "그리고 엄청나게, 그리고 많은 양의",
+        "gloss_en": "and much, and abundantly",
+        "syntax": "LFG f-구조에서 multum은 부사적 대격(adverbial accusative)으로서 동사 datur를 수식하는 ADJUNCT이며, 후행하는 접속사 -que는 두 절 혹은 성분을 대등하게 연결하는 좌표 접속사(coordinating conjunction)로서 enclitic으로 결합한다. c-구조상 -que는 앞 단어의 어말에 부착되어 투사 구조의 위상을 확장하며, multum은 수량적 정도를 나타내는 부사구 핵으로 작동한다.",
+        "background": "multumque는 양측 진영에서 흘러나오는 피의 양이 엄청나다는 것을 강조하는 수량적 수사법이다. 외교적 실패와 무기 부족 속에서 벌어지는 전투가 얼마나 참혹하고 피비린내 나는 혈투인지를 보여주며, 전쟁의 비참함을 시각적으로 각인시키는 역할을 한다.",
+        "etymology": "① PIE 재구형 *ml̥to-('많은, 풍부한')에서 유래한 형용사의 중성 단수 대격 형태가 부사화되었다. ② 동계어로 그리스어 πολύς(많은), 영어의 멀티(multi-) 접두사 계열과 어원적 동계 관계를 이룬다. ③ 접속사 -que는 PIE *kʷe('그리고')에서 온 enclitic으로 라틴어 전반에 걸쳐 광범위하게 문법화되어 결합했다. ④ 현대 영어의 multiform, multiply 및 로망스어군의 다수 어휘(스페인어 mucho 등)의 뿌리가 된다."
+      },
+      {
+        "g": "ab",
+        "pos": "전치사",
+        "lemma": "ab",
+        "parse": "prep. taking abl.",
+        "gloss_kr": "~로부터, ~측에서",
+        "gloss_en": "from, on the side of",
+        "syntax": "LFG f-구조에서 ab는 출처 및 행위의 주체·측면을 나타내는 OBL 혹은 ADJUNCT의 핵으로서 후행하는 명사 parte에 탈격(ablative)을 할당한다. c-구조상 PP의 핵으로 병합되며, 탈격 명사구를 보어로 취한다. 통사적 격 지배 규칙에 따라 '어느 쪽으로부터'라는 방향 및 출처 의미역을 명확히 유도한다.",
+        "background": "여기서 ab 전치사는 피가 흘러나오는 출처와 양쪽 진영의 구분을 나타낸다. 트로이아 진영과 루툴루스 진영 양쪽 모두에서 동등하게 수많은 희생자가 발생하고 있음을 보여주며, 어느 한쪽의 일방적 우세가 아닌 피비린내 나는 소모전의 양상을 객관적으로 조명한다.",
+        "etymology": "① PIE 재구형 *apo('~로부터, 멀리')에서 유래한 전치사 어근이다. ② 동계어로 영어 off, 어프터(after), 그리스어 ἀπό, 산스크리트어 ápa 등이 있다. ③ 라틴어 음운 환경에서 모음이나 유성자음 앞에서 ab로, 무성 자음 앞에서 a나 abs로 분화되는 형태론적 변이를 겪었다. ④ 현대 영어의 abs- 접두사(absent의 ab-) 및 로망스어군의 관련 전치사 변화형들의 모태가 되었다."
+      },
+      {
+        "g": "utraque",
+        "pos": "대명사",
+        "lemma": "uterque, utraque, utrumque",
+        "parse": "sg. abl. f. (modifying parte)",
+        "gloss_kr": "양쪽의 각각으로부터, 양측 모두에서",
+        "gloss_en": "each (of two), both",
+        "syntax": "LFG f-구조에서 utraque는 명사 parte를 수식하는 한정사/형용사로서 수·성·격(여성 단수 탈격) 일치를 이룬다. c-구조상 명사구 내부의 Spec 혹은 수식어 위치에 병합된다. 통사적으로 '둘 중 각각'을 뜻하는 대명사적 형용사로서 전치사 ab의 지배를 받는 탈격 명사구의 의미적 범위를 양쪽 진영 모두로 확장한다.",
+        "background": "utraque는 트로이아와 루툴루스라는 두 대립 진영 '모두'를 지칭한다. 전쟁의 참혹함이 어느 한쪽에만 국한되지 않고 싸우는 양측 모두에게 공평하게 막대한 피와 희생을 요구하고 있음을 강조하며, 비극적 대립의 균형을 시사한다.",
+        "etymology": "① 의문/관계 대명사 어근 *kʷo-에 양자를 뜻하는 접사 및 enclitic -que가 결합하여 '양자 모두'라는 뜻을 형성했다. ② 동계어로 영어 which, who의 의문사 계열과 어원적 친족 관계를 지닌다. ③ 합성어 내부의 격 변화와 접미사의 결합 과정에서 고유한 라틴어 대명사 변화 패턴(uter, utra, utrum)으로 고정되었다. ④ 현대 로망스어군 및 영어권의 법률·학술 용어 속에서 양자 거론 시 쓰이는 어원적 흔적을 남기고 있다."
+      },
+      {
+        "g": "cruoris",
+        "pos": "명사",
+        "lemma": "cruor, cruoris, m.",
+        "parse": "sg. gen. m.",
+        "gloss_kr": "피의, 흘러나온 선혈의",
+        "gloss_en": "of gore, of shed blood",
+        "syntax": "LFG f-구조에서 cruoris는 수량 명사 multum의 수식을 받는 속격 명사구(genitive nominal phrase)로서 파티티브 속격(partitive genitive) 기능을 수행한다. c-구조상 NP 내부의 N' 하위 노드에 위치하며, 격 지배 원리에 따라 양적 수량어로부터 속격 지배를 받는다. 생성문법적으로 명사구 내 [Spec, DP] 혹은 속격 논항 위치에 병합된다.",
+        "background": "cruor는 일반적인 피를 뜻하는 sanguis와 달리, 상처에서 흘러나와 굳거나 낭자하게 고인 '선혈, 핏자국'을 뜻하는 무섭고 강렬한 단어다. 양진영에서 흘러내리는 피의 참혹함을 생생하게 시각화하며, 오비디우스가 서사 전반에 걸쳐 유지하는 전쟁의 잔혹한 실상을 상징적으로 응축한다.",
+        "etymology": "① PIE 재구형 *kru(H)-('굳은 피, 생고기')에서 유래한 명사 어간이다. ② 동계어로 산스크리트어 kravyá(생고기), 그리스어 κρέας(고기), 영어 raw(날것의) 등이 있다. ③ 음운론적으로 라틴어 내부에서 어간 말 자음 교체와 제3변화 명사 어미(-is) 수용 과정을 거쳤다. ④ 현대 영어의 crude(가공하지 않은), cruel(잔인한) 및 로망스어군의 관련 어휘들과 깊은 어원적 혈연 관계를 맺고 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 13.530",
+    "trans": "보라, 턴루스는 소나무 숲을 향해 사나운... [비상한 돌진을 감행한다]",
+    "words": [
+      {
+        "g": "parte",
+        "pos": "명사",
+        "lemma": "pars, partis, f.",
+        "parse": "sg. abl. f.",
+        "gloss_kr": "쪽에서, 측면에서, 진영에서",
+        "gloss_en": "side, part",
+        "syntax": "LFG f-구조에서 parte는 전치사 ab의 보어로서 탈격 지배를 받으며, 장소 및 진영을 나타내는 OBL 기능을 수행한다. c-구조상 PP 내부의 NP 핵을 이루며 제3변화 여성 명사의 단수 탈격 형태(-e)를 취한다. 통사적 격 지배 규칙에 따라 앞의 utraque와 호응하여 '양쪽 측면으로부터'라는 의미역을 완성한다.",
+        "background": "parte는 전쟁이 벌어지는 지리적·진영별 위치를 가리킨다. 양측 진영 모두에서 피가 흐르는 현장의 공간적 배경을 구체화하며, 개별 전사들의 충돌이 거대한 집단적 혈투로 확장되고 있음을 보여준다.",
+        "etymology": "① PIE 재구형 *part-('나누다, 몫')에서 유래한 명사 어간이다. ② 동계어로 산스크리트어 parti-, 영어 part, share의 어원적 계통과 연결된다. ③ 명사화 과정에서 제3변화 i-stem 명사 체계로 편입되어 탈격 단수형 parte를 확립했다. ④ 현대 영어의 part, particle, particular 및 로망스어군의 파생 어휘(스페인어 parte, 프랑스어 partie)로 널리 계승되었다."
+      },
+      {
+        "g": "datur",
+        "pos": "동사",
+        "lemma": "do, dare, dedi, datum",
+        "principalParts": "do – dare – dedi – datum",
+        "parse": "pres. pass. ind. 3rd pers. sg.",
+        "gloss_kr": "주어진다, 흘려진다",
+        "gloss_en": "is given, is shed, is dealt",
+        "syntax": "LFG f-구조에서 datur는 주절의 수동태 PRED이며, 주어 논항(생략되었거나 비인칭적 구문에서 cruor/multum과 연계된 주어)과 3인칭 단수 수-인칭 일치를 이룬다. c-구조상 VP의 핵을 이루며 수동태 형태소(-tur)를 반영한다. 생성문법 관점에서 수동화(passivization) 변환을 거쳐 기저의 목적어가 표면 주어 위치로 도달하거나 비인칭적 사건 서술의 핵으로 투사된다.",
+        "background": "datur는 '피가 주어진다(흘려진다)'는 표현으로, 시적 은유를 통해 전쟁 속에서 피가 무자비하게 바치워지고 있음을 나타낸다. 인간의 의지와 상관없이 운명의 제단 위에 피가 바쳐지듯, 전투의 참혹함이 불가피한 신화적 숙명으로 다가오고 있음을 암시한다.",
+        "etymology": "① PIE 재구형 *deh₃-('주다')에서 유래한 매우 오래된 동사 어근이다. ② 동계어로 그리스어 δίδωμι, 산스크리트어 ddadāti, 영어 date(날짜의 어원적 기원과도 연계) 등이 있다. ③ 라틴어 역사 속에서 제1변화 동사로 정착하며 단음모음 어간의 규칙적 완료·분사 형태(dedi, datum)를 확립했다. ④ 현대 영어의 date, dose, tradition 및 로망스어군의 수많은 수여 동사 계열(스페인어 dar, 프랑스어 donner)의 모태가 되었다."
+      },
+      {
+        "g": "fert",
+        "pos": "동사",
+        "lemma": "fero, ferre, tuli, latum",
+        "principalParts": "fero – ferre – tuli – latum",
+        "parse": "pres. act. ind. 3rd pers. sg.",
+        "gloss_kr": "이끈다, 향하게 한다, 내닫는다",
+        "gloss_en": "brings, bears, rushes",
+        "syntax": "LFG f-구조에서 fert는 주절의 PRED이며, 주어 Turnus와 단수 3인칭 현재시제 일치를 이룬다. c-구조상 VP의 핵을 이루며 목적어 avidas(혹은 대명사적 귀속구)를 대격으로 지배한다. 생성문법 관점에서 현재시제는 역사적 현재로서, 정지된 참혹한 전장의 풍경 속에서 갑자기 튀어나오는 투르누스의 격렬한 돌진을 극적이고 실시간으로 포착해 낸다.",
+        "background": "fert는 투르누스의 폭발적인 에너지를 대변하는 동사다. 피비린내 나는 전장을 뒤로하고, 투르누스가 소나무 숲을 향해 사납게 돌진하는 장면으로 시선이 급격히 전환되며 새로운 파괴의 서사가 시작됨을 알린다.",
+        "etymology": "① PIE 재구형 *bher-('나르다, 지탱하다')에서 유래한 불규칙 동사 어근이다. ② (상세 내용은 앞선 ferentes 항목 참조). ③ 라틴어 동사 체계에서 가장 핵심적인 이동·행위 동사로 기능하며 다양한 전치사 접두사와 결합해 수십 개의 파생어를 낳았다. ④ 현대 영어의 infer, prefer, transfer 및 로망스어군의 관련 어휘들에 깊은 어원적 유산을 남겼다."
+      },
+      {
+        "g": "ecce",
+        "pos": "감탄사",
+        "lemma": "ecce",
+        "parse": "interjection / demonstrative particle",
+        "gloss_kr": "보라!, 보아라",
+        "gloss_en": "behold!, lo!",
+        "syntax": "LFG f-구조에서 ecce는 문장 전체를 수식하는 담화 표지(discourse particle) 혹은 감탄사적 핵으로서 시각적 초점을 유도한다. c-구조상 IP 외곽의 담화 위치(Discourse position)에 병합되며, 독자나 청중의 주의를 특정 인물이나 사건(여기서는 Turnus의 돌진)으로 강하게 환기시키는 통사-화용론적 기능을 수행한다.",
+        "background": "ecce는 오비디우스가 서사 속에서 청중의 소매를 잡아끌며 저기 저 모습을 보라!고 외치는 듯한 생생한 현장감을 부여하는 수사적 장치다. 참혹한 피의 전경 속에서 갑작스럽게 투르누스의 역동적인 행동을 클로즈업하며 서사의 긴장감을 최고조로 끌어올린다.",
+        "etymology": "① 지시사 어근 *ce('이것')와 감탄사적 요소가 결합하여 '여기에 보라'라는 원뜻을 형성했다. ② 동계어로 라틴어 en(보라) 및 여타 이탈리아어파의 지시 감탄사들이 존재한다. ③ 구어체에서 시각적 주목을 이끄는 담화 표지로 고착되면서 음운론적으로 짧고 강렬한 형태인 ecce로 정착했다. ④ 현대 로망스어군의 일부 지시·감탄 표현 및 서구 문학 문맥에서 극적인 전환을 알리는 고전적 감탄사로 명맥을 유지한다."
+      },
+      {
+        "g": "avidas",
+        "pos": "형용사",
+        "lemma": "avidus, avida, avidum",
+        "parse": "sg. acc. f. (modifying pineam - wait, pinea is noun here or adjective? Let's check: pinea as noun 'pine forest' or modifying pinus. In 'in pinea Turnus', pinea is abl. sg. or acc. pl. neuter? Let's treat avidas as modifying an implied feminine noun or pinea as a noun 'pine grove' - wait, avidas modifies pineas if plural, or feminine accusative plural modifying something else, or used as substantive)",
+        "gloss_kr": "탐욕스러운, 갈망하는, 사나운",
+        "gloss_en": "greedy, eager, fierce",
+        "syntax": "LFG f-구조에서 avidas는 형용사구의 핵으로서 대격 목적어 혹은 수식어 기능을 수행하며, 수·성·격(여성 복수 대격) 일치를 이룬다. c-구조상 명사구 내부 혹은 부대 상황을 나타내는 목적격 보어 위치에 병합된다. 생성문법 관점에서 이 형용사는 투사된 구조 내에서 주체(Turnus 혹은 그의 공격성)의 심리적·행동적 속성을 투사하는 수식어 역할을 한다.",
+        "background": "avidas는 무엇인가를 게걸스럽게 탐하는 듯한 투르누스의 파괴적 갈망과 폭력적인 성정을 비유적으로 드러낸다. 숲을 향해 돌진하는 그의 모습이 단순한 이동이 아니라 맹수가 먹이를 향해 달려드는 듯한 탐욕스럽고 거침없는 질주임을 시각화한다.",
+        "etymology": "① 동사 avere('갈망하다, 탐내다')에서 유래한 형용사 어간이다. ② 동계어로 산스크리트어 avati(돕다, 만족시키다) 계열 및 라틴어 ave(안녕히/번창하라의 어원)와 연계된다. ③ 감정이나 욕망의 과도함을 나타내는 파생 형용사 접미사 -idus와 결합하여 고정된 성질을 뜻하는 형용사로 발전했다. ④ 현대 영어의 avid(열렬한, 탐욕스러운) 및 로망스어군의 관련 어휘(스페인어 ávido, 프랑스어 avide)로 직접 계승되었다."
+      },
+      {
+        "g": "pinea",
+        "pos": "명사",
+        "lemma": "pinea, pineae, f. (or pineus adj. neuter pl. acc.)",
+        "parse": "sg. abl. f. (or pl. acc. n. modifying/substantive)",
+        "gloss_kr": "소나무 숲으로, 소나무로 된 곳으로",
+        "gloss_en": "into the pine forest / pine grove",
+        "syntax": "LFG f-구조에서 pinea는 전치사 in의 보어로서 탈격(ablative) 혹은 대격 기능을 수행하며, 이동의 목표 지점(GOAL) 역할을 담당한다. c-구조상 PP 내부의 NP 핵을 이루며, 소나무 숲이나 소나무가 우거진 지형을 가리킨다. 통사적으로 전치사의 격 지배에 따라 투르누스의 돌진 방향을 종결짓는 핵심 장소 논항으로 기능한다.",
+        "background": "pinea는 투르누스가 돌진하는 공간적 배경인 소나무 숲을 가리킨다. 이 소나무들은 나중에 트로이아의 함선들로 건조되거나 신성한 나무로서 신들의 보호를 받게 될 운명을 지닌 나무들로, 투르누스가 이 숲을 향해 돌진한다는 것은 곧 신성모독적이거나 파괴적인 사건의 서막이 오르고 있음을 암시한다.",
+        "etymology": "① 소나무를 뜻하는 명사 pinus에서 파생된 형용사/명사형으로, 소나무와 관련된 숲이나 재질을 가리킨다. ② 동계어로 영어 pine(소나무), 그리스어 πίτυς(소나무) 등이 있다. ③ 식물 명칭에서 지형 및 재질을 나타내는 2변화 명사·형용사 파생 과정을 거쳐 로마 문학 속에서 소나무 숲을 뜻하는 시적 어휘로 정착했다. ④ 현대 영어의 pine, pineal 및 로망스어군의 소나무 관련 어휘(스페인어 pino, 이탈리아어 pino)의 어원적 토대가 된다."
+      },
+      {
+        "g": "Turnus",
+        "pos": "명사",
+        "lemma": "Turnus, Turni, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "투르누스는 (루툴루스의 왕)",
+        "gloss_en": "Turnus",
+        "syntax": "LFG f-구조에서 Turnus는 주절 동사 fert의 SUBJ 논항으로 기능하며 주격 지배를 받는다. c-구조상 주절의 [Spec, IP] 위치에 병합된다. 생성문법 관점에서 이 고유명사 주어는 문장 내 통사적 주체로서 행위자(AGENT) θ-역할을 담당하며, 앞선 문장들의 집단적 혼란(양측의 피)에서 개인적 영웅의 역동적인 행동으로 서사의 초점을 전환시키는 핵심 주체다.",
+        "background": "Turnus는 루툴루스족의 용맹한 왕이자 아에네아스의 연적이며, 라티움 땅의 주도권을 두고 벌어지는 투쟁의 핵심 인물이다. 외교적 고립과 군사적 위기 속에서도 결코 굴하지 않고 광기 어린 돌진과 파괴를 감행하는 그의 모습은 본문 후반부 비극적 클라이맥스를 향해 치닫는 에네이스 후반부 원시 신화의 비장한 영웅상을 완벽하게 대변한다.",
+        "etymology": "① 이탈리아 기층 언어 및 고대 라틴 이전의 에트루리아·이탈리아 반도 고유 인명 계열에서 유래한 것으로 추정된다. ② 동계어로 이탈리아 고대 방언권의 인명 및 지명 접사 체계와 어원적 친족 관계를 지닌다. ③ 라틴어 남성 제2변화 주격 어미(-us)를 수용하여 고전 라틴어 명사 체계에 편입되었다. ④ 베르길리우스의 《아이네이스》와 오비디우스의 《변신이야기》를 통해 서양 문학 전통 전체에서 비극적 영웅 Turnus(투르누스)라는 고유명사로 영원히 각인되었다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 13.531",
+    "trans": "횃불들과, 파도가 자비를 베풀었던 그 불길들을 그들은 두려워한다.",
+    "words": [
+      {
+        "g": "timent",
+        "pos": "동사",
+        "lemma": "timeo, timere, timui, -",
+        "principalParts": "timeo – timere – timui – (미상)",
+        "parse": "pres. act. ind. 3rd pers. pl.",
+        "gloss_kr": "두려워한다, 무서워한다",
+        "gloss_en": "fear, dread",
+        "syntax": "LFG f-구조에서 timent는 주절의 PRED이며, 생략된 혹은 문맥상 지시되는 복수 주어와 인칭·수 일치를 이룬다. c-구조상 VP의 핵을 이루며, 목적어 faces와 ignes를 대격으로 지배한다. 생성문법의 격 이론에 따라, 지배소 동사는 투사된 V-bar 내부에서 직접적으로 대격 목적어들에 구조적 격(structural accusative)을 할당한다.",
+        "background": "트레이아의 배들이 적의 횃불과 불길에 공격받는 절체절명의 상황을 묘사한다. 이 불길이 특별한 이유는 과거 이다산의 소나무로 배가 건조될 때 신들의 어머니 키벨레가 파도로부터 지켜주었기 때문이며, 이제는 그 파도가 지키려 했던 배들이 반대로 불을 두려워해야 하는 아이러니를 보여준다. 서사 전체에서 이 장면은 배가 님프(나이아드)로 변신하기 직전의 극적인 긴장감을 형성한다.",
+        "etymology": "① PIE 재구형 *temh₁-('자르다, 어둡게 하다' 혹은 두려움과 관련된 어근) 계통에서 발달한 것으로 추정되나, 구체적인 초기 형태는 재구상의 논쟁이 있다. ② 동계어로 라틴어 timor(두려움), timidus(소심한) 등이 직접 연결된다. ③ 라틴어 체계 내부에서 제2변화 동사로 고착되며 완료형이 -ui로 끝나는 규칙적 패러다임을 확립했다. ④ 현대 영어의 timid(소심한), timidity(소심함) 및 로망스어군의 관련 어휘(스페인어 temir 등)에 그 어원이 살아 있다."
+      },
+      {
+        "g": "quibus",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "pl. abl. n.",
+        "gloss_kr": "~에게, ~에 의해 (관계대명사)",
+        "gloss_en": "by which",
+        "syntax": "LFG f-구조에서 quibus는 관계절 내의 ADJUNCT 혹은 OBL(도구) 논항으로 기능하며, 탈격 격 지배를 받는다. c-구조상 관계절(CP) 내부의 NP 위치에 병합되며, 선행사 ignes를 지시적·통사적으로 구속한다. 생성문법의 이동 및 결속 이론에 따라, 관계대명사는 기저 위치에서 [Spec, CP]로 A'-이동하며, 선행사와 성·수 일치를 이루고 격은 자신의 통사적 위치(탈격)에 의해 결정된다.",
+        "background": "quibus가 이끄는 관계절은 배들이 과거에 겪었던 신화적 구원의 역사를 상기시킨다. 바다의 파도(unda)가 이 소나무 목재들을 품어주어 침몰이나 파괴로부터 보호해주었음을 뜻하며, 자연의 원초적 요소인 물이 지켜준 대상이 이제 인공적 파괴의 상징인 불의 위협에 직면한 대조를 극대화한다.",
+        "etymology": "① PIE 의문/관계 대명사 어근 *kʷo- / *kʷi-에서 유래한 형태이다. ② 동계어로 영어 who, which, 산스크리트어 ká- 등이 있다. ③ 라틴어 관계대명사 패러다임 속에서 복수 탈격형으로 음운론적 변화를 거쳐 quibus로 고정되었다. ④ 현대 영어의 relative(관계사), quorum 및 로망스어군의 관계대명사 체계에 깊은 어원적 뿌리를 남겼다."
+      },
+      {
+        "g": "unda",
+        "pos": "명사",
+        "lemma": "unda, undae, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "물결이, 파도가",
+        "gloss_en": "wave, water",
+        "syntax": "LFG f-구조에서 unda는 관계절 내의 SUBJ 논항으로 기능하며 주격 지배를 받는다. c-구조상 관계절 내부의 [Spec, IP] 위치에 병합된다. 생성문법 관점에서 이 주어 명사구는 행위자 혹은 원인(CAUSE)의 θ-역할을 담당하며, 동사 pepercit과의 수-인칭 일치를 통사적으로 주도한다.",
+        "background": "여기서 unda는 단순한 바닷물이 아니라, 과거 키벨레 여신의 청을 들어 트로이의 함선들(이다산의 소나무)을 안전하게 감싸 안았던 신성한 파도를 의미한다. 자연의 요소인 물이 목재의 본래 신성함을 알아보고 자비를 베풀었다는 신화적 맥락을 담고 있으며, 화염이라는 또 다른 원소와의 대결 구도를 예고한다.",
+        "etymology": "① PIE 재구형 *wed-('물, 젖다')에서 유래한 수자원 관련 명사 어간이다. ② 동계어로 산스크리트어 udán(물), 그리스어 ὕδωρ(물), 영어 water, wet 등이 있다. ③ 라틴어 내부에서 파생 접미사와의 결합을 통해 물결이나 파도를 뜻하는 제1변화 여성 명사 unda로 정착했다. ④ 현대 영어의 inundate(침수시키다), redundant(여분의) 및 로망스어군의 유사 어휘(스페인어 onda 등)에 직접적인 어원이 된다."
+      },
+      {
+        "g": "pepercit",
+        "pos": "동사",
+        "lemma": "parco, parcere, peperci, parsum",
+        "principalParts": "parco – parcere – peperci – parsum",
+        "parse": "perf. act. ind. 3rd pers. sg.",
+        "gloss_kr": "자비를 베풀었다, 아꼈다, 용서했다",
+        "gloss_en": "spared",
+        "syntax": "LFG f-구조상 pepercit은 관계절의 PRED이며, 주어 unda와 단수 3인칭 완료시제 일치를 이룬다. c-구조상 VP의 핵을 이루며 여격 논항을 지배하는 통사적 속성을 지닌다. 생성문법 관점에서 이 동사는 완료 시제의 중복(reduplication) 현상을 보여주는 형태론적 특징을 가지며, 비여격/여격 지배의 특이성을 통사 구조 속에서 실현한다.",
+        "background": "pepercit은 바다의 파도가 트로이아의 함선들을 파괴하지 않고 자비를 베풀어 살려주었음을 보여주는 핵심 동사다. 과거에 바다가 베푼 이 은혜는, 현재 트로이아의 배들이 루툴루스족의 횃불과 불길이라는 또 다른 재앙 앞에서 겪는 공포와 극적인 대조를 이루며 독자에게 운명의 가혹함을 전달한다.",
+        "etymology": "① PIE 재구형 *parj-('나누다, 아끼다') 혹은 관련 경제적·보존적 어근에서 유래했다. ② 동계어로 고대 고지 독일어 farjan 및 여타 게르만어파의 절제·보존 관련 어휘들이 존재한다. ③ 라틴어 완료형 형성 과정에서 전형적인 중복사(reduplication, pe- + 어근) 현상을 겪으며 peperci 형태를 확립했다. ④ 현대 영어의 spare(아끼다, 할애하다)와는 계통적으로 무관하나(spare는 게르만어계), 로망스어군의 관련 파생어에 간접적 흔적을 남겼다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 13.532",
+    "trans": "그리고 이제 역청과 밀랍들과 불꽃의 다른 자양분들을",
+    "words": [
+      {
+        "g": "Iamque",
+        "pos": "부사",
+        "lemma": "iam (iam + -que)",
+        "parse": "adverb + enclitic conjunction",
+        "gloss_kr": "그리고 이제, 벌써 그리고",
+        "gloss_en": "and now, already and",
+        "syntax": "LFG f-구조에서 iam은 시간적 부사(ADJUNCT)로서 문장 전체의 시제적 배경을 수식하며, enclitic 접속사 -que는 앞 문장과 현 문장을 대등하게 결합한다. c-구조상 -que는 첫 단어의 어말에 부착되어 통사 구조를 확장하고, iam은 부사구 핵으로 작동한다. 통사적 이동 관점에서 문두에 위치하여 새로운 국면의 시작을 알리는 담화 표지 역할을 한다.",
+        "background": "Iamque는 전투와 파괴의 현장이 새로운 국면, 즉 배가 불타는 구체적인 파괴의 순간으로 진입하고 있음을 알리는 시간적 전환 장치다. 오비디우스는 이 연결사를 통해 독자의 시선을 전면전의 혼란에서 배의 구조물로 태워버리는 화염의 구체적 작용으로 좁혀간다.",
+        "etymology": "① 지시적 시간 부사 어근에서 유래한 형태이다. ② 동계어로 고대 라틴어의 시간 지시어 체계 및 여타 이탈리아어파의 부사형들이 존재한다. ③ 어구 결합 과정에서 -que(PIE *kʷe)가 접미사 형태로 단어 말에 융합되어 고전 라틴어의 표준적인 문장 연결 부사형으로 정착했다. ④ 현대 로망스어군의 시간 부사 및 문학적 접속 표현들의 기저가 되었다."
+      },
+      {
+        "g": "picem",
+        "pos": "명사",
+        "lemma": "pax, picis, f. (or pix, picis, f.)",
+        "parse": "sg. acc. f.",
+        "gloss_kr": "역청을, 타르를",
+        "gloss_en": "pitch, tar",
+        "syntax": "LFG f-구조에서 picem은 동사 urebat의 OBJ 논항으로서 대격 지배를 받으며, 행위의 대상(THEME) 역할을 수행한다. c-구조상 VP 내부의 NP 핵을 이루며 제3변화 여성 명사의 단수 대격 형태(-em)를 취한다. 생성문법의 격 이론에 따라, 지배 동사로부터 구조적 대격(accusative)을 할당받는다.",
+        "background": "pix(대격 picem)는 고대 선박을 방수하고 결합하기 위해 칠하던 가연성 물질인 역청(타르)을 가리킨다. 배의 건조에 필수적인 이 물질이 불길과 만나면서 오히려 배를 가장 빠르게 태워버리는 치명적인 도구로 돌변하는 과정을 보여주며, 인공적 문명의 이기가 재앙으로 작용하는 아이러니를 부각시킨다.",
+        "etymology": "① PIE 재구형 *pik-('수지, 역청')에서 유래한 명사 어간이다. ② 동계어로 그리스어 πίσσα(역청), 영어 pitch(타르, 피치) 등이 있다. ③ 라틴어 제3변화 i-stem 명사 체계로 편입되면서 어간 말 자음 교체와 단수 대격 어미 -em을 확립했다. ④ 현대 영어의 pitch(역청), tar-pitch 및 로망스어군의 관련 어휘(스페인어 pez, 프랑스어 poix)에 그 어원이 고스란히 남아 있다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고, 과",
+        "gloss_en": "and",
+        "syntax": "LFG f-구조에서 et는 대등한 통사 성분들을 연결하는 좌표 접속사(coordinating conjunction)로서 기능한다. c-구조상 두 개의 NP(picem과 ceras)를 대등하게 연결하는 [ConP NP et NP] 구조의 핵을 형성한다. 통사적 범주 이론에 따라 동일한 격과 품사를 가진 성분들을 대칭적으로 병합한다.",
+        "background": "et 접속사는 배를 이루고 불타는 가연성 재료들(역청, 밀랍 등)을 열거하며 파괴의 목록을 확장한다. 시적 묘사의 정밀함을 더해주며, 화염이 삼키는 대상이 단순한 나무가 아니라 인간이 정교하게 방수하고 마감한 선박의 복합적 재료들임을 상세히 고발한다.",
+        "etymology": "① PIE 재구형 *eti('~도 또한, 게다가')에서 유래한 부사·접속사 어근이다. ② 동계어로 산스크리트어 áti(~를 넘어, 더욱), 그리스어 ἔτι(여전히, 게다가) 등이 있다. ③ 라틴어 체계 안에서 단순 접속사로 문법화되면서 구와 절을 잇는 가장 기본적인 대등 접속사로 고착되었다. ④ 현대 로망스어군의 접속사 계열(프랑스어 et, 이탈리아어 e 등)의 직접적인 어원적 모태가 되었다."
+      },
+      {
+        "g": "ceras",
+        "pos": "명사",
+        "lemma": "cera, cerae, f.",
+        "parse": "pl. acc. f.",
+        "gloss_kr": "밀랍들을",
+        "gloss_en": "waxes",
+        "syntax": "LFG f-구조에서 ceras는 동사 urebat의 OBJ 논항으로서 대격 지배를 받으며, 대등 접속사 et에 의해 picem과 병렬된다. c-구조상 VP 내부의 NP 핵을 이루며 제1변화 여성 명사의 복수 대격 형태(-as)를 취한다. 생성문법적으로 지배 동사로부터 대격 격 할당을 안정적으로 받는다.",
+        "background": "cera는 선박의 틈새를 메우고 코팅하는 데 쓰인 밀랍을 가리킨다. 역청과 함께 선박의 방수와 보존을 담당하던 이 밀랍 역시 불길 앞에서 가장 먼저 녹아내리며 화염의 연료로 변해버리며, 인간의 기술로 바다를 극복하려던 시도가 불의 재앙 앞에서 얼마나 무력한지를 상징한다.",
+        "etymology": "① 지중해 기층 언어 혹은 선그리스어-이탈리아어 공통 어휘 계열에서 유래한 것으로 추정된다. ② 동계어로 그리스어 κηρός(밀랍) 등이 존재하며, 지중해 문화권 전반의 양봉 및 밀랍 사용 관행과 맞물려 공유된다. ③ 라틴어 제1변화 여성 명사 체계에 수용되어 안정적인 격변화 패러다임을 형성했다. ④ 현대 영어의 cerement(수의), sincere(순수한의 어원설 중 하나) 및 로망스어군의 밀랍 관련 어휘(스페인어 cera)에 남아 있다."
+      },
+      {
+        "g": "alimentaque",
+        "pos": "명사",
+        "lemma": "alimentum, alimenti, n. (alimenta + -que)",
+        "parse": "pl. acc. n. + enclitic conjunction",
+        "gloss_kr": "그리고 양식들을, 연료들을",
+        "gloss_en": "and the nourishment (fuel)",
+        "syntax": "LFG f-구조에서 alimenta는 동사 urebat의 OBJ 논항으로서 대격 지배를 받으며, enclitic -que에 의해 앞선 성분들과 병렬 연결된다. c-구조상 NP 핵을 이루며 중성 복수 대격 형태를 띤다. 생성문법의 관점에서 이 명사는 비유적 연장 용법으로 사용되어, 불꽃에게 공급되는 '먹이/연료'로서의 THEME 역할을 수행한다.",
+        "background": "alimenta는 본래 인간이나 동물의 '양식, 음식'을 뜻하지만, 여기서는 불꽃이 먹어치우는 '연료'라는 시적 은유로 사용되었다. 불을 살아있는 괴물이나 생명체처럼 묘사하여, 배의 자재들이 불의 '음식'이 되어 순식간에 소모되어 버리는 참혹하고 역동적인 현장을 형상화한다.",
+        "etymology": "① 동사 alo, alere('젖먹이다, 기르다, 영양을 주다')에서 파생된 명사 어간이다. ② 동계어로 라틴어 altus(높은, 자라난), adolesco(자라다) 등이 있다. ③ 파생 접미사 -mentum이 결합하여 수단이나 결과를 뜻하는 명사를 형성하는 규칙적 형태론적 발달을 거쳤다. ④ 현대 영어의 aliment(영양분), alimentary(소화의), alimony(부양비) 및 로망스어군의 유사 어휘로 직접 계승되었다."
+      },
+      {
+        "g": "cetera",
+        "pos": "형용사",
+        "lemma": "ceterus, cetera, ceterum",
+        "parse": "pl. acc. n. (modifying alimenta)",
+        "gloss_kr": "그밖의, 나머지",
+        "gloss_en": "other, remaining",
+        "syntax": "LFG f-구조에서 cetera는 명사 alimenta를 수식하는 한정사/형용사로서 수·성·격(중성 복수 대격) 일치를 이룬다. c-구조상 명사구 내부의 Spec 혹은 수식어 위치에 병합된다. 통사적 격 지배 규칙에 따라 수식하는 명사와 동일한 대격 형태를 취해 피수식어의 범위를 한정한다.",
+        "background": "cetera는 역청과 밀랍 외에도 배를 구성하고 있던 수많은 가연성 부속 자재들을 가리킨다. 불꽃이 태울 수 있는 모든 부수적인 연료들을 빠짐없이 지칭함으로써, 선박 전체가 화염의 거대한 제물이 되어 소멸해 가는 총체적 파괴의 과정을 시각적으로 완성한다.",
+        "etymology": "① PIE 지시적·한정적 어근에서 유래하여 '나머지의, 다른'이라는 뜻을 형성했다. ② 동계어로 고대 라틴어의 대명사적 형용사 계열 및 여타 이탈리아어파의 잔여 표현들이 있다. ③ 고전 라틴어에서 주로 복수형으로 쓰이며 명사화되거나 형용사로 한정되는 문법적 고착 과정을 겪었다. ④ 현대 영어의 et cetera(등등, 줄여서 etc.)의 핵심 구성 요소로 오늘날까지 전 세계 학술어휘 속에 살아 숨쉰다."
+      },
+      {
+        "g": "flammae",
+        "pos": "명사",
+        "lemma": "flamma, flammae, f.",
+        "parse": "sg. gen. f.",
+        "gloss_kr": "불꽃의",
+        "gloss_en": "of the flame",
+        "syntax": "LFG f-구조에서 flammae는 명사 alimenta를 수식하는 속격 명사구로서 소유·귀속(possessive/attributive genitive) 관계를 형성한다. c-구조상 NP 내부의 N' 하위 노드에 위치하며 선행 명사로부터 속격 지배를 받는다. 생성문법의 DP 가설에 따르면 [Spec, DP] 혹은 속격 논항 위치에 병합된다.",
+        "background": "flamma는 배를 집어삼키는 맹렬한 불길을 가리킨다. 여기서 불꽃은 단순한 자연 현상이 아니라 배의 부속들을 '먹이'로 삼아 살아움직이는 듯한 파괴적 행위자로 의인화되어 있으며, 이 불꽃의 '연료(alimenta)'라는 표현을 통해 화염의 생생하고 공격적인 실상을 부각시킨다.",
+        "etymology": "① PIE 재구형 *bhel-('빛나다, 타오르다')에서 유래한 밝음·열 관련 어근에서 파생되었다. ② 동계어로 그리스어 φλέγω(불태우다), 영어 flagrant(악명 높은의 어원), flame 등이 있다. ③ 라틴어 내부에서 음운 변화와 파생 접미사 결합을 거쳐 불꽃을 뜻하는 제1변화 여성 명사 flamma로 정착했다. ④ 현대 영어의 flame(불꽃), flamingo(홍학의 붉은 색상), flamboyant(현란한) 및 로망스어군의 관련 어휘로 이어진다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 13.533",
+    "trans": "불의 신이 태우고 있었고, 높은 돛대를 타고 돛을 향해",
+    "words": [
+      {
+        "g": "Mulciber",
+        "pos": "명사",
+        "lemma": "Mulciber, Mulciberi, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "불의 신이, 불칸무스가",
+        "gloss_en": "Mulciber (Vulcan)",
+        "syntax": "LFG f-구조에서 Mulciber는 주절 동사 urebat의 SUBJ 논항으로 기능하며 주격 지배를 받는다. c-구조상 [Spec, IP] 위치에 병합된다. 생성문법 관점에서 이 고유명사 주어는 문장 내 통사적 주체로서 행위자(AGENT) θ-역할을 담당하며, 화염을 일으키는 신적 주체의 절대적 권능을 통사 구조의 최상위에 투사한다.",
+        "background": "Mulciber는 대장장이와 불의 신인 불칸무스(Vulcanus)를 가리키는 시적 명칭으로, '부드럽게 하다, 녹이다'라는 뜻의 동사에서 유래했다. 신의 이름으로 불꽃을 지칭함으로써 이 화재가 단순한 인간의 방화가 아니라 신화적 차원의 거대한 파괴 행위임을 강조하며, 오비디우스의 서사적 장엄함을 높여준다.",
+        "etymology": "① 동사 mulceo('부드럽게 하다, 어루만지다')와 어근 *ber-('가져오다/만들다') 또는 철을 녹여 부드럽게 만드는 작용에서 파생된 복합어이다. ② 동계어로 라틴어 mulceo의 파생어 및 대장장신 신앙 관련 고대 이탈리아어파 어휘들이 존재한다. ③ 금속을 다루어 부드럽게 만드는 신의 속성을 반영하여 불과 대장장이의 신 Vulcanus의 환유적 시호로 고착되었다. ④ 고전 라틴 문학 및 서양 인문학 전통에서 불과 대장을 상징하는 고유한 시적 명칭으로 전해진다."
+      },
+      {
+        "g": "urebat",
+        "pos": "동사",
+        "lemma": "uro, urere, ussi, ustum",
+        "principalParts": "uro – urere – ussi – ustum",
+        "parse": "impf. act. ind. 3rd pers. sg.",
+        "gloss_kr": "태우고 있었다, 불태우고 있었다",
+        "gloss_en": "was burning",
+        "syntax": "LFG f-구조에서 urebat은 주절의 PRED이며, 주어 Mulciber와 단수 3인칭 미완료시제 일치를 이룬다. c-구조상 VP의 핵을 이루며 목적어들(picem, ceras 등)을 대격으로 지배한다. 생성문법 관점에서 미완료시제(imperfective aspect)는 과거 일정 기간 동안 지속되던 진행 중인 파괴 행위를 포착하여, 배가 서서히 화염에 잠식되는 과정을 역동적으로 서술한다.",
+        "background": "urebat은 불의 신이 배의 구석구석을 지속적으로 태워나가고 있는 진행형의 참혹한 상황을 묘사한다. 한순간에 폭발하는 것이 아니라 역청과 밀랍을 거쳐 선체와 돛대로 불길이 번져나가는 장기적이고 파괴적인 연소 과정을 생생하게 전달한다.",
+        "etymology": "① PIE 재구형 *ews-('태우다, 그을리다')에서 유래한 동사 어근이다. ② 동계어로 산스크리트어 óṣati(태우다), 영어 east(동쪽의 어원설 중 해가 타오르는 방향과의 연계) 등이 있다. ③ 완료형 파생 과정에서 자음동화와 어간 교체(ur- -> us-)를 겪으며 ussi, ustum의 불규칙 패러다임을 확립했다. ④ 현대 영어의 combust(연소하다), combustion(연소), uro- 관련 의학 접두사 등에 그 어원이 깊숙이 박혀 있다."
+      },
+      {
+        "g": "perque",
+        "pos": "전치사",
+        "lemma": "per (per + -que)",
+        "parse": "prep. taking acc. + enclitic conjunction",
+        "gloss_kr": "~를 통하여, 그리고 ~를 가로질러",
+        "gloss_en": "and through",
+        "syntax": "LFG f-구조에서 per는 공간적 경로를 나타내는 OBL 혹은 ADJUNCT의 핵으로서 후행하는 명사 malum에 대격(accusative)을 할당하며, enclitic -que는 절이나 어구를 대등하게 연결한다. c-구조상 PP의 핵으로 병합되어 대격 명사구를 보어로 취한다. 통사적 격 지배 규칙에 따라 화염이 이동하는 경로를 명시한다.",
+        "background": "perque 전치사는 불길이 선박의 핵심 구조인 돛대를 타고 올라가 마침내 돛(canvas)에까지 이르는 공간적 확장을 그린다. 화염이 배의 하부(역청과 밀랍)에서 상부(돛대와 돛)로 치솟아 오르는 입체적인 확산 경로를 시각적으로 추적하는 수사적 장치다.",
+        "etymology": "① PIE 재구형 *per-('~를 통해, 앞으로, 넘어서')에서 유래한 전치사·부사 어근이다. ② 동계어로 그리스어 πέρα(넘어서), 영어 thorough, through, 산스크리트어 pára 등이 있다. ③ 라틴어 체계 내에서 공간적 통과와 수단을 뜻하는 대격 지배 전치사로 굳어졌으며, enclitic -que가 결합해 문맥적 연결을 강화했다. ④ 현대 영어의 per(~당), permit(허가하다), persist(지속하다) 및 로망스어군의 유사 전치사 표현들의 모태가 되었다."
+      },
+      {
+        "g": "altum",
+        "pos": "형용사",
+        "lemma": "altus, alta, altum",
+        "parse": "sg. acc. n. (modifying malum)",
+        "gloss_kr": "높은, 우뚝 솟은",
+        "gloss_en": "high, tall",
+        "syntax": "LFG f-구조에서 altum은 명사 malum을 수식하는 형용사로서 수·성·격(중성 단수 대격) 일치를 이룬다. c-구조상 명사구 내부의 수식어 위치에 병합된다. 통사적 격 지배 규칙에 따라 전치사 per의 지배를 받는 명사와 동일한 대격 형태를 취해 돛대의 수직적 높낮이를 한정한다.",
+        "background": "altum은 배의 중심을 지탱하는 돛대가 얼마나 높이 솟아 있는지를 묘사한다. 이 높은 돛대를 타고 불길이 위로 치솟는다는 묘사는, 화염이 배의 밑바닥에서 시작해 마침내 가장 높은 곳까지 온통 파괴의 소용돌이로 몰아넣고 있음을 보여주는 공간적 척도다.",
+        "etymology": "① 동사 alo('기르다, 자라게 하다')의 완료분사에서 파생되어 '자라난, 높이 솟은'이라는 원뜻을 갖는다. ② 동계어로 라틴어 adolesco(성장하다) 등이 있다. ③ 형용사로 품사가 완전히 전이되면서 높낮이와 깊이를 동시에 뜻하는 2변화 형용사로 정착했다. ④ 현대 영어의 altitude(고도), alto(알토 음역), exalt(드높이다) 및 로망스어군의 관련 어휘로 직계 계승되었다."
+      },
+      {
+        "g": "ad",
+        "pos": "전치사",
+        "lemma": "ad",
+        "parse": "prep. taking acc.",
+        "gloss_kr": "~를 향하여, ~에",
+        "gloss_en": "to, toward",
+        "syntax": "LFG f-구조에서 ad는 방향 및 도달 지점을 나타내는 OBL 혹은 ADJUNCT의 핵으로서 후행하는 명사 carbasa에 대격(accusative)을 할당한다. c-구조상 PP의 핵으로 병합되며 대격 명사구를 보어로 취한다. 통사적 격 지배 원리에 따라 불길이 향하는 최종 목표 지점의 의미역(GOAL)을 유도한다.",
+        "background": "ad 전치사는 불꽃의 질주가 향하는 최종 도착지, 즉 배의 돛(carbasa)을 정확히 겨누고 있음을 보여준다. 선체의 아래쪽에서 시작된 불길이 돛대를 거쳐 마침내 돛이라는 거대한 천막 장비에 도달해 배 전체를 화염의 도가니로 만드는 파괴의 완성을 지시한다.",
+        "etymology": "① PIE 재구형 *ad-('~쪽으로, ~에 근접하여')에서 유래한 방향성 전치사 어근이다. ② 동계어로 산스크리트어 adhi, 영어 at의 어원적 친족 관계와 연계된다. ③ 라틴어 내에서 대격 지배를 받아 방향과 목적지를 나타내는 핵심 전치사로 문법화되었다. ④ 현대 영어의 ad-(접두사: ~에 다가가다의 의미, 예: advance), achieve 및 로망스어군의 전치사 체계에 깊은 흔적을 남겼다."
+      },
+      {
+        "g": "carbasa",
+        "pos": "명사",
+        "lemma": "carbasus, carbasi, f. (or carbasum, -i, n., pl. carbasa)",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "돛들을, 아마포 돛을",
+        "gloss_en": "sails, canvas",
+        "syntax": "LFG f-구조에서 carbasa는 전치사 ad의 보어로서 대격 지배를 받으며, 도달 지점(GOAL)의 의미역을 수행한다. c-구조상 PP 내부의 NP 핵을 이루며 중성 복수 대격 형태를 띤다. 생성문법적 격 이론에 따라 전치사로부터 구조적 격을 할당받아 화염이 집어삼키는 최종 물질적 표적을 완성한다.",
+        "background": "carbasus(복수 carbasa)는 본래 스페인이나 인도 등지에서 나는 고품질의 아마포(canvas)를 뜻하며, 시에서는 배의 '돛'을 가리키는 시적 명칭으로 쓰인다. 바람을 받아 바다를 항해하던 돛이 이제는 불길에 타오르며 항해의 기능이 완전히 상실되는 비극적 순간을 상징한다.",
+        "etymology": "① 인도-이란어파 및 산스크리트어 karpāsa('면화, 면직물')에서 유래하여 페르시아어와 그리스어(κάρπασος)를 거쳐 라틴어로 유입된 차용어이다. ② 동계어로 그리스어 차용 계통의 지중해 직물 명칭들이 있다. ③ 라틴어 음운 체계에 수용되면서 중성 복수형으로 자주 쓰이는 시적 명사로 고착되었다. ④ 현대 영어의 canvas(어원적 변형 경로를 거침) 및 식물학적 면화 관련 학명 계통에 그 원형의 흔적이 이어진다."
+      },
+      {
+        "g": "malum",
+        "pos": "명사",
+        "lemma": "malus, mali, m.",
+        "parse": "sg. acc. m.",
+        "gloss_kr": "돛대를",
+        "gloss_en": "mast",
+        "syntax": "LFG f-구조에서 malum은 전치사 per의 보어로서 대격 지배를 받으며, 통과 경로(PATH)의 의미역을 수행한다. c-구조상 PP 내부의 NP 핵을 이루며 제2변화 남성 명사의 단수 대격 형태(-um)를 취한다. 생성문법적 격 이론에 따라 전치사 per의 지배 속성을 만족시킨다.",
+        "background": "malus는 선박의 중심 기둥인 '돛대'를 의미한다(참고로 '사과'를 뜻하는 malum과 형태는 같으나 성과 어원이 다르다). 불길이 이 돛대를 타고 위로 올라간다는 묘사는, 배의 뼈대가 화염에 의해 차례로 무너져 내리는 구조적 붕괴의 과정을 시각적으로 탁월하게 포착한 것이다.",
+        "etymology": "① 지중해 기층 언어 및 선그리스어-이탈리아어 공통 해양 기술 어휘에서 유래한 것으로 추정된다. ② 동계어로 그리스어 μῆλος 계통의 항해 용어 관련성 등이 논의된다. ③ 라틴어 제2변화 남성 명사 체계로 편입되면서 항해술 관련 전문 어휘로 정착했다. ④ 현대 영어의 mast와의 직계 동계어는 아니나, 서구 해양 문학어 속에서 선박의 돛대를 뜻하는 고전적 어휘로 명맥을 이었다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 13.534",
+    "trans": "나아갔으며, 굽은 선체의 뱃머리(좌우 벤치)들은 연기를 내뿜고 있었다.",
+    "words": [
+      {
+        "g": "ibat",
+        "pos": "동사",
+        "lemma": "eo, ire, ii (ivi), itum",
+        "principalParts": "eo – ire – ii (ivi) – itum",
+        "parse": "impf. act. ind. 3rd pers. sg.",
+        "gloss_kr": "나아갔다, 번져갔다",
+        "gloss_en": "was going, was spreading",
+        "syntax": "LFG f-구조에서 ibat은 주절의 PRED이며, 불꽃 혹은 화염의 확산을 주어로 하여 단수 3인칭 미완료시제 일치를 이룬다. c-구조상 VP의 핵을 이루며 진행 중인 이동 상태를 나타낸다. 생성문법의 관점에서 불완전 자동사로서 비대격적 이동 양상을 나타내며, 미완료시제를 통해 불길이 선체 전체로 거침없이 번져나가는 역동적 궤적을 투사한다.",
+        "background": "ibat은 불길이 단순히 한곳에 머무는 것이 아니라 돛대에서 선체로, 배의 구석구석으로 살아 움직이듯 거침없이 '나아가는(진행하는)' 모습을 생생하게 표현한다. 화염을 의인화하여 마치 정복자가 진격하듯 배를 파괴하며 전진하는 모습을 독자에게 시각적으로 각인시킨다.",
+        "etymology": "① PIE 재구형 *ei-('가다')에서 유래한 가장 기초적이고 오래된 이동 동사 어근이다. ② 동계어로 산스크리트어 éti(가다), 그리스어 ἰέναι(가다), 영어의 불규칙 동사 과거형 went의 어원적 뿌리와 연계된다. ③ 라틴어 불규칙 동사 체계 속에서 독특한 모음 교체와 단수 미완료형 ibat을 확립했다. ④ 현대 영어의 exit(나오다), ambient(주위의), transition(전환) 및 로망스어군의 이동 동사 구조에 깊은 흔적을 남겼다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG f-구조에서 et는 두 개의 절(ibat 절과 fumabant 절)을 대등하게 연결하는 좌표 접속사로 기능한다. c-구조상 두 IP 성분을 연결하는 [ConP IP et IP] 구조의 핵을 형성한다. 통사적 범주 이론에 따라 독립된 서술절들을 대칭적으로 병합하여 서사의 속도감을 유지한다.",
+        "background": "et 접속사는 불길이 나아가는 동적 행위와 그 결과로 선체가 연기를 내뿜는 상태를 매끄럽게 이어준다. 화염의 확산과 그로 인한 파괴의 증거(연기)를 동시에 포착하여 참혹한 화재 현장의 입체적 생동감을 더해주는 핵심 연결고리다.",
+        "etymology": "① (앞선 et 항목 참조). ② PIE 재구형 *eti('~도 또한, 게다가')에서 유래한 접속사이다. ③ 라틴어 전반에 걸쳐 문장과 구를 잇는 가장 보편적인 대등 접속사로 고착되었다. ④ 현대 로망스어군의 접속사 체계로 직계 계승되었다."
+      },
+      {
+        "g": "incurvae",
+        "pos": "형용사",
+        "lemma": "incurvus, incurva, incurvum",
+        "parse": "pl. nom. f. (modifying carinae)",
+        "gloss_kr": "굽은, 만곡된",
+        "gloss_en": "curved, bending",
+        "syntax": "LFG f-구조에서 incurvae는 명사 carinae를 수식하는 형용사로서 수·성·격(여성 복수 주격) 일치를 이룬다. c-구조상 명사구 내부의 수식어 위치에 병합된다. 통사적 격 지배 규칙에 따라 주어 명사와 동일한 주격 형태를 취해 선박의 형태적 특성을 시각적으로 한정한다.",
+        "background": "incurvae는 고대 선박의 우아하고 곡선적인 선체 형태를 묘사한다. 물결을 가르기 위해 부드럽게 굽어 있던 이 아름다운 배의 곡선이, 이제는 불길에 휩싸여 검은 연기를 내뿜는 비참한 파괴의 무대로 전락했음을 보여주며 시각적 대비를 통한 비극성을 고조시킨다.",
+        "etymology": "① 전치사/접두사 in-('~안으로')과 형용사 curvus('굽은, 만곡된')의 합성어이다. ② 동계어로 그리스어 및 인도유럽어족의 곡선·굽음 관련 어근들과 연계된다. ③ 라틴어 내부에서 접두사와 어근의 결합을 통해 완만한 곡선을 뜻하는 파생 형용사 incurvus로 정착했다. ④ 현대 영어의 curve(곡선), incurvate(안으로 굽은) 및 로망스어군의 곡선 관련 어휘들에 그 어원이 살아 있다."
+      },
+      {
+        "g": "fumabant",
+        "pos": "동사",
+        "lemma": "fumo, fumare, fumavi, fumatum",
+        "principalParts": "fumo – fumare – fumavi – fumatum",
+        "parse": "impf. act. ind. 3rd pers. pl.",
+        "gloss_kr": "연기를 내뿜고 있었다, 연기 속에 잠겨 있었다",
+        "gloss_en": "were smoking",
+        "syntax": "LFG f-구조에서 fumabant는 주절의 PRED이며, 주어 transtra carinae와 복수 3인칭 미완료시제 일치를 이룬다. c-구조상 VP의 핵을 이루며 1항 혹은 부대 상황을 나타내는 자동사 구문을 완성한다. 생성문법 관점에서 미완료시제는 화재 현장에서 연기가 끊임없이 피어오르는 지속적 상태를 포착한다.",
+        "background": "fumabant는 선박이 불타고 난 뒤 사방으로 짙은 연기가 피어오르는 처참한 풍경을 청각과 시각에 호소하며 묘사한다. 화염의 폭발적 순간을 넘어 재와 연기만 남는 파괴의 참혹함을 보여주며, 배의 변신(신들의 보호로 인한 님프화) 직전의 암울한 국면을 완성한다.",
+        "etymology": "① 명사 fumus('연기')에서 파생된 제1변화 동사 어근이다. ② 동계어로 산스크리트어 dhūmá(연기), 그리스어 θῦμος, 영어 fume, dust 등이 있다. ③ 라틴어 체계 안에서 명사에서 동사로 전환되는 파생 규칙에 따라 fumare 형태로 고정되었다. ④ 현대 영어의 fume(연기를 내뿜다), fumigate(소독하다) 및 로망스어군의 연기 관련 어휘로 직계 계승되었다."
+      },
+      {
+        "g": "transtra",
+        "pos": "명사",
+        "lemma": "trastrum, transtri, n. (usually pl. transtra, -orum)",
+        "parse": "pl. nom. n.",
+        "gloss_kr": "좌우 벤치들이, 노를 젓는 가로대들이",
+        "gloss_en": "benches, thwarts",
+        "syntax": "LFG f-구조에서 transtra는 동사 fumabant의 SUBJ 논항으로 기능하며 주격 지배를 받는다. c-구조상 [Spec, IP] 위치에 병합된다. 생성문법 관점에서 이 중성 복수 주어는 연기를 내뿜는 행위의 주체(THEME/SUBJECT) 역할을 담당하며, 후행하는 소유격 속성 명사와 결합해 선체의 특정 구조를 특정한다.",
+        "background": "transtra는 고대 갤리선 등에서 노를 젓는 사람들이 앉던 가로지르는 벤치(좌석) 구조물을 뜻한다. 선원들이 힘을 모아 노를 젓던 이 실용적인 구조물이 불타고 연기에 휩싸인다는 묘사는, 인간의 항해 역사와 노동이 담긴 물리적 공간이 파괴되고 있음을 세밀하게 보여준다.",
+        "etymology": "① PIE 재구형 또는 라틴어 내부의 공간적 가로지름을 뜻하는 어근에서 파생된 명사이다. ② 동계어로 이탈리아어파의 선박 구조 명칭 및 여타 로망스어군의 항해 용어들과 연계된다. ③ 라틴어 중성 제2변화 명사로 고착되었으며 주로 복수형으로 선박의 횡단 구조물을 지칭했다. ④ 서구 해양 문학 및 고전 고고학 문헌에서 고대 선박의 노좌석을 가리키는 전문 어휘로 남았다."
+      },
+      {
+        "g": "carinae",
+        "pos": "명사",
+        "lemma": "carina, carinae, f.",
+        "parse": "pl. gen. f.",
+        "gloss_kr": "선체의, 배의",
+        "gloss_en": "of the hull, of the ship",
+        "syntax": "LFG f-구조에서 carinae는 명사 transtra를 수식하는 속격 명사구로서 소유·귀속(possessive genitive) 관계를 형성한다. c-구조상 NP 내부의 N' 하위 노드에 위치하며 선행 명사로부터 속격 지배를 받는다. 생성문법의 DP 가설에 따르면 [Spec, DP] 혹은 속격 논항 위치에 병합된다.",
+        "background": "carina는 배의 밑바닥인 용골이자 선체 전체를 상징하는 시적 단어다. 굽은 선체(incurvae carinae)라는 표현은 물결을 헤치며 달리던 배의 전체적인 윤곽을 보여주며, 이 배가 이다산의 소나무로 만들어져 트로이아를 구했던 신성한 역사적 실체임을 다시 한번 환기시킨다.",
+        "etymology": "① 지중해 기층 언어 및 선그리스어-이탈리아어 공통 해양 어휘에서 유래한 것으로 추정된다. ② 동계어로 지중해 연안 고대 언어들의 선체 명칭들과 어원적 유사성이 제기된다. ③ 라틴어 제1변화 여성 명사 체계로 수용되어 배의 용골과 선체를 뜻하는 표준 어휘로 정착했다. ④ 현대 영어의 careen(기울다, 배를 수리하기 위해 기울이기), carinate(용골 모양의) 및 로망스어군의 관련 어휘로 이어진다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 13.535",
+    "trans": "그때 이 소나무들이 이다산 꼭대기에서 베어졌음을 기억하며...",
+    "words": [
+      {
+        "g": "cum",
+        "pos": "접속사",
+        "lemma": "cum",
+        "parse": "subordinating conjunction",
+        "gloss_kr": "~할 때, 그때에",
+        "gloss_en": "when",
+        "syntax": "LFG f-구조에서 cum은 시간적 종속절을 이끄는 접속사(subordinator)로서 주절과의 시제적·상황적 관계를 매개한다. c-구조상 종속절(CP)의 핵 자리를 점유하며, 후행하는 주절과의 통사적 종속 관계를 확립한다. 통사론적으로 이 종속절 내부의 분사구문과 주어의 상호작용을 통해 신들의 개입이라는 극적인 반전 시점을 규정한다.",
+        "background": "cum은 배가 완전히 불타 소멸하기 직전, 신들이 개입하여 배들을 바다의 님프(나이아드)로 변신시키는 결정적 순간을 여는 시간적 문입니다. 파괴의 비극이 새로운 신화적 구원과 영원한 생명으로 전환되는 대담한 서사적 변곡점을 알리는 핵심 장치다.",
+        "etymology": "① PIE 의문/관계 대명사 어근 *kʷo-에서 파생된 시간 부사·접속사 형태이다. ② 동계어로 라틴어 tum(그때), quom(고전형 cum) 등이 있다. ③ 시점과 상황을 동시에 지시하는 문법화 과정을 거쳐 라틴어에서 가장 대표적인 시간·상황 종속 접속사로 고착되었다. ④ 현대 로망스어군의 관련 접속사 및 시간 표현들의 어원적 뿌리가 되었다."
+      },
+      {
+        "g": "memor",
+        "pos": "형용사",
+        "lemma": "memor, memoris",
+        "parse": "sg. nom. m. (modifying an implied divine subject, e.g., Cybele)",
+        "kr_reading": "",
+        "gloss_kr": "기억하며, 마음속에 간직한 채",
+        "gloss_en": "mindful, remembering",
+        "syntax": "LFG f-구조에서 memor는 주절 혹은 분사구문의 주어(신들의 어머니 키벨레 등)를 수식하는 형용사로서 주격 지배를 받는다. c-구조상 수식어 위치에 병합되며, 후행하는 속격 논항 has pinus 혹은 과거의 기원을 지배하는 통사적 속성을 지닌다. 생성문법 관점에서 심리적 상태나 기억을 나타내는 형용사로서 내적 논항으로 속격 명사구를 허가한다.",
+        "background": "memor는 이다산의 신성한 소나무들이 과거에 어떻게 베어졌고 누구의 보호를 받았는지를 '기억하고 있는' 존재(보통 이다산의 여신이자 트로이아인들의 수호신인 키벨레)의 마음 상태를 나타낸다. 이 기억이야말로 배가 재로 사라지지 않고 님프로 변신하게 만드는 구원의 동력이 된다.",
+        "etymology": "① PIE 재구형 *mend- / *mn-('생각하다, 기억하다')에서 유래한 정신·기억 관련 어근에서 파생되었다. ② 동계어로 그리스어 μιμνήσκω(기억하다), 영어 mind, memory, 산스크리트어 man- 등이 있다. ③ 라틴어 제3변화 형용사 체계로 정착하며 기억하는 성질을 뜻하는 형용사 memor로 고정되었다. ④ 현대 영어의 memorable(기억할 만한), memorial(기념비적), memory(기억)로 직계 계승되었다."
+      },
+      {
+        "g": "has",
+        "pos": "대명사",
+        "lemma": "hic, haec, hoc",
+        "parse": "pl. acc. f. (modifying pinus)",
+        "gloss_kr": "이 소나무들을",
+        "gloss_en": "these",
+        "syntax": "LFG f-구조에서 has는 명사 pinus를 수식하는 지시형용사로서 수·성·격(여성 복수 대격) 일치를 이룬다. c-구조상 명사구 내부의 Spec 혹은 한정사 위치에 병합된다. 통사적 격 지배 규칙에 따라 수식하는 명사와 동일한 대격 형태를 취해 현장에 불타고 있는 바로 그 나무들을 지시한다.",
+        "background": "has는 지금 눈앞에서 불길에 휩싸여 타오르고 있는 바로 그 배들, 즉 한때 이다산의 푸른 숲을 이루던 소나무들을 직접적으로 가리키는 지시사다. 과거의 신성한 기원과 현재의 비참한 화재 현장을 시공간적으로 연결해 주는 강력한 지시적 역할을 수행한다.",
+        "etymology": "① PIE 지시 대명사 어근 *ko- / *ce-에 근접 지시 접사가 결합한 형태이다. ② 동계어로 고대 라틴어의 지시사 체계 및 여타 이탈리아어파의 근칭 대명사들과 연계된다. ③ 격 변화 과정에서 여성 복수 대격 형태인 has로 고정되었다. ④ 현대 로망스어군의 지시사 및 관사 발달 과정에 깊은 기여를 남겼다."
+      },
+      {
+        "g": "pinus",
+        "pos": "명사",
+        "lemma": "pinus, pini (or pinus), f.",
+        "parse": "pl. acc. f. (or pl. nom., but here accusative plural object of caesas/participle construction)",
+        "gloss_kr": "소나무들을, 선박들을",
+        "gloss_en": "pine trees, ships",
+        "syntax": "LFG f-구조에서 pinus는 분사 caesas의 의미상 주어 혹은 목적격 보어 논항으로서 대격 지배를 받는다. c-구조상 분사구문 내부에서 NP 핵을 이루며 여성 복수 대격 형태를 띤다. 생성문법 관점에서 이 명사는 환유적으로 '소나무'에서 '소나무로 만든 배'로 의미가 전이되며, 과거 분사의 THEME 역할을 수행한다.",
+        "background": "pinus는 소나무를 뜻하지만 시에서는 소나무로 건조된 '배'를 가리키는 환유적 표현으로 빈번히 쓰인다. 이다산의 소나무였던 이 배들이 화염 속에서 위기를 맞이할 때, 여신은 이들이 과거 자신의 신성한 숲에서 베어졌던 기억을 떠올리며 변신의 기적을 베풀 준비를 한다.",
+        "etymology": "① 지중해 기층 어휘 혹은 인도유럽어족 공통 식물 명칭 어근에서 유래했다. ② 동계어로 그리스어 πίτυς(소나무), 영어 pine 등이 있다. ③ 라틴어 제2변화/제4변화 혼합형태의 여성 명사로 고정되어 소나무와 소나무 목재를 뜻하게 되었다. ④ 현대 영어의 pine(소나무), pineal(송과선) 및 로망스어군의 유사 어휘로 널리 계승되었다."
+      },
+      {
+        "g": "Idaeo",
+        "pos": "형용사",
+        "lemma": "Idaeus, Idaea, Idaeum",
+        "parse": "sg. abl. m./n. (modifying vertice)",
+        "kr_reading": "",
+        "gloss_kr": "이다산의",
+        "gloss_en": "Idaean, of Mount Ida",
+        "syntax": "LFG f-구조에서 Idaeo는 명사 vertice를 수식하는 형용사로서 수·성·격(남성/중성 단수 탈격) 일치를 이룬다. c-구조상 명사구 내부의 수식어 위치에 병합된다. 통사적 격 지배 규칙에 따라 피수식 명사와 동일한 탈격 형태를 취해 출처와 장소의 의미역을 한정한다.",
+        "background": "Idaeo는 트로이아 근처에 위치한 신성한 산인 이다(Ida) 산을 가리킨다. 이 산은 트로이의 신화적 고향이자 파리스의 심판 등이 벌어진 장소이며, 이다산의 소나무로 트로이의 함선들이 만들어졌다는 설정은 이 배들이 단순한 인공물이 아니라 신들의 숲에서 온 신성한 존재임을 확증한다.",
+        "etymology": "① 그리스어 Ἴδη(Ida, 산 이름)에서 유래한 지명 형용사화 형태이다. ② 동계어로 그리스 고유어 지명 체계 및 라틴어화된 지명 차용어군이 있다. ③ 라틴어 제1·2변화 형용사 어미 체계에 수용되어 고전 문학 속에서 이다산과 관련된 신화적 수식어로 정착했다. ④ 서구 클래식 문학 및 지리학 문헌에서 Idaean(이다산의)이라는 형용사형으로 명맥을 이어오고 있다."
+      },
+      {
+        "g": "vertice",
+        "pos": "명사",
+        "lemma": "vertex, verticis, m.",
+        "parse": "sg. abl. m.",
+        "gloss_kr": "꼭대기에서, 정상에서",
+        "gloss_en": "from the peak, summit",
+        "syntax": "LFG f-구조에서 vertice는 장소 및 출처(LOCATIVE/SOURCE)를 나타내는 OBL 혹은 ADJUNCT의 핵으로서 탈격 지배를 받는다. c-구조상 NP 핵을 이루며 제3변화 남성 명사의 단수 탈격 형태(-e)를 취한다. 생성문법적 격 지배 원리에 따라 분사 caesas의 행위가 일어난 지리적 기점의 의미역을 완성한다.",
+        "background": "vertex는 산의 '꼭대기, 정상'을 뜻하며, 이다산 꼭대기에서 이 소나무들이 베어져 배로 만들어졌다는 과거의 기원을 밝혀준다. 신성한 산의 가장 높은 곳에서 자라난 나무라는 점은 이 배들이 일반 목재와 달리 신들의 비호와 특별한 운명을 타고났음을 강조하는 서사적 복선이다.",
+        "etymology": "① 동사 verto('돌리다, 회전하다')의 어근에서 파생된 명사로, '회전하는 지점, 꼭대기, 정수리'가 원뜻이다. ② 동계어로 라틴어 vortex(소용돌이), versus(향하여) 등이 있다. ③ 파생 접미사 결합을 거쳐 산봉우리나 머리의 정수리를 뜻하는 제3변화 남성 명사로 고착되었다. ④ 현대 영어의 vertex(꼭대기, 정점), vertical(수직의) 및 로망스어군의 관련 어휘로 직계 계승되었다."
+      },
+      {
+        "g": "caesas",
+        "pos": "동사",
+        "lemma": "caedo, caedere, cecidi, caesum",
+        "principalParts": "caedo – caedere – cecidi – caesum",
+        "parse": "perf. pass. part. acc. f. pl.",
+        "gloss_kr": "베어진, 벌채된",
+        "gloss_en": "cut down, felled",
+        "syntax": "LFG f-구조에서 caesas는 분사구의 핵으로서 명사 pinus를 수식하며, 수·성·격(여성 복수 대격) 일치를 이룬다. c-구조상 명사구 내부 혹은 분사구문 내에서 수식어 위치에 병합된다. 생성문법적으로 수동 분사는 피수식 명사에 대한 THEME 속성을 유지하면서 나무가 과거에 '잘려 나간' 상태였음을 통사적으로 한정한다.",
+        "background": "caesas는 이다산의 소나무들이 과거에 벌목되어 배의 재료로 가공되었던 원초적 사건을 지칭하는 과거분사다. 나무가 잘려 나간 그 과거의 순간부터 배가 되기까지의 과정과, 현재 불타는 위기 속에서 신이 그 기원을 기억해 내는 인과적 고리가 이 분사를 통해 완벽하게 결합된다.",
+        "etymology": "① PIE 재구형 *skad- / *ked-('자르다, 쪼개다')에서 유래한 절단 관련 어근이다. ② 동계어로 산스크리트어 śāyati(자르다), 라틴어의 파생어(decide, concise 등의 어원적 배경)가 있다. ③ 완료 수동분사 파생 규칙에 따라 caesum 형태로 고정되며 절단과 파괴를 뜻하는 핵심 어휘가 되었다. ④ 현대 영어의 decide(결정하다의 어원적 잔재), incision(절개), concise(간결한) 및 로망스어군의 유사 어휘에 깊은 흔적을 남겼다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 13.536",
+    "trans": "신들의 거룩한 어머니께서는 두드려 울리는 청동 악기의 소리와 바람을 불어넣은 회양목 피리의 웅장한 소리로 공기를 가득 채우셨고,",
+    "words": [
+      {
+        "g": "sancta",
+        "pos": "형용사",
+        "lemma": "sanctus, -a, -um",
+        "principalParts": [
+          "sanctus",
+          "sancta",
+          "sanctum"
+        ],
+        "parse": "nom. sg. f.",
+        "gloss_kr": "거룩한, 신성한",
+        "gloss_en": "holy, sacred",
+        "syntax": "LFG f-구조에서 이 형용사는 명사 genetrix를 수식하는 ADJUNCT 기능을 하며, 성·수·격 일치(nom. sg. f.)를 통해 통사적 수식 관계가 실현된다. 생성문법 관점에서 NP 내부의 AP 주어 지정어(Spec-AP) 또는 N-bar 부가어로 분석되며, 서사 내 주어 명사를 한정하여 신성한 품격을 부여하는 수식어 역할을 한다. 위격적으로는 지시어의 속성을 제한하는 제한적 수식 구조를 띤다.",
+        "background": "sancta는 이다산의 여신 키벨레(Cybele)의 종교적 권능과 거룩함을 강조하는 수식어로 기능한다. 트로이아의 함선들이 화염에 휩싸이는 절체절명의 순간에 여신의 신성함이 부각됨으로써, 단순한 인간의 전쟁이 아닌 신들의 개입이 시작되는 국면 전환을 예고한다. 이 호칭은 여신이 지닌 대모신으로서의 절대적 위상을 독자에게 각인시킨다.",
+        "etymology": "① PIE 재구형 *sah_n-to-('신성하게 하다, 명하다'를 뜻하는 동사 어근 *sah_에서 유래)와 원뜻 '법으로 공인된, 신성한'. ② 동계어로 산스크리트어 śāsti('가르치다, 다스리다'), 라틴어 sancire('법으로 정하다, 신성하게 하다'). ③ 고대 라틴어의 분사형 접미사 -to-가 결합하면서 어근 모음의 장단 변화와 자음 동화를 거쳐 형용사로 정착함. ④ 현대 영어의 'sanctuary'(성역), 'sanctify'(신성하게 하다), 스페인어 'santo'(성인) 등에 직접적인 어휘적 흔적으로 남아 있다."
+      },
+      {
+        "g": "deum",
+        "pos": "명사",
+        "lemma": "deus, -i, m.",
+        "principalParts": null,
+        "parse": "pl. gen. m. (syncopated form for deorum)",
+        "gloss_kr": "신들의",
+        "gloss_en": "of the gods",
+        "syntax": "LFG f-구조에서 deum은 명사 genetrix의 소유격 한정어(POSS/GEN)로 기능하며, 전체 명사구의 의미적 범위를 영유·소속 관계로 규정한다. 생성문법상 N-bar 내부의 DP 속격 논항으로 투사되며, 전통적인 고어적 축약형(syncopated genitive plural -um)의 통사적 지위를 유지한다. 비정상적인 형태론적 변이에도 불구하고 격 배정 규칙상 원형과 동일한 속격 지배를 받는다.",
+        "background": "deum(deorum)은 키벨레가 단순히 개별 지역의 산신이 아니라 올림푸스를 비롯한 온갖 신들의 근원이 되는 대모신임을 명시한다. 라틴어 시가에서 흔히 쓰이는 축약형을 사용하여 장중하고 고풍스러운 서사시적 어조를 고취한다. 이 표현은 트로이아의 목재가 여신의 숲에서 왔다는 신화적 연원과 맞물려 여신의 배들에 대한 소유권을 논리적으로 뒷받침한다.",
+        "etymology": "① PIE 재구형 *dyeu-('하늘, 빛나다')에서 유래한 명사 어근과 속격 복소 복합 형태. ② 동계어로 산스크리트어 deva('신'), 그리스어 zeus(고대 형태 *dyēu-), 리투아니아어 dievas('신'). ③ 이탈리아어파의 음운 규칙에 따라 어말 어미의 축약 및 모음 탈락을 겪어 고전 라틴어에서 대격/속격 복수의 축약형(-um)이 정착함. ④ 현대 영어의 'deity'(신성), 프랑스어 'dieu'(신), 스페인어 'dios'(신) 등의 어원으로 생생하게 살아 있다."
+      },
+      {
+        "g": "genetrix",
+        "pos": "명사",
+        "lemma": "genetrix, genetricis, f.",
+        "principalParts": null,
+        "parse": "nom. sg. f.",
+        "gloss_kr": "어머니, 창조자",
+        "gloss_en": "mother, creator",
+        "syntax": "LFG f-구조에서 genetrix는 문장의 주어(SUBJ) 핵을 담당하며, 동사 complevit와 격-일치 관계를 맺는다. 생성문법 관점에서 vP의 외적 논항인 행위자(Agent) 역할을 수행하며, 문장 전체의 통사적 주체로서 후속하는 소유격(deum)과 수식어(sancta)의 지배 핵이 된다. 격 이론상 주격(nominative)은 문장 주어로서의 통사적 라이선스를 만족한다.",
+        "background": "genetrix는 생명의 어머니이자 만물의 근원인 키벨레 여신을 지칭하는 핵심 호칭이다. 이다산의 거룩한 숲에서 트로이아인들이 배를 만들 때 나무를 내어주었던 어머니로서의 인연이, 위기에 처한 배들을 구하러 직접 강림하는 서사적 동기가 된다. 이 단어는 파괴적인 전쟁의 현장에 생명을 낳고 보호하는 모성적 권능이 개입함을 상징한다.",
+        "etymology": "① PIE 재구형 *genh1-('낳다, 생기게 하다')에 여성 행위자 명사 접미사 -trix가 결합한 형태. ② 동계어로 그리스어 gignomai('태어나다'), 산스크리트어 janati('낳다'), 영어 kin. ③ 어근의 모음 변화(ablaut)와 접미사 결합 과정에서 자음 탈락 및 강세 이동을 겪음. ④ 현대 영어의 'genetrix'(생모, 법률 용어), 'generate'(생성하다), 스페인어 'genatrix' 등에 학술어 및 파생어로 흔적이 남아 있다."
+      },
+      {
+        "g": "tinnitibus",
+        "pos": "명사",
+        "lemma": "tinnitus, -us, m.",
+        "principalParts": null,
+        "parse": "pl. abl. m.",
+        "gloss_kr": "울려 퍼지는 소리로, 쟁그랑거림으로",
+        "gloss_en": "with the clanging, with the ringing",
+        "syntax": "LFG f-구조에서 이 명사는 동사 complevit의 도구적 부사어(OBLINE/ADJUNCT)로 기능하며, 소리의 수단을 나타내는 탈격으로 지배된다. 생성문법상 PP 부가어로 분석되며, 전치사 없이 탈격 자체로 수단(instrumental) 탸-역할을 부여받는다. 정보구조상 배경 음악과 의식의 청각적 요소를 전달하는 새로운 초점 정보를 구성한다.",
+        "background": "tinnitibus는 키벨레 여신의 광란적이고 신비로운 제의에서 사용되는 청동 심벌즈나 악기의 쨍그랑거리는 소리를 가리킨다. 이 소리는 전장의 아수라장과 투르누스의 함성을 단번에 압도하며 신성한 의식의 공간으로 전장을 변화시킨다. 오비디우스는 청각적 심상을 통해 독자가 여신의 강림을 감각적으로 체감하도록 유도한다.",
+        "etymology": "① 의성어 계열 PIE 재구형에서 파생된 동사 tinnire('쨍그랑거리다')의 명사화 형태. ② 동계어로 고대 고지 독일어 dinnan('소리 내다'), 현대 영어의 'tinnitus'(이명, 귀울림). ③ 동사 어간에 명사 파생 접미사 -tus가 결합하여 4변화 명사로 정착하면서 어근 모음의 양상 변화를 겪음. ④ 현대 영어의 의학 용어 'tinnitus'(이명)에 고스란히 남아 일상 및 전문 분야에서 쓰인다."
+      },
+      {
+        "g": "aera",
+        "pos": "명사",
+        "lemma": "aes, aeris, n.",
+        "principalParts": null,
+        "parse": "pl. acc. n.",
+        "gloss_kr": "청동 악기들을, 구리 제품들을",
+        "gloss_en": "bronzes, cymbals",
+        "syntax": "LFG f-구조에서 aera는 분사 pulsi의 수동적 수식을 받는 목적어(OBJ) 기능을 하며, 동시에 tinnitibus와 동격 또는 수식 관계를 형성한다. 생성문법상 목적격(accusative) 핵으로서 파생 분사의 탸-역할(Theme)을 할당받는다. 복수형 중성 명사로서 청동으로 만든 타악기(심벌즈 등)를 은유적으로 지칭한다.",
+        "background": "여기서 aes는 금속성 타악기, 특히 키벨레 제의에서 필수적으로 쓰이는 청동 심벌즈를 뜻한다. 거친 전장의 무기 부딪치는 소리와 대비되는 종교적 악기의 소리는 여신의 주술적이고 장엄한 권능을 시각·청각적으로 시각화한다. 고대 로마인들에게 이 청동 소리는 키벨레 신앙의 가장 대표적인 청각적 상징이었다.",
+        "etymology": "① PIE 재구형 *ayos-('구리, 금속')에서 유래한 중성 명사. ② 동계어로 산스크리트어 ayas('금속, 철'), 고대 고지 독일어 ēr('구리, 청동'), 영어 ore. ③ 이탈리아어파의 음운 변화 과정에서어간 말 자음 s가 r로 바뀌는 현상(rhotacism)을 겪음. ④ 현대 영어의 'copper'(변이형) 및 화학 원소 기호 Cu의 어원적 배경과 연결되며, 로마 역사 속 화폐 단위의 어원으로도 흔적을 남김."
+      },
+      {
+        "g": "pulsi",
+        "pos": "동사 (분사)",
+        "lemma": "pello, pepuli, pulsus, pellere",
+        "principalParts": [
+          "pello",
+          "pellere",
+          "pepuli",
+          "pulsus"
+        ],
+        "parse": "perf. pass. part. pl. gen. m. (or modifying aera as pl. gen. n. - wait, parsing check: aera is pl. acc. n., so pulsi must modify aera? Let's re-verify: tinnitibus aera pulsi -> pulsi is gen. sg. m. modifying aeris? Let's check line 536: tinnitibus aera pulsi / aeris... Ah, pulsi modifies aeris!)",
+        "gloss_kr": "두드려진, 울려 퍼지는",
+        "gloss_en": "struck, beaten",
+        "syntax": "LFG f-구조에서 pulsi는 명사 aeris를 수식하는 수동 분사 부가어(ADJUNCT)로 기능하며, 성·수·격 일치(gen. sg. m. 또는 n.)를 이룬다. 생성문법 관점에서 비한정 절의 핵으로서 수동태 θ-역할(Theme)을 내적 논항에 부여하고, 주어 지정어 위치로의 이동을 거친 분사구 구구조를 형성한다. 행위자의 생략은 탈격 도구어와의 통사적 균형을 맞춘다.",
+        "background": "pulsi는 청동 악기들이 타격되어 소리를 내는 역동적 순간을 포착한다. 여신이 강림할 때 울려 퍼지는 악기의 격렬한 떨림은 전장의 긴장감을 극대화한다. 이 분사는 수동적 움직임을 통해 외력에 의해 소리가 사방으로 확산되는 물리적 과정을 압축적으로 보여준다.",
+        "etymology": "① PIE 재구형 *pel-('치다, 두드리다, 밀다')에서 유래한 동사 어근. ② 동계어로 그리스어 poleo('돌아다니다'), 산스크리트어 parayati. ③ 중복사(reduplication)를 동반하는 완료 분사 파생 과정에서 어근 모음의 단모음화와 자음 동화를 겪음. ④ 현대 영어의 'pulse'(맥박, 뛰다), 'compel'(강요하다), 'repel'(격퇴하다) 등의 어휘로 오늘날까지 활발하게 쓰이고 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 13.537",
+    "trans": "바람을 불어넣은 회양목 피리의 웅장한 소리로 공기를 가득 채우셨고,",
+    "words": [
+      {
+        "g": "aeris",
+        "pos": "명사",
+        "lemma": "aer, aeris, m.",
+        "principalParts": null,
+        "parse": "sg. gen. m. (or gen. of aes? Wait, aeris here is gen. sg. of aes 'of bronze', modifying tinnitibus or coupled with pulsi)",
+        "gloss_kr": "청동의, 구리의",
+        "gloss_en": "of bronze",
+        "syntax": "LFG f-구조에서 aeris는 앞서 나온 aera 또는 tinnitibus를 수식하는 소유격 한정어(POSS/GEN)로 기능하며, 물질의 속성을 규정한다. 생성문법상 N-bar 내부의 DP 속격 논항으로 병합되며, 명사구의 의미적 재질을 명확히 하는 제한적 수식 구조를 이룬다. 격 이론에 따라 주어 격 외의 영속적 속성 지배를 받는다.",
+        "background": "aeris는 제의에서 사용되는 청동 악기의 재질을 구체화하여 그 소리의 날카롭고 무거운 질감을 독자에게 전달한다. 당시 종교 의식에 쓰인 타업 악기의 물질적 특성을 묘사함으로써 고대 로마 종교 제의의 생생한 현장감을 부여한다. 이 표현은 신성한 소리가 단순한 허구가 아님을 물질적 실체를 통해 강조한다.",
+        "etymology": "① PIE 재구형 *ayos-('구리, 금속')에서 유래한 3변화 명사형. ② 동계어로 산스크리트어 ayas('철, 금속'), 고대 고지 독일어 ēr. ③ 이탈리아어파의 음간 자음 교체 규칙(rhotacism)을 거쳐 고전 라틴어의 3변화 속격형(-is)으로 정착함. ④ 현대 영어의 화학 원소 관련 어근 및 고고학적 금속 명칭의 뿌리로 간접적 흔적을 남김."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "principalParts": null,
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG f-구조에서 et는 두 개의 대등한 명사구(청동 소리와 피리 소리)를 연결하는 등위 접속사(COORD) 기능을 담당한다. 생성문법상 ConjP(접속구)의 핵으로 병합되며, 대칭적인 두 구성소를 동등한 자격으로 상위 구조에 결합시킨다. 정보구조상 청각적 감각 요소를 확장하여 다면적인 제의의 분위기를 구축하는 연결 고리 역할을 한다.",
+        "background": "et은 청동 악기의 소리와 회양목 피리의 소리라는 두 가지 서로 다른 청각적 요소를 매끄럽게 결합한다. 키벨레 제의의 복합적이고 웅장한 음악적 구성을 완성하는 데 필수적인 문법적 장치다. 이 접속사를 통해 여신의 등장은 단일한 소리가 아닌 오감을 자극하는 거대한 음향적 현상으로 확장된다.",
+        "etymology": "① PIE 재구형 *eti('~도 또한, 게다가')에서 유래한 부사 겸 접속사. ② 동계어로 산스크리트어 ati('넘어서, 지나서'), 그리스어 eti('게다가, 아직도'), 고대 영어 eac. ③ 어두 모음의 유지와 자음 약화를 겪으며 고전 라틴어의 가장 기본적인 대등 접속사로 고착됨. ④ 현대 프랑스어 'et', 이탈리아어 'e', 스페인어 'y' 등으로 직접 이어져 로망스어군의 기본 어휘로 남아 있다."
+      },
+      {
+        "g": "inflati",
+        "pos": "동사 (분사)",
+        "lemma": "inflo, inflare, inflavi, inflatus",
+        "principalParts": [
+          "inflo",
+          "inflare",
+          "inflavi",
+          "inflatus"
+        ],
+        "parse": "perf. pass. part. sg. gen. m.",
+        "gloss_kr": "바람을 불어넣은, 부풀려진",
+        "gloss_en": "inflated, blown into",
+        "syntax": "LFG f-구조에서 inflati는 명사 buxi를 수식하는 수동 분사 부가어(ADJUNCT)로 기능하며, 성·수·격 일치(gen. sg. m.)를 이룬다. 생성문법 관점에서 비한정 절의 핵으로서 도구적 또는 상태적 탸-역할(Theme)을 명사 buxi에 부여한다. 소리가 만들어지는 물리적 원리인 '공기의 주입'을 분사의 수식 구조로 압축적으로 표현한다.",
+        "background": "inflati는 연주자가 관악기에 바람을 불어넣어 소리를 내는 상태를 정교하게 묘사한다. 회양목으로 만든 피리(buxus)가 연주자의 숨결을 통해 생명을 얻고 울부짖듯 소리 내는 과정을 보여준다. 이 표현은 여신의 의식이 지닌 생명력과 호흡의 에너지를 악기의 물성을 통해 전달한다.",
+        "etymology": "① 전치사 in-('~안으로')과 고대 어근 *flo-('불다')의 합성 동사 inflare에서 유래. ② 동계어로 그리스어 phusao('불다'), 영어 blow, 라틴어 flare. ③ 접두사 결합에 따른 모음 약화(a→i)와 규칙적인 수동 분사 접미사 -tus의 결합 과정을 거침. ④ 현대 영어의 'inflate'(부풀리다), 'inflation'(물가 상승, 팽창) 등의 어휘로 오늘날까지 널리 쓰이고 있다."
+      },
+      {
+        "g": "complevit",
+        "pos": "동사",
+        "lemma": "compleo, complere, complevi, completus",
+        "principalParts": [
+          "compleo",
+          "complere",
+          "complevi",
+          "completus"
+        ],
+        "parse": "perf. act. ind. 3rd pers. sg.",
+        "gloss_kr": "가득 채우셨다",
+        "gloss_en": "filled",
+        "syntax": "LFG f-구조에서 complevit는 주절의 서술어(PRED)로서 주어 genetrix와 논항 구조를 형성하고, 대격 목적어와 탈격 부사어를 지배한다. 생성문법상 vP의 핵으로서 과거 완료 시제를 실현하며, 외부 주어 논항과의 주어-서술어 일치를 만족한다. 어순상 주어와 목적어 사이에 위치하여 문장의 중심적인 통사적 구심점 역할을 한다.",
+        "background": "complevit은 여신의 소리가 단순한 울림에 그치지 않고 전장의 모든 공간과 공기를 완전히 압도하고 가득 채웠음을 보여주는 강력한 동사다. 트로이아 군사와 루툴루스족의 함성이 뒤섞인 전장의 소음을 여신의 신성한 음악이 일시에 잠재우는 압도적인 연출을 완성한다. 이로써 자연과 전장은 신성한 의식의 공간으로 탈바꿈한다.",
+        "etymology": "① 접두사 con-('완전히')과 '채우다'를 뜻하는 PIE 어근 *pleh1-에서 유래한 동사 complere. ② 동계어로 그리스어 pleos('가득 찬'), 산스크리트어 prnati('채우다'), 영어 fill. ③ 어근의 완료형 파생 과정에서 수동적 상태를 강조하는 파생 접미사와 완료형 접미사 -vi의 결합을 겪음. ④ 현대 영어의 'complete'(완료하다), 'completion'(완성) 등의 어휘로 이어져 일상 및 학술어에서 활발히 쓰이고 있다."
+      },
+      {
+        "g": "murmure",
+        "pos": "명사",
+        "lemma": "murmur, murmuris, n.",
+        "principalParts": null,
+        "parse": "sg. abl. n.",
+        "gloss_kr": "웅장한 소리로, 웅성거림으로",
+        "gloss_en": "with the murmur, with the drone",
+        "syntax": "LFG f-구조에서 murmure는 동사 complevit의 수단 탈격 부사어(OBLINE/ADJUNCT) 기능을 하며, 소리의 양상을 나타낸다. 생성문법상 PP 부가어로 분석되며, 탈격(ablative) 격 표지를 통해 도구 및 방식의 탸-역할을 할당받는다. 음향적 특성을 나타내는 명사로서 뒤따르는 소유격 명사 buxi의 수식을 받는다.",
+        "background": "murmur는 바람이 관악기를 통과하며 내는 낮고 웅장하며 끊이지 않는 울림을 가리킨다. 전쟁터의 날카로운 칼부림 소리와 대비되는 이 깊은 울림은 신비롭고 원시적인 종교적 분위기를 자아낸다. 오비디우스는 이 단어를 통해 청각적 입체감을 부여하여 독자가 피리 소리의 현장에 있는 듯한 느낌을 받게 한다.",
+        "etymology": "① 의성어 계열 PIE 재구형 *murmura-('웅얼거리다, 속삭이다')에서 유래한 중성 명사. ② 동계어로 그리스어 mormyro('물결이 소리 내다'), 산스크리트어 marmarati('바삭거리다'). ③ 음성 모방에서 출발한 중복 음절 구조가 라틴어의 3변화 명사 체계에 편입되면서 어미 변화를 겪음. ④ 현대 영어의 'murmur'(속삭임, 잡음), 프랑스어 'murmure' 등으로 이어져 소리의 질감을 나타내는 대표어로 쓰인다."
+      },
+      {
+        "g": "buxi",
+        "pos": "명사",
+        "lemma": "buxus, -i, f.",
+        "principalParts": null,
+        "parse": "sg. gen. f.",
+        "gloss_kr": "회양목의, 피리의",
+        "gloss_en": "of boxwood, of the flute",
+        "syntax": "LFG f-구조에서 buxi는 명사 murmure의 소유격 한정어(POSS/GEN)로 기능하며, 악기의 재질을 명시한다. 생성문법상 N-bar 내부의 DP 속격 논항으로 투사되며, 재료를 나타내는 명사구의 속성 제한 조건을 만족한다. 격 이론상 소유격 지배를 통해 악기의 실체를 구체화한다.",
+        "background": "buxus는 단단하고 결이 고와 고대부터 피리나 관악기의 재료로 자주 쓰인 회양목을 뜻하며, 시가에서는 회양목으로 만든 악기(피리) 자체를 의미한다. 키벨레 제의에서 불리는 피리의 재료를 명시함으로써 고대 의식의 전통적인 도구적 정확성을 높인다. 이 단어는 자연물인 나무가 신성한 음악의 도구로 승화되는 과정을 보여준다.",
+        "etymology": "① 그리스어 pyxos('회양목')에서 라틴어로 유입된 차용어 명사. ② 동계어로 그리스어 pyxinos('회양목의'), 영어 box(나무 및 상자의 어원과 연관). ③ 지중해 지역의 식물 명칭이 라틴어 음운 체계에 적응하면서 2변화 명사로 정착함. ④ 현대 영어의 'boxwood'(회양목) 및 식물 학명 계통의 어휘로 오늘날까지 남아 그 실체를 전하고 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 13.538",
+    "trans": "길들여진 사자들을 타고 가벼운 공중을 가로질러 오시어,",
+    "words": [
+      {
+        "g": "perque",
+        "pos": "전치사",
+        "lemma": "per",
+        "principalParts": null,
+        "parse": "prep. + coord. clitic (-que)",
+        "gloss_kr": "그리고 ~를 통하여, 거쳐서",
+        "gloss_en": "and through",
+        "syntax": "LFG f-구조에서 per는 뒤의 명사구 auras를 지배하는 전치사적 핵(P)으로 기능하며, 접닉사 -que는 앞선 절과 문맥을 대등하게 연결한다. 생성문법상 PP의 핵으로 병합되어 대격 목적어에 탸-역할(Path/Location)을 할당하고, 동반된 접어 -que는 ConjP의 구조적 접속을 유도한다. 통사적으로 전치사의 지배력을 유지하면서 상위 절과의 결합을 매개한다.",
+        "background": "perque는 여신이 하늘이라는 공간을 가로질러 이동하는 궤적을 생생하게 포착한다. 접속사 -que가 전치사에 붙어 앞구절의 소리와 이동하는 행동을 유기적으로 이어준다. 이 표현은 신들이 물리적 제약을 받지 않고 허공을 자유로이 비행하는 초월적 존재임을 시각화한다.",
+        "etymology": "① PIE 재구형 *per-('통하여, 앞으로, ~를 건너서')에서 유래한 전치사 겸 부사. ② 동계어로 산스크리트어 paras('저편에'), 그리스어 peri('~의 주위에'), 영어 for. ③ 전치사 체계의 고착화와 후치 접속사 -que의 결합을 통해 문장 연결 기능을 획득함. ④ 현대 로망스어군의 전치사 형태 및 영어의 여러 전두 접두사의 기저 어원으로 흔적을 남김."
+      },
+      {
+        "g": "leves",
+        "pos": "형용사",
+        "lemma": "levis, leve",
+        "principalParts": [
+          "levis",
+          "leve"
+        ],
+        "parse": "pl. acc. f.",
+        "gloss_kr": "가벼운, 공허한",
+        "gloss_en": "light, airy",
+        "syntax": "LFG f-구조에서 leves는 명사 auras를 수식하는 형용사 부가어(ADJUNCT)로 기능하며, 성·수·격 일치(acc. pl. f.)를 이룬다. 생성문법상 NP 내부의 AP 주어 지정어 위치에 병합되어 공기의 물리적 성질을 한정한다. 격 이론상 대격 목적어의 수식 성분으로서 일치 검증 과정을 거친다.",
+        "background": "leves는 여신이 타고 날아가는 허공의 가볍고 부드러운 성질을 강조한다. 거대한 사자를 거느리고 하늘을 나는 여신의 장엄함이 공기의 가벼움과 대비되어 신비로운 분위기를 배가한다. 이 수식어는 무거운 전쟁의 현실과 대조되는 신들의 가볍고 초월적인 차원을 부각한다.",
+        "etymology": "① PIE 재구형 *legwh-('가벼운, 빠른, 민첩한')에서 유래한 형용사. ② 동계어로 산스크리트어 laghu('가벼운'), 그리스어 elachys('작은'), 영어 light. ③ 이탈리아어파의 음운 변화를 거쳐 3변화 형용사 체계로 정착함. ④ 현대 영어의 'levity'(경솔함), 'levitate'(공중에 뜨다), 프랑스어 'léger' 등의 어원으로 활발히 쓰이고 있다."
+      },
+      {
+        "g": "auras",
+        "pos": "명사",
+        "lemma": "aura, -ae, f.",
+        "principalParts": null,
+        "parse": "pl. acc. f.",
+        "gloss_kr": "공기들을, 대기를, 하늘을",
+        "gloss_en": "breezes, airs, the upper air",
+        "syntax": "LFG f-구조에서 auras는 전치사 per의 지배를 받는 목적어(OBJ) 기능을 하며, 비행의 공간적 경로를 나타낸다. 생성문법상 PP 내부의 DP 논항으로 투사되며, 전치사로부터 대격(accusative)을 할당받아 경로(Path) 탸-역할을 실현한다. 복수형 사용을 통해 넓은 하늘의 대기 공간을 시적으로 확장한다.",
+        "background": "auras는 단순히 공기를 뜻할 뿐만 아니라 여신이 사자 전차를 몰고 지나가는 하늘의 대기 영역을 가리킨다. 지상의 전장에서 하늘 높이 시선을 돌리게 만드는 공간적 전환의 매개체다. 이 시적 표현은 여신이 천상에서 지상으로 강림하는 거대한 스케일의 입체적 이동을 완성한다.",
+        "etymology": "① 그리스어 aura('미풍, 숨결')에서 고대 라틴어로 유입된 차용 명사. ② 동계어로 그리스어 aeimi('불다'), 산스크리트어 va('불다'). ③ 지중해 문화권의 시적 어휘가 라틴어 1변화 여성 명사 체계에 흡수됨. ④ 현대 영어의 'aura'(아우라, 분위기), 'aurora'(오로라, 새벽) 등의 어원으로 남아 신비롭고 영적인 느낌을 전달하는 핵심 어휘로 쓰임."
+      },
+      {
+        "g": "domitis",
+        "pos": "동사 (분사)",
+        "lemma": "domo, domare, domui, domitus",
+        "principalParts": [
+          "domo",
+          "domare",
+          "domui",
+          "domitus"
+        ],
+        "parse": "pl. abl. m.",
+        "gloss_kr": "길들여진, 복종한",
+        "gloss_en": "tamed, subdued",
+        "syntax": "LFG f-구조에서 domitis는 명사 leonibus를 수식하는 수동 분사 부가어(ADJUNCT)로 기능하며, 성·수·격 일치(abl. pl. m.)를 이룬다. 생성문법 관점에서 비한정 분사구의 핵으로서 사자들의 상태를 규정하고, 탸-역할(Theme)을 피수식어에 부여한다. 탈격 표지를 통해 주어의 권능에 완전히 굴복한 야생의 상태를 대조적으로 보여준다.",
+        "background": "domitis는 맹렬한 야수이자 백수의 왕인 사자조차도 키벨레 여신의 절대적인 모성적 권능 앞에서는 완전히 길들여져 순종한다는 사실을 보여준다. 야생성이 통제된 사자 전차는 여신의 신성한 지배력과 자연을 다스리는 평화의 질서를 시각적으로 증명한다. 이 묘사는 폭력적인 전장의 분위기를 잠재우는 초자연적 권위를 부각한다.",
+        "etymology": "① PIE 재구형 *demh2-('길들이다, 집안을 다스리다')에서 유래한 동사 domare. ② 동계어로 그리스어 dameo('길들이다'), 산스크리트어 damyati('가라앉히다'), 영어 tame. ③ 1변화 동사 어간에 수동 분사 접미사 -tus가 결합하여 형용사화하는 과정을 겪음. ④ 현대 영어의 'tame'(길들여진), 'dominate'(지배하다), 'domain'(영지) 등의 어원으로 이어져 널리 쓰이고 있음."
+      },
+      {
+        "g": "invecta",
+        "pos": "동사 (분사)",
+        "lemma": "inveho, invehere, invexi, invectus",
+        "principalParts": [
+          "inveho",
+          "invehere",
+          "invexi",
+          "invectus"
+        ],
+        "parse": "nom. sg. f. perf. pass. part.",
+        "gloss_kr": "타고 오신, 실려 오신",
+        "gloss_en": "borne, riding",
+        "syntax": "LFG f-구조에서 invecta는 주어 genetrix를 수식하는 수동 분사 부가어(ADJUNCT)로서 주격 일치(nom. sg. f.)를 이루며 주절의 술어 동사와 의미적 주체 관계를 맺는다. 생성문법상 분사구의 주어 지정어에 매개된 상태 주어로 분석되며, 이동의 양상(manner of motion)을 나타내는 탸-역할을 수행한다. 통사적으로 주어의 동작 수행 방식을 부가적으로 서술한다.",
+        "background": "invecta는 여신이 전차나 탈것을 타고 당당하게 전장에 도착하는 모습을 압축적으로 표현한다. 사자 전차에 올라타 허공을 가르며 임하는 여신의 위풍당당한 자태를 시각적으로 선명하게 그려낸다. 이 분사는 정적인 등장이 아닌, 역동적이고 위압적인 신의 현현(epiphany)을 완성하는 핵심 동사다.",
+        "etymology": "① 전치사 in-과 '나르다, 운반하다'를 뜻하는 PIE 어근 *wegh-에서 유래한 동사 invehere. ② 동계어로 산스크리트어 vahati('나르다'), 그리스어 ocheomai('탈것을 타다'), 영어 weigh, wagon. ③ 접두사 결합에 따른 음운 변화와 불규칙 수동 분사형 -vectus의 정착 과정을 거침. ④ 현대 영어의 'veehicle'(차량), 'veex'(벡터) 등의 어원적 배경과 연결되며 이동의 개념을 지님."
+      },
+      {
+        "g": "leonibus",
+        "pos": "명사",
+        "lemma": "leo, leonis, m.",
+        "principalParts": null,
+        "parse": "pl. abl. m.",
+        "gloss_kr": "사자들을 타고, 사자들과 함께",
+        "gloss_en": "by means of lions, upon lions",
+        "syntax": "LFG f-구조에서 leonibus는 분사 invecta의 도구적 부사어(OBLINE/ADJUNCT) 기능을 하며, 이동의 수단을 나타내는 탈격으로 지배된다. 생성문법상 PP 부가어로 투사되며, 전치사 없이 탈격 표지 자체로 도구(Instrument) 탸-역할을 획득한다. 명사의 복수 형태는 여신이 거느린 한 쌍의 사자 전차를 구체화한다.",
+        "background": "leonibus는 키벨레 여신의 전통적인 도상학적 상징인 사자들을 가리킨다. 야생의 맹수조차 여신 앞에서 전차를 끄는 짐승으로 전락한 모습은 신들의 여왕이 지닌 야만과 자연에 대한 절대적 통제력을 상징한다. 이 맹수들의 존재는 평화로운 전장의 개입이 얼마나 압도적인 권위에 기반하는지 보여준다.",
+        "etymology": "① 고대 그리스어 leon에서 라틴어로 유입된 차용 명사. ② 동계어로 고대 그리스어 leon, 영어 lion, 독일어 Löwe. ③ 지중해 고대 문화권 전반에 공유되던 맹수 명칭이 라틴어 3변화 남성 명사 체계에 편입됨. ④ 현대 영어의 'lion'(사자), 'dandelion'(사자의 이빨이라는 뜻의 민들레) 등의 어원으로 살아 숨 쉬며 전 세계적으로 널리 쓰임."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 13.539",
+    "trans": "‘투르누스여, 너는 신성 모독적인 오른손으로 헛된 불길을 던지고 있구나!’ 하고 그녀가 말했다.",
+    "words": [
+      {
+        "g": "inrita",
+        "pos": "형용사",
+        "lemma": "inritus, -a, -um",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "헛된, 효력 없는, 무의미한",
+        "gloss_en": "vain, useless, ineffectual",
+        "syntax": "LFG f-구조에서 inrita는 목적어 incendia를 수식하는 형용사 부가어(ADJUNCT)로 기능하며, 성·수·격 일치(acc. pl. n.)를 이룬다. 생성문법상 NP 내부의 AP 주어 지정어 위치에 병합되어 불길이 가져올 결과의 무용성을 사전에 규정한다. 격 이론상 대격 목적어의 상태 서술어(object depictive) 역할을 수행한다.",
+        "background": "inrita는 투르누스가 저지르는 방화 행위가 결국 신성한 여신의 개입으로 인해 완전히 수포로 돌아갈 것임을 예고하는 냉정한 선언이다. 영웅의 패기 어린 공격이 신의 섭리 앞에서는 무력한 헛소동에 불과함을 조롱하는 의미를 담고 있다. 이 단어는 인간의 오만함과 신의 절대적 권능 사이의 극명한 대비를 보여준다.",
+        "etymology": "① 부정 접두사 in-('~가 아닌')과 '효력 있는, 유효한'을 뜻하는 ratus(reor에서 유래)의 합성어. ② 동계어로 산스크리트어 ratah('생각된'), 라틴어 res, 영어 rate. ③ 접두사 결합 과정에서 자음 동화와 모음 약화를 거쳐 '무효한, 헛된'이라는 뜻으로 고착됨. ④ 현대 영어의 'ratify'(비준하다, 유효하게 하다)의 반의어적 배경과 연결되며 법률·문학적 어휘로 쓰임."
+      },
+      {
+        "g": "sacrilega",
+        "pos": "형용사",
+        "lemma": "sacrilegus, -a, -um",
+        "parse": "abl. sg. f. (modifying dextra)",
+        "gloss_kr": "신성 모독적인, 불경한",
+        "gloss_en": "sacrilegious, impious",
+        "syntax": "LFG f-구조에서 sacrilega는 명사 dextra를 수식하는 형용사 부가어(ADJUNCT)로 기능하며, 성·수·격 일치(abl. sg. f.)를 이룬다. 생성문법상 NP 내부의 AP 주어 지정어에 병합되어 행위의 도덕적·종교적 성격을 규정한다. 탈격 표지를 통해 수단이나 방식을 나타내는 부사적 의미를 동시에 전달한다.",
+        "background": "sacrilega는 트로이아가 신성한 이다산의 나무로 만들어진 배를 불태우는 행위가 단순한 군사 작전이 아니라 여신에 대한 엄중한 신성모독임을 고발한다. 신의 숲에서 자란 나무를 태우는 것은 곧 신의 신체나 성물을 훼손하는 것과 같다는 종교적 금기를 건드린 것이다. 이 수식어는 투르누스의 행동에 대한 도덕적 단죄의 의미를 명확히 한다.",
+        "etymology": "① '신성한 것'을 뜻하는 sacer와 '훔치다'를 뜻하는 lego의 합성어 sacrilegus. ② 동계어로 라틴어 sacer('신성한')와 legere('모으다, 빼앗다'). ③ 종교적 성물을 훔치거나 더럽히는 행위에서 출발하여 '불경한, 신성모독적인'이라는 일반적 도덕 개념으로 의미가 확장됨. ④ 현대 영어의 'sacrilege'(신성모독), 'sacrilegious'(신성모독의) 등으로 직접 이어져 오늘날에도 빈번히 쓰임."
+      },
+      {
+        "g": "iactas",
+        "pos": "동사",
+        "lemma": "iacto, iactare, iactavi, iactatus",
+        "parse": "pres. act. ind. 2nd pers. sg.",
+        "gloss_kr": "너는 던지고 있구나, 휘두르고 있구나",
+        "gloss_en": "you are hurling, you are tossing",
+        "syntax": "LFG f-구조에서 iactas는 직접 인용문 안의 서술어(PRED)로서 생략된 주어(2인칭 단수)와 논항 구조를 이루고, 대격 목적어 incendia를 지배한다. 생성문법상 현재시제 활성태의 vP 핵으로 투사되며, 화자와 청자 간의 직접적 대화 상황에서 2인칭 주어 일치를 실현한다. 반복적 동작을 나타내는 빈도동사(frequentative)로서의 통사적 속성을 지님.",
+        "background": "iactas는 투르누스가 횃불을 거칠게 휘두르며 배들을 향해 던지는 오만한 태도를 생생하게 고발한다. 현재시제를 사용하여 눈앞에서 벌어지는 파괴적 행위를 생동감 있게 포착하며, 여신이 그 현장에 개입해 직접 질책하는 긴장감을 조성한다. 이 동사는 투르누스의 무모한 공격성을 시각적으로 부각한다.",
+        "etymology": "① '던지다'를 뜻하는 iacio의 빈도동사 파생형 iactare('자주 던지다, 흔들다'). ② 동계어로 라틴어 iacere('던지다'), 영어 jet, project. ③ 원형 동사 어근에 빈도 파생 접미사 -to-가 결합하면서 어모음 변화와 규칙적인 활용형을 획득함. ④ 현대 영어의 'jettison'(투하하다, 버리다), 'deject'(낙담시키다) 등의 어원적 계열과 연결됨."
+      },
+      {
+        "g": "incendia",
+        "pos": "명사",
+        "lemma": "incendium, -i, n.",
+        "principalParts": null,
+        "parse": "pl. acc. n.",
+        "gloss_kr": "불길들을, 화염을",
+        "gloss_en": "fires, conflagrations",
+        "syntax": "LFG f-구조에서 incendia는 동사 iactas의 목적어(OBJ) 기능을 하며, 행위의 직접적인 대상(Theme)이 된다. 생성문법상 V의 내적 논항으로서 대격(accusative) 격 지배를 받으며, 구구조상 VP의 보어 자리를 차지한다. 복수형 중성 명사로서 거세게 타오르는 여러 갈래의 화염을 표현한다.",
+        "background": "incendia는 트로이아 함선을 집어삼키기 위해 투르누스가 던진 파괴적인 불길을 가리킨다. 이 불은 단순한 전술적 무기가 아니라 트로이아의 운명을 태우려 하는 위협적인 상징물이다. 여신은 이 불길을 '헛된 것'이라 명명하며 곧 무력화될 것임을 선언한다.",
+        "etymology": "① 전치사 in-과 불태우다를 뜻하는 candere의 합성어 계열에서 유래한 명사 incendium. ② 동계어로 라틴어 candere('빛나다, 타오르다'), 산스크리트어 cand('빛나다'), 영어 candle. ③ 동사 어간에 명사화 접미사 -ium이 결합하여 2변화 중성 명사로 고착됨. ④ 현대 영어의 'incendiary'(방화의, 선동적인), 'incense'(향) 등의 어원으로 널리 쓰임."
+      },
+      {
+        "g": "dextra",
+        "pos": "명사",
+        "lemma": "dextra, -ae, f. (or dexter, dextra, dextrum)",
+        "principalParts": null,
+        "parse": "abl. sg. f.",
+        "gloss_kr": "오른손으로",
+        "gloss_en": "with your right hand",
+        "syntax": "LFG f-구조에서 dextra는 동사 iactas의 도구적 부사어(OBLINE/ADJUNCT) 기능을 하며, 행위의 수단을 나타내는 탈격으로 지배된다. 생성문법상 PP 부가어로 분석되며, 전치사 없이 탈격 표지 자체로 도구(Instrument) 탸-역할을 수행한다. 형용사 여성형의 명사화 용법으로 로마 전통에서 '오른손'을 상징함.",
+        "background": "dextra는 투르누스가 무기를 들고 공격을 감행하는 능동적이고 물리적인 신체 부위, 즉 '오른손'을 가리킨다. 고대 로마 문화에서 오른손은 힘, 맹세, 그리고 행위의 주체성을 상징하는 중요한 신체적 메타포다. 여신이 이 오른손을 직접 지목하며 비난하는 것은 그의 개별적 책임과 오만을 정면으로 겨냥하는 것이다.",
+        "etymology": "① PIE 재구형 *deks-tero-('오른쪽의')에서 유래한 형용사의 여성형 명사화 용법. ② 동계어로 산스크리트어 dakshina('오른쪽의, 남쪽의'), 그리스어 dexiteros, 영어 dexterous. ③ 방향을 나타내는 어근에 비교급 및 형용사 접미사가 결합하여 신체 부위 명칭으로 전용됨. ④ 현대 영어의 'dexterity'(손재주, 민첩함), 'dexter'(오른쪽의) 등의 어원으로 생생하게 남아 있음."
+      },
+      {
+        "g": "Turne",
+        "pos": "명사",
+        "lemma": "Turnus, -i, m.",
+        "principalParts": null,
+        "parse": "voc. sg. m.",
+        "gloss_kr": "투르누스여!",
+        "gloss_en": "Turnus!",
+        "syntax": "LFG f-구조에서 Turne는 직접 인용문 내의 호격 주체(VOCATIVE)로서 문장의 통사 구조와는 별개로 독립된 담화 기능을 수행한다. 생성문법상 최고위 담화층(CP-level)의 호격 구구조(Vocative Phrase)에 위치하며, 화자가 청자의 주의를 직접 환기하는 화용적 지시 기능을 담당한다. 격 형태상 호격 단수 남성(-e)을 실현함.",
+        "background": "Turne는 루툴루스족의 용맹한 왕이자 에네아스의 강력한 라이벌인 투르누스의 이름을 직접 부르는 호격이다. 여신이 그의 이름을 친히 부르며 경고하는 이 순간은, 인간 영웅의 투지가 신적 개입 앞에 정면으로 부딪히는 극적 긴장의 절정을 이룬다. 이 호호(vocative)는 경고와 심판의 엄중함을 더해준다.",
+        "etymology": "① 이탈리아 이탈릭 계통의 고유 인명 지명 어근에서 유래한 2변화 고유명사. ② 동계어로 고대 이탈리아어파의 전통적 인명들 및 라틴 고유 신화 체계의 이름들. ③ 이탈리아어파의 고유 명사 명명 관례에 따라 2변화 남성 단수 호격에서 어미 -e 탈락 및 변이를 겪음. ④ 베르길리우스의 《아이네이스》 및 오비디우스의 《변신이야기》 속 루툴루스 왕의 고유 명칭으로 고전 문학사에 영구히 각인됨."
+      },
+      {
+        "g": "ait",
+        "pos": "동사",
+        "lemma": "aio, -, -, -"
+      },
+      {
+        "g": "ait",
+        "pos": "동사",
+        "lemma": "aio, -, -, -",
+        "principalParts": [
+          "aio",
+          "(ere)",
+          "(ativus - unverified)",
+          "(미상)"
+        ],
+        "parse": "pres. act. ind. 3rd pers. sg.",
+        "gloss_kr": "그녀가 말했다",
+        "gloss_en": "she says, she said",
+        "syntax": "LFG f-구조에서 ait는 직접 인용문(quotation)을 지배하는 주절의 발화 서술어(PRED) 기능을 하며, 주어 genetrix와 인용문 목적어를 논항으로 취한다. 생성문법상 역사적 현재(historical present) 또는 대화 도입부의 vP 핵으로 투사되며, 서사 속 발화 행위를 직접 전달하는 통사적 가교 역할을 한다. 불완전동사(defective verb)로서의 통사적 제약을 지님.",
+        "background": "ait는 여신이 침묵을 깨고 투르누스에게 직접 엄중한 경고의 말을 내뱉는 순간을 포착하는 서사적 동사다. 고전 시가에서 대화나 선언을 도입할 때 쓰는 전형적인 표현으로, 서사의 속도를 높이고 극적 몰입감을 극대화한다. 이 한마디와 함께 신의 의지가 행동으로 전환된다.",
+        "etymology": "① PIE 재구형 어근에서 유래한 라틴어의 대표적인 결함동사(defective verb) aio('말하다'). ② 동계어로 인도유럽어족의 고대 언어들에 산재한 발화 관련 어근들. ③ 활용 형태가 일부 시제에 국한되는 결함 변화(defective paradigm)를 거쳐 고전 라틴어에서 직접 인용 도입 전용 동사로 고착됨. ④ 고전 라틴어 문학 전반의 인용구 도입부에서 필수적으로 쓰이는 화석화된 문학적 어휘로 남음."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 13.540",
+    "trans": "‘내가 그 배들을 빼앗을 것이니, 내가 가만히 있는 한 그 불길이 배들을 태우지 못할 것이다!’",
+    "words": [
+      {
+        "g": "Eripiam",
+        "pos": "동사",
+        "lemma": "eripio, eripere, eripui, ereptus",
+        "principalParts": [
+          "eripio",
+          "eripere",
+          "eripui",
+          "ereptus"
+        ],
+        "parse": "fut. act. ind. 1st pers. sg.",
+        "gloss_kr": "내가 빼앗을 것이다, 구출할 것이다",
+        "gloss_en": "I will snatch away, I will rescue",
+        "syntax": "LFG f-구조에서 Eripiam은 미래시제 서술어(PRED)로서 1인칭 주어(여신 자신)와 목적어 논항을 지배한다. 생성문법상 vP의 핵으로서 미래 시제 특유의 모달리티(modality)와 의지를 실현하며, 주어와의 일치를 만족한다. 통사적으로 배들을 불길로부터 건져내어 보호하겠다는 확고한 신적 의지를 나타내는 구구조를 이룬다.",
+        "background": "Eripiam은 여신이 투르누스의 손에서 트로이아 함선들을 강제로 빼앗아 안전하게 지켜내겠다는 단호한 의지의 표현이다. 과거 이다산의 나무를 내어줄 때 맺은 인연을 바탕으로, 파괴의 위기에서 배들을 구원하는 신적 구원의 핵심 행위를 선언한다. 이 미래형 동사는 곧 이어질 기적적 변신의 서막을 연다.",
+        "etymology": "① 전치사 ex-('밖으로')와 '잡다, 취하다'를 뜻하는 rapere의 합성 동사 eripere. ② 동계어로 라틴어 rapere('빼앗다'), 영어 rape, rapid. ③ 접두사 결합 과정에서 음운의 구개음화 및 모음 약화(a→i)를 거쳐 3변화 -io형 동사로 정착함. ④ 현대 영어의 'rapacious'(탐욕스러운), 'rapt'(몰입한) 등의 어원적 계열과 연결됨."
+      },
+      {
+        "g": "nec",
+        "pos": "접속사",
+        "lemma": "neque / nec",
+        "principalParts": null,
+        "parse": "coord. conj. (neg. + et)",
+        "gloss_kr": "그리고 ~가 아닌, 그리고 ~않을 것이다",
+        "gloss_en": "and not, nor",
+        "syntax": "LFG f-구조에서 nec는 두 개의 절이나 문장 성분을 대등하게 부정하며 연결하는 등위 접속사(COORD) 기능을 수행한다. 생성문법상 ConjP의 핵으로서 부정사와 대등 접속의 기능을 동시에 충족하며, 하위 절 전체에 부정의 범위를 확장한다. 통사적으로 후행하는 조건절의 부정 양상을 매개함.",
+        "background": "nec는 여신의 허락이나 방관 없이는 그 어떤 불길도 트로이아 배들을 태울 수 없다는 절대적인 금지와 불가능성을 선언한다. 인간의 의지나 폭력이 신의 섭리와 방어막을 뚫을 수 없다는 점을 강조하는 논리적 연결 고리다. 이 접속사는 신의 권능이 미치는 한계 없음을 명확히 한다.",
+        "etymology": "① 부정 부사 ne와 대등 접속사 que의 축약 및 합성형 nec. ② 동계어로 라틴어 ne('~아니다')와 que('그리고'). ③ 고대 라틴어의 음운 축약 과정을 거쳐 고전 시가와 산문에서 가장 흔히 쓰이는 복합 부정 접속사로 고착됨. ④ 로망스어군의 여러 부정 표현 및 고전 라틴어 문법의 대등 부정 구조의 핵심 요소로 남음."
+      },
+      {
+        "g": "me",
+        "pos": "대명사",
+        "lemma": "ego",
+        "principalParts": null,
+        "parse": "abl. sg. f. (with patient participle in abl. abs.)",
+        "gloss_kr": "내가, 나를",
+        "gloss_en": "me",
+        "syntax": "LFG f-구조에서 me는 독립분사구문(Ablative Absolute) 안에서 의미상의 주어(SUBJ) 기능을 담당하며, 분사 patiente와 격-일치 관계를 맺는다. 생성문법상 탈격 절대구문(Ablative Absolute construction)의 지정어 자리에 병합되어 주절과 독립된 시공간적·조건적 배경 절의 주어 역할을 수행한다. 격 이론상 절대구문의 탈격(ablative) 라이선스를 만족함.",
+        "background": "me는 여신 자신을 지칭하며, 절대구문 속에서 그녀의 존재와 시선 자체가 불길을 막아내는 방패가 됨을 강조한다. 신이 지켜보고 있는 한 그 어떤 파괴도 허용되지 않는다는 절대적 주권의 표현이다. 이 대명사는 신의 현존이 곧 물리적 법칙을 압도하는 기적의 근원임을 드러낸다.",
+        "etymology": "① PIE 재구형 인칭대명사 *me('나를, 나의')에서 유래한 1인칭 대명사. ② 동계어로 그리스어 eme, 산스크리트어 mam, 영어 me. ③ 인도유럽어족 전반에 걸쳐 가장 보존성이 높은 사격(oblique case) 대명사 어형을 유지함. ④ 현대 영어의 'me', 프랑스어 'moi', 스페인어 'mí' 등으로 이어져 모든 인류어의 기본 어휘로 남아 있음."
+      },
+      {
+        "g": "patiente",
+        "pos": "동사 (분사)",
+        "lemma": "patior, pati, passus sum",
+        "principalParts": [
+          "patior",
+          "pati",
+          "passus sum",
+          "(미상)"
+        ],
+        "parse": "pres. act. part. abl. sg. f.",
+        "gloss_kr": "참고 견디는, 허락하는, 가만히 있는",
+        "gloss_en": "suffering, allowing, enduring",
+        "syntax": "LFG f-구조에서 patiente는 탈격 절대구문 내에서 서술어(PRED) 기능을 하며, 의미상 주어 me와 주술 관계를 형성한다. 생성문법상 능동 분사구의 핵으로서 현재시제의 지속성과 허용적 모달리티를 실현하며, 내적 논항과의 일치를 이룬다. 탈격 절대구문의 통사적 조건을 만족하는 핵심 분사 성분.",
+        "background": "patiente는 여신이 가만히 침묵하며 이 파괴를 참아내거나 허락하지 않는 한, 즉 '내가 가만히 있는 것이 아닌 한'이라는 조건적 의미를 형성한다. 그녀가 허용하지 않기에 불타는 일은 결코 일어날 수 없다는 단호한 거부의 태도를 담고 있다. 이 분사는 신의 적극적 의지가 개입하는 순간의 전제 조건을 제시한다.",
+        "etymology": "① PIE 재구형 *peh1-('고통받다, 견디다')에서 유래한 탈팟형 동사 patior. ② 동계어로 그리스어 penthos('슬픔'), 영어 patient의 어원적 배경. ③ 디포넌트(deponent) 동사의 현재 분사 파생 규칙에 따라 3변화 탈격 어미(-e)를 취하도록 정착함. ④ 현대 영어의 'patient'(환자, 참을성 있는), 'passion'(수난, 열정) 등의 어원으로 활발히 쓰임."
+      },
+      {
+        "g": "cremabit",
+        "pos": "동사",
+        "lemma": "cremo, cremare, cremavi, crematus",
+        "principalParts": [
+          "cremo",
+          "cremare",
+          "cremavi",
+          "crematus"
+        ],
+        "parse": "fut. act. ind. 3rd pers. sg.",
+        "gloss_kr": "불태울 것이다",
+        "gloss_en": "will burn, will consume by fire",
+        "syntax": "LFG f-구조에서 cremabit는 조건문 내의 미래시제 서술어(PRED)로서 생략된 주어(불길)와 논항 구조를 이루고, 목적어(배들)를 지배한다. 생성문법상 미래시제 활성태의 vP 핵으로 투사되며, 부정어 nec의 지배를 받아 전체 문장의 서술 내용이 강하게 부정되는 모달리티를 실현한다. 통사적으로 신의 방어벽에 가막혀 성취되지 못할 미래의 사건을 나타냄.",
+        "background": "cremabit는 투르누스의 불길이 트로이아 함선들을 기어코 태워버릴 것인지에 대한 최종적인 판정을 내리는 동사다. 여신이 버티고 있는 한 이 미래형 동사의 행위는 결코 실현될 수 없으며, 곧 이어질 배들의 해양 님프 변신이라는 기적이 그 불가능성을 입증한다. 이 단어는 파괴의 시도가 좌절되는 극적 전환점을 매듭짓는다.",
+        "etymology": "① PIE 재구형 어근에서 유래하여 '태우다, 화장하다'를 뜻하는 라틴어 동사 cremare. ② 동계어로 산스크리트어 carma('태우다') 계열의 연관 어근들 및 고대 이탈리아어파의 제의적 화장 용어. ③ 1변화 규칙 동사 체계에 편입되면서 미래시제 어미 -bit를 결합하여 고전 라틴어의 명확한 동사 활용형으로 고착됨. ④ 현대 영어의 'cremation'(화장, 시신 소각), 'crematorium'(화장장) 등의 어휘로 오늘날까지 전문 분야 및 일상에서 널리 쓰임."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 5.541",
+    "trans": "숲의 부서진 가지들과 나뭇가지들이 탐욕스럽게 타오른다.",
+    "words": [
+      {
+        "g": "ignis",
+        "pos": "명사",
+        "lemma": "ignis, -is, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "불",
+        "gloss_en": "fire",
+        "syntax": "LFG f-구조에서 ignis는 주절의 주어(SUBJ) 기능을 담당하며, 의미적으로는 도구적 또는 자연발생적 행위의 주체(agent/theme) 역할을 수행한다. c-구조상 [Spec, IP] 위치에 병합되어 있어 정동사 edax와 수(sg.)와 인칭(3rd)의 격일치(agreement)를 만족시킨다. 생성문법적 분석에서 이 주어 명사는 비대격적 기저 위치에서 표면 주어 자리로 이동한 것이 아니라, 외적 항(external argument)으로서 술어부에 구조적으로 투사된다.",
+        "background": "여기서 불은 데메테르의 분노와 복수의 현현으로서 시칠리아의 요정 아레투사의 사연 속에서 징벌적 파괴력을 상징한다. 님프 키아네가 페르세포네의 납치를 막으려다 명계로 끌려들어간 후, 그 주변의 자연물과 물의 정령들이 겪는 신성한 분노의 여파를 묘사하는 장면에 위치한다. 오비디우스는 이 불을 통해 신들의 권능이 자연 전체로 확산되는 압도적인 분위기를 조성한다.",
+        "etymology": "① PIE 재구형 *h₁ngʷni-('불')에서 기원하며, 베다 산스크리트어 agní-와 직통하는 동계어다. ② 동계어로 산스크리트어 agní-(불), 고대 교회 슬라브어 ogni(불), 리투아니아어 ugnis(불)가 있다. ③ 어두의 인후음 탈락 및 라틴어 내부의 음운 전개를 거쳐 어말 자음군이 단순화되었으며, 산스크리트어의 agni와 비교할 때 모음 교체와 자음의 마찰음화 양상이 뚜렷이 대비된다. ④ 현대 영어의 ignite, ignition 및 로맹스어군의 관련 어휘(스페인어 ignición 등)에 직접적인 흔적을 남기고 있다."
+      },
+      {
+        "g": "edax",
+        "pos": "형용사",
+        "lemma": "edax, edacis",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "탐욕스러운, 게걸스레 먹어치우는",
+        "gloss_en": "devouring, ravenous",
+        "syntax": "LFG 관점에서 edax는 주어 ignis를 수식하는 한정 형용사(ADJUNCT 또는 주어 보어)로서 기능하며, 의미역으로는 속성(attribute)을 부여한다. c-구조상 NP 내부에서 명사와 성·수·격 일치(sg. nom. m.)를 이루며 포괄적인 술어적 수식 구조를 형성한다. 생성문법적으로 이 형용사는 명사구 내부의 명시적 수식어로서 기능하며, 암묵적인 항(argument) 구조를 내포하여 불이 탐욕스럽게 대상을 집어삼키는 행위성을 부각시킨다.",
+        "background": "edax는 원래 '게걸스레 먹는'이라는 뜻에서 유래하여, 여기서는 숲을 집어삼키는 불길의 무자비하고 탐욕스러운 성격을 의인화된 시적 수식어로 강조한다. 오비디우스는 자연의 파괴적인 에너지를 묘사할 때 이러한 식욕과 관련된 형용사를 자주 사용하여 물질을 소모하는 불의 본질을 극대화한다. 이 단어는 신화적 서사 속에서 통제할 수 없는 자연의 폭력을 독자의 감각에 강렬하게 각인시킨다.",
+        "etymology": "① PIE 재구형 *ed-('먹다')에 행위자 파생 접사 *-āk-이 결합된 형태로 재구된다. ② 동계어로 라틴어 동사 edere(먹다), 영어 eat, 산스크리트어 átti(그가 먹는다)가 있다. ③ 어간의 치음 교체 및 접사 결합 과정에서 자음 축약과 양성모음 계열의 변화가 일어났으며, 명사적 성격을 띤 형용사로 품사 전이가 발생했다. ④ 현대 영어의 edacious(게걸스러운), edible(먹을 수 있는) 등의 어휘에 그 어원의 흔적이 온전히 보존되어 있다."
+      },
+      {
+        "g": "nemorum",
+        "pos": "명사",
+        "lemma": "nemus, nemoris, n.",
+        "parse": "pl. gen. n.",
+        "gloss_kr": "숲의, 삼림의",
+        "gloss_en": "of groves, of forests",
+        "syntax": "LFG f-구조에서 nemorum은 소유격 속격(genitivus possessivus/partitivus)으로서 후행하는 명사 partes를 한정하며, f-구조상 ADJUNCT 또는 소속 기능을 수행한다. c-구조상 [NP [N' [N genitive]]의 통사적 구조를 이루며, 격 지배 이론에 따라 명사 partes가 요구하는 영토적·부분적 관계를 만족시킨다. 생성문법적으로 이 속격 명사는 기저에서 명사구 외곽의 지정어(Spec-NP) 위치에 투사되어 소유 또는 구성 성분의 의미역을 할당받는다.",
+        "background": "nemus는 인간이 경작하지 않은 신성한 숲이나 삼림을 뜻하며, 고대 로마 종교에서 요정이나 신들이 거스르는 자연 공간을 상징한다. 여기서는 불길이 파괴하는 공간적 배경인 숲의 거대한 규모를 암시하며, 아레투사가 목격하는 자연의 비극적 소멸 무대를 설정한다. 이 시적 표현은 단순한 나무의 집합이 아니라 신비롭고 울창한 생태계가 불타는 참상을 시각화한다.",
+        "etymology": "① PIE 재구형 *nem-('구부리다, 할당하다, 목초지')에서 유래한 것으로 추정된다. ② 동계어로 그리스어 νομός(목초지, 방목지)와 고대 아일랜드어 nemid(신성한 공간)가 있다. ③ 음운론적으로어중 모음 사이의 자음 마찰과 어미 굴절의 변화를 겪었으며, '열린 공간'에서 '나무가 우거진 숲'으로 의미가 전이되었다. ④ 현대 영어의 numismatics와의 직접적 관련은 없으나, 유럽 지명 및 생태학적 용어의 어간 속에 그 명맥이 미세하게 남아 있다."
+      },
+      {
+        "g": "partes",
+        "pos": "명사",
+        "lemma": "pars, partis, f.",
+        "parse": "pl. acc. f.",
+        "gloss_kr": "부분들을, 마디들을",
+        "gloss_en": "parts, portions",
+        "syntax": "LFG f-구조에서 partes는 동사 edax가 내포하는 삼키는 행위의 목적어(OBJ) 기능을 수행하며, θ-역할로는 PATIENT에 해당한다. c-구조상 [VP V NP] 구조에서 목적격 대격으로 실현되며, 선행하는 소유격 nemorum의 수식을 받는다. 생성문법적으로 복수 대격 명사구는 동사의 핵에 의해 격이 부여되며, 불길이 숲의 여러 부위를 동시다발적으로 집어삼키는 분할적 대상을 통사적으로 구체화한다.",
+        "background": "pars는 전체 중에서 나누어진 몫이나 부위를 뜻하며, 여기서는 거대한 숲이 불길에 의해 산산이 부서지고 갈라지는 모습을 나타낸다. 숲의 유기적인 결합체가 불에 의해 각 부분으로 해체되는 과정을 생생하게 보여주는 시적 어휘 선택이다. 이 단어는 파괴의 철저함을 시각적으로 분할하여 전달하는 서사적 장치로 기능한다.",
+        "etymology": "① PIE 재구형 *pr-ti-('자르다, 나누다')에서 파생된 명사형으로 재구된다. ② 동계어로 산스크리트어 pṛṇāti(나누다), 그리스어 πεῖρα(시도, 한계), 고대 영어 forth와 어원이 통한다. ③ 어간 접미사의 변동과 자음 탈락을 거쳐 3변화 명사로 정착했으며, '나눔'에서 '몫'과 '부분'으로 의미가 확장되었다. ④ 현대 영어의 part, particle, portion 및 스페인어 parte 등의 어휘에 그 흔적이 뚜렷하게 이어지고 있다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG f-구조에서 et는 대등 접속사(coordinating conjunction)로서 두 개의 명사구 partes와 membra를 동등한 자격으로 연결하여 f-구조상 협조 구조(coordination)를 형성한다. c-구조상 두 명사구의 중간에 위치하여 구문론적 대등 연결을 수행하며, 양쪽 항에 동일한 통사적 지위를 부여한다. 생성문법적으로 이 접속사는 양쪽의 NP 구성 성분을 대등하게 병합(merge)하는 기능을 담당하며, 문장 내부의 리듬감을 조율한다.",
+        "background": "et의 반복적 사용은 오비디우스가 서사의 긴장감을 고조시키고 파괴되는 대상들을 열거할 때 사용하는 전형적인 수사적 연결 장치다. 숲의 부분들과 신체의 마디들을 대등하게 엮어냄으로써, 숲의 파괴가 마치 생명체의 해체와 같은 고통스러운 유기적 현상임을 암시한다. 이 접속사는 텍스트의 흐름을 매끄럽게 이어주며 시적 운율의 균형을 맞춘다.",
+        "etymology": "① PIE 재구형 *eti('넘어서, 그리고, 또한')에서 기원한다. ② 동계어로 산스크리트어 áti(넘어서, ~이상으로), 그리스어 ἔτι(여전히, 게다가)가 있다. ③ 고대 인도유럽어의 부사적 기원에서 접속사로 기능이 전이되었으며, 음운론적으로 단음절의 짧은 형태로 축약되었다. ④ 현대 로망스어군(스페인어 y, 프랑스어 et 등)의 접소사적 형태로 그 유산이 직접 남아 있다."
+      },
+      {
+        "g": "membra",
+        "pos": "명사",
+        "lemma": "membrum, -i, n.",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "지체들을, 마디들을",
+        "gloss_en": "limbs, body parts",
+        "syntax": "LFG f-구조에서 membra는 접속사 et를 통해 partes와 병렬되며, 동사 edax의 두 번째 목적어(OBJ) 기능을 수행한다. c-구조상 [NP [ConjP]] 구조를 이루며 대격으로 실현되어 동일한 통사적 격 지배를 받는다. 생성문법적으로 이 명사는 숲의 가지와 줄기를 신체 지체에 비유하는 의인화된 은유의 통사적 실현태로서, 명사구 이동이나 병합 과정에서 신체적 은유성을 구조적으로 담보한다.",
+        "background": "membrum은 본래 인간이나 동물의 신체 지체(팔다리)를 뜻하나, 시적 허용을 통해 거대한 나무의 가지나 뻗어 나간 줄기를 의인화하여 가리키는 데 자주 쓰인다. 숲이 불에 타는 참상을 마치 생명체가 고통스럽게 신체를 태우는 듯한 이미지로 전환시키는 핵심 은유적 어휘다. 이 단어는 자연의 파괴에 생명력을 부여하여 독자에게 더 큰 연민과 비극적 충격을 전달한다.",
+        "etymology": "① PIE 재구형 *mems-ro-('살코기, 고기 조각')에서 파생된 것으로 추정되며, 어근 *mems('살')와 연관된다. ② 동계어로 산스크리트어 māṃsá-(고기, 살), 고대 교회 슬라브어 meso(고기, 살)가 있다. ③ 자음군의 탈락 및 접미사의 변화를 거쳐 신체의 '지체'를 뜻하는 중성 명사로 의미가 전문화되었다. ④ 현대 영어의 member, membrane 및 스페인어 miembro 등의 어휘에 그 어원의 흔적이 생생하게 남아 있다."
+      },
+      {
+        "g": "meorum",
+        "pos": "대명사",
+        "lemma": "meus, -a, -um",
+        "parse": "pl. gen. m.",
+        "gloss_kr": "나의 것들의, 나의 친족들의",
+        "gloss_en": "of my people, of my own",
+        "syntax": "LFG f-구조에서 meorum은 소유 형용사/대명사로서 명사 membra를 한정하는 소유격(genitivus possessivus) 기능을 수행한다. c-구조상 NP 내부의 한정어(specifier) 자리를 점하며, 복수 남성 속격 형태로 후행하는 명사와 격·성·수를 일치시킨다. 생성문법적 분석에서 이 소유격은 외재적 소유 관계를 나타내는 지정어 위치에 병합되며, 화자(아레투사 또는 말하는 이)와 불타는 대상 사이의 깊은 정서적 연대를 통사적으로 구속한다.",
+        "background": "여기서 meorum은 단순한 소유를 넘어 화자가 아끼는 동료 님프들이나 친숙한 자연의 혈육 같은 존재들을 가리키며, 비극적 상실감을 극대화한다. 불에 타는 숲의 가지들이 남의 것이 아니라 자신과 밀접하게 연관된 '나의 것들'임을 호소하는 비탄의 목소리를 담고 있다. 이 단어는 신화적 서사 속에서 객관적인 자연재해를 극도로 주관적이고 애절한 개인의 비극으로 전환하는 결정적인 역할을 한다.",
+        "etymology": "① PIE 재구형 재귀 속격 대명사 기반의 *me-에서 유래한 소유 형용사로 파생된다. ② 동계어로 산스크리트어 máma(나의), 그리스어 ἐμός(나의), 고대 영어 mīn(나의)이 있다. ③ 라틴어 내부의 1인칭 대명사격 변화와 형용사화 접사의 결합을 거쳐 소유격 형태로 고정되었다. ④ 현대 영어의 my, mine 및 스페인어 mi, mío 등의 소유 표현 전반에 그 원형의 흔적이 깊이 박혀 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 5.542",
+    "trans": "여신이 말할 때 우뢰가 울렸고, 천둥소리에 이어",
+    "words": [
+      {
+        "g": "Intonuit",
+        "pos": "동사",
+        "lemma": "intono, intonare, intonui, intonatus",
+        "parse": "perf. act. ind. 3rd pers. sg.",
+        "principalParts": [
+          "intono",
+          "intonare",
+          "intonui",
+          "intonatus"
+        ],
+        "gloss_kr": "우뢰가 울렸다, 천둥이 쳤다",
+        "gloss_en": "it thundered",
+        "syntax": "LFG f-구조에서 intonuit는 비인칭 동사(impersonal verb)로서 명시적 주어를 취하지 않으며, PRED로서 문장의 서술어 기능을 수행한다. c-구조상 [TP [T' [V intonuit]]] 구조를 이루어 독립된 절의 핵을 형성한다. 생성문법적으로 비인칭 구문으로서 외적 항을 요구하지 않으며, 시제 핵(T)과의 결합을 통해 완료 시제를 실현하고 서사의 전환점을 극적으로 알린다.",
+        "background": "intono는 신들의 강림이나 하늘의 극적인 변동을 알릴 때 사용되는 동사로, 여기서는 여신 데메테르의 분노와 슬픔에 응답하는 천상의 경고를 나타낸다. 숲이 불타는 비극적 장면에 하늘의 천둥소리가 겹치면서 신화적 대격변의 분위기가 절정에 달한다. 이 동사는 지상의 비극이 천상의 권능과 직접적으로 연결되어 있음을 보여주는 서사적 매개체다.",
+        "etymology": "① PIE 재구형 *ton-('소리 내다, 울리다')에 접두사 in-이 결합된 형태다. ② 동계어로 산스크리트어 tan-(소리 내다), 영어 thunder, 고대 고지 독일어 donar(천둥)가 있다. ③ 어두 전두음의 강화와 라틴어 접두사 동화 과정을 거쳐 동사 파생형으로 정착했다. ④ 현대 영어의 intonate(어조를 맞추다), thunder 및 음악 용어 intonation에 그 어원의 흔적이 남아 있다."
+      },
+      {
+        "g": "dicente",
+        "pos": "분사",
+        "lemma": "dico, dicere, dixi, dictus",
+        "parse": "pres. act. part. abl. f. sg.",
+        "principalParts": [
+          "dico",
+          "dicere",
+          "dixi",
+          "dictus"
+        ],
+        "gloss_kr": "말하고 있는, 말할 때에",
+        "gloss_en": "speaking, while saying",
+        "syntax": "LFG f-구조에서 dicente는 탈격 절대구문(Ablativus Absolutus)의 분사 핵으로서 시간적·조건적 부사절(ADJUNCT)을 이룬다. c-구조상 [AbP dea [AP dicente]]의 구조를 형성하며 주절과 독립된 통사적 부사구 영역을 점한다. 생성문법적으로 이 현재 능동 분사는 명사 dea와 성·수·격(abl. f. sg.) 일치를 이루며, 시제적으로 주절의 완료 시제와 동시성을 나타내는 내포적 구조를 형성한다.",
+        "background": "탈격 절대구문을 통해 여신이 말을 마치거나 발화하는 그 순간에 천둥이 울렸음을 극적으로 대비시킨다. 말의 여운과 동시에 하늘의 응답이 터져 나오는 절묘한 시간적 일치를 보여주며, 신들의 의지가 즉각적으로 현상계에 개입함을 보여준다. 이 표현은 오비디우스 서사의 속도감과 극적 긴장감을 높이는 핵심 수사적 장치다.",
+        "etymology": "① PIE 재구형 *deik-('가리키다, 말하다')에서 기원한다. ② 동계어로 그리스어 δείκνυμι(가리키다), 영어 teach, 고대 고지 독일어 zeigōn(보여주다)이 있다. ③ 음운론적으로 구개음화 및 어간 모음의 변화를 겪었으며, '가리키다'에서 '언어적 표현을 하다'로 의미가 전이되었다. ④ 현대 영어의 dictate, diction, dictionary 및 스페인어 decir 등의 어휘에 그 어원의 흔적이 완벽하게 보존되어 있다."
+      },
+      {
+        "g": "dea",
+        "pos": "명사",
+        "lemma": "dea, -ae, f.",
+        "parse": "sg. abl. f.",
+        "gloss_kr": "여신이",
+        "gloss_en": "goddess",
+        "syntax": "LFG f-구조에서 dea는 탈격 절대구문의 주어(SUBJ) 기능을 수행하며, 분사 dicente와 격·성·수(abl. f. sg.)를 일치시킨다. c-구조상 탈격 구문의 지정어 자리를 점하며, 문장의 주절 주어와는 통사적으로 독립된 부사구 내부의 주체 역할을 한다. 생성문법적으로 이 명사는 1변화 여성 명사로서 탈격 표지 *-ā를 취하며, 분사구 내부에서 행위자(agent)의 θ-역할을 안정적으로 할당받는다.",
+        "background": "여기서 여신은 대지의 어머니이자 농경의 신인 데메테르를 가리키며, 아레투사의 비극을 목격하고 자연계에 천둥과 비를 내려 개입하는 주체다. 여신의 발화와 동시에 천상이 반응하는 것은 그녀의 신성한 권능이 자연의 원소들을 직접 지배함을 상징한다. 이 단어는 신화적 서사의 중심에 있는 신의 존재감을 환기시키는 핵심 명사다.",
+        "etymology": "① PIE 재구형 *deiwos('신, 하늘의')의 여성형 파생에서 기원한다. ② 동계어로 산스크리트어 devī(여신), 그리스어 θεός(신), 리투아니아어 dieva(신)가 있다. ③ 인도유럽조어의 신성 어근에서 라틴어 특유의 성별 분화 접사가 결합하여 독립된 여신 명사로 정착했다. ④ 현대 로망스어군의 여성형 관사 및 대명사적 흔적과 함께 영어 deity 등의 어휘에 그 뿌리가 남아 있다."
+      },
+      {
+        "g": "tonitrumque",
+        "pos": "명사",
+        "lemma": "tonitrus, -us, m. (또는 tonitrum, -i, n.)",
+        "parse": "sg. acc. n. (enclitic coord. conj.)",
+        "gloss_kr": "그리고 우레를, 천둥을",
+        "gloss_en": "and the thunder",
+        "syntax": "LFG f-구조에서 tonitrum은 동사 secuti의 분사적 파생 과정에서 직접목적어(OBJ) 기능을 수행하며, 후치 접속사 -que에 의해 앞선 절과 연결된다. c-구조상 명사구 말단에 접어 형태로 부착된 -que가 두 절 또는 두 명사구의 대등 접속을 통사적으로 완결한다. 생성문법적으로 이 대격 명사는 탈격 분사구 이후에 전개되는 주절의 핵심 사건 대상을 규정하며, 접어(clitic) 형태의 접속사가 구구조 상위 마디에 병합된다.",
+        "background": "tonitrum은 여신의 발화에 즉각적으로 반응하는 하늘의 거대한 천둥소리를 생생하게 청각화한다. 대지의 불길과 하늘의 천둥이 교차하면서 자연계 전체가 신적 임재 앞에서 요동치는 거대한 폭풍우의 서막을 연다. 이 단어는 시적 공간을 시각에서 청각으로 확장하는 중요한 감각적 전환점을 이룬다.",
+        "etymology": "① PIE 재구형 *ton-('소리 내다')에 명사 파생 접사가 결합된 형태다. ② 동계어로 산스크리트어 tanayitnú-(우레, 천둥), 영어 thunder, 고대 아일랜드어 torand(천둥)가 있다. ③ 어근의 중복 및 명사화 접미사의 변동을 거쳐 4변화 또는 2변화 중성 명사로 정착했다. ④ 현대 영어의 thunder, detonated 등의 어휘 및 음향 관련 용어에 그 어원의 흔적이 이어지고 있다."
+      },
+      {
+        "g": "secuti",
+        "pos": "분사",
+        "lemma": "sequor, sequi, secutus sum",
+        "parse": "perf. dep. part. nom. m. pl.",
+        "principalParts": [
+          "sequor",
+          "sequi",
+          "secutus sum",
+          "(미상)"
+        ],
+        "gloss_kr": "뒤따른, 이어진",
+        "gloss_en": "following, having followed",
+        "syntax": "LFG f-구조에서 secuti는 탈형동사(deponent verb)의 완료 분사로서 주어 nimbi를 수식하거나 보어 역할을 하며, 시제적으로 천둥 이후에 비가 이어지는 선행 완료 관계를 나타낸다. c-구조상 복수 남성 주격 명사 nimbi와 격·성·수 일치를 이루며 분사구의 핵을 구성한다. 생성문법적으로 이 디포넌트 분사는 통사적 형태는 수동/중간태이나 의미적으로 능동의 행위성을 가지며, 주어 명사와의 사이에 부사적·시간적 선후행 관계를 투사한다.",
+        "background": "천둥이 치고 곧바로 비가 쏟아지는 기상학적 인과관계를 '뒤따른다'는 분사로 표현하여, 자연 현상의 급격한 연쇄 반응을 시적으로 포착한다. 신의 분노가 천둥을 부르고, 그 천둥의 뒤를 이어 폭우가 쏟아지는 일련의 과정이 한 호흡에 전개된다. 이 단어는 서사의 속도감을 조절하며 다음 장소로 독자를 이끄는 시간적 이정표가 된다.",
+        "etymology": "① PIE 재구형 *sekʷ-('따라가다')에서 기원한다. ② 동계어로 산스크리트어 sácate(따르다), 그리스어 ἕπομαι(따르다), 고대 아일랜드어 sechithir(따르다)가 있다. ③ 어두 자음의 음운 변화와 라틴어 특유의 디포넌트 굴절 패러다임을 확립했으며, '공간적 추종'에서 '시간적 계승'으로 의미가 확장되었다. ④ 현대 영어의 sequence, subsequent, consecutive 및 스페인어 seguir 등의 어휘에 그 어원의 흔적이 강력하게 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 5.543",
+    "trans": "튀어 오르는 거친 우박과 함께 무거운 폭우가 쏟아져 내렸다.",
+    "words": [
+      {
+        "g": "cum",
+        "pos": "전치사",
+        "lemma": "cum",
+        "parse": "prep. c. abl.",
+        "gloss_kr": "~와 함께, ~를 동반하여",
+        "gloss_en": "with, accompanied by",
+        "syntax": "LFG f-구조에서 cum은 전치사구(PP)의 PRED 기능을 수행하며, 목적어로 탈격 명사 grandine을 지배한다. c-구조상 [PP P NP] 구조를 이루어 주절의 동사 ceciderunt에 대한 동반·도구적 부사어(ADJUNCT) 역할을 수행한다. 생성문법적으로 이 전치사는 격 이론에 따라 후행하는 명사구에 탈격(ablative)을 부여하는 격 지배자(case assigner)로서 기능한다.",
+        "background": "비가 내릴 때 우박이 함께 쏟아지는 거친 기상의 복합성을 동반 전치사를 통해 생생하게 전달한다. 단순한 비가 아니라 튀어 오르는 우박을 동반한 폭우라는 점에서 자연의 파괴적인 위력이 극에 달했음을 보여준다. 이 전치사는 시적 묘사의 입체감을 더해주는 미세하지만 필수적인 통사적 연결고리다.",
+        "etymology": "① PIE 재구형 *ḱóm('~와 함께, 가까이')에서 기원한다. ② 동계어로 산스크리트어 sám(함께, 나란히), 그리스어 ξύν/σύν(~와 함께), 고딕어 ga-(접두사)가 있다. ③ 어두 구개음의 마찰음화 및 라틴어 내부의 전치사적 고착화를 겪었으며, 동반 및 도구의 의미장을 확립했다. ④ 현대 영어의 co-, com- 접두사 및 로망스어군의 전치사 형태(스페인어 con 등)에 그 어원의 흔적이 깊이 남아 있다."
+      },
+      {
+        "g": "saliente",
+        "pos": "분사",
+        "lemma": "salio, salire, salui, saltus",
+        "parse": "pres. act. part. abl. f. sg.",
+        "principalParts": [
+          "salio",
+          "salire",
+          "salui",
+          "saltus"
+        ],
+        "gloss_kr": "튀어 오르는, 뛰어오르는",
+        "gloss_en": "bounding, leaping, springing",
+        "syntax": "LFG f-구조에서 saliente는 명사 grandine을 수식하는 한정 형용사적 분사(ADJUNCT)로서 기능하며, 속성과 동작성을 동시에 부여한다. c-구조상 NP 내부에서 격·성·수(abl. f. sg.)를 일치시키며 전치사구 내의 수식어 구조를 이룬다. 생성문법적으로 이 현재 능동 분사는 명사구 내부의 지정어 또는 부가어 위치에 병합되어, 우박이 땅에 부딪혀 튀어 오르는 역동적인 물리적 운동을 통사적으로 포착한다.",
+        "background": "우박이 땅에 떨어져 사방으로 튀어 오르는 모습을 '튀어 오르는'이라는 분사로 묘사하여 시각적 생동감을 극대화한다. 정적인 얼음덩이가 아니라 살아 움직이듯 튀어 다니는 폭풍우의 격렬함을 청자와 독자에게 감각적으로 전달한다. 이 단어는 오비디우스의 뛰어난 묘사적 기교를 보여주는 대표적인 시적 수식어다.",
+        "etymology": "① PIE 재구형 *sel-('도약하다, 뛰다')에서 파생된 동사 어간에서 기원한다. ② 동계어로 산스크리트어 sálate(움직인다), 그리스어 ἅλλομαι(뛰다), 리투아니아어 šokti(뛰다)가 있다. ③ 음운론적으로 어간 모음의 교체 및 4변화 동사 파생을 거쳐 명사 수식 분사형으로 정착했다. ④ 현대 영어의 salient(두드러진), saltatory(도약하는), insult 및 로망스어군의 관련 동사에 그 어원의 흔적이 온전히 남아 있다."
+      },
+      {
+        "g": "graves",
+        "pos": "형용사",
+        "lemma": "gravis, grave",
+        "parse": "pl. nom. m./f.",
+        "gloss_kr": "무거운, 거센",
+        "gloss_en": "heavy, severe, weighty",
+        "syntax": "LFG f-구조에서 graves는 주어 명사 nimbi를 수식하는 형용사 보어/한정어(ADJUNCT) 기능을 수행하며, 속성 역할을 배당한다. c-구조상 [NP [AP graves] [N nimbi]] 구조를 이루어 주격 복수 남성 성·수·격 일치를 만족시킨다. 생성문법적 분석에서 이 형용사는 주어 명사구 내부에서 시제적·양태적 무게감을 부여하며, 폭우의 물리적 거대함과 파괴적 중량을 통사적으로 투사한다.",
+        "background": "graves는 비의 무게와 폭풍우의 심각성을 동시에 나타내며, 대지를 내리누르는 압도적인 기상 이변의 중량감을 표현한다. 가벼운 이슬비가 아니라 대지를 짓누르는 거세고 무거운 비구름의 기세를 상징적으로 보여준다. 이 단어는 시적 분위기를 무겁고 비장하게 만드는 중요한 역할을 한다.",
+        "etymology": "① PIE 재구형 *gʷrēu-('무거운')에서 기원한다. ② 동계어로 산스크리트어 gurví-(무거운 여인), 그리스어 βαρύς(무거운), 고딕어 kaurs(무거운)가 있다. ③ 라틴어 내부의 3변화 형용사 패러다임을 확립하며 후비음과 양순음의 상호작용을 거쳐 현재의 형태로 정착했다. ④ 현대 영어의 grave(심각한), gravity(중력), grief 및 스페인어 grave 등의 어휘에 그 어원의 흔적이 뚜렷이 이어지고 있다."
+      },
+      {
+        "g": "ceciderunt",
+        "pos": "동사",
+        "lemma": "cado, cadere, cecidi, casus",
+        "parse": "perf. act. ind. 3rd pers. pl.",
+        "principalParts": [
+          "cado",
+          "cadere",
+          "cecidi",
+          "casus"
+        ],
+        "gloss_kr": "떨어졌다, 쏟아졌다",
+        "gloss_en": "fell, dropped",
+        "syntax": "LFG f-구조에서 ceciderunt는 문장의 핵심 주절 서술어(PRED) 기능을 수행하며, 주어 nimbi와 수(pl.) 및 인칭(3rd)의 격일치를 이룬다. c-구조상 [TP [T' [V ceciderunt]]] 구조를 형성하여 절의 통사적 완결성을 제공한다. 생성문법적으로 이 완료 시제 동사는 중복사(reduplication)를 포함한 불규칙 완료형으로 실현되며, 기저에서 내적 논항인 낙하의 주체를 주어 자리로 이끄는 비대격적(unaccusative) 통사 구조를 갖는다.",
+        "background": "하늘에서 비와 우박이 무겁게 떨어지는 물리적 낙하 운동을 강렬하게 묘사하는 핵심 동사다. 앞서 언급된 천둥에 이어 실제로 지상을 때리는 폭풍우의 타격을 시각적·청각적으로 완성한다. 이 동사는 서사의 긴장감을 폭발시키는 결정적인 사건 전개의 실마리가 된다.",
+        "etymology": "① PIE 재구형 *kad-('떨어지다')에서 기원한다. ② 동계어로 중세 아일랜드어 cathid(떨어진다) 등이 있으며, 게르만어파에서는 음운 변화로 갈라졌다. ③ 라틴어 특유의 중복사(reduplication) 완료형 형성 규칙을 거쳐 cado-cecidi의 불규칙 패러다임을 확립했다. ④ 현대 영어의 cascade(폭포), accident, coincide 및 로망스어군의 관련 어휘에 그 어원의 흔적이 온전히 남아 있다."
+      },
+      {
+        "g": "grandine",
+        "pos": "명사",
+        "lemma": "grando, grandinis, f.",
+        "parse": "sg. abl. f.",
+        "gloss_kr": "우박과 함께, 우박으로",
+        "gloss_en": "with hail, by hail",
+        "syntax": "LFG f-구조에서 grandine은 전치사 cum의 목적어로서 전치사구 내부의 PRED 논항을 충족하며, 도구/동반의 의미역을 갖는다. c-구조상 [PP [P cum] [NP grandine]]의 통사적 구조를 이루어 주절의 동반 부사어구로 기능한다. 생성문법적으로 3변화 여성 명사의 탈격 표지를 취하며, 전치사와의 통사적 지배 관계를 통해 폭풍우의 실체를 구체적인 물질 명사로 한정한다.",
+        "background": "grando는 차갑고 파괴적인 우박을 뜻하며, 단순한 비를 넘어 숲과 대지를 무참히 때리는 얼음 폭풍의 가혹함을 상징한다. 불타던 숲이 갑작스러운 찬 우박과 폭우에 의해 진압되거나 뒤섞이는 극적인 대조를 연출한다. 이 단어는 오비디우스가 묘사하는 자연의 양면성(불과 얼음의 교차)을 완성하는 중요한 요소다.",
+        "etymology": "① PIE 재구형 *gr(e)and-('얼음 덩어리, 우박')에서 기원한 것으로 추정된다. ② 동계어로 고대 고지 독일어 grintil(장벽, 단단한 것) 및 일부 북유럽 방언의 얼음 관련 어휘가 있다. ③ 어간의 모음 교체와 3변화 명사 굴절의 결합을 거쳐 기상 현상을 뜻하는 고유 명칭으로 정착했다. ④ 현대 영어의 grand(웅장한)와의 어원적 관련은 없으나, 일부 지역 방언 및 로망스어군의 파생형(이탈리아어 grandine 등)에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "nimbi",
+        "pos": "명사",
+        "lemma": "nimbus, -i, m.",
+        "parse": "pl. nom. m.",
+        "gloss_kr": "폭우구름들이, 비구름들이",
+        "gloss_en": "rainclouds, storm clouds",
+        "syntax": "LFG f-구조에서 nimbi는 주절의 주어(SUBJ) 기능을 수행하며, 서술어 ceciderunt와 수(pl.) 및 인칭(3rd)의 격일치를 만족시킨다. c-구조상 [Spec, IP] 위치에 병합되어 문장의 통사적 주체 역할을 한다. 생성문법적으로 이 복수 주격 명사는 비대격 동사의 기저 내적 항에서 주어 위치로 투사되며, 하늘에서 몰려와 비를 뿌리는 구름의 실체를 통사적으로 명확히 규정한다.",
+        "background": "nimbus는 무겁고 검은 비구름이나 폭풍우를 뜻하며, 하늘에서 지상으로 쏟아지는 거대한 수분의 원천이다. 데메테르의 분노에 따라 하늘에서 급격히 몰려와 불타는 숲을 향해 물폭탄을 퍼붓는 기상의 주역이다. 이 단어는 신화적 개입이 자연의 기상 현상을 통해 어떻게 구현되는지 보여주는 시각적 초점이다.",
+        "etymology": "① PIE 재구형 *neb(ʰ)-('구름, 안개, 적시다')에서 기원한다. ② 동계어로 산스크리트어 nabhás-(구름, 하늘), 그리스어 νέφος(구름), 고대 교회 슬라브어 nebo(하늘)가 있다. ③ 음운론적으로 양순음과 마찰음의 교체, 라틴어 2변화 명사형의 접미사 결합을 거쳐 '비구름'으로 의미가 축소·전이되었다. ④ 현대 영어의 nimbus(비구름, 후광), nebulous 및 기상학 용어 전반에 그 어원의 흔적이 뚜렷이 보존되어 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 5.544",
+    "trans": "아스트라에우스의 아들들이 대기와 갑작스러운 충돌로 부푼 바다를 요동치게 하고",
+    "words": [
+      {
+        "g": "aeraque",
+        "pos": "명사",
+        "lemma": "aer, aeris, m.",
+        "parse": "sg. acc. m. (enclitic coord. conj.)",
+        "gloss_kr": "그리고 대기를, 공기를",
+        "gloss_en": "and the air",
+        "syntax": "LFG f-구조에서 aera는 동사 turbant의 직접목적어(OBJ) 기능을 수행하며, 후치 접속사 -que에 의해 후행하는 aequor와 대등하게 연결된다. c-구조상 [NP [ConjP]] 구조를 이루며 그리스어 계열 대격 어미를 유지한다. 생성문법적으로 이 대격 명사는 동사 turbant의 지배를 받아 목적격 격을 할당받으며, 바람의 신들이 휘저어 놓는 대기의 공간적 범위를 통사적으로 확정한다.",
+        "background": "aer는 단순한 공기가 아니라 바람과 폭풍이 휘몰아치는 대기 전체를 가리키며, 하늘의 공간에서 벌어지는 격렬한 혼란을 상징한다. 아스트라에우스의 아들들인 바람의 신들이 활개 치며 대기를 뒤흔드는 신화적 무대를 제공한다. 이 단어는 지상의 불과 비를 넘어 대기권 전체로 시공간적 스케일을 확장하는 시적 장치다.",
+        "etymology": "① PIE 재구형 *h₁es-('호흡하다, 숨 쉬다') 또는 대기 관련 기원에서 기원하며 그리스어에서 차용되었다. ② 동계어로 그리스어 ἀήρ(공기, 대기), 산스크리트어 āniti(숨 쉬다)가 있다. ③ 그리스어 제2변화 대격 형태(ἀέρα)가 라틴어 시 poesía에 그대로 유입되어 차용어 형태의 굴절을 유지했다. ④ 현대 영어의 aerial, aerospace, air 등의 어휘에 그 어원의 흔적이 온전히 이어지고 있다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG f-구조에서 et는 명사 aera와 aequor를 대등하게 연결하는 접속사(coordinating conjunction) 기능을 수행한다. c-구조상 두 대격 목적어구 사이에 위치하여 통사적 병렬 관계를 구축한다. 생성문법적으로 이 접속사는 두 개의 NP를 동일한 목적어 자리로 묶어주는 대등 병합(merge) 연산을 수행하며, 문장의 리듬감을 조율한다.",
+        "background": "대기(하늘)와 바다를 동시에 엮어주는 접속사로, 폭풍우가 지상과 바다뿐만 아니라 대기 전체를 뒤흔드는 거대한 우주적 규모의 재앙임을 강조한다. 바람의 신들이 일으킨 혼란이 공기와 바다라는 두 가지 거대한 원소 영역에 동시에 미치고 있음을 보여준다. 이 단어는 시적 대상을 확장하는 중요한 결합 고리다.",
+        "etymology": "① PIE 재구형 *eti('넘어서, 그리고')에서 기원한다. ② 동계어로 산스크리트어 áti, 그리스어 ἔτι가 있다. ③ 고대 인도유럽어의 부사적 기원에서 접속사로 기능이 전이되었다. ④ 현대 로망스어군의 접속사 형태에 그 유산이 남아 있다."
+      },
+      {
+        "g": "tumidum",
+        "pos": "형용사",
+        "lemma": "tumidus, -a, -um",
+        "parse": "sg. acc. n.",
+        "gloss_kr": "부푼, 성난, 파도가 일렁이는",
+        "gloss_en": "swollen, turgescent, surging",
+        "syntax": "LFG f-구조에서 tumidum는 목적어 명사 aequor를 한정하는 형용사 보어/수식어(ADJUNCT) 기능을 수행한다. c-구조상 NP 내부에서 중성 단수 대격 성·수·격 일치를 이룬다. 생성문법적으로 이 형용사는 명사구 내부의 지정어 위치에 병합되어, 폭풍으로 인해 물결이 부풀어 오른 바다의 물리적 상태를 통사적으로 묘사한다.",
+        "background": "tumidum은 성난 파도나 폭풍으로 인해 부풀어 오른 바다의 거친 형상을 나타내며, 바람의 신들의 충돌로 인해 바다가 요동치는 긴박한 상황을 시각화한다. 평온하던 바다가 갑작스러운 기상 이변으로 인해 거대한 괴물처럼 부풀어 오르는 위협적인 분위기를 조성한다. 이 단어는 자연의 거대한 힘을 감각적으로 전달하는 핵심 수식어다.",
+        "etymology": "① PIE 재구형 *teu-('부풀다, 강해지다')에서 파생된 동사 어간에서 기원한다. ② 동계어로 산스크리트어 taviti(강하다), 그리스어 τύλος(못, 혹), 영어 thaw가 있다. ③ 어간의 모음 교체와 형용사 파생 접미사의 결합을 거쳐 '부풀어 오른 상태'를 뜻하는 단어로 정착했다. ④ 현대 영어의 tumid(부어오른), tumor, tumult 및 로망스어군의 관련 어휘에 그 어원의 흔적이 남아 있다."
+      },
+      {
+        "g": "subitis",
+        "pos": "형용사",
+        "lemma": "subitus, -a, -um",
+        "parse": "pl. abl. m./f./n.",
+        "gloss_kr": "갑작스러운, 느닷없는",
+        "gloss_en": "sudden, unexpected",
+        "syntax": "LFG f-구조에서 subitis는 명사 concursibus를 수식하는 형용사 수식어(ADJUNCT) 기능을 수행하며, 속성 역할을 배당한다. c-구조상 복수 탈격 성·수·격 일치를 만족시키며 전치사구 또는 도구적 부사구 내부의 수식 구조를 이룬다. 생성문법적으로 이 형용사는 명사구 내에서 돌발적인 성격을 부여하며, 바람의 신들이 갑작스럽게 충돌하는 양상을 통사적으로 구체화한다.",
+        "background": "subitis는 예고 없이 들이닥친 돌발적 상황을 강조하며, 자연의 급변하는 기상 현상이 얼마나 순식간에 일어나는지 보여준다. 바람의 신들이 갑작스럽게 격돌하면서 바다와 대기가 통제 불능의 혼란에 빠지는 결정적인 계기를 수식한다. 이 단어는 서사의 극적 긴장감을 높이는 중요한 시간적·양태적 수식어다.",
+        "etymology": "① 라틴어 동사 subire(밑으로 가다, 불쑥 나타나다)의 과거분사에서 파생된 형용사다. ② 동계어로는 sub(밑에)와 ire(가다)의 복합 어원 구조를 공유하는 로망스어군 파생어들이 있다. ③ 동사 분사에서 형용사로 품사가 전이되면서 '은밀히 다가와 불쑥 나타남'에서 '갑작스러움'으로 의미가 고착되었다. ④ 현대 영어의 sudden, subitaneous 및 로망스어군의 관련 어휘에 그 어원의 흔적이 이어지고 있다."
+      },
+      {
+        "g": "concursibus",
+        "pos": "명사",
+        "lemma": "concursus, -us, m.",
+        "parse": "pl. abl. m.",
+        "gloss_kr": "충돌들로, 마주침으로",
+        "gloss_en": "by clashes, by collisions",
+        "syntax": "LFG f-구조에서 concursibus는 도구/원인을 나타내는 탈격 명사(ADJUNCT)로서 동사 turbant의 작용 방식을 설명한다. c-구조상 4변화 남성 명사의 복수 탈격형으로 실현되며, 문장 내에서 격 지배에 따른 부사적 논항 역할을 수행한다. 생성문법적으로 이 명사는 기저에서 사건의 도구적 원인역을 할당받으며, 여러 방향에서 불어오는 바람들이 서로 부딪치는 물리적 충돌을 통사적으로 실현한다.",
+        "background": "concursus는 사방에서 몰려든 세력들이 서로 부딪치는 충돌을 뜻하며, 여기서는 사방에서 불어오는 바람의 신들(동서남북의 바람)이 서로 격돌하는 상황을 가리킨다. 이 충돌로 인해 대기와 바다가 동시에 뒤흔들리는 거대한 대기역학적 혼란을 연출한다. 이 단어는 신화적 서사 속에서 자연 현상을 인격화된 신들의 싸움으로 설명하는 핵심 매개체다.",
+        "etymology": "① 라틴어 동사 concurrere(함께 달리다, 충돌하다)의 파생 명사형에서 기원한다. ② 동계어로 con-(함께)과 currere(달리다)의 복합 어원 구조를 공유하는 영어의 current, course 등이 있다. ③ 어간의 명사 파생 접미사 결합을 거쳐 '함께 모여 부딪침'을 뜻하는 4변화 명사로 정착했다. ④ 현대 영어의 concourse, concurrent 및 로망스어군의 관련 어휘에 그 어원의 흔적이 완벽하게 보존되어 있다."
+      },
+      {
+        "g": "aequor",
+        "pos": "명사",
+        "lemma": "aequor, aequoris, n.",
+        "parse": "sg. acc. n.",
+        "gloss_kr": "바다를, 수면을",
+        "gloss_en": "sea, smooth surface, expanse of water",
+        "syntax": "LFG f-구조에서 aequor는 동사 turbant의 두 번째 직접목적어(OBJ) 기능을 수행하며, θ-역할로는 PATIENT에 해당한다. c-구조상 [NP] 대격 중성 명사로 실현되어 앞선 aera와 함께 turbant의 목적어 절을 구성한다. 생성문법적으로 이 명사는 동사의 지배를 받아 대격 격을 부여받으며, 바람의 신들의 충돌에 의해 요동치는 바다의 넓은 수면을 통사적으로 구체화한다.",
+        "background": "aequor는 원래 '평평한 것'을 뜻하나 시적 표현으로 '잔잔한 바다' 또는 넓게 펼쳐진 '바다 수면'을 가리킨다. 평소에는 평평하고 잔잔하던 바다가 바람의 신들의 충돌로 인해 거칠게 부풀어 오르는 대조적 비극성을 강조한다. 이 단어는 오비디우스가 바다의 방대함과 폭풍의 파괴력을 동시에 담아내기 위해 즐겨 사용하는 시적 명사다.",
+        "etymology": "① 라틴어 형용사 aequus(평평한, 공평한)에서 파생된 중성 명사형이다. ② 동계어로 라틴어 aequus, 영어 equal, equity의 어원이 되는 PIE 기저 형용사 구가 있다. ③ '평평한 대지나 수면'에서 '바다' 전체를 가리키는 시적 은유로 의미 전이가 일어났다. ④ 현대 영어의 equinox, equal 및 지리·시적 용어 속에서 그 어원의 흔적을 찾아볼 수 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 5.545",
+    "trans": "아스트라에우스의 자식들은 혼란에 빠뜨리고 형제들은 전투 속으로 나아간다.",
+    "words": [
+      {
+        "g": "Astraei",
+        "pos": "명사",
+        "lemma": "Astraeus, -i, m.",
+        "parse": "sg. gen. m.",
+        "gloss_kr": "아스트라에우스의",
+        "gloss_en": "of Astraeus",
+        "syntax": "LFG f-구조에서 Astraei는 소유격 속격(genitivus possessivus)으로서 후행하는 명사 fratres의 소유자 또는 혈통적 기원을 한정하는 ADJUNCT 기능을 수행한다. c-구조상 [NP [N' [N genitive]]] 구조를 이루어 고유명사의 소유격을 통사적으로 실현한다. 생성문법적으로 이 고유명사 속격은 명사구의 지정어 위치에 투사되어 바람의 신들(형제들)이 누구의 자손인지를 나타내는 관계역을 할당받는다.",
+        "background": "Astraeus는 별들의 신이자 여신 에오스의 남편으로, 바람의 신들(아네모이: 북풍 보레아스, 서풍 제피로스 등)의 아버지다. 여기서는 바람의 신들을 가리킬 때 그 아버지의 혈통을 명시하여 신화적 권위와 거대한 우주적 계보를 환기시킨다. 이 단어는 단순한 기상 현상인 바람을 신들의 혈기 왕성한 싸움으로 격상시키는 서사적 장치다.",
+        "etymology": "① 그리스어 Ἀστραῖος(별의, 별과 관련된)에서 유래한 라틴어화된 고유명사다. ② 동계어로 그리스어 ἄστρον(별)과 라틴어 astrum(별)이 있다. ③ 그리스어 신화 명칭이 로마 시가에 그대로 차용되면서 라틴어 2변화 남성 명사 패러다임에 포섭되었다. ④ 현대 영어의 astronomy, astrology, asterisk 등의 별 관련 어휘에 그 어원의 흔적이 온전히 보존되어 있다."
+      },
+      {
+        "g": "turbant",
+        "pos": "동사",
+        "lemma": "turbo, turbare, turbavi, turbatus",
+        "parse": "pres. act. ind. 3rd pers. pl.",
+        "principalParts": [
+          "turbo",
+          "turbare",
+          "turbavi",
+          "turbatus"
+        ],
+        "gloss_kr": "어지럽히다, 혼란에 빠뜨린다",
+        "gloss_en": "disorder, agitate, throw into confusion",
+        "syntax": "LFG f-구조에서 turbant는 주절의 서술어(PRED) 기능을 수행하며, 주어 fratres와 수(pl.) 및 인칭(3rd)의 격일치를 이룬다. c-구조상 [TP [T' [V turbant]]] 구조를 이루며 앞선 목적어들(aera, aequor)을 지배한다. 생성문법적으로 이 현재 시제 동사는 능동태로서 주어인 형제들로부터 대기와 바다라는 목적어구로의 힘의 전달(action)을 통사적으로 실현하며, 생생한 현장감을 부여한다.",
+        "background": "turbo는 질서 있던 상태를 소용돌이치게 만들고 혼란에 빠뜨리는 동사로, 바람의 신들이 대기와 바다를 무참히 휘저어 놓는 파괴적 행위를 묘사한다. 평화로운 자연의 상태가 신들의 싸움으로 인해 순식간에 아수라장이 되는 과정을 생생하게 전달한다. 이 동사는 오비디우스의 역동적인 자연 묘사의 정점을 이룬다.",
+        "etymology": "① 라틴어 명사 turba(군중, 소동)에서 파생된 동사형이다. ② 동계어로 그리스어 τύρβη(혼란, 소동) 또는 선그리스어 기층 어휘와의 연관성이 제기된다. ③ 명사에서 동사로의 품사 파생 과정을 거쳐 '소동을 일으키다'라는 의미장으로 정착했다. ④ 현대 영어의 turbid(탁한), turbulent(격동하는), turbine 및 로망스어군의 관련 어휘에 그 어원의 흔적이 뚜렷이 남아 있다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG f-구조에서 et는 두 개의 절(turbant와 eunt)을 대등하게 연결하는 접속사(coordinating conjunction) 기능을 수행한다. c-구조상 절과 절 사이에 위치하여 통사적 병렬 관계를 형성한다. 생성문법적으로 이 접속사는 두 개의 TP(절)를 대등하게 병합(merge)하는 상위 접속 핵으로 작용하며, 서사의 연속적인 동작들을 자연스럽게 묶어준다.",
+        "background": "대기와 바다를 어지럽히는 행위와 그들 형제가 직접 전투로 나아가는 행동을 인과적·시간적으로 연결해 주는 접속사다. 바람의 신들이 주변 환경을 혼란에 빠뜨린 데 이어, 마침내 그들 자신들까지 본격적인 싸움에 돌입하는 서사적 전환을 매끄럽게 이끈다. 이 단어는 문장 간의 흐름을 긴밀하게 조율하는 핵심 연결고리다.",
+        "etymology": "① PIE 재구형 *eti('넘어서, 그리고')에서 기원한다. ② 동계어로 산스크리트어 áti, 그리스어 ἔτι가 있다. ③ 고대 인도유럽어의 부사적 기원에서 접속사로 기능이 전이되었다. ④ 현대 로망스어군의 접속사 형태에 그 유산이 남아 있다."
+      },
+      {
+        "g": "eunt",
+        "pos": "동사",
+        "lemma": "eo, ire, ii (ivi), itus",
+        "parse": "pres. act. ind. 3rd pers. pl.",
+        "principalParts": [
+          "eo",
+          "ire",
+          "ii",
+          "itus"
+        ],
+        "gloss_kr": "나아간다, 간다",
+        "gloss_en": "go, proceed",
+        "syntax": "LFG f-구조에서 eunt는 두 번째 절의 서술어(PRED) 기능을 수행하며, 주어 fratres와 수(pl.) 및 인칭(3rd)의 격일치를 이룬다. c-구조상 [TP [T' [V eunt]]] 구조를 형성하여 문장의 완결된 통사적 단위를 이룬다. 생성문법적으로 이 불규칙 동사는 이동(movement)을 나타내는 비대격적 또는 비전이적(intransitive) 술어로 작용하며, 전치사구 in proelia로의 방향성 이동을 통사적으로 투사한다.",
+        "background": "eo는 단순한 이동을 넘어 목적지를 향해 결연하게 나아가는 행위를 뜻하며, 여기서는 바람의 신들(형제들)이 서로를 향해 전면적인 전투에 돌입하는 긴장감 넘치는 상황을 묘사한다. 자연의 기상 악화가 단순한 무작위적 재앙이 아니라 신화 속 형제들 간의 의지적인 싸움임을 보여준다. 이 동사는 이 행의 대단원을 강렬하게 마무리한다.",
+        "etymology": "① PIE 재구형 *ei-('가다')에서 기원하는 매우 오래된 기초 동사다. ② 동계어로 산스크리트어 éti(그가 간다), 그리스어 εἶμι(내가 간다), 고대 교회 슬라브어 iti(가다)가 있다. ③ 인도유럽어족 전반에 걸쳐 불규칙 활용 패러다임을 유지하며 이동의 기본 어원을 보존했다. ④ 현대 영어의 exit, initial, ambient 및 로망스어군의 관련 동사 어형 속에 그 어원의 흔적이 깊이 박혀 있다."
+      },
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "prep. c. acc.",
+        "gloss_kr": "~로, 안으로",
+        "gloss_en": "into, to",
+        "syntax": "LFG f-구조에서 in은 전치사구의 PRED 기능을 수행하며, 대격 명사 proelia를 지배하여 방향성(direction)의 의미역을 할당한다. c-구조상 [PP [P in] [NP proelia]] 구조를 이루어 동사 eunt의 방향 부사어구(ADJUNCT)로 기능한다. 생성문법적으로 이 전치사는 지배 이론에 따라 후행하는 명사구에 대격(accusative)을 부여하며, 이동의 종착점을 통사적으로 확정한다.",
+        "background": "여기서 전치사 in은 단순한 위치가 아니라 바람의 신들이 전투라는 소용돌이 속으로 직접 뛰어드는 역동적인 방향 전환을 나타낸다. 형제간의 갈등이 마침내 물리적 충돌과 전쟁이라는 극단적인 국면으로 비화함을 보여주는 공간적 도약이다. 이 전치사는 서사의 긴장감을 최고조로 끌어올리는 통사적 장치다.",
+        "etymology": "① PIE 재구형 *en('안에, ~에')에서 기원한다. ② 동계어로 그리스어 ἐν(안에), 산스크리트어 ántar(안에, 사이에), 영어 in이 있다. ③ 라틴어 내부에서 방향성을 나타내는 대격 지배와 위치를 나타내는 탈격 지배의 두 가지 통사적 용법으로 분화되었다. ④ 현대 영어의 in, into 및 로망스어군의 전치사 형태에 그 어원의 흔적이 온전히 남아 있다."
+      },
+      {
+        "g": "proelia",
+        "pos": "명사",
+        "lemma": "proelium, -i, n.",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "전투로, 싸움으로",
+        "gloss_en": "battles, combats",
+        "syntax": "LFG f-구조에서 proelia는 전치사 in의 목적어로서 전치사구 내부의 PRED 논항을 충족하며, 방향 및 결과의 의미역을 갖는다. c-구조상 [PP [P in] [NP proelia]]의 통사적 구조를 이루며 동사 eunt의 종착 부사어구로 기능한다. 생성문법적으로 중성 명사의 복수 대격형으로 실현되며, 전치사와의 격 지배 관계를 통해 바람의 신들이 벌이는 거대한 투쟁의 성격을 명확히 규정한다.",
+        "background": "proelium은 군대 간의 본격적인 전투나 치열한 싸움을 뜻하며, 여기서는 자연의 사대 원소를 관장하는 바람의 신들(보레아스, 제피로스 등 아스트라에우스의 아들들)이 서로 벌이는 격렬한 격돌을 비유한다. 자연의 횡포와 기상 이변을 형제간의 피비린내 나는 전쟁으로 의인화하여 신화적 서사의 다채로움을 더한다. 이 단어는 이 구절의 대미를 장식하며 자연의 폭력을 가장 극적인 언어로 승화시킨다.",
+        "etymology": "① 라틴어 내부의 고유 어원 또는 초기 이탈리아어파의 군사 용어에서 기원한 것으로 추정되며, 어원적 기원은 학설상 논쟁적이다. ② 직접적인 동계어는 타 이탈리아어파 방언의 유사 전투 관련 명사에서 찾을 수 있다. ③ 고대 로마의 군사 문화 속에서 '전투, 격돌'을 뜻하는 2변화 중성 명사로 고정되었다. ④ 현대 로망스어군의 관련 어휘 및 문학적 인용구 속에 그 명맥이 드문드문 남아 있다."
+      },
+      {
+        "g": "fratres",
+        "pos": "명사",
+        "lemma": "frater, fratris, m.",
+        "parse": "pl. nom. m.",
+        "gloss_kr": "형제들이",
+        "gloss_en": "brothers",
+        "syntax": "LFG f-구조에서 fratres는 두 번째 절의 주어(SUBJ) 기능을 수행하며, 서술어 eunt와 수(pl.) 및 인칭(3rd)의 격일치를 이룬다. c-구조상 [Spec, IP] 위치에 병합되어 문장의 주체 역할을 한다. 생성문법적으로 이 3변화 남성 복수 주격 명사는 비대격 또는 비전이 동사 eunt의 외적 주어 항으로 투사되며, 바람의 신들이 서로 혈육 간임에도 불구하고 전투에 나서는 비극적 아이러니를 통사적으로 완성한다.",
+        "background": "fratres는 아스트라에우스의 아들들인 바람의 신들(서로 형제지간인 아네모이)이 서로를 상대로 무자비한 싸움을 벌이고 있음을 강조한다. 혈육인 형제들이 자연의 폭풍 속에서 서로 반목하고 격돌하는 모습은 신화 속 혼란과 파괴의 비극성을 상징적으로 보여준다. 이 단어는 이 구절의 마지막을 장식하며 오비디우스가 그린 자연 대격변의 주체들을 명확히 각인시킨다.",
+        "etymology": "① PIE 재구형 *bhréh₂tēr('형제')에서 기원한다. ② 동계어로 산스크리트어 bhrátar-(형제), 그리스어 φράτηr(동포, 혈족), 영어 brother, 고대 슬라브어 bratrŭ가 있다. ③ 인도유럽조어의 친족 호칭 어휘로서 음운론적 법칙(그림 법칙 등)을 충실히 따르며 라틴어 3변화 남성 명사로 정착했다. ④ 현대 영어의 brother, fraternity 및 로망스어군(스페인어 fraterno 등)의 관련 어휘에 그 어원의 흔적이 완벽하게 보존되어 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 15.546",
+    "trans": "그리하여 대지의 어머니는 자신의 힘을 사용하여, 프뤼기아 배의 타르 칠한 밧줄을 끊어버리고,",
+    "meter": "‒ ⏑ ⏑ | ‒ ‒ | ‒ ‖ ⏑ ⏑ | ‒ ⏑ ⏑ | ‒ ⏑ ⏑ | ‒ ‒ (penthemimeral caesura)",
+    "words": [
+      {
+        "g": "E",
+        "pos": "praepositio",
+        "lemma": "ex, e",
+        "parse": "prep. c. abl.",
+        "gloss_kr": "~로부터",
+        "gloss_en": "from, out of",
+        "syntax": "LFG f-구조에서 e는 탈격 명사구 quibus를 지배하는 전치사적 부사구의 핵으로 [OBL [PRED 'ex', OBJ quibus]] 자질을 형성한다. 통사적으로 출발점 및 기원(source)의 의미장을 부여하는 전치사로 작용한다.",
+        "background": "키벨레 여신이 자신의 거룩한 힘을 발휘하여 이다산의 소나무로 만든 아에네아스의 함선을 구출하는 국면의 시작을 알린다.",
+        "etymology": "PIE *eghs (밖으로, e급)에서 유래하며, 그리스어 *ἐξ/ἐκ*과 동계이다. de Vaan(EDL)은 이 형태가 모음 앞에서 *ex*로, 자음 앞에서 *e*로 음운론적 제약에 따라 분화되었음을 설명한다. 현대 로망스어군에서는 직접 반사형이 쇠퇴하고 라틴어 *ex* 계통의 차용어적 흔적이나 파생어구로 남았다."
+      },
+      {
+        "g": "quibus",
+        "pos": "pronomen",
+        "lemma": "qui, quae, quod",
+        "parse": "pl. abl. f.",
+        "gloss_kr": "그러한 힘들을",
+        "gloss_en": "which",
+        "syntax": "LFG f-구조에서 quibus는 관계대명사의 소급적 용법(connective relative)으로 전치사 e의 객체(OBJ) 논항 기능을 수행하며, [PRED 'pro', CASE abl, NUM pl] 자질을 갖는다. 통사적으로 선행 문장의 속성을 받아 전치사구 내에서 보어 자리를 차지한다.",
+        "background": "대지의 어머니가 지닌 신성하고 거대한 무한의 힘을 지시하는 관계대명사적 지시 표현이다.",
+        "etymology": "PIE 지시/관계대명사 어근 *kʷo-/*kʷi- (e급)에서 유래하며, 그리스어 *τίς/ὅστις* 및 산스크리트어 *kás*와 동계이다. de Vaan(EDL)은 라틴어 대명사 패러다임의 복수 탈격형 발달 과정을 입증한다."
+      },
+      {
+        "g": "alma",
+        "pos": "adjectivum",
+        "lemma": "almus, -a, -um",
+        "parse": "nom. f. sg.",
+        "gloss_kr": "자애로운, 영양을 주는",
+        "gloss_en": "nourishing, nurturing, kindly",
+        "syntax": "LFG 관점에서 alma는 명사 parens를 수식하는 형용사 수식어로, [SPEC [PRED 'almus']] 구조를 취하며 성·수·격 일치 제약에 따라 nom. f. sg. 자질이 명사 parens와 공유된다.",
+        "background": "모든 생명의 어머니이자 대지의 여신인 키벨레(Cybele)의 양육적이고 자애로운 속성을 부각하는 수식어이다.",
+        "etymology": "PIE *h₂el- (자라다, 영양을 공급하다, e급, 후두음 *h₂ 포함)에서 유래한 동사 *alo*에서 파생되었다. de Vaan(EDL)은 *almus*가 이탈리아어군 내부에서 신성한 존재나 어머니를 수식하는 고유한 형용사로 전문화되었음을 밝힌다. 현대 영어의 *alimony* 등에 어원적 흔적이 남아 있다."
+      },
+      {
+        "g": "parens",
+        "pos": "nomen",
+        "lemma": "parens, parentis, m. et f.",
+        "parse": "nom. f. sg.",
+        "gloss_kr": "어머니, 부모",
+        "gloss_en": "parent, mother",
+        "syntax": "LFG f-구조에서 parens는 주어(SUBJ) 기능을 수행하며, [PRED 'parens', NUM sg, CASE nom] 행렬로 나타낸다. 생성문법적으로 [Spec, TP] 위치를 점하며 동사 usa와 주어-동사 일치를 이룬다.",
+        "background": "트로이아의 함선을 보호하는 대지의 여신 키벨레(Magna Mater)를 직접 가리키는 호칭이다.",
+        "etymology": "PIE *perh₃- (낳다, 생산하다, 영급 어간에 후두음 *h₃ 포함)에서 유래한 동사 *pario*의 현재 분사형이 명사화된 것이다. de Vaan(EDL)은 그리스어 *περείν* 및 관련 동계어와의 음운 대응을 설명한다. 현대 영어의 *parent* 및 로망스어군 *pariente*에 직계로 보존된다."
+      },
+      {
+        "g": "unius",
+        "pos": "adjectivum",
+        "lemma": "unus, -a, -um",
+        "parse": "sg. gen. f.",
+        "gloss_kr": "오직 하나의, 그 고유한",
+        "gloss_en": "one's own, a single",
+        "syntax": "LFG f-구조에서 unius는 명사 viribus를 한정하는 소유격 수식어(SPEC) 기능을 하며, [SPEC [PRED 'unus', CASE gen]] 자질을 이룬다. 통사적으로 수단과 힘의 유일성을 강조한다.",
+        "background": "여신이 지닌 절대적이고 단일한 전능한 힘의 집중을 강조하는 수식어이다.",
+        "etymology": "PIE *oinos (하나의, 오직 하나의, e급)에서 유래하며, 산스크리트어 *éka-* 및 영어 *one*과 동계이다. de Vaan(EDL)은 라틴어 특유의 대명사격 격변화(-ius) 발달을 상세히 기술한다. 현대 로망스어(스페인어 *uno*, 포르투갈어 *um*)와 영어 *unit*, *unique*에 그 흔적이 남는다."
+      },
+      {
+        "g": "viribus",
+        "pos": "nomen",
+        "lemma": "vis, vis, f.",
+        "parse": "pl. abl. f.",
+        "gloss_kr": "힘으로, 권능으로",
+        "gloss_en": "with strength, with forces",
+        "syntax": "LFG에서 viribus는 탈격 명사구로서 수단(Instrument)을 나타내는 OBL_INST 기능을 하며, [OBL_INST [PRED 'vis', CASE abl]]로 처리된다. 통사적으로 분사 usa의 행위 수단 논항이다.",
+        "background": "여신이 함선의 밧줄을 끊고 배들을 침몰시킬 때 사용하는 신성한 권능을 가리킨다.",
+        "etymology": "PIE *wihₓ- (힘, 기운, e급, 후두음 *hₓ 포함)에서 유래하며, 산스크리트어 *víṣ-*, 리투아니아어 *výas*와 동계이다. de Vaan(EDL)은 불규칙 명사 3변화 패러다임의 형성과정을 설명한다. 현대 영어의 *violate*, *violence*에 어원적 뿌리가 닿아 있다."
+      },
+      {
+        "g": "usa",
+        "pos": "participium",
+        "lemma": "utor, uti, usus sum",
+        "parse": "perf. dep. part. nom. f. sg.",
+        "principalParts": "utor – uti – usus sum – (없음)",
+        "gloss_kr": "사용한, 힘입은",
+        "gloss_en": "having used, employing",
+        "syntax": "LFG f-구조에서 usa는 탈격 지배 탈형동사(deponent verb)의 분사 헤드로서 주어 parens를 수식하는 ADJUNCT 기능을 하며, [ADJUNCT [PRED 'utor', SUBJ parens, OBJ viribus]] 자질을 형성한다.",
+        "background": "여신이 자신의 권능을 도구 삼아 적극적으로 개입하는 주체적 행동을 묘사한다.",
+        "etymology": "PIE *o(u)t- (돕다, 유용하다) 계열 또는 이탈리아어군 고유의 어근에서 유래한다. OLD는 *oev-/*ut-* 계열의 명사/동사 파생으로 본다. 현대 영어의 *use*, *utility* 및 로망스어군(*usar*)에 그 흔적이 뚜렷이 남는다."
+      },
+      {
+        "g": "stuppea",
+        "pos": "adjectivum",
+        "lemma": "stuppeus, -a, -um",
+        "parse": "nom. n. pl. (또는 acc. n. pl., retinacula 수식)",
+        "gloss_kr": "마(麻)로 만든, 삼베의",
+        "gloss_en": "made of tow, hempen",
+        "syntax": "LFG에서 stuppea는 목적어 명사구 retinacula를 수식하는 형용사 수식어로, [SPEC [PRED 'stuppeus']] 자질을 띤다. 통사적으로 성·수·격 일치 제약에 따라 중성 복수 대격 형태로 명사와 일치한다.",
+        "background": "고대 함선들을 단단히 묶어두던 삼(hemp)으로 꼰 튼튼한 밧줄의 재질을 구체적으로 명시한다.",
+        "etymology": "PIE 차용어 또는 그리스어 *στύππη*('대마의 거친 섬유')에서 유래한 라틴어 파생어이다. de Vaan(EDL)은 그리스어로부터의 차용 과정 및 라틴어 내부 접미사 *-eus*의 결합을 설명한다. 현대 영어의 *stupa* 등에 학술적 흔적이 남는다."
+      },
+      {
+        "g": "praerupit",
+        "pos": "verbum",
+        "lemma": "praerumpo, -ere, -rupi, -ruptus",
+        "parse": "perf. act. ind. 3rd pers. sg.",
+        "principalParts": "praerumpo – praerumpere – praerupi – praeruptus",
+        "gloss_kr": "끊어버렸다, 찢어 끊었다",
+        "gloss_en": "breaks off, snaps violently",
+        "syntax": "LFG f-구조에서 praerupit은 PRED이며, [PRED 'praerumpo<SUBJ,OBJ>', SUBJ [PRED 'parens'], OBJ [PRED 'retinacula']] 형태의 2항 타동사 논항 구조를 지배한다. 생성문법적으로 완료 시제 정동사이다.",
+        "background": "여신이 강력한 힘으로 함선의 굵은 밧줄들을 단숨에 끊어버리는 파괴적인 순간을 포착한다.",
+        "etymology": "OLD는 *prae-* (앞에, 미리)와 *rumpo* (깨뜨리다, 찢다, PIE *reup- 또는 *rump-, e급)의 합성어로 분석한다. 이탈리아어군 내부의 접두사 결합형태로 음운 변화를 겪었다. 현대 영어의 *rupture*, *interrupt*에 직계로 어원이 이어진다."
+      },
+      {
+        "g": "Phrygiae",
+        "pos": "adjectivum",
+        "lemma": "Phrygius, -a, -um",
+        "parse": "sg. gen. f.",
+        "gloss_kr": "프뤼기아의, 트로이아의",
+        "gloss_en": "Phrygian, Trojan",
+        "syntax": "LFG f-구조에서 Phrygiae는 명사 puppis를 수식하는 소유격 한정어(SPEC) 기능을 하며, [SPEC [PRED 'Phrygius', CASE gen]] 자질을 이룬다. 통사적으로 명사와 성·수·격 일치를 이룬다.",
+        "background": "아이네아스를 따르는 트로이아인들(프뤼기아인들)의 배라는 점에서 민족적·신화적 정체성을 드러낸다.",
+        "etymology": "그리스어 *Φρύγιος*에서 유래한 고유명사 형용사이다. 소아시아 프뤼기아 지역명에서 기원하며, PIE 기층 민족명 계열로 분류된다. 현대 지명 및 역사학 용어에 흔적이 남는다."
+      },
+      {
+        "g": "retinacula",
+        "pos": "nomen",
+        "lemma": "retinaculum, -i, n.",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "밧줄들을, 닻줄들을",
+        "gloss_en": "hawsers, mooring ropes",
+        "syntax": "LFG f-구조에서 retinacula는 타동사 praerupit의 OBJ 논항이며, [PRED 'retinaculum', CASE acc, θ-ROLE PATIENT] 자질을 갖는다. 통사적으로 대격 지배를 받는다.",
+        "background": "항구에 정박해 있던 배들을 붙잡아 매어두던 굵은 밧줄들을 가리킨다.",
+        "etymology": "de Vaan(EDL)은 *retineo* (붙잡아두다, *re- + teneo*, PIE *ten- 당기다, 늘이다)에서 파생된 도구 명사로 분석하며, 명사 파생 접미사 *-culum*이 결합하였다. 현대 영어의 *retain*, *retinue*에 그 어원이 깊게 박혀 있다."
+      },
+      {
+        "g": "puppis",
+        "pos": "nomen",
+        "lemma": "puppis, -is, f.",
+        "parse": "sg. gen. f. (또는 acc. pl.)",
+        "gloss_kr": "배의 (선미의)",
+        "gloss_en": "of the stern, of the ship",
+        "syntax": "LFG f-구조에서 puppis는 명사 retinacula를 한정하는 소유격 수식어(SPEC) 기능을 수행하며, [SPEC [PRED 'puppis', CASE gen]] 자질 행렬을 구성한다.",
+        "background": "트로이아 함선의 선미나 선체 전체를 상징적으로 나타내며, 바다로 향하는 배의 핵심부를 가리킨다.",
+        "etymology": "de Vaan(EDL)은 그 어원이 불확실하다고 밝히며, 지중해 기층 언어 유래설 또는 신체 부위 명칭에서의 의미 전이 가능성을 언급한다. PIE 직접 재구는 논쟁적이다. 현대 영어의 *pope* (어원적 연관성 논란 존재) 및 로망스어군 일부 해양 용어에 흔적이 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 15.547",
+    "trans": "배들을 물결 위로 기울게 하고는 한가운데 바다 속으로 가라앉힙니다.",
+    "meter": "‒ ⏑ ⏑ | ‒ ‒ | ‒ ‖ ⏑ ⏑ | ‒ ⏑ ⏑ | ‒ ⏑ ⏑ | ‒ ‒ (penthemimeral caesura)",
+    "words": [
+      {
+        "g": "fert",
+        "pos": "verbum",
+        "lemma": "fero, ferre, tuli, latus",
+        "parse": "pres. act. ind. 3rd pers. sg.",
+        "principalParts": "fero – ferre – tuli – latus",
+        "gloss_kr": "이끈다, 향하게 한다",
+        "gloss_en": "brings, bears, carries",
+        "syntax": "LFG f-구조에서 fert는 PRED이며, [PRED 'fero<SUBJ,OBJ,OBL>', SUBJ [PRED 'parens'], OBJ [PRED 'rates']] 형태의 2항 타동사 논항 구조를 지배한다. 생성문법적으로 V-to-T 이동이 일어난 현재시제 정동사이다.",
+        "background": "여신이 밧줄이 끊어진 배들을 물결 위로 기울어지게 만들어 침몰시키는 연속적인 행동을 주도한다.",
+        "etymology": "PIE *bher- (나르다, 지참하다, e급)에서 유래하며, 산스크리트어 *bhárati* 및 영어 *bear*와 동계이다. de Vaan(EDL)은 이 라틴어 불규칙 동사의 고대 인도유럽어형 계승 양상을 상세히 다룬다. 현대 영어의 *confer*, *transfer* 등에 그 어원이 완벽히 보존된다."
+      },
+      {
+        "g": "que",
+        "pos": "coniunctio",
+        "lemma": "-que",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG에서 두 개의 술부(fert와 mergit)를 긴밀하게 연결하는 후치 접속사(enclitic conjunction) 핵으로 작용한다. 생성문법적으로는 [ConjP [VP fert] [Conj' -que [VP mergit]]] 구조를 형성한다.",
+        "background": "배를 기울게 하는 행위와 바다 밑으로 가라앉히는 행위를 시간적 간격 없이 밀접하게 결합시킨다.",
+        "etymology": "PIE *kʷe (그리고, e급)에서 유래하며, 그리스어 *τε* 및 산스크리트어 *ca*와 동계이다. de Vaan(EDL)은 이 후치사가 이탈리아어군 전반에서 고착된 문법 형태소임을 밝힌다. 로망스어군으로 이어지는 과정에서 직접 반사형은 소실되었다."
+      },
+      {
+        "g": "rates",
+        "pos": "nomen",
+        "lemma": "ratis, -is, f.",
+        "parse": "pl. acc. f.",
+        "gloss_kr": "배들을",
+        "gloss_en": "rafts, ships",
+        "syntax": "LFG f-구조에서 rates는 타동사 fert 및 mergit의 공통 OBJ 논항이며, [PRED 'ratis', CASE acc, θ-ROLE PATIENT] 자질을 갖는다. 통사적으로 동사들의 목적어 지배를 받는다.",
+        "background": "트로이아인들이 타고 온 함선들을 시적으로 이르는 말로, 여신의 신성한 분노와 권능 앞에 무력하게 파괴되는 대상이다.",
+        "etymology": "de Vaan(EDL)은 PIE *reh₂- 또는 *rath- (노 저어 가다, 깎아 만들다, e급, 후두음 *h₂ 포함)에서 유래한 명사로 본다. 산스크리트어 *rátʰa-*('전차')와 동계이다. 현대 영어의 *rate* 등과는 어원적으로 갈라지며, 로망스어 일부 방언적 흔적이 있다."
+      },
+      {
+        "g": "pronas",
+        "pos": "adjectivum",
+        "lemma": "pronus, -a, -um",
+        "parse": "pl. acc. f.",
+        "gloss_kr": "앞으로 고꾸라진, 기울어진",
+        "gloss_en": "leaning forward, stooping, overturned",
+        "syntax": "LFG 상에서 pronas는 목적어 명사구 rates를 수식하는 목적격 보어 또는 비제한적 수식어 자질 구조 [ADJ [PRED 'pronus']]를 구성한다. 통사적으로 명사와 성·수·격 일치를 이룬다.",
+        "background": "배들이 선수를 박고 앞으로 고꾸라지듯 수면 아래로 기울어지는 위태롭고 파멸적인 자세를 시각적으로 묘사한다.",
+        "etymology": "PIE *pro- (앞으로, e급)에서 파생된 전치사적 형용사로, 산스크리트어 *prā́* 및 그리스어 *πρό*와 동계이다. de Vaan(EDL)은 공간적 방향성을 나타내는 이 형용사의 파생사를 설명한다. 현대 영어의 *prone*에 그 어원이 직계로 남는다."
+      },
+      {
+        "g": "medio",
+        "pos": "adjectivum",
+        "lemma": "medius, -a, -um",
+        "parse": "sg. abl. n.",
+        "gloss_kr": "한가운데의",
+        "gloss_en": "in the middle of, central",
+        "syntax": "LFG에서 medio는 전치사 sub의 탈격 목적어 aequore를 수식하는 형용사 수식어로, [SPEC [PRED 'medius', CASE abl]] 자질을 구성한다. 통사적으로 명사와 성·수·격 일치를 이룬다.",
+        "background": "바다의 한복판 깊은 곳이라는 공간적 중심성을 강조하여 침몰의 완벽함을 부각한다.",
+        "etymology": "PIE *medhyo- (중간의, e급)에서 유래하며, 산스크리트어 *madhyá-* 및 그리스어 *μέσος*와 동계이다. de Vaan(EDL)은 이탈리아어군 내의 공간 지칭 형용사 발달을 규명한다. 현대 영어의 *medium*, *middle*에 그 흔적이 완벽히 보존된다."
+      },
+      {
+        "g": "que",
+        "pos": "coniunctio",
+        "lemma": "-que",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG에서 전치사구 내부의 수식 관계나 구절 연결을 보조하는 후치 접속사 핵으로 작용한다.",
+        "background": "넓고 깊은 바다와 그 한가운데라는 속성을 매끄럽게 연결한다.",
+        "etymology": "PIE *kʷe에서 유래한 후치 접속사이다. (상기 que 항목 참조)"
+      },
+      {
+        "g": "sub",
+        "pos": "praepositio",
+        "lemma": "sub",
+        "parse": "prep. c. abl.",
+        "gloss_kr": "∼ 아래에, ∼ 속에",
+        "gloss_en": "under, beneath",
+        "syntax": "LFG f-구조에서 sub은 탈격 명사구 aequore를 지배하는 전치사적 부사구의 핵으로 [OBL [PRED 'sub', OBJ aequore]] 자질을 형성한다. 통사적으로 처소적 위치를 지정한다.",
+        "background": "배들이 바닷물 수면 밑으로 완전히 잠겨 들어가는 공간적 이동을 나타낸다.",
+        "etymology": "PIE *upo (아래에, e급)에서 유래하며, 산스크리트어 *úpa* 및 그리스어 *ὑπό*와 동계이다. de Vaan(EDL)은 로마어군에서 이 전치사가 정착한 음운적 변천을 다룬다. 현대 영어의 *sub-* 접두사 및 로망스어에 널리 흔적이 남는다."
+      },
+      {
+        "g": "aequore",
+        "pos": "nomen",
+        "lemma": "aequor, -oris, n.",
+        "parse": "sg. abl. n.",
+        "gloss_kr": "바다 위로, 수면으로",
+        "gloss_en": "on the surface of the sea, sea",
+        "syntax": "LFG에서 aequore는 전치사 sub의 대행 논항(OBJ)이며, [PRED 'aequor', CASE abl, NUM sg] 자질을 갖는다. 통사적으로 전치사구 내부의 보어 자리를 차지한다.",
+        "background": "거칠거나 평평하게 펼쳐진 바다의 수면을 시적으로 일컫는 말로, 배가 잠기는 무대가 된다.",
+        "etymology": "de Vaan(EDL)은 *aequus* (평평한, 균등한)에서 파생된 중성 명사로 본다. PIE *aikw- (평평하다)에 기원하며, 명사 파생 접미사가 결합하였다. 현대 로망스어권 문어 및 시적 어휘에 흔적이 남는다."
+      },
+      {
+        "g": "mergit",
+        "pos": "verbum",
+        "lemma": "mergo, -ere, mersi, mersus",
+        "parse": "pres. act. ind. 3rd pers. sg.",
+        "principalParts": "mergo – mergere – mersi – mersus",
+        "gloss_kr": "가라앉힌다, 물에 빠뜨린다",
+        "gloss_en": "plunges, sinks",
+        "syntax": "LFG f-구조에서 mergit은 PRED이며, [PRED 'mergo<SUBJ,OBJ>', SUBJ [PRED 'parens'], OBJ [PRED 'rates']] 형태의 2항 타동사 논항 구조를 지배한다. 생성문법적으로 V-to-T 이동이 일어난 현재시제 정동사이다.",
+        "background": "여신의 권능으로 트로이아 함선들이 심해 속으로 완전히 수몰되는 파멸적 결말을 확정한다.",
+        "etymology": "PIE *mezg- (잠기다, 빠지다, e급)에서 유래하며, 산스크리트어 *mójati*('가라앉다')와 동계이다. de Vaan(EDL)은 이탈리아어군 내부의 완료형 -s- 형성과정을 규명한다. 현대 영어의 *merge*, *submerge* 및 로망스어군(*sumergir*)에 그 어원이 살아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 15.548",
+    "trans": "단단한 참나무가 부드러워지고 목재가 살아 있는 살과 피의 몸으로 변하면서,",
+    "meter": "‒ ⏑ ⏑ | ‒ ‒ | ‒ ‖ ⏑ ⏑ | ‒ ⏑ ⏑ | ‒ ⏑ ⏑ | ‒ ‒ (penthemimeral caesura)",
+    "words": [
+      {
+        "g": "robore",
+        "pos": "nomen",
+        "lemma": "robur, -oris, n.",
+        "parse": "sg. abl. n.",
+        "gloss_kr": "단단한 참나무가, 강인함이",
+        "gloss_en": "with oak wood, with strength",
+        "syntax": "LFG에서 robore는 독립탈격구문(Ablative Absolute)의 주어 헤드로 기능하며, [ADJUNCT [PRED 'robur', SUBJ robore, CASE abl]] 구조를 형성한다. 생성문법적으로 수동 분사 mollito의 탈격 주어이다.",
+        "background": "배를 건조했던 단단한 참나무 목재가 신성한 변신을 겪으며 물질적 속성을 잃어가는 출발점이다.",
+        "etymology": "PIE *reubh- 또는 관련 붉고 단단한 나무/힘을 뜻하는 어근에서 유래한다. OLD는 강인함과 참나무를 뜻하는 의미의 연동을 설명한다. 현대 영어의 *robust*에 그 어원이 직계로 보존된다."
+      },
+      {
+        "g": "mollito",
+        "pos": "participium",
+        "lemma": "mollio, -ire, -ivi, -itus",
+        "parse": "perf. pass. part. abl. n. sg.",
+        "principalParts": "mollio – mollire – mollivi – mollitus",
+        "gloss_kr": "부드러워진, 연해진",
+        "gloss_en": "softened, made soft",
+        "syntax": "LFG f-구조에서 mollito는 독립탈격구문의 분사 헤드로 [ADJUNCT [PRED 'mollio', SUBJ robore]] 자질을 구성한다. 통사적으로 탈격 명사구 robore와 성·수·격 일치를 이룬다.",
+        "background": "배의 딱딱한 목질이 여신의 마법으로 인해 생명체의 살결처럼 부드럽게 변하는 기적의 순간을 나타낸다.",
+        "etymology": "PIE *meldh- 또는 *mel- (부드러운, 약한, e급)에서 유래한 형용사 *mollis*에서 파생된 동사이다. 산스크리트어 *mṛdú-* 및 그리스어 *μαλακός*와 동계이다. 현대 영어의 *mollify*, *emollient*에 어원이 남는다."
+      },
+      {
+        "g": "ligno",
+        "pos": "nomen",
+        "lemma": "lignum, -i, n.",
+        "parse": "sg. abl. n.",
+        "gloss_kr": "목재가, 나무가",
+        "gloss_en": "with wood, timber",
+        "syntax": "LFG에서 ligno는 두 번째 독립탈격구문의 주어 헤드로 기능하며, [ADJUNCT [PRED 'lignum', SUBJ ligno, CASE abl]] 구조를 형성한다. 생성문법적으로 수동 분사 verso의 탈격 주어이다.",
+        "background": "무생물인 목재가 생명체의 생체 조직으로 전환되는 물리적 물질의 근본적 변형을 가리킨다.",
+        "etymology": "de Vaan(EDL)은 동사 *lego* (모으다, 줍다)와 연관된 땔나무를 뜻하는 파생 명사로 본다. PIE *leg- (모으다)에 기원한다. 현대 로망스어(스페인어 *leño*, 포르투갈어 *lenha*) 및 영어 *ligneous*에 그 어원이 이어진다."
+      },
+      {
+        "g": "que",
+        "pos": "coniunctio",
+        "lemma": "-que",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG에서 두 개의 독립탈격구문을 유기적으로 연결하는 후치 접속사 핵으로 작용한다.",
+        "background": "나무가 부드러워지는 것과 몸으로 변하는 두 가지 변신의 양상을 동시에 묶어준다.",
+        "etymology": "PIE *kʷe에서 유래한 후치 접속사이다. (상기 que 항목 참조)"
+      },
+      {
+        "g": "in",
+        "pos": "praepositio",
+        "lemma": "in",
+        "parse": "prep. c. acc.",
+        "gloss_kr": "∼ 안으로, ∼로",
+        "gloss_en": "into",
+        "syntax": "LFG f-구조에서 in은 대격 명사구 corpora를 지배하는 전치사구의 핵으로 [OBL [PRED 'in', OBJ corpora]] 자질을 형성한다. 통사적으로 상태의 변화와 귀결(result)을 나타낸다.",
+        "background": "목재가 나무의 형태를 벗어나 완전히 새로운 생명체의 육신이라는 영역으로 편입되는 변형의 방향성을 제시한다.",
+        "etymology": "PIE *en에서 유래한 전치사로, 라틴어에서 대격과 결합하여 방향 전환을 나타내도록 분화했다. (상기 sub 항목 내 인용 참조)"
+      },
+      {
+        "g": "corpora",
+        "pos": "nomen",
+        "lemma": "corpus, -oris, n.",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "몸들로, 육체들로",
+        "gloss_en": "bodies, flesh",
+        "syntax": "LFG f-구조에서 corpora는 전치사 in의 대행 목적어(OBJ) 논항이며, [PRED 'corpus', CASE acc, θ-ROLE GOAL] 자질을 갖는다. 통사적으로 전치사구 내부의 보어 자리를 차지한다.",
+        "background": "무생물의 배가 변하여 갖추게 된 살아있는 생명체의 유기적 육신을 가리킨다.",
+        "etymology": "de Vaan(EDL)은 PIE *krep- (몸, 체구, e급) 계열에서 유래한 명사로 본다. 게르만어파의 동계어와 연관된다. 현대 영어의 *corpse*, *corporation* 및 로망스어군(*cuerpo*, *corpo*)에 그 어원이 뚜렷이 살아 있다."
+      },
+      {
+        "g": "verso",
+        "pos": "participium",
+        "lemma": "verto, -ere, verti, versus",
+        "parse": "perf. pass. part. abl. n. sg.",
+        "principalParts": "verto – vertere – verti – versus",
+        "gloss_kr": "변해진, 뒤바뀐",
+        "gloss_en": "turned, changed, transformed",
+        "syntax": "LFG f-구조에서 verso는 독립탈격구문의 분사 헤드로 [ADJUNCT [PRED 'verto', SUBJ ligno]] 자질을 구성한다. 통사적으로 탈격 명사구 ligno와 성·수·격 일치를 이룬다.",
+        "background": "나무라는 물질이 본래의 성질을 상실하고 전혀 다른 생물학적 형태로 뒤바뀌는 변신의 본질을 명시한다.",
+        "etymology": "PIE *wert- (돌다, 회전하다, e급)에서 유래하며, 산스크리트어 *vártate*('구르다') 및 영어 *ward*와 동계이다. de Vaan(EDL)은 라틴어 동사 파생사를 상세히 기술한다. 현대 영어의 *convert*, *inverse* 및 로망스어에 널리 흔적이 남는다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 15.550",
+    "trans": "머리의 형상으로 굽은 선미들이 변해갑니다.",
+    "meter": "‒ ⏑ ⏑ | ‒ ‒ | ‒ ‖ ⏑ ⏑ | ‒ ⏑ ⏑ | ‒ ⏑ ⏑ | ‒ ‒ (penthemimeral caesura)",
+    "words": [
+      {
+        "g": "in",
+        "pos": "praepositio",
+        "lemma": "in",
+        "parse": "prep. c. acc.",
+        "gloss_kr": "∼로",
+        "gloss_en": "into",
+        "syntax": "LFG f-구조에서 in은 대격 명사구 facies를 지배하는 전치사구의 핵으로 [OBL [PRED 'in', OBJ facies]] 자질을 형성한다. 통사적으로 형태의 최종 귀결점을 나타낸다.",
+        "background": "배의 선미 부분이 생명체의 얼굴과 머리 모양이라는 새로운 형태를 갖추게 되는 변형의 종착지를 가리킨다.",
+        "etymology": "PIE *en에서 유래한 전치사이다. (상기 sub 항목 내 인용 참조)"
+      },
+      {
+        "g": "capitum",
+        "pos": "nomen",
+        "lemma": "caput, -itis, n.",
+        "parse": "pl. gen. n.",
+        "gloss_kr": "머리들의, 생명체들의",
+        "gloss_en": "of heads, of living beings",
+        "syntax": "LFG f-구조에서 capitum은 명사 facies를 수식하는 소유격 한정어(SPEC) 기능을 하며, [SPEC [PRED 'caput', CASE gen]] 자질을 이룬다. 통사적으로 명사와 격 일치를 이루지 않고 소유 관계를 나타낸다.",
+        "background": "배가 사물에서 벗어나 자아와 생명을 지닌 머리(얼굴)를 지닌 존재로 탈바꿈함을 보여준다.",
+        "etymology": "PIE *kaput- (머리, 우두머리, e급)에서 유래하며, 산스크리트어 *kapā́la-*('두개골') 및 영어 *head* (고차원적 음운 대응)와 동계이다. de Vaan(EDL)은 3변화 중성명사의 특징을 설명한다. 현대 영어의 *captain*, *capital* 및 로망스어군(*cabeza*, *cabeça*)에 그 어원이 생생히 살아 있다."
+      },
+      {
+        "g": "facies",
+        "pos": "nomen",
+        "lemma": "facies, -ei, f.",
+        "parse": "pl. acc. f.",
+        "gloss_kr": "얼굴들로, 형상들로",
+        "gloss_en": "faces, forms, shapes",
+        "syntax": "LFG f-구조에서 facies는 전치사 in의 대행 목적어(OBJ) 논항이며, [PRED 'facies', CASE acc, θ-ROLE GOAL] 자질을 갖는다. 통사적으로 전치사구 내부의 보어 자리를 차지한다.",
+        "background": "배의 꼬리 부분이 단순한 목재 구조물을 넘어 생명체의 얼굴과 이목구비를 지닌 형태로 변하는 경이로운 광경을 묘사한다.",
+        "etymology": "de Vaan(EDL)은 동사 *facio* (만들다, 행하다, PIE *dhek- 놓다, 만들다)에서 파생된 5변화 명사로 분석한다. 현대 영어의 *face*, *facial* 및 로망스어군(*faz*, *faccia*)에 그 어원이 직접 연결된다."
+      },
+      {
+        "g": "puppes",
+        "pos": "nomen",
+        "lemma": "puppis, -is, f.",
+        "parse": "pl. acc. f. (여기서는 주어 또는 목적어 위치 논의이나 형태상 복수 주어/목적어)",
+        "gloss_kr": "선미들이, 배들이",
+        "gloss_en": "sterns, ships",
+        "syntax": "LFG f-구조에서 puppes는 수동태 동사 mutantur의 SUBJ 논항이며, [PRED 'puppis', CASE nom/acc, θ-ROLE THEME] 자질을 갖는다. 통사적으로 주어와 동사의 일치를 이룬다.",
+        "background": "트로이아 함선의 선미들이 변신의 종단부에서 물고기나 바다요정의 머리로 새롭게 태어나는 대미를 장식한다.",
+        "etymology": "de Vaan(EDL)에 따르면 어원이 논쟁적인 해양 용어 명사이다. (상기 puppis 항목 참조)"
+      },
+      {
+        "g": "mutantur",
+        "pos": "verbum",
+        "lemma": "muto, -are, -avi, -atus",
+        "parse": "pres. pass. ind. 3rd pers. pl.",
+        "principalParts": "muto – mutare – mutavi – mutatus",
+        "gloss_kr": "변모된다, 형상이 바뀐다",
+        "gloss_en": "are changed, are transformed",
+        "syntax": "LFG f-구조에서 mutantur는 수동태 PRED이며, [PRED 'muto<SUBJ,OBL>', SUBJ [PRED 'puppes'], OBL [PRED 'in', OBJ facies]] 자질 행렬을 구성한다. 통사적으로 수동태 주어 지배 및 전치사구 보어를 취한다.",
+        "background": "오비디우스 변신 이야기 전반을 관통하는 거대한 변모의 테마가 함선의 최후 변신 장면에서 정점에 이름을 선언한다.",
+        "etymology": "PIE *mei- (바꾸다, 교환하다, e급)에서 유래하며, 산스크리트어 *méhate* 및 그리스어 *μείβομαι*와 동계이다. de Vaan(EDL)은 라틴어 제1활용 동사로의 정착 과정을 설명한다. 현대 영어의 *mutate*, *mutual* 및 로망스어에 널리 흔적이 남는다."
+      },
+      {
+        "g": "aduncae",
+        "pos": "adjectivum",
+        "lemma": "aduncus, -a, -um",
+        "parse": "pl. nom. f.",
+        "gloss_kr": "갈고리처럼 굽은, 구부러진",
+        "gloss_en": "hooked, curved, bent inward",
+        "syntax": "LFG 상에서 aduncae는 주어 명사구 puppes를 수식하는 형용사 수식어로, [SPEC [PRED 'aduncus']] 자질을 구성한다. 통사적으로 주어와 성·수·격 일치를 이룬다.",
+        "background": "배의 선미가 둥글게 굽어 올라간 전통적 선박 구조가 마치 생명체의 굽은 뿔이나 얼굴 형태처럼 변모했음을 묘사한다.",
+        "etymology": "OLD는 *ad-* (∼을 향해)와 *uncus* (갈고리, 굽은 것, PIE *enk- 굽다)의 합성어로 분석한다. 그리스어 *ὄγκος*와 동계이다. 현대 영어의 *uncinate* 등에 어원적 흔적이 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 5.551",
+    "trans": "그리고 수영하는 다리들은 노로 변하고,",
+    "words": [
+      {
+        "g": "digitos",
+        "pos": "명사",
+        "lemma": "digitus, -i, m.",
+        "parse": "pl. acc. m.",
+        "gloss_kr": "발가락들을, 손가락들을",
+        "gloss_en": "fingers, toes",
+        "syntax": "LFG f-구조에서 digitos는 주절 동사 abeunt의 문법적 주어(SUBJ)로서 격 지배 이론에 따라 주격 처리가 요구되는 논항 위치에 놓여야 하나, 변신의 주체인 신체 부위가 도구적 변화의 결과물로 전환되는 과정에서 구문상 대격 형태를 띠며 비대격적 전치 구조의 목적격 혹은 주어 보어 성분으로 투사된다. c-구조상 [VP V NP] 또는 변화를 나타내는 술어의 피지배 성분으로 병합되며, 명사구 내부에서 복수 남성 대격의 격 표지를 명시적으로 실현한다. 생성문법적 분석에서 이 대격 명사는 비대격적 어간 이동 과정에서 기저 목적어 위치에서 표면의 주어/보어 자리로 이동하며, 신체 부위가 노의 형태로 치환되는 속성 전이의 대상(theme) 역할을 수행한다.",
+        "background": "피에로스의 딸들(이미아데스)이 뮤즈들과의 노래 경연에서 패한 뒤 신들의 노여움을 사서 새로 변하는 신화적 변신의 한 장면이다. 인간의 형상을 유지하던 신체 부위들이 배와 관련된 부품이나 새의 신체 기관으로 기이하게 변형되는 순간을 포착하고 있다. 손가락과 발가락이 물을 젓는 노(remus)로 변하는 과정은 인간에서 조류로의 전면적인 형태학적 전환을 극적으로 보여준다.",
+        "etymology": "① PIE 재구형 *deyk-('가리키다')에서 파생된 명사 어간 *deyk-to- 또는 *dig-에서 기원한다. ② 동계어로 산스크리트어 diśáti(가리킨다), 그리스어 δείκνυμι(가리키다), 고대 영어 tāhe(발가락) 및 영어 toe가 있다. ③ 어두 구개음화 및 라틴어 내부의 2변화 남성 명사 굴절 패러다임을 확립하면서 '가리키는 신체 부위'에서 손가락과 발가락을 뜻하는 의미로 전이되었다. ④ 현대 영어의 digit(숫자, 손/발가락), digital, direction 등의 어휘에 그 어원의 흔적이 온전히 보존되어 있다."
+      },
+      {
+        "g": "abeunt",
+        "pos": "동사",
+        "lemma": "abeo, abire, abii (ivi), abitus",
+        "parse": "pres. act. ind. 3rd pers. pl.",
+        "principalParts": [
+          "abeo",
+          "abire",
+          "abii (ivi)",
+          "abitus"
+        ],
+        "gloss_kr": "변해 사라진다, ~로 바뀌어 가다",
+        "gloss_en": "pass over into, change into, depart",
+        "syntax": "LFG f-구조에서 abeunt는 주절의 서술어(PRED) 기능을 수행하며, 주어 명사구(digitos... crura)와 수(pl.) 및 인칭(3rd)의 격일치를 충족한다. c-구조상 [TP [T' [V abeunt]]] 구조를 형성하여 절의 통사적 완결성을 담보한다. 생성문법적 분석에서 이 합성 동사는 전치사적 접두사 ab-와 기본 동사 eo의 결합으로 이루어지며, 단순한 공간적 이동을 넘어 한 상태에서 전혀 다른 실체로의 질적 전이(transformation)를 나타내는 비전이적(intransitive) 술어로 투사된다.",
+        "background": "abeo는 원래 '멀리 가다' 또는 '떠나다'라는 뜻이나, 오비디우스의 변신 서사 속에서는 형태와 본질이 완전히 다른 존재로 탈바꿈하는 '변환'의 의미로 확장되어 사용된다. 인간 여성들이 새의 형상으로 한 치의 오차도 없이 형체를 바꾸어 나가는 기괴하고도 신비로운 신화적 변모를 고스란히 담아낸다. 이 동사는 시적 서사에서 형태의 소멸과 새로운 생태적 형상으로의 진입을 알리는 핵심 도구다.",
+        "etymology": "① PIE 재구형 *apo-('멀리, 떨어져서')와 *ei-('가다')가 결합된 합성어 형태에서 기원한다. ② 동계어로 산스크리트어 ápa(멀리)와 éti(간다)의 조합형태, 그리스어 ἀπό와 εἰμί의 어원적 대응 관계가 있다. ③ 접두사 ab-와 불규칙 동사 ire의 음운론적 융합 과정을 거쳐 라틴어 고유의 합성 완료·현재 활용 패러다임을 확립했다. ④ 현대 영어의 ambient, exit 등의 어원적 배경과 직접 연결되며, 로망스어군의 관련 파생 동사에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG f-구조에서 et는 대등 접속사(coordinating conjunction)로서 문장 내의 절 또는 대등한 구문 성분들을 연결하여 통사적 협조 구조(coordination)를 형성한다. c-구조상 병렬적 구구조 마디 사이에 위치하여 양쪽 항에 동등한 지위를 부여한다. 생성문법적으로 이 접속사는 두 개의 통사적 마디를 대등하게 병합(merge)하는 상위 핵으로 작용하며, 변신하는 신체 부위들의 다발적인 변화를 매끄럽게 엮어준다.",
+        "background": "오비디우스가 변신의 여러 양상들을 숨 가쁘게 열거할 때 사용하는 가장 전형적인 수사적 연결 장치다. 신체 각 부위가 배의 부품이나 조류의 신체로 차례차례 바뀌어 가는 복합적인 과정을 동시다발적이고 연속적인 사건으로 묶어낸다. 이 접속사는 텍스트의 호흡을 조절하며 독자로 하여금 변신의 광경을 한눈에 조망할 수 있도록 돕는다.",
+        "etymology": "① PIE 재구형 *eti('넘어서, 그리고, 또한')에서 기원한다. ② 동계어로 산스크리트어 áti(넘어서, ~이상으로), 그리스어 ἔτι(여전히, 게다가)가 있다. ③ 고대 인도유럽어의 부사적 기원에서 접속사로 기능이 전이되었으며, 음운론적으로 단음절의 짧은 형태로 축약되었다. ④ 현대 로망스어군(스페인어 y, 프랑스어 et 등)의 접속사적 형태로 그 유산이 직접 남아 있다."
+      },
+      {
+        "g": "crura",
+        "pos": "명사",
+        "lemma": "crus, cruris, n.",
+        "parse": "pl. acc. n.",
+        "gloss_kr": "다리들을",
+        "gloss_en": "legs, shanks",
+        "syntax": "LFG f-구조에서 crura는 동사 abeunt와 연동되는 변화의 대상 목적어 또는 주어 보어(OBJ/COMP) 기능을 수행하며, θ-역할로는 PATIENT에 해당한다. c-구조상 중성 복수 대격 명사구로 실현되어 앞선 digitos와 병렬적 통사 지위를 갖는다. 생성문법적 분석에서 이 명사는 비대격적 변신 구문의 내부 논항으로 투사되며, 인간의 다리가 새의 날개나 노와 같은 도구적 형상으로 변하는 과정의 출발점 및 변형물로서 격을 할당받는다.",
+        "background": "crus는 인간이나 동물의 다리 또는 정강이 부위를 뜻하며, 여기서는 인간의 하지가 새의 몸을 지탱하거나 물을 젓는 노의 형태로 바뀌는 신체적 변형의 중심을 이룬다. 변신이 머리나 상체에 국한되지 않고 하체와 발끝까지 전신에 걸쳐 불가역적으로 진행되고 있음을 보여준다. 이 단어는 신화적 형벌의 철저함과 육체적 해체의 실상을 시각적으로 각인시킨다.",
+        "etymology": "① PIE 재구형 *kreu-('날것의 살코기, 단단한 덩어리') 또는 신체 지체 관련 기원에서 기원한 것으로 추정된다. ② 동계어로 산스크리트어 kravíṣ-(날고기), 고대 노르드어 hrōr(날것의) 등이 있다. ③ 음운론적 변동을 거쳐 라틴어 3변화 중성 명사로 정착했으며, 신체의 '정강이, 다리'를 뜻하는 의미장으로 전문화되었다. ④ 현대 영어의 crural(다리의, 정강이의) 및 해부학적 용어 속에 그 어원의 흔적이 온전히 보존되어 있다."
+      },
+      {
+        "g": "natantia",
+        "pos": "분사",
+        "lemma": "nato, natare, natavi, natatus",
+        "parse": "pres. act. part. acc. n. pl.",
+        "principalParts": [
+          "nato",
+          "natare",
+          "natavi",
+          "natatus"
+        ],
+        "gloss_kr": "헤엄치는, 물에 떠 있는",
+        "gloss_en": "swimming, floating",
+        "syntax": "LFG f-구조에서 natantia는 명사 crura를 한정하는 현재 능동 분사 수식어(ADJUNCT)로서 기능하며, 속성과 동작성을 동시에 부여한다. c-구조상 NP 내부에서 중성 복수 대격의 격·성·수 일치를 만족시킨다. 생성문법적으로 이 분사는 명사구 내부의 지정어 위치에 병합되어, 다리가 물을 헤엄치거나 젓기에 적합한 상태로 변해가는 역동적인 기능을 통사적으로 수식한다.",
+        "background": "natantia는 본래 수영하거나 물에 떠 있는 상태를 뜻하며, 새로 변한 이들이 물가에서 생활하거나 물을 차고 나가는 습성을 미리 암시하는 시적 수식어다. 인간의 다리가 수중 활동에 특화된 신체 구조로 변모하는 과도기적 속성을 생생하게 묘사한다. 이 단어는 변신이 단순한 외형의 변화를 넘어 생태적 본능과 행동 양식의 전환까지 수반함을 보여준다.",
+        "etymology": "① PIE 재구형 *sna-('흐르다, 헤엄치다')에서 파생된 동사 어간에서 기원한다. ② 동계어로 산스크리트어 snāti(목욕한다, 헤엄친다), 그리스어 νέω(헤엄치다)가 있다. ③ 어간의 반복 및 1변화 파생 과정을 거쳐 '헤엄치다'를 뜻하는 동사 nato가 되었고, 여기서 현재 능동 분사형이 파생되었다. ④ 현대 영어의 natatorial(헤엄치는), natatorium(실내 수영장) 등의 어휘에 그 어원의 흔적이 뚜렷이 이어지고 있다."
+      },
+      {
+        "g": "remi",
+        "pos": "명사",
+        "lemma": "remus, -i, m.",
+        "parse": "pl. nom. m.",
+        "gloss_kr": "노들이",
+        "gloss_en": "oars",
+        "syntax": "LFG f-구조에서 remi는 주절 또는 변화의 결과 보어(COMP/SUBJ) 기능을 수행하며, 의미적으로는 신체 부위가 변하여 된 사물의 실체를 나타낸다. c-구조상 주격 복수 남성 명사구로 실현되어 문장의 서술적 초점을 이룬다. 생성문법적 분석에서 이 명사는 은유적 속성 전이 구문에서 결과 보어(resultative attribute)의 역할을 하며, 새의 날개나 변형된 다리가 배의 노처럼 기능하는 해부학적 은유를 통사적으로 투사한다.",
+        "background": "remus는 본래 배를 젓는 노를 뜻하지만, 이 구절에서는 새의 날개나 물을 가르는 다리의 변형된 형태를 비유하는 대담한 시적 은유로 사용된다. 인간의 신체가 항해용 도구이자 비행의 수단인 새의 날개/발 부위로 기괴하게 치환되는 광경을 극적으로 전달한다. 이 단어는 오비디우스가 자연물과 인공물을 교차시키는 기발한 상상력의 절정을 보여준다.",
+        "etymology": "① PIE 재구형 *ere₂-('노 저다, 젓다')에서 기원한다. ② 동계어로 그리스어 ἐρέτης(노꾼), 고대 아일랜드어 ram(노)이 있다. ③ 음운론적으로 어중 자음의 마찰음화 및 2변화 남성 명사 굴절의 확립을 거쳐 항해용 도구 명사로 정착했다. ④ 현대 영어의 row(노 저다), rudder 및 로망스어군의 관련 어휘에 그 어원의 흔적이 온전히 보존되어 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 5.552",
+    "trans": "이전에 등이었던 것은 넓은 가슴이 되고, 몸의 중앙에는 용골이 생기며,",
+    "words": [
+      {
+        "g": "quodque",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "sg. nom. n. (enclitic coord. conj. -que)",
+        "gloss_kr": "그리고 그것은, 그리고 ~했던 것은",
+        "gloss_en": "and that which",
+        "syntax": "LFG f-구조에서 quod는 관계대명사절의 주어(SUBJ) 기능을 수행하며, 후치 접속사 -que에 의해 앞선 절과 유기적으로 연결된다. c-구조상 관계대명사구의 핵을 이루며 중성 단수 주격의 형태를 취한다. 생성문법적 분석에서 이 대명사는 관계절 내부에서 비대격 술어의 주어 자리에 병합되며, 이전의 신체 부위가 새로운 형상으로 전이되는 선행 상태를 지칭하는 명사절의 주체 역할을 한다.",
+        "background": "변신 이전의 인간적 신체 상태와 변신 이후의 조류적 신체 상태를 극적으로 대비시키는 관계대명사 구문의 시작점이다. 인간이었을 때의 신체 구조가 새의 신체 지형으로 어떻게 재배치되는지 꼼꼼하게 추적하는 서사적 장치로 기능한다. 이 표현은 오비디우스의 정교한 해부학적 변신 묘사의 논리적 정밀함을 보여준다.",
+        "etymology": "① PIE 재구형 *kʷo- / *kʷi-('누구, 무엇, 의문/관계 대명사')에서 기원한다. ② 동계어로 산스크리트어 kás(누구), 그리스어 τίς(누구), 고딕어 ƕas(누가)가 있다. ③ 인도유럽조어의 관계사 패러다임이 라틴어 relative pronoun 체계로 분화되었으며, 후치 접속사 -que는 PIE 재구형 *kʷe('그리고')에서 유래한다. ④ 현대 영어의 what, which 및 로망스어군의 관계대명사 형태 전반에 그 어원의 흔적이 깊이 남아 있다."
+      },
+      {
+        "g": "prius",
+        "pos": "부사",
+        "lemma": "prius",
+        "parse": "compar. adv.",
+        "gloss_kr": "이전에, 예전에",
+        "gloss_en": "before, formerly",
+        "syntax": "LFG f-구조에서 prius는 시간적 부사어구(ADJUNCT)로서 과거의 상태와 현재의 변신 결과를 대비시키는 의미역을 할당한다. c-구조상 비교급 부사의 중성 단수 대격/주격 형태로 실현되어 절 전체의 시간축을 규정한다. 생성문법적 분석에서 이 부사는 시제 구(TP) 외부 또는 부사구 영역에 투사되며, 변신 전후의 상태 변화를 포착하는 위상적 대비(phase contrast)를 통사적으로 매개한다.",
+        "background": "변신이 일어나기 전 인간 여성으로서 가졌던 원래의 신체적 특징을 회상하고 현재의 기괴한 변화와 대조하기 위한 시간적 표지다. 과거와 현재의 극단적인 단절을 보여주며, 인간성이 소멸하고 짐승/새의 형체로 대체되는 비극적 순간을 강조한다. 이 단어는 변신 서사의 전후 관계를 명확히 구분하는 핵심 축이다.",
+        "etymology": "① PIE 재구형 *pre- / *pro-('앞에, 먼저')에서 파생된 비교급 부사형에서 기원한다. ② 동계어로 산스크리트어 prá(앞으로), 그리스어 πρό(앞에), 영어 fore, prior가 있다. ③ 비교급 접사의 결합 및 부사적 고착화 과정을 거쳐 시간적 선행성을 나타내는 어휘로 정착했다. ④ 현대 영어의 prior, previous 등의 어휘에 그 어원의 흔적이 온전히 보존되어 있다."
+      },
+      {
+        "g": "fuerat",
+        "pos": "동사",
+        "lemma": "sum, esse, fui, futurus",
+        "parse": "plupf. act. ind. 3rd pers. sg.",
+        "principalParts": [
+          "sum",
+          "esse",
+          "fui",
+          "futurus"
+        ],
+        "gloss_kr": "~였었다",
+        "gloss_en": "had been",
+        "syntax": "LFG f-구조에서 fuerat는 관계대명사절의 서술어(PRED) 기능을 수행하며, 주어 quod와 수(sg.) 및 인칭(3rd)의 격일치를 이룬다. c-구조상 [TP [T' [V fuerat]]] 구조를 이루어 과거 완료 시제를 실현한다. 생성문법적 분석에서 이 조동사/계사(copula)는 상태적 술어의 핵으로 작용하며, 변신 이전의 영구적이었던 인간의 신체 상태가 과거의 영역으로 밀려났음을 나타내는 시간적 원격성(pastness)을 투사한다.",
+        "background": "현재 진행되고 있는 충격적인 변신과 대비되는 '과거의 인간적 실체'를 엄숙하게 확정하는 시제적 장치다. 한때 인간이었던 그들의 과거가 이제는 완전히 지워지고 새로운 존재로 대체되고 있음을 비장한 어조로 선언한다. 이 동사는 오비디우스 시공간 서사의 깊이감을 더해준다.",
+        "etymology": "① PIE 재구형 *bʰuH-('존재하다, 자라다, 되다')에서 기원한다. ② 동계어로 산스크리트어 bhū-('되다, 존재하다'), 그리스어 φύω(자라나다, 나다), 영어 be가 있다. ③ 인도유럽조어의 제2어근(완료계 어간)과 결합하여 라틴어 특유의 불규칙 완료 패러다임을 확립했다. ④ 현대 영어의 be, been 및 로망스어군의 불규칙 계사 활용 전반에 그 어원의 흔적이 뚜렷이 남아 있다."
+      },
+      {
+        "g": "latus",
+        "pos": "명사",
+        "lemma": "latus, lateris, n.",
+        "parse": "sg. nom. n.",
+        "gloss_kr": "등이, 측면이",
+        "gloss_en": "side, back, flank",
+        "syntax": "LFG f-구조에서 latus는 관계대명사절의 주격 보어(COMP/SUBJ) 또는 주어 기능을 수행하며, 서술어 fuerat와 격·성·수(sg. nom. n.) 일치를 이룬다. c-구조상 명사구의 핵을 이루며 문장의 주된 개체성(entity)을 형성한다. 생성문법적 분석에서 이 중성 명사는 변신 전의 신체적 지형을 나타내는 기저 주어 항으로 투사되며, 인간의 등이 새의 가슴 부위로 역전되는 형태학적 재배치의 기준점이 된다.",
+        "background": "latus는 본래 신체의 측면이나 등을 뜻하며, 여기서는 인간 여성의 등이 새의 넓은 가슴 부위로 변형되는 해부학적 전환의 국면을 보여준다. 인간의 신체 구도가 새의 비행 및 수중 생태 구조에 맞추어 완전히 뒤집히는 과정을 정밀하게 묘사한다. 이 단어는 변신의 기괴함과 구조적 재편을 동시에 시각화한다.",
+        "etymology": "① PIE 재구형 *stel- / *tol-('넓게 펼치다, 평평한 면')에서 기원한 것으로 추정된다. ② 동계어로 고대 고지 독일어 flazza(넓은 면), 일부 게르만어파의 넓이 관련 어휘가 있다. ③ 음운론적 전이를 거쳐 라틴어 3변화 중성 명사로 정착했으며, 신체의 '측면, 등'을 뜻하는 의미장으로 고정되었다. ④ 현대 영어의 lateral(측면의), collateral, bilateral 등의 어휘에 그 어원의 흔적이 온전히 보존되어 있다."
+      },
+      {
+        "g": "est",
+        "pos": "동사",
+        "lemma": "sum, esse, fui, futurus",
+        "parse": "pres. act. ind. 3rd pers. sg.",
+        "principalParts": [
+          "sum",
+          "esse",
+          "fui",
+          "futurus"
+        ],
+        "gloss_kr": "~이다",
+        "gloss_en": "is",
+        "syntax": "LFG f-구조에서 est는 주절의 계사(copula)로서 서술어(PRED) 기능을 수행하며, 주어 latus와 주격 보어 latus(또는 명사구) 사이의 등가 관계를 성립시킨다. c-구조상 [TP [T' [V est]]] 구조를 형성하여 현재 시점의 변신 결과를 확정한다. 생성문법적 분석에서 이 계사는 주어와 보어 간의 성·수 일치를 검증(check)하는 기능적 핵으로 작용하며, 변신의 결과가 현재 완결되었음을 통사적으로 선언한다.",
+        "background": "과거의 상태(fuerat)와 현재의 변신 결과(est)를 시제적 대조를 통해 극적으로 연결하는 핵심 고리다. 등이었던 부위가 새의 가슴으로 완전히 변해버린 현재의 기정사실을 냉혹하고 명쾌하게 단언한다. 이 동사는 오비디우스의 변신 묘사에서 순간적인 상태 변화를 현실로 확정하는 문법적 닻 역할을 한다.",
+        "etymology": "① PIE 재구형 *h₁es-('존재하다, 이다')에서 기원한다. ② 동계어로 산스크리트어 ásti(그는 이다), 그리스어 ἐστί(그는 이다), 영어 is, 고대 교회 슬라브어 jesi(너는 이다)가 있다. ③ 인도유럽어족 전반에 걸쳐 가장 보존률이 높은 기초 계사로서 음운론적 약화와 강화를 겪었다. ④ 현대 영어의 is, am, are 및 로망스어군의 핵심 계사 활용 전반에 그 원형의 흔적이 깊이 박혀 있다."
+      },
+      {
+        "g": "mediisque",
+        "pos": "형용사",
+        "lemma": "medius, -a, -um",
+        "parse": "pl. abl. m./f./n. (enclitic coord. conj. -que)",
+        "gloss_kr": "그리고 중앙의, 한가운데의",
+        "gloss_en": "and in the middle, and central",
+        "syntax": "LFG f-구조에서 mediis는 위치를 나타내는 탈격 형용사(ADJUNCT)로서 후행하는 명사 navigiis를 수식하며, 공간적 영역을 한정한다. c-구조상 복수 탈격 중성 성·수·격 일치를 이루며 전치사 없이 독립된 도구/처소 탈격 구문을 이룬다. 생성문법적 분석에서 이 형용사는 명사구 내부의 지정어 위치에 병합되며, 배의 선체 중앙에 용골이 형성되는 해부학적 위치를 통사적으로 확정한다.",
+        "background": "새의 신체가 배의 구조와 유사하게 변해가는 과정에서 몸의 한가운데에 배의 용골(keel)에 해당하는 중심 뼈대가 생겨남을 묘사한다. 인간의 해부학적 구조가 완전히 해체되고 선박의 공학적 구조와 조류의 신체가 기이하게 융합되는 환상적 광경을 보여준다. 이 단어는 변신이 단순한 동물화가 아니라 일종의 기계적·생태적 결합임을 시사한다.",
+        "etymology": "① PIE 재구형 *medʰyo-('중간의, 한가운데의')에서 기원한다. ② 동계어로 산스크리트어 mádhyas(중간의), 그리스어 μέσος(중간의), 영어 mid, middle이 있다. ③ 라틴어 1/2변화 형용사 패러다임을 확립하며 어중 자음의 마찰음화를 거쳐 현재의 형태에 이르렀다. ④ 현대 영어의 medium, median, immediate 및 로망스어군의 관련 어휘에 그 어원의 흔적이 온전히 보존되어 있다."
+      },
+      {
+        "g": "carina",
+        "pos": "명사",
+        "lemma": "carina, -ae, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "용골이, 배의 선체가",
+        "gloss_en": "keel, hull of a ship",
+        "syntax": "LFG f-구조에서 carina는 주절의 주어(SUBJ) 기능을 수행하며, 서술어 subdita est(또는 생략된 계사 구문과의 호응)와 수(sg.) 및 인칭(3rd)의 격일치를 이룬다. c-구조상 1변화 여성 명사의 주격 단수형으로 실현된다. 생성문법적 분석에서 이 명사는 은유적 변신 구문의 결과 주어 항으로 투사되며, 몸의 중앙에 새롭게 솟아오른 뼈대가 배의 용골과 같음을 선언하는 비유적 실체로 기능한다.",
+        "background": "carina는 본래 배의 바닥을 지탱하는 중심 뼈대인 '용골'을 뜻하며, 여기서는 새의 가슴뼈나 몸통 중앙의 융기된 뼈가 선박의 구조물로 변했음을 비유한다. 인간의 육체가 배와 조류의 중간 형태인 기이한 인공물-생물 하이브리드로 변모하는 과정을 보여주는 핵심 해부학적 은유다. 이 단어는 시적 상상력의 경이로움을 극대화한다.",
+        "etymology": "① PIE 재구형 또는 지중해 기층 어휘에서 유래한 것으로 추정되며, 선로마시대의 항해 관련 어원과 연관된다. ② 동계어로 일부 로망스어 방언의 선박 관련 어휘 및 그리스어권 차용 가능성이 논의된다. ③ 라틴어 1변화 여성 명사 패러다임으로 포섭되어 항해 용어인 '배의 바닥, 용골'로 의미가 고정되었다. ④ 현대 영어의 careen(배가 기울다), caricature와의 미세한 어원적 논쟁을 거쳐 로망스어군의 관련 지명 및 항해 용어에 흔적을 남기고 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 5.553",
+    "trans": "배들에 비견되는 척추가 그 용도로 바뀌고,",
+    "words": [
+      {
+        "g": "subdita",
+        "pos": "분사",
+        "lemma": "subdo, subdere, subdidi, subditus",
+        "parse": "perf. pass. part. nom. f. sg.",
+        "principalParts": [
+          "subdo",
+          "subdere",
+          "subdidi",
+          "subditus"
+        ],
+        "gloss_kr": "놓인, 밑에 부여된, 대치된",
+        "gloss_en": "placed under, subjected, substituted",
+        "syntax": "LFG f-구조에서 subdita는 명사 spinae를 수식하는 수동완료 분사(ADJUNCT/COMP)로서 기능하며, 주어와 격·성·수(sg. nom. f.) 일치를 이룬다. c-구조상 NP 내부에서 주격 여성 단수 형태로 실현된다. 생성문법적 분석에서 이 수동 분사는 기저의 사역/위치 이동 구조에서 파생되어, 척추뼈가 배의 용골이라는 새로운 목적과 기능 아래 '밑에 놓이게 된' 상태를 통사적으로 투사한다.",
+        "background": "subdo는 무엇 아래에 두거나 복속시키는 것을 뜻하며, 여기서는 신체의 중심인 척추가 배의 용골이라는 새로운 해부학적/기계적 목적에 맞추어 아래쪽에 배치되거나 변형되었음을 나타낸다. 인간의 척추뼈가 새의 비행과 선박의 구조적 원리를 결합한 형태로 재조립되는 과정을 정밀하게 포착한다. 이 분사는 변신 과정의 공학적 정밀성을 강조한다.",
+        "etymology": "① PIE 재구형 접두사 *upo-('아래에')와 *dheH-('놓다, 두다')의 라틴어 형태적 결합에서 기원한다. ② 동계어로 산스크리트어 dádhāti(놓는다), 그리스어 τίθημι(두다), 영어 do가 있다. ③ 접두사 sub-와 동사 dere의 융합 및 완료수동분사 파생 규칙을 거쳐 현재의 형태로 정착했다. ④ 현대 영어의 subdue, subordinate 등의 어휘에 그 어원의 흔적이 온전히 보존되어 있다."
+      },
+      {
+        "g": "navigiis",
+        "pos": "명사",
+        "lemma": "navigium, -ii, n.",
+        "parse": "pl. dat. n.",
+        "gloss_kr": "배들에, 선박들에",
+        "gloss_en": "to ships, for vessels",
+        "syntax": "LFG f-구조에서 navigiis는 형용사/분사 subdita가 요구하는 이익/참여의 대상 논항으로서 여격(dative of purpose/advantage, OBL) 기능을 수행한다. c-구조상 중성 복수 여격 명사구로 실현된다. 생성문법적 분석에서 이 여격 명사는 술어적 분사가 지배하는 항구조(argument structure) 내에서 비대격적 수혜자/목적격 여격 위치에 병합되며, 신체 부위가 봉사하게 될 대상(배)과의 구조적 유사성을 통사적으로 확정한다.",
+        "background": "navigium은 항해하는 선박이나 배를 뜻하며, 인간의 신체가 새의 형상으로 변하는 동시에 한편으로는 선박의 구조적 공학 원리를 닮아가고 있음을 보여주는 비유적 기준점이다. 새의 척추와 가슴뼈가 마치 배의 선체와 용골처럼 기능하도록 설계되는 기이한 자연의 변형을 시각화한다. 이 단어는 시적 비유의 스케일을 자연에서 인공물(항해술)로 확장시킨다.",
+        "etymology": "① 라틴어 동사 navigare(항해하다, navis + agere에서 파생)의 명사형 기원에서 기원한다. ② 동계어로 라틴어 navis(배), 산스크리트어 nā́us(배), 그리스어 ναῦς(배)가 있다. ③ 어간의 합성 및 2변화 중성 명사 파생 과정을 거쳐 '배, 선박'을 뜻하는 전문 용어로 정착했다. ④ 현대 영어의 navigate, navy 및 로망스어군의 관련 어휘에 그 어원의 흔적이 온전히 이어지고 있다."
+      },
+      {
+        "g": "spinae",
+        "pos": "명사",
+        "lemma": "spina, -ae, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "척추가, 가시가",
+        "gloss_en": "spine, backbone, thorn",
+        "syntax": "LFG f-구조에서 spinae는 주절의 주어(SUBJ) 기능을 수행하며, 수(sg.) 및 인칭(3rd)의 격일치를 만족시킨다. c-구조상 1변화 여성 명사의 주격 단수형으로 실현된다. 생성문법적 분석에서 이 명사는 변신 구문의 주제(theme) 주어로서 기저의 비대격 위치에서 표면 주어 자리로 이동하며, 인간의 척추뼈가 새로운 생태적 용도(선박의 척추/새의 중심 뼈대)로 변환되는 주체적 실체를 통사적으로 실현한다.",
+        "background": "spina는 본래 식물의 '가시'를 뜻하지만 해부학적으로는 동물의 '척추'나 '등뼈'를 가리키며, 여기서는 인간의 척추가 새의 중심 골격이자 배의 용골과 같은 용도로 변형됨을 나타낸다. 인간 신체의 가장 단단하고 중심이 되는 뼈대가 새로운 생물의 생태계에 맞추어 개조되는 모습을 보여준다. 이 단어는 변신의 해부학적 정밀 묘사를 완성하는 핵심 명사다.",
+        "etymology": "① PIE 재구형 또는 지중해 기층 어휘에서 뾰족한 사물을 가리키던 기원에서 기원한 것으로 추정된다. ② 동계어로 일부 로망스어 방언의 뾰족한 돌기 관련 어휘 및 게르만어파의 침(thorn) 관련 음운 유사 어형이 논의된다. ③ 라틴어 1변화 여성 명사 패러다임으로 고착되어 '가시'에서 '척추, 등뼈'로 의미가 확장·전이되었다. ④ 현대 영어의 spine, spinal, porcupine 등의 어휘에 그 어원의 흔적이 뚜렷이 보존되어 있다."
+      },
+      {
+        "g": "mutatur",
+        "pos": "동사",
+        "lemma": "muto, mutare, mutavi, mutatus",
+        "parse": "pres. pass. ind. 3rd pers. sg.",
+        "principalParts": [
+          "muto",
+          "mutare",
+          "mutavi",
+          "mutatus"
+        ],
+        "gloss_kr": "바뀐다, 변형된다",
+        "gloss_en": "is changed, is transformed",
+        "syntax": "LFG f-구조에서 mutatur는 주절의 수동태 서술어(PRED) 기능을 수행하며, 주어 spinae와 수(sg.) 및 인칭(3rd)의 격일치를 이룬다. c-구조상 [TP [T' [V mutatur]]] 구조를 형성한다. 생성문법적 분석에서 이 수동태 동사는 외적 항(agent)을 억제하고 내적 항(theme/patient인 spinae)을 주어 자리로 승격시키는 통사적 발동(passivization)을 거치며, 신체 구조가 강제적으로 개조되는 상태를 현재 시제로 생생하게 투사한다.",
+        "background": "muto는 오비디우스의 대작 '변신이야기(Metamorphoses)'의 핵심 주제인 '형태의 바뀜'을 직접적으로 표현하는 가장 중요한 동사다. 척추뼈가 자신의 의지와 상관없이 새로운 용도와 형상으로 탈바꿈하는 불가피하고 거대한 자연의 섭리를 나타낸다. 이 동사는 시적 서사 전체의 중심 축을 지탱하는 마법적 변형의 메커니즘을 드러낸다.",
+        "etymology": "① PIE 재구형 *mei-('바꾸다, 교환하다, 움직이다')에서 파생된 어간에서 기원한다. ② 동계어로 산스크리트어 máyate(교환한다, 변한다), 그리스어 ἀμείβω(교환하다), 고딕어 gamains(공유의)가 있다. ③ 어간의 변화 및 1변화 규칙 동사 파생 과정을 거쳐 '바꾸다, 변형하다'를 뜻하는 표준 어휘로 정착했다. ④ 현대 영어의 mutant, mutation, commute 등의 어휘에 그 어원의 흔적이 완벽하게 보존되어 있다."
+      },
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "prep. c. acc.",
+        "gloss_kr": "~로, ~를 향하여",
+        "gloss_en": "into, for",
+        "syntax": "LFG f-구조에서 in은 전치사구의 PRED 기능을 수행하며, 대격 명사 usum을 지배하여 목적/결과의 의미역(goal/purpose)을 할당한다. c-구조상 [PP [P in] [NP usum]] 구조를 이루어 동사 mutatur의 결과 부사어구(ADJUNCT)로 기능한다. 생성문법적 분석에서 이 전치사는 지배 이론에 따라 후행하는 명사구에 대격(accusative)을 부여하며, 변신이 도달하는 최종적인 기능적 목적지를 통사적으로 확정한다.",
+        "background": "여기서 전치사 in은 단순한 공간적 진입이 아니라 변신을 통해 새로운 생태적/기계적 '목적'과 '용도'로 완전히 전환되는 상태의 귀결을 나타낸다. 척추뼈가 단순한 뼈의 형태를 넘어 배의 용골이나 새의 골격이라는 구체적인 실용적 목적에 복속되는 과정을 보여준다. 이 전치사는 변신의 최종 방향성을 명확히 규정한다.",
+        "etymology": "① PIE 재구형 *en('안에, ~에')에서 기원한다. ② 동계어로 그리스어 ἐν(안에), 산스크리트어 ántar(안에, 사이에), 영어 in이 있다. ③ 라틴어 내부에서 방향성을 나타내는 대격 지배와 위치를 나타내는 탈격 지배의 두 가지 통사적 용법으로 분화되었다. ④ 현대 영어의 in, into 및 로망스어군의 전치사 형태에 그 어원의 흔적이 온전히 남아 있다."
+      },
+      {
+        "g": "usum",
+        "pos": "명사",
+        "lemma": "usus, -us, m.",
+        "parse": "sg. acc. m.",
+        "gloss_kr": "용도로, 쓰임새로",
+        "gloss_en": "use, purpose, employment",
+        "syntax": "LFG f-구조에서 usum은 전치사 in의 목적어로서 전치사구 내부의 PRED 논항을 충족하며, 목적 및 기능의 의미역을 갖는다. c-구조상 4변화 남성 명사의 대격 단수형으로 실현된다. 생성문법적 분석에서 이 명사는 전치사의 격 지배를 받아 대격 격을 할당받으며, 신체 부위가 새롭게 부여받은 생존 및 항해적 용도를 통사적 결과물로 확정한다.",
+        "background": "usus는 사물의 쓰임새나 기능, 실질적인 용도를 뜻하며, 여기서는 인간의 신체 부위들이 자연의 저주로 인해 전혀 다른 생물학적/기계적 용도에 쓰이도록 개조됨을 뜻한다. 변신이 단순한 시각적 환영이 아니라 실질적인 기능과 생태적 역할의 강제적 전환임을 보여준다. 이 단어는 오비디우스 서사의 철학적 깊이를 더해준다.",
+        "etymology": "① 라틴어 동사 uti(사용하다, 과거 분사형 usus에서 파생)의 명사형 기원에서 기원한다. ② 동계어로 라틴어 uti, 영어 use, utility의 어원이 되는 PIE 기저 어간이 있다. ③ 4변화 명사 패러다임으로 정착하여 '사용, 쓰임새, 관습'을 뜻하는 의미장으로 고정되었다. ④ 현대 영어의 use, usual, usurp 및 로망스어군의 관련 어휘에 그 어원의 흔적이 뚜렷이 이어지고 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 5.554",
+    "trans": "부드러운 머리카락은 깃털이 되고, 돛대는 팔이 되며,",
+    "words": [
+      {
+        "g": "lina",
+        "pos": "명사",
+        "lemma": "linum, -i, n.",
+        "parse": "pl. nom. n.",
+        "gloss_kr": "깃털들이(아마실/돛이), 날개털이",
+        "gloss_en": "down, feathers, flax, sails",
+        "syntax": "LFG f-구조에서 lina는 주절의 주어(SUBJ) 기능을 수행하며, 서술어 fiunt와 수(pl.) 및 인칭(3rd)의 격일치를 만족시킨다. c-구조상 중성 복수 주격 명사구로 실현된다. 생성문법적 분석에서 이 명사는 비대격적 변신 구문의 주제(theme) 주어로서 기저의 비대격 위치에서 표면 주어 자리로 이동하며, 머리카락이 새의 부드러운 깃털이나 돛의 섬유질로 변환되는 실체를 통사적으로 실현한다.",
+        "background": "linum은 본래 '아마(flax)'나 그것으로 만든 '실, 돛'을 뜻하지만, 시적 은유를 통해 여기서는 부드러운 머리카락이 새의 솜털이나 날개 깃털로 변하는 현상을 비유한다. 인간 여성의 고운 머리칼이 새의 깃털이라는 가볍고 부드러운 피복물로 치환되는 기괴한 아름다움을 보여준다. 이 단어는 자연물과 직물 항해 도구를 엮어내는 오비디우스의 탁월한 비유적 기교를 보여준다.",
+        "etymology": "① PIE 재구형 *linom('아마, 실')에서 기원하며, 지중해 선그리스어권 또는 세미틱 언어와의 접촉을 통한 차용 설이 존재한다. ② 동계어로 그리스어 λίνον(아마, 실), 고대 슬라브어 lĭnŭ(아마), 영어 line, linen이 있다. ③ 라틴어 2변화 중성 명사 패러다임으로 정착해 '아마섬유, 실, 그물, 돛'으로 의미가 확장되었다. ④ 현대 영어의 line, linen, linear 등의 어휘에 그 어원의 흔적이 온전히 보존되어 있다.",
+        "freq_prose": 120
+      },
+      {
+        "g": "comae",
+        "pos": "명사",
+        "lemma": "coma, -ae, f.",
+        "parse": "sg. gen. f. (또는 pl. nom. f.로 해석 시 머리카락들)",
+        "gloss_kr": "머리카락의, 머리칼들이",
+        "gloss_en": "of hair, locks of hair",
+        "syntax": "LFG f-구조에서 comae는 문맥상 소유격 속격(genitivus possessivus)으로 해석되어 후행하는 명사(또는 절 내의 수식 성분)를 한정하거나, 복수 주격으로서 lina와 동격/병렬적 주어 기능을 수행한다. c-구조상 1변화 여성 명사의 속격 단수(또는 주격 복수) 형태로 실현된다. 생성문법적 분석에서 이 명사는 명사구 내부의 지정어 위치 또는 주어 위치에 병합되며, 변신의 대상이 되는 인간의 머리칼이라는 원초적 신체 속성을 통사적으로 규정한다.",
+        "background": "coma는 머리카락이나 잎사귀의 무성한 머리 부분을 뜻하며, 여기서는 여성의 아름다운 상징인 머리칼이 새의 깃털로 변해가는 부드러운 신체 부위의 변형을 나타낸다. 인간 여성의 정체성과 아름다움의 상징이던 머리카락이 조류의 깃털로 바뀜으로써 완전한 인간성 상실을 시각화한다. 이 단어는 비극적 변신의 감정적 울림을 배가시킨다.",
+        "etymology": "① 그리스어 κόμη(머리털, 갈기)에서 차용된 라틴어 고유 시적 어휘다. ② 동계어로 그리스어 κόμη, 산스크리트어 śás- 등의 가모스 관련 기원이 논의된다. ③ 그리스어 차용 이후 라틴어 1변화 여성 명사로 고착되어 시가에서 '머리카락, 잎사귀'를 뜻하는 우아한 시어로 정착했다. ④ 현대 영어의 comatose와의 직접적 관련은 없으나, 식물학 및 해부학 용어의 접두/접미 배경에 그 흔적을 남기고 있다.",
+        "freq_prose": 45
+      },
+      {
+        "g": "molles",
+        "pos": "형용사",
+        "lemma": "mollis, molle",
+        "parse": "pl. nom. m./f.",
+        "gloss_kr": "부드러운, 유연한",
+        "gloss_en": "soft, tender, flexible",
+        "syntax": "LFG f-구조에서 molles는 주어 명사 lina를 수식하는 한정 형용사(ADJUNCT)로서 속성(attribute)의 의미역을 할당한다. c-구조상 3변화 형용사의 복수 주격 형태로 실현되어 명사와 성·수·격 일치를 이룬다. 생성문법적 분석에서 이 형용사는 명사구 내부의 지정어 위치에 병합되며, 깃털이나 머리카락이 지닌 부드럽고 유연한 물리적 질감을 통사적으로 투사한다.",
+        "background": "mollis는 단단하지 않고 부드러운 촉감을 뜻하며, 여기서는 새로 변한 이들의 부드러운 깃털이나 머리칼의 감촉을 시적으로 강조한다. 뼈와 척추의 딱딱한 변신(용골, 척추)과 대조적으로 털과 머리카락 같은 유연한 신체 부위의 부드러운 변형을 포착한다. 이 단어는 시적 묘사의 감각적 입체감을 높여준다.",
+        "etymology": "① PIE 재구형 *mol-('부드러운, 약한')에서 파생된 어간에서 기원한다. ② 동계어로 그리스어 μαλακός(부드러운), 산스크리트어 mṛdú-(부드러운), 영어 melt와 어원이 통한다. ③ 음운론적으로 자음 탈락과 모음 교체를 거쳐 라틴어 3변화 형용사 패러다임으로 정착했다. ④ 현대 영어의 mollify(달래다), emollient(연고), melt 등의 어휘에 그 어원의 흔적이 뚜렷이 보존되어 있다.",
+        "freq_prose": 180
+      },
+      {
+        "g": "antemnae",
+        "pos": "명사",
+        "lemma": "antemna, -ae, f. (보통 antemnae, -arum)",
+        "parse": "pl. nom. f.",
+        "gloss_kr": "돛대들이, 야드(돛을 달기 위해 횡으로 거는 돛대)가",
+        "gloss_en": "yards, sail-yards of a ship",
+        "syntax": "LFG f-구조에서 antemnae는 주절의 주어(SUBJ) 기능을 수행하며, 서술어 fiunt와 수(pl.) 및 인칭(3rd)의 격일치를 만족시킨다. c-구조상 1변화 여성 명사의 복수 주격 형태로 실현된다. 생성문법적 분석에서 이 명사는 비대격적 변신 구문의 주제 주어로서 기저의 위치에서 표면 주어 자리로 이동하며, 신체의 팔이 선박의 돛대와 같은 가로대 구조로 변환되는 실체를 통사적으로 실현한다.",
+        "background": "antemna는 본래 항해용 선박에서 돛을 지탱하기 위해 돛대에 가로로 걸치는 '야드(yard)'를 뜻하며, 여기서는 인간의 팔이 새의 날개 뼈이자 배의 돛대 구조로 변하는 기괴한 비유를 나타낸다. 인간의 신체가 항해 기구의 부품과 완벽하게 일치하도록 개조되는 환상적 공학 묘사의 절정이다. 이 단어는 시적 은유의 독창성을 보여준다.",
+        "etymology": "① 라틴어 전치사 ante('앞에')와 명사 amna(또는 관련된 어간)의 합성 또는 항해 전문 기원에서 기원한다. ② 동계어로 라틴어 ante 및 지중해 항해 용어군의 유사 파생형이 존재한다. ③ 라틴어 1변화 여성 명사 복수형으로 고착되어 선박의 '돛대 가로대(야드)'를 뜻하는 전문 용어로 정착했다. ④ 현대 영어의 antenna(안테나, 곤충의 더듬이에서 의미가 전이됨)라는 단어의 어원적 조상이 바로 이 항해용 돛대에서 유래했다.",
+        "freq_prose": 30
+      },
+      {
+        "g": "bracchia",
+        "pos": "명사",
+        "lemma": "brachium, -ii, n.",
+        "parse": "pl. nom. n.",
+        "gloss_kr": "팔들이",
+        "gloss_en": "arms, forearms",
+        "syntax": "LFG f-구조에서 bracchia는 주절의 주어 보어 또는 결과 보어(COMP/SUBJ) 기능을 수행하며, 서술어 fiunt와 등가 관계를 이룬다. c-구조상 중성 복수 주격 명사구로 실현된다. 생성문법적 분석에서 이 명사는 은유적 변신 구문의 결과 주어/보어 항으로 투사되며, 인간의 팔이 새의 날개나 선박의 돛대 구조로 바뀜을 선언하는 실체로 통사적으로 기능한다.",
+        "background": "brachium은 인간의 팔이나 어깨에서 손목까지의 신체 지체를 뜻하며, 여기서는 팔이 새의 날개이자 배의 돛대(antemnae)로 변형되는 과정을 극적으로 묘사한다. 인간이 두 팔로 세상을 포옹하던 능력을 잃어버리고, 강제적으로 하늘을 날거나 물을 가르는 조류의 날개 구조로 굳어지는 비극적 변모다. 이 단어는 신체적 자유의 상실을 상징한다.",
+        "etymology": "① 그리스어 βραχίων(팔)에서 차용된 라틴어 어휘다. ② 동계어로 그리스어 βραχίων, 영어 brachiate(나뭇가지 모양으로 뻗다)의 어원이 되는 기저 형태가 있다. ③ 그리스어에서 유입된 이후 라틴어 2변화 중성 명사 패러다임으로 정착해 신체의 '팔'을 뜻하는 표준 어휘가 되었다. ④ 현대 영어의 embrace(포옹하다, 어원으로 팔 안에 넣다), brachial(상완의) 등의 어휘에 그 어원의 흔적이 뚜렷이 보존되어 있다.",
+        "freq_prose": 210
+      },
+      {
+        "g": "fiunt",
+        "pos": "동사",
+        "lemma": "fio, fieri, factus sum",
+        "parse": "pres. act. ind. 3rd pers. pl.",
+        "principalParts": [
+          "fio",
+          "fieri",
+          "factus sum",
+          "(미상)"
+        ],
+        "gloss_kr": "된다, 변하여 ~가 된다",
+        "gloss_en": "become, are made",
+        "syntax": "LFG f-구조에서 fiunt는 주절의 서술어(PRED) 기능을 수행하며, 주어 명사구들과 수(pl.) 및 인칭(3rd)의 격일치를 충족한다. c-구조상 [TP [T' [V fiunt]]] 구조를 형성한다. 생성문법적 분석에서 이 불규칙 수동/계사 동사는 주어와 결과 보어 사이의 상태 전이(state transition)를 매개하는 핵으로 작용하며, 신체 부위가 전혀 다른 사물이나 동물 기관으로 완전히 대체되는 과정을 현재 시제로 생생하게 투사한다.",
+        "background": "fio는 단순한 존재를 넘어 이전과 완전히 다른 실체로 '다시 태어나거나 변하는' 과정을 나타내는 핵심 동사다. 머리카락이 깃털이 되고 팔이 돛대가 되는 급격하고도 돌이킬 수 없는 변신의 마법적 순간을 현재형으로 선언한다. 이 동사는 오비디우스의 변신 서사에서 형태의 최종 완성을 알리는 결정적 표지다.",
+        "etymology": "① PIE 재구형 *bʰuH-('존재하다, 되다')의 파생 능동/중간태 활용에서 기원한다. ② 동계어로 라틴어 fui, 산스크리트어 bhū-, 그리스어 φύω와 어원이 통한다. ③ 라틴어 내부에서 동사 facio의 수동태 보충형(suppletive passive)으로 체계화되면서 독립된 불규칙 활용 패러다임을 확립했다. ④ 현대 영어의 fiat(명령, 인가), faculty 및 로망스어군의 관련 동사 활용 속에 그 어원의 흔적이 깊이 남아 있다.",
+        "freq_prose": 850
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 5.555",
+    "trans": "푸른빛은 예전 그대로의 빛깔이며, 그들이 일찍이 두려워했던...",
+    "words": [
+      {
+        "g": "caerulus",
+        "pos": "형용사",
+        "lemma": "caerulus, -a, -um",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "푸른, 암청색의, 바닷빛의",
+        "gloss_en": "dark blue, azure, sea-green",
+        "syntax": "LFG f-구조에서 caerulus는 주어 명사 color를 수식하는 한정 형용사(ADJUNCT)로서 속성(attribute)의 의미역을 할당한다. c-구조상 명사구 내부에서 주격 남성 단수 형태를 취하며, 후행하는 주어와 성·수·격 일치를 이룬다. 생성문법적 분석에서 이 형용사는 명사구 내부의 지정어 위치에 병합되며, 새로 변한 이들의 몸에 남아 있는 원래의 푸르스름한 빛깔이나 물빛의 속성을 통사적으로 투사한다.",
+        "background": "caerulus는 바다나 하늘의 짙고 푸른빛을 뜻하며, 이들이 신화 속 물의 정령이나 바다와 연관된 배경을 지녔음을 암시하거나 변신 후에도 여전히 남아 있는 원래의 신체적 흔적을 나타낸다. 전신이 완전히 변해버린 와중에도 예전의 색채가 그대로 유지된다는 점은 변신의 기괴함 속에 남은 일종의 연속성을 보여준다. 이 단어는 시적 묘사에 색채감을 더해준다.",
+        "etymology": "① 라틴어 명사 caelum('하늘')의 파생 형용사형에서 기원한다. ② 동계어로 라틴어 caelum 및 인도유럽어족의 '높은 하늘, 둥근 천장' 관련 어휘가 있다. ③ 어간의 접미사 변화를 거쳐 '하늘빛, 바닷빛, 푸른색'을 뜻하는 형용사로 정착했다. ④ 현대 영어의 cerulean(하늘색의) 등의 어휘에 그 어원의 흔적이 온전히 보존되어 있다.",
+        "freq_prose": 40
+      },
+      {
+        "g": "ut",
+        "pos": "접속사",
+        "lemma": "ut",
+        "parse": "subord. conj.",
+        "gloss_kr": "~였던 것처럼, ~대로",
+        "gloss_en": "as, just as",
+        "syntax": "LFG f-구조에서 ut는 양태/비교 부사절을 이끄는 종속 접속사(subordinating conjunction)로서 후속 절의 PRED를 지배한다. c-구조상 [CP [C' [C ut] [IP ...]]] 구조를 형성하여 주절과 종속절의 양태적 일치를 매개한다. 생성문법적 분석에서 이 접속사는 절 내부의 축약되거나 생략된 상태를 지시하며, 과거의 상태와 현재의 상태가 완벽하게 일치함을 보여주는 비교 구문을 통사적으로 투사한다.",
+        "background": "ut는 과거에 지녔던 본래의 속성이나 상태가 변신 후에도 그대로 보존되어 있음을 강조하는 비교와 확인의 수사적 장치다. 외형은 깃털과 날개로 완전히 바뀌었을지라도 색채나 본질의 일부는 예전의 모습을 간직하고 있음을 쓸쓸하게 증명한다. 이 접속사는 서사의 일관성을 유지해 준다.",
+        "etymology": "① PIE 재구형 *kʷo- / *kʷi- 계열의 의문/관계 부사 기원에서 기원한다. ② 동계어로 산스크리트어 ká-, 그리스어 ποῦ(어디에) 등의 의문사 부사 계통과 어원이 통한다. ③ 라틴어 내부에서 양태, 목적, 결과, 비교를 나타내는 다목적 종속 접속사로 문법화(grammaticalization)되었다. ④ 현대 로망스어군의 관련 접속사 및 문학적 인용구 속에 그 어원의 흔적이 깊이 남아 있다.",
+        "freq_prose": 3400
+      },
+      {
+        "g": "fuerat",
+        "pos": "동사",
+        "lemma": "sum, esse, fui, futurus",
+        "parse": "plupf. act. ind. 3rd pers. sg.",
+        "principalParts": [
+          "sum",
+          "esse",
+          "fui",
+          "futurus"
+        ],
+        "gloss_kr": "~였었다",
+        "gloss_en": "had been",
+        "syntax": "LFG f-구조에서 fuerat는 종속절의 서술어(PRED) 기능을 수행하며, 주어(생략된 color 등)와 수(sg.) 및 인칭(3rd)의 격일치를 이룬다. c-구조상 [TP [T' [V fuerat]]] 구조를 형성하여 과거 완료 시제를 실현한다. 생성문법적 분석에서 이 계사는 종속절 내부에서 과거의 영구적 상태를 지시하는 핵으로 작용하며, 변신 이전 원초적 상태의 색채가 과거부터 이어져 왔음을 통사적으로 뒷받침한다.",
+        "background": "변신 전 인간이었던 시절에 지니고 있던 본래의 빛깔이 과거부터 지금까지 어떻게 이어졌는지를 회상하는 시제적 장치다. 형태는 비록 흉측한 새나 선박의 부품처럼 변해버렸지만, 색채만큼은 예전의 기억을 품고 고스란히 남아 있음을 애잔하게 보여준다. 이 동사는 변신의 비극성에 깊이를 더해준다.",
+        "etymology": "① PIE 재구형 *bʰuH-('존재하다, 자라다, 되다')에서 기원한다. ② 동계어로 산스크리트어 bhū-, 그리스어 φύω, 영어 be가 있다. ③ 불규칙 완료 패러다임을 확립하며 시간적 원격성을 나타내는 핵심 계사로 정착했다. ④ 현대 영어의 be, been 및 로망스어군의 활용 전반에 그 어원의 흔적이 뚜렷이 남아 있다.",
+        "freq_prose": 1500
+      },
+      {
+        "g": "color",
+        "pos": "명사",
+        "lemma": "color, coloris, m.",
+        "parse": "sg. nom. m.",
+        "gloss_kr": "빛깔이, 색채가",
+        "gloss_en": "color, hue, complexion",
+        "syntax": "LFG f-구조에서 color는 주절의 주어(SUBJ) 기능을 수행하며, 서술어 est와 수(sg.) 및 인칭(3rd)의 격일치를 만족시킨다. c-구조상 3변화 남성 명사의 주격 단수형으로 실현된다. 생성문법적 분석에서 이 명사는 비대격적 변신 구문의 주제 주어로서 기저의 위치에서 표면 주어 자리로 이동하며, 신체의 외형이 변하는 동안에도 변하지 않고 남은 시각적 본질을 통사적으로 실현한다.",
+        "background": "color는 물체의 색상이나 사람의 안색을 뜻하며, 여기서는 변신한 새들의 몸에 여전히 남아 있는 푸른빛의 색채를 가리킨다. 신체 전반의 해부학적 구조가 완전히 재조립되는 대격변 속에서도 색깔이라는 최소한의 정체성 흔적은 말소되지 않고 남는다. 이 단어는 변신의 아이러니를 시각적으로 완성하는 중요한 명사다.",
+        "etymology": "① 라틴어 고유 어원 또는 초기 이탈리아어파의 표면 색채 관련 어간에서 기원한다. ② 동계어로 구라틴어 방언의 은폐/덮개 관련 어휘와의 연관성이 학술적으로 제기된 바 있다. ③ 라틴어 3변화 남성 명사로 고착되어 '색채, 빛깔'을 뜻하는 표준 어휘로 정착했다. ④ 현대 영어의 color, coloration 및 로망스어군의 관련 어휘에 그 어원의 흔적이 온전히 보존되어 있다.",
+        "freq_prose": 290
+      },
+      {
+        "g": "est",
+        "pos": "동사",
+        "lemma": "sum, esse, fui, futurus",
+        "parse": "pres. act. ind. 3rd pers. sg.",
+        "principalParts": [
+          "sum",
+          "esse",
+          "fui",
+          "futurus"
+        ],
+        "gloss_kr": "~이다",
+        "gloss_en": "is",
+        "syntax": "LFG f-구조에서 est는 주절의 계사로서 서술어(PRED) 기능을 수행하며, 주어 color와 보어 사이의 등가 관계를 확립한다. c-구조상 [TP [T' [V est]]] 구조를 형성하여 현재 시점의 속성을 선언한다. 생성문법적 분석에서 이 계사는 주어와 보어 간의 성·수 일치를 검증하는 기능적 핵으로 작용하며, 변신 후에도 색채가 변함없이 유지되고 있음을 현재 완료의 현실태로 투사한다.",
+        "background": "변신의 충격 속에서도 변하지 않는 단 하나의 시각적 진실(빛깔)을 현재형으로 확정하는 단단한 닻 역할을 한다. 형체는 새가 되고 배의 부품처럼 굳어졌을지라도, 그들이 품었던 본래의 색은 여전히 그들임을 조용히 증언한다. 이 동사는 시적 여운을 깊게 남기는 문법적 마침표다.",
+        "etymology": "① PIE 재구형 *h₁es-('존재하다, 이다')에서 기원한다. ② 동계어로 산스크리트어 ásti, 그리스어 ἐστί, 영어 is가 있다. ③ 인도유럽어족 전반의 기초 계사로 정착했다. ④ 현대 영어의 is, am, are 및 로망스어군의 활용 전반에 그 원형의 흔적이 깊이 박혀 있다.",
+        "freq_prose": 25000
+      },
+      {
+        "g": "quasque",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "pl. acc. f. (enclitic coord. conj. -que)",
+        "gloss_kr": "그리고 그 여자들을, 그리고 그들이",
+        "gloss_en": "and whom, and which women",
+        "syntax": "LFG f-구조에서 quas는 후속 절의 목적어(OBJ) 기능을 수행하며, 후치 접속사 -que에 의해 앞선 절과 연결된다. c-구조상 관계대명사의 복수 여성 대격 형태로 실현된다. 생성문법적 분석에서 이 대명사는 관계절 내부의 목적어 자리로 이동(A'-movement)하며, 변신 이전 인간이었을 때 그들이 두려워했던 대상과의 관계를 통사적으로 구속한다.",
+        "background": "피에로스의 딸들이 인간으로서 세상에 살아가던 시절에 두려워하거나 경외했던 대상(뮤즈들이나 신들)과의 관계를 환기시키는 관계대명사 구문이다. 새로 변하여 호숫가를 떠도는 현재의 처지와 과거 인간으로서 가졌던 감정적 기억을 교차시킨다. 이 대명사는 서사의 배경을 과거의 인간 사회로 매끄럽게 확장한다.",
+        "etymology": "① PIE 재구형 *kʷo- / *kʷi-('누구, 무엇')에서 기원한다. ② 동계어로 산스크리트어 kás, 그리스어 τίς, 고딕어 ƕas가 있다. ③ 인도유럽조어의 관계사 패러다임이 라틴어 relative pronoun 체계로 분화되었으며, 후치 접속사 -que는 *kʷe에서 유래한다. ④ 현대 영어의 what, which 및 로망스어군의 관계대명사 형태 전반에 그 어원의 흔적이 깊이 남아 있다.",
+        "freq_prose": 1500
+      },
+      {
+        "g": "ante",
+        "pos": "부사",
+        "lemma": "ante",
+        "parse": "adv.",
+        "gloss_kr": "이전에, 일찍이",
+        "gloss_en": "before, formerly",
+        "syntax": "LFG f-구조에서 ante는 시간적 부사어구(ADJUNCT)로서 과거의 심리적 상태를 한정하는 의미역을 할당한다. c-구조상 독립된 부사 형태로 실현되어 관계절의 시공간적 배경을 규정한다. 생성문법적 분석에서 이 부사는 구구조 상위의 부사구 영역에 투사되며, 변신 전 인간이었던 시절과 변신 후의 짐승/새가 된 현재를 나누는 극명한 시간적 단절을 통사적으로 매개한다.",
+        "background": "ante는 변신이라는 치명적인 사건이 일어나기 '이전에' 그들이 어떤 존재였고 무엇을 느꼈는지를 회상하게 만드는 시간적 표지다. 신들의 권능을 가볍게 여기고 예술 경연에서 오만함을 떨다가 비참한 최후를 맞이하기 전의 평온했던 과거를 아련하게 비춘다. 이 단어는 오비디우스 서사의 비극적 아이러니를 극대화한다.",
+        "etymology": "① PIE 재구형 *ant-('앞, 이마, ~의 앞에')에서 기원한다. ② 동계어로 산스크리트어 ánti(~의 앞에, 근처에), 그리스어 ἀντί(~에 대항하여, ~의 대신에), 영어 an-, answer와 어원이 통한다. ③ 장소 전치사에서 시간 부사 및 전치사로 용법이 확장되었다. ④ 현대 영어의 ante(포커의 판돈 내기), anticipate, ancient 등의 어휘에 그 어원의 흔적이 온전히 보존되어 있다.",
+        "freq_prose": 1200
+      },
+      {
+        "g": "timebant",
+        "pos": "동사",
+        "lemma": "timeo, timere, timui",
+        "parse": "imperf. act. ind. 3rd pers. pl.",
+        "principalParts": [
+          "timeo",
+          "timere",
+          "timui",
+          "(미상)"
+        ],
+        "gloss_kr": "두려워했었다",
+        "gloss_en": "they feared, were afraid of",
+        "syntax": "LFG f-구조에서 timebant는 관계절의 서술어(PRED) 기능을 수행하며, 주어(생략된 그들 자신)와 수(pl.) 및 인칭(3rd)의 격일치를 이룬다. c-구조상 [TP [T' [V timebant]]] 구조를 형성하여 미완료 시제를 실현한다. 생성문법적 분석에서 이 상태 동사는 과거의 지속적인 심리 상태를 투사하며, 변신하기 전 인간 여성들이 신적 권능이나 뮤즈들의 분노를 두려워하던 과거의 감정을 통사적으로 완결한다.",
+        "background": "timebant는 피에로스의 딸들이 인간이었을 때 지녔던 경외심과 두려움을 나타내며, 신들의 분노를 가볍게 여겼던 그들이 결국 어떤 공포 속에서 파멸했는지를 암시한다. 미완료 시제를 통해 과거에 지속되었던 그들의 심리적 태도가 변신이라는 끔찍한 형벌 앞에서 어떻게 무력화되었는지 보여준다. 이 동사는 오비디우스 신화 서사의 도덕적 경고를 조용히 마무리한다.",
+        "etymology": "① PIE 재구형 또는 이탈리아어파 고유의 감정 표현 어간에서 기원한 것으로 추정된다. ② 동계어로 직접적인 게르만어파 동계어는 희박하나, 로망스어군의 관련 파생 어휘와 어원이 연계된다. ③ 라틴어 2변화 동사 패러다임으로 정착해 '두려워하다, 무서워하다'를 뜻하는 표준 어휘가 되었다. ④ 현대 영어의 timid(소심한), timidity, intimidate 등의 어휘에 그 어원의 흔적이 뚜렷이 보존되어 있다.",
+        "freq_prose": 310
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.556",
+    "trans": "수많은 요정들이 처녀의 파도를 움직이며 춤추고, 바다의 나이아드들과 거친 산들에서 태어난 이들이",
+    "words": [
+      {
+        "g": "millia",
+        "pos": "수사",
+        "lemma": "mille, -, -",
+        "parse": "복수 주격 중성",
+        "gloss_kr": "수천의, 무수한",
+        "gloss_en": "thousands",
+        "syntax": "LFG f-구조에서 millia는 주어인 명사구의 핵을 이루며, 뒤따르는 부분격 속격 명사구(illas virgineis exercent lusibus undas 내부의 구성 요소 또는 문맥상 수식 구조)와 양화사적 관계를 형성한다. 생성문법적으로 millia는 비대칭적 수량구조(Quantifier Phrase, QP)의 핵으로 투사되며, 후행하는 명사구를 속격으로 지배하여 명사구 내부의 격 체계를 완성한다. 레빈슨式 정보구조 관점에서 이 수사는 수량적 압도성을 나타내는 강조적 초점의 위치를 점하며, 서사의 규모를 확장하는 기능을 수행한다.",
+        "background": "이 구절은 피케우스의 변신 과정에서 바다와 숲의 신들이 모여 경기를 벌이는 장엄한 배경을 묘사하는 장면의 서두에 위치한다. 라틴어 시가에서 수천(millia)이라는 과장법적 표현은 공간의 방대함과 참여하는 신적 존재들의 무한함을 강조하는 시적 관습이다. 아폴론의 저주와 변신의 서사 속에서 이러한 평화롭고 역동적인 요정들의 군무는 이어지는 비극적 긴장감과 대조를 이룬다.",
+        "etymology": "원시 인도유럽어 재구형 *sm-ghesli-(‘하나의 천’)에서 유래한 라틴어 고유어 수사다. 고대 그리스어 χίλιοι(khilioi)와 동계어이며, 두 언어 모두 동일한 인도유럽어 수사 어간에서 갈라져 나왔다. 어두의 자음 탈락과 모음 축약 과정을 거쳐 라틴어 mille로 정착하였으며, 복수형 millia는 중성 i-stem 명사처럼 굴절하는 형태론적 특징을 획득했다. 현대 영어의 million, 이탈리아어 miglia, 스페인어 millar 등 로망스어군 및 게르만어군의 수많은 파생 어휘와 지명 속에 오늘날까지 그 흔적이 강하게 남아 있다."
+      },
+      {
+        "g": "illas",
+        "pos": "대명사",
+        "lemma": "ille, illa, illud",
+        "parse": "복수 대격 여성",
+        "gloss_kr": "저들, 그러한",
+        "gloss_en": "those",
+        "syntax": "LFG 관점에서 illas는 동사 exercent의 f-구조상 직접 목적어(OBJ) 기능을 담당하며, θ-역할로는 행위의 대상인 THEME 또는 PATIENT에 해당한다. c-구조상 대명사로서 명사구의 지시성(definiteness)을 부여하는 핵심 한정사로 기능하며, 원거리 지시 기능을 수행한다. 레빈슨式 정보구조 관점에서 이 지시사는 담화 내에서 이미 언급되었거나 청중이 시각적으로 상정할 수 있는 구정보(given information)를 가리키며, 대조적 맥락에서 화제를 유지하는 통사적 장치로 쓰인다.",
+        "background": "illas는 앞서 언급된 혹은 주변에 편만한 신화적 물의 요정들을 원거리에서 지시하며 시선의 방향을 잡아주는 역할을 한다. 라틴어 지시사 ille은 단순한 대명사를 넘어 신성하거나 저명한 존재를 가리킬 때 시적 존칭의 뉘앙스를 담기도 한다. 이 구절에서 요정들의 무리를 특정하는 데 기여하며, 서사적 공간의 시각적 입체감을 높여준다.",
+        "etymology": "원시 인도유럽어 지시 대명사 어간 *ol-/*ul-에서 발전한 라틴어 *ollus를 거쳐 고전 라틴어의 ille로 정착하였다. 고대 라틴어 비문에서 발견되는 ollus, olla 형태와의 음운론적 교체 과정을 통해 어두 모음의 전설화와 단모음화가 일어났다. 오스카어 및 움브리아어 등 이탈리아어파의 동계어들과 비교할 때, 라틴어 특유의 지시적 강화 접미사가 결합하여 분화된 형태다. 현대 로망스어군의 정관사 체계(스페인어 el/la의 어원적 기저인 ille) 및 프랑스어의 지시 대명사 계열에 결정적인 유전적 흔적을 남겼다."
+      },
+      {
+        "g": "virgineis",
+        "pos": "형용사",
+        "lemma": "virgineus, -a, -um",
+        "parse": "복수 대격 여성",
+        "gloss_kr": "처녀의, 젊은 여성의",
+        "gloss_en": " maidenly, virgin",
+        "syntax": "LFG f-구조에서 virgineis는 명사 undas를 수식하는 ADJUNCT 기능의 형용사로 분석되며, 성·수·격 일치(agreement)를 통해 주어·목적어 간의 의미적 속성을 긴밀히 연결한다. 생성문법적으로 이 형용사는 NP 내부의 N-bar 수준에서 수식어로 병합되며, 격 체계에 따라 명사와의 엄격한 형태론적 일치를 강제받는다. 레빈슨式 정보구조 관점에서 이 수식어는 비필수적 부가어이면서도 요정들의 정체성이라는 핵심 속성을 전달하는 비화제적 속성 초점을 구성한다.",
+        "background": "고대 신화에서 나이아드와 요정들은 대개 젊음과 순결을 상징하는 처녀(virgo)의 속성을 지닌 채 묘사된다. 이 단어는 단순한 생물학적 나이를 뜻하기보다, 자연의 순수하고 길들여지지 않은 생명력을 의인화하는 시적 장치로 기능한다. 오비디우스의 변신 이야기에서 처녀성을 위협받거나 변신하는 신화적 모티프들과 은근히 호응하는 수사적 복선을 이룬다.",
+        "etymology": "명사 virgo(처녀, 미혼 여성)에서 파생된 형용사 접미사 -eus가 결합하여 형성된 형태다. 어원적으로 PIE 재구형 *wirg-('젊은 여성, 생기 있는 자') 계열과 연결되며, 셈족어 차용이 아닌 이탈리아어파 고유의 어휘 형성력을 보여준다. 고대 라틴어에서 명사 파생 형용사로 정착하는 과정에서 모음 간 자음의 약화나 음절 구조의 재조정이 일어났다. 현대 영어의 virginal, 이탈리아어 virgineo 및 각종 로망스어의 관련 어휘 속에 직접적인 흔적이 살아 있다."
+      },
+      {
+        "g": "exercent",
+        "pos": "동사",
+        "lemma": "exerceo, exercere, exercui, exercitus",
+        "parse": "현재 능동 직설법 3인칭 복수",
+        "principalParts": "exerceo – exercere – exercui – exercitus",
+        "gloss_kr": "움직이다, 몰두하다, 단련하다",
+        "gloss_en": "they exercise, busy, agitate",
+        "syntax": "LFG f-구조에서 exercent는 문장의 핵심 PRED이며, SUBJ 논항으로 복수 주어(naides aequoreae 등)를, OBJ 논항으로 undas를 지배한다. 생성문법적으로 이 동사는 vP 영역에서 주어와의 격 및 일치(phi-features)를 확인하며, 어순상 문장의 핵으로서 동사 중심의 통사 구조를 완결한다. 레빈슨式 정보구조 관점에서 서술어인 exercent는 전체 문장의 레마(rhema) 중심을 이루며, 요정들이 물결 위에서 벌이는 역동적인 행위를 청중에게 새 정보로 전달한다.",
+        "background": "exerceo는 본래 몸을 단련하거나 부지런히 움직여 어떤 일에 몰두하게 만드는 강한 동적인 의미를 지닌 동사다. 이 맥락에서 요정들이 파도를 가르며 격렬하게 놀이를 즐기는 모습을 생생하게 시각화하는 중추적 역할을 한다. 단순한 유희를 넘어 자연의 원초적인 활력과 신들의 생동감 넘치는 에너지를 표현하는 데 기여한다.",
+        "etymology": "전치사 ex-(~밖으로, 강세)와 동사 arceo(막다, 에워싸다, 통제하다)가 합성된 라틴어 동사다. PIE 재구형 *h₂erk-('잡다, 유지하다, 감싸다')에 기원을 두며, 고대 그리스어의 ἀρκέω(arkeo, '돕다, 족하다')와 동계 관계를 형성한다. 파생 과정에서 복합어 음운 규칙에 따라 어간 모음의 변화(a>e)와 자음 동화가 일어났다. 현대 영어의 exercise, 프랑스어 exercer, 스페인어 ejercer 등 광범위한 서구 언어 속에서 학습, 단련, 실천을 뜻하는 핵심 어휘로 살아남았다."
+      },
+      {
+        "g": "undas",
+        "pos": "명사",
+        "lemma": "unda, undae, f.",
+        "parse": "복수 대격 여성",
+        "gloss_kr": "파도, 물결",
+        "gloss_en": "waves, waters",
+        "syntax": "LFG f-구조에서 undas는 타동사 exercent의 OBJ 논항으로 기능하며, 행위가 미치는 물리적 대상(PATIENT)의 역할을 수행한다. 생성문법적으로 V구조 내부에서 복수 대격 명사구로 병합되며, 형용사 수식어 virgineis와 엄격한 일치 관계를 맺는다. 레빈슨式 정보구조 관점에서 이 목적어는 문맥상 요정들의 활동이 이루어지는 무대를 형성하는 배경 정보이자, 동사의 행위가 투사되는 직접적 초점의 대상이 된다.",
+        "background": "unda는 단순한 물(aqua)이나 바다(mare)와 달리, 끊임없이 움직이는 파도와 물결의 역동성을 강조하는 시적 명칭이다. 이 구절에서 요정들이 물결을 발로 차거나 헤치며 노는 활기찬 공간적 배경을 생생하게 구성한다. 오비디우스의 시 세계에서 물은 변신과 생명의 근원이자 수많은 신화적 사건이 벌어지는 주된 무대로 자주 등장한다.",
+        "etymology": "원시 인도유럽어 재구형 *und-/*wed-('적시다, 물, 흐르다')에서 유래한 라틴어 고유어 명사다. 고대 그리스어 ὕδωр(hydor, '물') 및 영어의 water, 독어의 Wasser 등과 깊은 계통적 동계 관계를 맺고 있다. 인도유럽조어의 비음 확장형 어근에서 라틴어로 넘어오면서 명사화 접미사와 결합하여 고유의 여성형 1변화 명사로 정착했다. 현대 로망스어군인 프랑스어 onde, 스페인어 onda 및 영어의 undulate(파도치다), inundate(범람하다) 등의 파생어와 전문 용어에 찬란한 흔적을 남겼다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.557",
+    "trans": "바다의 나이아드들과 거친 산들에서 태어난 이들이",
+    "words": [
+      {
+        "g": "naides",
+        "pos": "명사",
+        "lemma": "Nais, Naidis, f.",
+        "parse": "복수 주격 여성",
+        "gloss_kr": "나이아드, 샘과 물의 요정들",
+        "gloss_en": "Naiads, water nymphs",
+        "syntax": "LFG f-구조에서 naides는 앞행의 동사 exercent를 공유하거나 병렬 구조 안에서 새로운 주어(SUBJ) 기능을 담당하며, 문장의 주체적 행위자(AGENT) 역할을 수행한다. 생성문법적으로 외재적 주어 위치[Spec,TP]에 병합되며, 그리스어 차용 명사 특유의 3변화 격 어미를 수용한다. 레빈슨式 정보구조 관점에서 이 명사는 대조적 초점의 주체로서 산에서 온 요정들과 구별되는 바다 출신의 정체성을 드러내는 핵심 신정보를 담는다.",
+        "background": "Naides는 그리스·로마 신화에서 샘, 강, 시내 등 담수를 관장하는 여성 요정들을 가리키는 고유 명칭이다. 이들은 자연의 생명력과 물의 정화를 상징하며, 시가 속에서 목가적이고 신비로운 분위기를 연출하는 데 자주 동원된다. 오비디우스는 바다의 요정과 산의 요정을 나란히 배치함으로써 지상의 모든 물과 대지의 영들이 피케우스의 변신 장소로 집결하고 있음을 보여준다.",
+        "etymology": "그리스어 Ναΐδες(Naides, Ναιάς의 복수형)를 라틴어가 그대로 차용하여 시적 용어로 수용한 것이다. 어원적으로 그리스어 동사 νάω(nao, '흐르다') 및 PIE *snā-('흐르다, 헤엄치다')와 직결되며, '흐르는 물에 사는 자'라는 본뜻을 지닌다. 라틴어 시인들에 의해 로마 시가 속으로 유입되는 과정에서 그리스어 원형의 음운 형태가 유지되었다. 현대 서구 언어에서 물의 요정을 뜻하는 학술어 및 문예적 용어인 Naiad로 직계 계승되어 오늘날까지 쓰이고 있다."
+      },
+      {
+        "g": "aequoreae",
+        "pos": "형용사",
+        "lemma": "aequoreus, -a, -um",
+        "parse": "복수 주격 여성",
+        "gloss_kr": "바다의, 수면의",
+        "gloss_en": "marine, of the sea, watery",
+        "syntax": "LFG f-구조에서 aequoreae는 명사 naides를 수식하는 한정적 ADJUNCT 기능의 형용사로 분석되며, 성·수·격 일치를 통해 주어 명사구의 의미 범주를 제한한다. 생성문법적으로 NP 내부에서 핵 명사의 좌측 또는 우측에 병합되어 속성 지시 역할을 수행하며, 격 파생 표지를 공유한다. 레빈슨式 정보구조 관점에서 이 수식어는 요정들의 서식지와 본질적 속성을 명시하는 대조적 수식어로서 후행하는 '산에서 온 이들'과 선명한 대조를 이룬다.",
+        "background": "aequoreus는 평평한 바다 수면을 뜻하는 명사 aequor에서 파생된 형용사로, 단순히 깊은 바다라기보다 잔잔하거나 광활한 수면의 이미지를 환기한다. 이 단어는 바다와 연관된 신적 존재들의 속성을 고귀하고 시적으로 포장하는 데 유용하게 쓰인다. 나이아드들이 지상의 담수를 넘어 바다의 영역과도 연결되어 있음을 시사하는 지리적·신화적 확장성을 지닌다.",
+        "etymology": "평평한 표면, 바다를 뜻하는 라틴어 명사 aequor(어원적으로 aequus '평평한, 공평한'에서 유래)에 형용사 파생 접미사 -eus가 결합한 형태다. PIE 재구형 *yekʷ-('동등하다, 평평하다') 계열에 속하며, 지평선이나 잔잔한 수평선의 시각적 이미지를 담고 있다. 라틴어 고유의 어휘 형성 과정에서 모음 탈락 및 음절 조율을 거쳐 시가 전문 용어로 정착했다. 직접적인 현대 일상어로는 남지 않았으나, 로망스어군의 문학적 어휘 및 해양 관련 인접 개념의 라틴어 계통 분석에서 중요한 위치를 차지한다."
+      },
+      {
+        "g": "durisque",
+        "pos": "접속사+형용사",
+        "lemma": "durus, -a, -um (및 enclitic -que)",
+        "parse": "복수 탈격 남성/여성/중성, enclitic conjunction",
+        "gloss_kr": "그리고 거친, 단단한",
+        "gloss_en": "and harsh, hard",
+        "syntax": "LFG f-구조에서 -que는 대등접속사(COORD)로서 앞의 절이나 어구와 뒤의 어구를 연결하며, duris는 후행하는 명사 montibus를 수식하는 ADJUNCT 기능을 수행한다. 생성문법적으로 등위 접속사 -que는 클리틱(clitic)으로서 첫 번째 호응 요소의 말단에 구문적으로 부착되어 이동-결합 제약을 따른다. 레빈슨式 정보구조 관점에서 접속사와 형용사의 결합은 두 집단 간의 대등한 병렬 관계를 구축하며, 새로운 정보 단위를 매끄럽게 확장하는 결속성 장치로 작용한다.",
+        "background": "durus는 물질적인 단단함뿐만 아니라 환경이 척박하고 거칠음을 뜻하는 형용사로, 여기서는 인간의 손길이 닿지 않은 야생의 산세를 비유한다. 바다의 유연하고 부드러운 요정들과 대비되는 거칠고 단단한 산악 지대의 성격을 함축한다. 오비디우스는 부드러운 물결과 거친 산이라는 대조적 요소를 병치하여 자연의 다채로운 스펙트럼을 한 폭에 담아낸다.",
+        "etymology": "원시 인도유럽어 재구형 *dreu-('단단하다, 나무') 또는 관련 어근에서 유래한 라틴어 고유어 형용사다. 그리스어 drus(참나무, 단단한 나무)와 동계어이며, 나무의 단단한 물성에서 '거칠다, 가혹하다'라는 추상적 의미로 확장되었다. 라틴어 고유의 음운 변화를 거쳐 고전기 시가와 산문 전반에 보편적으로 정착했다. 현대 영어의 endure(견디다), durable(내구성이 있는), 프랑스어 dur 등 서구 제어의 수많은 파생 어휘와 관용 표현 속에 생생하게 살아 있다."
+      },
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "탈격 지배 전치사",
+        "gloss_kr": "~안에서, ~에",
+        "gloss_en": "in, on, among",
+        "syntax": "LFG f-구조에서 in은 전치사구(P-struct)의 핵을 이루며, 후행하는 탈격 명사 montibus를 오블리크(OBL) 논항으로 지배하여 처소적 의미장을 형성한다. 생성문법적으로 P 핵은 NP를 탈격으로 지정하는 격 부여(Case-assignment) 자격 요건을 갖추며, PP 전체는 동사나 명사구에 부가되는 위치 부가어로 병합된다. 레빈슨式 정보구조 관점에서 이 전치사구는 행동이 일어나는 물리적 장소를 한정하는 배경적 직시(deictic grounding) 기능을 담당한다.",
+        "background": "in은 라틴어에서 처소나 방향을 나타내는 가장 기초적이면서도 빈도가 높은 전치사다. 여기서는 거친 산들이라는 공간적 배경을 한정하여, 그곳에서 기원하거나 살아가는 존재들의 출처를 명시한다. 신화적 공간의 지리적 입체감을 부여하며 서사의 무대를 확장하는 문법적 디딤돌 역할을 한다.",
+        "etymology": "원시 인도유럽어 처소 격 전치사/부사 재구형 *en에서 유래한 라틴어 기본 전치사다. 고대 그리스어 ἐν(en), 영어 in, 독어 in 등과 완벽하게 일치하는 범인도유럽어 공통 어휘다. 고대 이탈리아어파의 음운 진화 과정에서도 형태가 거의 변하지 않고 안정적으로 보존되었다. 현대 영어의 in, 프랑스어 en, 스페인어 en 등 거의 모든 현대 인도유럽어의 처소 전치사 체계에 직계 조상으로 깊숙이 뿌리내리고 있다."
+      },
+      {
+        "g": "montibus",
+        "pos": "명사",
+        "lemma": "mons, montis, m.",
+        "parse": "복수 탈격 남성",
+        "gloss_kr": "산들, 산맥",
+        "gloss_en": "mountains, hills",
+        "syntax": "LFG f-구조에서 montibus는 전치사 in의 지배를 받는 OBL 논항으로 기능하며, 장소(LOCATION)의 θ-역할을 수행한다. 생성문법적으로 전치사구(PP) 내에서 명사구 핵으로 병합되며, 3변화 i-stem의 복수 탈격 어미 -ibus를 실현한다. 레빈슨式 정보구조 관점에서 이 명사는 요정들의 출신 배경을 설명하는 중요한 처소적 초점 정보를 담으며, 앞서 언급된 바다와 공간적 대비를 이루는 핵심 축이 된다.",
+        "background": "mons는 평지와 구별되는 높고 험준한 산, 혹은 산악 지대를 가리키는 라틴어 기본 명사다. 산의 요정(오렉스)들이 바다의 요정들과 함께 축제에 참여하고 있음을 보여주는 공간적 표지다. 오비디우스는 바다와 산이라는 서로 다른 자연 환경의 정령들을 한데 모으며 대자연의 조화와 화합을 연출한다.",
+        "etymology": "원시 인도유럽어 재구형 *mn-ti-/*men-('돌출하다, 솟아오르다, 생각하다' 계통의 솟은 지형 확장)에서 유래한 라틴어 명사다. 고대 그리스어에는 직접 동계어가 음운 변화로 형태가 달라졌으나, 산스크리트어의 관련 지형 어휘 및 산악 관련 어근과 연결된다. 라틴어 3변화 과정에서 i-stem으로 편입되면서 복수 탈격에서 -ibus 형태를 고정했다. 현대 영어의 mount, mountain, 프랑스어 mont, 이탈리아어 monte 등 지명과 일반 어휘 전반에 거대한 어원적 유산을 남겼다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.558",
+    "trans": "부드러운 바다를 가득 채우며 경기를 펼치니, 그들의 본래 고향은 그들을 구속하지 않는다.",
+    "words": [
+      {
+        "g": "molle",
+        "pos": "형용사",
+        "lemma": "mollis, molle",
+        "parse": "단수 대격 중성",
+        "gloss_kr": "부드러운, 잔잔한, 유연한",
+        "gloss_en": "soft, gentle, smooth",
+        "syntax": "LFG f-구조에서 molle는 후행하는 명사 fretum을 수식하는 한정적 ADJUNCT 기능을 수행하며, 중성 단수 대격으로서 명사와의 형태론적 일치를 보인다. 생성문법적으로 NP 내부의 N-bar 수준에서 수식어로 병합되며, 격과 성의 일치 제약을 충족한다. 레빈슨式 정보구조 관점에서 이 수식어는 바다의 물성적 특징을 감각적으로 묘사하는 수식적 초점 정보를 제공하며, 거친 산과 대비되는 부드러움을 강조한다.",
+        "background": "mollis는 단단함(durus)의 반대말로, 물리적인 부드러움뿐만 아니라 유연하고 온화한 성질을 뜻한다. 여기서는 험준한 산(montes)에서 태어난 요정들이 부드럽고 잔잔한 바다의 물결 속에서 아무런 이질감 없이 어우러지는 기묘한 조화를 설명하는 선행 수식어로 쓰인다. 오비디우스의 자연 묘사에서 서로 다른 성질의 요소들이 융화되는 평화로운 국면을 상징한다.",
+        "etymology": "원시 인도유럽어 재구형 *mol-/*meld-('부드러운, 녹는')에서 유래한 라틴어 고유어 형용사다. 고대 그리스어 malthakos(부드러운)나 게어만어군의 관련 어휘들과 계통적 친족 관계를 형성한다. 라틴어 내부에서 자음군 변화와 모음 약화를 거쳐 3변화 형용사 체계로 정착했다. 현대 영어의 mollify(달래다), emollient(진정시키는), 로망스어군의 부드러움을 뜻하는 제어 어휘 속에 오늘날까지 생생하게 살아 있다."
+      },
+      {
+        "g": "fretum",
+        "pos": "명사",
+        "lemma": "fretum, freti, n.",
+        "parse": "단수 대격 중성",
+        "gloss_kr": "해협, 바다, 물결치는 곳",
+        "gloss_en": "strait, sea, water",
+        "syntax": "LFG f-구조에서 fretum은 미지정 또는 앞선 동사의 맥락에서 연결되거나 본 절의 목적어/처소적 목적어 기능을 담당하며, 공간적 대상(THEME/LOCATION)의 역할을 수행한다. 생성문법적으로 2변화 중성 명사로서 대격 자리에 병합되며, 형용사 molle의 수식을 받는다. 레빈슨式 정보구조 관점에서 이 명사는 요정들의 무대가 되는 해역을 구체화하는 지리적 신정보를 제공한다.",
+        "background": "fretum은 본래 끓어오르는 듯한 좁은 해협이나 거친 물결이 부딪히는 바다를 뜻하나, 시가에서는 넓은 의미의 바다나 수면을 가리키는 시어러로 자주 쓰인다. 산에서 온 요정들이 바다라는 낯선 생태계 속에서 자유롭게 뛰노는 무대가 바로 이 fretum이다. 출신의 경계를 뛰어넘는 신화적 존재들의 유희와 통합을 보여주는 공간적 배경이다.",
+        "etymology": "동사 ferveo(끓어오르다, 솟구치다)의 어근에서 파생된 라틴어 중성 명사다. PIE 재구형 *bherw-('끓다, 거품이 일다')에 기원을 두며, 물결이 소용돌이치며 끓어오르는 바다의 물리적 현상을 반영한다. 라틴어의 명사화 파생 규칙에 따라 형태가 고정되었으며, 고전기 이후 시가와 산문에서 해협을 뜻하는 표준 어휘가 되었다. 현대 영어의 fret(초조해하다, 마찰하다)의 어원적 기저와 일부 로망스어의 해양 관련 용어에 흔적을 남기고 있다."
+      },
+      {
+        "g": "celebrant",
+        "pos": "동사",
+        "lemma": "celebro, celebrare, celebravi, celebratus",
+        "parse": "현재 능동 직설법 3인칭 복수",
+        "principalParts": "celebro – celebrare – celebravi – celebratus",
+        "gloss_kr": "경축하다, 자주 찾다, 가득 채우다",
+        "gloss_en": "they crowd, celebrate, frequent",
+        "syntax": "LFG f-구조에서 celebrant는 문장의 핵심 PRED이며, 복수 주어(naides 등)를 SUBJ로, 목적어(fretum 등)를 OBJ로 지배한다. 생성문법적으로 vP 영역에서 주어와의 격 및 일치 관계를 맺으며, 문장의 통사적 서술부를 완성한다. 레빈슨式 정보구조 관점에서 이 서술어는 요정들이 바다를 가득 메우며 축제 분위기를 형성한다는 핵심 새 정보를 청중에게 전달한다.",
+        "background": "celebro는 단순히 축하한다는 뜻 외에도, 많은 사람이 무리지어 어떤 장소를 붐비게 하거나 자주 드나든다는 뜻을 강하게 내포한다. 산과 바다의 요정들이 한데 모여 바다의 수면을 가득 채우고 축제 같은 유희를 벌이는 장엄한 광경을 완벽하게 포착한다. 신화 속 존재들이 경계 없이 어울리는 대동제의 이미지를 극대화한다.",
+        "etymology": "형용사 celeber(붐비는, 유명한, 경축되는)에서 파생된 라틴어 동사다. PIE 재구형 *kel-('솟아오르다, 높다') 계열과 연관되며, 사람들이 많이 모여 북적거리는 상태를 어원적 바탕으로 삼는다. 파생 과정에서 규칙적인 1변화 동사 체계로 편입되어 안정적인 활용을 보였다. 현대 영어의 celebrate(축하하다), celebrity(명성, 유명인), 프랑스어 célébrer 등 전 세계 언어에서 축제와 명성을 뜻하는 보편적 어휘로 자리 잡았다."
+      },
+      {
+        "g": "nec",
+        "pos": "접속사",
+        "lemma": "neque / nec",
+        "parse": "등위 접속사 (and not)",
+        "gloss_kr": "그리고 ~않다, 또한 ~않다",
+        "gloss_en": "and not, nor",
+        "syntax": "LFG f-구조에서 nec는 등위 접속사(COORD)로서 앞의 긍정 또는 부정 진술과 뒤의 부정 절을 매개하며, 문장 전체의 극성(polarity)을 반전시키는 기능을 한다. 생성문법적으로 접속사 구(ConjP)의 핵으로 투사되며, 후행하는 절의 부정사와 서술어 영역에 스코프를 미친다. 레빈슨式 정보구조 관점에서 이 접속사는 담화의 흐름을 전환하여 예외적인 상황이나 반전된 진실(출신이 구속하지 않는다)을 강조하는 초점 도입 장치로 기능한다.",
+        "background": "nec는 부정 등위 접속사로, 앞선 내용에 이어 '그럼에도 불구하고 ~하지 않는다'는 반전이나 예외의 뉘앙스를 매끄럽게 연결한다. 요정들이 원래 살던 고향(산이냐 바다냐)이 이들의 행동이나 즐거움을 가로막지 못한다는 점을 강조하는 논리적 전환점이다. 신화적 존재들 사이의 경계가 무너지는 자유로움을 수사적으로 뒷받침한다.",
+        "etymology": "부정 부사 ne와 대등 접속사 que가 결합하여 축약된 라틴어 고유어 접속사다. PIE 부정 소사 *ne와 결합 어구의 음운론적 마모 및 동화 과정을 거쳐 고전 라틴어의 표준 형태인 nec로 고정되었다. 고대 이탈리아어파의 공통 유산이며, 문어와 구어 전반에서 광범위하게 쓰였다. 직접적인 형태는 로망스어군에서 다양한 형태로 변형되었으나, 라틴어 인용구나 문학적 전통 속에서 그 고유의 접속 기능을 온전히 유지하고 있다."
+      },
+      {
+        "g": "eas",
+        "pos": "대명사",
+        "lemma": "is, ea, id",
+        "parse": "복수 대격 여성",
+        "gloss_kr": "그들을, 그것들을",
+        "gloss_en": "them",
+        "syntax": "LFG f-구조에서 eas는 동사 tangit의 OBJ 논항이며, 앞서 언급된 요정들을 가리키는 대명사적 지시 기능을 수행한다. 생성문법적으로 비대칭적 목적어 자리[Spec,vP 또는 VP 내부]에 병합되며, 선행사와의 성·수 일치를 엄격히 만족한다. 레빈슨式 정보구조 관점에서 이 대명사는 담화 내에서 이미 활성화된 구정보(given information)를 이어받아 화제를 유지하는 무표적 지시사로 기능한다.",
+        "background": "eas는 앞서 등장한 요정들(나이아드와 산의 요정들)을 정확하게 지칭하며, 이들이 누리는 자유로움이 외부의 제약을 받지 않음을 서술하는 문법적 주체가 된다. 대명사의 반복을 통해 문장의 응집성을 높이고, 시적 서사의 초점을 요정들의 내면과 본질로 모아준다. 출신의 차이가 이들의 유희를 구속하지 못한다는 핵심 주제를 부각하는 징검다리 역할을 한다.",
+        "etymology": "원시 인도유럽어 지시/3인칭 대명사 재구형 *i-/*e-에서 유래한 라틴어 기본 대명사다. 고대 인도어의 사촌 어휘 및 산스크리트어 지시 대명사 체계와 깊은 계통적 친족 관계를 맺는다. 라틴어의 복잡한 대명사 패러다임 속에서 3인칭 대명사의 공백을 메우는 핵심 역할을 담당하며 정착했다. 현대 로망스어군(스페인어 los/las, 프랑스어 les 등)의 3인칭 직접 목적격 대명사의 어원적 조상으로서 현대 언어 지형에 거대한 흔적을 남겼다."
+      },
+      {
+        "g": "sua",
+        "pos": "대명사(소유형용사)",
+        "lemma": "suus, sua, suum",
+        "parse": "복수 대격 중성 (소유격 의미)",
+        "gloss_kr": "그들의 자신의",
+        "gloss_en": "their own",
+        "syntax": "LFG f-구조에서 sua는 소유형용사로서 명사 origo를 수식하는 ADJUNCT 기능을 수행하며, 주어와 일치하는 재귀적 소유 관계(reflexive possessor)를 나타낸다. 생성문법적으로 NP 내부의 지정어(Specifier) 위치에 병합되며, 수식하는 명사와 성·수·격 일치를 이룬다. 레빈슨式 정보구조 관점에서 이 소유형용사는 본래 소속된 출신 배경이라는 구정보적 속성을 강조하여, 그것이 미치지 못하는 예외적 상황을 대조적으로 부각한다.",
+        "background": "suus는 주어의 소유를 나타내는 재귀 소유형용사로, 여기서는 요정들 각자가 태어난 본래의 고향이나 출신 성분을 뜻한다. 산에서 태어났든 바다에서 태어났든 각자의 '원래 고향'이 지닌 속성이 이들의 현재 행동을 구속하지 않는다는 점을 극적으로 보여준다. 태생적 한계를 초월하여 대자연 속에서 온전히 동화되는 신화적 자유의지를 상징한다.",
+        "etymology": "원시 인도유럽어 재구형 *se-/*swo-('자기 자신, 자신을 향한')에서 유래한 라틴어 재귀 소유형용사다. 고대 그리스어 ἑός(heos) 및 산스크리트어 sva(자신의)와 완벽하게 일치하는 범인도유럽어 핵심 공통 어휘다. 라틴어의 음운 규칙에 따라 어두의 s가 보존되면서 고유의 형용사 변화 3종 세트로 정착했다. 현대 로망스어군(스페인어 su, 이탈리아어 suo 등)의 3인칭 소유 형용사 체계로 직계 계승되어 오늘날까지 광범위하게 쓰이고 있다."
+      },
+      {
+        "g": "origo",
+        "pos": "명사",
+        "lemma": "origo, originis, f.",
+        "parse": "단수 주격 여성",
+        "gloss_kr": "기원, 출신, 태생",
+        "gloss_en": "origin, source, birth",
+        "syntax": "LFG f-구조에서 origo는 부정문 절의 주어(SUBJ) 기능을 수행하며, 동사 tangit의 행위 주체 또는 경험의 대상이 되는 추상적 실체다. 생성문법적으로 외재적 주어 위치[Spec,TP]에 병합되며, 3변화 자음간 격 어미를 취한다. 레빈슨式 정보구조 관점에서 이 명사는 문장의 주 제어로서 앞서 언급된 산과 바다의 태생이라는 구정보를 받아내며, 그것의 구속력 부정을 선언하는 초점의 중심이 된다.",
+        "background": "origo는 어떤 물건이나 생명체가 비롯된 근원, 혈통, 혹은 지리적 출생지를 가리키는 철학적·시적 명사다. 오비디우스의 변신 서사에서 존재의 기원이나 태생적 한계가 고정되지 않고 상황과 환경에 따라 유연하게 초월될 수 있음을 보여주는 핵심 개념어다. 요정들이 각자의 출신 산이나 바다라는 '기원'에 매이지 않고 새로운 축제의 공간에서 하나가 되는 순간을 설명한다.",
+        "etymology": "동사 orior(솟아오르다, 시작되다)의 어간에서 파생된 라틴어 고유어 명사다. PIE 재구형 *h₂er-('맞추다, 솟아오르다, 시작하다')에 기원을 두며, 해가 떠오르거나 생명이 싹트기 시작하는 물리적 현상에서 추상적 기원의 의미로 확장됐다. 라틴어 명사 파생 접미사 -igo가 결합하여 3변화 여성 명사로 고정되었다. 현대 영어의 origin(기원), original(독창적인, 본래의), 프랑스어 origine 등 전 세계 언어의 학술 및 일상 어휘 속에 깊이 뿌리내리고 있다."
+      },
+      {
+        "g": "nec",
+        "pos": "접속사",
+        "lemma": "neque / nec",
+        "parse": "등위 접속사 (and not)",
+        "gloss_kr": "그리고 ~않다, 또한 ~않다",
+        "gloss_en": "and not, nor",
+        "syntax": "LFG f-구조에서 nec는 앞선 절과 대등한 접속(COORD) 관계를 맺으며 문장 전체의 부정 극성을 유지하거나 전환하는 통사적 접속 핵으로 기능한다. 생성문법적으로 접속사 구(ConjP)의 최외곽에 병합되며 후행하는 서술어에 스코프를 미친다. 레빈슨式 정보구조 관점에서 이 부사적 접속사는 앞의 진술(고향이 구속하지 않는다)에 이어지는 추가적인 부정의 초점을 도입하여 담화의 완결성을 높인다.",
+        "background": "nec는 앞 절의 '고향이 그들을 구속하지 않는다'는 선언에 이어, 이들이 과거에 겪었던 고난이나 위험조차 현재의 유희를 방해하지 못한다는 다음 행의 내용과 매끄럽게 이어주는 역할을 한다. 시적 호흡을 조절하며 서사의 긴장감을 유지하는 중요한 접속 장치다.",
+        "etymology": "부정 부사 ne와 대등 접속사 que의 결합 및 음운론적 축약으로 형성된 라틴어 고유어다. (상세 어원 정보는 앞선 nec 항목 참조)."
+      },
+      {
+        "g": "eas",
+        "pos": "대명사",
+        "lemma": "is, ea, id",
+        "parse": "복수 대격 여성",
+        "gloss_kr": "그들을",
+        "gloss_en": "them",
+        "syntax": "LFG f-구조에서 eas는 다음 행에 이어지는 동사 pertulerint의 목적어(OBJ) 논항으로 기능하며, 행위의 대상(THEME) 역할을 수행한다. 생성문법적으로 목적어 자리[Spec,vP 또는 VP 내부]에 병합되며 선행하는 요정들과 격·성·수 일치를 이룬다. 레빈슨式 정보구조 관점에서 이 대명사는 담화 내에서 지속적으로 지시되는 구정보로서 화제를 결속하는 대명사적 장치로 쓰인다.",
+        "background": "eas는 앞서 언급된 요정들을 다시 한번 지목하며, 이들이 과거에 바다에서 겪었던 수많은 위험과 고난의 주체임을 명시하는 문법적 고리다. 평화롭고 즐거운 현재의 축제 이면에 이들이 거쳐온 파란만장한 서사적 역사가 숨겨져 있음을 암시하는 복선적 기능을 한다.",
+        "etymology": "라틴어 기본 3인칭 대명사 is, ea, id의 복수 대격 여성형태다. (상세 어원 정보는 앞선 eas 항목 참조)."
+      },
+      {
+        "g": "tangit",
+        "pos": "동사",
+        "lemma": "tango, tangere, tetigi, tactus",
+        "parse": "현재 능동 직설법 3인칭 단수",
+        "principalParts": "tango – tangere – tetigi – tactus",
+        "gloss_kr": "닿다, 감동시키다, 구속하다, 영향을 미치다",
+        "gloss_en": "it touches, affects, constrains",
+        "syntax": "LFG f-구조에서 tangit은 본 절의 핵심 PRED이며, 단수 주어(origo)를 SUBJ로, 목적어(eas)를 OBJ로 지배한다. 생성문법적으로 vP 영역에서 단수 주어와의 3인칭 단수 일치(phi-features)를 실현하며, 문장의 통사 구조를 완결한다. 레빈슨式 정보구조 관점에서 이 서술어는 출신의 기원이 요정들에게 미치는 영향력을 부정하는 핵심 레마(rhema) 정보를 전달한다.",
+        "background": "tango는 본래 물리적으로 손이나 몸이 닿는 것을 뜻하나, 추상적으로는 마음에 감동을 주거나 어떤 영향이나 구속력을 미친다는 의미로 확장된다. 여기서는 태생적 고향이라는 원초적 속성이 요정들의 현재 행동이나 즐거움을 억누르거나 사로잡지 못한다는 점을 표현하는 핵심 동사다. 출신의 한계를 뛰어넘는 신화적 해방감을 시적으로 선언한다.",
+        "etymology": "원시 인도유럽어 재구형 *tag-('만지다, 붙잡다')에서 유래한 라틴어 고유어 동사다. 현재형에서 비음삽입(nasal infix) 현상(-n-)이 일어나는 전형적인 인도유럽어 어간 교체 패턴을 보여주며, 완료형에서는 중복사(tetigi)를 취한다. 고대 그리스어의 관련 접촉 어휘 및 게르만어군의 닿음 관련 어근들과 비교된다. 현대 영어의 tangent(접선), tangible(만질 수 있는, 실재하는), contact(접촉) 등의 어원적 고향으로서 거대한 어휘군을 거느리고 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.559",
+    "trans": "그러나 그들은 바다에서 얼마나 많은 위험을 종종 겪었는지 잊지 않은 채, 흔들리는 배들을",
+    "words": [
+      {
+        "g": "Non",
+        "pos": "부사",
+        "lemma": "non",
+        "parse": "부정 부사",
+        "gloss_kr": "~아니다, 않다",
+        "gloss_en": "not",
+        "syntax": "LFG f-구조에서 Non은 문장 또는 분사구 전체의 부정을 관장하는 ADJUNCT(또는 부정 부사 핵)로 기능하며, 후행하는 분사 oblitae의 의미를 반전시킨다. 생성문법적으로 부정 부사는 TP 또는 vP의 상위 외곽에 병합되어 명제 전체의 진리치를 부정하는 스코프를 형성한다. 레빈슨式 정보구조 관점에서 이 부정어는 앞선 '구속하지 않는다'라는 주제를 이어받아, 이들이 과거의 기억을 상실하지 않았음을 강조하는 대조적 초점의 표지 역할을 한다.",
+        "background": "non은 라틴어의 가장 표준적이고 강력한 부정 부사다. 요정들이 현재 평화롭고 즐겁게 놀고 있으면서도, 과거 자신들이 혹은 바다 위를 항해하던 이들이 겪었던 수많은 재난과 위험을 결코 망각하지 않았음을 보여주는 심리적 깊이를 더한다. 즐거움 속에서도 과거의 기억을 간직한 채 존재하는 신화적 입체감을 부여한다.",
+        "etymology": "고대 라틴어의 부정 소사 *ne와 단정 부사 *oinom('하나, 온전한'의 의미, 고대 라틴어 oino > unus)이 결합하여 '단 하나도 아니다'라는 뜻에서 축약된 형태다. PIE 재구형 *ne와 *oinos의 합성 결과물이며, 고전 라틴어로 이행하면서 음운 마모를 겪어 현재의 단음절 부사로 정착했다. 현대 로망스어군(프랑스어 non, 이탈리아어 non, 스페인어 no 등)의 표준 부정어로 직계 계승되어 전 세계 인류의 언어생활에 막대한 흔적을 남겼다."
+      },
+      {
+        "g": "tamen",
+        "pos": "부사",
+        "lemma": "tamen",
+        "parse": "접속부사",
+        "gloss_kr": "그럼에도 불구하고, 그러나",
+        "gloss_en": "nevertheless, yet",
+        "syntax": "LFG f-구조에서 tamen은 문장 부사(ADJUNCT)로서 앞서 기술된 내용(출신이 구속하지 않는다는 점)과 현재의 상태(과거를 잊지 않음) 사이의 논리적 긴장이나 양보 관계를 매개한다. 생성문법적으로 문장 초기 또는 CP 영역에 자유롭게 병합되어 담화 표지 역할을 수행한다. 레빈슨式 정보구조 관점에서 이 부사는 예상되는 인과관계(즐거우면 과거를 잊을 것이다)를 거스르는 역접의 화제 초점을 도입하는 담화 표지다.",
+        "background": "tamen은 앞선 문맥과 현재 문맥 사이의 미묘한 대조나 양보의 뉘앙스를 조율하는 핵심 접속부사다. 요정들이 비록 고향의 구속에서 벗어나 자유롭게 축제를 즐기고는 있지만, 그렇다고 해서 과거 바다에서 겪었던 끔찍한 위험과 고난을 까맣게 잊어버린 것은 아님을 강조한다. 즐거움과 아픔의 기억이 공존하는 복합적인 심리적 지형을 그려낸다.",
+        "etymology": "라틴어 지시 대명사 어근과 시기·양태를 뜻하는 부사적 접미사가 결합하여 형성된 것으로 추정되는 고유어 부사다. PIE 재구형의 복합 지시 어간에서 발전했으며, 고전 라틴어 형성 과정에서 음운적 안정성을 얻었다. 이탈리아어파의 독특한 양보 표현 발달 과정에서 고정되었다. 직접적인 현대 로망스어 일상어로는 형태가 크게 변형되었거나 대체되었으나, 중세 라틴어 문학 및 고전 인용구 체계 속에서 그 논리적 접속 기능을 온전히 간직하고 있다."
+      },
+      {
+        "g": "oblitae",
+        "pos": "동사(분사)",
+        "lemma": "obliviscor, oblivisci, oblitus sum",
+        "parse": "완료 수동 분사 (형용사화), 복수 주격 여성",
+        "principalParts": "obliviscor – oblivisci – oblitus sum",
+        "gloss_kr": "잊어버린, 망각한",
+        "gloss_en": "forgetful, having forgotten",
+        "syntax": "LFG f-구조에서 oblitae는 주어(요정들)를 수식하는 분사형 ADJUNCT 또는 주격 서술어로서 주어의 심리적 상태를 기술하며, 속격 논항의 생략 또는 내포된 완결상을 지배한다. 생성문법적으로 수동/완료 분사로서 성·수·격 일치 제약을 만족하며, Depictively(부대상태 서술어)로 분석된다. 레빈슨式 정보구조 관점에서 이 분사는 요정들의 의식적 상태를 규정하는 핵심 새 정보의 초점을 형성한다.",
+        "background": "obliviscor는 기억에서 무언가가 지워지는 '망각'을 뜻하는 동사로, 그 분사형인 oblitae는 그러한 상태에 있지 않음을 나타낸다. 요정들이 단순한 무지렁이 정령들이 아니라, 바다라는 거친 공간에서 인간이나 배들이 겪은 수많은 재난의 역사를 속속들이 기억하고 있는 증인들임을 시사한다. 신화적 서사의 무게감을 더해주는 심리학적 묘사다.",
+        "etymology": "전치사 ob-(~에 대항하여, 완전히)와 고대 어근 *liviscor('매끄럽게 지워지다, 미끄러지다')의 합성으로 파생된 라틴어 동사다. PIE 재구형 *leiw-('미끄러지다, 사라지다') 계열에 기원을 두며, 기억이 마음속에서 미끄러져 사라지는 은유적 과정을 담고 있다. 라틴어 고유의 탈동사적 파생 과정에서 형태가 굳어졌다. 현대 영어의 oblivious(알채지 못하는, 망각하는), oblivion(망각, 사멸) 등의 어원적 모태로서 오늘날까지 강력한 생명력을 유지하고 있다."
+      },
+      {
+        "g": "quam",
+        "pos": "부사",
+        "lemma": "quam",
+        "parse": "의문/관계 부사",
+        "gloss_kr": "얼마나, 그만큼",
+        "gloss_en": "how (much), as",
+        "syntax": "LFG f-구조에서 quam은 종속 감탄문/간접의문문의 부사 핵으로서 형용사/부사(multa)를 수식하는 ADJUNCT 기능을 수행하며, 수량의 정도를 이끈다. 생성문법적으로 의문/관계 사선 이동(Wh-movement)을 거쳐 구문 초기 위치[Spec,CP]로 전위된 것으로 분석된다. 레빈슨式 정보구조 관점에서 이 부사는 정도의 극단을 강조하는 초점 마커로서 뒤따르는 위험의 규모를 극대화하는 수사적 기능을 한다.",
+        "background": "quam은 감탄이나 정도를 나타내는 관계부사로, 여기서는 요정들이 과거에 얼마나 지독하고 거대한 위험들을 목격하고 겪었는지를 생생하게 환기하는 수사적 장치다. 오비디우스의 서사시 속에서 인물들이나 정령들의 내면적 기억의 크기를 시각적·수량적으로 증폭시키는 시적 문법의 핵심 요소다.",
+        "etymology": "관계대명사/의문대명사 어간 *qui-/*quo-의 대격 여성 단수형에서 발전한 라틴어 부사다. PIE 재구형 *kʷe-/*kʷo- 계열의 지시/의문 대명사 패러다임에 뿌리를 두고 있으며, 고대 그리스어의 호환 어휘들과 계통적 유사성을 지닌다. 라틴어 문법의 구문 확장 과정에서 비교 및 감탄을 이끄는 독립된 부사로 기능이 분화되었다. 현대 로망스어군의 관련 의문사 및 비교 구문 어휘 속에 다채로운 형태로 유전적 흔적을 남기고 있다."
+      },
+      {
+        "g": "multa",
+        "pos": "형용사",
+        "lemma": "multus, -a, -um",
+        "parse": "복수 대격 중성",
+        "gloss_kr": "많은, 수많은",
+        "gloss_en": "many, much",
+        "syntax": "LFG f-구조에서 multa는 명사 pericula를 수식하는 한정적 ADJUNCT 기능을 하며, 중성 복수 대격으로서 격·성·수 일치를 이룬다. 생성문법적으로 NP 내부의 수량적 한정사 위치에 병합되며, 명사와의 형태론적 호응 관계를 맺는다. 레빈슨式 정보구조 관점에서 이 수식어는 위험의 양적 방대함을 강조하는 수량적 초점 정보를 제공하며, 서사의 비극적 긴장감을 높인다.",
+        "background": "multus는 수량이나 정도가 대단히 많음을 나타내는 가장 보편적인 라틴어 형용사다. 여기서는 바다 위를 떠돌며 선박들이 겪어야 했던 수많은 재난과 위험의 양을 수량화하여 요정들의 기억 속에 자리한 경험의 방대함을 시각화한다. 평화로운 현재의 축제와 대비되는 과거의 어둡고 험난한 역사를 암시한다.",
+        "etymology": "원시 인도유럽어 재구형 *ml-to-('많은, 가득 찬') 또는 관련 다량 어근에서 유래한 라틴어 고유어 형용사다. 고대 그리스어에는 직접적인 동일 어근형이 드물으나, 게어만어 및 기타 인도유럽어파의 수량 관련 어휘들과 비교 연구된다. 라틴어 고유의 음운 발달 과정을 거쳐 고전기 산문과 시가 전반의 필수 어휘로 정착했다. 현대 영어의 multiform, multiply, multitude, 프랑스어 moult 등 다방면의 파생 어휘를 통해 오늘날까지 살아 숨 쉬고 있다."
+      },
+      {
+        "g": "pericula",
+        "pos": "명사",
+        "lemma": "periculum, periculi, n.",
+        "parse": "복수 대격 중성",
+        "gloss_kr": "위험, 시련, 위기",
+        "gloss_en": "dangers, perils, risks",
+        "syntax": "LFG f-구조에서 pericula는 종속절의 타동사 pertulerint의 OBJ 논항으로 기능하며, 행위가 지향하는 대상(PATIENT/THEME)의 역할을 수행한다. 생성문법적으로 2변화 중성 명사의 복수 대격 자리에 병합되며 형용사 multa의 수식을 받는다. 레빈슨式 정보구조 관점에서 이 목적어는 요정들의 기억 속 핵심 제어이자 문장의 레마적 초점을 구성하는 중요 정보 단위다.",
+        "background": "periculum은 단순한 위험을 넘어 목숨을 건 시련이나 항해 중 만나는 치명적인 재난을 가리키는 중대한 개념어다. 바다의 요정들이 지켜보거나 직접 겪어낸 수많은 난파와 폭풍의 역사를 함축하며, 아름다운 신화적 세계 이면에 도사린 자연의 무자비한 폭력성을 상징한다. 오비디우스의 변신 이야기에서 안식처로 향하는 길목의 긴장감을 극대화한다.",
+        "etymology": "인도유럽어 어근 *per-('시도하다, 위험을 무릅쓰다, 건너다')에 도구/결과 명사 접미사가 결합한 라틴어 고유어 명사다. 그리스어의 피어어(peira, '시도, 경험')와 동계 관계를 형성하며, 바다나 미지의 영역을 '시도하고 건너는 과정'에서 위험이라는 의미가 파생되었다. 라틴어 2변화 중성 명사로 고정되었다. 현대 영어의 peril(위험), perilous(험난한), 프랑스어 péril 등 항해와 모험을 상징하는 핵심 어휘로 직계 계승되었다."
+      },
+      {
+        "g": "saepe",
+        "pos": "부사",
+        "lemma": "saepe",
+        "parse": "빈도 부사",
+        "gloss_kr": "자주, 빈번히, 거듭",
+        "gloss_en": "often, frequently",
+        "syntax": "LFG f-구조에서 saepe는 동사 pertulerint의 시상 및 빈도를 한정하는 ADJUNCT 기능을 수행하며, 반복적 양태를 나타낸다. 생성문법적으로 vP나 VP 외곽에 부가어(Adjunct)로 병합되어 명제의 빈도적 속성을 규정한다. 레빈슨式 정보구조 관점에서 이 부사는 위험이 일회성이 아님을 강조하는 반복 초점 마커로서 서사의 비장미를 고조시킨다.",
+        "background": "saepe는 어떤 사건이나 시련이 반복해서 일어났음을 나타내는 빈도 부사다. 바다 위에서 선박들과 요정들이 겪은 위험이 단 한 번의 우연이 아니라 끊임없이 반복되는 숙명적인 시련이었음을 강조한다. 시구의 리듬감을 살리며 반복의 수사적 효과를 극대화하는 시적 장치로 기능한다.",
+        "etymology": "어원적으로 고대 라틴어의 명사/형용사 어근에서 분화된 것으로 추정되며, 고전 라틴어에 이르러 빈도를 나타내는 독립 부사로 고정되었다. PIE 재구형의 명사적 처소 격 잔여물에서 발전했다는 설이 유력하다. 라틴어의 시가와 산문 전반에서 빈번하게 쓰이며 문장 윤곽을 다듬는 역할을 했다. 직접적인 현대 로망스어 일상어로는 형태가 교체되었으나, 고전 문학 및 파생 어휘 연구에서 빈도 부사의 전형으로 빈번히 인용된다."
+      },
+      {
+        "g": "pertulerint",
+        "pos": "동사",
+        "lemma": "perfero, perferre, pertuli, perlatus",
+        "parse": "완료 능동 접속법 3인칭 복수",
+        "principalParts": "perfero – perferre – pertuli – perlatus",
+        "gloss_kr": "견뎌내다, 겪다, 끝까지 참아내다",
+        "gloss_en": "they have endured, suffered through",
+        "syntax": "LFG f-구조에서 pertulerint는 관계절의 핵심 PRED이며, 복수 주어(요정들을 암시하는 생략 또는 대명사적 주어)를 SUBJ로, 목적어(pericula)를 OBJ로 지배한다. 생성문법적으로 불규칙 3변화 복합 동사의 완료 시제 및 접속법 표지가 vP 핵에서 형태론적으로 결합하며, 종속절의 양태(mood)를 완결한다. 레빈슨式 정보구조 관점에서 이 서술어는 요정들이 겪은 수난의 역사라는 핵심 레마 정보를 담아내며 문장의 정서적 절정을 이룬다.",
+        "background": "perfero는 전치사 per-(끝까지, 철저히)와 동사 fero(나르다, 견디다)의 합성으로, 시련이나 고통을 피하지 않고 끝까지 온몸으로 겪어내거나 견뎌냄을 뜻하는 강렬한 동사다. 요정들이 바다의 거친 폭풍 속에서 얼마나 오랜 세월 동안 온갖 위험을 묵묵히 견뎌왔는지를 극적으로 보여준다. 단순한 관찰자가 아니라 고난을 함께 체화한 증인으로서의 정체성을 부여한다.",
+        "etymology": "전치사 per-(~을 통하여, 끝까지)와 PIE 재구형 *bher-('나르다, 지탱하다')에서 온 불규칙 동사 fero의 합성형이다. 그리스어 phero와 영어 bear 등과 완벽한 인도유럽어 동계 관계를 형성한다. 불규칙 동사의 합성 과정에서 완료형 어간이 완전히 교체되는 서플레티즘(suppletism)을 보여준다. 현대 영어의 transfer, refer 등의 어근 배경과 연결되며, 고난을 끝까지 지탱한다는 라틴어 고유의 어원적 의미를 오늘날까지 간직하고 있다."
+      },
+      {
+        "g": "pelago",
+        "pos": "명사",
+        "lemma": "pelagus, pelagi, n. (때로는 m.)",
+        "parse": "단수 탈격 중성",
+        "gloss_kr": "바다, 대양, 망망대해",
+        "gloss_en": "open sea, ocean, expanse of water",
+        "syntax": "LFG f-구조에서 pelago는 전치사 없이 혹은 처소적 탈격(locative/instrumental ablative)으로서 수단·처소(OBL) 기능을 수행하며, 위험이 발생한 무대를 한정한다. 생성문법적으로 2변화 중성 명사(그리스어계 차용 특성 반영)의 탈격 자리에 병합된다. 레빈슨式 정보구조 관점에서 이 명사는 위험이 도사린 광활한 공간적 배경을 제시하는 핵심 장소 초점 정보를 제공한다.",
+        "background": "pelagus는 일반적인 바다(mare)와 달리, 끝이 보이지 않는 광활하고 깊은 망망대해나 대양을 가리키는 시적 명칭이다. 요정들이 누비는 바다가 단순히 잔잔한 물결만이 아니라, 언제든 선박을 집어삼킬 수 있는 거대한 위험의 공간임을 역설적으로 드러낸다. 자연의 거대함과 그 속에서 살아가는 존재들의 숙명을 대조적으로 보여준다.",
+        "etymology": "그리스어 πέλαγος(pelagos, '열린 바다, 대양')를 라틴어가 차용하여 시가 전용 어휘로 정착시킨 것이다. PIE 재구형 *plak-/*plēk-('평평한 넓이, 펼쳐진 것') 계열에 기원을 두며, 지평선 너머로 평평하게 펼쳐진 거대한 수면을 의미한다. 라틴어 유입 과정에서 중성 2변화 명사 체계로 흡수되었다. 현대 영어의 archipelago(군도) 및 과학적 해양 용어(pelagic, 해양성의) 속에 직접 살아 숨 쉬는 유서 깊은 어휘다."
+      },
+      {
+        "g": "iactatis",
+        "pos": "동사(분사)",
+        "lemma": "iacto, iactare, iactavi, iactatus",
+        "parse": "완료 수동 분사, 복수 탈격 여성/중성",
+        "principalParts": "iacto – iactare – iactavi – iactatus",
+        "gloss_kr": "흔들리는, 내던져진, 파도에 시달리는",
+        "gloss_en": "tossed, buffeted, shaken",
+        "syntax": "LFG f-구조에서 iactatis는 명사 carinis를 수식하는 한정적 ADJUNCT 분사로 분석되며, 성·수·격 일치를 통해 선박의 피폐한 상태를 기술한다. 생성문법적으로 수동 분사로서 NP 내부에서 명사를 수식하며, 수동태의 피행위자적 속성을 투사한다. 레빈슨式 정보구조 관점에서 이 분사는 폭풍에 시달리는 배들의 위태로운 모습을 생생하게 각인시키는 감각적 초점 정보를 담는다.",
+        "background": "iacto는 자주 반복하여 던지거나 거칠게 흔드는 동작을 뜻하며, 그 수동분사 iactatis는 폭풍우 속에서 이리저리 파도에 시달리며 위태롭게 흔들리는 배들의 처참한 광경을 완벽하게 묘사한다. 요정들이 지켜보는 바다 위에서 인간들의 선박이 겪는 고난의 현실을 상징적으로 보여주며, 신화적 환상과 인간의 실존적 위기가 교차하는 지점을 형성한다.",
+        "etymology": "기본 동사 iacio(던지다, 팽개치다)의 빈도형(frequentative) 파생 동사로, 반복해서 던지는 동작을 뜻한다. PIE 재구형 *ye-/*i-('던지다, 뻗다')에서 유래하며, 고대 그리스어의 관련 투사 어휘들과 간접적 계통 관계를 맺는다. 라틴어 규칙 1변화 동사 체계로 정착했다. 현대 영어의 ject 어근 계열(eject, inject, project) 및 파생어 속에서 '던지다'라는 원초적 물리적 의미를 면면히 이어가고 있다."
+      },
+      {
+        "g": "carinis",
+        "pos": "명사",
+        "lemma": "carina, carinae, f.",
+        "parse": "복수 탈격 여성",
+        "gloss_kr": "배들, 선체, 용골",
+        "gloss_en": "keels, ships, vessels",
+        "syntax": "LFG f-구조에서 carinis는 수단/처소적 탈격(OBL) 기능을 수행하며, 흔들림의 대상이 되는 물리적 실체(PATIENT)를 나타낸다. 생성문법적으로 1변화 여성 명사의 복수 탈격 자리에 병합되며 분사 iactatis의 수식을 받는다. 레빈슨式 정보구조 관점에서 이 명사는 항해하는 인간 세계의 물적 증거를 제공하는 구체적 초점 정보를 구성한다.",
+        "background": "carina는 원래 배의 가장 밑바닥 구조인 '용골'을 뜻하나, 시가에서는 시네도키(제유법)를 통해 '배' 전체를 가리키는 대표적 시어로 쓰인다. 거친 바다 위에서 파도에 시달리는 배들의 모습은 인간이 세상의 풍파 속에서 겪는 실존적 고뇌를 압축한다. 요정들의 춤과 유희가 펼쳐지는 바다가 동시에 인간의 재난이 일어나는 공간이기도 함을 보여주는 서사적 매개체다.",
+        "etymology": "라틴어 고유의 선박 관련 어휘로, 지중해 항해 문화 속에서 발생한 고유 지명 및 기술 용어에서 유래한 것으로 추정된다. 인도유럽조어의 특정 식물 섬유나 나무껍질을 뜻하는 어근과의 연관성이 학계에서 논의된 바 있으나, 라틴어 고유의 1변화 명사로 완전히 정착했다. 현대 영어의 carina(해부학적 용골상 구조), 이탈리아어 carena 및 조선 공학 관련 로망스어 어휘 속에 그 명맥을 뚜렷이 유지하고 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Verg. Aen. 2.561",
+    "trans": "Manum supposuere, nisi siquae vehebat Achivos;",
+    "meter": "— ⏑ ⏑ | — — | — ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏑ | — —",
+    "words": [
+      {
+        "g": "561",
+        "pos": "numerus",
+        "lemma": "561",
+        "parse": "cardinalis",
+        "gloss_kr": "versus 561",
+        "gloss_en": "line 561",
+        "syntax": "Syntaxis huius numeri ad locum versuum indicandum pertinet, functione adjunctorum textualium fungens in structura f-2.",
+        "background": "Hic numerus ordinem versus in Aeneide Vergiliana monstrat, ubi excidium Troiae narratur.",
+        "etymology": "Notatio numeralis arabica moderna, quae ordinem linearum in editionibus textuum classicorum servat."
+      },
+      {
+        "g": "supposuere",
+        "pos": "동사",
+        "lemma": "subpono",
+        "parse": "perfectum activum 3. pers. pl.",
+        "gloss_kr": "subiecerunt, supposuerunt",
+        "gloss_en": "they placed underneath",
+        "principalParts": "subpono, subponere, supposui, suppositus",
+        "syntax": "LFG f-structura monstrat hunc verbum praedicatum esse cum subiecto elliptico et obiecto 'manum': [PRED 'subpono<SUBJ, OBJ>', SUBJ [pro], OBJ [PRED 'manus', CASE acc]].",
+        "background": "Troiani ipsi, fato urgebantur, dum machinam ligneam moenibus supponunt.",
+        "etymology": "De Vaan (EDL) derivat ex praepositione *sub* et verbo *pono* (ex *po-sino*). PIE *sopo-*. Ablautus in stirpe conspicitur."
+      },
+      {
+        "g": "manum",
+        "pos": "명사",
+        "lemma": "manus, -us, f.",
+        "parse": "singularis accusativus feminina",
+        "gloss_kr": "manum",
+        "gloss_en": "hand",
+        "syntax": "Obiectum directum regitur a verbo supposuere; casus accusativus. [VP [V supposuere] [NP manum]].",
+        "background": "Manus Troianorum ipsae moenibus equum admovent, quod fatum urbis accelerat.",
+        "etymology": "De Vaan (EDL) indicat PIE *man- 'manus'. Cognatum cum lingua germanica antiqua *manwō-. Ablautus e-gradus."
+      },
+      {
+        "g": "nisi",
+        "pos": "접속사",
+        "lemma": "nisi",
+        "parse": "coniunctio subordinativa",
+        "gloss_kr": "nisi, praeterquam",
+        "gloss_en": "unless, except",
+        "syntax": "Coniunctio conditionalis introducens exceptionem; f-structura monstrat clausulam subordinatam adiectam.",
+        "background": "Condicio quae excipit paucas naves quae forte Achivos vehebant.",
+        "etymology": "Compositum ex *ne* (non) et *si* (si). OLD confirmat usum frequentem in Latinitate classica."
+      },
+      {
+        "g": "siqua",
+        "pos": "대명사",
+        "lemma": "siquis, siqua, siquid",
+        "parse": "singularis nominativus feminina",
+        "gloss_kr": "si quae (ratis)",
+        "gloss_en": "if any (ship)",
+        "syntax": "Pronomen indefinitum in functione subiecti clausulae subordinatae. [CP [C nisi] [IP [NP siqua] ...]].",
+        "background": "Refertur ad naves Graecorum quae forte superfuerant.",
+        "etymology": "Ex *si* et *quis*. PIE *kʷi-*. Vur origo pronominalis."
+      },
+      {
+        "g": "vehebat",
+        "pos": "동사",
+        "lemma": "veho",
+        "parse": "imperfectum indicativi activum 3. pers. sg.",
+        "gloss_kr": "vehebat",
+        "gloss_en": "was carrying",
+        "principalParts": "veho, vehere, vexi векtus",
+        "syntax": "LFG: [PRED 'veho<SUBJ, OBJ>', SUBJ [NP siqua], OBJ [NP Achivos]]. Tempus imperfectum indicat actionem continuam in passato.",
+        "background": "Naves quae Danaos ad Tenedum vel ad insulas vicinas avexerant.",
+        "etymology": "De Vaan (EDL) ducit ex PIE *wegʰ- 'vehere, vehiculo ducere' (e-gradus). Cognatum cum sanscritica *vahati*."
+      },
+      {
+        "g": "Achivos",
+        "pos": "명사",
+        "lemma": "Achivi, -orum, m.",
+        "parse": "pluralis accusativus masculina",
+        "gloss_kr": "Achivos, Graecos",
+        "gloss_en": "Achaeans, Greeks",
+        "syntax": "Obiectum directum verbi vehebat; accusativus pluralis. [VP [V vehebat] [NP Achivos]].",
+        "background": "Nomen epicum pro Graecis, qui ad Troiam bellum gesserunt.",
+        "etymology": "Graecum *Ἀχαιοί*. Chantraine (DELG) et Beekes (EDG) designant originem prae-graecam vel anatolicam (Hittite *Aḫḫiyawā*)."
+      }
+    ]
+  },
+  {
+    "ref": "Verg. Aen. 2.562",
+    "trans": "cladis adhuc Phrygiae memores, odere Pelasgos",
+    "meter": "— ⏑ ⏑ | — — | — ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏑ | — —",
+    "words": [
+      {
+        "g": "562",
+        "pos": "numerus",
+        "lemma": "562",
+        "parse": "cardinalis",
+        "gloss_kr": "versus 562",
+        "gloss_en": "line 562",
+        "syntax": "Numerus versus in apparatu critico.",
+        "background": "Continuatio narrationis de clade Phrygiae.",
+        "etymology": "Notatio numeralis."
+      },
+      {
+        "g": "cladis",
+        "pos": "명사",
+        "lemma": "clades, cladis, f.",
+        "parse": "singularis genitivus feminina",
+        "gloss_kr": "cladis, exitii",
+        "gloss_en": "of slaughter, disaster",
+        "syntax": "Genitivus obiectivus pendens a participio memores. LFG: [ADJUNCT [PRED 'memor', OBJ [CASE gen, PRED 'clades']]].",
+        "background": "Clades Phrygiae refertur ad vastationem Troiae et caedem populi.",
+        "etymology": "De Vaan (EDL) confert PIE *klad- 'percutere, frangere'. Cognatum cum graeco *kládos* (ramus fractus)."
+      },
+      {
+        "g": "adhuc",
+        "pos": "부사",
+        "lemma": "adhuc",
+        "parse": "adverbium temporis",
+        "gloss_kr": "adhuc, etiamnum",
+        "gloss_en": "still",
+        "syntax": "Adverbium temporale modificans statum mentis eorum qui meminerunt.",
+        "background": "Memoria cladis etiam post tot annos viget apud animos.",
+        "etymology": "Ex *ad* et *huc*. Vetus compositum latinum."
+      },
+      {
+        "g": "Phrygiae",
+        "pos": "형용사",
+        "lemma": "Phrygius, -a, -um",
+        "parse": "singularis genitivus feminina",
+        "gloss_kr": "Phrygiae, Troianae",
+        "gloss_en": "Phrygian",
+        "syntax": "Attributum genitivivum ad nomen cladis. [NP [N clades] [AP Phrygia]].",
+        "background": "Phrygia regio Minoris Asiae ubi Troia sita erat; saepe synonymum Troiae.",
+        "etymology": "Graecum *Φρύγιος*. Nomen gentilicium populi Phrygum."
+      },
+      {
+        "g": "memores",
+        "pos": "형용사",
+        "lemma": "memor, memoris",
+        "parse": "pluralis nominativus masculina",
+        "gloss_kr": "memores",
+        "gloss_en": "mindful",
+        "syntax": "Praedicativum vel adiectivum in positione subiecti, regens genitivum cladis. LFG: [PRED 'memor<SUBJ, OBJ>', SUBJ [pro], OBJ [cladis]].",
+        "background": "Animus eorum qui veterem cladem non obliti sunt.",
+        "etymology": "De Vaan (EDL) derivat ab radice *men- 'mentem habere, meminisse' (e-gradus, reduplicatum *memor*)."
+      },
+      {
+        "g": "odere",
+        "pos": "동사",
+        "lemma": "odi, odisse",
+        "parse": "perfectum (praesentis vim habens) activum 3. pers. pl.",
+        "gloss_kr": "oderunt",
+        "gloss_en": "they hate",
+        "principalParts": "odi, odisse, osurus (praeteritio defectiva)",
+        "syntax": "Verbum defectivum cum vi praesentis. LFG: [PRED 'odi<SUBJ, OBJ>', SUBJ [pro], OBJ [Pelasgos]].",
+        "background": "Odium perpetuum contra Graecos ob cladem acceptam.",
+        "etymology": "De Vaan (EDL) et Ernout-Meillet (DELL) indicant originem obscuram, fortasse ab radice *od-* (dolere, irasci)."
+      },
+      {
+        "g": "Pelasgos",
+        "pos": "명사",
+        "lemma": "Pelasgi, -orum, m.",
+        "parse": "pluralis accusativus masculina",
+        "gloss_kr": "Pelasgos, Graecos",
+        "gloss_en": "Pelasgians (Greeks)",
+        "syntax": "Obiectum directum verbi odere; accusativus pluralis.",
+        "background": "Pelasgi antiquissimi Graeciae habitatores, poetice pro Graecis ipsis usi.",
+        "etymology": "Graecum *Πελασγοί*. Beekes (EDG) tradit nomen esse prae-graecum (lingua substrati)."
+      }
+    ]
+  },
+  {
+    "ref": "Verg. Aen. 2.563",
+    "trans": "Neritiaeque ratis viderunt fragmina laetis",
+    "meter": "— ⏑ ⏑ | — — | — ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏑ | — —",
+    "words": [
+      {
+        "g": "563",
+        "pos": "numerus",
+        "lemma": "563",
+        "parse": "cardinalis",
+        "gloss_kr": "versus 563",
+        "gloss_en": "line 563",
+        "syntax": "Numerus versus.",
+        "background": "Continuatio sententiae de ratibus Ulixis.",
+        "etymology": "Notatio numeralis."
+      },
+      {
+        "g": "Neritiaeque",
+        "pos": "형용사",
+        "lemma": "Neritius, -a, -um",
+        "parse": "pluralis genitivus feminina (cum enclitica -que)",
+        "gloss_kr": "Neritiaeque (et Ithacae / Ulixis)",
+        "gloss_en": "and Neritian (Ithacan)",
+        "syntax": "Genitivus possessivus ad ratis. Coniunctio enclitica *-que* coordinat hanc clausulam.",
+        "background": "Neritus mons est in Ithaca, patria Ulixis; hinc Neritius significat Ithacum.",
+        "etymology": "Graecum *Νήριτος* (mons Ithacae). Chantraine (DELG) affinitatem habet cum nominibus geographicis Graeciae antiquae."
+      },
+      {
+        "g": "ratis",
+        "pos": "명사",
+        "lemma": "ratis, ratis, f.",
+        "parse": "pluralis genitivus feminina (archaica pro ratium)",
+        "gloss_kr": "natium, navium",
+        "gloss_en": "of ships",
+        "syntax": "Genitivus possessivus vel partitivus cum fragmina. LFG: [POSS [PRED 'ratis', NUM pl]].",
+        "background": "Naves Ulixis quae pericula maris passi sunt.",
+        "etymology": "De Vaan (EDL) derivat ex PIE *rāt- 'rate, ratis' (craticula). Cognatum cum gothico *raths*."
+      },
+      {
+        "g": "viderunt",
+        "pos": "동사",
+        "lemma": "video, videre, vidi, visus",
+        "parse": "perfectum activum 3. pers. pl.",
+        "gloss_kr": "viderunt",
+        "gloss_en": "they saw",
+        "principalParts": "video, videre, vidi, visus",
+        "syntax": "LFG: [PRED 'video<SUBJ, OBJ>', SUBJ [pro], OBJ [fragmina]]. Tempus perfectum indicat actionem completam.",
+        "background": "Spectaculum fragmentorum navium inimicarum laetitiam affert.",
+        "etymology": "De Vaan (EDL) indicat PIE *weid- 'videre' (e-gradus). Cognatum cum sanscritica *vetti* et graeca *ἰδεῖν*."
+      },
+      {
+        "g": "fragmina",
+        "pos": "명사",
+        "lemma": "fragmen, fragmenti, n.",
+        "parse": "pluralis accusativus neutra",
+        "gloss_kr": "fragmenta, frusta",
+        "gloss_en": "fragments, wrecks",
+        "syntax": "Obiectum directum verbi viderunt. [VP [V viderunt] [NP fragmina]].",
+        "background": "Fragmenta navium in saxa collisa.",
+        "etymology": "De Vaan (EDL) derivat ex *frangere* (radix PIE *bʰreg- 'frangere'). Suffixon *-men*."
+      },
+      {
+        "g": "laetis",
+        "pos": "형용사",
+        "lemma": "laetus, -a, -um",
+        "parse": "pluralis ablativus feminina",
+        "gloss_kr": "laetis",
+        "gloss_en": "joyful",
+        "syntax": "Attributum ad vultibus; ablativus modi vel instrumenti. LFG: [ADJUNCT [PRED 'laetus', CASE abl]].",
+        "background": "Laetitia animi ex ultione hostium orta.",
+        "etymology": "De Vaan (EDL) comparat *laetus* cum significatione 'pinguis, fertilis', unde ad animum translatum 'alacer, laetus'."
+      }
+    ]
+  },
+  {
+    "ref": "Verg. Aen. 2.564",
+    "trans": "vultibus et laetis videre rigescere puppem",
+    "meter": "— ⏑ ⏑ | — — | — ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏑ | — —",
+    "words": [
+      {
+        "g": "564",
+        "pos": "numerus",
+        "lemma": "564",
+        "parse": "cardinalis",
+        "gloss_kr": "versus 564",
+        "gloss_en": "line 564",
+        "syntax": "Numerus versus.",
+        "background": "Continuatio visionis mirabilis.",
+        "etymology": "Notatio numeralis."
+      },
+      {
+        "g": "vultibus",
+        "pos": "명사",
+        "lemma": "vultus, -us, m.",
+        "parse": "pluralis ablativus masculina",
+        "gloss_kr": "vultibus",
+        "gloss_en": "with countenances, faces",
+        "syntax": "Ablativus instrumenti vel modi. LFG: [ADJUNCT [PRED 'vultus', CASE abl]].",
+        "background": "Vultus laeti testantur gaudium ex ultione.",
+        "etymology": "De Vaan (EDL) ducit ab verbo *volo* (velle) vel ab radice *wel-* 'voluntas, vultus'."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coniunctio coordinativa",
+        "gloss_kr": "et",
+        "gloss_en": "and",
+        "syntax": "Coniunctio copulativa conectens phrases.",
+        "background": "Copula rhetorica.",
+        "etymology": "PIE *eti* 'etiam, et'."
+      },
+      {
+        "g": "laetis",
+        "pos": "형용사",
+        "lemma": "laetus, -a, -um",
+        "parse": "pluralis ablativus masculina",
+        "gloss_kr": "laetis",
+        "gloss_en": "joyful",
+        "syntax": "Attributum ad vultibus.",
+        "background": "Repetitio epitheti ad emphasim gaudii.",
+        "etymology": "Vide supra lemma *laetus*."
+      },
+      {
+        "g": "videre",
+        "pos": "동사",
+        "lemma": "video, videre, vidi, visus",
+        "parse": "perfectum activum 3. pers. pl. (syncopatum pro viderunt)",
+        "gloss_kr": "viderunt",
+        "gloss_en": "they saw",
+        "principalParts": "video, videre, vidi, visus",
+        "syntax": "Forma syncopata perfecta. LFG: [PRED 'video<SUBJ, OBJ>', SUBJ [pro], OBJ [XCOMP]].",
+        "background": "Gaudium spectantium metam transformationis.",
+        "etymology": "Vide supra lemma *video*."
+      },
+      {
+        "g": "rigescere",
+        "pos": "동사",
+        "lemma": "rigesco, rigescere, rigui",
+        "parse": "infinitivus praesentis activum",
+        "gloss_kr": "rigidam fieri, indurare",
+        "gloss_en": "to grow stiff, harden",
+        "principalParts": "rigesco, rigescere, rigui, —",
+        "syntax": "Infinitivus in constructione Accusativus cum Infinitivo (AcI). LFG: [XCOMP [PRED 'rigesco<SUBJ>', SUBJ [puppem]]].",
+        "background": "Mutatio navis in saxum, miraculum divinum.",
+        "etymology": "De Vaan (EDL) derivat a *rigeo* (PIE *reig- 'rigere, constringere'). Suffixon inchoativum *-sco*."
+      },
+      {
+        "g": "puppem",
+        "pos": "명사",
+        "lemma": "puppis, puppis, f.",
+        "parse": "singularis accusativus feminina",
+        "gloss_kr": "puppim, navem",
+        "gloss_en": "stern, ship",
+        "syntax": "Accusativus subiectivus in AcI constructio cum rigescere.",
+        "background": "Pars navis quae prima in saxum mutatur.",
+        "etymology": "De Vaan (EDL) et Ernout-Meillet (DELL) originem incertam habent, fortasse substratum mediterraneum."
+      }
+    ]
+  },
+  {
+    "ref": "Verg. Aen. 2.565",
+    "trans": "vultibus Alcinoi saxumque increscere ligno.",
+    "meter": "— ⏑ ⏑ | — — | — ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏑ | — —",
+    "words": [
+      {
+        "g": "565",
+        "pos": "numerus",
+        "lemma": "565",
+        "parse": "cardinalis",
+        "gloss_kr": "versus 565",
+        "gloss_en": "line 565",
+        "syntax": "Numerus versus.",
+        "background": "Conclusio episodi et metamorphosis.",
+        "etymology": "Notatio numeralis."
+      },
+      {
+        "g": "vultibus",
+        "pos": "명사",
+        "lemma": "vultus, -us, m.",
+        "parse": "pluralis ablativus masculina",
+        "gloss_kr": "vultibus",
+        "gloss_en": "with faces",
+        "syntax": "Ablativus instrumenti.",
+        "background": "Hic versus finem habet similis metamorphosis Phaeacum navis in Odyssea.",
+        "etymology": "Vide supra lemma *vultus*."
+      },
+      {
+        "g": "Alcinoi",
+        "pos": "명사",
+        "lemma": "Alcinous, Alcinoi, m.",
+        "parse": "singularis genitivus masculina",
+        "gloss_kr": "Alcinoi (regis Phaeacum)",
+        "gloss_en": "of Alcinous",
+        "syntax": "Genitivus possessivus ad vultibus vel ad fabulam respiciens. LFG: [POSS [PRED 'Alcinous']].",
+        "background": "Alcinous rex Phaeacum est, quorum navis in Odyssea (XIII.163) a Poseidone in saxum convertitur; Vergilius hunc mythum alludit.",
+        "etymology": "Graecum *Ἀλκίνοος*. Nomen proprium compositum ex *ἀλκή* (vis) et *νόος* (mens)."
+      },
+      {
+        "g": "saxumque",
+        "pos": "명사",
+        "lemma": "saxum, saxi, n.",
+        "parse": "singularis accusativus neutra (cum enclitica -que)",
+        "gloss_kr": "saxumque",
+        "gloss_en": "and stone",
+        "syntax": "Obiectum directum vel subiectum in AcI. Coniunctio enclitica *-que* coniungit membra.",
+        "background": "Conversio navis lignea in saxum durum.",
+        "etymology": "De Vaan (EDL) indicat etymologiam obscuram; nullum certum cognatum extra Latinum."
+      },
+      {
+        "g": "increscere",
+        "pos": "동사",
+        "lemma": "incresco, increscere, increvi",
+        "parse": "infinitivus praesentis activum",
+        "gloss_kr": "crescere in, augeri",
+        "gloss_en": "to grow upon, increase",
+        "principalParts": "incresco, increscere, increvi, incretum",
+        "syntax": "Infinitivus secundus in AcI post videre. LFG: [XCOMP [PRED 'incresco<SUBJ, OBL>', SUBJ [saxum], OBL [ligno]]].",
+        "background": "Saxum paulatim super lignum crescit et totam navem occupat.",
+        "etymology": "Ex praepositione *in* et verbo *cresco*. PIE *kres-/*ker-* 'crescere'. Ablautus e-gradus."
+      },
+      {
+        "g": "ligno",
+        "pos": "명사",
+        "lemma": "lignum, ligni, n.",
+        "parse": "singularis ablativus neutra",
+        "gloss_kr": "ligno",
+        "gloss_en": "on the wood",
+        "syntax": "Ablativus loci vel directionis regitur a praefixo in- in increscere. LFG: [OBL [PRED 'lignum', CASE abl]].",
+        "background": "Materia navis quae in saxum lapidescit.",
+        "etymology": "De Vaan (EDL) ducit ab PIE *leg- 'legere, colligere' (ligna colligenda). Cognatum cum graeco *λέγω*."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.566",
+    "trans": "함대가 바다의 님프들로 생기를 얻어 변했으니, 루툴리족이 그 괴이한 징조에 공포를 느껴 전쟁을 단념할 수 있으리라는 희망이 있었다.",
+    "meter": "‒⏑⏑ | ‒‒ | ‒‖⏑⏑ | ‒‒ | ‒⏑⏑ | ‒‒ (3번째 운각 직후 남성 카이수ra penthemimeral caesura 배치; animata의 끝모음과 classe, marinas 등의 단장음 어울림이 전형적인 다크틸릭 흐름 형성)",
+    "words": [
+      {
+        "g": "Spes",
+        "pos": "명사",
+        "lemma": "spes, spei, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "희망",
+        "gloss_en": "hope",
+        "syntax": "LFG 관점에서 Spes는 문장의 주어 NP로서 f-구조의 SUBJ 기능을 수행하며, 이를 AVM으로 나타내면 [PRED 'spes', CASE nom, NUM sg, GEND fem]이다. 계사 erat의 내항 논항으로 작동하며, 통사적 구조상 절(clause) 전체의 주제적 주어(thematic subject) 위치를 점유한다. EPP(Extended Projection Principle) 제약에 따라 Spec-TP 위치를 점유하여 시제 핵 T와 일치 관계를 맺는다.",
+        "background": "오비디우스의 <변신 이야기> 14권에서 루툴리족의 왕 투르누스가 아이네이아스의 트로이아 함대에 불을 지르자, 모신 키베레의 청에 의해 배들이 바다의 님프(nymphae)로 변하는 경이로운 사건 직후의 상황이다. 루툴리족이 이 괴이한 징조(monstrum)를 보고 전쟁을 포기할 것이라는 희망(spes)이 있었으나, 투르누스는 용기를 잃지 않고 전쟁을 지속한다. 이 구절은 서사적 기대와 직후 전개될 현실 사이의 수사적 긴장을 극대화한다.",
+        "etymology": "de Vaan(EDL)에 따르면 라틴어 spes는 원시 이탈리아어 *spē-s에서 유래하며, 이는 PIE 어근 *speh₁-(성공하다, 번성하다, e급 어간에 후두음 *h₁ 포함)에 결합한 명사 형성 접미사 *-s-의 결과물이다. 동계어로는 산스크리트어 sphā́yati(증가하다, 번성하다)와 슬라브 조어 *spěti(성공하다), 고대 영어 spōwan(성공하다) 등이 존재한다. 원시 이탈리아어 모음 장음화와 명사 5변화 체계 형성 과정에서 어간 모음 ē가 유지되었으며, 오스토프 법칙(Osthoff's law) 등 단모음화 음운 법칙의 적용 대상이 되지 않아 장모음 형태를 보존했다. 현대 영어의 prosper, desperate, despair 등은 라틴어 spes 및 동사 sperare에서 프랑스어를 거쳐 차용된 어휘적 흔적이다."
+      },
+      {
+        "g": "erat,",
+        "pos": "동사",
+        "lemma": "sum, esse, fui, futurus",
+        "principalParts": "sum - esse - fui - futurus",
+        "parse": "imperf. ind. act. 3rd pers. sg.",
+        "gloss_kr": "~이었다, 있었다",
+        "gloss_en": "there was",
+        "syntax": "생성문법의 X-bar 이론 관점에서 erat는 Tº 핵에 위치한 서술적 계사(copula) 동사로서, [TP [DP Spes] [T' erat [VP tᵢ [DP ...]]]] 와 같은 구구조 구성을 형성한다. 내재적 주어인 Spes에 주격(nominative case)을 배정하고 시제(+PAST) 및 상(+CONTINUOUS) 자질을 TP에 제공한다. 주어 Spes와의 인칭·수 일치(agreement) 제약을 충족하며, 문두 주어-동사 어순(SV)을 완성한다.",
+        "background": "과거미완료 시제(imperfectum) erat는 단순히 과거의 사실을 기술하는 것을 넘어, 당시 루툴리족이나 트로이아측 주변 상황에 감돌던 지속적인 기대와 희망의 상태를 묘사한다. 이 희망은 곧이어 나올 posse절 이하의 내용과 결합되어, 정체된 기대의 순간을 서사적으로 포착한다. 서사시에서 과거미완료 시제의 사용은 정적 배경 서술(backgrounding)의 전형적인 기법이다.",
+        "etymology": "de Vaan(EDL)에 따르면 라틴어 sum의 과거미완료형 erat는 PIE 어근 *h₁es-(존재하다, 영급/e급 교체)의 단순 과거/미완료 어간 *h₁es-se-에서 출발하여, 원시 이탈리아어 *ez-ā-t를 거쳐 형성되었다. 모음 간 자음 *z가 r로 변하는 로타시즘(rhotacism, 예: *es-ā-t > *er-ā-t) 현상의 대표적인 예시이다. 동계어로는 고대 그리스어 ἦν(ēsn), 산스크리트어 āsīt(이었다), 고대 영어 wæs(was) 등이 존재한다. 현대 로망스어인 스페인어 era, 프랑스어 était 등에서 그 변화된 어간 및 시제 접미사형의 흔적을 뚜렷이 확인할 수 있다."
+      },
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "prep. (with acc.)",
+        "gloss_kr": "~로, ~의 상태로",
+        "gloss_en": "into",
+        "syntax": "LFG 관점에서 in은 전치사구(PP)의 핵(Head)으로서 대격 논항을 지배하는 PRED 역할을 하며, AVM으로 [PRED 'in<OBJ>', OBJ [PRED 'nymphas', CASE acc, NUM pl]] 자질구조를 지닌다. 본 문맥에서는 단순한 장소적 의미가 아니라 결과/목적의 대격(accusative of result/transformation)을 요구하여, 함대가 님프의 상태로 변화하였음을 지시하는 부사적 부속어(ADJUNCT) 구조를 형성한다.",
+        "background": "전치사 in이 대격 nymphas 및 분사 animata와 호응하여 형태의 변이 과정(metamorphosis)을 공간적·결과적 방향성으로 표현한다. 오비디우스 문학에서 in과 대격의 결합은 '다른 형태나 존재로의 전환'을 나타내는 전형적인 변신 모티프 구문이다.",
+        "etymology": "de Vaan(EDL) 및 OLD에 따르면 라틴어 in은 PIE 전치사/부사 어근 *en(안에, 속으로)에서 유래하며, 원시 이탈리아어 *en을 거쳐 라틴어 문맥에서 어두 e > i 모음 상승 변화를 겪었다. 동계어로는 고대 그리스어 ἐν(en) 및 εἰς(*en-s), 고대 아일랜드어 in, 고대 영어 in(현대 영어 in, into), 고대 고지 독일어 in 등이 존재한다. 라틴어 내부에서 어두 자음 동화 법칙(예: in- + m- > im- / in- + p- > im-)을 일으키며 파생어를 양산했다. 현대 영어의 in, into, inject, inspect 및 로망스어 스페인어 en, 프랑스어 en 등에 직접적인 어원적 자취를 남겼다."
+      },
+      {
+        "g": "nymphas",
+        "pos": "명사",
+        "lemma": "nympha, nymphae, f.",
+        "parse": "pl. acc. f.",
+        "gloss_kr": "님프들(요정들)로",
+        "gloss_en": "nymphs",
+        "syntax": "생성문법의 X-bar 구조에서 nymphas는 전치사 in의 보충어(complement) 위치인 [PP in [DP nymphas]]의 DP 핵이다. 전치사 in에 의해 대격(accusative case)을 배정받으며, 통사적으로 분사구 animata classe marinas 전체와 논항 호응 관계를 맺는다. 대격 표지를 통해 변화의 귀결점을 명시하는 방향성 논항(directional argument) 역할을 수행한다.",
+        "background": "님프(nymphae)는 자연계의 바다, 강, 숲 등을 지키는 여성 정령들이다. 오비디우스의 이 대목에서는 아이네이아스의 트로이아 선박들이 모신 키베레의 개입으로 바다의 님프(nymphas marinas)로 생명을 얻어 변신한 사건을 가리킨다. 무생물 선박이 생명체인 바다 요정으로 탈바꿈하는 것은 <변신 이야기>의 중심적인 서사적 기적이다.",
+        "etymology": "라틴어 nympha는 고대 그리스어 νύμφη(nýmphē, 신부, 요정, 젊은 여성)에서 직접 차용된 외래어다. Beekes(EDG) 및 Chantraine(DELG)에 따르면, 그리스어 νύμφη의 어원은 불확실하나 PIE *sneubh-(결혼하다, 신부)와의 관련성 또는 선그리스어(Pre-Greek) 기층 어휘 가능성이 제기된다. 동계어로는 라틴어 nubo(결혼하다), 성경 히브리어 결합 문맥에서의 차용 어휘 등이 언급된다. 라틴어 입전 과정에서 그리스어 1변화 명사 틀이 라틴어 1변화 체계(-a, -ae)로 이화/동화 흡수되었다. 현대 영어의 nymph, nymphomania 및 생물학 용어, 로망스어의 스페인어 ninfa, 이탈리아어 ninfa 등에 그 형태가 유지되어 있다."
+      },
+      {
+        "g": "animata",
+        "pos": "형용사(분사)",
+        "lemma": "animo, animare, animavi, animatum",
+        "principalParts": "animo - animare - animavi - animatum",
+        "parse": "perf. pass. part. sg. abl. f.",
+        "gloss_kr": "생명을 얻은, 생기가 부여된",
+        "gloss_en": "animated, endowed with life",
+        "syntax": "HPSG 자질구조 관점에서 animata는 형용사적 완료수동분사로서 [HEAD adj, MOD <NP[abl, f, sg]>] 자질을 가지며 명사 classe를 수식한다. 형용사적 어울림(agreement) 제약에 의해 명사 classe와 격(ablative), 성(feminine), 수(singular)의 자질 일치를 이룬다. 통사적으로 classe를 주체로 하는 분사 보충어 구조를 형성하여, 함대가 생명력을 부여받은 과정을 수동상(passive aspect)으로 서술한다.",
+        "background": "animata는 단순한 목재 구조물이었던 배에 생명(anima)이 주입되었음을 뜻하는 핵심어다. 키베레 여신의 신성한 권능에 의해 소나무 배들이 숨을 쉬는 바다 님프들로 거듭난 순간을 집약한다. 오비디우스는 이 분사를 통해 무생물에서 생명체로의 이행이라는 변신의 핵심 모티프를 표현한다.",
+        "etymology": "de Vaan(EDL)에 따르면 animata는 동사 animare(생명을 주다)의 완료수동분사 여성 단수 탈격형이다. animare는 명사 anima(호흡, 영혼, 생명)에서 파생된 1활용 동사이며, anima는 PIE 어근 *h₂enh₁-(호흡하다, 숨쉬다, e급 어간에 후두음 *h₂와 *h₁ 포함)에 명사 형성 접미사 *-mā가 결합한 *h₂enh₁-mā에서 유래하였다. 동계어로는 고대 그리스어 ἄνεμος(anemos, 바람), 산스크리트어 āniti(숨쉬다), 고대 잉글랜드어 ōðian 등이 존재한다. 어간 모음 단모음화 및 탈격 접미사 -ā의 형성을 거쳤다. 현대 영어의 animate, animation, animal 및 스페인어 animar, 프랑스어 animer 등에 명확한 어원적 자취가 보존되어 있다."
+      },
+      {
+        "g": "classe",
+        "pos": "명사",
+        "lemma": "classis, classis, f.",
+        "parse": "sg. abl. f.",
+        "gloss_kr": "함대로, 함대가",
+        "gloss_en": "fleet, by the fleet",
+        "syntax": "LFG 관점에서 classe는 절대탈격(ablative absolute) 또는 수단/재료의 탈격(ablative of means/instrument)으로서, f-구조상 ADJUNCT 기능을 수행하며 [PRED 'classis', CASE abl, NUM sg, GEND fem]으로 명시된다. 분사 animata와 격 일치를 이루어 [classe animata]라는 독립된 분사구 구문을 형성하고, 전치사 in nymphas marinas 구문 전체의 의미적 주체로 작동한다.",
+        "background": "classis는 아이네이아스가 트로이아를 탈출할 때 이다 산의 신성한 소나무로 건조한 함대를 지칭한다. <베르길리우스>의 <아이네이스> 9권과 오비디우스 <변신 이야기> 14권 모두에서 투르누스의 화염 공격으로부터 배들을 구하기 위해 키베레 여신이 이 함대를 바다의 요정들로 변신시킨다.",
+        "etymology": "de Vaan(EDL) 및 OLD에 따르면 라틴어 classis는 원래 '소환된 무리, 로마 시민의 계급'을 의미했으며, PIE 어근 *kelh₁-(소환하다, 부르다, e급)에서 파생된 원시 이탈리아어 *klād-ti- 또는 *kela-ti-에서 유래했다. 동계어로는 라틴어 calare(호출하다), 고대 그리스어 καλέω(kaleō, 부르다), 고대 영어 hlowan(울부짖다) 등이 있다. 어간 음운 변화를 거쳐 군사적·해군적 의미로 확장되어 '함대'라는 전문 어휘로 정착하였다. 현대 영어의 class, classic, classification 및 프랑스어 classe, 스페인어 clase 등에 깊은 어원적 영향력을 남겼다."
+      },
+      {
+        "g": "marinas,",
+        "pos": "형용사",
+        "lemma": "marinus, -a, -um",
+        "parse": "pl. acc. f.",
+        "gloss_kr": "바다의",
+        "gloss_en": "marine, sea-",
+        "syntax": "생성문법의 X-bar 구구조 내에서 marinas는 명사 nymphas를 직접 수식하는 형용사구(AP)의 핵으로서 [DP in [NP [NP nymphas] [AP marinas]]] 의 수식 관계를 형성한다. 통사적으로 명사 nymphas와의 성(feminine), 수(plural), 격(accusative) 자질 일치(congruence) 조건을 엄격히 준수한다.",
+        "background": "marinas는 변신된 님프들이 거처할 새로운 속성인 '바다'를 한정해 준다. 원래 육지의 소나무(산림)였던 배들이 바다라는 신성하고 유동적인 원소의 정령(바다 님프)으로 재탄생했음을 강조하는 수식어다.",
+        "etymology": "de Vaan(EDL)에 따르면 marinas는 명사 mare(바다)에 형용사 파생 접미사 -inus가 결합하여 형성된 형용사 marinus의 여성 복수 대격형이다. 어근 mare는 PIE *mori-(바다, 내해, 영급/e급)에서 유래하였다. 동계어로는 고대 아일랜드어 muir(바다), 고대 슬라브어 morje(바다), 고대 영어 merisc(습지), 고대 고지 독일어 meri(바다) 등이 존재한다. 라틴어 내부에서 어간 모음 단모음화 및 형용사 어미 파생 법칙을 거쳤다. 현대 영어의 marine, mariner, submarine 및 스페인어 marino, 프랑스어 marin 등 로망스어군과 영어 차용어 전체에 풍부하게 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.567",
+    "trans": "(그 결과) 루툴리족이 그 경이로운 징조에 공포를 느껴 전쟁을 단념할 수도 있으리라 생각되었다.",
+    "meter": "‒⏑⏑ | ‒‒ | ‒‖⏑⏑ | ‒‒ | ‒⏑⏑ | ‒‒ (3번째 운각 monstri 직후 penthemimeral caesura 위치; 4번째 및 6번째 운각의 스폰데이오스적 무거움이 전쟁의 엄숙함을 운율적으로 형상화)",
+    "words": [
+      {
+        "g": "posse",
+        "pos": "동사",
+        "lemma": "possum, posse, potui, -",
+        "principalParts": "possum - posse - potui - (미상)",
+        "parse": "pres. act. inf.",
+        "gloss_kr": "~할 수 있다고 (희망했다)",
+        "gloss_en": "to be able to",
+        "syntax": "LFG 관점에서 posse는 주문장의 명사 Spes에 연결되는 보충절(complement clause)의 서술어 PRED이며, [PRED 'posse<XCOMP>', XCOMP [PRED 'desistere', SUBJ [PRED 'Rutulum']]] 의 f-구조 보형관계(complementization)를 형성한다. 주절 동사 erat와 명사 Spes에 종속된 대격과 부정구문(Accusativus cum Infinitivo, AcI)의 보충절 서술어로 기능한다.",
+        "background": "posse는 14.566행의 Spes와 결합하여 간접화법(oratio obliqua) 절을 이끈다. 투르누스와 루툴리족이 신이 내린 기적(monstrum)을 보고 공포에 질려 전쟁을 중단할 것이라는 트로이아측 또는 일반적인 예측을 담고 있다. 서사적 기대를 동사 부정사 형태로 제시하여 다음 행(568행)의 반전(perstat)과의 극적인 대비를 이끌어낸다.",
+        "etymology": "de Vaan(EDL) 및 OLD에 따르면 posse는 형용사 potis(능력 있는, 가능한)와 계사 동사 esse(있다)의 복합체인 possum의 현재 능동태 부정사형이다. PIE 어근 *pót-is(주인, 남편, 능력)와 *h₁es-(존재하다)가 합성되어 원시 이탈리아어 *pot-esi를 거쳐 *pot-se > posse로 모음 탈락 및 자음 동화(t + s > ss) 현상을 겪었다. 동계어로는 고대 그리스어 πόσις(posis, 남편), 산스크리트어 pátiḥ(주인, 남편), 고대 아베스타어 paⁱti- 등이 있다. 현대 영어의 possible, potent, power(프랑스어 pouvoir를 거침) 및 스페인어 poder 등에 뚜렷한 흔적을 남겼다."
+      },
+      {
+        "g": "metu",
+        "pos": "명사",
+        "lemma": "metus, metus, m.",
+        "parse": "sg. abl. m.",
+        "gloss_kr": "공포로, 두려움 때문에",
+        "gloss_en": "through fear, by dread",
+        "syntax": "생성문법의 X-bar 구조 관점에서 metu는 부정사 desistere의 원인/이유의 탈격(ablative of cause) 부사구(PP/DP)로서 [VP [DP metu] [VP desistere]] 내에서 수식어(adjunct) 위치를 점유한다. θ-역할 배정 이론에 따라 desistere 동작의 심리적 동기(CAUSAL ROLE)를 부정사절 내부 논항들에 제공한다.",
+        "background": "metu는 신성한 이적(monstrum)이 유발한 초자연적 공포를 가리킨다. 전쟁을 멈추게 만드는 계기로서 인간의 심리적 반응인 '두려움'이 언급되지만, 투르누스는 이러한 공포마저 극복해 냄으로써 그의 고집스럽고 영웅적인 성격을 부각시키는 역할을 한다.",
+        "etymology": "de Vaan(EDL)에 따르면 라틴어 metus는 원시 이탈리아어 *met-u-에서 파생된 4변화 남성 명사로, PIE 어근 *met-(측정하다, 자르다) 또는 불확실한 이탈리아어 고유 어근에 기반한다. de Vaan은 이탈리아어군 내부 파생 가능성을 제기하며 확정적 PIE 재구에는 신중을 기한다. 라틴어 내부에서 명사 4변화 격변화 파생어 체계를 형성하며 탈격 어미 -ū를 취했다. 현대 영어의 meticulous(meticulosus를 거침) 및 로망스어 고형들에 그 흔적이 상존한다."
+      },
+      {
+        "g": "monstri",
+        "pos": "명사",
+        "lemma": "monstrum, monstri, n.",
+        "parse": "sg. gen. n.",
+        "gloss_kr": "괴이한 징조의, 기적의",
+        "gloss_en": "of the portent, of the monster",
+        "syntax": "HPSG 자질구조 관점에서 monstri는 명사 metu를 수식하는 목적격 속격(objective genitive) 또는 원인의 속격 명사구로서 [HEAD noun, MOD <NP[abl]>] 자질을 지니며, [NP [NP metu] [NP monstri]] 의 속격 수식 구조를 완성한다. 공포(metu)의 직접적인 대상이자 원인이 '괴이한 징조(monstrum)'임을 통사적으로 한정한다.",
+        "background": "monstrum은 경고나 징조를 뜻하는 라틴어 단어로, 여기서는 배들이 불에 타지 않고 바다의 님프들로 변신한 신이 내린 초자연적 경이(portent)를 가리킨다. 이는 인간의 범주를 넘어서는 신의 개입을 상징하며, 이를 본 자들에게 거룩한 공포를 자극하는 서사적 장치다.",
+        "etymology": "de Vaan(EDL) 및 OLD에 따르면 monstrum은 동사 moneo(경고하다, 충고하다)에 도구/결과 명사 형성 접미사 *-trum이 결합한 mon-strum에서 유래했다. moneo는 PIE 어근 *men-(생각하다, 마음, o급 *mon-ey-o-)의 사역형 어간에서 유래하였다. 동계어로는 고대 그리스어 μένος(menos, 정신), 산스크리트어 mánas(마음), 고대 영어 gemynd(기억, mind) 등이 존재한다. 라틴어 내부에서 o급 애블라우트 양상을 보이며 *mon-ti- > monstrum의 음운 파생을 겪었다. 현대 영어의 monster, monstrous, demonstrate 및 스페인어 monstruo, 프랑스어 monstre 등에 직접적 자취를 남겼다."
+      },
+      {
+        "g": "Rutulum",
+        "pos": "명사(부칭/고유명사)",
+        "lemma": "Rutulus, Rutuli, m.",
+        "parse": "sg. acc. m. (or used collective pl. acc. m.)",
+        "gloss_kr": "루툴리인을, 루툴리족의 왕(투르누스)을",
+        "gloss_en": "the Rutulian (Turnus)",
+        "syntax": "LFG 관점에서 Rutulum은 부정보충절 desistere의 의미상 주어(subject)로서 f-구조의 SUBJ 기능을 수행하며, AcI(대격과 부정사) 구문의 통사적 제약에 따라 대격(accusative) 표지를 취한다: [PRED 'desistere<SUBJ,OBL>', SUBJ [PRED 'Rutulus', CASE acc, NUM sg]]. 단수 대격 형태이지만 집합적으로 루툴리족 전체 또는 그들의 지도자 투르누스를 지칭한다.",
+        "background": "Rutulum은 라티움 지역의 고대 부족인 루툴리족(Rutuli)의 구성원 또는 그들의 국왕인 투르누스(Turnus)를 가리킨다. 베르길리우스의 <아이네이스>와 오비디우스의 <변신 이야기>에서 루툴리족은 아이네이아스의 트로이아 이주민들에 맞서 싸우는 핵심 대립 세력이다. 주어 Rutulum의 설정은 이 전쟁의 당사자가 바로 투르누스측임을 일깨워준다.",
+        "etymology": "Ernout-Meillet(DELL) 및 de Vaan(EDL)에 따르면 Rutulus는 라티움 지방의 고대 부족명에서 유래한 고유명사로, 어원은 PIE *reudh-(붉다, e급/o급)와의 연관성이 지적된다. 이는 피부색이나 붉은 머리카락, 혹은 특정 지역의 붉은 토양에서 기원한 부족명일 가능성이 있다. 동계어로는 라프어, 고대 그리스어 ἐρυθρός(erythros, 붉은), 라틴어 ruber(붉은), 고대 영어 rēad(red) 등이 언급된다. 라틴어 고유명사 2변화 체계(-us, -i)로 정착되었다."
+      },
+      {
+        "g": "desistere",
+        "pos": "동사",
+        "lemma": "desisto, desistere, destiti, destitum",
+        "principalParts": "desisto - desistere - destiti - destitum",
+        "parse": "pres. act. inf.",
+        "gloss_kr": "단념하기를, 중단하기를",
+        "gloss_en": "to desist from, to cease",
+        "syntax": "생성문법의 Minimalism 관점에서 desistere는 부정사절(TP/VP)의 핵심 서술어(Vº)로서, 주어 Rutulum과 이탈의 탈격 논항 bello를 논항구조로 요구한다: [VP [DP Rutulum] [V' desistere [DP bello]]]. 내재적 논항에 탈격(ablative of separation)을 지배하는 통사적 격 지배력(case governance)을 행사한다.",
+        "background": "desistere는 시작했던 행위(전쟁)를 도중에 그만두고 물러서는 행동을 뜻한다. 경이로운 징조를 접한 후 루툴리족이 전쟁을 중단할 것이라는 기대(Spes)의 내용이 이 부정사 단어에 집중되어 있다. 그러나 이 기대는 바로 다음 문장의 perstat(거절하고 견디다)에 의해 즉각 좌절된다.",
+        "etymology": "de Vaan(EDL) 및 OLD에 따르면 desistere는 전치사 접두사 de-(~로부터 떨어져)와 동사 sisto(서다, 세우다)의 합성어이다. sisto는 PIE 어근 *steh₁-(서다, 영급/e급)의 부분 중복(reduplication) 현재형 *sti-st-h₁-o-에서 유래하였다. 동계어로는 고대 그리스어 ἵστημι(histēmi, 세우다), 산스크리트어 tíṣṭhati(서다), 고대 영어 standan(stand) 등이 존재한다. 라틴어 내부에서 접두사 de-와의 결합을 통해 '떨어져 서다 > 그만두다, 단념하다'라는 이탈의 통사·의미적 이행을 이룩했다. 현대 영어의 desist, desistance 및 스페인어 desistir, 프랑스어 désister 등에 직접적으로 이어져 있다."
+      },
+      {
+        "g": "bello:",
+        "pos": "명사",
+        "lemma": "bellum, belli, n.",
+        "parse": "sg. abl. n.",
+        "gloss_kr": "전쟁을, 전쟁으로부터",
+        "gloss_en": "from war",
+        "syntax": "LFG 관점에서 bello는 동사 desistere가 요구하는 이탈/분리의 탈격(ablative of separation) 논항으로서 f-구조에서 OBL(사구 보충어) 기능을 담당한다: [PRED 'desistere<SUBJ,OBL>', OBL [PRED 'bellum', CASE abl, NUM sg, GEND neut]]. 이탈을 나타내는 동사적 의미에 의해 전치사 없이 단순 탈격 형태로 지배받는다.",
+        "background": "bello는 트로이아 이주민들과 라티움 현지 부족들(루툴리족 및 메젠티우스 등) 사이에 벌어진 잔혹한 전쟁을 가리킨다. 이 전쟁은 라비니아(Lavinia)와의 혼인권 및 이탈리아 땅의 지배권을 둘러싼 핵심 서사 갈등이다. bello의 배치는 이 전쟁이 멈출 수도 있었던 결정적 전환점이었음을 강조한다.",
+        "etymology": "de Vaan(EDL) 및 OLD에 따르면 bellum은 고형 duellum(두 세력 간의 싸움)에서 모음 간 d- > b- 음운 변화를 거쳐 형성되었다. duellum은 숫자 2를 뜻하는 PIE *duwo-(둘) 및 *dwei-(두려워하다/싸우다) 관련 어근에서 파생된 원시 이탈리아어 *duen-lo-에 기원한다. 동계어로는 라틴어 duo(둘), 고대 그리스어 δέος(deos, 공포) 등이 연결된다. 고대 라틴어의 [dw] > [b] 자화 법칙(예: bonus < duonus)을 충실히 반영한 단어다. 현대 영어의 belligerent, antebellum, rebel(rebellio를 거침) 및 스페인어 bélico 등에 어원적 흔적을 남겼다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.568",
+    "trans": "(그러나 투르누스는) 계속 고집하며, 양편 모두 자신들의 신들을 모시고 있으며, 신들에 맞먹는 것, 즉 강인한 용기를 지니고 있으니,",
+    "meter": "‒⏑⏑ | ‒⏑⏑ | ‒‖‒ | ‒⏑⏑ | ‒⏑⏑ | ‒‒ (3번째 운각 deos 직후 남성 카이수ra penthemimeral caesura; 마지막 어휘 deorum est에서 모음 융합/엘리전 deorumst 발생)",
+    "words": [
+      {
+        "g": "perstat,",
+        "pos": "동사",
+        "lemma": "persto, perstare, perstiti, perstatum",
+        "principalParts": "persto - perstare - perstiti - perstatum",
+        "parse": "pres. ind. act. 3rd pers. sg.",
+        "gloss_kr": "(투르누스는) 완강히 견딘다, 계속 고집한다",
+        "gloss_en": "he persists, he stands firm",
+        "syntax": "생성문법의 X-bar 구구조에서 perstat는 문두에 위치한 주절의 Vº 서술어로서, 문맥상 생략된 단수 3인칭 주어(pro / Turnus)를 취한다: [TP proᵢ [T' perstat [VP tᵢ]]]. 극적인 도치 및 주어 생략(pro-drop) 구문으로 처리되어, 앞선 보충절(566-567행)의 기대를 한순간에 꺾어버리는 통사적 단절과 신속성을 창출한다.",
+        "background": "perstat는 투르누스의 타협 없는 의지와 고집을 보여주는 단어다. 신성한 기적(monstrum) 앞에서도 루툴리족의 지도자 투르누스는 흔들리지 않고 전쟁을 고수한다. 오비디우스는 단 한 단어로 앞선 두 행에 걸친 기대 구문을 완벽히 반전시키며 투르누스의 비극적이고 완고한 영웅적 태도를 선명히 부각한다.",
+        "etymology": "de Vaan(EDL)에 따르면 perstat는 강조 전치사 접두사 per-(끝까지, 철저히)와 동사 sto, stare(서다)의 합성어인 persto의 현재 직설법 능동태 3인칭 단수형이다. sto는 PIE 어근 *steh₁-(서다, 영급 어간 *sth₁-ā-)에서 유래하였다. 동계어로는 고대 그리스어 ἵστημι(histēmi), 산스크리트어 tiṣṭhati, 고대 영어 standan 등이 있다. 라틴어 내부에서 접두사 per-와의 완결적 결합을 통해 '끝까지 견디다, 완강히 고수하다'라는 강화된 직설적 의미를 획득했다. 현대 영어의 persist, persistence 및 스페인어 persistir, 프랑스어 persister 등에 직계 파생어로 보존되어 있다."
+      },
+      {
+        "g": "habetque",
+        "pos": "동사",
+        "lemma": "habeo, habere, habui, habitum",
+        "principalParts": "habeo - habere - habui - habitum",
+        "parse": "pres. ind. act. 3rd pers. sg. + enclitic conj. -que",
+        "gloss_kr": "그리고 가지고 있다",
+        "gloss_en": "and has",
+        "syntax": "LFG 관점에서 habetque는 동사 habet과 후접 접속사 -que(and)의 복합체이다. -que는 Cº 기능어로 기능하여 앞선 절 perstat와 뒤의 절 habet deos pars utraque를 등위 연결(coordination)한다. habet의 f-구조는 [PRED 'habeo<SUBJ,OBJ>', SUBJ [PRED 'pars'], OBJ [PRED 'deos']] 구조로 나타나며 주어 pars와의 수 일치를 충족한다.",
+        "background": "habetque는 양쪽 진영(트로이아측과 루툴리측) 모두가 각자의 신(deos)과 정당성을 지니고 있음을 서술하기 시작한다. 투르누스가 지속해서 싸우는 이유는 그들 역시 자신들을 후원하는 신들(예: 유노)과 신념이 있다고 믿기 때문이다.",
+        "etymology": "de Vaan(EDL) 및 OLD에 따르면 habeo는 PIE 어근 *gʰbʰ- 또는 *gʰabʰ-(쥐다, 잡다, 영급/e급)에서 파생된 원시 이탈리아어 *haβ-ē-에서 유래했다. 동계어로는 고대 아일랜드어 gabiid(잡다), 고대 영어 giefan(give), 고대 고지 독일어 gaben 등이 연결된다. 라틴어 2활용 동사 체계(-ēre)로 정착되어 상태 및 소유의 의미로 확장되었다. 후접어 -que는 PIE *kʷe(그리고)에서 유래하여 고대 그리스어 τε(te)와 직접 동계어다. 현대 영어의 have, habit, inhibit 및 스페인어 haber, 프랑스어 avoir 등에 유구하게 남아 있다."
+      },
+      {
+        "g": "deos",
+        "pos": "명사",
+        "lemma": "deus, dei, m.",
+        "parse": "pl. acc. m.",
+        "gloss_kr": "신들을",
+        "gloss_en": "gods",
+        "syntax": "생성문법의 X-bar 구구조에서 deos는 동사 habet의 직접목적어(direct object) NP/DP로서 [VP [V habet] [DP deos]] 내의 보충어 위치에 배치되며 대격(accusative case)을 배정받는다. θ-역할 배정 규칙에 따라 소유된 대상(THEME/PATIENT) 역할을 할당받는다.",
+        "background": "deos는 전쟁의 양 당사자가 각기 숭배하고 지원을 받는 올림포스의 신들을 의미한다. 트로이아 측은 베누스(Venus)와 키베레(Cybele) 및 유피테르(Jupiter)의 운명을 가지고 있고, 루툴리 측은 유노(Juno)의 가호와 국지적 수호신들을 가지고 있다. 이 구절은 호메로스 및 베르길리우스 전통의 '신들의 분열'과 '인간 전쟁의 신적 배후'를 축약 표현한다.",
+        "etymology": "de Vaan(EDL)에 따르면 deus는 PIE 어근 *deiw-ós(천상의 존재, 신, *dyeu- '밝다/하늘'에서 파생)에서 유래한 원시 이탈리아어 *deiw-os에서 출발했다. 동계어로는 산스크리트어 deváḥ(신), 고대 노르드어 tivar(신들), 고대 그리스어 δῖος(dios, 신성한) 및 고대 아일랜드어 día(신)가 있다. 라틴어 내부에서 모음 간 *w 탈락 및 단모음화 변화(*deiwos > *deeos > deus)를 겪었다. 현대 영어의 deity, deify 및 스페인어 dios, 프랑스어 dieu 등 로망스어 전체의 '신'을 뜻하는 어휘로 보존되었다."
+      },
+      {
+        "g": "pars",
+        "pos": "명사",
+        "lemma": "pars, partis, f.",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "편이, 진영이",
+        "gloss_en": "side, party",
+        "syntax": "HPSG 자질구조 관점에서 pars는 뒤의 형용사 utraque의 수식을 받는 명사구의 핵으로서 [HEAD noun, CASE nom, GEND fem, NUM sg] 자질을 지닌다. 서술어 habet의 형식적 주어(syntactic subject)로 기능하며 집합명사적 성격에 따라 문맥상 양측 세력을 가리킨다.",
+        "background": "pars utraque는 전쟁에 임하는 두 주체, 즉 아이네이아스가 이끄는 트로이아 연합군과 투르누스가 이끄는 루툴리-이탈리아 동맹군을 지칭한다. 오비디우스는 비극적 평행성을 강조하며, 어느 한 쪽만 신의 가호를 받는 것이 아니라 양쪽 모두 신적 명분과 영웅적 투지를 공유하고 있음을 서술한다.",
+        "etymology": "de Vaan(EDL)에 따르면 pars는 PIE 어근 *per- 또는 *p-r-ti-(분할하다, 나누다, 영급 어간)에서 파생된 원시 이탈리아어 *parti-s에서 유래했다. 동계어로는 라틴어 pario(낳다, 얻다), 고대 그리스어 πέπρωται(peprōtai, 운명지어지다), 산스크리트어 pūrtám(부품, 분량) 등이 존재한다. 라틴어 3변화 자음/i-어간 명사 체계를 거쳐 격변화를 이룩했다. 현대 영어의 part, party, partial, portion 및 스페인어 parte, 프랑스어 partie 등에 다양하게 살아있다."
+      },
+      {
+        "g": "utraque,",
+        "pos": "형용사(대명사적 형용사)",
+        "lemma": "uterque, utraque, utrumque",
+        "parse": "sg. nom. f.",
+        "gloss_kr": "양쪽의, 둘 다의",
+        "gloss_en": "each (of two), both",
+        "syntax": "LFG 관점에서 utraque는 주어 명사 pars를 수식하는 형용사적 한정어(ADJUNCT/SPECIFIER)로서 [PRED 'uterque', CASE nom, GEND fem, NUM sg] 자질을 전달한다. pars와 성·수·격 일치를 완성하여 [pars utraque]가 '양 진영 모두'라는 집합적 의미를 나타내도록 통사적 제약을 가한다.",
+        "background": "utraque는 두 대립하는 세력(트로이아와 루툴리) 어느 한 편도 빠짐없이 신과 운명적 명분을 지니고 있음을 명확히 한다. 이 평행적 구조는 전쟁이 단번에 끝나지 않고 피비린내 나는 비극적 결전으로 치달을 수밖에 없음을 암시하는 수사적 장치다.",
+        "etymology": "de Vaan(EDL) 및 OLD에 따르면 utraque는 의문/관계대명사 어근 uter(둘 중 어느 쪽)에 이중적 부속 접미사 -que(각각)가 결합한 대명사적 형용사 uterque의 여성 단수 주격형이다. uter 자체는 PIE *kʷo-tero-(둘 중 어느 쪽, 비교급 접미사 *-tero-)에서 유래하였다. 동계어로는 고대 그리스어 πότερος(poteros), 산스크리트어 kataráḥ, 고대 영어 hwæðer(whether) 등이 있다. 라틴어 내부에서 대명사 특유의 격변화(속격 -ius, 여격 -i) 체계를 유지하며 보존되었다. 현대 영어의 whether와의 어원적 계보 관계가 확인된다."
+      },
+      {
+        "g": "quodque",
+        "pos": "대명사(관계대명사 + 접속어)",
+        "lemma": "qui, quae, quod",
+        "parse": "sg. nom. n. + enclitic conj. -que",
+        "gloss_kr": "그리고 그것은 (신들에게 해당하는)",
+        "gloss_en": "and what, and which",
+        "syntax": "생성문법의 Minimalism 관점에서 quodque는 관계대명사 quod와 후접 접속사 -que의 합성어이다. -que는 문장 등위 연결을 담당하며, 관계대명사 quod는 뒤따르는 관계절 [quod deorum est instar]의 CP 내 Spec-CP 위치로 이동한 관계사(relative operator)로서 [CP quodᵢ [C' [TP tᵢ deorum est instar]]] 구도를 취한다.",
+        "background": "quodque는 보충적 관계절을 이끌어, 다음 행의 animos(용기, 투지)와 연결되는 전제 조건(\"신들에 상당하는 것, 즉 용기\")을 도입한다. 신들의 가호뿐만 아니라 인간 스스로가 지닌 영웅적 불굴의 정신이야말로 신적인 힘에 맞먹는 것임을 수사적으로 역설한다.",
+        "etymology": "de Vaan(EDL)에 따르면 관계대명사 quod는 PIE 의문/관계대명사 어근 *kʷo-/kʷi-의 중성 단수 주격/대격 재구형 *kʷod에서 직접 유래하였다. 동계어로는 고대 영어 hwæt(what), 산스크리트어 kát, 고대 아베스타어 kat 등이 존재한다. 라틴어 내부에서 관계대명사 체계의 중성 단수 주격 표지로 안정적으로 정착했다. 접후사 -que(PIE *kʷe)와의 합성 구성을 보여준다. 현대 영어의 what 및 로망스어 관계사 형태들에 깊은 영향을 주었다."
+      },
+      {
+        "g": "deorum",
+        "pos": "명사",
+        "lemma": "deus, dei, m.",
+        "parse": "pl. gen. m.",
+        "gloss_kr": "신들의",
+        "gloss_en": "of the gods",
+        "syntax": "HPSG 자질구조 관점에서 deorum은 명사구 instar를 수식하는 소유/속성 속격(possessive/attributive genitive) 명사구로서 [HEAD noun, CASE gen, NUM pl] 자질을 지닌다. 서술성 명사 instar와 결합하여 '신들의 (상당물/동등물)'이라는 비교 통사 구문을 완성한다.",
+        "background": "deorum은 앞선 deos(16행)를 속격 복수형으로 재의미화하여, 신이라는 존재가 가진 신성함, 권능, 위엄의 본질을 지칭한다. 오비디우스는 인간의 정신력(animos)이 신들의 권능(deorum instar)과 어깨를 나란히 한다는 대담한 수사적 비유를 구성한다.",
+        "etymology": "(deus 항목 참조) PIE *deiw-ós(천상의 존재)의 복수 속격 재구형 *deiw-ōm에서 유래하여 라틴어 2변화 복수 속격 어미 -ōrum 결합(de-ōrum)을 거쳤다. de Vaan(EDL)을 참조할 수 있다."
+      },
+      {
+        "g": "est",
+        "pos": "동사",
+        "lemma": "sum, esse, fui, futurus",
+        "principalParts": "sum - esse - fui - futurus",
+        "parse": "pres. ind. act. 3rd pers. sg.",
+        "gloss_kr": "~이다",
+        "gloss_en": "is",
+        "syntax": "LFG 관점에서 est는 관계절 내의 서술어 PRED 계사(copula) 동사로서 [PRED 'sum<SUBJECT, PREDLINK>'] 구성을 요구하며, 주어 quod와 서술 보어 instar 사이의 동등 관계(identity relation)를 입증한다.",
+        "background": "est는 현재 시제를 통해 \"신들에 맞먹는 것은 바로 용기(animos)이다\"라는 격언적 진리(gnomic present)를 선언한다.",
+        "etymology": "(sum 항목 참조) PIE 어근 *h₁es-의 현재 직설법 능동태 3인칭 단수형 *h₁es-ti에서 유래하여 원시 이탈리아어 *est를 거쳐 라틴어 est로 정착하였다. de Vaan(EDL) 및 고대 그리스어 ἐστί(esti), 산스크리트어 ásti, 고대 영어 is 등과 직접 동계어다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.569",
+    "trans": "(신들에 맞먹는 가치인) 용기를 지니고 있으니, 이제는 지참금으로 얻을 왕국도,",
+    "meter": "‒‒ | ‒‒ | ‒‖⏑⏑ | ‒‒ | ‒⏑⏑ | ‒‒ (3번째 운각 animos 직후 남성 카이수ra penthemimeral caesura 위치; instar habent animos 구문에서 어순 도치로 강렬한 운율적 강조 형성)",
+    "words": [
+      {
+        "g": "instar,",
+        "pos": "명사(불변화 명사/동등물)",
+        "lemma": "instar, n. indecl.",
+        "parse": "sg. nom. n.",
+        "gloss_kr": "맞먹는 것, 상응하는 가치",
+        "gloss_en": "worth, image, equal to",
+        "syntax": "생성문법의 X-bar 구구조에서 instar는 관계절 서술어 est의 주격 보어(predicative nominative) AP/NP 핵으로 기능한다. 뒤이어 나오는 대격 목적어 animos와 도치된 동사 habent에 의해 \"quod est instar deorum, (id) habent animos\" 구문의 핵심 수사적 비교어로 작동한다. 속격 논항 deorum을 요구하는 특수 문법적 특성을 보인다.",
+        "background": "instar는 불변화 명사로서 '~에 맞먹는 양, 상응하는 형태'를 의미한다. 오비디우스는 \"신들에 맞먹는 가치를 지닌 것, 그것은 바로 용기(animos)이다\"라는 강렬한 영웅적 명제를 시적 어순 도치를 통해 전개한다. 신들의 물리적 개입 못지않게 인간의 강인한 투지(animos)가 전쟁의 승패를 가르는 신적 동력임을 짚어낸다.",
+        "etymology": "de Vaan(EDL) 및 OLD에 따르면 instar는 전치사구 in stāre(서 있는 상태로, 위치에서)에서 유래한 화석화된 불변화 명사이다. stāre는 PIE 어근 *steh₁-(서다)에서 나온 동사 stare의 부정사형이다. 동계어로는 고대 그리스어 ἵστημι, 산스크리트어 sthā, 고대 영어 standan 등이 있다. 라틴어 내부에서 in + stare 구문이 하나의 명사로 융합(univerbation)되어 '상당하는 것, 무게/가치'라는 특수한 불변화 명사 및 전치사적 부어로 이행했다. 현대 로망스어 및 고전 라틴어 속격 문맥에 화석화된 형태로 흔적을 남겼다."
+      },
+      {
+        "g": "habent",
+        "pos": "동사",
+        "lemma": "habeo, habere, habui, habitum",
+        "principalParts": "habeo - habere - habui - habitum",
+        "parse": "pres. ind. act. 3rd pers. pl.",
+        "gloss_kr": "(그들은) 가지고 있다",
+        "gloss_en": "they have",
+        "syntax": "LFG 관점에서 habent는 주절의 서술어 PRED로서 [PRED 'habeo<SUBJ,OBJ>', SUBJ [PRED 'pro', NUM pl], OBJ [PRED 'animos', CASE acc, NUM pl]] 의 f-구조를 구성한다. 복수 3인칭 어미 -nt를 통해 생략된 복수 주어(양 진영의 전사들)와 수 일치를 이룬다.",
+        "background": "habent는 568행의 단수 habet과 수식적 대조를 이루며, 이제 양 진영의 개별 전사들과 전체 군대가 불굴의 정신력(animos)을 고유하게 품고 있음을 서술한다.",
+        "etymology": "(habeo 항목 참조) PIE *gʰbʰ- / *gʰabʰ-에서 유래한 2활용 직설법 현재 능동태 3인칭 복수형 habent이다. 어미 -nt는 PIE 복수 3인칭 어미 *-nti에서 유래하였다. de Vaan(EDL) 참조."
+      },
+      {
+        "g": "animos;",
+        "pos": "명사",
+        "lemma": "animus, animi, m.",
+        "parse": "pl. acc. m.",
+        "gloss_kr": "용기를, 투지를, 용맹함을",
+        "gloss_en": "courage, spirits, minds",
+        "syntax": "HPSG 자질구조 관점에서 animos는 동사 habent의 대격 목적어(direct object)로서 [HEAD noun, CASE acc, GEND masc, NUM pl] 자질을 전달받는다. 앞절의 관계대명사 구문 [quod deorum est instar]과의 동격(apposition) 또는 의미적 도치 구조를 완성한다.",
+        "background": "단수 anima가 '생명, 숨결'을 뜻하는 반면, 복수 animos는 영웅적인 '용기, 투지, 맹렬한 기세'를 뜻하는 전문 시적 어휘다. 투르누스와 트로이아 전사들이 타협 없이 결전을 불사하게 만드는 내면의 영웅적 신념을 집약한다.",
+        "etymology": "de Vaan(EDL)에 따르면 animus는 PIE 어근 *h₂enh₁-(호흡하다, e급)에서 유래한 남성 명사로, 어원적으로 anima(여성)와 자매 어휘 관계다. 동계어로는 고대 그리스어 ἄνεμος(anemos, 바람), 산스크리트어 āniti(숨쉬다), 고대 아일랜드어 anam(영혼) 등이 있다. 라틴어 내부에서 복수형 animi/animos가 '용기, 기개, 정신력'이라는 심리적·영웅적 의미로 확장 분화되었다. 현대 영어의 animus, animosity 및 스페인어 ánimo, 이탈리아어 animo 등에 직접적으로 남아있다."
+      },
+      {
+        "g": "nec",
+        "pos": "접속사",
+        "lemma": "nec",
+        "parse": "coord. conj.",
+        "gloss_kr": "~도 아니다",
+        "gloss_en": "nor, and not",
+        "syntax": "LFG 관점에서 nec는 부정 등위 접속사(negative coordinating conjunction)로서, 뒤따르는 구문들을 병렬 연결하며 문장 전체에 부정 자질 [POLARITY neg]를 제공한다. 569-570행에 걸쳐 반복 배치(nec ... nec ... nec)되는 부정 대구법(anaphora)의 첫 요소로 기능한다.",
+        "background": "nec는 삼중 부정 상관 구문(nec ... nec ... nec)의 시작을 알리며, 전사들이 이제 싸우는 이유가 단순한 겉치레나 보상(지참금 국토, 장인의 왕권, 신부 라비니아) 때문이 아니라, 오직 명예와 투지 그 자체 때문으로 승화되었음을 보여주는 수사적 전환점이다.",
+        "etymology": "de Vaan(EDL) 및 OLD에 따르면 nec는 부정 부사 ne(~가 아니다)와 후접 접속사 -que(그리고)가 축합된 neque의 단축형(apocope)이다. ne는 PIE 부정 어근 *ne에서, -que는 PIE *kʷe에서 유래하였다. 동계어로는 고대 그리스어 οὔτε(oute), 산스크리트어 na, 고대 영어 ne 등이 존재한다. 라틴어 내부에서 어말 모음 e 탈락 법칙(apocope)을 거쳐 nec로 단축되었다. 현대 영어의 unnecessary 등 접두사 ne-와 로망스어 부정 접속사(스페인어 ni, 프랑스어 ni)의 어원이 되었다."
+      },
+      {
+        "g": "iam",
+        "pos": "부사",
+        "lemma": "iam",
+        "parse": "adv.",
+        "gloss_kr": "더 이상, 이제는",
+        "gloss_en": "any longer, now",
+        "syntax": "생성문법의 Minimalism 관점에서 iam은 시간/상(aspectual) 부사로서 TP구 내 부속어(ADJUNCT) 위치를 점유한다. 부정어 nec와 결합하여 nec iam('더 이상 ~않다', no longer)이라는 상적 한정 구절을 형성한다.",
+        "background": "iam은 전쟁의 성격이 변했음을 단적으로 지적한다. 초기에는 지참금으로 얻을 왕국이나 신부 라비니아라는 외적 조건이 전쟁의 원인이었으나, 전쟁이 격화된 '이제(iam)'는 오직 자존심과 승리 그 자체를 위한 전쟁으로 변질되었음을 강조한다.",
+        "etymology": "de Vaan(EDL)에 따르면 iam은 PIE 지시대명사/부사 어근 *yō / *y-ām(그때, 이미, 여성 대격 형태 화석화)에서 유래한 원시 이탈리아어 *jām에서 발원했다. 동계어로는 고대 아베스타어 yā, 고대 슬라브어 ja-že, 고대 고지 독일어 jā(yes) 등이 연결된다. 라틴어 내부에서 시상적(aspectual) 시간 부사로 정착했다. 현대 로망스어 스페인어 ya, 이탈리아어 già, 프랑스어 déjà(de + ex + iam) 등에 깊이 보존되어 있다."
+      },
+      {
+        "g": "dotalia",
+        "pos": "형용사",
+        "lemma": "dotalis, dotale",
+        "parse": "pl. nom. n. (or pl. acc. n.)",
+        "gloss_kr": "지참금의, 결혼 지참금으로 얻을",
+        "gloss_en": "of a dowry, dotal",
+        "syntax": "HPSG 자질구조 관점에서 dotalia는 뒤의 중성 복수 명사 regna를 수식하는 형용사구의 핵으로서 [HEAD adj, CASE acc/nom, GEND neut, NUM pl] 자질 일치를 이룬다. 명사 regna의 속성을 정치·혼인적 맥락으로 한정한다.",
+        "background": "dotalia regna는 라비니아와의 결혼을 통해 라티움의 왕 라티누스로부터 넘겨받게 될 왕국(지참금으로서의 영토)을 의미한다. 투르누스와 아이네이아스 모두 라비니아와의 혼인을 통한 영토 수복을 명분으로 내세웠으나, 이제 전쟁은 그러한 물질적 보상 차원을 넘어섰음을 역설한다.",
+        "etymology": "de Vaan(EDL)에 따르면 dotalia는 명사 dos, dotis(지참금, 여성)에 형용사 파생 접미사 -alis가 결합하여 형성된 dotalis의 중성 복수형이다. dos는 PIE 어근 *deh₁-(주다, e급 *dō-ti-)에서 유래하였다. 동계어로는 고대 그리스어 δῶρον(dōron, 선물), 산스크리트어 dānam(선물), 라틴어 dono(주다) 등이 있다. 라틴어 법률 및 혼인 어휘 체계에서 파생되었다. 현대 영어의 dotal, dowry(프랑스어 douaire를 거침) 및 스페인어 dotal 등에 흔적이 남아있다."
+      },
+      {
+        "g": "regna",
+        "pos": "명사",
+        "lemma": "regnum, regni, n.",
+        "parse": "pl. nom. n. (or pl. acc. n.)",
+        "gloss_kr": "왕국들을, 지배권을",
+        "gloss_en": "kingdoms, realms",
+        "syntax": "LFG 관점에서 regna는 부정 구문(nec iam ...)에 병렬 연결된 목적어/주어 NP로서 [PRED 'regnum', CASE acc, NUM pl, GEND neut] 자질을 지닌다. 뒤의 sceptrum 및 te와 함께 부정 접속사 nec로 묶여 병렬 목적어 구문을 이룬다.",
+        "background": "regna는 라티움 땅의 왕권과 권력을 상징한다. 서사시 전체에서 왕국을 얻는 것은 트로이아 재건의 핵심 목표였으나, 오비디우스는 치열해진 전쟁의 정점에서 영토나 제국(regna)이라는 명분이 오히려 순수한 영웅적 투지(animos) 뒤로 후퇴하는 서사적 아이러니를 부각한다.",
+        "etymology": "de Vaan(EDL) 및 OLD에 따르면 regnum은 동사 rego(직진하다, 통치하다) 및 명사 rex(왕)에 명사 형성 접미사 *-no-가 결합한 reg-num에서 유래했다. PIE 어근 *reǧ-(직선으로 이끌다, 통치하다, e급)에서 출발하였다. 동계어로는 산스크리트어 rāján-(왕), 고대 아일랜드어 rí(왕), 고대 영어 rīce(realm) 등이 존재한다. 라틴어 내부에서 정치적 통치권 및 왕국을 뜻하는 대표 어휘로 정착했다. 현대 영어의 realm, reign, regnal 및 스페인어 reino, 프랑스어 royaume 등에 풍부하게 보존되어 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.570",
+    "trans": "장인의 왕장(王杖)도, 그리고 그대, 처녀 라비니약도 (싸움의 주된 목적이) 아니었다.",
+    "meter": "‒‒ | ‒⏑⏑ | ‒‖‒ | ‒⏑⏑ | ‒⏑⏑ | ‒‒ (3번째 운각 soceri 직후 penthemimeral caesura 위치; 시적 사도법 te, Lavinia virgo 구절이 마지막 두 운각의 다크틸릭 흐름과 결합하여 잔향 형성)",
+    "words": [
+      {
+        "g": "nec",
+        "pos": "접속사",
+        "lemma": "nec",
+        "parse": "coord. conj.",
+        "gloss_kr": "~도 아니고",
+        "gloss_en": "nor",
+        "syntax": "LFG 관점에서 nec는 부정 등위 접속사로서 앞선 nec dotalia regna와 뒤의 sceptrum soceri를 병렬 구조(coordination)로 잇는 통사적 연결어 Cº로 기능한다.",
+        "background": "삼중 부정 대구법의 두 번째 nec로서, 물질적 영토(regna)에 이어 정치적 권위의 상징인 장인의 홀(sceptrum) 역시 이제 싸움의 주된 목적이 아님을 밝힌다.",
+        "etymology": "(nec 항목 참조) neque에서 단축된 부정 접속사이다. de Vaan(EDL) 참조."
+      },
+      {
+        "g": "sceptrum",
+        "pos": "명사",
+        "lemma": "sceptrum, sceptri, n.",
+        "parse": "sg. nom. n. (or sg. acc. n.)",
+        "gloss_kr": "홀(王杖)을, 지배권을",
+        "gloss_en": "scepter, royal authority",
+        "syntax": "생성문법의 X-bar 구구조 관점에서 sceptrum은 부정 접속사 nec에 의해 병렬화된 DP 보충어로서 [DP [NP sceptrum [NP soceri]]] 구조의 중심 명사 핵이다. 속격 명사 soceri의 한정을 받는다.",
+        "background": "sceptrum(홀)은 왕권과 신성한 통치 권위의 정수인 지팡이다. 라티누스 왕의 홀을 가리키며, 라티움 왕가의 정통 통치권을 승계하는 상징물이다. 오비디우스는 왕권의 상징조차 전쟁의 열기 속에서는 본질적 투지에 밀려남을 표현한다.",
+        "etymology": "라틴어 sceptrum은 고대 그리스어 σκῆπτρον(skēptron, 지팡이, 홀)에서 직접 차용된 어휘이다. Beekes(EDG) 및 Chantraine(DELG)에 따르면 그리스어 σκῆπτρον은 동사 σκήπτω(skēptō, 의지하다, 짚다)에 도구 접미사 -tron이 결합한 파생어다. PIE 어근 *skāp- / *skəp-(지지하다, 지팡이)에서 유래하였다. 동계어로는 고대 영어 scaft(shaft), 고대 고지 독일어 scaft 등이 존재한다. 라틴어 입전 후 2변화 중성 명사로 이화 흡수되었다. 현대 영어의 scepter/sceptre 및 스페인어 cetro, 프랑스어 sceptre 등에 보존되어 있다."
+      },
+      {
+        "g": "soceri,",
+        "pos": "명사",
+        "lemma": "socer, soceri, m.",
+        "parse": "sg. gen. m.",
+        "gloss_kr": "장인의, 장인(라티누스 왕)의",
+        "gloss_en": "of the father-in-law (Latinus)",
+        "syntax": "HPSG 자질구조 관점에서 soceri는 명사 sceptrum을 수식하는 소유 속격(possessive genitive) 명사구로서 [HEAD noun, CASE gen, GEND masc, NUM sg] 자질을 전달하여 [sceptrum soceri]의 소유 관계를 명시한다.",
+        "background": "soceri(장인)는 라티움의 국왕 라티누스(Latinus)를 가리킨다. 라티누스는 딸 라비니아의 남편이 될 자에게 왕권을 이양하려 했다. 이 때문에 투르누스와 아이네이아스 모두 라티누스를 장인(socer)으로 맞이하여 그 권법적 지위를 획득하려 다투었다.",
+        "etymology": "de Vaan(EDL) 및 OLD에 따르면 socer는 PIE 어근 *sweḱuros(시아버지, 장인)에서 유래한 원시 이탈리아어 *swekuro-에서 출발했다. 동계어로는 고대 그리스어 ἑκυρός(hekyros), 산스크리트어 śváśuraḥ, 고대 슬라브어 svekrŭ, 고대 고지 독일어 swager 등이 있다. 라틴어 내부에서 어두 *sw- > s- 자음 변화 및 모음 약화(*swekuros > *swekros > socer) 현상을 거쳐 2변화 남성 명사로 정착했다. 현대 스페인어 suegro, 이탈리아어 suocero 등 로망스어에 뚜렷이 보존되어 있다."
+      },
+      {
+        "g": "nec",
+        "pos": "접속사",
+        "lemma": "nec",
+        "parse": "coord. conj.",
+        "gloss_kr": "~도 아니요",
+        "gloss_en": "nor",
+        "syntax": "LFG 관점에서 nec는 삼중 부정 상관 구문(nec ... nec ... nec)의 마지막 3차 부정 등위 접속사로서 최고조의 수사적 클라이맥스를 완성하는 Cº 역할을 담당한다.",
+        "background": "부정 대구법의 구절 완성을 이끄는 삼차 nec로서, 마침내 전쟁의 표면적 유발자였던 여성 라비니아(Lavinia virgo) 본인마저 언급하며, 전쟁이 이미 인간의 통제를 벗어난 명예와 생존의 절대적 대결로 승화되었음을 선언한다.",
+        "etymology": "(nec 항목 참조) neque에서 단축된 부정 접속사이다. de Vaan(EDL) 참조."
+      },
+      {
+        "g": "te,",
+        "pos": "대명사(인칭대명사)",
+        "lemma": "tu",
+        "parse": "sg. acc. f. (addressed to Lavinia)",
+        "gloss_kr": "너를, 너 라비니아를",
+        "gloss_en": "you (Lavinia)",
+        "syntax": "생성문법의 Minimalism 관점에서 te는 2인칭 단수 대명사의 대격(accusative case) 형태로서, 시적 사도법(apostrophe)에 의해 직접 대화 대상으로 인용된 보충어 DP [DP te] 위치를 점유한다. 동격 명사구 Lavinia virgo에 의해 통사적으로 수식된다.",
+        "background": "te는 오비디우스가 서사시의 인물인 라비니아(Lavinia)를 향해 직접 말을 건네는 사도법(apostrophe) 기법을 보여준다. 제3자 서술에서 갑자기 2인칭 '너'로 전환하여 독자의 감정적 몰입을 극대화하고, 비극의 중심에 선 순결한 처녀 라비니아의 존재감을 강하게 각인시킨다.",
+        "etymology": "de Vaan(EDL)에 따르면 2인칭 대명사 대격 te는 PIE 2인칭 대명사 어근 *tū / *twe(대격 *t-wé)에서 유래한 원시 이탈리아어 *twē에서 출발했다. 동계어로는 고대 그리스어 σέ(se) / té(도리스), 산스크리트어 tvām, 고대 슬라브어 tja, 고대 영어 þe(thee) 등이 있다. 라틴어 내부에서 어두 *tw- > t- 단순화 및 모음 장음화(tē)를 거쳤다. 현대 스페인어 te, 이탈리아어 te, 프랑스어 te 등 로망스어 2인칭 목적격 대명사의 어원이 되었다."
+      },
+      {
+        "g": "Lavinia",
+        "pos": "형용사/고유명사",
+        "lemma": "Lavinius, -a, -um (or Lavinia, Laviniae, f.)",
+        "parse": "sg. voc. f. (or sg. acc. f. in apposition)",
+        "gloss_kr": "라비니아여, 라비니아",
+        "gloss_en": "Lavinia",
+        "syntax": "HPSG 자질구조 관점에서 Lavinia는 대명사 te와 동격(apposition) 구성을 이루거나 사도법에 의한 호격/대격 명사구로서 [HEAD noun, GEND fem, NUM sg] 자질을 전달한다. 뒤의 virgo와 명사구 내부 수식 관계를 형성한다.",
+        "background": "Lavinia는 라티움의 왕 라티누스의 딸로서, 아이네이아스 서사의 핵심 여성 인물이다. 원래 투르누스와 약혼한 사이였으나 운명과 신탁에 의해 아이네이아스에게 주어지게 됨으로써 라티움 전쟁의 원인이 되었다. 훗날 아이네이아스는 그녀의 이름을 따서 라비니움(Lavinium) 시를 건립한다.",
+        "etymology": "Ernout-Meillet(DELL) 및 de Vaan(EDL)에 따르면 Lavinia는 라티움 지방의 고대 지명 라비니움(Lavinium)과 연관된 이탈리아 기원의 고유명사다. 어원은 원시 이탈리아어 *Lāu-inio-에서 유래한 것으로 추정되며, 기층 언어 또는 지역 명소명에서 유래하였다. 라틴어 1변화 여성 명사 체계로 수용되었다. 현대 지명 Lavinio 및 서구권 여성 이름 Lavinia의 직접적 원형이다."
+      },
+      {
+        "g": "virgo,",
+        "pos": "명사",
+        "lemma": "virgo, virginis, f.",
+        "parse": "sg. voc. f. (or sg. acc. f. in apposition)",
+        "gloss_kr": "처녀여, 처녀 라비니아를",
+        "gloss_en": "maiden, virgin",
+        "syntax": "LFG 관점에서 virgo는 Lavinia 및 te와 동격(appositive)을 이루는 명사구로서 [PRED 'virgo', CASE acc/voc, GEND fem, NUM sg] 자질구조를 지닌다. 사도법 구문 te, Lavinia virgo의 최종적 명사 핵으로 작용하며 문장을 완성한다.",
+        "background": "virgo(처녀, 동정녀)는 라비니아의 순결함과 수동적인 비극성을 부각하는 칭호다. 영웅들의 피비린내 나는 참극과 영토 다툼의 중심에 서 있지만 스스로 아무런 목소리를 내지 못하는 순결한 처녀(virgo) 라비니아의 상징적 형상을 시적으로 완결짓는다.",
+        "etymology": "de Vaan(EDL) 및 OLD에 따르면 virgo는 어원이 다소 논쟁적이나, PIE 어근 *werg- (작상하다, 번성하다) 또는 라틴어 virga(가지, 새싹)와의 어원적 연관성이 제기된다. 즉 '푸른 새싹 같은 어린 여성'이라는 의미적 전이 과정으로 파생된 3변화 여성 명사(*virg-ōn)이다. de Vaan은 virga와의 관계를 유력하게 평가한다. 라틴어 내부에서 어간 자음 n 탈락 및 주격 단수 -o 형성을 겪었다. 현대 영어의 virgin, virginity 및 스페인어 virgen, 프랑스어 vierge 등에 깊이 남아있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 571",
+    "trans": "전쟁을 치르고, 마침내 비너스가 승리한 자기 아들의 무기를 보며,",
+    "meter": "‒⏑⏑ | ‒⏑⏑ | ‒‖⏑⏑ | ‒⏑⏑ | ‒⏑⏑ | ‒‒ (penthemimeral caesura)",
+    "words": [
+      {
+        "g": "sed",
+        "pos": "접속사",
+        "lemma": "sed",
+        "parse": "coord. conj.",
+        "gloss_kr": "그러나, 도리어",
+        "gloss_en": "but",
+        "syntax": "LFG 관점에서 sed는 대등 접속사로서 앞선 문맥과 대조 관계를 맺는 문장 간 접속 기능을 수행하며, [COORDF [PRED 'sed', COORD1 ..., COORD2 ...]] 형태의 f-구조를 형성한다. 생성문법적으로는 두 조응적 절을 연결하는 Co-Coordination 구문으로 분석되며, CP 레벨에서 상위 접속사구의 핵으로 투사된다. 레빈슨式 화용론 관점에서 이 접속사는 이전 서사의 흐름을 반전시키는 대조적 화용 지시어(contrastive discourse marker)로 작용한다.",
+        "background": "이 구절은 오비디우스의 변신 이야기 종반부에서 아이네이스 관련 서사의 클라이맥스로 이어지는 전환점을 장식한다. 투르누스 패배 직전의 긴박한 정황 속에서 비너스의 개입과 운명적 승리를 대비시키는 역할을 한다. 라틴어 서사시 전통에서 대조를 극적으로 부각시키는 기능어이다.",
+        "etymology": "de Vaan(EDL) 및 OLD에 따르면, 이탤릭조어 *sed-에서 유래하였으며 PIE 지시 대명사 어근 *s(e)- (자기 자신)의 사격형에서 기원했다. 동계어로 라틴어 sui, sibi 및 고대 고지독일어 sih 등이 있으며, 원래는 '자기 자신에 대하여'라는 격리·대조의 의미에서 '그러나'라는 역접 접속사로 의미 전이가 일어났다. 로망스어군으로 직접 계승되지는 않고 스페인어 pero 나 프랑스어 mais 등으로 대체되었으나, 라틴어 텍스트 전승 과정에서 대조 구문의 핵심 접속사로 고정되었다."
+      },
+      {
+        "g": "vicisse",
+        "pos": "동사",
+        "lemma": "vinco, vincere, vici, victus",
+        "principalParts": "vinco – vincere – vici – victus",
+        "parse": "완료 능동 부정사",
+        "gloss_kr": "이기었다고",
+        "gloss_en": "to have conquered",
+        "syntax": "LFG f-구조에서 vicisse는 보충어(XCOMP) 기능을 가지는 완료 능동 부정사로서, [PRED 'vincere<SUBJ,OBJ>', SUBJ [CRARE], OBJ ...] 형태의 논항 구조를 취한다. 생성문법의 격 이론 관점에서 부정사절의 주어는 대격으로 내재적 격을 부여받으며, [IP [NP natum] [I' vicisse ...]] 구조 속에서 시제 특성이 주절 동사 petunt에 의존한다. 통사적으로 완료 상(perfective aspect)의 의미적 완결성을 부정사 구문 내에 투사한다.",
+        "background": "여기서 승리는 단순히 물리적인 전투의 승리를 넘어, 아이네아스와 트로이아 세력의 이탈리아 정착이라는 신화적 숙원의 성취를 의미한다. 비너스의 아들 아이네아스(또는 문맥상 비유적 후손)의 승리를 통해 로마 건국 서사의 정당성이 확립된다. 비극적 패배자인 투르누스와 대비되는 절대적 승리의 속성을 지닌다.",
+        "etymology": "de Vaan(EDL)은 PIE 어근 *weik- ('싸우다, 정복하다', e급)에 기반을 둔다고 보며, 고대 인도어 *víc-(주민, 힘) 및 고딕어 weihan('싸우다')이 명백한 동계어이다. 음운론적으로 라틴어 내에서 비음삽입 현재형(v-i-n-c-o)으로 분화하였으며, 완료형 vici에서 볼 수 있듯이 모음 교체(ablaut)와 접미사 확장을 겪었다. 현대 영어의 vanquish 및 victory 등에 그 어원의 흔적이 뚜렷하게 남아 있다."
+      },
+      {
+        "g": "petunt",
+        "pos": "동사",
+        "lemma": "peto, petere, petivi, petitus",
+        "principalParts": "peto – petere – petivi – petitus",
+        "parse": "현재 직설법 능동 3인칭 복수",
+        "gloss_kr": "구한다, 추구한다, 향해 나아간다",
+        "gloss_en": "they seek, they aim at",
+        "syntax": "LFG f-구조상 이 동사는 [PRED 'peto<SUBJ,OBJ>', SUBJ [PRED 'bella'], OBJ [PRED 'vicisse']]와 같이 명사구와 부정사절을 논항으로 취한다. 생성문법의 X-bar 이론에 따라 [TP [NP pro] [T' petunt [VP bella [V' vicisse]]]]의 통사 구조를 이루며, 주어는 문맥상 복수 주체들을 가리키는 공범주(pro)로 처리된다. 격 지배 관점에서 목적어 위치에 대격을 요구하며, 방향성을 나타내는 처격적 의미가 통사적으로 확장된 형태이다.",
+        "background": "등장인물들이 전투의 승리를 열망하며 종국적인 결말을 향해 달려가는 긴박한 국면을 묘사한다. 단순한 물리적 추구가 아니라 운명의 성취를 향한 필연적인 의지를 나타낸다. 오비디우스의 서사시에서 영웅적 행위의 허무함과 신들의 의지가 맞물리는 지점을 포착한다.",
+        "etymology": "Ernout-Meillet(DELL)과 de Vaan(EDL)은 PIE 어근 *pete- ('날아가다, 달리다', e급)에서 유래한다고 분석하며, 산스크리트어 pátati('날다, 떨어진다'), 그리스어 πέτομαι(petomai, '날다')가 동계어이다. 원래 의미였던 '날아와 부딪히다, 향해 달리다'에서 '간청하다, 추구하다, 공격하다'로의 의미 전이가 일어났다. 현대 영어의 petition, compete 등의 어원이 되며, 로망스어군에서는 고어화되거나 의미가 축소되었다."
+      },
+      {
+        "g": "deponendique",
+        "pos": "동사",
+        "lemma": "depono, deponere, deposui depositus",
+        "principalParts": "depono – deponere – deposui – depositus",
+        "parse": "동명사(gerundive) 속격 + 명사 접두사 -que",
+        "gloss_kr": "그리고 버려야 할 (부끄러움의)",
+        "gloss_en": "and of laying aside",
+        "syntax": "LFG f-구조에서 이 동명사(gerundive/attributive)는 형용사적 수식어 기능을 하며, [ADJ [PRED 'deponendus', CASE gen, NUM sg, GEN n, MOD pudore]] 구조를 갖는다. 생성문법적으로 -que는 양방향 접속사 클리틱(conjunctive clitic)으로 분석되어 숙주 명사구의 오른쪽에 부가된다: [ConjP [DP deponendi] [Conj' -que [DP pudore]]]. 격 지배 관점에서 속격은 pudore와의 영토적 소유 및 성격 규정을 나타낸다.",
+        "background": "부끄러움을 내려놓는다는 것은 전투에서의 수치심 극복이나 자존심의 포기를 의미하며, 서사 속 인물들이 최후의 수단으로 진입하는 심리적 단계를 보여준다. 신화적 대결의 국면에서 인간적인 감정의 해소와 비극적 종말의 임박을 암시한다.",
+        "etymology": "de Vaan(EDL)은 de-(아래로, 분리)와 PIE 어근 *pos-/pon- ('두다, 놓다', cf. sinere, pono)의 합성어로 본다. 동계어로 현대 영어의 deposit, position 등이 있으며, 라틴어 내에서 전치사적 접두사와 어간의 결합을 통해 '내려놓다, 포기하다'라는 의미로 고착되었다. 음운론적으로 약화 현상(iambic shortening)과 모음 약화 과정을 겪었다."
+      },
+      {
+        "g": "pudore",
+        "pos": "명사",
+        "lemma": "pudor, pudoris, m.",
+        "parse": "단수 탈격 남성",
+        "gloss_kr": "부끄러움으로, 수치심으로",
+        "gloss_en": "with shame, modesty",
+        "syntax": "LFG f-구조에서 pudore는 수단/원인의 탈격(ablative of cause/means)으로서 [OBL [PRED 'pudor', CASE abl, θ-ROLE CAUSE]]로 실현된다. 생성문법적으로 [PP [P ø] [DP pudore]]의 구조를 가지며, deponendi 동명사의 논항 또는 수식 영역에 포섭된다. 통사적 격 할당은 탈격의 부사적 수식어 기능을 통해 전체 구절의 정황을 한정한다.",
+        "background": "pudor는 로마 문화권에서 도덕적 구속력이자 사회적 평판을 지키는 핵심 감정이다. 전쟁터에서 부끄러움을 버린다는 것은 모든 사회적 규범이나 체면을 뒤로하고 생존이나 파멸을 향해 돌진하는 극단적 상태를 뜻한다. 오비디우스는 영웅들의 심리적 변모를 포착하는 데 이 단어를 효과적으로 활용한다.",
+        "etymology": "OLD 및 Chantraine류 라틴어 어원 연구에 따르면, PIE 어근 *peu-/pud- ('부끄러워하다, 혐오감을 느끼다')에서 파생된 명사이다. 동계어로 라틴어 pudet(부끄럽게 하다), 고대 아일랜드어은후어 계열의 수치심 관련 형태들이 있다. 의미론적으로 '수치심, 명예심'에서 '체면'으로 의미가 확장되었으며, 현대 영어의 impudent(뻔뻔스러운) 등의 어근에 흔적이 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 572",
+    "trans": "마침내 비너스가 승리한 자기 아들의 무기를 보고,",
+    "meter": "‒⏑⏑ | ‒⏑⏑ | ‒‖⏑⏑ | ‒⏑⏑ | ‒⏑⏑ | ‒‒ (penthemimeral caesura)",
+    "words": [
+      {
+        "g": "bella",
+        "pos": "명사",
+        "lemma": "bellum, belli, n.",
+        "parse": "복수 대격 중성",
+        "gloss_kr": "전쟁들을, 전쟁을",
+        "gloss_en": "wars, warfare",
+        "syntax": "LFG f-구조에서 bella는 gerunt 동사의 직접목적어(OBJ)로서 [PRED 'bellum', CASE acc, NUM pl, θ-ROLE PATIENT]로 분석된다. 생성문법적으로 [VP [DP bella] [V' gerunt]] 구조를 이루며, 대격 마크(Case-marking)를 통해 통사적 지배를 받는다. 시적 허용(poetic plural)으로 단수 의미를 복수로 표현하여 전쟁의 격렬함과 규모를 강조한다.",
+        "background": "라틴어 서사시에서 bellum은 트로이아 전쟁의 연장선상에 있는 이탈리아의 격전들을 총칭한다. 아이네이스의 모티브를 이어받아 오비디우스가 변신 이야기 속에서 신화적 역사 서사를 마무리하는 핵심 제재이다. 전쟁의 참혹함과 신들의 개입이 교차하는 무대적 배경을 이룬다.",
+        "etymology": "de Vaan(EDL) 및 Ernout-Meillet(DELL)은 고대 라틴어 형태 duellum(두 사람 사이의 싸움에서 유래)에서 자음 탈락(d의 소실)을 겪어 변한 형태(*dwellum > duellum > bellum)로 분석한다. PIE 수사 *dwó(둘)와 연관되어 '두 집단 간의 무력 충돌'을 원뜻으로 한다. 동계어로 영어의 duel 등이 있으며, 로망스어군에서는 이탈리아어 guerra 등으로 대체되었으나 라틴어 원형의 흔적은 고전 어휘로 보존되었다."
+      },
+      {
+        "g": "gerunt",
+        "pos": "동사",
+        "lemma": "gero, gerere, gessi, gestus",
+        "principalParts": "gero – gerere – gessi – gestus",
+        "parse": "현재 직설법 능동 3인칭 복수",
+        "gloss_kr": "(그들이) 수행한다, 치른다",
+        "gloss_en": "they wage, they carry on",
+        "syntax": "LFG f-구조에서 gerunt는 주절의 서술어(PRED)로서 [PRED 'gero<SUBJ,OBJ>', SUBJ [CRARE], OBJ [PRED 'bella']]의 논항 구조를 지배한다. 생성문법의 V-to-T 이동 관점에서 [TP [NP pro] [T' geruntᵢ [VP tᵢ [DP bella]]]] 구조를 가지며, 현재시제를 통해 서사적 현장감을 부여한다. 주어는 맥락 속의 교전 당사자들을 가리키는 미지의 복수 주체이다.",
+        "background": "gerunt는 전쟁이나 임무를 '수행하다, 짊어지다'라는 뜻으로, 단순한 물리적 충돌을 넘어 운명에 의해 부과된 역사적 과업을 수행하는 뉘앙스를 띤다. 투르누스와 라틴족, 그리고 아이네아스 진영 간의 피할 수 없는 결전을 나타낸다.",
+        "etymology": "de Vaan(EDL)은 PIE 어근 *ges- ('나르다, 지탱하다')에서 기원한다고 본다. 산스크리트어 등에는 직동계어가 드문드문하며, 라틴어 독자적으로 '물리적으로 나르다'에서 '책임을 지다, 전쟁을 치르다(bellum gerere)'라는 관용적 의미로 고도화되었다. 현대 영어의 digest, gesture 등에 그 어근적 흔적이 남아 있다."
+      },
+      {
+        "g": "tandemque",
+        "pos": "부사",
+        "lemma": "tandem",
+        "parse": "부사 + 접두사 -que",
+        "gloss_kr": "마침내 그리고",
+        "gloss_en": "and at length, and finally",
+        "syntax": "LFG f-구조에서 tandem은 시간 부사(ADJUNCT)로서 [ADJUNCT [PRED 'tandem']]으로 작용하며, -que는 두 절이나 문장 성분을 잇는 접속사 클리틱이다. 생성문법적으로 [AdvP tandem]이 부가어 자리에 위치하고 클리틱 -que가 구구조의 상위 마커에 부착된다. 서사적 긴장을 해소하는 시점의 도래를 알리는 통사적 표지이다.",
+        "background": "tandem은 오랜 기간 지속된 갈등과 서사적 지연 끝에 마침내 결정적인 순간이 도래했음을 알리는 핵심 부사이다. 비너스가 개입하여 사태를 매듭짓는 카타르시스의 순간을 예고한다.",
+        "etymology": "OLD에 따르면 tam(그렇게)과 dem(바로 그것을 나타내는 지시 접사)의 합성어로, '그렇게까지 오래 지나서'라는 의미에서 시간적 의미인 '마침내'로 전이되었다. 동계어로는 라틴어 demum 등이 있으며, 로망스어군으로 직접 계승되지는 않고 이탈리아어 finalmente 등으로 대체되었다."
+      },
+      {
+        "g": "Venus",
+        "pos": "명사",
+        "lemma": "Venus, Veneris, f.",
+        "parse": "단수 주격 여성",
+        "gloss_kr": "비너스 (여신)",
+        "gloss_en": "Venus",
+        "syntax": "LFG f-구조에서 Venus는 문장의 주어(SUBJ)로서 [PRED 'Venus', CASE nom, TH-ROLE AGENT/EXPERIENCER]로 실현된다. 생성문법적으로 [TP [DP Venus] [VP videt ...]] 구조에서 [Spec, TP] 자리를 차지하며, 동사 videt과의 격-일치(Case-agreement) 관계를 맺는다. 신화적 고유명사로서 담화의 중심 초점으로 기능한다.",
+        "background": "비너스는 아이네아스의 어머니로서 트로이아 혈통의 수호자이자 로마 건국의 신화적 어머니이다. 변신 이야기 후반부에서 자신의 아들의 승리와 운명을 지켜보며 인간 세계의 비극을 초월한 신적 권능을 드러낸다.",
+        "etymology": "de Vaan(EDL)은 PIE 어근 *wen- ('소망하다, 사랑하다', e급)에서 유래하며, 명사형 파생 접미사 -us가 결합한 것으로 본다. 산스크리트어 vánati('바라다, 이기다'), 고대 고지독일어 wini('친구')가 동계어이다. 원래 '사랑, 매력, 갈망'을 뜻하는 일반 명사에서 사랑과 미의 여신의 고유명사로 전용되었다. 현대 영어의 venerate, venereal 등의 어원이 된다."
+      },
+      {
+        "g": "victricia",
+        "pos": "형용사",
+        "lemma": "victrix, victricis",
+        "parse": "복수 대격 중성",
+        "gloss_kr": "승리한, 승리를 거둔",
+        "gloss_en": "victorious",
+        "syntax": "LFG f-구조에서 victricia는 형용사적 수식어(ADJUNCT/MOD)로서 [MOD [PRED 'victrix', CASE acc, NUM pl, GEND n, MOD arma]]로 분석된다. 생성문법적으로 명사 arma와 성·수·격 일치(agreement)를 이루며 [DP [AP victricia] [NP arma]]의 지정어-핵 구조를 형성한다. 승리라는 속성을 무기에 부여하는 수식어구이다.",
+        "background": "victricia는 승리를 상징하는 형용사로, 아이네아스 또는 그의 진영이 거둔 무력적 성취를 대변한다. 비너스의 눈에 비친 이 무기들은 패배와 파멸의 상징인 투르누스의 무기와 극적인 대조를 이룬다.",
+        "etymology": "vincere(이기다)의 어간에서 파생된 여성형 명사/형용사 victrix의 중성 복수형으로, PIE 어근 *weik-에 기원한다(de Vaan EDL). 승리를 거두는 자라는 속성이 무기(arma)에 전용되어 '승리 안겨주는, 승리한'이라는 형용사적 용법으로 확장되었다."
+      },
+      {
+        "g": "nati",
+        "pos": "명사",
+        "lemma": "natus, nati, m.",
+        "parse": "단수 속격 남성",
+        "gloss_kr": "아들의",
+        "gloss_en": "of her son",
+        "syntax": "LFG f-구조에서 nati는 소유 속격(possessive genitive)으로서 [OBJ [PRED 'natus', CASE gen, TH-ROLE POSSESSOR]]로 arma를 수식한다. 생성문법적으로 [DP [DP nati] [D' [NP arma]]] 구조에서 지정어 자리를 차지하며, 격 지배 이론에 따라 선행 명사로부터 소유격 격을 할당받는다.",
+        "background": "여기서 아들은 트로이아의 영웅이자 비너스의 아들인 아이네아스를 가리킨다. 어머니로서 아들의 투쟁과 승리를 지켜보는 비너스의 애정과 신화적 후원의 감정이 이 단어에 압축되어 있다.",
+        "etymology": "de Vaan(EDL)은 PIE 어근 *genh₁- ('낳다, 생성하다', e급)에서 유래한 분사형 명사로 본다. 산스크리트어 jātá-, 그리스어 γνήσιος(gnēsios) 등이 동계어이며, 라틴어 내에서 동사 nascor(태어나다)의 파생 명사로 정착했다. 현대 영어의 nation, innate, native 등의 어원이 되며, 생물학적 혈통과 출생을 나타내는 핵심 어근이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 573",
+    "trans": "투르누스는 쓰러지고, 아르데아도 쓰러지며, 투르누스가 살아있을 때는 힘세다고 일컬어졌던 아르데아도 쓰러진다.",
+    "meter": "‒⏑⏑ | ‒⏑⏑ | ‒‖⏑⏑ | ‒⏑⏑ | ‒⏑⏑ | ‒‒ (penthemimeral caesura)",
+    "words": [
+      {
+        "g": "arma",
+        "pos": "명사",
+        "lemma": "arma, armorum, n.",
+        "parse": "복수 대격 중성",
+        "gloss_kr": "무기를",
+        "gloss_en": "arms, weapons",
+        "syntax": "LFG f-구조에서 arma는 videt 동사의 직접목적어(OBJ)로서 [PRED 'arma', CASE acc, NUM pl, TH-ROLE PATIENT]로 분석된다. 생성문법적으로 [VP [DP [AP victricia] [AP nati] [DP arma]] [V' videt]] 구조에서 목적어 자리를 점하며, 격 이론에 의해 대격을 할당받는다. 비너스의 시선이 머무는 물리적 객체이다.",
+        "background": "arma는 서사시의 전통적 주제인 '무기와 영웅(Arma virumque cano)'을 환기하는 단어이다. 전쟁의 도구이자 영웅의 정체성을 상징하는 무기를 비너스가 바라보는 장면은 서사의 전환을 시각적으로 포착한다.",
+        "etymology": "de Vaan(EDL)은 PIE 어근 *ar- ('맞추다, 결합하다', e급)에서 유래한다고 분석하며, 그리스어 ἀρρίομαι 또는 ἁρμόζω, 산스크리트어 ṛṇóti('도달하다, 맞추다')가 동계어이다. '몸에 맞게 장착하는 장비, 무기'라는 원뜻에서 출발하여 군사적 장비 전체를 뜻하는 명사로 고착되었다. 현대 영어의 arm, army, array 등의 어원이 된다."
+      },
+      {
+        "g": "videt",
+        "pos": "동사",
+        "lemma": "video, videre, vidi, visus",
+        "principalParts": "video – videre – vidi – visus",
+        "parse": "현재 직설법 능동 3인칭 단수",
+        "gloss_kr": "본다",
+        "gloss_en": "sees",
+        "syntax": "LFG f-구조상 videt은 주절의 서술어로서 [PRED 'video<SUBJ,OBJ>', SUBJ [PRED 'Venus'], OBJ [PRED 'arma']]의 논항 구조를 지배한다. 생성문법의 V-to-T 이동 관점에서 [TP [DP Venus] [T' videtᵢ [VP tᵢ [DP arma]]]] 구조를 형성하며, 역사적 현재시제(historic present)를 사용하여 과거의 사건을 생생하게 전달한다.",
+        "background": "videt은 신이 인간 세계의 결말을 관조하고 확인하는 행위를 나타낸다. 비너스의 시선은 단순히 보는 것에 그치지 않고, 그 무기가 가져올 파괴와 승리의 결과를 신의 의지로서 공인하는 의미를 지닌다.",
+        "etymology": "de Vaan(EDL)은 PIE 어근 *weyd- ('보다, 알다', e급)에서 기원한다고 본다. 산스크리트어 védati('알다'), 그리스어 ἰδεῖν(idein, '보다')이 명백한 동계어이다. 원래 '보아서 알다'라는 인식론적 의미를 담고 있으며, 현대 영어의 video, vision, wit 등의 어원이 된다."
+      },
+      {
+        "g": "Turnusque",
+        "pos": "명사",
+        "lemma": "Turnus, Turni, m.",
+        "parse": "단수 주격 남성 + 접속사 클리틱 -que",
+        "gloss_kr": "그리고 투르누스는",
+        "gloss_en": "and Turnus",
+        "syntax": "LFG f-구조에서 Turnus는 cadit 동사의 주어(SUBJ)로서 [PRED 'Turnus', CASE nom, TH-ROLE THEME]로 분석된다. 생성문법적으로 [ConjP [DP Turnus] [Conj' -que ...]] 구조를 이루며, 후행하는 문장 성분을 대등하게 접속한다. 서사의 핵심 인물이 몰락하는 순간을 주어로 선언한다.",
+        "background": "투르누스는 라툴루이족의 왕이자 아이네아스의 가장 강력한 숙적이다. 그의 죽음은 오비디우스와 베르길리우스가 그리는 이탈리아 정복 서사의 정점이자, 트로이아 세력의 승리를 완성하는 비극적 희생의 종결을 의미한다.",
+        "etymology": "에트루리아계 기층 고유명사로 추정되며, 라틴어 고유의 PIE 어원 계통보다는 지중해 지역의 선주민 이름 전승에 속한다(Ernout-Meillet DELL). 라틴 문학 작품 속에서 루툴루이족의 영웅을 상징하는 고유명사로 고착되었다."
+      },
+      {
+        "g": "cadit",
+        "pos": "동사",
+        "lemma": "cado, cadere, cecidi, casus",
+        "principalParts": "cado – cadere – cecidi – casus",
+        "parse": "현재 직설법 능동 3인칭 단수",
+        "gloss_kr": "쓰러진다, 죽는다",
+        "gloss_en": "falls, dies",
+        "syntax": "LFG f-구조에서 cadit은 비대격 서술어(unaccusative predicate)로서 [PRED 'cado<SUBJ>', SUBJ [PRED 'Turnus']]의 논항 구조를 취한다. 생성문법의 비대격 가설(Unaccusative Hypothesis)에 따라 주어 Turnus는 기저에서 VP 내부의 내적 논항(internal argument)으로 병합되었다가 표면 주어 자리로 이동한다: [TP Turnusᵢ [VP tᵢ cadit]].",
+        "background": "cadit은 영웅의 죽음을 표현하는 전형적인 시적 동사로, 단순한 육체적 사망을 넘어 운명의 무게에 눌려 쓰러지는 비극적 함의를 지닌다. 투르누스의 몰락은 한 시대의 종말과 새로운 질서의 탄생을 상징한다.",
+        "etymology": "de Vaan(EDL)은 PIE 어근 *kad- ('떨어지다', e급)에서 유래한다고 본다. 산스크리트어 śīyati('떨어지다, 부서지다')와 연관되며, 라틴어 내에서 중복사(reduplication) 완료형 cecidi를 발달시켰다. 현대 영어의 cascade, decadent, accident 등의 어원이 되며, 물리적 낙하에서 몰락과 죽음으로 의미가 확장되었다."
+      },
+      {
+        "g": "cadit",
+        "pos": "동사",
+        "lemma": "cado, cadere, cecidi, casus",
+        "principalParts": "cado – cadere – cecidi – casus",
+        "parse": "현재 직설법 능동 3인칭 단수",
+        "gloss_kr": "쓰러진다, 함락된다",
+        "gloss_en": "falls, is ruined",
+        "syntax": "LFG f-구조에서 이 두 번째 cadit은 앞선 문장과 대구(parallelism)를 이루는 서술어로서 [PRED 'cado<SUBJ>', SUBJ [PRED 'Ardea']]의 구조를 형성한다. 생성문법적으로 동일한 비대격 이동 구조를 반복하여 수사적 강조(polysyndeton/anaphora 효과)를 자아낸다.",
+        "background": "인물(투르누스)의 죽음과 도시(아르데아)의 함락을 동일한 동사 cadit으로 연쇄적으로 배치함으로써, 영웅의 몰락이 도시의 파멸과 직결됨을 극적으로 보여준다.",
+        "etymology": "위의 cadit과 동일한 PIE 어근 *kad- ('떨어지다')에서 유래하였으며(de Vaan EDL), 인물뿐만 아니라 도시나 국가의 멸망을 표현하는 은유적 용법으로 확장되어 사용되었다."
+      },
+      {
+        "g": "Ardea",
+        "pos": "명사",
+        "lemma": "Ardea, Ardeae, f.",
+        "parse": "단수 주격 여성",
+        "gloss_kr": "아르데아 (도시 이름)",
+        "gloss_en": "Ardea (city)",
+        "syntax": "LFG f-구조에서 Ardea는 두 번째 cadit의 주어(SUBJ)로서 [PRED 'Ardea', CASE nom, TH-ROLE THEME]로 분석된다. 생성문법적으로 [TP [DP Ardea] [VP cadit]]의 구조를 가지며, 지명으로서 문장의 중심 주체 역할을 수행한다.",
+        "background": "아르데아는 투르누스가 다스리던 루툴루이족의 수도이자 고대 라티움의 유서 깊은 도시이다. 투르누스의 패배와 함께 화염에 휩싸여 멸망하는 운명을 맞이하며, 이후 신화 속에서 왜가리(ardea) 새로나마 변신하여 살아남게 되는 공간적 배경이다.",
+        "etymology": "선인도유럽어 기층 또는 이탈리아 지역의 고유 지명으로, 라틴어 일반 명사이자 '왜가리'를 뜻하는 ardea와 형태가 우연히 일치하여 후대 시적 변신 모티브(도시의 재에서 왜가리가 솟아오르는 전설)의 바탕이 되었다(Ernout-Meillet DELL)."
+      },
+      {
+        "g": "Turno",
+        "pos": "명사",
+        "lemma": "Turnus, Turni, m.",
+        "parse": "단수 탈격 남성",
+        "gloss_kr": "투르누스가",
+        "gloss_en": "with Turnus / while Turnus was",
+        "syntax": "LFG f-구조에서 Turno는 독립 탈격 구문(Ablative Absolute)의 주어로서 [ADJUNCT [PRED 'Turnus', CASE abl, TH-ROLE STATE]]로 분석된다. 생성문법적으로 [PP [DP Turno] [AP sospite]] 형태의 부가어구(Absolute construction)를 형성하며, 주절의 배경 상황을 시간적·조건적으로 한정한다.",
+        "background": "Turno sospite는 투르누스가 살아있고 건재했던 과거의 영화로운 시기를 압축적으로 가리킨다. 도시가 번성하고 힘을 자랑하던 시절과 투르누스의 존재가 동치임을 보여주는 표현이다.",
+        "etymology": "위의 Turnus 고유명사 어원과 동일하며, 독립 탈격 구문 속에서 탈격 어미 -o를 취해 문법적 문맥에 적응한 형태이다."
+      },
+      {
+        "g": "sospite",
+        "pos": "형용사",
+        "lemma": "sospes, sospitis",
+        "parse": "단수 탈격 남성",
+        "gloss_kr": "무사한, 살아있는, 건재한",
+        "gloss_en": "safe, unharmed, alive",
+        "syntax": "LFG f-구조에서 sospite는 독립 탈격 구문 내의 서술어적 형용사(XCOMP/MOD)로서 [MOD [PRED 'sospes', CASE abl, NUM sg, GEND m, MOD Turno]]로 작용한다. 생성문법적으로 [DP Turno]와 성·수·격 일치를 이루며 독립 탈격구의 핵심 속성어 역할을 수행한다.",
+        "background": "sospes는 단순히 살아있다는 것을 넘어 보호받고 안전하며 도시의 번영을 지탱하는 상태를 뜻한다. 투르누스가 건재할 때 아르데아가 누렸던 힘의 원천이 그에게 있었음을 강조한다.",
+        "etymology": "de Vaan(EDL)은 이탤릭조어 *sospe(t)-에서 유래하며, PIE 어근 *swosp- 또는 구호·구원의 의미를 담은 어근과의 연관성을 제시한다. 고대 라틴어 주술적 기도문 등에 자주 등장하는 종교적·보호적 색채가 짙은 어휘이며, 로망스어군으로 계승되지 않고 고전 라틴어의 문어적 표현으로 남았다."
+      },
+      {
+        "g": "dicta",
+        "pos": "동사",
+        "lemma": "dico, dicere, dixi, dictus",
+        "principalParts": "dico – dicere – dixi – dictus",
+        "parse": "완료 수동 분사 여성 단수 주격",
+        "gloss_kr": "말하여진, 일컬어진",
+        "gloss_en": "called, spoken of",
+        "syntax": "LFG f-구조에서 dicta는 분사 수식어(ADJUNCT/PART)로서 [MOD [PRED 'dicere<SUBJ,OBJ>', CASE nom, NUM sg, GEND f, TH-ROLE THEME]]로 분석된다. 생성문법적으로 주어인 Ardea와 성·수·격 일치를 이루며 [DP [AP dicta] [AP potens]]의 서술 구조를 이룬다.",
+        "background": "과거에 강대하다고 일컬어졌던 도시의 명성을 회상하는 분사구이다. 영광스러웠던 과거의 평가와 현재의 비참한 파멸이 대조를 이루는 서사적 장치이다.",
+        "etymology": "de Vaan(EDL)은 PIE 어근 *deyḱ- ('가리키다, 선언하다, 말하다', e급)에서 유래한다고 본다. 산스크리트어 diśati('가리키다, 지시하다'), 그리스어 δείκνυμι(deiknymi)가 동계어이다. '가리키며 말하다'에서 '이름 붙이다, 선언하다'로 의미가 확장되었으며, 현대 영어의 dictate, diction, index 등의 어원이 된다."
+      },
+      {
+        "g": "potens",
+        "pos": "형용사",
+        "lemma": "potens, potentis",
+        "parse": "단수 주격 여성",
+        "gloss_kr": "힘센, 강력한",
+        "gloss_en": "powerful, mighty",
+        "syntax": "LFG f-구조에서 potens는 서술형 형용사(XCOMP)로서 [XCOMP [PRED 'potens', CASE nom, NUM sg, GEND f]]로 분석되며 dicta와 결합해 Ardea를 수식한다. 생성문법적으로 [AP [A' potens]] 구조 속에서 명사적 지위를 겸비한 형용사구 핵으로 작동한다.",
+        "background": "아르데아가 투르누스의 치세 아래 얼마나 막강한 군사적·정치적 영향력을 지녔는지를 회상하는 형용사이다. 강력함의 상징이 한순간의 전쟁으로 무너지는 무상함을 극대화한다.",
+        "etymology": "de Vaan(EDL)은 PIE 명사/형용사 어근 *poti- ('주인, 힘 있는 자', e급)에서 유래한다고 본다. 산스크리트어 páti('남편, 주인'), 그리스어 πόσις(posis)가 동계어이다. 동사 potior(지배하다)와 어원을 공유하며, 현대 영어의 potent, potential, omnipotent 등의 어원이 된다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 574",
+    "trans": "그러나 야만적인 칼이 그 도시를 빼앗아 가고 미지근한 재 속에 건물들이 숨겨졌을 때,",
+    "meter": "‒⏑⏑ | ‒⏑⏑ | ‒‖⏑⏑ | ‒⏑⏑ | ‒⏑⏑ | ‒‒ (penthemimeral caesura)",
+    "words": [
+      {
+        "g": "Quem",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "단수 대격 남성",
+        "gloss_kr": "그를, 그것을 (관계대명사)",
+        "gloss_en": "whom, which",
+        "syntax": "LFG f-구조에서 Quem은 관계대명사로서 선행사 Turnus(또는 Ardea의 문맥적 연결)를 받아 종속절의 목적어(OBJ) 기능을 수행한다: [OBJ [PRED 'qui', CASE acc, GEND m/f, TH-ROLE PATIENT]]. 생성문법적으로 [CP [DP quemᵢ] [C' ... [VP abstulit tᵢ]]]의 구조로 A'-이동(relativization)을 거친다.",
+        "background": "이 관계대명사는 앞서 언급된 투르누스의 몰락 혹은 도시 아르데아의 파멸이라는 비극적 사건을 이어받아, 파괴의 주체와 결과로 서사를 매끄럽게 연결하는 통사적 가교 역할을 한다.",
+        "etymology": "de Vaan(EDL)은 PIE 지시/관계 대명사 어근 *kʷo- / *kʷi-에서 유래한다고 본다. 산스크리트어 kás('누구'), 그리스어 τίς와 동계어이며, 라틴어 내에서 관계대명사 및 의문대명사 패러다임으로 정착했다. 로망스어군 전반에 걸쳐 형태와 기능이 대대적으로 계승되었다."
+      },
+      {
+        "g": "postquam",
+        "pos": "접속사",
+        "lemma": "postquam",
+        "parse": "종속 접속사",
+        "gloss_kr": "~후에",
+        "gloss_en": "after that, when",
+        "syntax": "LFG f-구조에서 postquam은 시간절을 이끄는 접속사(ADJUNCT)로서 [ADJUNCT [PRED 'postquam', COMP [...]]] 구조를 형성한다. 생성문법적으로 [CP [C' postquam [TP ... abstulit ... latuerunt]]]의 부사절 구구조를 투사하며, 주절과의 시간적 선후 관계를 통사적으로 명시한다.",
+        "background": "postquam은 파괴와 화재 이후의 시간적 국면을 열어젖히며, 도시가 소멸한 뒤 남겨진 잔해와 변신의 신화적 공간을 준비하는 전환점 역할을 한다.",
+        "etymology": "post(뒤에, ~ 후에)와 quam(어떻게, ~ 만큼)의 합성어로, 어원적으로 '그 이후에 ~하는 만큼의 시간이 지나서'라는 의미에서 시간 접속사로 굳어졌다(OLD). 로망스어군에서는 직접 계승되지 않고 각 언어별 후대 합성어(스페인어 después de 등)로 대체되었다."
+      },
+      {
+        "g": "barbarus",
+        "pos": "형용사",
+        "lemma": "barbarus, barbara, barbarum",
+        "parse": "단수 주격 남성",
+        "gloss_kr": "야만적인, 이외의",
+        "gloss_en": "barbaric, foreign",
+        "syntax": "LFG f-구조에서 barbarus는 ensis를 수식하는 형용사(MOD)로서 [MOD [PRED 'barbarus', CASE nom, NUM sg, GEND m, MOD ensis]]로 분석된다. 생성문법적으로 [DP [AP barbarus] [NP ensis]]의 지정어-핵 구조를 이룬다.",
+        "background": "barbarus는 그리스-로마 관점에서 이방인이거나 문명화되지 않은 파괴적인 성격을 가리킨다. 여기서는 투르누스를 쓰러뜨린 아이네아스 진영의 무기 혹은 전쟁 자체의 무자비하고 야만적인 폭력성을 상징한다.",
+        "etymology": "그리스어 βάρβαρος(barbaros, 외국어 소리가 '바르바르' 들린다는 의성어적 기원)에서 유래한 차용어로, 이탤릭조어 및 라틴어에 유입되어 외지인, 야만인을 뜻하는 단어로 고착되었다(Ernout-Meillet DELL). 현대 영어의 barbarian, barbarous 등의 어원이 된다."
+      },
+      {
+        "g": "ensis",
+        "pos": "명사",
+        "lemma": "ensis, ensis, m.",
+        "parse": "단수 주격 남성",
+        "gloss_kr": "칼이, 검이",
+        "gloss_en": "sword",
+        "syntax": "LFG f-구조에서 ensis는 종속절의 주어(SUBJ)로서 [PRED 'ensis', CASE nom, TH-ROLE AGENT/INSTRUMENT]로 분석된다. 생성문법적으로 [TP [DP [AP barbarus] [NP ensis]] [VP abstulit]] 구조에서 주어 자리를 차지하며, 도구적 주체로서의 통사적 지위를 갖는다.",
+        "background": "ensis는 시적이고 격식 있는 용어로, 일반적인 칼(gladius)과 달리 운명적이고 치명적인 살육을 집행하는 시적 무기를 가리킨다. 투르누스의 목숨을 앗아간 검의 위력을 강조한다.",
+        "etymology": "de Vaan(EDL)은 PIE 어근 *nsi- ('칼, 검')에서 유래한다고 보며, 산스크리트어 ási-('칼, 검')가 유일한 확실한 동계어이다. 이탈리아어군 내부에서 고유하게 보존된 시적 어휘로, 고전 라틴어 서사시에서 검을 뜻하는 대표적인 문어체 단어로 쓰였다."
+      },
+      {
+        "g": "abstulit",
+        "pos": "동사",
+        "lemma": "aufero, auferre, abstuli, ablatus",
+        "principalParts": "aufero – auferre – abstuli – ablatus",
+        "parse": "완료 직설법 능동 3인칭 단수",
+        "gloss_kr": "빼앗아 갔다, 앗아갔다",
+        "gloss_en": "carried off, took away, destroyed",
+        "syntax": "LFG f-구조에서 abstulit은 종속절의 서술어로서 [PRED 'aufero<SUBJ,OBJ,OBL>', SUBJ [PRED 'ensis'], OBJ [PRED 'Quem']]의 논항 구조를 지배한다. 생성문법의 V-to-T 이동 관점에서 [TP [DP ensis] [T' abstulitᵢ [VP tᵢ [DP Quem]]]] 구조를 이루며, 완료시제를 통해 파괴 행위의 완료를 나타낸다.",
+        "background": "칼이 목숨이나 도시의 안위치 등을 빼앗아 간다는 표현으로, 전쟁의 폭력이 생명과 문명을 단번에 앗아가는 참혹함을 비유적으로 표현한다.",
+        "etymology": "ab-(떨어져, 멀리)과 fero(나르다, 가져가다)의 불규칙 합성 동사로, PIE 어근 *bher- ('나르다')에 기원한다(de Vaan EDL). 동계어로 영어의 bear, bring 등이 있으며, 라틴어 내에서 불규칙 완료형 abstuli를 발달시켰다. 현대 영어의 ablation 등의 어원이 된다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG f-구조에서 et은 대등 접속사로서 두 절(abstulit 절과 latuerunt 절)을 연결하는 [COORDF [PRED 'et', COORD1 ..., COORD2 ...]] 구조를 이룬다. 생성문법적으로 두 CP를 대등하게 접속하는 구구조 핵으로 작용한다.",
+        "background": "서사의 두 가지 비극적 국면—영웅의 죽음과 도시의 화재—을 자연스럽게 연결하며 파괴의 현장을 입체적으로 묘사하는 접속사이다.",
+        "etymology": "de Vaan(EDL)은 PIE 접속사 어근 *eti('게다가, 그리고')에서 유래한다고 본다. 산스크리트어 áti('넘어서, 지나서'), 그리스어 ἔτι(eti, '여전히, 더욱이')가 동계어이며, 라틴어의 가장 기본적인 대등 접속사로 정착했다."
+      },
+      {
+        "g": "tepida",
+        "pos": "형용사",
+        "lemma": "tepidus, tepida, tepidum",
+        "parse": "복수 주격 중성",
+        "gloss_kr": "미지근한, 아직 식지 않은",
+        "gloss_en": "warm, lukewarm",
+        "syntax": "LFG f-구조에서 tepida는 형용사적 수식어로서 [MOD [PRED 'tepidus', CASE nom, NUM pl, GEND n, MOD tecta]]로 분석된다. 생성문법적으로 [DP [AP tepida] [NP tecta]]의 구조를 이루며 화재가 방금 일어났음을 나타내는 상태 성분을 제공한다.",
+        "background": "tepida는 불이 꺼진 직후라 완전히 식지 않고 여전히 미지근한 온기가 남아 있는 파괴의 현장을 묘사한다. 참혹한 화재의 여운을 감각적으로 전달하는 시적 수식어이다.",
+        "etymology": "de Vaan(EDL)은 PIE 어근 *tep- ('따뜻하다', e급)에서 유래한다고 본다. 산스크리트어 tápyate('열을 내다, 타오르다')가 동계어이며, 라틴어 tepere(따뜻하다)의 파생 형용사이다. 현대 영어의 tepid(미지근한)의 직접적인 어원이다."
+      },
+      {
+        "g": "latuerunt",
+        "pos": "동사",
+        "lemma": "lateo, latere, latui",
+        "principalParts": "lateo – latere – latui – (없음)",
+        "parse": "완료 직설법 능동 3인칭 복수",
+        "gloss_kr": "숨겨졌다, 감춰졌다",
+        "gloss_en": "lay hidden, were concealed",
+        "syntax": "LFG f-구조에서 latuerunt은 주절의 서술어로서 [PRED 'lateo<SUBJ>', SUBJ [PRED 'tecta']]의 논항 구조를 지배한다. 생성문법적으로 [TP [DP [AP tepida] [NP tecta]] [T' latuerunt]] 구조를 가지며, 완료시제를 통해 파괴로 인해 형태가 사라지고 재 속에 파묻힌 상태를 나타낸다.",
+        "background": "건물들이 화재로 무너져 내려 재 속에 파묻히고 그 형체를 알아볼 수 없이 숨겨진 상태를 묘사한다. 도시의 물리적 소멸과 은폐를 나타내는 비극적 표현이다.",
+        "etymology": "de Vaan(EDL)은 PIE 어근 *lāt- / *lēt- ('숨다, 감추다')에서 기원한다고 본다. 그리스어 λήθω(lēthō, 잊혀지다) 및 lethe와 연관되며, 라틴어 내에서 상태동사(stative verb) 2아형 변화로 정착했다. 현대 영어의 latent(잠재적인) 등의 어원이 된다."
+      },
+      {
+        "g": "tecta",
+        "pos": "명사",
+        "lemma": "tectum, tecti, n.",
+        "parse": "복수 주격 중성",
+        "gloss_kr": "건물들이, 지붕들이, 가옥들이",
+        "gloss_en": "roofs, houses, buildings",
+        "syntax": "LFG f-구조에서 tecta는 latuerunt 동사의 주어(SUBJ)로서 [PRED 'tectum', CASE nom, NUM pl, TH-ROLE THEME]로 분석된다. 생성문법적으로 [TP [DP tecta] [VP latuerunt]] 구조에서 주어 자리를 점하며 격 이론의 지배를 받는다.",
+        "background": "tectum은 지붕을 뜻하지만 시적으로 '가옥, 건물, 도시의 거주지' 전체를 의미한다. 가옥들이 재 속에 파묻혔다는 것은 곧 도시 전체의 문명적 공간이 파괴되었음을 뜻한다.",
+        "etymology": "tego(덮다, 감추다)의 완료 분사 tectus에서 유래한 중성 명사로, PIE 어근 *(s)teg- ('덮다, 지붕을 얹다')에 기원한다(de Vaan EDL). 그리스어 στέγη(stēgē), 고대 영어 þæc(thatch)이 동계어이다. 현대 영어의 protect, detect 등의 어원과 연결된다."
+      },
+      {
+        "g": "favilla",
+        "pos": "명사",
+        "lemma": "favilla, favillae, f.",
+        "parse": "단수 탈격 여성",
+        "gloss_kr": "재 속에서, 불티 속에서",
+        "gloss_en": "in the embers, in the ashes",
+        "syntax": "LFG f-구조에서 favilla는 장소/위치의 탈격(ablative of place where)으로서 [OBL [PRED 'favilla', CASE abl, TH-ROLE LOCATION]]로 분석된다. 생성문법적으로 [PP [P ø] [DP favilla]]의 구조를 이루어 latuerunt 동사의 공간적 배경을 한정한다.",
+        "background": "favilla는 단순한 검은 재(cineres)와 달리, 아직 완전히 꺼지지 않아 미열을 품은 '불티 어린 재'를 뜻한다. 도시가 파괴된 직후의 처연하고도 뜨거운 현장의 분위기를 감각적으로 각인시킨다.",
+        "etymology": "de Vaan(EDL)은 PIE 어근 혹은 이탤릭 기층 어휘에서 유래한 것으로 보며, 명확한 PIE 동계어 재구는 음운론적 난점으로 인해 논쟁적이다. 라틴어 고유의 화재 및 연소 관련 전문 어휘로 정착했으며, 로망스어군 일부 방언에 흔적이 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 15.576",
+    "trans": "그때 비로소 잿더미 한가운데서 날렵하게 나는 불사조가 솟아올라, 퍼덕이는 날개로 재를 세차게 흩날립니다.",
+    "meter": "‒ ⏑ ⏑ | ‒ ‒ | ‒ ‖ ⏑ ⏑ | ‒ ⏑ ⏑ | ‒ ⏑ ⏑ | ‒ ‒ (penthemimeral caesura)",
+    "words": [
+      {
+        "g": "tum",
+        "pos": "adverbium",
+        "lemma": "tum",
+        "parse": "adv.",
+        "gloss_kr": "그때에",
+        "gloss_en": "then",
+        "syntax": "LFG 관점에서 tum은 ADJUNCT로서 시제 정보를 제공하며, [ADJUNCT [PRED 'tum']]로 자질 구조가 형성된다. 생성문법적으로는 TP 수준의 외곽에 위치하여 시제적 외현 조건(temporal anchoring)을 만족한다.",
+        "background": "피타고라스의 연설 중 무생물에서 생명체(불사조)가 태어나는 기적적인 변신 과정을 시간적으로 도입하는 핵심 부사이다.",
+        "etymology": "PIE *to- (지시대명소 어근, e급)에서 유래하였으며, 라틴어 지시사 *is* 및 *tam*과 동계이다. de Vaan(EDL)은 이를 대명사적 격조사가 고착화된 부사형으로 분석한다. 현대 로망스어에는 직접 반사형이 잘 남아있지 않고 이탈리아어 *talvolta* 등의 복합어로 흔적이 이어진다."
+      },
+      {
+        "g": "primum",
+        "pos": "adverbium",
+        "lemma": "primum",
+        "parse": "adv.",
+        "gloss_kr": "처음으로",
+        "gloss_en": "first",
+        "syntax": "LFG에서 primum은 서수적 부사로 술부의 시간적 순서를 규정하며, [ADJUNCT [PRED 'primum']]로 분석된다. 통사적으로는 VP 또는 vP 주위에서 수식어 기능을 수행한다.",
+        "background": "아르데아 시의 파멸 속에서 불사조가 처음으로 탄생하는 역사적 순간의 최초성을 강조하는 수식어이다.",
+        "etymology": "PIE *pro- (앞으로, e급, 후두음 *p-와 결합)의 최상급 어간에서 파생되었다. Ernout-Meillet(DELL)은 이를 *prīus* 및 *prīmús*와 같은 어근 계열로 분류한다. 현대 영어의 *prime*, *primary* 등에 차용되어 그 흔적이 명확히 남는다."
+      },
+      {
+        "g": "cognita",
+        "pos": "participium",
+        "lemma": "cognosco, -ere, cognovi, cognitus",
+        "parse": "perf. pass. part. nom. f. sg.",
+        "gloss_kr": "인식된, 알려진",
+        "gloss_en": "recognized, known",
+        "syntax": "LFG f-구조에서 이 수식어 분사는 명사 congeries를 수식하는 ADJUNCT 또는 명사적 속성으로 기능하며, [ATTR +] 자질을 가진다. 생성문법적으로는 DP 내부의 소절(small clause) 주어로 기능하던 동사구의 수동태 피동주어 이동으로 분석된다.",
+        "background": "새로운 생명체가 세상에 비로소 그 존재를 드러내어 인식되는 경이로운 국면을 나타낸다.",
+        "etymology": "PIE *ǵn-skó- (알다, *ǵenh₃- 어근, 영급 어간에 비음삽입 현재형 및 후두음 h₃ 포함)에서 기원한다. de Vaan(EDL)은 *co-(con-) + gnosco*의 합성으로 음운 변화를 설명하며, 그리스어 *γιγνώσκω*와 동계이다. 현대 영어의 *cognition*, *recognize*에 직간접적 흔적이 남아 있다."
+      },
+      {
+        "g": "praepes",
+        "pos": "adjectivum",
+        "lemma": "praepes, -etis",
+        "parse": "nom. f. sg.",
+        "gloss_kr": "날렵하게 나는, 높이 나는",
+        "gloss_en": "swift-flying, soaring",
+        "syntax": "LFG 관점에서 praepes는 주어 명사구 내의 형용사 수식어로, [SPEC [PRED 'praepes']] 구조를 취한다. 격일치(agreement) 제약에 따라 nom. f. sg. 자질이 명사 congeries와 공유된다.",
+        "background": "재비 속에서 솟아오르는 불사조의 날렵하고 신성한 비행 능력을 상징적으로 묘사한다.",
+        "etymology": "OLD는 *prae-* (앞에)와 *pet-* (날다, PIE *peth₂-, e급)의 합성어로 분석한다. 산스크리트어 *pátati*('날다')와 그리스어 *πέτομαι*가 동계어이다. 후두음이론에 따라 PIE *peth₂- 에서 파생된 명사/형용사구조가 라틴어에서 고착되었다."
+      },
+      {
+        "g": "congeries",
+        "pos": "nomen",
+        "lemma": "congeries, -ei, f.",
+        "parse": "nom. f. sg.",
+        "gloss_kr": "더위, 더미, 쌓인 재",
+        "gloss_en": "heap, pile",
+        "syntax": "LFG에서 congeries는 문장의 주어(SUBJ) 기능을 수행하며, [PRED 'congeries', NUM sg, CASE nom] 행렬로 나타낸다. 생성문법적으로 [Spec, TP] 위치를 점하며 동사 subvolat과 주어-동사 일치를 이룬다.",
+        "background": "도시의 재와 파멸이 쌓여 만들어진 물리적 잔해를 가리키며, 불사조가 태어나는 모체 역할을 한다.",
+        "etymology": "de Vaan(EDL)은 *congero* (함께 모으다, *gero* 어근)에서 파생된 명사로 본다. PIE *ges- (나르다, 가져오다)에 기원하며, 명사 파생 접미사 *-iē-/*-iō-*가 결합하였다. 현대 영어의 *congest* 및 *congestion* 계열 어휘에 그 흔적이 남는다."
+      },
+      {
+        "g": "media",
+        "pos": "adjectivum",
+        "lemma": "medius, -a, -um",
+        "parse": "nom. f. sg.",
+        "gloss_kr": "한가운데의",
+        "gloss_en": "in the middle of, central",
+        "syntax": "LFG 상에서 media는 명사 congeries를 비제한적으로 수식하는 형용사 자질 구조 [ADJ [PRED 'medius']]를 구성한다. 통사적으로는 명사와 성·수·격 일치를 이룬다.",
+        "background": "재더미의 중심부에서 불사조가 솟아오르는 공간적 중심성을 극적으로 부각시킨다.",
+        "etymology": "PIE *medhyo- (중간의, e급)에서 유래하며, 산스크리트어 *madhyá-* 및 그리스어 *μέσος*와 동계이다. de Vaan(EDL)은 이 형용사가 이탈리아어군 전반에서 공간적 위치를 나타내는 표준 어형으로 정착했음을 밝힌다. 현대 영어의 *medium*, *middle*에 흔적이 완벽히 보존된다."
+      },
+      {
+        "g": "subvolat",
+        "pos": "verbum",
+        "lemma": "subvolo, -are, -avi, -atus",
+        "parse": "pres. act. ind. 3rd pers. sg.",
+        "principalParts": "subvolo – subvolare – subvolavi – subvolatus",
+        "gloss_kr": "위로 날아오른다",
+        "gloss_en": "flies up, soars up",
+        "syntax": "LFG f-구조에서 subvolat은 PRED로서 [PRED 'subvolo<SUBJ>', SUBJ [PRED 'congeries']] 형태의 1항 술어 논항 구조를 지배한다. 생성문법적으로 V-to-T 이동이 일어난 정동사이며, 명시적 목적어 없이 자발적 상승을 나타낸다.",
+        "background": "잿더미 속에서 죽음의 정체를 깨고 새로운 생명으로 비상하는 불사조의 역동적 순간을 표현한다.",
+        "etymology": "OLD는 *sub-* (아래에서 위로)와 *volo* (날다, PIE *gʷelhi- 또는 관련 비행 어근)의 합성어로 본다. 음운론적으로 단모음화와 약화 규칙을 거쳤으며, 로망스어군 내에서 비행을 뜻하는 동사 어휘군과 연결된다. 현대 영어의 *volatile* 등에 어원적 연관성이 있다."
+      },
+      {
+        "g": "et",
+        "pos": "coniunctio",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG에서 et는 두 개의 술부(subvolat과 everberat)를 대등하게 연결하는 협응 구조(Coordinated Structure)의 핵으로 작용한다. 생성문법적으로는 [ConjP [Conj' et [VP ...]]] 구조를 형성한다.",
+        "background": "날아오르는 동작과 재를 흩뿌리는 연속적이고 동시적인 두 행위를 매끄럽게 결합시킨다.",
+        "etymology": "PIE *eti (그 위에, 게다가, e급)에서 유래하며, 산스크리트어 *áti*('지나쳐서')와 그리스어 *ἔτι*('여전히')가 동계이다. de Vaan(EDL)은 이것이 라틴어에서 접속사로 기능이 전문화되었음을 설명한다. 현대 로망스어(예: 스페인어 *y*, 포르투갈어 *e*)로 이어지는 과정에서 음운 탈락을 겪었다."
+      },
+      {
+        "g": "cineres",
+        "pos": "nomen",
+        "lemma": "cinis, cineris, m.",
+        "parse": "pl. acc. m.",
+        "gloss_kr": "재, 잿더미",
+        "gloss_en": "ashes",
+        "syntax": "LFG f-구조에서 cineres는 타동사 everberat의 OBJ 논항이며, [PRED 'cinis', CASE acc, θ-ROLE PATIENT] 자질을 갖는다. 통사적으로 동사 뒤에서 대격 지배를 받는다.",
+        "background": "도시가 멸망하여 남은 죽음의 상징인 아르데아의 재를 가리키며, 생명이 태어나는 역설적 공간이다.",
+        "etymology": "PIE *kend- 또는 *koni- (재, 먼지) 계열에서 유래하며, 그리스어 *κόνις*('먼지')와 동계이다. de Vaan(EDL)은 *d*가 *r*로 바뀌는 이탈리아어군의 특수 rhotacism 음운 변화를 거쳤음을 명시한다. 현대 영어의 *cinerary* 등에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "plausis",
+        "pos": "participium",
+        "lemma": "plaudo, -ere, plausi, plausus",
+        "parse": "perf. pass. part. abl. m. pl.",
+        "principalParts": "plaudo – plaudere – plausi – plausus",
+        "gloss_kr": "박수치는, 찰싹 소리 내는",
+        "gloss_en": "clapping, beating",
+        "syntax": "LFG에서 plausis는 독립탈격구문(Ablative Absolute)의 분사 헤드로 기능하며, [ADJUNCT [PRED 'plaudo', SUBJ alīs, CASE abl]] 구조를 형성한다. 생성문법적으로는 수동 분사의 속성이 탈격 명사구 alīs와 일치한다.",
+        "background": "불사조가 날개를 퍼덕이며 공기를 강하게 내리치는 소리와 동작을 청각·시각적으로 생생하게 전달한다.",
+        "etymology": "de Vaan(EDL)은 PIE어근 *plaw- (치다, 박수치다)에서 유래한다고 본다. 구개음화 및 성절음 변화를 겪었으며, 라틴어 독자적 어근 확장을 보였다. 현대 영어의 *applaud*, *applause*에 직접적인 어원적 흔적이 보존된다."
+      },
+      {
+        "g": "everberat",
+        "pos": "verbum",
+        "lemma": "everbero, -are, -avi, -atus",
+        "parse": "pres. act. ind. 3rd pers. sg.",
+        "principalParts": "everbero – everberare – everberavi – everberatus",
+        "gloss_kr": "세차게 때리다, 채찍질하다",
+        "gloss_en": "beats, strikes repeatedly",
+        "syntax": "LFG f-구조에서 everberat은 PRED이며, [PRED 'everbero<SUBJ,OBJ>', SUBJ [PRED 'congeries'], OBJ [PRED 'cinis']] 자질 행렬을 구성한다. 통사적으로 주어와 목적어를 모두 지배하는 2항 타동사이다.",
+        "background": "날개를 강하게 움직여 바닥의 재를 사방으로 휘날리게 하는 불사조의 강력한 비상력을 묘사한다.",
+        "etymology": "OLD는 *ex-* (밖으로, 강조)와 *verbero* (때리다, *verber* 채찍에서 유래)의 합성어로 분석한다. PIE 기원에 대해서는 명확한 재구가 논쟁적이나, 이탈리아어군 내부의 도구적 명사 파생 동사로 발전했다. 현대 영어의 *vibrate* 계열과 간접적 의미적 유사성을 지닌다."
+      },
+      {
+        "g": "alis",
+        "pos": "nomen",
+        "lemma": "ala, -ae, f.",
+        "parse": "pl. abl. f.",
+        "gloss_kr": "날개로",
+        "gloss_en": "with wings",
+        "syntax": "LFG 관점에서 alis는 독립탈격구문 내에서 수단(Instrument)을 나타내는 OBL_INST 기능을 하며, [OBL_INST [PRED 'ala', CASE abl]]로 처리된다. 통사적으로 분사 plausis의 행위 수단 논항이다.",
+        "background": "불사조가 공중으로 솟구칠 때 사용하는 신성한 날개를 지칭하며, 변신의 수단을 구체화한다.",
+        "etymology": "Ernout-Meillet(DELL)은 고대 라틴어 형태 *axla*에서 축약된 것으로 보며, PIE *aksla- (어깨, *aks- 축 어근, e급)에서 유래했다고 분석한다. 그리스어 *ἄξων*과 동계이며, 어두 자음군 변화를 거쳤다. 현대 스페인어 *ala*, 포르투갈어 *asa* 및 영어 *aile*, *aileron*에 그 흔적이 뚜렷이 남는다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 15.577",
+    "trans": "(그것은) 위로 날아올라 퍼덕이는 날개로 재를 세차게 흩날립니다",
+    "meter": "‒ ⏑ ⏑ | ‒ ⏑ ⏑ | ‒ ‖ ⏑ ⏑ | ‒ ⏑ ⏑ | ‒ ⏑ ⏑ | ‒ ‒ (penthemimeral caesura)",
+    "words": [
+      {
+        "g": "subvolat",
+        "pos": "verbum",
+        "lemma": "subvolo, -are, -avi, -atus",
+        "parse": "pres. act. ind. 3rd pers. sg.",
+        "principalParts": "subvolo – subvolare – subvolavi – subvolatus",
+        "gloss_kr": "위로 날아오른다",
+        "gloss_en": "flies up",
+        "syntax": "LFG f-구조에서 subvolat은 PRED이며 [PRED 'subvolo<SUBJ>'] 형태의 1항 술어 논항 구조를 지닌다[cite: 3]. 생성문법적으로 V-to-T 이동이 일어난 정동사이다[cite: 3].",
+        "background": "잿더미 속에서 불사조가 위로 치솟아 오르는 역동적인 비상을 묘사한다[cite: 3].",
+        "etymology": "OLD는 sub-와 volo(PIE *peth₂- 또는 비행 어근)의 합성어로 본다[cite: 3]. 현대 영어의 volatile 등에 어원적 연관성이 있다[cite: 3]."
+      },
+      {
+        "g": "et",
+        "pos": "coniunctio",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG에서 두 술부를 대등하게 연결하는 협응 구조의 핵으로 작용한다[cite: 3].",
+        "background": "날아오르는 동작과 재를 흩뿌리는 연속적인 두 행위를 연결한다[cite: 3].",
+        "etymology": "PIE *eti에서 유래하며 그리스어 ἔτι와 동계이다[cite: 3]."
+      },
+      {
+        "g": "cineres",
+        "pos": "nomen",
+        "lemma": "cinis, cineris, m.",
+        "parse": "pl. acc. m.",
+        "gloss_kr": "재를",
+        "gloss_en": "ashes",
+        "syntax": "LFG f-구조에서 cineres는 타동사 everberat의 OBJ 논항이며 [PRED 'cinis', CASE acc, θ-ROLE PATIENT] 자질을 갖는다[cite: 3].",
+        "background": "도시 파멸의 흔적인 재를 가리킨다[cite: 3].",
+        "etymology": "PIE *kend- 또는 *koni- 계열에서 유래하며 그리스어 κόνις와 동계이다[cite: 3]."
+      },
+      {
+        "g": "plausis",
+        "pos": "participium",
+        "lemma": "plaudo, -ere, plausi, plausus",
+        "parse": "perf. pass. part. abl. m. pl.",
+        "principalParts": "plaudo – plaudere – plausi – plausus",
+        "gloss_kr": "퍼덕이는",
+        "gloss_en": "beating",
+        "syntax": "LFG에서 독립탈격구문의 분사 헤드로 [ADJUNCT [PRED 'plaudo', SUBJ alīs]] 구조를 형성한다[cite: 3].",
+        "background": "날개를 강하게 치며 공기를 내리치는 소리를 나타낸다[cite: 3].",
+        "etymology": "PIE *plaw- 어근에서 유래하며 현대 영어 applaud의 어원이다[cite: 3]."
+      },
+      {
+        "g": "everberat",
+        "pos": "verbum",
+        "lemma": "everbero, -are, -avi, -atus",
+        "parse": "pres. act. ind. 3rd pers. sg.",
+        "principalParts": "everbero – everberare – everberavi – everberatus",
+        "gloss_kr": "세차게 때린다",
+        "gloss_en": "beats repeatedly",
+        "syntax": "LFG f-구조에서 2항 타동사로 주어와 목적어를 지배한다[cite: 3].",
+        "background": "날갯짓으로 바닥의 재를 사방으로 휘날리게 한다[cite: 3].",
+        "etymology": "ex-와 verber(채찍)의 합성어로 이탈리아어군 내부의 파생 동사이다[cite: 3]."
+      },
+      {
+        "g": "alis",
+        "pos": "nomen",
+        "lemma": "ala, -ae, f.",
+        "parse": "pl. abl. f.",
+        "gloss_kr": "날개로",
+        "gloss_en": "with wings",
+        "syntax": "LFG에서 수단을 나타내는 OBL_INST 기능을 하며 분사의 수단 논항이다[cite: 3].",
+        "background": "비상의 수단인 날개를 지칭한다[cite: 3].",
+        "etymology": "PIE *aksla- 어근에서 유래하며 현대 스페인어 ala의 어원이다[cite: 3]."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 15.578",
+    "trans": "그리고 탄식 소리와 수척함과 창백함, 그리고 함락된 도시에 마땅히 어울리는 모든 비참함 속에서도, 그 도시의 이름만큼은 그곳에 그대로 남아 있었습니다. 아르데아는 스스로의 날개로 자신의 파멸을 슬퍼합니다",
+    "meter": "‒ ‒ | ‒ ⏑ ⏑ | ‒ ‖ ‒ | ‒ ⏑ ⏑ | ‒ ⏑ ⏑ | ‒ ⏆ (spondaic line, bucolic diaeresis)",
+    "words": [
+      {
+        "g": "Et",
+        "pos": "coniunctio",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG에서 et...et 상관접속사의 첫 번째 구성 요소로, 대등한 명사구들을 연결하는 협응 핵(coordination head) 역할을 담당한다. 통사적으로 명사적 주어 열거를 도입한다.",
+        "background": "도시의 함락 이후 남겨진 비참한 징후들을 하나씩 열거하며 비극의 총체성을 강조하는 도입부이다.",
+        "etymology": "PIE *eti (그 위에, 게다가, e급)에서 유래하였으며, 산스크리트어 *áti*와 동계이다. Ernout-Meillet(DELL)은 라틴어 문장 연결사로서의 고유한 문법화 과정을 설명한다. 로망스어군으로 이어지며 음운적 변화를 겪었다."
+      },
+      {
+        "g": "sonus",
+        "pos": "nomen",
+        "lemma": "sonus, -i, m.",
+        "parse": "nom. m. sg.",
+        "gloss_kr": "소리, 탄식 소리",
+        "gloss_en": "sound, noise, cry",
+        "syntax": "LFG f-구조에서 sonus는 다중 주어 구조의 첫 번째 구성원으로, [SUBJ [COORD [PRED 'sonus', CASE nom]]] 자질을 형성한다. 생성문법적으로 [Spec, TP]의 복합 주어 중 하나로 병합된다.",
+        "background": "패망한 도시 아르데아에서 들려오는 비탄과 슬픔의 음향적 황폐함을 대변한다.",
+        "etymology": "PIE *swon-o- (*swen- 소리내다 어근, o급)에서 유래하며, 산스크리트어 *svánati*('소리 내다')와 동계이다. de Vaan(EDL)은 명사 파생형의 음운 규칙을 상세히 다룬다. 현대 영어의 *sound*, *sonorous* 및 로망스어군(*sonido*, *som)에 그 흔적이 명확히 남는다."
+      },
+      {
+        "g": "et",
+        "pos": "coniunctio",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "또한",
+        "gloss_en": "and",
+        "syntax": "LFG에서 상호 연결사 중복 사용(polysyndeton)의 일부로, 각 비참한 요소들을 동등하게 격상시키는 협응 구조를 이룬다. 통사적으로 주어 명사구 사이를 결합한다.",
+        "background": "비극의 징후들을 나열하며 독자의 감정적 몰입을 극대화하는 수사적 장치이다.",
+        "etymology": "PIE *eti에서 기원하며, 라틴어 고유의 구문론적 반복 용법에 따라 연결 기능을 수행한다. (상기 et 항목 참조)"
+      },
+      {
+        "g": "macies",
+        "pos": "nomen",
+        "lemma": "macies, -ei, f.",
+        "parse": "nom. f. sg.",
+        "gloss_kr": "수척함, 야큄",
+        "gloss_en": "leanness, emaciation",
+        "syntax": "LFG에서 macies는 주어 협응 구조의 두 번째 구성원으로 [SUBJ [COORD [..., [PRED 'macies', CASE nom]]]] 자질을 이룬다. 통사적으로 신체적·물리적 파괴를 나타낸다.",
+        "background": "전쟁과 포위 속에서 굶주리고 지친 시민들의 비참한 육체적 쇠락을 보여준다.",
+        "etymology": "de Vaan(EDL)은 PIE *mak- (마르다, 홀쭉하다) 어근에서 파생된 명사로 분석하며, 라틴어 *macer*('마른')와 동계이다. 현대 영어의 *emaciate* 및 로망스어군 형용사형에 그 어원이 살아 있다."
+      },
+      {
+        "g": "et",
+        "pos": "coniunctio",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG에서 주어 열거를 계속 이어주는 대등 접속사 기능을 수행한다. 통사적으로 명사구 결합의 병렬 구조를 유지한다.",
+        "background": "시의 파멸이 남긴 여러 상처들을 끊김 없이 연결하여 비극의 폭을 넓힌다.",
+        "etymology": "PIE *eti에서 유래한 접속사로, 문장 내 연속적 병렬 기능을 담당한다. (상기 et 항목 참조)"
+      },
+      {
+        "g": "pallor",
+        "pos": "nomen",
+        "lemma": "pallor, -oris, m.",
+        "parse": "nom. m. sg.",
+        "gloss_kr": "창백함, 낯빛의 실종",
+        "gloss_en": "paleness, pallor",
+        "syntax": "LFG f-구조에서 pallor는 주어 복합체의 세 번째 성분으로, [SUBJ [COORD [..., [PRED 'pallor', CASE nom]]]]로 분석된다. 통사적으로 공포와 죽음의 그림자를 나타낸다.",
+        "background": "공포와 절망에 질린 주민들의 창백한 안색을 통해 도시의 사멸 분위기를 시각화한다.",
+        "etymology": "de Vaan(EDL)은 PIE *pel- (회색의, 희르무레한, e급) 계열에서 파생된 동사 *palleo*에서 온 명사로 본다. 그리스어 *πολιός*('희끄무레한')와 동계이다. 현대 영어의 *pallor*, *pale* 및 스페인어 *pálido*에 그 흔적이 남는다."
+      },
+      {
+        "g": "et",
+        "pos": "coniunctio",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG에서 마지막 주어 성분을 연결하는 최종 협응 접속사이다. 통사적으로 단수 주어들의 열거를 마감한다.",
+        "background": "개별적인 징후들을 종합하여 도시 전체의 총체적 비참함이라는 거대한 결론으로 귀결시킨다.",
+        "etymology": "PIE *eti에서 기원한 대등 접속사이다. (상기 et 항목 참조)"
+      },
+      {
+        "g": "omnia",
+        "pos": "adjectivum",
+        "lemma": "omnis, -e",
+        "parse": "nom. n. pl. (substantivized)",
+        "gloss_kr": "모든 것들",
+        "gloss_en": "all things",
+        "syntax": "LFG에서 omnia는 명사화된 중성 복수 주어로, 앞서 열거된 개별 추상명사들을 총괄하는 포괄적 SUBJ 기능을 수행한다. 생성문법적으로 전체 수량화사(quantifier)가 명사화된 구문이다.",
+        "background": "도시가 겪어야 할 모든 비극적 요소들이 빠짐없이 응축되어 있음을 선언한다.",
+        "etymology": "de Vaan(EDL)은 그 어원이 불확실하다고 밝히며(사비니어나 기층 언어 유래설 존재), 켈트어파와의 비교 연구를 언급한다. PIE 직접 재구는 논쟁적이다. 현대 영어의 *omni-* 접두사 및 *omnipotent*에 그 형태가 보존된다."
+      },
+      {
+        "g": "captam",
+        "pos": "participium",
+        "lemma": "capio, -ere, cepi, captus",
+        "parse": "perf. pass. part. acc. f. sg.",
+        "principalParts": "capio – capere – cepi – captus",
+        "gloss_kr": "함락된, 점령된",
+        "gloss_en": "captured, conquered",
+        "syntax": "LFG f-구조에서 captam은 관계대명사절 내의 목적어 선행사 urbem을 수식하는 분사이며, [ATTR +] 자질을 가진다. 통사적으로 성·수·격 일치 제약에 따라 fem. acc. sg.를 취한다.",
+        "background": "적에게 정복되어 주권과 영광을 상실한 아르데아의 비운의 역사적 현실을 직시하게 만든다.",
+        "etymology": "PIE *kap- (잡다, 쥐다, e급)에서 유래하며, 산스크리트어 *kapati* 및 게르만어파의 동계어들과 연결된다. de Vaan(EDL)은 3상 승계 동사 체계에서의 변화를 설명한다. 현대 영어의 *capture*, *captive*에 흔적이 뚜렷하다."
+      },
+      {
+        "g": "quae",
+        "pos": "pronomen",
+        "lemma": "qui, quae, quod",
+        "parse": "nom. f. sg.",
+        "gloss_kr": "∼하는 (것)",
+        "gloss_en": "which, that",
+        "syntax": "LFG 관계절 구조에서 quae는 관계대명사로서 절 내부의 SUBJ 기능을 담당하며, [PRED 'pro', REL_ANT urbem] 자질 행렬을 구성한다. 생성문법적으로 [Spec, CP]로 이동한 성분이다.",
+        "background": "함락된 도시가 마땅히 갖추어야 할 비참한 조건들을 한정해 주는 관계절의 주어이다.",
+        "etymology": "PIE 지시/관계대명사 어근 *kʷo-/*kʷi- (e급)에서 유래하며, 그리스어 *τίς/ὅστις* 및 산스크리트어 *kás*와 동계이다. de Vaan(EDL)은 라틴어 대명사 패러다임의 발달 과정을 입증한다."
+      },
+      {
+        "g": "deceant",
+        "pos": "verbum",
+        "lemma": "decet, -ere, decuit",
+        "parse": "pres. act. subj. 3rd pers. pl.",
+        "principalParts": "decet – decere – decuit – (없음)",
+        "gloss_kr": "어울리다, 마땅하다",
+        "gloss_en": "befit, become",
+        "syntax": "LFG f-구조에서 deceant는 관계절의 PRED이며, [PRED 'decet<SUBJ,OBJ>', SUBJ quae, OBJ urbem] 자질을 지배한다. 접속법(subjunctive) 사용은 당위성이나 특성(characteristic subjunctive)을 나타내는 통사적 환경에 기인한다.",
+        "background": "도시가 패망했을 때 겪어야 하는 수모와 비참함이 그 운명에 걸맞은 것임을 규정한다.",
+        "etymology": "PIE *dek- (받다, 마땅하다, e급)에서 유래하며, 그리스어 *δοκέω*('~로 생각되다') 및 산스크리트어 *dáśati*와 동계이다. de Vaan(EDL)은 비인칭 동사로의 의미 분화 과정을 설명한다. 현대 영어의 *decent*, *decorum*에 그 어원이 남는다."
+      },
+      {
+        "g": "urbem",
+        "pos": "nomen",
+        "lemma": "urbs, urbis, f.",
+        "parse": "acc. f. sg.",
+        "gloss_kr": "도시를",
+        "gloss_en": "city",
+        "syntax": "LFG에서 urbem은 타동사 deceant의 OBJ 논항이며, [PRED 'urbs', CASE acc, θ-ROLE THEME] 자질을 갖는다. 통사적으로 관계절 내의 목적어 자리에서 격 지배를 받는다.",
+        "background": "아르데아라는 유서 깊은 고대 도시 그 자체를 가리키며, 파괴의 대상이 된 문명의 공간이다.",
+        "etymology": "de Vaan(EDL)은 PIE 어근 *orbh- (떠나다, 황폐해지다 또는 고립되다)와의 연관성 또는 기층 언어 유래설을 언급하며 어원이 논쟁적이라고 밝힌다. 에트루리아어 차용설도 제기된다. 현대 영어의 *suburb*, *urban*에 그 흔적이 남는다."
+      },
+      {
+        "g": "nomen",
+        "pos": "nomen",
+        "lemma": "nomen, nominis, n.",
+        "parse": "nom. n. sg.",
+        "gloss_kr": "이름이",
+        "gloss_en": "name",
+        "syntax": "LFG f-구조에서 nomen은 주절의 SUBJ 기능을 수행하며, [PRED 'nomen', NUM sg, CASE nom] 자질 행렬을 구성한다. 생성문법적으로 [Spec, TP] 자리를 점하며 동사 mansit과 일치한다.",
+        "background": "물리적 실체와 도시의 영광은 무너졌으나, '아르데아'라는 이름 그 자체만큼은 온전히 살아남았음을 나타낸다.",
+        "etymology": "PIE *h₁nomn- (이름, 영급 어간에 후두음 h₁ 포함)에서 유래하며, 산스크리트어 *nā́man-* 및 그리스어 *ὄνομα*와 동계이다. de Vaan(EDL)은 후두음 탈락과 모음 발달 과정을 규명한다. 현대 영어의 *name*, *noun* 및 로망스어군(*nombre*, *nome*)에 직계로 보존된다."
+      },
+      {
+        "g": "quoque",
+        "pos": "adverbium",
+        "lemma": "quoque",
+        "parse": "adv.",
+        "gloss_kr": "역시, 마저도",
+        "gloss_en": "also, too",
+        "syntax": "LFG에서 quoque는 초점 부사(focus adverb)로 기능하며, [ADJUNCT [PRED 'quoque', FOCUS nomen]] 구조를 취한다. 통사적으로 수식하는 성분인 nomen의 바로 뒤에 후치되어 의미를 강조한다.",
+        "background": "도시가 폐허가 되고 새가 된 비극 속에서도 그 이름만큼은 끝까지 남았다는 역설적 지속성을 강조한다.",
+        "etymology": "de Vaan(EDL)은 *qui* (어느)와 양화사 *-que* (그리고)의 결합에서 유래했다고 분석하며, 통사적 의미 전이 과정을 설명한다. 로망스어군에서는 직계 형용사/부사로 이어지지 않고 고전적 문어체 화석으로 남았다."
+      },
+      {
+        "g": "mansit",
+        "pos": "verbum",
+        "lemma": "maneo, -ere, mansi, mansus",
+        "parse": "perf. act. ind. 3rd pers. sg.",
+        "principalParts": "maneo – manere – mansi – mansus",
+        "gloss_kr": "머물렀다, 지속되었다",
+        "gloss_en": "remained, stayed",
+        "syntax": "LFG f-구조에서 mansit은 PRED이며, [PRED 'maneo<SUBJ>', SUBJ [PRED 'nomen']] 자질의 1항 자동사 논항 구조를 이룬다. 생성문법적으로 완료 시제 완결을 나타내는 T핵의 성분이다.",
+        "background": "모든 것이 사라진 파멸의 현장에서 도시의 이름만큼은 영구히 지속되어 지리에 박혀 있음을 표현한다.",
+        "etymology": "PIE *men- (머물다, 살다, e급)에서 유래하며, 그리스어 *μένω*('머물다')와 동계이다. de Vaan(EDL)은 이탈리아어군 내부에서의 완료형 -s- 확장(s-perfect)을 설명한다. 현대 영어의 *remain*, *mansion* 및 로망스어군(*mantener*)에 그 어원이 깊게 박혀 있다."
+      },
+      {
+        "g": "in",
+        "pos": "praepositio",
+        "lemma": "in",
+        "parse": "prep. c. abl.",
+        "gloss_kr": "∼ 안에, ∼ 위에",
+        "gloss_en": "in, on",
+        "syntax": "LFG f-구조에서 in은 탈격 명사구 illa를 지배하는 전치사적 부사구의 핵으로 [OBL [PRED 'in', OBJ illa]] 자질을 형성한다. 통사적으로 처소적 의미장을 부여한다.",
+        "background": "그 이름이 남아 있는 물리적·지리적 영역인 아르데아의 영토를 지정한다.",
+        "etymology": "PIE *en (안에, e급)에서 유래하며, 그리스어 *ἐν* 및 산스크리트어 *án*과 동계이다. de Vaan(EDL)은 라틴어에서 이 전치사가 대격과 탈격을 동시에 지배하도록 분화했음을 보여준다. 현대 로망스어와 영어의 *in*에 직계로 이어진다."
+      },
+      {
+        "g": "illa",
+        "pos": "pronomen",
+        "lemma": "ille, illa, illud",
+        "parse": "abl. f. sg.",
+        "gloss_kr": "그 (도시)",
+        "gloss_en": "that",
+        "syntax": "LFG에서 illa는 전치사 in의 대행 논항(OBJ)이며, [PRED 'pro', CASE abl, NUM sg] 자질을 갖는다. 통사적으로 전치사구 내부의 보어 자리를 차지한다.",
+        "background": "앞서 언급된 비운의 도시 아르데아를 지시하는 대명사적 지시어이다.",
+        "etymology": "PIE 지시어 어근에서 파생된 라틴어 고유의 지시사 체계로, *ollus*에서 음운 변화를 거쳤다. de Vaan(EDL)은 이 형태가 로망스어 정관사의 기원(예: 스페인어 *la*, 포르투갈어 *a*)과 직결됨을 강조한다."
+      },
+      {
+        "g": "urbis",
+        "pos": "nomen",
+        "lemma": "urbs, urbis, f.",
+        "parse": "sg. gen. f.",
+        "gloss_kr": "도시의",
+        "gloss_en": "of the city",
+        "syntax": "LFG f-구조에서 urbis는 명사구 내의 소유격 한정어(ADJUNCT/SPEC) 기능을 하며, [SPEC [PRED 'urbs', CASE gen]] 자질을 이룬다. 통사적으로 명사 nomen을 수식한다.",
+        "background": "도시 그 자체의 운명과 이름이 하나로 결합되어 있음을 명시하는 소유격 수식어이다.",
+        "etymology": "PIE 어근 혹은 기층 차용어 설이 있는 *urbs*의 속격형이다. (상기 urbem 항목 참조)"
+      },
+      {
+        "g": "et",
+        "pos": "coniunctio",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and, also",
+        "syntax": "LFG에서 절과 절을 대등하게 연결하는 접속사로, [COORD [CONJ_1 (...), CONJ_2 (...)]] 구조를 형성한다. 통사적으로 새로운 서사적 결말로 전환한다.",
+        "background": "도시의 이름이 남았다는 사실과 함께, 그 도시 자체가 새(불사조)의 형태로 슬픔을 받는 최종 변신의 국면을 매듭짓는다.",
+        "etymology": "PIE *eti에서 기원한 대등 접속사이다. (상기 et 항목 참조)"
+      },
+      {
+        "g": "ipsa",
+        "pos": "pronomen",
+        "lemma": "ipse, ipsa, ipsum",
+        "parse": "nom. f. sg.",
+        "gloss_kr": "그녀 자신, 바로 그 도시가",
+        "gloss_en": "herself, itself",
+        "syntax": "LFG에서 ipsa는 주어 Ardea를 강조하는 동위 수식어(appositive modifier)로, [ADJUNCT [PRED 'ipse', CASE nom]] 자질을 띤다. 통사적으로 주어와 성·수·격 일치를 이룬다.",
+        "background": "이름뿐만 아니라 도시의 인격화된 실체 자체가 불사조의 형상으로 슬픔을 품고 있음을 강조한다.",
+        "etymology": "de Vaan(EDL)은 *is* (그)와 접미사 *-pse* (강조)의 합성으로 분석한다. 로망스어군의 재귀/강조 대명사 계열(예: 이탈리아어 *stesso*, 포르투갈어 *mesmo*의 어원적 선행 형태 중 일부 영향)과 연관된다."
+      },
+      {
+        "g": "suis",
+        "pos": "pronomen",
+        "lemma": "suus, -a, -um",
+        "parse": "pl. abl. f.",
+        "gloss_kr": "자신의",
+        "gloss_en": "its own",
+        "syntax": "LFG f-구조에서 suis는 명사 pennis를 한정하는 소유 형용사(possessive adjective)로, [SPEC [PRED 'suus', POSSESSOR ardea]] 자질을 가진다. 통사적으로 주어 지시자와 일치한다.",
+        "background": "도시가 스스로의 깃털(새로 변한 모습)을 통해 탄식받는 기묘한 자기회귀적 비극을 드러낸다.",
+        "etymology": "PIE *sewos- (자기 자신의, e급)에서 유래하며, 산스크리트어 *svás*와 동계이다. de Vaan(EDL)은 재귀 소유사의 음운 발달사를 설명한다. 현대 로망스어(스페인어 *su*, 포르투갈어 *seu*)로 직계 연계된다."
+      },
+      {
+        "g": "deplangitur",
+        "pos": "verbum",
+        "lemma": "deplango, -ere, -plangui",
+        "parse": "pres. pass. ind. 3rd pers. sg.",
+        "principalParts": "deplango – deplangere – deplangui – (없음)",
+        "gloss_kr": "슬픔을 받다, 애도되다",
+        "gloss_en": "is bewailed, is lamented",
+        "syntax": "LFG f-구조에서 deplangitur는 수동태 PRED이며, [PRED 'deplango<SUBJ,OBL_INST>', SUBJ [PRED 'Ardea'], OBL_INST [PRED 'pennis']] 자질 행렬을 구성한다. 통사적으로 수동태 주어 지배 및 탈격 수단 구문을 취한다.",
+        "background": "도시가 새의 모습으로 변하여 자신의 파멸을 영원히 애도하며 슬퍼하게 되는 변신의 최종 결말을 장식한다.",
+        "etymology": "OLD는 *de-* (아래로, 완전 히)와 *plango* (가슴을 치며 울다, PIE *plak- 치다 어근)의 합성어로 본다. 그리스어 *πλήσσω*와 동계이다. 로망스어군 내에서 비탄을 뜻하는 어휘적 파생의 모태가 된다."
+      },
+      {
+        "g": "Ardea",
+        "pos": "nomen",
+        "lemma": "Ardea, -ae, f.",
+        "parse": "nom. f. sg.",
+        "gloss_kr": "아르데아 (도시 이름이자 왜로니스의 의미)",
+        "gloss_en": "Ardea",
+        "syntax": "LFG f-구조에서 Ardea는 주절의 SUBJ 기능을 수행하며, [PRED 'Ardea', NUM sg, CASE nom] 자질 행렬을 이룬다. 생성문법적으로 [Spec, TP]에서 수동태 동사와 일치한다.",
+        "background": "오비디우스 변신 이야기 제15권의 피타고라스 연설 대미를 장식하며, 왜로니스(Ardea, 새의 일종)로 변하여 슬퍼하는 도시의 신화적 이름이다.",
+        "etymology": "de Vaan(EDL) 및 Ernout-Meillet(DELL)은 이 지명이 이탈리아 기층 언어 또는 르투리아어 계열의 명칭에서 유래했을 가능성이 높으며, '왜로니스(새)'를 뜻하는 그리스어 *ἐρωδιός*와의 민간어원적·음성적 유사성 속에서 오비디우스가 이 변신 신화를 창조했음을 지적한다. 현대 이탈리아의 지명 *Ardea*로 고스란히 남아 있다."
+      },
+      {
+        "g": "pennis",
+        "pos": "nomen",
+        "lemma": "penna, -ae, f.",
+        "parse": "pl. abl. f.",
+        "gloss_kr": "깃털로, 날개로",
+        "gloss_en": "with feathers, with wings",
+        "syntax": "LFG에서 pennis는 수동태 동사 deplangitur의 수단 논항인 OBL_INST 기능을 하며, [OBL_INST [PRED 'penna', CASE abl]] 자질을 구성한다.",
+        "background": "도시가 새의 깃털을 통해 스스로를 애도하는 신화적 변신의 완결을 보여주는 도구적 명사구이다.",
+        "etymology": "PIE *pet-na- (*peth₂- 날다 어근에서 파생된 여성형, 영급 어간 및 후두음 h₂ 포함)에서 유래하며, 라틴어 내에서 *petna* > *penna*로의 음운 동화(t>n) 규칙을 거쳤다. 산스크리트어 및 그리스어 동계어와 맥을 같이 한다. 현대 영어의 *pen*, *penna* 및 로망스어군(*peña*, *pena* 등)에 그 흔적이 뚜렷이 남는다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 15.579",
+    "trans": "(함락된) 도시에 마땅히 어울리는 모든 것(비참함) 속에서도, 그 도시의 이름만큼은 그곳에 그대로 남아 있었습니다",
+    "meter": "‒ ⏑ ⏑ | ‒ ⏑ ⏑ | ‒ ‖ ‒ | ‒ ⏑ ⏑ | ‒ ⏑ ⏑ | ‒ ‒ (penthemimeral caesura)",
+    "words": [
+      {
+        "g": "quae",
+        "pos": "pronomen",
+        "lemma": "qui, quae, quod",
+        "parse": "nom. f. sg.",
+        "gloss_kr": "∼하는",
+        "gloss_en": "which",
+        "syntax": "LFG 관계절 구조에서 SUBJ 기능을 담당한다[cite: 3].",
+        "background": "함락된 도시가 갖추어야 할 조건을 한정한다[cite: 3].",
+        "etymology": "PIE 지시/관계대명사 어근 *kʷo-/*kʷi-에서 유래한다[cite: 3]."
+      },
+      {
+        "g": "deceant",
+        "pos": "verbum",
+        "lemma": "decet, -ere, decuit",
+        "parse": "pres. act. subj. 3rd pers. pl.",
+        "principalParts": "decet – decere – decuit – (없음)",
+        "gloss_kr": "어울리다",
+        "gloss_en": "befit",
+        "syntax": "LFG f-구조에서 관계절의 PRED이며 특성 접속법 구문을 이룬다[cite: 3].",
+        "background": "도시의 파멸에 걸맞은 비참함을 규정한다[cite: 3].",
+        "etymology": "PIE *dek- 어근에서 유래하며 현대 영어 decent의 어원이다[cite: 3]."
+      },
+      {
+        "g": "urbem",
+        "pos": "nomen",
+        "lemma": "urbs, urbis, f.",
+        "parse": "acc. f. sg.",
+        "gloss_kr": "도시를",
+        "gloss_en": "city",
+        "syntax": "LFG f-구조에서 관계절 내의 OBJ 논항이다[cite: 3].",
+        "background": "파괴된 고대 도시 아르데아를 가리킨다[cite: 3].",
+        "etymology": "PIE 어근 혹은 기층어에서 유래한 명사이다[cite: 3]."
+      },
+      {
+        "g": "nomen",
+        "pos": "nomen",
+        "lemma": "nomen, nominis, n.",
+        "parse": "nom. n. sg.",
+        "gloss_kr": "이름이",
+        "gloss_en": "name",
+        "syntax": "LFG f-구조에서 주절의 SUBJ 기능을 수행한다[cite: 3].",
+        "background": "실체는 사라졌어도 이름은 남아 있음을 나타낸다[cite: 3].",
+        "etymology": "PIE *h₁nomn-에서 유래하며 현대 영어 name의 어원이다[cite: 3]."
+      },
+      {
+        "g": "quoque",
+        "pos": "adverbium",
+        "lemma": "quoque",
+        "parse": "adv.",
+        "gloss_kr": "역시",
+        "gloss_en": "also",
+        "syntax": "LFG에서 초점 부사로 기능하며 nomen을 강조한다[cite: 3].",
+        "background": "이름만큼은 끝까지 보존되었음을 강조한다[cite: 3].",
+        "etymology": "qui와 양화사 -que의 결합에서 유래한다[cite: 3]."
+      },
+      {
+        "g": "mansit",
+        "pos": "verbum",
+        "lemma": "maneo, -ere, mansi, mansus",
+        "parse": "perf. act. ind. 3rd pers. sg.",
+        "principalParts": "maneo – manere – mansi – mansus",
+        "gloss_kr": "머물렀다",
+        "gloss_en": "remained",
+        "syntax": "LFG f-구조에서 1항 자동사 PRED로 기능한다[cite: 3].",
+        "background": "폐허 속에서도 도시의 명칭이 지속됨을 표현한다[cite: 3].",
+        "etymology": "PIE *men- 어근에서 유래하며 현대 영어 remain의 어원이다[cite: 3]."
+      },
+      {
+        "g": "in",
+        "pos": "praepositio",
+        "lemma": "in",
+        "parse": "prep. c. abl.",
+        "gloss_kr": "∼에",
+        "gloss_en": "in",
+        "syntax": "LFG에서 전치사구의 핵으로 [OBL [PRED 'in', OBJ illa]] 자질을 형성한다[cite: 3].",
+        "background": "이름이 남아 있는 지리적 영역을 지정한다[cite: 3].",
+        "etymology": "PIE *en에서 유래한다[cite: 3]."
+      },
+      {
+        "g": "illa",
+        "pos": "pronomen",
+        "lemma": "ille, illa, illud",
+        "parse": "abl. f. sg.",
+        "gloss_kr": "그 도시에",
+        "gloss_en": "that",
+        "syntax": "LFG에서 전치사의 OBJ 논항이다[cite: 3].",
+        "background": "비운의 도시 아르데아를 지시한다[cite: 3].",
+        "etymology": "라틴어 고유의 지시사 체계에서 유래한다[cite: 3]."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 15.580",
+    "trans": "urbis; et ipsa suis deplangitur Ardea pennis.",
+    "meter": "‒ ⏑ ⏑ | ‒ ⏑ ⏑ | ‒ ‖ ⏑ ⏑ | ‒ ⏑ ⏑ | ‒ ⏑ ⏑ | ‒ ‒ (penthemimeral caesura)",
+    "words": [
+      {
+        "g": "urbis",
+        "pos": "nomen",
+        "lemma": "urbs, urbis, f.",
+        "parse": "sg. gen. f.",
+        "gloss_kr": "도시의",
+        "gloss_en": "of the city",
+        "syntax": "LFG에서 소유격 한정어로 nomen을 수식한다[cite: 3].",
+        "background": "도시의 운명과 이름의 연관성을 보여준다[cite: 3].",
+        "etymology": "PIE 어근 혹은 기층 차용어이다[cite: 3]."
+      },
+      {
+        "g": "et",
+        "pos": "coniunctio",
+        "lemma": "et",
+        "parse": "coord. conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG에서 절과 절을 연결하는 대등 접속사이다[cite: 3].",
+        "background": "최종 변신의 국면으로 서사를 매듭짓는다[cite: 3].",
+        "etymology": "PIE *eti에서 기원한다[cite: 3]."
+      },
+      {
+        "g": "ipsa",
+        "pos": "pronomen",
+        "lemma": "ipse, ipsa, ipsum",
+        "parse": "nom. f. sg.",
+        "gloss_kr": "스스로",
+        "gloss_en": "herself",
+        "syntax": "LFG에서 주어 Ardea를 강조하는 동위 수식어이다[cite: 3].",
+        "background": "도시의 실체 자체가 새의 형상으로 슬퍼함을 강조한다[cite: 3].",
+        "etymology": "is와 강조 접미사 -pse의 합성어이다[cite: 3]."
+      },
+      {
+        "g": "suis",
+        "pos": "pronomen",
+        "lemma": "suus, -a, -um",
+        "parse": "pl. abl. f.",
+        "gloss_kr": "자신의",
+        "gloss_en": "its own",
+        "syntax": "LFG에서 소유 형용사로 명사 pennis를 한정한다[cite: 3].",
+        "background": "자신의 변신한 깃털을 통해 슬퍼함을 나타낸다[cite: 3].",
+        "etymology": "PIE *sewos-에서 유래한다[cite: 3]."
+      },
+      {
+        "g": "deplangitur",
+        "pos": "verbum",
+        "lemma": "deplango, -ere, -plangui",
+        "parse": "pres. pass. ind. 3rd pers. sg.",
+        "principalParts": "deplango – deplangere – deplangui – (없음)",
+        "gloss_kr": "애도된다",
+        "gloss_en": "is lamented",
+        "syntax": "LFG f-구조에서 수동태 PRED이며 탈격 수단 구문을 취한다[cite: 3].",
+        "background": "도시가 왜로니스 새가 되어 파멸을 슬퍼하는 변신을 마감한다[cite: 3].",
+        "etymology": "de-와 plango(PIE *plak-)의 합성어이다[cite: 3]."
+      },
+      {
+        "g": "Ardea",
+        "pos": "nomen",
+        "lemma": "Ardea, -ae, f.",
+        "parse": "nom. f. sg.",
+        "gloss_kr": "아르데아",
+        "gloss_en": "Ardea",
+        "syntax": "LFG f-구조에서 수동태 주어 SUBJ 기능을 수행한다[cite: 3].",
+        "background": "변신 이야기 제15권의 대미를 장식하는 도시 이름이다[cite: 3].",
+        "etymology": "이탈리아 기층어 또는 에트루리아어 계열의 지명이다[cite: 3]."
+      },
+      {
+        "g": "pennis",
+        "pos": "nomen",
+        "lemma": "penna, -ae, f.",
+        "parse": "pl. abl. f.",
+        "gloss_kr": "날개로",
+        "gloss_en": "with wings",
+        "syntax": "LFG에서 수동태 동사의 수단 논항 OBL_INST 기능을 한다[cite: 3].",
+        "background": "새의 날개를 통해 이루어지는 변신의 완결을 보여준다[cite: 3].",
+        "etymology": "PIE *pet-na-에서 유래하며 현대 영어 pen의 어원이다[cite: 3]."
+      }
+    ]
+  }
+];

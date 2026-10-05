@@ -1,0 +1,329 @@
+[
+ {
+  "ref": "Metamorphoses 1.1",
+  "trans": "새로운 형체들로 변화된 모습들을 노래하려는 마음이 나를 이끄니,",
+  "words": [
+   {
+    "g": "In",
+    "pos": "전치사",
+    "lemma": "in",
+    "parse": "전치사 (+ 대격, 방향·결과)",
+    "gloss_kr": "~으로, ~을 향하여(변화의 결과)",
+    "gloss_en": "into",
+    "syntax": "2행의 nova...corpora를 지배하는 전치사, mutatas의 의미를 완성",
+    "background": "라틴어 in은 탈격과 함께 쓰이면 '~안에(장소)'를, 대격과 함께 쓰이면 '~으로(결과·방향)'를 뜻한다. 시가 시작되자마자 이 전치사구가 다음 행 corpora까지 걸쳐 이어지는 hyperbaton(어순 도치)으로 독자의 긴장을 자아낸다.",
+    "etymology": "인도유럽조어 *h₁en('안에')에서 온 전치사로, 그리스어 ἐν(en), 영어 in, 산스크리트어 áni와 모두 동계어를 이루는 매우 오래된 기초 전치사이다. 로망스어에서도 형태가 거의 변하지 않아 이탈리아어·스페인어 in/en, 프랑스어 en으로 그대로 이어지며, 영어의 in 역시 게르만어파를 통해 같은 조어 뿌리를 공유한다."
+   },
+   {
+    "g": "nova",
+    "pos": "형용사",
+    "lemma": "novus, -a, -um",
+    "parse": "복수 대격 중성 (corpora 수식, 2행)",
+    "gloss_kr": "새로운",
+    "gloss_en": "new",
+    "syntax": "2행의 corpora를 수식하는 형용사, In과 함께 결과의 부사구를 이룸",
+    "background": "'새로운'이라는 말로 시가 열리는 것은 우연이 아니다. '변신(metamorphosis)'이라는 시 전체의 주제와, 선례 없는 새로운 대서사시를 쓰겠다는 서사시적 야심을 동시에 암시하는 개막어이다.",
+    "etymology": "인도유럽조어 *néwos('새로운')에서 유래하며, 그리스어 νέος(neos), 영어 new, 산스크리트어 náva-, 고대 슬라브어 novъ와 널리 동계어를 이룬다. 로망스어에서 이탈리아어 nuovo, 프랑스어 nouveau, 스페인어 nuevo로 형태가 그대로 이어졌고, 영어에는 라틴어 차용어 novel·innovate·renovate로 남아 있다."
+   },
+   {
+    "g": "fert",
+    "pos": "동사",
+    "lemma": "fero",
+    "principalParts": "fero – ferre – tuli – latum",
+    "parse": "현재 직설법 능동 3인칭 단수",
+    "gloss_kr": "이끈다, 몰아간다",
+    "gloss_en": "carries, impels",
+    "syntax": "주어 animus, 보충 부정사(목적) dicere를 취함",
+    "background": "'animus fert(마음이 이끈다)'는 관용구로, 시인이 신적 영감이 아니라 자신의 내면적 충동(animus)에 이끌려 시를 쓴다고 선언한다. 무사 여신을 부르는 호메로스·베르길리우스식 도입과 미묘하게 다른, 오비디우스 특유의 개성적 시작이다.",
+    "etymology": "인도유럽조어 *bʰer-('나르다, 지니다')에서 온 동사로, 그리스어 φέρω(pherō), 영어 bear, 산스크리트어 bhárati와 모두 동계어를 이루는 매우 광범위한 기초 어근이다. 대부분의 로망스어에서는 portare 계열(이탈리아어 portare, 프랑스어 porter)로 대체되었지만, 영어에는 fero의 어간이 fertile·transfer·offer·suffer 등 라틴어 차용어 형태로 다수 남아 있다."
+   },
+   {
+    "g": "animus",
+    "pos": "명사",
+    "lemma": "animus, animi, m.",
+    "parse": "단수 주격 남성",
+    "gloss_kr": "마음, 정신",
+    "gloss_en": "mind, spirit",
+    "syntax": "fert의 주어",
+    "background": "animus는 이성적 사고와 의지의 자리를 가리키는 말이다. 시인의 '마음'이 그를 새로운 주제로 이끌어간다는 이 표현은, 서사시의 관습적 무사 호출을 인간 내면의 충동으로 대체한 참신한 개시(開始)이다.",
+    "etymology": "인도유럽조어 *h₂enh₁-('숨쉬다')에서 파생된 명사로, 그리스어 ἄνεμος(anemos, '바람')와 동계어이며 '숨=생명력=정신'이라는 고대인의 인식을 보여준다. 로망스어의 이탈리아어 animo, 스페인어 ánimo로 이어졌고, 영어에는 animate·animal·unanimous처럼 이 어근의 파생어 anima/animus가 폭넓게 남아 있다."
+   },
+   {
+    "g": "mutatas",
+    "pos": "분사",
+    "lemma": "muto, mutare, mutavi, mutatum",
+    "principalParts": "muto – mutare – mutavi – mutatum",
+    "parse": "완료 수동 분사 복수 대격 여성 (formas 수식)",
+    "gloss_kr": "변화된, 바뀐",
+    "gloss_en": "changed, transformed",
+    "syntax": "formas를 수식하는 형용사적 분사, in nova...corpora(결과의 부사구)와 결합",
+    "background": "'형체들이 새로운 몸으로 변화된 것을 말하다'라는 구절의 핵심 개념으로, 시 전체의 표제어인 '변신(mutatae formae)'을 담고 있는 시의 두 번째 실질어이다.",
+    "etymology": "인도유럽조어 *mei-('바꾸다, 교환하다')에서 온 동사로, 그리스어 ἀμείβω(ameibō, '교환하다'), 산스크리트어 máyate와 동계어를 이룬다. 로망스어에서 이탈리아어 mutare, 스페인어 mudar로 이어졌으며, 영어에는 mutate·mutual·commute·transmute처럼 이 어근이 학술·일상 어휘 전반에 널리 남아 있다."
+   },
+   {
+    "g": "dicere",
+    "pos": "동사",
+    "lemma": "dico, dicere, dixi, dictum",
+    "principalParts": "dico – dicere – dixi – dictum",
+    "parse": "현재 능동 부정사",
+    "gloss_kr": "말하다, 노래하다",
+    "gloss_en": "to tell, to sing of",
+    "syntax": "fert의 보충 부정사(목적), formas를 목적어로 취함",
+    "background": "서사시 관습에서는 '노래하다(canere)'가 자주 쓰이지만, 오비디우스는 '말하다(dicere)'를 택해 구송적 웅장함보다 화자 자신의 서술 행위를 부각시킨다.",
+    "etymology": "인도유럽조어 *deyḱ-('가리키다, 보여주다')에서 유래하며, 그리스어 δείκνυμι(deiknymi, '보여주다'), 영어 teach·token(게르만어파 동계어), 산스크리트어 diśáti와 널리 동계어를 이룬다. 로망스어의 이탈리아어 dire, 프랑스어 dire, 스페인어 decir가 이 동사를 형태 그대로 물려받았고, 영어에는 dictate·diction·predict·verdict 등으로 그 흔적이 폭넓게 남아 있다."
+   },
+   {
+    "g": "formas",
+    "pos": "명사",
+    "lemma": "forma, formae, f.",
+    "parse": "복수 대격 여성",
+    "gloss_kr": "형체들을, 형상들을",
+    "gloss_en": "shapes, forms",
+    "syntax": "dicere의 목적어, mutatas의 수식을 받음",
+    "background": "forma는 사물의 겉모습·형태를 가리키는 단어이다. 존재의 본질(essentia)이 아니라 '형태'만이 변한다는 오비디우스적 변신 개념 — 실체는 남고 외형만 바뀐다는 발상 — 을 함축한다.",
+    "etymology": "어원이 확실치 않아, 그리스어 μορφή(morphē, '형태')가 음이 도치되어 라틴어에 차용된 것이라는 설과, 이탈리아 토착어에서 왔다는 설이 맞선다. 어느 쪽이든 로망스어의 이탈리아어 forma, 프랑스어 forme, 스페인어 forma로 형태 그대로 이어졌고, 영어에는 form·format·formula·reform 등으로 매우 생산적으로 남아 있다."
+   }
+  ]
+ },
+ {
+  "ref": "Metamorphoses 1.2",
+  "trans": "몸들로 (변한 모습들을) — 신들이시여, 당신들이야말로 그 변신들마저 이루신 분들이니,",
+  "words": [
+   {
+    "g": "corpora",
+    "pos": "명사",
+    "lemma": "corpus, corporis, n.",
+    "parse": "복수 대격 중성",
+    "gloss_kr": "몸들로, 육체들로",
+    "gloss_en": "bodies",
+    "syntax": "1행의 전치사 In이 지배하는 명사(In nova...corpora), 문장은 1행에서 이어짐",
+    "background": "1행 끝의 formas(형체)와 2행 첫머리의 corpora(몸)가 행을 가로질러 마주 놓인 것은 '형체가 몸으로 변한다'는 뜻 자체를 어순으로 형상화한, 오비디우스의 대표적 도상적(iconic) 기교이다.",
+    "etymology": "인도유럽조어 *krep-('몸, 형체')에서 유래하며, 산스크리트어 kr̥p('형태, 아름다움')와 동계어를 이룬다. 로망스어의 이탈리아어 corpo, 프랑스어 corps, 스페인어 cuerpo로 형태가 그대로 남았으며, 영어에는 corporate·corpse·corporal·incorporate처럼 이 어근이 폭넓게 살아 있다."
+   },
+   {
+    "g": "di",
+    "pos": "명사",
+    "lemma": "deus, dei, m. (호격 di)",
+    "parse": "복수 호격 남성",
+    "gloss_kr": "신들이시여",
+    "gloss_en": "O gods",
+    "syntax": "3행 adspirate에 대한 호격 호칭",
+    "background": "호메로스나 베르길리우스가 특정한 한 무사 여신을 부르는 것과 달리, 오비디우스는 '신들' 일반을 통칭해서 부른다. 이는 이 시가 다룰 수많은 변신 이야기들이 여러 신에게서 비롯되었음을 미리 암시한다.",
+    "etymology": "인도유럽조어 *dyew-('빛나다, 하늘')에서 파생된 *deiwós('신')로 소급되며, 그리스어 Ζεύς(Zeus), 산스크리트어 devá-·dyaus, 그리고 영어 요일명 Tuesday(게르만 신 티우 Tiw와 동계)와도 뿌리를 같이하는 매우 오래된 인도유럽어 공통 어휘이다. 로망스어에서 이탈리아어 dio, 스페인어 dios, 프랑스어 dieu로 형태 그대로 이어졌고, 영어에는 deity·divine으로 그 흔적이 남아 있다."
+   },
+   {
+    "g": "coeptis",
+    "pos": "명사",
+    "lemma": "coeptum, coepti, n. (coepio의 완료수동분사가 명사화)",
+    "parse": "복수 여격 중성",
+    "gloss_kr": "이 시작한 일(대업)에",
+    "gloss_en": "to (my) undertaking",
+    "syntax": "3행 adspirate가 취하는 여격",
+    "background": "'시작된 일'을 뜻하는 이 명사는 오비디우스가 자신의 방대한 서사시 프로젝트를 겸손하면서도 야심차게 지칭하는 표현이다.",
+    "etymology": "동사 coepio(co- + 고졸 라틴어 apio '붙잡다, 시작하다')의 완료수동분사가 명사화된 형태로, apio는 인도유럽조어 *h₂ep-('잡다, 이르다')에서 온 것으로 추정된다. 로망스어에는 직접 살아남지 않았지만(이탈리아어는 cominciare, 프랑스어는 commencer로 다른 어근이 대체), 영어에는 같은 apio 계열 어근이 concept·capture·capable 등 방대한 파생어군으로 남아 있다."
+   },
+   {
+    "g": "nam",
+    "pos": "접속사",
+    "lemma": "nam",
+    "parse": "이유의 접속사",
+    "gloss_kr": "왜냐하면",
+    "gloss_en": "for",
+    "syntax": "삽입절 nam...illas를 이끔",
+    "background": "본문 흐름 중간에 괄호처럼 삽입된 이유절을 이끌어, 신들에게 영감을 청하는 근거 — 신들 자신도 변신을 겪었다는 사실 — 를 즉각 제시한다.",
+    "etymology": "어원이 불확실한 라틴어 고유의 이유 접속사로, 인도유럽조어 지시대명사 어근 *no-/*ne- 계열과 막연히 연관짓는 견해가 있으나 확실치 않다. 로망스어에서는 quia/quod 계열(이탈리아어 perché, 프랑스어 parce que)로 완전히 대체되어 nam 자체는 살아남지 못한, 고전 라틴어에만 국한된 어휘이다."
+   },
+   {
+    "g": "vos",
+    "pos": "대명사",
+    "lemma": "tu (복수 vos)",
+    "parse": "복수 주격",
+    "gloss_kr": "당신들은, 그대들은",
+    "gloss_en": "you",
+    "syntax": "mutastis의 주어",
+    "background": "di(신들)를 직접 가리키는 2인칭 대명사로, 신들과 시인 사이의 친밀하고 직접적인 호소 관계를 강조한다.",
+    "etymology": "인도유럽조어 2인칭 복수 대명사 *wos에서 유래하며, 산스크리트어 vaḥ, 아베스타어 vō와 동계어를 이룬다. 로망스어에서 이 형태가 그대로 이어져 프랑스어 vous, 이탈리아어 voi, 스페인어 vos/vosotros로 지금도 '너희들·당신'을 뜻하는 2인칭 복수형으로 살아 있다."
+   },
+   {
+    "g": "mutastis",
+    "pos": "동사",
+    "lemma": "muto, mutare, mutavi, mutatum (mutavistis의 시적 축약형)",
+    "principalParts": "muto – mutare – mutavi – mutatum",
+    "parse": "완료 직설법 능동 2인칭 복수 (축약형)",
+    "gloss_kr": "변화시켰다",
+    "gloss_en": "have transformed",
+    "syntax": "주어 vos, 목적어 illas(=formas)",
+    "background": "시의 두 번째 실질어 mutatas와 같은 어근 muto가 다시 쓰이며, 신들 스스로가 '변신의 주체'였음을 상기시켜 그들이 이 시의 소재에 정통한 조력자임을 논증한다.",
+    "etymology": "1행 mutatas와 동일한 인도유럽조어 *mei-('바꾸다') 어근에서 온 축약 완료형이다. 자세한 조어 재구와 로망스어(이탈리아어 mutare 등)·영어(mutate, mutual 등) 파생 관계는 mutatas 항목과 동일하다."
+   },
+   {
+    "g": "et",
+    "pos": "부사",
+    "lemma": "et",
+    "parse": "강조 부사",
+    "gloss_kr": "또한, ~조차",
+    "gloss_en": "also, too",
+    "syntax": "illas를 강조",
+    "background": "'그 변신들'조차도 신들의 소행이었음을 강조하는 부사.",
+    "etymology": "인도유럽조어 *eti('더 나아가, 그 위에')에서 유래하며, 그리스어 ἔτι(eti, '아직도'), 산스크리트어 áti와 동계어를 이룬다. 프랑스어 et, 이탈리아어 e로 로망스어에 형태가 그대로 남았고(스페인어는 y로 축약), 영어에는 라틴어 성구 et cetera(등등) 등의 표현으로 화석처럼 남아 있다."
+   },
+   {
+    "g": "illas",
+    "pos": "대명사",
+    "lemma": "ille, illa, illud",
+    "parse": "복수 대격 여성 (formas를 가리킴)",
+    "gloss_kr": "그것들을(=그 변신들을)",
+    "gloss_en": "those (transformations)",
+    "syntax": "mutastis의 목적어",
+    "background": "1행의 formas(변화된 형체들)를 가리키는 지시대명사로, 신들이 바로 그 형체 변화의 장본인이라는 논리적 연결고리를 완성한다.",
+    "etymology": "인도유럽조어 지시사 어근 *ol-/*al-에서 온 것으로 추정되는 라틴어 지시대명사이다. 역사적으로 가장 극적인 흔적은 문법 변화에 있는데, 이 지시대명사 ille/illa가 후기 라틴어에서 정관사로 문법화되어 프랑스어 le/la, 이탈리아어 il/la, 스페인어 el/la — 즉 오늘날 로망스어 정관사 체계 전체의 직접적 기원이 되었다."
+   }
+  ]
+ },
+ {
+  "ref": "Metamorphoses 1.3",
+  "trans": "저의 이 대업에 영감을 불어넣으시고, 세상의 태초의 기원으로부터",
+  "words": [
+   {
+    "g": "adspirate",
+    "pos": "동사",
+    "lemma": "adspiro, adspirare, adspiravi, adspiratum",
+    "principalParts": "adspiro – adspirare – adspiravi – adspiratum",
+    "parse": "현재 명령법 능동 2인칭 복수",
+    "gloss_kr": "숨을 불어넣으소서, 영감을 주소서",
+    "gloss_en": "breathe favor upon, inspire",
+    "syntax": "주어(생략된 2인칭 복수=di), 2행 coeptis를 여격 목적어로 취함",
+    "background": "'숨을 불어넣다'라는 문자적 의미의 이 동사는 시적 영감(inspiratio)의 은유를 그대로 담고 있다. 신들에게 자신의 대업에 신성한 숨결을 불어넣어 달라 청하는, 오비디우스식 무사 호출의 절정이다.",
+    "etymology": "인도유럽조어 *(s)peis-('불다')에서 온 spiro('숨쉬다, 불다')에 ad-가 결합된 동사이다. 이 어근은 영어에 spirit·inspire·aspire·respire·conspire처럼 매우 생산적으로 남아 있으며, 이탈리아어 spirare, 프랑스어 respirer로 로망스어에도 그대로 이어졌다."
+   },
+   {
+    "g": "meis",
+    "pos": "형용사(소유)",
+    "lemma": "meus, -a, -um",
+    "parse": "복수 여격 중성 (coeptis 수식, 2행)",
+    "gloss_kr": "나의",
+    "gloss_en": "my",
+    "syntax": "2행 coeptis를 수식",
+    "background": "시인 자신의 소유격 형용사로, '나의 이 대업'이라는 개인적 소유를 명확히 하며 서사시적 관습 속에 시인 개인의 목소리를 뚜렷이 새긴다.",
+    "etymology": "인도유럽조어 1인칭 대명사 어근 *me-에서 파생된 소유형용사로, 그리스어 ἐμός(emos), 산스크리트어 máma와 동계어를 이루며 영어 my/mine 역시 같은 조어 뿌리를 게르만어파를 통해 공유한다. 로망스어에서 이탈리아어 mio, 프랑스어 mon/ma, 스페인어 mi로 형태가 그대로 이어졌다."
+   },
+   {
+    "g": "primaque",
+    "pos": "형용사 + 접속사(접미)",
+    "lemma": "primus, -a, -um / que",
+    "parse": "단수 탈격 여성 (origine 수식) + 접미 접속사",
+    "gloss_kr": "그리고 최초의, 태초의",
+    "gloss_en": "and first",
+    "syntax": "origine를 수식, 접미사 -que는 adspirate와 4행 deducite 두 명령을 연결",
+    "background": "세상의 '가장 처음' 기원을 뜻하는 prima에 접속사 -que가 붙어 있다. 곧이어 전개될 우주 창조 이야기(카오스에서 세계 형성)를 예고하는 동시에, '영감을 주소서, 그리고 이끌어 주소서'라는 두 명령을 매끄럽게 잇는다.",
+    "etymology": "인도유럽조어 최상급 접미사가 붙은 *pr-mo-('맨 앞의')에서 유래하며, 산스크리트어 prathamá-와 동계어이고 영어 first도 게르만어파를 통해 같은 조어 뿌리 *per-('앞으로')를 공유한다. 로망스어에서 이탈리아어 primo, 프랑스어 premier, 스페인어 primero로 이어졌고, 영어에는 prime·primary·primitive로 널리 차용되었다."
+   },
+   {
+    "g": "ab",
+    "pos": "전치사",
+    "lemma": "ab",
+    "parse": "전치사 (+ 탈격, 기원)",
+    "gloss_kr": "~로부터",
+    "gloss_en": "from",
+    "syntax": "origine를 지배",
+    "background": "기원의 출발점을 나타내는 전치사로, 시가 다룰 시간적 범위의 시작점(세계의 태초)을 못박는다.",
+    "etymology": "인도유럽조어 *h₂epo('멀리, ~로부터')에서 유래하며, 그리스어 ἀπό(apo), 영어 of/off, 산스크리트어 ápa와 동계어를 이룬다. 로망스어에서는 대부분 de로 대체되어 직접 살아남지 못했지만, 영어에는 abstract·absent·abduct처럼 접두사 ab-의 형태로 폭넓게 남아 있다."
+   },
+   {
+    "g": "origine",
+    "pos": "명사",
+    "lemma": "origo, originis, f.",
+    "parse": "단수 탈격 여성",
+    "gloss_kr": "기원, 시초",
+    "gloss_en": "origin, beginning",
+    "syntax": "ab의 목적어, mundi의 수식을 받음, prima의 수식을 받음",
+    "background": "'기원'을 뜻하는 이 단어는 시 전체가 다룰 시간적 지평의 출발점, 즉 세계 창조의 순간을 가리킨다.",
+    "etymology": "동사 orior('일어나다, 생겨나다')에서 파생된 명사로, 그 뿌리는 인도유럽조어 *h₃er-('일어나다, 움직이다')로 소급되며 그리스어 ὄρνυμι(ornymi, '일으키다'), 산스크리트어 r̥cchati와 동계어를 이룬다. 로망스어의 이탈리아어·스페인어·프랑스어 모두 origine을 형태 그대로 물려받았고, 영어에도 origin·orient·abort(ab+orior) 등으로 남아 있다."
+   },
+   {
+    "g": "mundi",
+    "pos": "명사",
+    "lemma": "mundus, mundi, m.",
+    "parse": "단수 속격 남성",
+    "gloss_kr": "세상의",
+    "gloss_en": "of the world",
+    "syntax": "origine를 수식하는 속격",
+    "background": "'세상의 기원'이라는 표현으로, 오비디우스가 이 시를 우주 창조(코스모고니)에서부터 시작하겠다는 방대한 시간적 스케일을 선언한다.",
+    "etymology": "본래 '깨끗한, 단정한'을 뜻하던 형용사 mundus가 그리스어 κόσμος(kosmos, '질서·장식'이자 '우주')의 의미를 본뜬 차용의역(calque)으로 '세계, 우주'라는 명사 뜻을 얻게 된 독특한 경우이다. 로망스어에서 이탈리아어 mondo, 프랑스어 monde, 스페인어 mundo로 형태 그대로 이어졌으며, 영어에는 mundane(본래의 '세속적인'이라는 형용사적 의미)으로 남아 있다."
+   }
+  ]
+ },
+ {
+  "ref": "Metamorphoses 1.4",
+  "trans": "저의 시대에 이르기까지 끊임없는 노래로 이끌어 주소서.",
+  "words": [
+   {
+    "g": "ad",
+    "pos": "전치사",
+    "lemma": "ad",
+    "parse": "전치사 (+ 대격, 도달점)",
+    "gloss_kr": "~까지, ~에 이르도록",
+    "gloss_en": "down to",
+    "syntax": "tempora를 지배",
+    "background": "시간적 도달점을 나타내는 전치사로, 세상의 기원(3행)에서 시작해 '나의(시인의) 시대까지'라는 시간적 종착점을 표시한다.",
+    "etymology": "인도유럽조어 *ad('~로, ~근처에')에서 유래하며, 영어 at이 게르만어파를 통해 같은 조어 뿌리를 공유하는 동계어이다. 로망스어에서 이탈리아어·스페인어 a, 프랑스어 à로 형태가 거의 그대로 이어졌고, 영어에도 accede·adjacent·adhere처럼 접두사 ad-의 형태로 매우 생산적으로 남아 있다."
+   },
+   {
+    "g": "mea",
+    "pos": "형용사(소유)",
+    "lemma": "meus, -a, -um",
+    "parse": "복수 대격 중성 (tempora 수식)",
+    "gloss_kr": "나의",
+    "gloss_en": "my",
+    "syntax": "tempora를 수식",
+    "background": "시인 자신이 살고 있는 '지금 이 시대'를 가리키며, 신화적 태초부터 시인의 현재(아우구스투스 시대)까지 잇는 이 시 전체의 거대한 시간 구조를 예고한다.",
+    "etymology": "3행 meis와 동일한 인도유럽조어 *me-('나') 어근에서 온 소유형용사의 중성 복수형이다. 자세한 조어 재구와 로망스어·영어 파생 관계는 meis 항목과 동일하다."
+   },
+   {
+    "g": "perpetuum",
+    "pos": "형용사",
+    "lemma": "perpetuus, -a, -um",
+    "parse": "단수 대격 중성 (carmen 수식)",
+    "gloss_kr": "끊임없는, 연속된",
+    "gloss_en": "continuous, unbroken",
+    "syntax": "carmen을 수식",
+    "background": "'끊임없는 노래'라는 이 형용사는 개별 신화들을 하나로 잇는 시 형식의 야심 — 독립된 여러 이야기를 처음부터 끝까지 하나의 연속된 서사로 엮겠다는 오비디우스의 시학적 선언 — 으로 널리 알려져 있다.",
+    "etymology": "per('끝까지, 완전히') + peto('추구하다, 나아가다')가 결합된 형용사로, peto의 뿌리는 인도유럽조어 *pet-('날다, 돌진하다')로 소급되며 그리스어 πέτομαι(petomai, '날다'), 영어 feather(게르만어파 동계어)와 뿌리를 같이한다. 영어에는 perpetual·petition·compete·appetite처럼 이 어근이 매우 폭넓게 남아 있다."
+   },
+   {
+    "g": "deducite",
+    "pos": "동사",
+    "lemma": "deduco, deducere, deduxi, deductum",
+    "principalParts": "deduco – deducere – deduxi – deductum",
+    "parse": "현재 명령법 능동 2인칭 복수",
+    "gloss_kr": "이끌어 주소서, 인도해 주소서",
+    "gloss_en": "lead down, guide",
+    "syntax": "주어(생략된 di), 목적어 carmen",
+    "background": "'실을 자아내다, 이끌다'라는 함의를 지닌 이 동사는, 로마 시학에서 '가늘게 자아낸 정교한 시(carmen deductum)'를 짓는다는 알렉산드리아·칼리마코스적 시학 전통을 암시하는 것으로 널리 해석된다.",
+    "etymology": "de + duco('이끌다')로 이루어진 동사로, duco의 뿌리는 인도유럽조어 *deuk-('이끌다')이며 영어 tow·tug(게르만어파 동계어), 고트어 tiuhan과 동계어를 이룬다. 로망스어에서 이탈리아어 condurre, 프랑스어 conduire(con+duco)로 이어졌고, 영어에는 duke·duct·conduct·produce·reduce처럼 이 어근이 대단히 생산적으로 남아 있다."
+   },
+   {
+    "g": "tempora",
+    "pos": "명사",
+    "lemma": "tempus, temporis, n.",
+    "parse": "복수 대격 중성",
+    "gloss_kr": "시대까지, 시간까지",
+    "gloss_en": "times, era",
+    "syntax": "ad의 목적어, mea의 수식을 받음",
+    "background": "'ad mea...tempora(나의 시대까지)'는 시가 다룰 시간적 범위의 종점, 즉 오비디우스 자신이 살아가는 시대를 가리킨다.",
+    "etymology": "어원이 확실치 않은 명사로, 그리스어 τέμνω(temnō, '자르다')와 연관 지어 '나누어진 시간의 단위'라는 의미에서 왔다고 보는 설이 있으나 논쟁적이다. 로망스어의 이탈리아어 tempo, 프랑스어 temps, 스페인어 tiempo로 형태 그대로 이어졌고, 영어에는 temporary·temporal·contemporary와, 이탈리아어에서 그대로 차용한 음악 용어 tempo로도 남아 있다."
+   },
+   {
+    "g": "carmen",
+    "pos": "명사",
+    "lemma": "carmen, carminis, n.",
+    "parse": "단수 대격 중성",
+    "gloss_kr": "노래를, 시를",
+    "gloss_en": "song, poem",
+    "syntax": "deducite의 목적어",
+    "background": "이 시 자체를 가리키는 자기지시적(metapoetic) 단어이다. 4행에 이르러 1~4행 전체가 '하나의 끊임없는 노래를 이끌어 달라'는 하나의 완결된 기도로 마무리된다.",
+    "etymology": "동사 cano('노래하다')에 도구 접미사 -men이 붙어 이루어진 명사로, 인도유럽조어 *kan-('노래하다')에서 유래한다. 이 단어의 후대 흔적은 뜻밖의 경로를 거쳤는데, 고대 프랑스어를 통해 영어에 들어와 오늘날 '주문, 매력'을 뜻하는 charm이라는 단어로 남아 있다 — 노래(carmen)가 곧 주술적 힘을 지닌 '주문'이었다는 고대적 관념의 화석이다."
+   }
+  ]
+ }
+]
