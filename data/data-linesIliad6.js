@@ -43405,7 +43405,7 @@ window.__RAW_CHAPTER_DATA['data-linesIliad6'] = [
 {
 "g": "μελήσει",
 "pos": "동사",
-"lemma": "μέλω",
+"lemma": " μέλω",
 "parse": "3rd.sg.fut.ind.act.",
 "principalParts": "μέλω – μελήσω – ἐμέλησα – μεμέληκα – μεμέλημαι – ἐμελήθην",
 "gloss_kr": "마음이 쓰일 것이다, 관심사일 것이다",
