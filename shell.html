@@ -2319,36 +2319,11 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
     color: var(--text-sub);
     margin-bottom: 4px;
   }
-  .greek-line {
-    background: transparent; border: none; border-radius: 0; box-shadow: none;
-    padding: 0; margin-bottom: 6px;
-    color: var(--text-main); font-weight: 400;
-  }
-  .greek-line:hover { border-color: transparent; box-shadow: none; }
+  .greek-line { color: var(--text-main); font-weight: 400; }
   .trans-box-inner {
-    background: none; border-radius: 0;
-    font-size: 16.5px; line-height: 1.75; font-weight: 400;
-    color: color-mix(in srgb, var(--text-main) 72%, var(--text-sub));
+    font-size: 16px; line-height: 1.7; font-weight: 400;
+    color: color-mix(in srgb, var(--text-main) 82%, var(--text-sub));
   }
-  .trans-box-inner .pad { padding: 2px 0 8px; }
-  .line-block.flash .greek-line { border-radius: 10px; box-shadow: 0 0 0 8px var(--accent-light); background: var(--accent-light); }
-
-  /* ---- 6. 행 구분: 선 대신 여백, 아주 연한 머리선만 ---- */
-  .line-block { border-top: none; padding-top: 0; margin-top: 36px; }
-  .line-block:first-of-type { margin-top: 0; }
-  .line-block + .line-block {
-    padding-top: 30px; margin-top: 0;
-    background-image: linear-gradient(90deg, transparent, color-mix(in srgb, var(--border) 50%, transparent) 18%, color-mix(in srgb, var(--border) 50%, transparent) 82%, transparent);
-    background-size: 100% 0.5px; background-position: top; background-repeat: no-repeat;
-  }
-  .controls-row.sticky { border-bottom: 0.5px solid color-mix(in srgb, var(--border-soft) 70%, transparent); }
-  /* 명화 배경이 켜져 있을 땐 글자 뒤에만 은은한 바탕을 깔아 읽기 쉽게 */
-  body[data-art="on"] .line-block {
-    background-color: color-mix(in srgb, var(--bg) 70%, transparent);
-    -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
-    border-radius: 16px; margin-left: -14px; margin-right: -14px; padding-left: 14px; padding-right: 14px;
-  }
-  body[data-art="on"] .line-block:not(:first-of-type) { padding-top: 30px; }
 
   /* ---- 2. 다크 모드: 라이트 값이 남던 곳 정리 ---- */
   :root[data-theme="dark"] #view-genesis1 { --border: #313c5a; --border-soft: #232c45; }
@@ -2370,7 +2345,6 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
     content: ''; position: absolute; inset: 0;
     background: radial-gradient(130% 95% at 50% 38%, transparent 35%, var(--bg) 100%);
   }
-  :root[data-theme="dark"] body[data-art="on"] .line-block { background-color: color-mix(in srgb, var(--bg) 62%, transparent); }
 
   /* ---- 3. 움직임 통일: 올려도 뜨지 않고, 누르면 같은 폭으로 눌린다 ---- */
   .controls-row button:hover, .controls-row button.active:hover,
