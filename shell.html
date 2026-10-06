@@ -2403,6 +2403,123 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   .cur-line:empty { display: none; }
   @media (max-width: 480px) { .cur-line .w { display: none; } }
 
+  /* ---- 11. 정보 추가 (행 직접 입력) ---- */
+  .ai-overlay { position: fixed; inset: 0; z-index: 210; display: none; align-items: center; justify-content: center; padding: 16px; background: rgba(30,26,18,.38); -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); }
+  .ai-overlay.show { display: flex; }
+  .ai-card { width: 100%; max-width: 780px; max-height: calc(100vh - 32px); max-height: calc(100dvh - 32px); display: flex; flex-direction: column; overflow: hidden; background: var(--card-bg); border: 0.5px solid var(--border); border-radius: 14px; box-shadow: var(--shadow-xl); font-family: var(--sans); color: var(--text-main); }
+  .ai-head { flex: none; display: flex; align-items: center; justify-content: space-between; padding: 12px 14px 12px 18px; border-bottom: 0.5px solid var(--border); }
+  .ai-head h2 { margin: 0; font-family: var(--sans); font-size: 16px; font-weight: 600; letter-spacing: 0; }
+  .ai-x { width: 32px; height: 32px; border: none; border-radius: 50%; cursor: pointer; font-size: 14px; color: var(--text-sub); background: color-mix(in srgb, var(--text-faint) 16%, transparent); }
+  .ai-x:hover { background: color-mix(in srgb, var(--text-faint) 28%, transparent); color: var(--text-main); }
+  .ai-body { flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; padding: 16px 18px 22px; }
+  .ai-foot { flex: none; display: flex; align-items: center; gap: 8px; padding: 12px 18px calc(12px + env(safe-area-inset-bottom, 0px)); border-top: 0.5px solid var(--border); background: var(--card-bg); }
+  .ai-spacer { flex: 1; }
+  .ai-pick { display: grid; grid-template-columns: 1.7fr 1fr 1fr; gap: 10px; }
+  .ai-f { display: flex; flex-direction: column; gap: 5px; min-width: 0; margin: 0; }
+  .ai-f > span { font-size: 11.5px; font-weight: 600; color: var(--text-sub); }
+  .ai-f input, .ai-f select, .ai-f textarea { width: 100%; box-sizing: border-box; margin: 0; font-family: var(--sans); font-size: 14px; line-height: 1.5; color: var(--text-main); background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 9px 11px; }
+  .ai-f textarea { resize: vertical; line-height: 1.6; }
+  .ai-f input:focus, .ai-f select:focus, .ai-f textarea:focus { border-color: var(--accent); }
+  .ai-wide { margin-top: 12px; }
+  textarea.ai-src { font-family: var(--serif); font-size: 18px; line-height: 1.7; }
+  .ai-status { margin: 10px 0 0; min-height: 1.5em; font-size: 12.5px; line-height: 1.55; color: var(--text-sub); }
+  .ai-status button { margin-left: 6px; }
+  .ai-row { display: flex; gap: 8px; margin-top: 8px; }
+  .ai-btn { font-family: var(--sans); font-size: 13px; font-weight: 500; padding: 9px 14px; border: none; border-radius: 8px; cursor: pointer; color: var(--text-main); background: color-mix(in srgb, var(--text-faint) 16%, transparent); transition: background var(--dur-press) var(--ease-mac), transform var(--dur-press) var(--ease-mac); }
+  .ai-btn:hover:not(:disabled) { background: color-mix(in srgb, var(--text-faint) 28%, transparent); }
+  .ai-btn:active:not(:disabled) { transform: scale(0.96); }
+  .ai-btn:disabled { opacity: .45; cursor: not-allowed; }
+  .ai-primary, .ai-primary:hover:not(:disabled) { color: #fff; background: linear-gradient(180deg, color-mix(in srgb, var(--accent-2) 80%, #fff), var(--accent)); box-shadow: inset 0 0.5px 0 rgba(255,255,255,.55), 0 1px 3px rgba(0,0,0,.2); }
+  :root[data-theme="dark"] .ai-primary { color: #1d1409; }
+  .ai-danger { color: var(--bad); }
+  .ai-link { font-family: var(--sans); font-size: 12.5px; font-weight: 600; padding: 4px 6px; border: none; border-radius: 6px; cursor: pointer; color: var(--accent-dark); background: transparent; }
+  .ai-link:hover { background: var(--accent-light); }
+  .ai-words-head { display: flex; align-items: center; justify-content: space-between; margin: 18px 0 2px; font-size: 12.5px; font-weight: 600; color: var(--text-sub); }
+  .ai-words-tools { display: flex; gap: 4px; }
+  .ai-empty { margin: 10px 0 0; padding: 18px 14px; border: 1px dashed var(--border); border-radius: 10px; font-size: 13px; line-height: 1.6; color: var(--text-faint); text-align: center; }
+  .ai-w { margin-top: 8px; border: 0.5px solid var(--border); border-radius: 10px; background: var(--bg); }
+  .ai-w > summary { list-style: none; cursor: pointer; display: flex; align-items: baseline; gap: 8px; padding: 10px 12px; }
+  .ai-w > summary::-webkit-details-marker { display: none; }
+  .ai-w > summary .n { flex: none; min-width: 1.8em; font-size: 11px; font-variant-numeric: tabular-nums; color: var(--text-faint); }
+  .ai-w > summary .g { flex: none; font-family: var(--serif); font-size: 17px; }
+  .ai-w > summary small { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; color: var(--text-sub); }
+  .ai-w[open] > summary { border-bottom: 0.5px solid var(--border-soft); }
+  .ai-wf { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 12px; }
+  .ai-wf .ai-f.wide { grid-column: 1 / -1; }
+  .ai-wf .ai-f input, .ai-wf .ai-f textarea { background: var(--card-bg); }
+  .ai-wtools { display: flex; justify-content: flex-end; gap: 4px; padding: 0 10px 10px; }
+  @media (max-width: 640px) {
+    .ai-overlay { padding: 0; align-items: stretch; }
+    .ai-card { max-width: none; max-height: none; height: 100%; border: none; border-radius: 0; }
+    .ai-pick { grid-template-columns: 1fr 1fr; }
+    .ai-pick .ai-f:first-child { grid-column: 1 / -1; }
+    .ai-f input, .ai-f select, .ai-f textarea { font-size: 16px; }
+    textarea.ai-src { font-size: 18px; }
+    .ai-wf { grid-template-columns: 1fr; }
+    .ai-body { padding: 14px 14px 20px; }
+    .ai-foot { padding-left: 14px; padding-right: 14px; }
+  }
+
+  /* ---- 9. 헤더 '더보기': 자주 안 쓰는 것(정보 추가·배경 끄기·야간 모드)을 한 곳으로 ---- */
+  .nav-more { position: relative; flex: none; }
+  .site-nav-link.nav-more-btn { display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; padding: 0; }
+  .nav-more-btn[aria-expanded="true"] { background: color-mix(in srgb, var(--text-faint) 32%, transparent); color: var(--text-main); }
+  .nav-more-menu {
+    display: none; position: absolute; right: 0; top: calc(100% + 12px); min-width: 196px; z-index: 60;
+    padding: 6px; flex-direction: column; gap: 2px;
+    background: color-mix(in srgb, var(--card-bg) 94%, transparent);
+    -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px);
+    border: 0.5px solid var(--border); border-radius: 12px; box-shadow: var(--shadow-lg);
+  }
+  .nav-more.open .nav-more-menu { display: flex; }
+  .nav-more-menu .site-nav-link { width: 100%; text-align: left; background: transparent; border-radius: 8px; padding: 10px 12px; font-size: 13.5px; }
+  .nav-more-menu .site-nav-link:hover { background: color-mix(in srgb, var(--text-faint) 18%, transparent); }
+  body[data-art] .nav-more-menu #bgToggle { display: block; }
+  .nav-more-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 3px 4px 3px 12px; border-radius: 8px; }
+  .nav-more-row > label { display: block; flex: 1; padding: 7px 0; font-size: 13.5px; font-weight: 500; color: var(--text-sub); cursor: pointer; }
+  @media (max-width: 600px) {
+    .site-header-inner { padding: 14px 12px; gap: 6px; }
+    .brand { flex: 1 1 auto; }
+    .site-nav-link { flex: none; padding: 7px 9px; }
+    .site-nav-link .kbd { display: none; }
+  }
+
+  /* ---- 10. 컨트롤 바: 글꼴 선택은 작은 팝오버로 (줄이 꺾이지 않게) ---- */
+  .controls-row { align-items: center; }
+  .controls-row .lbl-short { display: none; }
+  .controls-row .font-pop { position: relative; flex: none; margin-left: auto; }
+  .controls-row .font-pop-btn {
+    display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; padding: 0;
+    border-radius: 50%; font-family: var(--serif); font-size: 14.5px; font-weight: 600; letter-spacing: -0.02em; line-height: 1;
+  }
+  .controls-row .font-pop-btn[aria-expanded="true"] { border-color: var(--accent); color: var(--accent-dark); background: var(--accent-light); }
+  .font-pop-panel {
+    display: none; position: absolute; right: 0; top: calc(100% + 10px); z-index: 30;
+    width: 250px; max-width: calc(100vw - 40px); padding: 12px 14px 14px;
+    background: var(--card-bg); border: 0.5px solid var(--border); border-radius: 12px; box-shadow: var(--shadow-lg);
+  }
+  .font-pop.open .font-pop-panel { display: block; }
+  .font-pop-panel > div { display: flex; flex-direction: column; align-items: stretch; gap: 6px; margin-left: 0; }
+  .font-pop-panel label { font-size: 11.5px; font-weight: 600; color: var(--text-sub); }
+  .font-pop-panel select, .font-pop-panel #hebrewFontSelect { width: 100%; border-radius: 8px; padding: 9px 12px; font-size: 14px; }
+  @media (max-width: 480px) {
+    .controls-row { gap: 6px; }
+    .controls-row button { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 8px 9px; font-size: 12px; }
+    .controls-row .font-pop-btn { overflow: visible; padding: 0; }
+    .controls-row .lbl-full { display: none; }
+    .controls-row .lbl-short { display: inline; }
+    body[data-art="on"] .controls-row.sticky { padding: 8px 6px; }
+    .font-pop-panel select, .font-pop-panel #hebrewFontSelect { font-size: 16px; }
+  }
+  @media (max-width: 380px) {
+    .controls-row { gap: 4px; }
+    .controls-row button { padding: 8px 6px; font-size: 11.5px; }
+    .controls-row .font-pop-btn { width: 30px; height: 30px; font-size: 13.5px; }
+  }
+  @media (max-width: 340px) {
+    .controls-row { flex-wrap: wrap; row-gap: 6px; }
+  }
+
   /* ---- 4·5. 서재: 권 아이콘 = 작은 책 (색과 질감으로만 구분), 명화가 있는 권은 모서리에 그림 조각 ---- */
   .mac-tiles { grid-template-columns: repeat(auto-fill, minmax(46px, 1fr)); gap: 12px 10px; }
   .mac-tile {
@@ -2491,6 +2608,36 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
 <div id="bgArt"><i></i></div>
 <div id="bgCap" tabindex="0" role="note" aria-label="배경 그림 정보"></div>
 <div id="qsOverlay" onclick="if(event.target===this)closeQuickSearch()"><div class="qs-card"><input class="qs-input" id="qsInput" placeholder="단어, 번역, 행 번호 검색 (예: 1.34)" autocomplete="off"><div class="qs-list" id="qsList"></div></div></div>
+<div id="aiOverlay" class="ai-overlay" role="dialog" aria-modal="true" aria-labelledby="aiTitle" onclick="if(event.target===this)closeAddInfo()">
+  <div class="ai-card">
+    <div class="ai-head">
+      <h2 id="aiTitle">정보 추가</h2>
+      <button type="button" class="ai-x" onclick="closeAddInfo()" aria-label="닫기">✕</button>
+    </div>
+    <div class="ai-body">
+      <div class="ai-pick">
+        <label class="ai-f"><span>작품</span><select id="aiWork"></select></label>
+        <label class="ai-f"><span id="aiBookLbl">권</span><input id="aiBook" type="text" inputmode="numeric" list="aiBookList" autocomplete="off" placeholder="번호"><datalist id="aiBookList"></datalist></label>
+        <label class="ai-f"><span>행</span><input id="aiLine" type="text" inputmode="numeric" list="aiLineList" autocomplete="off" placeholder="번호"><datalist id="aiLineList"></datalist></label>
+      </div>
+      <p class="ai-status" id="aiStatus" aria-live="polite"></p>
+      <label class="ai-f ai-wide"><span>원문</span><textarea id="aiSrc" class="ai-src" rows="3" spellcheck="false" placeholder="이 행의 원문을 그대로 붙여넣으세요"></textarea></label>
+      <div class="ai-row"><button type="button" class="ai-btn" id="aiSplit">단어로 나누기</button></div>
+      <label class="ai-f ai-wide"><span>번역 (행 전체)</span><textarea id="aiTrans" rows="2" spellcheck="false" placeholder="이 행 전체의 한국어 번역"></textarea></label>
+      <div class="ai-words-head">
+        <span id="aiWordCount">단어 0개</span>
+        <span class="ai-words-tools"><button type="button" class="ai-link" id="aiToggleAll">모두 펼치기</button><button type="button" class="ai-link" id="aiAddWord">+ 단어 추가</button></span>
+      </div>
+      <div id="aiWords"></div>
+    </div>
+    <div class="ai-foot">
+      <button type="button" class="ai-btn ai-danger" id="aiDelete" hidden>내 항목 삭제</button>
+      <span class="ai-spacer"></span>
+      <button type="button" class="ai-btn" id="aiCopy" disabled>JSON 복사</button>
+      <button type="button" class="ai-btn ai-primary" id="aiSave" disabled>저장</button>
+    </div>
+  </div>
+</div>
 <header class="site-header">
   <div class="site-header-inner">
     <button class="brand" onclick="showView('view-hub')">
@@ -2501,11 +2648,22 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
     <button class="site-nav-link" onclick="showView('view-hub')">서재로 가기</button>
     <button class="site-nav-link" onclick="openVocabHome()">단어장</button>
     <button class="site-nav-link" onclick="openQuickSearch()" aria-label="빠른 검색">검색<span class="kbd">⌘K</span></button>
-    <button class="site-nav-link" id="bgToggle" onclick="toggleGalleryBg()">배경 끄기</button>
-    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="야간 열람실 모드 전환" title="야간 열람실">
-      <svg class="theme-toggle-icon icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
-      <svg class="theme-toggle-icon icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.4A8.5 8.5 0 1 1 9.6 3.5a6.8 6.8 0 0 0 10.9 10.9z"/></svg>
-    </button>
+    <div class="nav-more" id="navMore">
+      <button type="button" class="site-nav-link nav-more-btn" id="navMoreBtn" aria-haspopup="true" aria-expanded="false" aria-controls="navMoreMenu" aria-label="더보기" title="더보기">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="5.5" cy="12" r="1.7"/><circle cx="12" cy="12" r="1.7"/><circle cx="18.5" cy="12" r="1.7"/></svg>
+      </button>
+      <div class="nav-more-menu" id="navMoreMenu">
+        <button class="site-nav-link" id="addInfoBtn" onclick="openAddInfo()">정보 추가</button>
+        <button class="site-nav-link" id="bgToggle" onclick="toggleGalleryBg()">배경 끄기</button>
+        <div class="nav-more-row">
+          <label for="themeToggle">야간 열람실</label>
+          <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="야간 열람실 모드 전환" title="야간 열람실">
+            <svg class="theme-toggle-icon icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
+            <svg class="theme-toggle-icon icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.4A8.5 8.5 0 1 1 9.6 3.5a6.8 6.8 0 0 0 10.9 10.9z"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -2669,8 +2827,11 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   <div class="controls-row sticky">
     <button id="transToggleIliad">번역 전체 보기</button>
     <button id="myTransToggleIliad">내 번역 보기</button>
-    <button id="closeAllInfoIliad">모든 단어 창 닫기</button>
-    <div class="greek-font-select-wrap">
+    <button id="closeAllInfoIliad" aria-label="모든 단어 창 닫기"><span class="lbl-full">모든 단어 창 닫기</span><span class="lbl-short">모두 닫기</span></button>
+    <div class="font-pop">
+      <button type="button" class="font-pop-btn" aria-haspopup="true" aria-expanded="false" aria-label="글꼴 설정" title="글꼴 설정">Aa</button>
+      <div class="font-pop-panel" role="group" aria-label="글꼴 설정">
+        <div class="greek-font-select-wrap">
       <label for="greekFontSelect1">글꼴</label>
       <select id="greekFontSelect1">
         <option value="default">EB Garamond (기본)</option>
@@ -2685,6 +2846,8 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
         <option value="notoserif">Noto Serif (범용 세리프)</option>
         <option value="alegreyaitalic">Alegreya 이탤릭 (필기체 느낌)</option>
       </select>
+    </div>
+      </div>
     </div>
   </div>
 
@@ -2702,8 +2865,11 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   <div class="controls-row sticky">
     <button id="transToggleIliad6">번역 전체 보기</button>
     <button id="myTransToggleIliad6">내 번역 보기</button>
-    <button id="closeAllInfoIliad6">모든 단어 창 닫기</button>
-    <div class="greek-font-select-wrap">
+    <button id="closeAllInfoIliad6" aria-label="모든 단어 창 닫기"><span class="lbl-full">모든 단어 창 닫기</span><span class="lbl-short">모두 닫기</span></button>
+    <div class="font-pop">
+      <button type="button" class="font-pop-btn" aria-haspopup="true" aria-expanded="false" aria-label="글꼴 설정" title="글꼴 설정">Aa</button>
+      <div class="font-pop-panel" role="group" aria-label="글꼴 설정">
+        <div class="greek-font-select-wrap">
       <label for="greekFontSelect6">글꼴</label>
       <select id="greekFontSelect6">
         <option value="default">EB Garamond (기본)</option>
@@ -2718,6 +2884,8 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
         <option value="notoserif">Noto Serif (범용 세리프)</option>
         <option value="alegreyaitalic">Alegreya 이탤릭 (필기체 느낌)</option>
       </select>
+    </div>
+      </div>
     </div>
   </div>
 
@@ -2735,8 +2903,11 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   <div class="controls-row sticky">
     <button id="transToggleMeta">번역 전체 보기</button>
     <button id="myTransToggleMeta">내 번역 보기</button>
-    <button id="closeAllInfoMeta">모든 단어 창 닫기</button>
-    <div class="latin-font-select-wrap">
+    <button id="closeAllInfoMeta" aria-label="모든 단어 창 닫기"><span class="lbl-full">모든 단어 창 닫기</span><span class="lbl-short">모두 닫기</span></button>
+    <div class="font-pop">
+      <button type="button" class="font-pop-btn" aria-haspopup="true" aria-expanded="false" aria-label="글꼴 설정" title="글꼴 설정">Aa</button>
+      <div class="font-pop-panel" role="group" aria-label="글꼴 설정">
+        <div class="latin-font-select-wrap">
       <label for="latinFontSelect1">글꼴</label>
       <select id="latinFontSelect1">
         <option value="default">UnifrakturMaguntia (고딕체, 기본)</option>
@@ -2750,6 +2921,8 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
         <option value="playfair">Playfair Display (모던 디스플레이체)</option>
         <option value="cursive">Herr Von Muellerhoff (필기체)</option>
       </select>
+    </div>
+      </div>
     </div>
   </div>
 
@@ -2767,8 +2940,11 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   <div class="controls-row sticky">
     <button id="transToggleMeta14">번역 전체 보기</button>
     <button id="myTransToggleMeta14">내 번역 보기</button>
-    <button id="closeAllInfoMeta14">모든 단어 창 닫기</button>
-    <div class="latin-font-select-wrap">
+    <button id="closeAllInfoMeta14" aria-label="모든 단어 창 닫기"><span class="lbl-full">모든 단어 창 닫기</span><span class="lbl-short">모두 닫기</span></button>
+    <div class="font-pop">
+      <button type="button" class="font-pop-btn" aria-haspopup="true" aria-expanded="false" aria-label="글꼴 설정" title="글꼴 설정">Aa</button>
+      <div class="font-pop-panel" role="group" aria-label="글꼴 설정">
+        <div class="latin-font-select-wrap">
       <label for="latinFontSelect14">글꼴</label>
       <select id="latinFontSelect14">
         <option value="default">UnifrakturMaguntia (고딕체, 기본)</option>
@@ -2782,6 +2958,8 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
         <option value="playfair">Playfair Display (모던 디스플레이체)</option>
         <option value="cursive">Herr Von Muellerhoff (필기체)</option>
       </select>
+    </div>
+      </div>
     </div>
   </div>
 
@@ -2799,8 +2977,11 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   <div class="controls-row sticky">
     <button id="transToggleGenesis1">번역 전체 보기</button>
     <button id="myTransToggleGenesis1">내 번역 보기</button>
-    <button id="closeAllInfoGenesis1">모든 단어 창 닫기</button>
-    <div class="hebrew-font-select-wrap">
+    <button id="closeAllInfoGenesis1" aria-label="모든 단어 창 닫기"><span class="lbl-full">모든 단어 창 닫기</span><span class="lbl-short">모두 닫기</span></button>
+    <div class="font-pop">
+      <button type="button" class="font-pop-btn" aria-haspopup="true" aria-expanded="false" aria-label="글꼴 설정" title="글꼴 설정">Aa</button>
+      <div class="font-pop-panel" role="group" aria-label="글꼴 설정">
+        <div class="hebrew-font-select-wrap">
       <label for="hebrewFontSelect">글꼴</label>
       <select id="hebrewFontSelect">
         <option value="default">Frank Ruhl Libre (기본)</option>
@@ -2814,6 +2995,8 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
         <option value="miriam">Miriam Libre (전통 세리프)</option>
         <option value="alef">Alef (심플 산세리프)</option>
       </select>
+    </div>
+      </div>
     </div>
   </div>
 
@@ -2831,8 +3014,11 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   <div class="controls-row sticky">
     <button id="transToggleCid1">번역 전체 보기</button>
     <button id="myTransToggleCid1">내 번역 보기</button>
-    <button id="closeAllInfoCid1">모든 단어 창 닫기</button>
-    <div class="latin-font-select-wrap">
+    <button id="closeAllInfoCid1" aria-label="모든 단어 창 닫기"><span class="lbl-full">모든 단어 창 닫기</span><span class="lbl-short">모두 닫기</span></button>
+    <div class="font-pop">
+      <button type="button" class="font-pop-btn" aria-haspopup="true" aria-expanded="false" aria-label="글꼴 설정" title="글꼴 설정">Aa</button>
+      <div class="font-pop-panel" role="group" aria-label="글꼴 설정">
+        <div class="latin-font-select-wrap">
       <label for="latinFontSelectCid1">글꼴</label>
       <select id="latinFontSelectCid1">
         <option value="default">UnifrakturMaguntia (고딕체, 기본)</option>
@@ -2846,6 +3032,8 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
         <option value="playfair">Playfair Display (모던 디스플레이체)</option>
         <option value="cursive">Herr Von Muellerhoff (필기체)</option>
       </select>
+    </div>
+      </div>
     </div>
   </div>
 
@@ -2863,8 +3051,11 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   <div class="controls-row sticky">
     <button id="transToggleLusiadas1">번역 전체 보기</button>
     <button id="myTransToggleLusiadas1">내 번역 보기</button>
-    <button id="closeAllInfoLusiadas1">모든 단어 창 닫기</button>
-    <div class="latin-font-select-wrap">
+    <button id="closeAllInfoLusiadas1" aria-label="모든 단어 창 닫기"><span class="lbl-full">모든 단어 창 닫기</span><span class="lbl-short">모두 닫기</span></button>
+    <div class="font-pop">
+      <button type="button" class="font-pop-btn" aria-haspopup="true" aria-expanded="false" aria-label="글꼴 설정" title="글꼴 설정">Aa</button>
+      <div class="font-pop-panel" role="group" aria-label="글꼴 설정">
+        <div class="latin-font-select-wrap">
       <label for="latinFontSelectLusiadas1">글꼴</label>
       <select id="latinFontSelectLusiadas1">
         <option value="default">UnifrakturMaguntia (고딕체, 기본)</option>
@@ -2878,6 +3069,8 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
         <option value="playfair">Playfair Display (모던 디스플레이체)</option>
         <option value="cursive">Herr Von Muellerhoff (필기체)</option>
       </select>
+    </div>
+      </div>
     </div>
   </div>
 
@@ -2895,8 +3088,11 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   <div class="controls-row sticky">
     <button id="transToggleSanguo1">번역 전체 보기</button>
     <button id="myTransToggleSanguo1">내 번역 보기</button>
-    <button id="closeAllInfoSanguo1">모든 단어 창 닫기</button>
-    <div class="chinese-font-select-wrap">
+    <button id="closeAllInfoSanguo1" aria-label="모든 단어 창 닫기"><span class="lbl-full">모든 단어 창 닫기</span><span class="lbl-short">모두 닫기</span></button>
+    <div class="font-pop">
+      <button type="button" class="font-pop-btn" aria-haspopup="true" aria-expanded="false" aria-label="글꼴 설정" title="글꼴 설정">Aa</button>
+      <div class="font-pop-panel" role="group" aria-label="글꼴 설정">
+        <div class="chinese-font-select-wrap">
       <label for="chineseFontSelect1">글꼴</label>
       <select id="chineseFontSelect1">
         <option value="default">Noto Serif SC (표준 세리프, 기본)</option>
@@ -2908,6 +3104,8 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
         <option value="liujian">Liu Jian Mao Cao (부드러운 필기체)</option>
         <option value="zcoolqingke">ZCOOL QingKe HuangYou (둥근 고딕)</option>
       </select>
+    </div>
+      </div>
     </div>
   </div>
 
@@ -3439,12 +3637,63 @@ function normalizeChapterData(data, ctxLabel) {
 // 다시 요청하지 않는다. 로드 직후 normalizeChapterData로 필드 타입을 정리해,
 // 원본 데이터에 스펙과 다른 타입(예: principalParts가 배열)이 섞여 있어도
 // 렌더링 단계에서 죽지 않게 한다.
+/* ---------- 정보 추가: 내가 직접 넣거나 고친 행 (localStorage 'userLines') ----------
+   구조: { [dataVar 또는 'draft:작품:권']: { [ref]: { ref, trans, words } } }
+   원본 data/*.js 는 건드리지 않고, 챕터를 불러올 때 같은 ref는 내 것으로 바꿔 끼우고
+   없는 ref는 행 번호 순서에 맞게 끼워 넣는다. */
+const USER_LINES_KEY = 'userLines';
+const __baseLines = {};
+function loadUserLines() { try { return JSON.parse(localStorage.getItem(USER_LINES_KEY) || '{}') || {}; } catch (e) { return {}; } }
+function saveUserLines(o) { try { localStorage.setItem(USER_LINES_KEY, JSON.stringify(o)); return true; } catch (e) { return false; } }
+function refLineNo(ref) { const m = String(ref || '').match(/(\d+)\s*$/); return m ? parseInt(m[1], 10) : NaN; }
+function mergeUserLines(base, storeKey) {
+  const mine = loadUserLines()[storeKey];
+  if (!mine) return base;
+  const refs = Object.keys(mine);
+  if (!refs.length) return base;
+  const out = base.slice();
+  const at = new Map(out.map((l, i) => [l.ref, i]));
+  const added = [];
+  refs.forEach(r => {
+    const l = mine[r];
+    if (!l || !Array.isArray(l.words)) return;
+    if (at.has(r)) out[at.get(r)] = l; else added.push(l);
+  });
+  added.sort((a, b) => refLineNo(a.ref) - refLineNo(b.ref));
+  added.forEach(l => {
+    const n = refLineNo(l.ref);
+    let pos = out.length;
+    for (let i = 0; i < out.length; i++) {
+      const m = refLineNo(out[i].ref);
+      if (!isNaN(m) && !isNaN(n) && m > n) { pos = i; break; }
+    }
+    out.splice(pos, 0, l);
+  });
+  return out;
+}
+// 백업을 '병합'으로 가져올 때: 같은 행이 양쪽에 있으면 내용이 더 많은 쪽을 남긴다
+function mergeUserLinesStore(existing, incoming) {
+  let a = {}, b = {};
+  try { a = JSON.parse(existing || '{}') || {}; } catch (e) { a = {}; }
+  try { b = JSON.parse(incoming || '{}') || {}; } catch (e) { return existing; }
+  Object.keys(b).forEach(k => {
+    a[k] = a[k] || {};
+    Object.keys(b[k] || {}).forEach(r => {
+      const cur = a[k][r], inc = b[k][r];
+      if (!cur || JSON.stringify(inc).length > JSON.stringify(cur).length) a[k][r] = inc;
+    });
+  });
+  return JSON.stringify(a);
+}
+
 async function loadChapterData(varName) {
   if (window[varName]) return window[varName];
   const fileId = CHAPTER_DATA_IDS[varName];
   if (!fileId) throw new Error('알 수 없는 데이터 변수: ' + varName);
   const raw = await loadChapterScript(fileId);
-  window[varName] = normalizeChapterData(raw, varName);
+  const base = normalizeChapterData(raw, varName);
+  __baseLines[varName] = base;
+  window[varName] = mergeUserLines(base, varName);
   return window[varName];
 }
 
@@ -5798,7 +6047,7 @@ function importAllData(file) {
     const SKIP = ['theme', 'galleryBg', 'lastBackupAt'];
     try {
       if (merge) {
-        Object.keys(data).forEach(key => { if (SKIP.indexOf(key) < 0) localStorage.setItem(key, mergeStored(localStorage.getItem(key), data[key])); });
+        Object.keys(data).forEach(key => { if (SKIP.indexOf(key) < 0) localStorage.setItem(key, key === USER_LINES_KEY ? mergeUserLinesStore(localStorage.getItem(key), data[key]) : mergeStored(localStorage.getItem(key), data[key])); });
       } else {
         localStorage.clear();
         Object.keys(data).forEach(key => localStorage.setItem(key, data[key]));
@@ -6182,6 +6431,356 @@ function goToLine(viewId, idx) {
   window.addEventListener('scroll', () => { if (!tick) { tick = true; setTimeout(save, 1000); } }, { passive: true });
 })();
 
+// 헤더 '더보기' 메뉴 + 컨트롤 바 글꼴 팝오버 (바깥을 누르거나 Esc로 닫힘)
+(function () {
+  const more = document.getElementById('navMore'), moreBtn = document.getElementById('navMoreBtn');
+  function setMore(o) { if (!more || !moreBtn) return; more.classList.toggle('open', o); moreBtn.setAttribute('aria-expanded', String(o)); }
+  function closeFontPops(except) {
+    document.querySelectorAll('.font-pop.open').forEach(p => {
+      if (p === except) return;
+      p.classList.remove('open');
+      const b = p.querySelector('.font-pop-btn'); if (b) b.setAttribute('aria-expanded', 'false');
+    });
+  }
+  document.addEventListener('click', e => {
+    const t = e.target;
+    const mb = t.closest && t.closest('#navMoreBtn');
+    if (mb) { closeFontPops(); setMore(!more.classList.contains('open')); return; }
+    if (more && more.classList.contains('open') && (!t.closest('.nav-more-menu') || t.closest('button, label'))) setMore(false);
+    const fb = t.closest && t.closest('.font-pop-btn');
+    if (fb) {
+      const pop = fb.closest('.font-pop'); const o = !pop.classList.contains('open');
+      closeFontPops(pop); pop.classList.toggle('open', o); fb.setAttribute('aria-expanded', String(o));
+      return;
+    }
+    if (!(t.closest && t.closest('.font-pop-panel'))) closeFontPops();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    if (more && more.classList.contains('open')) { setMore(false); if (moreBtn) moreBtn.focus(); }
+    const open = document.querySelector('.font-pop.open');
+    if (open) { closeFontPops(); const b = open.querySelector('.font-pop-btn'); if (b) b.focus(); }
+  });
+})();
+
+// 정보 추가: 작품·권·행을 고르고, 원문을 넣고, 단어마다 정보를 채워 저장한다
+(function setupAddInfo() {
+  const $ = id => document.getElementById(id);
+  const ov = $('aiOverlay'); if (!ov) return;
+  const WORKS = [
+    { key: 'iliad',    label: '일리아드',        unit: '권',     max: 24,  prefix: 'Iliad ',          sep: '.' },
+    { key: 'meta',     label: '변신 이야기',     unit: '권',     max: 15,  prefix: 'Metamorphoses ',  sep: '.' },
+    { key: 'genesis',  label: '창세기',          unit: '장',     max: 50,  prefix: '창세기 ',         sep: ':' },
+    { key: 'cid',      label: '엘 시드의 노래',  unit: '칸타르', max: 3,   prefix: 'Cid ',            sep: '.' },
+    { key: 'lusiadas', label: '우스 루지아다스', unit: '권',     max: 10,  prefix: 'Lusiadas ',       sep: '.' },
+    { key: 'sanguo',   label: '삼국지연의',      unit: '회',     max: 120, prefix: '삼국지연의 ',     sep: '回.' }
+  ];
+  const byKey = {}; WORKS.forEach(w => { byKey[w.key] = w; });
+  const F = {
+    g: { label: '원문 형태 (g)' }, pos: { label: '품사' }, lemma: { label: '표제어 (lemma)', wide: 1 }, root: { label: '어근 (root)', wide: 1 },
+    principalParts: { label: '주요형 (동사)', wide: 1 }, parse: { label: '문법 분석 (parse)', wide: 1 },
+    gloss_kr: { label: '한국어 뜻' }, gloss_en: { label: '영어 뜻' },
+    syntax: { label: '구문 역할', wide: 1, area: 1 }, background: { label: '배경', wide: 1, area: 1 }, etymology: { label: '어원', wide: 1, area: 1 },
+    pinyin: { label: '병음 (pinyin)' }, kr_reading: { label: '훈음' }, meaning: { label: '의미', wide: 1 }, simplified: { label: '간체자' }
+  };
+  const selWork = $('aiWork'), inBook = $('aiBook'), inLine = $('aiLine'), dlBook = $('aiBookList'), dlLine = $('aiLineList'),
+        statusEl = $('aiStatus'), src = $('aiSrc'), trans = $('aiTrans'), wordsEl = $('aiWords'), countEl = $('aiWordCount'),
+        btnDel = $('aiDelete'), btnSave = $('aiSave'), btnCopy = $('aiCopy'), btnSplit = $('aiSplit'), btnAll = $('aiToggleAll'), btnAdd = $('aiAddWord');
+  WORKS.forEach(w => { const o = document.createElement('option'); o.value = w.key; o.textContent = w.label; selWork.appendChild(o); });
+
+  const S = { work: WORKS[0], book: NaN, line: NaN, ch: null, storeKey: '', lines: [], target: null, ref: '', isUser: false, words: [], dirty: false, token: 0, loading: false };
+
+  const chFor = (wk, b) => STUDY_CHAPTERS.find(c => c.workKey === wk && c.book === b) || null;
+  const joiner = () => (S.work.key === 'sanguo' ? '' : ' ');
+  function fieldKeys() {
+    if (S.work.key === 'sanguo') return ['g', 'pos', 'lemma', 'pinyin', 'kr_reading', 'syntax', 'meaning', 'background', 'etymology', 'simplified'];
+    const k = ['g', 'pos', 'lemma'];
+    if (S.work.key === 'genesis') k.push('root');
+    if (S.work.key === 'iliad' || S.work.key === 'meta') k.push('principalParts');
+    return k.concat(['parse', 'gloss_kr', 'gloss_en', 'syntax', 'background', 'etymology']);
+  }
+  function setStatus(msg, linkLabel, linkFn) {
+    statusEl.textContent = msg || '';
+    if (linkLabel) {
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'ai-link'; b.textContent = linkLabel;
+      b.addEventListener('click', linkFn); statusEl.appendChild(b);
+    }
+  }
+  const lineNos = () => S.lines.map(l => refLineNo(l.ref)).filter(n => !isNaN(n));
+  function refFor(n) {   // 기존 행의 ref 모양을 따라 만들고, 없으면 작품별 기본 규칙
+    const sample = S.lines.find(l => /^(.*?)(\d+)(\D+)(\d+)$/.test(l.ref || ''));
+    if (sample) { const m = sample.ref.match(/^(.*?)(\d+)(\D+)(\d+)$/); return m[1] + S.book + m[3] + n; }
+    return S.work.prefix + S.book + S.work.sep + n;
+  }
+
+  async function loadLines() {
+    const tok = ++S.token;
+    S.ch = chFor(S.work.key, S.book);
+    S.storeKey = S.ch ? S.ch.dataVar : 'draft:' + S.work.key + ':' + S.book;
+    let arr;
+    if (S.ch) {
+      try { arr = await loadChapterData(S.ch.dataVar); } catch (e) { arr = []; }
+    } else {
+      const d = loadUserLines()[S.storeKey] || {};
+      arr = Object.keys(d).map(r => d[r]).sort((a, b) => refLineNo(a.ref) - refLineNo(b.ref));
+    }
+    if (tok !== S.token) return false;
+    S.lines = arr;
+    dlLine.textContent = '';
+    lineNos().forEach(n => { const o = document.createElement('option'); o.value = String(n); dlLine.appendChild(o); });
+    return true;
+  }
+  function setBookList() {
+    dlBook.textContent = '';
+    for (let i = 1; i <= S.work.max; i++) {
+      const o = document.createElement('option'); o.value = String(i);
+      if (chFor(S.work.key, i)) o.label = '있음';
+      dlBook.appendChild(o);
+    }
+    $('aiBookLbl').textContent = S.work.unit;
+    const rtl = S.work.key === 'genesis' ? 'rtl' : 'auto';
+    src.dir = rtl;
+  }
+
+  function fillForm(line) {
+    S.words = line ? JSON.parse(JSON.stringify(line.words || [])) : [];
+    src.value = S.words.map(w => w.g || '').join(joiner());
+    trans.value = line ? (line.trans || '') : '';
+    S.dirty = false;
+    renderWords();
+  }
+  function paintSummary(d, i) {
+    const w = S.words[i];
+    d.querySelector('.n').textContent = String(i + 1);
+    d.querySelector('.g').textContent = w.g || '—';
+    d.querySelector('small').textContent = [w.pos, w.gloss_kr || w.meaning].filter(Boolean).join(' · ');
+  }
+  function renderWords() {
+    wordsEl.textContent = '';
+    countEl.textContent = '단어 ' + S.words.length + '개';
+    if (!S.words.length) {
+      const p = document.createElement('p'); p.className = 'ai-empty';
+      p.textContent = '원문을 붙여넣고 ‘단어로 나누기’를 누르면 단어마다 입력칸이 만들어져요.';
+      wordsEl.appendChild(p); return;
+    }
+    const keys = fieldKeys();
+    S.words.forEach((w, i) => {
+      const d = document.createElement('details'); d.className = 'ai-w'; d.dataset.i = String(i);
+      if (w._open) d.open = true;
+      const sm = document.createElement('summary');
+      sm.innerHTML = '<span class="n"></span><span class="g"></span><small></small>';
+      d.appendChild(sm);
+      const grid = document.createElement('div'); grid.className = 'ai-wf';
+      keys.forEach(k => {
+        const meta = F[k];
+        const lab = document.createElement('label'); lab.className = 'ai-f' + (meta.wide ? ' wide' : '');
+        const sp = document.createElement('span'); sp.textContent = meta.label; lab.appendChild(sp);
+        const el = document.createElement(meta.area ? 'textarea' : 'input');
+        if (meta.area) el.rows = 3; else el.type = 'text';
+        el.dataset.k = k; el.value = w[k] == null ? '' : String(w[k]);
+        el.spellcheck = false; el.autocomplete = 'off';
+        if (S.work.key === 'genesis' && (k === 'g' || k === 'lemma' || k === 'root')) el.dir = 'rtl';
+        lab.appendChild(el); grid.appendChild(lab);
+      });
+      d.appendChild(grid);
+      const tools = document.createElement('div'); tools.className = 'ai-wtools';
+      [['up', '↑ 위로'], ['down', '↓ 아래로'], ['del', '삭제']].forEach(([act, label]) => {
+        const b = document.createElement('button'); b.type = 'button'; b.className = 'ai-link'; b.dataset.act = act; b.textContent = label;
+        if (act === 'del') b.style.color = 'var(--bad)';
+        tools.appendChild(b);
+      });
+      d.appendChild(tools);
+      wordsEl.appendChild(d);
+      paintSummary(d, i);
+    });
+  }
+  const syncSrc = () => { src.value = S.words.map(w => w.g || '').join(joiner()); };
+
+  function refresh(keepForm) {
+    if (S.loading) { setStatus('불러오는 중…'); return; }
+    const n = parseInt(inLine.value, 10);
+    S.line = n > 0 ? n : NaN;
+    S.target = null; S.ref = ''; S.isUser = false;
+    btnSave.disabled = true; btnCopy.disabled = true; btnDel.hidden = true;
+    const w = S.work;
+    if (isNaN(S.book)) { setStatus(w.unit + ' 번호를 입력하거나 목록에서 고르세요.'); return; }
+    const nums = lineNos();
+    if (isNaN(S.line)) {
+      setStatus(nums.length
+        ? w.label + ' ' + S.book + w.unit + ' — 지금 ' + nums.length + '개 행이 있고 마지막은 ' + Math.max.apply(null, nums) + '행이에요. 행 번호를 고르거나 새 번호를 입력하세요.'
+        : w.label + ' ' + S.book + w.unit + ' — 아직 행이 없어요. 행 번호를 입력하세요.');
+      return;
+    }
+    const found = S.lines.find(l => refLineNo(l.ref) === S.line) || null;
+    S.target = found; S.ref = found ? found.ref : refFor(S.line);
+    S.isUser = !!((loadUserLines()[S.storeKey] || {})[S.ref]);
+    const where = w.label + ' ' + S.book + w.unit + ' ' + S.line + '행';
+    let msg, link = null;
+    if (found && S.isUser) msg = where + ' — 내가 넣거나 고친 행이에요.';
+    else if (found) msg = where + ' — 이미 있는 행이에요. 저장하면 내 수정본으로 바뀌어 보여요 (원본 파일은 그대로).';
+    else if (S.ch) msg = where + ' — 새 행이에요. 저장하면 순서에 맞게 끼워 넣어요.';
+    else msg = where + ' — 아직 화면이 없는 권이에요. 저장해 두고 ‘JSON 복사’로 꺼낼 수 있어요.';
+    btnSave.disabled = false; btnCopy.disabled = false; btnDel.hidden = !S.isUser;
+    if (!keepForm) {
+      if (!S.dirty) fillForm(found);
+      else if (found) { msg += ' 지금 입력한 내용으로 덮어써요.'; link = ['기존 내용 불러오기', () => { fillForm(found); refresh(true); }]; }
+    }
+    if (link) setStatus(msg, link[0], link[1]); else setStatus(msg);
+  }
+
+  async function onBook() {
+    const n = parseInt(inBook.value, 10);
+    S.book = n > 0 ? n : NaN;
+    if (isNaN(S.book)) { S.lines = []; S.ch = null; dlLine.textContent = ''; refresh(); return; }
+    S.loading = true; refresh();
+    const ok = await loadLines();
+    if (!ok) return;
+    S.loading = false; refresh();
+  }
+  async function onWork(reset) {
+    S.work = byKey[selWork.value];
+    setBookList();
+    if (reset) {
+      const first = STUDY_CHAPTERS.find(c => c.workKey === S.work.key);
+      inBook.value = first ? String(first.book) : '';
+      inLine.value = '';
+    }
+    await onBook();
+  }
+  let tBook = null, tLine = null;
+  selWork.addEventListener('change', () => onWork(true));
+  // change(포커스를 잃을 때)는 값이 실제로 바뀐 경우에만 다시 그린다 — 안 그러면 상태줄의 링크를 누르는 순간 링크가 지워져 클릭이 사라진다
+  const numOf = el => { const n = parseInt(el.value, 10); return n > 0 ? n : NaN; };
+  inBook.addEventListener('input', () => { clearTimeout(tBook); tBook = setTimeout(onBook, 200); });
+  inBook.addEventListener('change', () => { clearTimeout(tBook); if (!Object.is(numOf(inBook), S.book)) onBook(); });
+  inLine.addEventListener('input', () => { clearTimeout(tLine); tLine = setTimeout(() => refresh(), 150); });
+  inLine.addEventListener('change', () => { clearTimeout(tLine); if (!Object.is(numOf(inLine), S.line)) refresh(); });
+
+  // 원문 → 단어 칸
+  const PUNCT = /[\s。，、；：！？「」『』（）〈〉《》．,.;:!?()"'“”‘’—…·]/;
+  btnSplit.addEventListener('click', () => {
+    const text = src.value.normalize('NFC');
+    const tokens = S.work.key === 'sanguo' ? Array.from(text).filter(c => !PUNCT.test(c)) : text.trim().split(/\s+/).filter(Boolean);
+    const pool = {};
+    S.words.forEach(w => { (pool[w.g] = pool[w.g] || []).push(w); });
+    S.words = tokens.map(t => (pool[t] && pool[t].length ? pool[t].shift() : { g: t }));
+    if (S.words.length && !S.words.some(w => w._open)) S.words[0]._open = true;
+    S.dirty = true; renderWords();
+  });
+  src.addEventListener('input', () => { S.dirty = true; });
+  trans.addEventListener('input', () => { S.dirty = true; });
+  wordsEl.addEventListener('input', e => {
+    const el = e.target, d = el.closest('.ai-w'); if (!d || !el.dataset.k) return;
+    const i = parseInt(d.dataset.i, 10);
+    S.words[i][el.dataset.k] = el.value; S.dirty = true;
+    paintSummary(d, i);
+    if (el.dataset.k === 'g') syncSrc();
+  });
+  wordsEl.addEventListener('toggle', e => {
+    const d = e.target; if (!d.classList || !d.classList.contains('ai-w')) return;
+    S.words[parseInt(d.dataset.i, 10)]._open = d.open;
+  }, true);
+  wordsEl.addEventListener('click', e => {
+    const b = e.target.closest('[data-act]'); if (!b) return;
+    const d = b.closest('.ai-w'), i = parseInt(d.dataset.i, 10), act = b.dataset.act;
+    if (act === 'del') { S.words.splice(i, 1); }
+    else if (act === 'up' && i > 0) { const t = S.words[i]; S.words[i] = S.words[i - 1]; S.words[i - 1] = t; }
+    else if (act === 'down' && i < S.words.length - 1) { const t = S.words[i]; S.words[i] = S.words[i + 1]; S.words[i + 1] = t; }
+    else return;
+    S.dirty = true; syncSrc(); renderWords();
+  });
+  btnAdd.addEventListener('click', () => {
+    S.words.push({ g: '', _open: true }); S.dirty = true; renderWords();
+    const last = wordsEl.querySelector('.ai-w:last-child [data-k="g"]'); if (last) { last.focus(); last.scrollIntoView({ block: 'center' }); }
+  });
+  btnAll.addEventListener('click', () => {
+    const ds = wordsEl.querySelectorAll('.ai-w'); if (!ds.length) return;
+    const open = Array.from(ds).some(d => !d.open);
+    ds.forEach(d => { d.open = open; });
+    btnAll.textContent = open ? '모두 접기' : '모두 펼치기';
+  });
+
+  // 저장 / 복사 / 삭제
+  function buildLine() {
+    const keys = fieldKeys();
+    const words = S.words.filter(w => (w.g || '').trim()).map(w => {
+      const o = {};
+      keys.forEach(k => { const v = (w[k] == null ? '' : String(w[k])).trim(); if (v || k === 'g') o[k] = v; });
+      Object.keys(w).forEach(k => { if (k[0] !== '_' && keys.indexOf(k) < 0 && w[k] !== '' && w[k] != null) o[k] = w[k]; });   // 화면에 없는 기존 필드(freq_prose 등)는 그대로 보존
+      return o;
+    });
+    return { ref: S.ref, trans: trans.value.trim(), words };
+  }
+  function applyToChapter() {
+    const ch = S.ch; if (!ch) return;
+    const base = __baseLines[ch.dataVar] || window[ch.dataVar]; if (!base) return;
+    window[ch.dataVar] = mergeUserLines(base, ch.dataVar);
+    if (ch.built) {
+      buildLines(window[ch.dataVar], ch.containerId, ch.showTrans, ch.showMyTrans, ch.workKey, ch.book);
+      if (window.__updateCurLine) requestAnimationFrame(window.__updateCurLine);
+    }
+    qsIndex = null;   // 빠른 검색 색인을 다시 만들게 함
+  }
+  function gotoLine() {
+    const ch = S.ch; if (!ch) return;
+    const ref = S.ref; window.closeAddInfo();
+    showStudyView(ch.viewId, true);
+    let tries = 0;
+    (function go() {
+      const arr = window[ch.dataVar], idx = arr ? arr.findIndex(l => l.ref === ref) : -1;
+      const el = idx >= 0 && ch.built ? document.getElementById(ch.containerId + '-line-' + idx) : null;
+      if (el) el.scrollIntoView({ block: 'center' }); else if (tries++ < 40) setTimeout(go, 75);
+    })();
+  }
+  btnSave.addEventListener('click', async () => {
+    if (!S.ref) return;
+    const line = buildLine();
+    if (!line.words.length) { setStatus('단어를 하나 이상 넣어 주세요. 원문을 붙여넣고 ‘단어로 나누기’를 누르세요.'); return; }
+    const store = loadUserLines();
+    (store[S.storeKey] = store[S.storeKey] || {})[S.ref] = line;
+    if (!saveUserLines(store)) { setStatus('저장하지 못했어요. 브라우저 저장 공간을 확인해 주세요.'); return; }
+    S.dirty = false;
+    applyToChapter();
+    await loadLines();
+    refresh(true);
+    setStatus('저장했어요. ' + (S.ch ? '' : '이 권은 아직 화면이 없어서 보관만 돼요. '), S.ch ? '화면에서 보기' : null, gotoLine);
+  });
+  function copyText(t) {
+    const fallback = () => { const ta = document.createElement('textarea'); ta.value = t; ta.style.cssText = 'position:fixed;opacity:0'; document.body.appendChild(ta); ta.select(); let ok = false; try { ok = document.execCommand('copy'); } catch (e) {} ta.remove(); return ok; };
+    if (navigator.clipboard && navigator.clipboard.writeText) return navigator.clipboard.writeText(t).then(() => true).catch(fallback);
+    return Promise.resolve(fallback());
+  }
+  btnCopy.addEventListener('click', async () => {
+    const line = buildLine();
+    if (!line.words.length) { setStatus('복사할 단어가 없어요.'); return; }
+    const ok = await copyText(JSON.stringify(line));
+    setStatus(ok ? 'JSON을 복사했어요. data 파일의 배열에 이어 붙이면 돼요.' : '복사하지 못했어요.');
+  });
+  btnDel.addEventListener('click', async () => {
+    if (!S.isUser) return;
+    const inBase = S.ch && (__baseLines[S.ch.dataVar] || []).some(l => l.ref === S.ref);
+    if (!confirm('내가 넣은 이 행의 내용을 지울까요? ' + (inBase ? '(원본 행으로 돌아가요)' : '(이 행이 사라져요)'))) return;
+    const store = loadUserLines();
+    if (store[S.storeKey]) { delete store[S.storeKey][S.ref]; if (!Object.keys(store[S.storeKey]).length) delete store[S.storeKey]; }
+    saveUserLines(store);
+    applyToChapter(); await loadLines(); S.dirty = false; refresh();
+  });
+
+  // 열기 / 닫기
+  window.openAddInfo = async function () {
+    ov.classList.add('show'); document.documentElement.style.overflow = 'hidden';
+    const act = document.querySelector('.view.active');
+    const ch = act ? STUDY_CHAPTERS.find(c => c.viewId === act.id) : null;
+    if (ch) { selWork.value = ch.workKey; inBook.value = String(ch.book); }
+    if (!S.dirty) { inLine.value = ''; fillForm(null); }
+    await onWork(false);
+    if (!(window.matchMedia && matchMedia('(pointer: coarse)').matches)) inLine.focus();
+  };
+  window.closeAddInfo = function () { ov.classList.remove('show'); document.documentElement.style.overflow = ''; };
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && ov.classList.contains('show')) window.closeAddInfo(); });
+  window.__aiState = S;
+})();
+
 // 헤더에 지금 읽는 행을 작게 표시 (행 이동 버튼과 겹치지 않도록 왼쪽 로고 옆에 둔다)
 (function () {
   const el = document.getElementById('curLine'); if (!el) return;
@@ -6218,7 +6817,7 @@ async function peekChapter(c, fn) {
   const out = fn(arr);
   if (!wasLoaded && !c.built) {   // 열어 보지 않은 권은 메모리에서 되돌려 놓는다
     const id = CHAPTER_DATA_IDS[c.dataVar];
-    try { delete window[c.dataVar]; delete window.__RAW_CHAPTER_DATA[id]; delete __chapterScriptPromises[id]; } catch (e) {}
+    try { delete window[c.dataVar]; delete __baseLines[c.dataVar]; delete window.__RAW_CHAPTER_DATA[id]; delete __chapterScriptPromises[id]; } catch (e) {}
     document.querySelectorAll('script[src="data/' + id + '.js"]').forEach(n => n.remove());
   }
   return out;
