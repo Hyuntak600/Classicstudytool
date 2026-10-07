@@ -2469,6 +2469,22 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   #aiQMsg { margin: 8px 10px 10px; white-space: pre-wrap; }
   .ai-qsend input[type=text], .ai-qsend input[type=password], .ai-qsend input[type=number] { box-sizing: border-box; margin: 0; padding: 7px 8px; font-family: var(--sans); font-size: 14px; color: var(--text-main); background: var(--card-bg); border: 0.5px solid var(--border); border-radius: 6px; outline: none; }
   .ai-qsend input.ai-gem { flex: 1 1 9em; min-width: 0; }
+  /* 정보 추가: 보조 설정은 접어 두고 자동 코딩 버튼만 눈에 띄게 */
+  .ai-sub { margin: 8px 10px 0; border-top: 0.5px solid var(--border-soft); }
+  .ai-sub > summary { list-style: none; cursor: pointer; padding: 10px 2px; font-size: 12.5px; font-weight: 600; color: var(--text-sub); }
+  .ai-sub > summary::-webkit-details-marker { display: none; }
+  .ai-sub > summary::before { content: "▸"; display: inline-block; width: 1.1em; color: var(--text-faint); }
+  .ai-sub[open] > summary::before { content: "▾"; }
+  .ai-sub > summary small { font-weight: 400; color: var(--text-faint); }
+  .ai-sub .ai-qsend { padding: 0 0 10px; }
+  .ai-sub .ai-wide { margin: 0 0 8px; }
+  .ai-main-act { padding-bottom: 2px; }
+  .ai-main-act .ai-btn { flex: 1 1 auto; padding: 11px 14px; font-size: 14px; }
+  .ai-manual > summary::before { content: "▸"; display: inline-block; width: 1.1em; color: var(--text-faint); }
+  .ai-manual[open] > summary::before { content: "▾"; }
+  .ai-manual-body { padding: 0 12px 12px; }
+  .ai-manual-body .ai-wide:first-child { margin-top: 0; }
+  .ai-card:has(#aiManual:not([open])) .ai-foot { display: none; }
   @media (max-width: 640px) { .ai-qsend input { font-size: 16px; } }
   @media (max-width: 640px) { .ai-q input.qn { font-size: 16px; } }
   @media (max-width: 640px) {
@@ -2645,46 +2661,67 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
       </div>
       <p class="ai-status" id="aiStatus" aria-live="polite"></p>
       <details class="ai-bulk" open>
-        <summary>일괄 입력 <small>— 한 줄 쓰고 Enter = 한 행 확정 · 여러 줄 붙여넣기 가능</small></summary>
+        <summary>일괄 입력 <small>— 여러 줄 붙여넣기 가능 · 줄 앞 번호는 행 번호로 읽어요</small></summary>
         <div class="ai-qtools"><button type="button" class="ai-link" id="aiAutoFailed">실패한 행만 다시</button><button type="button" class="ai-link" id="aiQDone">저장된 행 치우기</button><button type="button" class="ai-link" id="aiQClear">목록 비우기</button></div>
         <div id="aiQ"></div>
-        <div class="ai-qsend">
-          <label class="ai-chk"><input type="checkbox" id="aiQWithSpec" checked> 규칙 전문 포함</label>
-          <button type="button" class="ai-btn ai-primary" id="aiQCopy">Claude에게 보낼 요청 복사</button>
-          <button type="button" class="ai-link" id="aiQSpecPick">규칙 파일 직접 선택</button>
-          <input type="file" id="aiQSpecFile" accept=".md,.txt,text/markdown,text/plain" hidden>
-        </div>
-        <label class="ai-f ai-wide"><span>Claude가 돌려준 JSON 가져오기</span><textarea id="aiImp" rows="3" spellcheck="false" placeholder="Claude의 답에 있는 JSON(코드블록째 붙여넣어도 돼요)"></textarea></label>
-        <div class="ai-qsend">
-          <label class="ai-chk"><input type="checkbox" id="aiImpOver"> 같은 번호는 덮어쓰기</label>
-          <button type="button" class="ai-btn ai-primary" id="aiImpGo">가져와서 저장</button>
-        </div>
-        <div class="ai-qsend">
-          <input type="password" id="aiGemKey" class="ai-gem" placeholder="Gemini API 키" autocomplete="off" spellcheck="false">
-          <input type="text" id="aiGemModel" class="ai-gem" placeholder="모델 이름" autocomplete="off" spellcheck="false">
-          <label class="ai-chk">간격 <input type="number" id="aiGemGap" min="1" max="120" style="width:3.6em"> 초</label>
-          <label class="ai-chk"><input type="checkbox" id="aiGemSoft" checked> 문장 수 미달이어도 저장</label>
-          <label class="ai-chk"><input type="checkbox" id="aiGemCtx" checked> 앞 2행 참고</label>
-          <label class="ai-chk" id="aiGemAutoFileL" hidden><input type="checkbox" id="aiGemAutoFile" checked> 10행마다 data 폴더에 저장</label>
+        <div class="ai-qsend ai-main-act">
           <button type="button" class="ai-btn ai-primary" id="aiAutoGo">자동 코딩 시작</button>
         </div>
-        <div class="ai-qsend">
-          <span class="ai-chk">이 권을 data 파일로:</span>
-          <button type="button" class="ai-btn" id="aiExpSave" hidden>data 폴더에 바로 저장</button>
-          <button type="button" class="ai-btn" id="aiExpDl">.js 다운로드</button>
-          <button type="button" class="ai-link" id="aiExpJson">.json 다운로드</button>
-          <button type="button" class="ai-link ai-danger" id="aiMineClear">내 수정본 비우기</button>
-        </div>
         <p class="ai-status" id="aiQMsg" aria-live="polite"></p>
+
+        <details class="ai-sub">
+          <summary>자동 코딩 설정</summary>
+          <div class="ai-qsend">
+            <input type="password" id="aiGemKey" class="ai-gem" placeholder="Gemini API 키" autocomplete="off" spellcheck="false">
+            <input type="text" id="aiGemModel" class="ai-gem" placeholder="모델 이름" autocomplete="off" spellcheck="false">
+            <label class="ai-chk">간격 <input type="number" id="aiGemGap" min="1" max="120" style="width:3.6em"> 초</label>
+          </div>
+          <div class="ai-qsend">
+            <label class="ai-chk"><input type="checkbox" id="aiGemCtx" checked> 앞 2행 참고</label>
+            <label class="ai-chk"><input type="checkbox" id="aiGemSoft" checked> 문장 수 미달이어도 저장</label>
+            <label class="ai-chk" id="aiGemAutoFileL" hidden><input type="checkbox" id="aiGemAutoFile" checked> 10행마다 data 폴더에 저장</label>
+          </div>
+        </details>
+
+        <details class="ai-sub">
+          <summary>Claude에게 맡기기 <small>— 요청 복사 · 답 JSON 가져오기</small></summary>
+          <div class="ai-qsend">
+            <button type="button" class="ai-btn ai-primary" id="aiQCopy">Claude에게 보낼 요청 복사</button>
+            <label class="ai-chk"><input type="checkbox" id="aiQWithSpec" checked> 규칙 전문 포함</label>
+            <button type="button" class="ai-link" id="aiQSpecPick">규칙 파일 직접 선택</button>
+            <input type="file" id="aiQSpecFile" accept=".md,.txt,text/markdown,text/plain" hidden>
+          </div>
+          <label class="ai-f ai-wide"><span>Claude가 돌려준 JSON</span><textarea id="aiImp" rows="3" spellcheck="false" placeholder="Claude의 답에 있는 JSON(코드블록째 붙여넣어도 돼요)"></textarea></label>
+          <div class="ai-qsend">
+            <button type="button" class="ai-btn ai-primary" id="aiImpGo">가져와서 저장</button>
+            <label class="ai-chk"><input type="checkbox" id="aiImpOver"> 같은 번호는 덮어쓰기</label>
+          </div>
+        </details>
+
+        <details class="ai-sub">
+          <summary>이 권을 data 파일로 내보내기</summary>
+          <div class="ai-qsend">
+            <button type="button" class="ai-btn" id="aiExpSave" hidden>data 폴더에 바로 저장</button>
+            <button type="button" class="ai-btn" id="aiExpDl">.js 다운로드</button>
+            <button type="button" class="ai-link" id="aiExpJson">.json 다운로드</button>
+            <button type="button" class="ai-link ai-danger" id="aiMineClear">내 수정본 비우기</button>
+          </div>
+        </details>
       </details>
-      <label class="ai-f ai-wide"><span>원문</span><textarea id="aiSrc" class="ai-src" rows="3" spellcheck="false" placeholder="이 행의 원문을 그대로 붙여넣으세요"></textarea></label>
-      <div class="ai-row"><button type="button" class="ai-btn" id="aiSplit">단어로 나누기</button></div>
-      <label class="ai-f ai-wide"><span>번역 (행 전체)</span><textarea id="aiTrans" rows="2" spellcheck="false" placeholder="이 행 전체의 한국어 번역"></textarea></label>
-      <div class="ai-words-head">
-        <span id="aiWordCount">단어 0개</span>
-        <span class="ai-words-tools"><button type="button" class="ai-link" id="aiToggleAll">모두 펼치기</button><button type="button" class="ai-link" id="aiAddWord">+ 단어 추가</button></span>
-      </div>
-      <div id="aiWords"></div>
+
+      <details class="ai-bulk ai-manual" id="aiManual">
+        <summary>한 행씩 직접 입력·수정</summary>
+        <div class="ai-manual-body">
+          <label class="ai-f ai-wide"><span>원문</span><textarea id="aiSrc" class="ai-src" rows="3" spellcheck="false" placeholder="이 행의 원문을 그대로 붙여넣으세요"></textarea></label>
+          <div class="ai-row"><button type="button" class="ai-btn" id="aiSplit">단어로 나누기</button></div>
+          <label class="ai-f ai-wide"><span>번역 (행 전체)</span><textarea id="aiTrans" rows="2" spellcheck="false" placeholder="이 행 전체의 한국어 번역"></textarea></label>
+          <div class="ai-words-head">
+            <span id="aiWordCount">단어 0개</span>
+            <span class="ai-words-tools"><button type="button" class="ai-link" id="aiToggleAll">모두 펼치기</button><button type="button" class="ai-link" id="aiAddWord">+ 단어 추가</button></span>
+          </div>
+          <div id="aiWords"></div>
+        </div>
+      </details>
     </div>
     <div class="ai-foot">
       <button type="button" class="ai-btn ai-danger" id="aiDelete" hidden>내 항목 삭제</button>
@@ -3701,7 +3738,18 @@ const USER_LINES_KEY = 'userLines';
 const __baseLines = {};
 function loadUserLines() { try { return JSON.parse(localStorage.getItem(USER_LINES_KEY) || '{}') || {}; } catch (e) { return {}; } }
 function saveUserLines(o) { try { localStorage.setItem(USER_LINES_KEY, JSON.stringify(o)); return true; } catch (e) { return false; } }
-function refLineNo(ref) { const m = String(ref || '').match(/(\d+)\s*$/); return m ? parseInt(m[1], 10) : NaN; }
+function refLineNo(ref) { const m = String(ref || '').match(/(\d+)(?:\s*[-–]\s*\d+)?\s*$/); return m ? parseInt(m[1], 10) : NaN; }  // 앞 글자(작품·권 표기)가 틀려도 행 번호만 읽는다. 323-4 같은 합친 행은 323
+/* ---------- 행 표기 통일 ----------
+   data 의 ref 문자열은 'Iliad 1.302', 'Metamorphoses 571', 'Verg. Aen. 2.561'처럼 앞부분(작품·권)이 제각각일 수 있다.
+   ref 원문은 메모·단어장·내 번역의 저장 키로 쓰이므로 그대로 두고, 화면에 보이는 표기만 '행 번호'를 뽑아
+   작품별 표준 양식(작품명 + 권 + 구분자 + 행)으로 다시 만들어 보여준다. 합쳐진 행(323-4)은 그대로 살린다. */
+var REF_FMT = { iliad: ['Iliad ', '.'], meta: ['Metamorphoses ', '.'], genesis: ['창세기 ', ':'], cid: ['Cid ', '.'], lusiadas: ['Lusiadas ', '.'], sanguo: ['삼국지연의 ', '回.'] };
+function fmtRef(ref, workKey, book) {
+  const f = REF_FMT[workKey], b = parseInt(book, 10);
+  if (!f || isNaN(b)) return String(ref || '');
+  const m = String(ref || '').match(/(\d+(?:\s*[-–]\s*\d+)?)\s*$/);
+  return m ? f[0] + b + f[1] + m[1].replace(/\s+/g, '') : String(ref || '');
+}
 function mergeUserLines(base, storeKey) {
   const mine = loadUserLines()[storeKey];
   if (!mine) return base;
@@ -4000,7 +4048,7 @@ function buildLines(linesArr, containerId, showTransRef, showMyTransRef, workKey
   function fillLine(block, line, idx) {
     const ref = document.createElement('div');
     ref.className = 'line-ref';
-    ref.textContent = line.ref;
+    ref.textContent = fmtRef(line.ref, workKey, book);
     block.appendChild(ref);
 
     const greekLine = document.createElement('div');
@@ -4194,12 +4242,12 @@ function buildLines(linesArr, containerId, showTransRef, showMyTransRef, workKey
   }
   container.appendChild(frag);
   shells.forEach(blk => { hydIO.observe(blk); dehIO.observe(blk); });
-  buildJumpNav(containerId, linesArr);
+  buildJumpNav(containerId, linesArr, workKey, book);
 }
 
 // 행이 많은 챕터에서 스크롤 없이 바로 이동할 수 있도록, 화면 오른쪽에 50줄 단위로
 // 숫자 버튼을 만든다. 버튼을 누르면 해당 줄(line-block)로 스크롤 이동한다.
-function buildJumpNav(containerId, linesArr) {
+function buildJumpNav(containerId, linesArr, workKey, book) {
   const container = document.getElementById(containerId);
   if (!container) return;
   const view = container.closest('.view') || container.parentElement;
@@ -4220,7 +4268,12 @@ function buildJumpNav(containerId, linesArr) {
   for (let idx = 0; idx < linesArr.length; idx += 50) {
     const btn = document.createElement('button');
     btn.type = 'button';
-    btn.textContent = String(idx + 1); // 1-based 행 번호로 표시
+    // 표시는 '배열 순번'이 아니라 그 자리 행의 실제 번호(ref)로 한다.
+    // 빠진 행·합쳐진 행(6.323-4)이 있는 권에서는 순번과 행 번호가 어긋나기 때문이다.
+    // 앞의 작품·권 표기가 잘못 들어간 행이 있어도(예: Iliad 6권 안의 'Iliad 1.302') 끝의 행 번호만 읽는다.
+    const ln = refLineNo(linesArr[idx] && linesArr[idx].ref);
+    btn.textContent = isNaN(ln) ? String(idx + 1) : String(ln);
+    if (linesArr[idx] && linesArr[idx].ref) btn.title = fmtRef(linesArr[idx].ref, workKey, book);
     btn.addEventListener('click', () => {
       const target = document.getElementById(containerId + '-line-' + idx);
       const api = window.__lineApi && window.__lineApi[containerId];
@@ -4244,9 +4297,13 @@ function buildJumpNav(containerId, linesArr) {
     }
     buttons.forEach(({ idx, btn }) => btn.classList.toggle('active', idx === currentIdx));
   }
-  window.addEventListener('scroll', () => {
+  // 챕터를 다시 그릴 때마다 스크롤 리스너가 쌓이지 않도록 이전 것을 떼어 낸다.
+  window.__jumpScroll = window.__jumpScroll || {};
+  if (window.__jumpScroll[containerId]) window.removeEventListener('scroll', window.__jumpScroll[containerId]);
+  window.__jumpScroll[containerId] = () => {
     if (!ticking) { ticking = true; requestAnimationFrame(updateActive); }
-  }, { passive: true });
+  };
+  window.addEventListener('scroll', window.__jumpScroll[containerId], { passive: true });
   updateActive();
 }
 
@@ -4717,7 +4774,7 @@ function renderVocabWordRows(list, workKey, book) {
       '<span class="vocab-word-num">' + (i + 1) + '</span>' +
       '<button type="button" class="vocab-word-g vocab-word-toggle">' +
         '<span class="vocab-word-toggle-main"><span class="vocab-word-toggle-icon"></span>' + item.g + '</span>' +
-        '<span class="vocab-word-ref">' + item.ref + '</span>' +
+        '<span class="vocab-word-ref">' + fmtRef(item.ref, workKey, book) + '</span>' +
       '</button>' +
       '<button type="button" class="vocab-word-gloss vocab-word-toggle">' +
         '<span class="vocab-word-toggle-icon"></span><span class="vocab-word-toggle-text">' + (item.gloss_kr || '') + glossEn + '</span>' +
@@ -4811,7 +4868,7 @@ function openVocabWords(workKey, book, workLabel, chapterLabel) {
     openVocabRangePicker(list, vocabFlashRangeSelection, (selection) => {
       vocabFlashRangeSelection = selection;
       updateFlashRangeBtn();
-    });
+    }, { workKey, book });
   };
 
   vocabWordsViewState = { list, workKey, book, query: '', filter: 'all' };
@@ -4920,7 +4977,7 @@ function renderFlashModalCard() {
   document.getElementById('vocabFlashModalProgress').textContent = (s.index + 1) + ' / ' + s.list.length + ' · ' + srsStatusText(s.workKey, s.book, item, s.direction);
   document.getElementById('vocabFlashModalLabel').textContent = label;
   document.getElementById('vocabFlashModalMain').textContent = mainText;
-  document.getElementById('vocabFlashModalRef').textContent = item.ref;
+  document.getElementById('vocabFlashModalRef').textContent = fmtRef(item.ref, s.workKey, s.book);
 
   // 시험보기 화면과 같은 방식으로 답을 보여준다: k2g면 뜻도 같이, 문법 분석·주요형·원형이 있으면 같이 보여준다.
   const answerEl = document.getElementById('vocabFlashModalAnswer');
@@ -5107,10 +5164,10 @@ function vocabWordRefKey(w) { return w.ref + '::' + w.wIdx; }
 
 let vocabRangePickerState = { list: [], checked: new Set(), onConfirm: null };
 
-function openVocabRangePicker(list, currentSelection, onConfirm) {
+function openVocabRangePicker(list, currentSelection, onConfirm, ctx) {
   if (!list.length) return;
   const checked = new Set(currentSelection ? Array.from(currentSelection) : list.map(vocabWordRefKey));
-  vocabRangePickerState = { list, checked, onConfirm };
+  vocabRangePickerState = { list, checked, onConfirm, ctx: ctx || null };
   document.getElementById('vocabRangeFromInput').value = '';
   document.getElementById('vocabRangeToInput').value = '';
   renderVocabRangeList();
@@ -5138,7 +5195,7 @@ function renderVocabRangeList() {
       '<span class="vocab-range-item-num">' + (i + 1) + '</span>' +
       '<span class="vocab-range-item-g">' + item.g + '</span>' +
       '<span class="vocab-range-item-gloss">' + (item.gloss_kr || '') + glossEn + '</span>' +
-      '<span class="vocab-range-item-ref">' + item.ref + '</span>';
+      '<span class="vocab-range-item-ref">' + (vocabRangePickerState.ctx ? fmtRef(item.ref, vocabRangePickerState.ctx.workKey, vocabRangePickerState.ctx.book) : item.ref) + '</span>';
     container.appendChild(row);
   });
   container.querySelectorAll('.vocab-range-item-check').forEach(cb => {
@@ -5444,7 +5501,7 @@ function openQuizSessionDetail(workKey, book, session, sessionNum, workLabel, ch
         : '';
       const badge = wrongOnly ? '' : '<span class="quiz-detail-badge ' + (r.correct ? 'correct' : 'wrong') + '">' + (r.correct ? '✓ 맞음' : '✕ 틀림') + '</span>';
       row.innerHTML =
-        '<span class="quiz-detail-g">' + g + '<span class="quiz-detail-ref">' + r.ref + (dirLabel ? ' · ' + dirLabel : '') + '</span></span>' +
+        '<span class="quiz-detail-g">' + g + '<span class="quiz-detail-ref">' + fmtRef(r.ref, workKey, book) + (dirLabel ? ' · ' + dirLabel : '') + '</span></span>' +
         '<span class="quiz-detail-gloss">' + glossKrText + glossEn + parseLine + ppartsLine + lemmaLine + userAnswerLine + '</span>' +
         badge;
       container.appendChild(row);
@@ -5571,7 +5628,7 @@ function openVocabQuizHome(workKey, book, workLabel, chapterLabel) {
         fullList = quizRangeSelection ? allWords.filter(w => quizRangeSelection.has(vocabWordRefKey(w))) : allWords;
         updateQuizRangeBtn();
         updateQuizCountHint();
-      });
+      }, { workKey, book });
     };
 
     document.querySelectorAll('.quiz-dir-btn').forEach(btn => {
@@ -5686,7 +5743,7 @@ function renderQuizQuestion() {
   }
   document.getElementById('quizCardLabel').textContent = label;
   document.getElementById('quizCardMain').textContent = mainText;
-  document.getElementById('quizCardRef').textContent = w.ref;
+  document.getElementById('quizCardRef').textContent = fmtRef(w.ref, currentQuiz.workKey, currentQuiz.book);
 
   const answerEl = document.getElementById('quizCardAnswer');
   let answerHtml = answerText;
@@ -6714,7 +6771,7 @@ function goToLine(viewId, idx) {
   const numOf = el => { const n = parseInt(el.value, 10); return n > 0 ? n : NaN; };
   inBook.addEventListener('input', () => { clearTimeout(tBook); tBook = setTimeout(onBook, 200); });
   inBook.addEventListener('change', () => { clearTimeout(tBook); if (!Object.is(numOf(inBook), S.book)) onBook(); });
-  inLine.addEventListener('input', () => { clearTimeout(tLine); tLine = setTimeout(() => refresh(), 150); });
+  inLine.addEventListener('input', () => { if (inLine.value.trim()) $('aiManual').open = true; clearTimeout(tLine); tLine = setTimeout(() => refresh(), 150); });
   inLine.addEventListener('change', () => { clearTimeout(tLine); if (!Object.is(numOf(inLine), S.line)) refresh(); });
 
   // 원문 → 단어 칸
@@ -6892,6 +6949,7 @@ function goToLine(viewId, idx) {
     const r = Q[i], n = parseInt(r.n, 10);
     if (!(n > 0)) { setStatus('이 행의 번호를 먼저 넣어 주세요.'); return; }
     if (S.dirty && !confirm('지금 입력 중인 행이 저장되지 않았어요. 버리고 이 행으로 넘어갈까요?')) return;
+    $('aiManual').open = true;
     S.dirty = false; qi = i; inLine.value = String(n); refresh();
     const text = r.t.normalize('NFC').trim();
     if (text && src.value.trim() !== text) { src.value = text; btnSplit.click(); }
@@ -7307,7 +7365,7 @@ function goToLine(viewId, idx) {
     if (hi < 0 || !blocks[0].classList.contains('line-block')) { set(''); return; }
     while (lo < hi) { const mid = (lo + hi) >> 1; if (blocks[mid].getBoundingClientRect().bottom > 150) hi = mid; else lo = mid + 1; }
     const idx = parseInt(blocks[lo].id.split('-line-')[1], 10);
-    set(arr[idx] && arr[idx].ref ? arr[idx].ref : '');
+    set(arr[idx] && arr[idx].ref ? fmtRef(arr[idx].ref, ch.workKey, ch.book) : '');
   }
   window.addEventListener('scroll', () => { if (!tick) { tick = true; requestAnimationFrame(update); } }, { passive: true });
   window.__updateCurLine = update;
@@ -7337,8 +7395,8 @@ function openQuickSearch() {
     const idx = [];
     for (const c of STUDY_CHAPTERS) {
       try {
-        await peekChapter(c, a => a.forEach((l, i) => idx.push({ v: c.viewId, i, ref: l.ref, trans: l.trans || '',
-          hay: qsNorm(l.ref + ' ' + (l.trans || '') + ' ' + (l.words || []).map(w => (w.g || '') + ' ' + (w.lemma || '') + ' ' + (w.gloss_kr || '') + ' ' + (w.gloss_en || '')).join(' ')) })));
+        await peekChapter(c, a => a.forEach((l, i) => idx.push({ v: c.viewId, i, ref: l.ref, fr: fmtRef(l.ref, c.workKey, c.book), trans: l.trans || '',
+          hay: qsNorm(l.ref + ' ' + fmtRef(l.ref, c.workKey, c.book) + ' ' + (l.trans || '') + ' ' + (l.words || []).map(w => (w.g || '') + ' ' + (w.lemma || '') + ' ' + (w.gloss_kr || '') + ' ' + (w.gloss_en || '')).join(' ')) })));
       } catch (e) {}
     }
     qsIndex = idx; runQS(inp.value);
@@ -7354,7 +7412,7 @@ function runQS(q) {
   qsHits.forEach((e, k) => {
     const b = document.createElement('button'); b.className = 'qs-item' + (k === 0 ? ' sel' : '');
     b.innerHTML = '<div class="r"></div><div class="t"></div>';
-    b.firstChild.textContent = chLabel(e.v) + ' · ' + e.ref; b.lastChild.textContent = e.trans;
+    b.firstChild.textContent = chLabel(e.v) + ' · ' + (e.fr || e.ref); b.lastChild.textContent = e.trans;
     b.onclick = () => pickQS(e); list.appendChild(b);
   });
 }
