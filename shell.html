@@ -2448,6 +2448,29 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   .ai-wf .ai-f.wide { grid-column: 1 / -1; }
   .ai-wf .ai-f input, .ai-wf .ai-f textarea { background: var(--card-bg); }
   .ai-wtools { display: flex; justify-content: flex-end; gap: 4px; padding: 0 10px 10px; }
+  .ai-bulk { margin-top: 14px; border: 0.5px solid var(--border); border-radius: 10px; background: var(--bg); }
+  .ai-bulk > summary { list-style: none; cursor: pointer; padding: 10px 12px; font-size: 12.5px; font-weight: 600; color: var(--text-sub); }
+  .ai-bulk > summary::-webkit-details-marker { display: none; }
+  .ai-bulk > summary small { font-weight: 400; color: var(--text-faint); }
+  .ai-qtools { display: flex; justify-content: flex-end; gap: 4px; padding: 0 10px; }
+  #aiQ { padding: 4px 10px 10px; }
+  .ai-q { display: flex; align-items: center; gap: 6px; margin-top: 6px; padding: 2px; border-radius: 8px; }
+  .ai-q.on { background: var(--accent-light); }
+  .ai-q input { box-sizing: border-box; margin: 0; padding: 7px 8px; font-family: var(--sans); font-size: 14px; color: var(--text-main); background: var(--card-bg); border: 0.5px solid var(--border); border-radius: 6px; outline: none; }
+  .ai-q input:focus { border-color: var(--accent); }
+  .ai-q .qn { flex: none; width: 3.8em; text-align: center; font-variant-numeric: tabular-nums; }
+  .ai-q .qt { flex: 1; min-width: 0; font-family: var(--serif); font-size: 16px; }
+  .ai-q .qs { flex: none; min-width: 4em; font-size: 11px; text-align: center; color: var(--text-faint); }
+  .ai-q .qs.ok { color: var(--accent-dark); font-weight: 600; }
+  .ai-q .qs.warn { color: var(--bad); }
+  .ai-qsend { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 10px 10px 0; }
+  .ai-chk { display: flex; align-items: center; gap: 5px; font-size: 12.5px; color: var(--text-sub); }
+  .ai-bulk .ai-wide { margin: 14px 10px 0; }
+  #aiQMsg { margin: 8px 10px 10px; white-space: pre-wrap; }
+  .ai-qsend input[type=text], .ai-qsend input[type=password], .ai-qsend input[type=number] { box-sizing: border-box; margin: 0; padding: 7px 8px; font-family: var(--sans); font-size: 14px; color: var(--text-main); background: var(--card-bg); border: 0.5px solid var(--border); border-radius: 6px; outline: none; }
+  .ai-qsend input.ai-gem { flex: 1 1 9em; min-width: 0; }
+  @media (max-width: 640px) { .ai-qsend input { font-size: 16px; } }
+  @media (max-width: 640px) { .ai-q input.qn { font-size: 16px; } }
   @media (max-width: 640px) {
     .ai-overlay { padding: 0; align-items: stretch; }
     .ai-card { max-width: none; max-height: none; height: 100%; border: none; border-radius: 0; }
@@ -2621,6 +2644,39 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
         <label class="ai-f"><span>행</span><input id="aiLine" type="text" inputmode="numeric" list="aiLineList" autocomplete="off" placeholder="번호"><datalist id="aiLineList"></datalist></label>
       </div>
       <p class="ai-status" id="aiStatus" aria-live="polite"></p>
+      <details class="ai-bulk" open>
+        <summary>일괄 입력 <small>— 한 줄 쓰고 Enter = 한 행 확정 · 여러 줄 붙여넣기 가능</small></summary>
+        <div class="ai-qtools"><button type="button" class="ai-link" id="aiAutoFailed">실패한 행만 다시</button><button type="button" class="ai-link" id="aiQDone">저장된 행 치우기</button><button type="button" class="ai-link" id="aiQClear">목록 비우기</button></div>
+        <div id="aiQ"></div>
+        <div class="ai-qsend">
+          <label class="ai-chk"><input type="checkbox" id="aiQWithSpec" checked> 규칙 전문 포함</label>
+          <button type="button" class="ai-btn ai-primary" id="aiQCopy">Claude에게 보낼 요청 복사</button>
+          <button type="button" class="ai-link" id="aiQSpecPick">규칙 파일 직접 선택</button>
+          <input type="file" id="aiQSpecFile" accept=".md,.txt,text/markdown,text/plain" hidden>
+        </div>
+        <label class="ai-f ai-wide"><span>Claude가 돌려준 JSON 가져오기</span><textarea id="aiImp" rows="3" spellcheck="false" placeholder="Claude의 답에 있는 JSON(코드블록째 붙여넣어도 돼요)"></textarea></label>
+        <div class="ai-qsend">
+          <label class="ai-chk"><input type="checkbox" id="aiImpOver"> 같은 번호는 덮어쓰기</label>
+          <button type="button" class="ai-btn ai-primary" id="aiImpGo">가져와서 저장</button>
+        </div>
+        <div class="ai-qsend">
+          <input type="password" id="aiGemKey" class="ai-gem" placeholder="Gemini API 키" autocomplete="off" spellcheck="false">
+          <input type="text" id="aiGemModel" class="ai-gem" placeholder="모델 이름" autocomplete="off" spellcheck="false">
+          <label class="ai-chk">간격 <input type="number" id="aiGemGap" min="1" max="120" style="width:3.6em"> 초</label>
+          <label class="ai-chk"><input type="checkbox" id="aiGemSoft" checked> 문장 수 미달이어도 저장</label>
+          <label class="ai-chk"><input type="checkbox" id="aiGemCtx" checked> 앞 2행 참고</label>
+          <label class="ai-chk" id="aiGemAutoFileL" hidden><input type="checkbox" id="aiGemAutoFile" checked> 10행마다 data 폴더에 저장</label>
+          <button type="button" class="ai-btn ai-primary" id="aiAutoGo">자동 코딩 시작</button>
+        </div>
+        <div class="ai-qsend">
+          <span class="ai-chk">이 권을 data 파일로:</span>
+          <button type="button" class="ai-btn" id="aiExpSave" hidden>data 폴더에 바로 저장</button>
+          <button type="button" class="ai-btn" id="aiExpDl">.js 다운로드</button>
+          <button type="button" class="ai-link" id="aiExpJson">.json 다운로드</button>
+          <button type="button" class="ai-link ai-danger" id="aiMineClear">내 수정본 비우기</button>
+        </div>
+        <p class="ai-status" id="aiQMsg" aria-live="polite"></p>
+      </details>
       <label class="ai-f ai-wide"><span>원문</span><textarea id="aiSrc" class="ai-src" rows="3" spellcheck="false" placeholder="이 행의 원문을 그대로 붙여넣으세요"></textarea></label>
       <div class="ai-row"><button type="button" class="ai-btn" id="aiSplit">단어로 나누기</button></div>
       <label class="ai-f ai-wide"><span>번역 (행 전체)</span><textarea id="aiTrans" rows="2" spellcheck="false" placeholder="이 행 전체의 한국어 번역"></textarea></label>
@@ -4079,8 +4135,12 @@ function buildLines(linesArr, containerId, showTransRef, showMyTransRef, workKey
   function hydrate(i) {
     const b = shells[i];
     if (!b || !b.classList.contains('dehyd')) return;
+    // 화면 위쪽(이미 지나온) 행이 채워지며 높이가 바뀌면 아래 내용이 통째로 밀려 페이지가 튄다.
+    // (Safari 등 스크롤 앵커링이 없는 브라우저에서 특히 심함) → 높이 변화량만큼 스크롤을 보정한다.
+    const r0 = b.getBoundingClientRect(), above = r0.bottom <= 0, h0 = r0.height;
     b.classList.remove('dehyd'); b.style.height = '';
     fillLine(b, linesArr[i], i);
+    if (above) { const d = b.getBoundingClientRect().height - h0; if (d) window.scrollBy(0, d); }
   }
   function dehydrate(i) {
     const b = shells[i];
@@ -6597,6 +6657,7 @@ function goToLine(viewId, idx) {
   const syncSrc = () => { src.value = S.words.map(w => w.g || '').join(joiner()); };
 
   function refresh(keepForm) {
+    if (window.__aiQRefresh) window.__aiQRefresh();
     if (S.loading) { setStatus('불러오는 중…'); return; }
     const n = parseInt(inLine.value, 10);
     S.line = n > 0 ? n : NaN;
@@ -6743,6 +6804,7 @@ function goToLine(viewId, idx) {
     applyToChapter();
     await loadLines();
     refresh(true);
+    if (window.__aiQRefresh) window.__aiQRefresh();
     setStatus('저장했어요. ' + (S.ch ? '' : '이 권은 아직 화면이 없어서 보관만 돼요. '), S.ch ? '화면에서 보기' : null, gotoLine);
   });
   function copyText(t) {
@@ -6765,6 +6827,447 @@ function goToLine(viewId, idx) {
     saveUserLines(store);
     applyToChapter(); await loadLines(); S.dirty = false; refresh();
   });
+
+  // 일괄 입력: 행마다 앞에 번호 칸. 줄 끝에서 Enter → 그 행이 확정되고 다음 번호의 새 행이 열린다.
+  // 여러 줄을 붙여넣으면 번호가 이어서 붙는다. ‘코딩’을 누르면 아래 입력 폼으로 그 행이 넘어간다.
+  const qEl = $('aiQ'), QKEY = 'aiQueues';
+  let Q = [], qKey = '', qi = -1;
+  const qStore = () => { try { return JSON.parse(localStorage.getItem(QKEY) || '{}') || {}; } catch (e) { return {}; } };
+  function qSave() {
+    const s = qStore(), rows = Q.filter(r => r.t.trim());
+    if (rows.length) s[qKey] = rows; else delete s[qKey];
+    try { localStorage.setItem(QKEY, JSON.stringify(s)); } catch (e) {}
+  }
+  function qNextFrom(i) {
+    const n = i >= 0 && Q[i] ? parseInt(Q[i].n, 10) : NaN;
+    if (n > 0) return n + 1;
+    const nums = lineNos(); return nums.length ? Math.max.apply(null, nums) + 1 : 1;
+  }
+  function qTail() { if (!Q.length || Q[Q.length - 1].t.trim()) Q.push({ n: String(qNextFrom(Q.length - 1)), t: '' }); }
+  function qState(r) {
+    const n = parseInt(r.n, 10);
+    if (!(n > 0)) return ['번호 필요', 'warn'];
+    if (r.d) return ['저장됨 ✓', 'ok'];
+    if (r.f) return ['실패', 'warn'];
+    if (Q.filter(x => parseInt(x.n, 10) === n && x.t.trim()).length > 1) return ['번호 중복', 'warn'];
+    const found = S.lines.find(l => refLineNo(l.ref) === n);
+    if ((loadUserLines()[S.storeKey] || {})[found ? found.ref : refOf(n)]) return ['저장됨 ✓', 'ok'];
+    return found ? ['기존 행', ''] : (r.t.trim() ? ['새 행', ''] : ['', '']);
+  }
+  function paintQ(d, i) {
+    const st = qState(Q[i]), s = d.querySelector('.qs');
+    s.textContent = st[0]; s.className = 'qs ' + st[1];
+    d.classList.toggle('on', i === qi);
+  }
+  function qRender(focusI) {
+    qEl.textContent = '';
+    if (isNaN(S.book)) { const p = document.createElement('p'); p.className = 'ai-empty'; p.textContent = '먼저 위에서 ' + S.work.unit + ' 번호를 고르세요.'; qEl.appendChild(p); return; }
+    qTail();
+    Q.forEach((r, i) => {
+      const d = document.createElement('div'); d.className = 'ai-q'; d.dataset.i = String(i);
+      const n = document.createElement('input'); n.className = 'qn'; n.type = 'text'; n.inputMode = 'numeric'; n.autocomplete = 'off';
+      n.setAttribute('list', 'aiLineList'); n.setAttribute('aria-label', '행 번호'); n.value = r.n;
+      const t = document.createElement('input'); t.className = 'qt'; t.type = 'text'; t.autocomplete = 'off'; t.spellcheck = false;
+      t.dir = S.work.key === 'genesis' ? 'rtl' : 'auto'; t.value = r.t;
+      if (i === Q.length - 1) t.placeholder = '원문 한 행 입력 후 Enter';
+      const s = document.createElement('span'); s.className = 'qs';
+      const go = document.createElement('button'); go.type = 'button'; go.className = 'ai-link'; go.dataset.act = 'go'; go.textContent = '코딩';
+      const x = document.createElement('button'); x.type = 'button'; x.className = 'ai-link'; x.dataset.act = 'rm'; x.textContent = '✕'; x.setAttribute('aria-label', '행 지우기');
+      d.append(n, t, s, go, x); qEl.appendChild(d); paintQ(d, i);
+    });
+    const row = focusI != null ? qEl.children[focusI] : null, f = row && row.querySelector('.qt');
+    if (f) { f.focus(); f.setSelectionRange(f.value.length, f.value.length); f.scrollIntoView({ block: 'nearest' }); }
+  }
+  function qSync() {
+    if (Date.now() - specAt > 30000) loadSpec();
+    const key = S.work.key + ':' + (isNaN(S.book) ? '' : S.book);
+    if (key !== qKey) {
+      qKey = key; qi = -1;
+      Q = isNaN(S.book) ? [] : (qStore()[key] || []).map(r => ({ n: String(r.n), t: String(r.t), d: !!r.d, f: !!r.f }));
+      qRender();
+    } else qEl.querySelectorAll('.ai-q').forEach((d, i) => paintQ(d, i));
+  }
+  window.__aiQRefresh = qSync;
+  function qGo(i) {
+    const r = Q[i], n = parseInt(r.n, 10);
+    if (!(n > 0)) { setStatus('이 행의 번호를 먼저 넣어 주세요.'); return; }
+    if (S.dirty && !confirm('지금 입력 중인 행이 저장되지 않았어요. 버리고 이 행으로 넘어갈까요?')) return;
+    S.dirty = false; qi = i; inLine.value = String(n); refresh();
+    const text = r.t.normalize('NFC').trim();
+    if (text && src.value.trim() !== text) { src.value = text; btnSplit.click(); }
+    qEl.querySelectorAll('.ai-q').forEach((d, k) => paintQ(d, k));
+    src.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  }
+  qEl.addEventListener('input', e => {
+    const d = e.target.closest('.ai-q'); if (!d) return;
+    const i = +d.dataset.i;
+    if (e.target.classList.contains('qn')) Q[i].n = e.target.value.trim(); else Q[i].t = e.target.value;
+    Q[i].d = false; Q[i].f = false;
+    qSave(); qEl.querySelectorAll('.ai-q').forEach((x, k) => paintQ(x, k));
+  });
+  qEl.addEventListener('keydown', e => {
+    const d = e.target.closest('.ai-q'); if (!d || !e.target.classList.contains('qt') || e.isComposing) return;
+    const i = +d.dataset.i;
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      if (!Q[i].t.trim()) return;
+      Q[i].t = Q[i].t.normalize('NFC').trim();
+      if (i === Q.length - 1) Q.push({ n: String(qNextFrom(i)), t: '' });
+      qSave(); qRender(i + 1);
+    } else if (e.key === 'Backspace' && !Q[i].t && i > 0 && i === Q.length - 1) {
+      e.preventDefault(); Q.pop(); qSave(); qRender(i - 1);
+    }
+  });
+  const NUMPFX = /^\s*[\[(]?(?:\d+[:.])?(\d{1,4})[\])]?[.:)\s\t]+(?=\S)/;
+  qEl.addEventListener('paste', e => {
+    if (!e.target.classList || !e.target.classList.contains('qt')) return;
+    const txt = (e.clipboardData || window.clipboardData).getData('text') || '';
+    if (!/[\r\n]/.test(txt)) return;   // 한 줄이면 평소처럼 붙여넣기
+    e.preventDefault();
+    const i = +e.target.closest('.ai-q').dataset.i;
+    const lines = txt.normalize('NFC').split(/\r?\n/).map(s => s.trim()).filter(Boolean);
+    let pend = null, found = 0; const ent = [];
+    lines.forEach(s => {
+      if (/^\d{1,4}$/.test(s)) { pend = parseInt(s, 10); return; }
+      const m = s.match(NUMPFX);
+      if (m) { ent.push({ n: parseInt(m[1], 10), t: s.slice(m[0].length).trim() }); found++; }
+      else { ent.push({ n: pend, t: s }); if (pend) found++; }
+      pend = null;
+    });
+    const items = ent.filter(x => x.t);
+    if (!items.length) return;
+    let n = parseInt(Q[i].n, 10); if (!(n > 0)) n = qNextFrom(i - 1);
+    const empty = !Q[i].t.trim();
+    let cur = empty ? n : n + 1;   // 첫 항목에 줄 번호
+    const made = items.map(x => { if (x.n > 0) cur = x.n; const r = { n: String(cur), t: x.t }; cur++; return r; });
+    if (empty) { const f = made.shift(); Q[i].n = f.n; Q[i].t = f.t; Q[i].d = false; Q[i].f = false; }
+    Q.splice.apply(Q, [i + 1, 0].concat(made));
+    if (found) qMsg('붙여넣은 글에서 행 번호 ' + found + '개를 읽어 반영했어요. 번호가 없는 줄은 앞 번호에 이어 붙였어요.');
+    qTail(); qSave(); qRender(Q.length - 1);
+  });
+  qEl.addEventListener('click', e => {
+    const b = e.target.closest('[data-act]'); if (!b) return;
+    const i = +b.closest('.ai-q').dataset.i;
+    if (b.dataset.act === 'go') qGo(i);
+    else { Q.splice(i, 1); if (qi === i) qi = -1; else if (qi > i) qi--; qSave(); qRender(); }
+  });
+  $('aiQDone').addEventListener('click', () => { Q = Q.filter(r => qState(r)[1] !== 'ok'); qi = -1; qSave(); qRender(); });
+  $('aiQClear').addEventListener('click', () => { if (Q.some(r => r.t.trim()) && !confirm('일괄 입력 목록을 모두 비울까요? (저장된 행 데이터는 그대로예요)')) return; Q = []; qi = -1; qSave(); qRender(); });
+
+  // ---- 규칙 파일(같은 폴더의 classics_data_generation_prompt.md)을 읽어 요청에 붙이고, Claude의 JSON 답을 한꺼번에 가져온다 ----
+  const SPEC_FILE = 'classics_data_generation_prompt.md';
+  let SPEC = '', specAt = 0, specFrom = '';
+  const msgEl = $('aiQMsg'), qMsg = s => { msgEl.textContent = s || ''; };
+  const specOk = s => typeof s === 'string' && s.length > 500 && s.indexOf('§A') >= 0;
+  async function loadSpec() {
+    specAt = Date.now();
+    try {
+      const r = await fetch(SPEC_FILE + '?t=' + Date.now(), { cache: 'no-store' });
+      if (r.ok) { const s = await r.text(); if (specOk(s)) { SPEC = s; specFrom = '같은 폴더의 파일'; try { localStorage.setItem('aiSpec', s); } catch (e) {} return; } }
+    } catch (e) {}
+    if (!SPEC) { try { const s = localStorage.getItem('aiSpec') || ''; if (specOk(s)) { SPEC = s; specFrom = '저장해 둔 사본'; } } catch (e) {} }
+  }
+  $('aiQSpecPick').addEventListener('click', () => $('aiQSpecFile').click());
+  $('aiQSpecFile').addEventListener('change', async e => {
+    const f = e.target.files && e.target.files[0]; e.target.value = ''; if (!f) return;
+    const s = await f.text();
+    if (!specOk(s)) { qMsg('규칙 파일이 아닌 것 같아요. classics_data_generation_prompt.md를 골라 주세요.'); return; }
+    SPEC = s; specFrom = '직접 고른 파일'; try { localStorage.setItem('aiSpec', s); } catch (err) {}
+    qMsg('규칙 파일을 불러왔어요 (' + f.name + ', ' + s.length.toLocaleString() + '자). 다음부터는 저장된 사본을 써요.');
+  });
+  const LANG = { iliad: '고대 그리스어', meta: '라틴어', genesis: '히브리어', cid: '고대 카스티야어', lusiadas: '포르투갈어', sanguo: '문언문(고전 중국어)' };
+  const refOf = n => { const f = S.lines.find(l => refLineNo(l.ref) === n); return f ? f.ref : refFor(n); };
+  $('aiQCopy').addEventListener('click', async () => {
+    if (isNaN(S.book)) { qMsg('먼저 위에서 ' + S.work.unit + ' 번호를 고르세요.'); return; }
+    const rows = Q.filter(r => r.t.trim()), bad = rows.filter(r => !(parseInt(r.n, 10) > 0));
+    if (bad.length) { qMsg('번호가 없는 행이 있어요: “' + bad[0].t.slice(0, 20) + '…” 번호를 먼저 넣어 주세요.'); return; }
+    const todo = rows.filter(r => qState(r)[1] !== 'ok');
+    if (!todo.length) { qMsg('보낼 행이 없어요. 원문을 입력하거나 붙여넣으세요 (이미 저장된 행은 빼요).'); return; }
+    const withSpec = $('aiQWithSpec').checked;
+    if (withSpec && !SPEC) await loadSpec();
+    if (withSpec && !SPEC) { qMsg('규칙 파일(' + SPEC_FILE + ')을 찾지 못했어요. 이 파일과 같은 폴더에 두었는지 확인하거나, ‘규칙 파일 직접 선택’으로 한 번 불러오세요. (이미 대화에 규칙을 보낸 뒤라면 ‘규칙 전문 포함’을 끄고 복사하세요.)'); return; }
+    const w = S.work, parts = [];
+    if (withSpec) parts.push('=== 데이터 생성 규칙 (이 대화 내내 적용) ===\n' + SPEC.trim() + '\n=== 규칙 끝 ===\n');
+    parts.push([
+      '=== 이번 요청 ===',
+      (withSpec ? '위 「데이터 생성 규칙」을' : '앞서 이 대화에서 드린 「데이터 생성 규칙」을') + ' 예외 없이 적용해서 아래 원문의 JSON을 만들어 주세요.',
+      '- 작품: ' + w.label + ' (' + (LANG[w.key] || '') + '), ' + S.book + w.unit,
+      '- ' + w.unit + ' 번호와 각 행 번호는 아래에 확정되어 있으니 되묻지 말고, ref는 아래 표기를 글자 그대로 쓰세요.',
+      '- 원문은 ' + todo.length + '줄이므로 ' + todo.length + '개의 ref 객체를 만드세요. 아래 텍스트만 쓰고 기억으로 복원하지 마세요.',
+      '- 출력은 JSON 배열 하나를 ```json 코드블록 하나로 주세요. 이 배열을 앱의 ‘JSON 가져오기’에 그대로 붙여 넣습니다.',
+      '- 응답이 길어 끊기면 끊긴 행부터 이어서, 이어 쓰는 부분도 완결된 JSON 배열 코드블록으로 주세요.',
+      '',
+      '원문 (ref | 원문):'
+    ].concat(todo.map(r => refOf(parseInt(r.n, 10)) + ' | ' + r.t.normalize('NFC').trim())).join('\n'));
+    const ok = await copyText(parts.join('\n'));
+    qMsg(ok ? '복사했어요 — ' + todo.length + '행' + (withSpec ? ', 규칙 전문 포함(' + specFrom + ')' : ', 규칙 전문 제외') + '. Claude 대화창에 붙여넣으세요.' : '복사하지 못했어요. 브라우저 권한을 확인해 주세요.');
+  });
+  function parseImport(text) {
+    const s = text.trim(), blocks = Array.from(s.matchAll(/```[a-zA-Z]*\s*([\s\S]*?)```/g)).map(m => m[1].trim()).filter(Boolean);
+    const out = [];
+    const take = v => { if (Array.isArray(v)) out.push.apply(out, v); else out.push(v); };
+    if (blocks.length) { blocks.forEach(b => take(JSON.parse(b))); return out; }
+    try { take(JSON.parse(s)); } catch (e) {
+      const a = s.search(/[\[{]/), z = Math.max(s.lastIndexOf(']'), s.lastIndexOf('}'));
+      if (a < 0 || z <= a) throw e;
+      take(JSON.parse(s.slice(a, z + 1)));
+    }
+    return out;
+  }
+  $('aiImpGo').addEventListener('click', async () => {
+    const txt = $('aiImp').value;
+    if (!txt.trim()) { qMsg('JSON을 먼저 붙여넣으세요.'); return; }
+    if (isNaN(S.book)) { qMsg('먼저 위에서 ' + S.work.unit + ' 번호를 고르세요.'); return; }
+    if (S.loading) { qMsg('불러오는 중이에요. 잠시 뒤 다시 눌러 주세요.'); return; }
+    let items;
+    try { items = parseImport(txt); } catch (e) { qMsg('JSON을 읽지 못했어요: ' + e.message + '\n따옴표 이스케이프가 빠졌거나 응답이 중간에 끊겼을 수 있어요. 끊긴 행부터 다시 요청해 보세요.'); return; }
+    const over = $('aiImpOver').checked, store = loadUserLines(), mine = store[S.storeKey] || {};
+    const saved = [], skip = [], warn = [];
+    const norm = s => String(s).replace(/\s+/g, ''), strip = s => Array.from(String(s).normalize('NFC')).filter(c => !PUNCT.test(c)).join('');
+    items.forEach((it, idx) => {
+      const label = it && typeof it.ref === 'string' ? it.ref : '#' + (idx + 1);
+      if (!it || typeof it !== 'object' || typeof it.ref !== 'string') { skip.push(label + '(ref 없음)'); return; }
+      const n = refLineNo(it.ref);
+      if (!(n > 0)) { skip.push(label + '(행 번호를 읽지 못함)'); return; }
+      const found = S.lines.find(l => refLineNo(l.ref) === n), want = found ? found.ref : refFor(n);
+      if (norm(it.ref) !== norm(want)) { skip.push(label + '(이 ' + S.work.unit + '의 ref가 아님, 기대값 ' + want + ')'); return; }
+      if (saved.some(l => l.ref === want)) { skip.push(label + '(JSON 안에서 중복)'); return; }
+      if (found && !over) { skip.push(label + '(이미 있음)'); return; }
+      const words = (Array.isArray(it.words) ? it.words : []).filter(x => x && typeof x.g === 'string' && x.g.trim());
+      if (!words.length) { skip.push(label + '(단어 없음)'); return; }
+      words.forEach(x => normalizeWordFields(x, 'import ' + want));
+      const line = Object.assign({}, it, { ref: want, trans: String(it.trans || ''), words });
+      mine[want] = line; saved.push(line);
+      const row = Q.find(r => parseInt(r.n, 10) === n && r.t.trim());
+      if (row) row.d = true;
+      if (row && strip(row.t) !== strip(words.map(x => x.g).join(''))) warn.push(n);
+    });
+    if (!saved.length) { qMsg('저장한 행이 없어요.' + (skip.length ? '\n건너뜀: ' + skip.join(', ') : '')); return; }
+    store[S.storeKey] = mine;
+    if (!saveUserLines(store)) { qMsg('저장하지 못했어요. 브라우저 저장 공간을 확인해 주세요.'); return; }
+    qSave(); applyToChapter(); await loadLines(); refresh(true); qSync();
+    $('aiImp').value = '';
+    qMsg('✓ ' + saved.length + '행 저장 (' + saved.map(l => refLineNo(l.ref)).join(', ') + ')'
+      + (skip.length ? '\n건너뜀 ' + skip.length + '개: ' + skip.join(', ') : '')
+      + (warn.length ? '\n⚠ 입력한 원문과 글자가 다른 행: ' + warn.join(', ') + ' — 코딩 버튼으로 열어서 확인하세요.' : ''));
+  });
+
+  // ---- data 파일로 내보내기: 원본 행 + 내 수정본을 합쳐 data/data-lines….js 와 같은 형식(CRLF, 들여쓰기 2칸)으로 만든다 ----
+  async function exportBuild() {
+    const ch = S.ch;
+    if (!ch) { qMsg('이 권은 아직 등록된 챕터가 아니라서 내보낼 파일이 없어요.'); return null; }
+    if (S.loading) { qMsg('불러오는 중이에요. 잠시 뒤 다시 눌러 주세요.'); return null; }
+    const fileId = CHAPTER_DATA_IDS[ch.dataVar];
+    await loadChapterData(ch.dataVar);
+    const base = __baseLines[ch.dataVar] || [];
+    const mineN = Object.keys(loadUserLines()[ch.dataVar] || {}).length;
+    if (!mineN) { qMsg('내보낼 내 수정본이 없어요. 이 권은 data 파일과 같은 상태예요.'); return null; }
+    const merged = mergeUserLines(base, ch.dataVar);
+    const body = JSON.stringify(merged, (k, v) => (k && k[0] === '_' ? undefined : v), 2).replace(/\n/g, '\r\n');
+    const js = '// 이 파일은 shell.html의 정보 추가 → data 파일로 내보내기로 만들었습니다 (' + new Date().toISOString().slice(0, 10) + ').\r\n'
+      + '// data-lines….json 도 따로 관리한다면 그쪽도 같은 내용으로 갱신하세요 (wrap_data.py가 json으로 이 파일을 덮어씁니다).\r\n'
+      + "window.__RAW_CHAPTER_DATA = window.__RAW_CHAPTER_DATA || {};\r\n"
+      + "window.__RAW_CHAPTER_DATA['" + fileId + "'] = " + body + ';\r\n';
+    return { ch, fileId, merged, body, js, mineN };
+  }
+  function download(name, text, type) {
+    const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], { type: type + ';charset=utf-8' })); a.download = name;
+    document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+  }
+  async function clearMine() {
+    const store = loadUserLines(); if (store[S.storeKey]) { delete store[S.storeKey]; saveUserLines(store); }
+    applyToChapter(); await loadLines(); refresh(true); qSync();
+  }
+  $('aiExpDl').addEventListener('click', async () => {
+    const x = await exportBuild(); if (!x) return;
+    download(x.fileId + '.js', x.js, 'text/javascript');
+    qMsg(x.fileId + '.js를 받았어요 (전체 ' + x.merged.length + '행, 그중 내 수정본 ' + x.mineN + '행). data 폴더의 같은 이름 파일에 덮어쓴 뒤 새로고침하세요. 덮어쓴 다음에 ‘내 수정본 비우기’를 눌러 두면 이후 파일 수정이 그대로 보여요.');
+  });
+  $('aiExpJson').addEventListener('click', async () => {
+    const x = await exportBuild(); if (!x) return;
+    download(x.fileId + '.json', x.body.replace(/\r\n/g, '\n') + '\n', 'application/json');
+    qMsg(x.fileId + '.json을 받았어요 (' + x.merged.length + '행). wrap_data.py용 json을 갱신할 때 쓰세요.');
+  });
+  $('aiMineClear').addEventListener('click', async () => {
+    const n = Object.keys(loadUserLines()[S.storeKey] || {}).length;
+    if (!n) { qMsg('비울 내 수정본이 없어요.'); return; }
+    if (!confirm('이 권의 내 수정본 ' + n + '행을 브라우저에서 지울까요?\n.js 파일로 내보내 data 폴더에 덮어쓴 뒤에만 지우세요. 안 그러면 이 행들이 사라져요.')) return;
+    await clearMine(); qMsg('내 수정본 ' + n + '행을 비웠어요.');
+  });
+  // data 폴더에 바로 저장 (Chrome/Edge 등 File System Access 지원 브라우저). 폴더 권한은 한 번 고르면 기억해 둔다.
+  if (window.showDirectoryPicker) {
+    $('aiExpSave').hidden = false;
+    const idb = () => new Promise((res, rej) => { const r = indexedDB.open('aiDirs', 1); r.onupgradeneeded = () => r.result.createObjectStore('h'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
+    const dirGet = async () => { try { const db = await idb(); return await new Promise(res => { const q = db.transaction('h').objectStore('h').get('data'); q.onsuccess = () => res(q.result || null); q.onerror = () => res(null); }); } catch (e) { return null; } };
+    const dirSet = async h => { try { const db = await idb(); db.transaction('h', 'readwrite').objectStore('h').put(h, 'data'); } catch (e) {} };
+    let bakDone = false;
+    async function dirHandle(interactive) {
+      let h = await dirGet();
+      if (h) { let pm = await h.queryPermission({ mode: 'readwrite' }); if (pm !== 'granted' && interactive) pm = await h.requestPermission({ mode: 'readwrite' }); if (pm !== 'granted') h = null; }
+      if (!h && interactive) { qMsg('data 폴더(또는 shell.html이 있는 폴더)를 골라 주세요.'); h = await window.showDirectoryPicker({ mode: 'readwrite' }); await dirSet(h); }
+      return h;
+    }
+    async function saveToDir(auto) {
+      const x = await exportBuild(); if (!x) return null;
+      const h = await dirHandle(!auto); if (!h) throw new Error('data 폴더 권한이 없어요');
+      let dir = h; try { dir = await h.getDirectoryHandle('data'); } catch (e) {}
+      const name = x.fileId + '.js'; let hadOld = false;
+      if (!(auto && bakDone)) { try { const old = await (await dir.getFileHandle(name)).getFile(); const w0 = await (await dir.getFileHandle(name + '.bak', { create: true })).createWritable(); await w0.write(await old.text()); await w0.close(); hadOld = true; } catch (e) {} }
+      bakDone = true;
+      const w = await (await dir.getFileHandle(name, { create: true })).createWritable(); await w.write(x.js); await w.close();
+      __baseLines[x.ch.dataVar] = x.merged; if (window.__RAW_CHAPTER_DATA) window.__RAW_CHAPTER_DATA[x.fileId] = x.merged;
+      await clearMine();
+      return { name, x, hadOld };
+    }
+    window.__aiSaveToDir = saveToDir; window.__aiBakReset = () => { bakDone = false; };
+    window.__aiDirReady = async () => { try { return !!(await dirHandle(true)); } catch (e) { return false; } };
+    $('aiGemAutoFileL').hidden = false;
+    $('aiExpSave').addEventListener('click', async () => {
+      try {
+        const r = await saveToDir(false); if (!r) return;
+        qMsg(r.name + '에 저장했어요 (전체 ' + r.x.merged.length + '행)' + (r.hadOld ? ', 이전 파일은 ' + r.name + '.bak으로 남겼어요' : '') + '. 내 수정본은 파일에 합쳐져서 비웠어요.');
+      } catch (e) { qMsg(e && e.name === 'AbortError' ? '폴더 선택을 취소했어요.' : '저장하지 못했어요: ' + (e && e.message ? e.message : e) + ' — .js 다운로드를 쓰세요.'); }
+    });
+  }
+
+  // ---- 자동 코딩: Gemini API로 목록의 행을 한 줄씩 처리 (규칙 파일을 시스템 지시로 사용) ----
+  const gemCfg = () => { let c = {}; try { c = JSON.parse(localStorage.getItem('aiGem') || '{}') || {}; } catch (e) {} return { key: c.key || '', model: c.model || 'gemini-2.5-flash-lite', gap: c.gap || 7, soft: c.soft !== false, ctx: c.ctx !== false }; };
+  const gemSave = () => { try { localStorage.setItem('aiGem', JSON.stringify({ key: $('aiGemKey').value.trim(), model: $('aiGemModel').value.trim(), gap: parseInt($('aiGemGap').value, 10) || 7, soft: $('aiGemSoft').checked, ctx: $('aiGemCtx').checked })); } catch (e) {} };
+  (() => { const g = gemCfg(); $('aiGemKey').value = g.key; $('aiGemModel').value = g.model; $('aiGemGap').value = g.gap; $('aiGemSoft').checked = g.soft; $('aiGemCtx').checked = g.ctx; })();
+  ['aiGemKey', 'aiGemModel', 'aiGemGap', 'aiGemSoft', 'aiGemCtx'].forEach(id => $(id).addEventListener('change', gemSave));
+  const auto = { run: false, stop: false, ctl: null };
+  const sleep = async ms => { const end = Date.now() + ms; while (Date.now() < end && !auto.stop) await new Promise(r => setTimeout(r, 300)); };
+  const stripP = s => Array.from(String(s).normalize('NFC')).filter(c => !PUNCT.test(c)).join('');
+  const sentN = s => (String(s || '').match(/[.。!?](?=\s|$)/g) || []).length;
+  function checkLine(o, text) {
+    const hard = [], soft = [];
+    if (!o || typeof o !== 'object') return { hard: ['JSON 객체가 아님'], soft };
+    const words = Array.isArray(o.words) ? o.words.filter(x => x && typeof x.g === 'string' && x.g.trim()) : [];
+    if (!String(o.trans || '').trim()) hard.push('trans가 비어 있음');
+    if (!words.length) { hard.push('words가 없음'); return { hard, soft }; }
+    if (stripP(words.map(x => x.g).join('')) !== stripP(text)) hard.push('words의 g를 이어 붙인 글자가 입력 원문과 다름(원문을 바꾸거나 빼먹음)');
+    const req = S.work.key === 'sanguo' ? ['g', 'pos', 'lemma', 'pinyin', 'kr_reading', 'syntax', 'meaning', 'background', 'etymology', 'simplified']
+      : ['g', 'pos', 'lemma', 'parse', 'gloss_kr', 'gloss_en', 'syntax', 'background', 'etymology'].concat(S.work.key === 'genesis' ? ['root'] : []);
+    const miss = [], low = [];
+    words.forEach((w, i) => {
+      const m = req.filter(k => !String(w[k] == null ? '' : w[k]).trim());
+      if (m.length) miss.push((i + 1) + '번째 단어 ' + w.g + ': ' + m.join(', '));
+      [['syntax', 3], ['background', 3], ['etymology', 4]].forEach(([k, n]) => { if (w[k] && sentN(w[k]) < n) low.push((i + 1) + '번째 ' + w.g + '의 ' + k + ' (' + n + '문장 이상 필요)'); });
+    });
+    const slots = S.work.key === 'iliad' ? 6 : S.work.key === 'meta' ? 4 : 0;
+    if (slots) {
+      const bad = [], none = [];
+      words.forEach((w, i) => {
+        const pp = Array.isArray(w.principalParts) ? w.principalParts.join(' – ') : String(w.principalParts || '').trim();
+        const verb = /동사|분사|부정사/.test(w.pos || '') || /\b(pres|impf|fut|aor|perf|plup|futperf)\b/.test(w.parse || '');
+        if (pp) { const n = pp.split(/\s*[–—]\s*/).length; if (n !== slots) bad.push((i + 1) + '번째 ' + w.g + '(' + n + '칸)'); }
+        else if (verb) none.push((i + 1) + '번째 ' + w.g);
+      });
+      if (bad.length) soft.push('principalParts는 ' + slots + '칸이어야 함 — ' + bad.slice(0, 3).join(', '));
+      if (none.length) soft.push('동사 파생형인데 principalParts 없음 — ' + none.slice(0, 3).join(', '));
+    }
+    if (miss.length) hard.push('빈 필드 — ' + miss.slice(0, 4).join(' / '));
+    if (low.length) soft.push('문장 수 미달 ' + low.length + '곳 — ' + low.slice(0, 3).join(', '));
+    return { hard, soft };
+  }
+  function fixSlots(words) {   // 칸이 모자라면 (미상)으로 채워 칸 수를 맞춘다(규칙 파일 §1.1)
+    const slots = S.work.key === 'iliad' ? 6 : S.work.key === 'meta' ? 4 : 0; if (!slots) return;
+    words.forEach(w => {
+      if (!w.principalParts) return;
+      const parts = (Array.isArray(w.principalParts) ? w.principalParts.join(' – ') : String(w.principalParts)).split(/\s*[–—]\s*/);
+      if (parts.length < slots) w.principalParts = parts.concat(Array(slots - parts.length).fill('(미상)')).join(' – ');
+    });
+  }
+  function ctxFor(n) {   // 바로 앞 행(이번 실행에서 저장한 것 포함)의 g / lemma / parse 요약
+    const mine = loadUserLines()[S.storeKey] || {}, out = [];
+    for (let k = 2; k >= 1; k--) {
+      if (n - k < 1) continue;
+      const l = mine[refOf(n - k)] || S.lines.find(x => refLineNo(x.ref) === n - k);
+      if (l && Array.isArray(l.words) && l.words.length) out.push(l.ref + ' | ' + l.words.map(x => [x.g, x.lemma, x.parse].filter(Boolean).join(' / ')).join(' ; '));
+    }
+    return out.length ? '\n[참고용: 바로 앞 행의 분석 요약(g / lemma / parse). 출력 대상이 아님. parse 표기 방식과 재등장 표제어 처리를 일관되게 맞추는 데만 쓰세요]\n' + out.join('\n') : '';
+  }
+  async function gemCall(sys, user, signal) {
+    const g = gemCfg();
+    const r = await fetch('https://generativelanguage.googleapis.com/v1beta/models/' + encodeURIComponent(g.model) + ':generateContent', {
+      method: 'POST', signal, headers: { 'Content-Type': 'application/json', 'x-goog-api-key': g.key },
+      body: JSON.stringify({ systemInstruction: { parts: [{ text: sys }] }, contents: [{ role: 'user', parts: [{ text: user }] }], generationConfig: { responseMimeType: 'application/json', temperature: 0.4, maxOutputTokens: 30000 } })
+    });
+    if (!r.ok) { const e = new Error('HTTP ' + r.status + ' ' + (await r.text()).slice(0, 240)); e.status = r.status; throw e; }
+    const d = await r.json(), c = d.candidates && d.candidates[0];
+    if (!c) { const e = new Error('응답이 비었어요' + (d.promptFeedback ? ' ' + JSON.stringify(d.promptFeedback).slice(0, 120) : '')); e.status = 0; throw e; }
+    return { text: ((c.content && c.content.parts) || []).map(p => p.text || '').join(''), finish: c.finishReason };
+  }
+  async function autoRun(onlyFailed) {
+    const g = gemCfg();
+    if (!g.key) { qMsg('Gemini API 키를 먼저 입력하세요 (aistudio.google.com → Get API key).'); return; }
+    if (isNaN(S.book)) { qMsg('먼저 위에서 ' + S.work.unit + ' 번호를 고르세요.'); return; }
+    if (S.loading) { qMsg('불러오는 중이에요. 잠시 뒤 다시 눌러 주세요.'); return; }
+    if (!SPEC) await loadSpec();
+    if (!SPEC) { qMsg('규칙 파일(' + SPEC_FILE + ')을 찾지 못했어요. ‘규칙 파일 직접 선택’으로 한 번 불러오세요.'); return; }
+    const rows = Q.filter(r => r.t.trim() && parseInt(r.n, 10) > 0 && ['저장됨 ✓', '번호 중복'].indexOf(qState(r)[0]) < 0 && (!onlyFailed || r.f)).map(r => ({ n: parseInt(r.n, 10), t: r.t.normalize('NFC').trim() }));
+    if (!rows.length) { qMsg(onlyFailed ? '다시 할 실패한 행이 없어요.' : '처리할 행이 없어요 (이미 저장됐거나 번호가 없는 행은 건너뛰어요).'); return; }
+    auto.run = true; auto.stop = false; $('aiAutoGo').textContent = '멈추기';
+    let lock = null; try { lock = await navigator.wakeLock.request('screen'); } catch (e) {}
+    const log = [], failed = []; let lastReq = 0, fatal = false, okN = 0, sinceSave = 0;
+    if (window.__aiBakReset) window.__aiBakReset();
+    const show = s => qMsg('자동 코딩 ' + (okN + failed.length) + '/' + rows.length + ' — ' + s + (log.length ? '\n' + log.slice(-5).join('\n') : ''));
+    const w = S.work;
+    for (const row of rows) {
+      if (auto.stop || fatal) break;
+      const want = refOf(row.n); let fb = '', saved = false, why = '', rate = 0;
+      for (let a = 1; a <= 3 && !auto.stop; a++) {
+        const wait = g.gap * 1000 - (Date.now() - lastReq); if (wait > 0) await sleep(wait); if (auto.stop) break; lastReq = Date.now();
+        show(row.n + '행 요청 중 (시도 ' + a + '/3)');
+        const user = ['이번 요청: 시스템 지시의 「데이터 생성 규칙」을 예외 없이 적용해 아래 한 줄의 JSON을 만들어 주세요.',
+          '- 작품: ' + w.label + ' (' + (LANG[w.key] || '') + '), ' + S.book + w.unit,
+          '- ref는 정확히 "' + want + '" 로 쓰세요. ' + w.unit + ' 번호와 행 번호는 확정되어 있으니 되묻지 마세요.',
+          '- 원문은 1줄이므로 ref 객체 1개를 담은 JSON 배열을 출력하세요. 아래 원문 텍스트만 쓰고, JSON 외의 설명은 쓰지 마세요.', '', '원문: ' + row.t + (g.ctx ? ctxFor(row.n) : ''),
+          fb ? '\n이전 응답의 문제점 — 반드시 고쳐서 처음부터 다시 완전한 JSON을 출력하세요: ' + fb : ''].join('\n');
+        let res;
+        try { auto.ctl = new AbortController(); res = await gemCall(SPEC, user, auto.ctl.signal); }
+        catch (e) {
+          if (auto.stop) break;
+          if (e.status === 429 && ++rate <= 8) { show(row.n + '행 — 요청 한도에 걸려 35초 기다려요 (' + rate + '/8)'); await sleep(35000); a--; continue; }
+          if ([400, 401, 403, 404].indexOf(e.status) >= 0) { fatal = true; why = e.message + ' — 키·모델 이름을 확인하세요.'; break; }
+          fb = '(통신 오류였음, 같은 요청을 다시)'; why = e.message; await sleep(8000); continue;
+        }
+        if (res.finish === 'MAX_TOKENS') { fb = '응답이 길어서 중간에 잘렸어요. 기준 문장 수는 지키되 불필요한 반복을 줄이세요.'; why = '응답이 잘림'; continue; }
+        let obj; try { obj = parseImport(res.text)[0]; } catch (e) { fb = 'JSON 파싱 실패(' + e.message + '). 문자열 안의 큰따옴표는 \\"로 이스케이프하세요.'; why = 'JSON 파싱 실패'; continue; }
+        const chk = checkLine(obj, row.t);
+        if (chk.hard.length || (chk.soft.length && a < 3)) { fb = chk.hard.concat(chk.soft).join(' | '); why = fb; continue; }
+        if (chk.soft.length && !$('aiGemSoft').checked) { why = chk.soft.join(' | '); break; }
+        const words = obj.words.filter(x => x && typeof x.g === 'string' && x.g.trim());
+        fixSlots(words); words.forEach(x => normalizeWordFields(x, 'auto ' + want));
+        const line = Object.assign({}, obj, { ref: want, trans: String(obj.trans || '').trim(), words });
+        const store = loadUserLines(); (store[S.storeKey] = store[S.storeKey] || {})[want] = line;
+        if (!saveUserLines(store)) { fatal = true; why = '브라우저 저장 공간이 가득 찼어요'; break; }
+        saved = true; okN++; sinceSave++;
+        const qr = Q.find(r => parseInt(r.n, 10) === row.n && r.t.trim()); if (qr) { qr.d = true; qr.f = false; qSave(); }
+        log.push('✓ ' + row.n + '행' + (chk.soft.length ? ' (문장 수 일부 미달)' : '')); qSync();
+        if (auto.file && sinceSave >= 10) { try { await window.__aiSaveToDir(true); sinceSave = 0; log.push('💾 data 파일에 저장함'); } catch (e) { auto.file = false; log.push('⚠ 파일 저장 실패, 이후엔 브라우저에만 저장: ' + e.message); } }
+        break;
+      }
+      if (!saved && !auto.stop) { failed.push(row.n); const qf = Q.find(r => parseInt(r.n, 10) === row.n && r.t.trim()); if (qf) { qf.f = true; qSave(); qSync(); } log.push('✗ ' + row.n + '행 — ' + String(why).slice(0, 110)); }
+    }
+    if (auto.file && sinceSave > 0) { try { await window.__aiSaveToDir(true); log.push('💾 data 파일에 저장함'); } catch (e) { log.push('⚠ 파일 저장 실패: ' + e.message); } }
+    if (auto.ctl) auto.ctl.abort();
+    if (lock) try { lock.release(); } catch (e) {}
+    auto.run = false; $('aiAutoGo').textContent = '자동 코딩 시작';
+    applyToChapter(); await loadLines(); refresh(true); qSync();
+    qMsg((auto.stop ? '멈췄어요. ' : fatal ? '중단했어요. ' : '끝났어요. ') + '저장 ' + okN + '행' + (failed.length ? ', 실패 ' + failed.length + '행(' + failed.join(', ') + ')' : '') + '.\n' + log.slice(-6).join('\n')
+      + '\n다 끝나면 아래 ‘data 폴더에 바로 저장’으로 파일에 반영하세요.');
+  }
+  async function startAuto(onlyFailed) {
+    gemSave();
+    const cb = $('aiGemAutoFile');
+    auto.file = !!(cb && !$('aiGemAutoFileL').hidden && cb.checked && window.__aiDirReady) && (await window.__aiDirReady());
+    autoRun(onlyFailed);
+  }
+  $('aiAutoGo').addEventListener('click', () => {
+    if (auto.run) { auto.stop = true; if (auto.ctl) auto.ctl.abort(); $('aiAutoGo').textContent = '멈추는 중…'; } else startAuto(false);
+  });
+  $('aiAutoFailed').addEventListener('click', () => { if (!auto.run) startAuto(true); });
 
   // 열기 / 닫기
   window.openAddInfo = async function () {
