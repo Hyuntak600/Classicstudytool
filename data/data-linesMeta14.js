@@ -21671,12 +21671,12 @@ window.__RAW_CHAPTER_DATA['data-linesMeta14'] = [
     ]
   },
   {
-    "ref": "Iliades 786",
+    "ref": "Iliades 781",
     "trans": "그럼에도 여신 스스로가 그곳을 열었으니",
     "textcrit": "사본전승상 786행과 787행의 순서에 관하여 일부 필사본 간 미세한 배열 차이가 존재하나, 편집본들은 현재의 구성을 정본으로 채택한다.",
     "words": [
       {
-        "g": "unam",
+        "g": "clauserat Iliades: unam",
         "pos": "대명사",
         "lemma": "is, ea, id",
         "parse": "sg.acc.f.",
@@ -21728,7 +21728,7 @@ window.__RAW_CHAPTER_DATA['data-linesMeta14'] = [
     ]
   },
   {
-    "ref": "Iliades 787",
+    "ref": "Iliades 782",
     "trans": "사투르누스의 딸은 돌쩌귀를 돌리며 소리조차 내지 않았다.",
     "textcrit": "사본들 간에 cardine과 관련된 형용사 수식어의 미세한 이문이 있으나 의미 변화는 경미하다.",
     "words": [
@@ -21813,7 +21813,7 @@ window.__RAW_CHAPTER_DATA['data-linesMeta14'] = [
     ]
   },
   {
-    "ref": "Iliades 788",
+    "ref": "Iliades 783",
     "trans": "오직 비너스만이 문짝의 빗장이 내려앉은 것을 알아차렸고",
     "textcrit": "사본에 따라 cecidisse와 관련된 어휘 배치가 미세하게 다르나 대의에는 변함이 없다.",
     "words": [
@@ -21886,7 +21886,7 @@ window.__RAW_CHAPTER_DATA['data-linesMeta14'] = [
     ]
   },
   {
-    "ref": "Iliades 789",
+    "ref": "Iliades 784",
     "trans": "그곳은 닫혀 있었어야 했다, 신들의 행위를 무효로 돌리는 것이 허락되지 않는 한.",
     "textcrit": "789행과 790행에 걸쳐 문법적 구조가 복잡하게 얽혀 있어 편집본마다 구두점 위치에 미세한 논쟁이 존재한다.",
     "words": [
@@ -21982,7 +21982,7 @@ window.__RAW_CHAPTER_DATA['data-linesMeta14'] = [
     ]
   },
   {
-    "ref": "Iliades 790",
+    "ref": "Iliades 785",
     "trans": "야누스의 성소가 인접해 있는 곳에 그것들이 자리를 잡고 있었다.",
     "textcrit": "Iano loca iuncta 테마는 오비디우스가 로마의 종교적 지리와 신화적 공간을 연결하는 전형적인 지형 묘사이다.",
     "words": [
