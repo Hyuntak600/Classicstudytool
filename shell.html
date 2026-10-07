@@ -2628,6 +2628,126 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
     #bgCap:hover .cap-body { opacity: 1; transform: none; pointer-events: auto; }
     #bgCap:hover .cap-dot { opacity: 0; transform: scale(0.5); }
   }
+
+  /* ---- 맥 스타일 드롭다운 (모든 select 공통) ---- */
+  select:not(#_) {
+    -webkit-appearance: none; appearance: none;
+    box-sizing: border-box; margin: 0;
+    font-family: var(--sans); font-size: 13px; font-weight: 500; line-height: 1.3;
+    color: var(--text-main);
+    padding: 6px 28px 6px 11px;
+    min-height: 30px;
+    border: 0.5px solid color-mix(in srgb, var(--text-faint) 45%, transparent);
+    border-radius: 7px;
+    background-color: var(--card-bg);
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='16' viewBox='0 0 12 16' fill='none' stroke='%238a8069' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 6l3-3 3 3M3 10l3 3 3-3'/%3E%3C/svg%3E"),
+      linear-gradient(180deg, rgba(255,255,255,.55), rgba(255,255,255,0) 60%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 8px center, 0 0;
+    background-size: 12px 16px, 100% 100%;
+    box-shadow: 0 0.5px 1.5px rgba(0,0,0,.12), 0 1px 1px rgba(0,0,0,.04);
+    cursor: pointer; text-overflow: ellipsis;
+    transition: border-color var(--dur-press) var(--ease-mac), box-shadow var(--dur-press) var(--ease-mac), background-color var(--dur-press) var(--ease-mac);
+  }
+  select:not(#_):hover { border-color: color-mix(in srgb, var(--accent) 70%, transparent); background-color: color-mix(in srgb, var(--card-bg) 94%, var(--accent)); color: var(--text-main); }
+  select:not(#_):focus, select:not(#_):focus-visible { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3.5px color-mix(in srgb, var(--accent) 32%, transparent); }
+  select:not(#_):active { transform: none; }
+  select:not(#_):disabled { opacity: .5; cursor: default; }
+  select:not(#_) option, select:not(#_) optgroup { font-family: var(--sans); font-size: 13px; color: var(--text-main); background: var(--card-bg); }
+  select:not(#_) optgroup { font-weight: 600; color: var(--text-sub); }
+  [data-theme="dark"] select:not(#_) { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='16' viewBox='0 0 12 16' fill='none' stroke='%23B9AB86' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 6l3-3 3 3M3 10l3 3 3-3'/%3E%3C/svg%3E"), linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,0) 60%); box-shadow: 0 0.5px 1.5px rgba(0,0,0,.5); }
+  .ai-f select:not(#_) { width: 100%; font-size: 14px; padding: 8px 30px 8px 11px; border-radius: 8px; background-color: var(--bg); }
+  .ai-qsend select.ai-gem { flex: 1 1 11em; min-width: 0; }
+  .ai-qsend input.ai-gem-custom { flex: 1 1 11em; min-width: 0; }
+  @media (max-width: 640px) { select:not(#_) { font-size: 16px; } }
+
+  /* ---- 정보 추가: 3단계 구성 (① 원문 → ② 코딩 → ③ 파일 반영) ---- */
+  .ai-steps { display: flex; flex-direction: column; gap: 12px; margin-top: 14px; }
+  .ai-step { border: 0.5px solid var(--border); border-radius: 12px; background: var(--bg); padding: 14px 14px 14px; }
+  .ai-step-h { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; }
+  .ai-num { flex: none; width: 24px; height: 24px; margin-top: 1px; border-radius: 50%; display: grid; place-items: center; font-size: 12.5px; font-weight: 700; color: #fff; background: linear-gradient(180deg, color-mix(in srgb, var(--accent-2) 80%, #fff), var(--accent)); box-shadow: inset 0 0.5px 0 rgba(255,255,255,.5), 0 1px 2px rgba(0,0,0,.18); }
+  :root[data-theme="dark"] .ai-num { color: #1d1409; }
+  .ai-step-t { flex: 1; min-width: 0; }
+  .ai-step-t h3 { margin: 0; font-family: var(--sans); font-size: 15px; font-weight: 650; letter-spacing: 0; color: var(--text-main); }
+  .ai-step-t p { margin: 3px 0 0; font-size: 12px; line-height: 1.5; color: var(--text-sub); }
+  .ai-step .ai-qtools { flex: none; flex-wrap: wrap; justify-content: flex-end; padding: 0; margin: -2px -4px 0 0; }
+  .ai-step #aiQ { padding: 0; }
+  .ai-step .ai-q:first-child { margin-top: 0; }
+  .ai-step .ai-qsend { padding: 0; margin-top: 10px; }
+  .ai-step .ai-wide { margin: 12px 0 0; }
+  .ai-seg { display: flex; gap: 2px; padding: 2px; border-radius: 9px; background: color-mix(in srgb, var(--text-faint) 18%, transparent); }
+  .ai-seg button { flex: 1; font-family: var(--sans); font-size: 13px; font-weight: 500; padding: 7px 10px; border: none; border-radius: 7px; cursor: pointer; color: var(--text-sub); background: transparent; transition: background var(--dur-press) var(--ease-mac), color var(--dur-press) var(--ease-mac), box-shadow var(--dur-press) var(--ease-mac); }
+  .ai-seg button:hover:not(.on) { color: var(--text-main); }
+  .ai-seg button.on { color: var(--text-main); font-weight: 600; background: var(--card-bg); box-shadow: 0 0.5px 2px rgba(0,0,0,.18), 0 0 0 0.5px rgba(0,0,0,.04); }
+  .ai-pane { margin-top: 12px; }
+  .ai-pane[hidden] { display: none; }
+  .ai-grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .ai-grid2 .ai-f { gap: 5px; }
+  .ai-grid2 .ai-f input, .ai-grid2 .ai-f select { width: 100%; box-sizing: border-box; }
+  .ai-grid2 .ai-f input[type=password], .ai-grid2 .ai-f input[type=text] { margin: 0; padding: 8px 10px; font-family: var(--sans); font-size: 14px; color: var(--text-main); background: var(--card-bg); border: 0.5px solid var(--border); border-radius: 8px; outline: none; }
+  .ai-grid2 .ai-f input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 28%, transparent); }
+  .ai-grid2 .ai-gem-custom { margin-top: 6px; }
+  .ai-opts { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: center; margin-top: 10px; }
+  .ai-opts:empty { display: none; }
+  .ai-opts input[type=number] { box-sizing: border-box; margin: 0 2px; padding: 4px 6px; font-family: var(--sans); font-size: 13px; color: var(--text-main); background: var(--card-bg); border: 0.5px solid var(--border); border-radius: 6px; outline: none; text-align: center; }
+  .ai-step .ai-main-act { margin-top: 14px; padding: 0; }
+  .ai-step .ai-main-act .ai-btn { width: 100%; padding: 12px 14px; font-size: 15px; font-weight: 600; border-radius: 10px; }
+  .ai-hint { margin: 10px 0 0; font-size: 12px; line-height: 1.55; color: var(--text-faint); }
+  .ai-result { margin: 12px 0 0; padding: 10px 12px; min-height: 0; border: 0.5px solid var(--border); border-radius: 9px; background: var(--card-bg); font-size: 12.5px; line-height: 1.6; color: var(--text-main); white-space: pre-wrap; word-break: break-word; }
+  .ai-result:empty { display: none; }
+  #aiQMsg.ai-result { margin: 12px 0 0; }
+  .ai-step-foot { display: flex; align-items: center; gap: 8px; margin-top: 12px; padding-top: 10px; border-top: 0.5px solid var(--border-soft); }
+  .ai-step-foot small { font-size: 11.5px; color: var(--text-faint); }
+  .ai-manual { margin-top: 16px; }
+  @media (max-width: 640px) {
+    .ai-step-h { flex-wrap: wrap; }
+    .ai-step .ai-qtools { width: 100%; justify-content: flex-start; margin: 0 0 0 34px; }
+    .ai-grid2 { grid-template-columns: 1fr; }
+    .ai-grid2 .ai-f input { font-size: 16px; }
+  }
+
+  /* ---- 가시성 보강: 대비·크기·상태 표시 ---- */
+  .ai-card { max-width: 840px; }
+  .ai-body { background: color-mix(in srgb, var(--bg-alt) 70%, var(--bg)); padding: 18px 20px 24px; }
+  .ai-head h2 { font-size: 17px; }
+  .ai-pick { padding: 12px; border: 1px solid var(--border); border-radius: 12px; background: var(--card-bg); box-shadow: var(--shadow-sm); }
+  .ai-f > span { font-size: 12.5px; color: var(--text-main); opacity: .8; }
+  .ai-step { background: var(--card-bg); border: 1px solid var(--border); border-radius: 14px; padding: 0 16px 16px; box-shadow: var(--shadow-sm); }
+  .ai-step-h { margin: 0 -16px 14px; padding: 13px 16px; border-bottom: 1px solid var(--border-soft); border-radius: 14px 14px 0 0; background: color-mix(in srgb, var(--accent-light) 55%, var(--card-bg)); }
+  .ai-num { width: 28px; height: 28px; margin-top: 0; font-size: 14px; }
+  .ai-step-t h3 { font-size: 16px; }
+  .ai-step-t p { font-size: 12.5px; color: var(--text-sub); }
+  .ai-hint { font-size: 12.5px; color: var(--text-sub); }
+  .ai-step-foot small { color: var(--text-sub); }
+  .ai-chk { font-size: 13.5px; color: var(--text-main); gap: 7px; }
+  .ai-chk input[type=checkbox] { width: 16px; height: 16px; margin: 0; accent-color: var(--accent); cursor: pointer; }
+  .ai-link { font-size: 13px; color: var(--accent-dark); }
+  :root:not([data-theme="dark"]) .ai-link { color: #8a6a1f; }
+  .ai-link.ai-danger { color: var(--bad); }
+  .ai-btn { border: 1px solid color-mix(in srgb, var(--text-faint) 40%, transparent); background: var(--card-bg); font-size: 13.5px; font-weight: 600; box-shadow: 0 1px 2px rgba(0,0,0,.08); }
+  .ai-btn:hover:not(:disabled) { background: color-mix(in srgb, var(--card-bg) 90%, var(--accent)); border-color: var(--accent); }
+  .ai-btn.ai-primary, .ai-btn.ai-primary:hover:not(:disabled) { border-color: transparent; }
+  .ai-seg { padding: 3px; border: 1px solid var(--border); background: color-mix(in srgb, var(--text-faint) 14%, var(--bg)); }
+  .ai-seg button { font-size: 14px; padding: 9px 10px; }
+  .ai-seg button.on { color: var(--accent-dark); box-shadow: 0 1px 3px rgba(0,0,0,.2); }
+  :root:not([data-theme="dark"]) .ai-seg button.on { color: #7a5c14; }
+  .ai-q { gap: 8px; margin-top: 8px; padding: 4px; border: 1px solid transparent; }
+  .ai-q.on { border-color: color-mix(in srgb, var(--accent) 55%, transparent); }
+  .ai-q input { border: 1px solid var(--border); border-radius: 8px; padding: 8px 9px; }
+  .ai-q input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent); }
+  .ai-q .qn { font-weight: 700; }
+  .ai-q .qs { min-width: 5.2em; padding: 3px 8px; border-radius: 999px; font-size: 11.5px; font-weight: 600; color: var(--text-sub); background: color-mix(in srgb, var(--text-faint) 16%, transparent); }
+  .ai-q .qs:empty { display: none; }
+  .ai-q .qs.ok { color: var(--ok); background: var(--ok-light); }
+  .ai-q .qs.warn { color: var(--bad); background: var(--bad-light); }
+  .ai-result { border-left: 4px solid var(--text-faint); font-size: 13px; }
+  .ai-result[data-tone="ok"] { border-left-color: var(--ok); background: color-mix(in srgb, var(--ok-light) 60%, var(--card-bg)); }
+  .ai-result[data-tone="warn"] { border-left-color: var(--bad); background: color-mix(in srgb, var(--bad-light) 70%, var(--card-bg)); }
+  .ai-grid2 .ai-f input[type=password], .ai-grid2 .ai-f input[type=text] { border: 1px solid var(--border); }
+  .ai-manual { border: 1px solid var(--border); background: var(--card-bg); }
+  .ai-manual > summary { font-size: 13.5px; color: var(--text-main); }
+  .ai-foot { background: var(--card-bg); box-shadow: 0 -4px 12px -8px rgba(0,0,0,.2); }
 </style>
 </head>
 <body>
@@ -2660,57 +2780,86 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
         <label class="ai-f"><span>행</span><input id="aiLine" type="text" inputmode="numeric" list="aiLineList" autocomplete="off" placeholder="번호"><datalist id="aiLineList"></datalist></label>
       </div>
       <p class="ai-status" id="aiStatus" aria-live="polite"></p>
-      <details class="ai-bulk" open>
-        <summary>일괄 입력 <small>— 여러 줄 붙여넣기 가능 · 줄 앞 번호는 행 번호로 읽어요</small></summary>
-        <div class="ai-qtools"><button type="button" class="ai-link" id="aiAutoFailed">실패한 행만 다시</button><button type="button" class="ai-link" id="aiQDone">저장된 행 치우기</button><button type="button" class="ai-link" id="aiQClear">목록 비우기</button></div>
-        <div id="aiQ"></div>
-        <div class="ai-qsend ai-main-act">
-          <button type="button" class="ai-btn ai-primary" id="aiAutoGo">자동 코딩 시작</button>
-        </div>
-        <p class="ai-status" id="aiQMsg" aria-live="polite"></p>
+      <div class="ai-steps">
 
-        <details class="ai-sub">
-          <summary>자동 코딩 설정</summary>
-          <div class="ai-qsend">
-            <input type="password" id="aiGemKey" class="ai-gem" placeholder="Gemini API 키" autocomplete="off" spellcheck="false">
-            <input type="text" id="aiGemModel" class="ai-gem" placeholder="모델 이름" autocomplete="off" spellcheck="false">
-            <label class="ai-chk">간격 <input type="number" id="aiGemGap" min="1" max="120" style="width:3.6em"> 초</label>
-          </div>
-          <div class="ai-qsend">
-            <label class="ai-chk"><input type="checkbox" id="aiGemCtx" checked> 앞 2행 참고</label>
-            <label class="ai-chk"><input type="checkbox" id="aiGemSoft" checked> 문장 수 미달이어도 저장</label>
-            <label class="ai-chk" id="aiGemAutoFileL" hidden><input type="checkbox" id="aiGemAutoFile" checked> 10행마다 data 폴더에 저장</label>
-          </div>
-        </details>
+        <!-- ① 원문 -->
+        <section class="ai-step" id="aiStep1">
+          <header class="ai-step-h">
+            <span class="ai-num">1</span>
+            <div class="ai-step-t"><h3>원문 붙여넣기</h3><p>한 줄이 한 행이에요. 여러 줄을 한꺼번에 붙여넣어도 되고, 줄 앞 숫자는 행 번호로 읽어요.</p></div>
+            <div class="ai-qtools"><button type="button" class="ai-link" id="aiAutoFailed">실패한 행만 다시</button><button type="button" class="ai-link" id="aiQDone">저장된 행 치우기</button><button type="button" class="ai-link ai-danger" id="aiQClear">목록 비우기</button></div>
+          </header>
+          <div id="aiQ"></div>
+        </section>
 
-        <details class="ai-sub">
-          <summary>Claude에게 맡기기 <small>— 요청 복사 · 답 JSON 가져오기</small></summary>
-          <div class="ai-qsend">
-            <button type="button" class="ai-btn ai-primary" id="aiQCopy">Claude에게 보낼 요청 복사</button>
-            <label class="ai-chk"><input type="checkbox" id="aiQWithSpec" checked> 규칙 전문 포함</label>
-            <button type="button" class="ai-link" id="aiQSpecPick">규칙 파일 직접 선택</button>
-            <input type="file" id="aiQSpecFile" accept=".md,.txt,text/markdown,text/plain" hidden>
+        <!-- ② 코딩 -->
+        <section class="ai-step" id="aiStep2">
+          <header class="ai-step-h">
+            <span class="ai-num">2</span>
+            <div class="ai-step-t"><h3>코딩하기</h3><p>목록의 행을 단어별로 분석해서 브라우저에 저장해요. 방식을 고르세요.</p></div>
+          </header>
+          <div class="ai-seg" id="aiSeg" role="tablist" aria-label="코딩 방식">
+            <button type="button" role="tab" data-mode="gem" class="on">Gemini 자동</button>
+            <button type="button" role="tab" data-mode="claude">Claude에게 맡기기</button>
           </div>
-          <label class="ai-f ai-wide"><span>Claude가 돌려준 JSON</span><textarea id="aiImp" rows="3" spellcheck="false" placeholder="Claude의 답에 있는 JSON(코드블록째 붙여넣어도 돼요)"></textarea></label>
-          <div class="ai-qsend">
-            <button type="button" class="ai-btn ai-primary" id="aiImpGo">가져와서 저장</button>
-            <label class="ai-chk"><input type="checkbox" id="aiImpOver"> 같은 번호는 덮어쓰기</label>
-          </div>
-        </details>
 
-        <details class="ai-sub">
-          <summary>이 권을 data 파일로 내보내기</summary>
+          <div class="ai-pane" id="aiPaneGem">
+            <div class="ai-grid2">
+              <label class="ai-f"><span>모델</span>
+                <select id="aiGemModel" class="ai-gem" title="사용할 Gemini 모델"></select>
+                <input type="text" id="aiGemModelCustom" class="ai-gem ai-gem-custom" placeholder="모델 ID 직접 입력" autocomplete="off" spellcheck="false" hidden>
+              </label>
+              <label class="ai-f"><span>API 키</span><input type="password" id="aiGemKey" class="ai-gem" placeholder="aistudio.google.com에서 발급" autocomplete="off" spellcheck="false"></label>
+            </div>
+            <div class="ai-opts">
+              <label class="ai-chk" title="503(과부하)·429(한도 초과)·404(모델 종료)가 나오면 무료 모델 목록의 다음 모델로 바꿔 계속해요"><input type="checkbox" id="aiGemRotate" checked> 오류 나면 다음 모델로 자동 전환</label>
+              <label class="ai-chk"><input type="checkbox" id="aiGemCtx" checked> 앞 2행 참고</label>
+              <label class="ai-chk"><input type="checkbox" id="aiGemSoft" checked> 문장 수 미달이어도 저장</label>
+              <label class="ai-chk">요청 간격 <input type="number" id="aiGemGap" min="1" max="120" style="width:3.6em"> 초</label>
+            </div>
+            <div class="ai-main-act"><button type="button" class="ai-btn ai-primary" id="aiAutoGo">자동 코딩 시작</button></div>
+          </div>
+
+          <div class="ai-pane" id="aiPaneClaude" hidden>
+            <p class="ai-hint">① 요청을 복사해 Claude에 붙여넣고 → ② Claude가 돌려준 JSON을 아래에 붙여넣어 저장해요.</p>
+            <div class="ai-qsend">
+              <button type="button" class="ai-btn ai-primary" id="aiQCopy">Claude에게 보낼 요청 복사</button>
+              <label class="ai-chk"><input type="checkbox" id="aiQWithSpec" checked> 규칙 전문 포함</label>
+              <button type="button" class="ai-link" id="aiQSpecPick">규칙 파일 직접 선택</button>
+              <input type="file" id="aiQSpecFile" accept=".md,.txt,text/markdown,text/plain" hidden>
+            </div>
+            <label class="ai-f ai-wide"><span>Claude가 돌려준 JSON</span><textarea id="aiImp" rows="3" spellcheck="false" placeholder="Claude의 답에 있는 JSON(코드블록째 붙여넣어도 돼요)"></textarea></label>
+            <div class="ai-qsend">
+              <button type="button" class="ai-btn ai-primary" id="aiImpGo">가져와서 저장</button>
+              <label class="ai-chk"><input type="checkbox" id="aiImpOver"> 같은 번호는 덮어쓰기</label>
+            </div>
+          </div>
+
+          <p class="ai-status ai-result" id="aiQMsg" aria-live="polite"></p>
+        </section>
+
+        <!-- ③ 저장 -->
+        <section class="ai-step" id="aiStep3">
+          <header class="ai-step-h">
+            <span class="ai-num">3</span>
+            <div class="ai-step-t"><h3>data 파일에 반영</h3><p>②에서 저장한 내용은 아직 이 브라우저에만 있어요. 여기서 파일로 내보내야 data 폴더가 바뀌어요.</p></div>
+          </header>
           <div class="ai-qsend">
-            <button type="button" class="ai-btn" id="aiExpSave" hidden>data 폴더에 바로 저장</button>
+            <button type="button" class="ai-btn ai-primary" id="aiExpSave" hidden>data 폴더에 바로 저장</button>
             <button type="button" class="ai-btn" id="aiExpDl">.js 다운로드</button>
             <button type="button" class="ai-link" id="aiExpJson">.json 다운로드</button>
-            <button type="button" class="ai-link ai-danger" id="aiMineClear">내 수정본 비우기</button>
           </div>
-        </details>
-      </details>
+          <div class="ai-opts">
+            <label class="ai-chk" id="aiGemAutoFileL" hidden><input type="checkbox" id="aiGemAutoFile" checked> 자동 코딩 중 10행마다 data 폴더에 저장</label>
+          </div>
+          <p class="ai-hint">‘바로 저장’이 안 보이면 이 브라우저는 폴더 저장을 지원하지 않아요. .js를 받아 data 폴더의 같은 이름 파일에 덮어쓴 뒤 새로고침하세요.</p>
+          <div class="ai-step-foot"><button type="button" class="ai-link ai-danger" id="aiMineClear">내 수정본 비우기</button><small>파일로 내보낸 뒤에만 지우세요</small></div>
+        </section>
+
+      </div>
 
       <details class="ai-bulk ai-manual" id="aiManual">
-        <summary>한 행씩 직접 입력·수정</summary>
+        <summary>한 행씩 직접 입력·수정 <small>— 고급 · 위 세 단계 대신 한 행만 손으로 고칠 때</small></summary>
         <div class="ai-manual-body">
           <label class="ai-f ai-wide"><span>원문</span><textarea id="aiSrc" class="ai-src" rows="3" spellcheck="false" placeholder="이 행의 원문을 그대로 붙여넣으세요"></textarea></label>
           <div class="ai-row"><button type="button" class="ai-btn" id="aiSplit">단어로 나누기</button></div>
@@ -7015,7 +7164,7 @@ function goToLine(viewId, idx) {
   // ---- 규칙 파일(같은 폴더의 classics_data_generation_prompt.md)을 읽어 요청에 붙이고, Claude의 JSON 답을 한꺼번에 가져온다 ----
   const SPEC_FILE = 'classics_data_generation_prompt.md';
   let SPEC = '', specAt = 0, specFrom = '';
-  const msgEl = $('aiQMsg'), qMsg = s => { msgEl.textContent = s || ''; };
+  const msgEl = $('aiQMsg'), qMsg = s => { msgEl.textContent = s || ''; msgEl.dataset.tone = !s ? '' : /중단|실패 [1-9]|오류|못 |없어요|HTTP|아닌 것/.test(s) ? 'warn' : /끝났어요|받았어요|반영|저장했/.test(s) ? 'ok' : ''; };
   const specOk = s => typeof s === 'string' && s.length > 500 && s.indexOf('§A') >= 0;
   async function loadSpec() {
     specAt = Date.now();
@@ -7189,67 +7338,46 @@ function goToLine(viewId, idx) {
   }
 
   // ---- 자동 코딩: Gemini API로 목록의 행을 한 줄씩 처리 (규칙 파일을 시스템 지시로 사용) ----
-  const gemCfg = () => { let c = {}; try { c = JSON.parse(localStorage.getItem('aiGem') || '{}') || {}; } catch (e) {} return { key: c.key || '', model: c.model || 'gemini-2.5-flash-lite', gap: c.gap || 7, soft: c.soft !== false, ctx: c.ctx !== false }; };
-  const gemSave = () => { try { localStorage.setItem('aiGem', JSON.stringify({ key: $('aiGemKey').value.trim(), model: $('aiGemModel').value.trim(), gap: parseInt($('aiGemGap').value, 10) || 7, soft: $('aiGemSoft').checked, ctx: $('aiGemCtx').checked })); } catch (e) {} };
-  (() => { const g = gemCfg(); $('aiGemKey').value = g.key; $('aiGemModel').value = g.model; $('aiGemGap').value = g.gap; $('aiGemSoft').checked = g.soft; $('aiGemCtx').checked = g.ctx; })();
-  ['aiGemKey', 'aiGemModel', 'aiGemGap', 'aiGemSoft', 'aiGemCtx'].forEach(id => $(id).addEventListener('change', gemSave));
-  const auto = { run: false, stop: false, ctl: null };
-  const sleep = async ms => { const end = Date.now() + ms; while (Date.now() < end && !auto.stop) await new Promise(r => setTimeout(r, 300)); };
-  const stripP = s => Array.from(String(s).normalize('NFC')).filter(c => !PUNCT.test(c)).join('');
-  const sentN = s => (String(s || '').match(/[.。!?](?=\s|$)/g) || []).length;
-  function checkLine(o, text) {
-    const hard = [], soft = [];
-    if (!o || typeof o !== 'object') return { hard: ['JSON 객체가 아님'], soft };
-    const words = Array.isArray(o.words) ? o.words.filter(x => x && typeof x.g === 'string' && x.g.trim()) : [];
-    if (!String(o.trans || '').trim()) hard.push('trans가 비어 있음');
-    if (!words.length) { hard.push('words가 없음'); return { hard, soft }; }
-    if (stripP(words.map(x => x.g).join('')) !== stripP(text)) hard.push('words의 g를 이어 붙인 글자가 입력 원문과 다름(원문을 바꾸거나 빼먹음)');
-    const req = S.work.key === 'sanguo' ? ['g', 'pos', 'lemma', 'pinyin', 'kr_reading', 'syntax', 'meaning', 'background', 'etymology', 'simplified']
-      : ['g', 'pos', 'lemma', 'parse', 'gloss_kr', 'gloss_en', 'syntax', 'background', 'etymology'].concat(S.work.key === 'genesis' ? ['root'] : []);
-    const miss = [], low = [];
-    words.forEach((w, i) => {
-      const m = req.filter(k => !String(w[k] == null ? '' : w[k]).trim());
-      if (m.length) miss.push((i + 1) + '번째 단어 ' + w.g + ': ' + m.join(', '));
-      [['syntax', 3], ['background', 3], ['etymology', 4]].forEach(([k, n]) => { if (w[k] && sentN(w[k]) < n) low.push((i + 1) + '번째 ' + w.g + '의 ' + k + ' (' + n + '문장 이상 필요)'); });
-    });
-    const slots = S.work.key === 'iliad' ? 6 : S.work.key === 'meta' ? 4 : 0;
-    if (slots) {
-      const bad = [], none = [];
-      words.forEach((w, i) => {
-        const pp = Array.isArray(w.principalParts) ? w.principalParts.join(' – ') : String(w.principalParts || '').trim();
-        const verb = /동사|분사|부정사/.test(w.pos || '') || /\b(pres|impf|fut|aor|perf|plup|futperf)\b/.test(w.parse || '');
-        if (pp) { const n = pp.split(/\s*[–—]\s*/).length; if (n !== slots) bad.push((i + 1) + '번째 ' + w.g + '(' + n + '칸)'); }
-        else if (verb) none.push((i + 1) + '번째 ' + w.g);
-      });
-      if (bad.length) soft.push('principalParts는 ' + slots + '칸이어야 함 — ' + bad.slice(0, 3).join(', '));
-      if (none.length) soft.push('동사 파생형인데 principalParts 없음 — ' + none.slice(0, 3).join(', '));
-    }
-    if (miss.length) hard.push('빈 필드 — ' + miss.slice(0, 4).join(' / '));
-    if (low.length) soft.push('문장 수 미달 ' + low.length + '곳 — ' + low.slice(0, 3).join(', '));
-    return { hard, soft };
-  }
-  function fixSlots(words) {   // 칸이 모자라면 (미상)으로 채워 칸 수를 맞춘다(규칙 파일 §1.1)
-    const slots = S.work.key === 'iliad' ? 6 : S.work.key === 'meta' ? 4 : 0; if (!slots) return;
-    words.forEach(w => {
-      if (!w.principalParts) return;
-      const parts = (Array.isArray(w.principalParts) ? w.principalParts.join(' – ') : String(w.principalParts)).split(/\s*[–—]\s*/);
-      if (parts.length < slots) w.principalParts = parts.concat(Array(slots - parts.length).fill('(미상)')).join(' – ');
-    });
-  }
-  function ctxFor(n) {   // 바로 앞 행(이번 실행에서 저장한 것 포함)의 g / lemma / parse 요약
-    const mine = loadUserLines()[S.storeKey] || {}, out = [];
-    for (let k = 2; k >= 1; k--) {
-      if (n - k < 1) continue;
-      const l = mine[refOf(n - k)] || S.lines.find(x => refLineNo(x.ref) === n - k);
-      if (l && Array.isArray(l.words) && l.words.length) out.push(l.ref + ' | ' + l.words.map(x => [x.g, x.lemma, x.parse].filter(Boolean).join(' / ')).join(' ; '));
-    }
-    return out.length ? '\n[참고용: 바로 앞 행의 분석 요약(g / lemma / parse). 출력 대상이 아님. parse 표기 방식과 재등장 표제어 처리를 일관되게 맞추는 데만 쓰세요]\n' + out.join('\n') : '';
-  }
-  async function gemCall(sys, user, signal) {
-    const g = gemCfg();
-    const r = await fetch('https://generativelanguage.googleapis.com/v1beta/models/' + encodeURIComponent(g.model) + ':generateContent', {
+  // 무료로 돌려 쓸 수 있는 Gemini 모델 목록 (전환 순서 = 위에서 아래). 무료 제공 여부·종료일은 바뀔 수 있으니 안 되면 '직접 입력'을 쓰세요.
+  const GEM_MODELS = [
+    { id: 'gemini-3.5-flash-lite', label: 'Gemini 3.5 Flash-Lite', free: true },
+    { id: 'gemini-3.5-flash', label: 'Gemini 3.5 Flash', free: true },
+    { id: 'gemini-3.1-flash-lite', label: 'Gemini 3.1 Flash-Lite', free: true },
+    { id: 'gemini-3-flash-preview', label: 'Gemini 3 Flash (preview)', free: true },
+    { id: 'gemini-2.5-flash-lite', label: 'Gemini 2.5 Flash-Lite (10/16 종료 예정)', free: true },
+    { id: 'gemini-2.5-flash', label: 'Gemini 2.5 Flash (10/16 종료 예정)', free: true },
+    { id: 'gemini-3.6-flash', label: 'Gemini 3.6 Flash', free: false },
+    { id: 'gemini-3.7-flash', label: 'Gemini 3.7 Flash', free: false },
+    { id: 'gemini-3.8-flash', label: 'Gemini 3.8 Flash', free: false }
+  ];
+  const gemPool = () => GEM_MODELS.filter(m => m.free).map(m => m.id);
+  const gemCfg = () => { let c = {}; try { c = JSON.parse(localStorage.getItem('aiGem') || '{}') || {}; } catch (e) {} return { key: c.key || '', model: c.model || 'gemini-3.5-flash-lite', gap: c.gap || 7, soft: c.soft !== false, ctx: c.ctx !== false, rotate: c.rotate !== false }; };
+  const gemModelVal = () => { const v = $('aiGemModel').value; return v === '__custom' ? $('aiGemModelCustom').value.trim() : v; };
+  const gemSave = () => { try { localStorage.setItem('aiGem', JSON.stringify({ key: $('aiGemKey').value.trim(), model: gemModelVal() || 'gemini-3.5-flash-lite', gap: parseInt($('aiGemGap').value, 10) || 7, soft: $('aiGemSoft').checked, ctx: $('aiGemCtx').checked, rotate: $('aiGemRotate').checked })); } catch (e) {} };
+  const gemModelSet = id => { const sel = $('aiGemModel'), known = GEM_MODELS.some(m => m.id === id); sel.value = known ? id : '__custom'; $('aiGemModelCustom').hidden = known; if (!known) $('aiGemModelCustom').value = id; };
+  (() => {
+    const sel = $('aiGemModel');
+    sel.innerHTML = '<optgroup label="무료 (돌려 쓰기)">' + GEM_MODELS.filter(m => m.free).map(m => '<option value="' + m.id + '">' + m.label + '</option>').join('') + '</optgroup>'
+      + '<optgroup label="유료일 수 있음">' + GEM_MODELS.filter(m => !m.free).map(m => '<option value="' + m.id + '">' + m.label + '</option>').join('') + '</optgroup>'
+      + '<option value="__custom">직접 입력…</option>';
+    const g = gemCfg(); $('aiGemKey').value = g.key; gemModelSet(g.model); $('aiGemGap').value = g.gap; $('aiGemSoft').checked = g.soft; $('aiGemCtx').checked = g.ctx; $('aiGemRotate').checked = g.rotate;
+    sel.addEventListener('change', () => { const c = sel.value === '__custom'; $('aiGemModelCustom').hidden = !c; if (c) $('aiGemModelCustom').focus(); });
+  })();
+  ['aiGemKey', 'aiGemModel', 'aiGemModelCustom', 'aiGemGap', 'aiGemSoft', 'aiGemCtx', 'aiGemRotate'].forEach(id => $(id).addEventListener('change', gemSave));
+  // ② 코딩 방식 전환 (Gemini 자동 / Claude에게 맡기기) — 고른 방식은 기억
+  (() => {
+    const gem = $('aiPaneGem'), cl = $('aiPaneClaude'), bs = document.querySelectorAll('#aiSeg button');
+    const set = m => { gem.hidden = m !== 'gem'; cl.hidden = m !== 'claude'; bs.forEach(b => { const on = b.dataset.mode === m; b.classList.toggle('on', on); b.setAttribute('aria-selected', on ? 'true' : 'false'); }); try { localStorage.setItem('aiMode', m); } catch (e) {} };
+    bs.forEach(b => b.addEventListener('click', () => set(b.dataset.mode)));
+    let m = 'gem'; try { m = localStorage.getItem('aiMode') || 'gem'; } catch (e) {}
+    set(m === 'claude' ? 'claude' : 'gem');
+  })();
+  async function gemCall(sys, user, signal, modelId) {
+    const g = gemCfg(), model = modelId || g.model;
+    const mv = /gemini-(\d+)\.(\d+)/.exec(model), noTemp = mv && (+mv[1] > 3 || (+mv[1] === 3 && +mv[2] >= 6));
+    const r = await fetch('https://generativelanguage.googleapis.com/v1beta/models/' + encodeURIComponent(model) + ':generateContent', {
       method: 'POST', signal, headers: { 'Content-Type': 'application/json', 'x-goog-api-key': g.key },
-      body: JSON.stringify({ systemInstruction: { parts: [{ text: sys }] }, contents: [{ role: 'user', parts: [{ text: user }] }], generationConfig: { responseMimeType: 'application/json', temperature: 0.4, maxOutputTokens: 30000 } })
+      body: JSON.stringify({ systemInstruction: { parts: [{ text: sys }] }, contents: [{ role: 'user', parts: [{ text: user }] }], generationConfig: Object.assign({ responseMimeType: 'application/json', maxOutputTokens: 30000 }, noTemp ? {} : { temperature: 0.4 }) })
     });
     if (!r.ok) { const e = new Error('HTTP ' + r.status + ' ' + (await r.text()).slice(0, 240)); e.status = r.status; throw e; }
     const d = await r.json(), c = d.candidates && d.candidates[0];
@@ -7267,7 +7395,8 @@ function goToLine(viewId, idx) {
     if (!rows.length) { qMsg(onlyFailed ? '다시 할 실패한 행이 없어요.' : '처리할 행이 없어요 (이미 저장됐거나 번호가 없는 행은 건너뛰어요).'); return; }
     auto.run = true; auto.stop = false; $('aiAutoGo').textContent = '멈추기';
     let lock = null; try { lock = await navigator.wakeLock.request('screen'); } catch (e) {}
-    const log = [], failed = []; let lastReq = 0, fatal = false, okN = 0, sinceSave = 0;
+    const log = [], failed = []; let lastReq = 0, fatal = false, okN = 0, sinceSave = 0, rotN = 0, curModel = g.model;
+    const pool = gemPool(), switchModel = why0 => { const i = pool.indexOf(curModel), nx = pool[(i + 1) % pool.length]; if (!nx || nx === curModel) return false; log.push('↻ ' + why0 + ' — ' + curModel + ' → ' + nx); curModel = nx; gemModelSet(nx); gemSave(); return true; };
     if (window.__aiBakReset) window.__aiBakReset();
     const show = s => qMsg('자동 코딩 ' + (okN + failed.length) + '/' + rows.length + ' — ' + s + (log.length ? '\n' + log.slice(-5).join('\n') : ''));
     const w = S.work;
@@ -7276,16 +7405,17 @@ function goToLine(viewId, idx) {
       const want = refOf(row.n); let fb = '', saved = false, why = '', rate = 0;
       for (let a = 1; a <= 3 && !auto.stop; a++) {
         const wait = g.gap * 1000 - (Date.now() - lastReq); if (wait > 0) await sleep(wait); if (auto.stop) break; lastReq = Date.now();
-        show(row.n + '행 요청 중 (시도 ' + a + '/3)');
+        show(row.n + '행 요청 중 (' + curModel + ', 시도 ' + a + '/3)');
         const user = ['이번 요청: 시스템 지시의 「데이터 생성 규칙」을 예외 없이 적용해 아래 한 줄의 JSON을 만들어 주세요.',
           '- 작품: ' + w.label + ' (' + (LANG[w.key] || '') + '), ' + S.book + w.unit,
           '- ref는 정확히 "' + want + '" 로 쓰세요. ' + w.unit + ' 번호와 행 번호는 확정되어 있으니 되묻지 마세요.',
           '- 원문은 1줄이므로 ref 객체 1개를 담은 JSON 배열을 출력하세요. 아래 원문 텍스트만 쓰고, JSON 외의 설명은 쓰지 마세요.', '', '원문: ' + row.t + (g.ctx ? ctxFor(row.n) : ''),
           fb ? '\n이전 응답의 문제점 — 반드시 고쳐서 처음부터 다시 완전한 JSON을 출력하세요: ' + fb : ''].join('\n');
         let res;
-        try { auto.ctl = new AbortController(); res = await gemCall(SPEC, user, auto.ctl.signal); }
+        try { auto.ctl = new AbortController(); res = await gemCall(SPEC, user, auto.ctl.signal, curModel); }
         catch (e) {
           if (auto.stop) break;
+          if (g.rotate && [404, 429, 500, 502, 503, 504].indexOf(e.status) >= 0 && rotN < pool.length * 2 && switchModel('HTTP ' + e.status)) { rotN++; why = e.message; a--; continue; }
           if (e.status === 429 && ++rate <= 8) { show(row.n + '행 — 요청 한도에 걸려 35초 기다려요 (' + rate + '/8)'); await sleep(35000); a--; continue; }
           if ([400, 401, 403, 404].indexOf(e.status) >= 0) { fatal = true; why = e.message + ' — 키·모델 이름을 확인하세요.'; break; }
           fb = '(통신 오류였음, 같은 요청을 다시)'; why = e.message; await sleep(8000); continue;
@@ -7300,7 +7430,7 @@ function goToLine(viewId, idx) {
         const line = Object.assign({}, obj, { ref: want, trans: String(obj.trans || '').trim(), words });
         const store = loadUserLines(); (store[S.storeKey] = store[S.storeKey] || {})[want] = line;
         if (!saveUserLines(store)) { fatal = true; why = '브라우저 저장 공간이 가득 찼어요'; break; }
-        saved = true; okN++; sinceSave++;
+        saved = true; okN++; sinceSave++; rotN = 0;
         const qr = Q.find(r => parseInt(r.n, 10) === row.n && r.t.trim()); if (qr) { qr.d = true; qr.f = false; qSave(); }
         log.push('✓ ' + row.n + '행' + (chk.soft.length ? ' (문장 수 일부 미달)' : '')); qSync();
         if (auto.file && sinceSave >= 10) { try { await window.__aiSaveToDir(true); sinceSave = 0; log.push('💾 data 파일에 저장함'); } catch (e) { auto.file = false; log.push('⚠ 파일 저장 실패, 이후엔 브라우저에만 저장: ' + e.message); } }
