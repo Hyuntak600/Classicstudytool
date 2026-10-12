@@ -2,6 +2,1520 @@
 // 행 하나: { "ref": "Iliad 24.1", "trans": "번역", "words": [ { "g": ..., "pos": ..., "lemma": ..., ... } ] }
 window.__RAW_CHAPTER_DATA = window.__RAW_CHAPTER_DATA || {};
 window.__RAW_CHAPTER_DATA['data-linesIliad24'] = [
+  {
+    "ref": "Iliad 24.659",
+    "trans": "그러자 노인 신과 같은 프리아모스가 그에게 대답했다.",
+    "words": [
+      {
+        "g": "τὸν",
+        "pos": "관사",
+        "lemma": "ὁ, ἡ, τό",
+        "parse": "sg.acc.m. (Homeric demonstrative)",
+        "gloss_kr": "그에게",
+        "gloss_en": "him",
+        "syntax": "LFG 관점에서 τὸν은 동사 ἠμείβετ᾽의 대격 직접목적어를 담당하며, 속성-값 행렬로 [PRED 'pro', CASE acc, NUM sg, GEND m, θ-ROLE PATIENT] 자질을 갖는다. c-구조상 문두에 위치하여 A'-이동(topicalization)된 구조를 보이며, 괄호 트리는 [CP τὸνᵢ [C' [IP ... [VP ἠμείβετο tᵢ]]]]로 나타낼 수 있다. 레빈슨式 화용론에서 전위된 대명사는 담화상 이미 확립된 지시체(아킬레우스)를 대조적 초점으로 가리킨다.",
+        "background": "여기서 τὸν은 앞서 장례 일정과 숙박을 제안한 아킬레우스를 가리킨다. 호메로스 서사시에서 관사 형태의 지시대명사는 앞선 발화의 수신자를 신속하게 전환하여 대화의 주도권을 나타내는 담화 표지로 작동한다.",
+        "etymology": "PIE 지시대명사 어근 *to-/*te-의 남성 대격 형태 *tom에서 유래했다. Chantraine(DELG)에 따르면 산스크리트어 tam, 라틴어 tum/tam, 고딕어 þana와 직접 대응한다. 어말 *m이 그리스어 음운 변화 규칙에 의해 치경 비음 -ν로 바뀌었다(*tom > τὸν). 현대 그리스어에서도 정관사 남성 대격 τὸν으로 보존되어 있다."
+      },
+      {
+        "g": "δ᾽",
+        "pos": "접속사",
+        "lemma": "δέ",
+        "parse": "coord.conj.",
+        "gloss_kr": "그리고, 반면에",
+        "gloss_en": "and, but",
+        "syntax": "HPSG 관점에서 δέ는 후접어(enclitic)로서 문장 내 두 번째 위치(Wackernagel's position)를 점하며 자질구조 [HEAD conj, COMPS < >]를 갖는다. c-구조상 이전 절과 본 절을 연결하며, 대조적 어조를 완화하고 담화 흐름을 자연스럽게 전환한다.",
+        "background": "아킬레우스의 질문에 대한 프리아모스의 즉각적인 응답을 연결하는 담화 접속사다. 장례 휴전을 위한 구체적 조건 제시로 대화가 이동함을 알린다.",
+        "etymology": "PIE 지시적/강조적 소사 *de에서 파생했다. Beekes(EDG)에 따르면 라틴어 -de(예: quamde), 슬라브어 da 등과 어원적으로 연관된다. 고전 그리스어 전체에서 가장 빈번하게 쓰이는 후접 접속사이며, 현대 그리스어에는 생존하지 않는다."
+      },
+      {
+        "g": "ἠμείβετ᾽",
+        "pos": "동사",
+        "lemma": "ἀμείβω",
+        "principalParts": "ἀμείβω – ἀμείψω – ἤμειψα – (미상) – ἤμειμμαι – ἠμείφθην",
+        "parse": "3rd.sg.impf.ind.mp. (Homeric form without elided o)",
+        "gloss_kr": "대답했다, 응답했다",
+        "gloss_en": "answered, replied",
+        "syntax": "LFG 관점에서 ἠμείβετ᾽는 주절의 핵심 술어로서 [PRED 'ἀμείβω<SUBJ,OBJ>', TENSE past, ASPECT impf, MOOD ind, VOICE mp, SUBJ [PRED 'Πρίαμος'], OBJ [PRED 'pro']] 구조를 이룬다. c-구조상 모음 축약 및 어말 모음 엘리전(elision)을 겪어 ἠμείβετο > ἠμείβετ᾽가 되었다. 생성문법적으로는 [TP [vP Πρίαμος [VP τὸν ἠμείβετο]]] 구조에서 v-to-T 이동이 일어난 것으로 분석된다.",
+        "background": "호메로스 대화 장면을 이끄는 전형적인 정형구(formulaic verb)다. 중동태(middle voice) 형태는 '상호 교환하다' 또는 '자신을 위해 응답하다'라는 상호적·주체적 뉘앙스를 담고 있다.",
+        "etymology": "PIE 어근 *mey-('교환하다, 바꾸다')의 e급 확장 어근 *meyb-에서 유래했다. LSJ와 Chantraine(DELG)에 따르면 산스크리트어 mēdate, 라틴어 migrare('이주하다'), mutare('바꾸다')가 동계어다. 어간의 모음교체(ablaut)와 장모음화 증강(augment)을 거쳐 ἠμείβ- 형태가 정착했다. 영어 mutate, migrant 등의 어원적 기원과 연결된다."
+      },
+      {
+        "g": "ἔπειτα",
+        "pos": "부사",
+        "lemma": "ἔπειτα",
+        "parse": "adv.",
+        "gloss_kr": "그 다음에, 이어서",
+        "gloss_en": "then, thereupon",
+        "syntax": "LFG 관점에서 ἔπειτα는 시간적 후행성을 나타내는 부사적 부속어로 [ADJUNCT [PRED 'ἔπειτα', SEM time-subsequent]] 자질을 갖는다. c-구조상 [VP [AdvP ἔπειτα] [V' ἠμείβετο]] 위치에 결합하여 발화의 시점적 순서를 지정한다.",
+        "background": "아킬레우스의 발화가 끝난 직후 프리아모스가 말을 이어받는 서사적 연속성을 나타낸다. 대화의 호흡을 조절하고 서사적 리듬감을 부여하는 수사적 장치다.",
+        "etymology": "전치사 ἐπί('~ 위에, ~에 이어')와 부사 εἶτα('그 다음에')의 합성어로, PIE *epi와 지시어근 *i-/*e-의 결합에서 유래했다. Chantraine(DELG)에 의하면 고전 그리스어 산문과 시가 모두에서 시간 부사로 광범위하게 쓰였다. 현대 그리스어에서는 직접 형태가 소실되었다."
+      },
+      {
+        "g": "γέρων",
+        "pos": "명사",
+        "lemma": "γέρων, γέροντος, ὁ",
+        "parse": "sg.nom.m.",
+        "gloss_kr": "노인, 노왕",
+        "gloss_en": "old man, elder",
+        "syntax": "LFG 관점에서 γέρων은 주어 Πρίαμος를 수식하는 동격 명사구로서 [PRED 'γέρων', CASE nom, NUM sg, GEND m] 자질을 갖는다. 괄호 트리는 [DP [NP [N' γέρων]] [DP Πρίαμος]]로 표현되어 주어 명사구 내에서 동격 수식 구조를 이룬다.",
+        "background": "프리아모스의 연로함과 비극성을 부각하는 수식어다. 자식을 잃은 늙은 아버지의 연약함과 한 나라의 국왕이라는 지위가 대비되어 아킬레우스의 연민을 자극하는 효과를 극대화한다.",
+        "etymology": "PIE 어근 *ġerh₂-('늙다, 성숙하다')의 영급/e급 분사 파생형 *ġér-ont-에서 유래했다. Beekes(EDG)에 의하면 산스크리트어 jarant-('늙은'), 아베스타어 zarand-가 동계어다. *ġerh₂-에서 파생된 *ġr-h₂-o-는 그리스어 γῆρας('연령, 노령')를 낳았다. 영어 gerontocracy, geriatrics 등의 학술 용어에 그 흔적이 남아 있으며, 현대 그리스어 γέροντας로 이어진다."
+      },
+      {
+        "g": "Πρίαμος",
+        "pos": "명사(고유)",
+        "lemma": "Πρίαμος, Πριάμου, ὁ",
+        "parse": "sg.nom.m.",
+        "gloss_kr": "프리아모스",
+        "gloss_en": "Priam",
+        "syntax": "LFG 관점에서 Πρίαμος는 주절의 통사적 주어로 [PRED 'Πρίαμος', CASE nom, NUM sg, GEND m, θ-ROLE AGENT] 자질을 갖는다. c-구조상 [IP [DP Πρίαμος] [I' ...]] 위치를 차지하며 동사 ἠμείβετ᾽와 인칭·수 일치를 이룬다.",
+        "background": "트로이아의 마지막 왕이자 헥토르, 파리스 등의 아버지다. 아들의 시신을 되찾기 위해 밤중에 목숨을 걸고 적진인 아킬레우스의 막사로 찾아온 서사시 제24권의 핵심 인물이다.",
+        "etymology": "루위어(Luwian) 또는 선그리스어(Pre-Greek) 기층 어원 가능성이 높다. Beekes(EDG)는 히타이트-루위어 이름 Pariyamuwa('뛰어난 용기를 지닌 자')와의 연관성을 제시한다. 민간어원설에서는 πρίαμαι('사다')에서 나와 '몸값을 주고 되찾아진 자'로 풀어내나, Chantraine(DELG)은 이를 민간 어원학적 재해석으로 교정한다. 영어 Priam으로 전재된다."
+      },
+      {
+        "g": "θεοειδής",
+        "pos": "형용사",
+        "lemma": "θεοειδής, θεοειδές",
+        "parse": "sg.nom.m.",
+        "gloss_kr": "신과 같은 모습의",
+        "gloss_en": "godlike",
+        "syntax": "LFG 관점에서 θεοειδής는 Πρίαμος를 수식하는 형용사구로서 [PRED 'θεοειδής', CASE nom, NUM sg, GEND m] 자질을 갖는다. c-구조상 [DP [NP Πρίαμος] [AP θεοειδής]]의 후행 수식 구조를 이룬다.",
+        "background": "영웅과 왕들의 고귀한 품모를 묘사하는 호메로스 정형구 형용사(formulaic adjective)다. 비통한 처지에 놓인 늙은 왕에게 이 칭호를 부여함으로써 그의 왕적 존엄성을 유지시킨다.",
+        "etymology": "θεός('신')와 εἶδος('모습, 형상')의 합성어로, PIE *dʰeh₁s-('신성한')와 *weyd-('보다, 알다')에서 유래했다. Beekes(EDG)에 의하면 θεός는 명확한 PIE 어원을 지니고, εἶδος는 라틴어 videre, 산스크리트어 veda와 동계이다. 그리스어 내에서 합성어 접미사 -ειδής(-oid)로 체계화되어 영어 -oid(예: android, humanoid)의 원형이 되었다."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 24.660",
+    "trans": "“만일 그대가 참으로 고귀한 헥토르에게 장례를 치러주기를 원하신다면,",
+    "words": [
+      {
+        "g": "εἰ",
+        "pos": "접속사",
+        "lemma": "εἰ",
+        "parse": "subord.conj.",
+        "gloss_kr": "만약 ~라면",
+        "gloss_en": "if",
+        "syntax": "HPSG 관점에서 εἰ는 조건절을 이끄는 종속접속사로 [HEAD conj, SUBJ < >, COMPS < S[subj] >] 자질을 갖는다. 직설법 현재 동사 ἐθέλεις와 결합하여 가정 및 조건의 전건(protasis)을 도입한다.",
+        "background": "프리아모스가 아킬레우스에게 장례 휴전을 건의하기 시작하는 가정절의 도입부다. 상대방의 의사를 정중히 묻는 공손한 어조를 형성한다.",
+        "etymology": "PIE 지시어근 *e-/*i-의 여격/처격 형태 *ei에서 유래했다. Chantraine(DELG)에 따르면 도리스 방언 αἰ와 대립하며, 앙투안 메예(A. Meillet) 등 학자들은 이를 지시 입자의 조건적 문법화로 본다. 현대 그리스어 αν/αν은 이 계열과 별개로 변형된 형태다."
+      },
+      {
+        "g": "μὲν",
+        "pos": "소사",
+        "lemma": "μέν",
+        "parse": "correlative.particle",
+        "gloss_kr": "참으로, 한편",
+        "gloss_en": "indeed, on the one hand",
+        "syntax": "HPSG 관점에서 μέν는 대조 및 강조를 나타내는 입자(particle)로 [HEAD particle, MOD clause] 자질을 갖는다. 조건절 내부에서 δή와 함께 쓰여 조건의 전제를 강하게 강조한다.",
+        "background": "후행하는 대조 소사와의 상응을 예고하거나 조건의 참됨을 확증하는 수사적 기능을 수행한다. 프리아모스의 간절한 요청에 진정성을 부여한다.",
+        "etymology": "PIE 강조 입자 *men-('참으로, 진짜로')에서 유래했다. Beekes(EDG)와 Chantraine(DELG)은 산스크리트어 smam, 라틴어 memmet 등과의 연관성을 제시한다. 고전 그리스어 문장 구조의 핵심적인 대조 표지이다."
+      },
+      {
+        "g": "δή",
+        "pos": "소사",
+        "lemma": "δή",
+        "parse": "discourse.particle",
+        "gloss_kr": "정말로, 정녕",
+        "gloss_en": "indeed, truly",
+        "syntax": "HPSG 관점에서 δή는 담화 소사로서 [HEAD particle, MOD conj] 자질을 가지며 εἰ μέν을 수식하여 조건의 현실성과 중요성을 극대화한다.",
+        "background": "아킬레우스가 이미 헥토르의 시신을 인도하기로 결정한 사실을 확인하면서, 장례라는 다음 단계로 논의를 진전시키기 위한 담화 표지다.",
+        "etymology": "PIE 지시 어근 *de/do에서 유래한 시간/강조 소사다. LSJ에 따르면 시간 부사 ἤδη('이미')의 형성에도 관여했다. 확실성과 즉각성을 나타내는 호메로스어의 전형적인 담화 요소다."
+      },
+      {
+        "g": "μ᾽",
+        "pos": "대명사",
+        "lemma": "ἐγώ",
+        "parse": "sg.acc. (elided form of με)",
+        "gloss_kr": "나를, 내가",
+        "gloss_en": "me",
+        "syntax": "LFG 관점에서 μ᾽는 동사 ἐθέλεις의 목적어 또는 허용을 받는 주체로서 [PRED 'pro', CASE acc, PERS 1, NUM sg] 자질을 갖는다. 모음 축약으로 인한 엘리전(με > μ᾽)이 일어났다. 생성문법적으로 [VP [DP μ᾽] [V' ἐθέλεις ...]] 구성을 취한다.",
+        "background": "프리아모스 자신을 가리킨다. 아킬레우스가 자신으로 하여금 장례를 완수할 수 있도록 허락해 달라는 대인적 요청을 담고 있다.",
+        "etymology": "PIE 1인칭 대격 대명사 *me에서 유래했다. Chantraine(DELG)에 의하면 산스크리트어 mā, 라틴어 mē, 고대 슬라브어 mę와 정확히 대응한다. 모음 탈락 규칙(elision)에 의해 후행 모음 앞에서 μ᾽로 단축되었다. 현대 그리스어 με로 생존한다."
+      },
+      {
+        "g": "ἐθέλεις",
+        "pos": "동사",
+        "lemma": "ἐθέλω",
+        "principalParts": "ἐθέλω(또는 θέλω) – ἐθελήσω – ἠθέλησα – ἠθέληκα – (미상) – (미상)",
+        "parse": "2nd.sg.pres.ind.act.",
+        "gloss_kr": "원하다, 바치고자 하다",
+        "gloss_en": "wish, desire",
+        "syntax": "LFG 관점에서 ἐθέλεις는 조건절의 중심 술어로서 [PRED 'ἐθέλεις<SUBJ,COMP>', TENSE present, ASPECT impf, MOOD ind, SUBJ [PRED 'pro', PERS 2, NUM sg], COMP [PRED 'τελέσαι']] 자질을 갖는다. 부정사 보충어(COMP)를 필수 논항으로 요구한다.",
+        "background": "아킬레우스의 의지와 호의를 호소하는 동사다. 강요가 아닌 아킬레우스의 자발적 허용에 장례의 완수가 달려있음을 인정하는 수사적 정중함을 보여 준다.",
+        "etymology": "PIE 어근 *gʰel-('원하다, 의지하다')에서 유래한 어간에 자음/모음 확장이 일어난 형태다. Beekes(EDG)에 의하면 어두 e-는 시적/호메로스적 어두 전음(prothesis)이다. 고전 그리스어 산문에서는 축약형 θέλω가 널리 쓰였다. 현대 그리스어 θέλω로 계승되었다."
+      },
+      {
+        "g": "τελέσαι",
+        "pos": "부정사",
+        "lemma": "τελέω",
+        "principalParts": "τελέω – τελέσω(호메로스式 τελέω) – ἐτέλεσα – τετέλεκα – τετέλεσμαι – ἐτελέσθην",
+        "parse": "aor.act.inf.",
+        "gloss_kr": "완수하다, 치르다",
+        "gloss_en": "to accomplish, to perform",
+        "syntax": "LFG 관점에서 τελέσαι는 동사 ἐθέλεις의 보충어(COMP)로서 [PRED 'τελέω<SUBJ,OBJ>', ASPECT aor, VOICE act, OBJ [PRED 'τάφον']] 자질을 갖는다. c-구조상 [VP [V' τελέσαι [NP τάφον]]]을 형성한다.",
+        "background": "장례 의식을 시작부터 끝까지 완벽하게 수행하는 완결적 행위를 가리킨다. 부정과거 부정사(aorist infinitive)를 사용하여 행위의 전체적 성취에 초점을 맞춘다.",
+        "etymology": "명사 τέλος('끝, 완성, 목적')에서 파생된 동사다. PIE 어근 *kwel-('돌다, 완수하다')의 o-급 형태 *kwelos-에서 유래했다. LSJ와 Chantraine(DELG)에 의하면 산스크리트어 carama-('마지막의')와 동계다. 현대 그리스어 τελειώνω('끝내다')의 원형이다."
+      },
+      {
+        "g": "τάφον",
+        "pos": "명사",
+        "lemma": "τάφος, τάφου, ὁ",
+        "parse": "sg.acc.m.",
+        "gloss_kr": "장례, 매장 의식",
+        "gloss_en": "burial, funeral rites",
+        "syntax": "LFG 관점에서 τάφον은 부정사 τελέσαι의 직접목적어로서 [PRED 'τάφος', CASE acc, NUM sg, GEND m, θ-ROLE PATIENT] 자질을 갖는다. 생성문법적으로 [VP [V' τελέσαι [DP τάφον]]] 구조의 내항(internal argument)이다.",
+        "background": "고대 그리스 문화에서 영혼의 안식(Hades 입성)을 위해 필수적인 매장 의식 전체를 의미한다. 장례를 치르지 못하는 것은 고인과 가문 전체에 가장 큰 수치이자 재앙이었다.",
+        "etymology": "동사 θάπτω('매장하다')와 결합하는 영급/o급 모음교체 명사다. PIE 어근 *dʰembʰ-('매장하다, 파다')에서 유래했다. Beekes(EDG)에 따르면 아르메니아어 damban('무덤')이 동계어다. 그라스만 법칙(Grassmann's Law)에 의해 원형 *dʰaph-의 어두 유기음이 무기음으로 바뀌어 τάφος가 되었다. 영어 epitaph(< ἐπιτάφιος)로 잔존하며, 현대 그리스어 τάφος('무덤')로 쓰인다."
+      },
+      {
+        "g": "Ἕκτορι",
+        "pos": "명사(고유)",
+        "lemma": "Ἕκτωρ, Ἕκτορος, ὁ",
+        "parse": "sg.dat.m.",
+        "gloss_kr": "헥토르에게, 헥토르를 위하여",
+        "gloss_en": "for Hector",
+        "syntax": "LFG 관점에서 Ἕκτορι는 이익의 여격(dative of advantage/benefactive)으로 [PRED 'Ἕκτωρ', CASE dat, NUM sg, GEND m, θ-ROLE BENEFICIARY] 자질을 갖는다. c-구조상 [NP τάφον]을 수식하거나 동사구에 부가어/보충어로 결합한다.",
+        "background": "프리아모스의 장남이자 트로이아의 수호자였던 헥토르를 가리킨다. 그의 죽음과 매장은 일리아스 전체의 장엄한 마무리를 이루는 핵심 주제다.",
+        "etymology": "어근 *segh-('지탱하다, 보유하다')에서 파생한 행위자 명사로 '도시를 지탱하는 자'를 뜻한다. (앞서 762행 Ἕκτορ 항목 참조)."
+      },
+      {
+        "g": "δίῳ",
+        "pos": "형용사",
+        "lemma": "δῖος, δῖα, δῖον",
+        "parse": "sg.dat.m.",
+        "gloss_kr": "고귀한, 신성한",
+        "gloss_en": "godlike, noble",
+        "syntax": "LFG 관점에서 δίῳ는 명사 Ἕκτορι를 직접 수식하는 형용사로서 [PRED 'δῖος', CASE dat, NUM sg, GEND m] 자질을 갖는다. c-구조상 [DP [NP Ἕκτορι] [AP δίῳ]] 형태를 이룬다.",
+        "background": "호메로스 영웅들에게 부여되는 전통적 정형구 수식어다. 죽은 아들의 영웅적 존엄성을 되새기는 아버지의 깊은 애정을 나타낸다.",
+        "etymology": "PIE *deyw-o-('하늘의, 신성한')에서 유래했다. Chantraine(DELG)에 따르면 라틴어 divus, deus, 산스크리트어 devá-와 정확히 대응한다. *dey-w-os > *diw-yos > δῖος의 음운 변화를 거쳤다. 영어 divine의 고대 그리스어 동계어다."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 24.661",
+    "trans": "이렇게 해주신다면 아킬레우스여, 내게 기쁨을 베푸시는 것이 되리라.",
+    "words": [
+      {
+        "g": "ὧδέ",
+        "pos": "부사",
+        "lemma": "ὧδε",
+        "parse": "adv.",
+        "gloss_kr": "이와 같이, 이렇게",
+        "gloss_en": "thus, in this way",
+        "syntax": "LFG 관점에서 ὧδέ는 방법 부사로서 분사 ῥέζων을 수식하며 [PRED 'ὧδε', SEM manner] 자질을 갖는다. c-구조상 [VP [AdvP ὧδέ] [V' ῥέζων]] 구조를 이룬다.",
+        "background": "이어지는 664-667행에서 제시될 11일간의 장례 절차 및 휴전 방식을 앞서 가리키는 현시적(deictic) 부사다.",
+        "etymology": "관계/지시 부사 ὥς('이와 같이')에 현시적 후접 입자 -δε가 결합한 형태다. Chantraine(DELG)에 의하면 '눈앞의 이 방식으로'라는 강력한 현시성(deixis)을 띤다."
+      },
+      {
+        "g": "κέ",
+        "pos": "소사",
+        "lemma": "ἄν",
+        "parse": "modal.particle (Homeric κέ/κεν)",
+        "gloss_kr": "~일 것이다, ~하리라",
+        "gloss_en": "would, potentially",
+        "syntax": "HPSG 관점에서 κέ는 양태 소사(modal particle)로서 [HEAD particle, MOD verb] 자질을 가지며, 희구법 동사 θείης와 결합하여 귀결절(apodosis)의 잠재적/가정적 양태(potential optative)를 구성한다.",
+        "background": "호메로스 특유의 양태 소사(κεν/κέ)로, 고전 산문의 ἄν에 해당한다. 아킬레우스가 조건을 수락할 경우 발생할 긍정적 결과를 미묘하게 예고한다.",
+        "etymology": "PIE 양태/지시 소사 *ke/*ken에서 유래했다. Beekes(EDG)에 의하면 라틴어 cis, citra, 고대 슬라브어 kь와 어원적으로 연결된다. 고전 아티케 방언에서는 ἄν에 밀려 소실되었다."
+      },
+      {
+        "g": "μοι",
+        "pos": "대명사",
+        "lemma": "ἐγώ",
+        "parse": "sg.dat.",
+        "gloss_kr": "나에게",
+        "gloss_en": "to me, for my sake",
+        "syntax": "LFG 관점에서 μοι는 이익의 여격(dative of advantage)으로 [PRED 'pro', CASE dat, PERS 1, NUM sg, θ-ROLE BENEFICIARY] 자질을 갖는다. 술어 형용사구/동사구에 결합하여 행위의 수혜자를 지정한다.",
+        "background": "프리아모스 자신이 아킬레우스의 호의로 얻게 될 정서적 감사를 표현한다.",
+        "etymology": "PIE 1인칭 여격 *moi에서 유래했다 (앞서 763행 μοι 항목 참조)."
+      },
+      {
+        "g": "ῥέζων",
+        "pos": "분사",
+        "lemma": "ῥέζω",
+        "principalParts": "ῥέζω – ῥέξω – ἔρέξα – (미상) – (미상) – ἐρέχθην",
+        "parse": "pres.act.part.sg.nom.m.",
+        "gloss_kr": "행하면서, 해줌으로써",
+        "gloss_en": "doing, acting",
+        "syntax": "LFG 관점에서 ῥέζων은 주어(아킬레우스)를 수식하는 수단/조건의 부대상황 분사(circumstantial participle)로 [PRED 'ῥέζω<SUBJ,OBJ>', ASPECT impf, VOICE act, CASE nom, NUM sg, GEND m] 자질을 갖는다. [CP [IP ... [VP ῥέζων ...]]] 안에서 가정을 내포한다.",
+        "background": "행위의 수단이나 조건을 나타낸다. 프리아모스가 제안하는 방식으로 일처리를 진행해 주는 행위 자체를 가리킨다.",
+        "etymology": "PIE 어근 *werǵ-('일하다, 행하다')의 영급 형태 *wrǵ-yo-에서 유래했다. Chantraine(DELG)에 의하면 그리스어 자음군 변화 *wrgyo- > ῥέζω가 일어났다. 동계어로 ἔργον('일'), ὄργανον, 영어 work가 있다. 현대 그리스어에는 직접 남지 않았다."
+      },
+      {
+        "g": "Ἀχιλεῦ",
+        "pos": "명사(고유)",
+        "lemma": "Ἀχιλλεύς, Ἀχιλῆος, ὁ",
+        "parse": "sg.voc.m. (Homeric single -λ- spelling)",
+        "gloss_kr": "아킬레우스여",
+        "gloss_en": "O Achilles",
+        "syntax": "LFG 관점에서 Ἀχιλεῦ는 발화 수신자를 직접 부르는 독립 호격구로 [PRED 'Ἀχιλλεύς', CASE voc, NUM sg, GEND m] 자질을 갖는다. 통사적 논항 구조 바깥의 좌측 주변부에 부착된다.",
+        "background": "운율상 자음 단화(single lambda)가 일어난 호격 형태다. 상대방의 이름을 직접 부름으로써 설득의 호소력을 고조시킨다.",
+        "etymology": "어근 ἄχος('고통, 슬픔')와 λᾱός('군대, 백성')의 합성어로 '군대에게 고통을 가져오는 자'라는 의미를 지닌다. Beekes(EDG)에 의하면 미케네어 선문자 B *a-ki-re-u*로 입증되는 유서 깊은 이름이다. Chantraine(DELG)은 이를 영웅 서사적 인명 형성으로 분석한다. 영어 Achilles로 계승된다."
+      },
+      {
+        "g": "κεχαρισμένα",
+        "pos": "분사",
+        "lemma": "χαρίζομαι",
+        "principalParts": "χαρίζομαι – χαριοῦμαι – ἐχαρισάμην – (미상) – κεχάρισμαι – ἐχαρίσθην",
+        "parse": "perf.mp.part.pl.neut.acc.",
+        "gloss_kr": "기쁨이 되는 일들을, 은혜로운 것들을",
+        "gloss_en": "pleasing things, favors",
+        "syntax": "LFG 관점에서 κεχαρισμένα는 동사 θείης의 직접목적어 역할을 하는 실체화된 분사(substantivized participle)로서 [PRED 'χαρίζομαι', ASPECT perf, VOICE mp, CASE acc, NUM pl, GEND n, θ-ROLE PATIENT] 자질을 갖는다.",
+        "background": "완료 분사 형태를 통해 '이미 완성되어 확고한 기쁨/은혜가 된 상태'를 뜻한다. 프리아모스가 아킬레우스의 배려를 은혜(χάρις)로 받아들일 것임을 약속한다.",
+        "etymology": "명사 χάρις('우아함, 은혜, 기쁨')에서 파생된 동사의 완료 중동태 분사다. PIE 어근 *ġer-('원하다, 즐거워하다')에서 유래했다. Chantraine(DELG)에 따르면 산스크리트어 haryati('즐거워하다'), 라틴어 gratus, gratia와 동계다. 영어 charity, charisma가 이 어근의 후손이다."
+      },
+      {
+        "g": "θείης",
+        "pos": "동사",
+        "lemma": "τίθημι",
+        "principalParts": "τίθημι – θήσω – ἔθηκα – τέθεικα – τέθειμαι – ἐτέθην",
+        "parse": "2nd.sg.aor.opt.act.",
+        "gloss_kr": "베푸시게 되리라, 만드시리라",
+        "gloss_en": "you would render, you would make",
+        "syntax": "LFG 관점에서 θείης는 양태 소사 κέ와 결합하여 귀결절의 술어를 담당하는 잠재 희구법(potential optative) 동사로서 [PRED 'τίθημι<SUBJ,OBJ,PRED-LINK>', ASPECT aor, MOOD opt, VOICE act, SUBJ [PRED 'pro', PERS 2, NUM sg]] 자질을 갖는다. 이중 목적어 구성을 취한다.",
+        "background": "부정과거 희구법 형태(θείης)를 써서 확정적 명령이 아닌 조건부의 공손한 귀결을 나타낸다. 아킬레우스의 결단이 프리아모스에게 시혜가 됨을 기품 있게 서술한다.",
+        "etymology": "PIE 어근 *dʰeh₁-('놓다, 세우다, 만들다')의 영급 어간 *dʰh₁-에 희구법 표지 -iē-가 결합한 형태다. Beekes(EDG)와 Chantraine(DELG)에 의하면 산스크리트어 dadhāmi, 라틴어 facio, 고대 영어 dōn(modern do)과 완벽한 동계 관계를 이룬다. 영어 theme, thesis, do 등이 이 어근에서 파생했다."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 24.662",
+    "trans": "그대도 알다시피 우리는 도성에 갇혀 있고, 산에서 땔감을 가져오려면",
+    "words": [
+      {
+        "g": "οἶσθα",
+        "pos": "동사",
+        "lemma": "οἶδα",
+        "principalParts": "οἶδα – εἰδήσω – (미상) – (미상) – (미상) – (미상)",
+        "parse": "2nd.sg.perf.ind.act.",
+        "gloss_kr": "그대는 알고 있다",
+        "gloss_en": "you know",
+        "syntax": "LFG 관점에서 οἶσθα는 주절의 중심 술어로서 [PRED 'οἶδα<SUBJ,COMP>', TENSE present, ASPECT perf, MOOD ind, SUBJ [PRED 'pro', PERS 2, NUM sg], COMP [PRED 'ἐέλμεθα']] 자질을 갖는다. 후행하는 ὡς 접속사절을 보충어(COMP)로 지배한다.",
+        "background": "아킬레우스 역시 트로이아 도성의 지리적·전술적 고립 상황을 이미 잘 파악하고 있음을 전제로 논리를 펼치는 공감 유도형 발화 표지다.",
+        "etymology": "PIE 어근 *weyd-('보다')의 완료형 *woyd-e에서 유래하여 '보아서 알고 있다(현재)'는 의미를 가진다. Chantraine(DELG)에 따르면 2인칭 어미 *-tʰa가 결합하여 οἶσθα가 되었다. 산스크리트어 veda, 라틴어 vidisti, 고딕어 wait, 영어 wit, wisdom과 동계어다. 현대 그리스어에는 소실되고 ξέρω가 쓰인다."
+      },
+      {
+        "g": "γὰρ",
+        "pos": "소사",
+        "lemma": "γάρ",
+        "parse": "expl.conj.",
+        "gloss_kr": "왜냐하면",
+        "gloss_en": "for",
+        "syntax": "HPSG 관점에서 γὰρ는 원인/이유를 설명하는 후접 소사로서 [HEAD particle, SUB-TYPE explanatory] 자질을 갖는다. 문장 내 두 번째 위치를 점하며, 앞선 요청의 현실적 이유를 제시한다.",
+        "background": "왜 11일이라는 긴 장례 기간이 필요한지를 전술적·지리적 이유를 들어 설득하는 논리적 연결어다.",
+        "etymology": "강조 소사 γε와 조건/시간 소사 ἄρα의 합성어로 추정된다. (앞서 765행 γὰρ 항목 참조)."
+      },
+      {
+        "g": "ὡς",
+        "pos": "접속사",
+        "lemma": "ὡς",
+        "parse": "subord.conj.",
+        "gloss_kr": "~라는 것을, ~하듯이",
+        "gloss_en": "that, how",
+        "syntax": "HPSG 관점에서 ὡς는 동사 οἶσθα의 보충어 절을 이끄는 명사절 종속접속사로 [HEAD conj, COMPS < S >] 자질을 갖는다.",
+        "background": "프리아모스가 아킬레우스에게 환기시키는 트로이아의 현재 상 황(고립)을 도입하는 접속사다.",
+        "etymology": "PIE 관계대명사 어근 *wo-/*yo-의 부사형 형태에서 유래했다. (앞서 764행 ὡς 항목 참조)."
+      },
+      {
+        "g": "κατὰ",
+        "pos": "전치사",
+        "lemma": "κατά",
+        "parse": "prep.+acc. (tmesis/adverbial)",
+        "gloss_kr": "~ 안에, ~를 따라",
+        "gloss_en": "down in, throughout",
+        "syntax": "LFG 관점에서 κατὰ는 명사 ἄστυ를 지배하는 전치사구의 핵으로서 [PRED 'κατά<OBJ>', OBJ [PRED 'ἄστυ']] 자질을 갖는다. c-구조상 [PP [P κατὰ] [NP ἄστυ]]를 형성하거나 동사 ἐέλμεθα와의 분리(tmesis)로 분석할 수 있다.",
+        "background": "트로이아 성벽 안이라는 한정된 공간적 갇힘을 공간 전치사를 통해 강조한다.",
+        "etymology": "PIE 어근 *kmt-('아래로, ~을 따라')에서 유래했다. Chantraine(DELG)에 따르면 히타이트어 kattan('아래에'), 케네어 ka-ta와 동계다. 영어 catabolism, catastrophe 등의 접두사 기원이 된다."
+      },
+      {
+        "g": "ἄστυ",
+        "pos": "명사",
+        "lemma": "ἄστυ, ἄστεος, τό",
+        "parse": "sg.acc.n.",
+        "gloss_kr": "도성, 성채",
+        "gloss_en": "city, town",
+        "syntax": "LFG 관점에서 ἄστυ는 전치사 κατὰ의 목적어로서 [PRED 'ἄστυ', CASE acc, NUM sg, GEND n] 자질을 갖는다. [PP κατὰ ἄστυ] 구문 내에서 장소적 한계를 형성한다.",
+        "background": "시골/들판(ἀγρός)이나 바다와 대비되는 성벽으로 둘러싸인 도시 자체를 뜻한다. 아카이오이군에 의해 포위된 트로이아 성내를 가리킨다.",
+        "etymology": "PIE 어근 *wes-('거주하다, 머물다')에서 파생된 *wástu-('거주지, 도시')에서 유래했다. 어두 디감마(*w)가 탈락하여 ἄστυ가 되었다. Beekes(EDG)에 의하면 산스크리트어 vástu('처소, 집')와 정확히 대응한다. 영어 astynomy, asymptotic 등의 어근이 되며 현대 그리스어에는 direct loan으로 잔존한다."
+      },
+      {
+        "g": "ἐέλμεθα",
+        "pos": "동사",
+        "lemma": "εἴλω",
+        "principalParts": "εἴλω – (미상) – ἔελσα – (미상) – ἔελμαι – ἐάλην",
+        "parse": "1st.pl.perf.ind.mp. (Homeric digamma augment form)",
+        "gloss_kr": "우리는 갇혀 있다, 가두어져 있다",
+        "gloss_en": "we are shut in, hemmed in",
+        "syntax": "LFG 관점에서 ἐέλμεθα는 ὡς 절의 중심 술어로서 [PRED 'εἴλω<SUBJ>', TENSE present, ASPECT perf, MOOD ind, VOICE mp, SUBJ [PRED 'pro', PERS 1, NUM pl]] 자질을 갖는다. 완료 형태로서 '가두어진 결과 상태가 현재까지 지속됨'을 포착한다.",
+        "background": "원래 어두 디감마를 지닌 어간(*we-wel- > ἐέλмеθα)으로 운율상 앞 모음의 장음화나 간격을 유지한다. 그리스군 때문에 성밖으로 나가지 못하는 트로이아인들의 철저한 고립 상태를 수사적으로 응축한다.",
+        "etymology": "PIE 어근 *wel-('돌다, 말다, 누르다, 가두다')의 중복 완료형 *we-wl-mho에서 유래했다. LSJ와 Chantraine(DELG)에 따르면 라틴어 volvere('굴리다'), 산스크리트어 varana-('막는 것'), 영어 wall, waltz와 동계 관계를 이룬다. 호메로스 특유의 중복(reduplication) 형태다."
+      },
+      {
+        "g": "τηλόθι",
+        "pos": "부사",
+        "lemma": "τηλόθι",
+        "parse": "adv.",
+        "gloss_kr": "멀리, 먼 곳에",
+        "gloss_en": "far away, afar",
+        "syntax": "LFG 관점에서 τηλόθι는 장소적 거리를 한정하는 부사로 [PRED 'τηλόθι', SEM locative-far] 자질을 갖는다. 명사구 ὕλη를 장소적으로 수식한다.",
+        "background": "땔감을 가져와야 하는 이다(Ida) 산이 트로이아 도성에서 멀리 떨어져 있음을 강조한다. 이 거리는 장례 준비에 긴 시간이 걸리는 직접적인 지리적 이유가 된다.",
+        "etymology": "형용사 τῆλε('멀리')에 장소 접미사 -θι가 결합한 형태다. PIE *kwel-('돌다, 먼 곳') 어근과의 연관성이 논의된다. Chantraine(DELG)에 따르면 고대 그리스어 장소 부사 형성 체계를 잘 보여 준다. 영어 telegraph, telephone의 tele-의 어원이다."
+      },
+      {
+        "g": "δ᾽",
+        "pos": "접속사",
+        "lemma": "δέ",
+        "parse": "coord.conj.",
+        "gloss_kr": "그리고, 그런데",
+        "gloss_en": "and, and moreover",
+        "syntax": "HPSG 관점에서 δ᾽는 절과 절을 연결하는 등위접속사로 [HEAD conj] 자질을 갖는다. 두 상황(성내 고립과 숲의 먼 거리)을 병렬시킨다.",
+        "background": "고립된 상황에 더해 땔감 수송의 물리적 어려움이라는 추가적 장애를 이어주는 접속사다.",
+        "etymology": "PIE *de에서 유래했다 (앞서 761행 δ᾽ 항목 참조)."
+      },
+      {
+        "g": "ὕλη",
+        "pos": "명사",
+        "lemma": "ὕλη, ὕλης, ἡ",
+        "parse": "sg.nom.f.",
+        "gloss_kr": "숲, 땔감, 목재",
+        "gloss_en": "wood, timber, forest",
+        "syntax": "LFG 관점에서 ὕλη는 생략된 필요/운송 구문의 주어 또는 목적어로서 [PRED 'ὕλη', CASE nom, NUM sg, GEND f] 자질을 갖는다. 행간걸침(enjambment)을 통해 다음 행의 부정사 ἀξέμεν과 통사적으로 결합한다.",
+        "background": "화장작열(pyre)을 쌓기 위해 필수적인 나무/목재를 뜻한다. 헥토르의 거대한 화장작열을 만드느냐는 장례의 규모와 존엄성을 결정짓는 핵심 물자다.",
+        "etymology": "PIE 어근 *swul-/*sul-('숲, 목재')에서 유래했다. 어두 S-가 기식(rough breathing) h-로 변하여 ὕλη가 되었다. Beekes(EDG)에 따르면 라틴어 silva('숲')와 완전한 동계어다(*swil-wa > silva). 영어 hylozoism, hylomorphism 등 철학/과학 용어의 원형이다."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 24.663",
+    "trans": "산에서 운반해야 하는데, 트로이아인들은 매우 두려워하고 있습니다.",
+    "words": [
+      {
+        "g": "ἀξέμεν",
+        "pos": "부정사",
+        "lemma": "ἄγω",
+        "principalParts": "ἄγω – ἤξω – ἤγαγον – ἦχα – ἦγμαι – ἤχθην",
+        "parse": "fut.act.inf. (Homeric infinitive ending -μεν)",
+        "gloss_kr": "운반해 오는 것, 가져오는 것",
+        "gloss_en": "to bring, to fetch",
+        "syntax": "LFG 관점에서 ἀξέμεν은 앞 행의 ὕλη를 목적어로 취하는 목적/결과의 미래 부정사로서 [PRED 'ἄγω<SUBJ,OBJ>', ASPECT fut, VOICE act, OBJ [PRED 'ὕλη']] 자질을 갖는다. 호메로스 특유의 부정사 어미 -μεν을 취한다.",
+        "background": "이다산에서 땔감을 목재 수레로 운반해 오는 행위를 가리킨다. 아카이오이군에 노출될 위험이 가장 큰 작업이다.",
+        "etymology": "PIE 어근 *h₂eǵ-('이끌다, 운반하다')의 미래 어간 ἄξ-에 호메로스어 부정사 어미 -μεν이 결합한 형태다. (앞서 764행 ἄγαγε 항목 참조)."
+      },
+      {
+        "g": "ἐξ",
+        "pos": "전치사",
+        "lemma": "ἐκ",
+        "parse": "prep.+gen.",
+        "gloss_kr": "~로부터, ~에서",
+        "gloss_en": "from, out of",
+        "syntax": "LFG 관점에서 ἐξ는 명사 ὄρεος를 지배하는 출발점 전치사구의 핵으로 [PRED 'ἐκ<OBJ>', OBJ [PRED 'ὄρος']] 자질을 갖는다. 모음 앞에서 ἐξ 형태를 취한다.",
+        "background": "땔감을 가져오는 출처인 이다산으로부터의 공간적 이탈을 지시한다.",
+        "etymology": "PIE 전치사 *eǵʰs('밖으로, ~로부터')에서 유래했다. Chantraine(DELG)에 따르면 라틴어 ex, 고대 이탈리아어 eχ와 정확히 대응한다. 영어 exit, exothermic 등의 접두사 기원이다."
+      },
+      {
+        "g": "ὄρεος",
+        "pos": "명사",
+        "lemma": "ὄρος, ὄρεος, τό",
+        "parse": "sg.gen.n. (Homeric uncontracted form)",
+        "gloss_kr": "산으로부터 (이다 산)",
+        "gloss_en": "from the mountain",
+        "syntax": "LFG 관점에서 ὄρεος는 전치사 ἐξ의 이탈격적 속격 목적어로 [PRED 'ὄρος', CASE gen, NUM sg, GEND n] 자질을 갖는다. 미축약 이형태(uncontracted form)를 유지한다.",
+        "background": "트로이아 배후에 위치한 이다(Ida) 산을 가리킨다. 서사시 내에서 신들의 거처이자 목재의 공급원으로 자주 등장한다.",
+        "etymology": "PIE 어근 *er-('솟구치다, 움직이다')에서 파생된 *or-os-('산, 높이 솟은 것')에서 유래했다. Beekes(EDG)에 의하면 산스크리트어 ṛṣva-('높은')와 동계이다. 그리스어 내에서 s-어간 중성 명사 형태를 유지한다. 영어 orogeny(산악 형성) 등의 학술 용어로 남아 있다."
+      },
+      {
+        "g": "μάλα",
+        "pos": "부사",
+        "lemma": "μάλα",
+        "parse": "adv.",
+        "gloss_kr": "매우, 심히",
+        "gloss_en": "very, greatly",
+        "syntax": "LFG 관점에서 μάλα는 동사 δεδίασιν을 수식하는 정도 부사로서 [PRED 'μάλα', SEM degree-high] 자질을 갖는다. c-구조상 [VP [AdvP μάλα] [V' δεδίασιν]]을 형성한다.",
+        "background": "트로이아인들이 느끼는 공포의 크기를 극대화하여 표현한다. 휴전 협정이 없이는 성 밖으로 단 한 걸음도 나갈 수 없는 현실을 강조한다.",
+        "etymology": "PIE 어근 *mel-('강하다, 크다')에서 유래했다. Chantraine(DELG)에 따르면 라틴어 melior('더 좋은'), 슬라브어 zelo('매우')와 동계 관계를 이룬다. 호메로스어에서 감정이나 상태의 극심함을 나타낼 때 다용된다."
+      },
+      {
+        "g": "δὲ",
+        "pos": "접속사",
+        "lemma": "δέ",
+        "parse": "coord.conj.",
+        "gloss_kr": "그리고, 또",
+        "gloss_en": "and, moreover",
+        "syntax": "HPSG 관점에서 δὲ는 절들을 대등하게 매개하는 접속사로 [HEAD conj] 자질을 갖는다.",
+        "background": "앞선 공간적 요인(산의 거리)에 이어 인간적/심리적 요인(트로이인들의 공포)을 덧붙인다.",
+        "etymology": "PIE *de에서 유래했다 (앞서 761행 δ᾽ 항목 참조)."
+      },
+      {
+        "g": "Τρῶες",
+        "pos": "명사(고유)",
+        "lemma": "Τρώς, Τρωός, ὁ",
+        "parse": "pl.nom.m.",
+        "gloss_kr": "트로이아인들은",
+        "gloss_en": "Trojans",
+        "syntax": "LFG 관점에서 Τρῶες는 주절의 통사적 주어로 [PRED 'Τρώς', CASE nom, NUM pl, GEND m, θ-ROLE EXPERIENCER] 자질을 갖는다. 동사 δεδίασιν과 수/인칭 일치를 이룬다.",
+        "background": "트로이아 도성 안의 전체 백성과 전사들을 가리킨다. 헥토르라는 거목을 잃은 뒤 아킬레우스와 그리스군에 대해 심각한 공포에 사로잡혀 있다.",
+        "etymology": "히타이트어 기록의 *Taruisa* 또는 선그리스어 지명에서 유래한 명칭이다. Beekes(EDG)는 인도유럽어 이전의 기층 어휘 가능성을 강조한다. 영어 Trojan, 현대 그리스어 Τρώας로 이어진다."
+      },
+      {
+        "g": "δεδίασιν",
+        "pos": "동사",
+        "lemma": "δέδοικα",
+        "principalParts": "δέδοικα(또는 δέδια) – (미상) – (미상) – δέδοικα – (미상) – (미상)",
+        "parse": "3rd.pl.perf.ind.act. (Homeric short-stem form)",
+        "gloss_kr": "그들은 두려워하고 있다",
+        "gloss_en": "they fear, they are afraid",
+        "syntax": "LFG 관점에서 δεδίασιν은 주절의 중심 술어로서 [PRED 'δέδοικα<SUBJ>', TENSE present, ASPECT perf, MOOD ind, VOICE act, SUBJ [PRED 'Τρῶες']] 자질을 갖는다. 완료 형태이나 현재의 심리적 상태(공포)를 나타내는 감정 완료 동사다.",
+        "background": "단축 어간(short stem δεδι-)을 사용한 호메로스 완료 형태다. 그리스군의 습격에 대한 트로이아 백성들의 극심한 두려움을 서술한다.",
+        "etymology": "PIE 어근 *dwey-('두려워하다')의 중복 완료형 *de-dwoy-에서 유래했다. Chantraine(DELG)에 의하면 모음 사이의 *y* 탈락과 어간 단축을 거쳐 δεδίασιν이 형성되었다. 라틴어 dirus('무서운'), 영어 dire가 이 어근과 연관된다."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 24.664",
+    "trans": "나흘 동안은 우리가 궁궐 안에서 그를 위해 통곡하고,",
+    "words": [
+      {
+        "g": "ἐννῆμαρ",
+        "pos": "부사",
+        "lemma": "ἐννῆμαρ",
+        "parse": "adv.",
+        "gloss_kr": "나흘 동안 (9일 동안)",
+        "gloss_en": "for nine days",
+        "syntax": "LFG 관점에서 ἐννῆμαρ는 기간을 한정하는 시간 부사구로서 [PRED 'ἐννῆμαρ', SEM duration-9days] 자질을 갖는다. c-구조상 동사 γοάοιμεν을 수식하는 부속어다.",
+        "background": "호메로스 전통에서 의식이나 고통의 지속 기간을 나타낼 때 자주 쓰이는 수치 '9일'이다. 장엄한 애도 기간의 길이를 설정한다.",
+        "etymology": "수사 ἐννέα('아홉')와 명사 ἦμαρ('날, 일')의 합성어다. PIE *newn('아홉')과 *ah₂mr-('날')의 결합에서 유래했다. Chantraine(DELG)에 의하면 호메로스 시가 전용의 수사 부사다."
+      },
+      {
+        "g": "μέν",
+        "pos": "소사",
+        "lemma": "μέν",
+        "parse": "correlative.particle",
+        "gloss_kr": "우선, 한편",
+        "gloss_en": "on the one hand, first",
+        "syntax": "HPSG 관점에서 μέν는 대조 소사로 후행하는 τῇ δεκάτῃ δέ(665행)와의 구조적 대칭을 형성한다.",
+        "background": "11일간의 전체 장례 일정 중 첫 번째 단계(1~9일차: 궁내 애도)를 이끄는 병렬 표지다.",
+        "etymology": "PIE *men에서 유래했다 (앞서 763행 μέν 항목 참조)."
+      },
+      {
+        "g": "κ᾽",
+        "pos": "소사",
+        "lemma": "ἄν",
+        "parse": "modal.particle (Homeric κέ/κεν)",
+        "gloss_kr": "~할 것입니다",
+        "gloss_en": "would",
+        "syntax": "HPSG 관점에서 κ᾽는 양태 소사로서 희구법 γοάοιμεν과 결합하여 휴정 기간 동안 수행할 허가된 행동의 양태를 구성한다.",
+        "background": "아킬레우스와의 휴전 합의를 전제로 실행될 장례 행위를 겸손하고 정중한 양태로 표현한다.",
+        "etymology": "PIE *ke에서 유래했다 (앞서 661행 κέ 항목 참조)."
+      },
+      {
+        "g": "αὐτὸν",
+        "pos": "대명사",
+        "lemma": "αὐτός, αὐτή, αὐτό",
+        "parse": "sg.acc.m.",
+        "gloss_kr": "그를 (헥토르의 시신을)",
+        "gloss_en": "him",
+        "syntax": "LFG 관점에서 αὐτὸν은 동사 γοάοιμεν의 직접목적어로서 [PRED 'pro', CASE acc, NUM sg, GEND m, θ-ROLE PATIENT] 자질을 갖는다. 헥토르의 시신을 지칭한다.",
+        "background": "트로이아로 되돌아온 헥토르의 시신 자체를 가리킨다. 프리아모스 궁궐 한가운데 안치되어 백성들의 애도를 받을 대상이다.",
+        "etymology": "PIE 지시 어근 *au-('저기, 다시')에 형용사 접미사가 결합한 형태다. Chantraine(DELG)에 의하면 고전 그리스어에서 인칭 대명사 및 강조 대명사로 확립되었다. 영어 automatic, autonomy 등의 auto-의 원형이다."
+      },
+      {
+        "g": "ἐνὶ",
+        "pos": "전치사",
+        "lemma": "ἐν",
+        "parse": "prep.+dat. (Homeric lengthened form)",
+        "gloss_kr": "~ 안에서",
+        "gloss_en": "in, within",
+        "syntax": "LFG 관점에서 ἐνὶ는 명사 μεγάροις를 지배하는 처소 전치사의 핵으로 [PRED 'ἐν<OBJ>', OBJ [PRED 'μέγαρον']] 자질을 갖는다. 운율상 장모음화된 호메로스 이형태 ἐνί/ἐνί를 취한다.",
+        "background": "외적의 침입으로부터 보호받는 궁궐 내부라는 안전한 공간을 지정한다.",
+        "etymology": "PIE 전치사 *en('안에')의 처격 확장 형태 *eni에서 유래했다. Chantraine(DELG)에 의하면 라틴어 in, 산스크리트어 ni, 고대 영어 in과 완전 동계다."
+      },
+      {
+        "g": "μεγάροις",
+        "pos": "명사",
+        "lemma": "μέγαρον, μεγάρους, τό",
+        "parse": "pl.dat.n.",
+        "gloss_kr": "궁궐들에서, 대전(大殿)에서",
+        "gloss_en": "in the halls, in the palace",
+        "syntax": "LFG 관점에서 μεγάροις는 전치사 ἐνὶ의 처소격 목적어로 [PRED 'μέγαρον', CASE dat, NUM pl, GEND n] 자질을 갖는다. 복수 형태이나 왕궁 전체를 뜻하는 시적 복수(poetic plural)다.",
+        "background": "호메로스 시대 왕궁의 중심 공간인 메가론(Megaron)을 뜻한다. 시신을 안치하고 가문과 백성들이 비가를 부르는 공식 애도 장소다.",
+        "etymology": "선그리스어(Pre-Greek) 또는 셈어파 차용어 가능성이 제기된다. Beekes(EDG)는 세미트어 어근 *m-g-r('동굴, 거처')과의 연관성을 제시하면서도 기층 어휘로 본다. 미케네어 선문자 B *me-ka-ro*로 입증된다. 현대 그리스어에는 남아 있지 않다."
+      },
+      {
+        "g": "γοάοιμεν",
+        "pos": "동사",
+        "lemma": "γοάω",
+        "principalParts": "γοάω – (미상) – ἐγόησα – (미상) – (미상) – (미상)",
+        "parse": "1st.pl.pres.opt.act. (Homeric uncontracted optative)",
+        "gloss_kr": "우리가 통곡할 것입니다, 애도할 것입니다",
+        "gloss_en": "we would lament, we would mourn",
+        "syntax": "LFG 관점에서 γοάοιμεν은 양태 소사 κ᾽와 결합하여 종속절/조건부 주절의 양태 술어 역할을 하는 희구법 동사로서 [PRED 'γοάω<SUBJ,OBJ>', ASPECT impf, MOOD opt, VOICE act, SUBJ [PRED 'pro', PERS 1, NUM pl], OBJ [PRED 'αὐτόν']] 자질을 갖는다.",
+        "background": "의식적 비가(goos)를 올리는 행위다. 희구법(optative)을 사용하여 아킬레우스의 승낙 아래 진행될 미래의 희망적 행동을 격조 있게 표현한다.",
+        "etymology": "명사 γόος('통곡')에서 파생된 의성어 계열 동사다. (앞서 761행 γόοιο 항목 참조)."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 24.665",
+    "trans": "열흘째 되는 날에는 매장하고 백성들에게 잔치를 베풀며,",
+    "words": [
+      {
+        "g": "τῇ",
+        "pos": "관사",
+        "lemma": "ὁ, ἡ, τό",
+        "parse": "sg.dat.f. (Homeric demonstrative / article)",
+        "gloss_kr": "그 (날에)",
+        "gloss_en": "on the",
+        "syntax": "LFG 관점에서 τῇ는 서수 형용사 δεκάτῃ를 수식하는 지시/관사 형태로서 [SPECIFIER +, CASE dat, NUM sg, GEND f] 자질을 갖는다. 생략된 명사 ἡμέρᾳ('날')와 격 일치를 이룬다.",
+        "background": "특정한 날짜(10일차)를 한정하여 가리키는 지시적 역할을 수행한다.",
+        "etymology": "PIE 지시대명사 어근 *te-/*to-의 여성 처격/여격 형태에서 유래했다 (앞서 761행 τῇσι 항목 참조)."
+      },
+      {
+        "g": "δεκάτῃ",
+        "pos": "형용사",
+        "lemma": "δέκατος, δεκάτη, δέκατον",
+        "parse": "sg.dat.f.",
+        "gloss_kr": "열 번째 (날에)",
+        "gloss_en": "tenth",
+        "syntax": "LFG 관점에서 δεκάτῃ는 시간을 나타내는 여격(dative of time when) 명사구의 핵으로서 [PRED 'δέκατος', CASE dat, NUM sg, GEND f] 자질을 갖는다. [NP τῇ δεκάτῃ (ἡμέρᾳ)] 구문을 이룬다.",
+        "background": "장례 일정의 두 번째 단계인 실제 매장 및 화장(incineration)이 이루어지는 결정적인 날이다.",
+        "etymology": "기수사 δέκα('열')에서 파생된 서수사다. PIE *deḱm-to-에서 유래했다. Chantraine(DELG)에 의하면 라틴어 decimus, 산스크리트어 daśama-, 고딕어 taihunda와 완벽히 동계다. 영어 decade, decimal 등의 기원이다."
+      },
+      {
+        "g": "δέ",
+        "pos": "접속사",
+        "lemma": "δέ",
+        "parse": "coord.conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "HPSG 관점에서 δέ는 절과 절을 순차적으로 이어주는 등위접속사다.",
+        "background": "9일간의 궁내 애도 이후 10일차의 구체적 의무 행동으로 넘어가는 절차적 전환을 표시한다.",
+        "etymology": "PIE *de에서 유래했다 (앞서 761행 δ᾽ 항목 참조)."
+      },
+      {
+        "g": "κε",
+        "pos": "소사",
+        "lemma": "ἄν",
+        "parse": "modal.particle (Homeric κέ/κεν)",
+        "gloss_kr": "~할 것입니다",
+        "gloss_en": "would",
+        "syntax": "HPSG 관점에서 κέ는 희구법 동사 θάπτοιμεν에 양태적 가치를 부여하는 소사다.",
+        "background": "아킬레우스가 허락할 경우 실현될 장례 행위의 양태를 나타낸다.",
+        "etymology": "PIE *ke에서 유래했다 (앞서 661행 κέ 항목 참조)."
+      },
+      {
+        "g": "θάπτοιμεν",
+        "pos": "동사",
+        "lemma": "θάπτω",
+        "principalParts": "θάπτω – θάψω – ἔθαψα – (미상) – τέθαμμαι – ἐτάφην",
+        "parse": "1st.pl.pres.opt.act.",
+        "gloss_kr": "우리가 매장할 것입니다, 화장할 것입니다",
+        "gloss_en": "we would bury",
+        "syntax": "LFG 관점에서 θάπτοιμεν은 주절의 술어로서 [PRED 'θάπτω<SUBJ,OBJ>', ASPECT impf, MOOD opt, VOICE act, SUBJ [PRED 'pro', PERS 1, NUM pl]] 자질을 갖는다.",
+        "background": "화장작열에 시신을 살라 유골을 수습하고 무덤에 묻는 핵심 매장 행위를 가리킨다.",
+        "etymology": "PIE 어근 *dʰembʰ-('매장하다')에서 유래한 유기음 어간 동사다. 그라스만 법칙에 의해 *dʰaph- > θάπτω가 되었다. (앞서 660행 τάφον 항목 참조)."
+      },
+      {
+        "g": "δαινῦτό",
+        "pos": "동사",
+        "lemma": "δαίνυμι",
+        "principalParts": "δαίνυμι – δαίσω – ἔδαισα – (미상) – (미상) – ἐδαίσθην",
+        "parse": "3rd.sg.pres.opt.mp. (Homeric uncontracted optative δαινῦτο)",
+        "gloss_kr": "잔치를 벌일 것입니다, 향연을 가질 것입니다",
+        "gloss_en": "would feast, would banquet",
+        "syntax": "LFG 관점에서 δαινῦτό는 주어 λαός와 일치하는 술어 동사로서 [PRED 'δαίνυμι<SUBJ>', ASPECT impf, MOOD opt, VOICE mp, SUBJ [PRED 'λαός']] 자질을 갖는다. 희구법 어미 -ῦτο 형태를 취한다.",
+        "background": "장례식이 끝난 후 온 백성들이 함께 모여 음식을 나누는 장례 향연(perideipnon)을 의미한다. 죽은 영웅을 추모하고 공동체의 유대를 회복하는 중요한 장례 의식의 일부다.",
+        "etymology": "PIE 어근 *da-i-('분배하다, 나누다')에서 파생된 -νυ- 동사다. Chantraine(DELG)에 의하면 산스크리트어 dā-('나누다')와 동계이다. 고대 그리스 장례 문화에서 음식을 나누어 주는 행위와 직결된다."
+      },
+      {
+        "g": "τε",
+        "pos": "접속사",
+        "lemma": "τε",
+        "parse": "coord.conj. (enclitic)",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "HPSG 관점에서 후접 접속사 τε는 두 동사 구문(매장과 향연)을 밀접하게 결합시킨다.",
+        "background": "매장 행위(θάπτοιμεν)와 백성들의 향연(δαινῦτο)이 10일차에 연이어 일어나는 한 쌍의 의무임을 보여 준다.",
+        "etymology": "PIE 접속 소사 *kʷe에서 유래했다. Chantraine(DELG)에 의하면 라틴어 -que, 산스크리트어 ca와 완전한 동계어다. *kʷe > τε의 음운 변화를 거쳤다."
+      },
+      {
+        "g": "λαός",
+        "pos": "명사",
+        "lemma": "λαός, λαοῦ, ὁ",
+        "parse": "sg.nom.m.",
+        "gloss_kr": "백성들은, 군대는",
+        "gloss_en": "the people, the host",
+        "syntax": "LFG 관점에서 λαός는 동사 δαινῦτό의 통사적 주어로 [PRED 'λαός', CASE nom, NUM sg, GEND m, θ-ROLE AGENT] 자질을 갖는다. 집합명사로서 단수 수일치를 받는다.",
+        "background": "트로이아의 전체 백성과 전사 공동체를 가리킨다. 영웅의 장례는 가문만의 행사가 아니라 국가 전체의 공적인 추모 행사임을 보여 준다.",
+        "etymology": "PIE 어근 *leh₂-o-('군대, 백성, 무리')에서 유래한 그리스어 고유 어휘다. Beekes(EDG)에 의하면 미케네어 선문자 B *ra-wo*로 입증된다. 영어 laity, layperson(< 라틴어 laicus < 그리스어 λαϊκός)의 원형이며, 현대 그리스어 λαός('백성, 국민')로 직계 계승된다."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 24.666",
+    "trans": "열한째 날에는 그분 위에 묘지를 만들고,",
+    "words": [
+      {
+        "g": "ἑνδεκάτῃ",
+        "pos": "형용사",
+        "lemma": "ἑνδέκατος, ἑνδεκάτη, ἑνδέκατον",
+        "parse": "sg.dat.f.",
+        "gloss_kr": "열한 번째 (날에)",
+        "gloss_en": "eleventh",
+        "syntax": "LFG 관점에서 ἑνδεκάτῃ는 시간의 여격 명사구의 핵으로서 [PRED 'ἑνδέκατος', CASE dat, NUM sg, GEND f] 자질을 갖는다. [NP ἑνδεκάτῃ (ἡμέρᾳ)] 구문이다.",
+        "background": "장례 절차의 세 번째 단계인 묘총(tumulus) 건설이 진행되는 날이다.",
+        "etymology": "ἕν('하나')과 δέκατος('열 번째')의 합성 서수사다. PIE *sem-('하나')와 *deḱm-to-('열 번째')의 합성에서 유래했다. Chantraine(DELG)에 의하면 라틴어 undecimus와 대응한다. 영어 hendecagon(11각형)의 원형이다."
+      },
+      {
+        "g": "δέ",
+        "pos": "접속사",
+        "lemma": "δέ",
+        "parse": "coord.conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "HPSG 관점에서 δέ는 날짜별 장례 절차의 순차적 진행을 이어주는 등위접속사다.",
+        "background": "10일차의 매장에 이어 11일차의 묘지 조성으로 이어지는 서사적 순서를 표지한다.",
+        "etymology": "PIE *de에서 유래했다 (앞서 761행 δ᾽ 항목 참조)."
+      },
+      {
+        "g": "κε",
+        "pos": "소사",
+        "lemma": "ἄν",
+        "parse": "modal.particle (Homeric κέ/κεν)",
+        "gloss_kr": "~할 것입니다",
+        "gloss_en": "would",
+        "syntax": "HPSG 관점에서 κέ는 희구법 ποιήσαιμεν과 결합하는 양태 소사다.",
+        "background": "아킬레우스와의 휴전 합의를 전제로 한 조건부 행위의 양태를 표현한다.",
+        "etymology": "PIE *ke에서 유래했다 (앞서 661행 κέ 항목 참조)."
+      },
+      {
+        "g": "τύμβον",
+        "pos": "명사",
+        "lemma": "τύμβος, τύμβου, ὁ",
+        "parse": "sg.acc.m.",
+        "gloss_kr": "묘지, 흙총, 묘실",
+        "gloss_en": "mound, tomb, barrow",
+        "syntax": "LFG 관점에서 τύμβον은 동사 ποιήσαιμεν의 직접목적어로서 [PRED 'τύμβος', CASE acc, NUM sg, GEND m, θ-ROLE PATIENT/RESULT] 자질을 갖는다.",
+        "background": "유골을 안치한 곳 위에 돌과 흙을 높이 쌓아 올리는 영웅의 묘총(barrow)을 뜻한다. 죽은 자의 영원한 명예(kleos)를 지상에 남기는 물리적 징표다.",
+        "etymology": "PIE 어근 *teum-('부풀다, 솟아오르다')에서 유래한 o-급 명사다. Beekes(EDG)에 의하면 라틴어 tumulus('언덕, 묘지'), tumere('부풀다')와 완벽한 동계어다. 영어 tomb, tumor가 이 어근에서 파생되었다. 현대 그리스어 τύμβος로 보존된다."
+      },
+      {
+        "g": "ἐπ᾽",
+        "pos": "전치사",
+        "lemma": "ἐπί",
+        "parse": "prep.+dat.",
+        "gloss_kr": "~ 위에",
+        "gloss_en": "upon, over",
+        "syntax": "LFG 관점에서 ἐπ᾽는 대명사 αὐτῷ를 지배하는 장소 전치사의 핵으로 [PRED 'ἐπί<OBJ>', OBJ [PRED 'αὐτός']] 자질을 갖는다. 후행 모음 앞에서 엘리전(ἐπί > ἐπ᾽)이 일어났다.",
+        "background": "유골이 묻힌 바로 그 장소 위로 묘총을 쌓아 올리는 공간적 배치를 나타낸다.",
+        "etymology": "PIE 전치사 *epi/*opi('위해, 위에, 가까이')에서 유래했다. Chantraine(DELG)에 의하면 산스크리트어 api, 라틴어 ob와 동계다. 영어 epicenter, epidemic 등의 접두사 원형이다."
+      },
+      {
+        "g": "αὐτῷ",
+        "pos": "대명사",
+        "lemma": "αὐτός, αὐτή, αὐτό",
+        "parse": "sg.dat.m.",
+        "gloss_kr": "그분 위에 (유골/헥토르 위에)",
+        "gloss_en": "him",
+        "syntax": "LFG 관점에서 αὐτῷ는 전치사 ἐπ᾽의 처소격 목적어로 [PRED 'pro', CASE dat, NUM sg, GEND m] 자질을 갖는다.",
+        "background": "안치된 헥토르의 유골 또는 매장 장소를 가리킨다.",
+        "etymology": "PIE 지시 어근 *au-에서 유래했다 (앞서 664행 αὐτὸν 항목 참조)."
+      },
+      {
+        "g": "ποιήσαιμεν",
+        "pos": "동사",
+        "lemma": "ποιέω",
+        "principalParts": "ποιέω – ποιήσω – ἐποίησα – πεποίηκα – πεποίημαι – ἐποιήθην",
+        "parse": "1st.pl.aor.opt.act.",
+        "gloss_kr": "우리가 쌓아 올릴 것입니다, 만들 것입니다",
+        "gloss_en": "we would make, we would build",
+        "syntax": "LFG 관점에서 ποιήσαιμεν은 주절의 중심 술어로서 [PRED 'ποιέω<SUBJ,OBJ>', ASPECT aor, MOOD opt, VOICE act, SUBJ [PRED 'pro', PERS 1, NUM pl], OBJ [PRED 'τύμβον']] 자질을 갖는다.",
+        "background": "묘총을 건설하는 창작/건설 행위를 나타낸다. 부정과거 희구법을 써서 행위의 완성된 형태를 겸손히 서술한다.",
+        "etymology": "PIE 어근 *kʷey-('쌓다, 만들다, 시를 짓다')에서 유래했다. Chantraine(DELG)에 의하면 산스크리트어 cinoti('쌓다')와 동계다. 그리스어 내에서 '만들다' 및 '시를 짓다'로 분화되어 영어 poet, poem, poetics의 어원이 되었다. 현대 그리스어 ποιῶ/κάνω로 이어진다."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 24.667",
+    "trans": "열두째 날에는 만일 정녕 피할 수 없다면 우리는 싸울 것입니다.”",
+    "words": [
+      {
+        "g": "τῇ",
+        "pos": "관사",
+        "lemma": "ὁ, ἡ, τό",
+        "parse": "sg.dat.f. (Homeric demonstrative)",
+        "gloss_kr": "그 (날에)",
+        "gloss_en": "on the",
+        "syntax": "LFG 관점에서 τῇ는 서수 형용사 δυωδεκάτῃ를 지시 수식하는 한정어 자질 [SPECIFIER +, CASE dat, NUM sg, GEND f]를 갖는다.",
+        "background": "휴전이 끝나고 전쟁이 재개될 수 있는 마지막 12일차를 지정한다.",
+        "etymology": "PIE 지시 어근 *te-/*to-에서 유래했다 (앞서 761행 τῇσι 항목 참조)."
+      },
+      {
+        "g": "δὲ",
+        "pos": "접속사",
+        "lemma": "δέ",
+        "parse": "coord.conj.",
+        "gloss_kr": "그리고, 마침내",
+        "gloss_en": "and, then",
+        "syntax": "HPSG 관점에서 δὲ는 장례 기간(1~11일)과 전쟁 재개 시점(12일)을 가르는 대조적 접속사다.",
+        "background": "애도와 매장의 신성한 휴전 기간이 끝나고 다시 참혹한 현실의 전투로 복귀하는 시점을 구분 짓는다.",
+        "etymology": "PIE *de에서 유래했다 (앞서 761행 δ᾽ 항목 참조)."
+      },
+      {
+        "g": "δυωδεκάτῃ",
+        "pos": "형용사",
+        "lemma": "δυωδέκατος, δυωδεκάτη, δυωδέκατον",
+        "parse": "sg.dat.f. (Homeric lengthened form)",
+        "gloss_kr": "열두 번째 (날에)",
+        "gloss_en": "twelfth",
+        "syntax": "LFG 관점에서 δυωδεκάτῃ는 시간의 여격 명사구의 핵으로 [PRED 'δυωδέκατος', CASE dat, NUM sg, GEND f] 자질을 갖는다.",
+        "background": "프리아모스가 아킬레우스에게 요청한 11일간의 휴전이 종료되고 전투 재개가 허용되는 날이다.",
+        "etymology": "δύω('둘')와 δέκατος('열 번째')의 합성 서수사다. PIE *duwo- 및 *deḱm-to-의 결합이다. Chantraine(DELG)에 의하면 라틴어 duodecimus와 대응하며, 호메로스식 모음 장음화 형태(δυω-)를 보여 준다."
+      },
+      {
+        "g": "πολεμίξομεν",
+        "pos": "동사",
+        "lemma": "πολεμίζω",
+        "principalParts": "πολεμίζω – πολεμίξω – ἐπολέμιξα – (미상) – (미상) – (미상)",
+        "parse": "1st.pl.fut.ind.act. (Homeric -ξ- future form)",
+        "gloss_kr": "우리는 싸울 것입니다, 전쟁을 할 것입니다",
+        "gloss_en": "we shall fight, we shall wage war",
+        "syntax": "LFG 관점에서 πολεμίξομεν은 주절의 중심 술어로서 [PRED 'πολεμίζω<SUBJ>', TENSE future, ASPECT impf/prospective, MOOD ind, VOICE act, SUBJ [PRED 'pro', PERS 1, NUM pl]] 자질을 갖는다. 미래 직설법을 써서 단호한 전쟁 재개의 의지를 표현한다.",
+        "background": "호메로스 방언 특유의 -ξ- 미래 어미(πολεμίξω < πολεμίζω)를 취한다. 장례가 끝나면 비록 왕자 헥토르를 잃었을지라도 트로이아인들은 국가를 위해 다시 싸울 것임을 단호하게 선언한다.",
+        "etymology": "명사 πόλεμος('전쟁')에서 파생된 -ίζω 동사다. PIE 어근 *pel-/*lem-('흔들다, 싸우다')과의 연관성이 제기되나, Beekes(EDG)는 선그리스어 기층 어휘 가능성도 유보적으로 논의한다. 고대 그리스 영웅 시가의 대표적인 전투 동사다."
+      },
+      {
+        "g": "εἴ",
+        "pos": "접속사",
+        "lemma": "εἰ",
+        "parse": "subord.conj.",
+        "gloss_kr": "만약 ~라면",
+        "gloss_en": "if",
+        "syntax": "HPSG 관점에서 εἴ는 어폐 없는 사태의 필연성을 조건을 유도하는 종속접속사다.",
+        "background": "전쟁 재개가 자발적인 기쁨이 아니라 도피할 수 없는 국운의 숙명임을 나타내는 조건절을 도입한다.",
+        "etymology": "PIE *ei에서 유래했다 (앞서 660행 εἰ 항목 참조)."
+      },
+      {
+        "g": "περ",
+        "pos": "소사",
+        "lemma": "πέρ",
+        "parse": "enclitic.particle",
+        "gloss_kr": "정말로, 비록 ~일지라도",
+        "gloss_en": "indeed, even",
+        "syntax": "HPSG 관점에서 περ는 접속사 εἴ를 강하게 수식하여 conditional force를 양보적/필연적 어조로 강화한다.",
+        "background": "피할 수 없는 불가피성(ἀνάγκη)을 더욱 강조하여 트로이아측이 전쟁을 원해서가 아니라 불가피하게 응할 것임을 밝힌다.",
+        "etymology": "PIE 전치사/부사 어근 *per-('넘어서, 통과하여')에서 유래한 후접 입자다. Chantraine(DELG)에 의하면 라틴어 per와 동계다. 강조와 양보의 의미를 부가한다."
+      },
+      {
+        "g": "ἀνάγκη",
+        "pos": "명사",
+        "lemma": "ἀνάγκη, ἀνάγκης, ἡ",
+        "parse": "sg.nom.f.",
+        "gloss_kr": "필연, 불가피함, 운명의 강제",
+        "gloss_en": "necessity, constraint, force",
+        "syntax": "LFG 관점에서 ἀνάγκη는 생략된 계사 ἐστί의 주격 보어/주어로 [PRED 'ἀνάγκη', CASE nom, NUM sg, GEND f] 자질을 갖는다. [CP εἴ περ (ἐστὶ) ἀνάγκη] 조건 구문을 형성한다.",
+        "background": "인간의 의지를 초월하는 거역할 수 없는 피할 수 없는 운명이나 전술적 강제를 뜻한다. 프리아모스는 전쟁이 비극임을 알면서도 운명이 요구한다면 12일째부터 다시 전장에 나설 것임을 아킬레우스에게 고한다.",
+        "etymology": "PIE 어근 *neḱ-('목에 죄다, 눌러 부수다') 또는 *angʰ-('좁다, 압박하다')에서 파생된 어휘로 본다. Beekes(EDG)에 따르면 미케네어 선문자 B *a-na-ka-ta*와는 구분되며, '필연성, 강제'라는 고유한 추상 명사로 정착했다. 영어 anancastic(의무적/강박적)의 어원이다."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 24.667",
+    "trans": "그러자 발이 빠르고 눈부신 아킬레우스가 그에게 대답하였다:",
+    "words": [
+      {
+        "g": "τὸν",
+        "pos": "관사",
+        "lemma": "ὁ, ἡ, τό",
+        "parse": "sg.acc.m.",
+        "gloss_kr": "그를",
+        "gloss_en": "him",
+        "syntax": "[CP [DP τὸνᵢ] [C' ... [VP προσέειπε tᵢ]]] 구조에서 목적어로서 전위된 지시사/관사이다. LFG f-구조에서 [PRED 'προσεῖπον<SUBJ,OBJ>', OBJ [CASE acc]]로 지배된다. 통사적으로 선행하는 화화 상대방(프리아모스)을 가리키는 anaphoric pronoun의 용법이다.",
+        "background": "화법 전환부에서 상대방의 발언에 응답하는 정형구의 전형적인 도입부이다. 아킬레우스의 태도가 연민으로 전환된 이후 그의 목소리가 직접 전달되는 국면이다.",
+        "etymology": "① PIE 지시사 어근 *to- (e급)에서 유래하며, 명확한 후두음은 재구되지 않는다(Beekes EDG). ② 산스크리트어 tá-, 고대 교회 슬라브어 tŭ, 고대 고지 독일어 der. ③ PIE 지시 대명사/관사 체계에서 그리스어 정관사 및 지시사로 분화하는 음운적·형태론적 변화를 겪었다(Chantraine DELG). ④ 영어 the의 어원적 동계어이며, 현대 그리스어에서는 지시사·관사 체계로 발전하여 광범위하게 쓰인다."
+      },
+      {
+        "g": "δ᾽",
+        "pos": "접속사",
+        "lemma": "δέ",
+        "parse": "coord.conj.",
+        "gloss_kr": "그리고, 반면에",
+        "gloss_en": "and, but",
+        "syntax": "HPSG 자질구조상 [HEAD coord, COMPS < >]로 분석되며, 절과 절을 대조적으로 연결하는 후치사적 접속사이다. 통사 위치는 문장의 두 번째 자리(Wackernagel's law)를 점한다.",
+        "background": "앞선 프리아모스의 호소에 이어 아킬레우스의 반응을 매끄럽게 전환하는 서사적 접속 장치이다. 호메로스 서사시 전반에서 장면 전환과 인물 교대를 알리는 핵심적인 통사 표지이다.",
+        "etymology": "① PIE 재구형은 불확실하나, 공간적 지시나 대조를 나타내는 어근에서 기원한 것으로 추정된다(Beekes EDG). ② 산스크리트어 등과의 직접 동계어는 명확치 않음. ③ 독립된 어근이라기보다는 전형적인 불변화사로서 문장 내 위치 고정화 현상을 겪었다. ④ 호메로스 그리스어 및 고전 그리스어의 문장 연결사로 정착하였으며, 현대 그리스어에는 직접적인 형태로 잔존하지 않는다(Chantraine DELG)."
+      },
+      {
+        "g": "αὖτε",
+        "pos": "부사",
+        "lemma": "αὖτε",
+        "parse": "adv.",
+        "gloss_kr": "다시, 이와 같이",
+        "gloss_en": "again, in turn",
+        "syntax": "[VP [ADV αὖτε] ... ] 형태로 술어부 앞에서 행위의 교대나 반복을 나타내는 수식어구이다. LFG에서 ADJUNCT 자리를 차지하며, 담화 맥락상 앞선 발언에 대한 대응임을 지시한다.",
+        "background": "대화의 공이 상대방에게 넘어갔음을 보여주는 호메로스 정형구의 요소이다. 인물 간의 교대 발화(amoebean exchange)에서 필수적으로 동반되는 수식어이다.",
+        "etymology": "① PIE 어근 *h₂e(u)- ('다시, 저쪽으로')에서 유래하며, e급 형태와 양태 부사 접미사의 결합이다(Beekes EDG). ② 산스크리트어 áva ('아래로, 멀리'), 고딕어 auþi- 등과 동계이다. ③ 고대 그리스어에서 음운론적 축약과 부사화 과정을 거쳐 '다시, 차례로'라는 의미로 고착되었다. ④ Frisk(GEW)와 Chantraine(DELG)은 이를 공간적 지원에서 담화적 교대 기능으로의 의미 확스로 설명한다."
+      },
+      {
+        "g": "προσέειπε",
+        "pos": "동사",
+        "lemma": "προσείπω",
+        "principalParts": "προσείπω – προσερέω – προσεῖπον – (미상) – (미상) – (미상)",
+        "parse": "3rd.sg.aor.ind.act.",
+        "gloss_kr": "말을 건넸다",
+        "gloss_en": "addressed",
+        "syntax": "LFG AVM으로 나타내면 [PRED 'προσεῖπον<SUBJ,OBJ,OBL>', TENSE past, ASPECT aor, SUBJ [PRED 'Ἀχιλλεύς', CASE nom], OBJ [PRED 'δ', CASE acc]]이다. c-구조상 [TP [DP Ἀχιλλεύς] [T' ἔσεɩπɛ [vP t_subj [VP t_v [DP τὸν]]]]]이며, 전치사적 전구 πρός가 동사 어간과 결합한다.",
+        "background": "영웅들이 서로 마주하여 공식적인 대화를 나누거나 응답할 때 쓰는 전형적인 서사적 동사이다. 아킬레우스가 프리아모스의 눈물 어린 청원에 응답하는 결정적인 순간을 포착한다.",
+        "etymology": "① PIE 어근 *wekʷ- ('말하다')에 전치사적 전구 *pròs가 결합한 형태이다(Beekes EDG). ② 라틴어 vōx ('목소리'), 산스크리트어 vácas ('말') 등과 동계이다. ③ 호메로스어에서 증강사 aorist 형태인 προσέειπε로 정착하면서 음절 연장 현상을 겪었다. ④ 영어 voice, vowel 등이 같은 PIE 어근에서 유래한다(Chantraine DELG)."
+      },
+      {
+        "g": "ποδάρκης",
+        "pos": "형용사",
+        "lemma": "ποδάρκης, ποδάρκες",
+        "parse": "sg.nom.m.",
+        "gloss_kr": "발이 빠른",
+        "gloss_en": "swift-footed",
+        "syntax": "[DP [AP ποδάρκης] [N' Ἀχιλλεύς]] 구조에서 고유명사를 수식하는 한정 형용사이다. LFG f-구조상 [ADJUNCT [PRED 'ποδάρκης', MOD [PRED 'Ἀχιλλεύς']]]로 분석된다.",
+        "background": "아킬레우스의 가장 대표적인 정형구적 수식어이다. 비록 이 장면에서 아킬레우스는 뛰어다니지 않고 앉아 있지만, 그의 영웅적 본질과 정체성을 상기시킨다.",
+        "etymology": "① *ποδ- (발) + *ἀρκ- (충분하다)의 합성어로, PIE *pṓs 와 *h₂erk- 의 결합이다(Beekes EDG). ② 산스크리트어 pad- ('발'), 라틴어 pēs ('발')와 동계이다. ③ 그리스어 내부에서 신체 부위와 능력의 어근이 결합하여 합성 형용사로 발달하였다. ④ 영어 pedal, pedestrian 등이 이 어근의 후손이다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "δῖος",
+        "pos": "형용사",
+        "lemma": "δῖος, δίη, δῖον",
+        "parse": "sg.nom.m.",
+        "gloss_kr": "눈부신",
+        "gloss_en": "divine",
+        "syntax": "[DP [AP δῖος] [N' Ἀχιλλεύς]] 구에서 명사를 꾸미는 수식어구이며, 통사적으로 주격 남성 단수 형태로서 앞서 나오는 ποδάρκης와 병렬적으로 아킬레우스를 한정한다.",
+        "background": "호메로스 서사시에서 영웅들에게 붙여지는 전통적 수식어이다. 문자 그대로는 '신과 같은' 뜻으로, 아킬레우스의 반신반인적 혈통과 고귀함을 강조한다.",
+        "etymology": "① PIE 어근 *dyeu- ('하늘, 빛나다, 신')에서 유래하며, 제우스와 어원이 같다(Beekes EDG). ② 산스크리트어 dyu- ('하늘, 빛'), 라틴어 deus ('신')와 동계이다. ③ PIE 신성 개념을 나타내는 어근이 형용사 접미사와 결합하였다. ④ 영어 Zeus, divine, deity 등이 모두 이 어근에서 유래한다(Chantraine DELG)."
+      },
+      {
+        "g": "Ἀχιλλεύς:",
+        "pos": "명사(고유)",
+        "lemma": "Ἀχιλλεύς, Ἀχιλῆος(호메로스式 속격), ὁ",
+        "parse": "sg.nom.m.",
+        "gloss_kr": "아킬레우스",
+        "gloss_en": "Achilles",
+        "syntax": "문장의 주어로서 LFG AVM [PRED 'Ἀχιλλεύς', PERS 3, NUM sg, CASE nom]으로 표시되며, 동사 προσέειπε의 행위자를 통사적으로 지배한다.",
+        "background": "일리아스의 주인공이자 펠레우스와 테티스의 아들이다. 이 대목에서 그는 원수인 프리아모스의 방문을 받아들이고 자비와 환대를 베푸는 극적인 성숙을 보여준다.",
+        "etymology": "① 어원은 명확하지 않으며, 선그리스어 기층에서 유래했을 가능성이 높다고 Beekes(EDG)는 지적한다. ② 다른 인도유럽어족에 확실한 동계어가 없다. ③ 그리스어 음운 체계에 동화되면서 영웅 이름으로 정착하였다. ④ 현대 서구권에서 고유명사 Achilles 및 해부학적 명칭으로 살아남는다(Frisk GEW)."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 24.668",
+    "trans": "“그대여, 노인 프리아모스여, 그대가 요구하는 대로 이 일들도 그렇게 이루어질 것이요:",
+    "words": [
+      {
+        "g": "ἔσται",
+        "pos": "동사",
+        "lemma": "εἰμί",
+        "principalParts": "εἰμί – ἔσομαι – (미상) – (미상) – (미상) – (미상)",
+        "parse": "3rd.sg.fut.ind.mid.",
+        "gloss_kr": "이루어질 것이다",
+        "gloss_en": "will be",
+        "syntax": "LFG AVM에서 [PRED 'εἰμί<SUBJ,OBL>', TENSE fut, VOICE mid, SUBJ [PRED 'ταῦτα', NUM pl, CASE nom]]로 분석된다. 복수 주어 neuter plural ταῦτα가 3인칭 단수 동사와 호응하는 그리스어 통사 규칙을 따른다.",
+        "background": "아킬레우스가 프리아모스의 요구를 전면적으로 수락하는 확언의 발언이다. 미래시제를 사용하여 신뢰성 있는 약속을 강조한다.",
+        "etymology": "① PIE 어근 *h₁es- ('있다, 존재하다')에서 유래하며, 미래형 중동태 어미가 결합하였다(Beekes EDG). ② 산스크리트어 ásti ('있다'), 라틴어 est, 영어 is 와 동계이다. ③ PIE 코퓰라 동사 체계에서 미래형이 중동태 형태로 분화하였다. ④ 영어 is, be 등이 모두 이 어근의 후손이다(Chantraine DELG)."
+      },
+      {
+        "g": "τοι",
+        "pos": "대명사",
+        "lemma": "σύ (여격) / τοι",
+        "parse": "dat.sg.",
+        "gloss_kr": "너에게",
+        "gloss_en": "to you",
+        "syntax": "HPSG 자질구조상 [HEAD clitic, CASE dat]이며, 문장의 두 번째 위치에 오는 전접어이다. LFG f-구조에서 이익여격 OBL_TO 역할을 수행한다.",
+        "background": "화자가 청자에게 친근함 혹은 확실성을 부여할 때 쓰는 호메로스 구어체적 표현이다. 프리아모스를 향한 아킬레우스의 태도가 변했음을 보여준다.",
+        "etymology": "① PIE 2인칭 대명사 여격 재구형 *tebhyo- 또는 지시/소사 기원 어근에서 유래한다(Beekes EDG). ② 산스크리트어 túbhyam ('너에게'), 라틴어 tibi 와 동계이다. ③ 그리스어에서 전접어화되면서 어휘적 독립성을 잃었다(Chantraine DELG)."
+      },
+      {
+        "g": "καὶ",
+        "pos": "접속사",
+        "lemma": "καί",
+        "parse": "coord.conj.",
+        "gloss_kr": "또한, 심지어",
+        "gloss_en": "also, even",
+        "syntax": "통사적으로 [AP [ADV καί] [AP ταῦτα]] 구조에서 한정적 부사 혹은 [CP 절1 [C' καί 절2]]의 대등 접속사로 기능한다.",
+        "background": "앞선 대화 내용과 프리아모스의 청원을 유기적으로 연결하며, 청원의 여러 조건들이 모두 이행될 것임을 강조하는 수사적 기능을 한다.",
+        "etymology": "① PIE 기원이 명확하지 않으며, 선그리스어 기층이거나 고유의 축약형일 가능성이 제기된다(Beekes EDG). ② 부사와 접속사의 기능을 동시에 수행하는 문법화 과정을 거쳤다. ③ 현대 그리스어에서도 가장 빈번하게 쓰이는 접속사/부사로 남아 있다(Frisk GEW)."
+      },
+      {
+        "g": "ταῦτα",
+        "pos": "대명사",
+        "lemma": "οὗτος, αὕτη, τοῦτο",
+        "parse": "pl.nom.n.",
+        "gloss_kr": "이 일들이",
+        "gloss_en": "these things",
+        "syntax": "문장의 주어로서 LFG AVM [PRED 'οὗτος', NUM pl, CASE nom, GEND neut]이다. 앞서 프리아모스가 요구한 장례 기간 및 휴전 조건들을 가리키는 지시대명사이다.",
+        "background": "프리아모스가 제시한 구체적인 요구 조건들을 총칭하는 지시어이다. 아킬레우스가 이를 명시적으로 반복함으로써 약속의 구속력을 높인다.",
+        "etymology": "① PIE 지시 대명사 어근 *so-, *to-에 강조형 접미사가 결합한 형태이다(Beekes EDG). ② 산스크리트어 tád, 영어 that 과 동계이다. ③ 그리스어 지시사 체계에서 원칭/근칭을 구분하는 복합 지시 대명사로 발달하였다(Chantraine DELG)."
+      },
+      {
+        "g": "γέρον",
+        "pos": "명사",
+        "lemma": "γέρων, γέροντος, ὁ",
+        "parse": "voc.sg.m.",
+        "gloss_kr": "노인이여",
+        "gloss_en": "old man",
+        "syntax": "문장의 호격 구문으로서 LFG f-구조상 [VOC [PRED 'γέρων', CASE voc]]로 표시되며, 주절과 통사적으로 분리된 독립 어구이다.",
+        "background": "나이 많은 이에 대한 호칭이자, 고대 그리스 사회에서 장로로서의 지위를 인정하는 존칭이다. 프리아모스를 향한 아킬레우스의 연민과 예우를 담고 있다.",
+        "etymology": "① PIE 어근 *gerh₂- ('늙다')에 능동 분사 접미사 *-ont- 가 결합한 형태이다(Beekes EDG). ② 산스크리트어 jaránt- ('늙은이')와 동계이다. ③ 영어 gerontology 등의 어근으로 남아 있다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "Πρίαμ᾽",
+        "pos": "명사(고유)",
+        "lemma": "Πρίαμος, Πριάμου, ὁ",
+        "parse": "voc.sg.m.",
+        "gloss_kr": "프리아모스여",
+        "gloss_en": "Priam",
+        "syntax": "호격 구문으로서 앞선 γέρον과 동격을 이루는 고유명사 호칭이다. 통사적으로 [VOC [DP Πρίαμος]] 구조를 형성한다.",
+        "background": "트로이아의 마지막 왕이자 헥토르의 아버지이다. 적진의 장막 속으로 홀로 찾아와 적장의 무릎을 붙잡고 애원하는 비극적 영웅의 정점이다.",
+        "etymology": "① 비그리스어/아시아계 기층 어류로, 히타이트 기록의 Pariyama-와 연관성이 제기된다(Beekes EDG). ② 트로이아 지역의 언어적 기원에서 그리스어 음운에 맞게 동화되었다. ③ 서구권에서 고유명사 Priam으로 사용된다(Chantraine DELG)."
+      },
+      {
+        "g": "ὡς",
+        "pos": "접속사",
+        "lemma": "ὡς",
+        "parse": "conj.",
+        "gloss_kr": "~하는 대로",
+        "gloss_en": "as",
+        "syntax": "종속절을 이끄는 접속사로서 LFG AVM [COMP [PRED 'κελεύω<SUBJ,OBJ>', TYPE advcl]]를 구성한다. 주절과 종속절 사이의 양태적 상관관계를 매개한다.",
+        "background": "청자가 요구한 바와 행위자의 실행이 정확히 일치함을 나타내는 표현이다. 아킬레우스가 프리아모스의 주권을 존중하고 청을 수용하겠다는 의지이다.",
+        "etymology": "① PIE 지시/관계 대명사 어근의 파생형에서 유래하였다(Beekes EDG). ② 산스크리트어 yáthā, 라틴어 ut 과 기능적 동계이다. ③ 그리스어에서 관계부사 및 양태 접속사로 문법화되었다(Chantraine DELG, LSJ)."
+      },
+      {
+        "g": "σὺ",
+        "pos": "대명사",
+        "lemma": "σύ",
+        "parse": "sg.nom.m.",
+        "gloss_kr": "그대가",
+        "gloss_en": "you",
+        "syntax": "종속절의 주어로서 LFG AVM [PRED 'σú', PERS 2, NUM sg, CASE nom]이다. 생성문법상 pro-drop 언어에서 주어가 표면화된 것은 대조적 초점을 나타낸다.",
+        "background": "프리아모스 자신이 직접 명령하고 청원했음을 강조함으로써, 아킬레우스가 임의로 결정하는 것이 아님을 밝힌다.",
+        "etymology": "① PIE 2인칭 단수 주격 재구형 *túh₁ 에서 유래한다(Beekes EDG). ② 산스크리트어 tvám, 라틴어 tū, 영어 thou 와 동계이다. ③ 인도유럽어족 전반에 걸쳐 가장 보존률이 높은 대명사 중 하나이다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "κελεύεις:",
+        "pos": "동사",
+        "lemma": "κελεύω",
+        "principalParts": "κελεύω – κελεύσω – ἐκέλευσα – κεκέλευκα – κεκέλευσμαι – ἐκελεύσθην",
+        "parse": "2nd.sg.pres.ind.act.",
+        "gloss_kr": "요구한다",
+        "gloss_en": "command",
+        "syntax": "LFG AVM에서 [PRED 'κελεύω<SUBJ,COMP>', TENSE pres, SUBJ [PRED 'σύ', PERS 2, NUM sg, CASE nom]]로 분석된다. 2인칭 단수 현재 직설법으로서 프리아모스의 청원 행위를 지칭한다.",
+        "background": "정중한 부탁이나 간청을 뜻하며, 여기서는 프리아모스가 아킬레우스에게 장례 휴전과 시신 인도를 요구한 행위를 가리킨다.",
+        "etymology": "① PIE 어근 *kelH- ('서두르다, 재촉하다')에서 유래한 것으로 추정된다(Beekes EDG). ② 그리스어 내부에서 '재촉하다'에서 '명하다, 요구하다'로 의미 전이를 겪었다. ③ 영어 celerity 등의 어근과 어원적 연관성을 가진다(Chantraine DELG, LSJ)."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 24.669",
+    "trans": "전쟁을 그대가 요구하는 그 시간만큼 멈추겠소.",
+    "words": [
+      {
+        "g": "σχήσω",
+        "pos": "동사",
+        "lemma": "ἔχω",
+        "principalParts": "ἔχω – ἕξω – ἔσχον – ἔσχηκα – ἔσχημαι – ἐσχέθην",
+        "parse": "1st.sg.fut.ind.act.",
+        "gloss_kr": "멈출 것이다",
+        "gloss_en": "will hold back",
+        "syntax": "LFG AVM에서 [PRED 'ἔχω<SUBJ,OBJ>', TENSE fut, VOICE act, SUBJ [PRED 'pro', PERS 1, NUM sg, CASE nom], OBJ [PRED 'πόλεμον', CASE acc]]로 분석된다. 1인칭 단수 미래형으로 아킬레우스 자신이 직접 전쟁을 중단시키겠다는 의지이다.",
+        "background": "아킬레우스가 트로이아측과의 전투를 일시적으로 중단하겠다는 핵심 약속이다. 헥토르의 장례를 치를 동안 그리스군의 공격을 멈추겠다는 군사적 결정이다.",
+        "etymology": "① PIE 어근 *segh- ('가지다, 억누르다')에서 유래하며, 미래형에서 s-어간 형태를 취한다(Beekes EDG). ② 산스크리트어 sáhate, 고대 고지 독일어 sigo 와 동계이다. ③ 현재형과 미래/과거형이 분화하였다. ④ 영어 epoch, scheme 등이 이 어근에서 유래한다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "γὰρ",
+        "pos": "접속사",
+        "lemma": "γάρ",
+        "parse": "coord.conj.",
+        "gloss_kr": "왜냐하면",
+        "gloss_en": "for",
+        "syntax": "후치사적 인과 접속사로서 HPSG 자질구조상 [HEAD coord, TYPE causal]이다. 앞선 약속에 대한 논리적 근거와 구체적 내용을 설명하는 절을 도입한다.",
+        "background": "아킬레우스가 앞서 선언한 일반적 수락에 이어 구체적으로 어떤 조치를 취할 것인지를 뒷받침하는 설명적 서사 연결어이다.",
+        "etymology": "① PIE 기원이 불분명하며, 독립된 기층 소사에서 유래한 것으로 추정된다(Beekes EDG). ② 그리스어 문법화 과정에서 인과 관계를 나타내는 대표적 후치 불변화사로 정착하였다(Chantraine DELG, LSJ)."
+      },
+      {
+        "g": "πόλεμον",
+        "pos": "명사",
+        "lemma": "πόλεμος, πολέμου, ὁ",
+        "parse": "sg.acc.m.",
+        "gloss_kr": "전쟁을",
+        "gloss_en": "war",
+        "syntax": "동사 σχήσω의 직접 목적어로서 LFG AVM [PRED 'πόλεμος', CASE acc]이다. c-구조상 [VP t_v [DP πόλεμον]] 위치를 점한다.",
+        "background": "일리아스의 배경이자 아킬레우스가 지배하는 영역인 '전쟁'을 뜻한다. 아킬레우스가 전쟁을 멈추겠다고 선언하는 것은 신화적 질서의 일시적 정지를 의미한다.",
+        "etymology": "① 선그리스어 기층 어휘일 가능성이 높다고 Beekes(EDG)는 설명한다. ② 인도유럽어족 내 확실한 동계어는 없다. ③ 그리스어 내부에서 명사 파생 접미사와 결합하여 고착되었다. ④ 영어 polemic 등의 어근과 연관된다(Frisk GEW)."
+      },
+      {
+        "g": "τόσσον",
+        "pos": "형용사",
+        "lemma": "τόσσος, τόσση, τόσσον",
+        "parse": "sg.acc.n.",
+        "gloss_kr": "그만큼의",
+        "gloss_en": "so much",
+        "syntax": "시간의 양을 나타내는 부사적 목적어로서 LFG AVM [ADJUNCT [PRED 'τόσσος', CASE acc, NUM sg, GEND neut]]로 분석된다. 뒤따르는 ὅσσον과 상관구문을 이룬다.",
+        "background": "프리아모스가 요구한 장례 기간만큼 정확히 전쟁을 멈추겠다는 수량적 한계를 설정하는 표현이다.",
+        "etymology": "① PIE 지시 대명사 어근 *to-에 양을 나타내는 접미사가 결합한 형태이다(Beekes EDG). ② 산스크리트어 távant- 와 동계이다. ③ 그리스어에서 양적 규모나 기간을 지시하는 대명형 형용사로 발달하였다(Chantraine DELG, LSJ)."
+      },
+      {
+        "g": "χρόνον",
+        "pos": "명사",
+        "lemma": "χρόνος, χρόνου, ὁ",
+        "parse": "sg.acc.m.",
+        "gloss_kr": "시간을",
+        "gloss_en": "time",
+        "syntax": "부사적 대격으로서 LFG AVM [OBL_TIME [PRED 'χρόνος', CASE acc]]로 분석된다. 통사적으로 전쟁을 멈추는 지속 시간을 한정한다.",
+        "background": "고대 그리스어에서 객관적이고 지속적인 시간 흐름을 뜻하는 명사이다. 헥토르의 장례를 위해 반드시 확보되어야 하는 물리적 시간의 소중함을 나타낸다.",
+        "etymology": "① Beekes(EDG)는 선그리스어 기층 혹은 불확실한 어원으로 분류한다. ② 다른 인도유럽어에 명확한 동계어가 논쟁적이다. ③ 그리스어에서 시간 단위를 뜻하는 표준 명사로 정착하였다. ④ 영어 chronology, chronic 등의 어근이다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "ὅσσον",
+        "pos": "대명사",
+        "lemma": "ὅσος, ὅση, ὅσον",
+        "parse": "sg.acc.n.",
+        "gloss_kr": "~만큼",
+        "gloss_en": "as much as",
+        "syntax": "관계절의 목적어이자 상관대명사로서 LFG AVM [COMP [PRED 'ἄνωγας<SUBJ,OBJ>', REL [PRED 'ὅσος', CASE acc]]]로 분석된다. 앞선 τόσσον과 호응하여 상관 구문을 형성한다.",
+        "background": "프리아모스가 요구한 정확한 한도와 양을 지시하며, 아킬레우스가 자의적으로 기간을 정하는 것이 아니라 상대방의 청구에 맞추고 있음을 보여준다.",
+        "etymology": "① PIE 상대/관계 대명사 어근 *y-에 수량 접미사가 결합한 형태이다(Beekes EDG). ② 산스크리트어 yávant- 과 동계이다. ③ 그리스어에서 크기, 양, 기간을 뜻하는 관계형 형용사로 발달하였다(Chantraine DELG, LSJ)."
+      },
+      {
+        "g": "ἄνωγας.",
+        "pos": "동사",
+        "lemma": "ἄνωγα",
+        "principalParts": "ἄνωγα – (미상) – ἠνωγον – (미상) – (미상) – (미상)",
+        "parse": "2nd.sg.perf.ind.act.",
+        "gloss_kr": "네가 요구한다",
+        "gloss_en": "you command",
+        "syntax": "LFG AVM에서 [PRED 'ἄνωγα<SUBJ,OBJ>', TENSE perf, ASPECT stative, SUBJ [PRED 'pro', PERS 2, NUM sg, CASE nom], OBJ [PRED 'ὅσσον', CASE acc]]로 분석된다. 형태는 완료이나 의미는 현재인 완료거 동사이다.",
+        "background": "아킬레우스가 프리아모스의 발언을 존중하며 그가 명한 바를 그대로 준수하겠다는 약속의 정점을 찍는다. 완고한 전사였던 아킬레우스가 적왕의 요구에 승복을 표한다.",
+        "etymology": "① PIE 어근 *h₂negh- ('명하다')에서 유래한 것으로 추정되며, 중복사 흔적을 지닌다(Beekes EDG). ② 형태론적으로 완료형 어간이 현재적 의미를 띠는 특수한 상태동사로 고착되었다. ③ 현대 그리스어에는 직접 남아 있지 않다(Chantraine DELG, Frisk GEW)."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 24.670",
+    "trans": "이렇게 말하고는 그는 노인의 손목을 손으로",
+    "words": [
+      {
+        "g": "ὣς",
+        "pos": "부사",
+        "lemma": "ὡς / ὧς",
+        "parse": "adv.",
+        "gloss_kr": "이렇게",
+        "gloss_en": "thus",
+        "syntax": "[VP [ADV ὣς] ... ] 구조에서 앞서 아킬레우스가 한 발언 전체를 수식하는 양태 부사이다. LFG에서 ADJUNCT 역할을 한다.",
+        "background": "시적 서사에서 대사가 끝난 직후 곧바로 인물의 물리적 행동이나 제스처로 전환되는 호메로스 서사의 전형적인 전이구이다.",
+        "etymology": "① PIE 지시 대명사 어근 *so-, *to-의 부사적 파생형이다(Beekes EDG). ② 산스크리트어 táthā, 라틴어 sic 와 기능적 동계이다. ③ 그리스어에서 양태와 지시를 나타내는 부사로 고착되었다(Chantraine DELG, LSJ)."
+      },
+      {
+        "g": "ἄρα",
+        "pos": "소사",
+        "lemma": "ἄρα",
+        "parse": "coord.conj.",
+        "gloss_kr": "과연",
+        "gloss_en": "then",
+        "syntax": "HPSG 자질구조상 [HEAD particle, TYPE inferential]이며, 문장의 두 번째 위치에 오는 전접어이다. 앞선 발언과 이어지는 행동 사이의 인과적 필연성을 나타낸다.",
+        "background": "서사시에서 인물의 말이 끝나고 즉각적인 행동이 뒤따를 때 인과적 연쇄를 강조하기 위해 쓰이는 필수적 수사 입자이다.",
+        "etymology": "① PIE 기원이 불확실하며, 기층 소사에서 유래한 것으로 추정된다(Beekes EDG). ② 그리스어에서 서사적 인과관계를 나타내는 대표적 입자로 문법화되었다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "φωνήσας",
+        "pos": "분사",
+        "lemma": "φωνέω",
+        "principalParts": "φωνέω – φωνήσω – ἐφώνησα – πεφώνηκα – πεφώνημαι – ἐφωνήθην",
+        "parse": "aor.act.part.sg.nom.m.",
+        "gloss_kr": "말하고 나서",
+        "gloss_en": "having spoken",
+        "syntax": "주어를 수식하는 부대 상황 분사로서 LFG AVM [ADJUNCT [PRED 'φωνέω<SUBJ>', TENSE past, ASPECT aor, VOICE act, CASE nom, GEND m, NUM sg]]로 분석된다.",
+        "background": "인물이 말을 마친 직후 곧바로 신체적 행동으로 옮겨가는 호메로스 서사의 신체적·심리적 연속성을 보여주는 분사 표현이다.",
+        "etymology": "① 명사 φωνή ('목소리')에서 파생된 동사이며, 명사의 어원은 PIE *bʰeh₂- ('말하다')와 연결된다(Beekes EDG). ② 산스크리트어 bhāṣate, 라틴어 fārī 와 동계이다. ③ 영어 telephone 등의 어근이다(Chantraine DELG, LSJ)."
+      },
+      {
+        "g": "ἐπὶ",
+        "pos": "전치사",
+        "lemma": "ἐπί",
+        "parse": "prep.+dat.",
+        "gloss_kr": "~에",
+        "gloss_en": "upon",
+        "syntax": "여격 지배 전치사로서 LFG AVM [OBL [PRED 'ἐπί', CASE dat], OBJ [PRED 'καρπῷ', CASE dat]]이다. 통사적으로 접촉의 지점을 나타낸다.",
+        "background": "아킬레우스가 프리아모스를 안심시키기 위해 취하는 신체적 접촉의 공간적 배경을 설정한다. 적대 관계였던 두 영웅 사이의 극적인 화해를 상징한다.",
+        "etymology": "① PIE 어근 *epi- ('~ 위에')에서 유래한다(Beekes EDG). ② 산스크리트어 ápi, 리투아니아어 apė 와 동계이다. ③ 영어 epilogue, epidermis 등의 접두사로 널리 쓰인다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "καρπῷ",
+        "pos": "명사",
+        "lemma": "καρπός, καρποῦ, ὁ",
+        "parse": "sg.dat.m.",
+        "gloss_kr": "손목에",
+        "gloss_en": "at the wrist",
+        "syntax": "전치사 ἐπί의 지배를 받는 여격 목적어로서 LFG AVM [OBJ [PRED 'καρπός', CASE dat, NUM sg]]이다. 통사적으로 접촉의 대상이자 위치를 한정한다.",
+        "background": "아킬레우스가 프리아모스의 손목을 잡는 행위는 고대 그리스 문화에서 청원자와 보호자 사이의 신뢰와 안전을 보장하는 엄숙한 제스처이다.",
+        "etymology": "① 신체 부위로서의 '손목'은 선그리스어 기층 혹은 독자적 어원으로 분류된다(Beekes EDG). ② 그리스어 내부에서 손목 부위를 가리키는 신체 명사로 정착하였다. ③ 현대 그리스어에서도 καρπός는 손목의 뜻을 가진다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "χείρα",
+        "pos": "명사",
+        "lemma": "χείρ, χειρός, ἡ",
+        "parse": "sg.acc.f.",
+        "gloss_kr": "손을",
+        "gloss_en": "hand",
+        "syntax": "동사 ἔλλαβε의 직접 목적어로서 LFG AVM [PRED 'χείρ', CASE acc, NUM sg]이다. c-구조상 [VP t_v [DP χεῖρα]] 위치를 점한다.",
+        "background": "프리아모스의 오른손을 붙잡음으로써 적대적 긴장을 해소하고 환대와 보호의 맹약을 맺는 신체적 의례의 핵심 행위이다.",
+        "etymology": "① PIE 재구형 *ǵʰesr- ('손')에서 유래한다(Beekes EDG). ② 산스크리트어 hásta-, 아베스타어 zasta- 와 동계이다. ③ 영어 surgeon 등의 어근으로 남아 있다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "γέροντος",
+        "pos": "명사",
+        "lemma": "γέρων, γέροντος, ὁ",
+        "parse": "sg.gen.m.",
+        "gloss_kr": "노인의",
+        "gloss_en": "of the old man",
+        "syntax": "소유격 명사로서 LFG AVM [ADJUNCT [PRED 'γέρων', CASE gen, NUM sg]] 또는 명사구 내 소유격 수식어를 구성한다.",
+        "background": "노인 프리아모스의 신체적 취약성과 적진에 홀로 찾아온 그의 처연한 신분을 다시 한 번 강조하여, 아킬레우스의 보호 행위를 부각한다.",
+        "etymology": "① PIE 어근 *gerh₂- ('늙다')와 능동 분사 접미사에서 유래한다(Beekes EDG). ② 산스크리트어 jaránt- 와 동계이다. ③ 영어 gerontology 등의 어근이다(Chantraine DELG, Frisk GEW)."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 24.671",
+    "trans": "오른손을 꼭 잡았다, 혹시라도 그가 마음속으로 두려워할까 봐.",
+    "words": [
+      {
+        "g": "ἔλλαβε",
+        "pos": "동사",
+        "lemma": "λαμβάνω",
+        "principalParts": "λαμβάνω – λήψομαι – ἔλαβον – εἴληφα – εἴλημμαι – ἐλήφθην",
+        "parse": "3rd.sg.aor.ind.act.",
+        "gloss_kr": "붙잡았다",
+        "gloss_en": "took",
+        "syntax": "주절의 술어로서 LFG AVM [PRED 'λαμβάνω<SUBJ,OBJ>', TENSE past, ASPECT aor, VOICE act, SUBJ [PRED 'Ἀχιλλεύς', CASE nom], OBJ [PRED 'χείρα', CASE acc]]로 분석된다.",
+        "background": "아킬레우스가 프리아모스의 손을 잡아당기며 안심시키는 극적인 신체적 제스처로, 적장과 적왕 사이의 긴장이 인간적 연민으로 전환되는 순간이다.",
+        "etymology": "① PIE 어근 *lagʷ- ('가볍다, 잡다') 또는 비인도유럽어 기원설이 존재한다(Beekes EDG). ② 호메로스어에서 단축형 aorist로 빈번히 쓰인다. ③ 영어 lemma, epilepsy 등의 어근이다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "δεξιτερήν,",
+        "pos": "형용사",
+        "lemma": "δεξιός, δεξιά, δεξιόν",
+        "parse": "sg.acc.f.",
+        "gloss_kr": "오른손을",
+        "gloss_en": "right hand",
+        "syntax": "생략된 명사 χεῖρα를 수식하거나 그 자체로 대상을 지칭하는 형용사적 목적어로서 LFG AVM [OBJ [PRED 'δεξιτερός', CASE acc, NUM sg, GEND f]]이다.",
+        "background": "고대 세계 전반에서 '오른손'은 무기를 들지 않은 평화와 신의를 상징한다. 아킬레우스가 프리아모스의 오른손을 잡는 것은 안전을 보장하는 최고의 보증이다.",
+        "etymology": "① PIE 어근 *deks- ('오른쪽, 유리한')에 수식 접미사가 결합한 형태이다(Beekes EDG). ② 산스크리트어 dákṣiṇa-, 라틴어 dexter 와 동계이다. ③ 영어 dexterous 등의 어근이다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "μή",
+        "pos": "접속사",
+        "lemma": "μή",
+        "parse": "conj.",
+        "gloss_kr": "~할까 봐",
+        "gloss_en": "lest",
+        "syntax": "두려움이나 경고를 나타내는 종속절을 이끄는 접속사로서 LFG AVM [COMP [PRED 'δεῖδω<SUBJ>', TYPE adverbs-clause, POLARITY neg]]로 분석된다.",
+        "background": "프리아모스가 적진 한복판에서 아킬레우스와 마주하며 느낄 수 있는 극도의 공포와 불안감을 아킬레우스가 세심하게 배려하고 차단하려는 심리적 동기를 설명한다.",
+        "etymology": "① PIE 부정 소상 *meh₁ 에서 유래한다(Beekes EDG). ② 산스크리트어 mā, 고대 교회 슬라브어 mĭ 와 동계이다. ③ 현대 그리스어에서도 부정어로 직접 이어져 사용된다(Chantraine DELG, LSJ)."
+      },
+      {
+        "g": "πως",
+        "pos": "부사",
+        "lemma": "πώς",
+        "parse": "adv.",
+        "gloss_kr": "혹시",
+        "gloss_en": "somehow",
+        "syntax": "종속절 내부에서 양태를 한정하는 약한 부정 부사로서 LFG AVM [ADJUNCT [PRED 'πως', POLARITY indef]]이다.",
+        "background": "프리아모스가 혹시라도 마음속으로 공포에 질려 해를 입을까 염려하는 아킬레우스의 섬세한 심리적 통찰을 보여주는 부사적 요소이다.",
+        "etymology": "① PIE 의문/부정 대명사 어근 *kʷo-에 양태 접미사가 결합한 형태이다(Beekes EDG). ② 그리스어에서 부정적 양태를 완화하는 전접어 부사로 고착되었다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "δεῖσει᾽",
+        "pos": "동사",
+        "lemma": "δεῖδω",
+        "principalParts": "δεῖδω – δείσομαι – ἔδεισα – δέδοικα / δέδια – (미상) – (미상)",
+        "parse": "3rd.sg.aor.subj.act.",
+        "gloss_kr": "두려워할까 봐",
+        "gloss_en": "might fear",
+        "syntax": "LFG AVM에서 [PRED 'δεῖδω<SUBJ>', TENSE past/future in subjunctive, ASPECT aor, MOOD subj, VOICE act, SUBJ [PRED 'Πρίαμος', PERS 3, NUM sg, CASE nom]]로 분석된다.",
+        "background": "적장의 장막에서 밤을 지새우는 프리아모스가 느낄 수 있는 원초적 공포를 아킬레우스가 미리 예측하고 손을 잡아 안심시키려 했다는 심리적 밀도를 보여준다.",
+        "etymology": "① PIE 중복사 어근 *dwei- ('두려워하다')에서 유래한다(Beekes EDG). ② 산스크리트어 dvayá-, 고대 교회 슬라브어 dĭvati 와 동계이다. ③ 영어 dire 등의 어근과 비교된다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "ἐνὶ",
+        "pos": "전치사",
+        "lemma": "ἐν / ἐνί",
+        "parse": "prep.+dat.",
+        "gloss_kr": "~안에",
+        "gloss_en": "in",
+        "syntax": "여격 지배 전치사로서 LFG AVM [OBL [PRED 'ἐν', CASE dat], OBJ [PRED 'θυμῷ', CASE dat]]이다. 통사적으로 내재적 공간을 나타낸다.",
+        "background": "프리아모스의 물리적 신체가 아니라 내면의 심리적 공간 속에서 일어나는 감정 활동을 지리적 공간처럼 묘사하는 호메로스 특유의 은유적 표현이다.",
+        "etymology": "① PIE 어근 *en ('~ 안에')에서 유래한다(Beekes EDG). ② 산스크리트어 ántar, 라틴어 in, 영어 in 과 동계이다. ③ 영어 in, inside 등의 어근이다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "θυμῷ.",
+        "pos": "명사",
+        "lemma": "θυμός, θυμοῦ, ὁ",
+        "parse": "sg.dat.m.",
+        "gloss_kr": "마음에",
+        "gloss_en": "in heart",
+        "syntax": "전치사 ἐνί의 지배를 받는 여격 목적어로서 LFG AVM [OBJ [PRED 'θυμός', CASE dat, NUM sg]]이다. 통사적으로 두려움이 머무는 내면의 장소를 한정한다.",
+        "background": "호메로스 심리학에서 감정, 의지, 생명력이 거주하는 핵심 장기이자 심리적 중심을 뜻한다. 프리아모스가 적진에서 느낄 수 있는 영혼의 동요를 상징한다.",
+        "etymology": "① PIE 어근 *dhuH- ('숨쉬다, 격노하다')에서 유래하며, 생명력과 호흡의 개념과 밀접하다(Beekes EDG). ② 산스크리트어 dhūmá-, 라틴어 fūmus 와 동계이다. ③ 영어 fume 등의 어근이다(Chantraine DELG, Frisk GEW)."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 24.672",
+    "trans": "그리하여 두 사람은 그곳 집의 현관에서 잠을 청하였다,",
+    "words": [
+      {
+        "g": "οἳ",
+        "pos": "대명사",
+        "lemma": "ὁ, ἡ, τό",
+        "parse": "pl.nom.m.",
+        "gloss_kr": "그들은",
+        "gloss_en": "they",
+        "syntax": "문장의 주어로서 LFG AVM [PRED 'οἱ', PERS 3, NUM pl, CASE nom]이다. 후행하는 μὲν과 결합하여 대조적 주어 구문을 이끈다.",
+        "background": "아킬레우스의 장막 내부에서 휴식을 취하게 되는 프리아모스와 그의 충실한 전령 이다이오스의 밤모습을 서술하는 장면의 전환점이다.",
+        "etymology": "① PIE 지시 대명사 어근 *so-, *to-의 복수 주격 형태에서 유래한다(Beekes EDG). ② 산스크리트어 tá-, 고대 고지 독일어 der 와 동계이다. ③ 그리스어에서 정관사 및 지시/인칭 대명사로 분화하였다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "μὲν",
+        "pos": "소사",
+        "lemma": "μέν",
+        "parse": "coord.conj.",
+        "gloss_kr": "한편으로는",
+        "gloss_en": "on the one hand",
+        "syntax": "대조적 후치 불변화사로서 HPSG 자질구조상 [HEAD particle, TYPE correlative]이다. 후행하는 절의 αὐτάρ와 쌍을 이루어 대조 구조를 형성한다.",
+        "background": "프리아모스 일행이 장막 현관에서 잠드는 모습과 아킬레우스가 장막 안쪽 깊은 곳에서 잠드는 모습을 공간적·대조적으로 대비시키는 서사적 장치이다.",
+        "etymology": "① PIE 기원이 불분명하며, 강조 소사에서 유래한 것으로 추정된다(Beekes EDG). ② 그리스어 문장에서 대조와 강조를 나타내는 대표적 상관 입자로 정착하였다(Chantraine DELG, LSJ)."
+      },
+      {
+        "g": "ἄρ᾽",
+        "pos": "소사",
+        "lemma": "ἄρα",
+        "parse": "particle",
+        "gloss_kr": "과연",
+        "gloss_en": "then",
+        "syntax": "앞서 언급된 서사 흐름에 따라 자연스럽게 이어지는 행동을 나타내는 전접어 소사로서 LFG AVM [ADJUNCT [PRED 'ἄρα', POLARITY inferential]]이다.",
+        "background": "밤이 깊어 두 사신과 왕이 잠자리에 드는 서사적 필연성을 강조하는 호메로스 시구의 전형적 윤문 장치이다.",
+        "etymology": "① PIE 기원이 불확실한 서사 소사이다(Beekes EDG). Chantraine(DELG) 항목 참조."
+      },
+      {
+        "g": "ἐν",
+        "pos": "전치사",
+        "lemma": "ἐν",
+        "parse": "prep.+dat.",
+        "gloss_kr": "~에",
+        "gloss_en": "in",
+        "syntax": "여격 지배 전치사로서 LFG AVM [OBL [PRED 'ἐν', CASE dat], OBJ [PRED 'προδόμῳ', CASE dat]]이다. 통사적으로 장막의 현관이라는 장소를 한정한다.",
+        "background": "프리아모스가 하룻밤을 머무는 장소인 현관의 공간적 위치를 지정하며, 완전한 은밀함 속이 아닌 경계 부근에서 잠들음을 암시한다.",
+        "etymology": "① PIE 어근 *en ('~ 안에')에서 유래한다(Beekes EDG). Chantraine(DELG) 항목 참조."
+      },
+      {
+        "g": "προδόμῳ",
+        "pos": "명사",
+        "lemma": "πρόδομος, προδόμου, ὁ/ἡ",
+        "parse": "sg.dat.m.",
+        "gloss_kr": "현관에",
+        "gloss_en": "in the porch",
+        "syntax": "전치사 ἐν의 지배를 받는 여격 목적어로서 LFG AVM [OBJ [PRED 'πρόδομος', CASE dat, NUM sg]]이다. 통사적으로 숙면의 장소를 한정한다.",
+        "background": "미케네 시대 건축 양식 및 호메로스 시대 귀족 가옥의 구조에서 본채로 들어가기 전의 전실을 뜻하며, 손님들이 머무는 전통적 숙소 공간이다.",
+        "etymology": "① πρό ('앞에') + δόμος ('집')의 합성어로, 후두음과 어근 결합을 보여준다(Beekes EDG). ② 산스크리트어 dáma-, 라틴어 domus 와 동계이다. ③ 영어 domestic 등의 어근과 연관된다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "δόμου",
+        "pos": "명사",
+        "lemma": "δόμος, δόμου, ὁ",
+        "parse": "sg.gen.m.",
+        "gloss_kr": "집의",
+        "gloss_en": "of the house",
+        "syntax": "소유격 명사로서 LFG AVM [ADJUNCT [PRED 'δόμος', CASE gen, NUM sg]] 또는 명사구 내 소유격 수식어를 구성한다.",
+        "background": "아킬레우스가 거주하는 임시 장막을 시적으로 거대한 궁전의 집에 빗대어 표현한 장엄한 어휘 선택이다.",
+        "etymology": "① PIE 어근 *demh₂- ('집을 짓다')에서 유래한다(Beekes EDG). ② 산스크리트어 dáma-, 라틴어 domus 와 동계이다. ③ 영어 dome 등의 어근이다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "αὐτόθι",
+        "pos": "부사",
+        "lemma": "αὐτόθι",
+        "parse": "adv.",
+        "gloss_kr": "바로 그곳에서",
+        "gloss_en": "right there",
+        "syntax": "[VP [ADV αὐτόθι] ... ] 구조에서 잠자는 장소를 구체적으로 지시하는 장소 부사이다. LFG에서 ADJUNCT 역할을 한다.",
+        "background": "적진 한복판이라는 위험한 장소이면서도, 아킬레우스의 보호 아래 안전하게 자리 잡은 그 구체적 현장을 시청각적으로 확정한다.",
+        "etymology": "① 지시 대명사 어근 *autó-에 장소 부사 접미사 *-thi 가 결합한 형태이다(Beekes EDG). ② 고대 그리스어에서 현장성을 강조하는 지시 부사로 고착되었다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "κοιμήσαντο",
+        "pos": "동사",
+        "lemma": "κοιμάω",
+        "principalParts": "κοιμάω – κοιμήσω – ἐκοίμησα – κεκοίμηκα – κεκοίμημαι – ἐκοιμήθην",
+        "parse": "3rd.pl.aor.ind.mid.",
+        "gloss_kr": "잠자리에 들었다",
+        "gloss_en": "slept",
+        "syntax": "LFG AVM에서 [PRED 'κοιμάω<SUBJ>', TENSE past, ASPECT aor, VOICE mid, SUBJ [PRED 'οἱ', PERS 3, NUM pl, CASE nom]]로 분석된다. 중동태 형태이다.",
+        "background": "비극적인 하루가 지나고 마침내 찾아온 평화로운 휴식의 순간을 묘사하며, 적대자들 간의 일시적 화해가 가져온 안도감을 상징한다.",
+        "etymology": "① PIE 어근 *kei- ('눕다, 쉬다')에서 유래한 파생형이다(Beekes EDG). ② 산스크리트어 śéte, 라틴어 cīvis 와 동계이다. ③ 영어 cemetery의 어근이다(Chantraine DELG, Frisk GEW)."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 24.673",
+    "trans": "전령과 프리아모스는 마음속에 깊은 생각들을 품은 채,",
+    "words": [
+      {
+        "g": "κῆρυξ",
+        "pos": "명사",
+        "lemma": "κῆρυξ, κήρυκος, ὁ",
+        "parse": "sg.nom.m.",
+        "gloss_kr": "전령은",
+        "gloss_en": "the herald",
+        "syntax": "문장의 주어로서 앞서 등장한 οἱ의 구체적 동격을 이루며, LFG AVM [PRED 'κῆρυξ', PERS 3, NUM sg, CASE nom]이다.",
+        "background": "프리아모스를 수행하여 적진까지 함께 위험을 무릅쓰고 온 충직한 전령 이다이오스를 가리킨다. 왕과 함께 깨어 있으며 다가올 미래를 염려한다.",
+        "etymology": "① 비그리스어/아시아계 기층 어휘이거나 어근 *keh₁-와의 연관성이 논의되나 Beekes(EDG)는 기층 가능성을 높게 본다. ② 그리스어에서 공식 사절과 전령을 뜻하는 전문 명사로 정착하였다. ③ 영어 kerygma 등의 어근이다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "καὶ",
+        "pos": "접속사",
+        "lemma": "καί",
+        "parse": "coord.conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "두 주어 명사를 대등하게 연결하는 접속사로서 LFG AVM [CONJ [DP κῆρυξ] [CONJ καί] [DP Πρίαμος]] 구조를 형성한다.",
+        "background": "왕과 전령이라는 신분의 차이를 넘어 함께 고난을 겪고 밤을 지새우는 두 동반자의 연대감을 보여준다.",
+        "etymology": "① 앞서 다룬 καί의 어원적 설명 참조 (Beekes EDG)."
+      },
+      {
+        "g": "Πρίαμος",
+        "pos": "명사(고유)",
+        "lemma": "Πρίαμος, Πριάμου, ὁ",
+        "parse": "sg.nom.m.",
+        "gloss_kr": "프리아모스는",
+        "gloss_en": "Priam",
+        "syntax": "주어 명사구의 핵심 구성 요소로서 LFG AVM [PRED 'Πρίαμος', CASE nom, NUM sg]이다. 분사 구문의 주체로서 통사적 주어 지위를 가진다.",
+        "background": "모든 것을 잃었으나 아들의 시신을 찾아오기 위해 영웅적인 결단을 내린 트로이아의 왕으로서, 잠들지 못하고 깊은 상념에 잠겨 있다.",
+        "etymology": "① 비그리스어/아시아계 기층 어류로 히타이트 기록과 연관된다(Beekes EDG). ② 서구권에서 고유명사 Priam으로 사용된다(Chantraine DELG)."
+      },
+      {
+        "g": "πυκινὰ",
+        "pos": "형용사",
+        "lemma": "πυκινός, πυκινή, πυκινόν",
+        "parse": "pl.acc.n.",
+        "gloss_kr": "깊은",
+        "gloss_en": "deep",
+        "syntax": "목적어 명사 μήδε᾽를 수식하는 한정 형용사로서 LFG AVM [OBJ [PRED 'πυκινός', CASE acc, NUM pl, GEND neut]]이다.",
+        "background": "단순한 걱정이 아니라 왕국과 가문의 운명, 아들의 장례 등 치밀하고 무거운 생각들이 머릿속을 떠나지 않는 상태를 묘사하는 호메로스적 수식어이다.",
+        "etymology": "① PIE 어근 *peu̯k- / *puk- ('두껍게 짓다')에서 유래한다(Beekes EDG). ② 산스크리트어 puṣyati, 리투아니아어 pūstis 와 동계이다. ③ 현대 그리스어 πυκνός로 이어진다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "φρεσὶ",
+        "pos": "명사",
+        "lemma": "φρήν, φρενός, ἡ",
+        "parse": "pl.dat.f.",
+        "gloss_kr": "마음에",
+        "gloss_en": "in their minds",
+        "syntax": "처소적 여격으로서 LFG AVM [OBL [PRED 'φρήν', CASE dat, NUM pl]]이다. 통사적으로 생각이 머무는 내면의 장소를 지정한다.",
+        "background": "호메로스 심리학에서 지성, 감정, 분별력이 자리 잡고 있는 신체적·영혼적 중심을 뜻한다. 왕으로서의 책임감과 아버지로서의 슬픔이 교차하는 공간이다.",
+        "etymology": "① PIE 어근 *gʷhren- ('생각하다')에서 유래한 것으로 추정된다(Beekes EDG). ② 신체 기관에서 지성과 감정의 장소로 의미가 전이되었다. ③ 영어 phrenology 등의 어근이다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "μήδε᾽",
+        "pos": "명사",
+        "lemma": "μῆδος, μήδεος, τό",
+        "parse": "pl.acc.n.",
+        "gloss_kr": "생각들을",
+        "gloss_en": "thoughts",
+        "syntax": "분사 ἔχοντες의 직접 목적어로서 LFG AVM [PRED 'μῆδος', CASE acc, NUM pl, GEND neut]이다. c-구조상 [VP t_v [DP πυκινὰ μήδε᾽]] 구문을 이룬다.",
+        "background": "국가의 중대사와 개인적 비극 사이에서 왕과 전령이 머릿속으로 끊임없이 굴리고 있는 온갖 정치적·실존적 계획과 염려를 가리킨다.",
+        "etymology": "① PIE 어근 *med- ('측정하다, 숙고하다')에서 유래한다(Beekes EDG). ② 산스크리트어 mádati, 라틴어 mederi 와 동계이다. ③ 영어 medical, medicine 등의 어근이다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "ἔχοντες,",
+        "pos": "분사",
+        "lemma": "ἔχω",
+        "principalParts": "ἔχω – ἕξω / σχήσω – ἔσχον – ἔσχηκα – ἔσχημαι – ἐσχέθην",
+        "parse": "pres.act.part.pl.nom.m.",
+        "gloss_kr": "품은 채",
+        "gloss_en": "having",
+        "syntax": "주어를 수식하는 부대 상황 분사로서 LFG AVM [ADJUNCT [PRED 'ἔχω<SUBJ,OBJ>', TENSE pres, VOICE act, CASE nom, GEND m, NUM pl]]로 분석된다.",
+        "background": "육체는 비록 현관에 누워 잠을 청하려 하나, 정신은 결코 편히 쉴 수 없는 비극적 인물들의 내면적 긴장 상태를 극적으로 포착한다.",
+        "etymology": "① PIE 어근 *segh- ('가지다, 억누르다')에서 유래한다(Beekes EDG). Chantraine(DELG) 항목 참조."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 24.674",
+    "trans": "그러나 아킬레우스는 잘 지어진 장막의 가장 깊은 곳에서 잠을 잤다:",
+    "words": [
+      {
+        "g": "αὐτὰρ",
+        "pos": "접속사",
+        "lemma": "αυτάρ",
+        "parse": "coord.conj.",
+        "gloss_kr": "그러나",
+        "gloss_en": "but",
+        "syntax": "대조적 접속사로서 HPSG 자질구조상 [HEAD coord, TYPE adversative]이다. 프리아모스 일행의 상태와 아킬레우스의 상태를 극적으로 대조시키는 통사적 전환 장치이다.",
+        "background": "프리아모스 일행이 현관에서 근심 속에 깨어 있는 반면, 아킬레우스는 자신의 장막 가장 깊은 은밀한 곳에서 평온한 휴식을 취한다는 공간적·심리적 대비를 완성한다.",
+        "etymology": "① αὐτός ('스스로')에 대조 소사 ἄρ이 결합한 형태이다(Beekes EDG). ② 서사시에서 강한 대조와 장면 전환을 이끄는 접속사로 고착되었다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "Ἀχιλλεὺς",
+        "pos": "명사(고유)",
+        "lemma": "Ἀχιλλεύς, Ἀχιλῆος, ὁ",
+        "parse": "sg.nom.m.",
+        "gloss_kr": "아킬레우스는",
+        "gloss_en": "Achilles",
+        "syntax": "대조되는 절의 주어로서 LFG AVM [PRED 'Ἀχιλλεύς', PERS 3, NUM sg, CASE nom]이다. 동사 εὗδε의 행위자로서 통사적 중심이다.",
+        "background": "일리아스의 주인공이자 헥토르의 살해자이며, 동시에 프리아모스의 방문을 받아들이고 운명적 화해를 마친 뒤 안식을 취하는 서사의 주체이다.",
+        "etymology": "① 어원은 선그리스어 기층에서 유래했을 가능성이 높다고 Beekes(EDG)는 지적한다. ② 현대 서구권에서 고유명사로 살아남는다(Frisk GEW)."
+      },
+      {
+        "g": "εὗδε",
+        "pos": "동사",
+        "lemma": "εὕδω",
+        "principalParts": "εὕδω – εὑδήσω – ηὗδον – (미상) – (미상) – (미상)",
+        "parse": "3rd.sg.impf.ind.act.",
+        "gloss_kr": "잠자고 있었다",
+        "gloss_en": "was sleeping",
+        "syntax": "주절의 술어로서 LFG AVM [PRED 'εὕδω<SUBJ>', TENSE past, ASPECT impf, VOICE act, SUBJ [PRED 'Ἀχιλλεύς', PERS 3, NUM sg, CASE nom]]로 분석된다.",
+        "background": "모든 분노와 복수의 화신이었던 아킬레우스가 프리아모스와의 만남을 통해 정화를 이룬 뒤 누리는 평화로운 수면은 일리아스 전체에서 가장 감동적인 안식의 장면이다.",
+        "etymology": "① PIE 어근 *wes- ('밤을 보내다') 또는 *swed- 에서 유래한다(Beekes EDG). ② 산스크리트어 svápiti, 라틴어 sopor 와 동계이다. ③ 영어 soporific 등의 어근이다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "μυχῷ",
+        "pos": "명사",
+        "lemma": "μυχός, μυχοῦ, ὁ",
+        "parse": "sg.dat.m.",
+        "gloss_kr": "가장 깊은 곳에",
+        "gloss_en": "in the innermost part",
+        "syntax": "처소적 여격으로서 LFG AVM [OBL [PRED 'μυχός', CASE dat, NUM sg]]이다. 통사적으로 수면이 이루어지는 장막 내부의 가장 깊숙한 은신처를 지정한다.",
+        "background": "외부의 시선과 위험으로부터 완전히 차단된 장막의 가장 깊은 곳을 뜻하며, 아킬레우스가 지닌 신성한 신분과 은밀한 안식처의 신비로움을 강조한다.",
+        "etymology": "① PIE 어근 또는 선그리스어 기층 어휘에서 유래한 것으로 추정된다(Beekes EDG). ② 그리스어에서 깊숙한 구석이나 안쪽 공간을 뜻하는 명사로 정착하였다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "κλισίης",
+        "pos": "명사",
+        "lemma": "κλισία, κλισίας, ἡ",
+        "parse": "sg.gen.f.",
+        "gloss_kr": "장막의",
+        "gloss_en": "of the shelter",
+        "syntax": "소유격 명사로서 LFG AVM [ADJUNCT [PRED 'κλισία', CASE gen, NUM sg]] 또는 명사구 내 소유격 수식어를 구성한다.",
+        "background": "트로이아 원정 기간 동안 그리스 영웅들이 머무는 임시 오막살이이자 군사적 거처인 장막을 가리킨다.",
+        "etymology": "① PIE 어근 *kei- ('눕다, 휴식하다')에서 파생된 명사이다(Beekes EDG). ② 산스크리트어 śéte 와 동계이다. ③ 그리스어 독자적 파생 명사로서 고전 문헌에 널리 쓰인다(Chantraine DELG, Frisk GEW)."
+      },
+      {
+        "g": "ἐϋπήκτου:",
+        "pos": "형용사",
+        "lemma": "ἐϋπήκτος, ἐϋπήκτον",
+        "parse": "sg.gen.f.",
+        "gloss_kr": "잘 지어진",
+        "gloss_en": "well-built",
+        "syntax": "명사 κλισίης를 수식하는 합성 형용사로서 LFG AVM [ADJUNCT [PRED 'ἐϋπήκτος', CASE gen, NUM sg, GEND f]]이다.",
+        "background": "호메로스 서사시에서 장인들의 솜씨로 튼튼하게 지어진 건축물을 묘사할 때 쓰는 전통적 정형구 수식어이다.",
+        "etymology": "① ἐὗ ('잘') + *πηκτός (πηγνύ̄μι '단단히 박다', PIE *peh₂ǵ-)의 합성어이다(Beekes EDG). ② 라틴어 pangere 와 동계이다. ③ 영어 page, pact 등의 어근과 동계적 연관성을 가진다(Chantraine DELG, Frisk GEW)."
+      }
+    ]
+  },
     {
         "ref": "Iliad 6.718",
         "trans": "이렇게 말씀하시니, 그들은 흩어져서 아픔(수레)에게 길을 비켜주었다.",
