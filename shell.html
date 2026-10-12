@@ -275,7 +275,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
     -webkit-font-smoothing: antialiased;
     position: relative;
   }
-  #view-hub, #view-iliad1, #view-iliad6, #view-meta1, #view-meta14, #view-genesis1, #view-cid1, #view-lusiadas1, #view-comingsoon { position: relative; z-index: 1; }
+  #view-hub, #view-iliad1, #view-iliad6, #view-iliad24, #view-meta1, #view-meta14, #view-genesis1, #view-cid1, #view-lusiadas1, #view-comingsoon { position: relative; z-index: 1; }
   ::selection { background: var(--accent-light); color: var(--accent-dark); }
 
   /* ---------- 사이트 헤더/푸터 ---------- */
@@ -712,32 +712,32 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
 
   /* ---------- 일리아드: 그리스어 글꼴 선택 ---------- */
   #view-iliad1.gfont-cardo .greek-line, #view-iliad1.gfont-cardo .info-panel .word-greek,
-  #view-iliad6.gfont-cardo .greek-line, #view-iliad6.gfont-cardo .info-panel .word-greek { font-family: "Cardo", var(--serif); }
+  :is(#view-iliad6,#view-iliad24).gfont-cardo .greek-line, :is(#view-iliad6,#view-iliad24).gfont-cardo .info-panel .word-greek { font-family: "Cardo", var(--serif); }
   #view-iliad1.gfont-gentium .greek-line, #view-iliad1.gfont-gentium .info-panel .word-greek,
-  #view-iliad6.gfont-gentium .greek-line, #view-iliad6.gfont-gentium .info-panel .word-greek { font-family: "Gentium Book Plus", var(--serif); }
+  :is(#view-iliad6,#view-iliad24).gfont-gentium .greek-line, :is(#view-iliad6,#view-iliad24).gfont-gentium .info-panel .word-greek { font-family: "Gentium Book Plus", var(--serif); }
   #view-iliad1.gfont-cormorant .greek-line, #view-iliad1.gfont-cormorant .info-panel .word-greek,
-  #view-iliad6.gfont-cormorant .greek-line, #view-iliad6.gfont-cormorant .info-panel .word-greek { font-family: "Cormorant Garamond", var(--serif); font-style: normal; }
+  :is(#view-iliad6,#view-iliad24).gfont-cormorant .greek-line, :is(#view-iliad6,#view-iliad24).gfont-cormorant .info-panel .word-greek { font-family: "Cormorant Garamond", var(--serif); font-style: normal; }
   #view-iliad1.gfont-oldstandard .greek-line, #view-iliad1.gfont-oldstandard .info-panel .word-greek,
-  #view-iliad6.gfont-oldstandard .greek-line, #view-iliad6.gfont-oldstandard .info-panel .word-greek { font-family: "Old Standard TT", var(--serif); }
+  :is(#view-iliad6,#view-iliad24).gfont-oldstandard .greek-line, :is(#view-iliad6,#view-iliad24).gfont-oldstandard .info-panel .word-greek { font-family: "Old Standard TT", var(--serif); }
   #view-iliad1.gfont-alegreya .greek-line, #view-iliad1.gfont-alegreya .info-panel .word-greek,
-  #view-iliad6.gfont-alegreya .greek-line, #view-iliad6.gfont-alegreya .info-panel .word-greek { font-family: "Alegreya", var(--serif); }
+  :is(#view-iliad6,#view-iliad24).gfont-alegreya .greek-line, :is(#view-iliad6,#view-iliad24).gfont-alegreya .info-panel .word-greek { font-family: "Alegreya", var(--serif); }
   #view-iliad1.gfont-didot .greek-line, #view-iliad1.gfont-didot .info-panel .word-greek,
-  #view-iliad6.gfont-didot .greek-line, #view-iliad6.gfont-didot .info-panel .word-greek { font-family: "GFS Didot", var(--serif); }
+  :is(#view-iliad6,#view-iliad24).gfont-didot .greek-line, :is(#view-iliad6,#view-iliad24).gfont-didot .info-panel .word-greek { font-family: "GFS Didot", var(--serif); }
   #view-iliad1.gfont-neohellenic .greek-line, #view-iliad1.gfont-neohellenic .info-panel .word-greek,
-  #view-iliad6.gfont-neohellenic .greek-line, #view-iliad6.gfont-neohellenic .info-panel .word-greek { font-family: "GFS Neohellenic", var(--serif); }
+  :is(#view-iliad6,#view-iliad24).gfont-neohellenic .greek-line, :is(#view-iliad6,#view-iliad24).gfont-neohellenic .info-panel .word-greek { font-family: "GFS Neohellenic", var(--serif); }
   #view-iliad1.gfont-tinos .greek-line, #view-iliad1.gfont-tinos .info-panel .word-greek,
-  #view-iliad6.gfont-tinos .greek-line, #view-iliad6.gfont-tinos .info-panel .word-greek { font-family: "Tinos", var(--serif); }
+  :is(#view-iliad6,#view-iliad24).gfont-tinos .greek-line, :is(#view-iliad6,#view-iliad24).gfont-tinos .info-panel .word-greek { font-family: "Tinos", var(--serif); }
   #view-iliad1.gfont-notoserif .greek-line, #view-iliad1.gfont-notoserif .info-panel .word-greek,
-  #view-iliad6.gfont-notoserif .greek-line, #view-iliad6.gfont-notoserif .info-panel .word-greek { font-family: "Noto Serif", var(--serif); }
+  :is(#view-iliad6,#view-iliad24).gfont-notoserif .greek-line, :is(#view-iliad6,#view-iliad24).gfont-notoserif .info-panel .word-greek { font-family: "Noto Serif", var(--serif); }
   #view-iliad1.gfont-alegreyaitalic .greek-line, #view-iliad1.gfont-alegreyaitalic .info-panel .word-greek,
-  #view-iliad6.gfont-alegreyaitalic .greek-line, #view-iliad6.gfont-alegreyaitalic .info-panel .word-greek { font-family: "Alegreya", var(--serif); font-style: italic; }
-  #view-iliad1.gfont-cormorant .greek-line, #view-iliad6.gfont-cormorant .greek-line { font-size: 29px; }
-  #view-iliad1.gfont-alegreya .greek-line, #view-iliad6.gfont-alegreya .greek-line { font-size: 28px; }
-  #view-iliad1.gfont-didot .greek-line, #view-iliad6.gfont-didot .greek-line { font-size: 26px; letter-spacing: 0.01em; }
-  #view-iliad1.gfont-neohellenic .greek-line, #view-iliad6.gfont-neohellenic .greek-line,
-  #view-iliad1.gfont-tinos .greek-line, #view-iliad6.gfont-tinos .greek-line,
-  #view-iliad1.gfont-notoserif .greek-line, #view-iliad6.gfont-notoserif .greek-line { font-size: 26px; }
-  #view-iliad1.gfont-alegreyaitalic .greek-line, #view-iliad6.gfont-alegreyaitalic .greek-line { font-size: 28px; }
+  :is(#view-iliad6,#view-iliad24).gfont-alegreyaitalic .greek-line, :is(#view-iliad6,#view-iliad24).gfont-alegreyaitalic .info-panel .word-greek { font-family: "Alegreya", var(--serif); font-style: italic; }
+  #view-iliad1.gfont-cormorant .greek-line, :is(#view-iliad6,#view-iliad24).gfont-cormorant .greek-line { font-size: 29px; }
+  #view-iliad1.gfont-alegreya .greek-line, :is(#view-iliad6,#view-iliad24).gfont-alegreya .greek-line { font-size: 28px; }
+  #view-iliad1.gfont-didot .greek-line, :is(#view-iliad6,#view-iliad24).gfont-didot .greek-line { font-size: 26px; letter-spacing: 0.01em; }
+  #view-iliad1.gfont-neohellenic .greek-line, :is(#view-iliad6,#view-iliad24).gfont-neohellenic .greek-line,
+  #view-iliad1.gfont-tinos .greek-line, :is(#view-iliad6,#view-iliad24).gfont-tinos .greek-line,
+  #view-iliad1.gfont-notoserif .greek-line, :is(#view-iliad6,#view-iliad24).gfont-notoserif .greek-line { font-size: 26px; }
+  #view-iliad1.gfont-alegreyaitalic .greek-line, :is(#view-iliad6,#view-iliad24).gfont-alegreyaitalic .greek-line { font-size: 28px; }
 
   /* ---------- 변신 이야기·엘 시드·루지아다스: 라틴어 계열 글꼴 선택 (라틴/스페인어/포르투갈어 공통) ---------- */
   #view-meta1.lfont-cinzel .greek-line, #view-meta1.lfont-cinzel .info-panel .word-greek,
@@ -2065,7 +2065,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   .my-trans-box textarea:focus { outline: none; border-color: var(--accent); background: var(--card-bg); }
   .my-trans-actions { display: flex; align-items: center; gap: 10px; margin-top: 8px; height: 18px; }
   .my-trans-status { font-size: 11.5px; line-height: 18px; color: var(--accent); font-weight: 500; }
-  #topInfoIliad, #topInfoMeta, #topInfoIliad6, #topInfoMeta14, #topInfoGenesis1 {
+  #topInfoIliad, #topInfoMeta, #topInfoIliad6, #topInfoIliad24, #topInfoMeta14, #topInfoGenesis1 {
     font-size: 12.5px;
     color: var(--text-faint);
     text-align: center;
@@ -2073,10 +2073,10 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
     cursor: pointer;
     transition: color var(--dur-press) var(--ease-mac);
   }
-  #topInfoIliad:hover, #topInfoMeta:hover, #topInfoIliad6:hover, #topInfoMeta14:hover, #topInfoGenesis1:hover { color: var(--accent); }
+  #topInfoIliad:hover, #topInfoMeta:hover, #topInfoIliad6:hover, #topInfoIliad24:hover, #topInfoMeta14:hover, #topInfoGenesis1:hover { color: var(--accent); }
 
   /* 작품별 테마 색 */
-  #view-iliad1, #view-iliad6 { --accent: #b3903f; --accent-dark: #8a6a26; --accent-light: #f7edd2; --accent-2: #d8bd77; --border: #e6ddc4; --border-soft: #efe9d8; }
+  #view-iliad1, #view-iliad6, #view-iliad24 { --accent: #b3903f; --accent-dark: #8a6a26; --accent-light: #f7edd2; --accent-2: #d8bd77; --border: #e6ddc4; --border-soft: #efe9d8; }
   #view-meta1, #view-meta14 { --accent: #9c8a5c; --accent-dark: #6f6038; --accent-light: #f1ead4; --accent-2: #c2ac74; --border: #e2dac0; --border-soft: #ece5d1; }
   #view-sanguo1 { --accent: #9c2b2b; --accent-dark: #6e1c1c; --accent-light: #f5e0d9; --accent-2: #c15a45; --border: #e6c9be; --border-soft: #f0ddd4; }
   .shelf.theme-iliad { --accent: #b3903f; --accent-dark: #8a6a26; --accent-light: #f7edd2; --accent-2: #d8bd77; }
@@ -2168,6 +2168,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   [data-theme="dark"] .shelf.theme-iliad,
   [data-theme="dark"] #view-comingsoon.theme-iliad,
   [data-theme="dark"] #view-iliad1,
+[data-theme="dark"] #view-iliad24,
   [data-theme="dark"] #view-iliad6 { --accent: #D9AC52; --accent-dark: #F0CE8C; --accent-light: #34280F; --accent-2: #C79A44; }
   [data-theme="dark"] .shelf.theme-meta,
   [data-theme="dark"] #view-comingsoon.theme-meta,
@@ -3341,6 +3342,44 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   <p id="topInfoIliad6">↑ 맨 위로</p>
 </div>
 
+<!-- ================= 일리아드 24권 화면 ================= -->
+<div id="view-iliad24" class="view study-view">
+  <button class="back-link" onclick="showView('view-hub')">← 서재로</button>
+  <h1>일리아드 <span class="book-badge">24권</span></h1>
+  <p class="subtitle">원문 읽기 + 단어별 문법 분석 (격·시제·어미변화) · 스크롤하며 전체 보기</p>
+
+  <div class="controls-row sticky">
+    <button id="transToggleIliad24">번역 전체 보기</button>
+    <button id="myTransToggleIliad24">내 번역 보기</button>
+    <button id="closeAllInfoIliad24" aria-label="모든 단어 창 닫기"><span class="lbl-full">모든 단어 창 닫기</span><span class="lbl-short">모두 닫기</span></button>
+    <div class="font-pop">
+      <button type="button" class="font-pop-btn" aria-haspopup="true" aria-expanded="false" aria-label="글꼴 설정" title="글꼴 설정">Aa</button>
+      <div class="font-pop-panel" role="group" aria-label="글꼴 설정">
+        <div class="greek-font-select-wrap">
+      <label for="greekFontSelect24">글꼴</label>
+      <select id="greekFontSelect24">
+        <option value="default">EB Garamond (기본)</option>
+        <option value="cardo">Cardo (학술체)</option>
+        <option value="gentium">Gentium Book Plus (성서학체)</option>
+        <option value="cormorant">Cormorant Garamond (디스플레이체)</option>
+        <option value="oldstandard">Old Standard TT (고전 문헌학체)</option>
+        <option value="alegreya">Alegreya (인문학체)</option>
+        <option value="didot">GFS Didot (그리스 고전 활자체)</option>
+        <option value="neohellenic">GFS Neohellenic (근대 그리스체)</option>
+        <option value="tinos">Tinos (표준 세리프)</option>
+        <option value="notoserif">Noto Serif (범용 세리프)</option>
+        <option value="alegreyaitalic">Alegreya 이탤릭 (필기체 느낌)</option>
+      </select>
+    </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="linesContainerIliad24"></div>
+
+  <p id="topInfoIliad24">↑ 맨 위로</p>
+</div>
+
 <!-- ================= 변신 이야기 1권 화면 ================= -->
 <div id="view-meta1" class="view study-view">
   <button class="back-link" onclick="showView('view-hub')">← 서재로</button>
@@ -3879,7 +3918,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
    데이터 영역 - 일리아드
    (필드 규칙은 파일 최상단 "전체 프로그램 공통 데이터 작성 표준" 참고)
    ============================================================ */
-// linesIliad, linesIliad6 데이터는 data/data-linesIliad.js, data/data-linesIliad6.js 파일에
+// linesIliad, linesIliad6, linesIliad24 데이터는 data/data-linesIliad.js, data/data-linesIliad6.js, data/data-linesIliad24.js 파일에
 // 들어있으며 loadChapterData()가 해당 챕터를 열 때만 <script>로 동적 로드한다.
 /* ============================================================
    데이터 영역 - 변신 이야기 (오비디우스)
@@ -3940,6 +3979,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
 const CHAPTER_DATA_IDS = {
   linesIliad:     'data-linesIliad',
   linesIliad6:    'data-linesIliad6',
+  linesIliad24:   'data-linesIliad24',
   linesMeta:      'data-linesMeta',
   linesMeta14:    'data-linesMeta14',
   linesGenesis1:  'data-linesGenesis1',
@@ -4770,7 +4810,7 @@ function setupScriptFontSelect(selectId, viewId, classes, prefix, storageKey) {
    같은 workKey/book을 등록해야 단어장 목록에 나타난다.
    ============================================================ */
 const VOCAB_WORKS = [
-  { key: 'iliad', label: '일리아드', chapters: [ { book: 1, label: '1권' }, { book: 6, label: '6권' } ] },
+  { key: 'iliad', label: '일리아드', chapters: [ { book: 1, label: '1권' }, { book: 6, label: '6권' }, { book: 24, label: '24권' } ] },
   { key: 'meta', label: '변신 이야기', chapters: [ { book: 1, label: '1권' }, { book: 14, label: '14권' } ] },
   { key: 'genesis', label: '창세기', chapters: [ { book: 1, label: '1장' } ] },
   { key: 'cid', label: '엘 시드의 노래', chapters: [ { book: 1, label: '제1 칸타르' } ] },
@@ -4823,7 +4863,7 @@ function isVocabSaved(workKey, book, ref, wIdx) {
 // 데이터 자체가 아니라 CHAPTER_DATA_IDS에서 쓰는 변수 이름을 담아두고,
 // 실제로 필요한 workKey/book 조합만 loadChapterData()로 지연 로드한다.
 const VOCAB_LINE_SOURCES = {
-  iliad: { 1: 'linesIliad', 6: 'linesIliad6' },
+  iliad: { 1: 'linesIliad', 6: 'linesIliad6', 24: 'linesIliad24' },
   meta: { 1: 'linesMeta', 14: 'linesMeta14' },
   genesis: { 1: 'linesGenesis1' },
   cid: { 1: 'linesCid1' },
@@ -6671,6 +6711,10 @@ const STUDY_CHAPTERS = [
     transToggleId: 'transToggleIliad6', myTransToggleId: 'myTransToggleIliad6',
     closeAllInfoId: 'closeAllInfoIliad6', topInfoId: 'topInfoIliad6',
     font: { selectId: 'greekFontSelect6', viewId: 'view-iliad6', classes: null, prefix: 'gfont-', storageKey: 'greekFontChoice6' } },
+  { dataVar: 'linesIliad24', containerId: 'linesContainerIliad24', viewId: 'view-iliad24', workKey: 'iliad', book: 24,
+    transToggleId: 'transToggleIliad24', myTransToggleId: 'myTransToggleIliad24',
+    closeAllInfoId: 'closeAllInfoIliad24', topInfoId: 'topInfoIliad24',
+    font: { selectId: 'greekFontSelect24', viewId: 'view-iliad24', classes: null, prefix: 'gfont-', storageKey: 'greekFontChoice24' } },
   { dataVar: 'linesMeta', containerId: 'linesContainerMeta', viewId: 'view-meta1', workKey: 'meta', book: 1,
     transToggleId: 'transToggleMeta', myTransToggleId: 'myTransToggleMeta',
     closeAllInfoId: 'closeAllInfoMeta', topInfoId: 'topInfoMeta',
@@ -6739,6 +6783,7 @@ function showStudyView(viewId, noRestore) {
   if (!noRestore) restorePos(viewId);
 
   loadChapterData(ch.dataVar).then(linesArr => {
+    if (!linesArr || !linesArr.length) { if (container) container.innerHTML = '<p class="chapter-loading">이 권은 아직 원문 데이터가 준비 중이에요.</p>'; return; }
     ch.built = true;
     buildLines(linesArr, ch.containerId, ch.showTrans, ch.showMyTrans, ch.workKey, ch.book);
     if (window.__updateCurLine) requestAnimationFrame(window.__updateCurLine);
@@ -6748,7 +6793,7 @@ function showStudyView(viewId, noRestore) {
   });
 }
 
-buildBookGrid('iliadGrid', 24, { 1: 'view-iliad1', 6: 'view-iliad6' }, '일리아드', 'iliad');
+buildBookGrid('iliadGrid', 24, { 1: 'view-iliad1', 6: 'view-iliad6', 24: 'view-iliad24' }, '일리아드', 'iliad');
 buildBookGrid('metaGrid', 15, { 1: 'view-meta1', 14: 'view-meta14' }, '변신 이야기', 'meta');
 buildBookGrid('genesisGrid', 50, { 1: 'view-genesis1' }, '창세기', 'genesis');
 buildBookGrid('cidGrid', 3, { 1: 'view-cid1' }, '엘 시드의 노래', 'cid');
