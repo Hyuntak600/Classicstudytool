@@ -2535,13 +2535,26 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   .controls-row .font-pop-btn[aria-expanded="true"] { border-color: var(--accent); color: var(--accent-dark); background: var(--accent-light); }
   .font-pop-panel {
     display: none; position: absolute; right: 0; top: calc(100% + 10px); z-index: 30;
-    width: 250px; max-width: calc(100vw - 40px); padding: 12px 14px 14px;
+    width: 340px; max-width: calc(100vw - 40px); padding: 12px 14px 14px;
     background: var(--card-bg); border: 0.5px solid var(--border); border-radius: 12px; box-shadow: var(--shadow-lg);
   }
   .font-pop.open .font-pop-panel { display: block; }
   .font-pop-panel > div { display: flex; flex-direction: column; align-items: stretch; gap: 6px; margin-left: 0; }
   .font-pop-panel label { font-size: 11.5px; font-weight: 600; color: var(--text-sub); }
   .font-pop-panel select, .font-pop-panel #hebrewFontSelect { width: 100%; border-radius: 8px; padding: 9px 12px; font-size: 14px; }
+  .font-pop-panel .mac-dd, .font-pop-panel .mac-dd select { min-width: 0; max-width: 100%; }
+  .font-pop-panel select, .font-pop-panel #hebrewFontSelect { text-overflow: clip; }
+  /* 글씨 크기 조절 (모든 원문 화면 공통) */
+  .greek-line, .info-panel .word-greek { zoom: var(--read-scale, 1); }
+  .font-size-row { display: flex; flex-direction: column; gap: 6px; margin-top: 12px; padding-top: 12px; border-top: 0.5px solid var(--border); }
+  .font-size-row .fs-head { display: flex; align-items: center; justify-content: space-between; }
+  .font-size-row .fs-head label { font-size: 11.5px; font-weight: 600; color: var(--text-sub); }
+  .font-size-row .fs-val { font-size: 12px; font-weight: 600; color: var(--text-sub); font-variant-numeric: tabular-nums; background: none; border: 0; padding: 2px 6px; cursor: pointer; border-radius: 6px; }
+  .font-size-row .fs-val:hover { color: var(--accent-dark); }
+  .font-size-row .fs-ctl { display: flex; align-items: center; gap: 8px; }
+  .font-size-row .fs-step { flex: none; width: 30px; height: 30px; padding: 0; border-radius: 50%; border: 1px solid var(--border); background: var(--card-bg); color: var(--text-sub); font-size: 15px; line-height: 1; cursor: pointer; }
+  .font-size-row .fs-step:hover { border-color: var(--accent-dark); color: var(--text-main); }
+  .font-size-row input[type=range] { flex: 1; min-width: 0; accent-color: var(--accent); cursor: pointer; }
   @media (max-width: 480px) {
     .controls-row { gap: 6px; }
     .controls-row button { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 8px 9px; font-size: 12px; }
@@ -6960,6 +6973,36 @@ function goToLine(viewId, idx) {
     writeState(st);
   }
   window.addEventListener('scroll', () => { if (!tick) { tick = true; setTimeout(save, 1000); } }, { passive: true });
+})();
+
+/* ---------- 원문 글씨 크기 (글꼴 팝오버 안의 슬라이더, 모든 작품 공통·저장됨) ---------- */
+(function () {
+  const KEY = 'readFontScale', MIN = 70, MAX = 160, STEP = 5;
+  let pct = 100;
+  try { const v = parseInt(localStorage.getItem(KEY), 10); if (v >= MIN && v <= MAX) pct = v; } catch (e) { /* 무시 */ }
+  const rows = [];
+  function apply(v, persist) {
+    pct = Math.max(MIN, Math.min(MAX, Math.round(v / STEP) * STEP));
+    document.documentElement.style.setProperty('--read-scale', String(pct / 100));
+    rows.forEach(r => { r.range.value = pct; r.val.textContent = pct + '%'; });
+    if (persist) { try { localStorage.setItem(KEY, String(pct)); } catch (e) { /* 저장 실패 시 무시 */ } }
+  }
+  document.querySelectorAll('.font-pop-panel').forEach((panel, i) => {
+    const id = 'fontSizeRange' + i;
+    const row = document.createElement('div'); row.className = 'font-size-row';
+    row.innerHTML = '<div class="fs-head"><label for="' + id + '">글씨 크기</label><button type="button" class="fs-val" title="100%로 되돌리기"></button></div>' +
+      '<div class="fs-ctl"><button type="button" class="fs-step fs-minus" aria-label="글씨 작게">−</button>' +
+      '<input type="range" id="' + id + '" min="' + MIN + '" max="' + MAX + '" step="' + STEP + '">' +
+      '<button type="button" class="fs-step fs-plus" aria-label="글씨 크게">+</button></div>';
+    panel.appendChild(row);
+    const range = row.querySelector('input'), val = row.querySelector('.fs-val');
+    rows.push({ range, val });
+    range.addEventListener('input', () => apply(parseInt(range.value, 10), true));
+    row.querySelector('.fs-minus').addEventListener('click', () => apply(pct - STEP, true));
+    row.querySelector('.fs-plus').addEventListener('click', () => apply(pct + STEP, true));
+    val.addEventListener('click', () => apply(100, true));
+  });
+  apply(pct, false);
 })();
 
 // 헤더 '더보기' 메뉴 + 컨트롤 바 글꼴 팝오버 (바깥을 누르거나 Esc로 닫힘)
