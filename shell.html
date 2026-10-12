@@ -2947,6 +2947,44 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   .ai-vw-dot.soft, .ai-vw-key.soft { background: var(--accent); }
   .ai-vw-key { display: inline-block; width: 8px; height: 8px; border-radius: 50%; font-size: 0; vertical-align: baseline; margin: 0 1px 0 2px; }
   .ai-vw-go { flex: none; padding: 0 10px; }
+
+  /* ---- 정보 추가 창 간소화: 1 원문 넣기 → 2 결과·다운로드 (설정·고급은 접어 둠) ---- */
+  .ai-pick { grid-template-columns: 1.7fr 1fr; }
+  .ai-steps { gap: 14px; }
+  .ai-step { padding: 16px; }
+  .ai-qfoot { display: flex; justify-content: flex-end; margin-top: 6px; }
+  .ai-qfoot .ai-qtools { padding: 0; margin: 0; }
+  .ai-go { margin-top: 14px; }
+  .ai-go[hidden] { display: none; }
+  .ai-kbd-d { margin: 10px 0 0; }
+  .ai-settings .ai-seg { margin-top: 2px; }
+  .ai-settings .ai-step-foot { margin-top: 14px; padding-top: 10px; border-top: 0.5px solid var(--border-soft); display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+  .ai-step #aiView { margin-top: 12px; }
+  @media (max-width: 640px) { .ai-pick { grid-template-columns: 1fr 1fr; } }
+
+  /* ---- 나란히 보기: 두 권/두 작품을 좌우로 놓고 각각 따로 스크롤하며 비교 ---- */
+  #splitWrap { display: flex; flex-direction: column; height: calc(100vh - var(--split-top, 58px)); height: calc(100dvh - var(--split-top, 58px)); }
+  .split-bar { flex: none; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 8px 14px; border-bottom: 1px solid var(--border-soft); background: color-mix(in srgb, var(--card-bg) 90%, transparent); font-family: var(--sans); font-size: 13px; color: var(--text-sub); }
+  .split-bar .sp { flex: 1; }
+  .split-bar button { font-family: var(--sans); font-size: 12.5px; font-weight: 500; padding: 6px 11px; border: 1px solid var(--border); border-radius: 999px; background: var(--card-bg); color: var(--text-main); cursor: pointer; }
+  .split-bar button:hover { border-color: var(--accent); color: var(--accent-dark); }
+  .split-bar button.sb-side { font-weight: 600; background: var(--accent-light); color: var(--accent-dark); border-color: transparent; }
+  .split-bar .sb-sync { display: inline-flex; align-items: center; gap: 5px; cursor: pointer; user-select: none; }
+  .split-grid { flex: 1; min-height: 0; display: grid; grid-template-columns: 1fr 1fr; }
+  .split-grid > .split-pane + .split-pane { border-left: 1px solid var(--border); }
+  .view.split-pane.active { display: block; animation: none; max-width: none; margin: 0; padding: 0 16px 60px; height: 100%; min-width: 0; box-sizing: border-box; overflow-y: auto; overscroll-behavior: contain; }
+  .split-pane .back-link, .split-pane .subtitle, .split-pane .split-open { display: none; }
+  .split-pane h1 { font-size: 20px; margin: 12px 0 4px; }
+  .split-pane .controls-row.sticky { top: 0; }
+  body.split-on .jump-nav { display: none !important; }
+  .split-menu { position: fixed; z-index: 300; min-width: 200px; max-height: 60vh; overflow-y: auto; padding: 6px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 12px 32px rgba(0,0,0,.18); font-family: var(--sans); }
+  .split-menu .sm-h { padding: 6px 10px 4px; font-size: 11.5px; font-weight: 600; color: var(--text-sub); }
+  .split-menu button { display: block; width: 100%; text-align: left; padding: 9px 10px; border: none; background: none; border-radius: 8px; font: inherit; font-size: 13.5px; color: var(--text-main); cursor: pointer; }
+  .split-menu button:hover { background: var(--accent-light); }
+  @media (max-width: 760px) {
+    .split-grid { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; }
+    .split-grid > .split-pane + .split-pane { border-left: none; border-top: 1px solid var(--border); }
+  }
 </style>
 </head>
 <body>
@@ -2976,33 +3014,64 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
       <div class="ai-pick">
         <label class="ai-f"><span>작품</span><select id="aiWork"></select></label>
         <label class="ai-f"><span id="aiBookLbl">권</span><input id="aiBook" type="text" inputmode="numeric" data-list="aiBookList" autocomplete="off" placeholder="번호"><datalist id="aiBookList"></datalist></label>
-        <label class="ai-f"><span>행</span><input id="aiLine" type="text" inputmode="numeric" data-list="aiLineList" autocomplete="off" placeholder="번호"><datalist id="aiLineList"></datalist></label>
       </div>
       <p class="ai-status" id="aiStatus" aria-live="polite"></p>
       <div class="ai-steps">
 
-        <!-- ① 원문 -->
+        <!-- 1. 원문 넣기 -->
         <section class="ai-step" id="aiStep1">
           <header class="ai-step-h">
             <span class="ai-num">1</span>
-            <div class="ai-step-t"><h3>원문 붙여넣기</h3><p>한 줄이 한 행이에요. 여러 줄을 한꺼번에 붙여넣어도 되고, 줄 앞 숫자는 행 번호로 읽어요.</p></div>
-            <div class="ai-qtools"><button type="button" class="ai-link" id="aiAutoFailed">실패한 행만 다시</button><button type="button" class="ai-link" id="aiQDone">저장된 행 치우기</button><button type="button" class="ai-link ai-danger" id="aiQClear">목록 비우기</button></div>
+            <div class="ai-step-t"><h3>원문 넣기</h3><p>붙여넣기만 하세요. 한 줄이 한 행이고, 여러 줄을 한꺼번에 붙여도 돼요.</p></div>
           </header>
           <div id="aiQ"></div>
-          <p class="ai-kbd"><kbd>Enter</kbd> 글 가운데서 행 나누기 · <kbd>Backspace</kbd> 맨 앞에서 위 행에 합치기 · <kbd>Delete</kbd> 맨 끝에서 아래 행 합치기 · <kbd>↑</kbd><kbd>↓</kbd> 행 이동 · <kbd>Ctrl</kbd>+<kbd>Enter</kbd> 이 행 코딩</p>
+          <div class="ai-qfoot"><div class="ai-qtools ai-qtools-lite"><button type="button" class="ai-link" id="aiAutoFailed">실패한 행만 다시</button><button type="button" class="ai-link" id="aiQDone">저장된 행 치우기</button><button type="button" class="ai-link ai-danger" id="aiQClear">목록 비우기</button></div></div>
+          <div class="ai-go" id="aiGoWrap">
+            <div class="ai-main-act"><button type="button" class="ai-btn ai-primary" id="aiAutoGo">자동 코딩 시작</button></div>
+            <div class="ai-prog" id="aiProg" hidden>
+              <div class="ai-prog-top"><b id="aiProgTxt">0 / 0행</b><span id="aiProgEta"></span></div>
+              <div class="ai-prog-bar" aria-hidden="true"><i class="ok" id="aiProgOk"></i><i class="bad" id="aiProgBad"></i></div>
+              <div class="ai-prog-msg" id="aiProgMsg" aria-live="polite"></div>
+              <div class="ai-prog-btns" id="aiProgBtns"><button type="button" class="ai-btn" id="aiProgPause">일시정지</button><button type="button" class="ai-btn" id="aiProgStop">중단</button></div>
+              <div class="ai-prog-fail" id="aiProgFail" hidden><span>실패한 행</span><span id="aiProgChips"></span><button type="button" class="ai-link" id="aiProgRetry">실패한 행만 다시</button></div>
+            </div>
+          </div>
+          <p class="ai-status ai-result" id="aiQMsg" aria-live="polite"></p>
+          <details class="ai-sub ai-kbd-d"><summary>단축키 <small>보기</small></summary><p class="ai-kbd"><kbd>Enter</kbd> 글 가운데서 행 나누기 · <kbd>Backspace</kbd> 맨 앞에서 위 행에 합치기 · <kbd>Delete</kbd> 맨 끝에서 아래 행 합치기 · <kbd>↑</kbd><kbd>↓</kbd> 행 이동 · <kbd>Ctrl</kbd>+<kbd>Enter</kbd> 이 행 코딩</p></details>
         </section>
 
-        <!-- ② 코딩 -->
+        <!-- 2. 결과 · 다운로드 -->
         <section class="ai-step" id="aiStep2">
           <header class="ai-step-h">
             <span class="ai-num">2</span>
-            <div class="ai-step-t"><h3>코딩하기</h3><p>목록의 행을 단어별로 분석해서 브라우저에 저장해요. 방식을 고르세요.</p></div>
+            <div class="ai-step-t"><h3>결과 · 다운로드</h3><p>코딩한 결과는 아직 이 브라우저에만 있어요. 파일로 받아 data 폴더에 덮어쓰면 반영돼요.</p></div>
           </header>
+          <div class="ai-qsend">
+            <button type="button" class="ai-btn ai-primary" id="aiExpSave" hidden>data 폴더에 바로 저장</button>
+            <button type="button" class="ai-btn ai-primary" id="aiExpDl">.js 다운로드</button>
+            <button type="button" class="ai-link" id="aiExpJson">.json 다운로드</button>
+          </div>
+          <details class="ai-bulk ai-manual ai-view" id="aiView">
+            <summary>결과 보기 <small id="aiViewCnt"></small></summary>
+            <div class="ai-manual-body">
+              <p class="ai-hint">이 브라우저에 저장된 행을 data 파일에 들어가는 모양(JSON) 그대로 보여 줘요. <b class="ai-vw-key hard">●</b> 고쳐야 함 · <b class="ai-vw-key soft">●</b> 확인 권장 — 고치려면 ‘열기’로 목록의 그 행을 찾아 ‘코딩’을 누르세요.</p>
+              <div class="ai-view-bar"><label class="ai-chk"><input type="checkbox" id="aiViewOnlyWarn"> 경고 행만 보기</label></div>
+              <div class="ai-view-warns" id="aiViewWarns" hidden></div>
+              <textarea id="aiViewBox" class="ai-viewbox" readonly spellcheck="false" wrap="off" aria-label="코딩된 정보(JSON)"></textarea>
+              <div class="ai-qsend"><button type="button" class="ai-link" id="aiViewCopy">지금 보이는 내용 복사</button></div>
+            </div>
+          </details>
+        </section>
+
+      </div>
+
+      <details class="ai-bulk ai-manual ai-settings" id="aiSettings">
+        <summary>설정 · 다른 방법 <small>— Gemini 키·모델, Claude로 코딩하기</small></summary>
+        <div class="ai-manual-body">
           <div class="ai-seg" id="aiSeg" role="tablist" aria-label="코딩 방식">
             <button type="button" role="tab" data-mode="gem" class="on">Gemini 자동</button>
             <button type="button" role="tab" data-mode="claude">Claude에게 맡기기</button>
           </div>
-
           <div class="ai-pane" id="aiPaneGem">
             <div class="ai-grid2">
               <label class="ai-f"><span>모델</span>
@@ -3018,16 +3087,8 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
               <label class="ai-chk"><input type="checkbox" id="aiGemSoft" checked> 문장 수 미달이어도 저장</label>
               <label class="ai-chk">요청 간격 <input type="number" id="aiGemGap" min="1" max="120" style="width:3.6em"> 초</label>
             </div>
-            <div class="ai-main-act"><button type="button" class="ai-btn ai-primary" id="aiAutoGo">자동 코딩 시작</button></div>
-            <div class="ai-prog" id="aiProg" hidden>
-              <div class="ai-prog-top"><b id="aiProgTxt">0 / 0행</b><span id="aiProgEta"></span></div>
-              <div class="ai-prog-bar" aria-hidden="true"><i class="ok" id="aiProgOk"></i><i class="bad" id="aiProgBad"></i></div>
-              <div class="ai-prog-msg" id="aiProgMsg" aria-live="polite"></div>
-              <div class="ai-prog-btns" id="aiProgBtns"><button type="button" class="ai-btn" id="aiProgPause">일시정지</button><button type="button" class="ai-btn" id="aiProgStop">중단</button></div>
-              <div class="ai-prog-fail" id="aiProgFail" hidden><span>실패한 행</span><span id="aiProgChips"></span><button type="button" class="ai-link" id="aiProgRetry">실패한 행만 다시</button></div>
-            </div>
+            <div class="ai-opts"><label class="ai-chk" id="aiGemAutoFileL" hidden><input type="checkbox" id="aiGemAutoFile" checked> 자동 코딩 중 10행마다 data 폴더에 저장</label></div>
           </div>
-
           <div class="ai-pane" id="aiPaneClaude" hidden>
             <p class="ai-hint">① 요청을 복사해 Claude에 붙여넣고 → ② Claude가 돌려준 JSON을 아래에 붙여넣어 저장해요.</p>
             <div class="ai-qsend">
@@ -3042,44 +3103,14 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
               <label class="ai-chk"><input type="checkbox" id="aiImpOver"> 같은 번호는 덮어쓰기</label>
             </div>
           </div>
-
-          <p class="ai-status ai-result" id="aiQMsg" aria-live="polite"></p>
-
-          <details class="ai-bulk ai-manual ai-view" id="aiView">
-            <summary>코딩된 정보 보기 <small id="aiViewCnt"></small></summary>
-            <div class="ai-manual-body">
-              <p class="ai-hint">지금 고른 곳에서 코딩해 이 브라우저에 저장된 행이에요. data 파일에 들어가는 모양(JSON) 그대로 보여 줘요. 자동 코딩과 같은 기준으로 검사해서 문제가 있는 행은 아래에 표시해요 (<b class="ai-vw-key hard">●</b> 고쳐야 함 · <b class="ai-vw-key soft">●</b> 확인 권장). 고치려면 ‘열기’로 목록의 그 행을 찾아 ‘코딩’ 버튼을 누르세요.</p>
-              <div class="ai-view-bar"><label class="ai-chk"><input type="checkbox" id="aiViewOnlyWarn"> 경고 행만 보기</label></div>
-              <div class="ai-view-warns" id="aiViewWarns" hidden></div>
-              <textarea id="aiViewBox" class="ai-viewbox" readonly spellcheck="false" wrap="off" aria-label="코딩된 정보(JSON)"></textarea>
-              <div class="ai-qsend"><button type="button" class="ai-link" id="aiViewCopy">지금 보이는 내용 복사</button></div>
-            </div>
-          </details>
-        </section>
-
-        <!-- ③ 저장 -->
-        <section class="ai-step" id="aiStep3">
-          <header class="ai-step-h">
-            <span class="ai-num">3</span>
-            <div class="ai-step-t"><h3>data 파일에 반영</h3><p>②에서 저장한 내용은 아직 이 브라우저에만 있어요. 여기서 파일로 내보내야 data 폴더가 바뀌어요.</p></div>
-          </header>
-          <div class="ai-qsend">
-            <button type="button" class="ai-btn ai-primary" id="aiExpSave" hidden>data 폴더에 바로 저장</button>
-            <button type="button" class="ai-btn" id="aiExpDl">.js 다운로드</button>
-            <button type="button" class="ai-link" id="aiExpJson">.json 다운로드</button>
-          </div>
-          <div class="ai-opts">
-            <label class="ai-chk" id="aiGemAutoFileL" hidden><input type="checkbox" id="aiGemAutoFile" checked> 자동 코딩 중 10행마다 data 폴더에 저장</label>
-          </div>
-          <p class="ai-hint">‘바로 저장’이 안 보이면 이 브라우저는 폴더 저장을 지원하지 않아요. .js를 받아 data 폴더의 같은 이름 파일에 덮어쓴 뒤 새로고침하세요.</p>
           <div class="ai-step-foot"><button type="button" class="ai-link ai-danger" id="aiMineClear">내 수정본 비우기</button><small>파일로 내보낸 뒤에만 지우세요</small></div>
-        </section>
-
-      </div>
+        </div>
+      </details>
 
       <details class="ai-bulk ai-manual" id="aiManual">
         <summary>한 행씩 직접 입력·수정 <small>— 고급 · 위 세 단계 대신 한 행만 손으로 고칠 때</small></summary>
         <div class="ai-manual-body">
+          <label class="ai-f"><span>행</span><input id="aiLine" type="text" inputmode="numeric" data-list="aiLineList" autocomplete="off" placeholder="번호"><datalist id="aiLineList"></datalist></label>
           <label class="ai-f ai-wide"><span>원문</span><textarea id="aiSrc" class="ai-src" rows="3" spellcheck="false" placeholder="이 행의 원문을 그대로 붙여넣으세요"></textarea></label>
           <div class="ai-row"><button type="button" class="ai-btn" id="aiSplit">단어로 나누기</button></div>
           <label class="ai-f ai-wide"><span>번역 (행 전체)</span><textarea id="aiTrans" rows="2" spellcheck="false" placeholder="이 행 전체의 한국어 번역"></textarea></label>
@@ -6813,6 +6844,136 @@ buildBookGrid('cidGrid', 3, { 1: 'view-cid1' }, '엘 시드의 노래', 'cid');
 buildBookGrid('lusiadasGrid', 10, { 1: 'view-lusiadas1' }, '우스 루지아다스', 'lusiadas');
 buildBookGrid('sanguoGrid', 120, { 1: 'view-sanguo1' }, '삼국지연의', 'sanguo');
 
+/* ---------- 나란히 보기 (좌우 병렬 비교) ----------
+   각 권의 화면(.study-view)을 그대로 좌우 칸으로 옮겨 놓는 방식이라 번역 보기·글꼴·단어 창이 칸마다 따로 동작한다.
+   닫으면 원래 자리로 되돌려 놓는다. */
+(function () {
+  const SP = { on: false, left: '', right: '', wrap: null, grid: null, sync: false, lock: false, homes: {} };
+  const _showView = window.showView;
+  const label = id => chLabel(id);
+
+  function ensureBuilt(ch) {
+    if (!ch) return;
+    loadFontGroup(ch.workKey);
+    if (ch.built) return;
+    const box = document.getElementById(ch.containerId);
+    if (box && !box.children.length) box.innerHTML = '<p class="chapter-loading">원문을 불러오는 중…</p>';
+    loadChapterData(ch.dataVar).then(arr => {
+      if (ch.built) return;
+      if (!arr || !arr.length) { if (box) box.innerHTML = '<p class="chapter-loading">이 권은 아직 원문 데이터가 준비 중이에요.</p>'; return; }
+      ch.built = true;
+      buildLines(arr, ch.containerId, ch.showTrans, ch.showMyTrans, ch.workKey, ch.book);
+    }).catch(err => { console.error(err); if (box) box.innerHTML = '<p class="chapter-loading">원문을 불러오지 못했습니다. 새로고침 후 다시 시도해 주세요.</p>'; });
+  }
+  function park(id) {   // 원래 자리에 표시를 남기고 화면을 꺼낸다
+    const v = document.getElementById(id), ph = document.createComment('split-home');
+    v.parentNode.insertBefore(ph, v); SP.homes[id] = ph; return v;
+  }
+  function unpark(id) {
+    const v = document.getElementById(id), ph = SP.homes[id];
+    if (!v) return;
+    v.classList.remove('split-pane', 'active');
+    if (ph && ph.parentNode) { ph.parentNode.insertBefore(v, ph); ph.remove(); }
+    delete SP.homes[id];
+  }
+  function setTop() { if (!SP.wrap) return; const hd = document.querySelector('.site-header'); SP.wrap.style.setProperty('--split-top', (hd ? Math.round(hd.getBoundingClientRect().bottom) : 58) + 'px'); }
+  function paintBar() {
+    SP.wrap.querySelector('.sb-l').textContent = label(SP.left) + ' ▾';
+    SP.wrap.querySelector('.sb-r').textContent = label(SP.right) + ' ▾';
+  }
+
+  let menuEl = null;
+  function closeMenu() { if (menuEl) { menuEl.remove(); menuEl = null; document.removeEventListener('pointerdown', outside, true); } }
+  function outside(e) { if (menuEl && !menuEl.contains(e.target)) closeMenu(); }
+  function openMenu(anchor, exclude, heading, onPick) {
+    closeMenu();
+    const m = document.createElement('div'); m.className = 'split-menu';
+    m.innerHTML = '<div class="sm-h"></div>'; m.firstChild.textContent = heading;
+    STUDY_CHAPTERS.forEach(ch => {
+      if (exclude.indexOf(ch.viewId) >= 0) return;
+      const b = document.createElement('button'); b.type = 'button'; b.textContent = label(ch.viewId);
+      b.addEventListener('click', () => { closeMenu(); onPick(ch.viewId); });
+      m.appendChild(b);
+    });
+    document.body.appendChild(m); menuEl = m;
+    const r = anchor.getBoundingClientRect();
+    m.style.top = Math.min(r.bottom + 6, window.innerHeight - m.offsetHeight - 8) + 'px';
+    m.style.left = Math.max(8, Math.min(r.left, window.innerWidth - m.offsetWidth - 8)) + 'px';
+    setTimeout(() => { if (menuEl === m) document.addEventListener('pointerdown', outside, true); }, 0);
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+  function enter(leftId, rightId) {
+    window.scrollTo(0, 0);
+    const wrap = document.createElement('div'); wrap.id = 'splitWrap';
+    wrap.innerHTML = '<div class="split-bar">' +
+      '<button type="button" class="sb-side sb-l" title="왼쪽 권 바꾸기"></button><span>⇄</span><button type="button" class="sb-side sb-r" title="오른쪽 권 바꾸기"></button>' +
+      '<span class="sp"></span>' +
+      '<label class="sb-sync"><input type="checkbox" class="sb-sync-cb"> 함께 스크롤</label>' +
+      '<button type="button" class="sb-swap">좌우 바꾸기</button>' +
+      '<button type="button" class="sb-close">닫기 ✕</button></div><div class="split-grid"></div>';
+    const lv = document.getElementById(leftId);
+    lv.parentNode.insertBefore(wrap, lv);
+    SP.wrap = wrap; SP.grid = wrap.querySelector('.split-grid'); SP.left = leftId; SP.right = rightId; SP.on = true;
+    park(leftId); SP.grid.appendChild(lv); lv.classList.add('split-pane', 'active');
+    const rv = park(rightId); SP.grid.appendChild(rv); rv.classList.add('split-pane', 'active');
+    ensureBuilt(chByView(rightId));
+    document.body.classList.add('split-on'); document.documentElement.style.overflow = 'hidden';
+    setTop(); paintBar();
+
+    wrap.querySelector('.sb-l').addEventListener('click', e => openMenu(e.currentTarget, [SP.left, SP.right], '왼쪽에 놓을 권', id => setSide('left', id)));
+    wrap.querySelector('.sb-r').addEventListener('click', e => openMenu(e.currentTarget, [SP.left, SP.right], '오른쪽에 놓을 권', id => setSide('right', id)));
+    wrap.querySelector('.sb-swap').addEventListener('click', () => {
+      SP.grid.insertBefore(SP.grid.lastElementChild, SP.grid.firstElementChild);
+      const t = SP.left; SP.left = SP.right; SP.right = t; paintBar();
+    });
+    wrap.querySelector('.sb-close').addEventListener('click', exit);
+    wrap.querySelector('.sb-sync-cb').addEventListener('change', e => { SP.sync = e.target.checked; });
+    wrap.addEventListener('scroll', e => {   // 함께 스크롤: 위치 비율을 맞춘다 (원문 길이가 달라도 같이 움직임)
+      if (!SP.sync || SP.lock) return;
+      const p = e.target; if (!p.classList || !p.classList.contains('split-pane')) return;
+      const o = p === SP.grid.firstElementChild ? SP.grid.lastElementChild : SP.grid.firstElementChild;
+      const r = p.scrollTop / Math.max(1, p.scrollHeight - p.clientHeight);
+      SP.lock = true; o.scrollTop = r * Math.max(0, o.scrollHeight - o.clientHeight);
+      requestAnimationFrame(() => requestAnimationFrame(() => { SP.lock = false; }));
+    }, true);
+    wrap.addEventListener('click', e => {   // '↑ 맨 위로'는 칸 안에서 동작하게
+      const t = e.target.closest('[id^="topInfo"]'); if (!t) return;
+      const pane = t.closest('.split-pane'); if (pane) pane.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+  function setSide(side, newId) {
+    const old = SP[side], other = side === 'left' ? SP.right : SP.left;
+    if (newId === old || newId === other) return;
+    const ov = document.getElementById(old), nv = park(newId);
+    SP.grid.insertBefore(nv, ov);
+    unpark(old);
+    nv.classList.add('split-pane', 'active');
+    SP[side] = newId;
+    ensureBuilt(chByView(newId)); paintBar();
+  }
+  function exit() {
+    if (!SP.on) return;
+    closeMenu();
+    const L = SP.left, R = SP.right;
+    unpark(R); unpark(L);
+    SP.wrap.remove(); SP.wrap = SP.grid = null; SP.on = false;
+    document.body.classList.remove('split-on'); document.documentElement.style.overflow = '';
+    _showView(L);
+  }
+  window.showView = function (id) { if (SP.on) exit(); return _showView.apply(this, arguments); };
+  window.addEventListener('resize', setTop);
+
+  // 각 권 화면의 컨트롤 줄에 '나란히' 버튼 추가
+  document.querySelectorAll('.study-view .controls-row.sticky').forEach(row => {
+    const view = row.closest('.study-view'); if (!view) return;
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'split-open';
+    b.textContent = '나란히'; b.title = '다른 권을 좌우로 나란히 놓고 비교';
+    row.insertBefore(b, row.querySelector('.font-pop'));
+    b.addEventListener('click', () => { if (!SP.on) openMenu(b, [view.id], '함께 볼 권 고르기', id => enter(view.id, id)); });
+  });
+})();
+
 /* ---------- 읽기 상태 / 이어 읽기 / 빠른 검색 ---------- */
 const READ_KEY = 'readState';
 function readState() { try { return JSON.parse(localStorage.getItem(READ_KEY) || '{}'); } catch (e) { return {}; } }
@@ -7779,7 +7940,7 @@ function goToLine(viewId, idx) {
   // ② 코딩 방식 전환 (Gemini 자동 / Claude에게 맡기기) — 고른 방식은 기억
   (() => {
     const gem = $('aiPaneGem'), cl = $('aiPaneClaude'), bs = document.querySelectorAll('#aiSeg button');
-    const set = m => { gem.hidden = m !== 'gem'; cl.hidden = m !== 'claude'; bs.forEach(b => { const on = b.dataset.mode === m; b.classList.toggle('on', on); b.setAttribute('aria-selected', on ? 'true' : 'false'); }); try { localStorage.setItem('aiMode', m); } catch (e) {} };
+    const set = m => { gem.hidden = m !== 'gem'; cl.hidden = m !== 'claude'; { const gw = $('aiGoWrap'); if (gw) gw.hidden = m !== 'gem'; } bs.forEach(b => { const on = b.dataset.mode === m; b.classList.toggle('on', on); b.setAttribute('aria-selected', on ? 'true' : 'false'); }); try { localStorage.setItem('aiMode', m); } catch (e) {} };
     bs.forEach(b => b.addEventListener('click', () => set(b.dataset.mode)));
     let m = 'gem'; try { m = localStorage.getItem('aiMode') || 'gem'; } catch (e) {}
     set(m === 'claude' ? 'claude' : 'gem');
@@ -7966,7 +8127,9 @@ function goToLine(viewId, idx) {
     autoRun(onlyFailed).catch(e => { auto.run = false; $('aiAutoGo').textContent = '자동 코딩 시작'; progEnd({ fatal: true }); qMsg('자동 코딩 중 오류가 나서 멈췄어요: ' + (e && e.message ? e.message : e)); });
   }
   $('aiAutoGo').addEventListener('click', () => {
-    if (auto.run) autoStop(); else startAuto(false);
+    if (auto.run) { autoStop(); return; }
+    if (!gemCfg().key) { $('aiSettings').open = true; $('aiGemKey').focus(); qMsg('API 키가 없어요. 아래 설정에 Gemini 키를 넣어 주세요.'); return; }
+    startAuto(false);
   });
   $('aiAutoFailed').addEventListener('click', () => { if (!auto.run) startAuto(true); });
 
@@ -7978,7 +8141,8 @@ function goToLine(viewId, idx) {
     if (ch) { selWork.value = ch.workKey; inBook.value = String(ch.book); }
     if (!S.dirty) { inLine.value = ''; fillForm(null); }
     await onWork(false);
-    if (!(window.matchMedia && matchMedia('(pointer: coarse)').matches)) inLine.focus();
+    if (!gemCfg().key) $('aiSettings').open = true;   // 처음 쓰는 경우에만 설정을 펼쳐 키 입력을 안내
+    if (!(window.matchMedia && matchMedia('(pointer: coarse)').matches)) { const f = document.querySelector('#aiQ .qt'); if (f) f.focus(); }
   };
   window.closeAddInfo = function () { ov.classList.remove('show'); document.documentElement.style.overflow = ''; };
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && ov.classList.contains('show')) window.closeAddInfo(); });
