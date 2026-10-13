@@ -24460,5 +24460,3004 @@ window.__RAW_CHAPTER_DATA['data-linesMeta14'] = [
         "etymology": "PIE 재구형 인칭대명사 속격 *te-wos('너의 것')에서 발전한 소유 형용사이다. 동계어로는 산스크리트어 tava, 그리스어 teós('너의')가 있다. 음운적으로 고대 라틴어의 장모음 단축과 어미 굴절 조화를 거쳤으며, 로망스어군으로 이어지면서 스페인어 tu, 포르투갈어 teu 등의 소유 한정사 체계로 정착하였다."
       }
     ]
-  }
+  },
+  {
+    "ref": "Metamorphoses 14.816",
+    "trans": "전능하신 이가 고개를 끄덕여 동의하시고, 자욱한 구름으로 공기를 가리시며 천둥과 번들거리는 번개로 온 세상을 놀라게 하셨다.",
+    "words": [
+      {
+        "g": "adnuit",
+        "pos": "동사",
+        "lemma": "adnuo, adnuere, adnui, -",
+        "principalParts": "adnuo, adnuere, adnui, -",
+        "parse": "3rd.sg.perf.ind.act.",
+        "gloss_kr": "고개를 끄덕여 동의하다, 승낙하다",
+        "gloss_en": "nod assent, agree",
+        "syntax": "LFG f-구조상 주어인 'omnipotens'를 논항으로 취하는 주술동사이며 [PRED 'adnuo <SUBJ>', SUBJ [PRED 'omnipotens', CASE nom]]로 분석된다. 생성문법적으로는 vP 주어 자리에 위치한 주어와 동사 핵의 결합을 보여주며, 시제 핵(T)으로의 이동이 완료된 정동사 구문이다. 어두의 전치사적 접두사 ad-는 방향성을 나타내며 후행하는 목적격이나 여격 방향으로의 의지 표명을 통사적으로 뒷받침한다.",
+        "background": "이 행은 오비디우스의 변신 이야기 제14권에서 로마의 건국 시조 로물루스가 신격화되어 하늘로 올라가는 장면에 등장한다. 아버지 유피테르(옴니포텐스)가 아들의 천상 귀환을 허락하며 고개를 끄덕이는 순간으로, 우주적 질서의 변화를 예고하는 극적인 서사적 전환점이다.",
+        "etymology": "PIE 재구형 *h₁nuh₂-('소리 내어 부르다, 고개를 끄덕이다' 계열 혹은 *ad-+nuo 조합)에서 유래하며, e급 어간에 후두음 성분이 작용한 결과다. 동계어로 산스크리트어 nu('찬양하다'), 고대 그리스어 νεύω(neuo, '고개를 끄덕이다')가 확인되며, 음운론적으로 라틴어 구중 자음군 앞에서 정규적인 단모음 약화 및 3인칭 단수 완료형 -it 어미 결합을 겪었다. 현대 영어의 'annuovincial'이나 'nuance(어원적 관련성 논쟁)' 등의 어휘적 배경에 흔적이 남아 있으며, Ernout-Meillet(DELL)은 이를 동작성 제스처를 뜻하는 고대 이탈리아어군 종교 용어의 전형으로 본다."
+      },
+      {
+        "g": "omnipotens",
+        "pos": "형용사",
+        "lemma": "omnipotens, omnipotentis",
+        "parse": "sg.nom.m.",
+        "gloss_kr": "전능한, 모든 것을 지배하는",
+        "gloss_en": "all-powerful, almighty",
+        "syntax": "LFG 구조상 문장의 주어(SUBJ) 기능을 수행하는 제3변화 형용사 명사화 용법이며, [PRED 'omnipotens', CASE nom, NUM sg, GEND m]의 자질 구조를 갖는다. 생성문법 관점에서 이 형용사는 주어 위치 [Spec, TP]를 점유하며, 후행하는 동사 adnuit와의 성·수·격 일치(agreement) 제약을 만족시킨다. 수식어 성격과 명사적 지위를 겸하여 독립된 논항으로 기능한다.",
+        "background": "여기서 'omnipotens'는 모든 신들의 아버지이자 최고신인 유피테르(Jupiter)를 가리키는 전형적인 수식어이자 호칭이다. 로마 신화에서 유피테르의 전능함은 자연 현상(천둥, 번개, 구름)을 직접 통제하는 권능으로 구체화되며, 이 장면에서도 그의 승낙이 곧바로 거대한 기상 이변을 동반하여 나타난다.",
+        "etymology": "라틴어 형용사 형성 요소인 omnis('모든')와 potens('힘센, 능한', 동사 posse의 분사형 파생)의 합성어로, PIE 재구형 *h₁op-('능력, 힘', cf. ops)과 *potis('주인, 힘있는')의 결합에서 비롯된다. de Vaan(EDL)은 이 합성어가 이탈리아어군 독자적 형성과정에서 발전하여 황제 및 최고신 찬양 호칭으로 고착되었다고 설명한다. 현대 영어의 'omnipotent', 스페인어 'omnipotente' 등의 직접적인 어원으로 이어져 전능함을 뜻하는 국제어로 정착했다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord.conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG 통사 구조에서 동사 adnuit와 occuluit을 대등하게 연결하는 등위접속사(coordinate conjunction)로 기능하며, f-구조상 두 개의 술어 절을 병렬 좌표로 묶어준다. 생성문법적으로는 [ConjP [Conj et] [VP ...]] 형태로 양쪽의 동사구를 대등하게 접속하는 구문적 교량 역할을 수행한다. 문장 내에서 정보의 연속성과 사건의 신속한 전개를 매개한다.",
+        "background": "고전 라틴어 서사시에서 et의 반복적 사용은 에픽 시가 특유의 역동적인 연쇄 서법(paratactical style)을 형성한다. 신의 승낙 직후 곧바로 자연 현상이 일어나는 인과적 연쇄를 시적으로 긴밀하게 이어주는 핵심 장치다.",
+        "etymology": "PIE 재구형 *eti('또한, 게다가')에서 유래하였으며, 산스크리트어 ati('넘어서, 더욱'), 그리스어 ἔτι(eti, '여전히, 더욱')와 엄밀한 동계 관계를 이룬다. 음운론적으로 어말 모음의 단축과 고대 이탈리아어군에서의 형태 고착 과정을 거쳤으며, 로망스어군에서는 상당 부분 다른 형태(예: 이탈리아어 e, 스페인어 y)로 대체되거나 보존되었다."
+      },
+      {
+        "g": "nubibus",
+        "pos": "명사",
+        "lemma": "nubes, nubis, f.",
+        "parse": "pl.abl.f.",
+        "gloss_kr": "구름으로",
+        "gloss_en": "with clouds",
+        "syntax": "LFG f-구조에서 이 명사는 동사 occuluit의 수단·도구적 부사어(OBL-INST 또는 ADJUNCT) 논항으로 분석되며, [PRED 'nubes', CASE abl, NUM pl, θ-ROLE INSTRUMENT]로 표시된다. 생성문법의 격 이론(Case Theory) 관점에서 탈격(ablative)은 수단 역할을 부여받으며, 어휘부에서 투사된 격 자호가 형태론적으로 실현된 것이다.",
+        "background": "유피테르가 로물루스를 세상의 눈에서 감추기 위해 하늘의 구름을 동원하는 장면이다. 신화에서 구름은 신들이 인간의 시선으로부터 은폐하거나 장엄한 현장을 차단할 때 사용하는 전통적인 신성한 도구로 기능한다.",
+        "etymology": "PIE 재구형 *snebh-('안개 끼다, 구름이 서리다')에서 유래하며, 모음 e급 어간에 후두음적 요소가 연관된다. 동계어로 산스크리트어 nabhah('하늘, 대기'), 고대 그리스어 νέφος(nephos, '구름')가 존재하며, r/n 교체 현상과 관련된 고대 인도유럽어 어근의 흔적을 보여준다. OLD와 de Vaan(EDL)은 이 어휘가 라틴어 제3변화 명사로 정착하면서 음운 변동을 겪었음을 논증하며, 현대 영어의 'nebula', 이탈리아어 'nebbia', 스페인어 'niebla' 등의 직접적인 어원이 되었다."
+      },
+      {
+        "g": "aera",
+        "pos": "명사",
+        "lemma": "aer, aeris, m. (그리스어 차용어 ἀήρ)",
+        "parse": "sg.acc.m.",
+        "gloss_kr": "대기를, 공기를",
+        "gloss_en": "air, lower atmosphere",
+        "syntax": "LFG 관점에서 occuluit의 직접 목적어(OBJ) 논항이며, [PRED 'aer', CASE acc, NUM sg, TH-ROLE PATIENT]로 분석된다. 생성문법적으로 목적어 자리 [Compl, VP]에 위치하며, 그리스어 차용 명사 특유의 대격 단수 형태(-a)를 유지하여 전형적인 라틴어 제3변화 명사 대격(-em)과의 통사적 차이를 보여준다.",
+        "background": "여기서 'aer'는 단순한 물리적 공기가 아니라 하늘과 땅 사이의 하층 대기 영역을 의미한다. 신이 강림하거나 기상을 조작할 때 가장 먼저 변화를 겪는 공간적 배경으로 시적 묘사에서 빈번하게 활용된다.",
+        "etymology": "그리스어 ἀήρ(aer)에서 유래한 차용어로, PIE 재구형 *h₂wer-('숨 쉬다, 공기, 흐르다')에 소급한다. 그리스어 형태가 라틴어로 유입되면서 음운론적 적응을 거쳤고, 시가어에서 차용어로서의 특징적인 격 변화 어미를 유지하였다. 현대 영어의 'air', 프랑스어 'air', 스페인어 'aire' 등 서구 언어의 공기를 뜻하는 기본 어휘들의 어원이 되었다."
+      },
+      {
+        "g": "caecis",
+        "pos": "형용사",
+        "lemma": "caecus, -a, -um",
+        "parse": "pl.abl.m.",
+        "gloss_kr": "눈먼, 보이지 않는, 자욱한",
+        "gloss_en": "blind, dark, obscure, thick",
+        "syntax": "LFG f-구조에서 형용사 수식어(ADJUNCT)로서 명사 nubibus를 수식하며, [PRED 'caecus', MOD nubibus, CASE abl, NUM pl, GEND m]으로 분석된다. 생성문법적 NP 내부 구조에서 [N' [AP caecis] [N nubibus]]의 수식 구조를 이루며, 성·수·격 일치 제약에 따라 탈격 복수 남성/중성 형태를 정확히 공유한다.",
+        "background": "자욱하고 앞이 보이지 않는 구름의 속성을 묘사하여 신비스럽고 두려운 분위기를 고조시킨다. 시가에서 'caecus'는 물리적 실명의 의미를 넘어 빛이 차단된 어둠이나 은폐된 상태를 비유적으로 표현하는 데 자주 쓰인다.",
+        "etymology": "PIE 재구형 재구는 명확하지 않으나 이탈리아어군 고유의 어휘로 추정되며, 일설에는 *kaik-('어두운, 흐린') 계통과 연결된다. Ernout-Meillet(DELL)은 이 단어가 초기 라틴어에서 시각적 장애뿐만 아니라 '보이지 않는 통로'나 '캄캄한 상태' 전반을 가리키도록 의미 확장을 겪었다고 본다. 현대 스페인어 'ciego'(눈먼) 및 포르투갈어 'cego'의 직접적인 조상 형태이며, 지명이나 식물 명칭 등에서 은폐된 특성을 나타내는 어근으로 흔적을 남겼다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.817",
+    "trans": "어둡게 만들고, 천둥과 번개로 온 세상을 공포에 떨게 하셨다.",
+    "words": [
+      {
+        "g": "occuluit",
+        "pos": "동사",
+        "lemma": "occulo, occulere, occului, occultus",
+        "principalParts": "occulo, occulere, occului, occultus",
+        "parse": "3rd.sg.perf.ind.act.",
+        "gloss_kr": "숨기다, 감추다, 가리다",
+        "gloss_en": "hide, conceal, cover",
+        "syntax": "LFG f-구조상 주어 생략(주어는 앞 문장의 omnipotens와 공유) 및 목적어 aera, 수단 부사어 nubibus를 지배하는 핵심 주술동사이며, [PRED 'occulo <SUBJ, OBJ, OBL>', SUBJ [co-indexed], OBJ [PRED 'aer']]로 분석된다. 생성문법적으로 vP 내부의 목적어와 부사어를 통사적으로 포섭하며, 완료시제 핵(T)으로 이동한 정동사 구문이다.",
+        "background": "로물루스를 지상에서 하늘로 감쪽같이 은폐하기 위해 전능자가 주변 대기를 구름으로 뒤덮어 시야를 완전히 차단하는 행동을 가리킨다. 신화적 은총과 동시에 자연의 경외로운 힘을 드러내는 서사적 장치다.",
+        "etymology": "전치사 ob-와 고대 어근 *celo('숨기다', cf. clam, cella)의 합성에서 유래하였으며, PIE 재구형 *kel-('감추다, 덮다')의 영급 형태에 후두음적 파생이 개입되어 있다. de Vaan(EDL)은 합성 과정에서 음운적 마찰음화와 단모음 약화(e > i)가 일어났음을 실증한다. 현대 영어의 'occult', 'seclude(어원적 교차)', 스페인어 'ocultar' 등의 어원이 되었으며, 비밀스럽거나 은폐된 것을 뜻하는 학술어의 기초를 이룬다."
+      },
+      {
+        "g": "tonitruque",
+        "pos": "명사",
+        "lemma": "tonitrus, tonitri, m. (또는 tonitrue)",
+        "parse": "sg.abl.n.",
+        "gloss_kr": "천둥과 (그리고 천둥으로)",
+        "gloss_en": "and with thunder",
+        "syntax": "LFG 구조상 뒤에 붙은 enclitic 접속사 -que에 의해 앞의 fulgure와 대등하게 연결된 수단 부사어(OBL-INST)이며, [PRED 'tonitrus', CASE abl, NUM sg, COORD [fulgure]]로 분석된다. 생성문법적으로 접속사 -que는 명사구 어두 또는 어말에 부착되는 접어(clitic)로서 [ConjP [DP tonitru] [Conj -que]] 구조를 형성하며 통사적 병렬 관계를 확립한다.",
+        "background": "유피테르의 현현(theophany)에는 언제나 천둥과 번개가 동반된다. 로물루스의 신격화 과정이 단순한 실종이 아니라 우주의 통치자가 직접 개입하는 거대한 천상적 사건임을 강조한다.",
+        "etymology": "동사 tonare('우르릉거리다, 천둥치다')에서 파생된 명사로, PIE 재구형 *(s)tenh₂-('소리 내다, 우렁차게 울리다')에 소급한다. 후두음 *h₂가 포함된 e급 어간에서 파생되었으며, 산스크리트어 tanayati('소리 내다'), 고대 노르웨ilizce thunor와 엄밀한 동계 관계를 맺는다. OLD는 이 명사가 고전 라틴어 시가에서 음성 상징적 효과를 극대화하기 위해 빈번히 사용되었음을 보여주며, 현대 영어의 'thunder', 스페인어 'trueno' 등의 어원에 깊은 영향을 미쳤다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord.conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG 등위접속사로 명사구 tonitru와 fulgure를 연결하며, [COORD [tonitru, fulgure]] 구조를 형성한다. 생성문법적으로 두 개의 도구적 탈격 명사구를 대등하게 묶어주는 구문적 접착 역할을 한다.",
+        "background": "천둥과 번개를 나열하여 유피테르의 권능을 수사적으로 강조하는 결합 접속사다.",
+        "etymology": "앞서 등장한 et와 동일하며, PIE *eti에서 유래한 공통 어휘다."
+      },
+      {
+        "g": "fulgure",
+        "pos": "명사",
+        "lemma": "fulgur, fulguris, n.",
+        "parse": "sg.abl.n.",
+        "gloss_kr": "번개로",
+        "gloss_en": "with lightning",
+        "syntax": "LFG 구조상 tonitru와 병렬을 이루는 도구적 부사어(OBL-INST)이며, [PRED 'fulgur', CASE abl, NUM sg, θ-ROLE INSTRUMENT]로 분석된다. 생성문법적 격 이론에서 수단 탈격 자질을 할당받으며, 명사구 내에서 -que 접속사와 결합하여 통사적 대등 관계를 완성한다.",
+        "background": "천둥소리와 함께 번쩍이는 번개는 유피테르의 무기이자 권능의 상징이다. 로마인들에게 번개는 신의 직접적인 의사소통이자 경외의 대상이었다.",
+        "etymology": "동사 fulgere('빛나다, 번쩍이다')에서 파생된 제3변화 중성명사로, PIE 재구형 *bhelgh-('빛나다, 부풀어오르다') 또는 *bhel- 계통에 소급한다. de Vaan(EDL)은 명사형 접미사 -ur가 결합하여 섬광의 명칭으로 고착된 과정을 설명한다. 현대 영어의 'fulgent', 'refulgent' 등의 형용사 어원이 되었으며, 강렬한 빛이나 번개와 관련된 문학적 표현의 기초가 된다."
+      },
+      {
+        "g": "terruit",
+        "pos": "동사",
+        "lemma": "terreo, terrere, terrui, territus",
+        "principalParts": "terreo, terrere, terrui, territus",
+        "parse": "3rd.sg.perf.ind.act.",
+        "gloss_kr": "놀라게 했다, 공포에 떨게 했다",
+        "gloss_en": "terrified, frightened",
+        "syntax": "LFG f-구조상 주어(omnipotens)와 직접 목적어(orbem)를 지배하는 주술동사이며, [PRED 'terreo <SUBJ, OBJ>', SUBJ [co-indexed], OBJ [PRED 'orbis', CASE acc]]로 분석된다. 생성문법적으로 완료시제 핵(T)으로 이동한 정동사 구문이며, 목적어 NP를 [Compl, VP] 위치에서 지배하여 문장의 서술적 완결성을 부여한다.",
+        "background": "신이 일으킨 갑작스러운 폭풍우와 천둥방망이는 지상의 인간들에게 엄청난 공포를 안겨준다. 신성한 사건과 세속의 반응을 극적으로 대비시키는 서사적 장치다.",
+        "etymology": "PIE 재구형 *ters-('마르다, 건조하게 하다')에서 파생된 사역동사 계열로, 공포로 인해 입이 바짝 마르고 몸이 굳는 신체적 반응에서 의미가 전이되었다. 동계어로 산스크리트어 tarsayati('목마르게 하다'), 고대 그리스어 τέρσομαι(tersomai, '마르다')가 존재한다. Ernout-Meillet(DELL)은 이 어근이 고대 이탈리아어군에서 '두려움'을 뜻하는 전문 동사로 발전한 경로를 밝힌다. 현대 영어의 'terror', 'terrify', 스페인어 'terror' 등의 직접적인 조상 어휘이다."
+      },
+      {
+        "g": "orbem",
+        "pos": "명사",
+        "lemma": "orbis, orbis, m.",
+        "parse": "sg.acc.m.",
+        "gloss_kr": "세상을, 지구를",
+        "gloss_en": "world, globe, orb",
+        "syntax": "LFG f-구조상 동사 terruit의 직접 목적어(OBJ) 논항이며, [PRED 'orbis', CASE acc, NUM sg, θ-ROLE PATIENT]로 분석된다. 생성문법적 격 이론에 따라 대격 자질을 할당받으며, 목적어 자리에서 동사의 지배를 받는 명사구 피라미드를 형성한다.",
+        "background": "여기서 'orbis'는 단순한 원형 물체가 아니라 인류가 살고 있는 세상 전체(orbis terrarum)를 뜻한다. 한 사람(로물루스)의 신격화 과정이 온 세상에 파장을 미치는 거대한 우주적 사건임을 과시한다.",
+        "etymology": "PIE 재구형 재구는 명확하지 않으나 바퀴나 둥근 고리를 뜻하는 고유 어근에서 유래한 것으로 본다. OLD는 이 단어가 본래 '둥근 테'나 '바퀴'를 의미하다가 점차 '세상의 원형 지평선'을 뜻하는 'orbis terrarum'의 축약형으로 의미가 확장되었음을 지적한다. 현대 영어의 'orbit', 스페인어 'orbe' 등의 어원이 되었으며, 둥근 모양이나 영역을 가리키는 서구 언어들의 핵심 어휘로 남았다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.818",
+    "trans": "약속된 약탈의 징표가 자신에게 정당하게 이루어졌음을 깨닫고, 그녀는...",
+    "words": [
+      {
+        "g": "quae",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "sg.nom.f.",
+        "gloss_kr": "그녀는 (관계대명사)",
+        "gloss_en": "she who, and she",
+        "syntax": "LFG f-구조상 후행하는 주절의 주어 역할을 겸하는 연계 관계대명사(connective relative)이며, [PRED 'qui', CASE nom, NUM sg, GEND f, ANTECEDENT [Hersilia]]로 분석된다. 생성문법적으로 [CP [Spec, CP] [C' C [IP ...]]] 구조에서 외치된 관계절의 주어 위치를 점하며, 앞 문장의 인물(헤르실리아)을 지시하는 대용사 기능을 수행한다.",
+        "background": "여기서 'quae'는 로물루스의 아내이자 로마의 여왕이었던 헤르실리아(Hersilia)를 가리킨다. 남편이 사라진 것에 슬퍼하던 그녀에게 유피테르의 이러한 징표는 남편이 신이 되었다는 약속의 성취를 의미한다.",
+        "etymology": "PIE 재구형 *kʷi- / *kʷo-('의문/관계 대명사 어근')에 소급하며, 라틴어 제1·2변화 대명사 격 변화를 겪었다. 산스크리트어 ka('누구'), 그리스어 τίς(tis)와 동계어이다. 현대 영어의 'who', 스페인어 'que' 등의 어원적 친척 관계에 있으며, 라틴어 문장 연결에서 절과 절을 매끄럽게 엮어주는 핵심 문법 형태소다."
+      },
+      {
+        "g": "sibi",
+        "pos": "대명사",
+        "lemma": "sui, sibi, se",
+        "parse": "sg.dat.m./f./n.",
+        "gloss_kr": "자신에게",
+        "gloss_en": "to herself",
+        "syntax": "LFG f-구조상 형용사 promissae 또는 주술동사 sensit와 연계된 간접 목적어(OBL-TO 또는 3인칭 재귀 여격)이며, [PRED 'se', CASE dat, NUM sg, θ-ROLE BENEFICIARY]로 분석된다. 생성문법적 결속 이론(Binding Theory) 관점에서 주절의 주어(quae)를 지시하는 주어 지향적 재귀대명사(local anaphor)로 작용한다.",
+        "background": "신들이 자신(헤르실리아)에게 약속했던 바가 드디어 이루어졌음을 스스로 체감하는 내면적 반응을 나타낸다.",
+        "etymology": "PIE 재구형 *s(w)e-('자기 자신')에서 유래하며, 3인칭 재귀대명사의 여격 형태이다. 산스크리트어 sva('자신의'), 그리스어 ἕ(he)와 엄밀한 동계어이다. 로망스어군 전반에 걸쳐 재귀 대명사 및 소유 형용사(예: 스페인어 se, 포르투갈어 se)의 뿌리로 깊게 자리 잡고 있다."
+      },
+      {
+        "g": "promissae",
+        "pos": "형용사",
+        "lemma": "promissus, -a, -um (동사 promitto의 완료분사형)",
+        "parse": "sg.gen.f.",
+        "gloss_kr": "약속된",
+        "gloss_en": "promised",
+        "syntax": "LFG f-구조에서 명사 rapinae를 수식하는 수식어(ADJUNCT)이며, [PRED 'promissus', MOD rapinae, CASE gen, NUM sg, GEND f]로 분석된다. 생성문법적 분사구문 분석에서 수동 완료분사가 명사구 내부에서 피수식어와 성·수·격(여격 또는 속격 양상; 여기서는 속격 rapinae와 일치)을 공유하며, 선행하는 사건의 약속 상태를 명사적으로 한정한다.",
+        "background": "유피테르가 사전에 헤르실리아에게 혹은 로마인들에게 남편의 신격화를 약속했던 신적 언약을 가리킨다. 신들의 약속이 허투루 쓰이지 않고 현실로 구현되었음을 보여준다.",
+        "etymology": "동사 promittere('앞으로 보내다, 약속하다', pro-+mittere)의 수동 완료분사에서 유래하였다. PIE 어근 *smit- / *myeh₁- 계통과의 결합을 거쳐 라틴어 고유의 약속 의미로 분화되었다. 현대 영어의 'promise', 스페인어 'promesa' 등의 직접적인 조상 어휘이며, 언어적 약속과 계약을 상징하는 법률 및 문학 용어의 바탕을 이룬다."
+      },
+      {
+        "g": "sensit",
+        "pos": "동사",
+        "lemma": "sentio, sentire, sensi, sensus",
+        "principalParts": "sentio, sentire, sensi, sensus",
+        "parse": "3rd.sg.perf.ind.act.",
+        "gloss_kr": "깨달았다, 느꼈다",
+        "gloss_en": "perceived, felt, realized",
+        "syntax": "LFG f-구조상 주어 quae를 논항으로 취하고 후행하는 부정사구(rata signa rapinae [esse])를 보충절(COMP 또는 XCOMP)로 지배하는 지각동사이며, [PRED 'sentio <SUBJ, COMP>', SUBJ [co-indexed], COMP [PRED 'ratus']]로 분석된다. 생성문법적으로 ACI(Accusativus cum Infinitivo) 구문을 지배하는 주절의 핵심 동사이며, 완료시제 핵(T)으로 이동한 정동사다.",
+        "background": "헤르실리아가 눈앞에 펼쳐진 천둥과 번개, 그리고 구름의 현상을 통해 단순한 재앙이 아니라 남편 로물루스가 하늘로 올려진다는 신적 징표임을 문득 깨닫는 지적·감정적 전환점이다.",
+        "etymology": "PIE 재구형 *sent-('길을 가다, 느끼다, 방향을 잡다')에서 유래하며, 게르만어파의 '길(path)'을 뜻하는 단어들과도 어원적 친척 관계에 있다. 고대 이탈리아어군에서 '마음의 길을 가다'에서 '생각하다, 느끼다, 감지하다'로 의미가 전이되었다. OLD는 이 동사가 오감에 통한 지각뿐만 아니라 내면적 확신을 뜻하는 용도로 빈번히 쓰였음을 보여준다. 현대 영어의 'sense', 'consent', 'dissent', 스페인어 'sentir' 등의 어원이 되었다."
+      },
+      {
+        "g": "rata",
+        "pos": "형용사",
+        "lemma": "ratus, -a, -um (동사 reor의 분사형)",
+        "parse": "pl.acc.n.",
+        "gloss_kr": "확실한 것으로, 효력 있는 것으로",
+        "gloss_en": "confirmed, ratified, valid",
+        "syntax": "LFG f-구조상 ACI 구문 속에서 목적격 보어(OC) 또는 술어적 수식어로 기능하며, [PRED 'ratus', OBJ signa, CASE acc, NUM pl, GEND n]로 분석된다. 생성문법적 2차 술어(secondary predicate) 분석에 따르면, 목적어 signa와 성·수·격(중성 복수 대격)을 공유하며 '징표들이 확실하게 성취되었음'을 서술하는 상태를 나타낸다.",
+        "background": "신들의 약속이 빈말이 아니라 '확정적이고 유효하게' 실현되었음을 나타내는 법률적·종교적 색채가 짙은 용어다.",
+        "etymology": "동사 reor('생각하다, 여기다')의 수동 완료분사에서 유래하였으며, PIE 재구형 *reh₁-('계산하다, 말하다, 생각하다')에 소급한다. 산스크리트어 ra(생각), 고대 영어 rǣdan('조언하다')과 동계어이다. OLD는 이 분사가 '확정된, 승인된'이라는 법률적 의미('ratus habere')로 고대 로마 행정 문서에서 널리 쓰였음을 증명하며, 현대 영어의 'ratify', 'rate', 스페인어 'ratificar' 등의 직접적인 어원이 되었다."
+      },
+      {
+        "g": "signa",
+        "pos": "명사",
+        "lemma": "signum, signi, n.",
+        "parse": "pl.acc.n.",
+        "gloss_kr": "징표들을, 표적들을",
+        "gloss_en": "signs, marks, omens",
+        "syntax": "LFG f-구조상 ACI 구문 내에서 암묵적 존재 동사(esse)의 주어 역할을 하는 대격 명사구이며, [PRED 'signum', CASE acc, NUM pl, θ-ROLE THEME]로 분석된다. 생성문법적 격 이론에 따라 부정사 보충절 내부에서 대격 자질을 할당받으며, 2차 술어 rata의 수식을 받는다.",
+        "background": "하늘에서 벌어진 천둥, 번개, 구름의 기상 현상은 헤르실리아에게 남편이 신이 되었다는 명백한 신적 징표(signa)로 작용한다.",
+        "etymology": "PIE 재구형 *sekW-('자르다' 또는 '따르다' 계열 중 '표시를 남기다'로 분화된 어근)에서 유래한 것으로 추정되며, 일설에는 에트루리아어 차용 가능성도 제기된다. de Vaan(EDL)은 이 명사가 군대의 군기나 점치는 징표를 뜻하는 고대 로마 종교·군사 용어로 발전한 경로를 설명한다. 현대 영어의 'sign', 'signal', 'signature', 스페인어 'signo' 등의 어원이 되었으며, 기호와 표식을 뜻하는 서구 언어의 핵심 축을 이룬다."
+      },
+      {
+        "g": "rapinae",
+        "pos": "명사",
+        "lemma": "rapina, rapinae, f.",
+        "parse": "sg.gen.f.",
+        "gloss_kr": "납치의, 강탈의 (신에 의한 채어감)",
+        "gloss_en": "of the snatching, of the abduction",
+        "syntax": "LFG f-구조상 명사 signa를 수식하는 소유격(속격) 논항이며, [PRED 'rapina', CASE gen, NUM sg, θ-ROLE POSSESSOR/THEME]로 분석된다. 생성문법적 NP 내부 구조에서 명사구 지정어 위치에 병합되어 '약탈/납치의 징표'라는 의미적 종속 관계를 확립한다.",
+        "background": "여기서 'rapina'는 범죄적 약탈이 아니라, 유피테르가 로물루스를 지상에서 하늘로 강하게 채어간 신성한 납치(천상으로의 승천)를 비유적으로 이르는 표현이다.",
+        "etymology": "동사 rapere('움켜쥐다, 채어가다')에서 파생된 명사로, PIE 재구형 *rep-('낚아채다, 뜯어먹다')에 소급한다. 그리스어 ἁρπάζω(harpazo, '움켜쥐다')와 엄밀한 동계어이다. OLD는 이 단어가 본래 물리적 강탈이나 약탈을 뜻하다가 신화 서사에서 신들이 인간을 하늘로 데려가는 신성한 채어감(abductio)을 표현하는 시적 어휘로 확장되었음을 보여준다. 현대 영어의 'rapine', 'rapture', 스페인어 'rapiña' 등의 어원이 되었다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.819",
+    "trans": "창에 의지하고, 피 묻은 축에 눌린...",
+    "words": [
+      {
+        "g": "innixusque",
+        "pos": "분사 (형용사/분사)",
+        "lemma": "innixus, -a, -um (동사 innitor의 완료분사)",
+        "parse": "perf.act.part.sg.nom.m.",
+        "gloss_kr": "그리고 기대어, 의지하여",
+        "gloss_en": "and leaning upon",
+        "syntax": "LFG f-구조상 주어(주인공 호칭 생략 혹은 전후 문맥의 주체)를 수식하는 주격 분사 부사어이며, 탈격 논항 hastae를 지배한다: [PRED 'innitor <OBL>', OBL [PRED 'hasta', CASE abl]]. 생성문법적으로 부대 상황을 나타내는 분사구문(participial adjunct)이며, 등위접속사 -que가 접어로 부착되어 앞 문장과의 행동 연속성을 긴밀하게 엮어준다.",
+        "background": "로물루스가 승천하기 직전 혹은 그 현장에 있던 인물이 무기(창)에 몸을 기댄 채 경건하게 서 있는 모습을 묘사한다. 비장하고 엄숙한 영웅적 태도를 시각적으로 보여준다.",
+        "etymology": "탈형 동사 inniti('기대다, 의지하다', in-+niti)의 완료분사에서 유래하였으며, PIE 재구형 *nei-('힘쓰다, 누르다') 계통에 소급한다. de Vaan(EDL)은 이 어근이 신체적 지탱이나 물리적 의지 행위를 나타내는 이탈리아어군 고유의 파생 동사로 정착했음을 설명한다. 현대 영어의 문학적 표현 및 로망스어군 동사 파생의 기저에 영향을 미쳤다."
+      },
+      {
+        "g": "hastae",
+        "pos": "명사",
+        "lemma": "hasta, hastae, f.",
+        "parse": "sg.gen.f. (또는 여격 sg.dat.f.)",
+        "gloss_kr": "창에 (기대어)",
+        "gloss_en": "to/on the spear",
+        "syntax": "LFG f-구조상 분사 innixus의 목적어적 논항(OBL-TO 또는 여격 지배)이며, [PRED 'hasta', CASE dat, NUM sg, θ-ROLE THEME]로 분석된다. 생성문법적 격 이론에서 동사/분사 innitor 계열이 요구하는 여격 자질을 할당받으며, 구문 내에서 무기라는 물리적 지지대 역할을 수행한다.",
+        "background": "로마의 군사적 상징이자 무장한 영웅의 필수품인 창은 여기서 영웅적 기개와 최후의 순간을 지탱하는 물리적 버팀목으로 기능한다.",
+        "etymology": "PIE 재구형 재구는 명확하지 않으나 지중해 기층 어휘 혹은 고대 이탈리아어군의 무기 명칭에서 유래한 것으로 본다. OLD는 이 단어가 로마 군단병의 표준 무기인 창을 가리키는 기본 어휘였음을 보여주며, 식물학 용어(예: hastate, 창 모양의 잎) 및 현대 로망스어군의 잔존 어휘(예: 스페인어 asta)에 깊은 흔적을 남겼다."
+      },
+      {
+        "g": "pressos",
+        "pos": "분사 (형용사/분사)",
+        "lemma": "pressus, -a, -um (동사 premo의 완료분사)",
+        "parse": "perf.act.part.pl.acc.m.",
+        "gloss_kr": "짓눌린, 압박받는",
+        "gloss_en": "pressed, burdened",
+        "syntax": "LFG f-구조상 명사구 temone를 수식하는 수식어(ADJUNCT)이며, [PRED 'pressus', MOD temone, CASE acc, NUM pl. 또는 단수 남성 대격 temone를 수식하는 복수/단수 형태 공존]로 분석된다. 생성문법적 수식 구조에서 피수식어의 성·수·격(여기서는 temone의 격에 맞춘 수식)을 반영하며, 물리적 압박 상태를 서술한다.",
+        "background": "전차나 수레의 축(temon)이 엄청난 무게나 긴장감에 의해 짓눌려 있는 상태를 묘사하며, 신화적 현장의 무게감을 물리적 사물의 변형으로 생생하게 전달한다.",
+        "etymology": "동사 premere('누르다, 압박하다')의 완료분사로, PIE 재구형 *prem-('누르다, 짜다')에 소급한다. 산스크리트어 pramati와 어원적 유사성이 논의된다. Ernout-Meillet(DELL)은 이 어근이 고대 로마 농경 및 탈것 문화에서 압력을 가하는 모든 동작을 포괄하는 기본 어휘로 정착했음을 밝힌다. 현대 영어의 'press', 'compress', 스페인어 'presionar' 등의 직계 조상이다."
+      },
+      {
+        "g": "temone",
+        "pos": "명사",
+        "lemma": "temo, temonis, m.",
+        "parse": "sg.abl.m.",
+        "gloss_kr": "수레축으로, 멍에채로",
+        "gloss_en": "by/on the pole, chariot pole",
+        "syntax": "LFG f-구조상 수단/처소 부사어(OBL 또는 ADJUNCT) 논항이며, [PRED 'temo', CASE abl, NUM sg, θ-ROLE INSTRUMENT/LOCATIVE]로 분석된다. 생성문법적 격 이론에 따라 탈격 자질을 할당받으며, 수레의 중심 축이라는 물리적 구조물을 명시한다.",
+        "background": "로마의 전차나 마차에서 말과 차체를 연결하는 핵심 축(temon)을 가리키며, 신화 속 영웅들이 타고 이동하던 전차의 현장감을 더해준다.",
+        "etymology": "PIE 재구형 *temh₁-('자르다, 깎다'에서 유래하여 '나무로 다듬은 막대/축'으로 의미 전이)에 소급하며, 라틴어 내에서 전차 구조물 명칭으로 전문화되었다. OLD는 이 단어가 고대 마차 문화의 핵심 부품을 가리키는 전통 어휘임을 증명하며, 현대 로망스어군의 방언형으로 일부 명맥이 이어진다."
+      },
+      {
+        "g": "cruento",
+        "pos": "형용사",
+        "lemma": "cruentus, -a, -um",
+        "parse": "sg.abl.m.",
+        "gloss_kr": "피로 물든, 피비린내 나는",
+        "gloss_en": "bloody, blood-stained",
+        "syntax": "LFG f-구조상 명사 temone를 수식하는 형용사 수식어(ADJUNCT)이며, [PRED 'cruentus', MOD temone, CASE abl, NUM sg, GEND m]로 분석된다. 생성문법적 NP 내부 수식 구조에서 성·수·격(탈격 단수 남성) 일치 제약을 엄격히 만족시키며, 수레축의 피로 물든 상태를 시각적으로 강조한다.",
+        "background": "전쟁이나 영웅적 투쟁의 흔적을 상징하는 '피 묻은' 수레축은 이 신화적 승천의 순간이 단순한 평화 속이 아니라 영웅의 격렬한 역사적 투쟁 배경 위에 있음을 암시한다.",
+        "etymology": "명사 cruor('흐르는 피, 핏덩이')에서 파생된 형용사로, PIE 재구형 *krewh₂-('날것의 피, 핏덩어리')에 소급한다. 후두음 *h₂가 포함된 o급/영급 교체 형태를 보여주며, 산스크리트어 kravya('날고기'), 고대 그리스어 κρέας(kreas, '고기')와 엄밀한 동계어이다. OLD는 이 형용사가 단순한 피 흘림을 넘어 피비린내 나는 참혹함과 영웅적 비장미를 동시에 표현하는 시가어 품격의 어휘임을 밝힌다. 현대 영어의 'cruent', 'cruel(어원적 교차)', 스페인어 'cruento' 등의 어원이 되었다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.820",
+    "trans": "두려움 없이, 거침없이 올라탔다, 그라디부스는 그리고 타격에...",
+    "words": [
+      {
+        "g": "impavidus",
+        "pos": "형용사",
+        "lemma": "impavidus, -a, -um",
+        "parse": "sg.nom.m.",
+        "gloss_kr": "두려움 없는, 대담한",
+        "gloss_en": "fearless, undaunted",
+        "syntax": "LFG f-구조상 주어 Gradivus를 수식하는 주격 보어 또는 부사적 수식어(XADJUNCT)이며, [PRED 'impavidus', MOD Gradivus, CASE nom, NUM sg, GEND m]로 분석된다. 생성문법적 주어 수식 구조에서 명사구와 성·수·격(주격 단수 남성) 일치를 이루며, 영웅의 흔들리지 않는 대담한 심리 상태를 통사적으로 투사한다.",
+        "background": "신의 권능과 천둥 번개의 공포 속에서도 전혀 위축되지 않고 의연하게 전차에 오르는 태도를 묘사하며, 군신(마르스)의 화신이자 위대한 전사다운 면모를 부각한다.",
+        "etymology": "부정 접두사 in-과 동사 paveo('두려워하다, 겁먹다')에서 파생된 형용사 pavidus의 합성으로, PIE 재구형 *paw-('치다, 두려워하다' 계열)에 소급한다. de Vaan(EDL)은 이 형용사가 공포를 뜻하는 pavidus에 부정의 의미를 더해 고전 라틴어 서사시에서 영웅의 용맹함을 찬양하는 전형적인 수식어로 정착했음을 설명한다. 현대 영어의 'impavid', 스페인어 'impávido' 등의 어원이 되었다."
+      },
+      {
+        "g": "conscendit",
+        "pos": "동사",
+        "lemma": "conscendo, conscendere, conscendi, conscensus",
+        "principalParts": "conscendo, conscendere, conscendi, conscensus",
+        "parse": "3rd.sg.perf.ind.act.",
+        "gloss_kr": "올라탔다, 승선했다",
+        "gloss_en": "mounted, climbed up",
+        "syntax": "LFG f-구조상 주어 Gradivus와 직접 목적어 equos를 지배하는 주술동사이며, [PRED 'conscendo <SUBJ, OBJ>', SUBJ [PRED 'Gradivus', CASE nom], OBJ [PRED 'equus', CASE acc]]로 분석된다. 생성문법적으로 완료시제 핵(T)으로 이동한 정동사 구문이며, 목적어 NP를 [Compl, VP] 위치에서 통사적으로 지배하여 문장의 행위를 종결한다.",
+        "background": "로물루스가(혹은 그를 태운 전차가) 마르스의 가호를 받으며 하늘로 향하는 전차에 올라타는 결정적인 행동을 묘사한다.",
+        "etymology": "전치사 com-과 동사 scando('오르다, 올라타다')의 합성어로, PIE 재구형 *skand-('오르다, 뛰다')에 소급한다. 산스크리트어 skandati('뛰어오르다')와 엄밀한 동계어이다. OLD는 이 동사가 배나 수레, 혹은 높은 곳에 올라타는 행위를 전문적으로 가리키는 어휘임을 보여준다. 현대 영어의 'scend', 'ascend', 'descend' 등의 어원적 근간을 이룬다."
+      },
+      {
+        "g": "equos",
+        "pos": "명사",
+        "lemma": "equus, equi, m.",
+        "parse": "pl.acc.m. (또는 아르카이크/시가어 형태로서 복수 대격, 혹은 단수 의미의 복수형)",
+        "gloss_kr": "말들을, 전차의 말을",
+        "gloss_en": "horses, steeds",
+        "syntax": "LFG f-구조상 동사 conscendit의 직접 목적어(OBJ) 논항이며, [PRED 'equus', CASE acc, NUM pl, θ-ROLE PATIENT]로 분석된다. 생성문법적 격 이론에 따라 목적격 대격 자질을 할당받으며, 전차를 끄는 두 마리의 말(또는 전차 자체의 말들)을 지시하는 명사구 피라미드를 형성한다.",
+        "background": "하늘로 올라가는 전차를 끄는 신성한 말들은 영웅의 승천을 인도하는 영적인 동반자이자 신화적 탈것의 핵심 요소다.",
+        "etymology": "PIE 재구형 *h₁éḱwos('말')에서 유래한 인도유럽어족의 대표적인 공통 어휘 중 하나다. 산스크리트어 aśva('말'), 고대 그리스어 ἵππος(hippos, '말')와 완벽한 음운론적 동계 관계를 맺는다. Ernout-Meillet(DELL)은 이 단어가 인류의 가축화 역사와 함께 이탈리아어군에 깊게 뿌리내린 기초 어휘임을 강조한다. 현대 영어의 'equine', 스페인어 'yegua(암말)' 등의 어원이 되었다."
+      },
+      {
+        "g": "Gradivus",
+        "pos": "명사 (고유명사)",
+        "lemma": "Gradivus, Gradivi, m.",
+        "parse": "sg.nom.m.",
+        "gloss_kr": "그라디부스 (마르스신의 별칭)",
+        "gloss_en": "Gradivus (epithet of Mars)",
+        "syntax": "LFG f-구조상 문장의 핵심 주어(SUBJ) 논항이며, [PRED 'Gradivus', CASE nom, NUM sg, GEND m, TH-ROLE AGENT]로 분석된다. 생성문법적 주어 위치 [Spec, TP]를 점유하며, 동사 conscendit의 주어 인칭·수 자질(3인칭 단수)과 일치 관계를 맺는다.",
+        "background": "'그라디부스'는 전쟁의 신 마르스(Mars)를 부르는 엄숙한 호칭 중 하나로, '성큼성큼 걸어 나가는 이'라는 뜻을 담고 있다. 로물루스가 마르스의 아들이라는 신화적 혈통과 연결되어, 이 승천의 순간 그가 실질적으로 마르스의 권능과 동등한 지위로 격상됨을 암시한다.",
+        "etymology": "동사 gradior('걷다, 성큼성큼 나아가다')의 파생 명사/형용사적 호칭에서 유래하였으며, PIE 재구형 *ghredh-('걷다, 행군하다')에 소급한다. 고대 이탈리아어군의 군사 종교 의례에서 전쟁터로 나아가는 신의 발걸음을 찬양하기 위해 붙여진 이름이다. OLD는 이 호칭이 특히 로마의 건국과 전쟁의 역사 속에서 마르스 신을 격식 있게 부를 때 사용되었음을 증명한다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord.conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG 등위접속사로 문장 간 혹은 구절 간의 연속성을 이어주는 역할을 하며, [COORD [consensit, ictu]] 구문의 흐름을 매개한다. 생성문법적으로 절의 경계에서 병렬 접속 구조를 형성한다.",
+        "background": "행의 끝부분에서 다음 행으로 이어지는 서사적 긴장감을 지탱하는 접속사다.",
+        "etymology": "앞서 등장한 et와 동일한 PIE *eti 계통의 공통 어휘이다."
+      },
+      {
+        "g": "ictu",
+        "pos": "명사",
+        "lemma": "ictus, ictus, m.",
+        "parse": "sg.abl.m.",
+        "gloss_kr": "타격으로, 채찍질로",
+        "gloss_en": "by a blow, stroke",
+        "syntax": "LFG f-구조상 수단 부사어(OBL-INST) 논항이며, [PRED 'ictus', CASE abl, NUM sg, θ-ROLE INSTRUMENT]로 분석된다. 생성문법적 격 이론에 따라 탈격 자질을 할당받으며, 말들을 몰거나 채찍질하는 물리적 타격 행위를 명시한다.",
+        "background": "마차가 출발할 때 채찍을 휘두르거나 전차가 앞으로 튀어나갈 때 가해지는 강렬한 물리적 충격(타격)을 묘사한다.",
+        "etymology": "동사 icere('치다, 때리다')에서 파생된 제4변화 남성명사로, PIE 재구형 *yk- 또는 관련 타격 어근에 소급한다. de Vaan(EDL)은 이 명사가 신체적 타격뿐만 아니라 악기의 현을 뜯는 행위나 운율의 박자(ictus)를 가리키는 전문 용어로 발전한 경로를 밝힌다. 현대 영어의 'ictus(운율학 용어)'의 직접적인 어원이 되었다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.821",
+    "trans": "821 채찍이 울려 퍼지자 그는 앞으로 쏠려 대기를 미끄러지듯 날아가서,",
+    "words": [
+      {
+        "g": "verberis",
+        "pos": "명사",
+        "lemma": "verber, verberis, n.",
+        "parse": "sg.gen.n.",
+        "principalParts": "verber, verberis",
+        "gloss_kr": "채찍의, 매질의",
+        "gloss_en": "of a lash",
+        "syntax": "LFG 관점에서 verberis는 속격 명사로서 후행하는 명사 구와의 영유(possessor) 또는 한정 관계를 형성하며, c-구조상 NP 내부에서 [N' [NP verberis] N] 형태로 투영된다. 생성문법적 격 이론(Case Theory) 관점에서 이 속격은 지배 영역 내에서 명사적 어간에 의해 라이선스되며, 통사적 격 할당의 전형적인 명사구 속성 지배 구조를 보여준다. 레빈슨식 화용론적 정보구조에서 이 속격구는 텍스트 내 수직적 인과 관계를 나타내는 수단으로서의 지위를 가진다.",
+        "background": "verber는 신화적 맥락에서 말이나 마차를 몰 때 쓰는 채찍이나 매질을 가리키며, 여기서는 로마 건국 신화 속에서 로마의 시조인 로마누스가 천상으로 거두어지는 극적인 순간을 장식하는 도구적 배경으로 작용한다. 오비디우스의 서사시 속에서 이러한 의기양양한 승천의 묘사는 전통적인 영웅 서사를 정교하게 변형하는 시적 기교와 맞닿아 있다. 이 단어는 로마 시가 지닌 엄숙한 분위기를 청중에게 환기하며 신화적 권위를 부여하는 역할을 한다.",
+        "etymology": "de Vaan(EDL)은 PIE 재구형 *werb-('돌다, 굽다') 계통과의 연관성을 검토하며, 어근 *wel- 또는 *wer-에서 파생된 명사형으로 본다. 라틴어 내부에서 verber(-eris, 중성 제3변화)로 고착되어 '매, 채찍, 회초리'를 뜻하게 되었으며, 인도유럽어족 내 동계어로 산스크리트어 vartate('구르다')와 게르만어파의 단어들이 비교된다. 음운론적으로어중 자음군 변화와 모음 약화를 겪었으며, 고전 라틴어를 거쳐 시적 어휘로서 생명력을 유지했다. 현대 서구 언어에서 'reverberation'(울림, 반사) 등의 영어 단어 내에 그 어근적 흔적이 고스란히 보존되어 있다."
+      },
+      {
+        "g": "increpuit",
+        "pos": "동사",
+        "lemma": "increpo, increpare, increpui, increpitus",
+        "parse": "3rd.sg.perf.ind.act.",
+        "principalParts": "increpo – increpare – increpui – increpitus",
+        "gloss_kr": "소리 내며 울렸다, 채찍질 소리를 내었다",
+        "gloss_en": "resounded, cracked",
+        "syntax": "LFG f-구조에서 increpuit은 주절의 주술 동사 PRED로 기능하며, [PRED 'increpare<SUBJ,OBL>', SUBJ [PRED 'is', CASE nom]] 형태의 논항 구조를 지배한다. 생성문법의 VP-internal subject hypothesis에 따라, 표면상 생략되었거나 문맥상 복원되는 주어는 기저에서 [Spec, vP]에 위치하다가 [Spec, TP]로 이동한 것으로 분석된다. 격 할당 관점에서 주어는 주격(nominative)을 받으며, 자동사적 또는 사역적 용법으로 쓰여 물리적 행위의 즉각적인 결과를 나타낸다.",
+        "background": "increpuit은 채찍이 허공에서 날카로운 소리를 내며 울리는 청각적 이미지를 강렬하게 전달하는 동사다. 오비디우스는 이 동사를 통해 시각적 서사에 그치지 않고 청각적 현장감을 극대화하여 독자의 상상력을 자극한다. 로물루스가 신격화되어 하늘로 올라가는 장엄한 장면에서 이 소리는 세속과 신의 세계를 갈라놓는 극적인 청각적 신호로 기능한다.",
+        "etymology": "Ernout-Meillet(DELL)과 de Vaan(EDL)에 따르면, 이 단어는 PIE 어근 *krep-('소리를 내다, 삐걱거리다, 바스락거리다')에 전치사적 접두사 in-이 결합한 파생 동사이다. 산스크리트어 krapati('슬퍼하다, 울부짖다') 및 그리스어 κροπέω(소리 내다)와 음운론적 동계 관계를 이룬다. 어원적으로 접두사적 강화(intensification)를 거쳐 '크게 소리 내다, 꾸짖다, 찰칵 소리를 내다'로 의미가 확장되었다. 현대 영어의 'crepitation'(찰칵거리는 소리) 및 로망스어군 내의 관련 파생형들에 그 어원이 투영되어 있다."
+      },
+      {
+        "g": "pronusque",
+        "pos": "부사",
+        "lemma": "pronus",
+        "parse": "sg.nom.m.",
+        "principalParts": "(미상)",
+        "gloss_kr": "그리고 앞으로 쏠린 채, 숙여서",
+        "gloss_en": "and bending forward",
+        "syntax": "LFG f-구조에서 pronus는 주어의 상태를 서술하는 보어(XCOMP 또는 adjunct)로 기능하며, 명사구와의 성·수·격 일치(agreement)를 유지한다. 생성문법적으로 이 형용사구(AP)는 소속된 절의 주어 DP와 주격 일치를 맺으며, 부사적 접속사 -que에 의해 앞선 절과 통사적으로 대등하게 접속된다. 정보구조상 이 형태는 주어의 신체적 자세 변화라는 부수적 양태 정보를 부각하는 초점 성분으로 작용한다.",
+        "background": "pronus는 몸을 앞으로 숙이거나 엎드린 자세를 뜻하며, 여기서는 급격하게 하늘로 솟구치거나 비행하듯 낙하하는 물리적 방향성을 시각적으로 묘사한다. 로물루스가 지상의 경계를 벗어나 천상의 공간으로 빨려 들어가듯 이동하는 신화적 순간의 역동성을 더해준다. 이러한 신체 묘사는 오비디우스가 변신 서사 속에서 인물의 해체와 이동 과정을 얼마나 입체적으로 그리려 했는지를 보여준다.",
+        "etymology": "OLD와 de Vaan(EDL)은 PIE 재구형 *pro-no-('앞을 향한', 전치사 *pro에서 파생)를 제시하며, 이는 공간적 전치사에서 파생된 형용사이다. 그리스어 προυνικός 또는 인도유럽어의 전치사형들과 밀접한 동계어 관계를 지니며, '앞으로 향한, 고꾸라진'에서 '경사진, 몰두한'으로 의미가 확장되었다. 음운 변화 과정에서 어말 음절의 축약과 형태론적 고착이 일어났다. 현대 영어의 'prone'(엎드린, 취약한) 및 스페인어 prono 등의 단어에 그 어원적 유산이 고스란히 남아 있다."
+      },
+      {
+        "g": "per",
+        "pos": "전치사",
+        "lemma": "per",
+        "parse": "prep.",
+        "principalParts": "(미상)",
+        "gloss_kr": "~를 통하여, ~를 가로질러",
+        "gloss_en": "through, across",
+        "syntax": "LFG 관점에서 per는 목적격 명사구를 지배하는 전치사로서 [PRED 'per <OBJ>', OBJ [PRED 'aer', CASE acc]] 형태의 오블리크/부사어 기능을 수행한다. 생성문법적 격 이론에서 이 전치사는 후행하는 명사구에 대격(accusative)을 할당하는 격 지배자(Case assigner)로 작동하며, PP 구구조 속에서 구의 핵(head) 위치를 점한다. 공간적 경로를 나타내는 전형적인 통사적 도구이다.",
+        "background": "per는 공간적 관통이나 매개를 나타내는 핵심 전치사로, 여기서는 지상과 천상을 가르는 광활한 대기 공간을 가로지르는 움직임을 표현한다. 신화적 공간 이동의 장엄함을 강조하며, 지상에서 신들의 영역으로 넘어가는 경계 통과의 의미를 부여한다. 시적 공간의 확장을 돕는 필수적인 지리·우주적 매개어이다.",
+        "etymology": "de Vaan(EDL)은 PIE 재구형 *per-('앞으로, 통과하여, ~를 향해')를 제시하며, 이는 공간 및 수단을 나타내는 전형적인 인도유럽어군 전치사 어근이다. 산스크리트어 para('넘어서, 멀리'), 그리스어 περί(peri, ~의 주변에, ~를 통해)와 명백한 동계어를 이룬다. 원시 인구어 단계의 부사적 지위에서 라틴어 계통 내 전치사로 문법화(grammaticalization) 과정을 겪었다. 현대 영어의 'per'(~당), 독일어 per 및 로망스어군의 다양한 전파 형태 속에 그 어원이 살아 있다."
+      },
+      {
+        "g": "aera",
+        "pos": "명사",
+        "lemma": "aer, aeris, m.",
+        "parse": "sg.acc.m.",
+        "principalParts": "aer, aeris",
+        "gloss_kr": "대기를, 공기를",
+        "gloss_en": "the air",
+        "syntax": "LFG f-구조에서 aera는 전치사 per의 목적어(OBJ)로 배정되며, [PRED 'aer', CASE acc, θ-ROLE PATH/LOCATIVE]의 속성 구조를 갖는다. 생성문법적으로 대격 명사구는 전치사 per에 의해 구조적 대격을 할당받으며, VP 외부의 부사적 PP 구조 내부에서 보어 위치를 차지한다. 어휘적 차원에서 그리스어 차용어로서 라틴어 시가 문학에서 독특한 음운적 형태를 유지한다.",
+        "background": "aer는 단순한 공기가 아니라 신들이 거주하는 천상과 인간의 대지가 만나는 중간 영역인 '대기'를 뜻한다. 로물루스가 인간의 신분을 벗어나 하늘로 올라갈 때 통과하는 매개 공간으로서 우주적 질서의 변화를 상징한다. 고전 시가에서 대기 공간은 종종 신성한 현현이나 변신의 무대로 기능한다.",
+        "etymology": "LEW와 OLD에 따르면, 이 단어는 그리스어 ἀήρ(aḗr, '안개, 대기, 공기')에서 유래한 고대 그리스어 차용어이다. PIE 재구형 *h₂wes-('숨 쉬다, 불다') 또는 관련 어근과 연결되며, 산스크리트어 vāti('분다') 등과 어원적 연관성이 논의된다. 라틴어화 과정에서 제3변화 명사의 대격 어미 -a(-em의 시적 변형)를 취하는 형태적 적응을 겪었다. 현대 영어의 'aerial'(공기의, 안테나) 및 'aerosol' 등의 단어에 그 직간접적 어원적 흔적이 남아 있다."
+      },
+      {
+        "g": "lapsus",
+        "pos": "동사",
+        "lemma": "labor, labi, lapsus sum",
+        "parse": "perf.dep.part.sg.nom.m.",
+        "principalParts": "labor – labi – lapsus sum",
+        "gloss_kr": "미끄러져 내려온, 활주하듯 이동한",
+        "gloss_en": "gliding, slipping down",
+        "syntax": "LFG f-구조에서 lapsus는 분사로서 주어와 성·수·격 일치를 이루며, 부수적 상황을 나타내는 분사구문(participial adjunct)의 핵을 담당한다. 생성문법적으로 이 탈격·완료 분사는 비대격적(unaccusative) 혹은 중간태(middle/deponent) 파생의 결과로, 내적 논항이 주어 자리로 이동한 상태에서 수식 기능을 수행한다. 격 이론상 주절 주어와 주격(nominative)으로 일치한다.",
+        "background": "lapsus는 원래 '미끄러지다, 떨어지다, 흘러내리다'라는 뜻으로, 여기서는 부드럽고 자연스럽게 허공을 미끄러지듯 이동하는 모습을 그린다. 격렬하고 폭력적인 추락이 아니라 신성한 은총 속에서 우아하게 천상으로 이끄는 이동 방식을 암시한다. 오비디우스 시학에서 변신하는 인물들의 몸짓은 종종 물의 흐름이나 비행의 유연성을 닮아 있다.",
+        "etymology": "de Vaan(EDL)은 PIE 재구형 *leb-('늘어지다, 미끄러지다, 축 늘어지다')를 제시하며, 라틴어 탈형동사(deponent verb)로 발전했다. 산스크리트어 lambate('매달리다, 처지다')와 게르만어파의 관련 어휘들과 동계어를 형성한다. 음운론적으로 모음 약화와 접미사 교체를 겪었으며, 고대 라틴어에서 의미가 '미끄러짐, 과오' 및 '부드러운 하강'으로 분화되었다. 현대 영어의 'lapse'(실수, 경과) 및 'collapse'(붕괴) 등에 그 어원적 뿌리가 깊게 박혀 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.822",
+    "trans": "822 나무가 우거진 팔라티누스 언덕 꼭대기에 멈춰 서서,",
+    "words": [
+      {
+        "g": "constitit",
+        "pos": "동사",
+        "lemma": "consisto, consistere, constiti, constitus",
+        "parse": "3rd.sg.perf.ind.act.",
+        "principalParts": "consisto – consistere – constiti – constitus",
+        "gloss_kr": "멈춰 섰다, 자리 잡았다",
+        "gloss_en": "stopped, stood still",
+        "syntax": "LFG f-구조에서 constitit은 문장의 주술 동사 PRED이며, [PRED 'consistere<SUBJ,OBL>', SUBJ [PRED 'is', CASE nom], OBL [PRED 'colles', CASE loc/abl]]의 논항 구조를 가진다. 생성문법 관점에서 이 완료형 정동사는 V-to-T 이동을 완료한 상태이며, 장소를 나타내는 부사적 처소구(locative phrase)를 하위범주화(subcategorize)하여 지배한다. 서사적 완결성을 부여하는 중핵 술어이다.",
+        "background": "consistit은 하늘을 날아오르던 움직임이 마침내 특정 장소에서 뚝 멈춰 서는 정적인 순간을 포착한다. 그 장소가 바로 로마의 심장부인 팔라티누스 언덕이라는 점은 신화적 서사와 실제 로마 지리 공간을 연결하는 핵심적 연결고리이다. 이 멈춤을 통해 신격화된 로마의 시조가 새로운 영원한 거처를 확정하게 된다.",
+        "etymology": "de Vaan(EDL)과 Ernout-Meillet(DELL)은 PIE 재구형 *steh₂-('서다')에 강조적 접두사 con-이 결합한 파생 동사로 본다. 산스크리트어 tiṣṭhati('서다'), 그리스어 ἵστημι(hístēmi, 서다)와 같은 인도유럽어군 최상위 공통 어근에서 유래했다. 어원적으로 '함께 서다'에서 '단단히 자리 잡다, 멈추다'로 의미가 전이되었으며, 중복사(reduplication) 형태가 완료형에서 고착되었다. 현대 영어의 'consist'(구성되다), 'station' 계열 및 로망스어군의 수많은 어휘에 직간접적 흔적을 남겼다."
+      },
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "prep.",
+        "principalParts": "(미상)",
+        "gloss_kr": "~ 위에, ~ 안에",
+        "gloss_en": "on, in",
+        "syntax": "LFG f-구조에서 in은 탈격 명사구(summo colle)를 지배하여 처소(location) 기능을 수행하는 전치사적 핵으로 작용한다: [PRED 'in <OBJ>', OBJ [PRED 'collis', CASE abl]]. 생성문법 격 이론에서 이 전치사는 후행하는 명사구에 탈격(ablative)을 할당하며, 정지된 상태의 장소를 나타내는 PP 구구조를 완성한다.",
+        "background": "in은 공간적 위치를 고정하는 전치사로, 여기서는 로마 건국의 역사적 현장이자 황제들의 궁전이 들어설 팔라티누스 언덕 꼭대기를 가리키는 지리적 배경을 한정한다. 신화적 사건이 막연한 허구가 아니라 구체적인 로마의 지형 위에 뿌리내리고 있음을 강조하는 문학적 장치이다.",
+        "etymology": "de Vaan(EDL)은 PIE 재구형 *en('~안에')을 제시하며, 라틴어 내에서 정지(탈격 지배)와 방향(대격 지배)의 이중 기능을 갖도록 문법화되었다. 산스크리트어 ni('아래로, 안에'), 그리스어 ἐν(en, ~에)과 완벽한 동계어 관계를 이룬다. 인도유럽어 제어에서 공통으로 발견되는 원시 전치사로, 언어발달사에서 가장 보편적인 지향·처소 표지 중 하나이다. 현대 영어의 'in', 독어 in 및 로망스어군의 en/em 등에 그대로 보존되어 있다."
+      },
+      {
+        "g": "summo",
+        "pos": "형용사",
+        "lemma": "superus, supera, superum",
+        "parse": "sg.abl.m.",
+        "principalParts": "(미상)",
+        "gloss_kr": "가장 높은, 꼭대기의",
+        "gloss_en": "highest, on the top of",
+        "syntax": "LFG f-구조에서 summo는 형용사로서 명사 colle을 수식하며, 성·수·격(탈격 남성 단수) 일치 관계를 맺는다: [ADJUNCT [PRED 'summus', MOD collis]]. 생성문법 관점에서 최상급 의미를 지닌 이 형용사는 NP 내부에서 품사구 수식어(AP modifier)로 병합되며, 명사의 물리적 위치 중 가장 상위의 국소성을 지정한다.",
+        "background": "summo는 언덕의 '가장 높은 꼭대기'를 뜻하며, 하늘에서 내려온 신이 착지하기에 가장 이상적이고 상징적인 지점을 부각한다. 팔라티누스 언덕의 고지대라는 지형적 특성은 추후 로마 왕권과 제국의 정통성이 탄생하는 신성한 공간적 위계와 직결된다.",
+        "etymology": "de Vaan(EDL)은 PIE 재구형 *su-mo-('가장 위에 있는')를 제시하며, 전치사/부사 어근 *uper('위')의 최상급 파생형에서 유래했다. 산스크리트어 upama('가장 높은, 최고의')와 직접적인 동계어를 이룬다. 라틴어 내부에서 어근 교체와 음운 축약을 거쳐 summus(구형 *sup-mos에서 유래)로 정착되었다. 현대 영어의 'summit'(정상, 꼭대기) 및 로망스어군의 관련 최고급 어휘들에 그 어원적 자취가 뚜렷이 남아 있다."
+      },
+      {
+        "g": "nemorosi",
+        "pos": "형용사",
+        "lemma": "nemorosus, nemorosa, nemorosum",
+        "parse": "sg.abl.m.",
+        "principalParts": "(미상)",
+        "gloss_kr": "숲이 우거진, 나무가 많은",
+        "gloss_en": "wooded, leafy",
+        "syntax": "LFG f-구조에서 nemorosi는 colle을 수식하는 형용사로 [ADJUNCT [PRED 'nemorosus', MOD collis]] 구조를 형성하며 탈격 성·수·격 일치를 이룬다. 생성문법적으로 명사구 내의 수식어 위치에 병합되며, 공간의 환경적 속성을 한정하는 부가어 역할을 수행한다.",
+        "background": "nemorosi는 도시화되기 이전 고대 로마의 팔라티누스 언덕이 울창한 숲으로 둘러싸여 있던 원시적 풍경을 생생하게 소환한다. 화려한 대리석 궁전이 들어서기 전의 신성하고 자연 친화적인 공간을 묘사함으로써, 신화적 시대의 고풍스러운 분위기를 고취시킨다.",
+        "etymology": "OLD와 de Vaan(EDL)에 따르면, 이 단어는 명사 nemus(숲, 신성한 숲; PIE *nem- '나누다, 구획하다' 또는 '절하다' 계통)에서 파생된 형용사이다. 그리스어 νομóς(nomós, 목초지)와 동계어 관계를 이루며, 숲을 뜻하는 어간에 접미사 -osus가 결합하여 '~가 가득한'의 의미를 획득했다. 현대 로망스어군(예: 스페인어 데름 파생어 등) 및 영어의 문학적 차용어 속에서 숲과 관련된 시적 어휘로 명맥을 잇고 있다."
+      },
+      {
+        "g": "colle",
+        "pos": "명사",
+        "lemma": "collis, collis, m.",
+        "parse": "sg.abl.m.",
+        "principalParts": "collis, collis",
+        "gloss_kr": "언덕에서",
+        "gloss_en": "on the hill",
+        "syntax": "LFG f-구조에서 colle은 전치사 in의 지배를 받는 목적어(OBJ)이자 처소 격을 실현하며, [PRED 'collis', CASE abl, θ-ROLE LOCATIVE]로 분석된다. 생성문법적으로 전치사구 내부에서 보어 자리를 차지하며, 처소를 나타내는 명사구로서 정지된 공간적 배경을 완성한다.",
+        "background": "collis는 산보다 낮고 완만한 '언덕'을 뜻하며, 특히 로마의 7대 언덕 중 하나인 팔라티누스를 가리킨다. 팔라티누스는 로마 제국의 요람이자 로물루스가 로마를 건국한 성지로, 로마 문학에서 매우 강력한 상징성을 지닌 지명이다.",
+        "etymology": "de Vaan(EDL)은 PIE 재구형 *kol-ni-('언덕, 솟아오른 곳') 또는 *keles-를 제시하며, 어근 *kel-('돋아나다, 오르다')와 연결된다. 산스크리트어 kūṭa('정상, 뿔') 및 그리스어 κολωνός(kolonós, 언덕)와 명백한 동계어를 이룬다. 음운론적으로 모음 탈락과 자음 동화를 거쳐 제3변화 i-stem 명사로 정착했다. 현대 영어의 'hill'과는 계통상 직접 동계어가 아니나, 지형학적 어휘 연구에서 자주 비교되며, 로망스어군 내 지명 파생어에 흔적을 남겼다."
+      },
+      {
+        "g": "Palati",
+        "pos": "명사",
+        "lemma": "Palatium, Palatii, n.",
+        "parse": "sg.gen.n.",
+        "principalParts": "Palatium, Palatii",
+        "gloss_kr": "팔라티누스의",
+        "gloss_en": "of Palatine (Hill)",
+        "syntax": "LFG f-구조에서 Palati는 속격 명사로서 앞선 명사 colle을 한정하는 속격 구(genitive modifier) 기능을 수행한다: [PRED 'Palatium', CASE gen, θ-ROLE POSSESSOR]. 생성문법적으로 N-bar 수준에서 명사구를 수식하는 보어 위치에 병합되며, 고유명사 속격으로서 지리적 실체를 특정한다.",
+        "background": "Palati(Palatium)는 로마의 유서 깊은 '팔라티누스 언덕'을 의미하는 고유명사로, 황제들의 거처(palace)라는 단어의 어원이 된 유적지이다. 로물루스의 신격화와 로마 건국의 정통성이 결합하는 장소로서, 로마인들에게는 가장 신성하고 정치적으로 중심이 되는 공간이다.",
+        "etymology": "de Vaan(EDL)과 Ernout-Meillet(DELL)은 고대 이탈리아어파의 팔레스(Pales, 목축의 여신) 신앙 또는 해당 지역의 고유 지명 기층에서 유래한 것으로 본다. 인도유럽어족 내에서 직접적인 외부 동계어보다는 이탈리아 국소 기층 어휘(substratum word)로 분류되며, 고대 로마인들의 민간어원학적 해석을 낳기도 했다. 현대 서구 언어에서 왕궁을 뜻하는 영어 'palace', 이탈리아어 palazzo 등의 직접적 어원이 되는 세계사적 어휘이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.823",
+    "trans": "823 그리고 자신의 퀴리테스(로마 시민)들에게 정당한 왕권을 돌려주고 계시던",
+    "words": [
+      {
+        "g": "reddentemque",
+        "pos": "동사",
+        "lemma": "reddo, reddere, reddidi, redditus",
+        "parse": "pres.act.part.sg.acc.m.",
+        "principalParts": "reddo – reddere – reddidi – redditus",
+        "gloss_kr": "그리고 돌려주고 있는",
+        "gloss_en": "and returning, restoring",
+        "syntax": "LFG f-구조에서 reddentem은 분사로서 목적어(OBJ)와 부사어 논항을 지배하며, [PRED 'reddere<SUBJ,OBJ>', OBJ [PRED 'ius', CASE acc]] 구조를 이룬다. 생성문법적으로 이 현재 능동 분사는 시제와 상 측면에서 주절의 동작과 동시성을 나타내며, 수식하는 대상(Iliaden)과 성·수·격(대격 남성 단수) 일치를 이룬다. 접속사 -que에 의해 앞 절과 긴밀히 접합된다.",
+        "background": "reddentem은 로물루스가 왕으로서 시민들에게 법과 제도를 베풀고 권력을 나누어 주던 통치 행위를 생생하게 전달한다. 군사적 정복자로서뿐만 아니라 입법자이자 통치자로서의 면모를 강조하여, 그의 통치가 폭정이 아니라 정당한 법치였음을 부각한다.",
+        "etymology": "de Vaan(EDL)은 접두사 re-('다시')와 어근 *do-('주다', PIE *deh₃-)의 합성어로 본다. 산스크리트어 dadāti('주다'), 그리스어 δίδωμι(dídōmi)와 어원적 동계 관계를 이룬다. 라틴어 내부에서 어간 교체와 완료형의 특이한 형태(red-didi) 발달을 거쳤으며, '되돌려주다, 산출하다, 낭독하다'로 의미가 분화되었다. 현대 영어의 'render'(만들다, 번역하다), 'redolent' 및 로망스어군의 수많은 파생 어휘에 그 어근이 남아 있다."
+      },
+      {
+        "g": "suo",
+        "pos": "형용사",
+        "lemma": "suus, sua, suum",
+        "parse": "sg.abl.m.",
+        "principalParts": "(미상)",
+        "gloss_kr": "자신의, 그들의",
+        "gloss_en": "his own, their",
+        "syntax": "LFG f-구조에서 suo는 소유 형용사로서 명사 Quiriti를 수식하며, 탈격 성·수·격 일치를 이룬다: [ADJUNCT [PRED 'suus', MOD Quiriti]]. 생성문법적으로 재귀적 소유 한정사(reflexive possessive determiner)로서 명사구 내부의 지정어 위치에 병합되며, 주어 지시어와의 의미론적 결속 관계를 반영한다.",
+        "background": "suo는 통치자와 시민 사이의 친밀하고도 소유적인 관계를 나타내며, 로물루스가 자신의 백성들을 얼마나 아끼고 자신의 공동체로 여겼는지를 보여준다. 왕과 신민이 서로를 배타적이지 않은 혈연·정치적 공동체로 인식하게 만드는 유대감을 형성한다.",
+        "etymology": "de Vaan(EDL)은 PIE 재구형 *s(e)w-o-('자신의', 재귀 대명사 어근 *s(e)-에서 유래)를 제시한다. 산스크리트어 svá('자신의'), 그리스어 ós/hós와 명백한 동계어를 이룬다. 인도유럽어 제어 전반에서 고유의 재귀 소유사로 발달했으며, 라틴어 내에서 인칭 대명사의 속격과 구별되는 독특한 형용사적 문법 범주로 굳어졌다. 현대 로망스어군(스페인어 su, 포르투갈어 seu) 및 인문학 용어 'sui generis' 등에 그 어원이 살아 있다."
+      },
+      {
+        "g": "non",
+        "pos": "부사",
+        "lemma": "non",
+        "parse": "adv.",
+        "principalParts": "(미상)",
+        "gloss_kr": "아닌, 부정을 나타내는",
+        "gloss_en": "not",
+        "syntax": "LFG f-구조에서 non은 부정 부사로서 피수식 성분(regia iura)의 의미를 반전시키거나 한정하는 부가어(ADJUNCT)로 작용한다. 생성문법적 부정 구문 분석에서 이 부사는 NegP의 핵 또는 부사적 위치에 병합되며, 술어 또는 명사구의 속성을 부정하는 논리적 연산자를 수행한다.",
+        "background": "non은 문맥 속에서 독자의 예상을 뒤엎거나 특정한 정치적·법적 정당성을 강조할 때 쓰이며, 로물루스의 왕권이 폭군의 전횡이 아님을 역설한다. 합법적이고 공정한 통치였음을 수식어를 통해 강조함으로써 그의 신격화에 도덕적 정당성을 부여한다.",
+        "etymology": "de Vaan(EDL)과 Ernout-Meillet(DELL)에 따르면, 이 단어는 고대 라틴어 ne oenum('하나도 아니')의 축약형에서 유래했다. 부정사 *ne와 중성 대명사/수사 *oinom('하나')의 결합으로 이루어져 있으며, 그리스어 oivos나 라틴어 ūnus와 계통적으로 연결된다. 음운론적 마모를 겪어 독립된 부정 부사로 완전 고착되었다. 현대 영어의 'no' 계통 및 로망스어군의 부정사(스페인어/포르투갈어 no)와 깊은 역사적 연관성을 지닌다."
+      },
+      {
+        "g": "regia",
+        "pos": "형용사",
+        "lemma": "regius, regia, regium",
+        "parse": "pl.acc.n.",
+        "principalParts": "(미상)",
+        "gloss_kr": "왕다운, 왕의",
+        "gloss_en": "royal, kingly",
+        "syntax": "LFG f-구조에서 regia는 명사 iura를 수식하며 대격 중성 복수 성·수·격 일치를 이룬다: [ADJUNCT [PRED 'regius', MOD iura]]. 생성문법 관점에서 형용사구 수식어로서 NP 내부 핵을 한정하며, 통치 권력의 성격을 규정하는 품사적 자질을 제공한다.",
+        "background": "regia는 '왕의, 왕다운'이라는 뜻으로, 단순한 권력 행사가 아니라 군주로서 마땅히 가져야 할 품위와 공정함을 뜻한다. 로물루스가 단순한 지배자가 아니라 로마 공동체를 이끄는 최고 통치자로서 합법적인 법과 질서를 수호했음을 보여준다.",
+        "etymology": "de Vaan(EDL)은 명사 rex(왕, PIE *reg- '올바로 이끌다, 치다')에서 파생된 형용사로 본다. 산스크리트어 rājā('왕'), 고대 아일랜드어 ri와 동계어를 이룬다. 어근 어간에 접미사가 결합하여 왕과 관련된 속성을 나타내는 파생 형용사로 발달했다. 현대 영어의 'royal'(프랑스어 유입), 'regal' 및 로망스어군의 왕실 관련 어휘들에 그 어근적 흔적이 뚜렷이 남아 있다."
+      },
+      {
+        "g": "iura",
+        "pos": "명사",
+        "lemma": "ius, iuris, n.",
+        "parse": "pl.acc.n.",
+        "principalParts": "ius, iuris",
+        "gloss_kr": "법을, 권리를, 정의를",
+        "gloss_en": "rights, laws, justice",
+        "syntax": "LFG f-구조에서 iura는 분사 reddentem의 목적어(OBJ)로 기능하며, [PRED 'ius', CASE acc, θ-ROLE PATIENT]의 논항 구조를 형성한다. 생성문법적 격 이론에서 이 중성 복수 명사구는 타동사적 의미를 지닌 분사로부터 대격을 할당받으며, VP 내부의 보어 자리를 차지한다.",
+        "background": "ius는 인간 사회의 기본적 '법, 권리, 정의'를 뜻하는 핵심 법률 용어로, 로마법 체계의 근간을 이룬다. 로물루스가 시민들에게 단순한 지배가 아니라 공정한 법과 제도를 선사했다는 점을 강조함으로써 로마 국가의 법치적 기원을 신화화한다.",
+        "etymology": "de Vaan(EDL)은 PIE 재구형 *yeh₂s-('속삭이다, 법률적 공식을 말하다' 또는 '구속력 있는 공식')에서 유래한 것으로 본다. 산스크리트어 yós('건강, 행복, 종교적 축복')와 연관성이 논의되며, 라틴어 고유의 종교적·법률적 계약 개념으로 발달했다. 음운 변화를 거쳐 제3변화 중성 명사로 고착되었다. 현대 영어의 'jury'(배심원단), 'justice', 'jurisdiction' 및 로망스어군의 법률 용어(스페인어/포르투갈어 derecho/direito)의 어원이 되는 인류사적 중요 어휘이다."
+      },
+      {
+        "g": "Quiriti",
+        "pos": "명사",
+        "lemma": "Quiris, Quiritis, m.",
+        "parse": "pl.dat.m.",
+        "principalParts": "Quiris, Quiritis",
+        "gloss_kr": "로마 시민들에게 (퀴리테스에게)",
+        "gloss_en": "to the Quirites (Roman citizens)",
+        "syntax": "LFG f-구조에서 Quiriti는 여격 명사구로서 수여를 나타내는 이중 논항(OBJ-GOAL) 기능을 담당하며, [PRED 'Quiris', CASE dat, θ-ROLE BENEFICIARY/GOAL]로 분석된다. 생성문법적으로 분사의 의미역 배정에 따라 여격(dative)을 할당받으며, PP 또는 동사구 확장 영역 내에서 수령자 논항으로 병합된다.",
+        "background": "Quirites는 고대 로마 시민들을 가리키는 공식적이고 장엄한 호칭으로, 평화 시기의 시민 공동체를 지칭할 때 주로 사용된다. 로물루스가 군사적 영웅을 넘어 로마 시민 사회의 제도적 수호자임을 나타내는 문학적 표현이다.",
+        "etymology": "Ernout-Meillet(DELL)과 de Vaan(EDL)에 따르면, 이 단어는 사비니족의 도시 쿠레스(Cures) 또는 창을 뜻하는 사비니어 *quiris에서 유래했다. 고대 이탈리아어파의 기층 어휘에서 출발하여 로마 초기 시민 공동체의 명칭으로 제도화되었다. 음운론적 변화를 거쳐 제3변화 명사로 정착했다. 로마 역사 문헌 전반에 걸쳐 시민을 향한 공식 연설 호칭으로 깊은 자취를 남겼다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.824",
+    "trans": "824 일리아데스(로물루스)를 채어 가셨다: 그의 가죽 같은 필멸의 육신은 대기를 통하여",
+    "words": [
+      {
+        "g": "abstulit",
+        "pos": "동사",
+        "lemma": "aufero, auferre, abstuli, ablatus",
+        "parse": "3rd.sg.perf.ind.act.",
+        "principalParts": "aufero – auferre – abstuli – ablatus",
+        "gloss_kr": "데려갔다, 앗아갔다, 채어 갔다",
+        "gloss_en": "carried off, removed",
+        "syntax": "LFG f-구조에서 abstulit은 주절의 서술어 PRED이며, [PRED 'auferre<SUBJ,OBJ>', SUBJ [PRED 'deus/caelum', CASE nom], OBJ [PRED 'Iliades', CASE acc]]의 논항 구조를 지배한다. 생성문법적 V-to-T 이동 관점에서 이 불규칙 완료 동사는 주어와의 수일치를 이루며, 문장의 핵심 사건(신이 영웅을 채어 감)을 시제 표지와 함께 실현한다.",
+        "background": "abstulit은 신들이 로물루스를 지상에서 갑자기 '빼앗듯' 혹은 '데려가듯' 하늘로 들어 올린 극적인 신격화의 순간을 묘사한다. 죽음을 피할 수 없는 인간 영웅이 신들의 은총으로 지상을 떠나 천상의 존재로 거듭나는 신화적 절정을 알리는 핵심 동사이다.",
+        "etymology": "de Vaan(EDL)은 접두사 ab-('~로부터')와 어근 *fero('나르다', PIE *bher-)의 합성 동사로 본다. 산스크리트어 bharati('나르다'), 그리스어 φέρω(phérō)와 완벽한 동계어 관계를 이룬다. 불규칙 합성 과정을 거쳐 어간이 크게 교체(ab- + tollo/fero 계통의 융합)되었으며, '가져가다, 앗아가다'라는 의미로 굳어졌다. 현대 영어의 단어들 속에서 파생 어근의 흔적을 찾을 수 있으며, 라틴어 역사 문법의 불규칙 동사 대표적 사례이다."
+      },
+      {
+        "g": "Iliaden",
+        "pos": "명사",
+        "lemma": "Iliades, Iliadis, m.",
+        "parse": "sg.acc.m.",
+        "principalParts": "Iliades, Iliadis",
+        "gloss_kr": "일리아데스(일리오스의 후손, 로물루스)를",
+        "gloss_en": "Iliades (son/descendant of Ilus / Romulus)",
+        "syntax": "LFG f-구조에서 Iliaden은 타동사 abstulit의 직접 목적어(OBJ)로서 [PRED 'Iliades', CASE acc, θ-ROLE PATIENT]의 속성 구조를 갖는다. 생성문법적 격 이론에서 이 명사구는 타동사로부터 구조적 대격을 할당받으며, VP 내부의 보어 자리를 차지한다. 그리스어계 고유명사 형태로서 대격 단수 음가를 유지한다.",
+        "background": "Iliades는 트로이의 시조 일리오스(Ilus)의 후손이라는 뜻으로, 트로이아 혈통을 이어받은 로물루스를 가리키는 시적이고 장엄한 호칭이다. 트로이에서 시작된 혈통이 로마의 건국으로 이어진다는 거대한 역사적 서사의 연속성을 강조하는 핵심 인물 지칭이다.",
+        "etymology": "OLD와 그리스어 형태론에 따르면, 이 단어는 트로이아의 왕자이자 건국 시조인 Ίλος(Ilus)의 이름에 부칭 접미사 -ides가 결합한 그리스어계 인명 차용어이다. 그리스어 Ἰλιαδίδης의 라틴어화된 형태이며, 고대 그리스 문학 및 에픽 전통의 어휘적 유산을 고스란히 담고 있다. 오비디우스는 이러한 그리스식 부칭을 적극 사용하여 로마 신화에 에픽적 깊이와 문학적 세련미를 더한다."
+      },
+      {
+        "g": "corpus",
+        "pos": "명사",
+        "lemma": "corpus, corporis, n.",
+        "parse": "sg.nom.n.",
+        "principalParts": "corpus, corporis",
+        "gloss_kr": "육신이, 몸이",
+        "gloss_en": "body",
+        "syntax": "LFG f-구조에서 corpus는 비대격 동사 dilapsum의 주어(SUBJ) 기능을 수행하며, [PRED 'corpus', CASE nom, θ-ROLE THEME]의 속성 구조를 지닌다. 생성문법적 격 이론에서 이 중성 명사는 주격(nominative)을 할당받으며, [Spec, TP] 위치로 이동하여 분사구문의 주어 역할을 수행한다.",
+        "background": "corpus는 영혼과 대조되는 물질적이고 가죽 같은 '육신'을 가리키며, 로물루스가 신이 되어 하늘로 올라갈 때 남겨두거나 변형시킨 인간적 육체의 운명을 다룬다. 신성화 과정에서 인간의 육신이 어떻게 해체되고 정화되는지 보여주는 시적 장치이다.",
+        "etymology": "de Vaan(EDL)은 PIE 재구형 *kʷep- 또는 관련 어근에서 파생된 명사로 보며, '살아있는 형태, 육체'를 뜻한다. 산스크리트어 kṛpā('형상, 모습')와 동계 관계를 이룬다. 라틴어 내부에서 제3변화 중성 명사로 고착되어 인간 및 동물 생체의 물질적 형태를 가리키게 되었다. 현대 영어의 'corpse'(시체), 'corporation'(법인), 'incorporate' 등의 어원이 되는 핵심 어휘이다."
+      },
+      {
+        "g": "mortale",
+        "pos": "형용사",
+        "lemma": "mortalis, mortale",
+        "parse": "sg.nom.n.",
+        "principalParts": "(미상)",
+        "gloss_kr": "필멸의, 죽어야 할 운명의",
+        "gloss_en": "mortal",
+        "syntax": "LFG f-구조에서 mortale은 명사 corpus를 수식하는 형용사로 성·수·격(주격 중성 단수) 일치를 이룬다: [ADJUNCT [PRED 'mortalis', MOD corpus]]. 생성문법 관점에서 NP 내부의 수식어 위치에 병합되며, 명사가 지닌 존재론적 한계(죽음의 속성)를 명시한다.",
+        "background": "mortale은 피조물로서 인간이 지닌 피할 수 없는 '죽음의 한계'를 뜻하며, 로물루스가 신격화되기 이전의 인간적 속성을 대변한다. 신들이 그를 하늘로 거두어 갈 때 그의 유한한 육신이 어떻게 변모하는지 대조적으로 보여주는 수식어이다.",
+        "etymology": "de Vaan(EDL)은 명사 mors(죽음, PIE *mer- '죽다')에서 파생된 형용사로 본다. 산스크리트어 mṛta('죽은'), 그리스어 βροτός(brotós, 필멸의)와 완벽한 동계어 관계를 이룬다. 어근에 파생 접미사가 결합하여 '죽음을 속성으로 가진'이라는 뜻을 획득했다. 현대 영어의 'mortal', 프랑스어 mortel 및 로망스어군의 수많은 관련 어휘들에 그 어원적 유산이 남아 있다."
+      },
+      {
+        "g": "per",
+        "pos": "전치사",
+        "lemma": "per",
+        "parse": "prep.",
+        "principalParts": "(미상)",
+        "gloss_kr": "~를 통하여",
+        "gloss_en": "through",
+        "syntax": "LFG f-구조에서 per는 대격 명사구 auras를 지배하는 전치사적 핵으로 [PRED 'per <OBJ>', OBJ [PRED 'aura', CASE acc]] 구조를 이룬다. 생성문법적 격 이론에서 대격을 할당하는 격 지배자로 작동하며, 공간적 통과를 나타내는 PP 구구조를 완성한다.",
+        "background": "per는 육신이 공중으로 해체되어 흩어지는 물리적 공간의 경로를 보여주는 전치사다. 지상의 질서에서 천상의 광활함으로 넘어가는 과정에서 육체가 어떻게 대기 속으로 녹아드는지 시각적 궤적을 그려낸다.",
+        "etymology": "de Vaan(EDL)은 PIE 재구형 *per-('앞으로, 통과하여')를 제시하며, 산스크리트어 para와 그리스어 περί의 동계어로서 공간적 매개를 나타내는 전형적인 인도유럽어 전치사이다."
+      },
+      {
+        "g": "auras",
+        "pos": "명사",
+        "lemma": "aura, aurae, f.",
+        "parse": "pl.acc.f.",
+        "principalParts": "aura, aurae",
+        "gloss_kr": "대기 속으로, 바람결 속으로",
+        "gloss_en": "through the breezes, airs",
+        "syntax": "LFG f-구조에서 auras는 전치사 per의 목적어(OBJ)로 배정되며, [PRED 'aura', CASE acc, θ-ROLE PATH]의 속성 구조를 지닌다. 생성문법적 격 이론에서 복수 대격 명사구는 전치사 per에 의해 구조적 대격을 할당받으며, PP 내부의 보어 위치를 차지한다.",
+        "background": "auras는 산들바람이나 맑은 공기, 대기를 뜻하며 시가에서 종종 영혼이나 육신이 바람처럼 흩어지는 신비로운 공간을 상징한다. 로물루스의 육신이 단단한 형태를 잃고 대기 속으로 스며들듯 변모하는 장면을 환상적으로 포착한다.",
+        "etymology": "OLD와 de Vaan(EDL)에 따르면, 이 단어는 그리스어 αὔρα(aúra, '산들바람, 숨결')에서 유래한 고대 그리스어 차용어이다. PIE 재구형 *aw-('불다')와 연결되며, 라틴어 ventus 및 그리스어 ἄεμος와 계통적 친족성을 지닌다. 시적 어휘로서 라틴어 문학에서 널리 수용되었다. 현대 영어의 'aura'(아우라, 기운) 및 로망스어군의 관련 파생어들의 어원이 되는 시적이고 감성적인 어휘이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.825",
+    "trans": "825 가벼운 투수 끈에서 풀려난 납덩이처럼, 녹아내렸다.",
+    "words": [
+      {
+        "g": "dilapsum",
+        "pos": "동사",
+        "lemma": "dilabor, dilabi, dilapsus sum",
+        "parse": "perf.dep.part.sg.nom.n.",
+        "principalParts": "dilabor – dilabi – dilapsus sum",
+        "gloss_kr": "사라진, 녹아내린, 흩어진",
+        "gloss_en": "dissolved, slipped away, melted",
+        "syntax": "LFG f-구조에서 dilapsum은 주어 corpus와 성·수·격(주격 중성 단수) 일치를 이루는 분사로 주절의 서술적 보조 역할을 수행한다: [ADJUNCT [PRED 'dilabi', SUBJ corpus]]. 생성문법 관점에서 이 중간태 완료 분사는 비대격적 성격을 띠며, 형태상 수동형 어미를 가지나 능동적 의미 변화(사라짐, 흩어짐)를 나타내며 [Spec, TP]의 주어와 격 일치를 맺는다.",
+        "background": "dilapsum은 단단했던 형체가 공중에서 부드럽게 녹아내리거나 사방으로 흩어지는 물리적 소멸 과정을 생생하게 묘사한다. 로물루스의 인간적 육신이 신성한 불멸성으로 전환되면서 기존의 물질적 형태를 잃고 대기 속으로 완전히 용해되는 결정적 순간이다.",
+        "etymology": "de Vaan(EDL)은 접두사 di-('사방으로, 갈라져')와 어근 labor('미끄러지다')의 합성 동사로 본다. 인도유럽어 기반의 미끄러짐 어근에 분리적 접두사가 결합하여 '사방으로 미끄러져 흩어지다, 용해되다'라는 뜻으로 의미가 특화되었다. 라틴어 내부에서 탈형동사 체계로 정착되었으며, 현대 영어의 'lapse' 및 관련 어휘들과 어원을 공유한다."
+      },
+      {
+        "g": "tenues",
+        "pos": "형용사",
+        "lemma": "tenuis, tenue",
+        "parse": "pl.acc.f.",
+        "principalParts": "(미상)",
+        "gloss_kr": "가벼운, 가느다란, 희박한",
+        "gloss_en": "thin, slight, fine",
+        "syntax": "LFG f-구조에서 tenues는 명사 auras를 수식하는 형용사로 대격 여성 복수 성·수·격 일치를 이룬다: [ADJUNCT [PRED 'tenuis', MOD auras]]. 생성문법 관점에서 NP 내부의 수식어 위치에 병합되며, 대기의 물질적 희박함과 가벼움을 규정하는 자질을 제공한다.",
+        "background": "tenues는 형체가 희박하고 가벼운 상태를 뜻하며, 물질적 무게감을 상실한 채 대기 속으로 스며드는 육신의 미세한 입자들을 시각화한다. 무거운 인간의 육신이 신적 영역으로 흡수되며 가벼운 바람처럼 변하는 형이상학적 전환을 표현한다.",
+        "etymology": "de Vaan(EDL)은 PIE 재구형 *ten-u-('얇은, 늘어난', 어근 *ten- '뻗다, 늘이다'에서 파생)를 제시한다. 산스크리트어 tanu('얇은, 가느다란'), 그리스어 τανυστός와 완벽한 동계어를 이룬다. 어근에 음성학적 접미사가 결합하여 '가늘고 얇은, 희박한'이라는 형용사로 정착했다. 현대 영어의 'thin'(게르만어군 동계어), 'tenuous'(희박한, 빈약한) 및 로망스어군의 관련 어휘들의 직접적인 어원이다."
+      },
+      {
+        "g": "ceu",
+        "pos": "부사",
+        "lemma": "ceu",
+        "parse": "adv.",
+        "principalParts": "(미상)",
+        "gloss_kr": "~처럼, 마치 ~인 것같이",
+        "gloss_en": "just as, like",
+        "syntax": "LFG f-구조에서 ceu는 비유적 비교 구문을 이끄는 접속사적 부사로 기능하며, 주절의 상태와 종속적 비유 구절을 연결하는 부가어 역할을 수행한다. 생성문법적 비교 구조(comparative structure) 분석에서 이 부사는 비유구(Simile Phrase)의 핵으로 병합되며, 두 사건 간의 구조적 유사성을 매개한다.",
+        "background": "ceu는 오비디우스가 서사 속에서 시각적 직관을 극대화하기 위해 자주 사용하는 고풍스러운 비교 부사이다. 신화적인 변신의 비현실적 장면을 당대 독자들에게 익숙하고 구체적인 물질적 현상(납덩이와 투수 끈)에 비유하여 설득력과 생동감을 부여한다.",
+        "etymology": "Ernout-Meillet(DELL)과 de Vaan(EDL)에 따르면, 이 단어는 고대 라틴어계 지시 부사 어근 *ce('이것')와 대명사적 요소가 결합한 압축형태이다. 라틴어 시가 문학에서 널리 애용되는 고전적 시어(poetic word)로, 산문 보다는 서사시의 비유 구문에서 주로 발견된다. 로마 시가 전통의 독특한 수사학적 질감을 보여주는 대표적 어휘이다."
+      },
+      {
+        "g": "lata",
+        "pos": "형용사",
+        "lemma": "latus, lata, latum",
+        "parse": "sg.nom.f.",
+        "principalParts": "(미상)",
+        "gloss_kr": "넓은, 너른",
+        "gloss_en": "broad, wide",
+        "syntax": "LFG f-구조에서 lata는 명사 funda를 수식하는 형용사로 주격 여성 단수 성·수·격 일치를 이룬다: [ADJUNCT [PRED 'latus', MOD funda]]. 생성문법 관점에서 NP 내부의 수식어 위치에 병합되며, 투석기의 물리적 폭과 면적을 한정하는 자질을 제공한다.",
+        "background": "lata는 투석기의 가죽 띠가 넓고 판판하게 펼쳐진 모양을 묘사하며, 투사체가 담기는 물리적 공간의 형태를 시각적으로 구체화한다. 이 세밀한 수식어 덕분에 독자는 투석기가 회전할 때 납덩이가 받는 원심력의 크기를 직관적으로 상상할 수 있다.",
+        "etymology": "de Vaan(EDL)은 PIE 재구형 *stl-tto-('넓은, 평평한', 어근 *stel- '펼치다'에서 파생)를 제시하며, 라틴어 음운 변화를 거쳐 latus로 정착했다. 그리스어 στολή(stolḗ, 옷) 및 게르만어파의 관련 어휘들과 먼 동계어 관계를 이룬다. 어원적으로 '넓게 펼쳐진 상태'를 뜻하며, 현대 영어의 'latitude'(위도, 넓이) 및 로망스어군의 관련 어휘들의 기원이 된다."
+      },
+      {
+        "g": "plumbea",
+        "pos": "형용사",
+        "lemma": "plombeus, plumbea, plumbeum",
+        "parse": "sg.nom.f.",
+        "principalParts": "(미상)",
+        "gloss_kr": "납으로 만든, 납빛의",
+        "gloss_en": "leaden",
+        "syntax": "LFG f-구조에서 plumbea는 명사 funda를 수식하는 형용사로 주격 여성 단수 성·수·격 일치를 이룬다: [ADJUNCT [PRED 'plumbeus', MOD funda]]. 생성문법 관점에서 명사구 내 수식어 위치에 병합되며, 투석기에 쓰이는 탄환의 무겁고 단단한 물질적 특성을 규정한다.",
+        "background": "plumbea는 고대 로마 군대나 투석병들이 실제로 사용하던 무거운 납 탄환(glans plumbea)을 연상시키는 생생한 현실적 디테일이다. 가볍게 흩어지는 대기와 무겁게 날아가는 납덩이의 극적인 대비를 통해, 로물루스의 육신이 고속으로 허공에 녹아드는 역동적 비유를 완성한다.",
+        "etymology": "de Vaan(EDL)은 명사 plumbum(납, 기원 미상의 지중해 기층 어휘 혹은 셈어권 차용 가능성 검토)에서 파생된 형용사로 본다. 라틴어 고유의 금속 명칭에 접미사가 결합하여 해당 재질로 만들어진 성질을 나타내게 되었다. 현대 영어의 'plumb'(추, 수직 측정), 'plumber'(배관공) 및 로망스어군(스페인어 plomo 등)의 금속 관련 어휘들에 그 어원이 고스란히 남아 있다."
+      },
+      {
+        "g": "funda",
+        "pos": "명사",
+        "lemma": "funda, fundae, f.",
+        "parse": "sg.nom.f.",
+        "principalParts": "funda, fundae",
+        "gloss_kr": "투석기에서, 투수 끈에서",
+        "gloss_en": "from a sling",
+        "syntax": "LFG f-구조에서 funda는 비교/비유 구문의 기준이 되는 명사구로 주격(혹은 전치사 생략 구문의 주어적 격) 기능을 수행하며, [PRED 'funda', CASE nom, θ-ROLE STANDARD]로 분석된다. 생성문법적으로 직유 비교 구문 내에서 부사적 비교절의 핵심 명사구 역할을 담당한다.",
+        "background": "funda는 고대 고리형 투석기나 돌을 던지는 투수 끈을 뜻하며, 회전 운동을 통해 납 탄환을 눈 깜짝할 사이에 멀리 쏘아 올리는 강력한 원시 무기이다. 오비디우스는 이 치명적이고 순식간에 이루어지는 투석의 비유를 통해, 로물루스가 지상에서 천상으로 사출되듯 순식간에 사라진 경이로운 물리적 속도를 시각화한다.",
+        "etymology": "de Vaan(EDL)과 Ernout-Meillet(DELL)에 따르면, 이 단어는 그리스어 fundē 또는 지중해 기층 어휘(Mediterranean substratum word)에서 유래한 것으로 추정된다. 인도유럽어족 내부의 고유 어근보다는 이탈리아 반도 및 지중해 지역의 도구 명칭 기층과 연관된다. 음운론적 안정성을 거쳐 제1변화 여성 명사로 정착했다. 현대 영어의 'fund'(기원상 다른 어원이나 형태론적 유사성) 및 로망스어군의 관련 도구 명칭들에 잔존한다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.826",
+    "trans": "중천에서 던져진 납환이 보통 녹아내리듯이 (그의 육신이 사라졌다).",
+    "words": [
+      {
+        "g": "missa",
+        "pos": "동사",
+        "lemma": "mitto, mittere, misi, missus",
+        "principalParts": "mitto – mittere – misi – missus",
+        "parse": "perf.pass.part.sg.nom.f.",
+        "gloss_kr": "보내진, 던져진",
+        "gloss_en": "sent, hurled",
+        "syntax": "LFG f-구조에서 missa는 분사로서 수식어구 내에서 PRED 논항을 이루며, [PRED 'mitto', SUBJ glans]로 명시된다. 생성문법적 관점에서 이는 축약된 수동 분사 구문으로, 관계절의 통사적 축소 결과로 분석된다: [DP [CP tᵢ [TP missa fᵢ]] glans].",
+        "background": "여기서 missa는 슬링(투석기)에서 발사된 납환(glans)이 마찰열로 인해 공중에서 녹아내리는 고대 로마의 물리적 현상을 비유하기 위해 사용되었다. 이 비유는 로마의 시조 로무루스가 인간의 육신을 벗고 신격화되는 순간의 신비롭고 순간적인 과정을 극적으로 묘사한다.",
+        "etymology": "PIE 어근 *meyt-('보내다, 던지다')에서 유래한다. 동계어로 고대 영어 miðan('피하다') 등이 제안되나, 라틴어 계통 내에서 파생된 명사·동사군이 매우 탄탄하다(cf. de-mitto, prae-mitto). de Vaan(EDL)은 이 어근이 이탈리아어파 전반에 걸쳐 넓게 정착된 형태임을 확인해주며, 현대 로망스어군과 영어의 mission, missile 등의 어휘적 흔적으로 이어진다."
+      },
+      {
+        "g": "solet",
+        "pos": "동사",
+        "lemma": "soleo, solere, solitus sum",
+        "principalParts": "soleo – solere – solitus sum – (미상)",
+        "parse": "3rd.sg.pres.ind.act.",
+        "gloss_kr": "~하곤 한다",
+        "gloss_en": "is accustomed",
+        "syntax": "LFG 관점에서 solet은 양태성 보조용언 기능을 하며, XCOMP로 주절의 부정사나 분사 구문을 지배한다: [PRED 'soleo<XCOMP>', SUBJ glans, XCOMP intabescere]. 생성문법의 관점에서는 반(semi-)조동사적 성격을 지니며, 시제 핵 T와 어휘 동사 사이의 통사적 관계를 매개한다.",
+        "background": "자연스러운 물리적 현상을 일반화하여 설명하는 시적 장치로, 로무루스의 신체 소멸이라는 초자연적 현상을 당시 독자들이 익히 아는 자연 현상(투석기 납환의 융해)에 빗대어 설득력을 부여한다.",
+        "etymology": "PIE 재구형 *s(w)ed-elo-('익숙하다, 살다'를 뜻하는 어근에서 파생)에 기원한다. Ernout-Meillet(DELL)과 de Vaan(EDL)에 따르면 명사 sodalis('동료')와 동계 관계에 있다. 인도유럽어족 내에서 습관·상태를 나타내는 고유의 파생 동사 구조를 유지해왔으며, 현대 스페인어의 soler나 포르투갈어의 soler(고어/방언) 등에 그 흔적이 남아 있다."
+      },
+      {
+        "g": "medio",
+        "pos": "형용사",
+        "lemma": "medius, -a, -um",
+        "principalParts": "(미상)",
+        "parse": "sg.abl.m.",
+        "gloss_kr": "중간의, 한가운데의",
+        "gloss_en": "middle, midst of",
+        "syntax": "LFG f-구조에서 medio는 장소를 나타내는 부사적 ADJUNCT 또는 처소격 여격/탈격 논항으로 기능하며, [PRED 'medius', CASE abl] 자질을 지닌다. 생성문법적으로는 PP [P' P [DP medio ...]] 구조 안에서 위치 격을 할당받는 수식어구로 분석된다.",
+        "background": "하늘 한가운데라는 공간적 배경을 설정하여, 지상과 천상의 경계에서 일어나는 신화적 변신의 무대를 극적으로 강조한다.",
+        "etymology": "PIE 재구형 *medhyo-('중간의', cf. 산스크리트어 madhyá-, 그리스어 μέσσος)에서 유래한다. de Vaan(EDL)은 이 형태가 이탈리아어파와 기타 인도유럽어파 전반에 걸쳐 음운론적으로 매우 보존성이 높은 어휘임을 지적한다. 현대 영어의 medium, middle, 스페인어 medio, 포르투갈어 meio 등 방대한 동계어 및 차용어를 거느린다."
+      },
+      {
+        "g": "glans",
+        "pos": "명사",
+        "lemma": "glans, glandis, f.",
+        "principalParts": "(미상)",
+        "parse": "sg.nom.f.",
+        "gloss_kr": "납환, 탄환, 도토리",
+        "gloss_en": "lead bullet, acorn",
+        "syntax": "LFG f-구조에서 glans는 주절 분사구문의 SUBJ 기능을 담당하며, [PRED 'glans', CASE nom, θ-ROLE THEME]로 지정된다. 생성문법의 VP-internal subject hypothesis에 따라 표면 주어 위치 [Spec,TP]로 이동한 것으로 분석된다.",
+        "background": "원래는 '도토리'를 뜻하나, 투석기에 넣어 발사하는 '납으로 만든 탄환'을 가리키는 시적 표현으로 쓰였다. 고대 투석환이 비행 중 공기와의 마찰로 녹아내린다는 속설을 차용하여 로무루스의 승천 과정을 묘사한다.",
+        "etymology": "PIE 재구형 *gʷhlans-('도토리, 견과')에서 기원한다. 그리스어 βάλανος('도토리')와 음운론적으로 엄밀하게 대응하며, 후두음 및 구개음화 양상이 잘 연구되어 있다(LEIA 및 de Vaan EDL 참조). 현대 의학 용어인 임파선(gland, 라틴어 축소형 glandula에서 유래) 및 포르투갈어·스페인어의 glande 등에 어원이 이어진다."
+      },
+      {
+        "g": "intabescere",
+        "pos": "동사",
+        "lemma": "intabesco, intabescere, intabui",
+        "principalParts": "intabesco – intabescere – intabui – (미상)",
+        "parse": "pres.act.inf.",
+        "gloss_kr": "녹아내리다, 소멸하다",
+        "gloss_en": "to melt away, waste away",
+        "syntax": "LFG f-구조에서 intabescere는 보조동사 solet의 XCOMP 논항으로 작동하며, [PRED 'intabesco<SUBJ>', SUBJ glans] 구조를 형성한다. 생성문법적 분석에서는 비대격동사(unaccusative) 성격을 띠는 부정사구로, 통사적 주어가 기저에서 표면 주어로 상승하는 과정을 보여준다.",
+        "background": "형체의 소멸과 용해를 뜻하는 이 동사는 물질적인 납환이 녹는 것뿐만 아니라, 인간 왕에서 올림포스의 신으로 신격화되기 위해 육신이 사라지는 거룩하고도 경건한 변신의 단계를 은유한다.",
+        "etymology": "접두사 in-과 어근 tabescere('녹다, 쇠약해지다', 어근 *tab-)의 합성어이다. de Vaan(EDL)은 tabes('부패, 용해')와의 계통적 연관성을 설명하며, PIE 재구형 차원에서 액체의 소모나 부패를 나타내는 어근과 연결된다고 본다. 현대 로망스어군이나 영어에서는 직접적인 일상어로 살아남지 못하고 고전 인용구에 국한된다."
+      },
+      {
+        "g": "caelo",
+        "pos": "명사",
+        "lemma": "caelum, -i, n.",
+        "principalParts": "(미상)",
+        "parse": "sg.abl.n.",
+        "gloss_kr": "하늘, 대기",
+        "gloss_en": "sky, heaven",
+        "syntax": "LFG f-구조에서 caelo는 처소적 ADJUNCT로 작용하여 [PRED 'caelum', CASE abl, θ-ROLE LOCATIVE] 자질을 갖는다. 생성문법적으로는 전치사 없이 탈격만으로 장소를 표지하는 고전시의 처소격 탈격(ablativus loci) 구문으로 분석된다.",
+        "background": "신들이 거주하는 천상 세계를 상징하며, 로무루스가 지상의 한계를 벗어나 하늘로 올라가 신이 되었음을 나타내는 핵심 공간적 배경이다.",
+        "etymology": "PIE 재구형 *kaid-lo-('밝게 빛나는 것, 구멍뚫린 천막' 등 여러 설이 존재)에서 유래한다. Ernout-Meillet(DELL)은 이 어휘가 라틴어 고유의 종교적·우주론적 어휘로 발달했다고 본다. 현대 영어의 ceiling(천장), 스페인어 cielo, 포르투갈어 céu 등의 직접적인 조상 어휘이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.827",
+    "trans": "더 아름다운 용모가 솟아나고, 드높은 신전의 방석(제단)에 어울리는,",
+    "words": [
+      {
+        "g": "Pulchra",
+        "pos": "형용사",
+        "lemma": "pulcher, pulchra, pulchrum",
+        "principalParts": "(미상)",
+        "parse": "sg.nom.f.",
+        "gloss_kr": "아름다운, 고결한",
+        "gloss_en": "beautiful, fair",
+        "syntax": "LFG f-구조에서 Pulchra는 명사 facies를 수식하는 ADJUNCT(attr) 기능을 하며, [PRED 'pulcher', SPEC facies] 구조를 이룬다. 생성문법적으로는 DP 내부에서 NP를 좌측 수식하는 형용사구(AP)로 병합된다.",
+        "background": "인간의 육신을 벗어난 로무루스가 신으로서 지니게 된 새로운 외양의 찬란함과 영원한 아름다움을 부각시킨다.",
+        "etymology": "선그리스어 기층 또는 이탈리아어파 고유 어휘설이 존재하나, de Vaan(EDL)은 어원의 정확한 PIE 소급에 대해 유보적인 입장을 취한다. 고대 라틴어의 polcher에서 음운 변화를 거쳤으며, 현대 포르투갈어 bonito/pulcro 계열이나 스페인어 pulcro('말끔한, 고결한') 등의 어원으로 이어진다."
+      },
+      {
+        "g": "subit",
+        "pos": "동사",
+        "lemma": "subeo, subire, subii, subitus",
+        "principalParts": "subeo – subire – subii – subitus",
+        "parse": "3rd.sg.pres.ind.act.",
+        "gloss_kr": "솟아오르다, 다가오다, 대체하다",
+        "gloss_en": "comes up, arises, takes the place of",
+        "syntax": "LFG f-구조에서 subit은 주절의 PRED이며, [PRED 'subeo<SUBJ,OBL>', SUBJ facies, OBL pulvinaribus] 형태의 논항 구조를 가진다. 생성문법적으로는 비대격 혹은 방향 이동 동사로, 상위 도메인으로의 성분 상승을 나타낸다.",
+        "background": "기존의 필멸하던 인간적 면모가 사라진 그 자리에, 신적인 위엄을 지닌 새로운 용모가 솟아오르는 극적인 전환의 순간을 생생하게 표현한다.",
+        "etymology": "접두사 sub-(~아래에서 위로)와 어근 *ei-('가다', cf. 라틴어 eo, 그리스어 eimi)의 합성어이다. de Vaan(EDL) 및 Ernout-Meillet(DELL)에 따르면 PIE 어근 *h₁ei-의 영급 형태에 기반한다. 현대 로망스어군 및 영어의 transition, ambient 등의 어원적 배경과 연결된다."
+      },
+      {
+        "g": "facies",
+        "pos": "명사",
+        "lemma": "facies, faciei, f.",
+        "principalParts": "(미상)",
+        "parse": "sg.nom.f.",
+        "gloss_kr": "용모, 얼굴, 형태",
+        "gloss_en": "face, appearance, form",
+        "syntax": "LFG f-구조에서 facies는 주절의 SUBJ 논항을 담당하며, [PRED 'facies', CASE nom, θ-ROLE THEME]로 지정된다. 생성문법적 분석에서는 [Spec,TP] 위치를 점하는 주어 명사구의 핵이다.",
+        "background": "로무루스가 신격화되면서 얻게 된 새로운 신성한 얼굴과 형상을 가리키며, 외형적 변신을 통해 내면의 신격 변화를 상징적으로 드러낸다.",
+        "etymology": "어근 *dheH₁-('놓다, 만들다', cf. facere)와 연관된 파생 명사로, OLD 및 de Vaan(EDL)은 사물의 만듦새나 생김새를 뜻하는 5변화 명사로 분류한다. 현대 영어의 facial, face 및 포르투갈어 face, 스페인어 faz 등으로 그 형태가 보존되어 있다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "principalParts": "(미상)",
+        "parse": "coord.conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG f-구조에서 et는 두 개의 통사적 구성소를 대등하게 연결하는 협조(coordination) 구조의 기능을 한다. 생성문법적으로는 ConjP(Conjunction Phrase)의 핵으로 작동하여 대등한 명사구 혹은 절을 병합한다.",
+        "background": "앞서 언급된 새로운 용모와 이어지는 신성한 제단의 방석이라는 두 가지 요소를 매끄럽게 연결하여 시적 호흡을 조절한다.",
+        "etymology": "PIE 재구형 *eti('또한, 게다가', cf. 그리스어 ἔτι)에서 유래한다. de Vaan(EDL)은 이 형태가 이탈리아어파와 켈트어파 등에서 부사 및 접속사로 널리 쓰였다고 설명한다. 현대 로망스어군(스페인어 y/e, 포르투갈어 e)의 기초 접속사로 직계 계승되었다."
+      },
+      {
+        "g": "pulvinaribus",
+        "pos": "명사",
+        "lemma": "pulvinar, pulvinaris, n.",
+        "principalParts": "(미상)",
+        "parse": "pl.abl.n.",
+        "gloss_kr": "신전의 방석, 베개, 신성한 침상",
+        "gloss_en": "cushions, couch of the gods",
+        "syntax": "LFG f-구조에서 pulvinaribus는 비교 또는 처소를 나타내는 OBL 또는 ADJUNCT 논항이며, [PRED 'pulvinar', CASE abl] 자질을 가진다. 생성문법적 구조에서는 전치사 생략 탈격 구문으로 수식어 위치를 점한다.",
+        "background": "로마 종교에서 신들의 형상(상징)을 모시는 신성한 침상이나 방석을 의미하며, 로무루스가 이제 평범한 인간을 넘어 올림포스의 고귀한 신들 사이에 좌정할 자격이 있음을 암시한다.",
+        "etymology": "pulvinus('베개, 쿠션')에서 파생된 명사로, de Vaan(EDL)은 이탈리아어파 고유의 가구·종교 용어로 분류한다. PIE 차원의 직접적 재구보다는 라틴어 내부의 장소·도구 접미사(-ar) 결합으로 형성되었으며, 현대 포르투갈어 pulvinaro 등의 어휘적 배경이 된다."
+      },
+      {
+        "g": "altis",
+        "pos": "형용사",
+        "lemma": "altus, -a, -um",
+        "principalParts": "(미상)",
+        "parse": "pl.abl.n.",
+        "gloss_kr": "높은, 고귀한, 깊은",
+        "gloss_en": "high, lofty, noble",
+        "syntax": "LFG f-구조에서 altis는 명사 pulvinaribus를 수식하는 ADJUNCT(attr) 자질을 갖는다. 생성문법적으로는 AP 내부에서 명사구를 한정하는 수식어 성분으로 병합된다.",
+        "background": "물리적인 높이뿐만 아니라 신성함의 격식과 고귀함을 동시에 나타내어, 퀴리누스로 추앙받는 로무루스의 위상에 걸맞은 장엄한 분위기를 조성한다.",
+        "etymology": "PIE 재구형 *aldho- 또는 *al-('자라다, 높이 솟다', cf. alere) 어근에서 파생된 분사형 형용사이다. de Vaan(EDL)과 Ernout-Meillet(DELL)은 이 어휘가 공간적 높이에서 추상적 고귀함으로 의미가 확장된 대표적 사례로 꼽는다. 현대 영어의 altitude, 스페인어/포르투갈어 alto 등으로 이어지고 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.828",
+    "trans": "수놓은 토가(trabea)를 입은 퀴리누스의 모습과 같은, 그에 걸맞은 모습이 나타났다.",
+    "words": [
+      {
+        "g": "dignior",
+        "pos": "형용사",
+        "lemma": "dignus, -a, -um (비교급)",
+        "principalParts": "(미상)",
+        "parse": "sg.nom.f. (comparative)",
+        "gloss_kr": "더 가치 있는, 더 어울리는",
+        "gloss_en": "more worthy, more fitting",
+        "syntax": "LFG f-구조에서 dignior는 주격 보어(OBL 또는 XCOMP) 역할을 하며, [PRED 'dignus', CASE nom, DEGREE comparative] 자질을 지닌다. 생성문법적으로는 술부 형용사구(AP)의 핵으로서 주어 facies와의 격 일치를 성취한다.",
+        "background": "새로 나타난 용모가 단순한 아름다움을 넘어, 최고 권력과 신성함을 상징하는 퀴리누스의 품격에 더욱 걸맞음을 강조하는 서사적 평가다.",
+        "etymology": "PIE 재구형 *dek-no-('받아들이기에 알맞은', cf. decet, 귈케르트어권 동계어)에서 기원한다. de Vaan(EDL)에 따르면 명예와 가치를 뜻하는 decus와 어원을 공유한다. 현대 영어의 dignity, 스페인어 digno, 포르투갈어 digno 등의 직계 조상이다."
+      },
+      {
+        "g": "est",
+        "pos": "동사",
+        "lemma": "sum, esse, fui",
+        "principalParts": "sum – esse – fui – (미상)",
+        "parse": "3rd.sg.pres.ind.act.",
+        "gloss_kr": "~이다",
+        "gloss_en": "is",
+        "syntax": "LFG f-구조에서 est는 연결동사(copula)로서 [PRED 'sum<SUBJ,XCOMP>', SUBJ facies, XCOMP dignior] 구조를 구성한다. 생성문법적으로는 T(시제 핵)의 기능을 수행하며 명사구와 보어구 사이의 넥서스를 확립한다.",
+        "background": "서사 속 묘사의 객관성과 현재성을 부여하는 연결고리로서, 로무루스의 신격화된 최종 형태가 지닌 영속적 실재성을 뒷받침한다.",
+        "etymology": "PIE 어근 *h₁es-('존재하다', cf. 산스크리트어 ásti, 그리스어 ἐστί)에서 유래한다. de Vaan(EDL)이 지적하듯 인도유럽어족 전반에 걸쳐 가장 원형적으로 보존된 불규칙 동사이다. 현대 영어의 is, 스페인어/포르투갈어 es/é 등의 기초 동사로 살아있다."
+      },
+      {
+        "g": "qualis",
+        "pos": "대명형용사",
+        "lemma": "qualis, quale",
+        "principalParts": "(미상)",
+        "parse": "sg.nom.f.",
+        "gloss_kr": "~와 같은, 어떠한",
+        "gloss_en": "such as, of what sort",
+        "syntax": "LFG f-구조에서 qualis는 관계절 또는 비교절의 한정사/보어 기능을 하며, [PRED 'qualis', SPEC forma] 자질을 갖는다. 생성문법적으로는 비교 구문 내에서 상관 대명사구(Wh-phrase)의 속성을 지닌다.",
+        "background": "일반적인 아름다움을 구체적인 로마의 신적 원형, 즉 퀴리누스의 모습과 직접 연결해주는 비유적 교량 역할을 한다.",
+        "etymology": "PIE 의문사 대명사 어근 *kʷo-에 파생 접미사가 결합된 형태이다. de Vaan(EDL) 및 Ernout-Meillet(DELL)은 라틴어의 대명사 체계(quis, qualis, quantus) 속에서 성·수를 구별하는 형용사화 과정을 상세히 기술한다. 현대 포르투갈어 qual, 스페인어 cual 등의 어원이다."
+      },
+      {
+        "g": "trabeati",
+        "pos": "형용사",
+        "lemma": "trabeatus, -a, -um",
+        "principalParts": "(미상)",
+        "parse": "sg.gen.m.",
+        "gloss_kr": "자주색 줄무늬가 있는 토가(trabea)를 입은",
+        "gloss_en": "wearing the trabea (state robe)",
+        "syntax": "LFG f-구조에서 trabeati는 명사 forma를 수식하는 소유격/속격 ADJUNCT 논항이며, [PRED 'trabeatus', CASE gen] 자질을 띤다. 생성문법적으로는 DP 내부의 명사구 속격 수식어로 병합된다.",
+        "background": "trabea는 로마의 왕들이나 고위 장군들, 그리고 신격화된 퀴리누스가 착용하던 특수한 자주색 줄무늬 토가이다. 이 복장은 로무루스가 단순한 영웅을 넘어 로마의 수호신 퀴리누스로 완전히 공인되었음을 상징한다.",
+        "etymology": "trabea('통나무무늬/줄무늬 토가')에서 파생된 형용사이다. trabs('들보, 통나무')와의 연관성에 대해 de Vaan(EDL)은 토가의 독특한 직조 무늬나 줄 형태에서 유래한 명칭으로 설명한다. 로마 고유의 복식 문화 어휘로서 후대 로망스어군에서는 직접 차용되지 않고 역사적 문헌을 통해 전승된다."
+      },
+      {
+        "g": "forma",
+        "pos": "명사",
+        "lemma": "forma, formae, f.",
+        "principalParts": "(미상)",
+        "parse": "sg.nom.f.",
+        "gloss_kr": "모습, 형상, 외양",
+        "gloss_en": "shape, form, figure",
+        "syntax": "LFG f-구조에서 forma는 비교절의 SUBJ 논항을 담당하며, [PRED 'forma', CASE nom, θ-ROLE THEME] 자질을 지닌다. 생성문법적 분석에서는 비교 구문의 명사구 핵 위치를 점한다.",
+        "background": "로무루스가 신으로 변모한 뒤 갖추게 된 최종적인 거룩한 형체를 뜻하며, 오비디우스가 서술하는 변신(metamorphosis)의 시각적 완성도를 집약적으로 보여준다.",
+        "etymology": "에트루리아어 차용설과 라틴어 고유어설이 경합하나, de Vaan(EDL)은 어원의 불확실성을 인정하면서도 초기 로마 문화 속에서 물질적·추상적 '틀'을 뜻하는 용어로 정착했음을 밝힌다. 현대 영어의 form, format, 스페인어/포르투갈어 forma 등의 어원이다."
+      },
+      {
+        "g": "Quirini",
+        "pos": "명사",
+        "lemma": "Quirinus, -i, m.",
+        "principalParts": "(미상)",
+        "parse": "sg.gen.m.",
+        "gloss_kr": "퀴리누스(신격화된 로무루스의 이름)",
+        "gloss_en": "Quirinus (deified Romulus)",
+        "syntax": "LFG f-구조에서 Quirini는 소유격/속격 한정사(possessor) 기능을 하며, [PRED 'Quirinus', CASE gen, θ-ROLE POSS] 자질을 갖는다. 생성문법적으로는 DP [Spec,DP] 위치에 병합되는 고유명사 속격이다.",
+        "background": "로무루스가 죽은 뒤 승천하여 로마의 수호신으로 이름을 바꾼 '퀴리누스'를 가리킨다. 이 명칭은 로마 시민 공동체(Quirites)와 깊은 연관이 있으며, 로마 건국 시조의 신성한 종교적 정체성을 확정한다.",
+        "etymology": "사비니족의 도시 Cures와 연관되거나 고대 사비니어의 '창(quiris)'에서 유래했다는 고대 문헌의 설이 있다. Ernout-Meillet(DELL)과 de Vaan(EDL)은 이탈리아어파의 고대 종교·신화 고유명사로 분류한다. 현대 로마의 지명이나 역사·신화 연구 문헌에서 고유명사로 인용된다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.829",
+    "trans": "남편을 잃은 것처럼 아내는 슬퍼하고 있었는데, 그때 왕후인 유노가",
+    "words": [
+      {
+        "g": "Flebat",
+        "pos": "동사",
+        "lemma": "fleo, flere, flevi, fletus",
+        "principalParts": "fleo – flere – flevi – fletus",
+        "parse": "3rd.sg.impf.ind.act.",
+        "gloss_kr": "울고 있었다, 슬퍼했다",
+        "gloss_en": "was weeping, lamented",
+        "syntax": "LFG f-구조에서 Flebat은 주절의 PRED이며, [PRED 'fleo<SUBJ,ADJUNCT>', SUBJ coniunx] 구조를 취한다. 생성문법적 분석에서는 미완료상(imperfective aspect)을 나타내는 T 핵과 V의 결합으로, 과거에 지속되던 배경적 상황을 묘사한다.",
+        "background": "로무루스가 홀연히 사라져 신이 된 줄 모른 채, 남편을 잃었다고 여겨 비탄에 빠져 있는 아내 헤르실리아(Hersilia)의 애절한 모습을 생생하게 전달한다.",
+        "etymology": "PIE 재구형 *b(h)leH₁-('눈물을 흘리다, 울다', cf. 슬라브어파 동계어)에서 기원한다. de Vaan(EDL)은 이 어근이 라틴어 내에서 눈물(flere)과 관련된 기본 감정 동사군을 형성한다고 설명한다. 현대 로망스어군에서는 직접형이 소실되었으나 고전 문헌을 통해 전해진다."
+      },
+      {
+        "g": "ut",
+        "pos": "접속사",
+        "lemma": "ut",
+        "principalParts": "(미상)",
+        "parse": "subord.conj.",
+        "gloss_kr": "~처럼, ~할 때",
+        "gloss_en": "as, like, when",
+        "syntax": "LFG f-구조에서 ut은 양태/시간 부사절을 이끄는 종속접속사(subordinator)로 작동하며, [PRED 'ut', XCOMP ...] 자질을 지닌다. 생성문법적으로는 CP(Complementizer Phrase)의 핵 위치를 점하며 비교·양태절을 주절에 종속시킨다.",
+        "background": "헤르실리아의 슬픔의 성격을 비유하거나 특정한 시점을 도입하는 문법적 장치로 작용하여, 이후 신들의 개입으로 이어지는 전환점을 연출한다.",
+        "etymology": "PIE 대명사 어근에서 파생된 전치사·접속사형으로, de Vaan(EDL)과 Ernout-Meillet(DELL)은 수단 및 방식을 나타내는 고대 인도유럽어의 부사적 파생물로 분류한다. 현대 스페인어/포르투갈어의 일부 유사 접속사 및 고전 라틴어 구문에서 흔적을 찾을 수 있다."
+      },
+      {
+        "g": "amissum",
+        "pos": "분사/형용사",
+        "lemma": "amitto, amittere, amisi amissus",
+        "principalParts": "amitto – amittere – amisi – amissus",
+        "parse": "perf.pass.part.sg.acc.m.",
+        "gloss_kr": "잃어버린, 사별한",
+        "gloss_en": "lost, forsaken",
+        "syntax": "LFG f-구조에서 amissum은 명사 coniunx를 수식하는 수식어(attr)이며, [PRED 'amitto', SPEC coniunx] 자질을 갖는다. 생성문법적으로는 수동 분사가 명사구를 한정하는 형용사적 속성으로 전치 병합된 형태이다.",
+        "background": "아내 헤르실리아가 남편 로무루스를 영원히 잃었다고 믿으며 겪는 깊은 상실감과 비극적 정서의 핵심을 담고 있다.",
+        "etymology": "접두사 ab/ad-와 어근 mittere('보내다, 놓아주다')의 합성어이다. de Vaan(EDL)에 따르면 '손에서 놓아 보내어 잃어버리다'라는 의미로 의미 전이가 일어났다. 현대 포르투갈어/스페인어의 admitir(어원적 대조) 등과 어근을 공유하며 영어의 admit/miss 계통과도 연관된다."
+      },
+      {
+        "g": "coniunx",
+        "pos": "명사",
+        "lemma": "coniunx, coniugis, m./f.",
+        "principalParts": "(미상)",
+        "parse": "sg.nom.f.",
+        "gloss_kr": "배우자, 아내, 남편",
+        "gloss_en": "spouse, wife, husband",
+        "syntax": "LFG f-구조에서 coniunx는 주절의 SUBJ 논항이며, [PRED 'coniunx', CASE nom, θ-ROLE EXPERIENCER] 자질을 갖는다. 생성문법적 분석에서는 [Spec,TP] 위치를 점하는 주어 명사구의 핵이다.",
+        "background": "여기서는 로무루스의 아내인 헤르실리아를 가리키며, 신화 속 영웅의 아내로서 겪는 인간적 고뇌와 슬픔을 대변하는 인물로 등장한다.",
+        "etymology": "접두사 con-(함께)과 어근 *yeug-('멍에를 메우다, 결합하다', cf. iungere)의 합성어이다. de Vaan(EDL)은 '함께 멍에를 멘 사람'이라는 원뜻에서 부부 관계를 뜻하는 명사로 정착했다고 설명한다. 현대 영어의 conjugal, 스페인어 cónyuge, 포르투갈어 cônjuge 등의 어원이다."
+      },
+      {
+        "g": "cum",
+        "pos": "접속사",
+        "lemma": "cum",
+        "principalParts": "(미상)",
+        "parse": "subord.conj.",
+        "gloss_kr": "~할 때, 마침 그때",
+        "gloss_en": "when, while",
+        "syntax": "LFG f-구조에서 cum은 시간적 상황을 이끄는 종속접속사(subordinator)로 기능하며, [PRED 'cum', ADJUNCT-TYPE time] 자질을 띤다. 생성문법적으로는 CP 핵으로서 주절과 부사절을 연결한다.",
+        "background": "헤르실리아의 비탄에 잠긴 순간에 유노가 개입하는 극적인 시점 전환을 알리며, 인간계와 신계의 사건이 맞물리는 계기를 제공한다.",
+        "etymology": "PIE 재구형 *kom('~와 함께', cf. 라틴어 전치사 cum)에서 발전한 시간절 접속사이다. de Vaan(EDL)은 전치사 용법에서 접속사 용법으로의 통사적 범주 전이를 상세히 기술한다. 현대 로망스어군 접속사 체계의 기원이 된다."
+      },
+      {
+        "g": "regia",
+        "pos": "형용사",
+        "lemma": "regius, -a, -um",
+        "principalParts": "(미상)",
+        "parse": "sg.nom.f.",
+        "gloss_kr": "왕가의, 여왕의, 장엄한",
+        "gloss_en": "royal, queenly",
+        "syntax": "LFG f-구조에서 regia는 명사 Iuno를 수식하는 ADJUNCT(attr)이며, [PRED 'regius', SPEC Iuno] 자질을 갖는다. 생성문법적으로는 AP 내부에서 고유명사를 한정하는 수식어 성분으로 병합된다.",
+        "background": "주피터의 아내이자 올림포스의 여왕인 유노의 최고위 신분과 위엄을 강조하여, 그녀가 사자를 보내는 행위의 신성한 권위를 드러낸다.",
+        "etymology": "rex(왕, 어근 *reg-, 다스리다)에서 파생된 형용사이다. de Vaan(EDL)과 Ernout-Meillet(DELL)은 인도유럽어족의 왕권 관련 어휘(cf. 산스크리트어 rājan-)와 밀접한 계통을 이룬다고 본다. 현대 영어의 royal, 스페인어/포르투갈어 real 등의 어원이다."
+      },
+      {
+        "g": "Iuno",
+        "pos": "명사",
+        "lemma": "Iuno, Iunonis, f.",
+        "principalParts": "(미상)",
+        "parse": "sg.nom.f.",
+        "gloss_kr": "유노 (주피터의 아내, 여신)",
+        "gloss_en": "Juno (Queen of the gods)",
+        "syntax": "LFG f-구조에서 Iuno는 종속절의 SUBJ 논항이며, [PRED 'Iuno', CASE nom, θ-ROLE AGENT] 자질을 지닌다. 생성문법적으로는 [Spec,TP] 위치를 점하는 고유명사 주어이다.",
+        "background": "올림포스의 여왕 유노는 로무루스의 승천 이후 남겨진 아내 헤르실리아를 불쌍히 여겨, 그녀를 위로하고 신격화의 과정을 매듭짓기 위해 무지개의 여신 이리스를 파견한다.",
+        "etymology": "이탈리아어파의 고유 신명으로, 청춘이나 생명력을 뜻하는 어근 또는 에트루리아 유래설 등이 존재한다. de Vaan(EDL)과 Ernout-Meillet(DELL)은 로마 판테온의 핵심 여신 이름으로서 고유한 언어사적 위치를 부여한다. 현대 영어의 June(유노의 달에서 유래) 및 로망스어권의 관련 어휘로 이어진다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.830",
+    "trans": "이리스에게 굽은 길을 따라 헤르실리아에게 내려가라고 명하셨다.",
+    "words": [
+      {
+        "g": "Irin",
+        "pos": "명사",
+        "lemma": "Iris, Idos, f. (그리스어계 3변화)",
+        "principalParts": "(미상)",
+        "parse": "sg.acc.f.",
+        "gloss_kr": "이리스 (무지개의 여신, 유노의 사자)",
+        "gloss_en": "Iris (messenger of the gods)",
+        "syntax": "LFG f-구조에서 Irin은 동사 descendere의 보충절 내에서 OBJ 논항으로 기능하며, [PRED 'Iris', CASE acc, θ-ROLE THEME/PATIENT] 자질을 갖는다. 생성문법적으로는 부정사구(TP)의 주어(Subject of non-finite clause, Raising/Control 구문)로 분석된다.",
+        "background": "올림포스와 지상을 연결하는 무지개의 여신이자 유노의 충실한 전령인 이리스를 가리키며, 헤르실리아에게 천상의 전령을 보내는 신성한 임무의 주역이다.",
+        "etymology": "그리스어 ἶρις('무지개, 이리스')의 라틴어 대격 형태이다. Chantraine(DELG) 및 Beekes(EDG)에 따르면 무지개의 곡선과 빛의 굴절을 뜻하는 인도유럽어 기원의 신화적 명칭이다. 현대 영어의 iris(눈의 홍채, 붓꽃), 포르투갈어/스페인어 iris 등의 어원이 된다.",
+        "simplified": "Iris"
+      },
+      {
+        "g": "ad",
+        "pos": "전치사",
+        "lemma": "ad",
+        "principalParts": "(미상)",
+        "parse": "prep.",
+        "gloss_kr": "~에게로, ~를 향하여",
+        "gloss_en": "to, toward, near",
+        "syntax": "LFG f-구조에서 ad는 대격 명사구와 결합하여 방향성 OBL(obl:to) 기능을 형성하며, [PRED 'ad', OBJ Hersiliam] 자질을 지닌다. 생성문법적으로는 PP(Prepositional Phrase)의 핵으로 후행 DP에 대격 격자질을 할당한다.",
+        "background": "이리스가 하늘에서 지상의 헤르실리아를 향해 이동하는 방향성과 목적지를 명확히 지정해주는 통사적·공간적 매개체이다.",
+        "etymology": "PIE 재구형 *ad-('~를 향하여, ~에', cf. 고대 인도어 ãd)에서 유래한다. de Vaan(EDL)과 Ernout-Meillet(DELL)은 이탈리아어파 전반에 걸쳐 방향·목적을 나타내는 핵심 전치사로 정착했음을 보여준다. 현대 로망스어군(스페인어 a, 포르투갈어 a) 및 영어의 numerous prefix(ad-)로 직계 계승되었다."
+      },
+      {
+        "g": "Hersiliam",
+        "pos": "명사",
+        "lemma": "Hersilia, -ae, f.",
+        "principalParts": "(미상)",
+        "parse": "sg.acc.f.",
+        "gloss_kr": "헤르실리아 (로무루스의 아내)",
+        "gloss_en": "Hersilia (wife of Romulus)",
+        "syntax": "LFG f-구조에서 Hersiliam은 전치사 ad의 대격 논항이며, [PRED 'Hersilia', CASE acc, θ-ROLE GOAL] 자질을 띤다. 생성문법적으로는 PP 안에서 전치사 ad에 의해 격을 할당받는 DP의 핵이다.",
+        "background": "로무루스의 아내이자 원로원 의원 타티우스의 딸로 전해지는 헤르실리아를 지칭하며, 남편을 잃고 슬퍼하다가 이리스의 인도를 받아 신격화의 길(오롤라로 변모)을 걷게 되는 신화 속 핵심 인물이다.",
+        "etymology": "사비니 계통의 고유 인명으로, 라틴어 음운 체계에 수용되면서 1변화 여성 명사형으로 정착했다. 로마 건국 신화 속 인물 이름으로서 고전 문헌과 후대 인명 연구 문헌에 고유 명사로 전승된다."
+      },
+      {
+        "g": "descendere",
+        "pos": "동사",
+        "lemma": "descendo, descendere, descendi, descensus",
+        "principalParts": "descendo – descendere – descendi – descensus",
+        "parse": "pres.act.inf.",
+        "gloss_kr": "내려가다",
+        "gloss_en": "to descend, come down",
+        "syntax": "LFG f-구조에서 descendere는 부정사 보충어(XCOMP)로 작동하며, [PRED 'descendo<SUBJ,OBL>', SUBJ Irin, OBL ad Hersiliam] 구조를 이룬다. 생성문법적으로는 통제구문(Control construction)에서 유노의 명령을 받는 이리스를 주어로 삼는 비정형 부정사구의 핵이다.",
+        "background": "하늘의 신들의 영역에서 비탄에 잠긴 지상의 헤르실리아에게로 내려가는 수직적 공간 이동을 나타내며, 신화적 서사의 무대를 천상에서 지상으로 연결한다.",
+        "etymology": "접두사 de-(아래로)와 어근 scandere('오르다, 발을 디디다', cf. scando)의 합성어이다. de Vaan(EDL)은 공간적 이동을 나타내는 대표적인 라틴어 동사 파생군으로 설명한다. 현대 영어의 descend, 스페인어 descender, 포르투갈어 descer 등의 직접적인 어원이 된다."
+      },
+      {
+        "g": "limite",
+        "pos": "명사",
+        "lemma": "limes, limitis, m.",
+        "principalParts": "(미상)",
+        "parse": "sg.abl.m.",
+        "gloss_kr": "길, 경계, 궤적",
+        "gloss_en": "path, track, course",
+        "syntax": "LFG f-구조에서 limite는 도구/수단을 나타내는 ADJUNCT(instrument/manner)이며, [PRED 'limes', CASE abl] 자질을 갖는다. 생성문법적으로는 수식어구 PP의 핵으로 이동의 경로를 한정한다.",
+        "background": "이리스가 하늘을 가로지를 때 남기는 구부러진 무지개의 궤적을 뜻하며, 시각적으로 화려하고 곡선적인 하늘의 길을 형상화한다.",
+        "etymology": "PIE 재구형 *lei-tm-('경계, 자국', cf. limen)에서 유래한다. de Vaan(EDL)과 Ernout-Meillet(DELL)에 따르면 토지의 경계나 길을 뜻하던 어휘가 추상적·시적 '궤적'의 의미로 확장되었다. 현대 영어의 limit, preliminary 및 포르투갈어/스페인어 límite 등의 어원이다."
+      },
+      {
+        "g": "curvo",
+        "pos": "형용사",
+        "lemma": "curvus, -a, -um",
+        "principalParts": "(미상)",
+        "parse": "sg.abl.m.",
+        "gloss_kr": "굽은, 휘어진",
+        "gloss_en": "curved, bending, arching",
+        "syntax": "LFG f-구조에서 curvo는 명사 limite를 수식하는 ADJUNCT(attr) 자질을 지닌다. 생성문법적으로는 AP 내부에서 명사구를 한정하는 수식어 성분으로 병합된다.",
+        "background": "하늘에 아름답게 아치를 그리며 휘어진 무지개의 형태적 특성을 정확히 묘사하여, 이리스가 타고 내려오는 길의 시각적 선율을 완성한다.",
+        "etymology": "PIE 재구형 *sker- 또는 *qurvo-('구부러지다, 돌다') 계통에서 파생된 형용사이다. de Vaan(EDL)은 라틴어 고유의 형용사 파생형으로 분류한다. 현대 영어의 curve, 스페인어/포르투갈어 curvo 등의 직계 조상이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.831",
+    "trans": "그가 명하고, 그녀는 빈 대사명을 고스란히 전하라 이른다:",
+    "words": [
+      {
+        "g": "imperat",
+        "pos": "동사",
+        "lemma": "impero, -are, -avi, -atus",
+        "parse": "3rd.sg.pres.ind.act.",
+        "principalParts": "impero – imperare – imperavi – imperatus",
+        "gloss_kr": "명하다, 지시하다",
+        "gloss_en": "commands",
+        "syntax": "LFG f-구조에서 imperat는 주절의 PRED이며, [PRED 'impero<SUBJ,XCOMP>', SUBJ pro, XCOMP [PRED 'referre', SUBJ pro]] 형태로 통사적 통제(control) 구조를 이끌어낸다. 생성문법 관점에서 주어는 생략된 대명사이며, 부정사절을 보어(XCOMP)로 취하는 지배-결속 이론의 통제 구문으로 분석된다.",
+        "background": "이 구절은 로마의 건국 신화와 왕권의 신성화를 다루는 맥락 속에서, 절대적인 권력자의 명령이 하달되는 긴장감 있는 국면을 보여준다. 화자의 지위와 의도가 상대방에게 온전히 전달되어야 하는 서사적 전환점에 위치한다.",
+        "etymology": "PIE 재구형 *per-('이끌다, 넘어가다')에 기원하며, 전치사 *en-이 결합한 *en-prH-o-에서 발달하였다(de Vaan, EDL). 라틴어 동계어로 pario('낳다, 얻다')가 있으며, 영어의 empire, emperor 등과 로망스어군(스페인어 imperar 등)의 현대 단어들로 흔적이 이어져 있다. Ernout-Meillet(DELL)은 이 어근이 고대 인도유럽어의 지배 및 권력 행사 통사 범주와 밀접함을 지적한다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord.conj.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "그리고, ~와",
+        "gloss_en": "and",
+        "syntax": "LFG 관점에서 et는 두 대등한 구문 또는 행위를 연결하는 접속사(coord.conj.)로 작용하며, f-구조상 coordinable 기능을 수행한다. 생성문법적으로는 두 문장 또는 술어 구를 대등하게 접속하는 Conjunction Phrase(CoordP)의 핵으로 분석된다.",
+        "background": "연속된 명령과 행동의 단계를 긴밀하게 이어주는 접속어로, 서사의 호흡을 조절하고 전달 내용의 신속성을 부각하는 수사적 기능을 한다.",
+        "etymology": "PIE 재구형 *eti('또한, 게다가', 영급/측면사형)에서 유래하였다(de Vaan, EDL). 산스크리트어 áti('넘어서, 더욱'), 고대 그리스어 ἔτι(éti, '여전히, 더욱')와 직접 동계어이다. 로망스어군에는 직접적인 음운 반사형이 주류로 남지 않고 후속 대안사로 대체되었으나, 고전 라틴어 문헌 전반에 걸쳐 광범위하게 쓰였다."
+      },
+      {
+        "g": "vacuae",
+        "pos": "형용사",
+        "lemma": "vacuus, -a, -um",
+        "parse": "sg.gen.f.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "비어 있는, 빈",
+        "gloss_en": "empty, unoccupied",
+        "syntax": "LFG f-구조에서 vacuae는 형용사로서 속격 명사 mandata를 수식하며, [ADJUNCT [PRED 'vacuus', CASE gen]] 자리를 차지한다. 생성문법적으로는 N-bar 내부에서 속격 수식어로 병합된 성분이며, 명사의 의미역 지배에 따른 수식 구조를 형성한다.",
+        "background": "여기서는 물리적으로 비어 있거나 독자적인 권한이나 장애물이 없는 상태를 비유하며, 전달되는 전령의 임무나 공간적 여유를 암시하는 수사적 표현이다.",
+        "etymology": "PIE 재구형 *wak- 또는 *wakw-('비다, 헐거워지다')에서 유래하며(de Vaan, EDL), 라틴어 동계어로 vacare('비어 있다')와 vaster('황폐하게 하다')가 있다. 영어의 vacant, vacuum 및 스페인어 vacío 등에 그 흔적이 명확히 남아 있다. Ernout-Meillet(DELL)은 이 계열 어휘들이 고대 이탈리아어파에서 파생어 명사 및 형용사로 분화된 과정을 상세히 다룬다."
+      },
+      {
+        "g": "sua",
+        "pos": "대명사",
+        "lemma": "suus, -a, -um",
+        "parse": "pl.acc.n.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "자신의",
+        "gloss_en": "his own, their own",
+        "syntax": "LFG 관점에서 sua는 소유 형용사로서 목적어 명사 mandata를 한정하며, f-구조상 [SPEC [PRED 'suus']] 기능을 수행한다. 생성문법의 결속 이론(Binding Theory) 관점에서 주어를 지시하는 대명사 성분으로, 지역적 결속 조건(Principle A)을 만족하는 통사 환경에 위치한다.",
+        "background": "주체의 소유나 의도가 타인의 손을 거치지 않고 직접적으로 반영됨을 강조하여, 명령의 엄중함과 당사자의 권위를 드러내는 핵심 수식어이다.",
+        "etymology": "PIE 재구형 *s(w)e-('자기 자신', 대명사 소유격 어간)에서 기원한다(de Vaan, EDL). 산스크리트어 svá-, 고대 그리스어 ós/hōs와 동계어이며, 라틴어 내에서 재귀 소유 대명사로 고도로 정형화되었다. 스페인어 su, 포르투갈어 seu 등의 현대 로망스어 반사형으로 직접 이어진다."
+      },
+      {
+        "g": "sic",
+        "pos": "부사",
+        "lemma": "sic",
+        "parse": "adv.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "이렇게, 이와 같이",
+        "gloss_en": "thus, in this way",
+        "syntax": "LFG f-구조에서 sic은 술어 동사의 양태를 꾸미는 ADJUNCT(부사어)로 기능하며, [ADJUNCT [PRED 'sic']] 속성을 가진다. 생성문법적으로는 VP 또는 vP 외부의 부사어 구(AdvP)로 병합되어 전체 행위의 양태를 한정한다.",
+        "background": "이어지는 직접화법의 내용이나 전달 방식을 구체적으로 지시하며, 서사의 초점을 대사의 내용으로 극적으로 전환하는 지시적 부사 역할을 한다.",
+        "etymology": "라틴어 대명사 어근 *se-에 지시 부사형 접미사 *-ce가 결합한 형태이다(de Vaan, EDL). 고대 라틴어의 *sice에서 축약되었으며, 로망스어군 내에서는 형태가 대치되었으나 고전 라틴어 시문학에서 양태를 나타내는 필수 요소로 남았다. OLD는 이 단어가 문맥 지시적 기능에서 양태 부사로 확장된 용법을 상세히 설명한다."
+      },
+      {
+        "g": "mandata",
+        "pos": "명사",
+        "lemma": "mandatum, -i, n.",
+        "parse": "pl.acc.n.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "명령, 지시사항",
+        "gloss_en": "commands, instructions",
+        "syntax": "LFG f-구조에서 mandata는 동사 referre의 종속 목적어로서 OBJ 기능을 수행하며, [PRED 'mandatum', CASE acc]로 분석된다. 생성문법적으로는 [vP [DP mandata] referre] 구조 내에서 대격 목적어로 핵에 의해 격표지를 받는다.",
+        "background": "군주나 신이 하사한 공식적인 분부나 전갈을 뜻하며, 신화 속 인물 간의 중대한 전령 임무의 성격을 규정하는 중요한 법률적·종교적 색채의 어휘이다.",
+        "etymology": "동사 manus('손')와 dare('주다')의 합성어인 mandare의 완료 분사 파생 명사이다(de Vaan, EDL). '손에 맡겨 건네다'라는 원뜻에서 공적인 명령이나 위임의 의미로 전이되었다. 영어의 mandate, 스페인어 mandato 등의 현대어 흔적으로 이어진다."
+      },
+      {
+        "g": "referre",
+        "pos": "동사",
+        "lemma": "refero, -ferre, -tuli, -latus",
+        "parse": "pres.act.inf.",
+        "principalParts": "refero – referre – rettuli – relatus",
+        "gloss_kr": "전하다, 가져다주다, 보고하다",
+        "gloss_en": "to report, to bring back",
+        "syntax": "LFG f-구조에서 referre는 앞선 동사 imperat의 보어(XCOMP)로 기능하며, [XCOMP [PRED 'refero<SUBJ,OBJ>', OBJ mandata]] 형태로 논항을 지배한다. 생성문법적으로는 비정형 부정사절(non-finite clause)의 핵으로, 주절 주어에 의해 통제되는 구조를 이룬다.",
+        "background": "말이나 전갈을 본래의 장소나 상대에게 되돌려 전달한다는 의미로, 신탁이나 왕의 밀명을 수행하는 전령의 핵심 임무를 묘사한다.",
+        "etymology": "전치사 re-('뒤로, 다시')와 동사 ferre('나르다, 가져가다')의 불규칙 합성 동사이다(de Vaan, EDL). PIE 재구형 *bher-('나르다')에 기원하며, 영어의 refer, relative 및 로망스어군의 제반 파생어(스페인어 referir 등)에 흔적이 남아 있다. Ernout-Meillet(DELL)은 이 어동사의 고대 이탈리아어파 내 복합어 발달사를 기록하고 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.832",
+    "trans": "“오 라티움의 그리고 사비나 부족의",
+    "words": [
+      {
+        "g": "O",
+        "pos": "감탄사",
+        "lemma": "O",
+        "parse": "interj.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "오! (호격 감탄사)",
+        "gloss_en": "O!",
+        "syntax": "LFG f-구조에서 O는 감탄사(interj.)로서 호격 명사구를 수식하는 담화 기능적 요소를 이루며, F-structure 상 vocative 관할 영역에 위치한다. 생성문법적으로는 CP 상위의 감탄사구(InterjP) 핵으로 분석되어 청자에 대한 직접적인 호칭 태도를 표시한다.",
+        "background": "고전 시가에서 신격화되거나 찬양받는 인물에게 경외심과 감탄을 표출할 때 사용하는 전형적인 수사학적 호칭 장치이다.",
+        "etymology": "인간의 자연스러운 감탄 소리에서 유래한 유구한 인도유럽어계 감탄사로, 라틴어 전통을 거쳐 서구 문헌 전반에 보존되었다(OLD). 형태적 변화가 없는 고립된 불변화사로 기능한다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord.conj.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG f-구조에서 et는 두 호격 명사구(Latio와 gente Sabina)를 대등하게 연결하는 접속사 기능을 수행한다. 생성문법적으로는 Conjunction Phrase 내에서 병렬 구조를 형성하는 대등 접속 핵이다.",
+        "background": "두 가지 고귀한 혈통이나 지역적 정체성을 대등하게 결합하여 호칭 대상의 역사적·지리적 위상을 격상시키는 수사적 연결이다.",
+        "etymology": "PIE *eti('또한')에 기원하며(de Vaan, EDL), 앞선 행의 et와 동일한 어원을 공유한다."
+      },
+      {
+        "g": "de",
+        "pos": "전치사",
+        "lemma": "de",
+        "parse": "prep.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "~로부터, ~출신의",
+        "gloss_en": "from, of",
+        "syntax": "LFG f-구조에서 de는 탈격 명사 Latio를 지배하여 장소적 기원이나 출신을 나타내는 OBL(Oblique) 논항을 형성한다. 생성문법적으로는 PP의 핵으로서 뒤따르는 명사구에 탈격(ablative)을 부여한다.",
+        "background": "인물이 태어나거나 기원한 지리적·종족적 뿌리를 명시하여, 그가 지닌 전통적 정체성의 깊이를 강조하는 배경적 맥락을 제공한다.",
+        "etymology": "PIE 재구형 *de-('떨어져, 아래로')에서 유래한 전치사이다(de Vaan, EDL). 공간적 분리에서 기원·출신을 나타내는 추상적 용법으로 확장되었으며, 로망스어군(스페인어 de, 포르투갈어 de 등) 전반에 걸쳐 격 전치사의 핵심 역할을 맡고 있다."
+      },
+      {
+        "g": "Latio",
+        "pos": "명사",
+        "lemma": "Latium, -i, n.",
+        "parse": "sg.abl.n.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "라티움(이탈리아 중부 지역)",
+        "gloss_en": "Latium",
+        "syntax": "LFG f-구조에서 Latio는 전치사 de의 지배를 받는 탈격 명사로서 OBL 내의 [PRED 'Latium', CASE abl] 기능을 수행한다. 생성문법적으로는 PP 내부의 DP로 병합되어 고유명사의 지리적 속성을 나타낸다.",
+        "background": "로마가 위치한 고대 이탈리아의 중심 지역인 라티움을 가리키며, 로마 민족의 역사적·지리적 정체성의 요람을 상징한다.",
+        "etymology": "어원적으로 '넓은 땅'을 뜻하는 형용사 어근에서 파생된 지명으로 추정된다(de Vaan, EDL). 선인도유럽어 기층 영향 가능성이 논의되며, 현대 이탈리아의 라치오(Lazio)주의 어원이 되었다."
+      },
+      {
+        "g": "o",
+        "pos": "감탄사",
+        "lemma": "O",
+        "parse": "interj.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "오!",
+        "gloss_en": "O!",
+        "syntax": "LFG f-구조에서 두 번째 o는 수식 대상을 반복 강조하는 호격 수식 감탄사로 기능한다. 생성문법적으로 반복 구조를 통한 수사적 고조를 이루는 InterjP의 핵이다.",
+        "background": "앞선 감탄사를 반복하여 호칭의 엄숙함과 감정의 고조를 극대화하는 시적 수사법(anaphora)의 일종이다.",
+        "etymology": "앞서 등장한 감탄사 O와 동일한 어원 및 기능을 가진다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord.conj.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG f-구조에서 대등 접속 기능을 유지하며 구문 전반의 균형을 맞춘다.",
+        "background": "앞의 지역적 정체성과 뒤의 사비나 종족적 정체성을 대칭적으로 연결한다.",
+        "etymology": "PIE *eti에서 유래한 접속사이다."
+      },
+      {
+        "g": "gente",
+        "pos": "명사",
+        "lemma": "gens, gentis, f.",
+        "parse": "sg.abl.f.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "족속, 부족, 가문",
+        "gloss_en": "race, tribe, people",
+        "syntax": "LFG f-구조에서 gente는 전치사 de의 지배를 받는 탈격 명사로, 사비나인이라는 종족적 기원을 나타내는 OBL 속성을 지닌다. 생성문법적으로 PP 내의 핵 명사구로 병합된다.",
+        "background": "로마 초기 역사에서 로마인들과 융합된 이웃 사비나 부족의 혈통적 배경을 가리키며, 로마 건국기의 복합적인 민족 구성을 상기시킨다.",
+        "etymology": "PIE 재구형 *ǵenh₁-('낳다, 출산하다')에서 파생된 명사이다(de Vaan, EDL). 영어의 nation, gentle 및 스페인어 gente, 포르투갈어 gente 등의 현대어 어휘로 광범위하게 이어진다. de Vaan은 이 어근이 혈연 공동체 및 부족 단위를 지칭하는 라틴어 통사 체계의 핵심임을 강조한다."
+      },
+      {
+        "g": "Sabina",
+        "pos": "형용사",
+        "lemma": "Sabinus, -a, -um",
+        "parse": "sg.abl.f.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "사비나의, 사비니인의",
+        "gloss_en": "Sabine",
+        "syntax": "LFG f-구조에서 Sabina는 명사 gente를 수식하는 형용사로서 [ADJUNCT [PRED 'Sabinus', CASE abl]] 기능을 수행한다. 생성문법적으로는 NP 내부에서 성·수·격 일치를 이루며 수식어로 병합된다.",
+        "background": "로마 역사 초기 로마와 깊은 연관을 맺은 사비나(Sabine) 민족의 속성을 나타내며, 해당 인물의 고귀한 이중 혈통 배경을 확립한다.",
+        "etymology": "이탈리아 중부의 고대 부족인 사비니인(Sabini)에서 유래한 지명 형용사이다(de Vaan, EDL). 고대 이탈리아어파의 어원적 특색을 지니며, 로마 역사 전반에 걸쳐 지리적·종족적 명칭으로 정착했다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.833",
+    "trans": "가장 뛰어난 영광이요, 마이트로나여, 이토록 위대한",
+    "words": [
+      {
+        "g": "praecipuum",
+        "pos": "형용사",
+        "lemma": "praecipuus, -a, -um",
+        "parse": "sg.acc.n.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "각별한, 뛰어난, 으뜸가는",
+        "gloss_en": "chief, principal, outstanding",
+        "syntax": "LFG f-구조에서 praecipuum은 선행하는 호칭 명사 decus를 동격으로 수식하는 형용사 성분이며, 명사구 내 [PRED 'praecipuus'] 속성을 갖는다. 생성문법적으로는 형용사구(AP)로서 명사구 안에서 좌측 수식어로 병합된다.",
+        "background": "수많은 인물들 가운데서도 유독 두드러지는 탁월한 명예와 덕목을 찬미하는 문학적 수사이다.",
+        "etymology": "동사 praecipere('앞서 취하다, 교시하다')에서 파생된 형용사로, '머리를 앞에 두는' 형태적 비유에서 '탁월한, 으뜸의' 의미로 전이되었다(de Vaan, EDL). 영어의 precipitous 등의 어원적 연관을 가지며, 라틴어 격식 문체에서 최고급의 가치를 수식하는 데 쓰인다."
+      },
+      {
+        "g": "matrona",
+        "pos": "명사",
+        "lemma": "matrona, -ae, f.",
+        "parse": "sg.voc.f.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "기부인, 어머니, 품위 있는 여인",
+        "gloss_en": "matron, married woman",
+        "syntax": "LFG f-구조에서 matrona는 직접적인 호칭을 나타내는 호격(vocative) 명사로서 주절의 담화 논항으로 기능한다. 생성문법적으로는 문장 외곽에 위치한 Vocative Phrase의 핵으로 분석된다.",
+        "background": "로마 사회에서 덕망 높고 가문 있는 기부인이나 아내를 높여 부르는 존칭으로, 신격화된 여인의 품격과 지위를 고스란히 반영한다.",
+        "etymology": "어머니를 뜻하는 mater에서 파생된 명사로, 로마 전통 사회의 기부인 지위와 권위를 나타낸다(de Vaan, EDL). 영어의 matron 및 스페인어로나마 잔존하는 사회 문화적 어휘 흔적을 지닌다. Ernout-Meillet(DELL)은 이 단어가 로마 가계 법률 및 사회적 신분제와 밀접한 어원적 발달을 거쳤음을 보여준다."
+      },
+      {
+        "g": "decus",
+        "pos": "명사",
+        "lemma": "decus, decoris, n.",
+        "parse": "sg.acc.n.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "영광, 명예, 아름다움, 자랑",
+        "gloss_en": "glory, ornament, honor",
+        "syntax": "LFG f-구조에서 decus는 감탄의 대상이 되는 명사구로서 목적격(acc) 형태를 취하며, [PRED 'decus'] 논항 기능을 수행한다. 생성문법적으로는 호격 맥락에서 도치되거나 대격으로 비정형 수식어의 핵을 이룬다.",
+        "background": "공동체 전체의 영광이자 장식과 같은 존재를 가리키며, 찬양의 대상이 되는 인물이 지닌 도덕적·신화적 가치를 드높인다.",
+        "etymology": "PIE 재구형 *dek-('맞다, 적합하다, 영광스럽다')에서 파생되었다(de Vaan, EDL). 라틴어 decere('어울리다'), dignus('가치 있는')와 동계어이며, 영어의 decorum, decorate 및 로망스어군의 관련 어휘들로 계승되었다. 대다수 역사문법서에서 이 어근은 미적·도덕적 가치 판단의 라틴어 어휘 체계의 핵심으로 다뤄진다."
+      },
+      {
+        "g": "dignissima",
+        "pos": "형용사",
+        "lemma": "dignus, -a, -um",
+        "parse": "sg.voc.f.superl.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "가장 값어치 있는, 가장 합당한",
+        "gloss_en": "most worthy",
+        "syntax": "LFG f-구조에서 dignissima는 최상급 형용사로서 호칭 대상 주어를 수식하며, 뒤따르는 속격구(tanti)를 논항으로 지배한다. 생성문법적으로는 최상급 접사(-issim-)가 부착된 형용사구(AP)가 명사구 주어를 수식하는 구조로 분석된다.",
+        "background": "특정한 위대한 지위나 영예를 누리기에 세상 누구보다도 가장 자격이 충분함을 강조하는 강력한 찬사이다.",
+        "etymology": "PIE *dek-('맞다') 어근에서 파생된 dignus의 최상급 형태이다(de Vaan, EDL). 앞서 언급된 decus와 어원을 공유하며, 영어의 dignify, divine 및 스페인어 digno 등의 현대어 기원이 된다."
+      },
+      {
+        "g": "tanti",
+        "pos": "형용사",
+        "lemma": "tantus, -a, -um",
+        "parse": "sg.gen.m. (or n.)",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "이토록 위대한, 이만큼의",
+        "gloss_en": "of such great (value)",
+        "syntax": "LFG f-구조에서 tanti는 형용사의 속격 용법(genitive of value/price)으로 사용되어 dignissima의 가치 논항을 충족한다. 생성문법적으로는 최상급 형용사의 보어로서 속격 격자질을 할당받는 DP로 병합된다.",
+        "background": "뒤에 이어지는 위대한 남편의 지위와 업적이 지닌 엄청난 무게와 가치에 상응하는 자격임을 수사적으로 뒷받침한다.",
+        "etymology": "라틴어 지시 대명사적 형용사 어근에서 발달한 양적 표현이다(de Vaan, EDL). 로마 법률 및 수사학 문체에서 가치나 대가를 나타내는 속격 구문의 고유한 통사적 특징을 보여준다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.834",
+    "trans": "이전에 그런 남자의 아내가 되었고, 이제는 쿠이리누스의 짝인",
+    "words": [
+      {
+        "g": "ante",
+        "pos": "부사",
+        "lemma": "ante",
+        "parse": "adv.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "이전에, 앞서",
+        "gloss_en": "before, formerly",
+        "syntax": "LFG f-구조에서 ante는 시간적 선후 관계를 나타내는 부사(adv.)로 기능하며, [ADJUNCT [PRED 'ante']] 속성을 가진다. 생성문법적으로는 시제 축 상에서 과거의 시점을 한정하는 부사구(AdvP)로 분석된다.",
+        "background": "신격화되기 이전의 지상에서의 역사적 삶과 영웅의 아내였던 과거의 영광스러운 시기를 회고하는 시간적 표지이다.",
+        "etymology": "PIE 재구형 *h₂ant-('앞, 이마, ~의 앞에서')에서 유래한 전치사 겸 부사이다(de Vaan, EDL). 그리스어 ἀντί(antī), 산스크리트어 ánti와 동계어이며, 영어의 ante-, 스페인어 antes 등에 그 흔적이 명확히 남아 있다."
+      },
+      {
+        "g": "fuisse",
+        "pos": "동사",
+        "lemma": "sum, esse, fui, -",
+        "parse": "perf.act.inf.",
+        "principalParts": "sum – esse – fui – (futurus)",
+        "gloss_kr": "이었던 것 (과거에 존재했던)",
+        "gloss_en": "to have been",
+        "syntax": "LFG f-구조에서 fuisse는 완료 부정사로서 술어 보어 역할을 수행하며, [XCOMP [PRED 'sum<SUBJ,OBL>']] 논항 구조를 이룬다. 생성문법적으로는 비정형 완료 부정사절의 핵으로, 시간의 선행성을 나타내는 비정형 T상위 투사로 분석된다.",
+        "background": "과거 지상에서 누렸던 위대한 인간으로서의 삶의 이력을 확정하며, 현재의 신적 상태와 극적인 대비를 이룬다.",
+        "etymology": "PIE 재구형 *bhuH-('자라다, 되다, 존재하다')에서 기원한다(de Vaan, EDL). 라틴어 불규칙 동사 sum의 완료 어간을 형성하며, 영어의 be, future 및 로망스어군의 복잡한 존재 동사 변화형의 기원이 된다. 역사음운론과 형태론 연구에서 가장 널리 분석되는 어휘 중 하나이다."
+      },
+      {
+        "g": "viri",
+        "pos": "명사",
+        "lemma": "vir, viri, m.",
+        "parse": "sg.gen.m.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "남자의, 영웅의",
+        "gloss_en": "of a man, of a hero",
+        "syntax": "LFG f-구조에서 viri는 형용사/명사의 수식을 받는 속격 명사로서 [PRED 'vir', CASE gen] 기능을 수행한다. 생성문법적으로는 소유 또는 관계 속격을 나타내는 DP로 명사구 내부 핵에 병합된다.",
+        "background": "로마의 건국 시조이자 위대한 영웅(로물루스)을 직접적으로 지칭하며, 그가 지닌 영웅적 정체성을 함축한다.",
+        "etymology": "PIE 재구형 *wiHro-('사람, 성인 남자')에서 유래했다(de Vaan, EDL). 산스크리트어 vīrá-, 고대 아일랜드어 fer와 동계어이며, 영어의 werewolf, virtue 및 로망스어군의 잔존 어휘들로 이어진다. 전통적인 인도유럽어 남성성 어휘 연구의 핵심 사례이다."
+      },
+      {
+        "g": "coniunx",
+        "pos": "명사",
+        "lemma": "coniunx, coniugis, m. / f.",
+        "parse": "sg.nom.f.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "아내, 배우자",
+        "gloss_en": "spouse, wife",
+        "syntax": "LFG f-구조에서 coniunx는 주절의 주격 주어 또는 보어로서 서술 기능을 수행하며, [PRED 'coniunx', CASE nom] 논항을 갖는다. 생성문법적으로는 주격 격자질을 할당받는 DP 핵으로 분석된다.",
+        "background": "신화적 영웅의 아내로서의 신분과 결합 관계를 상징하며, 인간에서 신의 반열에 오른 부부의 신성한 유대를 나타낸다.",
+        "etymology": "전치사 com-('함께')과 어근 *yeug-('멍에를 메우다, 결합하다')의 합성 명사이다(de Vaan, EDL). '함께 멍에를 멘 사람'이라는 원뜻에서 부부의 의미로 전이되었다. 영어의 conjugal, conjunction 및 로망스어군의 관련 어휘들의 어원이 된다."
+      },
+      {
+        "g": "nunc",
+        "pos": "부사",
+        "lemma": "nunc",
+        "parse": "adv.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "지금은",
+        "gloss_en": "now",
+        "syntax": "LFG f-구조에서 nunc는 시간 부사로서 현재의 시점을 한정하는 [ADJUNCT [PRED 'nunc']] 기능을 수행한다. 생성문법적으로는 현재 시제를 뒷받침하는 시간사 부사구로 병합된다.",
+        "background": "과거의 지상적 삶과 대비되는 현재의 신격화된 상태를 전환하는 결정적인 시간적 축을 제시한다.",
+        "etymology": "PIE 재구형 *nu-('지금')에 지시 강조 접미사가 결합한 형태이다(de Vaan, EDL). 그리스어 νῦν(nūn), 산스크리트어 nú와 동계어이며, 로망스어군에서는 다른 형태(스페인어 ahora 등)로 대체되었으나 라틴어 문헌의 핵심 지시 부사로 기능한다."
+      },
+      {
+        "g": "esse",
+        "pos": "동사",
+        "lemma": "sum, esse, fui, -",
+        "parse": "pres.inf.",
+        "principalParts": "sum – esse – fui – (futurus)",
+        "gloss_kr": "되는 것, 존재하는 것",
+        "gloss_en": "to be",
+        "syntax": "LFG f-구조에서 esse는 현재 부정사로서 술어 보어 역할을 수행하며, [XCOMP [PRED 'sum<SUBJ,OBL>']] 구조를 이룬다. 생성문법적으로는 비정형 현재 부정사절의 핵으로 기능한다.",
+        "background": "현재 신격화된 상태 속에서 유지되는 신성한 지위와 존재 양식을 나타낸다.",
+        "etymology": "PIE *bhuH- 어근에서 유래한 존재 동사의 현재 부정사형이다(de Vaan, EDL)."
+      },
+      {
+        "g": "Quirini",
+        "pos": "명사",
+        "lemma": "Quirinus, -i, m.",
+        "parse": "sg.gen.m.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "쿠이리누스(신격화된 로물루스의 이름)",
+        "gloss_en": "of Quirinus",
+        "syntax": "LFG f-구조에서 Quirini는 명사 coniunx의 소유 속격으로서 [PRED 'Quirinus', CASE gen] 논항 기능을 수행한다. 생성문법적으로는 DP 내부에 병합되어 주신의 아내라는 신분적 소속을 나타낸다.",
+        "background": "하늘로 올라가 신이 된 로물루스의 신성한 이름인 쿠이리누스를 가리키며, 로마 건국 신화의 종교적 절정을 상징한다.",
+        "etymology": "사비나족의 고대 신명에서 유래하거나 창끝을 뜻하는어근에서 파생된 로마의 신화적 고유명사이다(de Vaan, EDL). 로마 건국 신화와 국가 종교 체계의 핵심 어휘로 다뤄진다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.835",
+    "trans": "그대의 슬픔을 멈추고, 만약 그에게 바라볼 마음이 있다면",
+    "words": [
+      {
+        "g": "siste",
+        "pos": "동사",
+        "lemma": "sisto, -ere, stiti, status",
+        "parse": "2nd.sg.impv.pres.act.",
+        "principalParts": "sisto – sistere – stiti – status",
+        "gloss_kr": "멈추어라, 진정시켜라",
+        "gloss_en": "stop, check",
+        "syntax": "LFG f-구조에서 siste는 명령법 동사로서 주절의 PRED이며, [PRED 'sisto<SUBJ,OBJ>', SUBJ pro, OBJ fletus] 논항 구조를 이끈다. 생성문법적으로는 명령문을 형성하는 특수 C 투사의 지배를 받는 정형 동사구 핵이다.",
+        "background": "사랑하는 이의 죽음이나 이별로 인해 눈물 흘리는 인물에게 슬픔을 거두고 안정을 찾으라는 위로와 지시의 메시지를 전달한다.",
+        "etymology": "PIE 재구형 *si-sth₂-e/o-('서다'를 뜻하는 *steh₂- 어근의 중복 현재형)에서 유래한다(de Vaan, EDL). 산스크리트어 tíṣṭhati, 그리스어 ἵστημι와 직접 동계어이며, 영어의 persist, resist 및 스페인어의 관련 파생어들의 어원이 된다."
+      },
+      {
+        "g": "tuos",
+        "pos": "대명사",
+        "lemma": "tuus, -a, -um",
+        "parse": "pl.acc.m.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "그대의",
+        "gloss_en": "your",
+        "syntax": "LFG f-구조에서 tuos는 소유 형용사로서 목적어 명사 fletus를 한정하며 [SPEC [PRED 'tuus']] 속성을 수행한다. 생성문법적으로는 NP 내부에서 성·수·격 일치를 이루며 수식어로 병합된다.",
+        "background": "상대방이 흘리는 개인적이고 깊은 슬픔의 주체성을 강조하여 정서적 공감대를 형성하는 한정사이다.",
+        "etymology": "PIE 재구형 *teu-('너의')에 기원하는 소유 대명사 형용사이다(de Vaan, EDL). 로망스어군(스페인어 tu, 포르투갈어 teu 등)의 2인칭 단수 소유사로 직계 계승되었다."
+      },
+      {
+        "g": "fletus",
+        "pos": "명사",
+        "lemma": "fletus, -us, m.",
+        "parse": "pl.acc.m.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "눈물, 울음",
+        "gloss_en": "weeping, tears",
+        "syntax": "LFG f-구조에서 fletus는 동사 siste의 직접 목적어로서 OBJ 기능을 하며 [PRED 'fletus', CASE acc] 논항을 취한다. 생성문법적으로는 vP 내부에 병합되어 타동사의 대격 지배를 받는 명사구다.",
+        "background": "인간 세상의 이별로 인한 슬픔과 비탄의 감정을 상징하는 물리적·정서적 표현이다.",
+        "etymology": "동사 flere('울다')에서 파생된 4변화 명사이다(de Vaan, EDL). PIE 재구형 *bhleh₁-('울다, 소리내어 슬퍼하다')에 기원하며, 로마 시문학에서 비탄의 정서를 나타내는 핵심 어휘로 쓰인다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord.conj.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "그리고, 만약",
+        "gloss_en": "and, also",
+        "syntax": "LFG f-구조에서 et는 명령문과 조건절을 연결하는 접속사 기능을 수행한다. 생성문법적으로는 두 절을 병합하는 상위 Conjunction Phrase의 핵이다.",
+        "background": "슬픔을 멈추라는 요구에 이어, 새로운 행동이나 만남의 가능성을 조건부로 제안하는 서사의 교차점이다.",
+        "etymology": "PIE *eti에서 유래한 접속사이다."
+      },
+      {
+        "g": "si",
+        "pos": "접속사",
+        "lemma": "si",
+        "parse": "subord.conj.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "만약 ~라면",
+        "gloss_en": "if",
+        "syntax": "LFG f-구조에서 si는 조건절을 이끄는 종속 접속사(subord.conj.)로서 [ADJUNCT [PRED 'si']] 기능을 수행한다. 생성문법적으로는 조건절(CP)의 핵으로서 명제적 가정 관계를 설정한다.",
+        "background": "상대방의 의지나 바람에 따라 미래의 전개 양상이 달라질 수 있음을 열어두는 조건 설정적 수사이다.",
+        "etymology": "PIE 재구형 *swei('만약에')에서 유래한 조건 접속사이다(de Vaan, EDL). 고대 그리스어  εἰ(ei)와 동계어이며, 로망스어군(스페인어 si, 포르투갈어 se)에 직접 계승되어 조건문 통사 구조의 뼈대를 이룬다."
+      },
+      {
+        "g": "tibi",
+        "pos": "대명사",
+        "lemma": "tu",
+        "parse": "sg.dat.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "그대에게",
+        "gloss_en": "to you",
+        "syntax": "LFG f-구조에서 tibi는 형용사 cura의 소유주 또는 여격 논항으로 기능하며 [OBL-DAT [PRED 'tu', CASE dat]] 속성을 갖는다. 생성문법적으로는 이중 여격/소유 여격 구문에서 VP 내부에 병합된다.",
+        "background": "행동의 주체나 관심의 대상이 청자 자신에게 있음을 부각하여 개인적인 동기 부여를 이끌어낸다.",
+        "etymology": "PIE 2인칭 대명사 어근 *te-/tu-의 여격형에서 유래한다(de Vaan, EDL). 로망스어군(스페인어 te, 포르투갈어 te 등)의 대명사 체계로 직계 유전되었다."
+      },
+      {
+        "g": "cura",
+        "pos": "명사",
+        "lemma": "cura, -ae, f.",
+        "parse": "sg.nom.f.",
+        "principalParts": "(미상) – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "gloss_kr": "관심, 보살핌, 열망",
+        "gloss_en": "care, desire, concern",
+        "syntax": "LFG f-구조에서 cura는 조건절의 주격 주어로서 [PRED 'cura', CASE nom] 논항을 수행한다. 생성문법적으로는 주격 자질을 할당받는 DP 핵이다.",
+        "background": "특정 대상이나 행위를 향한 강한 열망이나 마음의 기울어짐을 뜻하며, 상대방의 내면적 의지를 환기시킨다.",
+        "etymology": "이탈리아어파 고유의 명사 어근으로, 거친 관심이나 근심을 뜻하는 초기 의미에서 애정과 보살핌으로 의미가 확장되었다(de Vaan, EDL). 영어의 cure, curious 및 로망스어군의 관련 어휘로 이어진다."
+      },
+      {
+        "g": "videndi",
+        "pos": "동사",
+        "lemma": "video, -ere, vidi, visus",
+        "parse": "gerund.gen.f.sg.",
+        "principalParts": "video – videre – vidi – visus",
+        "gloss_kr": "보는 것의",
+        "gloss_en": "of seeing",
+        "syntax": "LFG f-구조에서 videndi는 명사 cura를 보조하는 동명사(gerund) 속격으로서 [XCOMP [PRED 'video<SUBJ,OBJ>']] 구조 내 명사화된 논항으로 기능한다. 생성문법적으로는 DP 내부에서 소유격 속성으로 병합된 비정형 동명사구다.",
+        "background": "그리운 이를 직접 마주하고 바라보고자 하는 간절한 염원을 압축적으로 표현한다.",
+        "etymology": "PIE 재구형 *weyd-('보다, 알다')에서 유래한 동사 video의 동명사형이다(de Vaan, EDL). 산스크리트어 veda, 그리스어 ἰδεῖν(idein)과 동계어이며, 영어의 vision, video 및 로망스어군의 동사군으로 광범위하게 이어진다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.836",
+    "trans": "\"남편의 곁에 있으니, 나를 따라 퀴리누스의 언덕으로 가거라. 그 언덕은 푸르르고 로마 왕의 신전을 덮고 있단다.\"",
+    "words": [
+      {
+        "g": "coniugis",
+        "pos": "명사",
+        "lemma": "coniunx, coniugis, m. et f.",
+        "parse": "sg.gen.m.",
+        "principalParts": "coniungo, coniungere, coniunxi, coniunctum",
+        "gloss_kr": "남편의",
+        "gloss_en": "of the spouse / husband",
+        "syntax": "LFG 관점에서 coniugis는 속격으로서 소유격 명사구(NP) 내부의 한정어(adjunct 또는 specifier) 기능을 수행하며, 구조적으로는 [PRED 'coniunx', CASE gen] 속성-값 행렬로 나타낸다. 생성문법(Minimalism) 관점에서 이 속격 NP는 명사구 [DP [D' [NP ...]]] 내의 지정어 자리 혹은 보어 자리에 위치하며, 격 이론(Case Theory)에 따라 상위 명사 헤드와의 관계 속에서 속격 자질을 부여받는다. 통사적 성격상 실질적인 주체인 퀴리누스(로물루스)를 지시하는 명사적 논항으로 기능한다.",
+        "background": "여기서 coniunx는 신격화되어 퀴리누스가 된 로물루스를 가리키며, 그의 아내인 헤르실리아를 향해 남편 곁으로 오라는 초대의 메시지를 건네는 국면이다. 오비디우스는 이 대목에서 로마 건국 신화의 정점인 로물루스와 헤르실리아의 신격화 및 영원한 결합을 다루고 있다. 이 시적 서사는 로마 제국의 기원과 신화적 영웅들의 천상적 승천을 장엄하게 마무리하는 역할을 한다.",
+        "etymology": "라틴어 coniunx는 '함께'를 뜻하는 전치사/부사 *com-과 '잇다, 결합하다'를 뜻하는 어근 *iug-(PIE 재구형 *yug-, e급 *yeug-, 영급 *yug-; cf. 산스크리트어 yugá-)이 결합하여 '함께 멍에를 멘 자' 즉 배우자를 뜻하게 되었다. de Vaan(EDL)은 이 어근이 인도유럽어족 전반에 걸쳐 결합과 동맹을 나타내는 명사형으로 널리 파생되었음을 밝힌다. 음운적으로는 *com-iug-s에서 구개음화 및 자음군 단순화를 거쳐 coniunx 형태가 정착되었다. 현대 로망스어군에서는 스페인어 cónyuge, 포르투갈어 cônjuge 등으로 이어져 법률 및 격식 용어로 그 흔적이 남아 있다."
+      },
+      {
+        "g": "est",
+        "pos": "동사",
+        "lemma": "sum, esse, fui, -",
+        "parse": "3rd.sg.pres.ind.act.",
+        "principalParts": "sum, esse, fui, -",
+        "gloss_kr": "~이다",
+        "gloss_en": "is",
+        "syntax": "LFG f-구조에서 est는 주어 논항을 취하지 않거나 비인칭/존재적 구문으로 기능하며, [PRED 'sum<OBL>', SUBJ ...] 형태로 분석된다. 생성문법적 관점에서 이는 연계사(copula) 또는 존재 동사의 기능을 수행하며, TP 내에서 주어와 주격 보어 간의 성·수·격 일치를 매개하는 비활동적(non-action) T 핵으로 투영된다. 통사적으로 생략된 주어 논항이나 담화 맥락상의 지시어를 상정하여 성분 구조가 완성된다.",
+        "background": "이 구문은 헤르실리아에게 남편이 이미 신들의 자리에 올랐음을 확인시켜 주는 존재론적 선언이다. 오비디우스는 지상과 천상의 경계를 허물며 로물루스의 신격화가 이미 완성되었음을 이 짧은 동사를 통해 단언한다. 신화적 전승에서 헤르실리아가 겪는 슬픔을 치유하고 신적 질서로 편입시키는 전환점의 기초가 된다.",
+        "etymology": "PIE 재구형 *h₁es-('이다, 존재하다', e급 *h₁es-, 영급 *h₁s-)에서 유래하였으며, 히타이트어 eszi('있다') 및 산스크리트어 ásti('이다')와 철저한 동계 관계를 이룬다. de Vaan(EDL)과 Ernout-Meillet(DELL)은 이 동사가 인도유럽어족 전반에서 가장 원시적인 형태를 보존한 불규칙 계사임을 지적한다. 음운론적으로 PIE *h₁esti에서 라틴어 est로 이어지는 과정에서 어두 후두음의 소실과 단모음화가 일어났다. 현대 영어의 is, 독일어 ist, 스페인어 es 등 게르만어파와 로망스어파 전반의 필수 계사로 오늘날까지 그 흔적이 강력하게 남아 있다."
+      },
+      {
+        "g": "duce",
+        "pos": "동사",
+        "lemma": "duco, ducere, duxi, ductum",
+        "parse": "sg.pres.impv.act.",
+        "principalParts": "duco, ducere, duxi, ductum",
+        "gloss_kr": "이끌어라",
+        "gloss_en": "lead",
+        "syntax": "LFG f-구조에서 duce는 2인칭 명령법 동사로서 [PRED 'duco<SUBJ,OBJ>', SUBJ [PRED 'pro-drop', PERS 2], OBJ [PRED 'ego', CASE acc]]의 논항 구조를 가진다. 생성문법 관점에서 명령법 형태는 C(Complementizer) 영역의 비현실법/명령 자질(imperative feature)과 일치하며, 주어는 생략된 2인칭 대명사로 처리된다. 통사적으로 목적어인 대명사 me를 지배하여 행위의 방향성을 설정한다.",
+        "background": "이리스가 헤르실리아에게 자신을 따라오라고 명령하며 이끄는 장면으로, 신적인 사자가 인간 영웅의 아내를 천상으로 인도하는 거룩한 안내의 역할을 수행한다. 이끄는 행위는 단순한 이동을 넘어 지상에서 천상으로의 위계적 도약을 상징한다. 로마 신화 전반에서 신들의 의지를 인간에게 전달하고 실행하는 전령의 권능을 보여준다.",
+        "etymology": "PIE 재구형 *dewk-('끌다, 당기다', e급 *dewk-, 영급 *duwk-)에서 유래하였으며, 고대 고지 독일어 ziohan('당기다')과 고딕어 tiuhan 등과 동계어를 형성한다. de Vaan(DEL)은 이 어근이 라틴어에서 군사적·정치적 '이끄는 자(dux)' 및 '인도하다(duco)'의 의미로 크게 분화되었음을 설명한다. 음운적으로는 어말 무성음화와 모음 약화를 거쳤으며, 현대 영어의 duke(공작), introduce(소개하다), 라틴어계 접두사 파생어들 속에 그 어원이 생생히 살아 있다."
+      },
+      {
+        "g": "me",
+        "pos": "대명사",
+        "lemma": "ego",
+        "parse": "sg.acc.m. (or f.)",
+        "principalParts": "ego, mei, mihi, me, me",
+        "gloss_kr": "나를",
+        "gloss_en": "me",
+        "syntax": "LFG f-구조에서 me는 동사 duce의 직접 목적어(OBJ) 기능을 하며, [PRED 'pronoun', CASE acc, PERS 1, NUM sg]로 표기된다. 생성문법적으로는 [vP meᵢ [v' duce tᵢ]]와 같이 목적어 자리에 병합된 뒤 동사와의 통사적 관계를 맺는다. 1인칭 단수 대명사의 대격 형태로, 사자로서의 이리스 자신을 지시한다.",
+        "background": "이리스는 유노의 명을 받아 헤르실리아를 마중 나온 신들의 사자로서 등장하며, '나를 따르라'는 표현을 통해 자신이 하늘의 길을 인도하는 주체임을 강조한다. 헤르실리아가 주저하지 않고 신들의 영역으로 향하도록 신뢰를 부여하는 발화이다. 오비디우스는 이 대화에서 신화적 전령의 생생한 현장감을 부여하고 있다.",
+        "etymology": "PIE 재구형 *me-('나의, 나를', 대격/속격 어간)에서 유래하였으며, 산스크리트어 mā(나를) 및 그리스어 ἐμέ(eme)와 정확히 대응한다. de Vaan(EDL)은 인칭대명사의 사격(oblique) 형태가 인도유럽어파 전반에서 매우 보존성이 높음을 지적한다. 음운적으로 모음 e가 라틴어 대격 me로 고정되었으며, 현대 스페인어 me, 포르투갈어 me, 프랑스어 moi/me 등의 로망스어군 목적격 대명사로 직접 이어진다."
+      },
+      {
+        "g": "lucum",
+        "pos": "명사",
+        "lemma": "lucus, luci, m.",
+        "parse": "sg.acc.m.",
+        "principalParts": "lucus, luci, m.",
+        "gloss_kr": "숲을, 신성한 숲을",
+        "gloss_en": "sacred grove",
+        "syntax": "LFG f-구조에서 lucum은 이동 동사 pete의 방향성 목적어 또는 도달 처소(ADJUNCT / OBL)로 기능하며, [PRED 'lucus', CASE acc, TH-ROLE GOAL]로 분석된다. 생성문법 관점에서 처소격 대격(accusative of place to which)으로 처리되며, 전치사 없이 방향성을 나타내는 시적 통사 구조를 띤다. 구구조 상 VP 내부에서 목적어 자리를 점한다.",
+        "background": "로물루스가 신격화된 장소이자 퀴리누스 신숭배의 중심이 되는 신성한 숲(lucus)을 가리킨다. 로마 종교에서 숲은 신들이 임재하는 성스러운 공간으로 여겨졌으며, 이곳은 지상과 천상이 만나는 종교적 요충지이다. 헤르실리아가 이 숲으로 들어감으로써 인간의 한계를 벗어나 여신으로 다시 태어나는 변신의 무대가 된다.",
+        "etymology": "PIE 재구형 *lewk-('빛나다, 밝다', e급 *leuk-, 영급 *luk-)에서 유래하여, '빛이 드는 트인 숲' 또는 '신성한 숲'을 뜻하게 되었다. Ernout-Meillet(DELL)과 de Vaan(EDL)은 라틴어 lux(빛), luna(달)와 어원을 공유하며, 숲이 울창하면서도 신성한 빛이 비치는 공간이라는 종교적 의미를 담고 있음을 강조한다. 음운적으로 후행 모음 앞에서 평폐쇄음화와 어간 변화를 거쳤으며, 현대 영어의 lucid, luminary 등의 어원적 친척 관계를 이룬다."
+      },
+      {
+        "g": "pete",
+        "pos": "동사",
+        "lemma": "peto, petere, petivi, petitum",
+        "parse": "sg.pres.impv.act.",
+        "principalParts": "peto, petere, petivi, petitum",
+        "gloss_kr": "향하여 가거라, 찾아가거라",
+        "gloss_en": "seek, go to",
+        "syntax": "LFG f-구조에서 pete는 2인칭 명령법 서술어로서 [PRED 'peto<SUBJ,OBJ>', SUBJ [PRED 'pro-drop', PERS 2], OBJ [PRED 'lucus', CASE acc]]의 논항 구조를 가진다. 생성문법적으로는 CP의 명령법 강제 자질에 의해 표면화되며, 목적어인 lucum을 대격으로 지배하여 이동의 목표 지점을 설정한다. 시적 구문에서 공간적 이동을 뜻하는 핵심 동사로 작용한다.",
+        "background": "이리스가 헤르실리아에게 목적지인 퀴리누스의 신성한 숲으로 향할 것을 재촉하는 행동의 동사이다. 단순한 이동을 넘어 신성한 장소로의 순례와 운명적인 변신의 완수를 지시한다. 오비디우스는 이 명령을 통해 신화적 공간 이동의 긴장감을 고조시킨다.",
+        "etymology": "PIE 재구형 *peth₂-('날다, 달리다, 추구하다', e급 *peth₂-, 영급 *pth₂-)에서 유래하였으며, 산스크리트어 pátati('날다, 달리다')와 그리스어 πέτομαι(petomai) 등과 동계 관계를 이룬다. de Vaan(EDL)은 이 어근이 '가장자리를 향해 달리다'에서 '구하다, 청하다, 향하여 가다'로 의미가 확장되었음을 설명한다. 음운적으로 라틴어에서 양순음 계열과 치조음의 상호작용을 거쳤으며, 현대 영어의 petition(청원), appetite(식욕), compete(경쟁하다) 등의 어근으로 남아 있다."
+      },
+      {
+        "g": "colle",
+        "pos": "명사",
+        "lemma": "collis, collis, m.",
+        "parse": "sg.abl.m.",
+        "principalParts": "collis, collis, m.",
+        "gloss_kr": "언덕에서, 언덕으로",
+        "gloss_en": "on/to the hill",
+        "syntax": "LFG f-구조에서 colle는 전치사 없는 처소격 탈격(ablativus loci)으로서 [PRED 'collis', CASE abl, TH-ROLE LOCATION]으로 분석된다. 생성문법 관점에서 PP 또는 특수 처소구(Locative Phrase) 내부에서 장소를 지정하는 명사구로 기능하며, 관계대명사 절(qui viret)의 선행사를 수식받는 위치에 있다. 통사적으로 신성한 숲이 위치한 공간적 배경을 제공한다.",
+        "background": "로마의 전통적인 7개 언덕 중 하나인 퀴리날리스 언덕(Collis Quirinalis)을 가리킨다. 이 언덕은 로물루스가 퀴리누스로 신격화된 뒤 그의 이름을 따서 명명된 신성한 장소로 로마 건국 신화에서 중요한 위상을 차지한다. 헤르실리아가 이 언덕으로 올라감으로써 지상 영웅의 아내에서 천상의 여신으로 신분이 상승하는 지리적 배경이 된다.",
+        "etymology": "PIE 재구형 *kol(H)-n-('언덕, 솟아오른 곳', cf. *kela- '높이 솟다')에서 유래하였으며, 라틴어 celsus(높은), columen(정상)과 어원을 공유한다. de Vaan(EDL)은 지형의 볼록한 솟아오름을 나타내는 명사 파생형임을 밝힌다. 음운적으로 자음군 assimilation을 거쳐 collis가 되었으며, 현대 로망스어군(예: 이탈리아어 colle, 스페인어 collado) 및 영어의 hill과 계통적(또는 형태론적) 비교 대상이 되는 지형 명사이다."
+      },
+      {
+        "g": "Quirini",
+        "pos": "명사",
+        "lemma": "Quirinus, Quirini, m.",
+        "parse": "sg.gen.m.",
+        "principalParts": "Quirinus, Quirini, m.",
+        "gloss_kr": "퀴리누스의",
+        "gloss_en": "of Quirinus",
+        "syntax": "LFG f-구조에서 Quirini는 소유격 한정어(ADJUNCT / SPEC)로서 [PRED 'Quirinus', CASE gen]으로 분석되며, 상위 명사 colle를 수식한다. 생성문법적으로는 NP 내부의 지정어 자리에 위치하며, 고유명사의 속격 격자질을 부여받는다. 통사적으로 신의 소유를 나타내는 명사구 구조를 이룬다.",
+        "background": "퀴리누스는 죽음 이후 신격화된 로물루스에게 부여된 신의 이름이며, 로마의 초기 수호신 중 하나이다. 헤르실리아의 남편인 로물루스가 바로 이 퀴리누스로 화했기 때문에, 이 명칭은 부부의 재회와 영원한 사랑의 성전을 상징한다. 로마 시민의 명칭인 '퀴리테스(Quirites)'와도 어원을 같이하여 로마 국가 공동체의 뿌리를 드러낸다.",
+        "etymology": "사비니족의 도시 Cures에서 유래한 지명 형용사이거나 창(quiris)을 뜻하는 고대 사비니어 *quiris에서 파생된 것으로 학계(예: de Vaan EDL)는 본다. 민간어원학적으로는 '창을 가진 자'를 뜻하나, 사비니 계통의 고대 신격 이름에서 직접 온 것으로 추정된다. 음운적으로 고유명사 고유의 접미사 *-ino-가 결합하였으며, 현대 영어의 Quirinal(퀴리날레 궁전 등 지명)의 어원이 되었다."
+      },
+      {
+        "g": "qui",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "sg.nom.m.",
+        "principalParts": "qui, quae, quod",
+        "gloss_kr": "그 언덕은, [선행사 colle를 받는] 관계대명사",
+        "gloss_en": "which",
+        "syntax": "LFG f-구조에서 qui는 관계절의 주어(SUBJ) 기능을 하며, 선행사 colle와 성(m.)·수(sg.)가 일치하고 격(nom.)은 관계절 내부의 통사적 역할에 의해 결정된다: [PRED 'pronoun', SUBJ_OF viret]. 생성문법 관점에서 qui는 [CP [DP quiᵢ] [C' [TP tᵢ viret]]] 구조로 이동한 A'-이동의 결과물이며, 명사구 속성인 [+rel] 자질을 가진다.",
+        "background": "앞서 언급된 퀴리누스의 언덕이 지닌 생명력과 푸르름을 수식절로 이끄는 관계대명사이다. 언덕이 단순히 지리적 공간에 그치지 않고 사계절 푸르른 신성한 생명의 장소임을 부각한다. 오비디우스는 이 수식절을 통해 신화적 공간의 시각적 아름다움을 극대화한다.",
+        "etymology": "PIE 재구형 의문/관계대명사 어간 *kʷi-/*kʷo-에서 유래하였으며, 산스크리트어 káḥ, 그리스어 τίς와 동계 관계를 이룬다. de Vaan(EDL)과 Ernout-Meillet(DELL)은 이 대명사가 인도유럽어족 전반에서 관계사와 의문사의 기능을 동시에 수행하며 발달해 왔음을 설명한다. 음운적으로 라틴어 주격 남성 단수 형태인 qui로 정착되었으며, 현대 로망스어군(스페인어 quien, 프랑스어 qui 등)의 관계대명사 계열로 이어진다."
+      },
+      {
+        "g": "viret",
+        "pos": "동사",
+        "lemma": "vireo, virere, virui, -",
+        "parse": "3rd.sg.pres.ind.act.",
+        "principalParts": "vireo, virere, virui, -",
+        "gloss_kr": "푸르르다, 싱그럽다",
+        "gloss_en": "is green, flourishes",
+        "syntax": "LFG f-구조에서 viret은 1항 자동사 술어로서 [PRED 'vireo<SUBJ>', SUBJ [PRED 'colles', CASE nom, TH-ROLE THEME]]의 논항 구조를 가진다. 생성문법적으로는 VP 내부의 자동사 구문으로 분석되며, 관계절 내부에서 주어인 관계대명사(qui)와 수·인칭이 일치하는 정동사 T 핵으로 투영된다. 통사적으로 부가적 속성을 서술한다.",
+        "background": "퀴리누스의 언덕이 시들지 않는 생명력과 푸르름을 지니고 있음을 묘사하며, 신들이 거처하는 천상적 낙원의 속성을 시각적으로 드러낸다. 로마 신화에서 신성한 숲과 언덕은 늘 푸른 식물로 뒤덮여 영원 불멸의 생명을 상징한다. 헤르실리아가 영원한 생명을 얻어 도달할 장소의 신성함을 강조한다.",
+        "etymology": "PIE 재구형 내에 직접 대응하는 동사는 드물나, 녹색을 뜻하는 어근 *weis- 또는 색채·식생 관련 어근과의 연관성이 논의된다(de Vaan EDL). 라틴어 viridis(녹색의)의 파생 원천이 되는 동사이다. 음운적으로 제2conjugation의 특징적인 -ere 어간을 유지하며, 현대 로망스어군(예: 이탈리아어 virere, 스페인어 verdegear의 어원적 기반) 및 영어의 verdant(초록의), viridian(비리디안 안료) 등의 어휘 속에서 그 혈통을 이어간다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord.conj.",
+        "principalParts": "et",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG f-구조에서 et는 대등 접속사(coordinate conjunction)로서 두 개의 동사 구문(viret과 obumbrat)을 동등한 자격으로 연결하며, [COORD [viret, obumbrat]] 구조를 형성한다. 생성문법적으로는 ConjP(Conjunction Phrase)의 핵으로 투영되어 두 개의 TP 또는 VP를 대칭적으로 결합한다. 통사적 위계상 대등한 절들을 매개한다.",
+        "background": "언덕이 푸르를 뿐만 아니라 로마 왕의 신전을 감싸고 그늘을 드리운다는 두 가지 신성한 속성을 유기적으로 연결한다. 시적 묘사의 폭을 넓히며 공간의 종교적 밀도를 높여주는 역할을 한다. 두 대등한 서술을 통해 퀴리누스 언덕의 거룩한 풍경을 완성한다.",
+        "etymology": "PIE 재구형 *eti('게다가, 더욱이', cf. 산스크리트어 áti '넘어서, 게다가', 그리스어 ἔτι '여전히')에서 유래하였다. de Vaan(EDL)은 이 부사적 요소가 라틴어에서 대등 접속사로 기능이 전이되었음을 설명한다. 음운적으로 단음절 형태를 온전하게 유지하였으며, 현대 로망스어군(스페인어 y/e, 프랑스어 et, 포르투갈어 e)에서 문장과 명구를 잇는 가장 기본적인 접속사로 쓰인다."
+      },
+      {
+        "g": "templum",
+        "pos": "명사",
+        "lemma": "templum, templi, n.",
+        "parse": "sg.acc.n.",
+        "principalParts": "templum, templi, n.",
+        "gloss_kr": "신전을",
+        "gloss_en": "temple",
+        "syntax": "LFG f-구조에서 templum은 동사 obumbrat의 직접 목적어(OBJ) 기능을 하며, [PRED 'templum', CASE acc, TH-ROLE PATIENT]로 분석된다. 생성문법 관점에서는 [vP templumᵢ [v' obumbrat tᵢ]] 구조에서 목적어 대격 명사구로 병합된다. 통사적으로 신성한 건축물이라는 물리적·종교적 대상을 지시한다.",
+        "background": "퀴리누스로 신격화된 로물루스를 기리기 위해 세워진 신전을 가리키며, 지상과 천상을 연결하는 종교적 제의의 중심지이다. 이 신전은 로마 건국의 시조가 신으로 경배받는 장소로서 로마 제국의 종교적 정체성을 상징한다. 헤르실리아가 이 신전 주변에서 남편과 재회하여 함께 신격화되는 영광의 무대가 된다.",
+        "etymology": "PIE 재구형 *temp-('자르다', cf. *temh₁-)에서 유래하여, 본래 '하늘이나 땅에서 augur(사제)가 관측을 위해 자아낸(잘라낸) 성스러운 구역'을 뜻했다. Ernout-Meillet(DELL)과 de Vaan(EDL)은 이 단어가 건축물 의미로 확장되기 앞서 종교적 구획을 뜻하는 기술어였음을 강조한다. 음운적으로 중성 o-stem 변화를 거쳤으며, 현대 영어의 temple, contemplation(명상—신성한 구역을 바라보는 데서 유래) 등의 어원이 되었다."
+      },
+      {
+        "g": "Romani",
+        "pos": "형용사",
+        "lemma": "Romanus, Romana, Romanum",
+        "parse": "sg.gen.m.",
+        "principalParts": "Romanus, Romana, Romanum",
+        "gloss_kr": "로마의",
+        "gloss_en": "Roman",
+        "syntax": "LFG f-구조에서 Romani는 소유격 형용사 한정어로서 [PRED 'Romanus', CASE gen, MOD regis]로 분석되며, 피수식어 regis를 수식한다. 생성문법 관점에서 NP 내부의 지정어 자리에 위치하며, 성·수·격 일치 규칙에 따라 명사와 일치한다. 통사적으로 국가적·민족적 귀속성을 나타내는 수식어구이다.",
+        "background": "로마의 초대 왕인 로물루스를 '로마의 왕'으로 수식하여 그의 정체성과 통치권을 명확히 드러낸다. 로마라는 국가 공동체의 탄생과 그 시조의 위엄을 상기시키는 수식어이다. 신화적 서사 속에서 로마의 영원성과 왕권의 신성함을 강조하는 역할을 한다.",
+        "etymology": "로마의 도시 이름 Roma에 기원형용사 접미사 *-ano-가 결합하여 형성된 단어이다(de Vaan EDL). 로마 시민 및 로마와 관련된 모든 속성을 나타내는 파생어로 고대 라틴어 전 시기 동안 널리 쓰였다. 음운적으로 어간 모음의 변화를 거쳤으며, 현대 영어의 Roman, 스페인어 romano, 포르투갈어 romano 등 전 세계의 로마 관련 어휘의 직접적인 어원이다."
+      },
+      {
+        "g": "regis",
+        "pos": "명사",
+        "lemma": "rex, regis, m.",
+        "parse": "sg.gen.m.",
+        "principalParts": "rex, regis, m.",
+        "gloss_kr": "왕의",
+        "gloss_en": "of the king",
+        "syntax": "LFG f-구조에서 regis는 소유격 한정어로서 [PRED 'rex', CASE gen, TH-ROLE POSSESSOR]로 분석되며, templum과의 관계 속에서 신전의 주인을 나타낸다. 생성문법 관점에서 속격 명사구 [DP [D' [NP regis]]]를 구성하며, 앞선 Romani의 수식을 받는 핵 명사적 속성을 가진다. 통사적으로 통치자의 권위를 표상한다.",
+        "background": "여기서 '로마의 왕'은 지상의 왕으로 살다가 신이 된 로물루스를 가리킨다. 로물루스는 로마를 건국하고 최초의 왕이 되었으며, 죽음 이후 퀴리누스로 신격화되어 이 신전의 주인이 되었다. 이 표현은 세속적 왕권이 신성한 영원성으로 승화되었음을 보여주는 핵심 키워드이다.",
+        "etymology": "PIE 재구형 *reg-('바르게 하다, 이끌다, 통치하다', e급 *reg-, cf. 산스크리트어 rājā '왕')에서 유래하였다. de Vaan(EDL)은 인도유럽어족 전반에서 '올바른 길로 이끄는 자'가 통치자(왕)를 뜻하는 공통 어원임을 입증한다. 음운적으로 자음변화(g + s -> x)를 거쳐 주격 rex가 되었고 속격 regis가 되었다. 현대 영어의 regal(제왕의), region(지역—법적 구역), reign(통치) 등의 어원적 모태이다."
+      },
+      {
+        "g": "obumbrat",
+        "pos": "동사",
+        "lemma": "obumbro, obumbrare, obumbravi, obumbratum",
+        "parse": "3rd.sg.pres.ind.act.",
+        "principalParts": "obumbro, obumbrare, obumbravi, obumbratum",
+        "gloss_kr": "덮고 있다, 그늘을 드리우다",
+        "gloss_en": "overshadows, covers",
+        "syntax": "LFG f-구조에서 obumbrat은 [PRED 'obumbro<SUBJ,OBJ>', SUBJ [PRED 'colles', CASE nom], OBJ [PRED 'templum', CASE acc]]의 논항 구조를 가진 타동사 서술어이다. 생성문법 관점에서 [TP [vP 주어 [VP 목적어 obumbrat]]] 구조의 핵심 정동사 T 핵으로 투영되며, 주어인 언덕과 목적어인 신전을 통사적으로 지배한다. 접속사 et에 의해 앞선 절과 대등하게 연결된다.",
+        "background": "무성하게 자란 언덕의 숲이 로마 왕의 신전 위로 깊은 그늘을 드리우며 신성하고 아늑한 분위기를 조성하는 모습을 묘사한다. 자연물인 숲과 인공적 신전이 조화를 이루어 신들의 거처로서 완벽한 풍경을 자아낸다. 오비디우스 특유의 세밀하고 회화적인 자연 묘사 기법이 잘 드러나는 대목이다.",
+        "etymology": "전치사 ob-('~위에, ~에 향하여')와 그림자/그늘을 뜻하는 umbra가 결합한 명사 umbra에서 파생된 동사 umbrare에 다시 접두사가 붙은 형태이다(de Vaan EDL). '그늘을 드리우다, 덮다'라는 의미로 발전하였다. 음운적으로 접두사 동화와 1st conjugation 어간 변화를 거쳤으며, 현대 영어의 umbra(본영/그늘), umbrella(우산—그림자를 만드는 것에서 유래), 스페인어 sombrear 등의 어원이 되었다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.838",
+    "trans": "\"그녀는 순종하며, 무지개를 닮은 반짝이는 호를 가로질러 땅으로 내려온 이리스를 명받은 말로 부른다.\"",
+    "words": [
+      {
+        "g": "Paret",
+        "pos": "동사",
+        "lemma": "pareo, parere, parui, paritum",
+        "parse": "3rd.sg.pres.ind.act.",
+        "principalParts": "pareo, parere, parui, paritum",
+        "gloss_kr": "복종한다, 따르다",
+        "gloss_en": "obeys",
+        "syntax": "LFG f-구조에서 paret은 1항 자동사로서 여격 논항이나 지시를 따르는 행동을 지배하며, [PRED 'pareo<SUBJ,OBL>', SUBJ [PRED 'Hersilie', CASE nom]]의 논항 구조를 갖는다. 생성문법 관점에서 주어는 [Spec,TP]에 위치하며, 상위의 명제적 명령에 순응하는 현재시제 정동사로 투영된다. 통사적으로 헤르실리아의 즉각적인 행동 개시를 나타낸다.",
+        "background": "이리스의 전령과 남편의 부름을 받은 헤르실리아가 일말의 망설임 없이 신들의 명령에 기꺼이 복종하는 태도를 보여준다. 인간의 지위를 벗어나 천상의 운명을 받아들이는 겸허하면서도 주체적인 순응이다. 신화 속에서 신들의 뜻에 반응하는 인간의 경건함을 압축적으로 보여준다.",
+        "etymology": "PIE 재구형 *pere-('나타나다, 보이게 하다') 또는 파생 어근에서 유래하여, 라틴어에서 '눈앞에 나타나 복종하다, 대기하다'라는 뜻으로 발전하였다(de Vaan EDL). Ernout-Meillet(DELL)은 이 동사가 상전의 뜻에 즉각 반응하는 태도를 어원에 담고 있다고 본다. 음운적으로 제2conjugation 형태를 유지하였으며, 현대 영어의 parent(부모—양육하고 돌보는 자), obedience(복종)의 어원적 친척 관계를 이룬다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord.conj.",
+        "principalParts": "et",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG f-구조에서 et는 대등 접속사로서 앞선 문장 흐름과 현재의 행동(Paret과 compellat 혹은 이어지는 동작들)을 매개하는 접속 기능을 한다. 생성문법 관점에서 ConjP의 핵으로 작용하여 절과 절, 혹은 연속된 술어들을 대칭적으로 엮어준다.",
+        "background": "헤르실리아가 명령에 순종하는 태도와 이어서 말을 건네는 동작을 매끄럽게 이어주는 서사적 접속사이다. 신들의 부름에 응답하는 행동이 지체 없이 곧바로 이어짐을 보여준다. 오비디우스의 물 흐듯 유려한 서사 전개 방식을 뒷받침한다.",
+        "etymology": "PIE 재구형 *eti('게다가, 더욱이')에서 유래한 고유 라틴어 대등 접속사이다. (상세 내용은 앞선 et 항목 참조)"
+      },
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "prep.",
+        "principalParts": "in",
+        "gloss_kr": "~로, ~안으로",
+        "gloss_en": "into, onto",
+        "syntax": "LFG f-구조에서 in은 대격 명사구 terram을 지배하여 방향성 처소(OBL)를 구성하며, [PRED 'in<OBJ>', OBJ [PRED 'terra', CASE acc, TH-ROLE GOAL]]로 분석된다. 생성문법 관점에서 PP(Prepositional Phrase) 핵으로 투영되어 이동의 종착지를 명시하는 격 지배(case assignment)를 수행한다.",
+        "background": "천상의 무지개를 타고 지상의 대지로 내려오는 이리스의 공간적 이동 경로를 설정하는 전치사이다. 신들이 거주하는 하늘에서 인간이 사는 땅으로의 하강을 극적이고 시각적으로 보여준다. 헤르실리아가 있는 현세적 공간과 하늘을 이어주는 가교의 역할을 한다.",
+        "etymology": "PIE 재구형 *en('~안에, ~에', cf. 그리스어 ἐν, 영어 in)에서 유래하였으며, 라틴어에서는 정지(탈격 지배)와 운동(대격 지배)의 기능을 모두 갖도록 분화하였다. de Vaan(EDL)은 이 전치사가 인도유럽어족 전반에서 가장 보편적인 처소 전치사임을 지적한다. 현대 영어의 in, into, 로망스어군의 en 등으로 계통을 이어간다."
+      },
+      {
+        "g": "terram",
+        "pos": "명사",
+        "lemma": "terra, terrae, f.",
+        "parse": "sg.acc.f.",
+        "principalParts": "terra, terrae, f.",
+        "gloss_kr": "땅으로, 대지로",
+        "gloss_en": "to the earth",
+        "syntax": "LFG f-구조에서 terram은 전치사 in의 목적어로서 [PRED 'terra', CASE acc, TH-ROLE GOAL]로 분석된다. 생성문법 관점에서 PP 내부의 대격 명사구로 병합되며, 이동 동사적 성격을 띤 분사 delapsa의 도달 지점을 통사적으로 완성한다. 물리적 실체로서의 지상을 가리킨다.",
+        "background": "신성한 천상의 사자인 이리스가 지상 세계의 땅으로 내려앉는 장면의 배경이 되는 공간이다. 인간 헤르실리아가 발을 딛고 있는 현세적 삶의 터전이자, 이제 곧 천상으로의 변신이 일어날 출발점이다. 하늘과 땅의 대비를 통해 신화적 극적 긴장감을 부여한다.",
+        "etymology": "PIE 재구형 *ters-('마르다', 마른 땅을 뜻함; cf. 라틴어 torrere '말리다')에서 유래하였다. de Vaan(EDL)은 바다가 아닌 마른 땅, 대지라는 의미가 인도유럽어 산물 속에서 어떻게 정착되었는지를 설명한다. 음운적으로 자음군과 장모음 변화를 거쳤으며, 현대 영어의 terrain(지형), terrace(테라스), 지중해 식물명 및 로망스어군(스페인어 tierra, 포르투갈어 terra)의 어원이 되었다."
+      },
+      {
+        "g": "pictos",
+        "pos": "형용사",
+        "lemma": "pictus, picta, pictum",
+        "parse": "pl.acc.m.",
+        "principalParts": "pingo, pingere, pinxi pictum",
+        "gloss_kr": "색칠된, 무늬가 그려진, 찬란한",
+        "gloss_en": "painted, colorful",
+        "syntax": "LFG f-구조에서 pictos는 형용사적 수식어로서 [PRED 'pictus', CASE acc, MOD arcus]로 분석되며, 피수식어 arcus를 수식한다. 생성문법 관점에서 NP 내부의 지정어 자리에 위치하며, 성·수·격 일치 규칙에 따라 대격 복수 남성 명사와 일치한다. 통사적으로 무지개의 다채로운 색채 속성을 시각화한다.",
+        "background": "이리스가 타고 내려오는 무지개(arcus)가 지닌 다채롭고 찬란한 색채를 묘사하는 수식어이다. 무지개는 신들의 메신저인 이리스의 상징이며, 하늘과 땅을 잇는 형색색의 다리를 시각적으로 아름답게 포착한다. 오비디우스의 화려하고 감각적인 시적 수사법이 돋보인다.",
+        "etymology": "PIE 재구형 *peyk- / *pig-('점찍다, 무늬를 놓다, 그리다', cf. 산스크리트어 piṃśáti '모양을 만들다')에서 유래하였다. de Vaan(EDL)은 이 어근이 본래 가죽이나 천에 무늬를 새기는 행위에서 회화적 표현으로 의미가 확장되었음을 밝힌다. 음운적으로 pingo 동사의 완료분사 형태가 독립된 형용사로 정착되었으며, 현대 영어의 paint(그리다), picture(그림), pigment(안료) 등의 어원이 되었다."
+      },
+      {
+        "g": "delapsa",
+        "pos": "동사",
+        "lemma": "delabor, delabi, delapsus sum",
+        "parse": "perf.dep.part.sg.nom.f.",
+        "principalParts": "delabor, delabi, delapsus sum",
+        "gloss_kr": "미끄러져 내려온",
+        "gloss_en": "having glided down, fallen down",
+        "syntax": "LFG f-구조에서 delapsa는 과거분사로서 주어 Hersilie를 수식하는 부차적 서술어(ADJUNCT / XADJUNCT)로 기능하며, [PRED 'delabor', PARSE part, CASE nom, TH-ROLE AGENT]로 분석된다. 생성문법 관점에서 능동적 의미를 가진 탈고립동사(deponent participle)의 성격을 띠며, 주어 NP와 성·수·격(여성 단수 주격)이 일치한다.",
+        "background": "이리스가 무지개라는 곡선을 따라 하늘에서 지상으로 부드럽고 우아하게 미끄러지듯 내려오는 모습을 생생하게 그린다. 단순한 하강이 아니라 신비롭고 유연한 천상의 이동 방식을 시적으로 형상화한 표현이다. 헤르실리아 앞에 사자가 강림하는 극적 순간을 연출한다.",
+        "etymology": "접두사 de-('아래로')와 '미끄러지다'를 뜻하는 어근 labor, labi가 결합한 형태이다(de Vaan EDL). '아래로 미끄러져 떨어지다'라는 뜻으로 발전하였다. 음운적으로 수동태 완료분사 형태를 취하면서도 탈고립동사(deponent)의 능동 의미를 유지하는 독특한 형태론적 특징을 보인다. 현대 영어의 elapse(시간이 경과하다), collapse(붕괴하다) 등의 어원이 되었다."
+      },
+      {
+        "g": "per",
+        "pos": "전치사",
+        "lemma": "per",
+        "parse": "prep.",
+        "principalParts": "per",
+        "gloss_kr": "~를 통하여, ~를 가로질러",
+        "gloss_en": "through, across",
+        "syntax": "LFG f-구조에서 per는 대격 명사구 arcus를 지배하여 매개 공간(OBL)을 구성하며, [PRED 'per<OBJ>', OBJ [PRED 'arcus', CASE acc, TH-ROLE PATH]]로 분석된다. 생성문법 관점에서 PP 핵으로 투영되며, 공간적 경로(path)를 나타내는 격 지배를 수행한다. 통사적으로 하강의 매개 경로를 명시한다.",
+        "background": "이리스가 하늘을 가로지르는 무지개라는 공간적 통로를 통해 지상으로 내려오고 있음을 보여주는 전치사이다. 무지개 자체가 이동의 경로가 되는 신화적 상상력을 충실히 반영한다. 사자의 비행 궤적을 아름답게 한 폭의 그림처럼 엮어낸다.",
+        "etymology": "PIE 재구형 *per-('통하여, 앞으로, 건너서', cf. 산스크리트어 pará '멀리', 그리스어 πέρα '건너서')에서 유래한 전치사이다. de Vaan(EDL)과 Ernout-Meillet(DELL)은 공간적 돌파와 수단을 나타내는 핵심 인도유럽어 전사이 어원임을 밝힌다. 현대 영어의 per(~당), pierce(뚫다), 로망스어군의 파생 전치사/접두사로 널리 남아 있다."
+      },
+      {
+        "g": "arcus",
+        "pos": "명사",
+        "lemma": "arcus, arcus, m.",
+        "parse": "sg.acc.m. (or pl.acc.m. depending on poetic plural usage, here interpreted as accusative plural or singular matching per)",
+        "principalParts": "arcus, arcus, m.",
+        "gloss_kr": "활, 곡선, 무지개를",
+        "gloss_en": "bow, arch, rainbow",
+        "syntax": "LFG f-구조에서 arcus는 전치사 per의 목적어로서 경로(PATH) 논항을 담당하며, [PRED 'arcus', CASE acc, TH-ROLE PATH]로 분석된다. 생성문법 관점에서 PP 내부의 대격 명사구로 병합되며, 시적 표현에서 복수형 대격 혹은 단수형 대격(4변화 명사)으로 경로를 한정한다. 통사적으로 형용사 pictos의 수식을 받는다.",
+        "background": "활 모양으로 휘어진 무지개를 뜻하며, 신들의 전령 이리스가 하늘을 오갈 때 이용하는 상징적인 하늘의 다리이다. 무지개의 곡선미와 빛깔은 신성한 초자연적 영역과 현세를 이어주는 매개체로서 서사 속에서 시각적 아름다움을 극대화한다. 이리스의 강림을 가장 시적으로 표현하는 핵심 사물이다.",
+        "etymology": "PIE 재구형 *arkʷ-('굽은 것, 활', cf. 라틴어 arca '상자, 굽은 형태')에서 유래하였다. de Vaan(EDL)은 활의 휘어진 모양에서 유래하여 건축적 아치(arch) 및 천상의 무지개로 의미가 확장되었음을 설명한다. 음운적으로 제4변화 u-stem 명사로 정착되었으며, 현대 영어의 arch(아치), arc(호), archer(궁수) 등의 어원이 되었다."
+      },
+      {
+        "g": "Hersilien",
+        "pos": "명사",
+        "lemma": "Hersilie, Hersilies, f. (Greek-style acc. Hersilien)",
+        "parse": "sg.acc.f.",
+        "principalParts": "Hersilie, Hersilies, f.",
+        "gloss_kr": "헤르실리아를",
+        "gloss_en": "Hersilia",
+        "syntax": "LFG f-구조에서 Hersilien은 동사 compellat의 직접 목적어(OBJ) 기능을 하며, [PRED 'Hersilia', CASE acc, TH-ROLE PATIENT]로 분석된다. 생성문법 관점에서 [vP Hersilienᵢ [v' compellat tᵢ]] 구조의 목적어 대격 자리를 점한다. 그리스어풍 제1변화 대격 어미(-en)를 사용하여 시적 격식과 고전적 색채를 더한다.",
+        "background": "로물루스의 아내이자 로마 건국의 산증인인 헤르실리아를 가리킨다. 남편을 잃고 슬픔에 잠겨 있던 그녀에게 이리스가 찾아와 신들의 부름을 전하며, 지상의 인간에서 여신으로 거듭나는 극적인 운명의 전환을 맞이하는 인물이다. 오비디우스 변신 이야기의 후반부에서 핵심적인 신화적 주체로 부각된다.",
+        "etymology": "사비니 또는 로마 전설에 등장하는 고유명사로, 그리스어풍 명사 변화(-en)를 차용한 시적 표기이다. 라틴어 인명 체계 속에서 이방적이면서도 고풍스러운 신화적 어감을 자아내도록 구성되었다. 언어학적·어원적으로 사비니 계통의 지명이나 인명 전승에 기원을 두며, 후대 유럽어권의 여성 인명 Hersilia의 어원이 되었다."
+      },
+      {
+        "g": "iussis",
+        "pos": "형용사",
+        "lemma": "iussus, iussa, iussum",
+        "parse": "pl.abl.f. (participle used as noun/adjective)",
+        "principalParts": "iubeo, iubere, iussi iussum",
+        "gloss_kr": "명령받은, 분부하신",
+        "gloss_en": "commanded, ordered",
+        "syntax": "LFG f-구조에서 iussis는 수단/원인 탈격(ablativus instrumenti/causae)으로서 [PRED 'iussus', CASE abl, MOD vocibus]로 분석되며, 피수식어 vocibus를 수식한다. 생성문법 관점에서 NP 내부의 지정어 자리에 위치하며, 성·수·격 일치 규칙에 따라 탈격 복수 여성 명사와 일치한다. 통사적으로 유노 또는 신들의 지엄한 명령이라는 속성을 명시한다.",
+        "background": "유노(혹은 신들)의 지엄한 명령에 따라 이리스가 발화하고 있음을 강조하는 수식어이다. 이리스는 자신의 사적인 의지가 아니라 절대적인 신적 명령을 대행하여 전달하고 있음을 보여준다. 신화적 권위와 엄숙함을 부여하는 표현이다.",
+        "etymology": "PIE 재구형 *yewg-('결합하다, 멍에를 메우다')에서 분기된 iubeo(명령하다)의 과거분사 iussus에서 유래하였다(de Vaan EDL). 법적·종교적 권위에 따른 '명령, 지시'의 의미로 발전하였다. 음운적으로 u-stem 명사 및 형용사 분사 형태로 정착되었으며, 현대 영어의 issue(발행하다—명령에서 유래), justify 등의 어원적 배경과 연결된다."
+      },
+      {
+        "g": "compellat",
+        "pos": "동사",
+        "lemma": "compello, compellare, compellavi, compellatum",
+        "parse": "3rd.sg.pres.ind.act.",
+        "principalParts": "compello, compellare, compellavi, compellatum",
+        "gloss_kr": "말을 건네다, 부르다",
+        "gloss_en": "addresses, calls",
+        "syntax": "LFG f-구조에서 compellat은 [PRED 'compello<SUBJ,OBJ,OBL>', SUBJ [PRED 'Iris', CASE nom], OBJ [PRED 'Hersilia', CASE acc], OBL [PRED 'vox', CASE abl]]의 논항 구조를 가진 타동사 서술어이다. 생성문법 관점에서 [TP [vP 주어 [VP 목적어 obumbrat/compellat]]]와 같은 투영 규칙을 따르며, 현재시제 정동사 T 핵으로 투영된다. 통사적으로 이리스가 헤르실리아에게 말을 걸어오는 행위를 지배한다.",
+        "background": "천상에서 내려온 이리스가 슬픔에 잠긴 헤르실리아에게 다가가 신들의 뜻을 전하는 대화의 시작을 알리는 동사이다. 인간과 신을 잇는 소통의 행위이며, 헤르실리아의 운명을 바꿀 중대한 메시지가 전달되는 극적 순간이다. 오비디우스는 이 장면에서 두 신화적 인물 간의 엄숙한 교감을 그려낸다.",
+        "etymology": "전치사 com-('함께, 완전히')과 '몰아가다, 부르다'를 뜻하는 어근 pello, pellere가 결합한 파생 동사이다(de Vaan EDL). 본래는 가축 등을 한데 몰아넣는 것에서 사람을 불러세우거나 엄숙히 말을 건네는 의미로 확장되었다. 음운적으로 1st conjugation 규칙 변화를 따르며, 현대 영어의 compel(강요하다), appeal 등의 어근과 혈통을 공유한다."
+      },
+      {
+        "g": "vocibus",
+        "pos": "명사",
+        "lemma": "vox, vocis, f.",
+        "parse": "pl.abl.f.",
+        "principalParts": "vox, vocis, f.",
+        "gloss_kr": "목소리로, 말로",
+        "gloss_en": "with words, by voices",
+        "syntax": "LFG f-구조에서 vocibus는 수단 탈격(ablativus instrumenti)으로서 [PRED 'vox', CASE abl, TH-ROLE INSTRUMENT]로 분석되며, 형용사 iussis의 수식을 받는다. 생성문법 관점에서 PP 또는 명사구 내의 수단 탈격 자리를 점하며, 동사 compellat의 행위를 수행하는 매개 수단을 나타낸다. 통사적으로 신성한 발화의 도구를 지시한다.",
+        "background": "이리스가 신들의 명령을 담아 헤르실리아에게 건네는 신성하고 위엄 있는 목소리를 가리킨다. 이 목소리는 단순한 소리가 아니라 천상의 의지를 관철하고 지상과 하늘을 매개하는 권능의 언어이다. 헤르실리아의 마음을 움직여 변신의 길로 이끄는 결정적인 촉매제가 된다.",
+        "etymology": "PIE 재구형 *wekʷ-('말하다, 소리', cf. 산스크리트어 vāk '말, 음성', 그리스어 ὄψ '목소리')에서 유래하였다. de Vaan(EDL)과 Ernout-Meillet(DELL)은 인도유럽어족 전반에서 인간의 음성과 발화를 나타내는 가장 오래된 어휘 중 하나임을 밝힌다. 음운적으로 자음변화(k + s -> x)를 거쳐 주격 vox가 되었고 어간 voc-을 유지한다. 현대 영어의 voice(목소리), vocal(목소리의), advocate(변호하다) 등의 어원이다."
+      },
+      {
+        "g": "Iris",
+        "pos": "명사",
+        "lemma": "Iris, Idos, f.",
+        "parse": "sg.nom.f.",
+        "principalParts": "Iris, Idos, f.",
+        "gloss_kr": "이리스 (무지개의 여신이자 신들의 전령)",
+        "gloss_en": "Iris",
+        "syntax": "LFG f-구조에서 Iris는 문장의 주어(SUBJ) 기능을 하며, [PRED 'Iris', CASE nom, TH-ROLE AGENT]로 분석된다. 생성문법 관점에서 [Spec,TP]에 위치하며, 정동사 compellat과 수·인칭이 일치하는 주어 명사구로 투영된다. 통사적으로 행위의 주체로서 문장 전체의 주동적 역할을 수행한다.",
+        "background": "그리스·로마 신화에서 무지개의 여신이자 주피터와 유노의 충실한 전령인 이리스이다. 하늘과 땅을 무지개 다리로 연결하며 신들의 뜻을 인간에게 전달하는 임무를 맡고 있다. 여기서는 헤르실리아를 남편 로물루스가 있는 천상으로 인도하기 위해 지상에 강림하여 말을 건네는 핵심 행위자로 활약한다.",
+        "etymology": "그리스어 Ἴρις(Iris, 무지개 및 여신 이름)에서 직접 유래한 외래 고유명사이다. 어원적으로 '무지개, 빛의 고리'를 뜻하며, 하늘에 찬란하게 펼쳐지는 광학적 현상과 신화적 인격신이 일치된 이름이다. 라틴어 시가 문학 속에서 고유의 고대 그리스 신화적 색채를 온전히 보존하며 수용되었고, 현대 영어의 iris(눈의 홍채, 붓꽃속 식물명) 및 무지개 관련 과학 용어의 어원이 되었다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.840",
+    "trans": "\"그녀는 수줍은 얼굴로 겨우 눈을 들어 올리며...\"",
+    "words": [
+      {
+        "g": "Illa",
+        "pos": "대명사",
+        "lemma": "ille, illa, illud",
+        "parse": "sg.nom.f.",
+        "principalParts": "ille, illa, illud",
+        "gloss_kr": "그녀는 (헤르실리아는)",
+        "gloss_en": "she",
+        "syntax": "LFG f-구조에서 Illa는 문장의 주어(SUBJ)로서 [PRED 'pronoun', CASE nom, PERS 3, NUM sg, GEN f]로 분석된다. 생성문법 관점에서 [Spec,TP] 자리를 점하며, 분사 tollens와 정동사적 서술 맥락을 이끄는 지시 대명사 주어로 투영된다. 통사적으로 앞서 언급된 헤르실리아를 가리키며 새로운 행위의 주체로 등장한다.",
+        "background": "이리스의 갑작스러운 방문과 부름을 받은 헤르실리아가 놀라움과 수줍음을 안고 반응하는 순간의 주인공이다. 남편을 잃은 슬픔 속에 잠겨 있던 그녀가 천상의 전령을 마주하며 조심스럽게 시선을 드는 정서적 과도기를 보여준다. 오비디우스는 여성 인물의 심리적 미세한 떨림을 섬세하게 포착해낸다.",
+        "etymology": "PIE 재구형 지시사 어간에서 발전하여, 라틴어에서 원격 지시사(that) 및 3인칭 대명사로 정착하였다(de Vaan EDL). Ernout-Meillet(DELL)은 이 형태가 대명사 체계 속에서 구체적인 대상 지시 기능을 공고히 다져왔음을 보여준다. 음운적으로 여성 주격 단수 형태인 illa로 고정되었으며, 현대 로망스어군(스페인어 ella, 포르투갈어 ela 등)의 3인칭 여성 대명사 및 정관사 계열의 어원적 모태가 되었다."
+      },
+      {
+        "g": "verecundo",
+        "pos": "형용사",
+        "lemma": "verecundus, verecunda, verecundum",
+        "parse": "sg.abl.m. (or n.)",
+        "principalParts": "verecundus, verecunda, verecundum",
+        "gloss_kr": "수줍어하는, 부끄러워하는",
+        "gloss_en": "bashful, modest, shy",
+        "syntax": "LFG f-구조에서 verecundo는 형용사적 수식어로서 [PRED 'verecundus', CASE abl, MOD vultu]로 분석되며, 피수식어 vultu를 수식한다. 생성문법 관점에서 NP 내부의 지정어 자리에 위치하며, 성·수·격 일치 규칙에 따라 탈격 단수 남성 명사와 일치한다. 통사적으로 인물의 내면적 정서와 표정을 묘사한다.",
+        "background": "천상의 사자 앞에 선 헤르실리아의 수줍고 경건하며 조심스러운 태도를 드러내는 핵심 형용사이다. 신성한 존재를 대할 때 인간이 느끼는 경외감과 겸손함이 얼굴의 표정에 고스란히 드러나고 있음을 보여준다. 오비디우스는 인물의 감정선을 시각적 묘사와 결합하여 생동감 있게 전달한다.",
+        "etymology": "경외하다, 부끄러워하다를 뜻하는 동사 vereor, vereri에서 파생된 형용사이다(de Vaan EDL). '조심스러운, 삼가는, 수줍어하는'의 의미로 정착되었다. 음운적으로 파생 접미사 -undus가 결합하여 형용사 어간을 형성하였으며, 현대 영어의 veracious와는 어원이 다르나 구식 영어 어휘 및 로망스어권의 관련 어휘(예: 스페인어 verecundo 등)에 직간접적 흔적을 남겼다."
+      },
+      {
+        "g": "vix",
+        "pos": "부사",
+        "lemma": "vix",
+        "parse": "adv.",
+        "principalParts": "vix",
+        "gloss_kr": "겨우, 간신히",
+        "gloss_en": "scarcely, barely",
+        "syntax": "LFG f-구조에서 vix는 부사적 수식어(ADJUNCT)로서 [PRED 'vix', MOD tollens]로 분석되며, 분사 동작의 난이도나 겨우 이루어짐을 한정한다. 생성문법 관점에서 VP 또는 vP 외부의 부사어구 자리에 부착되어 서술어의 양태적 제약(degree/manner)을 부여한다. 통사적으로 동작의 버거움을 강조한다.",
+        "background": "헤르실리아가 갑작스러운 상황과 경외감 속에서 눈을 들어 올리는 동작이 얼마나 조심스럽고 힘겹게(또는 망설이며) 이루어지고 있는지를 보여주는 부사이다. 슬픔과 경외가 뒤섞인 인물의 심리적 멈칫거림을 포착한다. 섬세한 감정 묘사의 현실감을 높여준다.",
+        "etymology": "PIE 재구형 및 라틴어 고유 부사 어간에서 유래하였으며, '힘겹게, 간신히'라는 의미로 고전 라틴어 전 시기 동안 고정되어 쓰였다(de Vaan EDL). Ernout-Meillet(DELL)은 이 어휘가 신체적·심리적 한계 상황에서의 동작을 묘사하는 데 특화되어 있음을 지적한다. 음운적으로 단음절의 압축된 형태를 유지하며 후대 로망스어 및 문학어에 계승되었다."
+      },
+      {
+        "g": "tollens",
+        "pos": "동사",
+        "lemma": "tollo, tollere, sustuli, sublatum",
+        "parse": "pres.act.part.sg.nom.f.",
+        "principalParts": "tollo, tollere, sustuli, sublatum",
+        "gloss_kr": "들어 올리는, 치켜드는",
+        "gloss_en": "raising, lifting",
+        "syntax": "LFG f-구조에서 tollens는 현재분사로서 주어 Illa를 수식하는 부차적 서술어(ADJUNCT / XADJUNCT)로 기능하며, [PRED 'tollo', PARSE part, CASE nom, TH-ROLE AGENT]로 분석된다. 생성문법 관점에서 주어 NP와 성·수·격(여성 단수 주격)이 일치하며, 목적어 lumina를 대격으로 지배하는 분사구(participial phrase)를 이끈다.",
+        "background": "땅을 향해 있던 헤르실리아의 고개가 이리스의 부름을 받고 천천히 들려지는 순간을 포착하는 동작 분사이다. 슬픔으로 숙여졌던 시선이 신성한 존재를 향해 서서히 올라가는 극적 전환을 시각화한다. 정적인 상태에서 동적인 반응으로 넘어가는 찰나를 보여준다.",
+        "etymology": "PIE 재구형 *telh₂-('들어 올리다, 지탱하다', cf. 라틴어 tolerare '견디다')에서 유래하였다. de Vaan(EDL)은 이 어근이 물건이나 신체를 위로 들어 올리는 물리적 행위와 인내하는 정신적 행위로 갈라져 발전했음을 설명한다. 음운적으로 현재분사 접미사 -ns가 결합하여 3인칭 주어와 호응하는 형태로 정착되었으며, 현대 영어의 tolerate(견디다), extoll(칭찬하다—치켜세우다) 등의 어원이 되었다."
+      },
+      {
+        "g": "lumina",
+        "pos": "명사",
+        "lemma": "lumen, luminis, n.",
+        "parse": "pl.acc.n.",
+        "principalParts": "lumen, luminis, n.",
+        "gloss_kr": "눈을, 시선을 (원뜻: 빛, 눈)",
+        "gloss_en": "eyes, lights",
+        "syntax": "LFG f-구조에서 lumina는 분사 tollens의 직접 목적어(OBJ) 기능을 하며, [PRED 'lumen', CASE acc, TH-ROLE PATIENT]로 분석된다. 생성문법 관점에서 [vP luminaᵢ [v' tollens tᵢ]] 구조의 목적어 대격 자리를 점한다. 시적 표현에서 신체 부위인 '눈(oculi)' 대신 빛을 뜻하는 단어를 사용하여 시각적 찬란함과 깊이감을 더한다.",
+        "background": "단순한 눈동자가 아니라 신성한 빛이 감도는 눈길을 의미하는 시적 표현(lumina)이다. 헤르실리아가 이리스를 바라보기 위해 눈을 뜨고 시선을 들어 올리는 섬세한 신체적 반응을 그린다. 신성과 인간의 시선이 교차하는 문학적 장치를 제공한다.",
+        "etymology": "PIE 재구형 *lewk-('빛나다')에서 파생된 명사 어간 *leuk-smen-에서 유래하였다(de Vaan EDL). '빛을 내는 것'에서 시각 기관인 '눈' 및 '빛'으로 의미가 확장되었다. 음운적으로 중성 n-stem 변화를 거쳐 lumen이 되었으며, 복수형 lumina로 시詩에서 눈을 가리키는 전형적 단어로 쓰였다. 현대 영어의 luminous(빛나는), illuminate(조명하다), 굴절어의 '루멘(광속 단위)' 등의 어원이다."
+      },
+      {
+        "g": "vultu",
+        "pos": "명사",
+        "lemma": "vultus, vultus, m.",
+        "parse": "sg.abl.m.",
+        "principalParts": "vultus, vultus, m.",
+        "gloss_kr": "얼굴로, 표정으로",
+        "gloss_en": "with face, expression",
+        "syntax": "LFG f-구조에서 vultu는 수단/양태 탈격(ablativus modi/instrumenti)으로서 [PRED 'vultus', CASE abl, TH-ROLE MANNER]로 분석되며, 형용사 verecundo의 수식을 받는다. 생성문법 관점에서 PP 또는 부사적 탈격 명사구 자리를 점하며, 분사구의 행위가 이루어지는 외면적 태도와 표정을 규정한다. 통사적으로 감정의 물증을 제시한다.",
+        "background": "수줍음과 경외감이 서린 헤르실리아의 얼굴 표정을 직접적으로 보여주는 명사이다. 내면의 슬픔과 갑작스러운 방문에 대한 놀라움, 그리고 신성한 존재 앞에서의 겸손함이 얼굴이라는 신체적 매개체를 통해 표출된다. 오비디우스가 인물의 심리를 외부 묘사와 결합하는 전형적인 수법이다.",
+        "etymology": "PIE 재구형 또는 라틴어 고유 어근에서 유래하여 '얼굴, 표정, 용모'를 뜻하는 제4변화 u-stem 명사로 정착하였다(de Vaan EDL). Ernout-Meillet(DELL)은 볼(volo, 원하다)과의 어원적 연관성 설을 일부 언급하나, 독자적인 신체 부위 및 표정 명칭으로 고대 라틴어에 확고히 뿌리내렸음을 강조한다. 음운적으로 u-declension 변화를 거쳤으며, 현대 영어의 countenance 및 로망스어권의 관련 어휘적 감각에 영감을 주었다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.841",
+    "trans": "오, 여신이여, 그대가 누구인지 말하기란 내게 쉽지 않고,",
+    "words": [
+      {
+        "g": "o",
+        "pos": "감탄사",
+        "lemma": "o",
+        "parse": "interj.",
+        "gloss_kr": "오",
+        "gloss_en": "oh",
+        "syntax": "LFG 관점에서 o는 화용론적 호격 구문의 담화 표지(discourse marker) 기능을 수행하며, f-구조상 [VOCATIVE +] 자질을 부여한다. 생성문법적으로는 CP 영역의 ForceP 또는 VocP(Vocative Phrase)에 위치하여 호격 명사구(DP)를 지배하는 것으로 분석된다. 이 호격 구문은 통사적으로 주절의 필수 논항 구조에서 분리된 외적 주어(extra-sentential adjunct)로 기능한다.",
+        "background": "이 구절은 아에네아스의 아내 라비니아의 유모인 카이페타(Caieta)의 무덤 근처에서, 님프(실제로는 베누스)를 마주한 로마의 왕 투룰루스(Tulus) 혹은 에네아스의 부하가 건네는 말이다. 상대방의 초월적 존재를 직감하면서도 정체를 정확히 알지 못하는 경외감과 간절함을 드러낸다.",
+        "etymology": "PIE 재구형 *ō / *ow-('오!, 아!')에 소급하며, 감탄사로서 어원학적 변천보다는 인도유럽어족 전반에 걸친 정서적 발성 기호로서의 연속성이 강하다. OLD는 이를 독립된 호격 감탄사로 등재하며, de Vaan(EDL)은 감정의 즉각적 표출을 담당하는 음성적 기호로 분류한다. 현대 라틴어 연구 및 고전 문법 서적에서 호격의 전형적인 통사 표지로 고정되어 인용된다."
+      },
+      {
+        "g": "dea",
+        "pos": "명사",
+        "lemma": "dea, deae, f.",
+        "parse": "sg.voc.f.",
+        "gloss_kr": "여신",
+        "gloss_en": "goddess",
+        "syntax": "LFG f-구조에서 dea는 호격(vocative case) 명사구의 핵(head)으로서 [PRED 'dea', CASE voc, NUM sg, GEND f] 자질 구조를 형성한다. 격 이론(Case Theory) 관점에서 호격은 구조적 격(structural case)이 아닌 화용론적 허가에 의해 부여되는 고유의 격이며, 문장의 명법(mood)이나 논항 구조에 직접 개입하지 않는다.",
+        "background": "화자는 상대방이 인간이 아님을 즉각적으로 알아차리고, 그녀를 '여신(dea)'으로 호칭하며 존경과 경외를 표한다. 이는 오비디우스의 서사에서 인간 영웅과 신성한 존재 간의 빈번한 접촉과 그로 인한 종교적·신화적 긴장을 압축적으로 보여준다.",
+        "etymology": "PIE 재구형 *dyeu-('빛나다, 하늘') 어근에서 파생된 남성형 *deiwos('신')의 여성형 어간 *deiwih₂-에서 유래하며, 1형식 후두음 *h₂가 관여된 어근 명사 계열이다. de Vaan(EDL)은 이탈리아어파 내에서 남성형 deus와 대칭되는 여성형 명사로 정착된 과정을 상세히 다룬다. 현대 서구 언어의 신성 관련 어휘(예: 프랑스어 dieu, 스페인어 dios)의 어원적 바탕이 된다."
+      },
+      {
+        "g": "namque",
+        "pos": "접속사",
+        "lemma": "namque",
+        "parse": "coord.conj.",
+        "gloss_kr": "왜냐하면 … 이니까",
+        "gloss_en": "for indeed",
+        "syntax": "LFG 관점에서 namque는 두 절 간의 인과적 종속 또는 설명 관계를 맺어주는 등위/접속 기능사를 수행하며, f-구조상 [CO-OD [PRED 'namque']] 또는 담화 애던쥑(ADJUNCT)으로 처리된다. 생성문법 관점에서는 CP 경계에 위치하여 앞선 발화에 대한 인과적 논증을 이끄는 접속사 핵(Conjunction head)으로 병합된다.",
+        "background": "상대방을 여신이라고 부른 근거와 자신의 내면 상태를 설명하기 위해 도입되는 인과적 접속사이다. 수사학적으로 독자에게 화자의 심리적 정당성을 부여하고 다음 구절의 서술로 자연스럽게 연결하는 역할을 한다.",
+        "etymology": "PIE 재구형 *gn- 또는 부사적 강조사 *gno-에 접속사 nam이 결합한 형태이다. Ernout-Meillet(DELL)은 nam과 -que의 합성 과정을 설명하며, 고고대 라틴어 시기부터 인과를 강조하는 담화 표지로 굳어졌음을 지적한다. 로망스어군으로 직접 계승되지는 않았으나, 라틴어 문헌 전반에 걸쳐 논증적 접속사로 빈번히 사용된다."
+      },
+      {
+        "g": "mihi",
+        "pos": "대명사",
+        "lemma": "ego, mei, m./f.",
+        "parse": "sg.dat.m.",
+        "gloss_kr": "내게",
+        "gloss_en": "to me",
+        "syntax": "LFG f-구조에서 mihi는 술어 형용사 promptum의 경험주(experiencer) 혹은 소유/관계 여격(dative of possession/reference)으로서 [OBL-DAT [PRED 'ego', CASE dat]] 기능을 맡는다. 형식적 자질 구조로는 [HEAD pron, NUM sg, PERS 1st, CASE dat]로 명시된다. 생성문법에서는 vP 또는 TP 영역의 이중 목적어 구문이나 경험주 위치에 스펙시파이어로 생성된다.",
+        "background": "자신의 인식 능력이 한계에 부딪혔음을 고백하는 화자의 주관적 입장을 강조한다. '내게는'이라는 표현을 통해 객관적 진실 파악의 어려움과 화자 개인의 주관적 인상 사이의 대조를 부각한다.",
+        "etymology": "PIE 재구형 *megh₂- 또는 1인칭 대명사 어근 *me-의 여격형 *me-bʰi(도구격/여격 어미 *-bʰi 결합, 애블라우트 e급)에 기원한다. Beekes 및 de Vaan(EDL)은 이탈리아어와 켈트어파 간의 대명사 격 어미 공유 양상을 설명한다. 현대 스페인어 m이(mi), 포르투갈어 mim 등의 1인칭 사격(oblique) 형태의 직접적 조상이다."
+      },
+      {
+        "g": "nec",
+        "pos": "부사",
+        "lemma": "neque",
+        "parse": "neg.adv.",
+        "gloss_kr": "…도 아니며, 그리고 …도 아니다",
+        "gloss_en": "and not",
+        "syntax": "LFG f-구조에서 nec는 부정 부사 및 등위 접속 기능을 동시에 수행하며, [NEG +, CO-OD +]의 복합 자질을 갖는다. 생성문법적으로 NegP의 핵을 점하면서 동시에 부정 연산을 수행하는 접속사로 분석된다. 문장 전체의 진리값을 반전시키는 스코프(scope)를 지닌다.",
+        "background": "부정의 연쇄를 통해 화자의 무능력과 상대방의 불가해성을 극적으로 대비시킨다. 이 부정은 단순한 거부가 아니라 신성한 존재 앞에서 인간이 느끼는 인지적 한계를 강조하는 수사적 장치이다.",
+        "etymology": "PIE 재구형 *ne-('아니다')와 *kʷe('그리고')의 결합형이다. Ernout-Meillet(DELL)은 ne와 que가 합쳐져 et non의 기능을 담당하게 된 음운론적 축약 과정을 논증한다. 로망스어군에서는 형태가 직계로 전승되지 않고 ni 등으로 대체되거나 변형되었다."
+      },
+      {
+        "g": "quae",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "sg.nom.f.",
+        "gloss_kr": "어떤 [여신인지]",
+        "gloss_en": "who",
+        "syntax": "LFG f-구조에서 quae는 간접 의문절(embedded interrogative clause)의 주어(SUBJ) 기능을 하며, [PRED 'qui', NUM sg, GEND f, CASE nom] 자질을 갖는다. 생성문법적으로 [CP [C' [IP tᵢ ...]]] 구조에서 의문사 이동(Wh-movement)을 거쳐 [Spec, CP] 자위로 전위된 의문 대명사로 분석된다.",
+        "background": "눈앞의 존재가 여신인 것은 분명하지만, 구체적으로 어떤 신(예: 베누스, 디아나 등)인지 알지 못하는 화자의 호기심과 경외심의 초점을 맞춘다. 이는 고대 신화에서 신비로운 현현(epiphany)의 전형적인 반응이다.",
+        "etymology": "PIE 의문/관계 대명사 재구형 *kʷi- / *kʷo- (애블라우트 e급/o급)에서 유래한다. de Vaan(EDL)은 라틴어 relative/interrogative pronoun의 패러다임 형성과 후두음 및 모음 변화를 설명한다. 현대 스페인어 qué, 포르투갈어 que 등의 의문사·관계사 계통으로 이어졌다."
+      },
+      {
+        "g": "sis",
+        "pos": "동사",
+        "lemma": "sum, esse, fui",
+        "parse": "2nd.sg.pres.subj.act.",
+        "gloss_kr": "네가 … 인지",
+        "gloss_en": "you are",
+        "syntax": "LFG f-구조에서 sis는 간접 의문절의 술어(PRED)로서 [PRED 'sum <SUBJ>', SUBJ [PRED 'pro', GEND f, NUM sg, CASE nom], MOOD subj] 자질 구조를 이룬다. 생성문법적으로 간접 의문문을 이끄는 접속사 환기(Mood head)에 의해 접속법(subjunctive mood)이 허가되며, T-to-C 이동이나 특수 절 구조 내의 시제 일치 현상을 보여준다.",
+        "background": "단순한 직설법이 아니라 접속법을 사용하여 화자의 불확실성과 간접적 질문의 어조를 문법적으로 구현한다. 상대방의 정체에 대한 인식적 불확실성이 문장의 양상(modality)을 결정한다.",
+        "etymology": "PIE 재구형 *h₁es-('존다, 있다', 영급 어근)의 현재형 재구 *h₁és-mi 계열에서 라틴어 es(s)e로 발전했다. 접속법 형태는 어근 모음의 연장과 인칭 어미의 결합으로 형성되었다(Ernout-Meillet, DELL). 현대 로망스어의 존재사 및 불규칙 동사 변화(스페인어 seas 등)의 원형이다.",
+        "principalParts": "sum – esse – fui – (없음)"
+      },
+      {
+        "g": "dicere",
+        "pos": "동사",
+        "lemma": "dico, dicere, dixi, dictus",
+        "parse": "pres.act.inf.",
+        "gloss_kr": "말하기",
+        "gloss_en": "to say",
+        "syntax": "LFG f-구조에서 dicere는 비한정사구(XCOMP)의 핵이며, [PRED 'dico <SUBJ,OBJ>', SUBJ [CORR 'mihi'], OBJ [PRED 'interrogative-clause']] 자질을 갖는다. 무인칭 구문(impersonal construction)인 promptum est의 진주어(subject clause)로 기능하는 명사적 부정사(nominal infinitive)이다.",
+        "background": "정체를 언어로 명확히 표현하는 행위가 인간의 인지적·언어적 능력 바깥에 있음을 시사한다. 신적 존재의 압도적인 아라(aura) 앞에서 인간의 언어가 마비되는 상황을 수사적으로 형상화한다.",
+        "etymology": "PIE 재구형 *deik-('가리키다, 말하다', e급 어근)에서 유래한다. de Vaan(EDL)은 법정 용어 및 선언을 뜻하는 의미 전이 과정을 설명한다. 영어의 dictate, dictionary 등의 어원이 되며, 현대 로망스어(스페인어 decir, 포르투갈어 dizer)의 기본 동사로 직계 전승되었다.",
+        "principalParts": "dico – dicere – dixi – dictus"
+      },
+      {
+        "g": "promptum",
+        "pos": "형용사",
+        "lemma": "promptus, -a, -um",
+        "parse": "sg.nom.n.",
+        "gloss_kr": "쉬운, 준비된",
+        "gloss_en": "easy, ready",
+        "syntax": "LFG f-구조에서 promptum은 보어(XCOMP의 주격 보어 또는 무인칭 주어)로서 [PRED 'promptus', CASE nom, NUM sg, GEND n] 자질을 지닌다. 생성문법에서 이 무인칭 구문은 [TP [DP ∅] [T' est [AdjP promptum [CP dicere ...]]]] 구조로 분석되며, 진주어 부정사구가 외치(extraposition)된 형태를 취한다.",
+        "background": "어떤 대상을 말로 명백히 정의하는 일이 결코 수월하지 않음을 나타내는 표현이다. 신화적 현현 앞에서 합리적 언어 구사가 마비되는 인간의 한계를 강조한다.",
+        "etymology": "promere('끌어내다')의 과거분사형에서 유래한 형용사로, PIE 어근 *em-('얻다, 잡다')에 접두사 pro-가 결합한 형태이다(OLD). 명확하게 눈앞에 드러나 있어 '쉽다' 또는 '준비되어 있다'로 의미가 확장되었다. 영어 prompt의 어원이 된다.",
+        "principalParts": "promere – prompsi – promptus"
+      },
+      {
+        "g": "est",
+        "pos": "동사",
+        "lemma": "sum, esse, fui",
+        "parse": "3rd.sg.pres.ind.act.",
+        "gloss_kr": "[~이다]",
+        "gloss_en": "is",
+        "syntax": "LFG f-구조에서 est는 주절의 계사(copula) 또는 상태 서술어의 핵이며, [PRED 'sum <SUBJ,XCOMP>', SUBJ [PRED 'dicere ...'], XCOMP [PRED 'promptum']] 자질을 갖는다. 생성문법 관점에서 T(Tense) 핵을 점하며 시제와 일치(Agreement) 자질을 부여한다.",
+        "background": "앞선 조건에 대한 단정적 판단을 내리는 고리 역할을 한다. 무인칭 구문 'promptum est'를 완성하여 문장의 논리적 완결성을 부여한다.",
+        "etymology": "PIE 어근 *h₁es-의 3인칭 단수 현재 직설법 *h₁ésti에서 유래했다(Ernout-Meillet, DELL). 인도유럽어족 전반에 걸쳐 가장 보존도가 높은 계사 형태 중 하나로, 현대 로망스어 및 영어 is의 직계 조상이다.",
+        "principalParts": "sum – esse – fui – (없음)"
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.842",
+    "trans": "그리고 여신임이 명백하니, 인도하소서, 오 인도하소서, 그리고 제게 남편의 모습을",
+    "words": [
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord.conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG f-구조에서 et는 두 절을 대등하게 연결하는 등위 접속사(coordinating conjunction)로 기능하며, [CO-OD +] 자질을 가진다. 생성문법에서는 Conjunction Phrase(CoP)의 핵을 구성하여 앞선 절과 뒤따르는 절을 대등하게 병합(merge)한다.",
+        "background": "앞서 느낀 의문(정체를 알기 어려움)과 명백한 사실(여신임이 분명함) 사이의 전환을 매개하며, 곧바로 적극적인 기원과 청유로 화자의 태도가 전환되는 변곡점을 이룬다.",
+        "etymology": "PIE 재구형 *eti('~도 또한, 게다가')에서 유래한다. de Vaan(EDL)은 이탈리아어파와 기타 인도유럽어족 언어들에서의 부사적·접속사적 용법 분화를 설명한다. 현대 프랑스어 et, 이탈리아어 e 등의 조상이다."
+      },
+      {
+        "g": "liquet",
+        "pos": "동사",
+        "lemma": "liquet, liquere, licuit",
+        "parse": "3rd.sg.pres.ind.act.",
+        "gloss_kr": "명백하다",
+        "gloss_en": "it is clear",
+        "syntax": "LFG f-구조에서 liquet은 비인인칭(impersonal) 동사로서 [PRED 'liquet <COMP>', COMP [PRED 'esse', SUBJ [PRED 'deam']]] 자질 구조를 취한다. 생성문법적으로 무인칭 주어 자리는 공백으로 비어 있으며, 내용절(accusative-and-infinitive construction)이 보어 혹은 논항으로 후치되어 병합된다.",
+        "background": "논리적 추론이나 감각적 직관을 넘어 눈앞의 존재가 지닌 신성함이 부인할 수 없는 명백한 진실임을 단언하는 표현이다. 화자의 내면적 동요 속에서도 확고한 신앙적·신화적 직관이 작용하고 있음을 보여준다.",
+        "etymology": "PIE 재구형 *leikʷ-('남기다, 맑다') 어근과 연관되며, 액체가 '맑다, 투명하다'라는 원뜻에서 투명함으로 인해 '명백하다'로 의미가 전이되었다(Ernout-Meillet, DELL). 로망스어군으로 직접 계승된 빈도는 낮으나 라틴어 격식체 문헌에서 널리 쓰인다.",
+        "principalParts": "liquet – liquere – licuit – (없음)"
+      },
+      {
+        "g": "esse",
+        "pos": "동사",
+        "lemma": "sum, esse, fui",
+        "parse": "pres.act.inf.",
+        "gloss_kr": "[~임을]",
+        "gloss_en": "to be",
+        "syntax": "LFG f-구조에서 esse는 부정사구(AcI 구문)의 핵으로서 [PRED 'sum <SUBJ,ATTR>', SUBJ [CORR 'deam' (생략된 대명사 주어)], ATTR [PRED 'deam', CASE acc]] 자질을 형성한다. 생성문법적으로 [IP [DP proᵢ] [I' esse [AP deam]]] 형태의 비정형 절(non-finite clause) 구조를 이룬다.",
+        "background": "무인칭 동사 liquet의 지배를 받는 명사구-부정사 구문(Accusative with Infinitive)을 이루어, 상대방이 여신이라는 객관적 사실 명시의 핵심 연결고리 역할을 한다.",
+        "etymology": "PIE 재구형 *h₁es-('존다, 있다')의 부정사형 *h₁es-se에서 유래했다(Ernout-Meillet, DELL). 영어의 be 동사 계통 및 로망스어의 존재사 원형과 일치한다.",
+        "principalParts": "sum – esse – fui – (없음)"
+      },
+      {
+        "g": "deam",
+        "pos": "명사",
+        "lemma": "dea, deae, f.",
+        "parse": "sg.acc.f.",
+        "gloss_kr": "여신을",
+        "gloss_en": "goddess",
+        "syntax": "LFG f-구조에서 deam은 AcI 구문의 의미상의 주어(subject of infinitive)로서 대격(accusative case)을 취하며, [PRED 'dea', CASE acc, NUM sg, GEND f] 자질을 갖는다. 생성문법적으로 비정형 절 내부에서 주격이 아닌 대격 격자지(Case feature)를 할당받는다.",
+        "background": "상대방의 신성한 신분을 다시 한 번 강조하며, 단순한 호칭을 넘어 논리적 확신의 대상을 명시한다. 신과의 조우가 확실하다는 전제 아래 청원의 정당성을 확보한다.",
+        "etymology": "PIE 재구형 *deiwih₂-에서 파생된 라틴어 1격 변화 여성형 명사이다(de Vaan, EDL). 신화적 문맥에서 여신을 지칭하는 표준 어휘이다."
+      },
+      {
+        "g": "duc",
+        "pos": "동사",
+        "lemma": "duco, ducere, duxi, ductus",
+        "parse": "2nd.sg.pres.impv.act.",
+        "gloss_kr": "인도하소서",
+        "gloss_en": "lead",
+        "syntax": "LFG f-구조에서 duc는 명령법(imperative mood) 동사로서 [PRED 'duco <SUBJ,OBJ>', SUBJ [PRED 'pro', PERS 2nd, NUM sg], OBJ [PRED 'pro', GEND m]] 자질 구조를 지닌다. 생성문법적으로 Imperative Phrase(ImpP)의 핵을 점하며, 어미 탈락(apocope)을 겪은 제3형 불규칙 명령형의 통사적 실현을 보여준다.",
+        "background": "간절한 청원의 중심이 되는 동사로, 여신에게 자신의 길을 인도해 줄 것과 남편(오이디푸스 혹은 율리시스의 후예인 피쿠스 등의 맥락에서 연인/남편)에게로 이끌어 줄 것을 강력하게 요청한다.",
+        "etymology": "PIE 재구형 *dewk-('끌다, 인도하다', e급 어근)에서 유래한다. Ernout-Meillet(DELL)은 고전 라틴어에서 명령형 단수 어미 *-e가 탈락하여 duc 형태가 고정된 음운론적 규칙을 설명한다. 영어의 duke, conduct 등의 어원이 되며, 스페인어 ducir 계열 및 포르투갈어 등에서 흔적을 찾을 수 있다.",
+        "principalParts": "duco – ducere – duxi – ductus"
+      },
+      {
+        "g": "o",
+        "pos": "감탄사",
+        "lemma": "o",
+        "parse": "interj.",
+        "gloss_kr": "오",
+        "gloss_en": "oh",
+        "syntax": "LFG f-구조에서 o는 반복되는 호기심과 감정의 고조를 나타내는 담화 표지이며, 앞선 행과 마찬가지로 [VOCATIVE +] 자질을 부여한다. 생성문법적으로 반복 구문(anadiplosis 혹은 epizeuxis 수사법) 속에서 감정적 강조를 수행하는 담화 구조의 필수 성분으로 분석된다.",
+        "background": "명령형 동사 'duc'를 두 번 반복(o duc, o duc)하는 수사적 장치 속에서 화자의 절박함과 간절함이 극에 달함을 보여준다. 반복을 통해 시적 리듬감과 감정의 호소력이 배가된다.",
+        "etymology": "PIE 재구형 *ō 감탄사 계열로, 정서적 발성 기호의 연속성을 지닌다(OLD)."
+      },
+      {
+        "g": "duc",
+        "pos": "동사",
+        "lemma": "duco, ducere, duxi, ductus",
+        "parse": "2nd.sg.pres.impv.act.",
+        "gloss_kr": "인도하소서",
+        "gloss_en": "lead",
+        "syntax": "LFG f-구조에서 두 번째 duc 역시 명령법 핵으로서 동일한 논항 구조 [PRED 'duco <SUBJ,OBJ>']를 반복 수행하며, 담화상의 초점(focus)을 강화한다.",
+        "background": "반복되는 명령을 통해 여신의 자비와 인도하심을 강하게 압박하듯 청하는 화자의 심리를 반영한다.",
+        "etymology": "PIE 재구형 *dewk-에서 유래한 라틴어 명령형태로 앞서 상술한 바와 같다."
+      },
+      {
+        "g": "inquit",
+        "pos": "동사",
+        "lemma": "inquam",
+        "parse": "3rd.sg.pres.ind.act.",
+        "gloss_kr": "그가 말했다",
+        "gloss_en": "he said",
+        "syntax": "LFG f-구조에서 inquit은 화화 인용구(direct quotation)의 삽입 주절로서 [PRED 'inquam <SUBJ,COMP>', SUBJ [PRED 'pro', GEND m, NUM sg], COMP [DIRECT-SPEECH]] 자질을 지닌다. 생성문법에서 이 동사는 인용구 내부 또는 중간에 삽입되어 서사의 시점을 환기하는 통사적 위치(Parenthetical V)를 점한다.",
+        "background": "직접 화법 사이에 삽입되어 발화의 주체가 누구인지 환기시키고, 서사의 현장감과 생동감을 높이는 전형적인 서사시적 기법이다.",
+        "etymology": "PIE 어근 *ekw-('말하다') 계열 또는 라틴어 고유의 결손 동사(defective verb) 형태이다. Ernout-Meillet(DELL)은 고전 라틴어에서 인용 삽입구로 고정되어 쓰이는 양상을 설명한다.",
+        "principalParts": "inquam – (없음) – (없음) – (없음)"
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord.conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG f-구조에서 et는 두 명령문(duc와 offer)을 대등하게 연결하는 접속사로 기능한다 [CO-OD +].",
+        "background": "인도해 줄 것과 남편의 모습을 보여줄 것 두 가지 청원을 유기적으로 연결하는 역할을 한다.",
+        "etymology": "PIE *eti에서 유래한 등위 접속사이다."
+      },
+      {
+        "g": "offer",
+        "pos": "동사",
+        "lemma": "offero, offerre, obtuli, oblatus",
+        "parse": "2nd.sg.pres.impv.act.",
+        "gloss_kr": "보여주소서, 바치소서",
+        "gloss_en": "offer, present",
+        "syntax": "LFG f-구조에서 offer는 2형식/3형식 명령문 동사로서 [PRED 'offero <SUBJ,OBJ,OBL>', SUBJ [CORR 'pro'], OBJ [PRED 'ora'], OBL [PRED 'mihi', CASE dat]] 자질 구조를 갖는다. 생성문법적으로 접두사 ob-와 ferre의 합성에서 온 불규칙 명령형태로, 불규칙 음운 탈락을 거쳐 어간 형태가 축약된 상태로 병합된다.",
+        "background": "단순한 인도를 넘어 자신이 그리워하는 남편(또는 연인)의 얼굴을 직접 대면하게 해달라는 구체적이고 궁극적인 소원을 요구하는 대목이다.",
+        "etymology": "PIE 재구형 *bher-('나르다', e급 어근)에 전치사적 접두사 *ob-가 결합한 형태이다. de Vaan(EDL)은 어간 교체(suppletion)를 통해 완료형이 obtuli로 바뀐 역사적 과정을 상세히 기술한다. 영어의 offer의 어원이 된다.",
+        "principalParts": "offero – offerre – obtuli – oblatus"
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.843",
+    "trans": "남편의 모습을 내게, 만약 운명이 그것을 볼 수 있도록 허락한다면,",
+    "words": [
+      {
+        "g": "coniugis",
+        "pos": "명사",
+        "lemma": "coniunx, coniugis, m./f.",
+        "parse": "sg.gen.m./f.",
+        "gloss_kr": "남편의, 아내의",
+        "gloss_en": "of the spouse",
+        "syntax": "LFG f-구조에서 coniugis는 명사구 ora의 소유격 한정사(possessor/specifier)로서 [POSS [PRED 'coniunx', CASE gen, NUM sg]] 자질을 갖는다. 생성문법적으로 [DP coniugis [D' ora]] 구조에서 Genitive Case가 할당된다.",
+        "background": "여기서 'coniunx'는 카이페타의 남편 혹은 신화 속에서 이별을 겪은 연인을 가리키며, 화자가 그토록 갈망하는 관계 회복의 핵심 매개체이다.",
+        "etymology": "PIE 재구형 *iugom('멍에') 어근과 전치사/부사 *kom-('함께')의 합성어인 *kom-iug-('멍를 같이 메는 사람')에서 유래한다(de Vaan, EDL). 결혼 제도를 뜻하는 coniugium 및 현대 로망스어의 관련 어휘들의 바탕이 된다.",
+        "principalParts": "coniunx, coniugis"
+      },
+      {
+        "g": "ora",
+        "pos": "명사",
+        "lemma": "os, oris, n.",
+        "parse": "pl.acc.n.",
+        "gloss_kr": "얼굴들을, 모습을",
+        "gloss_en": "faces, countenance",
+        "syntax": "LFG f-구조에서 ora는 동사 offer의 직접 목적어(OBJ)로서 [PRED 'os', CASE acc, NUM pl, GEND n] 자질 구조를 형성한다. 생성문법적으로 동사 offer의 V-bar 내부에서 대격(Accusative Case)을 할당받는 목적어 NP로 분석된다.",
+        "background": "그리운 이의 얼굴을 직접 마주하고 싶은 인간적 갈망을 시각적 신체 부위인 'ora(얼굴/입)'를 통해 구체화한다.",
+        "etymology": "PIE 재구형 *h₃est-('입, 뼈')에서 유래하며, 애블라우트 o급 형태를 반영한다. Ernout-Meillet(DELL)은 신체 부위로서의 입에서 얼굴 전체를 뜻하는 환유(metonymy)로의 의미 확장을 설명한다. 영어의 oral 등의 어원과 연결된다."
+      },
+      {
+        "g": "mihi",
+        "pos": "대명사",
+        "lemma": "ego, mei, m./f.",
+        "parse": "sg.dat.m.",
+        "gloss_kr": "내게",
+        "gloss_en": "to me",
+        "syntax": "LFG f-구조에서 mihi는 수여/이익의 여격(dative of advantage)으로서 [OBL-DAT [PRED 'ego', CASE dat]] 기능을 수행한다.",
+        "background": "남편의 얼굴이 향하는 대상이 오직 자신이어야 함을 강조하며, 화자의 주관적 소망의 간절함을 극대화한다.",
+        "etymology": "PIE 1인칭 대명사 어근 *me-의 여격형 *me-bʰi에서 유래했다(de Vaan, EDL)."
+      },
+      {
+        "g": "quem",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "sg.acc.m.",
+        "gloss_kr": "그를(관계대명사)",
+        "gloss_en": "whom",
+        "syntax": "LFG f-구조에서 quem은 관계절(relative clause) 내부의 목적어(OBJ)로 기능하며, [PRED 'qui', NUM sg, GEND m, CASE acc, ANTE 'coniugis'] 자질을 갖는다. 생성문법적으로 관계대명사 이동(Wh-movement)에 의해 관계절의 [Spec, CP]로 전위된 형태이다.",
+        "background": "앞서 언급된 남편(coniunx)을 선행사로 받아 그에 대한 조건문을 이끄는 관계대명사로, 서사의 초점을 대상 인물에게로 부드럽게 연결한다.",
+        "etymology": "PIE 관계대명사 재구형 *kʷi- / *kʷo-의 대격 남성 단수형이다(de Vaan, EDL)."
+      },
+      {
+        "g": "si",
+        "pos": "접속사",
+        "lemma": "si",
+        "parse": "coord.conj.",
+        "gloss_kr": "만약 … 라면",
+        "gloss_en": "if",
+        "syntax": "LFG f-구조에서 si는 조건절(conditional clause)을 이끄는 접속사로서 [ADJUNCT [CONDITION +]] 자질을 지닌다. 생성문법적으로 조건절 CP의 핵을 점하며, 미래 사실에 대한 가정이나 실현 가능성을 따지는 법(mood) 조화를 이끈다.",
+        "background": "인간의 소망이 온전히 자신의 의지만으로 이루어지는 것이 아니라, 거대한 우주적 질서인 '운명(fata)'의 허락에 달려 있다는 점을 한 발 물러서서 인정하는 조건문이다.",
+        "etymology": "PIE 재구형 *swei('만약에')에서 유래한다. Ernout-Meillet(DELL)은 이탈리아어파 내에서 조건문을 형성하는 고유의 입자(particle)로 고착된 과정을 다룬다. 스페인어 si, 포르투갈어 se 등의 조상이다."
+      },
+      {
+        "g": "modo",
+        "pos": "부사",
+        "lemma": "modus, -i, m.",
+        "parse": "sg.abl.m.",
+        "gloss_kr": "만약에 오직 … 하기만 한다면 (modo = si modo)",
+        "gloss_en": "only, provided that",
+        "syntax": "LFG f-구조에서 modo는 si와 결합하여 '만약 오직 ~하기만 한다면'이라는 한정 조건 구문을 구성하는 부사적 여격/탈격(adverbial ablative)이다. f-구조상 [ADJUNCT [RESTRICTION +]] 자질을 부여한다.",
+        "background": "운명이 허락하는 범위가 거대할 필요도 없고, 단 한 번만이라도(semel) 볼 수 있게 해준다면 만족하겠다는 화자의 절제되면서도 애절한 타협점을 보여준다.",
+        "etymology": "PIE 재구형 *med-('측정하다, 적당하게 하다') 어근에서 파생된 명사 modus의 탈격형태로, '방법으로'에서 '오직, 단지'라는 부사적 의미로 전이되었다(de Vaan, EDL). 영어의 mode, mood 등의 어원과 관련된다.",
+        "principalParts": "modus, -i"
+      },
+      {
+        "g": "posse",
+        "pos": "동사",
+        "lemma": "possum, posse, potui",
+        "parse": "pres.act.inf.",
+        "gloss_kr": "[~할 수 있기를]",
+        "gloss_en": "to be able",
+        "syntax": "LFG f-구조에서 posse는 부정사구의 핵으로서 [PRED 'possum <SUBJ,XCOMP>', SUBJ [CORR 'quem' (coniugis)], XCOMP [PRED 'video']] 자질 구조를 이룬다. 생성문법적으로 주절의 사역/여격 지배 동사 dederint의 보어 자리에 위치하며, 복합 부정사구(Accusative with Infinitive)를 형성한다.",
+        "background": "남편의 얼굴을 보는 능력이 화자 자신에게 있는 것이 아니라 운명의 허락(posse)에 좌우됨을 객관화하여 표현한다.",
+        "etymology": "PIE 재구형 *poti-('력 있는, 주인')와 *esse('이다')의 합성어인 *pote-esse에서 음운론적 동화(assimilation)를 거쳐 possum, posse로 발전했다(Ernout-Meillet, DELL). 영어의 potent, possible 등의 어원과 맥을 같이 한다.",
+        "principalParts": "possum – posse – potui – (없음)"
+      },
+      {
+        "g": "videre",
+        "pos": "동사",
+        "lemma": "video, videre, vidi, visus",
+        "parse": "pres.act.inf.",
+        "gloss_kr": "보다",
+        "gloss_en": "to see",
+        "syntax": "LFG f-구조에서 videre는 posse의 보조 부정사구(XCOMP) 핵이며, [PRED 'video <SUBJ,OBJ>', SUBJ [CORR 'quem'], OBJ [PRED 'ora' (생략 혹은 대명사적 지칭)]] 자질을 갖는다.",
+        "background": "시각적 접촉이 이 시인의 시적·서사적 구원에서 차지하는 결정적 비중을 보여준다. '보다'라는 행위는 곧 생사와 이별의 경계를 넘어선 재회의 완성을 의미한다.",
+        "etymology": "PIE 재구형 *w-ide-('보다', e급 어근, cf. 영어 wit, 산스크리트어 veda)에서 유래한다. de Vaan(EDL)은 이탈리아어파에서의 시각 동사 어간 변천을 상세히 기술한다. 현대 로망스어(스페인어 ver, 포르투갈어 ver) 및 영어의 video, vision 등의 직계 조상이다.",
+        "principalParts": "video – videre – vidi – visus"
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.844",
+    "trans": "운명이 단 한 번이라도 허락한다면, 하늘을 얻은 것으로 인정하겠나이다.",
+    "words": [
+      {
+        "g": "fata",
+        "pos": "명사",
+        "lemma": "fatum, -i, n.",
+        "parse": "pl.nom.n.",
+        "gloss_kr": "운명들이, 신의 뜻이",
+        "gloss_en": "the Fates, destinies",
+        "syntax": "LFG f-구조에서 fata는 조건절 내부의 주어(SUBJ)로서 [PRED 'fatum', CASE nom, NUM pl, GEND n] 자질을 가진다. 생성문법에서 이 명사구는 가상적 조건문의 능동 주어로 병합되어, 우주적 법칙을 관장하는 주체로서의 통사적 지위를 차지한다.",
+        "background": "로마 서사시에서 'fata(운명)'는 올림포스의 신들조차 거스를 수 없는 절대적 법칙을 의미한다. 화자는 인간의 힘으로는 불가능한 재회를 오직 운명의 자비로운 허락에 의탁하고 있다.",
+        "etymology": "PIE 재구형 *bha-('말하다', e급 어근)의 중성 과거분사 명사화 형태인 *bhatom('말해진 것, 신의 예언')에서 유래한다(de Vaan, EDL). 신이 입 밖에 내어 정한바 곧 '운명'이라는 의미로 전이되었다. 영어의 fate의 어원이다.",
+        "principalParts": "fatum, -i"
+      },
+      {
+        "g": "semel",
+        "pos": "부사",
+        "lemma": "semel",
+        "parse": "adv.",
+        "gloss_kr": "단 한 번",
+        "gloss_en": "once",
+        "syntax": "LFG f-구조에서 semel은 횟수를 나타내는 부사적 한정사(ADJUNCT)로서 [ADJUNCT [FREQUENCY once]] 자질을 지닌다. 생성문법적으로 동사 dederint의 시간/횟수 한정 영역에 부착(adjunct)된다.",
+        "background": "영원한 재회가 아니라 단 한 번(semel)의 순간적인 만남만 허락되더라도 모든 고통을 상쇄할 수 있다는 화자의 극단적인 절실함과 겸허함을 드러낸다.",
+        "etymology": "PIE 재구형 *sm-el / *sem-('하나')의 수사 부사형태이다(de Vaan, EDL). 라틴어 semel은 영어의 some, same 및 그리스어 hen(하나)과 동계어 관계에 있다.",
+        "principalParts": "semel (부사)"
+      },
+      {
+        "g": "dederint",
+        "pos": "동사",
+        "lemma": "do, dare, dedi, datus",
+        "parse": "3rd.pl.perf.subj.act.",
+        "gloss_kr": "[운명이] 허락한다면 (완료접속법)",
+        "gloss_en": "shall have given / grant",
+        "syntax": "LFG f-구조에서 dederint는 조건절의 술어로서 [PRED 'do <SUBJ,OBJ,OBL>', SUBJ [PRED 'fata', CASE nom, NUM pl], MOOD subj, TENSE perf] 자질 구조를 형성한다. 생성문법적으로 가정법 미래(Future Less Vivid 혹은 조건부 완료접속법 subjunctive perfect) 구문 내에서 주절의 미래 상황을 선행하는 조건적 시간 단위를 규정한다.",
+        "background": "운명이 미래의 어느 시점에 단 한 번 은혜를 베풀어준다는 가정적 상황을 문법적으로 엄밀하게 표현하여, 뒤이는 주절의 서약(하늘을 얻은 것으로 치겠다)과 호응하게 만든다.",
+        "etymology": "PIE 재구형 *deh₃-('주다', 영급 어간에 후두음 h₃ 포함)에서 유래한다(de Vaan, EDL). 라틴어의 대표적인 어근 동사로, 영어의 date(여권 등의 날짜 부여에서 파생된 의미는 별개이나 어원적 연관성 논의 존재) 및 로망스어의 주다 동사(스페인어 dar, 포르투갈어 dar)의 직계 조상이다.",
+        "principalParts": "do – dare – dedi – datus"
+      },
+      {
+        "g": "caelum",
+        "pos": "명사",
+        "lemma": "caelum, -i, n.",
+        "parse": "sg.acc.n.",
+        "gloss_kr": "하늘을",
+        "gloss_en": "heaven, sky",
+        "syntax": "LFG f-구조에서 caelum은 주절의 아시(AcI 구문) 내부에서 부정사 accepisse의 직접 목적어(OBJ)로서 [PRED 'caelum', CASE acc, NUM sg, GEND n] 자질을 갖는다. 생성문법적으로 대격 격자지를 할당받는 목적어 NP이다.",
+        "background": "남편과의 재회를 우주적 최고 축복인 '하늘을 얻는 것(올림포스의 신들의 지위에 준하는 영광)'에 비유하는 과장법적 수사이다. 지상의 슬픔이 신성한 구원으로 치환되는 순간을 보여준다.",
+        "etymology": "PIE 재구형 *kaid-로 소급하거나 선그리스어/지층 어휘 가능성이 논의되나, 이탈리아어파 내에서 '덮개, 하늘'을 뜻하는 고유 어휘로 정착했다(Beekes, EDG; de Vaan, EDL). 영어의 ceiling, celestial 등의 어원이 된다.",
+        "principalParts": "caelum, -i"
+      },
+      {
+        "g": "accepisse",
+        "pos": "동사",
+        "lemma": "accipio, accipere, accepi, acceptus",
+        "parse": "perf.act.inf.",
+        "gloss_kr": "[하늘을] 받아들였다고, 얻었다고",
+        "gloss_en": "to have received",
+        "syntax": "LFG f-구조에서 accepisse는 완료 시제 능동태 부정사로서 AcI 구문의 핵을 이루며, [PRED 'accipio <SUBJ,OBJ>', SUBJ [CORR 'pro' (화자)], OBJ [PRED 'caelum']] 자질을 갖는다. 생성문법적으로 주절의 서법 동사 fatebor의 보어 자리에 위치하며, 완료 시제 의미를 내포하는 비정형 절을 이끈다.",
+        "background": "운명이 소원을 들어준다면 자신의 삶 전체가 구원받아 신들의 영역에 오른 것과 다름없다는 극적인 만족감과 서약을 표현한다.",
+        "etymology": "전치사 ad와 어근 *kap-('잡다, 취하다')의 합성어인 *ad-kapio에서 음운론적 약화(i-weakening)를 거쳐 accipio로 발전했다(de Vaan, EDL). 영어의 accept 등의 어원이다.",
+        "principalParts": "accipio – accipere – accepi – acceptus"
+      },
+      {
+        "g": "fatebor",
+        "pos": "동사",
+        "lemma": "fateor, fateri, fassus sum",
+        "parse": "1st.sg.fut.ind.pass. (deponent)",
+        "gloss_kr": "인정하겠나이다",
+        "gloss_en": "I will confess / acknowledge",
+        "syntax": "LFG f-구조에서 fatebor는 주절의 서술어로서 [PRED 'fateor <SUBJ,COMP>', SUBJ [PRED 'ego', PERS 1st, NUM sg], TENSE fut, MOOD ind, VOICE pass (deponent)] 자질 구조를 형성한다. 생성문법적으로 형태는 수동태이나 의미는 능동인 디포넌트(deponent) 동사이며, 미래 시제 핵(Future Tense head)을 점하며 확고한 의지를 드러낸다.",
+        "background": "화자가 자신의 모든 감정과 영혼을 걸고 여신 앞에서 엄숙히 맹세하는 선언적 동사이다. 남편과의 만남이 자신의 생애 유일하고 절대적인 구원임을 서약한다.",
+        "etymology": "PIE 재구형 *bha-('말하다') 어근에서 파생된 중간태/수동태 계열 동사이다(Ernout-Meillet, DELL). 고대 라틴어의 고백·인정(confiteri 등) 계열 어휘의 모체가 된다.",
+        "principalParts": "fateor – fateri – fassus sum"
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.845",
+    "trans": "지체 없이, 타우마스의 딸은 처녀와 함께",
+    "words": [
+      {
+        "g": "Nec",
+        "pos": "부사",
+        "lemma": "neque",
+        "parse": "neg.adv.",
+        "gloss_kr": "지체 없이 (nec mora = 지체함이 없이)",
+        "gloss_en": "and not / without",
+        "syntax": "LFG f-구조에서 nec는 부정 관용구 'nec mora'의 구성 요소로 기능하며, [NEG +, ADJUNCT +] 자질을 갖는다. 생성문법적으로 서사적 전환점에서 지연 없는 즉각적 행동 개시를 나타내는 상위 부사구(AdvP)로 병합된다.",
+        "background": "화자의 기도가 끝나자마자 지체 없이(nec mora) 신적인 개입이 일어남을 알리는 오비디우스 특유의 빠른 서사 전환 기법이다.",
+        "etymology": "PIE *ne-와 *kʷe의 결합형이다(Ernout-Meillet, DELL)."
+      },
+      {
+        "g": "mora",
+        "pos": "명사",
+        "lemma": "mora, morae, f.",
+        "parse": "sg.nom.f.",
+        "gloss_kr": "지체, 망설임",
+        "gloss_en": "delay",
+        "syntax": "LFG f-구조에서 mora는 'nec mora' 관용구 내부의 주어(SUBJ)로서 [PRED 'mora', CASE nom, NUM sg, GEND f] 자질을 갖는다. 생성문법적으로 무인칭적 혹은 생략된 존재 구문 속에서 주격 명사구로 병합된다.",
+        "background": "신화적 현현과 기적적 변형의 순간에 어떠한 시간적 지연도 허용되지 않음을 강조하여 서사의 긴장감을 최고조로 끌어올린다.",
+        "etymology": "PIE 재구형 *mor-('지연하다, 머물다') 어근에서 유래한다(de Vaan, EDL). 영어의 moratory, demur 등의 어원이며, 로망스어군 전반에 흔적을 남겼다.",
+        "principalParts": "mora, morae"
+      },
+      {
+        "g": "Romuleos",
+        "pos": "형용사",
+        "lemma": "Romuleus, -a, -um",
+        "parse": "pl.acc.m.",
+        "gloss_kr": "로물루스의, 로마의",
+        "gloss_en": "Romulean, Roman",
+        "syntax": "LFG f-구조에서 Romuleos는 명사 virgine의 수식어(ADJUNCT/MOD)로서 [MOD [PRED 'Romuleus', CASE acc, NUM pl, GEND m]] 자질을 지닌다. 생성문법적으로 형용사구(AP)로서 명사구를 한정하며, 신화적 배경인 로마 건국 시조 로물루스와 연계된 지리적·역사적 공간 속성을 부여한다.",
+        "background": "로물루스의 이름에서 유래한 이 수식어는 배경이 되는 장소가 장차 로마가 될 신성한 땅임을 상기시키며, 서사의 무대를 역사적·신화적 차원으로 격상시킨다.",
+        "etymology": "로마의 건국 시조 로물루스(Romulus, 에트루리아계 어원 및 PIE 왕권 관련 어근과 연계)의 이름에 고유 형용사 접미사 -eus가 결합한 형태이다(Ernout-Meillet, DELL).",
+        "principalParts": "Romuleus, -a, -um"
+      },
+      {
+        "g": "cum",
+        "pos": "전치사",
+        "lemma": "cum",
+        "parse": "prep.",
+        "gloss_kr": "~와 함께",
+        "gloss_en": "with",
+        "syntax": "LFG f-구조에서 cum은 탈격 지배 전치사구(Prepositional Phrase)의 핵이며, [PRED 'cum', OBL [PRED 'virgine', CASE abl]] 자질 구조를 형성한다. 생성문법적으로 PP 영역에서 complement로 명사구를 지배하며 동반(accompaniment) 관계를 나타낸다.",
+        "background": "타우마스의 딸(무지개의 여신 이리스)이 누구와 동행하여 나타났는지를 보여주며, 신성한 수행원 혹은 동반자의 존재를 명시한다.",
+        "etymology": "PIE 재구형 *ḱom('~와 함께', e급 어근)에서 유래한다(de Vaan, EDL). 현대 프랑스어 avec의 라틴어 조상이며, 영어의 con-, co- 등의 접두사 어원과 동계이다.",
+        "principalParts": "cum (전치사)"
+      },
+      {
+        "g": "virgine",
+        "pos": "명사",
+        "lemma": "virgo, virginis, f.",
+        "parse": "sg.abl.f.",
+        "gloss_kr": "처녀와, 님프와",
+        "gloss_en": "with the maiden",
+        "syntax": "LFG f-구조에서 virgine은 전치사 cum의 지배를 받는 전치사구 내부의 목적어(OBL)로서 [PRED 'virgo', CASE abl, NUM sg, GEND f] 자질을 갖는다. 생성문법적으로 탈격(Ablative Case) 격자지를 할당받는다.",
+        "background": "여기서 '처녀(virgo)'는 타우마스의 딸인 이리스(Iris) 자신 혹은 그녀가 대동한 시종/님프를 가리키며, 순수하고 신성한 신화적 분위기를 자아낸다.",
+        "etymology": "PIE 재구형 *werg-('젊다, 힘이 있다') 또는 파생 어근에서 유래하여 '결혼하지 않은 젊은 여성, 처녀'를 뜻하는 명사로 고착되었다(de Vaan, EDL). 영어의 virgin 등의 어원이다.",
+        "principalParts": "virgo, virginis"
+      },
+      {
+        "g": "Thaumantea",
+        "pos": "명사(형용사형 부칭)",
+        "lemma": "Thaumanteus, -a, -um (또는 Thaumantias)",
+        "parse": "sg.nom.f.",
+        "gloss_kr": "타우마스의 딸 [이리스]",
+        "gloss_en": "daughter of Thaumas [Iris]",
+        "syntax": "LFG f-구조에서 Thaumantea는 주어 위치를 점하는 부칭 형용사(patronymic adjective/noun)로서 [PRED 'Thaumanteus', CASE nom, NUM sg, GEND f] 자질을 갖는다. 생성문법적으로 생략되거나 앞선 문맥과 연결된 주어 NP의 핵 혹은 수식어적 명사로 병합된다.",
+        "background": "타우마스의 딸은 무지개의 여신 이리스(Iris)를 가리킨다. 오비디우스는 이리스를 등장시켜 지상과 천상, 인간과 신을 잇는 변신과 현현의 과정을 시각적으로 화려하게 연출한다.",
+        "etymology": "그리스어 신화명 Θαύμας(Thaumas, '경이로움'을 뜻하는 낱말에서 유래, PIE *dhewh₂- 어근)에 라틴어 부칭 및 형용사 접미사 -ea가 결합한 형태이다. Chantraine(DELG) 및 Beekes(EDG)는 그리스어 원형 Θαύμας의 인도유럽어족 내 어원을 상세히 다룬다. 로마 시가 문학에서 신화적 혈통을 드러내는 고유명사 부칭형으로 널리 쓰인다.",
+        "principalParts": "Thaumanteus, -a, -um"
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.846",
+    "trans": "그가 언덕으로 들어간다: 거기서 하늘에서 떨어진 별이 땅 위로 떨어져, 그 빛으로 타오르며 헤르실레는 별과 함께 공중으로 올라갔다.",
+    "words": [
+      {
+        "g": "ingreditur",
+        "pos": "동사",
+        "lemma": "ingredior, ingredi, ingressus sum",
+        "parse": "3rd.sg.pres.ind.dep.",
+        "principalParts": "ingredior – ingredi – ingressus sum – (미상)",
+        "gloss_kr": "들어가다, 나아가다",
+        "gloss_en": "enters, walks into",
+        "syntax": "LFG 관점에서 ingreditur는 데포넌트(deponent) 자동사로서 f-구조상 [PRED 'ingredior<SUBJ,OBL>', SUBJ [PRED 'is', CASE nom], OBL [PRED 'colles', CASE acc, θ-ROLE GOAL]]의 논항구조를 지니며, 대격 명사구 colles는 방향성 처소를 나타내는 목적어(OBL 또는 OBJ-goal)로 기능한다. 생성문법(Minimalism) 관점에서 이 구문은 기저의 [vP 주어 [VP V DP]] 구조에서 탈폰트(deponent) 형태를 지닌 V 핵이 v로 이동하며, 명사구 colles는 비대격적 방향 지향성을 지닌 보조어 자리에 병합된다. 격 지배 이론에 따라 방향성 접두사 in-의 통사적 성격이 대격 목적어(colles)의 등장을 허용한다.",
+        "background": "이 대목은 오비디우스의 《변신 이야기》 제14권의 종반부로, 로마의 건국자 로물루스가 신격화되어 퀴리누스로 다시 태어난 직후 그의 아내 헤르실레가 겪는 변신을 묘사한다. 남편을 잃고 슬픔에 잠긴 헤르실레 앞에 신들의 왕비 유노의 지시로 별이 내려와 그녀를 하늘로 끌어올린다. 이 신화적 승천은 로마 왕조의 기원을 신성한 차원으로 격상시키는 서사적 절정을 이룬다.",
+        "etymology": "라틴어 동사 ingredior는 전치사 *en(PIE *en, '안에')과 어근 *gradior('걷다, 나아가다', PIE *ghredh-, '걷다, 행진하다')의 합성에서 유래했다. de Vaan(EDL)에 따르면 어근 *ghredh-는 게르만어파(고대 고지 독일어 gretan '나아가다') 및 리투아니아어(griedoti)와 동계어를 형성하며, PIE 재구형은 *ghredh-이다. 어두의 구개음화 및 e급 애블라우트 양상을 거쳐 라틴어에서 파생형 명사(ingressus)와 복합동사 체계를 확립했다. 현대 영어의 'ingress', 'ingredient' 및 스페인어 'ingresar' 등이 이 어근의 직간접적 흔적이다."
+      },
+      {
+        "g": "colles",
+        "pos": "명사",
+        "lemma": "collis, collis, m.",
+        "parse": "pl.acc.m.",
+        "gloss_kr": "언덕들",
+        "gloss_en": "hills",
+        "syntax": "LFG f-구조에서 colles는 OBL_dir(방향 부사어) 또는 장소 목적어로서 [PRED 'collis', CASE acc, NUM pl, GEND m]의 자질구조를 지닌다. 통사적으로 전치사적 의미를 내포한 동사 ingreditur의 지향성 논항(goal argument)으로서 대격 지배를 받으며, 생성문법적으로는 VP 내부의 지향성 보어 위치에 병합되어 이동의 종착점을 한정한다.",
+        "background": "여기서 언덕은 로물루스가 승천한 장소로 전해지는 퀴리날레 언덕(Quirinal Hill)을 가리킨다. 로마의 지형적 특징인 일곱 언덕 중 하나이며, 헤르실레가 남편의 뒤를 이어 신격화되는 신성한 공간적 배경으로 작용한다.",
+        "etymology": "OLD와 de Vaan(EDL)에 따르면 PIE 재구형 *koles- 또는 *kol-('솟아오르다, 둔덕')에서 유래하며, 셈족어와의 접점은 없고 인도유럽어족 내의 지형 명칭 어근과 연결된다. 리투아니아어 kalnas('산') 및 슬라브어파의 관련 어휘들과 동계어를 이룬다. 어원적으로는 지표면이 둥글게 솟아오른 형태를 뜻하는 의미 전이가 일어났으며, 현대 로망스어군인 스페인어 'colina'와 포르투갈어 'colina' 및 영어 'hill' 계열의 어원적 배경을 제공한다."
+      },
+      {
+        "g": "ibi",
+        "pos": "부사",
+        "lemma": "ibi",
+        "parse": "adv.",
+        "gloss_kr": "거기에, 그곳에",
+        "gloss_en": "there, in that place",
+        "syntax": "LFG 정보구조 관점에서 ibi는 문장 초기 위치를 점하며 장소적 준거점(locative adjunct)으로서 [ADJUNCT [PRED 'ibi', FUNCTION locative]] 자질을 할당받는다. 생성문법적으로는 CP의 지정어 자리나 VP 외부의 부사구(AdvP) 위치에 부가(adjunction)되어 문장 전체의 시공간적 배경을 한정하는 지시사 역할을 수행한다.",
+        "background": "앞서 로물루스가 사라진 지상 공간과 하늘이 맞닿는 극적인 현장을 시공간적으로 연결하는 지시적 역할을 한다. 청자의 시선을 퀴리날레 언덕의 특정 장소로 집중시키는 수사적 기능을 담당한다.",
+        "etymology": "DELL과 de Vaan(EDL)에 따르면 대명사성 지시 어근 *i-에 장소를 뜻하는 부사적 접미사 -bi가 결합한 형태(PIE *i-bhI)로 재구된다. 오스카어 등 이탈리아어파의 방언형들과 비교될 수 있으며, 라틴어 지시사 시스템(hic, ille, is)의 대명사 지시 체계와 깊은 연관을 맺는다. 현대 로망스어군에서는 직접적인 음운 반사형이 살아남지 않고 고대 라틴어 문어의 유산으로 남았으며, 스페인어의 'allí'나 포르투갈어의 'ali' 등은 다른 파생형(illic) 계열에서 발달했다."
+      },
+      {
+        "g": "sidus",
+        "pos": "명사",
+        "lemma": "sidus, sideris, n.",
+        "parse": "sg.nom.n.",
+        "gloss_kr": "별, 천체",
+        "gloss_en": "star, constellation",
+        "syntax": "LFG f-구조에서 sidus는 절의 주어(SUBJ)로서 [PRED 'sidus', CASE nom, GEND n, NUM sg] 자질을 가지며, 자동사 decidit과 일치 관계를 맺는다. 생성문법적으로는 [TP sidusᵢ [T' decidit tᵢ]] 구조에서 주어 명사구로서 [Spec, TP] 자리를 점한다.",
+        "background": "여기서 sidus는 신격화되어 별이 된 로물루스(퀴리누스)를 직접 비유하거나 상징한다. 지상의 인간이 천상적 존재로 전환되는 천문학적 메타포의 중심 매개체이다.",
+        "etymology": "OLD와 de Vaan(EDL)은 PIE 재구형 *swi-es-('빛나다, 반짝이다') 또는 후두음이 포함된 어근에서 파생된 것으로 본다. 산스크리트어 svàr('태양, 하늘')와 동계어를 이루며, 어간 교체(s/r alternation)를 겪은 고대 라틴어 제3변화 명사의 전형적인 형태다. 현대 영어의 'sidereal' 및 이탈리아어 'siderale' 등에 직접적인 어원적 흔적을 남겼다."
+      },
+      {
+        "g": "ab",
+        "pos": "전치사",
+        "lemma": "ab",
+        "parse": "prep. (takes abl.)",
+        "gloss_kr": "~로부터, ~에게서",
+        "gloss_en": "from, away from",
+        "syntax": "LFG 관점에서 ab는 탈격 지배 전치사로서 [OBL_from [PRED 'ab', COMP [OBJ [CASE abl]]]]의 자질구조를 형성한다. 생성문법적으로는 PP의 핵(head)으로 기능하며, 탈격 명사구 aethere를 보어( complement)로 취하여 기원(source) 및 분리의 θ-역할을 배정한다.",
+        "background": "하늘이라는 천상적 공간(aether)에서 지상으로 내려오는 방향성과 출처를 명시하여, 신성한 기원과 세속적 공간의 대비를 부각한다.",
+        "etymology": "PIE 재구형 *apo('멀리, ~로부터')에서 유래하며, 그리스어 ἀπό(apo) 및 산스크리트어 ápa와 정확히 대응하는 동계어다. Ernout-Meillet(DELL)에 따르면 자음 앞에서의 ab와 모음 앞에서의 a-, 그리고 복합어에서의 abs-로 음운론적 분화(sandhi 현상)를 겪었다. 현대 로망스어군에서는 직접 계승되지 않고 불특정 전치사 체계로 재편되었으나, 영어의 'apo-' 접두사 및 파생 어휘들에서 그 흔적을 찾을 수 있다."
+      },
+      {
+        "g": "aethere",
+        "pos": "명사",
+        "lemma": "aether, aetheris, m.",
+        "parse": "sg.abl.m.",
+        "gloss_kr": "대기, 하늘, 에테르",
+        "gloss_en": "upper air, ether, sky",
+        "syntax": "LFG f-구조에서 aethere는 전치사 ab의 목적어로서 [OBJ [PRED 'aether', CASE abl, GEND m]] 기능을 수행한다. 생성문법적으로는 PP 내부의 보어(complement)로서 탈격 자질을 확인받으며, 공간적 기원(source)의 θ-역할을 담당한다.",
+        "background": "신들이 거주하는 순수한 상층 대기이자 천상의 영역을 뜻하며, 평범한 대기(aer)와 구별되는 고귀하고 신성한 공간을 상징한다.",
+        "etymology": "그리스어 αἰθήρ(aithēr, 빛나다·타오르다를 뜻하는 aithō에서 유래)를 라틴어가 차용한 외래어적 성격의 명사다. Chantraine(DELG) 및 de Vaan(EDL)에 따르면 PIE 재구형 *h₂idh-('불타다')에 기원하며, e급 애블라우트와 후두음 *h₂의 흔적을 지닌다. 현대 영어의 'ether', 'ethereal' 및 각국 언어의 과학·문학 용어로 깊이 정착되어 있다."
+      },
+      {
+        "g": "lapsum",
+        "pos": "분사",
+        "lemma": "labor, labi, lapsus sum",
+        "parse": "perf.pass.part.sg.nom.n.",
+        "principalParts": "labor – labi – lapsus sum – (미상)",
+        "gloss_kr": "미끄러져 떨어진",
+        "gloss_en": "having slipped down, fallen",
+        "syntax": "LFG f-구조에서 lapsum은 주어 sidus를 수식하는 형용사적 분사로 기능하며, [ADJUNCT [PRED 'labor<SUBJ>', MOD sidus]]의 구조를 갖는다. 생성문법적으로는 비대격 수동분사구로서 축약된 관계절(reduced relative clause)의 분석을 따르며, 주어 sidus와 수·성·격(단수 주격 중성) 일치 관계를 맺는다.",
+        "background": "하늘에서 지상으로 내려온 천상의 별이 지닌 동적이고 급작스러운 낙하 운동을 시각적으로 형상화하며, 신성한 존재의 현현을 극적 화법으로 전달한다.",
+        "etymology": "PIE 재구형 *leb-('미끄러지다, 처지다')에서 유래한 데포넌트 동사 labor의 과거분사형이다. de Vaan(EDL)에 따르면 이탈리아어파 내부에서 독자적으로 발달한 어근 양상을 보이며, 음운 변화 과정에서 s가 개재되는 형태적 특징을 지닌다. 현대 영어의 'lapse', 'collapse' 및 스페인어 'lapsus'에 그 어원적 유산이 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.847",
+    "trans": "땅 위에 내려앉는다. 그 빛으로 눈부시게 타오르며 헤르실레는 별과 함께 공중으로 날아올랐다.",
+    "words": [
+      {
+        "g": "decidit",
+        "pos": "동사",
+        "lemma": "decido, decidere, decidi, -",
+        "parse": "3rd.sg.pres.ind.act.",
+        "principalParts": "decido – decidere – decidi – (미상)",
+        "gloss_kr": "떨어지다, 낙하하다",
+        "gloss_en": "falls down, drops",
+        "syntax": "LFG f-구조에서 decidit은 주어 sidus를 논항으로 취하는 자동사 서술어로서 [PRED 'decido<SUBJ,OBL>', SUBJ [PRED 'sidus'], OBL [PRED 'terra', CASE acc]] 구조를 이룬다. 생성문법적으로는 [TP sidus [vP t [VP decidit]]]의 이동 및 병합 구조를 취하며, 접두사 de-가 지니는 아래 방향성(downward direction)이 통사적으로 목적격 처소 표현의 등장을 뒷받침한다.",
+        "background": "하늘의 별이 지상으로 내려오는 물리적 낙하와 동시에 신성한 영혼이 지상에서 천상으로 교차하는 신화적 순간을 극적으로 압축하여 보여준다.",
+        "etymology": "전치사 de('아래로')와 어근 *cadō('떨어지다', PIE *kad-)의 합성어다. de Vaan(EDL)에 따르면 PIE *kad-는 라틴어 내부에서 모음 약화(iambic shortening 및 a>i 변화)를 겪어 decidere 형태로 고착되었다. 슬라브어파 및 기타 인도유럽어 동계어와 연결되며, 현대 영어의 'deciduous', 'cascade'(이탈리아어 경유) 및 로망스어군 전반에 광범위한 흔적을 남겼다."
+      },
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "prep. (takes acc./abl.)",
+        "gloss_kr": "~안으로, ~에",
+        "gloss_en": "into, onto, in",
+        "syntax": "LFG f-구조에서 in은 대격 명사구 terras를 지배하는 처소 전치사로서 [OBL_to [PRED 'in', COMP [OBJ [CASE acc]]]] 자질을 구성한다. 생성문법적으로는 PP의 핵으로 기능하며, 운동의 도달점을 뜻하는 대격 자질을 보어에 부여하여 방향 지향적 술어 구조를 완성한다.",
+        "background": "하늘에서 지상의 대지로 방향을 트는 낙하의 종착점을 명시하며, 천상과 지상의 경계가 허물어지는 공간적 국면을 전환한다.",
+        "etymology": "PIE 재구형 *en('안에, ~에')에서 유래한 전치사로, 그리스어 ἐν(en) 및 영어의 'in'과 정확히 일치하는 동계어다. Ernout-Meillet(DELL)에 따르면 방향성을 나타낼 때는 대격을, 정지 상태를 나타낼 때는 탈격을 지배하는 통사적 양상을 보인다. 현대 로망스어군과 영어 전반에 핵심 전치사 기능으로 온전히 보존되어 있다."
+      },
+      {
+        "g": "terras",
+        "pos": "명사",
+        "lemma": "terra, terrae, f.",
+        "parse": "pl.acc.f.",
+        "gloss_kr": "땅들, 대지",
+        "gloss_en": "lands, earth, ground",
+        "syntax": "LFG f-구조에서 terras는 전치사 in의 목적어로서 [OBJ [PRED 'terra', CASE acc, NUM pl, GEND f]] 기능을 수행한다. 생성문법적으로는 PP 내부의 보어 자리에서 대격 자질을 할당받으며, 운동의 최종 도달점(goal)이라는 θ-역할을 수용한다.",
+        "background": "인간이 거주하는 유한한 세속의 세계를 뜻하며, 헤르실레가 남편의 뒤를 이어 떠나게 될 출발점이자 신성한 변신이 시작되는 무대이다.",
+        "etymology": "de Vaan(EDL)에 따르면 PIE 재구형 *ters-('마르다, 건조하다')에서 파생된 명사로, 산스크리트어 tárṣati('목마르다') 및 고대 영어 *þersan과 동계어다. '마른 땅'이라는 원뜻에서 대지 전체를 가리키는 의미로 전이되었다. 현대 영어의 'terrestrial', 스페인어 'tierra', 포르투갈어 'terra' 등에 그 형태와 의미가 생생히 살아 있다."
+      },
+      {
+        "g": "a",
+        "pos": "전치사",
+        "lemma": "ab",
+        "parse": "prep. (takes abl.)",
+        "gloss_kr": "~로부터, ~에 의해",
+        "gloss_en": "from, by",
+        "syntax": "LFG f-구조에서 a는 탈격 명사구 lumine을 지배하는 전치사로 [OBL_from [PRED 'ab', COMP [OBJ [CASE abl]]]] 자질을 지닌다. 생성문법적으로는 자음 앞에서 축약된 a 형태의 PP 핵으로 기능하며, 빛이라는 수단/원인(instrument/cause)의 θ-역할을 배정한다.",
+        "background": "별에서 뿜어져 나오는 강렬한 광채가 헤르실레를 감싸고 들어 올리는 원동력임을 나타내며, 신비로운 변신 과정을 시각화한다.",
+        "etymology": "앞서 등장한 ab의 음운론적 이형태(자음 앞 축약형 a-)이며, 동일한 PIE 재구형 *apo에서 분기했다. DELL에 따르면 고대 라틴어 비석 문헌부터 자음 앞에서의 a와 ab가 공존해 왔다."
+      },
+      {
+        "g": "cuius",
+        "pos": "대명사",
+        "lemma": "qui, quae, quod",
+        "parse": "sg.gen.f.",
+        "gloss_kr": "그것의, 그 별의",
+        "gloss_en": "whose, of which",
+        "syntax": "LFG f-구조에서 cuius는 관계대명사로서 선행사 sidus를 받아 속격 수식어(SPEC 또는 ADJUNCT) 기능을 수행하며 [PRED 'qui', CASE gen, NUM sg, GEND f] 자질을 갖는다. 생성문법적으로는 관계절 [CP cuiusᵢ [C' ... [DP tᵢ lumine]]] 내부에서 속격 소유격/지정어 자리를 점하며 이동한 성분으로 분석된다.",
+        "background": "떨어진 별이 지닌 광채와 헤르실레의 승천을 긴밀히 매개하는 지시사적 고리 역할을 하며, 두 사건이 하나의 인과관계로 묶여 있음을 보여준다.",
+        "etymology": "PIE 의문/관계 대명사 어근 *kʷo-/kʷi-에서 유래하며, 산스크리트어 kas와 영어의 'who', 'which' 등과 동계어다. de Vaan(EDL)에 따르면 속격 단수 형태인 cuius는 이탈리아어파의 고유한 형태론적 발달(구 *kwosios에서 변화)을 거쳤다. 현대 로망스어군에서 관계대명사 및 의문사 체계의 근간을 이룬다."
+      },
+      {
+        "g": "lumine",
+        "pos": "명사",
+        "lemma": "lumen, luminis, n.",
+        "parse": "sg.abl.n.",
+        "gloss_kr": "빛, 광채, 눈",
+        "gloss_en": "light, radiance",
+        "syntax": "LFG f-구조에서 lumine은 수단/방법 부사어(ADJUNCT)로서 [PRED 'lumen', CASE abl, NUM sg, GEND n] 자질을 갖는다. 생성문법적으로는 무전치사 탈격(instrumental/manner ablative) 구문으로서 vP 또는 VP의 부가어 자리에서 타오름(flagrans)의 수단적 속성을 한정한다.",
+        "background": "신격화 과정에서 발산되는 초자연적인 빛을 의미하며, 필멸의 존재가 신성한 영광으로 뒤덮이는 순간의 압도적인 시각적 효과를 부여한다.",
+        "etymology": "PIE 재구형 *leuk-('빛나다')에서 파생된 명사로, *leuk-s-men을 거쳐 r/n 교체를 통해 lumen으로 정착했다. de Vaan(EDL)에 따르면 라틴어 lux('빛')와 어원을 공유하는 동계어 군에 속한다. 현대 영어의 'luminous', 'illumination' 및 로망스어군의 빛 관련 어휘들의 어원적 뿌리이다."
+      },
+      {
+        "g": "flagrans",
+        "pos": "분사",
+        "lemma": "flagro, flagrare, flagravi, -",
+        "parse": "pres.act.part.sg.nom.f.",
+        "principalParts": "flagro – flagrare – flagravi – flagratus",
+        "gloss_kr": "타오르는, 빛나는",
+        "gloss_en": "blazing, glowing, burning",
+        "syntax": "LFG f-구조에서 flagrans는 주어(또는 의미상 주어인 헤르실레)를 수식하는 형용사적 분사로 [ADJUNCT [PRED 'flagro<SUBJ>', MOD Hersilie]] 기능을 수행한다. 생성문법적으로는 주격 여성 단수 형태로서 주절의 주어와 일치하며, 능동 분사구로서 부대 상황(circumstantial)의 의미역을 담당한다.",
+        "background": "별의 강렬한 빛 속에서 환하게 빛나며 승천하는 헤르실레의 황홀하고 격렬한 변신 상태를 생생하게 포착한다.",
+        "etymology": "PIE 재구형 *bhleg-('타오르다, 빛나다')에서 유래하며, 그리스어 φλέγω(phlegō) 및 산스크리트어 bhrajj와 동계어다. de Vaan(EDL)에 따르면 라틴어에서 1변화 동사군으로 정착하여 불타는 성질이나 감정의 격앙을 뜻하는 어휘들로 발달했다. 현대 영어의 'flagrant', 'conflagration' 등에 흔적이 남아 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.848",
+    "trans": "헤르실레는 그 별과 함께 공중으로 올라갔다.",
+    "words": [
+      {
+        "g": "Hersilie",
+        "pos": "명사",
+        "lemma": "Hersilia, Hersiliae, f.",
+        "parse": "sg.nom.f.",
+        "gloss_kr": "헤르실레 (로물루스의 아내)",
+        "gloss_en": "Hersilia (wife of Romulus)",
+        "syntax": "LFG f-구조에서 Hersilie는 문장의 주어(SUBJ)로서 [PRED 'Hersilia', CASE nom, GEND f, NUM sg] 자질을 지니며, 서술동사 cessit과 일치 관계를 맺는다. 생성문법적으로는 [TP Hersilie [vP t [VP cessit]]] 구조에서 외부 논항이자 주어인 [Spec, TP] 자리를 점한다.",
+        "background": "로물루스의 아내이자 사비니 출신의 여인으로, 남편의 뒤를 이어 여신 헤르실라(Hersa 또는 Ora)로 신격화되어 로마 신화 속 영원한 부부의 신성함을 완성하는 인물이다.",
+        "etymology": "사비니 계통의 고유 명사로, 라틴어 고유 어원이라기보다는 이탈리아 반도 중부의 선주민 언어(사비니아어파) 기층에서 유래한 것으로 추정된다. 피니(Penny) 및 역사문법 연구들에 따르면 로마 초기 건국 신화에 편입되면서 그리스·로마식 명사 변화 1변화 규칙에 동화되었다. 고대 로마 인명 및 문학 작품 외에 현대 일반 어휘로는 직접 계승되지 않았다."
+      },
+      {
+        "g": "crines",
+        "pos": "명사",
+        "lemma": "crinis, crinis, m.",
+        "parse": "pl.acc.m.",
+        "gloss_kr": "머리카락, 머리",
+        "gloss_en": "hair, locks",
+        "syntax": "LFG f-구조에서 crines는 동사 cessit(여기서는 상승/이동의 의미를 내포)의 방향성 또는 신체 부위 관련 대격 목적어(OBJ 또는 OBL)로서 [PRED 'crinis', CASE acc, NUM pl, GEND m] 자질을 지닌다. 생성문법적으로는 이동 구문의 내적 논항 또는 국부적 대상(inner object)으로서 대격 자질을 할당받는다.",
+        "background": "변신의 순간 머리카락이 공중으로 휘날리며 별빛과 동화되는 정화와 상승의 신체적 묘사를 담고 있다.",
+        "etymology": "de Vaan(EDL)에 따르면 PIE 재구형 *kris- 또는 *kr-ni-('털, 머리카락')에서 유래하며, 켈트어파 및 기타 인도유럽어 동계어와의 연관성이 논의된다. 라틴어 내부에서 제3변화 자음계 명사로 고착되었다. 현대 로망스어군에서는 직접적인 반사형이 희소하나(스페인어 crin 등은 주로 말 갈기 등을 뜻함), 영어의 'crinoline' 등에 어원적 흔적이 남아 있다."
+      },
+      {
+        "g": "cum",
+        "pos": "전치사",
+        "lemma": "cum",
+        "parse": "prep. (takes abl.)",
+        "gloss_kr": "~와 함께",
+        "gloss_en": "with, along with",
+        "syntax": "LFG f-구조에서 cum은 탈격 명사구 sidere를 지배하는 동반 전치사로서 [ADJUNCT [PRED 'cum', COMP [OBJ [CASE abl]]]] 자질을 이룬다. 생성문법적으로는 PP의 핵으로 기능하며, 동반(accompaniment) 및 수반의 θ-역할을 보어인 탈격 명사구에 배정한다.",
+        "background": "헤르실레가 남편의 별과 물리적·신성적으로 완전히 결합하여 함께 하늘로 올라간다는 일체감과 조화를 강조한다.",
+        "etymology": "PIE 재구형 *ḱóm('~와 함께, 가까이에')에서 유래하며, 그리스어 ξύν/σύν(ksyn/syn) 및 고대 고지 독일어 ga-/gi-와 동계어다. Ernout-Meillet(DELL)에 따르면 라틴어 전치사 체계에서 동반과 수단을 나타내는 핵심 어휘로 작용했다. 현대 로망스어군(스페인어 con, 포르투갈어 com)에 완벽하게 계승되어 지금까지 쓰이고 있다."
+      },
+      {
+        "g": "sidere",
+        "pos": "명사",
+        "lemma": "sidus, sideris, n.",
+        "parse": "sg.abl.n.",
+        "gloss_kr": "별과 함께",
+        "gloss_en": "with a star, with the constellation",
+        "syntax": "LFG f-구조에서 sidere는 전치사 cum의 목적어로서 [OBJ [PRED 'sidus', CASE abl, NUM sg, GEND n]] 기능을 수행한다. 생성문법적으로는 PP 내부의 보어로서 탈격 자질을 확인받으며, 동반의 θ-역할을 수용한다.",
+        "background": "앞서 언급된 하늘에서 떨어진 별(로물루스의 화신)과 헤르실레가 영원히 분리되지 않고 함께 천상으로 향하는 결합의 상징이다.",
+        "etymology": "앞서 등장한 sidus의 탈격 단수형이며, 동일한 PIE *swi-es- 어근에서 유래했다."
+      },
+      {
+        "g": "cessit",
+        "pos": "동사",
+        "lemma": "cedo, cedere, cessi, cessum",
+        "parse": "3rd.sg.perf.ind.act.",
+        "principalParts": "cedo – cedere – cessi – cessum",
+        "gloss_kr": "나아갔다, 올라갔다, 향했다",
+        "gloss_en": "went, moved, ascended",
+        "syntax": "LFG f-구조에서 cessit은 주어 Hersilie를 논항으로 취하는 자동사 서술어로서 [PRED 'cedo<SUBJ,OBL>', SUBJ [PRED 'Hersilia'], OBL [PRED 'aurae', CASE acc]] 구조를 이룬다. 생성문법적으로는 [TP Hersilie [vP t [VP cessit]]]의 완료시제 주어-동사 일치 구조를 형성하며, 방향성 전치사구 또는 대격 목적어를 통해 이동의 궤적을 완성한다.",
+        "background": "지상에 머물던 필멸의 존재가 신들의 거처인 공중으로 이동하여 영원한 천체 속으로 편입되는 변신의 성취를 선언한다.",
+        "etymology": "PIE 재구형 *ked-('가다, 물러나다, 나아가다')에서 유래하며, de Vaan(EDL)에 따르면 라틴어에서 형태론적 완료형 cessi(s-완료)를 발달시켰다. 슬라브어파 등의 동계어와 연결된다. 현대 영어의 'cede', 'concede', 'proceed' 및 로망스어군의 관련 어휘들의 근간이 되는 어원이다."
+      },
+      {
+        "g": "in",
+        "pos": "전치사",
+        "lemma": "in",
+        "parse": "prep. (takes acc./abl.)",
+        "gloss_kr": "~안으로, ~로",
+        "gloss_en": "into, toward",
+        "syntax": "LFG f-구조에서 in은 대격 명사구 auras를 지배하는 방향 전치사로서 [OBL_to [PRED 'in', COMP [OBJ [CASE acc]]]] 자질을 구성한다. 생성문법적으로는 PP의 핵으로서 운동의 도달점(goal)인 대격 자질을 보어에 부여한다.",
+        "background": "헤르실레가 지상의 한계를 벗어나 대기 중으로, 즉 하늘의 영역으로 진입하는 이동의 방향을 명확히 규정한다.",
+        "etymology": "앞서 등장한 전치사 in과 동일한 PIE *en 계통의 어휘이다."
+      },
+      {
+        "g": "auras",
+        "pos": "명사",
+        "lemma": "aura, aurae, f.",
+        "parse": "pl.acc.f.",
+        "gloss_kr": "공기, 산들바람, 공중",
+        "gloss_en": "breezes, air, upper air",
+        "syntax": "LFG f-구조에서 auras는 전치사 in의 목적어로서 [OBJ [PRED 'aura', CASE acc, NUM pl, GEND f]] 기능을 수행한다. 생성문법적으로는 PP 내부 보어로서 대격 자질을 할당받으며, 이동의 최종 목적지(goal) θ-역할을 담당한다.",
+        "background": "신들이 숨 쉬는 상층 대기이자 천상의 바람이 부는 공간을 가리키며, 지상과 천상을 가르는 대기적 경계선을 상징한다.",
+        "etymology": "그리스어 αὖρα(aura, 산들바람, 숨결)를 라틴어가 차용한 시적 어휘다. Chantraine(DELG) 및 de Vaan(EDL)에 따르면 PIE 재구형 *wes-('숨 쉬다') 또는 바람을 뜻하는 어근에서 파생되었다. 현대 영어의 'aura' 및 각국 언어의 문학적 대기·기운 관련 용어로 널리 쓰인다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.849",
+    "trans": "로마의 건국자는 익숙한 두 손으로 그녀를 맞이하고, 체온과 함께 그녀의 옛 이름을 나란히 바꾼다.",
+    "words": [
+      {
+        "g": "Hanc",
+        "pos": "대명사",
+        "lemma": "hic, haec, hoc",
+        "parse": "sg.acc.f.",
+        "gloss_kr": "그녀를",
+        "gloss_en": "her",
+        "syntax": "LFG f-구조에서 Hanc는 지시동사 excipit의 목적어(OBJ)로서 [PRED 'hic', CASE acc, NUM sg, GEND f] 자질을 가지며, 목적어 전위(topicalization) 또는 강조를 위해 문두에 배치되었다. 생성문법적으로는 [vP Hancᵢ [v' excipit tᵢ]] 구조에서 목적어 명사구로서 대격 자질을 확인받는다.",
+        "background": "방금 하늘로 올라온 헤르실레를 지칭하며, 신격화되어 퀴리누스가 된 로물루스가 그녀를 마중 나오는 재회의 감격을 강조한다.",
+        "etymology": "PIE 지시 대명사 어근 *ko- 또는 *gho-에 지시 접미사가 결합한 형태이다. de Vaan(EDL)에 따르면 이탈리아어파 전반에 걸쳐 근칭 지시사로 발달했으며, 라틴어 hic, haec, hoc 체계를 형성했다. 현대 로망스어군에서 관사 및 지시사 체계의 모태가 되었다."
+      },
+      {
+        "g": "manibus",
+        "pos": "명사",
+        "lemma": "manus, manus, f.",
+        "parse": "pl.abl.f.",
+        "gloss_kr": "손들로",
+        "gloss_en": "with hands",
+        "syntax": "LFG f-구조에서 manibus는 수단 부사어(ADJUNCT)로서 [PRED 'manus', CASE abl, NUM pl, GEND f] 자질을 지닌다. 생성문법적으로는 무전치사 탈격(instrumental ablative) 구문으로서 excipit 동사의 동작을 수행하는 도구적 θ-역할을 담당한다.",
+        "background": "지상을 떠나 천상에서 다시 만난 부부가 서로를 맞이하는 육체적이고도 따뜻한 포옹의 손길을 생생하게 전달한다.",
+        "etymology": "PIE 재구형 *man-('손')에서 유래하며, 산스크리트어 mánus 및 고대 아일랜드어와 동계어다. de Vaan(EDL)에 따르면 라틴어 제4변화 여성 명사이나 예외적으로 여성형을 띠는 고유한 형태론적 특징을 지닌다. 현대 영어의 'manual', 'emancipate' 및 스페인어 'mano' 등에 그 어원이 고스란히 남아 있다."
+      },
+      {
+        "g": "notis",
+        "pos": "형용사",
+        "lemma": "notus, -a, -um",
+        "parse": "pl.abl.f.",
+        "gloss_kr": "익숙한, 알려진",
+        "gloss_en": "known, familiar",
+        "syntax": "LFG f-구조에서 notis는 명사 manibus를 수식하는 한정 형용사(ADJUNCT)로서 [MOD manibus, CASE abl, NUM pl, GEND f] 자질을 공유한다. 생성문법적으로는 NP 내부에서 수·성·격 일치 관계를 맺으며 수식어 자리에 병합된다.",
+        "background": "지상에서 부부로 살아가며 수없이 잡았던 그 손, 즉 천상에서도 변함없이 서로를 알아보게 하는 친숙하고도 그리운 손길을 뜻한다.",
+        "etymology": "PIE 재구형 *gno-('알다')에서 유래한 분사 파생 형용사로, 동사 nōscō의 어근과 통한다. 그리스어 γνώτός(gnōtos) 및 산스크리트어 jñātá-와 동계어다. de Vaan(EDL)에 따르면 e급 애블라우트와 후두음 관련 음운 변화를 거쳤다. 현대 영어의 'notable', 'notorious' 및 로망스어군의 관련 형용사들의 어원이다."
+      },
+      {
+        "g": "Romanae",
+        "pos": "형용사",
+        "lemma": "Romanus, -a, -um",
+        "parse": "sg.gen.f.",
+        "gloss_kr": "로마의",
+        "gloss_en": "Roman",
+        "syntax": "LFG f-구조에서 Romanae는 소유격/관계 수식어(SPEC 또는 ADJUNCT)로서 명사 urbis를 수식하며 [MOD urbis, CASE gen, NUM sg, GEND f] 자질을 갖는다. 생성문법적으로는 NP 내부에 병합되어 주체적 속성을 부여한다.",
+        "background": "로물루스가 건국한 로마라는 도시 공동체의 정체성을 신화적 차원에서도 유지함을 보여주며, 왕의 지위와 건국의 업적을 환기한다.",
+        "etymology": "지명 Roma에 파생 접미사 -anus가 결합된 형태다. de Vaan(EDL) 및 역사문법 연구들에 따르면 이탈리아 반도 내 지명 파생 형용사 형성 규칙에 따라 라틴어 고유의 지형·도시 이름에서 파생되었다. 현대 영어의 'Roman', 스페인어 'romano', 포르투갈어 'romano' 등에 직접 계승되었다."
+      },
+      {
+        "g": "conditor",
+        "pos": "명사",
+        "lemma": "conditor, conditoris, m.",
+        "parse": "sg.nom.m.",
+        "gloss_kr": "건국자, 창시자",
+        "gloss_en": "founder, builder",
+        "syntax": "LFG f-구조에서 conditor는 문장의 주어(SUBJ)로서 [PRED 'conditor', CASE nom, GEND m, NUM sg] 자질을 지니며, 서술동사 excipit과 일치 관계를 이룬다. 생성문법적으로는 [TP conditor [vP t [VP excipit]]] 구조에서 주어 명사구로서 [Spec, TP] 자리를 점한다.",
+        "background": "로마를 세운 영웅 로물루스(퀴리누스)를 가리키며, 지상에서의 위대한 건국 업적이 천상에서의 신격화와 부부의 재회로 이어지는 중심 인물임을 강조한다.",
+        "etymology": "동사 condō(건조하다, 설립하다; com- + dō '함께 두다')의 어근에서 파생된 명사형이다. de Vaan(EDL)에 따르면 PIE 어근 *dheH₁-('두다, 놓다')와 전치사적 접두사의 결합으로 이루어졌다. 현대 로망스어군 및 영어의 일부 학술적 파생어들에 그 어원적 흔적이 남아 있다."
+      },
+      {
+        "g": "urbis",
+        "pos": "명사",
+        "lemma": "urbs, urbis, f.",
+        "parse": "sg.gen.f.",
+        "gloss_kr": "도시의",
+        "gloss_en": "of the city, city's",
+        "syntax": "LFG f-구조에서 urbis는 명사 conditor를 수식하는 소유격 수식어(SPEC)로서 [PRED 'urbs', CASE gen, NUM sg, GEND f] 자질을 갖는다. 생성문법적으로는 명사구 [DP conditor [DP urbis]] 내에서 소유격 소속성(possessor/complement)의 θ-역할을 배정받는다.",
+        "background": "단순한 도시가 아닌 세계의 수도로 성장할 운명을 지닌 '로마'라는 대도시의 위엄을 함축하며, 건국자의 정체성을 확고히 한다.",
+        "etymology": "de Vaan(EDL)에 따르면 라틴어 고유 어휘이나 어원이 다소 논쟁적이다. 에트루리아어 기층과의 연관성이나 성벽을 두른 도시를 뜻하는 PIE 어근과의 연계가 논의된다. 현대 로망스어군(스페인어 urbe 등) 및 영어의 'urban', 'suburb' 등의 어원적 뿌리이다."
+      }
+    ]
+  },
+  {
+    "ref": "Metamorphoses 14.850",
+    "trans": "그리고 몸과 함께 옛 이름도 나란히 바꾼다.",
+    "words": [
+      {
+        "g": "excipit",
+        "pos": "동사",
+        "lemma": "excipio, excipere, excepi, exceptum",
+        "parse": "3rd.sg.pres.ind.act.",
+        "principalParts": "excipio – excipere – excepi – exceptum",
+        "gloss_kr": "맞이하다, 환영하다, 받아들이다",
+        "gloss_en": "receives, welcomes, takes up",
+        "syntax": "LFG f-구조에서 excipit은 주어 conditor와 목적어 Hanc를 논항으로 취하는 타동사 서술어로서 [PRED 'excipio<SUBJ,OBJ>', SUBJ [PRED 'conditor'], OBJ [PRED 'hic', CASE acc]] 구조를 이룬다. 생성문법적으로는 [vP conditor [v' excipit [VP Hanc]]] 구조를 가지며, 현재시제의 역사적 생생함(historical present)을 통해 장면의 현장감을 높인다.",
+        "background": "천상으로 들어서는 아내를 따뜻하게 마중하여 영원한 신의 반열로 받아들이는 로물루스의 자애롭고 감격스러운 행동을 묘사한다.",
+        "etymology": "전치사 ex('밖으로, ~로부터')와 어근 capiō('잡다, 취하다', PIE *kap-)의 합성동사다. de Vaan(EDL)에 따르면 모음 약화 현상(a>i)을 겪어 excipere 형태로 정착했다. 현대 영어의 'except', 'inception' 및 로망스어군 전반에 광범위한 파생 어휘를 남겼다."
+      },
+      {
+        "g": "et",
+        "pos": "접속사",
+        "lemma": "et",
+        "parse": "coord.conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG f-구조에서 et은 대등접속사(coordinating conjunction)로서 두 동작 또는 두 목적어구의 병렬을 관장하며 [COORD_CONJ] 자질을 지닌다. 생성문법적으로는 두 통사 범주를 대등하게 연결하는 Coordination 구조의 핵으로 기능한다.",
+        "background": "신격화 과정에서 신체적 변신과 이름의 변경이라는 두 가지 핵심 요소를 매끄럽게 연결하여 완벽한 신분 전환을 보여준다.",
+        "etymology": "PIE 재구형 *eti('~뿐만 아니라, 게다가')에서 유래하며, 산스크리트어 áti 및 그리스어 ἔτι(eti)와 동계어다. Ernout-Meillet(DELL)에 따르면 라틴어의 가장 기본적인 대등접속사로 고착되었다. 현대 로망스어군(스페인어 y/e, 포르투갈어 e)으로 직접 계승되어 지금까지 쓰인다."
+      },
+      {
+        "g": "priscum",
+        "pos": "형용사",
+        "lemma": "priscus, -a, -um",
+        "parse": "sg.acc.n.",
+        "gloss_kr": "옛날의, 이전의, 본래의",
+        "gloss_en": "former, ancient, original",
+        "syntax": "LFG f-구조에서 priscum은 명사 nomen을 수식하는 한정 형용사(ADJUNCT)로서 [MOD nomen, CASE acc, NUM sg, GEND n] 자질을 공유한다. 생성문법적으로는 NP 내부에서 수·성·격 일치 관계를 맺으며 수식어 자리에 병합된다.",
+        "background": "헤르실레가 지상에서 불멸의 존재가 되기 전 사용하던 인간으로서의 필멸의 옛 이름을 가리키며, 새로운 신성한 이름으로의 전환을 대비시킨다.",
+        "etymology": "PIE 재구형 *pris-('앞서의, 먼저의', 대명사적 부사 어근에서 파생)에서 유래했다. de Vaan(EDL)에 따르면 라틴어 고유의 시간적 선후 관계를 나타내는 형용사로 발전했다. 현대 영어의 'pristine' 및 로망스어군의 관련 고어적 어휘들의 어원이다."
+      },
+      {
+        "g": "pariter",
+        "pos": "부사",
+        "lemma": "pariter",
+        "parse": "adv.",
+        "gloss_kr": "함께, 나란히, 동시에",
+        "gloss_en": "equally, together, at the same time",
+        "syntax": "LFG f-구조에서 pariter는 양태 부사어(ADJUNCT)로서 [ADJUNCT [PRED 'pariter']] 자질을 갖는다. 생성문법적으로는 VP 또는 vP 내부의 부가어 자리에서 신체의 변화와 이름의 변경이 동시에 일어난다는 동시성(simultaneity)과 균등성을 수식한다.",
+        "background": "몸의 신격화와 새로운 이름(헤르실라/오라)의 부여가 따로 노는 것이 아니라 정확히 동시에 이루어짐을 강조하여 변신의 완전성을 보여준다.",
+        "etymology": "형용사 pār(평등한, 같은)에서 파생된 부사형이다. de Vaan(EDL)에 따르면 PIE 어근 *per-('동등하다, 채우다') 계통과 연관되며, 라틴어 내에서 부사 파생 접미사 -iter가 결합해 정착했다. 현대 영어의 'parity', 'par' 및 로망스어군의 관련 어휘들의 어원적 기반이다."
+      },
+      {
+        "g": "cum",
+        "pos": "전치사",
+        "lemma": "cum",
+        "parse": "prep. (takes abl.)",
+        "gloss_kr": "~와 함께",
+        "gloss_en": "with",
+        "syntax": "LFG f-구조에서 cum은 탈격 명사구 corpore를 지배하는 동반/수단 전치사로서 [ADJUNCT [PRED 'cum', COMP [OBJ [CASE abl]]]] 자질을 이룬다. 생성문법적으로는 PP의 핵으로 기능하며, 신체와 이름의 결합 상태를 나타내는 θ-역할을 배정한다.",
+        "background": "신체적 변신과 명칭의 개명이 불가분의 관계 속에서 함께 이루어지는 조화로운 변신의 양상을 뒷받침한다.",
+        "etymology": "앞서 등장한 전치사 cum과 동일한 PIE *ḱóm 계통의 어휘이다."
+      },
+      {
+        "g": "corpore",
+        "pos": "명사",
+        "lemma": "corpus, corporis, n.",
+        "parse": "sg.abl.n.",
+        "gloss_kr": "몸과 함께, 육체와 함께",
+        "gloss_en": "with body, in body",
+        "syntax": "LFG f-구조에서 corpore는 전치사 cum의 목적어로서 [OBJ [PRED 'corpus', CASE abl, NUM sg, GEND n]] 기능을 수행한다. 생성문법적으로는 PP 내부의 보어로서 탈격 자질을 할당받으며, 변신의 물리적 매개체인 육체의 θ-역할을 수용한다.",
+        "background": "단순한 영혼만의 승천이 아니라 필멸의 육체 자체가 신성한 형태로 변모하여 천상의 존재로 거듭남을 뜻하는 오비디우스 변신 문학의 핵심 주제를 드러낸다.",
+        "etymology": "PIE 재구형 *kwep- 또는 신체 조직과 관련된 어근에서 유래한 것으로 추정되며, de Vaan(EDL)에 따르면 라틴어 제3변화 중성 명사로 고착되었다. 현대 영어의 'corpse', 'corporal', 'incorporate' 및 스페인어 'cuerpo', 포르투갈어 'corpo' 등에 생생한 어원적 흔적을 남겼다."
+      },
+      {
+        "g": "nomen",
+        "pos": "명사",
+        "lemma": "nomen, nominis, n.",
+        "parse": "sg.acc.n.",
+        "gloss_kr": "이름을",
+        "gloss_en": "name",
+        "syntax": "LFG f-구조에서 nomen은 동사 mutat(전후 문맥상 암시된 변환 동사 또는 excipit의 보조 논항)의 목적어(OBJ)로서 [PRED 'nomen', CASE acc, NUM sg, GEND n] 자질을 지닌다. 생성문법적으로는 대격 명사구로서 목적어 자리에 병합되어 새로운 신분으로의 개명이라는 의미역을 완성한다.",
+        "background": "인간으로서 불리던 '헤르실레'라는 이름을 버리고, 신으로서 새롭게 부여받는 '헤르실라' 혹은 '오라'라는 신성한 호칭으로의 전환을 상징한다.",
+        "etymology": "PIE 재구형 *gno-men('알려주는 것, 이름')에서 유래하며, 산스크리트어 nā́man 및 영어의 'name', 그리스어 ὄνομα(onoma)와 완벽한 동계어를 이룬다. de Vaan(EDL)에 따르면 명명(naming) 문화를 보여주는 핵심 인도유럽어 어휘다. 현대 영어의 'nomenclature', 'noun' 및 로망스어군(스페인어 nombre, 포르투갈어 nome) 전반에 걸쳐 온전히 보존되어 있다."
+      }
+    ]
+  },
+  {
+  "ref": "Metamorphoses 14.851",
+  "trans": "그리고 남편의 체온과 함께 그녀의 옛 이름을 바꾼다.",
+  "words": [
+    {
+      "g": "et",
+      "pos": "접속사",
+      "lemma": "et",
+      "parse": "coord.conj.",
+      "gloss_kr": "그리고",
+      "gloss_en": "and",
+      "syntax": "LFG f-구조에서 et은 대등접속사로서 앞선 절과 현재 절을 연결하며 [COORD_CONJ] 자질을 지닌다. 생성문법적으로는 두 통사 범주를 대등하게 연결하는 Coordination 구조의 핵으로 기능한다.",
+      "background": "\"신화적 변신의 연속된 과정 속에서 이름과 신분의 최종적인 개명과 결합을 매끄럽게 이어주는 접속 기능을 수행한다.\"",
+      "etymology": "PIE 재구형 *eti('게다가, ~뿐만 아니라')에서 유래하며, 산스크리트어 áti 및 그리스어 ἔτι(eti)와 동계어다. Ernout-Meillet(DELL)에 따르면 라틴어의 가장 기본적인 대등접속사다. 현대 로망스어군으로 직접 계승되었다."
+    },
+    {
+      "g": "pariter",
+      "pos": "부사",
+      "lemma": "pariter",
+      "parse": "adv.",
+      "gloss_kr": "함께, 나란히, 동시에",
+      "gloss_en": "equally, together",
+      "syntax": "LFG f-구조에서 pariter는 양태 부사어(ADJUNCT)로서 [ADJUNCT [PRED 'pariter']] 자질을 갖는다. 생성문법적으로는 VP 또는 vP 내부의 부가어 자리에서 변화의 동시성을 수식한다.",
+      "background": "\"신체적 변신과 새로운 이름의 부여가 정확히 일치하여 동시에 일어남을 강조한다.\"",
+      "etymology": "형용사 pār(평등한)에서 파생된 부사형이다. de Vaan(EDL)에 따르면 PIE 어근 *per- 계통과 연관되며 부사 파생 접미사 -iter가 결합했다."
+    },
+    {
+      "g": "cum",
+      "pos": "전치사",
+      "lemma": "cum",
+      "parse": "prep. (takes abl.)",
+      "gloss_kr": "~와 함께",
+      "gloss_en": "with",
+      "syntax": "LFG f-구조에서 cum은 탈격 명사구 corpore를 지배하는 동반 전치사로서 [ADJUNCT [PRED 'cum', COMP [OBJ [CASE abl]]]] 자질을 이룬다. 생성문법적으로는 PP의 핵으로 기능하며 수반의 θ-역할을 배정한다.",
+      "background": "\"신체와 이름이 불가분의 관계 속에서 함께 전환되는 조화로운 변신 양상을 뒷받침한다.\"",
+      "etymology": "PIE 재구형 *ḱóm('~와 함께')에서 유래하며, 그리스어 ξύν/σύν과 동계어다. DELL에 따르면 라틴어 동반 전치사의 핵심 어휘다."
+    },
+    {
+      "g": "corpore",
+      "pos": "명사",
+      "lemma": "corpus, corporis, n.",
+      "parse": "sg.abl.n.",
+      "gloss_kr": "몸과 함께, 육체와 함께",
+      "gloss_en": "with body",
+      "syntax": "LFG f-구조에서 corpore는 전치사 cum의 목적어로서 [OBJ [PRED 'corpus', CASE abl, NUM sg, GEND n]] 기능을 수행한다. 생성문법적으로는 PP 내부의 보어로서 탈격 자질을 할당받는다.",
+      "background": "\"단순한 영혼만이 아니라 필멸의 육체 자체가 신성한 형태로 변모하여 천상의 존재로 거듭남을 뜻한다.\"",
+      "etymology": "PIE 재구형에서 유래한 라틴어 제3변화 중성 명사다. de Vaan(EDL)에 따르면 신체 조직과 관련된 어근에서 발달했다. 현대 영어 'corpse' 및 로망스어군 'cuerpo' 등의 어원이다."
+    },
+    {
+      "g": "nomen",
+      "pos": "명사",
+      "lemma": "nomen, nominis, n.",
+      "parse": "sg.acc.n.",
+      "gloss_kr": "이름을",
+      "gloss_en": "name",
+      "syntax": "LFG f-구조에서 nomen은 타동사의 목적어(OBJ)로서 [PRED 'nomen', CASE acc, NUM sg, GEND n] 자질을 지닌다. 생성문법적으로는 대격 명사구로서 목적어 자리에 병합된다.",
+      "background": "\"인간으로서 불리던 옛 이름을 버리고 신으로서 새롭게 부여받는 신성한 호칭으로의 전환을 상징한다.\"",
+      "etymology": "PIE 재구형 *gno-men('알려주는 것, 이름')에서 유래하며 그리스어 ὄνομα와 동계어다. de Vaan(EDL)에 따르면 명명 문화를 보여주는 핵심 인도유럽어 어휘다."
+    }
+  ]
+}
 ];
