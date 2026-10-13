@@ -27399,64 +27399,112 @@ window.__RAW_CHAPTER_DATA['data-linesMeta14'] = [
       }
     ]
   },
-  {
+{
   "ref": "Metamorphoses 14.851",
-  "trans": "그리고 남편의 체온과 함께 그녀의 옛 이름을 바꾼다.",
+  "trans": "그녀는 (이름을) 바꾸어 호라라고 부르니, 그녀는 이제 퀴리누스와 결합한 여신이다.",
   "words": [
     {
-      "g": "et",
-      "pos": "접속사",
-      "lemma": "et",
-      "parse": "coord.conj.",
-      "gloss_kr": "그리고",
-      "gloss_en": "and",
-      "syntax": "LFG f-구조에서 et은 대등접속사로서 앞선 절과 현재 절을 연결하며 [COORD_CONJ] 자질을 지닌다. 생성문법적으로는 두 통사 범주를 대등하게 연결하는 Coordination 구조의 핵으로 기능한다.",
-      "background": "\"신화적 변신의 연속된 과정 속에서 이름과 신분의 최종적인 개명과 결합을 매끄럽게 이어주는 접속 기능을 수행한다.\"",
-      "etymology": "PIE 재구형 *eti('게다가, ~뿐만 아니라')에서 유래하며, 산스크리트어 áti 및 그리스어 ἔτι(eti)와 동계어다. Ernout-Meillet(DELL)에 따르면 라틴어의 가장 기본적인 대등접속사다. 현대 로망스어군으로 직접 계승되었다."
+      "g": "mutat",
+      "pos": "동사",
+      "lemma": "muto, mutare, mutavi, mutatus",
+      "parse": "3rd.sg.pres.ind.act.",
+      "principalParts": "muto – mutare – mutavi – mutatus",
+      "gloss_kr": "바꾸다, 변경하다",
+      "gloss_en": "changes, alters",
+      "syntax": "LFG 관점에서 mutat은 주어와 목적어(nomen)를 논항으로 취하는 타동사 서술어로서 [PRED 'muto<SUBJ,OBJ>', SUBJ [PRED 'pro-drop'], OBJ [PRED 'nomen', CASE acc]]의 f-구조를 형성한다. 생성문법 관점에서 [TP [vP 주어 [v' mutat [VP nomen]]]]의 구조를 가지며, 역사적 현재시제를 통해 변신의 순간이 지닌 현장감을 부여한다.",
+      "background": "\"인간의 이름을 신성한 여신의 이름으로 바꾸어 부르는 결정적인 전환을 나타내며, 헤르실레가 지상의 정체성을 완전히 벗고 천상의 존재로 거듭나는 명명의 의식을 마무리한다.\"",
+      "etymology": "PIE 재구형 *mei-('바꾸다, 교환하다')에 기원하며, 산스크리트어 mithé 및 라틴어 communis와 동계어다. de Vaan(EDL)에 따르면 1변화 동사군으로 정착하여 변화와 교환을 뜻하는 어원의 어원이 되었다. 현대 영어의 'mutation' 및 로망스어군의 'mudar' 등에 온전한 흔적을 남겼다."
     },
     {
-      "g": "pariter",
+      "g": "Horamque",
+      "pos": "명사",
+      "lemma": "Hora, Horae, f.",
+      "parse": "sg.acc.f.",
+      "gloss_kr": "호라를 (그리고 ~를)",
+      "gloss_en": "and Hora (as)",
+      "syntax": "LFG f-구조에서 Horam은 목적격보어로서 [PRED 'Hora', CASE acc, NUM sg, GEND f] 자질을 지니며, 접속사 -que에 의해 앞선 구와 통사적으로 결합한다. 생성문법적으로는 서술적 목적보어 구조 내에서 [VP mutat [OBJ nomen] [OC Horam]] 형태로 병합된다.",
+      "background": "\"헤르실레가 새롭게 부여받은 신격의 이름인 '호라(Hora)'를 가리키며, 시간 또는 계절의 여신이자 로물루스의 아내로서 영원히 함께 숭배되는 존재가 되었음을 선언한다.\"",
+      "etymology": "그리스어 ὥρα와 어원을 같이하는 고유명사적 전용이다. Chantraine 및 de Vaan에 따르면 PIE 재구형 *yeh₁-('년, 계절')에서 유래했다. 현대 영어의 'hour' 및 각국 언어의 시간 관련 어휘들의 근간이 되는 어원이다."
+    },
+    {
+      "g": "vocat",
+      "pos": "동사",
+      "lemma": "voco, vocare, vocavi, vocatus",
+      "parse": "3rd.sg.pres.ind.act.",
+      "principalParts": "voco – vocare – vocavi – vocatus",
+      "gloss_kr": "부르다, 명명하다",
+      "gloss_en": "calls, names",
+      "syntax": "LFG f-구조에서 vocat은 2중항/보어 동사로서 [PRED 'voco<SUBJ,OBJ,XCOMP>', SUBJ [PRED 'pro-drop'], OBJ [PRED 'nomen'], XCOMP [PRED 'Hora']]의 f-구조를 형성한다. 생성문법적으로는 [vP 주어 [v' vocat [VP nomen Horam]]]의 껍데기 구조(shell VP)를 통해 명명의 술어-논항 관계를 실현한다.",
+      "background": "\"단순히 소리내어 부르는 것을 넘어, 존재의 새로운 이름을 공식적으로 선언하고 그에 걸맞은 신성한 지위를 부여하는 명명식의 행위를 완성한다.\"",
+      "etymology": "PIE 재구형 *wekʷ-('말하다, 부르다')에서 유래하며, 산스크리트어 vāc 및 그리스어 ὄψ와 동계어다. de Vaan에 따르면 라틴어 1변화 동사 체계 속에서 소리 내어 부르거나 지칭하는 행위를 나타내는 대표적 어휘로 발달했다. 현대 영어의 'vocal', 'voice' 등의 뿌리이다."
+    },
+    {
+      "g": "quae",
+      "pos": "대명사",
+      "lemma": "qui, quae, quod",
+      "parse": "sg.nom.f.",
+      "gloss_kr": "그녀는 (그리고 그 여자는)",
+      "gloss_en": "who, she who",
+      "syntax": "LFG f-구조에서 quae는 관계대명사로서 선행사 Horam을 수식하는 관계절의 주어로 기능하며 [PRED 'qui', CASE nom, NUM sg, GEND f] 자질을 지닌다. 생성문법적으로는 관계절 [CP quaeᵢ [C' [TP tᵢ ...]]] 내에서 주격 [Spec, TP] 자리를 점하며 선행사와 일치한다.",
+      "background": "\"새로 태어난 여신 호라가 누구이며, 신화적 질서 속에서 남편 퀴리누스와 어떤 관계를 맺고 있는지를 부연 설명하는 관계절의 주어 역할을 한다.\"",
+      "etymology": "PIE 대명사 어근 *kʷo-/kʷi-에서 유래한 관계대명사 여성 주격형이다."
+    },
+    {
+      "g": "nunc",
       "pos": "부사",
-      "lemma": "pariter",
+      "lemma": "nunc",
       "parse": "adv.",
-      "gloss_kr": "함께, 나란히, 동시에",
-      "gloss_en": "equally, together",
-      "syntax": "LFG f-구조에서 pariter는 양태 부사어(ADJUNCT)로서 [ADJUNCT [PRED 'pariter']] 자질을 갖는다. 생성문법적으로는 VP 또는 vP 내부의 부가어 자리에서 변화의 동시성을 수식한다.",
-      "background": "\"신체적 변신과 새로운 이름의 부여가 정확히 일치하여 동시에 일어남을 강조한다.\"",
-      "etymology": "형용사 pār(평등한)에서 파생된 부사형이다. de Vaan(EDL)에 따르면 PIE 어근 *per- 계통과 연관되며 부사 파생 접미사 -iter가 결합했다."
+      "gloss_kr": "지금, 현재",
+      "gloss_en": "now, at present",
+      "syntax": "LFG f-구조에서 nunc는 시간 부사어로서 [ADJUNCT [PRED 'nunc']] 자질을 갖는다. 생성문법적으로는 VP 또는 vP의 부가어 자리에서 지상에서의 필멸의 삶과 대비되는 '현재의 천상적 신격 상태'라는 시제적·상황적 대조를 한정한다.",
+      "background": "\"과거에 지상에서 헤르실레라는 이름의 인간으로 살았던 시간과, '지금' 천상에서 퀴리누스의 아내이자 여신으로 존재하는 영원한 현재를 강렬하게 대비시킨다.\"",
+      "etymology": "PIE 재구형 *nu('지금')에 지시적 확장사인 -nc가 결합한 형태다. 그리스어 νῦν 및 영어의 'now'와 동계어다."
     },
     {
-      "g": "cum",
-      "pos": "전치사",
-      "lemma": "cum",
-      "parse": "prep. (takes abl.)",
-      "gloss_kr": "~와 함께",
-      "gloss_en": "with",
-      "syntax": "LFG f-구조에서 cum은 탈격 명사구 corpore를 지배하는 동반 전치사로서 [ADJUNCT [PRED 'cum', COMP [OBJ [CASE abl]]]] 자질을 이룬다. 생성문법적으로는 PP의 핵으로 기능하며 수반의 θ-역할을 배정한다.",
-      "background": "\"신체와 이름이 불가분의 관계 속에서 함께 전환되는 조화로운 변신 양상을 뒷받침한다.\"",
-      "etymology": "PIE 재구형 *ḱóm('~와 함께')에서 유래하며, 그리스어 ξύν/σύν과 동계어다. DELL에 따르면 라틴어 동반 전치사의 핵심 어휘다."
-    },
-    {
-      "g": "corpore",
+      "g": "dea",
       "pos": "명사",
-      "lemma": "corpus, corporis, n.",
-      "parse": "sg.abl.n.",
-      "gloss_kr": "몸과 함께, 육체와 함께",
-      "gloss_en": "with body",
-      "syntax": "LFG f-구조에서 corpore는 전치사 cum의 목적어로서 [OBJ [PRED 'corpus', CASE abl, NUM sg, GEND n]] 기능을 수행한다. 생성문법적으로는 PP 내부의 보어로서 탈격 자질을 할당받는다.",
-      "background": "\"단순한 영혼만이 아니라 필멸의 육체 자체가 신성한 형태로 변모하여 천상의 존재로 거듭남을 뜻한다.\"",
-      "etymology": "PIE 재구형에서 유래한 라틴어 제3변화 중성 명사다. de Vaan(EDL)에 따르면 신체 조직과 관련된 어근에서 발달했다. 현대 영어 'corpse' 및 로망스어군 'cuerpo' 등의 어원이다."
+      "lemma": "dea, deae, f.",
+      "parse": "sg.nom.f.",
+      "gloss_kr": "여신으로",
+      "gloss_en": "as a goddess",
+      "syntax": "LFG f-구조에서 dea는 주격 보어로서 [PRED 'dea', CASE nom, NUM sg, GEND f] 자질을 지니며, 주어 quae의 속성을 규정한다. 생성문법적으로는 [TP quae [T' est [AP/NP dea]]] 구조에서 주어와 일치하는 서술격 명사구로 병합된다.",
+      "background": "\"인간 여성에 불과했던 헤르실레가 신들의 반열에 올라 공식적인 '여신'의 지위를 획득했음을 선언하는 신화적 절정의 표현이다.\"",
+      "etymology": "PIE 재구형 *deiwos('신, 빛나는 자')에서 유래한 deus의 여성형 파생 명사다. 현대 영어의 'deity' 및 스페인어 diosa 등에 온전히 보존되어 있다."
     },
     {
-      "g": "nomen",
+      "g": "iuncta",
+      "pos": "분사",
+      "lemma": "iungo, iungere, iunxi, iunctus",
+      "parse": "perf.pass.part.sg.nom.f.",
+      "principalParts": "iungo – iungere – iunxi – iunctus",
+      "gloss_kr": "결합된, 결속된",
+      "gloss_en": "joined, united",
+      "syntax": "LFG f-구조에서 iuncta는 주격 보어 수식어 또는 서술적 수동분사로서 [PRED 'iungo<OBL,SUBJ>', SUBJ quae, OBL [PRED 'Quirinus', CASE abl]]의 자질을 지닌다. 생성문법적으로는 축약된 수동태 관계절 구문으로서 탈격 명사구 Quirino를 논항으로 지배한다.",
+      "background": "\"지상에서 부부의 연을 맺었던 로물루스와 헤르실레가 천상에서도 영원히 결합되어 분리되지 않는 신성한 부부의 모범을 이룬다는 것을 보여준다.\"",
+      "etymology": "PIE 재구형 *yeug-('잇다, 결합하다')에서 유래하며, 산스크리트어 yunákti 및 영어의 'yoke'와 동계어다. 현대 영어의 'junction' 및 'joint' 등의 어원이다."
+    },
+    {
+      "g": "Quirino",
       "pos": "명사",
-      "lemma": "nomen, nominis, n.",
-      "parse": "sg.acc.n.",
-      "gloss_kr": "이름을",
-      "gloss_en": "name",
-      "syntax": "LFG f-구조에서 nomen은 타동사의 목적어(OBJ)로서 [PRED 'nomen', CASE acc, NUM sg, GEND n] 자질을 지닌다. 생성문법적으로는 대격 명사구로서 목적어 자리에 병합된다.",
-      "background": "\"인간으로서 불리던 옛 이름을 버리고 신으로서 새롭게 부여받는 신성한 호칭으로의 전환을 상징한다.\"",
-      "etymology": "PIE 재구형 *gno-men('알려주는 것, 이름')에서 유래하며 그리스어 ὄνομα와 동계어다. de Vaan(EDL)에 따르면 명명 문화를 보여주는 핵심 인도유럽어 어휘다."
+      "lemma": "Quirinus, Quirini, m.",
+      "parse": "sg.abl.m.",
+      "gloss_kr": "퀴리누스와 (함께)",
+      "gloss_en": "with Quirinus",
+      "syntax": "LFG f-구조에서 Quirino는 수동분사 iuncta의 탈격 지배 목적어로서 [PRED 'Quirinus', CASE abl, NUM sg, GEND m] 자질을 지닌다. 생성문법적으로는 무전치사 탈격 구문으로서 결합의 대상이 되는 θ-역할을 수용한다.",
+      "background": "\"신격화된 로물루스의 천상적 이름인 '퀴리누스'를 가리키며, 로마의 첫 번째 왕이자 신이 된 남편과 아내가 천국에서 영원히 하나로 결합되어 있음을 강조한다.\"",
+      "etymology": "사비니 계통의 신명인 *quiris('창')에서 파생된 것으로 추정되며, 로마 초기 종교 제의에서 유래한 고유 명사다."
+    },
+    {
+      "g": "est",
+      "pos": "동사",
+      "lemma": "sum, esse, fui, -",
+      "parse": "3rd.sg.pres.ind.act.",
+      "principalParts": "sum – esse – fui – (미상)",
+      "gloss_kr": "~이다",
+      "gloss_en": "is",
+      "syntax": "LFG f-구조에서 est는 계사로서 [PRED 'sum<SUBJ,XCOMP>', SUBJ quae, XCOMP dea iuncta]의 자질구조를 완성한다. 생성문법적으로는 [TP quae [T' est [AP/NP dea iuncta]]] 구조에서 시제와 인칭 자질을 부여하는 기능적 핵의 역할을 수행한다.",
+      "background": "\"호라라는 여신이 현재 퀴리누스와 영원히 결합되어 존재하고 있다는 객관적이고 신성한 진실을 현재시제로 확정하는 서술의 마침표 역할을 한다.\"",
+      "etymology": "PIE 재구형 *h₁es-('존재하다, 이다')에서 유래하며, 산스크리트어 ásti 및 영어의 'is'와 완벽한 동계어를 이루는 인도유럽어족의 대표적 불규칙 계사다."
     }
   ]
 }
