@@ -2284,6 +2284,8 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   body[data-art="on"] #bgArt, body[data-art="on"] #bgCap { display: block; }
   #bgToggle { display: none; }
   body[data-art] #bgToggle { display: inline-block; }
+  #artViewBtn { display: none; }
+  body[data-art] #artViewBtn { display: inline-block; }
   #bgCap { position: fixed; right: 14px; bottom: 12px; z-index: 2; display: none; max-width: min(300px, calc(100vw - 28px)); padding: 7px 10px; border-radius: 8px; pointer-events: none; text-align: right; font-family: var(--sans); font-size: 10.5px; line-height: 1.45; color: var(--text-sub); background: color-mix(in srgb, var(--card-bg) 82%, transparent); border: 0.5px solid var(--border); }
   #bgCap b { display: block; font-size: 11.5px; font-weight: 600; color: var(--text-main); }
   #bgCap em { font-style: italic; opacity: .85; } #bgCap small { display: block; font-size: 9.5px; opacity: .75; margin-top: 2px; }
@@ -2407,17 +2409,38 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   /* ---- 11. 정보 추가 (행 직접 입력) ---- */
   .ai-overlay { position: fixed; inset: 0; z-index: 210; display: none; align-items: center; justify-content: center; padding: 16px; background: rgba(30,26,18,.38); -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); }
   .ai-overlay.show { display: flex; }
-  .ai-card { width: 100%; max-width: 780px; max-height: calc(100vh - 32px); max-height: calc(100dvh - 32px); display: flex; flex-direction: column; overflow: hidden; background: var(--card-bg); border: 0.5px solid var(--border); border-radius: 14px; box-shadow: var(--shadow-xl); font-family: var(--sans); color: var(--text-main); }
+  .ai-card {
+    width: 100%;
+    max-height: calc(100vh - 32px);
+    max-height: calc(100dvh - 32px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: var(--card-bg);
+    border: 0.5px solid var(--border);
+    border-radius: 14px;
+    box-shadow: var(--shadow-xl);
+    font-family: var(--sans);
+    color: var(--text-main);
+  }
   .ai-head { flex: none; display: flex; align-items: center; justify-content: space-between; padding: 12px 14px 12px 18px; border-bottom: 0.5px solid var(--border); }
-  .ai-head h2 { margin: 0; font-family: var(--sans); font-size: 16px; font-weight: 600; letter-spacing: 0; }
+  .ai-head h2 { margin: 0; font-family: var(--sans); font-weight: 600; letter-spacing: 0; }
   .ai-x { width: 32px; height: 32px; border: none; border-radius: 50%; cursor: pointer; font-size: 14px; color: var(--text-sub); background: color-mix(in srgb, var(--text-faint) 16%, transparent); }
   .ai-x:hover { background: color-mix(in srgb, var(--text-faint) 28%, transparent); color: var(--text-main); }
-  .ai-body { flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; padding: 16px 18px 22px; }
-  .ai-foot { flex: none; display: flex; align-items: center; gap: 8px; padding: 12px 18px calc(12px + env(safe-area-inset-bottom, 0px)); border-top: 0.5px solid var(--border); background: var(--card-bg); }
+  .ai-body { flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
+  .ai-foot {
+    flex: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px calc(12px + env(safe-area-inset-bottom, 0px));
+    border-top: 0.5px solid var(--border);
+    box-shadow: 0 -4px 12px -8px rgba(0,0,0,.2);
+  }
   .ai-spacer { flex: 1; }
-  .ai-pick { display: grid; grid-template-columns: 1.7fr 1fr 1fr; gap: 10px; }
+  .ai-pick { display: grid; gap: 10px; box-shadow: var(--shadow-sm); }
   .ai-f { display: flex; flex-direction: column; gap: 5px; min-width: 0; margin: 0; }
-  .ai-f > span { font-size: 11.5px; font-weight: 600; color: var(--text-sub); }
+  .ai-f > span { font-weight: 600; }
   .ai-f input, .ai-f select, .ai-f textarea { width: 100%; box-sizing: border-box; margin: 0; font-family: var(--sans); font-size: 14px; line-height: 1.5; color: var(--text-main); background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 9px 11px; }
   .ai-f textarea { resize: vertical; line-height: 1.6; }
   .ai-f input:focus, .ai-f select:focus, .ai-f textarea:focus { border-color: var(--accent); }
@@ -2426,14 +2449,20 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   .ai-status { margin: 10px 0 0; min-height: 1.5em; font-size: 12.5px; line-height: 1.55; color: var(--text-sub); }
   .ai-status button { margin-left: 6px; }
   .ai-row { display: flex; gap: 8px; margin-top: 8px; }
-  .ai-btn { font-family: var(--sans); font-size: 13px; font-weight: 500; padding: 9px 14px; border: none; border-radius: 8px; cursor: pointer; color: var(--text-main); background: color-mix(in srgb, var(--text-faint) 16%, transparent); transition: background var(--dur-press) var(--ease-mac), transform var(--dur-press) var(--ease-mac); }
-  .ai-btn:hover:not(:disabled) { background: color-mix(in srgb, var(--text-faint) 28%, transparent); }
+  .ai-btn {
+    font-family: var(--sans);
+    padding: 9px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--text-main);
+    transition: background var(--dur-press) var(--ease-mac), transform var(--dur-press) var(--ease-mac);
+  }
   .ai-btn:active:not(:disabled) { transform: scale(0.96); }
   .ai-btn:disabled { opacity: .45; cursor: not-allowed; }
   .ai-primary, .ai-primary:hover:not(:disabled) { color: #fff; background: linear-gradient(180deg, color-mix(in srgb, var(--accent-2) 80%, #fff), var(--accent)); box-shadow: inset 0 0.5px 0 rgba(255,255,255,.55), 0 1px 3px rgba(0,0,0,.2); }
   :root[data-theme="dark"] .ai-primary { color: #1d1409; }
   .ai-danger { color: var(--bad); }
-  .ai-link { font-family: var(--sans); font-size: 12.5px; font-weight: 600; padding: 4px 6px; border: none; border-radius: 6px; cursor: pointer; color: var(--accent-dark); background: transparent; }
+  .ai-link { font-family: var(--sans); font-weight: 600; padding: 4px 6px; border: none; border-radius: 6px; cursor: pointer; background: transparent; }
   .ai-link:hover { background: var(--accent-light); }
   .ai-words-head { display: flex; align-items: center; justify-content: space-between; margin: 18px 0 2px; font-size: 12.5px; font-weight: 600; color: var(--text-sub); }
   .ai-words-tools { display: flex; gap: 4px; }
@@ -2455,17 +2484,15 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   .ai-bulk > summary small { font-weight: 400; color: var(--text-faint); }
   .ai-qtools { display: flex; justify-content: flex-end; gap: 4px; padding: 0 10px; }
   #aiQ { padding: 4px 10px 10px; }
-  .ai-q { display: flex; align-items: center; gap: 6px; margin-top: 6px; padding: 2px; border-radius: 8px; }
+  .ai-q { display: flex; align-items: center; border-radius: 8px; }
   .ai-q.on { background: var(--accent-light); }
-  .ai-q input { box-sizing: border-box; margin: 0; padding: 7px 8px; font-family: var(--sans); font-size: 14px; color: var(--text-main); background: var(--card-bg); border: 0.5px solid var(--border); border-radius: 6px; outline: none; }
-  .ai-q input:focus { border-color: var(--accent); }
+  .ai-q input { box-sizing: border-box; margin: 0; font-family: var(--sans); font-size: 14px; color: var(--text-main); background: var(--card-bg); outline: none; }
   .ai-q .qn { flex: none; width: 3.8em; text-align: center; font-variant-numeric: tabular-nums; }
   .ai-q .qt { flex: 1; min-width: 0; font-family: var(--serif); font-size: 16px; }
-  .ai-q .qs { flex: none; min-width: 4em; font-size: 11px; text-align: center; color: var(--text-faint); }
-  .ai-q .qs.ok { color: var(--accent-dark); font-weight: 600; }
-  .ai-q .qs.warn { color: var(--bad); }
+  .ai-q .qs { flex: none; text-align: center; }
+  .ai-q .qs.ok { font-weight: 600; color: var(--ok); background: var(--ok-light); }
   .ai-qsend { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 10px 10px 0; }
-  .ai-chk { display: flex; align-items: center; gap: 5px; font-size: 12.5px; color: var(--text-sub); }
+  .ai-chk { display: flex; align-items: center; gap: 7px; }
   .ai-bulk .ai-wide { margin: 14px 10px 0; }
   #aiQMsg { margin: 8px 10px 10px; white-space: pre-wrap; }
   .ai-qsend input[type=text], .ai-qsend input[type=password], .ai-qsend input[type=number] { box-sizing: border-box; margin: 0; padding: 7px 8px; font-family: var(--sans); font-size: 14px; color: var(--text-main); background: var(--card-bg); border: 0.5px solid var(--border); border-radius: 6px; outline: none; }
@@ -2490,13 +2517,11 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   @media (max-width: 640px) { .ai-q input.qn { font-size: 16px; } }
   @media (max-width: 640px) {
     .ai-overlay { padding: 0; align-items: stretch; }
-    .ai-card { max-width: none; max-height: none; height: 100%; border: none; border-radius: 0; }
-    .ai-pick { grid-template-columns: 1fr 1fr; }
+    .ai-card { max-height: none; height: 100%; border: none; border-radius: 0; }
     .ai-pick .ai-f:first-child { grid-column: 1 / -1; }
     .ai-f input, .ai-f select, .ai-f textarea { font-size: 16px; }
     textarea.ai-src { font-size: 18px; }
     .ai-wf { grid-template-columns: 1fr; }
-    .ai-body { padding: 14px 14px 20px; }
     .ai-foot { padding-left: 14px; padding-right: 14px; }
   }
 
@@ -2515,6 +2540,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   .nav-more-menu .site-nav-link { width: 100%; text-align: left; background: transparent; border-radius: 8px; padding: 10px 12px; font-size: 13.5px; }
   .nav-more-menu .site-nav-link:hover { background: color-mix(in srgb, var(--text-faint) 18%, transparent); }
   body[data-art] .nav-more-menu #bgToggle { display: block; }
+  body[data-art] .nav-more-menu #artViewBtn { display: block; }
   .nav-more-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 3px 4px 3px 12px; border-radius: 8px; }
   .nav-more-row > label { display: block; flex: 1; padding: 7px 0; font-size: 13.5px; font-weight: 500; color: var(--text-sub); cursor: pointer; }
   @media (max-width: 600px) {
@@ -2677,29 +2703,69 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   @media (max-width: 640px) { select:not(#_) { font-size: 16px; } }
 
   /* ---- 정보 추가: 3단계 구성 (① 원문 → ② 코딩 → ③ 파일 반영) ---- */
-  .ai-steps { display: flex; flex-direction: column; gap: 12px; margin-top: 14px; }
-  .ai-step { border: 0.5px solid var(--border); border-radius: 12px; background: var(--bg); padding: 14px 14px 14px; }
-  .ai-step-h { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; }
-  .ai-num { flex: none; width: 24px; height: 24px; margin-top: 1px; border-radius: 50%; display: grid; place-items: center; font-size: 12.5px; font-weight: 700; color: #fff; background: linear-gradient(180deg, color-mix(in srgb, var(--accent-2) 80%, #fff), var(--accent)); box-shadow: inset 0 0.5px 0 rgba(255,255,255,.5), 0 1px 2px rgba(0,0,0,.18); }
+  .ai-steps { display: flex; flex-direction: column; margin-top: 14px; gap: 14px; }
+  .ai-step { background: var(--card-bg); border: 1px solid var(--border); border-radius: 14px; box-shadow: var(--shadow-sm); }
+  .ai-step-h {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 12px;
+    margin: 0 -16px 14px;
+    border-bottom: 1px solid var(--border-soft);
+    border-radius: 14px 14px 0 0;
+    background: color-mix(in srgb, var(--accent-light) 55%, var(--card-bg));
+  }
+  .ai-num {
+    flex: none;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(180deg, color-mix(in srgb, var(--accent-2) 80%, #fff), var(--accent));
+    box-shadow: inset 0 0.5px 0 rgba(255,255,255,.5), 0 1px 2px rgba(0,0,0,.18);
+    width: 28px;
+    height: 28px;
+    margin-top: 0;
+  }
   :root[data-theme="dark"] .ai-num { color: #1d1409; }
   .ai-step-t { flex: 1; min-width: 0; }
-  .ai-step-t h3 { margin: 0; font-family: var(--sans); font-size: 15px; font-weight: 650; letter-spacing: 0; color: var(--text-main); }
-  .ai-step-t p { margin: 3px 0 0; font-size: 12px; line-height: 1.5; color: var(--text-sub); }
+  .ai-step-t h3 { margin: 0; font-family: var(--sans); font-weight: 650; letter-spacing: 0; color: var(--text-main); font-size: 16px; }
+  .ai-step-t p { margin: 3px 0 0; line-height: 1.5; font-size: 12.5px; }
   .ai-step .ai-qtools { flex: none; flex-wrap: wrap; justify-content: flex-end; padding: 0; margin: -2px -4px 0 0; }
   .ai-step #aiQ { padding: 0; }
   .ai-step .ai-q:first-child { margin-top: 0; }
   .ai-step .ai-qsend { padding: 0; margin-top: 10px; }
   .ai-step .ai-wide { margin: 12px 0 0; }
-  .ai-seg { display: flex; gap: 2px; padding: 2px; border-radius: 9px; background: color-mix(in srgb, var(--text-faint) 18%, transparent); }
-  .ai-seg button { flex: 1; font-family: var(--sans); font-size: 13px; font-weight: 500; padding: 7px 10px; border: none; border-radius: 7px; cursor: pointer; color: var(--text-sub); background: transparent; transition: background var(--dur-press) var(--ease-mac), color var(--dur-press) var(--ease-mac), box-shadow var(--dur-press) var(--ease-mac); }
+  .ai-seg { display: flex; gap: 2px; border-radius: 9px; padding: 3px; border: 1px solid var(--border); background: color-mix(in srgb, var(--text-faint) 14%, var(--bg)); }
+  .ai-seg button {
+    flex: 1;
+    font-family: var(--sans);
+    font-weight: 500;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    color: var(--text-sub);
+    background: transparent;
+    transition: background var(--dur-press) var(--ease-mac), color var(--dur-press) var(--ease-mac), box-shadow var(--dur-press) var(--ease-mac);
+  }
   .ai-seg button:hover:not(.on) { color: var(--text-main); }
-  .ai-seg button.on { color: var(--text-main); font-weight: 600; background: var(--card-bg); box-shadow: 0 0.5px 2px rgba(0,0,0,.18), 0 0 0 0.5px rgba(0,0,0,.04); }
+  .ai-seg button.on { font-weight: 600; background: var(--card-bg); }
   .ai-pane { margin-top: 12px; }
   .ai-pane[hidden] { display: none; }
   .ai-grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
   .ai-grid2 .ai-f { gap: 5px; }
   .ai-grid2 .ai-f input, .ai-grid2 .ai-f select { width: 100%; box-sizing: border-box; }
-  .ai-grid2 .ai-f input[type=password], .ai-grid2 .ai-f input[type=text] { margin: 0; padding: 8px 10px; font-family: var(--sans); font-size: 14px; color: var(--text-main); background: var(--card-bg); border: 0.5px solid var(--border); border-radius: 8px; outline: none; }
+  .ai-grid2 .ai-f input[type=password], .ai-grid2 .ai-f input[type=text] {
+    margin: 0;
+    padding: 8px 10px;
+    font-family: var(--sans);
+    font-size: 14px;
+    color: var(--text-main);
+    background: var(--card-bg);
+    border-radius: 8px;
+    outline: none;
+  }
   .ai-grid2 .ai-f input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 28%, transparent); }
   .ai-grid2 .ai-gem-custom { margin-top: 6px; }
   .ai-opts { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: center; margin-top: 10px; }
@@ -2707,13 +2773,26 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   .ai-opts input[type=number] { box-sizing: border-box; margin: 0 2px; padding: 4px 6px; font-family: var(--sans); font-size: 13px; color: var(--text-main); background: var(--card-bg); border: 0.5px solid var(--border); border-radius: 6px; outline: none; text-align: center; }
   .ai-step .ai-main-act { margin-top: 14px; padding: 0; }
   .ai-step .ai-main-act .ai-btn { width: 100%; padding: 12px 14px; font-size: 15px; font-weight: 600; border-radius: 10px; }
-  .ai-hint { margin: 10px 0 0; font-size: 12px; line-height: 1.55; color: var(--text-faint); }
-  .ai-result { margin: 12px 0 0; padding: 10px 12px; min-height: 0; border: 0.5px solid var(--border); border-radius: 9px; background: var(--card-bg); font-size: 12.5px; line-height: 1.6; color: var(--text-main); white-space: pre-wrap; word-break: break-word; }
+  .ai-hint { margin: 10px 0 0; line-height: 1.55; font-size: 12.5px; }
+  .ai-result {
+    margin: 12px 0 0;
+    padding: 10px 12px;
+    min-height: 0;
+    border: 0.5px solid var(--border);
+    border-radius: 9px;
+    background: var(--card-bg);
+    line-height: 1.6;
+    color: var(--text-main);
+    white-space: pre-wrap;
+    word-break: break-word;
+    border-left: 4px solid var(--text-faint);
+    font-size: 13px;
+  }
   .ai-result:empty { display: none; }
   #aiQMsg.ai-result { margin: 12px 0 0; }
   .ai-step-foot { display: flex; align-items: center; gap: 8px; margin-top: 12px; padding-top: 10px; border-top: 0.5px solid var(--border-soft); }
-  .ai-step-foot small { font-size: 11.5px; color: var(--text-faint); }
-  .ai-manual { margin-top: 16px; }
+  .ai-step-foot small { font-size: 11.5px; color: var(--text-sub); }
+  .ai-manual { margin-top: 16px; border: 1px solid var(--border); }
   @media (max-width: 640px) {
     .ai-step-h { flex-wrap: wrap; }
     .ai-step .ai-qtools { width: 100%; justify-content: flex-start; margin: 0 0 0 34px; }
@@ -2725,24 +2804,20 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   .ai-card { max-width: 840px; }
   .ai-body { background: color-mix(in srgb, var(--bg-alt) 70%, var(--bg)); padding: 18px 20px 24px; }
   .ai-head h2 { font-size: 17px; }
-  .ai-pick { padding: 12px; border: 1px solid var(--border); border-radius: 12px; background: var(--card-bg); box-shadow: var(--shadow-sm); }
+  .ai-pick { padding: 12px; border: 1px solid var(--border); border-radius: 12px; background: var(--card-bg); }
   .ai-f > span { font-size: 12.5px; color: var(--text-main); opacity: .8; }
-  .ai-step { background: var(--card-bg); border: 1px solid var(--border); border-radius: 14px; padding: 0 16px 16px; box-shadow: var(--shadow-sm); }
-  .ai-step-h { margin: 0 -16px 14px; padding: 13px 16px; border-bottom: 1px solid var(--border-soft); border-radius: 14px 14px 0 0; background: color-mix(in srgb, var(--accent-light) 55%, var(--card-bg)); }
-  .ai-num { width: 28px; height: 28px; margin-top: 0; font-size: 14px; }
-  .ai-step-t h3 { font-size: 16px; }
-  .ai-step-t p { font-size: 12.5px; color: var(--text-sub); }
-  .ai-hint { font-size: 12.5px; color: var(--text-sub); }
-  .ai-step-foot small { color: var(--text-sub); }
-  .ai-chk { font-size: 13.5px; color: var(--text-main); gap: 7px; }
+  .ai-step-h { padding: 13px 16px; }
+  .ai-num { font-size: 14px; }
+  .ai-step-t p { color: var(--text-sub); }
+  .ai-hint { color: var(--text-sub); }
+  .ai-chk { font-size: 13.5px; color: var(--text-main); }
   .ai-chk input[type=checkbox] { width: 16px; height: 16px; margin: 0; accent-color: var(--accent); cursor: pointer; }
   .ai-link { font-size: 13px; color: var(--accent-dark); }
   :root:not([data-theme="dark"]) .ai-link { color: #8a6a1f; }
   .ai-link.ai-danger { color: var(--bad); }
   .ai-btn { border: 1px solid color-mix(in srgb, var(--text-faint) 40%, transparent); background: var(--card-bg); font-size: 13.5px; font-weight: 600; box-shadow: 0 1px 2px rgba(0,0,0,.08); }
   .ai-btn:hover:not(:disabled) { background: color-mix(in srgb, var(--card-bg) 90%, var(--accent)); border-color: var(--accent); }
-  .ai-btn.ai-primary, .ai-btn.ai-primary:hover:not(:disabled) { border-color: transparent; }
-  .ai-seg { padding: 3px; border: 1px solid var(--border); background: color-mix(in srgb, var(--text-faint) 14%, var(--bg)); }
+  .ai-btn.ai-primary, .ai-btn.ai-primary:hover:not(:disabled) { border-color: transparent; text-shadow: 0 1px 0 rgba(0,0,0,.28); }
   .ai-seg button { font-size: 14px; padding: 9px 10px; }
   .ai-seg button.on { color: var(--accent-dark); box-shadow: 0 1px 3px rgba(0,0,0,.2); }
   :root:not([data-theme="dark"]) .ai-seg button.on { color: #7a5c14; }
@@ -2753,25 +2828,24 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   .ai-q .qn { font-weight: 700; }
   .ai-q .qs { min-width: 5.2em; padding: 3px 8px; border-radius: 999px; font-size: 11.5px; font-weight: 600; color: var(--text-sub); background: color-mix(in srgb, var(--text-faint) 16%, transparent); }
   .ai-q .qs:empty { display: none; }
-  .ai-q .qs.ok { color: var(--ok); background: var(--ok-light); }
   .ai-q .qs.warn { color: var(--bad); background: var(--bad-light); }
-  .ai-result { border-left: 4px solid var(--text-faint); font-size: 13px; }
   .ai-result[data-tone="ok"] { border-left-color: var(--ok); background: color-mix(in srgb, var(--ok-light) 60%, var(--card-bg)); }
   .ai-result[data-tone="warn"] { border-left-color: var(--bad); background: color-mix(in srgb, var(--bad-light) 70%, var(--card-bg)); }
   .ai-grid2 .ai-f input[type=password], .ai-grid2 .ai-f input[type=text] { border: 1px solid var(--border); }
-  .ai-manual { border: 1px solid var(--border); background: var(--card-bg); }
+  .ai-manual { background: var(--card-bg); }
   .ai-manual > summary { font-size: 13.5px; color: var(--text-main); }
-  .ai-foot { background: var(--card-bg); box-shadow: 0 -4px 12px -8px rgba(0,0,0,.2); }
+  .ai-foot { background: var(--card-bg); }
 
   /* ===== 정보 추가 개선 (번호 칸 / 맥 스타일 드롭다운 / 주 버튼 가시성) ===== */
   /* 1) 행 번호 칸: 숫자가 잘리지 않게 넓히고, datalist 화살표가 자리를 먹지 않게 */
   #aiQ .ai-q .qn { width: 5.4em; min-width: 5.4em; padding-left: 6px; padding-right: 6px; text-overflow: clip; }
   #aiQ .ai-q input.qn::-webkit-calendar-picker-indicator { display: none !important; opacity: 0; }
-  @media (max-width: 640px) { #aiQ .ai-q .qn { width: 5em; min-width: 5em; } }
+  @media (max-width: 640px) { #aiQ .ai-q .qn { width: 5em; min-width: 5em; grid-area: n; } }
 
   /* 2) 주 버튼: .ai-btn 이 배경을 덮어써서 흰 글씨가 흰 배경에 묻히던 문제 */
   .ai-btn.ai-primary, .ai-btn.ai-primary:hover:not(:disabled) {
-    color: #fff; font-weight: 700; border-color: transparent; text-shadow: 0 1px 0 rgba(0,0,0,.28);
+    color: #fff;
+    font-weight: 700;
     background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 94%, #000), color-mix(in srgb, var(--accent-dark) 90%, #000));
     box-shadow: inset 0 0.5px 0 rgba(255,255,255,.35), 0 1px 3px rgba(0,0,0,.25);
   }
@@ -2859,7 +2933,6 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   /* 6) 좁은 화면: 번호+상태+버튼이 위 줄, 원문은 아래 줄 전체 폭 */
   @media (max-width: 640px) {
     #aiQ .ai-q { display: grid; grid-template-columns: auto auto 1fr auto auto; grid-template-areas: "n s . go x" "t t t t t"; align-items: center; column-gap: 8px; row-gap: 6px; }
-    #aiQ .ai-q .qn { grid-area: n; }
     #aiQ .ai-q .qs { grid-area: s; justify-self: start; min-width: 0; }
     #aiQ .ai-q .qt { grid-area: t; width: 100%; min-width: 0; }
     #aiQ .ai-q [data-act="go"] { grid-area: go; min-height: 34px; padding: 4px 14px; border-radius: 8px; font-weight: 600; border: 1px solid color-mix(in srgb, var(--accent) 60%, transparent); background: var(--accent-light); }
@@ -2950,7 +3023,6 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
 
   /* ---- 정보 추가 창 간소화: 1 원문 넣기 → 2 결과·다운로드 (설정·고급은 접어 둠) ---- */
   .ai-pick { grid-template-columns: 1.7fr 1fr; }
-  .ai-steps { gap: 14px; }
   .ai-step { padding: 16px; }
   .ai-qfoot { display: flex; justify-content: flex-end; margin-top: 6px; }
   .ai-qfoot .ai-qtools { padding: 0; margin: 0; }
@@ -2969,7 +3041,6 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   .split-bar button { font-family: var(--sans); font-size: 12.5px; font-weight: 500; padding: 6px 11px; border: 1px solid var(--border); border-radius: 999px; background: var(--card-bg); color: var(--text-main); cursor: pointer; }
   .split-bar button:hover { border-color: var(--accent); color: var(--accent-dark); }
   .split-bar button.sb-side { font-weight: 600; background: var(--accent-light); color: var(--accent-dark); border-color: transparent; }
-  .split-bar .sb-sync { display: inline-flex; align-items: center; gap: 5px; cursor: pointer; user-select: none; }
   .split-grid { flex: 1; min-height: 0; display: grid; grid-template-columns: 1fr 1fr; }
   .split-grid > .split-pane + .split-pane { border-left: 1px solid var(--border); }
   .view.split-pane.active { display: block; animation: none; max-width: none; margin: 0; padding: 0 16px 60px; height: 100%; min-width: 0; box-sizing: border-box; overflow-y: auto; overscroll-behavior: contain; }
@@ -2981,10 +3052,41 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   .split-menu .sm-h { padding: 6px 10px 4px; font-size: 11.5px; font-weight: 600; color: var(--text-sub); }
   .split-menu button { display: block; width: 100%; text-align: left; padding: 9px 10px; border: none; background: none; border-radius: 8px; font: inherit; font-size: 13.5px; color: var(--text-main); cursor: pointer; }
   .split-menu button:hover { background: var(--accent-light); }
+  /* ---- 명화 감상: 글자 없이 그림만 크게 ---- */
+  #artView { position: fixed; inset: 0; z-index: 260; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: max(18px, env(safe-area-inset-top)) 18px max(18px, env(safe-area-inset-bottom)); background: rgba(12, 9, 6, .95); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); opacity: 0; transition: opacity .25s ease; cursor: zoom-out; }
+  #artView.in { opacity: 1; }
+  #artView .av-stage { flex: 1; min-height: 0; width: 100%; display: flex; align-items: center; justify-content: center; }
+  #artView img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 3px; box-shadow: 0 14px 50px rgba(0,0,0,.55); transform: scale(.98); transition: transform .35s ease; }
+  #artView.in img { transform: none; }
+  #artView .av-cap { flex: none; max-width: min(640px, 100%); text-align: center; font-family: var(--sans); font-size: 12.5px; line-height: 1.6; color: rgba(255,255,255,.72); cursor: default; }
+  #artView .av-cap b { display: block; font-size: 14.5px; font-weight: 600; color: rgba(255,255,255,.95); }
+  #artView .av-cap em { font-style: italic; opacity: .85; }
+  #artView .av-cap small { display: block; margin-top: 3px; font-size: 10.5px; opacity: .55; }
+  #artView .av-x { position: absolute; top: max(14px, env(safe-area-inset-top)); right: 14px; width: 34px; height: 34px; display: inline-flex; align-items: center; justify-content: center; border: 0; border-radius: 50%; background: rgba(255,255,255,.12); color: rgba(255,255,255,.85); cursor: pointer; transition: background .15s; }
+  #artView .av-x:hover { background: rgba(255,255,255,.22); }
+  /* 같은 권을 양쪽에 놓을 때: 오른쪽 칸은 같은 페이지를 독립 창(iframe)으로 불러온다 */
+  .split-grid > .split-frame { height: 100%; min-height: 0; min-width: 0; overflow: hidden; }
+  .split-frame iframe { display: block; width: 100%; height: 100%; border: 0; background: var(--bg, transparent); }
+  .split-bar .sb-x { width: 26px; height: 26px; padding: 0; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid transparent; background: color-mix(in srgb, var(--text-sub) 12%, transparent); color: var(--text-sub); transition: background .15s, color .15s, transform .15s; }
+  .split-bar .sb-x:hover { background: color-mix(in srgb, #c0392b 14%, transparent); border-color: transparent; color: #c0392b; }
+  .split-bar .sb-x:active { transform: scale(.92); }
+  .split-bar .sb-close { display: inline-flex; align-items: center; gap: 6px; padding: 6px 13px 6px 11px; border-radius: 999px; border: 1px solid var(--border); background: var(--card-bg); color: var(--text-sub); font-weight: 600; transition: background .15s, color .15s, border-color .15s; }
+  .split-bar .sb-close:hover { background: color-mix(in srgb, #c0392b 10%, var(--card-bg)); border-color: color-mix(in srgb, #c0392b 45%, transparent); color: #c0392b; }
+  .split-bar .sb-grp { display: inline-flex; align-items: center; gap: 4px; }
+  html.is-embed .site-header, html.is-embed .back-link, html.is-embed .split-open, html.is-embed .jump-nav, html.is-embed .site-footer, html.is-embed footer { display: none !important; }
+  html.is-embed .controls-row.sticky { top: 0; }
   @media (max-width: 760px) {
     .split-grid { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; }
     .split-grid > .split-pane + .split-pane { border-left: none; border-top: 1px solid var(--border); }
   }
+
+  /* ===== 키보드 이동 · 발음 듣기 (추가) ===== */
+  .greek-word.kb-cur { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+  .vocab-actions:has(.speak-btn) { display: flex; align-items: center; gap: 6px; }
+  .speak-btn { display: inline-flex; align-items: center; justify-content: center; min-width: 34px; height: 32px; padding: 0 10px; border: 1px solid var(--border); border-radius: 999px; background: var(--card-bg); color: var(--accent-dark); font-family: var(--sans); font-size: 12.5px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+  .speak-btn:hover { border-color: var(--accent); }
+  .speak-btn.speaking { background: var(--accent-light); border-color: var(--accent); }
+  .speak-btn[hidden] { display: none; }
 </style>
 </head>
 <body>
@@ -3147,6 +3249,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
       <div class="nav-more-menu" id="navMoreMenu">
         <button class="site-nav-link" id="addInfoBtn" onclick="openAddInfo()">정보 추가</button>
         <button class="site-nav-link" id="bgToggle" onclick="toggleGalleryBg()">배경 끄기</button>
+        <button class="site-nav-link" id="artViewBtn" onclick="openArtView()">명화 감상</button>
         <div class="nav-more-row">
           <label for="themeToggle">야간 열람실</label>
           <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="야간 열람실 모드 전환" title="야간 열람실">
@@ -4419,6 +4522,7 @@ function renderInfo(w, panel, el, blockEl, memoKey, vocabCtx) {
   const lockH = panel.offsetHeight;
   if (lockH > 0) panel.style.minHeight = lockH + 'px';
   panel.innerHTML = html;
+  if (window.__attachSpeak) { try { window.__attachSpeak(panel, w, vocabCtx); } catch (e) {} }
 
   const closeBtn = panel.querySelector('.info-panel-close');
   closeBtn.addEventListener('click', () => {
@@ -6848,7 +6952,7 @@ buildBookGrid('sanguoGrid', 120, { 1: 'view-sanguo1' }, '삼국지연의', 'sang
    각 권의 화면(.study-view)을 그대로 좌우 칸으로 옮겨 놓는 방식이라 번역 보기·글꼴·단어 창이 칸마다 따로 동작한다.
    닫으면 원래 자리로 되돌려 놓는다. */
 (function () {
-  const SP = { on: false, left: '', right: '', wrap: null, grid: null, sync: false, lock: false, homes: {} };
+  const SP = { on: false, left: '', right: '', wrap: null, grid: null, frame: null, frameId: '', homes: {} };
   const _showView = window.showView;
   const label = id => chLabel(id);
 
@@ -6879,19 +6983,19 @@ buildBookGrid('sanguoGrid', 120, { 1: 'view-sanguo1' }, '삼국지연의', 'sang
   function setTop() { if (!SP.wrap) return; const hd = document.querySelector('.site-header'); SP.wrap.style.setProperty('--split-top', (hd ? Math.round(hd.getBoundingClientRect().bottom) : 58) + 'px'); }
   function paintBar() {
     SP.wrap.querySelector('.sb-l').textContent = label(SP.left) + ' ▾';
-    SP.wrap.querySelector('.sb-r').textContent = label(SP.right) + ' ▾';
+    SP.wrap.querySelector('.sb-r').textContent = label(SP.right) + (SP.left === SP.right ? ' · 별도 창' : '') + ' ▾';
   }
 
   let menuEl = null;
   function closeMenu() { if (menuEl) { menuEl.remove(); menuEl = null; document.removeEventListener('pointerdown', outside, true); } }
   function outside(e) { if (menuEl && !menuEl.contains(e.target)) closeMenu(); }
-  function openMenu(anchor, exclude, heading, onPick) {
+  function openMenu(anchor, exclude, heading, onPick, notes) {
     closeMenu();
     const m = document.createElement('div'); m.className = 'split-menu';
     m.innerHTML = '<div class="sm-h"></div>'; m.firstChild.textContent = heading;
     STUDY_CHAPTERS.forEach(ch => {
       if (exclude.indexOf(ch.viewId) >= 0) return;
-      const b = document.createElement('button'); b.type = 'button'; b.textContent = label(ch.viewId);
+      const b = document.createElement('button'); b.type = 'button'; b.textContent = label(ch.viewId) + (notes && notes[ch.viewId] ? '  (' + notes[ch.viewId] + ')' : '');
       b.addEventListener('click', () => { closeMenu(); onPick(ch.viewId); });
       m.appendChild(b);
     });
@@ -6903,65 +7007,70 @@ buildBookGrid('sanguoGrid', 120, { 1: 'view-sanguo1' }, '삼국지연의', 'sang
   }
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
 
+  function makeFrame(id) {
+    const d = document.createElement('div'); d.className = 'split-pane split-frame';
+    const f = document.createElement('iframe'); f.title = label(id) + ' (별도 창)';
+    f.src = location.href.split('#')[0] + '#embed=' + encodeURIComponent(id);
+    d.appendChild(f); return d;
+  }
+  function dropFrame() { if (SP.frame) { SP.frame.remove(); SP.frame = null; SP.frameId = ''; } }
+  // 현재 left/right 상태에 맞게 칸을 배치한다. 같은 권이면 오른쪽은 iframe, 다르면 둘 다 실제 화면
+  function layout() {
+    const dup = SP.left === SP.right;
+    const real = dup ? [SP.left] : [SP.left, SP.right];
+    Object.keys(SP.homes).forEach(id => { if (real.indexOf(id) < 0) unpark(id); });
+    real.forEach(id => { if (!SP.homes[id]) { const v = park(id); v.classList.add('split-pane', 'active'); } });
+    if (dup) { if (!SP.frame || SP.frameId !== SP.right) { dropFrame(); SP.frame = makeFrame(SP.right); SP.frameId = SP.right; } }
+    else dropFrame();
+    SP.grid.appendChild(document.getElementById(SP.left));
+    SP.grid.appendChild(dup ? SP.frame : document.getElementById(SP.right));
+  }
+
   function enter(leftId, rightId) {
     window.scrollTo(0, 0);
     const wrap = document.createElement('div'); wrap.id = 'splitWrap';
     wrap.innerHTML = '<div class="split-bar">' +
-      '<button type="button" class="sb-side sb-l" title="왼쪽 권 바꾸기"></button><span>⇄</span><button type="button" class="sb-side sb-r" title="오른쪽 권 바꾸기"></button>' +
+      '<span class="sb-grp"><button type="button" class="sb-side sb-l" title="왼쪽 권 바꾸기"></button><button type="button" class="sb-x sb-xl" title="왼쪽 칸 닫기 (오른쪽 권만 보기)" aria-label="왼쪽 칸 닫기"><svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2 2l8 8M10 2l-8 8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></button></span>' +
+      '<span>⇄</span>' +
+      '<span class="sb-grp"><button type="button" class="sb-side sb-r" title="오른쪽 권 바꾸기"></button><button type="button" class="sb-x sb-xr" title="오른쪽 칸 닫기 (왼쪽 권만 보기)" aria-label="오른쪽 칸 닫기"><svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2 2l8 8M10 2l-8 8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></button></span>' +
       '<span class="sp"></span>' +
-      '<label class="sb-sync"><input type="checkbox" class="sb-sync-cb"> 함께 스크롤</label>' +
-      '<button type="button" class="sb-swap">좌우 바꾸기</button>' +
-      '<button type="button" class="sb-close">닫기 ✕</button></div><div class="split-grid"></div>';
+      '<button type="button" class="sb-close" title="나란히 보기를 끄고 한 권만 보기"><svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2 2l8 8M10 2l-8 8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg><span>나란히 끄기</span></button></div><div class="split-grid"></div>';
     const lv = document.getElementById(leftId);
     lv.parentNode.insertBefore(wrap, lv);
     SP.wrap = wrap; SP.grid = wrap.querySelector('.split-grid'); SP.left = leftId; SP.right = rightId; SP.on = true;
-    park(leftId); SP.grid.appendChild(lv); lv.classList.add('split-pane', 'active');
-    const rv = park(rightId); SP.grid.appendChild(rv); rv.classList.add('split-pane', 'active');
+    layout();
     ensureBuilt(chByView(rightId));
     document.body.classList.add('split-on'); document.documentElement.style.overflow = 'hidden';
     setTop(); paintBar();
 
-    wrap.querySelector('.sb-l').addEventListener('click', e => openMenu(e.currentTarget, [SP.left, SP.right], '왼쪽에 놓을 권', id => setSide('left', id)));
-    wrap.querySelector('.sb-r').addEventListener('click', e => openMenu(e.currentTarget, [SP.left, SP.right], '오른쪽에 놓을 권', id => setSide('right', id)));
-    wrap.querySelector('.sb-swap').addEventListener('click', () => {
-      SP.grid.insertBefore(SP.grid.lastElementChild, SP.grid.firstElementChild);
-      const t = SP.left; SP.left = SP.right; SP.right = t; paintBar();
-    });
-    wrap.querySelector('.sb-close').addEventListener('click', exit);
-    wrap.querySelector('.sb-sync-cb').addEventListener('change', e => { SP.sync = e.target.checked; });
-    wrap.addEventListener('scroll', e => {   // 함께 스크롤: 위치 비율을 맞춘다 (원문 길이가 달라도 같이 움직임)
-      if (!SP.sync || SP.lock) return;
-      const p = e.target; if (!p.classList || !p.classList.contains('split-pane')) return;
-      const o = p === SP.grid.firstElementChild ? SP.grid.lastElementChild : SP.grid.firstElementChild;
-      const r = p.scrollTop / Math.max(1, p.scrollHeight - p.clientHeight);
-      SP.lock = true; o.scrollTop = r * Math.max(0, o.scrollHeight - o.clientHeight);
-      requestAnimationFrame(() => requestAnimationFrame(() => { SP.lock = false; }));
-    }, true);
+    const menuFor = (side, heading) => e => openMenu(e.currentTarget, [], heading, id => setSide(side, id), { [SP[side === 'left' ? 'right' : 'left']]: '반대쪽에 열린 권 · 같은 권을 별도 창으로' });
+    wrap.querySelector('.sb-l').addEventListener('click', menuFor('left', '왼쪽에 놓을 권'));
+    wrap.querySelector('.sb-r').addEventListener('click', menuFor('right', '오른쪽에 놓을 권'));
+    wrap.querySelector('.sb-xl').addEventListener('click', () => exit(SP.right));
+    wrap.querySelector('.sb-xr').addEventListener('click', () => exit(SP.left));
+    wrap.querySelector('.sb-close').addEventListener('click', () => exit());
     wrap.addEventListener('click', e => {   // '↑ 맨 위로'는 칸 안에서 동작하게
       const t = e.target.closest('[id^="topInfo"]'); if (!t) return;
       const pane = t.closest('.split-pane'); if (pane) pane.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
   function setSide(side, newId) {
-    const old = SP[side], other = side === 'left' ? SP.right : SP.left;
-    if (newId === old || newId === other) return;
-    const ov = document.getElementById(old), nv = park(newId);
-    SP.grid.insertBefore(nv, ov);
-    unpark(old);
-    nv.classList.add('split-pane', 'active');
+    if (newId === SP[side]) return;
     SP[side] = newId;
+    layout();
     ensureBuilt(chByView(newId)); paintBar();
   }
-  function exit() {
+  function exit(showId) {   // showId가 있으면 그 권만 남기고(칸 하나 닫기), 없으면 왼쪽 권으로 돌아간다
     if (!SP.on) return;
     closeMenu();
-    const L = SP.left, R = SP.right;
-    unpark(R); unpark(L);
+    const keep = showId || SP.left;
+    dropFrame();
+    Object.keys(SP.homes).forEach(unpark);
     SP.wrap.remove(); SP.wrap = SP.grid = null; SP.on = false;
     document.body.classList.remove('split-on'); document.documentElement.style.overflow = '';
-    _showView(L);
+    _showView(keep);
   }
-  window.showView = function (id) { if (SP.on) exit(); return _showView.apply(this, arguments); };
+  window.showView = function (id) { if (SP.on) exit(id); return _showView.apply(this, arguments); };
   window.addEventListener('resize', setTop);
 
   // 각 권 화면의 컨트롤 줄에 '나란히' 버튼 추가
@@ -6970,8 +7079,62 @@ buildBookGrid('sanguoGrid', 120, { 1: 'view-sanguo1' }, '삼국지연의', 'sang
     const b = document.createElement('button'); b.type = 'button'; b.className = 'split-open';
     b.textContent = '나란히'; b.title = '다른 권을 좌우로 나란히 놓고 비교';
     row.insertBefore(b, row.querySelector('.font-pop'));
-    b.addEventListener('click', () => { if (!SP.on) openMenu(b, [view.id], '함께 볼 권 고르기', id => enter(view.id, id)); });
+    b.addEventListener('click', () => { if (!SP.on) openMenu(b, [], '함께 볼 권 고르기', id => enter(view.id, id), { [view.id]: '지금 보는 권 · 같은 권을 별도 창으로' }); });
   });
+
+  /* 같은 권 별도 창(iframe)으로 열렸을 때: 이 페이지를 해당 권만 보이는 모드로 시작한다 */
+  (function () {
+    const m = /^#embed=(.+)$/.exec(location.hash);
+    if (!m || window.parent === window) return;
+    const id = decodeURIComponent(m[1]);
+    document.documentElement.classList.add('is-embed');
+    window.addEventListener('load', () => { showStudyView(id, true); });
+  })();
+})();
+
+/* ---------- 빈 공간을 누르면 열려 있던 단어 정보칸 접기 ----------
+   누른 위치가 속한 화면(나란히 보기에서는 그 칸)의 열린 단어 패널만 접는다.
+   단어·패널·버튼·입력창을 누르거나 글자를 드래그해 선택한 경우에는 건드리지 않는다. */
+document.addEventListener('click', e => {
+  if (isSheetMode()) return;   // 폰의 아래 시트는 배경(scrim)을 누르면 이미 닫힌다
+  const t = e.target;
+  if (!t || !t.closest) return;
+  if (t.closest('.greek-word, .info-panel, button, a, input, textarea, select, label, [contenteditable], .controls-row, .font-pop, .jump-nav, .split-bar, .split-menu, .back-link')) return;
+  const sel = window.getSelection && window.getSelection();
+  if (sel && !sel.isCollapsed && String(sel).trim()) return;
+  const scope = t.closest('.split-pane') || t.closest('.study-view');
+  if (!scope) return;
+  scope.querySelectorAll('.info-panel.show').forEach(panel => {
+    const block = panel.closest('.line-block');
+    if (block) block.querySelectorAll('.greek-word.active').forEach(w => w.classList.remove('active'));
+    closeRowPanel(panel, panel.querySelector('.pad'), null);
+  });
+});
+
+/* ---------- 명화 감상: 이 권의 배경 그림만 크게 보기 (⋯ 메뉴 > 명화 감상) ---------- */
+(function () {
+  let ov = null, prevOverflow = '';
+  function onKey(e) { if (e.key === 'Escape') { e.stopPropagation(); close(); } }
+  function close() {
+    if (!ov) return;
+    const o = ov; ov = null;
+    o.classList.remove('in'); setTimeout(() => o.remove(), 260);
+    document.documentElement.style.overflow = prevOverflow;
+    document.removeEventListener('keydown', onKey, true);
+  }
+  window.openArtView = function () {
+    const g = GALLERY[document.body.dataset.bg];
+    if (!g || g.missing || ov) return;
+    ov = document.createElement('div'); ov.id = 'artView'; ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-label', '명화 감상');
+    ov.innerHTML = '<button type="button" class="av-x" aria-label="닫기"><svg viewBox="0 0 12 12" width="13" height="13" aria-hidden="true"><path d="M2 2l8 8M10 2l-8 8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></button>' +
+      '<div class="av-stage"><img alt=""></div><div class="av-cap">' + (g.cap || '') + '</div>';
+    ov.querySelector('img').src = g.img;
+    ov.addEventListener('click', e => { if (!e.target.closest('.av-cap')) close(); });
+    document.body.appendChild(ov);
+    prevOverflow = document.documentElement.style.overflow; document.documentElement.style.overflow = 'hidden';
+    document.addEventListener('keydown', onKey, true);
+    requestAnimationFrame(() => requestAnimationFrame(() => { if (ov) ov.classList.add('in'); }));
+  };
 })();
 
 /* ---------- 읽기 상태 / 이어 읽기 / 빠른 검색 ---------- */
@@ -8390,6 +8553,166 @@ document.addEventListener('keydown', e => {
   const setEye = show => { if (!eye || !key) return; key.type = show ? 'text' : 'password'; eye.setAttribute('aria-pressed', show ? 'true' : 'false'); eye.setAttribute('aria-label', show ? '키 숨기기' : '키 보기'); eye.innerHTML = show ? EYE_OFF : EYE; };
   if (eye && key) eye.addEventListener('click', () => setEye(key.type === 'password'));
   new MutationObserver(() => { if (!ov.classList.contains('show')) { if (active) active.close(); setEye(false); } }).observe(ov, { attributes: true, attributeFilter: ['class'] });
+})();
+</script>
+
+<script>
+/* ============================================================
+   키보드 이동 + 발음 듣기
+   - j / k            : 다음 / 이전 행
+   - ← / →            : 이전 / 다음 단어 (히브리어처럼 오른쪽→왼쪽 글은 방향이 자동으로 뒤집힘)
+   - Enter            : 현재 단어의 정보칸 열기·닫기
+   - Esc              : 열려 있는 정보칸 닫기
+   - 🔊 버튼          : 브라우저 내장 음성(speechSynthesis)으로 단어 읽기. 별도 데이터 없음.
+   ============================================================ */
+(function () {
+  'use strict';
+  /* ---------- 발음 듣기 ---------- */
+  var LANGS = {
+    iliad: ['el-GR', 'el'], meta: ['la', 'la-VA', 'it-IT'], genesis: ['he-IL', 'he'],
+    cid: ['es-ES', 'es'], lusiadas: ['pt-PT', 'pt-BR', 'pt'], sanguo: ['zh-CN', 'zh-TW', 'zh']
+  };
+  var LANG_NAME = { el: '그리스어', la: '라틴어', he: '히브리어', es: '스페인어', pt: '포르투갈어', zh: '중국어' };
+  var canSpeak = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
+  var speakingBtn = null;
+
+  function detectKey(text) {
+    if (/[\u0370-\u03FF\u1F00-\u1FFF]/.test(text)) return 'iliad';
+    if (/[\u0590-\u05FF]/.test(text)) return 'genesis';
+    if (/[\u3400-\u9FFF]/.test(text)) return 'sanguo';
+    return null;
+  }
+  function cleanText(key, raw) {
+    var t = String(raw || '').replace(/<[^>]*>/g, '');
+    if (key === 'sanguo') return t.replace(/[\s。，、；：！？「」『』（）〈〉《》.,;:!?()"'“”‘’—…·]+/g, '');
+    t = t.replace(/[᾽᾿’'·.,;:!?()\[\]«»"“”‘]/g, ' ');
+    if (key === 'iliad') {   // 현대 그리스어 음성이 읽을 수 있게 다성조 부호를 단성조로 정리
+      t = t.normalize('NFD').replace(/[\u0313\u0314\u0345]/g, '').replace(/[\u0300\u0342]/g, '\u0301').normalize('NFC');
+    } else if (key === 'meta') {   // 장음·단음 부호 제거
+      t = t.normalize('NFD').replace(/[\u0304\u0306]/g, '').normalize('NFC');
+    }
+    return t.replace(/\s+/g, ' ').trim();
+  }
+  function pickVoice(cands) {
+    var vs = speechSynthesis.getVoices() || [];
+    for (var i = 0; i < cands.length; i++) {
+      var c = cands[i].toLowerCase();
+      for (var j = 0; j < vs.length; j++) {
+        var l = (vs[j].lang || '').replace('_', '-').toLowerCase();
+        if (l === c || l.indexOf(c + '-') === 0) return { voice: vs[j], lang: cands[i] };
+      }
+    }
+    return { voice: null, lang: cands[0], loaded: vs.length > 0 };
+  }
+  function stopSpeaking() {
+    if (!canSpeak) return;
+    speechSynthesis.cancel();
+    if (speakingBtn) { speakingBtn.classList.remove('speaking'); speakingBtn.textContent = '🔊'; speakingBtn = null; }
+  }
+  function flash(btn, msg) {
+    btn.textContent = msg;
+    setTimeout(function () { if (btn.isConnected && !btn.classList.contains('speaking')) btn.textContent = '🔊'; }, 1800);
+  }
+  window.__attachSpeak = function (panel, w, vocabCtx) {
+    if (!canSpeak) return;
+    var host = panel.querySelector('.vocab-actions'); if (!host) return;
+    var key = (vocabCtx && vocabCtx.workKey && LANGS[vocabCtx.workKey]) ? vocabCtx.workKey : detectKey(w.g);
+    if (!key) return;
+    var text = cleanText(key, w.g); if (!text) return;
+    var btn = document.createElement('button');
+    btn.type = 'button'; btn.className = 'speak-btn'; btn.textContent = '🔊';
+    btn.setAttribute('aria-label', '발음 듣기'); btn.title = '브라우저 내장 음성으로 읽기 (현대어 발음 기준)';
+    btn.addEventListener('click', function () {
+      if (speakingBtn === btn) { stopSpeaking(); return; }
+      stopSpeaking();
+      var pv = pickVoice(LANGS[key]);
+      if (!pv.voice && pv.loaded) { flash(btn, '음성 없음'); return; }
+      var u = new SpeechSynthesisUtterance(text);
+      u.lang = pv.lang; if (pv.voice) { try { u.voice = pv.voice; } catch (e) {} } u.rate = 0.85;
+      u.onend = u.onerror = function () { if (speakingBtn === btn) { btn.classList.remove('speaking'); btn.textContent = '🔊'; speakingBtn = null; } };
+      speakingBtn = btn; btn.classList.add('speaking'); btn.textContent = '⏹';
+      speechSynthesis.speak(u);
+    });
+    host.insertBefore(btn, host.firstChild);
+  };
+  if (canSpeak) { try { speechSynthesis.getVoices(); speechSynthesis.addEventListener('voiceschanged', function () {}); } catch (e) {} }
+
+  /* ---------- 키보드 이동 ---------- */
+  var cur = null;   // { cid, i, wi }
+  var OVERLAYS = '.ai-overlay.show, .vocab-flash-modal-overlay.show, .vocab-range-modal-overlay.show, #qsOverlay.show, .mac-dd-menu';
+  function activeView() { return document.querySelector('.study-view.active'); }
+  function cidOf(block) { return block.id.replace(/-line-\d+$/, ''); }
+  function blockAt(cid, i) { return document.getElementById(cid + '-line-' + i); }
+  function lineCount(cid) { var c = document.getElementById(cid); return c ? c.querySelectorAll(':scope > .line-block').length : 0; }
+  function hydrate(cid, i) { var api = window.__lineApi && window.__lineApi[cid]; if (api) api.hydrateRange(i - 3, i + 3); }
+  function words(block) { return block ? block.querySelectorAll('.greek-word') : []; }
+  function isRtl(block) { var g = block && block.querySelector('.greek-line'); return !!g && getComputedStyle(g).direction === 'rtl'; }
+  function clearMark() { document.querySelectorAll('.greek-word.kb-cur').forEach(function (e) { e.classList.remove('kb-cur'); }); }
+
+  function setCur(cid, i, wi, scroll) {
+    var n = lineCount(cid); if (!n) return;
+    i = Math.max(0, Math.min(n - 1, i));
+    hydrate(cid, i);
+    var block = blockAt(cid, i), ws = words(block);
+    wi = ws.length ? Math.max(0, Math.min(ws.length - 1, wi)) : 0;
+    cur = { cid: cid, i: i, wi: wi };
+    clearMark();
+    if (ws[wi]) ws[wi].classList.add('kb-cur');
+    var target = ws[wi] || block;
+    if (scroll !== false && target) {
+      var r = target.getBoundingClientRect();
+      if (r.top < 90 || r.bottom > window.innerHeight - 90) target.scrollIntoView({ block: 'center' });
+    }
+  }
+  function startPos(view) {
+    var first = view.querySelector('.line-block'); if (!first) return null;
+    var cid = cidOf(first), bs = view.querySelectorAll('.line-block'), idx = 0;
+    for (var k = 0; k < bs.length; k++) { if (bs[k].getBoundingClientRect().bottom > 80) { idx = k; break; } }
+    return { cid: cid, i: +bs[idx].dataset.i };
+  }
+  function typing(t) { return !!(t && t.closest && t.closest('input, textarea, select, [contenteditable=""], [contenteditable="true"]')); }
+
+  document.addEventListener('keydown', function (e) {
+    if (e.defaultPrevented || e.isComposing || e.metaKey || e.ctrlKey || e.altKey) return;
+    var view = activeView(); if (!view || typing(e.target)) return;
+    if (document.querySelector(OVERLAYS)) return;
+    var k = e.key, valid = cur && document.getElementById(cur.cid) && view.contains(document.getElementById(cur.cid));
+    if (!valid) cur = null;
+
+    if (k === 'j' || k === 'k') {
+      e.preventDefault();
+      if (!cur) { var s = startPos(view); if (!s) return; setCur(s.cid, s.i, 0); return; }
+      setCur(cur.cid, cur.i + (k === 'j' ? 1 : -1), 0);
+    } else if ((k === 'ArrowRight' || k === 'ArrowLeft') && cur) {
+      e.preventDefault();
+      var block = blockAt(cur.cid, cur.i), n = words(block).length;
+      var step = (k === 'ArrowRight' ? 1 : -1) * (isRtl(block) ? -1 : 1);
+      var wi = cur.wi + step;
+      if (wi >= n) { if (cur.i + 1 < lineCount(cur.cid)) setCur(cur.cid, cur.i + 1, 0); }
+      else if (wi < 0) {
+        if (cur.i > 0) { hydrate(cur.cid, cur.i - 1); setCur(cur.cid, cur.i - 1, words(blockAt(cur.cid, cur.i - 1)).length - 1); }
+      } else setCur(cur.cid, cur.i, wi);
+    } else if (k === 'Enter' && cur) {
+      if (e.target.closest && e.target.closest('button, a, summary')) return;
+      var b = blockAt(cur.cid, cur.i), ws = words(b), sp = ws[cur.wi];
+      if (!sp) return;
+      e.preventDefault(); sp.click();
+      setTimeout(function () { var p = b.querySelector('.info-panel.show'); if (p && sp.classList.contains('active')) p.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); }, 420);
+    } else if (k === 'Escape' && cur) {
+      var open = blockAt(cur.cid, cur.i);
+      var act = open && open.querySelector('.greek-word.active');
+      if (act && !(window.matchMedia && matchMedia('(max-width: 640px)').matches)) act.click();
+    }
+  });
+
+  /* 마우스로 단어를 눌러도 키보드 위치가 따라오게 한다 */
+  document.addEventListener('click', function (e) {
+    var sp = e.target.closest && e.target.closest('.greek-word'); if (!sp) return;
+    var block = sp.closest('.line-block'); if (!block || !block.id) return;
+    var ws = Array.prototype.slice.call(words(block));
+    cur = { cid: cidOf(block), i: +block.dataset.i, wi: ws.indexOf(sp) };
+    clearMark(); sp.classList.add('kb-cur');
+  }, true);
 })();
 </script>
 </body>
