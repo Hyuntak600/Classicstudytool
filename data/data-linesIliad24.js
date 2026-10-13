@@ -3378,57 +3378,6 @@ window.__RAW_CHAPTER_DATA['data-linesIliad24'] = [
   },
   {
     "ref": "Iliad 24.696",
-    "trans": "그리하여 그들이 마차를 몰아 통곡하며 성안으로 들어왔을 때,",
-    "words": [
-      {
-        "g": "Ὣς",
-        "pos": "부사",
-        "lemma": "ὡς",
-        "parse": "adv.",
-        "gloss_kr": "이와 같이, 그리하여",
-        "gloss_en": "thus, so",
-        "syntax": "Ὣς는 양태 부사로서 LFG에서 [ADJUNCT [PRED 'ὡς', FUNCTION manner]]로 분석되며, 앞서 전개된 여정의 양상을 수식한다. c-구조상 문장 선두에 위치하여 이전 상황과 현재 상황을 연결한다.",
-        "background": "호메로스 시가에서 이전 장면의 종결과 새로운 장면의 시작을 잇는 전형적인 지시적 수사법이다.",
-        "etymology": "PIE 지시 대명사 어근에서 유래한 부사이다. Chantraine(DELG)과 Beekes(EDG)는 인도유럽어족의 양태 부사 체계로 설명한다."
-      },
-      {
-        "g": "οἱ",
-        "pos": "대명사",
-        "lemma": "ὅς, ἥ, ὅ",
-        "parse": "pl.nom.m.",
-        "gloss_kr": "그들(은)",
-        "gloss_en": "they",
-        "syntax": "οἱ는 주절의 주어인 복수 남성 명사구로서 LFG 상 [PRED 'pro', PERS 3, NUM pl, CASE nom] 자질을 가진다. c-구조상 [DP [D' οἱ]] 위치를 점하며, 프리아모스와 이다이오스를 가리킨다.",
-        "background": "시신을 실은 수레를 몰고 트로이아 성문 안으로 들어서는 프리아모스와 전령의 주체적 모습을 가리킨다.",
-        "etymology": "PIE 지시/관계대명사 재구형 *to-/so- 계열에서 비롯됨."
-      },
-      {
-        "g": "μὲν",
-        "pos": "소사",
-        "lemma": "μέν",
-        "parse": "part.",
-        "gloss_kr": "한편으로는, 대개",
-        "gloss_en": "on the one hand",
-        "syntax": "μὲν는 담화 표지 소사로서 LFG에서 [DISCOURSE-FUNC correlative] 자질을 가지며, 후행하는 δὲ와 함께 대조 구조를 이룬다. c-구조상 전접어로 기능한다.",
-        "background": "그들이 성안으로 들어오는 상황(μὲν)과 이어지는 카산드라의 반응(δέ)을 대조적으로 배치하는 수사적 장치이다.",
-        "etymology": "기원이 복잡하나 고대 그리스어의 대표적인 대조 담화 입자이다. Chantraine(DELG) 참고."
-      },
-      {
-        "g": "κλαίοντες",
-        "pos": "분사",
-        "lemma": "κλαίω",
-        "principalParts": "κλαίω – κλαύσομαι – ἔклаυσα – κέклаυκα – κέклаυμαι – ἐклаύσθην",
-        "parse": "pres.act.part.pl.nom.m.",
-        "gloss_kr": "울며, 눈물 흘리며",
-        "gloss_en": "weeping, lamenting",
-        "syntax": "κλαίοντες는 주어 οἱ와 성·수·격이 일치하는 부대 상황 분사로서 LFG에서 [ADJUNCT [PRED 'κλαίω<SUBJ>', SUBJ pro]]로 분석된다.",
-        "background": "죽은 아들의 시신을 모시고 돌아오는 부친 프리아모스와 수행원의 비통한 심정과 눈물을 시각적으로 형상화한다.",
-        "etymology": "PIE 어근 *kleu- 또는 의성어 계열에서 파생되었다. Beekes(EDG)와 Chantraine(DELG)은 슬픔을 나타내는 음성적 모방 어근으로 설명한다."
-      }
-    ]
-  },
-  {
-    "ref": "Iliad 24.697",
     "trans": "저희는 통곡과 신음 소리를 내며 마차를 몰아 성안으로 들어오고 있었으니,",
     "words": [
       {
@@ -3534,7 +3483,7 @@ window.__RAW_CHAPTER_DATA['data-linesIliad24'] = [
     ]
   },
   {
-    "ref": "Iliad 24.698",
+    "ref": "Iliad 24.697",
     "trans": "말들을, 노새들이 시신을 나르고 있었으니. 그 누구도 다른 이는",
     "words": [
       {
@@ -3629,7 +3578,7 @@ window.__RAW_CHAPTER_DATA['data-linesIliad24'] = [
     ]
   },
   {
-    "ref": "Iliad 24.699",
+    "ref": "Iliad 24.698",
     "trans": "아름다운 허리띠를 한 여인들과 남자들 중 그 누구보다 먼저 알아보았으니,",
     "words": [
       {
@@ -3702,7 +3651,7 @@ window.__RAW_CHAPTER_DATA['data-linesIliad24'] = [
     ]
   },
   {
-    "ref": "Iliad 24.700",
+    "ref": "Iliad 24.699",
     "trans": "오직 황금의 아프로디테와 닮은 카산드라만이 그러했으니,",
     "words": [
       {
@@ -3774,7 +3723,7 @@ window.__RAW_CHAPTER_DATA['data-linesIliad24'] = [
     ]
   },
   {
-    "ref": "Iliad 24.701",
+    "ref": "Iliad 24.700",
     "trans": "페르가몬 성채 위에 올라서서 사랑하는 아버지가",
     "words": [
       {
@@ -3837,7 +3786,7 @@ window.__RAW_CHAPTER_DATA['data-linesIliad24'] = [
     ]
   },
   {
-    "ref": "Iliad 24.702",
+    "ref": "Iliad 24.701",
     "trans": "마차 위에 서 있는 것과, 도시를 외치게 하는 전령을 보았으니,",
     "words": [
       {
@@ -3910,7 +3859,7 @@ window.__RAW_CHAPTER_DATA['data-linesIliad24'] = [
     ]
   },
   {
-    "ref": "Iliad 24.703",
+    "ref": "Iliad 24.702",
     "trans": "노새들이 끄는 수레의 침상 위에 누워 있는 그를 보았으니,",
     "words": [
       {
@@ -4017,7 +3966,7 @@ window.__RAW_CHAPTER_DATA['data-linesIliad24'] = [
     ]
   },
   {
-    "ref": "Iliad 24.704",
+    "ref": "Iliad 24.703",
     "trans": "통곡을 터뜨리며 곧바로 온 도성에 소리쳐 외쳤으니,",
     "words": [
       {
@@ -4124,7 +4073,7 @@ window.__RAW_CHAPTER_DATA['data-linesIliad24'] = [
     ]
   },
   {
-    "ref": "Iliad 24.705",
+    "ref": "Iliad 24.704",
     "trans": "\"트로이아 사람들아 그리고 트로이아 여인들아, 너희들은 헥토르를 보러 오라,",
     "words": [
       {
@@ -4198,7 +4147,7 @@ window.__RAW_CHAPTER_DATA['data-linesIliad24'] = [
     ]
   },
   {
-    "ref": "Iliad 24.706",
+    "ref": "Iliad 24.705",
     "trans": "일찍이 그가 전투에서 살아 돌아올 때에,",
     "words": [
       {
@@ -4272,7 +4221,7 @@ window.__RAW_CHAPTER_DATA['data-linesIliad24'] = [
     ]
   },
   {
-    "ref": "Iliad 24.707",
+    "ref": "Iliad 24.706",
     "trans": "기뻐하라오, 그가 도시와 온 백성에게 커다란 기쁨이었으니\"",
     "words": [
       {
@@ -4390,7 +4339,7 @@ window.__RAW_CHAPTER_DATA['data-linesIliad24'] = [
     ]
   },
   {
-    "ref": "Iliad 24.708",
+    "ref": "Iliad 24.707",
     "trans": "이렇게 말씀하시니, 그곳 도시 안에서 남겨진 남자는 아무도 없었고 여인도 없었으니, 모든 이에게 견딜 수 없는 슬픔이 닥쳤기 때문이다.",
     "words": [
       {
