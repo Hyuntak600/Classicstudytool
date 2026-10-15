@@ -5064,7 +5064,7 @@ window.__RAW_CHAPTER_DATA['data-linesIliad24'] = [
     ]
   },
   {
-    "ref": "Iliad 24.713",
+    "ref": "Iliad 24.714",
     "trans": "눈물을 흘리며 성문 앞에서 헥토르를 슬퍼했을 것이다,",
     "words": [
       {
@@ -5142,7 +5142,7 @@ window.__RAW_CHAPTER_DATA['data-linesIliad24'] = [
     ]
   },
   {
-    "ref": "Iliad 24.714",
+    "ref": "Iliad 24.715",
     "trans": "만약 노인(프리아모스)이 마차 위에서 백성들에게 말씀하지 않았더라면:",
     "words": [
       {
@@ -5244,7 +5244,7 @@ window.__RAW_CHAPTER_DATA['data-linesIliad24'] = [
     ]
   },
   {
-    "ref": "Iliad 24.715",
+    "ref": "Iliad 24.716",
     "trans": "“내게 길을 비켜 노새들이 지나가게 하라.",
     "words": [
       {
@@ -5294,13 +5294,7 @@ window.__RAW_CHAPTER_DATA['data-linesIliad24'] = [
         "syntax": "διελθέμεν은 LFG에서 보문소 구문 안에서 노새들이 통과하는 행위를 나타낸다.",
         "background": "성문 앞 군중의 밀집을 뚫고 수레와 노새가 왕궁 안으로 안전하게 진입해야 하는 물리적 이동 과정을 설명한다.",
         "etymology": "전치사 διά과 어근 *el-의 합성어다."
-      }
-    ]
-  },
-  {
-    "ref": "Iliad 24.716",
-    "trans": "그러고 나서 너희는 집으로 데려간 뒤에야 실컷 슬퍼하도록 하라.”",
-    "words": [
+      },
       {
         "g": "αὐτὰρ",
         "pos": "접속사",
@@ -5324,7 +5318,13 @@ window.__RAW_CHAPTER_DATA['data-linesIliad24'] = [
         "syntax": "ἔπειτα는 시간 부사로 행동의 순차적 전개를 명시한다.",
         "background": "당장의 비극적 통곡을 잠시 멈추게 한 뒤, 왕궁에 도착한 후에야 비로소 슬픔을 허락하겠다는 시간적 단계 설정을 나타낸다.",
         "etymology": "전치사 ἐπί와 부사 εἶτα의 합성어다."
-      },
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 24.717",
+    "trans": "그러고 나서 너희는 집으로 데려간 뒤에야 실컷 슬퍼하도록 하라.”",
+    "words": [
       {
         "g": "ἄσεσθε",
         "pos": "동사",
@@ -5348,13 +5348,7 @@ window.__RAW_CHAPTER_DATA['data-linesIliad24'] = [
         "syntax": "LFG 관점에서 κλαυθμοῖο는 동사 ἄσεσθε의 지배를 받는 속격 목적어로 자질을 갖는다.",
         "background": "장례 의식에서 터져 나오는 통곡과 오열을 뜻하며, 비극적 감정이 정점에 달한 상태를 상징한다.",
         "etymology": "동사 κλαίω에서 파생된 명사다."
-      }
-    ]
-  },
-  {
-    "ref": "Iliad 24.717",
-    "trans": "내가 집으로 데려간 뒤에야",
-    "words": [
+      },
       {
         "g": "ἐπὴν",
         "pos": "접속사",
