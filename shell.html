@@ -4896,9 +4896,24 @@ function buildJumpNav(containerId, linesArr, workKey, book) {
   updateActive();
 }
 
+/* 번역 상자들이 한꺼번에 나오거나 들어갈 때, 지금 읽고 있는 원문 줄이 화면에서 제자리에 머물도록 고정한다.
+   (화면 위쪽에서 처음 보이는 원문 줄을 기준으로, 상자가 움직이는 동안 매 프레임 스크롤을 보정한다) */
+function anchorReadingLine(containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  const pane = container.closest('.split-pane');
+  const top = (pane ? pane.getBoundingClientRect().top : 0) + 90;
+  const bottom = pane ? pane.getBoundingClientRect().bottom : window.innerHeight;
+  const lines = container.querySelectorAll('.line-block:not(.dehyd) .greek-line');
+  for (const g of lines) {
+    const r = g.getBoundingClientRect();
+    if (r.height > 0 && r.bottom > top + 8 && r.top < bottom) { keepAnchored(g, PANEL_CLEAR_MS + 140); return; }
+  }
+}
 function setupTransToggle(buttonId, containerId, showTransRef) {
   const btn = document.getElementById(buttonId);
   btn.addEventListener('click', () => {
+    anchorReadingLine(containerId);
     showTransRef.value = !showTransRef.value;
     btn.textContent = showTransRef.value ? '번역 전체 숨기기' : '번역 전체 보기';
     btn.classList.toggle('active', showTransRef.value);
@@ -4911,6 +4926,7 @@ function setupTransToggle(buttonId, containerId, showTransRef) {
 function setupMyTransToggle(buttonId, containerId, showMyTransRef) {
   const btn = document.getElementById(buttonId);
   btn.addEventListener('click', () => {
+    anchorReadingLine(containerId);
     showMyTransRef.value = !showMyTransRef.value;
     btn.textContent = showMyTransRef.value ? '내 번역 숨기기' : '내 번역 보기';
     btn.classList.toggle('active', showMyTransRef.value);
