@@ -1,0 +1,16 @@
+{
+  "name": "서재 · 고전 원문 학습 도구",
+  "short_name": "서재",
+  "description": "고전 원문을 단어별 문법 분석과 함께 읽는 학습 도구",
+  "start_url": "./shell.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#faf9f5",
+  "theme_color": "#F8F3E5",
+  "lang": "ko",
+  "icons": [
+    { "src": "img/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "img/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
