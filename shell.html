@@ -3083,6 +3083,22 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
     .split-grid > .split-pane + .split-pane { border-left: none; border-top: 1px solid var(--border); }
   }
 
+  .ai-unsaved { position: sticky; top: -18px; z-index: 5; display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 0 0 12px; padding: 9px 12px; border: 1px solid color-mix(in srgb, var(--bad) 45%, transparent); border-radius: 10px; background: var(--bad-light); color: var(--text-main); font-size: 13px; line-height: 1.4; }
+  .ai-unsaved[hidden] { display: none; }
+  .ai-unsaved .ai-btn { flex: none; white-space: nowrap; }
+  .ai-dock { position: sticky; bottom: -24px; z-index: 4; display: flex; align-items: center; gap: 10px; margin: 14px -20px -24px; padding: 10px 20px calc(10px + env(safe-area-inset-bottom, 0px)); background: color-mix(in srgb, var(--card-bg) 94%, transparent); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border-top: 0.5px solid var(--border); }
+  .ai-dock-txt { flex: 1; min-width: 0; font-size: 12.5px; color: var(--text-sub); }
+  .ai-dock-btns { display: flex; flex: none; }
+  .ai-dock .ai-main-act { display: flex; gap: 8px; margin: 0; padding: 0; }
+  .ai-dock .ai-btn { white-space: nowrap; }
+  .ai-body:has(#aiGoWrap[hidden]) .ai-dock { display: none; }
+  .ai-unsaved.ok { border-color: color-mix(in srgb, var(--ok) 45%, transparent); background: var(--ok-light); }
+  @media (max-width: 640px) { .ai-dock-txt { display: none; } .ai-dock-btns { flex: 1; } .ai-dock .ai-main-act { flex: 1; } .ai-dock .ai-main-act .ai-btn { flex: 1; } }
+  #aiAutoDlNow:not([hidden]) { border-color: var(--accent); color: var(--accent-dark); }
+  /* 단어 정보 상자: 접히면 테두리·그림자까지 함께 사라진다 (높이 0 + 테두리 2px가 회색 줄로 남던 문제) */
+  .info-panel:not(.word-sheet) { visibility: hidden; transition: grid-template-rows var(--dur-panel) var(--ease-mac), opacity var(--dur-state) var(--ease-mac), margin-top var(--dur-panel) var(--ease-mac), visibility 0s linear var(--dur-panel); }
+  .info-panel.show:not(.word-sheet) { visibility: visible; transition-delay: 0s; }
+  .info-panel:not(.show):not(.word-sheet) .info-panel-inner { border-width: 0; box-shadow: none; }
   /* ===== 키보드 이동 (추가) ===== */
   .greek-word.kb-cur { outline: none; background: color-mix(in srgb, var(--text-main) 12%, transparent); border-radius: 3px; }
 </style>
@@ -3115,6 +3131,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
         <label class="ai-f"><span>작품</span><select id="aiWork"></select></label>
         <label class="ai-f"><span id="aiBookLbl">권</span><input id="aiBook" type="text" inputmode="numeric" data-list="aiBookList" autocomplete="off" placeholder="번호"><datalist id="aiBookList"></datalist></label>
       </div>
+      <div class="ai-unsaved" id="aiUnsaved" hidden><span id="aiUnsavedTxt"></span><button type="button" class="ai-btn ai-primary" id="aiUnsavedDl">지금 .js 받기</button></div>
       <p class="ai-status" id="aiStatus" aria-live="polite"></p>
       <div class="ai-steps">
 
@@ -3127,7 +3144,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
           <div id="aiQ"></div>
           <div class="ai-qfoot"><div class="ai-qtools ai-qtools-lite"><button type="button" class="ai-link" id="aiAutoFailed">실패한 행만 다시</button><button type="button" class="ai-link" id="aiQDone">저장된 행 치우기</button><button type="button" class="ai-link ai-danger" id="aiQClear">목록 비우기</button></div></div>
           <div class="ai-go" id="aiGoWrap">
-            <div class="ai-main-act"><button type="button" class="ai-btn ai-primary" id="aiAutoGo">자동 코딩 시작</button></div>
+            <div class="ai-main-act"><button type="button" class="ai-btn ai-primary" id="aiAutoGo">자동 코딩 시작</button> <button type="button" class="ai-btn" id="aiAutoDlNow" hidden>.js 다운로드</button></div>
             <div class="ai-prog" id="aiProg" hidden>
               <div class="ai-prog-top"><b id="aiProgTxt">0 / 0행</b><span id="aiProgEta"></span></div>
               <div class="ai-prog-bar" aria-hidden="true"><i class="ok" id="aiProgOk"></i><i class="bad" id="aiProgBad"></i></div>
@@ -3180,7 +3197,8 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
               </label>
               <label class="ai-f"><span>API 키</span><span class="ai-key"><input type="password" id="aiGemKey" class="ai-gem" placeholder="aistudio.google.com에서 발급" autocomplete="off" spellcheck="false"><button type="button" class="ai-eye" id="aiGemKeyEye" aria-label="키 보기" aria-pressed="false"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button></span></label>
             </div>
-            <div class="ai-keynote"><label class="ai-chk"><input type="checkbox" id="aiGemKeySave"> 이 기기에 키 저장</label><span id="aiGemKeyHint"></span><button type="button" class="ai-link" id="aiGemKeyClear">키 지우기</button><small>키는 Google(Gemini) 서버로만 전송돼요. 백업(내보내기) 파일에는 들어가지 않아요.</small></div>
+            <div class="ai-keynote"><label class="ai-chk"><input type="checkbox" id="aiGemKeySave"> 이 기기에 키 저장</label><span id="aiGemKeyHint"></span><button type="button" class="ai-link" id="aiGemKeyTest">키 확인</button><span id="aiGemKeyRes" aria-live="polite"></span><button type="button" class="ai-link" id="aiGemKeyClear">키 지우기</button><small>키는 Google(Gemini) 서버로만 전송돼요. 백업(내보내기) 파일에는 들어가지 않아요.</small></div>
+            <div class="ai-keynote"><span id="aiSpecState"></span><button type="button" class="ai-link" id="aiSpecPick2">규칙 파일 선택</button></div>
             <div class="ai-opts">
               <label class="ai-chk" title="503(과부하)·429(한도 초과)·404(모델 종료)가 나오면 무료 모델 목록의 다음 모델로 바꿔 계속해요"><input type="checkbox" id="aiGemRotate" checked> 오류 나면 다음 모델로 자동 전환</label>
               <label class="ai-chk"><input type="checkbox" id="aiGemCtx" checked> 앞 2행 참고</label>
@@ -3188,6 +3206,8 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
               <label class="ai-chk">요청 간격 <input type="number" id="aiGemGap" min="1" max="120" style="width:3.6em"> 초</label>
             </div>
             <div class="ai-opts"><label class="ai-chk" id="aiGemAutoFileL" hidden><input type="checkbox" id="aiGemAutoFile" checked> 자동 코딩 중 10행마다 data 폴더에 저장</label></div>
+            <div class="ai-opts"><label class="ai-chk">중간 저장 <input type="number" id="aiGemCk" min="0" max="500" style="width:3.6em"> 행마다 .js 자동 내려받기 <small>(0이면 끔 · data 폴더 직접 저장 중이면 건너뜀)</small></label></div>
+            <div class="ai-opts"><label class="ai-chk"><input type="checkbox" id="aiGemAutoDl"> 자동 코딩이 끝나면 .js 파일 자동 다운로드 (끄면 끝난 뒤 버튼으로 받기)</label></div>
           </div>
           <div class="ai-pane" id="aiPaneClaude" hidden>
             <p class="ai-hint">① 요청을 복사해 Claude에 붙여넣고 → ② Claude가 돌려준 JSON을 아래에 붙여넣어 저장해요.</p>
@@ -3221,6 +3241,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
           <div id="aiWords"></div>
         </div>
       </details>
+      <div class="ai-dock" id="aiDock"><span class="ai-dock-txt" id="aiDockTxt"></span><span class="ai-dock-btns" id="aiDockBtns"></span></div>
     </div>
     <div class="ai-foot">
       <button type="button" class="ai-btn ai-danger" id="aiDelete" hidden>내 항목 삭제</button>
@@ -6865,7 +6886,12 @@ function toggleShelf(shelfId) {
 }
 
 /* ---------- 화면 전환 ---------- */
+/* 메인(서재) 화면을 떠날 때 보던 위치를 기억해 두었다가, 돌아오면 그 자리로 되돌린다.
+   (전에는 어떤 화면으로 가든, 돌아오든 항상 맨 위로 튀었다) */
+var hubScrollY = 0;
 function showView(viewId) {
+  const prevView = document.querySelector('.view.active');
+  if (prevView && prevView.id === 'view-hub') hubScrollY = window.scrollY;
   document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
   const target = document.getElementById(viewId);
   target.classList.add('active');
@@ -6873,7 +6899,7 @@ function showView(viewId) {
   document.body.dataset.bg = viewId;
   closeSheet();
   if (typeof updateBgArt === 'function') updateBgArt();
-  window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
+  window.scrollTo({ top: viewId === 'view-hub' ? hubScrollY : 0, behavior: 'instant' in window ? 'instant' : 'auto' });
   if (window.__updateCurLine) requestAnimationFrame(window.__updateCurLine);
 }
 
@@ -8020,6 +8046,8 @@ function goToLine(viewId, idx) {
     if (!SPEC) { try { const s = localStorage.getItem('aiSpec') || ''; if (specOk(s)) { SPEC = s; specFrom = '저장해 둔 사본'; } } catch (e) {} }
   }
   $('aiQSpecPick').addEventListener('click', () => $('aiQSpecFile').click());
+  $('aiSpecPick2').addEventListener('click', () => $('aiQSpecFile').click());
+  function specSync() { const t = $('aiSpecState'); if (t) { t.textContent = SPEC ? '규칙 파일: ' + specFrom + ' ✓' : '규칙 파일: 아직 못 찾음 — shell.html과 같은 폴더에 ' + SPEC_FILE + ' 를 두거나 직접 선택하세요.'; t.style.color = SPEC ? 'var(--ok)' : 'var(--bad)'; } }
   $('aiQSpecFile').addEventListener('change', async e => {
     const f = e.target.files && e.target.files[0]; e.target.value = ''; if (!f) return;
     const s = await f.text();
@@ -8125,9 +8153,34 @@ function goToLine(viewId, idx) {
   function download(name, text, type) {
     const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], { type: type + ';charset=utf-8' })); a.download = name;
     document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+    markExported();
   }
+  // ---- 파일로 안 받은 행 추적 · 이탈 경고 · 중간 저장(체크포인트) ----
+  function mineCount() { return Object.keys(loadUserLines()[S.storeKey] || {}).length; }
+  function markExported() { try { const o = JSON.parse(localStorage.getItem('aiLastExp') || '{}'); o[S.storeKey] = mineCount(); localStorage.setItem('aiLastExp', JSON.stringify(o)); } catch (e) {} unsavedSync(); }
+  function unsavedN() { let l = 0; try { l = (JSON.parse(localStorage.getItem('aiLastExp') || '{}'))[S.storeKey] || 0; } catch (e) {} return Math.max(0, mineCount() - l); }
+  function unsavedSync() {
+    const b = $('aiUnsaved'); if (!b || !S.storeKey) return;
+    const n = unsavedN(), m = mineCount(), btn = $('aiUnsavedDl');
+    if (n > 0) { b.hidden = false; b.classList.remove('ok'); $('aiUnsavedTxt').textContent = '⚠ 파일로 받지 않은 행 ' + n + '개 — 지금은 이 브라우저에만 있어요.'; btn.textContent = '지금 .js 받기'; btn.dataset.mode = 'dl'; }
+    else if (m > 0) { b.hidden = false; b.classList.add('ok'); $('aiUnsavedTxt').textContent = '✓ 파일로 받았어요. data 폴더에 덮어쓰고 새로고침한 뒤 수정본을 비우세요 (비우기 전엔 이 브라우저 값이 파일보다 우선해요).'; btn.textContent = '수정본 비우기'; btn.dataset.mode = 'clear'; }
+    else b.hidden = true;
+  }
+  function dockSync() {
+    const t = $('aiDockTxt'); if (!t) return;
+    const todo = Q.filter(r => r.t.trim() && parseInt(r.n, 10) > 0 && ['저장됨 ✓', '번호 중복'].indexOf(qState(r)[0]) < 0).length, f = Q.filter(r => r.f).length;
+    t.textContent = auto.run ? '코딩 중…' : todo ? '코딩할 행 ' + todo + '개' + (f ? ' · 실패 ' + f : '') : '코딩할 행 없음 — 원문을 붙여넣으세요';
+  }
+  { const mv = document.querySelector('.ai-main-act'); if (mv) $('aiDockBtns').appendChild(mv); }
+  setInterval(() => { if (ov.classList.contains('show')) { unsavedSync(); dockSync(); specSync(); } }, 1000);
+  $('aiUnsavedDl').addEventListener('click', () => $($('aiUnsavedDl').dataset.mode === 'clear' ? 'aiMineClear' : 'aiExpDl').click());
+  window.addEventListener('beforeunload', e => { if (auto.run || unsavedN() > 0) { e.preventDefault(); e.returnValue = ''; } });
+  const ckInp = $('aiGemCk'); try { const v = localStorage.getItem('aiCk'); ckInp.value = v === null ? '25' : v; } catch (e) { ckInp.value = '25'; }
+  ckInp.addEventListener('change', () => { try { localStorage.setItem('aiCk', ckInp.value); } catch (e) {} });
+  const ckEvery = () => Math.max(0, parseInt(ckInp.value, 10) || 0);
+  async function checkpoint(tag) { const x = await exportBuild(); if (!x) return ''; download(x.fileId + '-중간저장.js', x.js, 'text/javascript'); return '⬇ 중간 저장 파일 받음 (' + tag + ', 내 수정본 ' + x.mineN + '행) — 쓰려면 이름을 ' + x.fileId + '.js 로 바꿔 data 폴더에 덮어쓰세요'; }
   async function clearMine() {
-    const store = loadUserLines(); if (store[S.storeKey]) { delete store[S.storeKey]; saveUserLines(store); }
+    const store = loadUserLines(); if (store[S.storeKey]) { delete store[S.storeKey]; saveUserLines(store); } markExported();
     applyToChapter(); await loadLines(); refresh(true); qSync();
   }
   $('aiExpDl').addEventListener('click', async () => {
@@ -8135,6 +8188,13 @@ function goToLine(viewId, idx) {
     download(x.fileId + '.js', x.js, 'text/javascript');
     qMsg(x.fileId + '.js를 받았어요 (전체 ' + x.merged.length + '행, 그중 내 수정본 ' + x.mineN + '행). data 폴더의 같은 이름 파일에 덮어쓴 뒤 새로고침하세요. 덮어쓴 다음에 ‘내 수정본 비우기’를 눌러 두면 이후 파일 수정이 그대로 보여요.');
   });
+  // 자동 코딩이 끝나면 .js 를 자동으로 받을지 (선택은 이 브라우저에 기억)
+  (function () {
+    const cb = $('aiGemAutoDl'); if (!cb) return;
+    try { const v = localStorage.getItem('aiAutoDl'); if (v === '1') cb.checked = true; } catch (e) {}
+    cb.addEventListener('change', () => { try { localStorage.setItem('aiAutoDl', cb.checked ? '1' : '0'); } catch (e) {} });
+  })();
+  { const nb = $('aiAutoDlNow'); if (nb) nb.addEventListener('click', () => $('aiExpDl').click()); }
   $('aiExpJson').addEventListener('click', async () => {
     const x = await exportBuild(); if (!x) return;
     download(x.fileId + '.json', x.body.replace(/\r\n/g, '\n') + '\n', 'application/json');
@@ -8272,6 +8332,22 @@ function goToLine(viewId, idx) {
   ['aiGemKey', 'aiGemKeySave', 'aiGemModel', 'aiGemModelCustom', 'aiGemGap', 'aiGemSoft', 'aiGemCtx', 'aiGemRotate'].forEach(id => $(id).addEventListener('change', gemSave));
   $('aiGemKeySave').addEventListener('change', keyHint);
   $('aiGemKeyClear').addEventListener('click', () => { $('aiGemKey').value = ''; gemSave(); try { sessionStorage.removeItem('aiGemKey'); } catch (e) {} qMsg('저장된 API 키를 지웠어요.'); });
+  // ---- 키·모델 미리 확인 (토큰을 쓰지 않는 모델 조회 요청) ----
+  async function gemPing(model) {
+    const g = gemCfg(), m = model || gemModelVal() || g.model;
+    try {
+      const r = await fetch('https://generativelanguage.googleapis.com/v1beta/models/' + encodeURIComponent(m), { headers: { 'x-goog-api-key': g.key } });
+      if (r.ok || r.status === 429) return { ok: true, model: m, msg: '✓ 키·모델 정상 (' + m + ')' + (r.status === 429 ? ' — 지금은 요청 한도에 걸려 있어요' : '') };
+      if (r.status === 404) return { ok: false, block: true, status: 404, model: m, msg: '✗ 모델 ‘' + m + '’을 찾을 수 없어요 — 설정에서 다른 모델을 고르세요.' };
+      if (r.status === 400 || r.status === 401 || r.status === 403) return { ok: false, block: true, status: r.status, model: m, msg: '✗ API 키가 올바르지 않거나 권한이 없어요 (HTTP ' + r.status + ') — aistudio.google.com에서 키를 다시 확인하세요.' };
+      return { ok: false, block: false, model: m, msg: '⚠ 확인하지 못했어요 (HTTP ' + r.status + ') — 그래도 시작은 할 수 있어요.' };
+    } catch (e) { return { ok: false, block: false, model: m, msg: '⚠ Google 서버에 연결하지 못했어요 — 인터넷 연결을 확인하세요.' }; }
+  }
+  function keyRes(r) { const el = $('aiGemKeyRes'); el.textContent = r.msg; el.style.color = r.ok ? 'var(--ok)' : r.block ? 'var(--bad)' : ''; }
+  $('aiGemKeyTest').addEventListener('click', async () => {
+    if (!gemCfg().key) { keyRes({ msg: '키를 먼저 입력하세요.', block: true }); return; }
+    keyRes({ msg: '확인 중…' }); keyRes(await gemPing());
+  });
   // ② 코딩 방식 전환 (Gemini 자동 / Claude에게 맡기기) — 고른 방식은 기억
   (() => {
     const gem = $('aiPaneGem'), cl = $('aiPaneClaude'), bs = document.querySelectorAll('#aiSeg button');
@@ -8349,6 +8425,21 @@ function goToLine(viewId, idx) {
     });
   }
 
+  // ---- 실패 원인을 쉬운 말로 ----
+  function friendly(why) {
+    const w = String(why || ''), m = /HTTP (\d+)/.exec(w), c = m ? +m[1] : 0;
+    if (c === 429) return '요청 한도 초과 — 요청 간격을 늘리거나 잠시 뒤 ‘실패한 행만 다시’';
+    if (c === 500 || c === 502 || c === 503 || c === 504) return 'Google 서버가 바쁨 — 잠시 뒤 ‘실패한 행만 다시’';
+    if (c === 400 || c === 401 || c === 403) return '키·권한 문제 — 설정에서 ‘키 확인’';
+    if (c === 404) return '모델을 찾을 수 없음 — 설정에서 모델 변경';
+    if (/잘림|MAX_TOKENS/.test(w)) return '응답이 길어 잘림 — 다시 하면 대부분 해결';
+    if (/JSON 파싱/.test(w)) return 'AI 응답 형식 오류 — 다시 시도';
+    if (/원문과 다름/.test(w)) return '원문을 빠짐없이 나누지 못함 — 원문 글자 확인 후 다시';
+    if (/background\/etymology|문장/.test(w)) return '배경·어원 문장 수 부족 — ‘문장 수 미달이어도 저장’을 켜면 저장돼요';
+    if (/trans|words 배열|g가 없는|필수 필드|누락/.test(w)) return 'AI 응답에 빠진 항목이 있음 — 다시 시도';
+    if (/통신|Failed to fetch|NetworkError/.test(w)) return '인터넷 연결 문제';
+    return w.slice(0, 90);
+  }
   // ---- 자동 코딩 진행 표시 · 일시정지 · 중단 · 실패 행 바로가기 ----
   const P = { box: $('aiProg'), txt: $('aiProgTxt'), eta: $('aiProgEta'), ok: $('aiProgOk'), bad: $('aiProgBad'), msg: $('aiProgMsg'), btns: $('aiProgBtns'), pause: $('aiProgPause'), stop: $('aiProgStop'), fail: $('aiProgFail'), chips: $('aiProgChips') };
   const fmtT = ms => { const s = Math.max(0, Math.round(ms / 1000)); if (s < 60) return s + '초'; const m = Math.floor(s / 60); return m < 60 ? m + '분 ' + (s % 60) + '초' : Math.floor(m / 60) + '시간 ' + (m % 60) + '분'; };
@@ -8365,11 +8456,11 @@ function goToLine(viewId, idx) {
       P.msg.textContent = auto.pause && p.gated ? '‘이어하기’를 누르면 다음 행부터 계속해요.' : (p.msg || '');
     } else {
       P.eta.textContent = (p.fatal ? '중단됨' : p.stopped ? '멈춤' : '끝남') + ' · 걸린 시간 ' + fmtT(active);
-      P.msg.textContent = '';
+      P.msg.textContent = p.why || ''; P.msg.style.whiteSpace = p.why ? 'normal' : '';
     }
     P.btns.hidden = !auto.run; P.pause.textContent = auto.pause ? '이어하기' : '일시정지';
     P.fail.hidden = auto.run || !st.failed.length;
-    if (p.chipN !== st.failed.length) { p.chipN = st.failed.length; P.chips.textContent = ''; st.failed.forEach(n => { const b = document.createElement('button'); b.type = 'button'; b.className = 'ai-chip'; b.dataset.n = String(n); b.textContent = n + '행'; P.chips.appendChild(b); }); }
+    if (p.chipN !== st.failed.length) { p.chipN = st.failed.length; P.chips.textContent = ''; st.failed.forEach(n => { const b = document.createElement('button'); b.type = 'button'; b.className = 'ai-chip'; b.dataset.n = String(n); b.textContent = n + '행'; b.title = (p.reasons && p.reasons[n]) || ''; P.chips.appendChild(b); }); }
   }
   function progStart(total, gap, get) { clearInterval(auto.tick); auto.pause = false; auto.prog = { total, gap, get, t0: Date.now(), paused: 0, gated: false, gateT: 0, tEnd: 0, stopped: false, fatal: false, msg: '', chipN: -1 }; progPaint(); auto.tick = setInterval(progPaint, 500); }
   function progEnd(info) { clearInterval(auto.tick); auto.pause = false; if (auto.prog) { auto.prog.tEnd = Date.now(); auto.prog.gated = false; auto.prog.stopped = !!(info && info.stopped); auto.prog.fatal = !!(info && info.fatal); } progPaint(); }
@@ -8393,22 +8484,23 @@ function goToLine(viewId, idx) {
   $('aiProgRetry').addEventListener('click', () => { if (!auto.run) startAuto(true); });
 
   async function autoRun(onlyFailed) {
+    { const nb = $('aiAutoDlNow'); if (nb) nb.hidden = true; }
     const g = gemCfg();
     if (!g.key) { qMsg('Gemini API 키를 먼저 입력하세요 (aistudio.google.com → Get API key).'); return; }
     if (isNaN(S.book)) { qMsg('먼저 위에서 ' + S.work.unit + ' 번호를 고르세요.'); return; }
     if (S.loading) { qMsg('불러오는 중이에요. 잠시 뒤 다시 눌러 주세요.'); return; }
     if (!SPEC) await loadSpec();
-    if (!SPEC) { qMsg('규칙 파일(' + SPEC_FILE + ')을 찾지 못했어요. ‘규칙 파일 직접 선택’으로 한 번 불러오세요.'); return; }
+    if (!SPEC) { $('aiSettings').open = true; qMsg('규칙 파일(' + SPEC_FILE + ')을 찾지 못했어요. 설정의 ‘규칙 파일 선택’으로 한 번 불러오면 이 브라우저에 저장돼서 다음부터는 묻지 않아요.'); const b = $('aiSpecPick2'); if (b) b.focus(); return; }
     const rows = Q.filter(r => r.t.trim() && parseInt(r.n, 10) > 0 && ['저장됨 ✓', '번호 중복'].indexOf(qState(r)[0]) < 0 && (!onlyFailed || r.f)).map(r => ({ n: parseInt(r.n, 10), t: r.t.normalize('NFC').trim() }));
     if (!rows.length) { qMsg(onlyFailed ? '다시 할 실패한 행이 없어요.' : '처리할 행이 없어요 (이미 저장됐거나 번호가 없는 행은 건너뛰어요).'); return; }
     auto.run = true; auto.stop = false; $('aiAutoGo').textContent = '멈추기';
     let lock = null; try { lock = await navigator.wakeLock.request('screen'); } catch (e) {}
-    const log = [], failed = []; let lastReq = 0, fatal = false, okN = 0, sinceSave = 0, rotN = 0, curModel = g.model;
+    const log = [], failed = [], reasons = {}; let streak = 0, lastReq = 0, fatal = false, okN = 0, sinceSave = 0, rotN = 0, curModel = g.model;
     const pool = gemPool(), switchModel = why0 => { const i = pool.indexOf(curModel), nx = pool[(i + 1) % pool.length]; if (!nx || nx === curModel) return false; log.push('↻ ' + why0 + ' — ' + curModel + ' → ' + nx); curModel = nx; gemModelSet(nx); gemSave(); return true; };
     if (window.__aiBakReset) window.__aiBakReset();
     const show = s => (auto.prog && (auto.prog.msg = s), qMsg('자동 코딩 ' + (okN + failed.length) + '/' + rows.length + ' — ' + s + (log.length ? '\n' + log.slice(-5).join('\n') : '')));
     const w = S.work;
-    progStart(rows.length, g.gap, () => ({ ok: okN, failed }));
+    progStart(rows.length, g.gap, () => ({ ok: okN, failed })); auto.prog.reasons = reasons;
     for (const row of rows) {
       if (auto.stop || fatal) break;
       const want = refOf(row.n); let fb = '', saved = false, why = '', rate = 0;
@@ -8439,24 +8531,43 @@ function goToLine(viewId, idx) {
         const line = Object.assign({}, obj, { ref: want, trans: String(obj.trans || '').trim(), words });
         const store = loadUserLines(); (store[S.storeKey] = store[S.storeKey] || {})[want] = line;
         if (!saveUserLines(store)) { fatal = true; why = '브라우저 저장 공간이 가득 찼어요'; break; }
-        saved = true; okN++; sinceSave++; rotN = 0;
+        saved = true; okN++; sinceSave++; rotN = 0; streak = 0; { const nb = $('aiAutoDlNow'); if (nb) { nb.hidden = false; nb.textContent = '지금까지 .js 받기'; } }
         const qr = Q.find(r => parseInt(r.n, 10) === row.n && r.t.trim()); if (qr) { qr.d = true; qr.f = false; qSave(); }
         log.push('✓ ' + row.n + '행' + (chk.soft.length ? ' (문장 수 일부 미달)' : '')); qSync();
         if (auto.file && sinceSave >= 10) { try { await window.__aiSaveToDir(true); sinceSave = 0; log.push('💾 data 파일에 저장함'); } catch (e) { auto.file = false; log.push('⚠ 파일 저장 실패, 이후엔 브라우저에만 저장: ' + e.message); } }
+        if (!auto.file && ckEvery() && okN % ckEvery() === 0) { try { log.push(await checkpoint(okN + '행째')); } catch (e) { log.push('⚠ 중간 저장 실패: ' + e.message); } }
         break;
       }
-      if (!saved && !auto.stop) { failed.push(row.n); const qf = Q.find(r => parseInt(r.n, 10) === row.n && r.t.trim()); if (qf) { qf.f = true; qSave(); qSync(); } log.push('✗ ' + row.n + '행 — ' + String(why).slice(0, 110)); }
+      if (!saved && !auto.stop) { streak++; failed.push(row.n); const qf = Q.find(r => parseInt(r.n, 10) === row.n && r.t.trim()); if (qf) { qf.f = true; qSave(); qSync(); } reasons[row.n] = friendly(why); log.push('✗ ' + row.n + '행 — ' + reasons[row.n]); if (streak >= 5 && !fatal) { auto.pause = true; streak = 0; log.push('⏸ 연달아 5행 실패 — 자동 일시정지했어요. 키·네트워크를 확인하고 ‘이어하기’를 누르세요.'); try { if (!auto.file && okN) log.push(await checkpoint('일시정지')); } catch (e) {} } }
     }
+    if (fatal && okN > 0 && !auto.file && ckEvery()) { try { log.push(await checkpoint('오류로 중단')); } catch (e) {} }
     if (auto.file && sinceSave > 0) { try { await window.__aiSaveToDir(true); log.push('💾 data 파일에 저장함'); } catch (e) { log.push('⚠ 파일 저장 실패: ' + e.message); } }
     if (auto.ctl) auto.ctl.abort();
     if (lock) try { lock.release(); } catch (e) {}
+    if (auto.prog) { const cnt = {}; Object.keys(reasons).forEach(k => { cnt[reasons[k]] = (cnt[reasons[k]] || 0) + 1; }); auto.prog.why = Object.keys(cnt).map(r => r + ' (' + cnt[r] + '행)').join(' / '); }
     auto.run = false; $('aiAutoGo').textContent = '자동 코딩 시작'; progEnd({ stopped: auto.stop, fatal });
     applyToChapter(); await loadLines(); refresh(true); qSync();
-    qMsg((auto.stop ? '멈췄어요. ' : fatal ? '중단했어요. ' : '끝났어요. ') + '저장 ' + okN + '행' + (failed.length ? ', 실패 ' + failed.length + '행(' + failed.join(', ') + ')' : '') + '.\n' + log.slice(-6).join('\n')
+    let doneMsg = ((auto.stop ? '멈췄어요. ' : fatal ? '중단했어요. ' : '끝났어요. ') + '저장 ' + okN + '행' + (failed.length ? ', 실패 ' + failed.length + '행(' + failed.join(', ') + ')' : '') + '.\n' + log.slice(-6).join('\n')
       + '\n다 끝나면 아래 ‘data 폴더에 바로 저장’으로 파일에 반영하세요.');
+    // 채운 내용이 있으면 .js 파일까지 이어서 내려받는다 (data 폴더에 직접 저장하는 중이었다면 이미 파일에 반영됐으므로 건너뜀)
+    const dlCb = $('aiGemAutoDl');
+    if (okN > 0 && dlCb && dlCb.checked && !auto.file) {
+      try {
+        const x = await exportBuild();
+        if (x) { download(x.fileId + '.js', x.js, 'text/javascript'); doneMsg += '\n⬇ ' + x.fileId + '.js 를 내려받았어요 (전체 ' + x.merged.length + '행, 내 수정본 ' + x.mineN + '행). data 폴더의 같은 이름 파일에 덮어쓴 뒤 새로고침하세요.'; }
+      } catch (e) { doneMsg += '\n⚠ .js 자동 다운로드 실패: ' + (e && e.message ? e.message : e) + ' — 아래 ‘.js 다운로드’ 버튼으로 직접 받으세요.'; }
+    }
+    { const nb = $('aiAutoDlNow'); const auto_dl_done = doneMsg.indexOf('내려받았어요') >= 0;
+      if (nb) nb.hidden = !(okN > 0 && !auto.file && !auto_dl_done);
+      if (nb && !nb.hidden) doneMsg += '\n⬇ ‘자동 코딩 시작’ 옆의 ‘.js 다운로드’ 버튼으로 이 권의 파일을 받을 수 있어요.'; }
+    qMsg(doneMsg);
   }
   async function startAuto(onlyFailed) {
     gemSave();
+    let pf = await gemPing();
+    if (pf.status === 404 && gemCfg().rotate) { for (const id of gemPool()) { if (id === pf.model) continue; const r2 = await gemPing(id); if (r2.ok) { gemModelSet(id); gemSave(); pf = r2; break; } } }
+    keyRes(pf);
+    if (pf.block) { $('aiSettings').open = true; qMsg(pf.msg); return; }
     const cb = $('aiGemAutoFile');
     auto.file = !!(cb && !$('aiGemAutoFileL').hidden && cb.checked && window.__aiDirReady) && (await window.__aiDirReady());
     autoRun(onlyFailed).catch(e => { auto.run = false; $('aiAutoGo').textContent = '자동 코딩 시작'; progEnd({ fatal: true }); qMsg('자동 코딩 중 오류가 나서 멈췄어요: ' + (e && e.message ? e.message : e)); });
@@ -8476,7 +8587,7 @@ function goToLine(viewId, idx) {
     if (ch) { selWork.value = ch.workKey; inBook.value = String(ch.book); }
     if (!S.dirty) { inLine.value = ''; fillForm(null); }
     await onWork(false);
-    if (!gemCfg().key) $('aiSettings').open = true;   // 처음 쓰는 경우에만 설정을 펼쳐 키 입력을 안내
+    unsavedSync(); dockSync(); if (!SPEC) loadSpec().then(specSync); if (!gemCfg().key) $('aiSettings').open = true;   // 처음 쓰는 경우에만 설정을 펼쳐 키 입력을 안내
     if (!(window.matchMedia && matchMedia('(pointer: coarse)').matches)) { const f = document.querySelector('#aiQ .qt'); if (f) f.focus(); }
   };
   window.closeAddInfo = function () { ov.classList.remove('show'); document.documentElement.style.overflow = ''; };
