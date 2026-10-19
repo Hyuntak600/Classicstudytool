@@ -678,7 +678,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   /* 한자는 원래 띄어쓰기 없이 죽 이어지는 글이므로, 다른 작품처럼 단어마다 여백을 두지 않고
      붙여서 흐르게 하되, 클릭 가능한 단위 표시는 다른 작품과 동일하게 점선 밑줄로 보여준다. */
   #view-sanguo1 .greek-word { margin-right: 2px; padding-bottom: 2px; border-bottom: 2px solid transparent; border-radius: 3px; transition: background-color var(--dur-state) var(--ease-mac), color var(--dur-press) var(--ease-mac); }
-  #view-sanguo1 .greek-word:hover, #view-sanguo1 .greek-word.active { background: color-mix(in srgb, var(--text-main) 8%, transparent); }
+  #view-sanguo1 .greek-word.active { background: color-mix(in srgb, var(--text-main) 8%, transparent); }
   #view-sanguo1 .greek-word.has-memo::after { top: 2px; right: -1px; }
   #view-genesis1 .greek-line { direction: rtl; text-align: right; font-family: "Frank Ruhl Libre", "Noto Serif Hebrew", var(--serif); font-size: 27px; letter-spacing: 0; }
   #view-genesis1 .greek-word { margin-right: 0; margin-left: 16px; }
@@ -835,7 +835,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
     border-radius: 3px;
     transition: background-color var(--dur-state) var(--ease-mac), color var(--dur-press) var(--ease-mac);
   }
-  .greek-word:hover, .greek-word.active { background: color-mix(in srgb, var(--text-main) 8%, transparent); }
+  .greek-word.active { background: color-mix(in srgb, var(--text-main) 8%, transparent); }
   .greek-word.has-memo::after {
     content: '';
     position: absolute;
@@ -2162,7 +2162,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   .shelf-ready-summary:empty { display: none; }
   .shelf-ready-summary::before { content: ''; flex: none; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
   .greek-word.has-vocab { background: color-mix(in srgb, var(--accent-light) 65%, transparent); }
-  .greek-word.has-vocab:hover, .greek-word.has-vocab.active { background: color-mix(in srgb, var(--accent-light) 100%, transparent); }
+  .greek-word.has-vocab.active { background: color-mix(in srgb, var(--accent-light) 100%, transparent); }
   #view-genesis1 { --accent: #5a6f9e; --accent-dark: #3c4d75; --accent-light: #e8ecf6; --accent-2: #8b9bc4; --border: #d3dbef; --border-soft: #eef1f9; }
   #view-cid1 { --accent: #a34a3a; --accent-dark: #7a3327; --accent-light: #f6e3dd; --accent-2: #c97a63; --border: #e8c9bd; --border-soft: #f2ded6; }
   #view-lusiadas1 { --accent: #2f7a63; --accent-dark: #1f5847; --accent-light: #dcf0e8; --accent-2: #5fa98c; --border: #c3e3d5; --border-soft: #e5f4ed; }
@@ -2288,6 +2288,8 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   #bgToggle { display: none; }
   body[data-art] #bgToggle { display: inline-block; }
   #artViewBtn { display: none; }
+  #artSetBtn { display: none; }
+  body.gallery-mode #artSetBtn { display: block; }
   body[data-art] #artViewBtn { display: inline-block; }
   #bgCap { position: fixed; right: 14px; bottom: 12px; z-index: 2; display: none; max-width: min(300px, calc(100vw - 28px)); padding: 7px 10px; border-radius: 8px; pointer-events: none; text-align: right; font-family: var(--sans); font-size: 10.5px; line-height: 1.45; color: var(--text-sub); background: color-mix(in srgb, var(--card-bg) 82%, transparent); border: 0.5px solid var(--border); }
   #bgCap b { display: block; font-size: 11.5px; font-weight: 600; color: var(--text-main); }
@@ -3269,6 +3271,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
         <button class="site-nav-link" id="addInfoBtn" onclick="openAddInfo()">정보 추가</button>
         <button class="site-nav-link" id="bgToggle" onclick="toggleGalleryBg()">배경 끄기</button>
         <button class="site-nav-link" id="artViewBtn" onclick="openArtView()">명화 감상</button>
+        <button class="site-nav-link" id="artSetBtn" onclick="openArtSettings()">배경 그림 설정</button>
         <div class="nav-more-row">
           <label for="themeToggle">야간 열람실</label>
           <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="야간 열람실 모드 전환" title="야간 열람실">
@@ -7346,6 +7349,8 @@ function chLabel(viewId) { const h = document.querySelector('#' + viewId + ' h1'
      'view-iliad1': { img: 'img/iliad1.jpg', cap: '<b>제목</b><em>Original title</em><br>작가 · 연도<br>소장처<small>출처: …</small>' }
    view id: view-iliad1, view-iliad6, view-meta1, view-meta14, view-genesis1, view-cid1, view-lusiadas1 … */
 const GALLERY = {
+  'view-iliad24': { img: 'img/iliad24.jpg',
+    cap: '<b>일리아드 24권</b>' },
   'view-iliad6': { img: 'img/iliad6.jpg',
     cap: '<b>헥토르와 안드로마케, 아스티아낙스의 작별</b><em>The Farewell of Hector to Andromache and Astyanax</em><br>Carl Friedrich Deckler (1838–1918)<br>1918년 이전 · 소장처 미상<small>출처: Wikimedia Commons (퍼블릭 도메인)</small>' },
   'view-genesis1': { img: 'img/genesis1.jpg',
@@ -7449,6 +7454,106 @@ function updateBgArt() {
 window.addEventListener('scroll', () => { if (!bgTick) { bgTick = true; requestAnimationFrame(updateBgArt); } }, { passive: true });
 window.addEventListener('resize', updateBgArt);
 
+
+/* ---------- 배경 그림 설정: 올리기 · 고르기 · 캡션 입력 (IndexedDB + localStorage) ----------
+   그림 파일은 이 브라우저의 IndexedDB에만 저장된다(다른 기기·백업 파일에는 안 들어감).
+   권마다 고른 그림 id는 localStorage 'artChoice' = { viewId: artId } 에 기억하고,
+   고른 게 없으면 위 GALLERY의 기본 그림(img/ 폴더)이 그대로 쓰인다. */
+(function () {
+  const DB = 'classicsArt', ST = 'art', CK = 'artChoice';
+  const BASE = {}; Object.keys(GALLERY).forEach(k => { BASE[k] = GALLERY[k]; });
+  const urls = {}; let lib = []; let dbp = null;
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  function db() { return dbp || (dbp = new Promise((res, rej) => { const r = indexedDB.open(DB, 1); r.onupgradeneeded = () => r.result.createObjectStore(ST, { keyPath: 'id' }); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); })); }
+  function tx(mode, fn) { return db().then(d => new Promise((res, rej) => { const t = d.transaction(ST, mode), q = fn(t.objectStore(ST)); t.oncomplete = () => res(q && q.result); t.onerror = () => rej(t.error); })); }
+  const choice = () => { try { return JSON.parse(localStorage.getItem(CK) || '{}') || {}; } catch (e) { return {}; } };
+  const setChoice = o => { try { localStorage.setItem(CK, JSON.stringify(o)); } catch (e) {} };
+  const capOf = a => '<b>' + esc(a.title || '제목 없음') + '</b>' + (a.by ? esc(a.by) : '') + (a.src ? '<small>' + esc(a.src) + '</small>' : '');
+  const urlOf = a => urls[a.id] || (urls[a.id] = URL.createObjectURL(a.blob));
+
+  function apply() {   // 고른 그림을 GALLERY에 반영하고 화면·서재 아이콘을 갱신
+    const ch = choice();
+    Object.keys(BASE).concat(Object.keys(ch)).forEach(v => {
+      const a = lib.find(x => x.id === ch[v]);
+      if (a) GALLERY[v] = { img: urlOf(a), cap: capOf(a), user: true };
+      else if (BASE[v]) GALLERY[v] = BASE[v]; else delete GALLERY[v];
+    });
+    document.querySelectorAll('.mac-tile.has-art').forEach(t => t.classList.remove('has-art'));
+    decorateGalleryTiles();
+    bgKey = ''; updateBgArt();
+  }
+  const reload = () => tx('readonly', s => s.getAll()).then(r => { lib = (r || []).sort((a, b) => b.at - a.at); }).catch(() => { lib = []; });
+
+  function shrink(file) {   // 너무 큰 사진은 긴 변 2400px 이하 JPEG로 줄여 저장 공간을 아낀다
+    return new Promise((res, rej) => {
+      const u = URL.createObjectURL(file), im = new Image();
+      im.onload = () => {
+        const k = Math.min(1, 2400 / Math.max(im.naturalWidth, im.naturalHeight)); URL.revokeObjectURL(u);
+        if (k === 1 && file.size < 3e6) return res(file);
+        const c = document.createElement('canvas'); c.width = Math.round(im.naturalWidth * k); c.height = Math.round(im.naturalHeight * k);
+        c.getContext('2d').drawImage(im, 0, 0, c.width, c.height); c.toBlob(b => b ? res(b) : rej(), 'image/jpeg', 0.88);
+      };
+      im.onerror = () => { URL.revokeObjectURL(u); rej(new Error('이미지를 읽을 수 없어요')); }; im.src = u;
+    });
+  }
+
+  let ov = null;
+  function render() {
+    const v = document.body.dataset.bg, ch = choice(), cur = ch[v];
+    const name = typeof chLabel === 'function' ? chLabel(v) : v;
+    ov.querySelector('.ai-card').innerHTML =
+      '<div class="ai-head"><h2>배경 그림 · ' + esc(name) + '</h2><button type="button" class="ai-x" data-a="x" aria-label="닫기">✕</button></div>' +
+      '<div class="ai-body">' +
+      '<section class="ai-step"><div class="ai-pick" style="grid-template-columns:1fr">' +
+      '<label class="ai-f"><span>그림 파일</span><input type="file" id="artFile" accept="image/*"></label>' +
+      '<label class="ai-f"><span>제목</span><input id="artTitle" type="text" placeholder="예: 헥토르와 안드로마케의 작별"></label>' +
+      '<label class="ai-f"><span>작가 · 연도 · 소장처 (선택)</span><input id="artBy" type="text"></label>' +
+      '<label class="ai-f"><span>출처 (선택)</span><input id="artSrc" type="text" placeholder="예: Wikimedia Commons (퍼블릭 도메인)"></label>' +
+      '</div><p class="ai-status" id="artMsg"></p><div class="ai-qsend"><button type="button" class="ai-btn ai-primary" data-a="up">올리고 이 권에 적용</button></div></section>' +
+      '<div class="ai-words-head"><span>올린 그림 ' + lib.length + '개 — 눌러서 이 권에 적용</span><span class="ai-words-tools">' +
+      (BASE[v] || cur ? '<button type="button" class="ai-link" data-a="def">' + (BASE[v] ? '기본 그림으로' : '그림 해제') + '</button>' : '') + '</span></div>' +
+      (lib.length ? '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px;margin-top:8px">' +
+        lib.map(a => '<div style="position:relative;border:2px solid ' + (a.id === cur ? 'var(--accent)' : 'var(--border)') + ';border-radius:10px;overflow:hidden;background:var(--card-bg)">' +
+          '<button type="button" data-a="use" data-id="' + a.id + '" style="all:unset;cursor:pointer;display:block;width:100%">' +
+          '<img src="' + urlOf(a) + '" alt="" style="display:block;width:100%;height:90px;object-fit:cover"><span style="display:block;padding:5px 8px;font-size:11.5px;line-height:1.35;color:var(--text-sub);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">' + esc(a.title || '제목 없음') + '</span></button>' +
+          '<button type="button" data-a="del" data-id="' + a.id + '" aria-label="삭제" style="position:absolute;top:4px;right:4px;width:22px;height:22px;border:0;border-radius:50%;cursor:pointer;background:rgba(0,0,0,.55);color:#fff;font-size:11px">✕</button></div>').join('') + '</div>'
+        : '<p class="ai-empty">아직 올린 그림이 없어요.</p>') +
+      '</div>';
+  }
+  const say = t => { const m = ov && ov.querySelector('#artMsg'); if (m) m.textContent = t; };
+
+  async function act(e) {
+    const b = e.target.closest('[data-a]'); if (!b) { if (e.target === ov) close(); return; }
+    const v = document.body.dataset.bg, a = b.dataset.a, ch = choice();
+    if (a === 'x') return close();
+    if (a === 'use') { ch[v] = b.dataset.id; setChoice(ch); apply(); render(); }
+    else if (a === 'def') { delete ch[v]; setChoice(ch); apply(); render(); }
+    else if (a === 'del') {
+      if (!confirm('이 그림을 삭제할까요? 적용된 권은 기본 그림으로 돌아가요.')) return;
+      await tx('readwrite', s => s.delete(b.dataset.id)); URL.revokeObjectURL(urls[b.dataset.id]); delete urls[b.dataset.id];
+      Object.keys(ch).forEach(k => { if (ch[k] === b.dataset.id) delete ch[k]; }); setChoice(ch);
+      await reload(); apply(); render();
+    } else if (a === 'up') {
+      const f = ov.querySelector('#artFile').files[0]; if (!f) return say('그림 파일을 먼저 고르세요.');
+      say('저장하는 중…');
+      try {
+        const blob = await shrink(f), id = 'a' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+        const rec = { id, blob, at: Date.now(), title: ov.querySelector('#artTitle').value.trim(), by: ov.querySelector('#artBy').value.trim(), src: ov.querySelector('#artSrc').value.trim() };
+        await tx('readwrite', s => s.put(rec)); await reload(); ch[v] = id; setChoice(ch); apply(); render();
+      } catch (err) { say('저장하지 못했어요: ' + (err && err.message || '브라우저 저장 공간을 확인하세요')); }
+    }
+  }
+  function onKey(e) { if (e.key === 'Escape') { e.stopPropagation(); close(); } }
+  function close() { if (!ov) return; ov.remove(); ov = null; document.removeEventListener('keydown', onKey, true); }
+  window.openArtSettings = async function () {
+    if (ov) return; const m = document.getElementById('navMore'); if (m) m.classList.remove('open');
+    await reload();
+    ov = document.createElement('div'); ov.className = 'ai-overlay show'; ov.setAttribute('role', 'dialog');
+    ov.innerHTML = '<div class="ai-card"></div>'; ov.addEventListener('click', act);
+    document.body.appendChild(ov); document.addEventListener('keydown', onKey, true); render();
+  };
+  reload().then(apply);
+})();
 
 /* ---------- 읽던 행 자동 복원 ---------- */
 let __restoring = false;
@@ -8923,7 +9028,7 @@ document.addEventListener('keydown', e => {
     var block = sp.closest('.line-block'); if (!block || !block.id) return;
     var ws = Array.prototype.slice.call(words(block));
     cur = { cid: cidOf(block), i: +block.dataset.i, wi: ws.indexOf(sp) };
-    clearMark(); sp.classList.add('kb-cur');
+    clearMark();   // 마우스로 누른 단어에는 회색 키보드 표시를 남기지 않는다(정보창이 접히면 상자도 사라지게)
   }, true);
 })();
 </script>
