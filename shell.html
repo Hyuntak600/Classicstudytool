@@ -3050,9 +3050,6 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   .split-pane .back-link, .split-pane .subtitle, .split-pane .split-open { display: none; }
   .split-pane h1 { font-size: 20px; margin: 12px 0 4px; }
   .split-pane .controls-row.sticky { top: 0; }
-  /* 원문 가리기 토글: 글자를 흐리게 가린다. 단어에 마우스를 올리거나 눌러 연 단어는 보인다 */
-  .study-view.hide-orig .greek-line .greek-word { filter: blur(7px); transition: filter var(--dur-state, .2s) ease; }
-  .study-view.hide-orig .greek-line .greek-word:hover, .study-view.hide-orig .greek-line .greek-word.active, .study-view.hide-orig .greek-line .greek-word.kb-cur { filter: none; }
   .split-pane .line-block { scroll-margin-top: 70px; }
   .split-menu { position: fixed; z-index: 300; min-width: 200px; max-height: 60vh; overflow-y: auto; padding: 6px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 12px 32px rgba(0,0,0,.18); font-family: var(--sans); }
   .split-menu .sm-h { padding: 6px 10px 4px; font-size: 11.5px; font-weight: 600; color: var(--text-sub); }
@@ -3086,13 +3083,8 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
     .split-grid > .split-pane + .split-pane { border-left: none; border-top: 1px solid var(--border); }
   }
 
-  /* ===== 키보드 이동 · 발음 듣기 (추가) ===== */
+  /* ===== 키보드 이동 (추가) ===== */
   .greek-word.kb-cur { outline: none; background: color-mix(in srgb, var(--text-main) 12%, transparent); border-radius: 3px; }
-  .vocab-actions:has(.speak-btn) { display: flex; align-items: center; gap: 6px; }
-  .speak-btn { display: inline-flex; align-items: center; justify-content: center; min-width: 34px; height: 32px; padding: 0 10px; border: 1px solid var(--border); border-radius: 999px; background: var(--card-bg); color: var(--accent-dark); font-family: var(--sans); font-size: 12.5px; font-weight: 600; cursor: pointer; white-space: nowrap; }
-  .speak-btn:hover { border-color: var(--accent); }
-  .speak-btn.speaking { background: var(--accent-light); border-color: var(--accent); }
-  .speak-btn[hidden] { display: none; }
 </style>
 </head>
 <body>
@@ -4462,23 +4454,7 @@ function ensureSheet() {
 /* 폰: 아래 시트가 올라오면 누른 단어가 시트에 가려지거나 화면 밖으로 밀리지 않도록, 시트 위쪽 보이는 영역 가운데로 단어를 옮겨 준다.
    시트를 닫을 때, 그 뒤로 사용자가 스크롤하지 않았다면 원래 읽던 자리로 되돌린다. */
 var sheetPrev = null;
-function revealAboveSheet(span) {
-  requestAnimationFrame(() => {
-    if (!sheetEl || !span.isConnected) return;
-    const h = sheetEl.offsetHeight; if (!h) return;
-    const pane = span.closest('.split-pane');
-    const topLimit = (pane ? pane.getBoundingClientRect().top : 0) + 70;
-    const bottomLimit = window.innerHeight - h - 12;
-    const r = span.getBoundingClientRect();
-    if (r.top >= topLimit && r.bottom <= bottomLimit) return;
-    const target = topLimit + Math.max(0, (bottomLimit - topLimit - r.height) / 2);
-    const d = r.top - target; if (Math.abs(d) < 1) return;
-    const cur = () => pane ? pane.scrollTop : window.scrollY;
-    if (!sheetPrev) sheetPrev = { pane, y: cur(), after: 0 };
-    if (pane) pane.scrollTop += d; else window.scrollBy(0, d);
-    sheetPrev.after = cur();
-  });
-}
+function revealAboveSheet(span) { /* 화면은 사용자가 직접 스크롤할 때만 움직인다: 단어를 눌러도 자동으로 스크롤하지 않음 */ }
 function openSheet(w, span, block, memoKey, vocabCtx) {
   ensureSheet();
   clearTimeout(sheetTimer);
@@ -4493,11 +4469,7 @@ function openSheet(w, span, block, memoKey, vocabCtx) {
 }
 function closeSheet() {
   if (!sheetEl) return;
-  if (sheetPrev) {
-    const s = sheetPrev; sheetPrev = null;
-    const now = s.pane ? s.pane.scrollTop : window.scrollY;
-    if (Math.abs(now - s.after) <= 2) { if (s.pane) s.pane.scrollTo({ top: s.y, behavior: 'smooth' }); else window.scrollTo({ top: s.y, behavior: 'smooth' }); }
-  }
+  sheetPrev = null;
   if (sheetOwner) sheetOwner.classList.remove('active');
   sheetOwner = null;
   sheetEl.classList.remove('show');
@@ -4582,7 +4554,6 @@ function renderInfo(w, panel, el, blockEl, memoKey, vocabCtx) {
   const lockH = panel.offsetHeight;
   if (lockH > 0) panel.style.minHeight = lockH + 'px';
   panel.innerHTML = html;
-  if (window.__attachSpeak) { try { window.__attachSpeak(panel, w, vocabCtx); } catch (e) {} }
 
   const closeBtn = panel.querySelector('.info-panel-close');
   closeBtn.addEventListener('click', () => {
@@ -7255,7 +7226,7 @@ document.addEventListener('click', e => {
   if (isSheetMode()) return;   // 폰의 아래 시트는 배경(scrim)을 누르면 이미 닫힌다
   const t = e.target;
   if (!t || !t.closest) return;
-  if (t.closest('.info-panel')) return;
+  if (t.closest('.info-panel') || t.closest('.my-trans-box')) return;   // 내 번역 상자를 눌러도 열린 단어 정보칸은 접지 않는다(접히면 화면이 튐)
   const sel = window.getSelection && window.getSelection();
   if (sel && !sel.isCollapsed && String(sel).trim()) return;
   const word = t.closest('.greek-word');
@@ -7467,20 +7438,6 @@ function goToLine(viewId, idx) {
     writeState(st);
   }
   window.addEventListener('scroll', () => { if (!tick) { tick = true; setTimeout(save, 1000); } }, { passive: true });
-})();
-
-/* ---------- 원문 가리기 토글 (각 권의 위쪽 떠 있는 줄에 '원문' 버튼; 번역은 기존 '번역 전체 보기'가 같은 역할) ---------- */
-(function () {
-  document.querySelectorAll('.study-view .controls-row.sticky').forEach(row => {
-    const view = row.closest('.study-view'); if (!view) return;
-    const key = 'hideOrig::' + view.id;
-    const b = document.createElement('button'); b.type = 'button'; b.className = 'orig-toggle';
-    function paint(on) { view.classList.toggle('hide-orig', on); b.classList.toggle('active', on); b.textContent = on ? '원문 보이기' : '원문 가리기'; b.setAttribute('aria-pressed', String(on)); }
-    let on = false; try { on = localStorage.getItem(key) === '1'; } catch (e) {}
-    paint(on);
-    b.addEventListener('click', () => { on = !on; paint(on); try { localStorage.setItem(key, on ? '1' : '0'); } catch (e) {} });
-    row.insertBefore(b, row.firstChild);
-  });
 })();
 
 /* ---------- 원문 글씨 크기 (글꼴 팝오버 안의 슬라이더, 모든 작품 공통·저장됨) ---------- */
@@ -8747,85 +8704,14 @@ document.addEventListener('keydown', e => {
 
 <script>
 /* ============================================================
-   키보드 이동 + 발음 듣기
+   키보드 이동
    - j / k            : 다음 / 이전 행
    - ← / →            : 이전 / 다음 단어 (히브리어처럼 오른쪽→왼쪽 글은 방향이 자동으로 뒤집힘)
    - Enter            : 현재 단어의 정보칸 열기·닫기
    - Esc              : 열려 있는 정보칸 닫기
-   - 🔊 버튼          : 브라우저 내장 음성(speechSynthesis)으로 단어 읽기. 별도 데이터 없음.
    ============================================================ */
 (function () {
   'use strict';
-  /* ---------- 발음 듣기 ---------- */
-  var LANGS = {
-    iliad: ['el-GR', 'el'], meta: ['la', 'la-VA', 'it-IT'], genesis: ['he-IL', 'he'],
-    cid: ['es-ES', 'es'], lusiadas: ['pt-PT', 'pt-BR', 'pt'], sanguo: ['zh-CN', 'zh-TW', 'zh']
-  };
-  var LANG_NAME = { el: '그리스어', la: '라틴어', he: '히브리어', es: '스페인어', pt: '포르투갈어', zh: '중국어' };
-  var canSpeak = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
-  var speakingBtn = null;
-
-  function detectKey(text) {
-    if (/[\u0370-\u03FF\u1F00-\u1FFF]/.test(text)) return 'iliad';
-    if (/[\u0590-\u05FF]/.test(text)) return 'genesis';
-    if (/[\u3400-\u9FFF]/.test(text)) return 'sanguo';
-    return null;
-  }
-  function cleanText(key, raw) {
-    var t = String(raw || '').replace(/<[^>]*>/g, '');
-    if (key === 'sanguo') return t.replace(/[\s。，、；：！？「」『』（）〈〉《》.,;:!?()"'“”‘’—…·]+/g, '');
-    t = t.replace(/[᾽᾿’'·.,;:!?()\[\]«»"“”‘]/g, ' ');
-    if (key === 'iliad') {   // 현대 그리스어 음성이 읽을 수 있게 다성조 부호를 단성조로 정리
-      t = t.normalize('NFD').replace(/[\u0313\u0314\u0345]/g, '').replace(/[\u0300\u0342]/g, '\u0301').normalize('NFC');
-    } else if (key === 'meta') {   // 장음·단음 부호 제거
-      t = t.normalize('NFD').replace(/[\u0304\u0306]/g, '').normalize('NFC');
-    }
-    return t.replace(/\s+/g, ' ').trim();
-  }
-  function pickVoice(cands) {
-    var vs = speechSynthesis.getVoices() || [];
-    for (var i = 0; i < cands.length; i++) {
-      var c = cands[i].toLowerCase();
-      for (var j = 0; j < vs.length; j++) {
-        var l = (vs[j].lang || '').replace('_', '-').toLowerCase();
-        if (l === c || l.indexOf(c + '-') === 0) return { voice: vs[j], lang: cands[i] };
-      }
-    }
-    return { voice: null, lang: cands[0], loaded: vs.length > 0 };
-  }
-  function stopSpeaking() {
-    if (!canSpeak) return;
-    speechSynthesis.cancel();
-    if (speakingBtn) { speakingBtn.classList.remove('speaking'); speakingBtn.textContent = '🔊'; speakingBtn = null; }
-  }
-  function flash(btn, msg) {
-    btn.textContent = msg;
-    setTimeout(function () { if (btn.isConnected && !btn.classList.contains('speaking')) btn.textContent = '🔊'; }, 1800);
-  }
-  window.__attachSpeak = function (panel, w, vocabCtx) {
-    if (!canSpeak) return;
-    var host = panel.querySelector('.vocab-actions'); if (!host) return;
-    var key = (vocabCtx && vocabCtx.workKey && LANGS[vocabCtx.workKey]) ? vocabCtx.workKey : detectKey(w.g);
-    if (!key) return;
-    var text = cleanText(key, w.g); if (!text) return;
-    var btn = document.createElement('button');
-    btn.type = 'button'; btn.className = 'speak-btn'; btn.textContent = '🔊';
-    btn.setAttribute('aria-label', '발음 듣기'); btn.title = '브라우저 내장 음성으로 읽기 (현대어 발음 기준)';
-    btn.addEventListener('click', function () {
-      if (speakingBtn === btn) { stopSpeaking(); return; }
-      stopSpeaking();
-      var pv = pickVoice(LANGS[key]);
-      if (!pv.voice && pv.loaded) { flash(btn, '음성 없음'); return; }
-      var u = new SpeechSynthesisUtterance(text);
-      u.lang = pv.lang; if (pv.voice) { try { u.voice = pv.voice; } catch (e) {} } u.rate = 0.85;
-      u.onend = u.onerror = function () { if (speakingBtn === btn) { btn.classList.remove('speaking'); btn.textContent = '🔊'; speakingBtn = null; } };
-      speakingBtn = btn; btn.classList.add('speaking'); btn.textContent = '⏹';
-      speechSynthesis.speak(u);
-    });
-    host.insertBefore(btn, host.firstChild);
-  };
-  if (canSpeak) { try { speechSynthesis.getVoices(); speechSynthesis.addEventListener('voiceschanged', function () {}); } catch (e) {} }
-
   /* ---------- 키보드 이동 ---------- */
   var cur = null;   // { cid, i, wi }
   var OVERLAYS = '.ai-overlay.show, .vocab-flash-modal-overlay.show, .vocab-range-modal-overlay.show, #qsOverlay.show, .mac-dd-menu';
