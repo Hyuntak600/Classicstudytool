@@ -17417,11 +17417,6 @@ window.__RAW_CHAPTER_DATA['data-linesMeta14'] = [
       {
         "g": "ait",
         "pos": "동사",
-        "lemma": "aio, -, -, -"
-      },
-      {
-        "g": "ait",
-        "pos": "동사",
         "lemma": "aio, -, -, -",
         "principalParts": [
           "aio",
