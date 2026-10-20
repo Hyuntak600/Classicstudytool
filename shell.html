@@ -4173,21 +4173,34 @@ function loadChapterScript(fileId) {
   }
   if (__chapterScriptPromises[fileId]) return __chapterScriptPromises[fileId];
 
+  const url = 'data/' + fileId + '.js';
+  const fail = () => new Error(url + ' 파일을 찾을 수 없거나 불러오지 못했습니다. shell.html과 같은 위치에 data 폴더가 있는지 확인하세요.');
+  const done = (resolve, reject) => {
+    const data = window.__RAW_CHAPTER_DATA && window.__RAW_CHAPTER_DATA[fileId];
+    if (!data) reject(new Error(url + ' 를 불러왔지만 __RAW_CHAPTER_DATA[\'' + fileId + '\']가 비어 있습니다.'));
+    else resolve(data);
+  };
+  // 1) fetch(cache:'no-cache')로 "바뀌었는지 서버에 먼저 확인"하고 최신본을 받는다(안 바뀌었으면 304로 빠르게).
+  //    그래서 배포 후 따로 캐시를 지우지 않아도 새 데이터가 바로 반영된다.
+  // 2) fetch가 안 되는 환경(file:// 등)이면 예전처럼 <script src>로 불러온다.
   const p = new Promise((resolve, reject) => {
-    const script = document.createElement('script');
-    script.src = 'data/' + fileId + '.js';
-    script.onload = () => {
-      const data = window.__RAW_CHAPTER_DATA && window.__RAW_CHAPTER_DATA[fileId];
-      if (!data) {
-        reject(new Error('data/' + fileId + '.js 를 불러왔지만 __RAW_CHAPTER_DATA[\'' + fileId + '\']가 비어 있습니다.'));
-        return;
-      }
-      resolve(data);
+    const viaTag = () => {
+      const s = document.createElement('script');
+      s.src = url;
+      s.onload = () => done(resolve, reject);
+      s.onerror = () => reject(fail());
+      document.head.appendChild(s);
     };
-    script.onerror = () => {
-      reject(new Error('data/' + fileId + '.js 파일을 찾을 수 없거나 불러오지 못했습니다. shell.html과 같은 위치에 data 폴더가 있는지 확인하세요.'));
-    };
-    document.head.appendChild(script);
+    if (!window.fetch || location.protocol === 'file:') { viaTag(); return; }
+    fetch(url, { cache: 'no-cache' })
+      .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+      .then(code => {
+        const s = document.createElement('script');
+        s.textContent = code + '\n//# sourceURL=' + url;
+        document.head.appendChild(s);
+        done(resolve, reject);
+      })
+      .catch(viaTag);
   });
   __chapterScriptPromises[fileId] = p;
   return p;
@@ -9039,9 +9052,17 @@ document.addEventListener('keydown', e => {
 })();
 </script>
 <script>
-/* 오프라인·설치(PWA): https(또는 localhost)에서 열렸을 때만 서비스 워커를 등록한다. file:// 로 열면 조용히 건너뛴다. */
-if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
-  window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
+/* 서비스 워커(오프라인 캐시)는 사용하지 않는다. 예전에 설치된 서비스 워커·캐시가 남아 있으면 한 번만 지우고 새로고침한다. */
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.getRegistrations().then(function (regs) {
+      if (!regs.length) return;
+      return Promise.all(regs.map(function (r) { return r.unregister(); }))
+        .then(function () { return window.caches ? caches.keys() : []; })
+        .then(function (keys) { return Promise.all(keys.filter(function (k) { return k.indexOf('seojae-') === 0; }).map(function (k) { return caches.delete(k); })); })
+        .then(function () { location.reload(); });
+    }).catch(function () {});
+  });
 }
 </script>
 </body>

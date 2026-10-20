@@ -20392,6 +20392,39 @@ window.__RAW_CHAPTER_DATA['data-linesMeta14'] = [
     "meter": "‒ ⏑ ⏑ | ‒ ‒ | ‒ ‖ ⏑ ⏑ | ‒ ⏑ ⏑ | ‒ ⏑ ⏑ | ‒ ‒ (penthemimeral caesura)",
     "words": [
       {
+        "g": "congerie",
+        "pos": "nomen",
+        "lemma": "congeries, -ei, f.",
+        "parse": "nom. f. sg.",
+        "gloss_kr": "더위, 더미, 쌓인 재",
+        "gloss_en": "heap, pile",
+        "syntax": "LFG에서 congeries는 문장의 주어(SUBJ) 기능을 수행하며, [PRED 'congeries', NUM sg, CASE nom] 행렬로 나타낸다. 생성문법적으로 [Spec, TP] 위치를 점하며 동사 subvolat과 주어-동사 일치를 이룬다.",
+        "background": "도시의 재와 파멸이 쌓여 만들어진 물리적 잔해를 가리키며, 불사조가 태어나는 모체 역할을 한다.",
+        "etymology": "de Vaan(EDL)은 *congero* (함께 모으다, *gero* 어근)에서 파생된 명사로 본다. PIE *ges- (나르다, 가져오다)에 기원하며, 명사 파생 접미사 *-iē-/*-iō-*가 결합하였다. 현대 영어의 *congest* 및 *congestion* 계열 어휘에 그 흔적이 남는다."
+      },
+      {
+        "g": "congeries",
+        "pos": "nomen",
+        "lemma": "congeries, -ei, f.",
+        "parse": "nom. f. sg.",
+        "gloss_kr": "더위, 더미, 쌓인 재",
+        "gloss_en": "heap, pile",
+        "syntax": "LFG에서 congeries는 문장의 주어(SUBJ) 기능을 수행하며, [PRED 'congeries', NUM sg, CASE nom] 행렬로 나타낸다. 생성문법적으로 [Spec, TP] 위치를 점하며 동사 subvolat과 주어-동사 일치를 이룬다.",
+        "background": "도시의 재와 파멸이 쌓여 만들어진 물리적 잔해를 가리키며, 불사조가 태어나는 모체 역할을 한다.",
+        "etymology": "de Vaan(EDL)은 *congero* (함께 모으다, *gero* 어근)에서 파생된 명사로 본다. PIE *ges- (나르다, 가져오다)에 기원하며, 명사 파생 접미사 *-iē-/*-iō-*가 결합하였다. 현대 영어의 *congest* 및 *congestion* 계열 어휘에 그 흔적이 남는다."
+      },
+      {
+        "g": "media",
+        "pos": "adjectivum",
+        "lemma": "medius, -a, -um",
+        "parse": "nom. f. sg.",
+        "gloss_kr": "한가운데의",
+        "gloss_en": "in the middle of, central",
+        "syntax": "LFG 상에서 media는 명사 congeries를 비제한적으로 수식하는 형용사 자질 구조 [ADJ [PRED 'medius']]를 구성한다. 통사적으로는 명사와 성·수·격 일치를 이룬다.",
+        "background": "재더미의 중심부에서 불사조가 솟아오르는 공간적 중심성을 극적으로 부각시킨다.",
+        "etymology": "PIE *medhyo- (중간의, e급)에서 유래하며, 산스크리트어 *madhyá-* 및 그리스어 *μέσος*와 동계이다. de Vaan(EDL)은 이 형용사가 이탈리아어군 전반에서 공간적 위치를 나타내는 표준 어형으로 정착했음을 밝힌다. 현대 영어의 *medium*, *middle*에 흔적이 완벽히 보존된다."
+      },
+      {
         "g": "tum",
         "pos": "adverbium",
         "lemma": "tum",
@@ -20434,97 +20467,6 @@ window.__RAW_CHAPTER_DATA['data-linesMeta14'] = [
         "syntax": "LFG 관점에서 praepes는 주어 명사구 내의 형용사 수식어로, [SPEC [PRED 'praepes']] 구조를 취한다. 격일치(agreement) 제약에 따라 nom. f. sg. 자질이 명사 congeries와 공유된다.",
         "background": "재비 속에서 솟아오르는 불사조의 날렵하고 신성한 비행 능력을 상징적으로 묘사한다.",
         "etymology": "OLD는 *prae-* (앞에)와 *pet-* (날다, PIE *peth₂-, e급)의 합성어로 분석한다. 산스크리트어 *pátati*('날다')와 그리스어 *πέτομαι*가 동계어이다. 후두음이론에 따라 PIE *peth₂- 에서 파생된 명사/형용사구조가 라틴어에서 고착되었다."
-      },
-      {
-        "g": "congeries",
-        "pos": "nomen",
-        "lemma": "congeries, -ei, f.",
-        "parse": "nom. f. sg.",
-        "gloss_kr": "더위, 더미, 쌓인 재",
-        "gloss_en": "heap, pile",
-        "syntax": "LFG에서 congeries는 문장의 주어(SUBJ) 기능을 수행하며, [PRED 'congeries', NUM sg, CASE nom] 행렬로 나타낸다. 생성문법적으로 [Spec, TP] 위치를 점하며 동사 subvolat과 주어-동사 일치를 이룬다.",
-        "background": "도시의 재와 파멸이 쌓여 만들어진 물리적 잔해를 가리키며, 불사조가 태어나는 모체 역할을 한다.",
-        "etymology": "de Vaan(EDL)은 *congero* (함께 모으다, *gero* 어근)에서 파생된 명사로 본다. PIE *ges- (나르다, 가져오다)에 기원하며, 명사 파생 접미사 *-iē-/*-iō-*가 결합하였다. 현대 영어의 *congest* 및 *congestion* 계열 어휘에 그 흔적이 남는다."
-      },
-      {
-        "g": "media",
-        "pos": "adjectivum",
-        "lemma": "medius, -a, -um",
-        "parse": "nom. f. sg.",
-        "gloss_kr": "한가운데의",
-        "gloss_en": "in the middle of, central",
-        "syntax": "LFG 상에서 media는 명사 congeries를 비제한적으로 수식하는 형용사 자질 구조 [ADJ [PRED 'medius']]를 구성한다. 통사적으로는 명사와 성·수·격 일치를 이룬다.",
-        "background": "재더미의 중심부에서 불사조가 솟아오르는 공간적 중심성을 극적으로 부각시킨다.",
-        "etymology": "PIE *medhyo- (중간의, e급)에서 유래하며, 산스크리트어 *madhyá-* 및 그리스어 *μέσος*와 동계이다. de Vaan(EDL)은 이 형용사가 이탈리아어군 전반에서 공간적 위치를 나타내는 표준 어형으로 정착했음을 밝힌다. 현대 영어의 *medium*, *middle*에 흔적이 완벽히 보존된다."
-      },
-      {
-        "g": "subvolat",
-        "pos": "verbum",
-        "lemma": "subvolo, -are, -avi, -atus",
-        "parse": "pres. act. ind. 3rd pers. sg.",
-        "principalParts": "subvolo – subvolare – subvolavi – subvolatus",
-        "gloss_kr": "위로 날아오른다",
-        "gloss_en": "flies up, soars up",
-        "syntax": "LFG f-구조에서 subvolat은 PRED로서 [PRED 'subvolo<SUBJ>', SUBJ [PRED 'congeries']] 형태의 1항 술어 논항 구조를 지배한다. 생성문법적으로 V-to-T 이동이 일어난 정동사이며, 명시적 목적어 없이 자발적 상승을 나타낸다.",
-        "background": "잿더미 속에서 죽음의 정체를 깨고 새로운 생명으로 비상하는 불사조의 역동적 순간을 표현한다.",
-        "etymology": "OLD는 *sub-* (아래에서 위로)와 *volo* (날다, PIE *gʷelhi- 또는 관련 비행 어근)의 합성어로 본다. 음운론적으로 단모음화와 약화 규칙을 거쳤으며, 로망스어군 내에서 비행을 뜻하는 동사 어휘군과 연결된다. 현대 영어의 *volatile* 등에 어원적 연관성이 있다."
-      },
-      {
-        "g": "et",
-        "pos": "coniunctio",
-        "lemma": "et",
-        "parse": "coord. conj.",
-        "gloss_kr": "그리고",
-        "gloss_en": "and",
-        "syntax": "LFG에서 et는 두 개의 술부(subvolat과 everberat)를 대등하게 연결하는 협응 구조(Coordinated Structure)의 핵으로 작용한다. 생성문법적으로는 [ConjP [Conj' et [VP ...]]] 구조를 형성한다.",
-        "background": "날아오르는 동작과 재를 흩뿌리는 연속적이고 동시적인 두 행위를 매끄럽게 결합시킨다.",
-        "etymology": "PIE *eti (그 위에, 게다가, e급)에서 유래하며, 산스크리트어 *áti*('지나쳐서')와 그리스어 *ἔτι*('여전히')가 동계이다. de Vaan(EDL)은 이것이 라틴어에서 접속사로 기능이 전문화되었음을 설명한다. 현대 로망스어(예: 스페인어 *y*, 포르투갈어 *e*)로 이어지는 과정에서 음운 탈락을 겪었다."
-      },
-      {
-        "g": "cineres",
-        "pos": "nomen",
-        "lemma": "cinis, cineris, m.",
-        "parse": "pl. acc. m.",
-        "gloss_kr": "재, 잿더미",
-        "gloss_en": "ashes",
-        "syntax": "LFG f-구조에서 cineres는 타동사 everberat의 OBJ 논항이며, [PRED 'cinis', CASE acc, θ-ROLE PATIENT] 자질을 갖는다. 통사적으로 동사 뒤에서 대격 지배를 받는다.",
-        "background": "도시가 멸망하여 남은 죽음의 상징인 아르데아의 재를 가리키며, 생명이 태어나는 역설적 공간이다.",
-        "etymology": "PIE *kend- 또는 *koni- (재, 먼지) 계열에서 유래하며, 그리스어 *κόνις*('먼지')와 동계이다. de Vaan(EDL)은 *d*가 *r*로 바뀌는 이탈리아어군의 특수 rhotacism 음운 변화를 거쳤음을 명시한다. 현대 영어의 *cinerary* 등에 그 흔적이 남아 있다."
-      },
-      {
-        "g": "plausis",
-        "pos": "participium",
-        "lemma": "plaudo, -ere, plausi, plausus",
-        "parse": "perf. pass. part. abl. m. pl.",
-        "principalParts": "plaudo – plaudere – plausi – plausus",
-        "gloss_kr": "박수치는, 찰싹 소리 내는",
-        "gloss_en": "clapping, beating",
-        "syntax": "LFG에서 plausis는 독립탈격구문(Ablative Absolute)의 분사 헤드로 기능하며, [ADJUNCT [PRED 'plaudo', SUBJ alīs, CASE abl]] 구조를 형성한다. 생성문법적으로는 수동 분사의 속성이 탈격 명사구 alīs와 일치한다.",
-        "background": "불사조가 날개를 퍼덕이며 공기를 강하게 내리치는 소리와 동작을 청각·시각적으로 생생하게 전달한다.",
-        "etymology": "de Vaan(EDL)은 PIE어근 *plaw- (치다, 박수치다)에서 유래한다고 본다. 구개음화 및 성절음 변화를 겪었으며, 라틴어 독자적 어근 확장을 보였다. 현대 영어의 *applaud*, *applause*에 직접적인 어원적 흔적이 보존된다."
-      },
-      {
-        "g": "everberat",
-        "pos": "verbum",
-        "lemma": "everbero, -are, -avi, -atus",
-        "parse": "pres. act. ind. 3rd pers. sg.",
-        "principalParts": "everbero – everberare – everberavi – everberatus",
-        "gloss_kr": "세차게 때리다, 채찍질하다",
-        "gloss_en": "beats, strikes repeatedly",
-        "syntax": "LFG f-구조에서 everberat은 PRED이며, [PRED 'everbero<SUBJ,OBJ>', SUBJ [PRED 'congeries'], OBJ [PRED 'cinis']] 자질 행렬을 구성한다. 통사적으로 주어와 목적어를 모두 지배하는 2항 타동사이다.",
-        "background": "날개를 강하게 움직여 바닥의 재를 사방으로 휘날리게 하는 불사조의 강력한 비상력을 묘사한다.",
-        "etymology": "OLD는 *ex-* (밖으로, 강조)와 *verbero* (때리다, *verber* 채찍에서 유래)의 합성어로 분석한다. PIE 기원에 대해서는 명확한 재구가 논쟁적이나, 이탈리아어군 내부의 도구적 명사 파생 동사로 발전했다. 현대 영어의 *vibrate* 계열과 간접적 의미적 유사성을 지닌다."
-      },
-      {
-        "g": "alis",
-        "pos": "nomen",
-        "lemma": "ala, -ae, f.",
-        "parse": "pl. abl. f.",
-        "gloss_kr": "날개로",
-        "gloss_en": "with wings",
-        "syntax": "LFG 관점에서 alis는 독립탈격구문 내에서 수단(Instrument)을 나타내는 OBL_INST 기능을 하며, [OBL_INST [PRED 'ala', CASE abl]]로 처리된다. 통사적으로 분사 plausis의 행위 수단 논항이다.",
-        "background": "불사조가 공중으로 솟구칠 때 사용하는 신성한 날개를 지칭하며, 변신의 수단을 구체화한다.",
-        "etymology": "Ernout-Meillet(DELL)은 고대 라틴어 형태 *axla*에서 축약된 것으로 보며, PIE *aksla- (어깨, *aks- 축 어근, e급)에서 유래했다고 분석한다. 그리스어 *ἄξων*과 동계이며, 어두 자음군 변화를 거쳤다. 현대 스페인어 *ala*, 포르투갈어 *asa* 및 영어 *aile*, *aileron*에 그 흔적이 뚜렷이 남는다."
       }
     ]
   },
