@@ -20651,6 +20651,8 @@ window.__RAW_CHAPTER_DATA['data-linesMeta14'] = [
         "background": "적에게 정복되어 주권과 영광을 상실한 아르데아의 비운의 역사적 현실을 직시하게 만든다.",
         "etymology": "PIE *kap- (잡다, 쥐다, e급)에서 유래하며, 산스크리트어 *kapati* 및 게르만어파의 동계어들과 연결된다. de Vaan(EDL)은 3상 승계 동사 체계에서의 변화를 설명한다. 현대 영어의 *capture*, *captive*에 흔적이 뚜렷하다."
       },
+    ]
+  },
   {
     "ref": "Metamorphoses 15.579",
     "trans": "(함락된) 도시에 마땅히 어울리는 모든 것(비참함) 속에서도, 그 도시의 이름만큼은 그곳에 그대로 남아 있었습니다",
