@@ -12584,5 +12584,1136 @@ window.__RAW_CHAPTER_DATA['data-linesIliad24'] = [
         "etymology": "PIE 어근 *genh₁-('태어나다, 되다', cf. 산스크리트어 jajanti, 라틴어 gigno, genus, 영어 gift, kin)에서 유래하였다. Chantraine(DELG)은 현재 어간의 중복(*gi-gn-omai)과 2부정과거 어간 *e-gen-onto > ἐγένοντο의 모음 교체(e-급) 과정을 상세히 기술한다. Beekes(EDG)는 후두음 h₁을 포함한 PIE *genh₁- 어근 분석을 통해 영급 어간과 e-급 어간의 교체 체계를 완벽히 증명한다. 현대 그리스어에서는 γίνομαι(ginomai - 되다) 형태로 일상어에서 가장 빈번하게 사용되는 핵심 동사로 살아있다."
       }
     ]
+  },
+  {
+    "ref": "Iliad 6.791",
+    "trans": "우선 그들은 검은 포도주로 불길이 미친 곳의 붉은 숯불을 모두 껐으니,",
+    "words": [
+      {
+        "g": "πρῶτον",
+        "pos": "부사",
+        "lemma": "πρῶτος, πρώτη, πρῶτον",
+        "parse": "sg.acc.n.",
+        "gloss_kr": "먼저, 우선",
+        "gloss_en": "first, in the first place",
+        "syntax": "LFG f-구조에서 πρῶτον은 문장 전체의 시상/순서적 구조를 수식하는 ADJUNCT 기능을 담당하며, 속성-값 행렬로는 [ADJUNCT [PRED 'πρῶτον', FOCUS +]]로 나타낸다. 생성문법 VP-부화어(VP-adjunct) 위치에서 기저 생성되어 절 전체의 시간적 전후 관계를 표시하며, [CP [AdvP πρῶτον]ᵢ ... [VP tᵢ [VP σβέσαν ...]]]와 같이 CP 주두(CP specifier)로의 표면적 전위를 통해 순서화의 담화 초점을 확보한다. 레빈슨式 화용론 관점에서는 연속적 장례 의식 절차의 개시를 알리는 담화 표지자(discourse marker) 역할을 수행한다.",
+        "background": "장례 구문 서사의 첫 단계로서 화장터의 불길을 잡는 유해 수습의 개시를 고지한다. 그리스 장례 관습에서 시신이 불에 탄 직후 포도주로 불을 끄는 행위는 사자의 영혼을 안치하고 고귀한 유골을 보존하기 위한 필수적 정화 의식이다. 일리아스 전반에서 영웅의 장례 장면이 갖는 비극적 정서의 긴장감을 첫 마디부터 고조시킨다.",
+        "etymology": "Beekes(EDG)는 PIE *pr̥h₁-wo-s(최상급 접미사 *-m̥/wo-가 결합된 형태, 후두음 *h₁ 및 영급 어간 보유)에서 파생된 그리스어 πρότερος, πρό의 최상급 형용사가 부사적으로 격 고정(frozen case)된 것으로 본다. 산스크리트어 pūrva-('이전의'), 슬라브조어 *pьrvъ('첫째의')가 직접적인 동계어이다. *pr̥h₁-에서 초음 자음군 탈락 및 모음화 과정을 거쳐 아티카-이오니아 도식 음운 변동을 겪었으며, 현대 그리스어에서도 똑같이 πρώτον('첫째로')이라는 일상 부사로 남아 사용된다."
+      },
+      {
+        "g": "μὲν",
+        "pos": "소사",
+        "lemma": "μέν",
+        "parse": "postpos.coord.conj.",
+        "gloss_kr": "한편, ~는",
+        "gloss_en": "on the one hand, indeed",
+        "syntax": "후행하는 792행의 αὐτὰρ(대조 접속사)와 문법적으로 공응(co-indexation)하여 [μὲν ... αὐτὰρ ...] 대구 구조를 형성한다. LFG c-구조상 C° 또는 T°의 보조적 접어(clitic) 자리에 위치하며, f-구조에서는 절간 대조 정보구조 자질 [CLAUSE_LINK [TYPE contrast, PAIRING coordinative]]을 할당한다. HPSG 구조표시로 나타내면 [HEAD conj, MARKING men, SISTER [MARKING autar]] 자질 행렬을 구성한다.",
+        "background": "장례 의식의 제1단계(포도주로 불끄기)와 제2단계(유골 수습하기)를 문법적으로 대조하며 서사의 호흡을 조절하는 호메로스 시가 특유의 접속 소사이다. 청자로 하여금 첫 행위의 완료 뒤에 이어질 다음 장례 절차에 주목하게 만드는 서사적 유인 효과를 지닌다.",
+        "etymology": "Chantraine(DELG)과 Frisk(GEW)는 PIE 시상/확증 소사 *mēn / *mŏn에서 유래한 것으로 본다(e-급/o-급 교체). 히타이트어 ma-an('만약, ~할 때') 및 고대 라틴어 mēne가 동계어 관계에 있다. 그리스어 내에서 e-급 원형이 단모음화되어 접속 후치 접어(postpositive clitic)로 정착하였으며, 현대 그리스어의 대조 표현 및 문어체 관용구 문맥 속에 그 형태적 흔적이 유지되어 있다."
+      },
+      {
+        "g": "κατὰ",
+        "pos": "전치사",
+        "lemma": "κατά",
+        "parse": "prep.gen.",
+        "gloss_kr": "위에서 아래로, ~을 따라",
+        "gloss_en": "down over, throughout",
+        "syntax": "속격(genitive) 명사구 πυρκαϊὴν을 통사적으로 지배(government)하는 전치사구(PP) 핵이다. 생성문법 P-PP 구구조 규칙에 따라 [PP [P κατὰ] [DP πυρκαϊὴν]]을 형성하며, 동사 σβέσαν의 공간적 확장 영역을 지정하는 부속어(ADJUNCT) 역할을 수행한다. LFG f-구조 관점에서는 [PRED 'κατά<OBJ>', OBJ [PRED 'πυρκαϊή', CASE gen], θ-ROLE PATH/EXTENT] 속성-값 행렬로 분석된다.",
+        "background": "포도주를 화장터 불길 전체 위에 부어 내리는 상하 방향의 공간적 이동과 불길 전체를 덮는 망라성을 수사적으로 강조한다. 화장터라는 한정된 공간 전체에 액체가 쏟아지는 시각적 이미지 연출을 도모한다.",
+        "etymology": "Beekes(EDG)는 PIE 방향 부사 *km̥ta('아래로, ~와 함께', 영급 어간)에서 파생된 것으로 풀이한다. 히타이트어 kattan('아래에'), 고대 웰스어 cant('와 함께')가 대표적인 동계어이다. 음운론적으로 모음 사이의 비음 탈락 및 음절 축약을 거쳐 그리스어 κατά로 정착하였으며, 현대 그리스어에서도 전치사 및 합성어 접두사(예: καταστροφή)로 넓게 남아있다."
+      },
+      {
+        "g": "πυρκαϊὴν",
+        "pos": "명사",
+        "lemma": "πυρκαϊή, πυρκαϊῆς, ἡ",
+        "parse": "sg.acc.f.",
+        "gloss_kr": "화장터, 장작더미",
+        "gloss_en": "funeral pyre",
+        "syntax": "전치사 κατὰ의 통사적 목적어로서 속격/대격 구문 중 이오니아-호메로스 이형태 대격 표지(-ην)를 취한다. LFG f-구조상 전치사 핵의 내적 논항인 [OBJ [PRED 'πυρκαϊή', GEND fem, NUM sg, CASE acc]]로 표현된다. 생성문법적으로는 PP 내부 DP 핵으로 기능하여 공간적 지형 한계를 설정하는 X-bar 구구조 [DP [D' [D -ν] [NP πυρκαϊη]]]를 구성한다.",
+        "background": "시신을 화장하고 남은 재와 불씨가 여전히 거세게 남아있는 장작더미 장소를 가리킨다. 파트로클로스나 헥토르의 장례식 등 영웅 서사시의 핵심적 클라이맥스 공간을 형성하는 중대한 시적 어휘이다.",
+        "etymology": "LSJ와 Chantraine(DELG)에 따르면, 이 단어는 '불'을 뜻하는 πῦρ(PIE *púh₂r, 영급/e-급 어근 후두음 *h₂ 포함)와 '키우다, 태우다'를 뜻하는 καίω(PIE *ka-ew- 어근 추정)의 합성어 파생 명사이다. 고대 영어 fȳr, 고대 고지 독일어 fiur가 πῦρ의 게르만어파 동계어이다. 파생 과정에서 자음 모음 결합에 따른 어간 모음 장음화(아티카 -bar{α} / 이오니아 -η)를 겪었으며, 현대 그리스어 πυρκαγιά('대형 화재, 불길')로 그 형태와 의미가 승계되었다."
+      },
+      {
+        "g": "σβέσαν",
+        "pos": "동사",
+        "principalParts": "σβέννυμι – σβέσω – ἔσβεσα – ἔσβηκα – ἔσβεσμαι – ἐσβέσθην",
+        "parse": "3rd.pl.aor.ind.act.",
+        "gloss_kr": "그들이 껐다",
+        "gloss_en": "they quenched, extinguished",
+        "syntax": "절의 주술어(PRED) 핵으로서 타동사적 부정과거(sigmatic aorist) 형태이다. LFG f-구조 관점에서 [PRED 'σβέννυμι<SUBJ,OBJ>', SUBJ [pro, NUM pl, PERS 3rd], OBJ [PRED 'μένος', CASE acc]] 구조를 취하며, 주어 pro는 후행하는 793행의 κασίγνητοί θ᾽ ἕταροί τε와 통사적으로 통제(control) 관계를 맺는다. 생성문법 VP 구조 내에서 [VP [DP αἴθοπι οἴνῳ]ᵢ [V' σβέσαν [DP πᾶσαν ...]]]와 같이 도구격 DP를 부화어로 거느린다.",
+        "background": "맹렬한 화마를 포도주로 제압하는 액션의 완결성(aoristic aspect)을 나타낸다. 미완료 과거와 달리 동작의 완결과 즉각적인 불길의 소멸을 전제하여 다음 장례 작업으로 넘어가는 전환점을 형성한다.",
+        "etymology": "Beekes(EDG)는 PIE *sgʷes-('끄다, 소멸하다', e-급 어간)에서 파생된 것으로 분석한다. 고대 슬라브어 u-gasiti('끄다'), 림부르크어 qus('소멸한')가 동계어이다. 그리스어 내에서 Sibilant-자음 결합 및 부정과거 시그마(-σ-) 어간 삽입 과정에서 어간 모음 교체를 거쳐 σβέ-σ-αν 형태가 형성되었다(호메로스식 증음 ἔ- 생략). 현대 그리스어 σβήνω('불을 끄다')에 직접적 어원적 자취가 유지되고 있다."
+      },
+      {
+        "g": "αἴθοπι",
+        "pos": "형용사",
+        "lemma": "αἶθοψ, αἴθοπος",
+        "parse": "sg.dat.m.",
+        "gloss_kr": "빛나는, 붉게 타오르는 듯한",
+        "gloss_en": "fiery-looking, sparkling, dark red",
+        "syntax": "명사 οἴνῳ를 직접 수식하는 도구격 수식어(ADJUNCT) 형용사이다. LFG f-구조상 [ADJUNCT [PRED 'αἶθοψ', CASE dat, NUM sg, GEND masc]]로 나타난다. 통사적으로 수식 대상 DP 내에서 전치 배치되어 운율적 스폰데이오스 운각을 형성하며, 도구격 의미역(INSTRUMENT) 배정을 정밀화한다.",
+        "background": "포도주의 색깔과 질감을 묘사하는 호메로스 고유의 정형적 수식어(formulaic epithet)이다. 붉고 진한 진품 포도주가 붉은 숯불 위에 쏟아지는 색채적 대조의 시적 수사법을 극대화한다.",
+        "etymology": "LSJ와 Frisk(GEW)는 '타오르다'의 αἴθω(PIE *h₂eydʰ-, e-급 어근 및 후두음 *h₂ 포함)와 '얼굴, 눈'을 뜻하는 ὤψ(PIE *okʷ-, o-급 복합어 어간)의 합성어로 본다. 라틴어 aedes('성전', 원래 '화로'), 산스크리트어 édhas('땔나무')가 αἴθω의 동계어이다. 복합어 자음 합성 과정에서 모음 수축 및 영급-o급 교체를 거쳐 형성되었으며, 고전 시어 이외의 일상 언어에서는 도태되어 화석화된 영웅 서사시 전용 어휘로 남았다."
+      },
+      {
+        "g": "οἴνῳ",
+        "pos": "명사",
+        "lemma": "οἶνος, οἴνου, ὁ",
+        "parse": "sg.dat.m.",
+        "gloss_kr": "포도주로",
+        "gloss_en": "with wine",
+        "syntax": "동사 σβέσαν의 도구 격(dative of instrument) 논항이다. LFG f-구조 관점에서 [OBL_INST [PRED 'οἶνος', CASE dat, NUM sg]] 기능으로 표상된다. 생성문법 vP 내부 부화어 위치에 병합되어, 술어의 행위 수단을 규정하는 [PP/DP [D' οἴνῳ]] 형태의 격 구구조를 이룬다.",
+        "background": "물이 아닌 포도주로 정화하고 고귀한 영웅의 유골을 씻겨내는 최고급 장례 정화 의식의 매개물이다. 고대 그리스 희생 제의 및 위령제(libation)에서 포도주가 갖는 신성한 차원을 드러낸다.",
+        "etymology": "Beekes(EDG)는 이 단어를 PIE *wey-n-o-('덩굴, 포도주') 파생어로 보거나, 선그리스어(Pre-Greek) 또는 셈어족 차용어(cf. 히브리어 יַיִן yayin, 아랍어 wain)로 풀이한다. 라틴어 vinum, 고대 아르메니아어 gini가 직접적인 동계어이다. 호메로스 시대에는 초음 디감마(digamma, *ϝοῖνος /woinos/)가 발음되었으나 직조 과정에서 탈락하였다. 현대 그리스어 κρασί에 일상어 자리를 내주었으나, oenology(포도주학) 등 현대 학술어에 어원이 영구히 보존되어 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 6.792",
+    "trans": "불의 기세가 미친 전 영역을. 그러고 나서 그 뒤에",
+    "words": [
+      {
+        "g": "πᾶσαν,",
+        "pos": "형용사",
+        "lemma": "πᾶς, πᾶσα, πᾶν",
+        "parse": "sg.acc.f.",
+        "gloss_kr": "모든, 전체의",
+        "gloss_en": "all, the whole",
+        "syntax": "791행의 πυρκαϊὴν을 문행 수식(행간걸침, enjambment)하는 한정어(DETERMINER/QUANTIFIER)이다. LFG f-구조에서 앞 행의 OBJ 속성 내 한정사 [SPEC [QUANT 'πᾶς', CASE acc, GEND fem, NUM sg]]로 통합(unification)된다. 생성문법적으로는 행간 이동을 거친 도치 구조 [DP πᾶσανᵢ ... [NP tᵢ]]로 분석된다.",
+        "background": "불이 꺼진 범위가 불꽃 일부가 아닌 화장터 전체였음을 나타내는 강조적 행간걸침(enjambment) 표현이다. 첫 행의 문맥을 두 번째 행의 첫 단어로 이어받아 서사적 완결성을 높인다.",
+        "etymology": "Beekes(EDG)는 PIE *pant-s(영급/e-급 교체 어간 *pant- / *pt-)에서 파생된 것으로 본다. 산스크리트어 pánta-('모든')가 동계어로 언급된다. 어간 끝 자음과 여성 접미사 *-ya가 결합할 때 자음군 변화(*pant-ya -> *pansa -> πᾶσα) 및 보상성 장음화(compensatory lengthening)를 거쳐 형성되었다. 현대 그리스어에서도 똑같이 σύμπας, πᾶς(격식체) 및 현대형 όλα/πάσα로 널리 쓰인다."
+      },
+      {
+        "g": "ὁπόσσον",
+        "pos": "대명사",
+        "lemma": "ὁπόσος, ὁπόση, ὁπόσον",
+        "parse": "sg.acc.n.",
+        "gloss_kr": "얼마만큼, ~한 만큼 전체",
+        "gloss_en": "as much as, as far as",
+        "syntax": "관계절(relative clause)을 이끄는 관계대명사 핵이다. LFG f-구조상 관계절 COMP의 양화사 자질 [SPEC [RELQUANT 'ὁπόσος', CASE acc]]을 담당한다. 생성문법 X-bar 이론상 [CP [DP ὁπόσσον]ᵢ [C' [TP ... tᵢ]]] 구조의 Spec-CP 자리를 점유하여 선행사 구역의 양적 한계를 제한한다.",
+        "background": "불길이 잔재하고 있던 구역의 범위를 정밀하게 한정하는 관계절 구문을 형성한다. 남아있는 작은 불씨 하나조차 남기지 않고 포도주로 제압했음을 시사한다.",
+        "etymology": "LSJ와 Chantraine(DELG)에 따르면, 이 단어는 관계사 의문 어근 PIE *kʷo- / *kʷoti-와 수량 접미사 *-tyos가 결합한 복합 형태이다. 라틴어 quantus가 동계어 관계에 있다. 호메로스 이오니아 방언의 특성상 쌍자음 -σσ- 표기(아티카 방언의 -σ-)를 유지하고 있으며, 현대 그리스어의 όσο / 이동 관계사 형태의 기초가 되었다."
+      },
+      {
+        "g": "ἐπέσχε",
+        "pos": "동사",
+        "principalParts": "ἐπέχω – ἐφέξω – ἐπέσχον – ἐπέσχηκα – ἐπέσχημαι – ἐπεσχέθην",
+        "parse": "3rd.sg.aor.ind.act.",
+        "gloss_kr": "미쳤다, 자리를 차지했다",
+        "gloss_en": "reached, extended over, covered",
+        "syntax": "관계절 내부의 PRED 동사 핵이다. LFG 관점에서 [PRED 'ἐπέχω<SUBJ,OBJ>', SUBJ [PRED 'μένος', CASE nom], OBJ [PRED 'ὁπόσσον', CASE acc]] 구조를 이룬다. 무증음 부정과거 형태가 아닌 정규 과거 증음(augment ἐ-)이 적용된 형태이다.",
+        "background": "불길이 불꽃과 열기로 도달하여 지배했던 범위 전체를 서술한다. 불의 사나운 기세가 미쳤던 공간적 범주를 역동적인 동사로 표상한다.",
+        "etymology": "전치사 ἐπί(PIE *epi)와 동사 ἔχω(PIE *seSegmentation 어근 *seǵʰ- '쥐다, 지배하다', e-급 어간)의 합성어이다. 산스크리트어 sáhate('견디다, 자리를 차지하다'), 고대 영어 sige('승리')가 ἔχω의 동계어이다. 어두 s-의 기식화(s -> h -> 탈락) 및 전치사 모음 축합을 거쳐 ἐπέχω의 부정과거 어간 -σχ-이 형성되었다. 현대 그리스어에도 ἐπέχω('중요성을 띠다, 자리를 차지하다')로 남아 있다."
+      },
+      {
+        "g": "πυρὸς",
+        "pos": "명사",
+        "lemma": "πῦρ, πυρός, τό",
+        "parse": "sg.gen.n.",
+        "gloss_kr": "불의",
+        "gloss_en": "of fire",
+        "syntax": "명사 μένος를 통사적으로 수식하는 속격 보충어(GENITIVE COMPLEMENT)이다. LFG f-구조상 [POSS/COMP [PRED 'πῦρ', CASE gen]] 기능이다. 생성문법적으로 주어 DP 내부의 N' 수식어 위치 [NP [N' [N μένος] [DP πυρὸς]]]에 병합된다.",
+        "background": "파괴적이고 거친 자연 인자로서의 '불'을 지정한다. 영웅의 유해를 태워 영혼을 하데스로 보낸 불의 본질적 속성을 드러낸다.",
+        "etymology": "Beekes(EDG)는 PIE *púh₂r(명사 중성 자음 어간, 영급/e-급 어간)에서 파생된 것으로 풀이한다. 고대 체코어 pýř('달아오른 재'), 고대 영어 fȳr(현대 영어 fire)가 확실한 동계어이다. 속격 변형 시 어간 이형태(r/n 어간 교체 흔적)를 보이며, 현대 그리스어에서도 πυρ-(소방, 화재 관련 결합어) 및 πῦρ(문어) 형태로 보존되어 있다."
+      },
+      {
+        "g": "μένος:",
+        "pos": "명사",
+        "lemma": "μένος, μένεος, τό",
+        "parse": "sg.nom.n.",
+        "gloss_kr": "기세, 분노, 힘",
+        "gloss_en": "might, force, fury",
+        "syntax": "관계절의 통사적 주어(SUBJ)이다. LFG f-구조상 [SUBJ [PRED 'μένος', CASE nom, NUM sg, GEND neut]]로 표상된다. 영격(neuter nominative) 형태로서 동사 ἐπέσχε의 주어 역할을 담당한다.",
+        "background": "단순한 물리적 불꽃이 아니라, 사나운 생명력과 격노를 지닌 의인화된 정령으로서의 불의 '기세'를 묘사한다. 인간의 분노(μῆνις)와 호응하는 자연물의 격렬함을 비유한다.",
+        "etymology": "Beekes(EDG)는 PIE *men-('생각하다, 정신적 힘을 쏟다', e-급 어간)에서 파생된 -es- 중성 명사로 본다. 산스크리트어 mánas-('정신, 힘'), 라틴어 mens('정신')가 직접 동계어이다. 어간 파생 과정에서 자음 변화 없이 중성 명사 격변화 틀을 유지하였다. 현대 그리스어에서는 직접적 단독 명사보다는 어원적 파생어 속에 그 의미 흔적이 남아 있다."
+      },
+      {
+        "g": "αὐτὰρ",
+        "pos": "접속사",
+        "lemma": "αὐτάρ",
+        "parse": "coord.conj.",
+        "gloss_kr": "그러나, 그러고 나서",
+        "gloss_en": "but, but then, thereupon",
+        "syntax": "791행의 μὲν과 호응하는 절 연결 대조 접속사(coordinating conjunction)이다. LFG f-구조상 상위 절 연결 자질 [DISCOURSE [TOPIC_CHANGE +]]을 부여하며, 생성문법적으로 새로 시작하는 CP의 C° 위치에 보충어지시자(complementizer)로 병합된다.",
+        "background": "불을 끄는 정화 작업(1단계)이 끝나고, 뼈를 거두어 모으는 슬픈 유해 수습 작업(2단계)으로 서사의 전환이 일어남을 알려주는 중요한 전환 접속사이다.",
+        "etymology": "Chantraine(DELG)은 지시 대명사 어근 *au-('그의, 다시')와 대조 접속사 ἄρ / ἄρα의 결합 복합어로 본다. 라틴어 aut('혹은'), 고대 페르시아어 a-va('저것')가 동계 요소이다. 서사시 운율에 맞춰 알파 모음 단축을 거쳐 형성되었으며, 서사시 고유 어휘로서 후대 아티카 산문에서는 ἅμα나 ἔπειτα 등으로 대체되었다."
+      },
+      {
+        "g": "ἔπειτα",
+        "pos": "부사",
+        "lemma": "ἔπειτα",
+        "parse": "adv.",
+        "gloss_kr": "그 다음에, 이후에",
+        "gloss_en": "then, thereupon, thereafter",
+        "syntax": "시간적 순서를 지정하는 시상 부사(ADJUNCT)이다. LFG f-구조상 [ADJUNCT [PRED 'ἔπειτα', TIME_ORDER sequent]]로 분석된다. 절 문두 부화어로 위치하여 시간적 선후 관계를 선명하게 드러낸다.",
+        "background": "장례 절차의 시간적 선후성을 보장하여 의식의 격식과 신성함을 강조한다. 순차적으로 진행되는 서사의 일련성에 정당성을 부여한다.",
+        "etymology": "전치사 ἐπί와 지시 부사 εἶτα('그 다음에')의 합성어이다. 그리스어 내부 합성 과정에서 모음 엘리전(elision)을 거쳐 ἔπειτα로 확정되었다. 현대 그리스어에도 동일한 형태와 의미(ἔπειτα '그 후에')로 완벽히 승계되어 사용된다."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 6.793",
+    "trans": "하얀 뼈를 형제들과 동료들이 거두어 모았으니,",
+    "words": [
+      {
+        "g": "ὀστέα",
+        "pos": "명사",
+        "lemma": "ὀστέον, ὀστέου, τό",
+        "parse": "pl.acc.n.",
+        "gloss_kr": "뼈들을",
+        "gloss_en": "bones",
+        "syntax": "동사 λέγον토의 직접 목적어(OBJ)이다. LFG f-구조에서 [OBJ [PRED 'ὀστέον', NUM pl, GEND neut, CASE acc]]로 구성된다. 생성문법 VP 구구조상 동사의 내적 논항 위치 [VP [DP ὀστέα λευκὰ] [V' λέγον토]]에 병합된다.",
+        "background": "화장 후 장작더미 재 속에서 남은 영웅의 육체적 잔재이다. 고대 그리스에서 유골은 고인의 영혼과 정체성이 담긴 마지막 정수로 여겨졌다.",
+        "etymology": "Beekes(EDG)는 PIE *h₃est-h₁- / *h₂ost-('뼈', 후두음 *h₃/*h₁ 포함)에서 파생된 것으로 풀이한다. 라틴어 os(속격 ossis), 산스크리트어 ásthi, 고대 아르메니아어 oskr가 직접적인 동계어이다. 그리스어 내에서 중성 명사 파생 어미 -ον이 결합하여 ὀστέον이 되었으며, 현대 그리스어에서도 ὀστό / κόκκαλο로 이어진다."
+      },
+      {
+        "g": "λευκὰ",
+        "pos": "형용사",
+        "lemma": "λευκός, λευκή, λευκόν",
+        "parse": "pl.acc.n.",
+        "gloss_kr": "하얀, 빛나는",
+        "gloss_en": "white",
+        "syntax": "명사 ὀστέα를 한정 수식하는 수식어(ADJUNCT) 형용사이다. LFG f-구조상 [ADJUNCT [PRED 'λευκός', CASE acc, NUM pl, GEND neut]]로 분석된다.",
+        "background": "불에 타 깨끗해진 유골의 색채를 묘사한다. 붉은 화염 및 진한 포도주 색깔과 극적인 시각적 대조를 이루며, 죽음의 순결함과 장엄함을 강조한다.",
+        "etymology": "Beekes(EDG)는 PIE *leuk-('빛나다, 밝다', e-급 어근)에서 유래한 것으로 본다. 라틴어 lux('빛'), lucidus('밝은'), 고대 영어 lēoht(현대 영어 light)가 동계어이다. e-급 어간에 명사/형용사 파생 접미사 *-ko-가 결합하여 형성되었다. 현대 그리스어에서도 λευκός('하얀색의')로 정규 사용된다."
+      },
+      {
+        "g": "λέγοντο",
+        "pos": "동사",
+        "principalParts": "λέγω – λέξω – ἔλεξα – (미상) – εἴλεγμαι – ἐλέχθην",
+        "parse": "3rd.pl.impf.ind.mid.",
+        "gloss_kr": "그들이 모았다, 수습했다",
+        "gloss_en": "they collected, gathered for themselves",
+        "syntax": "주절의 PRED 동사 핵으로, 중간태(middle voice) 미완료 과거 형태이다. LFG 관점에서 중간태는 자발적/이해관계성을 부여하여 [PRED 'λέγω<SUBJ,OBJ>', SUBJ [PRED 'कασίγνητοι...', CASE nom], OBJ [PRED 'ὀστέα', CASE acc], VOICE middle-benefactive]로 분석된다. 통사적 주어와 행위의 수혜자가 동일함을 나타낸다.",
+        "background": "단순히 물건을 줍는 것이 아니라, 애통한 마음으로 유골을 하나하나 줍는 정성스러운 수습 행위를 나타낸다. 중간태 용법을 통해 유족들이 자신들의 슬픔과 의무를 위해 유골을 거두는 내면적 태도를 드러낸다.",
+        "etymology": "Beekes(EDG)는 PIE *leg-('모으다, 줍다', e-급 어간)에서 파생된 것으로 본다. 라틴어 legere('모으다, 읽다'), 알바니아어 mbledh('모으다')가 동계어이다. 본래 '모으다'라는 물체 수집의 의미에서 후대에 '말을 모아 하다(말하다)'라는 의미 분화가 일어났다. 현대 그리스어에서는 '말하다'의 의미(λέω)가 주가 되었으나, 모으다의 고어적 용법도 보존되어 있다."
+      },
+      {
+        "g": "κασίγνητοί",
+        "pos": "명사",
+        "lemma": "κασίγνητος, κασιγνήτου, ὁ",
+        "parse": "pl.nom.m.",
+        "gloss_kr": "형제들이",
+        "gloss_en": "brothers, kinsmen",
+        "syntax": "등가 접속사 θ᾽로 ἕταροί와 연결된 복합 주어(COORDINATED SUBJ)의 첫 번째 NP 핵이다. LFG f-구조상 [SUBJ [COORD_SET {[PRED 'κασίγνητος'], [PRED 'ἕταρος']}, CASE nom, NUM pl]]의 한 요소이다.",
+        "background": "혈연으로 묶인 진정한 친족들을 가리킨다. 영웅의 장례에서 유골 수습은 타인이 아닌 가장 가까운 혈족과 전우들에게 부여된 거룩한 의무였다.",
+        "etymology": "LSJ에 따르면, 이 단어는 '같은, 함께'를 뜻하는 κάσις와 '태어난'을 뜻하는 κασί-γνητος(PIE *ǵn̥h₁-to-s, 영급 어간 및 후두음 *h₁ 포함)의 복합어이다. 라틴어 gnatus / natus('태어난'), 산스크리트어 jātá-가 -γνητος 부위의 동계어이다. 어간 결합 시 영급 어간 모음화 과정을 거쳤으며, 호메로스 고유 시어로 기능한 뒤 후대 일반 명사 ἀδελφός에 자리를 내주었다."
+      },
+      {
+        "g": "θ᾽",
+        "pos": "접속사",
+        "lemma": "τέ",
+        "parse": "coord.conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "두 주어 명사구(κασίγνητοί와 ἕταροί)를 대등하게 연결하는 후치 접어 접속사(postpositive enclitic conjunction)이다. 모음 모음 결합(ἕ- 앞)에 따라 모음 엘리전(τέ -> τ' -> θ' 무성 유음화)을 일으킨다.",
+        "background": "형제들과 전우들을 등격으로 묶어주어, 혈연과 전우애가 동등하게 깊은 슬픔을 공유하고 있음을 보여준다.",
+        "etymology": "Beekes(EDG)는 PIE *kʷe('그리고')에서 유래한 것으로 본다. 라틴어 -que, 산스크리트어 ca가 완벽한 동계어이다. PIE 연구음 *kʷ가 그리스어 치음 τ로 음운 변화(전설모음 앞 치음화)하였다. 고전기 이후 사용 빈도가 감소하였다."
+      },
+      {
+        "g": "ἕταροί",
+        "pos": "명사",
+        "lemma": "ἕταρος, ἑτάρου, ὁ",
+        "parse": "pl.nom.m.",
+        "gloss_kr": "전우들이, 동료들이",
+        "gloss_en": "comrades, companions",
+        "syntax": "접속사 τε로 연결된 복합 주어의 두 번째 NP 핵이다. LFG f-구조상 [SUBJ [COORD_SET {..., [PRED 'ἕταρος', CASE nom, NUM pl]}]]로 분석된다.",
+        "background": "전장에서 생사를 함께한 거친 전우(전우애의 주체)들을 가리킨다. 혈족인 형제들과 함께 유골을 거두는 주체로 등장함으로써 서사시적 유대감을 극대화한다.",
+        "etymology": "Beekes(EDG)는 PIE *swe-t-aro-('자신의 무리, 동료', 어근 *swe- '자신의')에서 파생된 것으로 본다. 산스크리트어 svatas, 고대 고지 독일어 swas('자신의')가 동계어이다. 초기 그리스어의 초음 모음 변화 및 어간 접미사 형성을 거쳐 ἕταρος(아티카 방언 ἑταῖρος)가 되었다. 현대 그리스어 εταιρεία('회사, 사회')의 어원이 된다."
+      },
+      {
+        "g": "τε",
+        "pos": "접속사",
+        "lemma": "τέ",
+        "parse": "coord.conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "주어 연성 구조를 마무리하는 후치 접어 접속사이다. [A τε B τε] 또는 [A θ' B τε] 상관 접속 구조를 완결하여, 두 명사구가 결합된 단일 주어 집합임을 통사적으로 표시한다.",
+        "background": "형제와 전우라는 두 집단이 하나의 마음으로 합쳐져 장례 행위를 수행하고 있음을 운율과 통사 구조를 통해 운치 있게 표현한다.",
+        "etymology": "위의 θ᾽(τέ) 항목 참조. 이중 접어 구조(correlative connection)로서 고대 인도유럽어족 시적 구문의 전형적 유산이다."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 6.794",
+    "trans": "슬피 눈물 흘리며, 그들의 뺨 위로 싱싱한 눈물이 흘러내렸다.",
+    "words": [
+      {
+        "g": "μυρόμενοι,",
+        "pos": "동사",
+        "principalParts": "μύρομαι – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "parse": "pres.mid.part.pl.nom.m.",
+        "gloss_kr": "슬퍼하며, 눈물 흘리며",
+        "gloss_en": "weeping, mourning, lamenting",
+        "syntax": "주어(κασίγνητοί θ᾽ ἕταροί)의 상태를 수식하는 분사 부속어(PARTICIPIAL ADJUNCT / Depictival Secondary Predicate)이다. LFG f-구조상 [ADJUNCT [PRED 'μύρομαι<SUBJ>', SUBJ_OF 카σίγνητοι..., VOICE middle]]로 나타난다. 생성문법적으로 주어의 주술 상태를 묘사하는 부화어 구문을 구성한다.",
+        "background": "유골을 거두는 동작에 동반되는 영웅들의 깊은 애도와 슬픔의 상태를 묘사한다. 거친 전사들이 흘리는 눈물은 고대 그리스 영웅주의에서 수치스러운 것이 아닌, 깊은 유대감과 인격의 장엄함을 나타내는 수사적 장치이다.",
+        "etymology": "Beekes(EDG)는 PIE *mew-r- / *smew-r-('흐르다, 눈물 흘리다')에서 유래한 디포넌트(deponent) 동사로 본다. 라틴어 maerere('슬퍼하다')가 동계어로 추정된다. 어간 모음 -υ-의 모음화 및 디포넌트 중간태 어미(-ομαι) 결합을 거쳤다. 고전기 이후 사용이 줄어든 호메로스 시어이다."
+      },
+      {
+        "g": "θαλερὸν",
+        "pos": "형용사",
+        "lemma": "θαλερός, θαλερά, θαλερόν",
+        "parse": "sg.acc.n.",
+        "gloss_kr": "풍성한, 싱싱한, 굵은",
+        "gloss_en": "blooming, rich, big (tear)",
+        "syntax": "명사 δάκρυ를 한정 수식하는 수식어(ADJUNCT) 형용사이다. LFG f-구조에서 [ADJUNCT [PRED 'θαλερός', CASE acc, NUM sg, GEND neut]]로 표상된다.",
+        "background": "눈물의 격렬함과 양의 풍부함을 생생하게 비유하는 호메로스 고유의 관용적 수식어이다. '싱싱하고 커다란' 눈물방울이 뺨을 적시는 모습을 감각적으로 전달한다.",
+        "etymology": "Beekes(EDG)는 '꽃피다, 자라다'를 뜻하는 θάλλω(PIE *dʰal- '푸르다, 자라다', 영급 어근)에서 파생된 형용사로 분석한다. 알바니아어 dal('싹트다'), 아르메니아어 dalar('푸른')가 확실한 동계어이다. 영급 어간 *dʰal-에 형용사 파생 어미 -ρος가 결합하여 형성되었다. 현대 그리스어에서도 θαλερός('싱싱한, 활력 있는')로 보존되어 있다."
+      },
+      {
+        "g": "δὲ",
+        "pos": "접속사",
+        "lemma": "δέ",
+        "parse": "coord.conj.",
+        "gloss_kr": "그리고, 한편",
+        "gloss_en": "and, but",
+        "syntax": "앞 절과 뒤 절을 연결하는 대등 접속 후치 소사(postpositive conjunction)이다. LFG f-구조상 절 연결 자질을 담당하며 통사적 주절의 C° 자리에 후치 접어로 결합한다.",
+        "background": "유골을 거두는 행위 서술에 이어, 그들의 얼굴에서 눈물이 흘러내리는 신체적 반응 묘사로 서사의 시선을 자연스럽게 이동시킨다.",
+        "etymology": "PIE 지시 소사 *de / *do에서 유래하였다. 라틴어 -do(예: quando), 고대 영어 tō(현대 영어 to)가 동계 관계이다. 그리스어 소사 문법화 과정을 거쳐 2위치 접어(Wackernagel's law position)로 정착되었다."
+      },
+      {
+        "g": "κατείβε토",
+        "pos": "동사",
+        "principalParts": "κατείβω – (미상) – (미상) – (미상) – (미상) – (미상)",
+        "parse": "3rd.sg.impf.ind.mid.",
+        "gloss_kr": "흘러내렸다",
+        "gloss_en": "trickled down, shed down",
+        "syntax": "이 후행 절의 주 술어(PRED) 동사이다. LFG f-구조상 [PRED 'κατείβω<SUBJ>', SUBJ [PRED 'δάκρυ', CASE nom]] 구조를 형성한다. 중성 단수 주어(δάκρυ)에 호응하여 3인칭 단수 과거 미완료 형태를 취하며, 눈물이 계속해서 흐르고 있는 시상적 지속성(durative aspect)을 표현한다.",
+        "background": "뺨을 타고 끊임없이 떨어지는 눈물의 연속적 흐름을 묘사하는 동사이다. 미완료 과거 시제를 통해 슬픔의 지속적인 상태를 시각화한다.",
+        "etymology": "전치사 κατά('아래로')와 '쏟다, 흐르다'를 뜻하는 εἴβω(PIE *yeYb- / *eyb- 어근 추정)의 합성어이다. 그리스어 내에서 전치사와 어간의 결합 및 과거 미완료 어간 이형태 결합을 통해 κατείβε토가 형성되었다. 호메로스와 고전 시가에 주로 국한되는 시적 어휘이다."
+      },
+      {
+        "g": "δάκρυ",
+        "pos": "명사",
+        "lemma": "δάκρυ, δάκρυος, τό",
+        "parse": "sg.nom.n.",
+        "gloss_kr": "눈물이",
+        "gloss_en": "tear",
+        "syntax": "동사 κατείβε토의 통사적 주어(SUBJ)이다. LFG f-구조상 [SUBJ [PRED 'δάκρυ', GEND neut, NUM sg, CASE nom]]로 표상된다. 영격(neuter nominative) 형태이다.",
+        "background": "애도 의식에서 영웅들이 흘리는 애통함의 직접적 물증이다. 비극적 장례식의 감정적 정점을 체현하는 시적 핵심 표지이다.",
+        "etymology": "Beekes(EDG)는 PIE *dáḱru- / *daḱru-('눈물')에서 직접 파생된 고유 조어 어휘로 본다. 라틴어 lacrima(고대 라틴어 dacruma), 고대 영어 teahr(현대 영어 tear), 산스크리트어 aśru가 완벽한 동계어이다. 초기 인도유럽어 *d- / *l- 변형을 거쳐 라틴어와 그리스어로 분화하였다. 현대 그리스어에서는 파생형 δάκρυο로 널리 쓰인다."
+      },
+      {
+        "g": "παρειῶν.",
+        "pos": "명사",
+        "lemma": "παρειά, παρειᾶς, ἡ",
+        "parse": "pl.gen.f.",
+        "gloss_kr": "뺨들로부터, 뺨 위로",
+        "gloss_en": "from/down cheeks",
+        "syntax": "동사 κατείβε토의 공간적 이탈/경로를 지정하는 탈격적 속격 보충어(ablatival genitive / OBL_DIR)이다. LFG f-구조에서 [OBL_DIR [PRED 'παρειά', CASE gen, NUM pl]]로 분석된다.",
+        "background": "눈물이 쏟아져 내리는 신체 부위(뺨)를 명시하여 비극적 이미지의 초점을 영웅들의 얼굴로 집약시킨다.",
+        "etymology": "Beekes(EDG)는 PIE *par-ey-ā('눈 옆의 부분', 전치사 *per- + '눈'을 뜻하는 *okʷ- 어근의 결합) 파생어로 본다. 고대 교회 슬라브어 parani가 동계어로 언급된다. 그리스어 음운 변화를 거쳐 이오니아 방언 형태 παρειά(아티카 παριά)가 확립되었다. 현대 그리스어에서도 παρειά(문어/의학 용어)로 보존되어 있다."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 6.795",
+    "trans": "그리고 그 유골을 취하여 그들은 황금 궤 속에 넣었으니,",
+    "words": [
+      {
+        "g": "καὶ",
+        "pos": "접속사",
+        "lemma": "καί",
+        "parse": "coord.conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and, also",
+        "syntax": "절과 절을 연결하는 문두 대등 접속사(coordinating conjunction)이다. LFG c-구조상 문두 C° 위치에 결합하여 앞 절의 상황과 뒤 절의 안치 동작을 매끄럽게 연결한다.",
+        "background": "유골 수습의 슬픔에 이어, 유골을 영구히 보존하기 위해 황금 궤에 안치하는 공식 장례 제의의 최종 단계로 서사를 진전시킨다.",
+        "etymology": "Beekes(EDG)는 PIE *kʷi-('그것, 그리고') 또는 부사적 어근에서 유래한 것으로 본다. 라틴어 -que, 고대 아일랜드어 cè가 관련 동계 요소로 제시된다. 그리스어 독자적 발전을 거쳐 가장 보편적인 접속사 καί로 정착하였으며, 현대 그리스어에서도 100% 동일하게 사용된다."
+      },
+      {
+        "g": "τά",
+        "pos": "대명사",
+        "lemma": "ὁ, ἡ, τό",
+        "parse": "pl.acc.n.",
+        "gloss_kr": "그것들을 (유골을)",
+        "gloss_en": "them (the bones)",
+        "syntax": "앞 행(793행)의 ὀστέα(중성 복수 명사)를 받는 지시/인칭 대명사 목적어(OBJ)이다. LFG f-구조상 [OBJ [PRED 'pro', GEND neut, NUM pl, CASE acc]]로 교체 통합(anaphoric binding)된다.",
+        "background": "정성껏 거두어 모은 영웅의 백골을 지칭한다. 단순한 관사 형태가 아닌 호메로스 특유의 지시 대명사적 용법(demonstrative pronoun)으로 쓰였다.",
+        "etymology": "PIE 지시 대명사 어근 *to- / *te-에서 유래하였다. 라틴어 is-tud, 산스크리트어 tat, 고대 영어 þat(현대 영어 that)이 완벽한 동계어이다. 그리스어 정관사 및 지시 대명사 체계의 근간을 이룬다."
+      },
+      {
+        "g": "γε",
+        "pos": "소사",
+        "lemma": "γέ",
+        "parse": "postpos.adv.",
+        "gloss_kr": "바로, 정녕",
+        "gloss_en": "at least, indeed, at any rate",
+        "syntax": "앞 선행 대명사 τά를 직접 수식하는 한정/강조 접어 소사(limitative/emphatic particle)이다. LFG f-구조상 [FOCUS +] 자질을 대명사 속성에 추가한다.",
+        "background": "수습된 '바로 그 고귀한 유골'을 강조하여, 황금 궤에 들어갈 대상의 신성함을 수사적으로 돋보이게 한다.",
+        "etymology": "Beekes(EDG)는 PIE 강조 소사 *ge / *ghi에서 파생된 것으로 본다. 산스크리트어 hí('정념, 정녕'), 고대 슬라브어 že가 동계어이다. 단음절 후치 접어로 고전 그리스어 문장 강조 표현의 핵심 역할을 수행하였다."
+      },
+      {
+        "g": "χρυσείην",
+        "pos": "형용사",
+        "lemma": "χρύσεος, χρυσέη, χρύσεον",
+        "parse": "sg.acc.f.",
+        "gloss_kr": "황금의, 금으로 만든",
+        "gloss_en": "golden, made of gold",
+        "syntax": "명사 λάρνακα를 한정 수식하는 형용사 수식어(ADJUNCT)이다. LFG f-구조상 [ADJUNCT [PRED 'χρύσεος', CASE acc, NUM sg, GEND fem]]로 분석된다. 이오니아 방언 특유의 미축약 모음 형태(-είην)를 보이고 있다.",
+        "background": "왕족이자 최고 영웅에 걸맞은 최고급 장례 용기(황금 궤)를 묘사한다. 찰나에 사라지는 육신과 대비되는 황금의 영원성을 통해 영웅의 불멸의 명예(κλέος)를 형상화한다.",
+        "etymology": "명사 χρυσός('금', 셈어족 차용어, cf. 히브리어 חָרוּץ ḥārūṣ, 아카드어 ḫurāṣu)에 재료 파생 접미사 *-eos가 결합된 형태이다. 셈어족 원형에서 차용된 후 그리스어 형용사 파생법을 거쳤다. 현대 그리스어 χρυσός / χρυ생ios로 계승되었다."
+      },
+      {
+        "g": "ἐς",
+        "pos": "전치사",
+        "lemma": "εἰς",
+        "parse": "prep.acc.",
+        "gloss_kr": "~ 안으로",
+        "gloss_en": "into",
+        "syntax": "대격 명사구 λάρνακα를 통사적으로 지배하는 방향 전치사(PP) 핵이다. 생성문법상 [PP [P ἐς] [DP χρυσείην λάρνακα]] 구조를 이루어 동사 θῆκαν의 도달 목표 지점(GOAL)을 지정한다.",
+        "background": "유골이 황금 궤 내부로 안치되는 완결된 안축 방향성을 표상한다.",
+        "etymology": "전치사 ἐν('안에')에 방향 접미사 *-s가 결합된 *en-s에서 유래하였다. 자음군 변화를 거쳐 호메로스식 ἐς 및 아티κα/보편형 εἰς로 분화하였다. 현대 그리스어에서는 σε로 축합되어 남아있다."
+      },
+      {
+        "g": "λάρνακα",
+        "pos": "명사",
+        "lemma": "λάρναξ, λάρνακος, ἡ",
+        "parse": "sg.acc.f.",
+        "gloss_kr": "궤, 상자, 유골함",
+        "gloss_en": "casket, chest, box",
+        "syntax": "전치사 ἐς의 목적어 DP 핵이다. LFG f-구조에서 [OBJ [PRED 'λάρναξ', CASE acc, NUM sg, GEND fem]]로 나타난다.",
+        "background": "유골을 담는 신성한 궤(casket)를 가리킨다. 크레타-미케네 문명(민오아 문명) 유적에서 다수 발굴되는 유골함(larnax)의 형태와 고고학적으로 완벽히 일치한다.",
+        "etymology": "Beekes(EDG)는 이 단어를 비-인도유럽어족 선그리스어(Pre-Greek) 기층 어휘로 분류한다(-ακ- 접미사 특성). 고대 미케네 그리스어 B문자 텍스트에도 유사 어근이 확인된다. 고전기 이후 유골함 및 소형 궤를 뜻하는 정형화된 어휘로 사용되었다."
+      },
+      {
+        "g": "θῆκαν",
+        "pos": "동사",
+        "principalParts": "τίθημι – θήσω – ἔθηκα – τέθεικα – τέθειμαι – ἐτέθην",
+        "parse": "3rd.pl.aor.ind.act.",
+        "gloss_kr": "그들이 넣었다, 두었다",
+        "gloss_en": "they placed, put",
+        "syntax": "주절의 중심 PRED 동사 핵이다. 능동태 부정과거 형태(카-부정과거 / kappa-aorist 복수 형태)로서 [PRED 'τίθημι<SUBJ,OBJ,OBL_GOAL>', SUBJ [pro, NUM pl, PERS 3rd], OBJ [PRED 'pro(τά)'], OBL_GOAL [PP ἐς ...]]의 3항 술어 논항구조를 구성한다.",
+        "background": "유골을 황금 궤 안으로 안전하고 영구하게 안치하는 동작의 완결성을 나타낸다. 장례 의식의 핵심 목표가 성취되었음을 선언한다.",
+        "etymology": "Beekes(EDG)는 PIE *dʰeh₁-('놓다, 두다', e-급 어간 및 후두음 *h₁ 포함)에서 파생된 것으로 본다. 라틴어 feci('만들었다'), 산스크리트어 dádhāmi('놓다'), 고대 영어 dōn(현대 영어 do)이 확실한 동계어이다. 어간 결합 시 카-부정과거(κ-aorist) 어미 변화를 거쳐 θῆκαν(호메로스식 무증음 ἔ- 생략) 형태가 되었다. 현대 그리스어 θέτω / βάζω의 어원적 뿌리이다."
+      },
+      {
+        "g": "ἑλόντες",
+        "pos": "동사",
+        "principalParts": "αἱρέω – αἱρήσω – εἷλον – ᾕρηκα – ᾕρημαι – ᾑρέθην",
+        "parse": "aor.act.part.pl.nom.m.",
+        "gloss_kr": "집어 들어서, 취하여",
+        "gloss_en": "having taken, having picked up",
+        "syntax": "주동사 θῆκαν에 선행하는 주어의 선행 동작을 나타내는 부정과거 분사 부속어(CONJUNCT PARTICIPLE / Anteriority Secondary Predicate)이다. LFG f-구조상 [ADJUNCT [PRED 'αἱρέω<SUBJ,OBJ>', SUBJ_OF 주어, TIME_REL anterior]]로 분석된다.",
+        "background": "유골을 정성스럽게 손으로 집어 들어 궤 안으로 옮기는 전치 동작을 세밀하게 묘사한다. 동사 어간 εἱλ-/ἑλ-의 부정과거 분사를 통해 동작의 즉각적 완결과 시상적 연결을 도모한다.",
+        "etymology": "Beekes(EDG)는 보충법(suppletion) 동사 αἱρέω의 부정과거 어간 *sel-('쥐다, 취하다')에서 유래한 것으로 본다. 고대 아일랜드어 selb('소유')가 동계어이다. 초음 s-의 기식화(s -> h)를 거쳐 ἑλ- 어간이 형성되었다. 현대 그리스어에서도 자취를 찾아볼 수 있는 보충법 부정과거 어간이다."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 6.796",
+    "trans": "부드러운 자주빛 옷으로 덮어두고,",
+    "words": [
+      {
+        "g": "πορφυρέοις",
+        "pos": "형용사",
+        "lemma": "πορφύρεος, πορφυρέη, πορφύρεον",
+        "parse": "pl.dat.m.",
+        "gloss_kr": "자주빛의, 암자색의",
+        "gloss_en": "purple, dark red",
+        "syntax": "LFG f-구조상 [ADJUNCT [PRED 'πορφύρεος', CASE dat]]로 분석되며, 후행하는 명사 πέπλοισι와 수·격·성(복수 여격 남성)이 일치하는 수식어 기능을 수행합니다.",
+        "background": "호메로스 서사시에서 왕권과 신성함, 장엄한 장례 의식을 상징하는 색채어로, 헥토르의 시신을 예우하는 의복의 귀중함을 강조합니다.",
+        "etymology": "Beekes(EDG)는 선그리스어 기층 어휘인 '조개(murex)에서 추출한 염료' 관련 명사에서 파생된 것으로 봅니다. 현대 그리스어 πορφυρός(자주색의)로 이어집니다."
+      },
+      {
+        "g": "πέπλοισι",
+        "pos": "명사",
+        "lemma": "πέπλος, πέπλου, ὁ",
+        "parse": "pl.dat.m.",
+        "gloss_kr": "페플로스, 의복, 겉옷",
+        "gloss_en": "robes, garments, peplos",
+        "syntax": "LFG f-구조상 [PRED 'πέπλος', CASE dat, θ-ROLE INSTRUMENT]로 분석되며, 분사의 동작을 이루는 수단적 여격 논항을 실현합니다.",
+        "background": "그리스 여성의 전통 의복이자 제의적 예물이며, 장례 맥락에서는 시신을 감싸는 고귀한 수의의 의미를 지닙니다.",
+        "etymology": "Chantraine(DELG)은 PIE 재구형 *pel-('덮다, 싸다', e급 어간)에 기반하여 분석하며, 라틴어 pellis와 동계입니다. 현대 그리스어 πέπλο로 이어집니다."
+      },
+      {
+        "g": "καλύψαντες",
+        "pos": "동사",
+        "lemma": "καλύπτω",
+        "parse": "aor.act.part.pl.nom.m.",
+        "principalParts": "καλύπτω – καλύψω – ἐκάλυψα – κεκάλυμμαι – ἐκαλύφθην",
+        "gloss_kr": "덮고서, 감싸고서",
+        "gloss_en": "having covered, wrapping",
+        "syntax": "LFG f-구조상 [ADJUNCT [PRED 'καλύπτω<SUBJ,OBJ>', SUBJ pro, OBJ πέπλοισι]]로 처리되며, 주절 주어와 호응하는 동시 동작 분사입니다.",
+        "background": "시신을 옷으로 덮는 행위는 고대 그리스 장례 절차의 핵심이며, 트로이아인들의 인간적 예우와 비극성을 부각합니다.",
+        "etymology": "Beekes(EDG)와 Chantraine(DELG)은 PIE *kel-('가리다, 감추다', e급 어간)에서 유래한 것으로 봅니다. 현대 그리스어 καλύπτω로 이어집니다."
+      },
+      {
+        "g": "μαλακοῖσιν",
+        "pos": "형용사",
+        "lemma": "μαλακός, μαλακή, μαλακόν",
+        "parse": "pl.dat.m.",
+        "gloss_kr": "부드러운, 포근한",
+        "gloss_en": "soft, gentle",
+        "syntax": "LFG f-구조상 명사 πέπλοισι를 수식하는 두 번째 ADJUNCT로 기능하며, 복수 여격 남성으로 격·수가 일치합니다.",
+        "background": "거친 전쟁터와 대비되는 부드러운 의복의 촉각적 이미지를 통해 장례의 비극적 정취를 심화시킵니다.",
+        "etymology": "Chantraine(DELG)은 PIE *ml̥k-o-(*meld- 어근의 영급형 확장)에서 유래하여 '녹다, 부드러워지다'라는 원뜻을 갖는다고 봅니다. 라틴어 mollis와 동계입니다."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 6.797",
+    "trans": "곧바로 깊은 구덩이에 눕히고, 그 위에",
+    "words": [
+      {
+        "g": "αἶψα",
+        "pos": "부사",
+        "lemma": "αἶψα",
+        "parse": "adv.",
+        "gloss_kr": "곧바로, 급히, 즉시",
+        "gloss_en": "quickly, forthwith, straightway",
+        "syntax": "LFG f-구조상 문장 전체의 시간적 양상을 한정하는 [ADJUNCT [PRED 'αἶψα']]로 분석됩니다.",
+        "background": "장례 절차가 지체 없이 신속하게 진행되고 있음을 알리는 호메로스 서사시의 전형적인 서사적 부사입니다.",
+        "etymology": "Beekes(EDG)는 선그리스어 기층 어휘로 보거나 PIE *h₁ei-('가다') 계통과 연관시킵니다. 고전 시어의 잔존어로 남았습니다."
+      },
+      {
+        "g": "δ᾽",
+        "pos": "소사",
+        "lemma": "δέ",
+        "parse": "coord.conj.",
+        "gloss_kr": "그리고, 그러나",
+        "gloss_en": "and, but",
+        "syntax": "LFG f-구조상 두 절이나 구절을 연결하는 등위 접속사(COORD)로 기능합니다.",
+        "background": "연속적인 서사를 지탱하며 앞선 행동에 이어지는 다음 장례 절차를 매끄럽게 연결합니다.",
+        "etymology": "그리스어 전형의 후치사적 대등 접속사입니다."
+      },
+      {
+        "g": "ἄρ᾽",
+        "pos": "소사",
+        "lemma": "ἄρα",
+        "parse": "postpos.prep.",
+        "gloss_kr": "과연, 마침내, 그에 따라",
+        "gloss_en": "then, therefore",
+        "syntax": "LFG f-구조상 담화 구조상 인과적·상황적 필연성을 나타내는 [DISCOURSE-FUNC 'consequence'] 속성을 갖습니다.",
+        "background": "당연히 수행되어야 할 안치 절차가 마침내 이루어지고 있음을 나타내어 서사의 객관적 흐름을 강조합니다.",
+        "etymology": "어근 *ar-('맞추다, 적합하다')와 어원을 공유하는 고유 소사입니다."
+      },
+      {
+        "g": "ἐς",
+        "pos": "전치사",
+        "lemma": "εἰς",
+        "parse": "prep. taking acc.",
+        "gloss_kr": "~로, ~안으로",
+        "gloss_en": "into, to",
+        "syntax": "LFG f-구조상 대격 명사구 κάπετον를 지배하여 방향성 부사구(OBL_DIR)를 형성합니다.",
+        "background": "시신을 무덤 속으로 안치하는 물리적 이동 방향을 정확하게 지시합니다.",
+        "etymology": "미케네어 등에서 선행형태가 확인되며, 현대 그리스어 εἰς의 축약형 σε로 이어집니다."
+      },
+      {
+        "g": "κοίλην",
+        "pos": "형용사",
+        "lemma": "κοῖλος, κοίλη, κοῖλον",
+        "parse": "sg.acc.f.",
+        "gloss_kr": "움푹 파인, 깊은",
+        "gloss_en": "hollow, deep",
+        "syntax": "LFG f-구조상 목적어 명사 κάπετον를 수식하는 [ADJUNCT [PRED 'κοῖλος', CASE acc]]로 표기됩니다.",
+        "background": "땅을 깊게 파서 만든 무덤의 물리적 형태를 묘사하여 황량하고 깊은 공간감을 부각합니다.",
+        "etymology": "Beekes(EDG)는 PIE 재구형 *kowi-lo-('굽은, 빈 공간의')로 제시하며, 라틴어 caelum과의 연관성을 검토합니다."
+      },
+      {
+        "g": "κάπετον",
+        "pos": "명사",
+        "lemma": "κάπετος, κάπετος, ἡ",
+        "parse": "sg.acc.f.",
+        "gloss_kr": "무덤, 구덩이, 도랑",
+        "gloss_en": "trench, grave, ditch",
+        "syntax": "LFG f-구조상 전치사 ἐς의 목적어 논항(OBL_DIR)으로 기능하며 장소를 나타냅니다.",
+        "background": "거대한 봉분이 아닌, 전쟁터에서 다급하게 마련된 임시 무덤이나 구덩이를 암시합니다.",
+        "etymology": "그리스어군 내부의 지형·토목 관련 어휘로 발달하였습니다."
+      },
+      {
+        "g": "θέσαν",
+        "pos": "동사",
+        "lemma": "τίθημι",
+        "parse": "3rd.pl.aor.ind.act.",
+        "principalParts": "τίθημι – θήσω – ἔθηκα – τέθεικα – τέθειμαι – ἐτέθην",
+        "gloss_kr": "그들이 눕혔다, 안치했다",
+        "gloss_en": "they placed, laid",
+        "syntax": "LFG f-구조상 주절의 서술어로서 [PRED 'τίθημι<SUBJ,OBJ,OBL>', SUBJ '트로이아인들', OBJ 시신, OBL ἐς κάπετον] 구조를 지배합니다.",
+        "background": "시신을 바르게 '안치하다'는 의례적 의미를 담고 있으며, 트로이아인들의 엄숙한 집단적 행위를 보여줍니다.",
+        "etymology": "Beekes(EDG)와 Chantraine(DELG)은 PIE 재구형 *dʰeh₁-('놓다, 두다', e급 어간, 후두음 h₁)으로 확정합니다. 현대 그리스어 θέτω로 이어집니다."
+      },
+      {
+        "g": "αὐτὰρ",
+        "pos": "소사",
+        "lemma": "αὐτάρ",
+        "parse": "coord.conj.",
+        "gloss_kr": "그러나, 그리고 나서, 그런데",
+        "gloss_en": "but, and then, moreover",
+        "syntax": "LFG f-구조상 대조 또는 순차적 전환을 나타내는 등위 접속사(COORD)로 기능합니다.",
+        "background": "안치 행위에서 곧바로 무덤 위를 돌로 덮는 후속 작업으로 서사를 전환시킵니다.",
+        "etymology": "대명사적 어근 *au-에 접속사적 요소가 결합된 호메로스 계열의 대조 접속사입니다."
+      },
+      {
+        "g": "ὕπερθε",
+        "pos": "부사",
+        "lemma": "ὕπερθε",
+        "parse": "adv.",
+        "gloss_kr": "위쪽에, 그 위에",
+        "gloss_en": "from above, above",
+        "syntax": "LFG f-구조상 공간적 위치를 한정하는 [ADJUNCT [PRED 'ὕπερθε', LOCATIVE +]]로 분석됩니다.",
+        "background": "구덩이 속에 눕혀진 시신 바로 위쪽에 거대한 돌들을 쌓아 올리는 무덤 축조의 공간적 위계를 보여줍니다.",
+        "etymology": "부사 *uper('위로')에 처소 접미사 *-the가 결합한 파생어로, 라틴어 super 및 영어 over와 동계입니다."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 6.798",
+    "trans": "크고 빽빽한 돌들로 평평하게 덮었으니,",
+    "words": [
+      {
+        "g": "πυκνοῖσιν",
+        "pos": "형용사",
+        "lemma": "πυκνός, πυκνή, πυκνόν",
+        "parse": "pl.dat.m.",
+        "gloss_kr": "조밀한, 빽빽한, 단단히 채워진",
+        "gloss_en": "dense, thick, closely packed",
+        "syntax": "LFG f-구조상 명사 λάεσσι를 수식하는 [ADJUNCT [PRED 'πυκνός', CASE dat]]로 표기됩니다.",
+        "background": "돌들이 촘촘하게 쌓여 있음을 묘사하여, 외부의 훼손으로부터 시신을 보호하려는 견고한 무덤 축조 방식을 보여줍니다.",
+        "etymology": "Chantraine(DELG)은 PIE 재구형 *pewk- / *puk-('두껍게 모이다, 촘촘하다')로 봅니다. 현대 그리스어 πυκνός로 이어집니다."
+      },
+      {
+        "g": "λάεσσι",
+        "pos": "명사",
+        "lemma": "λᾶας, λᾶος, ὁ",
+        "parse": "pl.dat.m.(Homeric form)",
+        "gloss_kr": "돌들로, 바위들로",
+        "gloss_en": "with stones, rocks",
+        "syntax": "LFG f-구조상 동사 κατεστόρεσαν의 도구적 여격 논항(OBL_INSTR)으로 기능합니다.",
+        "background": "영웅의 무덤 봉분을 고정하고 보호하는 필수 건축 자재로서 거대한 돌의 물질적 무게감을 전달합니다.",
+        "etymology": "Beekes(EDG)는 선그리스어 기층 어휘일 가능성이 높다고 지적하며, 호메로스 시가에서 독특하게 쓰이는 이형태입니다."
+      },
+      {
+        "g": "κατεστόρεσαν",
+        "pos": "동사",
+        "lemma": "καταστρέννυμι",
+        "parse": "3rd.pl.aor.ind.act.",
+        "principalParts": "καταστρέννυμι – καταστρώσω – κατέστρωσα – – – κατέστρωθην",
+        "gloss_kr": "덮었다, 깔았다, 평평하게 쌓았다",
+        "gloss_en": "they spread over, covered, piled over",
+        "syntax": "LFG f-구조상 주절의 서술어로서 [PRED 'καταστρέννυμι<SUBJ,OBJ>', SUBJ '트로이아인들', OBJ μεγάλοισι λάεσσι] 구조를 지배합니다.",
+        "background": "무덤 구덩이 위로 거대한 돌들을 골고루 덮어 튼튼한 봉분을 완성하는 축조 행위를 표현합니다.",
+        "etymology": "Chantraine(DELG)은 PIE *ster-('펴다, 깔다')에 전치사적 접두사 κατα-가 결합한 형태로 보며, 라틴어 sternere 및 영어 strew와 동계입니다."
+      },
+      {
+        "g": "μεγάλοισι",
+        "pos": "형용사",
+        "lemma": "μέγας, μεγάλη, μέγα",
+        "parse": "pl.dat.m.",
+        "gloss_kr": "커다란, 거대한",
+        "gloss_en": "large, great, huge",
+        "syntax": "LFG f-구조상 명사 λάεσσι를 수식하는 수식어(ADJUNCT)로 격·수가 일치합니다.",
+        "background": "위대한 영웅의 무덤에 걸맞은 웅장함과 영원성을 시각적으로 각인시킵니다.",
+        "etymology": "Beekes(EDG)와 Chantraine(DELG)은 PIE 재구형 *meǵh₂-('크다, 위대하다', e급 어간, 후두음 h₂)로 확정합니다. 라틴어 magnus 및 영어 much와 동계입니다."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 6.799",
+    "trans": "날쌔게 봉분을 쌓고, 사방에는 파수꾼들이 앉아 있었으니,",
+    "words": [
+      {
+        "g": "ῥίμφα",
+        "pos": "부사",
+        "lemma": "ῥίμφα",
+        "parse": "adv.",
+        "gloss_kr": "날쌔게, 빠르게, 순식간에",
+        "gloss_en": "swiftly, lightly, apace",
+        "syntax": "LFG f-구조상 동사 ἔχεαν의 양태적 수식어(ADJUNCT)로 기능합니다.",
+        "background": "적의 기습이라는 긴장 속에서 트로이아인들이 얼마나 민첩하게 무덤 봉분을 완성해 나가는지 보여줍니다.",
+        "etymology": "Chantraine(DELG)은 '가볍고 빠르게 움직이다'를 뜻하는 어근에서 파생된 호메로스 시가의 전형적인 부사로 봅니다."
+      },
+      {
+        "g": "δὲ",
+        "pos": "소사",
+        "lemma": "δέ",
+        "parse": "coord.conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG f-구조상 절과 절을 대등하게 연결하는 COORD 기능을 수행합니다.",
+        "background": "돌을 덮는 행위와 무덤 봉분을 완성하는 행위를 유기적으로 연결합니다.",
+        "etymology": "그리스어 전통 대등 접속사입니다."
+      },
+      {
+        "g": "σῆμ᾽",
+        "pos": "명사",
+        "lemma": "σῆμα, σήματος, τό",
+        "parse": "sg.acc.n.",
+        "gloss_kr": "무덤, 봉분, 표식",
+        "gloss_en": "tomb, mound, barrow, sign",
+        "syntax": "LFG f-구조상 동사 ἔχεαν의 목적어(OBJ) 논항이며 결과 목적어 자리를 차지합니다.",
+        "background": "죽은 이의 정체성과 영웅적 업적을 후세에 알리는 기념비적 무덤 봉분의 탄생을 의미합니다.",
+        "etymology": "Beekes(EDG)는 선그리스어 기층 어휘설 및 인도유럽어 표식 관련 어근과의 연관성을 검토합니다. 현대 그리스어 σήμα로 이어집니다."
+      },
+      {
+        "g": "ἔχεαν",
+        "pos": "동사",
+        "lemma": "χέω",
+        "parse": "3rd.pl.aor.ind.act.",
+        "principalParts": "χέω – χεύσω – ἔχεα – κέχυμαι – ἐχύθην",
+        "gloss_kr": "그들이 쌓아 올렸다, 부어 만들었다",
+        "gloss_en": "they heaped up, poured, built",
+        "syntax": "LFG f-구조상 주절의 서술어로서 [PRED 'χέω<SUBJ,OBJ>', SUBJ '트로이아인들', OBJ σῆμα] 구조를 지배합니다.",
+        "background": "흙이나 돌을 쏟아부어 무덤의 봉분을 높이 쌓아 올리는 토목 공사의 이미지를 전달합니다.",
+        "etymology": "Beekes(EDG)와 Chantraine(DELG)은 PIE 재구형 *ǵheu-('붓다, 흘리다')로 확정합니다. 산스크리트어 hu- 및 영어 gush와 동계입니다."
+      },
+      {
+        "g": "περὶ",
+        "pos": "전치사",
+        "lemma": "περί",
+        "parse": "prep. taking gen.",
+        "gloss_kr": "~주위에, ~의 사방에",
+        "gloss_en": "around, about",
+        "syntax": "LFG f-구조상 공간적 주위 환경을 나타내는 처소 부사적 용법으로 기능합니다.",
+        "background": "무덤 주위에 경계병들을 배치하여 적의 기습에 대비하는 긴박한 방어 태세를 보여줍니다.",
+        "etymology": "Beekes(EDG)와 Chantraine(DELG)은 PIE 재구형 *peri('사방에')로 봅니다. 라틴어 per 및 영어 forth와 동계입니다."
+      },
+      {
+        "g": "δὲ",
+        "pos": "소사",
+        "lemma": "δέ",
+        "parse": "coord.conj.",
+        "gloss_kr": "그리고",
+        "gloss_en": "and",
+        "syntax": "LFG f-구조상 대등 접속사로 기능합니다.",
+        "background": "봉분 축조와 즉각적인 군사적 경계 태세라는 두 서사 요소를 이어줍니다.",
+        "etymology": "그리스어 전통 대등 접속사입니다."
+      },
+      {
+        "g": "σκοποὶ",
+        "pos": "명사",
+        "lemma": "σκοπός, σκοποῦ, ὁ",
+        "parse": "pl.nom.m.",
+        "gloss_kr": "정탐꾼들, 파수꾼들, 경계병들",
+        "gloss_en": "watchmen, scouts, spies",
+        "syntax": "LFG f-구조상 후행하는 동사 ἥατο의 주어(SUBJ) 논항으로 분석됩니다.",
+        "background": "적의 동정을 살피는 파수꾼들로서, 적진 바로 앞에서 장례를 치르는 긴장 속 트로이아 군의 치밀한 방어 태세를 보여줍니다.",
+        "etymology": "Chantraine(DELG)은 '망보다, 살피다'를 뜻하는 동사 σκέπτομαι의 어근에서 파생된 명사로 봅니다. PIE 재구형 *speḱ-('보다')에서 분기하였습니다."
+      },
+      {
+        "g": "ἥατο",
+        "pos": "동사",
+        "lemma": "ἧμαι",
+        "parse": "3rd.pl.plup.ind.mid/pass.(Homeric form)",
+        "principalParts": "ἧμαι – – – – –",
+        "gloss_kr": "앉아 있었다, 대기하고 있었다",
+        "gloss_en": "they were sitting, keeping watch",
+        "syntax": "LFG f-구조상 주절의 서술어로서 [PRED 'ἧμαι<SUBJ,OBL>', SUBJ σκοποί, OBL πάντῃ] 구조를 지배하는 과거완료 중간태입니다.",
+        "background": "장례 의식이 끝난 후에도 방심하지 않고 자리를 지키며 대기하는 정적인 군사적 긴장 상태를 묘사합니다.",
+        "etymology": "Beekes(EDG)와 Chantraine(DELG)은 PIE 재구형 *eh₁s-('앉다, 있다')로 봅니다. 산스크리트어 ās-와 동계입니다."
+      },
+      {
+        "g": "πάντῃ",
+        "pos": "부사",
+        "lemma": "πάντῃ",
+        "parse": "adv.",
+        "gloss_kr": "사방으로, 모든 곳에",
+        "gloss_en": "on every side, everywhere",
+        "syntax": "LFG f-구조상 처소적 수식어(ADJUNCT)로 기능합니다.",
+        "background": "무덤을 중심으로 사방 모든 방향에 경계병들이 포진해 있음을 나타냅니다.",
+        "etymology": "Chantraine(DELG)은 '모든'을 뜻하는 형용사 πᾶς의 어근에서 파생된 처소 부사형으로 봅니다."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 6.800",
+    "trans": "혹시라도 잘 무장된 아하이오이인들이 쳐들어올세라.",
+    "words": [
+      {
+        "g": "μὴ",
+        "pos": "소사",
+        "lemma": "μή",
+        "parse": "neg.adv.",
+        "gloss_kr": "~하지 않도록, 혹시라도 ~할라치면",
+        "gloss_en": "lest, that not",
+        "syntax": "LFG f-구조상 목적/경고를 나타내는 부속 절의 부정어(POLARITY/NEG)로 기능합니다.",
+        "background": "파수꾼들이 사방에 배치된 목적과 이유를 설명하며, 아하이오이 군의 기습이라는 실존적 위협을 경고합니다.",
+        "etymology": "Beekes(EDG)와 Chantraine(DELG)은 PIE 재구형 *mē('~하지 마라')로 확정합니다. 산스크리트어 mā와 동계이며 현대 그리스어 μη(v)으로 이어집니다."
+      },
+      {
+        "g": "πρὶν",
+        "pos": "부사",
+        "lemma": "πρίν",
+        "parse": "adv. (conjunctival use)",
+        "gloss_kr": "전에, 미리, 함부로",
+        "gloss_en": "before, previously",
+        "syntax": "LFG f-구조상 시간적 선후관계를 나타내는 접속사적 부사(ADJUNCT)로 기능합니다.",
+        "background": "장례가 완전히 끝나기도 전에 적들이 먼저 들이닥치는 최악의 상황을 차단하려는 경계 태세를 보여줍니다.",
+        "etymology": "공간적 '앞'에서 시간적 '이전'으로 의미가 전이된 파생 부사입니다."
+      },
+      {
+        "g": "ἐφορμηθεῖεν",
+        "pos": "동사",
+        "lemma": "ἐφορμάω",
+        "parse": "3rd.pl.aor.opt.pass.",
+        "principalParts": "ἐφορμάω – ἐφορμήσω – ἐφώρμησα – ἐφώρμηκα – ἐφώρμημαι – ἐφωρμήθην",
+        "gloss_kr": "그들이 덤벼들다, 기습해 오다",
+        "gloss_en": "they might set upon, rush against, attack",
+        "syntax": "LFG f-구조상 목적/경고절의 서술어로서 [PRED 'ἐφορμάω<SUBJ>', SUBJ ἐϋκνήμιδες Ἀχαιοί] 구조를 지배하는 부정과거 희구법 수동태입니다.",
+        "background": "적이 군사적으로 거칠게 밀고 들어오는 상황을 가리키며, 평화로운 장례 뒤편의 취약한 안보 상황을 보여줍니다.",
+        "etymology": "Beekes(EDG)와 Chantraine(DELG)은 PIE *ormh- / *horm-('움직이다, 자극하다')에 전치사 ἐπι-가 결합한 형태로 봅니다. 라틴어 oriri와 동계입니다."
+      },
+      {
+        "g": "ἐϋκνήμιδες",
+        "pos": "형용사",
+        "lemma": "ἐϋκνήμιδες",
+        "parse": "pl.nom.m.(Homeric compound adjective)",
+        "gloss_kr": "아름다운 정강이받이를 한, 잘 무장된",
+        "gloss_en": "well-greaved, of the fair greaves",
+        "syntax": "LFG f-구조상 주어 명사 Ἀχαιοί를 수식하는 한정사/수식어(ADJUNCT)로 분석됩니다.",
+        "background": "청동 정강이받이를 번쩍거리며 밀려오는 그리스 군의 압도적인 무장과 위협을 상징하는 호메로스의 대표적 상투어구입니다.",
+        "etymology": "Chantraine(DELG)은 접두사 ἐὐ-와 '정강이, 정강이받이'를 뜻하는 명사 κνήμη가 결합한 호메로스 고유의 합성 형용사로 밝힙니다."
+      },
+      {
+        "g": "Ἀχαιοί",
+        "pos": "명사",
+        "lemma": "Ἀχαιοί, Ἀχαιῶν, οἱ",
+        "parse": "pl.nom.m.",
+        "gloss_kr": "아하이오이인들, 그리스인들",
+        "gloss_en": "Achaeans, Greeks",
+        "syntax": "LFG f-구조상 절의 주어(SUBJ) 논항이며 동사와 수일치를 이룹니다.",
+        "background": "트로이의 적대 세력을 통칭하며, 장례가 끝나는 순간까지도 방심할 수 없는 실존적 위협의 주체로 등장합니다.",
+        "etymology": "Beekes(EDG)와 Chantraine(DELG)은 선그리스어 기층 지명이나 아나톨리아어파 기록(히타이트어 Aḫḫiyawā)과 깊은 연관이 있다고 봅니다."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 6.801",
+    "trans": "그들은 무덤을 쌓아 올린 후 다시 돌아갔다. 그러고 나서",
+    "words": [
+      {
+        "g": "χεύαντες",
+        "pos": "동사",
+        "lemma": "χέω",
+        "parse": "aor.act.part.pl.nom.m.",
+        "gloss_kr": "쌓아 올린 후, 부은 후",
+        "gloss_en": "having poured, having heaped up",
+        "syntax": "LFG f-구조에서 이 분사구는 상위 주절의 주어 οἱ(생략)의 부속 수식어(ADJUNCT) 역할을 수행하며, [ADJUNCT [PRED 'χέω<SUBJ,OBJ>', TENSE aor, ASPECT perf]]로 표현된다. 생성문법적으로는 vP의 부속구(adjunct) 위치에 병합된 절적 분사구(clausal participle)로서 주절의 본동사 κίον에 통사 및 시간적으로 선행하는 주절 전위 부사절을 구성한다: [TP [VP [PartP χεύαντες ...] [VP κίον]]].",
+        "principalParts": [
+          "χέω",
+          "χεύω",
+          "ἔχεα (or ἔχευα)",
+          "κέχυκα",
+          "κέχυμαι",
+          "ἐχύθην"
+        ],
+        "background": "고대 그리스의 장례 의식에서 무덤(σῆμα)을 쌓는 행위는 흙이나 돌을 부어 올리는(χέω) 구체적 작업으로 표현된다. 헥토르의 유골을 석함에 담아 광중에 넣은 뒤, 그 위에 대형 매장 총을 높게 쌓아 올리는 장엄한 의례의 완료를 가리킨다.",
+        "etymology": "PIE 재구형 *ǵʰew-('쏟다, 붓다', e급)에서 유래했다. Beekes(EDG)는 라틴어 fundere('붓다'), 고대 노르드어 guta, 산스크리트어 hotṛ와 동계어임을 지적한다. 음운론적으로는 시제 어간 형성 시 양순 자음/반모음 *w의 탈락 및 이로 인한 보상적 모음 장화 현상을 겪었다. 현대 그리스어에서는 지형이나 액체를 붓는 어휘 파생에 잔존한다."
+      },
+      {
+        "g": "δὲ",
+        "pos": "접속사",
+        "lemma": "δέ",
+        "parse": "coord.conj.",
+        "gloss_kr": "~하고, 한편",
+        "gloss_en": "and, but",
+        "syntax": "LFG f-구조에서 이 접속사는 절과 절을 연결하는 배분성 기능자(COORD)로 작용한다. 생성문법적으로 절 내부의 제2위치(Wackernagel's position)에 배치되는 접어적 자질을 지니며, [CP [C' C [TP ...]]] 구도에서 통사적 표지의 역할을 담당한다.",
+        "background": "호메로스 서사시의 연속적 문장 구조를 이끄는 전형적인 후행 접속사(postpositive conjunction)이다. 앞선 장례 노동의 완료와 이어지는 귀환 행위를 자연스럽게 연결하는 문맥 전환 장치이다.",
+        "etymology": "PIE 지시적 소사 *de/*do에서 소급된다. Chantraine(DELG)은 이 형태가 초기 그리스어 문장 연결 체계에서 대조와 연속을 담당하는 주된 소사로 고착되었음을 논증한다. 현대 그리스어에서는 및/그러나를 뜻하는 δε 및 연관 소사들 속에 그 어원적 흔적을 남기고 있다."
+      },
+      {
+        "g": "τὸ",
+        "pos": "관사",
+        "lemma": "ὁ, ἡ, τό",
+        "parse": "sg.acc.n.",
+        "gloss_kr": "그",
+        "gloss_en": "the",
+        "syntax": "LFG 관점에서 τὸ는 명사구(NP) 내의 한정어(SPEC) 기능을 수행하며, [SPEC [DET 'ὁ', CASE acc, NUM sg, GEND n]] 형태의 AVM 자질을 갖는다. 생성문법적으로는 DP 핵(D)의 위치에 투사되어 하위 NP σῆμα를 한정(determiner)한다: [DP [D' τὸ [NP σῆμα]]].",
+        "background": "여기서 정관사 형태는 단순한 한정사를 넘어 앞서 정성껏 조성된 바로 그 헥토르의 무덤임을 지시하는 직시적(deictic) 효과를 갖는다.",
+        "etymology": "PIE 지시대명사 어간 *to- (중성 및 사격 어간)에서 유래했다. Beekes(EDG)는 남성/여성 주격의 *so- 어간과 달리 중성 및 사격에서 *to- 체계가 보존되었음을 명시한다. 산스크리트어 tát, 라틴어 is-tud와 직접 대응한다. 현대 그리스어 정관사 το의 직계 조상이다."
+      },
+      {
+        "g": "σῆμα",
+        "pos": "명사",
+        "lemma": "σῆμα, σήματος, τό",
+        "parse": "sg.acc.n.",
+        "gloss_kr": "무덤, 표지",
+        "gloss_en": "mound, tomb, mark",
+        "syntax": "LFG f-구조에서 σῆμα는 분사 χεύαντες의 직접 목적어(OBJ)로 기능하며, [PRED 'σῆμα', CASE acc, θ-ROLE PATIENT] 자질을 할당받는다. 생성문법적으로 목적어 자리인 [Spec, VP]에서 격 이론에 따라 대격을 확인받는다.",
+        "background": "σῆμα는 단순한 흙더미가 아니라 영웅의 기억과 명예(κλέος)를 후대에 영구히 전달하는 기호이자 무덤을 의미한다. 호메로스 영웅 세계관에서 죽은 자가 이승에 남기는 가장 강력한 물리적 증표이다.",
+        "etymology": "PIE 재구형 *dʰyehmṇ('보이다, 관찰하다', 어간 *dʰyeh₂-에서 파생)에서 유래했다는 학설이 제기되며, Chantraine(DELG)은 기호 및 표지를 뜻하는 관념 어휘 형성임을 지적한다. 산스크리트어 dhyā-('생각하다')와 관련된다. 음운론적으로는 접사 *-mn- 결합에 따른 자음 동화와 제3격변화 명사화(-ματος)를 겪었다. 현대 그리스어의 기호학(semiotics) 및 각종 지표 어휘(σήμα)의 어원이 되었다."
+      },
+      {
+        "g": "πάλιν",
+        "pos": "부사",
+        "lemma": "πάλιν",
+        "parse": "adv.",
+        "gloss_kr": "다시, 뒤로",
+        "gloss_en": "back, back again",
+        "syntax": "LFG f-구조에서 이 부사는 동사 κίον의 방향 및 반복 상태를 나타내는 ADJUNCT 기능을 담당하며, [ADJUNCT [PRED 'πάλιν']]으로 표상된다. 생성문법적으로 vP 내부의 수식어로 병합되어 동사의 이동 방향성을 재지정한다.",
+        "background": "장례 터라는 거룩하고 비통한 공간에서 다시 성채 내부, 즉 일상의 공간이자 여전히 전쟁의 위협이 감도는 도성 안으로 발길을 돌리는 전환을 묘사한다.",
+        "etymology": "PIE 어근 *kʷel-('돌다, 회전하다', 영급 *kʷl-)의 모음 교체 및 어간 파생형에서 유래했다. Beekes(EDG)는 동계어로 산스크리트어 car-('움직이다') 및 그리스어 πέλομαι를 제시한다. 음운론적으로 순구개음 *kʷ의 잇소리화(labialization/palatalization) 현상에 따라 π- 음가를 얻었다. 현대 그리스어에서는 '다시'를 뜻하는 πάλι로 정착하여 일상어로 널리 쓰인다."
+      },
+      {
+        "g": "κίον",
+        "pos": "동사",
+        "lemma": "κίω",
+        "parse": "3rd.pl.aor.ind.act. (or impf.)",
+        "gloss_kr": "그들이 갔다, 이동했다",
+        "gloss_en": "they went",
+        "syntax": "LFG f-구조에서 이 동사는 주절의 PRED이며, [PRED 'κίω<SUBJ>', SUBJ [PERS 3, NUM pl]] 체계를 갖춘다. 생성문법적으로 자동사이므로 내적 논항을 가질 수 없으며 [TP [vP 주어 [VP κίον]]] 구조에서 주어가 [Spec, TP]로 이동하여 격을 확인받는다.",
+        "principalParts": [
+          "κίω",
+          "(미상)",
+          "ἔκιον (or κίον)",
+          "(미상)",
+          "(미상)",
+          "(미상)"
+        ],
+        "background": "호메로스 시가에 주로 등장하는 고풍스러운 이동 동사로, 의식을 마친 인물 집단이 무리를 지어 이동하는 장엄한 인상을 준다.",
+        "etymology": "PIE 재구형 *k(e)i-('움직이다, 출발하다', 영급) 어근에서 파생되었다. Chantraine(DELG)은 라틴어 cieō('침동시키다, 부르다') 및 라틴어 citus와의 어원적 일치성을 강조한다. 음운론적으로 증대음(augment)이 생략되는 호메로스 특유의 시적 형태론을 보여준다. 고전기 이후 산문에서는 소멸하여 현대어 직접 반사형은 존재하지 않는다."
+      },
+      {
+        "g": "αὐτὰρ",
+        "pos": "접속사",
+        "lemma": "ἀτάρ",
+        "parse": "coord.conj.",
+        "gloss_kr": "그 연후에, 그러나",
+        "gloss_en": "but then, moreover",
+        "syntax": "LFG f-구조에서 이 소사적 접속사는 이전 절과 신규 절 간의 담화 단계를 구분 짓는 기능(COORD)을 맡는다. 생성문법적 서사 분석에 의하면 CP 경계에서 담화 구조상의 전환(discourse shift)을 표지한다.",
+        "background": "장례 작업의 완료(무덤 쌓기)와 후속 행사(향연)를 가르는 시학적 전환사이다. 거친 노동 뒤에 찾아오는 의례적 정돈의 구획을 짓는다.",
+        "etymology": "접속사 αὖ('다시')와 ἄρα/ἀτάρ('그러므로, 참으로')의 복합 형태에서 소급된다. Beekes(EDG)는 초기 서사 언어 고유의 화석화된 합성 접속사로 분석한다. 인도유럽어족 내의 다양한 담화 소사들과 형태론적으로 대응한다. 일상어 전락 과정을 거치며 고전기 아티카 방언 및 현대 그리스어에서는 소멸했다."
+      },
+      {
+        "g": "ἔπειτα",
+        "pos": "부사",
+        "lemma": "ἔπειτα",
+        "parse": "adv.",
+        "gloss_kr": "그 다음에, 이어서",
+        "gloss_en": "then, thereupon",
+        "syntax": "LFG f-구조에서 이 시상 부사는 절 전체의 시간적 순서를 규정하는 ADJUNCT로 작동하며, [ADJUNCT [PRED 'ἔπειτα']]의 자질을 갖는다. 생성문법 구조상 TP 상위에 위치하여 시간적 선후 관계를 내포한다.",
+        "background": "의식의 순서가 지체 없이 다스려지고 있음을 나타내며, 일련의 장례 절차가 완벽한 질서 속에서 수행되고 있음을 강조한다.",
+        "etymology": "전치사 ἐπί('위에, 뒤이어')와 지시 부사 εἶτα('그 다음')의 합성 형태이다. Chantraine(DELG)은 모음 축합 및 음운적 접합 과정을 통해 단일 시간 부사로 굳어졌음을 논증한다. 현대 그리스어에서는 서술적 격식체 표현으로 제한되나 그 구조적 흔적은 여전히 유지된다."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 6.802",
+    "trans": "잘 모여들어서는 영광스러운 향연을 즐겼으니,",
+    "words": [
+      {
+        "g": "εὖ",
+        "pos": "부사",
+        "lemma": "εὖ",
+        "parse": "adv.",
+        "gloss_kr": "잘, 정돈되게",
+        "gloss_en": "well, duly",
+        "syntax": "LFG f-구조에서 분사 συναγειρόμενοι를 수식하는 양태 ADJUNCT로 작동하며, [ADJUNCT [PRED 'εὖ']]의 자질을 지닌다. 생성문법적으로 분사구 내부의 VP 부속어로 투사된다.",
+        "background": "집단이 질서정연하게, 격식과 예법에 맞춰 모였음을 나타낸다. 비극적 상황 속에서도 트로이아 사회의 체계와 우아함이 유지되고 있음을 보여준다.",
+        "etymology": "PIE 재구형 *esu-('좋은', e급 어간 명사/형용사형)의 중성 단수 부사적 용법에서 소급된다. Beekes(EDG)는 산스크리트어 su-('잘, 좋은') 및 히타이트어 aššu-와 어원적으로 완벽히 일치함을 명시한다. 음운론적으로 모음 탈락 및 미케네어 시기 이후의 부사화 변화를 거쳤다. 현대 그리스어의 각종 긍정적 접두사(ευ-) 및 어휘 속에 활발히 남아있다."
+      },
+      {
+        "g": "συναγειρόμενοι",
+        "pos": "동사",
+        "lemma": "συναγείρω",
+        "parse": "pres.mid.part.pl.nom.m.",
+        "gloss_kr": "함께 모여들어서",
+        "gloss_en": "gathering together, assembling",
+        "syntax": "LFG f-구조에서 이 중간태 분사는 주절 주어의 상태 및 부대상황을 서술하는 ADJUNCT로 기능하며, [ADJUNCT [PRED 'συναγείρω<SUBJ>', VOICE mid]]를 형성한다. 생성문법적으로는 주어의 자발적·상호적 행위를 나타내는 중간태(middle voice) 자질이 부과되어 [vP [PartP ...] [vP δαίνυντο]] 구도를 이룬다.",
+        "principalParts": [
+          "συναγείρω",
+          "συναγερῶ",
+          "συνήγειρα",
+          "(미상)",
+          "συναγήγερμαι",
+          "συνηγέρθην"
+        ],
+        "background": "트라이아 백성들이 헥토르를 추모하기 위해 한마음으로 모여드는 상호적 집결을 묘사한다. 단순한 물리적 집합을 넘어 공동체적 유대와 애도의 공유를 의미한다.",
+        "etymology": "접두사 σύν('함께')과 동사 ἀγείρω('모으다')의 결합형이다. PIE 재구형 *ger-('함께 모으다', e급 어간)에 근거한다. Chantraine(DELG)은 라틴어 grex('무리'), 라틴어 egregius 및 그리스어 ἀγορά('광장')와의 어원적 연관성을 설명한다. 음운론적으로 어간 자음과 분사 접사 *-meno- 결합 시 모음 교체와 보상적 장화가 일어났다. 현대 그리스어의 집회 및 수집 어휘(συγκεντρώνω 등)의 기틀이 되었다."
+      },
+      {
+        "g": "δαίνυντ᾽",
+        "pos": "동사",
+        "lemma": "δαίνυμι",
+        "parse": "3rd.pl.impf.ind.mp.",
+        "gloss_kr": "향연을 즐겼다, 음식을 나누었다",
+        "gloss_en": "they feasted, enjoyed a banquet",
+        "syntax": "LFG f-구조에서 이 동사는 PRED로서 [PRED 'δαίνυμι<SUBJ,OBJ>', SUBJ [PERS 3, NUM pl], OBJ [PRED 'δαῖς', CASE acc]] 의 구성을 가진다. 생성문법적으로 미완료 시제 어간에 -νυ- 중접 접사가 결합한 형태이며, [TP [vP 주어 [VP δαίνυντο δαῖτα]]] 구조에서 대격 목적어 δαῖτα와 결합하여 동종 목적어 구문(cognate accusative)을 형성한다.",
+        "principalParts": [
+          "δαίνυμι",
+          "δαίσω",
+          "ἔδαισα",
+          "(미상)",
+          "(미상)",
+          "ἐδαίσθην"
+        ],
+        "background": "죽은 영웅을 기리는 추모 향연(제사 음식을 나누는 행위)을 묘사한다. 그리스 문화권에서 장례 후의 향연은 산 자들이 슬픔을 극복하고 공동체의 삶을 계속 이어가겠다는 의례적 결속의 상징이다.",
+        "etymology": "PIE 재구형 *deh₂i-('나누다, 분배하다', 영급 및 h₂ 후두음 보유) 어근에서 유래했다. Beekes(EDG)는 산스크리트어 dā-('분배하다') 및 그리스어 δῆμος('백성, 분배된 땅')와의 동계 관계를 입증한다. 음운론적으로 나눔을 뜻하는 어근에 동사 형성 접사 *-nu-가 더해졌다. 현대어 직접 파생형은 적으나 고전시가의 향연 개념을 구성하는 명사형에 남아있다."
+      },
+      {
+        "g": "ἐρικυδέα",
+        "pos": "형용사",
+        "lemma": "ἐρικυδής, ἐρικυδές",
+        "parse": "sg.acc.f.",
+        "gloss_kr": "매우 영광스러운, 드높은",
+        "gloss_en": "glorious, splendid",
+        "syntax": "LFG f-구조에서 명사 δαῖτα를 수식하는 ADJUNCT/MOD 기능을 맡으며, [MOD [PRED 'ἐρικυδής', CASE acc, NUM sg, GEND f]] 속성을 갖는다. 생성문법적으로 명사구 내 NP 전위 수식어로 위치한다.",
+        "background": "향연의 성격이 일상적 식사가 아니라, 최고 귀족들과 왕이 주재하는 격조 높고 영광스러운 의례적 잔치임을 나타내는 시학적 수식어다.",
+        "etymology": "강조 접두사 ἐρι-('매우')와 명사 κῦδος('영광, 명성')의 합성어이다. PIE 어근 *(s)kewd-('놀라게 하다, 영광')와 연관된다. Chantraine(DELG)은 서사시 전용의 고풍스러운 형용사 형성 방식임을 논증한다. 고전기 아티카 산문에서는 거의 사라졌으며, 호메로스 어휘의 전통 속에서 잔존했다."
+      },
+      {
+        "g": "δαῖτα",
+        "pos": "명사",
+        "lemma": "δαῖς, δαιτός, ἡ",
+        "parse": "sg.acc.f.",
+        "gloss_kr": "향연을, 음식을",
+        "gloss_en": "feast, banquet",
+        "syntax": "LFG f-구조에서 동사 δαίνυντ᾽의 직접 목적어(OBJ)이자 동종 목적어(cognate object)로 작용하며, [PRED 'δαῖς', CASE acc, θ-ROLE PATIENT] 자질을 받는다. 생성문법상 VP의 내적 논항 위치 [Spec, VP]에 위치한다.",
+        "background": "각자에게 정당하게 분배된 음식과 몫을 함께 나누는 구체적 잔치를 의미한다. 호메로스 사회에서 δαῖς는 신분과 공로에 따른 몫(γέρας)의 정당한 분배라는 사회적 의미를 함께 지닌다.",
+        "etymology": "동사 δαίνομαι와 동일한 PIE 어근 *deh₂i-('나누다')에서 파생된 명사형이다. Beekes(EDG)는 이 단어가 원래 '분배된 몫의 식사'라는 통속적·의례적 원뜻을 담고 있음을 강조한다. 산스크리트어 dāti('나눔')와 동계어이다. 음운론적으로 자음 어간 3격변화 명사 틀을 형성하였다. 현대 그리스어 식사/향연 문맥에 고전 어원적 영향이 남아있다."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 6.803",
+    "trans": "제우스의 보살핌을 받는 왕 프리아모스의 궁전에서.",
+    "words": [
+      {
+        "g": "δώμασιν",
+        "pos": "명사",
+        "lemma": "δῶμα, δώματος, τό",
+        "parse": "pl.dat.n.",
+        "gloss_kr": "궁전에서, 저택들에서",
+        "gloss_en": "in the halls, in the palace",
+        "syntax": "LFG f-구조에서 장소를 나타내는 처격적 여격 부사구(ADJUNCT_LOC)로 기능하며, [ADJUNCT_LOC [PRED 'δῶμα', CASE dat, NUM pl]]로 처리된다. 생성문법적으로 처격 격표지(locative case) 없이 여격 형태 자체로 장소의 부사구 [PP [NP δώμασιν]]의 역할을 맡는다.",
+        "background": "트로이아의 통치자 프리아모스의 웅장한 궁궐을 가리킨다. 전쟁의 위기 속에서도 공동체의 최고 중심부에서 고인의 넋을 기리는 최고 수준의 예우가 펼쳐지고 있음을 보여준다.",
+        "etymology": "PIE 재구형 *dṓm- / *dem-('짓다, 집', o급 명사 어간)에서 소급된다. Beekes(EDG)는 라틴어 domus, 산스크리트어 dám- 및 그리스어 δέμω('짓다')와 어원적으로 동일함을 밝힌다. 음운론적으로 명사 파생 접사 *-mn-이 결합한 중성 명사 형태(-μα, -ματος)이다. 현대 그리스어 도모스 및 건축 관련 어휘의 조상이 되었다."
+      },
+      {
+        "g": "ἐν",
+        "pos": "전치사",
+        "lemma": "ἐν",
+        "parse": "postpos.prep.",
+        "gloss_kr": "~ 안에서",
+        "gloss_en": "in, within",
+        "syntax": "LFG f-구조에서 공간적 범주를 한정하는 전치사 핵(P)으로 작동하며, 여격 명사구 δώμασιν을 논항으로 취해 [PRED 'ἐν<OBJ>', OBJ [CASE dat]] 절을 구성한다. 생성문법적으로 PP의 핵으로서 통사적 지배를 수행한다.",
+        "background": "공간적 내부성을 지정하여 장례 향연이 외적인 위협(아카이아군)과 격리된 궁전의 안전하고 거룩한 내실에서 이루어짐을 부각한다.",
+        "etymology": "PIE 재구형 *en('안에')에서 유래했다. Chantraine(DELG)은 라틴어 in, 고대 영어 in, 산스크리트어 antár 등과 완벽히 대응하는 대표적인 인도유럽어족 공간 전치사임을 명시한다. 현대 그리스어에서도 문어체 및 합성어 접두사(εν-)로 원형을 유지한다."
+      },
+      {
+        "g": "Πριάμοιο",
+        "pos": "명사",
+        "lemma": "Πρίαμος, Πριάμου, ὁ",
+        "parse": "sg.gen.m.",
+        "gloss_kr": "프리아모스의",
+        "gloss_en": "of Priam",
+        "syntax": "LFG f-구조에서 명사 δώμασιν을 수식하는 소유격 한정어(SPEC_POSS)로 기능하며, [PRED 'Πρίαμος', CASE gen, NUM sg]의 구조를 가진다. 호메로스식 장모음 소유격 어미 -οιο가 적용되었다.",
+        "background": "트로이아의 고령의 국왕이자 헥토르의 아버지인 프리아모스의 이름이다. 아들의 시신을 거두기 위해 적진으로 홀로 찾아갔던 그가 이제 궁에서 아들의 마지막 길을 배웅하는 주체로서 서사의 중심을 지킨다.",
+        "etymology": "어원적으로 루위어(Luwian) 등 아나톨리아어파 기층 어휘에서 유래했다는 학설이 우세하다. Beekes(EDG)는 '우두머리, 용감한 자'를 뜻하는 루위어 *Priya-muwa-와의 연관 가능성을 제시한다. 전통적 민간어원에서는 '몸값을 주고 사온 자'(πρίαμαι)로 풀이하나 이는 명백한 통속적 해석이다. 고대 트로이아 지명/인명 연구의 중요 고유명사이다."
+      },
+      {
+        "g": "διοτρεφέος",
+        "pos": "형용사",
+        "lemma": "διοτρεφής, διοτρεφές",
+        "parse": "sg.gen.m.",
+        "gloss_kr": "제우스의 보살핌을 받는, 신성한",
+        "gloss_en": "fostered by Zeus, cherished by Zeus",
+        "syntax": "LFG f-구조에서 속성 명사 βασιλῆος를 직접 수식하는 MOD/ADJUNCT 역할을 맡으며, [PRED 'διοτρεφής', CASE gen, NUM sg, GEND m] 자질을 지닌다. 생성문법 구조에서 NP 내 형용사 수식어로 처리된다.",
+        "background": "호메로스 서사시에서 왕들에게 부여되는 고유한 신성 수식어(epic epithet)이다. 왕권이 신(제우스)으로부터 부여받았으며 신의 보호와 양육 아래 놓여 있음을 나타내는 권위의 표지이다.",
+        "etymology": "Διός(제우스의 소유격, PIE *dyeu-)와 τρέφω('기르다, 양육하다', PIE *dʰrebʰ-)의 합성어이다. Chantraine(DELG)은 신적 권위와 왕권의 수사적 결합을 보여주는 전통적 고대 시어 형성 방식으로 설명한다. 음운론적으로 모음 간 σ 탈락 및 모음 축합 전 호메로스식 어미(-έος) 형태를 유지하고 있다."
+      },
+      {
+        "g": "βασιλῆος",
+        "pos": "명사",
+        "lemma": "βασιλεύς, βασιλέως, ὁ",
+        "parse": "sg.gen.m.",
+        "gloss_kr": "왕의, 군주의",
+        "gloss_en": "of the king",
+        "syntax": "LFG f-구조에서 명사 Πριάμοιο와 동격(APPOS) 관계를 이루는 속격 명사구이며, [APPOS [PRED 'βασιλεύς', CASE gen, NUM sg, GEND m]] 형태로 연계된다. 생성문법적으로 [DP [NP Πριάμοιο] [NP βασιλῆος]] 구조의 동격 연결을 이룬다.",
+        "background": "프리아모스의 통치자적 지위를 확증하는 명사이다. 단순한 한 가문의 가장이 아니라 트로이아 전체를 대표하는 국가적 영수의 국장(國葬)임을 보여준다.",
+        "etymology": "비인도유럽어족 기층 어휘(Pre-Greek)에서 차용된 것으로 널리 여겨진다. Beekes(EDG)는 미케네 그리스어 선형B 문편에 나타나는 qa-si-re-u(지방 관료/마을 족장) 형태를 제시하며, 비-PIE 어원론을 강력히 지지한다. 음운론적으로 호메로스 방언 특유의 장모음 속격 어미(-ῆος)를 보존하고 있다. 현대 그리스어의 βασιλιάς('왕')로 직접 이어진다."
+      }
+    ]
+  },
+  {
+    "ref": "Iliad 6.804",
+    "trans": "이렇게 그들은 말말을 길들이는 헥토르의 무덤을 돌보았다.",
+    "words": [
+      {
+        "g": "ὣς",
+        "pos": "부사",
+        "lemma": "ὣς",
+        "parse": "adv.",
+        "gloss_kr": "이와 같이, 이렇게",
+        "gloss_en": "thus, so",
+        "syntax": "LFG 관점에서 ὣς는 상위 절의 양태(manner)를 지정하는 ADJUNCT 기능을 수행하며, [ADJUNCT [PRED 'ὣς']] 형태의 f-구조 속성을 갖는다. 생성문법적으로는 vP 주변의 부사구(AdvP) 위치에 병합된 것으로 분석되며, 담화 정보구조상 이전 맥락의 종결을 가리키는 지시사적 성격을 띤다.",
+        "background": "이 부사는 일리아스 서사시 전체의 마지막 행을 마무리하며, 앞서 벌어진 비극적인 장례 의식 전체를 하나의 행동으로 요약하는 수사적 기능을 한다. 호메로스 서사시에서 이와 같은 지시어는 개별 에피소드 및 대서사의 장엄한 닫힘을 선언하는 정형화된 구절이다.",
+        "etymology": "PIE 재구형 *swos로 소급되며, 지시대명사 어간에 기원한다. Chantraine(DELG) 및 Beekes(EDG)는 이 형태가 호메로스 및 이오니아 방언에서 부사로 굳어졌음을 지적하며, 산스크리트어 svà 등의 동계어와 연결된다. 음운론적으로는 모음 앞에서의 자음 탈락과 강세 이동을 겪었다. 현대 그리스어에서는 고전어의 흔적으로 남아 시적 표현이나 격식체 문어에서만 제한적으로 쓰인다."
+      },
+      {
+        "g": "οἵ",
+        "pos": "대명사",
+        "lemma": "ὅς, ἥ, ὅ",
+        "parse": "pl.nom.m.",
+        "gloss_kr": "그들",
+        "gloss_en": "they",
+        "syntax": "LFG f-구조에서 이 대명사는 주어(SUBJ) 기능을 담당하며, [PRED 'pro', CASE nom, PERS 3, NUM pl]의 자질 행렬로 표현된다. 생성문법적으로 [Spec, TP] 자리를 점유하며, 앞서 언급된 트로이아인들의 복합 집단을 가리키는 대속격(anaphoric) 기능을 수행한다.",
+        "background": "여기서 '그들'은 헥토르의 시신을 수습하고 장례를 치른 트로이아의 원로들과 백성들을 가리킨다. 아킬레우스의 분노와 프리아모스의 간청으로 시작된 대장정의 마무리를 집단 주어로 받아내는 결정적인 역할을 한다.",
+        "etymology": "PIE 재구형 *yo- (지시 및 관계대명사 어간, e급)에서 유래했다. Beekes(EDG)는 이 형태가 그리스어에서 정관사 및 대명사 체계로 분화하는 과정을 상세히 다룬다. 산스크리트어 yá- 및 아베스타어 ya-와 명백한 동계어를 이룬다. 음운론적으로 초기 그리스어의 *s-가 기식음으로 약화되는 음운 변화를 거쳤다."
+      },
+      {
+        "g": "γ᾽",
+        "pos": "소사",
+        "lemma": "γε",
+        "parse": "clitic part.",
+        "gloss_kr": "-는, 최소한",
+        "gloss_en": "at least, indeed",
+        "syntax": "LFG 관점에서 γe는 독립된 통사 슬롯을 갖지 않고 직전의 형태소에 부착되는 접어(clitic)로 분석되며, 정보구조상 초점(focus)을 강화하는 한정(restriction) 기능을 f-구조의 제약 조건으로 부과한다. 생성문법의 이동 이론에서는 기능 범주(Functional Category)의 핵으로 투사되지 않고 PF 단계에서 음운적 지지체에 의존하는 성분으로 다뤄진다.",
+        "background": "이 소사는 앞의 대명사와 결합하여 '바로 그들'이라는 한정적이고 강조된 뉘앙스를 부여한다. 비극적인 장례를 치러낸 주체들의 행동을 부각시키며 독자의 주의를 집중시키는 호메로스 운문 특유의 미세 조율 장치다.",
+        "etymology": "PIE 재구형 *ge (강조 소사)에서 기원하며, 명확한 어원적 동계어는 다른 인도유럽어파에서 제한적으로 확인된다. Chantraine(DELG)은 이 형태가 독립어로서의 지위를 잃고 고대 그리스어 전반에 걸쳐 접어로 고착되었음을 설명한다. 후대 그리스어에서도 잔존하여 현대 그리스어의 강세 및 강조 구문 형성에 기여했다."
+      },
+      {
+        "g": "ἀμφίεπον",
+        "pos": "동사",
+        "lemma": "ἀμφιέπω",
+        "parse": "3rd.pl.impf.ind.act.",
+        "gloss_kr": "돌보았다, 정성껏 다뤘다",
+        "gloss_en": "tended, busied themselves around",
+        "syntax": "LFG f-구조에서 이 동사는 PRED이며, [PRED 'ἀμφιέπω<SUBJ,OBJ>', SUBJ [PRED 'οἵ', CASE nom], OBJ [PRED 'τάφος', CASE acc]] 형태로 논항을 지배한다. 생성문법적으로 미완료시제(imperfect)의 과거 시상 표지와 증대음(augment)이 접두되어 [TP [T' T [vP 주어 [VP v [V' ᾀμφίεπον ...]]]]] 구조를 이룬다. 목적어인 장례와 무덤을 대상으로 지속적인 행위를 수행함을 나타낸다.",
+        "principalParts": [
+          "ἀμφιέπω",
+          "ἀμφιέψω (or ἀμφι-εποίσω)",
+          "ἀμφιέπον (or ἀμφέπεσα)",
+          "(미상)",
+          "(미상)",
+          "(미상)"
+        ],
+        "background": "이 동사는 단순한 노동을 넘어 신성한 의무로서 시신과 무덤을 보살피고 정돈하는 행위를 가리킨다. 일리아스의 마지막 행에서 트로이아인들이 헥토르에게 바치는 마지막 경의의 깊이를 시각적으로 드러낸다.",
+        "etymology": "전치사 ἀμφί와 동사 ἕπω('따르다, 다루다')의 합성어로, PIE 재구형 *sekʷ-('따르다', e급)에 기반한다. Beekes(EDG)는 이 동사가 호메로스 시기 특별히 의례적 돌봄이나 경작의 의미로 전문화되었음을 논증한다. 라틴어 sequor 및 산스크리트어 sácate와 동계어이며, 음운론적으로는 구개음화 및 접두사 결합에 따른 강세 후퇴 현상을 겪었다. 현대 그리스어에는 직접적인 동사 형태로 남아있지 않고 어원적 화석으로만 존재한다."
+      },
+      {
+        "g": "τάφον",
+        "pos": "명사",
+        "lemma": "τάφος, τοῦ",
+        "parse": "sg.acc.m.",
+        "gloss_kr": "무덤, 장례식",
+        "gloss_en": "tomb, funeral mound",
+        "syntax": "LFG f-구조에서 τάφον은 동사 ἀμφίεπον의 직접 목적어(OBJ)로 기능하며, [PRED 'τάφος', CASE acc, θ-ROLE THEME] 속성-값 행렬을 형성한다. 생성문법적으로 목적어 자리인 [Spec, VP]에 위치하며, 격 이론(Case Theory)에 따라 동사로부터 대격(accusative)을 할당받는다.",
+        "background": "τάφος는 영웅의 죽음 뒤에 남겨지는 물리적인 무덤인 동시에 그를 기리는 장례 의식 전체를 포괄한다. 일리아스의 대미를 장식하는 핵심 소재로서, 헥토르의 죽음이 비단 개인의 죽음이 아니라 트로이아 공동체 전체의 기념비적 사건임을 상징한다.",
+        "etymology": "PIE 재구형 *dʰwabʰ-('흐리다, 놀라다' 또는 이와 관련된 장례적 매장 명칭)에서 유래했다고 보나, Chantraine(DELG)은 의미 전이 과정의 복잡성을 지적한다. 선그리스어 기층 어휘일 가능성도 제기된다. 음운론적으로는 흡식음화(aspirate dissimilation, 그라스만 법칙의 변형 양상)를 거쳤으며, 고대 그리스어에서 '놀라움'과 '무덤'이라는 두 갈래로 의미가 분화했다. 현대 그리스어 τάφος는 여전히 '무덤'이라는 뜻으로 직접 이어져 쓰인다."
+      },
+      {
+        "g": "Ἕκτορος",
+        "pos": "명사",
+        "lemma": "Ἕκτωρ, Ἕκτορος, ὁ",
+        "parse": "sg.gen.m.",
+        "gloss_kr": "헥토르의",
+        "gloss_en": "of Hector",
+        "syntax": "LFG f-구조에서 이 명사는 소유격 한정어(ADJUNCT 또는 SPEC_POSS)로 기능하여 τάφον을 수식하며, [PRED 'Ἕκτωρ', CASE gen, θ-ROLE POSSESSOR] 구조를 이룬다. 생성문법적으로 명사구 내의 [Spec, NP] 위치에 병합되며, 명사 핵과의 격 일치 없이 지배관계를 형성한다.",
+        "background": "트로이아의 위대한 방어자이자 이 서사시의 가장 비극적인 영웅인 헥토르의 이름이다. 그의 무덤이 언급됨으로써 일리아스는 전쟁의 승패를 넘어 인간의 보편적인 죽음과 애도라는 거대한 서사적 여정을 완성한다.",
+        "etymology": "동사 ἔχω('가지다, 지탱하다')의 어근에서 파생된 명사형으로, PIE 재구형 *seǵʰ-('붙잡다, 억누르다', e급)에 기초한다. Beekes(EDG)와 Chantraine(DELG)은 '도시를 지탱하는 자'라는 뜻의 고대 인명 형성 방식을 설명한다. 산스크리트어 sáhate와 동계어이며, 음운론적으로는 명사 파생 과정에서 모음 교체와 격 변화를 겪었다. 현대 그리스어 인명 ΕḰτωρ으로 그 명맥이 이어지고 있다."
+      },
+      {
+        "g": "ἱπποδάμοιο",
+        "pos": "형용사",
+        "lemma": "ἱππόδαμος, ἱππόδαμον",
+        "parse": "sg.gen.m.",
+        "gloss_kr": "말을 길들이는, 마술(馬術)의",
+        "gloss_en": "tamer of horses, horse-taming",
+        "syntax": "LFG f-구조에서 이 형용사는 소유격 명사 Ἕκτορος를 수식하는 아티트리뷰트(ADJUNCT/MOD)로 작용하며, [PRED 'ἱππόδαμος', CASE gen, NUM sg, GEND m]의 자질을 갖는다. 생성문법적으로 N-bar 수준에서 명사를 좌측에서 수식하는 구조를 형성하며, 호메로스 시가 특유의 수식어 관행을 보여준다.",
+        "background": "ἱππόδαμος는 호메로스 서사시에서 트로이아 영웅들과 귀족들에게 붙는 전형적인 영웅적 수식어(epithet)다. 기마술이 전쟁의 승패와 귀족의 위엄을 상징하던 시대적 배경을 반영하며, 헥토르의 무용과 귀족적 품위를 극적으로 대변한다.",
+        "etymology": "ἵππος('말', PIE *ekʷo-)와 δάμνημι('길들이다', PIE *d댐h₂-, 영급 어간)의 합성어로, PIE 재구형 차원에서 복합어 형성 규칙을 따른다. Chantraine(DELG)은 이 형태가 미케네 그리스어 시기부터 존재했던 전통적 영웅 수식어임을 강조한다. 산스크리트어 aśva-dámya와 구문적·어원적으로 정확히 대응한다. 후대 시가와 비문에서 시적 형용사로 제한적으로 쓰이다가 고전기 이후 일상어에서 소실되었다."
+      }
+    ]
   }
 ];
