@@ -2781,6 +2781,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   .ai-grid2 .ai-gem-custom { margin-top: 6px; }
   .ai-opts { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: center; margin-top: 10px; }
   .ai-opts:empty { display: none; }
+  .ai-opts .ai-review-hint { flex: 1 0 100%; margin: 0; }
   .ai-opts input[type=number] { box-sizing: border-box; margin: 0 2px; padding: 4px 6px; font-family: var(--sans); font-size: 13px; color: var(--text-main); background: var(--card-bg); border: 0.5px solid var(--border); border-radius: 6px; outline: none; text-align: center; }
   .ai-step .ai-main-act { margin-top: 14px; padding: 0; }
   .ai-step .ai-main-act .ai-btn { width: 100%; padding: 12px 14px; font-size: 15px; font-weight: 600; border-radius: 10px; }
@@ -3149,10 +3150,14 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
             <span class="ai-num">1</span>
             <div class="ai-step-t"><h3>원문 넣기</h3><p>붙여넣기만 하세요. 한 줄이 한 행이고, 여러 줄을 한꺼번에 붙여도 돼요.</p></div>
           </header>
+          <div class="ai-opts">
+            <label class="ai-chk"><input type="checkbox" id="aiGemReview"> Gemini 자동 코딩: 기존 행 재검토·교체</label>
+            <p class="ai-hint ai-review-hint">켜면 기존 분석을 API에 함께 보내 정확한 부분은 유지하고 오류·누락을 고치게 해요. 검토할 행 번호와 원문을 입력하세요. 원문을 비워 두면 저장된 원문을 사용합니다.</p>
+          </div>
           <div id="aiQ"></div>
           <div class="ai-qfoot"><div class="ai-qtools ai-qtools-lite"><button type="button" class="ai-link" id="aiAutoFailed">실패한 행만 다시</button><button type="button" class="ai-link" id="aiQDone">저장된 행 치우기</button><button type="button" class="ai-link ai-danger" id="aiQClear">목록 비우기</button></div></div>
           <div class="ai-go" id="aiGoWrap">
-            <div class="ai-main-act"><button type="button" class="ai-btn ai-primary" id="aiAutoGo">자동 코딩 시작</button> <button type="button" class="ai-btn" id="aiAutoDlNow" hidden>.js 다운로드</button></div>
+            <div class="ai-main-act"><button type="button" class="ai-btn ai-primary" id="aiAutoGo">자동 코딩 시작</button> <button type="button" class="ai-btn" id="aiAutoDlNow" hidden>지금까지 .js 받기</button></div>
             <div class="ai-prog" id="aiProg" hidden>
               <div class="ai-prog-top"><b id="aiProgTxt">0 / 0행</b><span id="aiProgEta"></span></div>
               <div class="ai-prog-bar" aria-hidden="true"><i class="ok" id="aiProgOk"></i><i class="bad" id="aiProgBad"></i></div>
@@ -3165,17 +3170,22 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
           <details class="ai-sub ai-kbd-d"><summary>단축키 <small>보기</small></summary><p class="ai-kbd"><kbd>Enter</kbd> 글 가운데서 행 나누기 · <kbd>Backspace</kbd> 맨 앞에서 위 행에 합치기 · <kbd>Delete</kbd> 맨 끝에서 아래 행 합치기 · <kbd>↑</kbd><kbd>↓</kbd> 행 이동 · <kbd>Ctrl</kbd>+<kbd>Enter</kbd> 이 행 코딩</p></details>
         </section>
 
-        <!-- 2. 결과 · 다운로드 -->
+        <!-- 2. 결과 · 파일 반영 -->
         <section class="ai-step" id="aiStep2">
           <header class="ai-step-h">
             <span class="ai-num">2</span>
-            <div class="ai-step-t"><h3>결과 · 다운로드</h3><p>코딩한 결과는 아직 이 브라우저에만 있어요. 파일로 받아 data 폴더에 덮어쓰면 반영돼요.</p></div>
+            <div class="ai-step-t"><h3>결과 · 파일 반영</h3><p>코딩 결과는 먼저 이 브라우저에 저장돼요. 아래 방법 중 하나로 현재 권의 전체 데이터를 컴퓨터나 VS Code에 반영하세요.</p></div>
           </header>
           <div class="ai-qsend">
-            <button type="button" class="ai-btn ai-primary" id="aiExpSave" hidden>data 폴더에 바로 저장</button>
-            <button type="button" class="ai-btn ai-primary" id="aiExpDl">.js 다운로드</button>
-            <button type="button" class="ai-link" id="aiExpJson">.json 다운로드</button>
+            <button type="button" class="ai-btn ai-primary" id="aiExpSave" hidden>1. 내 PC data 폴더에 저장</button>
+            <button type="button" class="ai-btn" id="aiExpDl">2. VS Code용 .js 파일 받기</button>
+            <button type="button" class="ai-btn" id="aiExpCopy">3. VS Code에 붙일 코드 복사</button>
           </div>
+          <p class="ai-hint">①은 선택한 data 폴더의 파일을 바로 갱신해요. ②는 받은 .js 파일을 VS Code 프로젝트의 data 폴더에 덮어쓰세요. ③은 VS Code에서 해당 data 파일의 기존 내용을 전체 선택해 복사한 코드로 바꾼 뒤 저장하세요.</p>
+          <details class="ai-sub">
+            <summary>고급 내보내기 <small>.json</small></summary>
+            <div class="ai-qsend"><button type="button" class="ai-link" id="aiExpJson">.json 다운로드 (wrap_data.py용)</button></div>
+          </details>
           <details class="ai-bulk ai-manual ai-view" id="aiView">
             <summary>결과 보기 <small id="aiViewCnt"></small></summary>
             <div class="ai-manual-body">
@@ -7990,11 +8000,24 @@ function goToLine(viewId, idx) {
 
   // 일괄 입력: 행마다 앞에 번호 칸. 줄 끝에서 Enter → 그 행이 확정되고 다음 번호의 새 행이 열린다.
   // 여러 줄을 붙여넣으면 번호가 이어서 붙는다. ‘코딩’을 누르면 아래 입력 폼으로 그 행이 넘어간다.
-  const qEl = $('aiQ'), QKEY = 'aiQueues';
+  const qEl = $('aiQ'), QKEY = 'aiQueues', reviewBox = $('aiGemReview');
   let Q = [], qKey = '', qi = -1;
   const qStore = () => { try { return JSON.parse(localStorage.getItem(QKEY) || '{}') || {}; } catch (e) { return {}; } };
+  function existingLineFor(n) {
+    const found = S.lines.find(l => refLineNo(l.ref) === n);
+    const mine = loadUserLines()[S.storeKey] || {};
+    if (found && mine[found.ref]) return mine[found.ref];
+    if (found) return found;
+    return Object.keys(mine).map(ref => mine[ref]).find(l => l && refLineNo(l.ref) === n) || null;
+  }
+  function reviewSourceFor(n) {
+    const line = existingLineFor(n);
+    if (!line || !Array.isArray(line.words)) return '';
+    return line.words.map(w => w && typeof w.g === 'string' ? w.g : '').filter(Boolean)
+      .join(S.work.key === 'sanguo' ? '' : ' ').normalize('NFC').trim();
+  }
   function qSave() {
-    const s = qStore(), rows = Q.filter(r => r.t.trim());
+    const s = qStore(), rows = Q.filter(r => r.t.trim() || (r.pick && existingLineFor(parseInt(r.n, 10))));
     if (rows.length) s[qKey] = rows; else delete s[qKey];
     try { localStorage.setItem(QKEY, JSON.stringify(s)); } catch (e) {}
   }
@@ -8007,12 +8030,13 @@ function goToLine(viewId, idx) {
   function qState(r) {
     const n = parseInt(r.n, 10);
     if (!(n > 0)) return ['번호 필요', 'warn'];
+    if (Q.filter(x => parseInt(x.n, 10) === n && (x.t.trim() || (reviewBox.checked && x.pick))).length > 1) return ['번호 중복', 'warn'];
+    const existing = existingLineFor(n);
+    if (reviewBox.checked && existing && (r.t.trim() || r.pick)) return r.reviewed ? ['검토 완료 ✓', 'ok'] : ['재검토 예정', 'warn'];
+    if (existing) return ['이미 있음', 'ok'];
     if (r.d) return ['저장됨 ✓', 'ok'];
     if (r.f) return ['실패', 'warn'];
-    if (Q.filter(x => parseInt(x.n, 10) === n && x.t.trim()).length > 1) return ['번호 중복', 'warn'];
-    const found = S.lines.find(l => refLineNo(l.ref) === n);
-    if ((loadUserLines()[S.storeKey] || {})[found ? found.ref : refOf(n)]) return ['저장됨 ✓', 'ok'];
-    return found ? ['기존 행', ''] : (r.t.trim() ? ['새 행', ''] : ['', '']);
+    return r.t.trim() ? ['새 행', ''] : ['', ''];
   }
   function paintQ(d, i) {
     const st = qState(Q[i]), s = d.querySelector('.qs');
@@ -8044,11 +8068,19 @@ function goToLine(viewId, idx) {
     const key = S.work.key + ':' + (isNaN(S.book) ? '' : S.book);
     if (key !== qKey) {
       qKey = key; qi = -1;
-      Q = isNaN(S.book) ? [] : (qStore()[key] || []).map(r => ({ n: String(r.n), t: String(r.t), d: !!r.d, f: !!r.f }));
+      Q = isNaN(S.book) ? [] : (qStore()[key] || []).map(r => ({ n: String(r.n), t: String(r.t), d: !!r.d, f: !!r.f, pick: !!r.pick, reviewed: !!r.reviewed }));
       qRender();
     } else qEl.querySelectorAll('.ai-q').forEach((d, i) => paintQ(d, i));
   }
   window.__aiQRefresh = qSync;
+  reviewBox.addEventListener('change', () => {
+    Q.forEach(r => { r.reviewed = false; });
+    $('aiAutoGo').textContent = reviewBox.checked ? '기존 행 재검토 시작' : '자동 코딩 시작';
+    qSave(); qRender();
+    qMsg(reviewBox.checked
+      ? '기존 행 재검토가 켜졌어요. 기존 원문을 입력하거나 행 번호만 넣으면 저장된 원문으로 다시 코딩해요. 결과는 기존 정보를 교체합니다.'
+      : '기존 행 재검토를 껐어요. 이미 있는 행은 자동 코딩에서 건너뜁니다.');
+  });
   function qGo(i) {
     const r = Q[i], n = parseInt(r.n, 10);
     if (!(n > 0)) { setStatus('이 행의 번호를 먼저 넣어 주세요.'); return; }
@@ -8063,8 +8095,9 @@ function goToLine(viewId, idx) {
   qEl.addEventListener('input', e => {
     const d = e.target.closest('.ai-q'); if (!d) return;
     const i = +d.dataset.i;
-    if (e.target.classList.contains('qn')) Q[i].n = e.target.value.trim(); else Q[i].t = e.target.value;
-    Q[i].d = false; Q[i].f = false;
+    if (e.target.classList.contains('qn')) { Q[i].n = e.target.value.trim(); Q[i].pick = true; }
+    else Q[i].t = e.target.value;
+    Q[i].d = false; Q[i].f = false; Q[i].reviewed = false;
     qSave(); qEl.querySelectorAll('.ai-q').forEach((x, k) => paintQ(x, k));
   });
   // 번호가 이어진(n, n+1, n+2…) 뒤쪽 행들 — 가르기/합칠 때 같이 한 칸씩 밀고 당기기 위해
@@ -8079,7 +8112,7 @@ function goToLine(viewId, idx) {
     const r = Q[i];
     const left = r.t.slice(0, pos).replace(/\s+$/, ''), right = r.t.slice(pos).replace(/^\s+/, '');
     const newN = String(qNextFrom(i));
-    qChain(i).forEach(j => { Q[j].n = String(parseInt(Q[j].n, 10) + 1); Q[j].d = false; Q[j].f = false; });
+    qChain(i).forEach(j => { Q[j].n = String(parseInt(Q[j].n, 10) + 1); Q[j].d = false; Q[j].f = false; Q[j].reviewed = false; });
     r.t = left.normalize('NFC'); r.d = false; r.f = false;
     Q.splice(i + 1, 0, { n: newN, t: right.normalize('NFC') });
     if (qi > i) qi++;
@@ -8093,8 +8126,8 @@ function goToLine(viewId, idx) {
     const chain = (pn > 0 && cn === pn + 1) ? qChain(i) : [];
     const pt = p.t.replace(/\s+$/, ''), ct = c.t.replace(/^\s+/, '');
     const sep = (pt && ct && S.work.key !== 'sanguo') ? ' ' : '';   // 한문은 띄어쓰기 없음
-    p.t = (pt + sep + ct).normalize('NFC'); p.d = false; p.f = false;
-    chain.forEach(j => { Q[j].n = String(parseInt(Q[j].n, 10) - 1); Q[j].d = false; Q[j].f = false; });
+    p.t = (pt + sep + ct).normalize('NFC'); p.d = false; p.f = false; p.reviewed = false;
+    chain.forEach(j => { Q[j].n = String(parseInt(Q[j].n, 10) - 1); Q[j].d = false; Q[j].f = false; Q[j].reviewed = false; });
     Q.splice(i, 1);
     if (qi === i) qi = i - 1; else if (qi > i) qi--;
     qSave(); qRender(i - 1, pt.length);
@@ -8142,7 +8175,7 @@ function goToLine(viewId, idx) {
     const empty = !Q[i].t.trim();
     let cur = empty ? n : n + 1;   // 첫 항목에 줄 번호
     const made = items.map(x => { if (x.n > 0) cur = x.n; const r = { n: String(cur), t: x.t }; cur++; return r; });
-    if (empty) { const f = made.shift(); Q[i].n = f.n; Q[i].t = f.t; Q[i].d = false; Q[i].f = false; }
+    if (empty) { const f = made.shift(); Q[i].n = f.n; Q[i].t = f.t; Q[i].d = false; Q[i].f = false; Q[i].reviewed = false; }
     Q.splice.apply(Q, [i + 1, 0].concat(made));
     if (found) qMsg('붙여넣은 글에서 행 번호 ' + found + '개를 읽어 반영했어요. 번호가 없는 줄은 앞 번호에 이어 붙였어요.');
     qTail(); qSave(); qRender(Q.length - 1);
@@ -8277,40 +8310,58 @@ function goToLine(viewId, idx) {
   function download(name, text, type) {
     const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], { type: type + ';charset=utf-8' })); a.download = name;
     document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 4000);
-    markExported();
   }
-  // ---- 파일로 안 받은 행 추적 · 이탈 경고 · 중간 저장(체크포인트) ----
+  // ---- 프로젝트 파일에 아직 반영되지 않은 브라우저 수정본 추적 ----
   function mineCount() { return Object.keys(loadUserLines()[S.storeKey] || {}).length; }
-  function markExported() { try { const o = JSON.parse(localStorage.getItem('aiLastExp') || '{}'); o[S.storeKey] = mineCount(); localStorage.setItem('aiLastExp', JSON.stringify(o)); } catch (e) {} unsavedSync(); }
-  function unsavedN() { let l = 0; try { l = (JSON.parse(localStorage.getItem('aiLastExp') || '{}'))[S.storeKey] || 0; } catch (e) {} return Math.max(0, mineCount() - l); }
+  function unsavedN() { return mineCount(); }
   function unsavedSync() {
     const b = $('aiUnsaved'); if (!b || !S.storeKey) return;
-    const n = unsavedN(), m = mineCount(), btn = $('aiUnsavedDl');
-    if (n > 0) { b.hidden = false; b.classList.remove('ok'); $('aiUnsavedTxt').textContent = '⚠ 파일로 받지 않은 행 ' + n + '개 — 지금은 이 브라우저에만 있어요.'; btn.textContent = '지금 .js 받기'; btn.dataset.mode = 'dl'; }
-    else if (m > 0) { b.hidden = false; b.classList.add('ok'); $('aiUnsavedTxt').textContent = '✓ 파일로 받았어요. data 폴더에 덮어쓰고 새로고침한 뒤 수정본을 비우세요 (비우기 전엔 이 브라우저 값이 파일보다 우선해요).'; btn.textContent = '수정본 비우기'; btn.dataset.mode = 'clear'; }
+    const n = unsavedN(), btn = $('aiUnsavedDl');
+    if (n > 0) { b.hidden = false; b.classList.remove('ok'); $('aiUnsavedTxt').textContent = '⚠ 프로젝트 파일에 반영되지 않은 브라우저 수정본 ' + n + '개 — 다운로드나 복사만으로는 VS Code 파일이 바뀌지 않아요.'; btn.textContent = 'VS Code용 .js 받기'; btn.dataset.mode = 'dl'; }
     else b.hidden = true;
   }
   function dockSync() {
     const t = $('aiDockTxt'); if (!t) return;
-    const todo = Q.filter(r => r.t.trim() && parseInt(r.n, 10) > 0 && ['저장됨 ✓', '번호 중복'].indexOf(qState(r)[0]) < 0).length, f = Q.filter(r => r.f).length;
+    const todo = Q.filter(r => parseInt(r.n, 10) > 0 && (r.t.trim() || (reviewBox.checked && r.pick && existingLineFor(parseInt(r.n, 10)))) && qState(r)[1] !== 'ok' && qState(r)[0] !== '번호 중복').length, f = Q.filter(r => r.f).length;
     t.textContent = auto.run ? '코딩 중…' : todo ? '코딩할 행 ' + todo + '개' + (f ? ' · 실패 ' + f : '') : '코딩할 행 없음 — 원문을 붙여넣으세요';
   }
   { const mv = document.querySelector('.ai-main-act'); if (mv) $('aiDockBtns').appendChild(mv); }
   setInterval(() => { if (ov.classList.contains('show')) { unsavedSync(); dockSync(); specSync(); } }, 1000);
-  $('aiUnsavedDl').addEventListener('click', () => $($('aiUnsavedDl').dataset.mode === 'clear' ? 'aiMineClear' : 'aiExpDl').click());
+  $('aiUnsavedDl').addEventListener('click', () => $('aiExpDl').click());
   window.addEventListener('beforeunload', e => { if (auto.run || unsavedN() > 0) { e.preventDefault(); e.returnValue = ''; } });
   const ckInp = $('aiGemCk'); try { const v = localStorage.getItem('aiCk'); ckInp.value = v === null ? '25' : v; } catch (e) { ckInp.value = '25'; }
   ckInp.addEventListener('change', () => { try { localStorage.setItem('aiCk', ckInp.value); } catch (e) {} });
   const ckEvery = () => Math.max(0, parseInt(ckInp.value, 10) || 0);
   async function checkpoint(tag) { const x = await exportBuild(); if (!x) return ''; download(x.fileId + '-중간저장.js', x.js, 'text/javascript'); return '⬇ 중간 저장 파일 받음 (' + tag + ', 내 수정본 ' + x.mineN + '행) — 쓰려면 이름을 ' + x.fileId + '.js 로 바꿔 data 폴더에 덮어쓰세요'; }
   async function clearMine() {
-    const store = loadUserLines(); if (store[S.storeKey]) { delete store[S.storeKey]; saveUserLines(store); } markExported();
+    const store = loadUserLines(); if (store[S.storeKey]) { delete store[S.storeKey]; if (!saveUserLines(store)) throw new Error('브라우저 저장 공간 때문에 수정본을 비우지 못했어요.'); }
     applyToChapter(); await loadLines(); refresh(true); qSync();
   }
   $('aiExpDl').addEventListener('click', async () => {
     const x = await exportBuild(); if (!x) return;
     download(x.fileId + '.js', x.js, 'text/javascript');
-    qMsg(x.fileId + '.js를 받았어요 (전체 ' + x.merged.length + '행, 그중 내 수정본 ' + x.mineN + '행). data 폴더의 같은 이름 파일에 덮어쓴 뒤 새로고침하세요. 덮어쓴 다음에 ‘내 수정본 비우기’를 눌러 두면 이후 파일 수정이 그대로 보여요.');
+    qMsg(x.fileId + '.js 파일을 받았어요 (전체 ' + x.merged.length + '행, 브라우저 수정본 ' + x.mineN + '행). VS Code 프로젝트의 data 폴더에 덮어쓰고 저장하세요. 반영을 확인한 다음 ‘내 수정본 비우기’를 누르면 이후 파일 변경이 그대로 보여요.');
+  });
+  async function copyExportText(text) {
+    const fallback = () => {
+      const ta = document.createElement('textarea');
+      ta.value = text; ta.style.cssText = 'position:fixed;opacity:0';
+      document.body.appendChild(ta); ta.focus(); ta.select();
+      let ok = false;
+      try { ok = document.execCommand('copy'); } catch (e) { ok = false; } finally { ta.remove(); }
+      return ok;
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      try { await navigator.clipboard.writeText(text); return true; } catch (e) { return fallback(); }
+    }
+    return fallback();
+  }
+  $('aiExpCopy').addEventListener('click', async () => {
+    const x = await exportBuild(); if (!x) return;
+    const ok = await copyExportText(x.js);
+    qMsg(ok
+      ? x.fileId + '.js 전체 코드(' + x.merged.length + '행)를 복사했어요. VS Code에서 data/' + x.fileId + '.js의 기존 내용을 전부 바꿔 붙여넣고 저장하세요. 복사만으로는 파일이 바뀌지 않아요.'
+      : '코드를 클립보드에 복사하지 못했어요. 브라우저의 클립보드 권한을 확인하거나 ‘2. VS Code용 .js 파일 받기’를 이용하세요.');
   });
   // 자동 코딩이 끝나면 .js 를 자동으로 받을지 (선택은 이 브라우저에 기억)
   (function () {
@@ -8327,8 +8378,9 @@ function goToLine(viewId, idx) {
   $('aiMineClear').addEventListener('click', async () => {
     const n = Object.keys(loadUserLines()[S.storeKey] || {}).length;
     if (!n) { qMsg('비울 내 수정본이 없어요.'); return; }
-    if (!confirm('이 권의 내 수정본 ' + n + '행을 브라우저에서 지울까요?\n.js 파일로 내보내 data 폴더에 덮어쓴 뒤에만 지우세요. 안 그러면 이 행들이 사라져요.')) return;
-    await clearMine(); qMsg('내 수정본 ' + n + '행을 비웠어요.');
+    if (!confirm('이 권의 내 수정본 ' + n + '행을 브라우저에서 지울까요?\n내 PC에 바로 저장했거나, VS Code의 data 파일에 다운로드/복사 내용을 반영한 것을 확인한 뒤에만 지우세요.')) return;
+    try { await clearMine(); qMsg('내 수정본 ' + n + '행을 브라우저에서 비웠어요.'); }
+    catch (e) { qMsg('수정본을 비우지 못했어요: ' + e.message); }
   });
 
   // ---- 코딩된 정보 직접 보기: 이 권의 '내 수정본'을 data 파일에 들어가는 모양(JSON) 그대로 보여 주고, 자동 코딩과 같은 기준으로 검수 표시를 단다 ----
@@ -8386,9 +8438,10 @@ function goToLine(viewId, idx) {
     qMsg('코딩된 정보를 복사했어요.');
   });
   viewPaint();
-  // data 폴더에 바로 저장 (Chrome/Edge 등 File System Access 지원 브라우저). 폴더 권한은 한 번 고르면 기억해 둔다.
+  // 내 PC의 data 폴더에 바로 저장 (File System Access 지원 브라우저). 폴더 권한은 한 번 고르면 기억해 둔다.
   if (window.showDirectoryPicker) {
     $('aiExpSave').hidden = false;
+    $('aiExpDl').classList.remove('ai-primary');
     const idb = () => new Promise((res, rej) => { const r = indexedDB.open('aiDirs', 1); r.onupgradeneeded = () => r.result.createObjectStore('h'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
     const dirGet = async () => { try { const db = await idb(); return await new Promise(res => { const q = db.transaction('h').objectStore('h').get('data'); q.onsuccess = () => res(q.result || null); q.onerror = () => res(null); }); } catch (e) { return null; } };
     const dirSet = async h => { try { const db = await idb(); db.transaction('h', 'readwrite').objectStore('h').put(h, 'data'); } catch (e) {} };
@@ -8408,8 +8461,9 @@ function goToLine(viewId, idx) {
       bakDone = true;
       const w = await (await dir.getFileHandle(name, { create: true })).createWritable(); await w.write(x.js); await w.close();
       __baseLines[x.ch.dataVar] = x.merged; if (window.__RAW_CHAPTER_DATA) window.__RAW_CHAPTER_DATA[x.fileId] = x.merged;
-      await clearMine();
-      return { name, x, hadOld };
+      let clearError = '';
+      try { await clearMine(); } catch (e) { clearError = e && e.message ? e.message : String(e); }
+      return { name, x, hadOld, clearError };
     }
     window.__aiSaveToDir = saveToDir; window.__aiBakReset = () => { bakDone = false; };
     window.__aiDirReady = async () => { try { return !!(await dirHandle(true)); } catch (e) { return false; } };
@@ -8417,10 +8471,11 @@ function goToLine(viewId, idx) {
     $('aiExpSave').addEventListener('click', async () => {
       try {
         const r = await saveToDir(false); if (!r) return;
-        qMsg(r.name + '에 저장했어요 (전체 ' + r.x.merged.length + '행)' + (r.hadOld ? ', 이전 파일은 ' + r.name + '.bak으로 남겼어요' : '') + '. 내 수정본은 파일에 합쳐져서 비웠어요.');
+        qMsg('내 PC의 data/' + r.name + '에 저장했어요 (전체 ' + r.x.merged.length + '행)' + (r.hadOld ? ', 이전 파일은 ' + r.name + '.bak으로 백업했어요' : '')
+          + (r.clearError ? '. 다만 브라우저 수정본을 비우지 못했어요: ' + r.clearError : '. 브라우저 수정본은 파일에 합쳐 비웠어요.'));
       } catch (e) { qMsg(e && e.name === 'AbortError' ? '폴더 선택을 취소했어요.' : '저장하지 못했어요: ' + (e && e.message ? e.message : e) + ' — .js 다운로드를 쓰세요.'); }
     });
-  }
+  } else $('aiExpDl').classList.add('ai-primary');
 
   // ---- 자동 코딩: Gemini API로 목록의 행을 한 줄씩 처리 (규칙 파일을 시스템 지시로 사용) ----
   // 무료로 돌려 쓸 수 있는 Gemini 모델 목록 (전환 순서 = 위에서 아래). 무료 제공 여부·종료일은 바뀔 수 있으니 안 되면 '직접 입력'을 쓰세요.
@@ -8609,15 +8664,22 @@ function goToLine(viewId, idx) {
 
   async function autoRun(onlyFailed) {
     { const nb = $('aiAutoDlNow'); if (nb) nb.hidden = true; }
+    const reviewMode = reviewBox.checked;
     const g = gemCfg();
     if (!g.key) { qMsg('Gemini API 키를 먼저 입력하세요 (aistudio.google.com → Get API key).'); return; }
     if (isNaN(S.book)) { qMsg('먼저 위에서 ' + S.work.unit + ' 번호를 고르세요.'); return; }
     if (S.loading) { qMsg('불러오는 중이에요. 잠시 뒤 다시 눌러 주세요.'); return; }
     if (!SPEC) await loadSpec();
     if (!SPEC) { $('aiSettings').open = true; qMsg('규칙 파일(' + SPEC_FILE + ')을 찾지 못했어요. 설정의 ‘규칙 파일 선택’으로 한 번 불러오면 이 브라우저에 저장돼서 다음부터는 묻지 않아요.'); const b = $('aiSpecPick2'); if (b) b.focus(); return; }
-    const rows = Q.filter(r => r.t.trim() && parseInt(r.n, 10) > 0 && ['저장됨 ✓', '번호 중복'].indexOf(qState(r)[0]) < 0 && (!onlyFailed || r.f)).map(r => ({ n: parseInt(r.n, 10), t: r.t.normalize('NFC').trim() }));
-    if (!rows.length) { qMsg(onlyFailed ? '다시 할 실패한 행이 없어요.' : '처리할 행이 없어요 (이미 저장됐거나 번호가 없는 행은 건너뛰어요).'); return; }
+    const rows = Q.map(r => {
+      const n = parseInt(r.n, 10), existing = n > 0 ? existingLineFor(n) : null;
+      const t = r.t.normalize('NFC').trim() || (reviewMode && existing && r.pick ? reviewSourceFor(n) : '');
+      return { r, n, t, existing };
+    }).filter(x => x.n > 0 && x.t && qState(x.r)[1] !== 'ok' && qState(x.r)[0] !== '번호 중복' && (!onlyFailed || x.r.f))
+      .map(x => ({ n: x.n, t: x.t, existing: reviewMode ? x.existing : null }));
+    if (!rows.length) { qMsg(onlyFailed ? '다시 할 실패한 행이 없어요.' : (reviewMode ? '재검토할 기존 행이 없어요. 원문과 행 번호를 입력하거나, 원문 없이 행 번호만 넣으세요.' : '처리할 새 행이 없어요. 기존 행을 재검토하려면 위 옵션을 켜세요.')); return; }
     auto.run = true; auto.stop = false; $('aiAutoGo').textContent = '멈추기';
+    reviewBox.disabled = true;
     let lock = null; try { lock = await navigator.wakeLock.request('screen'); } catch (e) {}
     const log = [], failed = [], reasons = {}; let streak = 0, lastReq = 0, fatal = false, okN = 0, sinceSave = 0, rotN = 0, curModel = g.model;
     const pool = gemPool(), switchModel = why0 => { const i = pool.indexOf(curModel), nx = pool[(i + 1) % pool.length]; if (!nx || nx === curModel) return false; log.push('↻ ' + why0 + ' — ' + curModel + ' → ' + nx); curModel = nx; gemModelSet(nx); gemSave(); return true; };
@@ -8631,10 +8693,14 @@ function goToLine(viewId, idx) {
       for (let a = 1; a <= 3 && !auto.stop; a++) {
         await pauseGate(); if (auto.stop) break; const wait = g.gap * 1000 - (Date.now() - lastReq); if (wait > 0) await sleep(wait); if (auto.stop) break; lastReq = Date.now();
         show(row.n + '행 요청 중 (' + curModel + ', 시도 ' + a + '/3)');
-        const user = ['이번 요청: 시스템 지시의 「데이터 생성 규칙」을 예외 없이 적용해 아래 한 줄의 JSON을 만들어 주세요.',
+        const user = [
+          row.existing
+            ? '이번 요청: 기존 저장 정보를 원문과 대조해 재검토하고, 오류·누락은 고치되 정확한 내용은 유지하세요. 수정된 전체 행의 JSON을 완성해 주세요.'
+            : '이번 요청: 시스템 지시의 「데이터 생성 규칙」을 예외 없이 적용해 아래 한 줄의 JSON을 만들어 주세요.',
           '- 작품: ' + w.label + ' (' + (LANG[w.key] || '') + '), ' + S.book + w.unit,
           '- ref는 정확히 "' + want + '" 로 쓰세요. ' + w.unit + ' 번호와 행 번호는 확정되어 있으니 되묻지 마세요.',
           '- 원문은 1줄이므로 ref 객체 1개를 담은 JSON 배열을 출력하세요. 아래 원문 텍스트만 쓰고, JSON 외의 설명은 쓰지 마세요.', '', '원문: ' + row.t + (g.ctx ? ctxFor(row.n) : ''),
+          row.existing ? '\n현재 저장된 정보(JSON, 재검토 기준):\n' + JSON.stringify(row.existing) : '',
           fb ? '\n이전 응답의 문제점 — 반드시 고쳐서 처음부터 다시 완전한 JSON을 출력하세요: ' + fb : ''].join('\n');
         let res;
         try { auto.ctl = new AbortController(); res = await gemCall(SPEC, user, auto.ctl.signal, curModel); }
@@ -8655,35 +8721,35 @@ function goToLine(viewId, idx) {
         const line = Object.assign({}, obj, { ref: want, trans: String(obj.trans || '').trim(), words });
         const store = loadUserLines(); (store[S.storeKey] = store[S.storeKey] || {})[want] = line;
         if (!saveUserLines(store)) { fatal = true; why = '브라우저 저장 공간이 가득 찼어요'; break; }
-        saved = true; okN++; sinceSave++; rotN = 0; streak = 0; { const nb = $('aiAutoDlNow'); if (nb) { nb.hidden = false; nb.textContent = '지금까지 .js 받기'; } }
-        const qr = Q.find(r => parseInt(r.n, 10) === row.n && r.t.trim()); if (qr) { qr.d = true; qr.f = false; qSave(); }
-        log.push('✓ ' + row.n + '행' + (chk.soft.length ? ' (문장 수 일부 미달)' : '')); qSync();
-        if (auto.file && sinceSave >= 10) { try { await window.__aiSaveToDir(true); sinceSave = 0; log.push('💾 data 파일에 저장함'); } catch (e) { auto.file = false; log.push('⚠ 파일 저장 실패, 이후엔 브라우저에만 저장: ' + e.message); } }
+        saved = true; okN++; sinceSave++; rotN = 0; streak = 0; { const nb = $('aiAutoDlNow'); if (nb) nb.hidden = false; }
+        const qr = Q.find(r => parseInt(r.n, 10) === row.n && (r.t.trim() || r.pick)); if (qr) { qr.d = true; qr.f = false; qr.reviewed = !!row.existing; qSave(); }
+        log.push('✓ ' + row.n + '행' + (row.existing ? ' (기존 정보 재검토)' : '') + (chk.soft.length ? ' (문장 수 일부 미달)' : '')); qSync();
+        if (auto.file && sinceSave >= 10) { try { const r = await window.__aiSaveToDir(true); sinceSave = 0; log.push('💾 data 파일에 저장함' + (r && r.clearError ? ' (브라우저 수정본은 남아 있음: ' + r.clearError + ')' : '')); } catch (e) { auto.file = false; log.push('⚠ 파일 저장 실패, 이후엔 브라우저에만 저장: ' + e.message); } }
         if (!auto.file && ckEvery() && okN % ckEvery() === 0) { try { log.push(await checkpoint(okN + '행째')); } catch (e) { log.push('⚠ 중간 저장 실패: ' + e.message); } }
         break;
       }
-      if (!saved && !auto.stop) { streak++; failed.push(row.n); const qf = Q.find(r => parseInt(r.n, 10) === row.n && r.t.trim()); if (qf) { qf.f = true; qSave(); qSync(); } reasons[row.n] = friendly(why); log.push('✗ ' + row.n + '행 — ' + reasons[row.n]); if (streak >= 5 && !fatal) { auto.pause = true; streak = 0; log.push('⏸ 연달아 5행 실패 — 자동 일시정지했어요. 키·네트워크를 확인하고 ‘이어하기’를 누르세요.'); try { if (!auto.file && okN) log.push(await checkpoint('일시정지')); } catch (e) {} } }
+      if (!saved && !auto.stop) { streak++; failed.push(row.n); const qf = Q.find(r => parseInt(r.n, 10) === row.n && (r.t.trim() || r.pick)); if (qf) { qf.f = true; qSave(); qSync(); } reasons[row.n] = friendly(why); log.push('✗ ' + row.n + '행 — ' + reasons[row.n]); if (streak >= 5 && !fatal) { auto.pause = true; streak = 0; log.push('⏸ 연달아 5행 실패 — 자동 일시정지했어요. 키·네트워크를 확인하고 ‘이어하기’를 누르세요.'); try { if (!auto.file && okN) log.push(await checkpoint('일시정지')); } catch (e) {} } }
     }
     if (fatal && okN > 0 && !auto.file && ckEvery()) { try { log.push(await checkpoint('오류로 중단')); } catch (e) {} }
-    if (auto.file && sinceSave > 0) { try { await window.__aiSaveToDir(true); log.push('💾 data 파일에 저장함'); } catch (e) { log.push('⚠ 파일 저장 실패: ' + e.message); } }
+    if (auto.file && sinceSave > 0) { try { const r = await window.__aiSaveToDir(true); log.push('💾 data 파일에 저장함' + (r && r.clearError ? ' (브라우저 수정본은 남아 있음: ' + r.clearError + ')' : '')); } catch (e) { log.push('⚠ 파일 저장 실패: ' + e.message); } }
     if (auto.ctl) auto.ctl.abort();
     if (lock) try { lock.release(); } catch (e) {}
     if (auto.prog) { const cnt = {}; Object.keys(reasons).forEach(k => { cnt[reasons[k]] = (cnt[reasons[k]] || 0) + 1; }); auto.prog.why = Object.keys(cnt).map(r => r + ' (' + cnt[r] + '행)').join(' / '); }
-    auto.run = false; $('aiAutoGo').textContent = '자동 코딩 시작'; progEnd({ stopped: auto.stop, fatal });
+    auto.run = false; reviewBox.disabled = false; $('aiAutoGo').textContent = reviewBox.checked ? '기존 행 재검토 시작' : '자동 코딩 시작'; progEnd({ stopped: auto.stop, fatal });
     applyToChapter(); await loadLines(); refresh(true); qSync();
     let doneMsg = ((auto.stop ? '멈췄어요. ' : fatal ? '중단했어요. ' : '끝났어요. ') + '저장 ' + okN + '행' + (failed.length ? ', 실패 ' + failed.length + '행(' + failed.join(', ') + ')' : '') + '.\n' + log.slice(-6).join('\n')
-      + '\n다 끝나면 아래 ‘data 폴더에 바로 저장’으로 파일에 반영하세요.');
+      + (reviewMode ? '\n재검토 결과는 기존 행을 브라우저 수정본으로 교체했어요. ' : '\n다 끝나면 ‘1. 내 PC data 폴더에 저장’ 또는 VS Code용 파일 받기/코드 복사로 프로젝트에 반영하세요.'));
     // 채운 내용이 있으면 .js 파일까지 이어서 내려받는다 (data 폴더에 직접 저장하는 중이었다면 이미 파일에 반영됐으므로 건너뜀)
     const dlCb = $('aiGemAutoDl');
     if (okN > 0 && dlCb && dlCb.checked && !auto.file) {
       try {
         const x = await exportBuild();
-        if (x) { download(x.fileId + '.js', x.js, 'text/javascript'); doneMsg += '\n⬇ ' + x.fileId + '.js 를 내려받았어요 (전체 ' + x.merged.length + '행, 내 수정본 ' + x.mineN + '행). data 폴더의 같은 이름 파일에 덮어쓴 뒤 새로고침하세요.'; }
-      } catch (e) { doneMsg += '\n⚠ .js 자동 다운로드 실패: ' + (e && e.message ? e.message : e) + ' — 아래 ‘.js 다운로드’ 버튼으로 직접 받으세요.'; }
+        if (x) { download(x.fileId + '.js', x.js, 'text/javascript'); doneMsg += '\n⬇ ' + x.fileId + '.js 를 내려받았어요 (전체 ' + x.merged.length + '행, 브라우저 수정본 ' + x.mineN + '행). VS Code 프로젝트의 data 폴더에 덮어쓰고 저장하세요.'; }
+      } catch (e) { doneMsg += '\n⚠ .js 자동 다운로드 실패: ' + (e && e.message ? e.message : e) + ' — 아래 ‘2. VS Code용 .js 파일 받기’ 버튼으로 직접 받으세요.'; }
     }
     { const nb = $('aiAutoDlNow'); const auto_dl_done = doneMsg.indexOf('내려받았어요') >= 0;
       if (nb) nb.hidden = !(okN > 0 && !auto.file && !auto_dl_done);
-      if (nb && !nb.hidden) doneMsg += '\n⬇ ‘자동 코딩 시작’ 옆의 ‘.js 다운로드’ 버튼으로 이 권의 파일을 받을 수 있어요.'; }
+      if (nb && !nb.hidden) doneMsg += '\n⬇ ‘자동 코딩 시작’ 옆의 ‘지금까지 .js 받기’ 버튼으로 이 권의 파일을 받을 수 있어요.'; }
     qMsg(doneMsg);
   }
   async function startAuto(onlyFailed) {
@@ -8694,7 +8760,7 @@ function goToLine(viewId, idx) {
     if (pf.block) { $('aiSettings').open = true; qMsg(pf.msg); return; }
     const cb = $('aiGemAutoFile');
     auto.file = !!(cb && !$('aiGemAutoFileL').hidden && cb.checked && window.__aiDirReady) && (await window.__aiDirReady());
-    autoRun(onlyFailed).catch(e => { auto.run = false; $('aiAutoGo').textContent = '자동 코딩 시작'; progEnd({ fatal: true }); qMsg('자동 코딩 중 오류가 나서 멈췄어요: ' + (e && e.message ? e.message : e)); });
+    autoRun(onlyFailed).catch(e => { auto.run = false; reviewBox.disabled = false; $('aiAutoGo').textContent = reviewBox.checked ? '기존 행 재검토 시작' : '자동 코딩 시작'; progEnd({ fatal: true }); qMsg('자동 코딩 중 오류가 나서 멈췄어요: ' + (e && e.message ? e.message : e)); });
   }
   $('aiAutoGo').addEventListener('click', () => {
     if (auto.run) { autoStop(); return; }
