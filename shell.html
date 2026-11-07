@@ -3094,6 +3094,8 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   .ai-unsaved { position: sticky; top: -18px; z-index: 5; display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 0 0 12px; padding: 9px 12px; border: 1px solid color-mix(in srgb, var(--bad) 45%, transparent); border-radius: 10px; background: var(--bad-light); color: var(--text-main); font-size: 13px; line-height: 1.4; }
   .ai-unsaved[hidden] { display: none; }
   .ai-unsaved .ai-btn { flex: none; white-space: nowrap; }
+  .ai-unsaved-actions { display: flex; align-items: center; gap: 8px; flex: none; }
+  @media (max-width: 640px) { .ai-unsaved { align-items: flex-start; flex-wrap: wrap; } .ai-unsaved-actions { margin-left: auto; } }
   .ai-dock { position: sticky; bottom: -24px; z-index: 4; display: flex; align-items: center; gap: 10px; margin: 14px -20px -24px; padding: 10px 20px calc(10px + env(safe-area-inset-bottom, 0px)); background: color-mix(in srgb, var(--card-bg) 94%, transparent); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border-top: 0.5px solid var(--border); }
   .ai-dock-txt { flex: 1; min-width: 0; font-size: 12.5px; color: var(--text-sub); }
   .ai-dock-btns { display: flex; flex: none; }
@@ -3139,7 +3141,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
         <label class="ai-f"><span>작품</span><select id="aiWork"></select></label>
         <label class="ai-f"><span id="aiBookLbl">권</span><input id="aiBook" type="text" inputmode="numeric" data-list="aiBookList" autocomplete="off" placeholder="번호"><datalist id="aiBookList"></datalist></label>
       </div>
-      <div class="ai-unsaved" id="aiUnsaved" hidden><span id="aiUnsavedTxt"></span><button type="button" class="ai-btn ai-primary" id="aiUnsavedDl">지금 .js 받기</button></div>
+      <div class="ai-unsaved" id="aiUnsaved" hidden><span id="aiUnsavedTxt"></span><div class="ai-unsaved-actions"><button type="button" class="ai-btn ai-primary" id="aiUnsavedDl">지금 .js 받기</button><button type="button" class="ai-btn ai-danger" id="aiUnsavedClear">수정분 삭제</button></div></div>
       <p class="ai-status" id="aiStatus" aria-live="polite"></p>
       <div class="ai-steps">
 
@@ -8382,13 +8384,15 @@ function goToLine(viewId, idx) {
     download(x.fileId + '.json', x.body.replace(/\r\n/g, '\n') + '\n', 'application/json');
     qMsg(x.fileId + '.json을 받았어요 (' + x.merged.length + '행). wrap_data.py용 json을 갱신할 때 쓰세요.');
   });
-  $('aiMineClear').addEventListener('click', async () => {
+  async function clearMineFromBrowser() {
     const n = mineCount();
     if (!n) { qMsg('비울 내 수정본이 없어요.'); return; }
     if (!confirm('이 권의 내 수정본 ' + n + '행을 브라우저에서 지울까요?\n내 PC에 바로 저장했거나, VS Code의 data 파일에 다운로드/복사 내용을 반영한 것을 확인한 뒤에만 지우세요.')) return;
     try { await clearMine(); qMsg('내 수정본 ' + n + '행을 브라우저에서 비웠어요.'); }
     catch (e) { qMsg('수정본을 비우지 못했어요: ' + e.message); }
-  });
+  }
+  $('aiMineClear').addEventListener('click', clearMineFromBrowser);
+  $('aiUnsavedClear').addEventListener('click', clearMineFromBrowser);
 
   // ---- 코딩된 정보 직접 보기: 이 권의 '내 수정본'을 data 파일에 들어가는 모양(JSON) 그대로 보여 주고, 자동 코딩과 같은 기준으로 검수 표시를 단다 ----
   const viewEl = $('aiView'), viewBox = $('aiViewBox'), viewCnt = $('aiViewCnt'), viewWarns = $('aiViewWarns'), viewOnly = $('aiViewOnlyWarn');
