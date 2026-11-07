@@ -3176,7 +3176,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
             <button type="button" class="ai-btn" id="aiExpDl">2. VS Code용 .js 파일 받기</button>
             <button type="button" class="ai-btn" id="aiExpCopy">3. VS Code에 붙일 코드 복사</button>
           </div>
-          <p class="ai-hint">①은 선택한 data 폴더의 파일을 바로 갱신해요. ②는 받은 .js 파일을 VS Code 프로젝트의 data 폴더에 덮어쓰세요. ③은 VS Code에서 해당 data 파일의 기존 내용을 전체 선택해 복사한 코드로 바꾼 뒤 저장하세요.</p>
+          <p class="ai-hint">①은 선택한 폴더의 파일을 갱신해요. ②는 받은 .js 파일을 VS Code 프로젝트의 data 폴더에 덮어쓰세요. ③은 VS Code에서 해당 data 파일의 기존 내용을 전체 선택해 복사한 코드로 바꾼 뒤 저장하세요. 안전을 위해 브라우저 수정본은 자동으로 지우지 않아요. 파일 반영을 확인한 뒤 직접 비우세요.</p>
           <details class="ai-sub">
             <summary>고급 내보내기 <small>.json</small></summary>
             <div class="ai-qsend"><button type="button" class="ai-link" id="aiExpJson">.json 다운로드 (wrap_data.py용)</button></div>
@@ -8289,7 +8289,7 @@ function goToLine(viewId, idx) {
   function unsavedSync() {
     const b = $('aiUnsaved'); if (!b || !S.storeKey) return;
     const n = unsavedN(), btn = $('aiUnsavedDl');
-    if (n > 0) { b.hidden = false; b.classList.remove('ok'); $('aiUnsavedTxt').textContent = '⚠ 프로젝트 파일에 반영되지 않은 브라우저 수정본 ' + n + '개 — 다운로드나 복사만으로는 VS Code 파일이 바뀌지 않아요.'; btn.textContent = 'VS Code용 .js 받기'; btn.dataset.mode = 'dl'; }
+    if (n > 0) { b.hidden = false; b.classList.remove('ok'); $('aiUnsavedTxt').textContent = '브라우저 수정본 ' + n + '개가 남아 있어요. 파일 저장·다운로드 후에도 안전을 위해 유지되며, 브라우저 수정본이 파일보다 우선해 보여요.'; btn.textContent = 'VS Code용 .js 받기'; btn.dataset.mode = 'dl'; }
     else b.hidden = true;
   }
   function dockSync() {
@@ -8433,9 +8433,7 @@ function goToLine(viewId, idx) {
       bakDone = true;
       const w = await (await dir.getFileHandle(name, { create: true })).createWritable(); await w.write(x.js); await w.close();
       __baseLines[x.ch.dataVar] = x.merged; if (window.__RAW_CHAPTER_DATA) window.__RAW_CHAPTER_DATA[x.fileId] = x.merged;
-      let clearError = '';
-      try { await clearMine(); } catch (e) { clearError = e && e.message ? e.message : String(e); }
-      return { name, x, hadOld, clearError };
+      return { name, x, hadOld };
     }
     window.__aiSaveToDir = saveToDir; window.__aiBakReset = () => { bakDone = false; };
     window.__aiDirReady = async () => { try { return !!(await dirHandle(true)); } catch (e) { return false; } };
@@ -8443,8 +8441,8 @@ function goToLine(viewId, idx) {
     $('aiExpSave').addEventListener('click', async () => {
       try {
         const r = await saveToDir(false); if (!r) return;
-        qMsg('내 PC의 data/' + r.name + '에 저장했어요 (전체 ' + r.x.merged.length + '행)' + (r.hadOld ? ', 이전 파일은 ' + r.name + '.bak으로 백업했어요' : '')
-          + (r.clearError ? '. 다만 브라우저 수정본을 비우지 못했어요: ' + r.clearError : '. 브라우저 수정본은 파일에 합쳐 비웠어요.'));
+        qMsg('선택한 폴더의 data/' + r.name + '에 저장했어요 (전체 ' + r.x.merged.length + '행)' + (r.hadOld ? ', 이전 파일은 ' + r.name + '.bak으로 백업했어요' : '')
+          + '. 브라우저 수정본은 안전을 위해 그대로 남겨 뒀어요. 프로젝트 폴더에 저장했는지 확인한 뒤 직접 비우세요.');
       } catch (e) { qMsg(e && e.name === 'AbortError' ? '폴더 선택을 취소했어요.' : '저장하지 못했어요: ' + (e && e.message ? e.message : e) + ' — .js 다운로드를 쓰세요.'); }
     });
   } else $('aiExpDl').classList.add('ai-primary');
@@ -8685,14 +8683,14 @@ function goToLine(viewId, idx) {
         saved = true; okN++; sinceSave++; rotN = 0; streak = 0; { const nb = $('aiAutoDlNow'); if (nb) nb.hidden = false; }
         const qr = Q.find(r => parseInt(r.n, 10) === row.n && r.t.trim()); if (qr) { qr.d = true; qr.f = false; qSave(); }
         log.push('✓ ' + row.n + '행' + (chk.soft.length ? ' (문장 수 일부 미달)' : '')); qSync();
-        if (auto.file && sinceSave >= 10) { try { const r = await window.__aiSaveToDir(true); sinceSave = 0; log.push('💾 data 파일에 저장함' + (r && r.clearError ? ' (브라우저 수정본은 남아 있음: ' + r.clearError + ')' : '')); } catch (e) { auto.file = false; log.push('⚠ 파일 저장 실패, 이후엔 브라우저에만 저장: ' + e.message); } }
+        if (auto.file && sinceSave >= 10) { try { await window.__aiSaveToDir(true); sinceSave = 0; log.push('💾 선택한 폴더에 중간 저장함 (브라우저 수정본도 보존)'); } catch (e) { auto.file = false; log.push('⚠ 파일 저장 실패, 이후엔 브라우저에만 저장: ' + e.message); } }
         if (!auto.file && ckEvery() && okN % ckEvery() === 0) { try { log.push(await checkpoint(okN + '행째')); } catch (e) { log.push('⚠ 중간 저장 실패: ' + e.message); } }
         break;
       }
       if (!saved && !auto.stop) { streak++; failed.push(row.n); const qf = Q.find(r => parseInt(r.n, 10) === row.n && r.t.trim()); if (qf) { qf.f = true; qSave(); qSync(); } reasons[row.n] = friendly(why); log.push('✗ ' + row.n + '행 — ' + reasons[row.n]); if (streak >= 5 && !fatal) { auto.pause = true; streak = 0; log.push('⏸ 연달아 5행 실패 — 자동 일시정지했어요. 키·네트워크를 확인하고 ‘이어하기’를 누르세요.'); try { if (!auto.file && okN) log.push(await checkpoint('일시정지')); } catch (e) {} } }
     }
     if (fatal && okN > 0 && !auto.file && ckEvery()) { try { log.push(await checkpoint('오류로 중단')); } catch (e) {} }
-    if (auto.file && sinceSave > 0) { try { const r = await window.__aiSaveToDir(true); log.push('💾 data 파일에 저장함' + (r && r.clearError ? ' (브라우저 수정본은 남아 있음: ' + r.clearError + ')' : '')); } catch (e) { log.push('⚠ 파일 저장 실패: ' + e.message); } }
+    if (auto.file && sinceSave > 0) { try { await window.__aiSaveToDir(true); log.push('💾 선택한 폴더에 저장함 (브라우저 수정본도 보존)'); } catch (e) { log.push('⚠ 파일 저장 실패: ' + e.message); } }
     if (auto.ctl) auto.ctl.abort();
     if (lock) try { lock.release(); } catch (e) {}
     if (auto.prog) { const cnt = {}; Object.keys(reasons).forEach(k => { cnt[reasons[k]] = (cnt[reasons[k]] || 0) + 1; }); auto.prog.why = Object.keys(cnt).map(r => r + ' (' + cnt[r] + '행)').join(' / '); }
