@@ -3173,10 +3173,10 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
           </header>
           <div class="ai-qsend">
             <button type="button" class="ai-btn ai-primary" id="aiExpSave" hidden>1. 원본 .js 파일 선택 후 덮어쓰기</button>
-            <button type="button" class="ai-btn" id="aiExpDl">2. 변경분 .js 받기 (VS Code에 추가)</button>
+            <button type="button" class="ai-btn" id="aiExpDl">2. 전체 .js 파일 받기 (로컬 파일 교체)</button>
             <button type="button" class="ai-btn" id="aiExpCopy">3. 변경분 코드 복사</button>
           </div>
-          <p class="ai-hint">①은 선택한 원본 .js 파일에 전체 데이터를 덮어써요. ②·③은 브라우저 수정분만 담은 동기화 코드를 만들어요. VS Code에서 해당 data 파일 맨 아래에 코드 내용을 추가한 뒤 저장하세요. 브라우저 수정본은 자동으로 지우지 않아요.</p>
+          <p class="ai-hint">①은 선택한 파일에 현재 권의 전체 데이터를 저장해요. ②도 수정분이 없어도 현재 권의 전체 .js 파일을 받아요. 로컬 data 파일과 다른 경우 내려받은 파일로 교체하세요. ③은 브라우저 수정분만 담은 동기화 코드를 복사해 기존 파일에 반영해요. 브라우저 수정본은 자동으로 지우지 않아요.</p>
           <details class="ai-sub">
             <summary>고급 내보내기 <small>.json</small></summary>
             <div class="ai-qsend"><button type="button" class="ai-link" id="aiExpJson">.json 다운로드 (wrap_data.py용)</button></div>
@@ -8344,10 +8344,10 @@ function goToLine(viewId, idx) {
     applyToChapter(); await loadLines(); refresh(true); qSync();
   }
   $('aiExpDl').addEventListener('click', async () => {
-    const x = exportPatch(); if (!x) return;
-    const name = x.fileId + '-동기화.js';
+    const x = await exportBuild(true); if (!x) return;
+    const name = x.fileId + '.js';
     download(name, x.js, 'text/javascript');
-    qMsg(name + '를 받았어요 (' + x.updates.length + '행 변경분). 파일을 열어 전체 코드를 복사하고 VS Code의 data/' + x.fileId + '.js 맨 아래에 추가한 뒤 저장하세요. 브라우저 수정분은 그대로 남아 있어요.');
+    qMsg(name + ' 전체 파일을 받았어요 (' + x.merged.length + '행). 로컬 data/' + x.fileId + '.js와 다른 경우 내려받은 파일로 교체하세요. 브라우저 수정분은 그대로 남아 있어요.');
   });
   async function copyExportText(text) {
     const fallback = () => {
@@ -8464,7 +8464,6 @@ function goToLine(viewId, idx) {
           return;
         }
         const x = await exportBuild(true); if (!x) return;
-        if (!x.mineN) { qMsg('이 브라우저에는 내보낼 수정분이 없어요. 저장을 취소했습니다. 현재 선택한 권은 불러온 데이터 파일과 같습니다.'); return; }
         const writer = await handle.createWritable();
         try {
           await writer.write(x.js);
