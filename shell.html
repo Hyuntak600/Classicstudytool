@@ -3172,11 +3172,11 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
             <div class="ai-step-t"><h3>결과 · 파일 반영</h3><p>코딩 결과는 먼저 이 브라우저에 저장돼요. 아래 방법 중 하나로 현재 권의 전체 데이터를 컴퓨터나 VS Code에 반영하세요.</p></div>
           </header>
           <div class="ai-qsend">
-            <button type="button" class="ai-btn ai-primary" id="aiExpSave" hidden>1. 내 PC data 폴더에 저장</button>
-            <button type="button" class="ai-btn" id="aiExpDl">2. VS Code용 .js 파일 받기</button>
-            <button type="button" class="ai-btn" id="aiExpCopy">3. VS Code에 붙일 코드 복사</button>
+            <button type="button" class="ai-btn ai-primary" id="aiExpSave" hidden>1. 원본 .js 파일 선택 후 덮어쓰기</button>
+            <button type="button" class="ai-btn" id="aiExpDl">2. 변경분 .js 받기 (VS Code에 추가)</button>
+            <button type="button" class="ai-btn" id="aiExpCopy">3. 변경분 코드 복사</button>
           </div>
-          <p class="ai-hint">①은 선택한 폴더의 파일을 갱신해요. ②는 받은 .js 파일을 VS Code 프로젝트의 data 폴더에 덮어쓰세요. ③은 VS Code에서 해당 data 파일의 기존 내용을 전체 선택해 복사한 코드로 바꾼 뒤 저장하세요. 안전을 위해 브라우저 수정본은 자동으로 지우지 않아요. 파일 반영을 확인한 뒤 직접 비우세요.</p>
+          <p class="ai-hint">①은 선택한 원본 .js 파일에 전체 데이터를 덮어써요. ②·③은 브라우저 수정분만 담은 동기화 코드를 만들어요. VS Code에서 해당 data 파일 맨 아래에 코드 내용을 추가한 뒤 저장하세요. 브라우저 수정본은 자동으로 지우지 않아요.</p>
           <details class="ai-sub">
             <summary>고급 내보내기 <small>.json</small></summary>
             <div class="ai-qsend"><button type="button" class="ai-link" id="aiExpJson">.json 다운로드 (wrap_data.py용)</button></div>
@@ -3218,8 +3218,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
               <label class="ai-chk"><input type="checkbox" id="aiGemSoft" checked> 문장 수 미달이어도 저장</label>
               <label class="ai-chk">요청 간격 <input type="number" id="aiGemGap" min="1" max="120" style="width:3.6em"> 초</label>
             </div>
-            <div class="ai-opts"><label class="ai-chk" id="aiGemAutoFileL" hidden><input type="checkbox" id="aiGemAutoFile" checked> 자동 코딩 중 10행마다 data 폴더에 저장</label></div>
-            <div class="ai-opts"><label class="ai-chk">중간 저장 <input type="number" id="aiGemCk" min="0" max="500" style="width:3.6em"> 행마다 .js 자동 내려받기 <small>(0이면 끔 · data 폴더 직접 저장 중이면 건너뜀)</small></label></div>
+            <div class="ai-opts"><label class="ai-chk">변경분 자동 다운로드 <input type="number" id="aiGemCk" min="0" max="500" style="width:3.6em">행마다 <small>(기본 25행 · 0이면 끔 · 받은 파일의 내용을 VS Code data 파일 맨 아래에 추가)</small></label></div>
             <div class="ai-opts"><label class="ai-chk"><input type="checkbox" id="aiGemAutoDl"> 자동 코딩이 끝나면 .js 파일 자동 다운로드 (끄면 끝난 뒤 버튼으로 받기)</label></div>
           </div>
           <div class="ai-pane" id="aiPaneClaude" hidden>
@@ -4337,8 +4336,14 @@ function fmtRef(ref, workKey, book) {
   const m = String(ref || '').match(/(\d+(?:\s*[-–]\s*\d+)?)\s*$/);
   return m ? f[0] + b + f[1] + m[1].replace(/\s+/g, '') : String(ref || '');
 }
+function userLinesFor(storeKey) {
+  const store = loadUserLines(), chapter = STUDY_CHAPTERS.find(c => c.dataVar === storeKey);
+  if (!chapter) return store[storeKey] || {};
+  const draftKey = 'draft:' + chapter.workKey + ':' + chapter.book;
+  return Object.assign({}, store[draftKey] || {}, store[storeKey] || {});
+}
 function mergeUserLines(base, storeKey) {
-  const mine = loadUserLines()[storeKey];
+  const mine = userLinesFor(storeKey);
   if (!mine) return base;
   const refs = Object.keys(mine);
   if (!refs.length) return base;
@@ -8016,7 +8021,7 @@ function goToLine(viewId, idx) {
     if (r.f) return ['실패', 'warn'];
     if (Q.filter(x => parseInt(x.n, 10) === n && x.t.trim()).length > 1) return ['번호 중복', 'warn'];
     const found = S.lines.find(l => refLineNo(l.ref) === n);
-    if ((loadUserLines()[S.storeKey] || {})[found ? found.ref : refOf(n)]) return ['저장됨 ✓', 'ok'];
+    if (userLinesFor(S.storeKey)[found ? found.ref : refOf(n)]) return ['저장됨 ✓', 'ok'];
     return found ? ['기존 행', ''] : (r.t.trim() ? ['새 행', ''] : ['', '']);
   }
   function paintQ(d, i) {
@@ -8262,15 +8267,15 @@ function goToLine(viewId, idx) {
   });
 
   // ---- data 파일로 내보내기: 원본 행 + 내 수정본을 합쳐 data/data-lines….js 와 같은 형식(CRLF, 들여쓰기 2칸)으로 만든다 ----
-  async function exportBuild() {
+  async function exportBuild(allowNoChanges) {
     const ch = S.ch;
     if (!ch) { qMsg('이 권은 아직 등록된 챕터가 아니라서 내보낼 파일이 없어요.'); return null; }
     if (S.loading) { qMsg('불러오는 중이에요. 잠시 뒤 다시 눌러 주세요.'); return null; }
     const fileId = CHAPTER_DATA_IDS[ch.dataVar];
     await loadChapterData(ch.dataVar);
     const base = __baseLines[ch.dataVar] || [];
-    const mineN = Object.keys(loadUserLines()[ch.dataVar] || {}).length;
-    if (!mineN) { qMsg('내보낼 내 수정본이 없어요. 이 권은 data 파일과 같은 상태예요.'); return null; }
+    const mineN = Object.keys(userLinesFor(ch.dataVar)).length;
+    if (!mineN && !allowNoChanges) { qMsg('브라우저에 남아 있는 수정분이 없어요. 이 권은 현재 불러온 데이터 파일과 같은 상태예요.'); return null; }
     const merged = mergeUserLines(base, ch.dataVar);
     const body = JSON.stringify(merged, (k, v) => (k && k[0] === '_' ? undefined : v), 2).replace(/\n/g, '\r\n');
     const js = '// 이 파일은 shell.html의 정보 추가 → data 파일로 내보내기로 만들었습니다 (' + new Date().toISOString().slice(0, 10) + ').\r\n'
@@ -8279,17 +8284,38 @@ function goToLine(viewId, idx) {
       + "window.__RAW_CHAPTER_DATA['" + fileId + "'] = " + body + ';\r\n';
     return { ch, fileId, merged, body, js, mineN };
   }
+  function exportPatch() {
+    const ch = S.ch;
+    if (!ch) { qMsg('이 권은 아직 등록된 챕터가 아니어서 동기화 코드를 만들 수 없어요.'); return null; }
+    const fileId = CHAPTER_DATA_IDS[ch.dataVar];
+    const mine = userLinesFor(ch.dataVar);
+    const updates = Object.keys(mine).map(ref => mine[ref]).filter(line => line && Array.isArray(line.words));
+    if (!updates.length) { qMsg('이 권에 브라우저 수정분이 없어요. API 결과가 저장된 작품과 권을 선택했는지 확인하세요.'); return null; }
+    const body = JSON.stringify(updates, (k, v) => (k && k[0] === '_' ? undefined : v), 2);
+    const js = '\r\n// 정보 추가 동기화: 아래 코드는 이 파일의 기존 배열 대입문 다음에 추가하세요.\r\n'
+      + '(function () {\r\n'
+      + "  var fileId = '" + fileId + "';\r\n"
+      + '  var updates = ' + body.replace(/\n/g, '\r\n') + ';\r\n'
+      + '  window.__RAW_CHAPTER_DATA = window.__RAW_CHAPTER_DATA || {};\r\n'
+      + '  var rows = window.__RAW_CHAPTER_DATA[fileId] || [];\r\n'
+      + '  var byRef = new Map(rows.map(function (row) { return [row.ref, row]; }));\r\n'
+      + '  updates.forEach(function (row) { byRef.set(row.ref, row); });\r\n'
+      + '  var lineNo = function (ref) { var m = String(ref || "").match(/(\\d+)(?:\\s*[-–]\\s*\\d+)?\\s*$/); return m ? Number(m[1]) : Number.MAX_SAFE_INTEGER; };\r\n'
+      + '  window.__RAW_CHAPTER_DATA[fileId] = Array.from(byRef.values()).sort(function (a, b) { return lineNo(a.ref) - lineNo(b.ref); });\r\n'
+      + '})();\r\n';
+    return { ch, fileId, updates, js };
+  }
   function download(name, text, type) {
     const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], { type: type + ';charset=utf-8' })); a.download = name;
     document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 4000);
   }
   // ---- 프로젝트 파일에 아직 반영되지 않은 브라우저 수정본 추적 ----
-  function mineCount() { return Object.keys(loadUserLines()[S.storeKey] || {}).length; }
+  function mineCount() { return Object.keys(userLinesFor(S.storeKey)).length; }
   function unsavedN() { return mineCount(); }
   function unsavedSync() {
     const b = $('aiUnsaved'); if (!b || !S.storeKey) return;
     const n = unsavedN(), btn = $('aiUnsavedDl');
-    if (n > 0) { b.hidden = false; b.classList.remove('ok'); $('aiUnsavedTxt').textContent = '브라우저 수정본 ' + n + '개가 남아 있어요. 파일 저장·다운로드 후에도 안전을 위해 유지되며, 브라우저 수정본이 파일보다 우선해 보여요.'; btn.textContent = 'VS Code용 .js 받기'; btn.dataset.mode = 'dl'; }
+    if (n > 0) { b.hidden = false; b.classList.remove('ok'); $('aiUnsavedTxt').textContent = '브라우저 수정본 ' + n + '개가 남아 있어요. 파일로 동기화하기 전까지 이 브라우저에만 저장됩니다.'; btn.textContent = '변경분 .js 받기'; btn.dataset.mode = 'dl'; }
     else b.hidden = true;
   }
   function dockSync() {
@@ -8304,15 +8330,24 @@ function goToLine(viewId, idx) {
   const ckInp = $('aiGemCk'); try { const v = localStorage.getItem('aiCk'); ckInp.value = v === null ? '25' : v; } catch (e) { ckInp.value = '25'; }
   ckInp.addEventListener('change', () => { try { localStorage.setItem('aiCk', ckInp.value); } catch (e) {} });
   const ckEvery = () => Math.max(0, parseInt(ckInp.value, 10) || 0);
-  async function checkpoint(tag) { const x = await exportBuild(); if (!x) return ''; download(x.fileId + '-중간저장.js', x.js, 'text/javascript'); return '⬇ 중간 저장 파일 받음 (' + tag + ', 내 수정본 ' + x.mineN + '행) — 쓰려면 이름을 ' + x.fileId + '.js 로 바꿔 data 폴더에 덮어쓰세요'; }
+  async function checkpoint(tag) {
+    const x = exportPatch(); if (!x) return '';
+    const suffix = String(tag).replace(/[^\w가-힣-]+/g, '-');
+    download(x.fileId + '-동기화-' + suffix + '.js', x.js, 'text/javascript');
+    return '⬇ 변경분 파일 다운로드 (' + tag + ', 수정 ' + x.updates.length + '행) — 파일 안의 코드를 VS Code data/' + x.fileId + '.js 맨 아래에 추가하세요';
+  }
   async function clearMine() {
-    const store = loadUserLines(); if (store[S.storeKey]) { delete store[S.storeKey]; if (!saveUserLines(store)) throw new Error('브라우저 저장 공간 때문에 수정본을 비우지 못했어요.'); }
+    const store = loadUserLines(), chapter = S.ch;
+    if (store[S.storeKey]) delete store[S.storeKey];
+    if (chapter) delete store['draft:' + chapter.workKey + ':' + chapter.book];
+    if (!saveUserLines(store)) throw new Error('브라우저 저장 공간 때문에 수정본을 비우지 못했어요.');
     applyToChapter(); await loadLines(); refresh(true); qSync();
   }
   $('aiExpDl').addEventListener('click', async () => {
-    const x = await exportBuild(); if (!x) return;
-    download(x.fileId + '.js', x.js, 'text/javascript');
-    qMsg(x.fileId + '.js 파일을 받았어요 (전체 ' + x.merged.length + '행, 브라우저 수정본 ' + x.mineN + '행). VS Code 프로젝트의 data 폴더에 덮어쓰고 저장하세요. 반영을 확인한 다음 ‘내 수정본 비우기’를 누르면 이후 파일 변경이 그대로 보여요.');
+    const x = exportPatch(); if (!x) return;
+    const name = x.fileId + '-동기화.js';
+    download(name, x.js, 'text/javascript');
+    qMsg(name + '를 받았어요 (' + x.updates.length + '행 변경분). 파일을 열어 전체 코드를 복사하고 VS Code의 data/' + x.fileId + '.js 맨 아래에 추가한 뒤 저장하세요. 브라우저 수정분은 그대로 남아 있어요.');
   });
   async function copyExportText(text) {
     const fallback = () => {
@@ -8329,10 +8364,10 @@ function goToLine(viewId, idx) {
     return fallback();
   }
   $('aiExpCopy').addEventListener('click', async () => {
-    const x = await exportBuild(); if (!x) return;
+    const x = exportPatch(); if (!x) return;
     const ok = await copyExportText(x.js);
     qMsg(ok
-      ? x.fileId + '.js 전체 코드(' + x.merged.length + '행)를 복사했어요. VS Code에서 data/' + x.fileId + '.js의 기존 내용을 전부 바꿔 붙여넣고 저장하세요. 복사만으로는 파일이 바뀌지 않아요.'
+      ? x.updates.length + '행 변경분 코드를 복사했어요. VS Code의 data/' + x.fileId + '.js 맨 아래에 붙여넣고 저장하세요. 수정분은 추가와 기존 행 교체를 ref 기준으로 처리하며, 브라우저에도 계속 보존돼요.'
       : '코드를 클립보드에 복사하지 못했어요. 브라우저의 클립보드 권한을 확인하거나 ‘2. VS Code용 .js 파일 받기’를 이용하세요.');
   });
   // 자동 코딩이 끝나면 .js 를 자동으로 받을지 (선택은 이 브라우저에 기억)
@@ -8348,7 +8383,7 @@ function goToLine(viewId, idx) {
     qMsg(x.fileId + '.json을 받았어요 (' + x.merged.length + '행). wrap_data.py용 json을 갱신할 때 쓰세요.');
   });
   $('aiMineClear').addEventListener('click', async () => {
-    const n = Object.keys(loadUserLines()[S.storeKey] || {}).length;
+    const n = mineCount();
     if (!n) { qMsg('비울 내 수정본이 없어요.'); return; }
     if (!confirm('이 권의 내 수정본 ' + n + '행을 브라우저에서 지울까요?\n내 PC에 바로 저장했거나, VS Code의 data 파일에 다운로드/복사 내용을 반영한 것을 확인한 뒤에만 지우세요.')) return;
     try { await clearMine(); qMsg('내 수정본 ' + n + '행을 브라우저에서 비웠어요.'); }
@@ -8366,7 +8401,7 @@ function goToLine(viewId, idx) {
   }
   function viewPaint() {
     viewT = 0;
-    const mine = (S.storeKey && loadUserLines()[S.storeKey]) || {};
+    const mine = S.storeKey ? userLinesFor(S.storeKey) : {};
     const rows = Object.keys(mine).map(k => mine[k]).filter(Boolean).sort((a, b) => refLineNo(a.ref) - refLineNo(b.ref));
     const rev = rows.map(r => { const c = viewReview(r); return { r, hard: c.hard, soft: c.soft, bad: c.hard.length + c.soft.length > 0 }; });
     const bad = rev.filter(x => x.bad);
@@ -8410,42 +8445,45 @@ function goToLine(viewId, idx) {
     qMsg('코딩된 정보를 복사했어요.');
   });
   viewPaint();
-  // 내 PC의 data 폴더에 바로 저장 (File System Access 지원 브라우저). 폴더 권한은 한 번 고르면 기억해 둔다.
-  if (window.showDirectoryPicker) {
+  // 사용자가 선택한 위치의 정확한 원본 파일에 전체 데이터를 덮어쓴다.
+  if (window.showSaveFilePicker) {
     $('aiExpSave').hidden = false;
     $('aiExpDl').classList.remove('ai-primary');
-    const idb = () => new Promise((res, rej) => { const r = indexedDB.open('aiDirs', 1); r.onupgradeneeded = () => r.result.createObjectStore('h'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
-    const dirGet = async () => { try { const db = await idb(); return await new Promise(res => { const q = db.transaction('h').objectStore('h').get('data'); q.onsuccess = () => res(q.result || null); q.onerror = () => res(null); }); } catch (e) { return null; } };
-    const dirSet = async h => { try { const db = await idb(); db.transaction('h', 'readwrite').objectStore('h').put(h, 'data'); } catch (e) {} };
-    let bakDone = false;
-    async function dirHandle(interactive) {
-      let h = await dirGet();
-      if (h) { let pm = await h.queryPermission({ mode: 'readwrite' }); if (pm !== 'granted' && interactive) pm = await h.requestPermission({ mode: 'readwrite' }); if (pm !== 'granted') h = null; }
-      if (!h && interactive) { qMsg('data 폴더(또는 shell.html이 있는 폴더)를 골라 주세요.'); h = await window.showDirectoryPicker({ mode: 'readwrite' }); await dirSet(h); }
-      return h;
-    }
-    async function saveToDir(auto) {
-      const x = await exportBuild(); if (!x) return null;
-      const h = await dirHandle(!auto); if (!h) throw new Error('data 폴더 권한이 없어요');
-      let dir = h; try { dir = await h.getDirectoryHandle('data'); } catch (e) {}
-      const name = x.fileId + '.js'; let hadOld = false;
-      if (!(auto && bakDone)) { try { const old = await (await dir.getFileHandle(name)).getFile(); const w0 = await (await dir.getFileHandle(name + '.bak', { create: true })).createWritable(); await w0.write(await old.text()); await w0.close(); hadOld = true; } catch (e) {} }
-      bakDone = true;
-      const w = await (await dir.getFileHandle(name, { create: true })).createWritable(); await w.write(x.js); await w.close();
-      __baseLines[x.ch.dataVar] = x.merged; if (window.__RAW_CHAPTER_DATA) window.__RAW_CHAPTER_DATA[x.fileId] = x.merged;
-      return { name, x, hadOld };
-    }
-    window.__aiSaveToDir = saveToDir; window.__aiBakReset = () => { bakDone = false; };
-    window.__aiDirReady = async () => { try { return !!(await dirHandle(true)); } catch (e) { return false; } };
-    $('aiGemAutoFileL').hidden = false;
     $('aiExpSave').addEventListener('click', async () => {
       try {
-        const r = await saveToDir(false); if (!r) return;
-        qMsg('선택한 폴더의 data/' + r.name + '에 저장했어요 (전체 ' + r.x.merged.length + '행)' + (r.hadOld ? ', 이전 파일은 ' + r.name + '.bak으로 백업했어요' : '')
-          + '. 브라우저 수정본은 안전을 위해 그대로 남겨 뒀어요. 프로젝트 폴더에 저장했는지 확인한 뒤 직접 비우세요.');
-      } catch (e) { qMsg(e && e.name === 'AbortError' ? '폴더 선택을 취소했어요.' : '저장하지 못했어요: ' + (e && e.message ? e.message : e) + ' — .js 다운로드를 쓰세요.'); }
+        const fileId = S.ch && CHAPTER_DATA_IDS[S.ch.dataVar];
+        if (!fileId) { qMsg('이 권은 아직 등록된 챕터가 아니어서 저장할 원본 파일이 없어요.'); return; }
+        const expected = fileId + '.js';
+        const picker = window.showSaveFilePicker({
+          suggestedName: expected,
+          types: [{ description: 'JavaScript data file', accept: { 'text/javascript': ['.js'] } }]
+        });
+        const handle = await picker;
+        if (handle.name.toLowerCase() !== expected.toLowerCase()) {
+          qMsg('선택한 파일은 ' + handle.name + '이에요. 현재 작품의 원본 파일인 ' + expected + '를 선택해 주세요. 파일은 변경하지 않았어요.');
+          return;
+        }
+        const x = await exportBuild(true); if (!x) return;
+        if (!x.mineN) { qMsg('이 브라우저에는 내보낼 수정분이 없어요. 저장을 취소했습니다. 현재 선택한 권은 불러온 데이터 파일과 같습니다.'); return; }
+        const writer = await handle.createWritable();
+        try {
+          await writer.write(x.js);
+          await writer.close();
+        } catch (e) {
+          if (writer.abort) try { await writer.abort(); } catch (abortError) {}
+          throw e;
+        }
+        __baseLines[x.ch.dataVar] = x.merged;
+        if (window.__RAW_CHAPTER_DATA) window.__RAW_CHAPTER_DATA[x.fileId] = x.merged;
+        qMsg(expected + '에 전체 ' + x.merged.length + '행을 저장했어요. 브라우저 수정분은 안전을 위해 그대로 남겨 뒀어요.');
+      } catch (e) {
+        qMsg(e && e.name === 'AbortError' ? '파일 선택을 취소했어요. 원본 파일은 변경하지 않았습니다.' : '파일을 저장하지 못했어요: ' + (e && e.message ? e.message : e) + ' — 2번 변경분 다운로드 또는 3번 코드 복사를 이용하세요.');
+      }
     });
-  } else $('aiExpDl').classList.add('ai-primary');
+  } else {
+    $('aiExpSave').hidden = true;
+    $('aiExpDl').classList.add('ai-primary');
+  }
 
   // ---- 자동 코딩: Gemini API로 목록의 행을 한 줄씩 처리 (규칙 파일을 시스템 지시로 사용) ----
   // 무료로 돌려 쓸 수 있는 Gemini 모델 목록 (전환 순서 = 위에서 아래). 무료 제공 여부·종료일은 바뀔 수 있으니 안 되면 '직접 입력'을 쓰세요.
@@ -8519,7 +8557,7 @@ function goToLine(viewId, idx) {
   }
   // ---- 자동 코딩 공용: 상태·대기·앞 행 참고·검사·필드 정리 (파일에서 빠져 있던 정의를 규칙 파일 기준으로 채움) ----
   const sleep = ms => new Promise(r => setTimeout(r, ms));
-  const auto = { run: false, stop: false, pause: false, ctl: null, file: false, prog: null, tick: 0 };
+  const auto = { run: false, stop: false, pause: false, ctl: null, prog: null, tick: 0 };
   const FIELDS_STD = ['g', 'pos', 'lemma', 'root', 'principalParts', 'parse', 'gloss_kr', 'gloss_en', 'syntax', 'background', 'etymology', 'freq_prose'];
   const FIELDS_SG = ['g', 'pos', 'lemma', 'pinyin', 'kr_reading', 'syntax', 'meaning', 'background', 'etymology', 'simplified'];
   const isSanguo = () => S.work && S.work.key === 'sanguo';
@@ -8644,7 +8682,7 @@ function goToLine(viewId, idx) {
     if (!rows.length) { qMsg(onlyFailed ? '다시 할 실패한 행이 없어요.' : '처리할 행이 없어요 (이미 저장됐거나 번호가 없는 행은 건너뛰어요).'); return; }
     auto.run = true; auto.stop = false; $('aiAutoGo').textContent = '멈추기';
     let lock = null; try { lock = await navigator.wakeLock.request('screen'); } catch (e) {}
-    const log = [], failed = [], reasons = {}; let streak = 0, lastReq = 0, fatal = false, okN = 0, sinceSave = 0, rotN = 0, curModel = g.model;
+    const log = [], failed = [], reasons = {}; let streak = 0, lastReq = 0, fatal = false, okN = 0, rotN = 0, curModel = g.model;
     const pool = gemPool(), switchModel = why0 => { const i = pool.indexOf(curModel), nx = pool[(i + 1) % pool.length]; if (!nx || nx === curModel) return false; log.push('↻ ' + why0 + ' — ' + curModel + ' → ' + nx); curModel = nx; gemModelSet(nx); gemSave(); return true; };
     if (window.__aiBakReset) window.__aiBakReset();
     const show = s => (auto.prog && (auto.prog.msg = s), qMsg('자동 코딩 ' + (okN + failed.length) + '/' + rows.length + ' — ' + s + (log.length ? '\n' + log.slice(-5).join('\n') : '')));
@@ -8680,17 +8718,15 @@ function goToLine(viewId, idx) {
         const line = Object.assign({}, obj, { ref: want, trans: String(obj.trans || '').trim(), words });
         const store = loadUserLines(); (store[S.storeKey] = store[S.storeKey] || {})[want] = line;
         if (!saveUserLines(store)) { fatal = true; why = '브라우저 저장 공간이 가득 찼어요'; break; }
-        saved = true; okN++; sinceSave++; rotN = 0; streak = 0; { const nb = $('aiAutoDlNow'); if (nb) nb.hidden = false; }
+        saved = true; okN++; rotN = 0; streak = 0; { const nb = $('aiAutoDlNow'); if (nb) nb.hidden = false; }
         const qr = Q.find(r => parseInt(r.n, 10) === row.n && r.t.trim()); if (qr) { qr.d = true; qr.f = false; qSave(); }
         log.push('✓ ' + row.n + '행' + (chk.soft.length ? ' (문장 수 일부 미달)' : '')); qSync();
-        if (auto.file && sinceSave >= 10) { try { await window.__aiSaveToDir(true); sinceSave = 0; log.push('💾 선택한 폴더에 중간 저장함 (브라우저 수정본도 보존)'); } catch (e) { auto.file = false; log.push('⚠ 파일 저장 실패, 이후엔 브라우저에만 저장: ' + e.message); } }
-        if (!auto.file && ckEvery() && okN % ckEvery() === 0) { try { log.push(await checkpoint(okN + '행째')); } catch (e) { log.push('⚠ 중간 저장 실패: ' + e.message); } }
+        if (ckEvery() && okN % ckEvery() === 0) { try { log.push(await checkpoint(okN + '행째')); } catch (e) { log.push('⚠ 변경분 다운로드 실패: ' + e.message); } }
         break;
       }
-      if (!saved && !auto.stop) { streak++; failed.push(row.n); const qf = Q.find(r => parseInt(r.n, 10) === row.n && r.t.trim()); if (qf) { qf.f = true; qSave(); qSync(); } reasons[row.n] = friendly(why); log.push('✗ ' + row.n + '행 — ' + reasons[row.n]); if (streak >= 5 && !fatal) { auto.pause = true; streak = 0; log.push('⏸ 연달아 5행 실패 — 자동 일시정지했어요. 키·네트워크를 확인하고 ‘이어하기’를 누르세요.'); try { if (!auto.file && okN) log.push(await checkpoint('일시정지')); } catch (e) {} } }
+      if (!saved && !auto.stop) { streak++; failed.push(row.n); const qf = Q.find(r => parseInt(r.n, 10) === row.n && r.t.trim()); if (qf) { qf.f = true; qSave(); qSync(); } reasons[row.n] = friendly(why); log.push('✗ ' + row.n + '행 — ' + reasons[row.n]); if (streak >= 5 && !fatal) { auto.pause = true; streak = 0; log.push('⏸ 연달아 5행 실패 — 자동 일시정지했어요. 키·네트워크를 확인하고 ‘이어하기’를 누르세요.'); try { if (okN) log.push(await checkpoint('일시정지')); } catch (e) {} } }
     }
-    if (fatal && okN > 0 && !auto.file && ckEvery()) { try { log.push(await checkpoint('오류로 중단')); } catch (e) {} }
-    if (auto.file && sinceSave > 0) { try { await window.__aiSaveToDir(true); log.push('💾 선택한 폴더에 저장함 (브라우저 수정본도 보존)'); } catch (e) { log.push('⚠ 파일 저장 실패: ' + e.message); } }
+    if (fatal && okN > 0) { try { log.push(await checkpoint('오류로-중단')); } catch (e) {} }
     if (auto.ctl) auto.ctl.abort();
     if (lock) try { lock.release(); } catch (e) {}
     if (auto.prog) { const cnt = {}; Object.keys(reasons).forEach(k => { cnt[reasons[k]] = (cnt[reasons[k]] || 0) + 1; }); auto.prog.why = Object.keys(cnt).map(r => r + ' (' + cnt[r] + '행)').join(' / '); }
@@ -8698,16 +8734,16 @@ function goToLine(viewId, idx) {
     applyToChapter(); await loadLines(); refresh(true); qSync();
     let doneMsg = ((auto.stop ? '멈췄어요. ' : fatal ? '중단했어요. ' : '끝났어요. ') + '저장 ' + okN + '행' + (failed.length ? ', 실패 ' + failed.length + '행(' + failed.join(', ') + ')' : '') + '.\n' + log.slice(-6).join('\n')
       + '\n다 끝나면 ‘1. 내 PC data 폴더에 저장’ 또는 VS Code용 파일 받기/코드 복사로 프로젝트에 반영하세요.');
-    // 채운 내용이 있으면 .js 파일까지 이어서 내려받는다 (data 폴더에 직접 저장하는 중이었다면 이미 파일에 반영됐으므로 건너뜀)
+    // 선택한 경우 자동 코딩이 끝났을 때 변경분 동기화 코드도 내려받는다.
     const dlCb = $('aiGemAutoDl');
-    if (okN > 0 && dlCb && dlCb.checked && !auto.file) {
+    if (okN > 0 && dlCb && dlCb.checked) {
       try {
-        const x = await exportBuild();
-        if (x) { download(x.fileId + '.js', x.js, 'text/javascript'); doneMsg += '\n⬇ ' + x.fileId + '.js 를 내려받았어요 (전체 ' + x.merged.length + '행, 브라우저 수정본 ' + x.mineN + '행). VS Code 프로젝트의 data 폴더에 덮어쓰고 저장하세요.'; }
+        const x = exportPatch();
+        if (x) { const name = x.fileId + '-동기화-완료.js'; download(name, x.js, 'text/javascript'); doneMsg += '\n⬇ ' + name + '를 내려받았어요. 파일의 코드를 VS Code data/' + x.fileId + '.js 맨 아래에 추가하세요.'; }
       } catch (e) { doneMsg += '\n⚠ .js 자동 다운로드 실패: ' + (e && e.message ? e.message : e) + ' — 아래 ‘2. VS Code용 .js 파일 받기’ 버튼으로 직접 받으세요.'; }
     }
     { const nb = $('aiAutoDlNow'); const auto_dl_done = doneMsg.indexOf('내려받았어요') >= 0;
-      if (nb) nb.hidden = !(okN > 0 && !auto.file && !auto_dl_done);
+      if (nb) nb.hidden = !(okN > 0 && !auto_dl_done);
       if (nb && !nb.hidden) doneMsg += '\n⬇ ‘자동 코딩 시작’ 옆의 ‘지금까지 .js 받기’ 버튼으로 이 권의 파일을 받을 수 있어요.'; }
     qMsg(doneMsg);
   }
@@ -8717,8 +8753,6 @@ function goToLine(viewId, idx) {
     if (pf.status === 404 && gemCfg().rotate) { for (const id of gemPool()) { if (id === pf.model) continue; const r2 = await gemPing(id); if (r2.ok) { gemModelSet(id); gemSave(); pf = r2; break; } } }
     keyRes(pf);
     if (pf.block) { $('aiSettings').open = true; qMsg(pf.msg); return; }
-    const cb = $('aiGemAutoFile');
-    auto.file = !!(cb && !$('aiGemAutoFileL').hidden && cb.checked && window.__aiDirReady) && (await window.__aiDirReady());
     autoRun(onlyFailed).catch(e => { auto.run = false; $('aiAutoGo').textContent = '자동 코딩 시작'; progEnd({ fatal: true }); qMsg('자동 코딩 중 오류가 나서 멈췄어요: ' + (e && e.message ? e.message : e)); });
   }
   $('aiAutoGo').addEventListener('click', () => {
