@@ -1740,6 +1740,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   }
   .wrongnote-btn:hover { transform: translateY(-1px); }
   .wrongnote-btn:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
+  .quiz-detail-actions { display: flex; justify-content: flex-end; margin: 0 0 14px; }
   .quiz-session-list { display: flex; flex-direction: column; gap: 9px; }
   .quiz-session-item {
     display: flex;
@@ -4001,6 +4002,9 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   <button class="back-link" id="vocabQuizDetailBack">← 시험 기록으로</button>
   <h1 id="vocabQuizDetailTitle"></h1>
   <p class="subtitle" id="vocabQuizDetailSubtitle"></p>
+  <div class="quiz-detail-actions" id="vocabQuizDetailActions" style="display:none">
+    <button type="button" class="wrongnote-btn" id="vocabWrongRetryBtn">🔁 오답노트 단어만 다시 공부하기</button>
+  </div>
   <div class="quiz-detail-list" id="vocabQuizDetailList"></div>
 </div>
 
@@ -6209,6 +6213,33 @@ function openQuizSessionDetail(workKey, book, session, sessionNum, workLabel, ch
         badge;
       container.appendChild(row);
     });
+  }
+
+  // 오답노트 화면에서만: 이 차시에서 틀린 단어들만 다시 시험(플래시카드)으로 공부한다.
+  const retryActions = document.getElementById('vocabQuizDetailActions');
+  const retryBtn = document.getElementById('vocabWrongRetryBtn');
+  const canRetry = !!wrongOnly && results.length > 0;
+  retryActions.style.display = canRetry ? '' : 'none';
+  retryBtn.onclick = null;
+  if (canRetry) {
+    retryBtn.textContent = '🔁 오답노트 ' + results.length + '개 다시 공부하기';
+    retryBtn.onclick = () => {
+      const vocabList = getVocabList(workKey, book);
+      const seen = new Set();
+      const questions = [];
+      results.forEach(r => {
+        const dir = r.direction || 'g2k';
+        const key = r.ref + '::' + r.wIdx + '::' + dir;
+        if (seen.has(key)) return;
+        seen.add(key);
+        const word = wrongWordFromResult(workKey, book, r, vocabList);
+        // 단어장 정보가 바뀌어 해당 유형으로 낼 수 없게 됐다면 뜻 맞추기로 대체
+        const ok = dir === 'parse' ? !!word.parse : dir === 'pparts' ? !!word.principalParts : true;
+        questions.push({ word, direction: ok ? dir : 'g2k' });
+      });
+      const dirs = Array.from(new Set(questions.map(q => q.direction)));
+      startQuizSession(workKey, book, workLabel, chapterLabel, shuffleArray(questions), dirs);
+    };
   }
 
   document.getElementById('vocabQuizDetailBack').onclick = () => openVocabQuizHome(workKey, book, workLabel, chapterLabel);
