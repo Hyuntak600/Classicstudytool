@@ -2168,8 +2168,10 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   .shelf-ready-summary { display: inline-flex; align-items: center; gap: 6px; font-family: var(--sans); font-size: 11.5px; font-weight: 600; color: var(--accent-dark); margin-top: 1px; }
   .shelf-ready-summary:empty { display: none; }
   .shelf-ready-summary::before { content: ''; flex: none; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
-  .greek-word.has-vocab { background: color-mix(in srgb, var(--accent-light) 65%, transparent); }
-  .greek-word.has-vocab.active { background: color-mix(in srgb, var(--accent-light) 100%, transparent); }
+  /* 단어장에 저장된 단어 표시: 예전엔 아주 옅은 크림색(accent-light)이라 흰 배경에서 거의 안 보였다.
+     진한 보조색(accent-2) 배경 + 밑줄로 어느 화면 밝기에서도 눈에 띄게 한다. */
+  .greek-word.has-vocab { background: color-mix(in srgb, var(--accent-2) 34%, transparent); border-bottom-color: color-mix(in srgb, var(--accent) 70%, transparent); }
+  .greek-word.has-vocab.active { background: color-mix(in srgb, var(--accent-2) 52%, transparent); }
   #view-genesis1 { --accent: #5a6f9e; --accent-dark: #3c4d75; --accent-light: #e8ecf6; --accent-2: #8b9bc4; --border: #d3dbef; --border-soft: #eef1f9; }
   #view-cid1 { --accent: #a34a3a; --accent-dark: #7a3327; --accent-light: #f6e3dd; --accent-2: #c97a63; --border: #e8c9bd; --border-soft: #f2ded6; }
   #view-lusiadas1 { --accent: #2f7a63; --accent-dark: #1f5847; --accent-light: #dcf0e8; --accent-2: #5fa98c; --border: #c3e3d5; --border-soft: #e5f4ed; }
@@ -2852,6 +2854,23 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   /* 1) 행 번호 칸: 숫자가 잘리지 않게 넓히고, datalist 화살표가 자리를 먹지 않게 */
   #aiQ .ai-q .qn { width: 5.4em; min-width: 5.4em; padding-left: 6px; padding-right: 6px; text-overflow: clip; }
   #aiQ .ai-q input.qn::-webkit-calendar-picker-indicator { display: none !important; opacity: 0; }
+  /* 더보기(구석 드롭다운) · 맨 아래 저장 버튼 */
+  .ai-more { position: relative; flex: none; align-self: flex-start; }
+  .ai-more > summary { list-style: none; cursor: pointer; width: 32px; height: 32px; display: grid; place-items: center; border-radius: 8px; border: 1px solid var(--border); background: var(--card-bg); color: var(--text-sub); font-size: 18px; line-height: 1; user-select: none; }
+  .ai-more > summary::-webkit-details-marker { display: none; }
+  .ai-more > summary:hover, .ai-more[open] > summary { border-color: var(--accent); color: var(--accent-dark); }
+  .ai-more-panel { position: absolute; right: 0; top: calc(100% + 6px); z-index: 8; box-sizing: border-box; width: min(560px, calc(100vw - 56px)); max-height: min(70vh, 560px); overflow: auto; padding: 12px 14px; display: flex; flex-direction: column; gap: 12px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 12px 32px rgba(0,0,0,.2); }
+  .ai-more-grp { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; }
+  .ai-more-grp > b { flex: 0 0 100%; font-size: 11.5px; font-weight: 600; color: var(--text-faint); }
+  .ai-more-panel .ai-sub { margin: 0; }
+  .ai-more-panel .ai-view { margin: 0; }
+  .ai-more-panel .ai-bulk { margin-top: 0; }
+  .ai-more-panel .ai-manual { border: 0.5px solid var(--border); }
+  .ai-save { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--border-soft); }
+  .ai-save-btns { display: flex; flex-wrap: wrap; gap: 8px; }
+  .ai-save-btns .ai-btn { flex: 1 1 15em; padding: 11px 14px; font-size: 14px; font-weight: 600; border-radius: 10px; }
+  .ai-save-btns .ai-btn:disabled { opacity: .5; cursor: default; }
+  .ai-save .ai-hint { margin: 8px 2px 0; font-size: 12px; }
   /* 행 번호 드롭다운 (키보드 입력 없이 목록에서 고름) */
   #aiQ .ai-q .mac-dd { flex: none; }
   #aiQ .ai-q select.qn { width: 5.8em; min-width: 5.8em; padding: 7px 22px 7px 9px; font-size: 14px; font-weight: 700; text-align: left; font-variant-numeric: tabular-nums; border-radius: 8px; }
@@ -3134,8 +3153,8 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
 
 <div id="bgArt"><i></i></div>
 <div id="bgCap" tabindex="0" role="note" aria-label="배경 그림 정보"></div>
-<div id="qsOverlay" onclick="if(event.target===this)closeQuickSearch()"><div class="qs-card"><input class="qs-input" id="qsInput" placeholder="단어, 번역, 행 번호 검색 (예: 1.34)" autocomplete="off"><div class="qs-list" id="qsList"></div></div></div>
-<div id="aiOverlay" class="ai-overlay" role="dialog" aria-modal="true" aria-labelledby="aiTitle" onclick="if(event.target===this)closeAddInfo()">
+<div id="qsOverlay" onpointerdown="this._bd=(event.target===this)" onclick="if(event.target===this&&this._bd)closeQuickSearch()"><div class="qs-card"><input class="qs-input" id="qsInput" placeholder="단어, 번역, 행 번호 검색 (예: 1.34)" autocomplete="off"><div class="qs-list" id="qsList"></div></div></div>
+<div id="aiOverlay" class="ai-overlay" role="dialog" aria-modal="true" aria-labelledby="aiTitle" onpointerdown="this._bd=(event.target===this)" onclick="if(event.target===this&&this._bd)closeAddInfo()">
   <div class="ai-card">
     <div class="ai-head">
       <h2 id="aiTitle">정보 추가</h2>
@@ -3150,16 +3169,104 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
       <p class="ai-status" id="aiStatus" aria-live="polite"></p>
       <div class="ai-steps">
 
-        <!-- 1. 원문 넣기 -->
+        <!-- 원문 넣기 · 코딩 · 저장 (예전 1·2단계를 하나로 합침) -->
         <section class="ai-step" id="aiStep1">
           <header class="ai-step-h">
-            <span class="ai-num">1</span>
-            <div class="ai-step-t"><h3>원문 넣기</h3><p>행 번호는 목록에서 고르세요. 이미 있는 행(기존 행)을 고르면 그 원문이 자동으로 채워지고, 다시 코딩해서 업데이트할 수 있어요. 새 원문은 붙여넣기만 하면 돼요 (여러 줄도 한꺼번에).</p></div>
+            <div class="ai-step-t"><h3>원문 넣기 · 코딩 · 저장</h3><p>행 번호는 목록에서 고르세요. 이미 있는 행(기존 행)을 고르면 그 원문이 자동으로 채워지고, 다시 코딩해서 업데이트할 수 있어요. 아직 없는 새 권도 똑같이 코딩하면 data 파일이 자동으로 만들어져요.</p></div>
+            <details class="ai-more" id="aiMore">
+              <summary aria-label="더보기" title="더보기">⋯</summary>
+              <div class="ai-more-panel">
+                <div class="ai-more-grp"><b>목록</b>
+                  <button type="button" class="ai-link" id="aiAutoFailed">실패한 행만 다시</button>
+                  <button type="button" class="ai-link" id="aiQDone">저장된 행 치우기</button>
+                  <button type="button" class="ai-link ai-danger" id="aiQClear">목록 비우기</button>
+                </div>
+                <div class="ai-more-grp"><b>내보내기 (고급)</b>
+                  <button type="button" class="ai-link" id="aiExpSave" hidden>원본 .js 파일 골라서 덮어쓰기</button>
+                  <button type="button" class="ai-link" id="aiExpCopy">변경분 코드 복사</button>
+                  <button type="button" class="ai-link" id="aiExpJson">.json 받기 (wrap_data.py용)</button>
+                </div>
+                  <details class="ai-bulk ai-manual ai-view" id="aiView">
+                    <summary>결과 보기 <small id="aiViewCnt"></small></summary>
+                    <div class="ai-manual-body">
+                      <p class="ai-hint">이 브라우저에 저장된 행을 data 파일에 들어가는 모양(JSON) 그대로 보여 줘요. <b class="ai-vw-key hard">●</b> 고쳐야 함 · <b class="ai-vw-key soft">●</b> 확인 권장 — 고치려면 ‘열기’로 목록의 그 행을 찾아 ‘코딩’을 누르세요.</p>
+                      <div class="ai-view-bar"><label class="ai-chk"><input type="checkbox" id="aiViewOnlyWarn"> 경고 행만 보기</label></div>
+                      <div class="ai-view-warns" id="aiViewWarns" hidden></div>
+                      <textarea id="aiViewBox" class="ai-viewbox" readonly spellcheck="false" wrap="off" aria-label="코딩된 정보(JSON)"></textarea>
+                      <div class="ai-qsend"><button type="button" class="ai-link" id="aiViewCopy">지금 보이는 내용 복사</button></div>
+                    </div>
+                  </details>
+                  <details class="ai-bulk ai-manual" id="aiBk">
+                    <summary>수정분 백업 <small id="aiBkCnt"></small></summary>
+                    <div class="ai-manual-body">
+                      <p class="ai-hint" id="aiBkInfo"></p>
+                      <div class="ai-qsend"><button type="button" class="ai-link" id="aiBkRestore">백업 복원</button><button type="button" class="ai-link ai-danger" id="aiBkDel">백업 삭제</button></div>
+                    </div>
+                  </details>
+                  <details class="ai-bulk ai-manual ai-settings" id="aiSettings">
+                    <summary>설정 · 다른 방법 <small>— Gemini 키·모델, Claude로 코딩하기</small></summary>
+                    <div class="ai-manual-body">
+                      <div class="ai-seg" id="aiSeg" role="tablist" aria-label="코딩 방식">
+                        <button type="button" role="tab" data-mode="gem" class="on">Gemini 자동</button>
+                        <button type="button" role="tab" data-mode="claude">Claude에게 맡기기</button>
+                      </div>
+                      <div class="ai-pane" id="aiPaneGem">
+                        <div class="ai-grid2">
+                          <label class="ai-f"><span>모델</span>
+                            <select id="aiGemModel" class="ai-gem" title="사용할 Gemini 모델"></select>
+                            <input type="text" id="aiGemModelCustom" class="ai-gem ai-gem-custom" placeholder="모델 ID 직접 입력" autocomplete="off" spellcheck="false" hidden>
+                          </label>
+                          <label class="ai-f"><span>API 키</span><span class="ai-key"><input type="password" id="aiGemKey" class="ai-gem" placeholder="aistudio.google.com에서 발급" autocomplete="off" spellcheck="false"><button type="button" class="ai-eye" id="aiGemKeyEye" aria-label="키 보기" aria-pressed="false"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button></span></label>
+                        </div>
+                        <div class="ai-keynote"><label class="ai-chk"><input type="checkbox" id="aiGemKeySave"> 이 기기에 키 저장</label><span id="aiGemKeyHint"></span><button type="button" class="ai-link" id="aiGemKeyTest">키 확인</button><span id="aiGemKeyRes" aria-live="polite"></span><button type="button" class="ai-link" id="aiGemKeyClear">키 지우기</button><small>키는 Google(Gemini) 서버로만 전송돼요. 백업(내보내기) 파일에는 들어가지 않아요.</small></div>
+                        <div class="ai-keynote"><span id="aiSpecState"></span><button type="button" class="ai-link" id="aiSpecPick2">규칙 파일 선택</button></div>
+                        <div class="ai-opts">
+                          <label class="ai-chk" title="503(과부하)·429(한도 초과)·404(모델 종료)가 나오면 무료 모델 목록의 다음 모델로 바꿔 계속해요"><input type="checkbox" id="aiGemRotate" checked> 오류 나면 다음 모델로 자동 전환</label>
+                          <label class="ai-chk"><input type="checkbox" id="aiGemCtx" checked> 앞 2행 참고</label>
+                          <label class="ai-chk"><input type="checkbox" id="aiGemSoft" checked> 문장 수 미달이어도 저장</label>
+                          <label class="ai-chk">요청 간격 <input type="number" id="aiGemGap" min="1" max="120" style="width:3.6em"> 초</label>
+                        </div>
+                        <div class="ai-opts"><label class="ai-chk">변경분 자동 다운로드 <input type="number" id="aiGemCk" min="0" max="500" style="width:3.6em">행마다 <small>(기본 25행 · 0이면 끔 · 받은 파일의 내용을 VS Code data 파일 맨 아래에 추가)</small></label></div>
+                        <div class="ai-opts"><label class="ai-chk"><input type="checkbox" id="aiGemAutoDl"> 자동 코딩이 끝나면 .js 파일 자동 다운로드 (끄면 끝난 뒤 버튼으로 받기)</label></div>
+                      </div>
+                      <div class="ai-pane" id="aiPaneClaude" hidden>
+                        <p class="ai-hint">① 요청을 복사해 Claude에 붙여넣고 → ② Claude가 돌려준 JSON을 아래에 붙여넣어 저장해요.</p>
+                        <div class="ai-qsend">
+                          <button type="button" class="ai-btn ai-primary" id="aiQCopy">Claude에게 보낼 요청 복사</button>
+                          <label class="ai-chk"><input type="checkbox" id="aiQWithSpec" checked> 규칙 전문 포함</label>
+                          <button type="button" class="ai-link" id="aiQSpecPick">규칙 파일 직접 선택</button>
+                          <input type="file" id="aiQSpecFile" accept=".md,.txt,text/markdown,text/plain" hidden>
+                        </div>
+                        <label class="ai-f ai-wide"><span>Claude가 돌려준 JSON</span><textarea id="aiImp" rows="3" spellcheck="false" placeholder="Claude의 답에 있는 JSON(코드블록째 붙여넣어도 돼요)"></textarea></label>
+                        <div class="ai-qsend">
+                          <button type="button" class="ai-btn ai-primary" id="aiImpGo">가져와서 저장</button>
+                          <label class="ai-chk"><input type="checkbox" id="aiImpOver"> 같은 번호는 덮어쓰기</label>
+                        </div>
+                      </div>
+                      <div class="ai-step-foot"><button type="button" class="ai-link ai-danger" id="aiMineClear">내 수정본 비우기</button><small>파일로 내보낸 뒤에만 지우세요</small></div>
+                    </div>
+                  </details>
+                  <details class="ai-bulk ai-manual" id="aiManual">
+                    <summary>한 행씩 직접 입력·수정 <small>— 고급 · 위 목록 대신 한 행만 손으로 고칠 때</small></summary>
+                    <div class="ai-manual-body">
+                      <label class="ai-f"><span>행</span><input id="aiLine" type="text" inputmode="numeric" data-list="aiLineList" autocomplete="off" placeholder="번호"><datalist id="aiLineList"></datalist></label>
+                      <label class="ai-f ai-wide"><span>원문</span><textarea id="aiSrc" class="ai-src" rows="3" spellcheck="false" placeholder="이 행의 원문을 그대로 붙여넣으세요"></textarea></label>
+                      <div class="ai-row"><button type="button" class="ai-btn" id="aiSplit">단어로 나누기</button></div>
+                      <label class="ai-f ai-wide"><span>번역 (행 전체)</span><textarea id="aiTrans" rows="2" spellcheck="false" placeholder="이 행 전체의 한국어 번역"></textarea></label>
+                      <div class="ai-words-head">
+                        <span id="aiWordCount">단어 0개</span>
+                        <span class="ai-words-tools"><button type="button" class="ai-link" id="aiToggleAll">모두 펼치기</button><button type="button" class="ai-link" id="aiAddWord">+ 단어 추가</button></span>
+                      </div>
+                      <div id="aiWords"></div>
+                    </div>
+                  </details>
+                  <details class="ai-sub ai-kbd-d"><summary>단축키 <small>보기</small></summary><p class="ai-kbd"><kbd>Enter</kbd> 글 가운데서 행 나누기 · <kbd>Backspace</kbd> 맨 앞에서 위 행에 합치기 · <kbd>Delete</kbd> 맨 끝에서 아래 행 합치기 · <kbd>↑</kbd><kbd>↓</kbd> 행 이동 · <kbd>Ctrl</kbd>+<kbd>Enter</kbd> 이 행 코딩</p></details>
+              </div>
+            </details>
           </header>
           <div id="aiQ"></div>
-          <div class="ai-qfoot"><div class="ai-qtools ai-qtools-lite"><button type="button" class="ai-link" id="aiAutoFailed">실패한 행만 다시</button><button type="button" class="ai-link" id="aiQDone">저장된 행 치우기</button><button type="button" class="ai-link ai-danger" id="aiQClear">목록 비우기</button></div></div>
           <div class="ai-go" id="aiGoWrap">
-            <div class="ai-main-act"><button type="button" class="ai-btn ai-primary" id="aiAutoGo">자동 코딩 시작</button> <button type="button" class="ai-btn" id="aiAutoDlNow" hidden>지금까지 .js 받기</button></div>
+            <div class="ai-main-act"><button type="button" class="ai-btn ai-primary" id="aiAutoGo">자동 코딩 시작</button></div>
             <div class="ai-prog" id="aiProg" hidden>
               <div class="ai-prog-top"><b id="aiProgTxt">0 / 0행</b><span id="aiProgEta"></span></div>
               <div class="ai-prog-bar" aria-hidden="true"><i class="ok" id="aiProgOk"></i><i class="bad" id="aiProgBad"></i></div>
@@ -3169,97 +3276,17 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
             </div>
           </div>
           <p class="ai-status ai-result" id="aiQMsg" aria-live="polite"></p>
-          <details class="ai-sub ai-kbd-d"><summary>단축키 <small>보기</small></summary><p class="ai-kbd"><kbd>Enter</kbd> 글 가운데서 행 나누기 · <kbd>Backspace</kbd> 맨 앞에서 위 행에 합치기 · <kbd>Delete</kbd> 맨 끝에서 아래 행 합치기 · <kbd>↑</kbd><kbd>↓</kbd> 행 이동 · <kbd>Ctrl</kbd>+<kbd>Enter</kbd> 이 행 코딩</p></details>
-        </section>
-
-        <!-- 2. 결과 · 파일 반영 -->
-        <section class="ai-step" id="aiStep2">
-          <header class="ai-step-h">
-            <span class="ai-num">2</span>
-            <div class="ai-step-t"><h3>결과 · 파일 반영</h3><p>코딩 결과는 먼저 이 브라우저에 저장돼요. 아래 방법 중 하나로 현재 권의 전체 데이터를 컴퓨터나 VS Code에 반영하세요.</p></div>
-          </header>
-          <div class="ai-qsend">
-            <button type="button" class="ai-btn ai-primary" id="aiExpSave" hidden>1. 원본 .js 파일 선택 후 덮어쓰기</button>
-            <button type="button" class="ai-btn" id="aiExpDl">2. 전체 .js 파일 받기 (로컬 파일 교체)</button>
-            <button type="button" class="ai-btn" id="aiExpCopy">3. 변경분 코드 복사</button>
-          </div>
-          <p class="ai-hint">①은 선택한 파일에 현재 권의 전체 데이터를 저장해요. ②도 수정분이 없어도 현재 권의 전체 .js 파일을 받아요. 로컬 data 파일과 다른 경우 내려받은 파일로 교체하세요. ③은 브라우저 수정분만 담은 동기화 코드를 복사해 기존 파일에 반영해요. 브라우저 수정본은 자동으로 지우지 않아요.</p>
-          <details class="ai-sub">
-            <summary>고급 내보내기 <small>.json</small></summary>
-            <div class="ai-qsend"><button type="button" class="ai-link" id="aiExpJson">.json 다운로드 (wrap_data.py용)</button></div>
-          </details>
-          <details class="ai-bulk ai-manual ai-view" id="aiView">
-            <summary>결과 보기 <small id="aiViewCnt"></small></summary>
-            <div class="ai-manual-body">
-              <p class="ai-hint">이 브라우저에 저장된 행을 data 파일에 들어가는 모양(JSON) 그대로 보여 줘요. <b class="ai-vw-key hard">●</b> 고쳐야 함 · <b class="ai-vw-key soft">●</b> 확인 권장 — 고치려면 ‘열기’로 목록의 그 행을 찾아 ‘코딩’을 누르세요.</p>
-              <div class="ai-view-bar"><label class="ai-chk"><input type="checkbox" id="aiViewOnlyWarn"> 경고 행만 보기</label></div>
-              <div class="ai-view-warns" id="aiViewWarns" hidden></div>
-              <textarea id="aiViewBox" class="ai-viewbox" readonly spellcheck="false" wrap="off" aria-label="코딩된 정보(JSON)"></textarea>
-              <div class="ai-qsend"><button type="button" class="ai-link" id="aiViewCopy">지금 보이는 내용 복사</button></div>
+          <div class="ai-save" id="aiSaveBar">
+            <div class="ai-save-btns">
+              <button type="button" class="ai-btn ai-primary" id="aiExpDl">⬇ 이 권 전체 .js 받기</button>
+              <button type="button" class="ai-btn" id="aiExpNew" hidden>＋ 새 권 등록 파일 받기</button>
             </div>
-          </details>
+            <p class="ai-hint" id="aiSaveHint"></p>
+          </div>
         </section>
 
       </div>
 
-      <details class="ai-bulk ai-manual ai-settings" id="aiSettings">
-        <summary>설정 · 다른 방법 <small>— Gemini 키·모델, Claude로 코딩하기</small></summary>
-        <div class="ai-manual-body">
-          <div class="ai-seg" id="aiSeg" role="tablist" aria-label="코딩 방식">
-            <button type="button" role="tab" data-mode="gem" class="on">Gemini 자동</button>
-            <button type="button" role="tab" data-mode="claude">Claude에게 맡기기</button>
-          </div>
-          <div class="ai-pane" id="aiPaneGem">
-            <div class="ai-grid2">
-              <label class="ai-f"><span>모델</span>
-                <select id="aiGemModel" class="ai-gem" title="사용할 Gemini 모델"></select>
-                <input type="text" id="aiGemModelCustom" class="ai-gem ai-gem-custom" placeholder="모델 ID 직접 입력" autocomplete="off" spellcheck="false" hidden>
-              </label>
-              <label class="ai-f"><span>API 키</span><span class="ai-key"><input type="password" id="aiGemKey" class="ai-gem" placeholder="aistudio.google.com에서 발급" autocomplete="off" spellcheck="false"><button type="button" class="ai-eye" id="aiGemKeyEye" aria-label="키 보기" aria-pressed="false"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button></span></label>
-            </div>
-            <div class="ai-keynote"><label class="ai-chk"><input type="checkbox" id="aiGemKeySave"> 이 기기에 키 저장</label><span id="aiGemKeyHint"></span><button type="button" class="ai-link" id="aiGemKeyTest">키 확인</button><span id="aiGemKeyRes" aria-live="polite"></span><button type="button" class="ai-link" id="aiGemKeyClear">키 지우기</button><small>키는 Google(Gemini) 서버로만 전송돼요. 백업(내보내기) 파일에는 들어가지 않아요.</small></div>
-            <div class="ai-keynote"><span id="aiSpecState"></span><button type="button" class="ai-link" id="aiSpecPick2">규칙 파일 선택</button></div>
-            <div class="ai-opts">
-              <label class="ai-chk" title="503(과부하)·429(한도 초과)·404(모델 종료)가 나오면 무료 모델 목록의 다음 모델로 바꿔 계속해요"><input type="checkbox" id="aiGemRotate" checked> 오류 나면 다음 모델로 자동 전환</label>
-              <label class="ai-chk"><input type="checkbox" id="aiGemCtx" checked> 앞 2행 참고</label>
-              <label class="ai-chk"><input type="checkbox" id="aiGemSoft" checked> 문장 수 미달이어도 저장</label>
-              <label class="ai-chk">요청 간격 <input type="number" id="aiGemGap" min="1" max="120" style="width:3.6em"> 초</label>
-            </div>
-            <div class="ai-opts"><label class="ai-chk">변경분 자동 다운로드 <input type="number" id="aiGemCk" min="0" max="500" style="width:3.6em">행마다 <small>(기본 25행 · 0이면 끔 · 받은 파일의 내용을 VS Code data 파일 맨 아래에 추가)</small></label></div>
-            <div class="ai-opts"><label class="ai-chk"><input type="checkbox" id="aiGemAutoDl"> 자동 코딩이 끝나면 .js 파일 자동 다운로드 (끄면 끝난 뒤 버튼으로 받기)</label></div>
-          </div>
-          <div class="ai-pane" id="aiPaneClaude" hidden>
-            <p class="ai-hint">① 요청을 복사해 Claude에 붙여넣고 → ② Claude가 돌려준 JSON을 아래에 붙여넣어 저장해요.</p>
-            <div class="ai-qsend">
-              <button type="button" class="ai-btn ai-primary" id="aiQCopy">Claude에게 보낼 요청 복사</button>
-              <label class="ai-chk"><input type="checkbox" id="aiQWithSpec" checked> 규칙 전문 포함</label>
-              <button type="button" class="ai-link" id="aiQSpecPick">규칙 파일 직접 선택</button>
-              <input type="file" id="aiQSpecFile" accept=".md,.txt,text/markdown,text/plain" hidden>
-            </div>
-            <label class="ai-f ai-wide"><span>Claude가 돌려준 JSON</span><textarea id="aiImp" rows="3" spellcheck="false" placeholder="Claude의 답에 있는 JSON(코드블록째 붙여넣어도 돼요)"></textarea></label>
-            <div class="ai-qsend">
-              <button type="button" class="ai-btn ai-primary" id="aiImpGo">가져와서 저장</button>
-              <label class="ai-chk"><input type="checkbox" id="aiImpOver"> 같은 번호는 덮어쓰기</label>
-            </div>
-          </div>
-          <div class="ai-step-foot"><button type="button" class="ai-link ai-danger" id="aiMineClear">내 수정본 비우기</button><small>파일로 내보낸 뒤에만 지우세요</small></div>
-        </div>
-      </details>
-
-      <details class="ai-bulk ai-manual" id="aiManual">
-        <summary>한 행씩 직접 입력·수정 <small>— 고급 · 위 세 단계 대신 한 행만 손으로 고칠 때</small></summary>
-        <div class="ai-manual-body">
-          <label class="ai-f"><span>행</span><input id="aiLine" type="text" inputmode="numeric" data-list="aiLineList" autocomplete="off" placeholder="번호"><datalist id="aiLineList"></datalist></label>
-          <label class="ai-f ai-wide"><span>원문</span><textarea id="aiSrc" class="ai-src" rows="3" spellcheck="false" placeholder="이 행의 원문을 그대로 붙여넣으세요"></textarea></label>
-          <div class="ai-row"><button type="button" class="ai-btn" id="aiSplit">단어로 나누기</button></div>
-          <label class="ai-f ai-wide"><span>번역 (행 전체)</span><textarea id="aiTrans" rows="2" spellcheck="false" placeholder="이 행 전체의 한국어 번역"></textarea></label>
-          <div class="ai-words-head">
-            <span id="aiWordCount">단어 0개</span>
-            <span class="ai-words-tools"><button type="button" class="ai-link" id="aiToggleAll">모두 펼치기</button><button type="button" class="ai-link" id="aiAddWord">+ 단어 추가</button></span>
-          </div>
-          <div id="aiWords"></div>
-        </div>
-      </details>
       <div class="ai-dock" id="aiDock"><span class="ai-dock-txt" id="aiDockTxt"></span><span class="ai-dock-btns" id="aiDockBtns"></span></div>
     </div>
     <div class="ai-foot">
@@ -4036,6 +4063,8 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
      두고 열기만 하면 항상 data/ 안의 최신 내용을 자동으로 불러온다.
      ============================================================ -->
 
+<!-- 정보 추가로 만든 새 권 목록. 파일이 없으면 그냥 건너뜀 (data/data-chapters.js) -->
+<script src="data/data-chapters.js"></script>
 <script>
 /* ================================================================================
    ★★★ 전체 프로그램 공통 데이터 작성 표준 (모든 작품 공통 필수 규칙) ★★★
@@ -4352,8 +4381,8 @@ function userLinesFor(storeKey) {
   const draftKey = 'draft:' + chapter.workKey + ':' + chapter.book;
   return Object.assign({}, store[draftKey] || {}, store[storeKey] || {});
 }
-function mergeUserLines(base, storeKey) {
-  const mine = userLinesFor(storeKey);
+function mergeUserLines(base, storeKey, minesOverride) {
+  const mine = minesOverride || userLinesFor(storeKey);
   if (!mine) return base;
   const refs = Object.keys(mine);
   if (!refs.length) return base;
@@ -4396,7 +4425,13 @@ async function loadChapterData(varName) {
   if (window[varName]) return window[varName];
   const fileId = CHAPTER_DATA_IDS[varName];
   if (!fileId) throw new Error('알 수 없는 데이터 변수: ' + varName);
-  const raw = await loadChapterScript(fileId);
+  let raw;
+  try { raw = await loadChapterScript(fileId); }
+  catch (e) {
+    // 정보 추가로 막 만든 새 권은 data 파일이 아직 없을 수 있다 → 빈 원본 + 브라우저에 저장된 내 수정본으로 연다
+    const exCh = STUDY_CHAPTERS.find(c => c.dataVar === varName);
+    if (exCh && exCh.extra) { raw = []; } else { throw e; }
+  }
   const base = normalizeChapterData(raw, varName);
   __baseLines[varName] = base;
   window[varName] = mergeUserLines(base, varName);
@@ -4720,7 +4755,7 @@ function buildLines(linesArr, containerId, showTransRef, showMyTransRef, workKey
     memoValueMap = new Map();
     for (let i = 0; i < localStorage.length; i++) {
       const k = localStorage.key(i);
-      if (k && k.indexOf('memo::') === 0) memoValueMap.set(k, localStorage.getItem(k));
+      if (k && (k.indexOf('memo::') === 0 || k.indexOf('memoc::') === 0)) memoValueMap.set(k, localStorage.getItem(k));
     }
   } catch (e) { memoValueMap = null; }
 
@@ -4797,9 +4832,21 @@ function buildLines(linesArr, containerId, showTransRef, showMyTransRef, workKey
       const span = document.createElement('span');
       span.textContent = coreText;
       span.className = 'greek-word';
-      const memoKey = 'memo::' + line.ref + '::' + wIdx;
+      // 메모 키에 권(containerId)을 넣는다. 예전 키('memo::ref::wIdx')는 ref만 썼는데, 데이터 파일 안에
+      // 다른 권의 ref가 잘못 섞여 있어서(예: 6권 파일의 'Iliad 1.293'~'1.304') 6권 메모가 1권에 나타났다.
+      // 화면 표기는 fmtRef가 권 번호로 다시 만들기 때문에 눈에 띄지 않았다.
+      const legacyMemoKey = 'memo::' + line.ref + '::' + wIdx;
+      const memoKey = 'memoc::' + containerId + '::' + line.ref + '::' + wIdx;
       try {
-        const existingMemo = memoValueMap ? (memoValueMap.get(memoKey) ?? null) : localStorage.getItem(memoKey);
+        let existingMemo = memoValueMap ? (memoValueMap.get(memoKey) ?? null) : localStorage.getItem(memoKey);
+        if (existingMemo === null) {   // 새 키에 없으면 예전 메모를 한 번만 복사해 온다(예전 키는 지우지 않는다)
+          const old = memoValueMap ? (memoValueMap.get(legacyMemoKey) ?? null) : localStorage.getItem(legacyMemoKey);
+          if (old !== null && old.trim().length > 0) {
+            localStorage.setItem(memoKey, old);
+            if (memoValueMap) memoValueMap.set(memoKey, old);
+            existingMemo = old;
+          }
+        }
         if (existingMemo !== null && existingMemo.trim().length > 0) {
           span.classList.add('has-memo');
         }
@@ -4850,7 +4897,7 @@ function buildLines(linesArr, containerId, showTransRef, showMyTransRef, workKey
       memoValueMap = new Map();
       for (let i = 0; i < localStorage.length; i++) {
         const k = localStorage.key(i);
-        if (k && k.indexOf('memo::') === 0) memoValueMap.set(k, localStorage.getItem(k));
+        if (k && (k.indexOf('memo::') === 0 || k.indexOf('memoc::') === 0)) memoValueMap.set(k, localStorage.getItem(k));
       }
     } catch (e) { memoValueMap = null; }
   }
@@ -5059,9 +5106,9 @@ function setupCloseAllInfo(buttonId, containerId) {
 
 /* ---------- 창세기: 히브리어 글꼴 선택 ---------- */
 const HEBREW_FONT_CLASSES = ['hfont-cardo', 'hfont-david', 'hfont-gveret', 'hfont-suez', 'hfont-noto', 'hfont-rubik', 'hfont-heebo', 'hfont-miriam', 'hfont-alef'];
-function setupHebrewFontSelect() {
-  const select = document.getElementById('hebrewFontSelect');
-  const view = document.getElementById('view-genesis1');
+function setupHebrewFontSelect(selectId, viewId) {
+  const select = document.getElementById(selectId || 'hebrewFontSelect');
+  const view = document.getElementById(viewId || 'view-genesis1');
   if (!select || !view) return;
 
   let saved = null;
@@ -7076,15 +7123,115 @@ const STUDY_CHAPTERS = [
     closeAllInfoId: 'closeAllInfoSanguo1', topInfoId: 'topInfoSanguo1',
     font: { selectId: 'chineseFontSelect1', viewId: 'view-sanguo1', classes: null, prefix: 'cfont-', storageKey: 'chineseFontChoice1' } }
 ];
-// 그리스어/라틴어 글꼴 선택 챕터는 각각 맞는 클래스 목록을 여기서 채워 넣는다
-STUDY_CHAPTERS.forEach(ch => {
-  if (ch.font) ch.font.classes = ch.workKey === 'iliad' ? GREEK_FONT_CLASSES : (ch.workKey === 'sanguo' ? CHINESE_FONT_CLASSES : LATIN_FONT_CLASSES);
+/* ============================================================
+   새 권 자동 등록 (정보 추가 → 새 권)
+   ------------------------------------------------------------
+   일리아드 2권, 창세기 2장처럼 아직 없는 권을 정보 추가로 코딩하면
+   (1) 같은 작품의 기존 화면(view)을 복제해 새 권 화면을 만들고,
+   (2) 화면 CSS(글꼴·색)도 복제하고, (3) 서재 책장·단어장에 등록한다.
+   - 데이터 파일 이름 규칙: data/data-lines + 작품명 + 권 번호 .js
+     (예: iliad 2권 → data/data-linesIliad2.js, genesis 2장 → data/data-linesGenesis2.js)
+   - 이 브라우저에서 만든 새 권은 localStorage('userChapters')에 기억하고,
+     data/data-chapters.js (window.__EXTRA_CHAPTERS)에 올라 있는 권은 파일 기준으로 등록한다.
+   - 새 권을 파일로 확정하려면 data-linesXXX.js 와 data-chapters.js 를 data 폴더에 넣으면 끝
+     (shell.html은 더 고칠 필요 없음).
+   ============================================================ */
+let STUDY_READY = false;
+const EXTRA_WORKS = {
+  iliad:    { name: 'Iliad',    tmpl: 'linesIliad6',    unit: n => n + '권',            grid: ['iliadGrid', 24, '일리아드'] },
+  meta:     { name: 'Meta',     tmpl: 'linesMeta14',    unit: n => n + '권',            grid: ['metaGrid', 15, '변신 이야기'] },
+  genesis:  { name: 'Genesis',  tmpl: 'linesGenesis1',  unit: n => n + '장',            grid: ['genesisGrid', 50, '창세기'] },
+  cid:      { name: 'Cid',      tmpl: 'linesCid1',      unit: n => '제' + n + ' 칸타르', grid: ['cidGrid', 3, '엘 시드의 노래'] },
+  lusiadas: { name: 'Lusiadas', tmpl: 'linesLusiadas1', unit: n => '제' + n + '권',      grid: ['lusiadasGrid', 10, '우스 루지아다스'] },
+  sanguo:   { name: 'Sanguo',   tmpl: 'linesSanguo1',   unit: n => '제' + n + '회',      grid: ['sanguoGrid', 120, '삼국지연의'] }
+};
+// 복제할 원본 화면은 글꼴 선택기 등이 손대지기 전(아직 깨끗한 상태)에 HTML 문자열로 떠 둔다
+const VIEW_TEMPLATES = {};
+Object.keys(EXTRA_WORKS).forEach(wk => {
+  const t = STUDY_CHAPTERS.find(c => c.dataVar === EXTRA_WORKS[wk].tmpl), el = t && document.getElementById(t.viewId);
+  if (t && el) VIEW_TEMPLATES[wk] = { ch: t, html: el.outerHTML };
 });
+// 원본 화면에 걸린 CSS 규칙(#view-iliad6 …)을 새 id로 복제해 같은 자리에 끼워 넣는다
+function cloneStudyCss(idMap) {
+  const olds = Object.keys(idMap).sort((a, b) => b.length - a.length).map(x => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  if (!olds.length) return;
+  const src = '#(' + olds.join('|') + ')(?![\\w-])', reG = new RegExp(src, 'g'), reT = new RegExp(src);
+  const walk = owner => {
+    let rules; try { rules = owner.cssRules; } catch (e) { return; }
+    if (!rules) return;
+    for (let i = rules.length - 1; i >= 0; i--) {
+      const r = rules[i];
+      if (typeof r.selectorText === 'string') {
+        if (reT.test(r.selectorText)) { try { owner.insertRule(r.cssText.replace(reG, (m, id) => '#' + idMap[id]), i + 1); } catch (e) {} }
+      } else if (r.cssRules && r.cssRules.length) walk(r);
+    }
+  };
+  Array.from(document.styleSheets).forEach(walk);
+}
+function addExtraChapter(workKey, book, fromManifest) {
+  const W = EXTRA_WORKS[workKey], T = VIEW_TEMPLATES[workKey]; book = parseInt(book, 10);
+  if (!W || !T || !(book > 0)) return null;
+  let ch = STUDY_CHAPTERS.find(c => c.workKey === workKey && c.book === book);
+  if (ch) { if (fromManifest && ch.extra) ch.inManifest = true; return ch; }
+  const idMap = {};
+  (T.html.match(/\bid="[^"]+"/g) || []).forEach(x => { const id = x.slice(4, -1); idMap[id] = /\d+$/.test(id) ? id.replace(/\d+$/, String(book)) : id + book; });
+  const T0 = T.ch, m = id => idMap[id];
+  if (document.getElementById(m(T0.viewId))) return null;
+  let html = T.html.replace(/\b(id|for|aria-controls|aria-labelledby)="([^"]*)"/g, (all, a, v) => idMap[v] ? a + '="' + idMap[v] + '"' : all);
+  html = html.replace(/(<span class="book-badge">)[^<]*(<\/span>)/, '$1' + W.unit(book) + '$2');
+  const sameWork = STUDY_CHAPTERS.filter(c => c.workKey === workKey), anchor = document.getElementById(sameWork[sameWork.length - 1].viewId);
+  if (!anchor) return null;
+  anchor.insertAdjacentHTML('afterend', html);
+  cloneStudyCss(idMap);
+  ch = {
+    dataVar: 'lines' + W.name + book, containerId: m(T0.containerId), viewId: m(T0.viewId), workKey, book,
+    transToggleId: m(T0.transToggleId), myTransToggleId: m(T0.myTransToggleId), closeAllInfoId: m(T0.closeAllInfoId), topInfoId: m(T0.topInfoId),
+    font: T0.font ? { selectId: m(T0.font.selectId), viewId: m(T0.viewId), classes: null, prefix: T0.font.prefix, storageKey: T0.font.storageKey.replace(/\d+$/, '') + book } : null,
+    hebrewSelectId: m('hebrewFontSelect') || null,
+    extra: true, inManifest: !!fromManifest
+  };
+  CHAPTER_DATA_IDS[ch.dataVar] = 'data-' + ch.dataVar;
+  STUDY_CHAPTERS.push(ch);
+  const vs = VOCAB_LINE_SOURCES[workKey] || (VOCAB_LINE_SOURCES[workKey] = {}); vs[book] = ch.dataVar;
+  const vw = VOCAB_WORKS.find(w => w.key === workKey);
+  if (vw && !vw.chapters.some(c => c.book === book)) { vw.chapters.push({ book, label: W.unit(book) }); vw.chapters.sort((x, y) => x.book - y.book); }
+  if (STUDY_READY) {
+    initStudyChapter(ch); rebuildBookGrid(workKey);
+    if (typeof decorateGalleryTiles === 'function') decorateGalleryTiles();
+  }
+  return ch;
+}
+function rebuildBookGrid(workKey) {
+  const w = EXTRA_WORKS[workKey], g = w && w.grid; if (!g || !document.getElementById(g[0])) return;
+  const map = {}; let top = g[1];
+  STUDY_CHAPTERS.forEach(c => { if (c.workKey === workKey) { map[c.book] = c.viewId; if (c.book > top) top = c.book; } });
+  buildBookGrid(g[0], top, map, g[2], workKey);
+}
+const USER_CHAPTERS_KEY = 'userChapters';
+function loadUserChapters() { try { const a = JSON.parse(localStorage.getItem(USER_CHAPTERS_KEY) || '[]'); return Array.isArray(a) ? a : []; } catch (e) { return []; } }
+function addUserChapter(workKey, book) {   // 정보 추가에서 새 권의 첫 행을 저장할 때 부른다
+  const ch = addExtraChapter(workKey, book, false); if (!ch) return null;
+  if (ch.extra) {
+    const list = loadUserChapters();
+    if (!list.some(e => e && e.workKey === workKey && e.book === ch.book)) { list.push({ workKey, book: ch.book }); try { localStorage.setItem(USER_CHAPTERS_KEY, JSON.stringify(list)); } catch (e) {} }
+  }
+  return ch;
+}
+(function registerExtraChaptersAtStartup() {
+  (Array.isArray(window.__EXTRA_CHAPTERS) ? window.__EXTRA_CHAPTERS : []).forEach(e => { if (e) addExtraChapter(e.workKey, e.book, true); });
+  loadUserChapters().forEach(e => { if (e) addExtraChapter(e.workKey, e.book, false); });
+  // 예전에 '임시(draft)'로만 저장돼 있던 새 권의 행도 챕터로 올린다
+  try {
+    const st = loadUserLines();
+    Object.keys(st).forEach(k => { const mm = k.match(/^draft:([a-z]+):(\d+)$/); if (mm && st[k] && Object.keys(st[k]).length) addUserChapter(mm[1], parseInt(mm[2], 10)); });
+  } catch (e) {}
+})();
 
-// 원문 단어를 실제로 화면에 그리는 buildLines()는 챕터마다 수천 개의 DOM 요소를 만들기 때문에
-// 무거운 작업임. 페이지를 열자마자 5개 챕터를 전부 미리 그려두면 초기 로딩이 느려지므로,
-// 사용자가 실제로 그 챕터를 펼칠 때(showStudyView)만 데이터를 불러와 그리도록 미룬다.
-STUDY_CHAPTERS.forEach(ch => {
+// 챕터마다: 글꼴 목록 채우기 + 번역 토글/모두 닫기/맨 위로 + 글꼴 선택기 연결
+// (원문 단어를 실제로 화면에 그리는 buildLines()는 챕터마다 수천 개의 DOM 요소를 만들기 때문에
+//  무거운 작업임. 사용자가 그 챕터를 펼칠 때(showStudyView)만 데이터를 불러와 그린다.)
+function initStudyChapter(ch) {
+  if (ch.font) ch.font.classes = ch.workKey === 'iliad' ? GREEK_FONT_CLASSES : (ch.workKey === 'sanguo' ? CHINESE_FONT_CLASSES : LATIN_FONT_CLASSES);
   ch.showTrans = { value: false };
   ch.showMyTrans = { value: false };
   ch.built = false;
@@ -7094,8 +7241,11 @@ STUDY_CHAPTERS.forEach(ch => {
   const topBtn = document.getElementById(ch.topInfoId);
   if (topBtn) topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   if (ch.font) setupScriptFontSelect(ch.font.selectId, ch.font.viewId, ch.font.classes, ch.font.prefix, ch.font.storageKey);
-});
+  if (ch.hebrewSelectId) setupHebrewFontSelect(ch.hebrewSelectId, ch.viewId);
+}
+STUDY_CHAPTERS.forEach(initStudyChapter);
 setupHebrewFontSelect();
+STUDY_READY = true;
 
 // 챕터 화면으로 들어갈 때 호출: 처음 열 때만 (1) 해당 작품 폰트 그룹, (2) 원문 데이터 파일을
 // 불러온 뒤 buildLines를 실행하고, 그 다음부터는 이미 그려진 내용을 그대로 재사용한다.
@@ -7129,12 +7279,7 @@ function showStudyView(viewId, noRestore) {
   });
 }
 
-buildBookGrid('iliadGrid', 24, { 1: 'view-iliad1', 6: 'view-iliad6', 24: 'view-iliad24' }, '일리아드', 'iliad');
-buildBookGrid('metaGrid', 15, { 1: 'view-meta1', 14: 'view-meta14' }, '변신 이야기', 'meta');
-buildBookGrid('genesisGrid', 50, { 1: 'view-genesis1' }, '창세기', 'genesis');
-buildBookGrid('cidGrid', 3, { 1: 'view-cid1' }, '엘 시드의 노래', 'cid');
-buildBookGrid('lusiadasGrid', 10, { 1: 'view-lusiadas1' }, '우스 루지아다스', 'lusiadas');
-buildBookGrid('sanguoGrid', 120, { 1: 'view-sanguo1' }, '삼국지연의', 'sanguo');
+Object.keys(EXTRA_WORKS).forEach(rebuildBookGrid);   // 기존 권 + 새로 등록된 권 모두 책장에 표시
 
 /* ---------- 나란히 보기 (좌우 병렬 비교) ----------
    각 권의 화면(.study-view)을 그대로 좌우 칸으로 옮겨 놓는 방식이라 번역 보기·글꼴·단어 창이 칸마다 따로 동작한다.
@@ -7743,6 +7888,17 @@ function goToLine(viewId, idx) {
     { key: 'sanguo',   label: '삼국지연의',      unit: '회',     max: 120, prefix: '삼국지연의 ',     sep: '回.' }
   ];
   const byKey = {}; WORKS.forEach(w => { byKey[w.key] = w; });
+  // 권(장)마다 전체 행 수 — 행 번호 드롭다운을 미리 채우는 데 쓴다. 판본에 따라 1~수 행씩 다를 수 있다.
+  // iliad: 표준 그리스어 텍스트(합계 15,693행) · meta: Tarrant OCT 기준(합계 11,995행) · genesis: 마소라 본문 절 번호(합계 1,533절;
+  // 31장 54절·32장 33절 — 영어·한국어 성경은 31장 55절·32장 32절) · cid: 메넨데스 피달 판 3칸타르(합계 3,730행) ·
+  // lusiadas: 10칸토 × 연(8행) 수(합계 8,816행). sanguo(삼국지연의)는 행을 직접 나눠서 정해진 수가 없어 비워 둔다.
+  const LINE_COUNTS = {
+    iliad: [611, 877, 461, 544, 909, 529, 482, 565, 713, 579, 848, 471, 837, 522, 746, 867, 761, 617, 424, 503, 611, 515, 897, 804],
+    meta: [779, 875, 733, 803, 678, 721, 865, 884, 797, 739, 795, 628, 968, 851, 879],
+    genesis: [31, 25, 24, 26, 32, 22, 24, 22, 29, 32, 32, 20, 18, 24, 21, 16, 27, 33, 38, 18, 34, 24, 20, 67, 34, 35, 46, 22, 35, 43, 54, 33, 20, 31, 29, 43, 36, 30, 23, 23, 57, 38, 34, 34, 28, 34, 31, 22, 33, 26],
+    cid: [1084, 1193, 1453],
+    lusiadas: [848, 904, 1144, 832, 800, 792, 696, 792, 760, 1248]
+  };
   const F = {
     g: { label: '원문 형태 (g)' }, pos: { label: '품사' }, lemma: { label: '표제어 (lemma)', wide: 1 }, root: { label: '어근 (root)', wide: 1 },
     principalParts: { label: '주요형 (동사)', wide: 1 }, parse: { label: '문법 분석 (parse)', wide: 1 },
@@ -7774,6 +7930,7 @@ function goToLine(viewId, idx) {
     }
   }
   const lineNos = () => S.lines.map(l => refLineNo(l.ref)).filter(n => !isNaN(n));
+  const bookLen = () => { const a = LINE_COUNTS[S.work.key]; return (a && a[S.book - 1]) || 0; };   // 이 권의 전체 행 수(모르면 0)
   function refFor(n) {   // 기존 행의 ref 모양을 따라 만들고, 없으면 작품별 기본 규칙
     const sample = S.lines.find(l => /^(.*?)(\d+)(\D+)(\d+)$/.test(l.ref || ''));
     if (sample) { const m = sample.ref.match(/^(.*?)(\d+)(\D+)(\d+)$/); return m[1] + S.book + m[3] + n; }
@@ -7794,14 +7951,19 @@ function goToLine(viewId, idx) {
     if (tok !== S.token) return false;
     S.lines = arr;
     dlLine.textContent = '';
-    lineNos().forEach(n => { const o = document.createElement('option'); o.value = String(n); dlLine.appendChild(o); });
+    // 행 목록: 이 권의 전체 행 수(1~N)를 미리 다 깔고, 이미 있는 행에는 '있음'을 붙인다. 전체 수를 모르는 권(삼국지연의 등)은 있는 행만.
+    const have = new Set(lineNos()), N = bookLen();
+    const all = N ? Array.from({ length: Math.max(N, ...have) }, (_, i) => i + 1) : Array.from(have).sort((a, b) => a - b);
+    all.forEach(n => { const o = document.createElement('option'); o.value = String(n); if (N && have.has(n)) o.label = '있음'; dlLine.appendChild(o); });
     return true;
   }
   function setBookList() {
     dlBook.textContent = '';
     for (let i = 1; i <= S.work.max; i++) {
       const o = document.createElement('option'); o.value = String(i);
-      if (chFor(S.work.key, i)) o.label = '있음';
+      const len = (LINE_COUNTS[S.work.key] || [])[i - 1];
+      const lb = (chFor(S.work.key, i) ? '있음' : '') + (chFor(S.work.key, i) && len ? ' · ' : '') + (len ? len + (S.work.key === 'genesis' ? '절' : '행') : '');
+      if (lb) o.label = lb;
       dlBook.appendChild(o);
     }
     $('aiBookLbl').textContent = S.work.unit;
@@ -7875,7 +8037,7 @@ function goToLine(viewId, idx) {
     const nums = lineNos();
     if (isNaN(S.line)) {
       setStatus(nums.length
-        ? w.label + ' ' + S.book + w.unit + ' — 지금 ' + nums.length + '개 행이 있고 마지막은 ' + Math.max.apply(null, nums) + '행이에요. 행 번호를 고르거나 새 번호를 입력하세요.'
+        ? w.label + ' ' + S.book + w.unit + (bookLen() ? ' (전체 ' + bookLen() + '행)' : '') + ' — 지금 ' + nums.length + '개 행이 있고 마지막은 ' + Math.max.apply(null, nums) + '행이에요. 행 번호를 고르거나 새 번호를 입력하세요.'
         : w.label + ' ' + S.book + w.unit + ' — 아직 행이 없어요. 행 번호를 입력하세요.');
       return;
     }
@@ -8004,6 +8166,7 @@ function goToLine(viewId, idx) {
     if (!S.ref) return;
     const line = buildLine();
     if (!line.words.length) { setStatus('단어를 하나 이상 넣어 주세요. 원문을 붙여넣고 ‘단어로 나누기’를 누르세요.'); return; }
+    ensureChapter();
     const store = loadUserLines();
     (store[S.storeKey] = store[S.storeKey] || {})[S.ref] = line;
     if (!saveUserLines(store)) { setStatus('저장하지 못했어요. 브라우저 저장 공간을 확인해 주세요.'); return; }
@@ -8071,7 +8234,8 @@ function goToLine(viewId, idx) {
   function qNumFill(sel) {
     if (sel.dataset.full) return; sel.dataset.full = '1';
     const cur = parseInt(sel.value, 10), nums = lineNos(), have = new Set(nums), mx = nums.length ? Math.max.apply(null, nums) : 0;
-    const top = Math.max(mx + 30, mx ? 0 : 100, cur > 0 ? cur : 0);
+    const N = bookLen();   // 전체 행 수를 알면 끝까지 미리 채운다(모르면 예전처럼 마지막 행 + 30)
+    const top = N ? Math.max(N, mx, cur > 0 ? cur : 0) : Math.max(mx + 30, mx ? 0 : 100, cur > 0 ? cur : 0);
     let ex = '', nw = '';
     for (let k = 1; k <= top; k++) { const o = '<option value="' + k + '">' + k + '</option>'; if (have.has(k)) ex += o; else nw += o; }
     sel.innerHTML = (cur > 0 ? '' : '<option value="">번호</option>')
@@ -8302,6 +8466,7 @@ function goToLine(viewId, idx) {
     if (S.loading) { qMsg('불러오는 중이에요. 잠시 뒤 다시 눌러 주세요.'); return; }
     let items;
     try { items = parseImport(txt); } catch (e) { qMsg('JSON을 읽지 못했어요: ' + e.message + '\n따옴표 이스케이프가 빠졌거나 응답이 중간에 끊겼을 수 있어요. 끊긴 행부터 다시 요청해 보세요.'); return; }
+    ensureChapter();
     const over = $('aiImpOver').checked, store = loadUserLines(), mine = store[S.storeKey] || {};
     const saved = [], skip = [], warn = [];
     const norm = s => String(s).replace(/\s+/g, ''), strip = s => Array.from(String(s).normalize('NFC')).filter(c => !PUNCT.test(c)).join('');
@@ -8317,7 +8482,7 @@ function goToLine(viewId, idx) {
       const words = (Array.isArray(it.words) ? it.words : []).filter(x => x && typeof x.g === 'string' && x.g.trim());
       if (!words.length) { skip.push(label + '(단어 없음)'); return; }
       words.forEach(x => normalizeWordFields(x, 'import ' + want));
-      const line = Object.assign({}, it, { ref: want, trans: String(it.trans || ''), words });
+      const line = Object.assign({ ref: want }, it, { ref: want, trans: String(it.trans || ''), words });
       mine[want] = line; saved.push(line);
       const row = Q.find(r => parseInt(r.n, 10) === n && r.t.trim());
       if (row) row.d = true;
@@ -8336,20 +8501,21 @@ function goToLine(viewId, idx) {
   // ---- data 파일로 내보내기: 원본 행 + 내 수정본을 합쳐 data/data-lines….js 와 같은 형식(CRLF, 들여쓰기 2칸)으로 만든다 ----
   async function exportBuild(allowNoChanges) {
     const ch = S.ch;
-    if (!ch) { qMsg('이 권은 아직 등록된 챕터가 아니라서 내보낼 파일이 없어요.'); return null; }
+    if (!ch) { qMsg('이 권은 아직 저장된 행이 없어요. 한 행이라도 코딩해서 저장하면 data 파일을 받을 수 있어요.'); return null; }
     if (S.loading) { qMsg('불러오는 중이에요. 잠시 뒤 다시 눌러 주세요.'); return null; }
     const fileId = CHAPTER_DATA_IDS[ch.dataVar];
     await loadChapterData(ch.dataVar);
     const base = __baseLines[ch.dataVar] || [];
     const mineN = Object.keys(userLinesFor(ch.dataVar)).length;
     if (!mineN && !allowNoChanges) { qMsg('브라우저에 남아 있는 수정분이 없어요. 이 권은 현재 불러온 데이터 파일과 같은 상태예요.'); return null; }
-    const merged = mergeUserLines(base, ch.dataVar);
+    const bkEntry = !mineN ? bkLoad()[ch.dataVar] : null, fromBk = bkEntry && bkEntry.lines ? Object.keys(bkEntry.lines).length : 0;
+    const merged = mergeUserLines(base, ch.dataVar, fromBk ? bkEntry.lines : null);   // 수정분이 없어도 직전 백업이 있으면 함께 담아, 다시 받아도 옛 내용으로 덮어쓰지 않게 한다
     const body = JSON.stringify(merged, (k, v) => (k && k[0] === '_' ? undefined : v), 2).replace(/\n/g, '\r\n');
     const js = '// 이 파일은 shell.html의 정보 추가 → data 파일로 내보내기로 만들었습니다 (' + new Date().toISOString().slice(0, 10) + ').\r\n'
       + '// data-lines….json 도 따로 관리한다면 그쪽도 같은 내용으로 갱신하세요 (wrap_data.py가 json으로 이 파일을 덮어씁니다).\r\n'
       + "window.__RAW_CHAPTER_DATA = window.__RAW_CHAPTER_DATA || {};\r\n"
       + "window.__RAW_CHAPTER_DATA['" + fileId + "'] = " + body + ';\r\n';
-    return { ch, fileId, merged, body, js, mineN };
+    return { ch, fileId, merged, body, js, mineN, fromBk };
   }
   function exportPatch() {
     const ch = S.ch;
@@ -8372,17 +8538,53 @@ function goToLine(viewId, idx) {
       + '})();\r\n';
     return { ch, fileId, updates, js };
   }
+  // ---- 새 권: 첫 행을 저장할 때 챕터(화면·책장·단어장)를 자동으로 만든다 ----
+  const isNewCh = ch => !!(ch && ch.extra && !ch.inManifest);
+  const newChs = () => STUDY_CHAPTERS.filter(isNewCh);
+  const fileOf = ch => CHAPTER_DATA_IDS[ch.dataVar] + '.js';
+  function ensureChapter() {
+    if (S.ch) return true;
+    if (isNaN(S.book)) return false;
+    const ch = addUserChapter(S.work.key, S.book); if (!ch) return false;
+    S.ch = ch; S.storeKey = ch.dataVar; setBookList();
+    return true;
+  }
+  // 새 권을 shell.html이 불러오게 하는 목록 파일 (data/data-chapters.js)
+  function manifestText() {
+    const order = Object.keys(EXTRA_WORKS);
+    const list = STUDY_CHAPTERS.filter(c => c.extra).sort((a, b) => order.indexOf(a.workKey) - order.indexOf(b.workKey) || a.book - b.book);
+    return '// data-chapters.js — shell.html이 시작할 때 읽어서 서재에 새 권을 등록해요. (정보 추가 → ‘새 권 등록 파일 받기’로 만든 파일)\r\n'
+      + '// 새 권 하나는 data-lines + 작품명 + 권 번호 .js 파일과 짝이에요. 예: 일리아드 2권 → data-linesIliad2.js\r\n'
+      + 'window.__EXTRA_CHAPTERS = [\r\n' + list.map(c => '  { "workKey": "' + c.workKey + '", "book": ' + c.book + ' }').join(',\r\n') + '\r\n];\r\n';
+  }
+  function saveSync() {
+    const btn = $('aiExpDl'), nb = $('aiExpNew'), hint = $('aiSaveHint'); if (!btn || !nb || !hint) return;
+    const ch = S.ch, others = newChs();
+    btn.disabled = !ch;
+    btn.textContent = ch ? '⬇ 이 권 전체 받기 — ' + fileOf(ch) + (isNewCh(ch) ? ' (새 파일)' : ' (덮어쓰기용)') : '⬇ 이 권 전체 .js 받기';
+    nb.hidden = !others.length;
+    if (others.length) nb.textContent = '＋ 새 권 등록 파일 받기 — data-chapters.js (새 권 ' + others.length + '개)';
+    let h;
+    if (!ch) h = isNaN(S.book) ? '위에서 ' + S.work.unit + ' 번호를 고르면 이 권의 파일을 받을 수 있어요.' : S.work.label + ' ' + S.book + S.work.unit + '은 아직 저장된 행이 없어요. 한 행이라도 코딩해서 저장하면 data 파일이 자동으로 만들어져요.';
+    else if (isNewCh(ch)) h = '새 권이에요. ' + fileOf(ch) + ' 와 data-chapters.js 두 파일을 shell.html과 같은 위치의 data 폴더에 넣고 새로고침하면 서재에서 바로 열려요.';
+    else h = '원본 + 내 수정본이 합쳐진 이 권 전체가 한 파일로 나와요. data 폴더의 같은 이름 파일을 이 파일로 통째로 교체하세요.';
+    if (ch && !isNewCh(ch) && others.length) h += ' 다른 새 권 ' + others.length + '개는 아직 data-chapters.js에 없어요.';
+    hint.textContent = h;
+  }
   function download(name, text, type) {
     const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], { type: type + ';charset=utf-8' })); a.download = name;
     document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 4000);
   }
+  const BK_KEY = 'userLinesBackup';
+  function bkLoad() { try { return JSON.parse(localStorage.getItem(BK_KEY) || '{}') || {}; } catch (e) { return {}; } }
+  function bkSave(o) { try { localStorage.setItem(BK_KEY, JSON.stringify(o)); return true; } catch (e) { return false; } }
   // ---- 프로젝트 파일에 아직 반영되지 않은 브라우저 수정본 추적 ----
   function mineCount() { return Object.keys(userLinesFor(S.storeKey)).length; }
   function unsavedN() { return mineCount(); }
   function unsavedSync() {
     const b = $('aiUnsaved'); if (!b || !S.storeKey) return;
     const n = unsavedN(), btn = $('aiUnsavedDl');
-    if (n > 0) { b.hidden = false; b.classList.remove('ok'); $('aiUnsavedTxt').textContent = '브라우저 수정본 ' + n + '개가 남아 있어요. 파일로 동기화하기 전까지 이 브라우저에만 저장됩니다.'; btn.textContent = '변경분 .js 받기'; btn.dataset.mode = 'dl'; }
+    if (n > 0) { b.hidden = false; b.classList.remove('ok'); $('aiUnsavedTxt').textContent = '브라우저 수정본 ' + n + '개가 남아 있어요. 파일로 동기화하기 전까지 이 브라우저에만 저장됩니다.'; btn.textContent = '전체 .js 받기'; btn.dataset.mode = 'dl'; }
     else b.hidden = true;
   }
   function dockSync() {
@@ -8391,13 +8593,18 @@ function goToLine(viewId, idx) {
     t.textContent = auto.run ? '코딩 중…' : todo ? '코딩할 행 ' + todo + '개' + (f ? ' · 실패 ' + f : '') : '코딩할 행 없음 — 원문을 붙여넣으세요';
   }
   { const mv = document.querySelector('.ai-main-act'); if (mv) $('aiDockBtns').appendChild(mv); }
-  setInterval(() => { if (ov.classList.contains('show')) { unsavedSync(); dockSync(); specSync(); } }, 1000);
+  setInterval(() => { if (ov.classList.contains('show')) { unsavedSync(); dockSync(); specSync(); saveSync(); bkSync(); } }, 1000);
   $('aiUnsavedDl').addEventListener('click', () => $('aiExpDl').click());
   window.addEventListener('beforeunload', e => { if (auto.run || unsavedN() > 0) { e.preventDefault(); e.returnValue = ''; } });
   const ckInp = $('aiGemCk'); try { const v = localStorage.getItem('aiCk'); ckInp.value = v === null ? '25' : v; } catch (e) { ckInp.value = '25'; }
   ckInp.addEventListener('change', () => { try { localStorage.setItem('aiCk', ckInp.value); } catch (e) {} });
   const ckEvery = () => Math.max(0, parseInt(ckInp.value, 10) || 0);
   async function checkpoint(tag) {
+    if (isNewCh(S.ch)) {   // 새 권은 붙여 넣을 원본 파일이 없으니 전체 파일을 받는다
+      const nx = await exportBuild(true); if (!nx) return '';
+      download(nx.fileId + '.js', nx.js, 'text/javascript');
+      return '⬇ 새 권 파일 다운로드 (' + tag + ', 전체 ' + nx.merged.length + '행) — ' + nx.fileId + '.js';
+    }
     const x = exportPatch(); if (!x) return '';
     const suffix = String(tag).replace(/[^\w가-힣-]+/g, '-');
     download(x.fileId + '-동기화-' + suffix + '.js', x.js, 'text/javascript');
@@ -8410,12 +8617,64 @@ function goToLine(viewId, idx) {
     if (!saveUserLines(store)) throw new Error('브라우저 저장 공간 때문에 수정본을 비우지 못했어요.');
     applyToChapter(); await loadLines(); refresh(true); qSync();
   }
+  // ---- 수정분 백업(직전 1회): 전체 파일을 받으면 브라우저의 수정분을 여기로 옮기고, 이전 백업은 교체한다 ----
+  const fmtAt = iso => { const d = new Date(iso); return isNaN(d) ? '' : d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0') + ' ' + String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0'); };
+  async function rotateMine() {   // 반환: 백업으로 옮긴 행 수 (0 = 옮길 게 없음, -1 = 저장 공간 문제로 그대로 둠)
+    const key = S.storeKey, ch = S.ch, mine = userLinesFor(key), n = Object.keys(mine).length;
+    if (!key || !n) return 0;
+    const store = loadUserLines(), draftKey = ch ? 'draft:' + ch.workKey + ':' + ch.book : '', hold = { k: store[key], d: draftKey ? store[draftKey] : undefined };
+    delete store[key]; if (draftKey) delete store[draftKey];
+    if (!saveUserLines(store)) return -1;
+    const bk = bkLoad(), prev = bk[key];
+    bk[key] = { at: new Date().toISOString(), file: ch ? fileOf(ch) : '', lines: mine };
+    if (!bkSave(bk)) {   // 백업을 못 쓰면 원래대로 되돌려 수정분을 잃지 않게 한다
+      const back = loadUserLines(); if (hold.k) back[key] = hold.k; if (hold.d && draftKey) back[draftKey] = hold.d; saveUserLines(back);
+      return -1;
+    }
+    applyToChapter(); await loadLines(); refresh(true); qSync(); bkSync();
+    return n;
+  }
+  function bkSync() {
+    const box = $('aiBk'); if (!box) return;
+    const e = S.storeKey ? bkLoad()[S.storeKey] : null, n = e && e.lines ? Object.keys(e.lines).length : 0;
+    $('aiBkCnt').textContent = n ? '— ' + n + '행 · ' + fmtAt(e.at) : '— 없음';
+    $('aiBkInfo').textContent = n
+      ? (e.file || '이 권') + ' 전체 파일을 받으면서 보관한 직전 수정분이에요. 다음에 전체 파일을 받으면 이 백업은 그때의 수정분으로 교체돼요. 파일을 교체했는데 내용이 이상하면 ‘백업 복원’으로 브라우저에 되돌릴 수 있어요.'
+      : '아직 백업이 없어요. 이 권의 ‘이 권 전체 받기’를 누르면 그때의 수정분이 여기에 한 번분만 보관돼요.';
+    $('aiBkRestore').disabled = !n; $('aiBkDel').disabled = !n;
+  }
+  $('aiBkRestore').addEventListener('click', async () => {
+    const bk = bkLoad(), e = bk[S.storeKey]; if (!e || !e.lines) return;
+    const store = loadUserLines(); store[S.storeKey] = Object.assign({}, e.lines, store[S.storeKey] || {});
+    if (!saveUserLines(store)) { qMsg('브라우저 저장 공간이 부족해서 복원하지 못했어요.'); return; }
+    applyToChapter(); await loadLines(); refresh(true); qSync(); unsavedSync(); saveSync();
+    qMsg('백업 ' + Object.keys(e.lines).length + '행을 수정분으로 되돌렸어요 (지금 고친 행이 있으면 그쪽을 우선했어요). 백업은 그대로 남아 있어요.');
+  });
+  $('aiBkDel').addEventListener('click', () => {
+    const bk = bkLoad(), e = bk[S.storeKey]; if (!e) return;
+    if (!confirm('이 권의 수정분 백업 ' + Object.keys(e.lines || {}).length + '행을 지울까요?\n받은 data 파일을 이미 교체해서 확인했을 때만 지우세요.')) return;
+    delete bk[S.storeKey]; bkSave(bk); bkSync(); qMsg('수정분 백업을 지웠어요.');
+  });
   $('aiExpDl').addEventListener('click', async () => {
     const x = await exportBuild(true); if (!x) return;
     const name = x.fileId + '.js';
     download(name, x.js, 'text/javascript');
-    qMsg(name + ' 전체 파일을 받았어요 (' + x.merged.length + '행). 로컬 data/' + x.fileId + '.js와 다른 경우 내려받은 파일로 교체하세요. 브라우저 수정분은 그대로 남아 있어요.');
+    const moved = await rotateMine();
+    qMsg(name + ' 전체 파일을 받았어요 (' + x.merged.length + '행). data 폴더의 같은 이름 파일을 이 파일로 교체한 뒤 새로고침하세요.'
+      + (x.fromBk ? '\n(이번엔 새 수정분이 없어서 직전 백업 ' + x.fromBk + '행을 포함해 받았어요.)' : '')
+      + (moved > 0 ? '\n수정분 ' + moved + '행은 백업(직전 1회)으로 옮겼어요 — ⋯ → ‘수정분 백업’에서 복원할 수 있어요. 파일을 교체하기 전까지는 화면에 예전 내용이 보일 수 있어요.' : '')
+      + (moved < 0 ? '\n⚠ 브라우저 저장 공간 문제로 수정분을 백업으로 옮기지 못해 그대로 두었어요.' : '')
+      + (isNewCh(x.ch) ? '\n새 권이라 data-chapters.js도 필요해요 — 바로 아래 ‘새 권 등록 파일 받기’도 눌러 두 파일을 함께 data 폴더에 넣으세요.' : ''));
   });
+  $('aiExpNew').addEventListener('click', () => {
+    const n = newChs().length;
+    download('data-chapters.js', manifestText(), 'text/javascript');
+    qMsg('data-chapters.js를 받았어요 (새 권 ' + n + '개 포함). shell.html과 같은 위치의 data 폴더에 넣고(기존 파일이 있으면 교체) 새로고침하면 새 권이 서재에 자리 잡아요. 각 새 권의 data-lines….js 파일도 함께 있어야 해요.');
+  });
+  // 더보기(구석 드롭다운): 바깥을 누르거나 항목을 고르면 닫는다
+  document.addEventListener('click', e => { const mo = $('aiMore'); if (mo && mo.open && !mo.contains(e.target)) mo.open = false; });
+  ['aiSettings', 'aiManual'].forEach(id => { const d = $(id); if (d) d.addEventListener('toggle', () => { if (d.open) $('aiMore').open = true; }); });   // 코드가 설정/직접 입력을 펼치면 구석 드롭다운도 같이 연다
+  $('aiMore').addEventListener('click', e => { if (e.target.closest('.ai-more-grp .ai-link')) setTimeout(() => { $('aiMore').open = false; }, 0); });
   async function copyExportText(text) {
     const fallback = () => {
       const ta = document.createElement('textarea');
@@ -8435,7 +8694,7 @@ function goToLine(viewId, idx) {
     const ok = await copyExportText(x.js);
     qMsg(ok
       ? x.updates.length + '행 변경분 코드를 복사했어요. VS Code의 data/' + x.fileId + '.js 맨 아래에 붙여넣고 저장하세요. 수정분은 추가와 기존 행 교체를 ref 기준으로 처리하며, 브라우저에도 계속 보존돼요.'
-      : '코드를 클립보드에 복사하지 못했어요. 브라우저의 클립보드 권한을 확인하거나 ‘2. VS Code용 .js 파일 받기’를 이용하세요.');
+      : '코드를 클립보드에 복사하지 못했어요. 브라우저의 클립보드 권한을 확인하거나 맨 아래 ‘이 권 전체 받기’를 이용하세요.');
   });
   // 자동 코딩이 끝나면 .js 를 자동으로 받을지 (선택은 이 브라우저에 기억)
   (function () {
@@ -8517,7 +8776,6 @@ function goToLine(viewId, idx) {
   // 사용자가 선택한 위치의 정확한 원본 파일에 전체 데이터를 덮어쓴다.
   if (window.showSaveFilePicker) {
     $('aiExpSave').hidden = false;
-    $('aiExpDl').classList.remove('ai-primary');
     $('aiExpSave').addEventListener('click', async () => {
       try {
         const fileId = S.ch && CHAPTER_DATA_IDS[S.ch.dataVar];
@@ -8545,12 +8803,11 @@ function goToLine(viewId, idx) {
         if (window.__RAW_CHAPTER_DATA) window.__RAW_CHAPTER_DATA[x.fileId] = x.merged;
         qMsg(expected + '에 전체 ' + x.merged.length + '행을 저장했어요. 브라우저 수정분은 안전을 위해 그대로 남겨 뒀어요.');
       } catch (e) {
-        qMsg(e && e.name === 'AbortError' ? '파일 선택을 취소했어요. 원본 파일은 변경하지 않았습니다.' : '파일을 저장하지 못했어요: ' + (e && e.message ? e.message : e) + ' — 2번 변경분 다운로드 또는 3번 코드 복사를 이용하세요.');
+        qMsg(e && e.name === 'AbortError' ? '파일 선택을 취소했어요. 원본 파일은 변경하지 않았습니다.' : '파일을 저장하지 못했어요: ' + (e && e.message ? e.message : e) + ' — 맨 아래 ‘이 권 전체 받기’를 이용하세요.');
       }
     });
   } else {
     $('aiExpSave').hidden = true;
-    $('aiExpDl').classList.add('ai-primary');
   }
 
   // ---- 자동 코딩: Gemini API로 목록의 행을 한 줄씩 처리 (규칙 파일을 시스템 지시로 사용) ----
@@ -8783,7 +9040,8 @@ function goToLine(viewId, idx) {
         if (chk.soft.length && !$('aiGemSoft').checked) { why = chk.soft.join(' | '); break; }
         const words = obj.words.filter(x => x && typeof x.g === 'string' && x.g.trim());
         fixSlots(words); words.forEach(x => normalizeWordFields(x, 'auto ' + want));
-        const line = Object.assign({}, obj, { ref: want, trans: String(obj.trans || '').trim(), words });
+        const line = Object.assign({ ref: want }, obj, { ref: want, trans: String(obj.trans || '').trim(), words });
+        ensureChapter();
         const store = loadUserLines(); (store[S.storeKey] = store[S.storeKey] || {})[want] = line;
         if (!saveUserLines(store)) { fatal = true; why = '브라우저 저장 공간이 가득 찼어요'; break; }
         saved = true; okN++; rotN = 0; streak = 0; { const nb = $('aiAutoDlNow'); if (nb) nb.hidden = false; }
@@ -8801,14 +9059,18 @@ function goToLine(viewId, idx) {
     auto.run = false; $('aiAutoGo').textContent = '자동 코딩 시작'; progEnd({ stopped: auto.stop, fatal });
     applyToChapter(); await loadLines(); refresh(true); qSync();
     let doneMsg = ((auto.stop ? '멈췄어요. ' : fatal ? '중단했어요. ' : '끝났어요. ') + '저장 ' + okN + '행' + (failed.length ? ', 실패 ' + failed.length + '행(' + failed.join(', ') + ')' : '') + '.\n' + log.slice(-6).join('\n')
-      + '\n다 끝나면 ‘1. 내 PC data 폴더에 저장’ 또는 VS Code용 파일 받기/코드 복사로 프로젝트에 반영하세요.');
+      + '\n다 끝나면 맨 아래 ‘이 권 전체 받기’로 파일을 받아 data 폴더의 같은 이름 파일을 교체하세요. (새 권이면 ‘새 권 등록 파일’도 함께)');
     // 선택한 경우 자동 코딩이 끝났을 때 변경분 동기화 코드도 내려받는다.
     const dlCb = $('aiGemAutoDl');
     if (okN > 0 && dlCb && dlCb.checked) {
       try {
-        const x = exportPatch();
-        if (x) { const name = x.fileId + '-동기화-완료.js'; download(name, x.js, 'text/javascript'); doneMsg += '\n⬇ ' + name + '를 내려받았어요. 파일의 코드를 VS Code data/' + x.fileId + '.js 맨 아래에 추가하세요.'; }
-      } catch (e) { doneMsg += '\n⚠ .js 자동 다운로드 실패: ' + (e && e.message ? e.message : e) + ' — 아래 ‘2. VS Code용 .js 파일 받기’ 버튼으로 직접 받으세요.'; }
+        const x = await exportBuild(true);
+        if (x) {
+          download(x.fileId + '.js', x.js, 'text/javascript'); doneMsg += '\n⬇ ' + x.fileId + '.js 전체 파일(' + x.merged.length + '행)을 내려받았어요. data 폴더의 같은 이름 파일을 교체하세요.';
+          { const mv = await rotateMine(); if (mv > 0) doneMsg += '\n수정분 ' + mv + '행은 백업(직전 1회)으로 옮겼어요 (⋯ → 수정분 백업).'; }
+          if (isNewCh(x.ch)) { await sleep(600); download('data-chapters.js', manifestText(), 'text/javascript'); doneMsg += '\n⬇ 새 권이라 data-chapters.js도 내려받았어요. 두 파일을 함께 data 폴더에 넣으세요.'; }
+        }
+      } catch (e) { doneMsg += '\n⚠ .js 자동 다운로드 실패: ' + (e && e.message ? e.message : e) + ' — 맨 아래 ‘이 권 전체 받기’ 버튼으로 직접 받으세요.'; }
     }
     { const nb = $('aiAutoDlNow'); const auto_dl_done = doneMsg.indexOf('내려받았어요') >= 0;
       if (nb) nb.hidden = !(okN > 0 && !auto_dl_done);
@@ -8838,7 +9100,7 @@ function goToLine(viewId, idx) {
     if (ch) { selWork.value = ch.workKey; inBook.value = String(ch.book); }
     if (!S.dirty) { inLine.value = ''; fillForm(null); }
     await onWork(false);
-    unsavedSync(); dockSync(); if (!SPEC) loadSpec().then(specSync); if (!gemCfg().key) $('aiSettings').open = true;   // 처음 쓰는 경우에만 설정을 펼쳐 키 입력을 안내
+    unsavedSync(); dockSync(); if (!SPEC) loadSpec().then(specSync); // (키가 없을 때의 안내는 ‘자동 코딩 시작’을 눌렀을 때만 설정을 열어 줌 — 열자마자 드롭다운이 입력칸을 가리지 않도록)
     if (!(window.matchMedia && matchMedia('(pointer: coarse)').matches)) { const f = document.querySelector('#aiQ .qt'); if (f) f.focus(); }
   };
   window.closeAddInfo = function () { ov.classList.remove('show'); document.documentElement.style.overflow = ''; };
@@ -9069,7 +9331,7 @@ document.addEventListener('keydown', e => {
     if (v && !list.length) list = all.filter(x => x.value.indexOf(v) >= 0);
     if (list.length === 1 && list[0].value === v && !showAll) list = [];
     if (!list.length) { if (active && active.owner === el) active.close(); return; }
-    const rows = list.slice(0, 300).map(x => ({ t: 'item', selected: x.value === v, text: x.value, hint: x.label && x.label !== x.value ? x.label : '' }));
+    const rows = list.slice(0, 1000).map(x => ({ t: 'item', selected: x.value === v, text: x.value, hint: x.label && x.label !== x.value ? x.label : '' }));
     if (active && active.owner === el) { active.setRows(rows); return; }
     ListPopup({ owner: el, anchor: el, rows, minWidth: 110, noAutoHi: true, enterNeedsMove: true,
       onPick: r => { picking = true; el.value = r.text; el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true })); picking = false; },
