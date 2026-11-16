@@ -2852,6 +2852,10 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   /* 1) 행 번호 칸: 숫자가 잘리지 않게 넓히고, datalist 화살표가 자리를 먹지 않게 */
   #aiQ .ai-q .qn { width: 5.4em; min-width: 5.4em; padding-left: 6px; padding-right: 6px; text-overflow: clip; }
   #aiQ .ai-q input.qn::-webkit-calendar-picker-indicator { display: none !important; opacity: 0; }
+  /* 행 번호 드롭다운 (키보드 입력 없이 목록에서 고름) */
+  #aiQ .ai-q .mac-dd { flex: none; }
+  #aiQ .ai-q select.qn { width: 5.8em; min-width: 5.8em; padding: 7px 22px 7px 9px; font-size: 14px; font-weight: 700; text-align: left; font-variant-numeric: tabular-nums; border-radius: 8px; }
+  @media (max-width: 640px) { #aiQ .ai-q .mac-dd { grid-area: n; } #aiQ .ai-q select.qn { font-size: 16px; } }
   @media (max-width: 640px) { #aiQ .ai-q .qn { width: 5em; min-width: 5em; grid-area: n; } }
 
   /* 2) 주 버튼: .ai-btn 이 배경을 덮어써서 흰 글씨가 흰 배경에 묻히던 문제 */
@@ -3150,7 +3154,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
         <section class="ai-step" id="aiStep1">
           <header class="ai-step-h">
             <span class="ai-num">1</span>
-            <div class="ai-step-t"><h3>원문 넣기</h3><p>붙여넣기만 하세요. 한 줄이 한 행이고, 여러 줄을 한꺼번에 붙여도 돼요.</p></div>
+            <div class="ai-step-t"><h3>원문 넣기</h3><p>행 번호는 목록에서 고르세요. 이미 있는 행(기존 행)을 고르면 그 원문이 자동으로 채워지고, 다시 코딩해서 업데이트할 수 있어요. 새 원문은 붙여넣기만 하면 돼요 (여러 줄도 한꺼번에).</p></div>
           </header>
           <div id="aiQ"></div>
           <div class="ai-qfoot"><div class="ai-qtools ai-qtools-lite"><button type="button" class="ai-link" id="aiAutoFailed">실패한 행만 다시</button><button type="button" class="ai-link" id="aiQDone">저장된 행 치우기</button><button type="button" class="ai-link ai-danger" id="aiQClear">목록 비우기</button></div></div>
@@ -8053,9 +8057,32 @@ function goToLine(viewId, idx) {
     if (r.d) return ['저장됨 ✓', 'ok'];
     if (r.f) return ['실패', 'warn'];
     if (Q.filter(x => parseInt(x.n, 10) === n && x.t.trim()).length > 1) return ['번호 중복', 'warn'];
+    if (r.redo && r.t.trim()) return ['다시 코딩', ''];
     const found = S.lines.find(l => refLineNo(l.ref) === n);
     if (userLinesFor(S.storeKey)[found ? found.ref : refOf(n)]) return ['저장됨 ✓', 'ok'];
     return found ? ['기존 행', ''] : (r.t.trim() ? ['새 행', ''] : ['', '']);
+  }
+  // 행 번호 드롭다운: 처음엔 고른 번호 하나만 넣어 두고, 포커스/클릭할 때 전체 목록(기존 행 · 새 행)을 채운다 (행이 많아도 가볍게)
+  function qNumInit(sel, v) {
+    const n = parseInt(v, 10), o = document.createElement('option');
+    o.value = n > 0 ? String(n) : ''; o.textContent = n > 0 ? String(n) : '번호';
+    sel.textContent = ''; sel.appendChild(o); sel.value = o.value; delete sel.dataset.full;
+  }
+  function qNumFill(sel) {
+    if (sel.dataset.full) return; sel.dataset.full = '1';
+    const cur = parseInt(sel.value, 10), nums = lineNos(), have = new Set(nums), mx = nums.length ? Math.max.apply(null, nums) : 0;
+    const top = Math.max(mx + 30, mx ? 0 : 100, cur > 0 ? cur : 0);
+    let ex = '', nw = '';
+    for (let k = 1; k <= top; k++) { const o = '<option value="' + k + '">' + k + '</option>'; if (have.has(k)) ex += o; else nw += o; }
+    sel.innerHTML = (cur > 0 ? '' : '<option value="">번호</option>')
+      + (ex ? '<optgroup label="기존 행 — 원문을 불러와요">' + ex + '</optgroup>' : '')
+      + (nw ? '<optgroup label="새 행">' + nw + '</optgroup>' : '');
+    sel.value = cur > 0 ? String(cur) : '';
+  }
+  // 이미 있는 행의 원문(단어 g를 이어 붙인 것). 없으면 ''
+  function qExist(n) {
+    const f = S.lines.find(l => refLineNo(l.ref) === n);
+    return f && f.words && f.words.length ? f.words.map(w => w.g || '').join(joiner()).normalize('NFC') : '';
   }
   function paintQ(d, i) {
     const st = qState(Q[i]), s = d.querySelector('.qs');
@@ -8068,8 +8095,7 @@ function goToLine(viewId, idx) {
     qTail();
     Q.forEach((r, i) => {
       const d = document.createElement('div'); d.className = 'ai-q'; d.dataset.i = String(i);
-      const n = document.createElement('input'); n.className = 'qn'; n.type = 'text'; n.inputMode = 'numeric'; n.autocomplete = 'off';
-      n.setAttribute('data-list', 'aiLineList'); n.setAttribute('aria-label', '행 번호'); n.value = r.n;
+      const n = document.createElement('select'); n.className = 'qn'; n.setAttribute('aria-label', '행 번호'); qNumInit(n, r.n);
       const t = document.createElement('input'); t.className = 'qt'; t.type = 'text'; t.autocomplete = 'off'; t.spellcheck = false;
       t.dir = S.work.key === 'genesis' ? 'rtl' : 'auto'; t.value = r.t;
       if (i === Q.length - 1) t.placeholder = '원문 한 행 입력 후 Enter';
@@ -8087,9 +8113,9 @@ function goToLine(viewId, idx) {
     const key = S.work.key + ':' + (isNaN(S.book) ? '' : S.book);
     if (key !== qKey) {
       qKey = key; qi = -1;
-      Q = isNaN(S.book) ? [] : (qStore()[key] || []).map(r => ({ n: String(r.n), t: String(r.t), d: !!r.d, f: !!r.f }));
+      Q = isNaN(S.book) ? [] : (qStore()[key] || []).map(r => ({ n: String(r.n), t: String(r.t), d: !!r.d, f: !!r.f, auto: !!r.auto, redo: !!r.redo }));
       qRender();
-    } else qEl.querySelectorAll('.ai-q').forEach((d, i) => paintQ(d, i));
+    } else { qEl.querySelectorAll('select.qn').forEach(x => { delete x.dataset.full; }); qEl.querySelectorAll('.ai-q').forEach((d, i) => paintQ(d, i)); }
   }
   window.__aiQRefresh = qSync;
   function qGo(i) {
@@ -8105,11 +8131,19 @@ function goToLine(viewId, idx) {
   }
   qEl.addEventListener('input', e => {
     const d = e.target.closest('.ai-q'); if (!d) return;
-    const i = +d.dataset.i;
-    if (e.target.classList.contains('qn')) Q[i].n = e.target.value.trim(); else Q[i].t = e.target.value;
-    Q[i].d = false; Q[i].f = false;
+    const i = +d.dataset.i, r = Q[i];
+    if (e.target.classList.contains('qn')) {
+      // 번호를 고르면: 기존 행이면 그 원문을 불러오고(다시 코딩 가능), 새 행이면 자동으로 채운 글만 비운다
+      r.n = e.target.value.trim();
+      const n = parseInt(r.n, 10), ex = n > 0 ? qExist(n) : '';
+      if (!r.t.trim() || r.auto) { r.t = ex; r.auto = !!ex; d.querySelector('.qt').value = ex; }
+      r.redo = !!ex;
+    } else { r.t = e.target.value; r.auto = false; }
+    r.d = false; r.f = false;
     qSave(); qEl.querySelectorAll('.ai-q').forEach((x, k) => paintQ(x, k));
   });
+  const qnOf = t => { if (!t || !t.closest) return null; if (t.matches('select.qn')) return t; const w = t.closest('.mac-dd'); return w ? w.querySelector('select.qn') : null; };
+  ['click', 'focusin', 'keydown'].forEach(ev => qEl.addEventListener(ev, e => { const s = qnOf(e.target); if (s) qNumFill(s); }, true));
   // 번호가 이어진(n, n+1, n+2…) 뒤쪽 행들 — 가르기/합칠 때 같이 한 칸씩 밀고 당기기 위해
   function qChain(i) {
     const out = []; let p = parseInt(Q[i].n, 10);
