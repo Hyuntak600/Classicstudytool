@@ -230,7 +230,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#F8F3E5" id="themeColorMeta">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/png" href="img/icon-192.png">
@@ -1077,6 +1077,47 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   }
   .vocab-backup-btn:hover { border-color: var(--accent-dark); color: var(--text-main); background: var(--accent-light); }
   .vocab-backup-hint { font-size: 11.5px; color: var(--text-faint); margin: 8px 0 0; }
+
+  /* ---------- 메모 모아보기 · 저장 공간 ---------- */
+  #view-memos { max-width: 700px; margin: 0 auto; padding: 28px 20px 90px; line-height: 1.6; }
+  #view-memos h1 { font-family: var(--serif); font-size: 27px; font-weight: 600; letter-spacing: -0.005em; margin: 14px 0 6px; }
+  #view-memos .subtitle { color: var(--text-sub); font-size: 13.5px; margin-bottom: 20px; }
+  .memo-tools { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+  .memo-search { flex: 1 1 220px; min-width: 0; font-family: var(--sans); font-size: 14px; color: var(--text-main); background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 9px 12px; }
+  .memo-search:focus { outline: none; border-color: var(--accent); }
+  #memoChapterSel { font-family: var(--sans); font-size: 13.5px; color: var(--text-main); background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 9px 12px; max-width: 100%; }
+  .memo-bar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 0 0 12px; }
+  .memo-count { font-size: 12.5px; color: var(--text-sub); }
+  .memo-bar-btns { margin-left: auto; display: flex; gap: 8px; flex-wrap: wrap; }
+  .memo-bar-btns .vocab-backup-btn:disabled { opacity: 0.45; cursor: default; }
+  .memo-list { display: flex; flex-direction: column; gap: 10px; }
+  .memo-item { display: flex; gap: 12px; align-items: flex-start; background: var(--card-bg); border: 1px solid var(--border-soft); border-radius: var(--radius-md); padding: 12px 14px; }
+  .memo-cb { flex: none; margin-top: 5px; width: 16px; height: 16px; accent-color: var(--accent); }
+  .memo-main { min-width: 0; flex: 1; }
+  .memo-head { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; margin-bottom: 4px; }
+  .memo-loc { font-size: 12px; font-weight: 600; color: var(--accent-dark); }
+  .memo-word { font-family: var(--serif); font-size: 15px; color: var(--text-main); overflow-wrap: anywhere; }
+  .memo-text { font-size: 14px; color: var(--text-main); white-space: pre-wrap; overflow-wrap: anywhere; }
+  .memo-actions2 { display: flex; gap: 14px; margin-top: 8px; }
+  .memo-link { background: none; border: none; padding: 0; font-family: var(--sans); font-size: 12.5px; font-weight: 600; color: var(--accent-dark); cursor: pointer; }
+  .memo-link:hover { text-decoration: underline; }
+  .memo-link.danger { color: var(--bad); }
+  .memo-empty { text-align: center; color: var(--text-faint); font-size: 14px; padding: 36px 0; margin: 0; }
+  .memo-storage { margin: 18px 0 0; font-size: 11.5px; color: var(--text-faint); }
+  .memo-storage.warn { color: var(--bad); font-weight: 600; }
+  .storage-box { margin-top: 18px; border: 1px solid var(--border-soft); border-radius: var(--radius-md); background: var(--card-bg); }
+  .storage-box > summary { cursor: pointer; padding: 11px 16px; font-size: 13px; font-weight: 600; color: var(--text-sub); list-style: none; }
+  .storage-box > summary::-webkit-details-marker { display: none; }
+  .storage-box > summary span { font-weight: 500; color: var(--text-faint); }
+  .storage-body { padding: 2px 16px 14px; }
+  .st-bar { height: 8px; border-radius: 999px; background: color-mix(in srgb, var(--text-faint) 22%, transparent); overflow: hidden; }
+  .st-fill { height: 100%; width: 1%; border-radius: 999px; background: var(--accent); transition: width var(--dur-state) var(--ease-mac); }
+  .st-fill.warn { background: #d08a2c; }
+  .st-fill.bad { background: var(--bad); }
+  .st-text { font-size: 12.5px; color: var(--text-sub); margin: 8px 0 6px; }
+  .st-list { list-style: none; margin: 0 0 4px; padding: 0; font-size: 12.5px; color: var(--text-sub); }
+  .st-list li { display: flex; justify-content: space-between; gap: 12px; padding: 3px 0; border-bottom: 1px dashed var(--border-soft); }
+  .st-warn { margin: 14px 0 0; padding: 10px 14px; border-radius: var(--radius-sm); background: var(--bad-light); color: var(--bad); font-size: 12.5px; font-weight: 600; }
 
   .vocab-word-table { display: flex; flex-direction: column; }
   .vocab-word-row {
@@ -3135,6 +3176,38 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   .info-panel:not(.show):not(.word-sheet) .info-panel-inner { border-width: 0; box-shadow: none; }
   /* ===== 키보드 이동 (추가) ===== */
   .greek-word.kb-cur { outline: none; background: color-mix(in srgb, var(--text-main) 12%, transparent); border-radius: 3px; }
+
+  /* ===== UI 마감: 모바일 헤더 · 허브 타이포 · 전시관 배경 ===== */
+  /* 모바일 헤더: 노치/상태바 안전 영역, 더보기 메뉴가 화면 밖으로 나가지 않게, 손가락 크기 */
+  .site-header { padding-top: env(safe-area-inset-top, 0px); }
+  .site-header-inner { padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+  .brand { min-width: 0; }
+  .brand-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .nav-more-menu { max-width: calc(100vw - 24px); max-height: calc(100vh - 96px); max-height: calc(100dvh - 96px); overflow-y: auto; overscroll-behavior: contain; }
+  @media (max-width: 600px) {
+    .site-header-inner { padding-left: max(12px, env(safe-area-inset-left, 0px)); padding-right: max(12px, env(safe-area-inset-right, 0px)); }
+  }
+  @media (pointer: coarse) {
+    .site-nav-link.nav-more-btn, .theme-toggle { width: 40px; height: 40px; }
+    .nav-more-menu .site-nav-link, .nav-more-row { min-height: 44px; }
+    .nav-more-row { align-items: center; }
+  }
+  /* 허브 타이포: 화면 폭에 맞춰 부드럽게 커지고, 줄바꿈이 어색하지 않게 */
+  .hub-kicker { font-size: clamp(19px, 5.2vw, 28px); line-height: 1.45; letter-spacing: 0.015em; text-wrap: balance; margin-bottom: 18px; }
+  @media (max-width: 480px) { .hub-kicker { font-size: clamp(19px, 5.4vw, 24px); } }
+  .hub-header h1 { text-wrap: balance; }
+  .hub-header .subtitle { max-width: 34em; text-wrap: pretty; }
+  .work-title { font-size: clamp(24px, 6vw, 30px); line-height: 1.2; text-wrap: balance; }
+  .work-lang { font-size: 12px; letter-spacing: 0.1em; }
+  .shelf-head-text { min-width: 0; }
+  /* 전시관 배경: 밝은 방에서도 가장자리를 배경색으로 녹이고(글자와 겹쳐도 편하게), 설명 글씨는 유리판 위에 */
+  :root:not([data-theme="dark"]) #bgArt::after {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(135% 100% at 50% 40%, transparent 45%, color-mix(in srgb, var(--bg) 85%, transparent) 100%);
+  }
+  #bgCap { bottom: calc(12px + env(safe-area-inset-bottom, 0px)); right: max(14px, env(safe-area-inset-right, 0px)); background: color-mix(in srgb, var(--card-bg) 72%, transparent); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border: 0.5px solid var(--border); }
+  @media (max-width: 480px) { #bgCap { max-width: min(220px, calc(100vw - 28px)); padding: 6px 8px; } #bgCap small { display: none; } }
+  @media (prefers-reduced-motion: reduce) { #bgArt i { transition: none; will-change: auto; } }
 </style>
 </head>
 <body>
@@ -3266,7 +3339,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
           </header>
           <div id="aiQ"></div>
           <div class="ai-go" id="aiGoWrap">
-            <div class="ai-main-act"><button type="button" class="ai-btn ai-primary" id="aiAutoGo">자동 코딩 시작</button></div>
+            <div class="ai-main-act"><button type="button" class="ai-btn ai-primary" id="aiAutoGo">자동 코딩 시작</button><button type="button" class="ai-btn" id="aiAutoDlNow" hidden>⬇ 지금까지 .js 받기</button></div>
             <div class="ai-prog" id="aiProg" hidden>
               <div class="ai-prog-top"><b id="aiProgTxt">0 / 0행</b><span id="aiProgEta"></span></div>
               <div class="ai-prog-bar" aria-hidden="true"><i class="ok" id="aiProgOk"></i><i class="bad" id="aiProgBad"></i></div>
@@ -3279,7 +3352,6 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
           <div class="ai-save" id="aiSaveBar">
             <div class="ai-save-btns">
               <button type="button" class="ai-btn ai-primary" id="aiExpDl">⬇ 이 권 전체 .js 받기</button>
-              <button type="button" class="ai-btn" id="aiExpNew" hidden>＋ 새 권 등록 파일 받기</button>
             </div>
             <p class="ai-hint" id="aiSaveHint"></p>
           </div>
@@ -3312,6 +3384,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="5.5" cy="12" r="1.7"/><circle cx="12" cy="12" r="1.7"/><circle cx="18.5" cy="12" r="1.7"/></svg>
       </button>
       <div class="nav-more-menu" id="navMoreMenu">
+        <button class="site-nav-link" id="memoViewBtn" onclick="openMemoHome()">메모 모아보기</button>
         <button class="site-nav-link" id="addInfoBtn" onclick="openAddInfo()">정보 추가</button>
         <button class="site-nav-link" id="bgToggle" onclick="toggleGalleryBg()">배경 끄기</button>
         <button class="site-nav-link" id="artViewBtn" onclick="openArtView()">명화 감상</button>
@@ -3825,6 +3898,41 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
     <input type="file" id="vocabImportInput" accept="application/json" style="display:none;">
   </div>
   <p class="vocab-backup-hint">단어장·시험 기록·메모·내 번역이 전부 이 브라우저에만 저장됩니다. 기기를 바꾸거나 캐시를 지우기 전에 내보내기로 백업해두세요.<br><span id="backupLast"></span></p>
+  <p class="st-warn" id="stWarn" hidden></p>
+  <details class="storage-box" id="storageBox">
+    <summary>저장 공간 <span id="stSummary"></span></summary>
+    <div class="storage-body">
+      <div class="st-bar"><div class="st-fill" id="stFill"></div></div>
+      <p class="st-text" id="stText"></p>
+      <ul class="st-list" id="stList"></ul>
+      <div class="vocab-backup-row">
+        <button class="vocab-backup-btn" id="stProbeBtn" type="button">정확히 재기</button>
+        <button class="vocab-backup-btn" type="button" onclick="openMemoHome()">메모 모아보기</button>
+      </div>
+      <p class="vocab-backup-hint">단어장·메모·내 번역·수정분은 모두 이 브라우저(localStorage)에만 저장돼요. 가득 차면 새 내용이 저장되지 않으니, 80%가 넘기 전에 위의 백업 파일로 내보내 두세요.</p>
+    </div>
+  </details>
+</div>
+
+<!-- ================= 메모 모아보기 ================= -->
+<div id="view-memos" class="view">
+  <button class="back-link" onclick="showView('view-hub')">← 서재로</button>
+  <h1>메모 모아보기</h1>
+  <p class="subtitle">원문 단어에 적어 둔 메모를 한곳에서 찾고 지울 수 있어요.</p>
+  <div class="memo-tools">
+    <input id="memoSearch" class="memo-search" type="search" placeholder="메모·단어·뜻·행 번호 검색" autocomplete="off" spellcheck="false">
+    <select id="memoChapterSel" aria-label="권 선택"></select>
+  </div>
+  <div class="memo-bar">
+    <span id="memoCount" class="memo-count"></span>
+    <span id="memoLoadState" class="memo-count"></span>
+    <span class="memo-bar-btns">
+      <button type="button" class="vocab-backup-btn" id="memoSelAll">보이는 것 모두 선택</button>
+      <button type="button" class="vocab-backup-btn" id="memoDelSel" disabled>선택 삭제</button>
+    </span>
+  </div>
+  <div id="memoList" class="memo-list"></div>
+  <p id="memoStorageLine" class="memo-storage"></p>
 </div>
 
 <!-- ================= 단어장: 챕터 목록 화면 ================= -->
@@ -4045,7 +4153,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   <div class="cs-card">
     <div class="cs-badge" id="csBadge"></div>
     <h1>아직 준비 중입니다</h1>
-    <p class="desc">이 권은 아직 원문·문법 분석 데이터가 채워지지 않았습니다.<br>1권과 같은 형식으로 원문 데이터를 추가하면 자동으로 학습 화면이 완성됩니다.</p>
+    <p class="desc" id="csDesc">이 권은 아직 원문·문법 분석 데이터가 채워지지 않았습니다.<br>1권과 같은 형식으로 원문 데이터를 추가하면 자동으로 학습 화면이 완성됩니다.</p>
     <button class="cs-cta" onclick="showView('view-hub')">다른 권 보러 가기</button>
   </div>
 </div>
@@ -4063,8 +4171,6 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
      두고 열기만 하면 항상 data/ 안의 최신 내용을 자동으로 불러온다.
      ============================================================ -->
 
-<!-- 정보 추가로 만든 새 권 목록. 파일이 없으면 그냥 건너뜀 (data/data-chapters.js) -->
-<script src="data/data-chapters.js"></script>
 <script>
 /* ================================================================================
    ★★★ 전체 프로그램 공통 데이터 작성 표준 (모든 작품 공통 필수 규칙) ★★★
@@ -4368,6 +4474,13 @@ function refLineNo(ref) { const m = String(ref || '').match(/(\d+)(?:\s*[-–]\s
    data 의 ref 문자열은 'Iliad 1.302', 'Metamorphoses 571', 'Verg. Aen. 2.561'처럼 앞부분(작품·권)이 제각각일 수 있다.
    ref 원문은 메모·단어장·내 번역의 저장 키로 쓰이므로 그대로 두고, 화면에 보이는 표기만 '행 번호'를 뽑아
    작품별 표준 양식(작품명 + 권 + 구분자 + 행)으로 다시 만들어 보여준다. 합쳐진 행(323-4)은 그대로 살린다. */
+/* 데이터 파일에 다른 권의 ref가 잘못 섞여 있는 구간(6권 파일의 'Iliad 1.293~304'·'4.435~440', 24권 파일의 'Iliad 6.718~804'·'23.751~755').
+   이 ref의 예전 형식 메모('memo::ref::단어')는 어느 권에서 만든 건지 알 수 없어서, 다른 권으로 복사해 오지 않는다. */
+function isAmbigLegacyRef(ref) {
+  const m = /^Iliad (\d+)\.(\d+)$/.exec(String(ref || '')); if (!m) return false;
+  const b = +m[1], n = +m[2];
+  return (b === 1 && n >= 293 && n <= 304) || (b === 4 && n >= 435 && n <= 440) || (b === 6 && n >= 718 && n <= 804) || (b === 23 && n >= 751 && n <= 755);
+}
 var REF_FMT = { iliad: ['Iliad ', '.'], meta: ['Metamorphoses ', '.'], genesis: ['창세기 ', ':'], cid: ['Cid ', '.'], lusiadas: ['Lusiadas ', '.'], sanguo: ['삼국지연의 ', '回.'] };
 function fmtRef(ref, workKey, book) {
   const f = REF_FMT[workKey], b = parseInt(book, 10);
@@ -4381,8 +4494,21 @@ function userLinesFor(storeKey) {
   const draftKey = 'draft:' + chapter.workKey + ':' + chapter.book;
   return Object.assign({}, store[draftKey] || {}, store[storeKey] || {});
 }
+/* 권별 저장: ref에서 권 번호를 읽어(예: 'Iliad 2.15' → 2, '삼국지연의 1回.3' → 1), 새로 만든 권(정보 추가로 생긴 권)의 파일·화면에
+   다른 권의 행이 섞여 들어가지 않게 한다. (프로젝트에 원래 있던 권은 데이터 파일에 번호가 틀린 ref가 있어서 건드리지 않는다.) */
+function refBookOf(ref) {
+  const m = /(\d+)\s*(?:回)?[.:]\s*\d+(?:\s*[-–]\s*\d+)?\s*$/.exec(String(ref || ''));
+  return m ? parseInt(m[1], 10) : null;
+}
+function isForeignRow(ch, line) {
+  if (!ch || !ch.extra || !line) return false;
+  const b = refBookOf(line.ref);
+  return b !== null && b !== ch.book;
+}
 function mergeUserLines(base, storeKey, minesOverride) {
-  const mine = minesOverride || userLinesFor(storeKey);
+  let mine = minesOverride || userLinesFor(storeKey);
+  { const exCh = STUDY_CHAPTERS.find(c => c.dataVar === storeKey);
+    if (exCh && exCh.extra && mine) { const keep = {}; Object.keys(mine).forEach(r => { const l = mine[r]; if (!isForeignRow(exCh, { ref: r })) keep[r] = l; }); mine = keep; } }
   if (!mine) return base;
   const refs = Object.keys(mine);
   if (!refs.length) return base;
@@ -4432,7 +4558,9 @@ async function loadChapterData(varName) {
     const exCh = STUDY_CHAPTERS.find(c => c.dataVar === varName);
     if (exCh && exCh.extra) { raw = []; } else { throw e; }
   }
-  const base = normalizeChapterData(raw, varName);
+  let base = normalizeChapterData(raw, varName);
+  { const exCh2 = STUDY_CHAPTERS.find(c => c.dataVar === varName);
+    if (exCh2 && exCh2.extra && Array.isArray(base)) { const kept = base.filter(l => !isForeignRow(exCh2, l)); (window.__foreignDropped = window.__foreignDropped || {})[varName] = base.length - kept.length; base = kept; } }
   __baseLines[varName] = base;
   window[varName] = mergeUserLines(base, varName);
   return window[varName];
@@ -4712,9 +4840,9 @@ function renderInfo(w, panel, el, blockEl, memoKey, vocabCtx) {
         status.textContent = '저장됨';
         if (el) el.classList.toggle('has-memo', textarea.value.trim().length > 0);
       } catch (e) {
-        status.textContent = '저장 실패';
+        status.textContent = '저장 실패 — 저장 공간이 찼을 수 있어요 (단어장 화면 → 저장 공간)';
       }
-      setTimeout(() => { status.textContent = ''; }, 1500);
+      setTimeout(() => { status.textContent = ''; }, 4000);
     }, 500);
   });
 
@@ -4798,9 +4926,9 @@ function buildLines(linesArr, containerId, showTransRef, showMyTransRef, workKey
           localStorage.setItem(myTransKey, myTransTextarea.value);
           myTransStatus.textContent = '저장됨';
         } catch (e) {
-          myTransStatus.textContent = '저장 실패';
+          myTransStatus.textContent = '저장 실패 — 저장 공간이 찼을 수 있어요 (단어장 화면 → 저장 공간)';
         }
-        setTimeout(() => { myTransStatus.textContent = ''; }, 1500);
+        setTimeout(() => { myTransStatus.textContent = ''; }, 4000);
       }, 500);
     });
 
@@ -4839,7 +4967,7 @@ function buildLines(linesArr, containerId, showTransRef, showMyTransRef, workKey
       const memoKey = 'memoc::' + containerId + '::' + line.ref + '::' + wIdx;
       try {
         let existingMemo = memoValueMap ? (memoValueMap.get(memoKey) ?? null) : localStorage.getItem(memoKey);
-        if (existingMemo === null) {   // 새 키에 없으면 예전 메모를 한 번만 복사해 온다(예전 키는 지우지 않는다)
+        if (existingMemo === null && !(isAmbigLegacyRef(line.ref) && parseInt(line.ref.split(' ')[1], 10) == book)) {   // 새 키에 없으면 예전 메모를 한 번만 복사해 온다(예전 키는 지우지 않는다)
           const old = memoValueMap ? (memoValueMap.get(legacyMemoKey) ?? null) : localStorage.getItem(legacyMemoKey);
           if (old !== null && old.trim().length > 0) {
             localStorage.setItem(memoKey, old);
@@ -5351,6 +5479,7 @@ function openVocabHome() {
     btn.addEventListener('click', () => openVocabChapters(work.key));
     container.appendChild(btn);
   });
+  renderStorage();
   showView('view-vocab');
 }
 
@@ -6872,31 +7001,53 @@ function glossFullText(item) {
 
 /* ---------- 데이터 백업/복원 ---------- */
 // 단어장/시험 기록/메모/내 번역/글꼴 선택 등 이 앱이 localStorage에 저장하는 모든 값을 JSON 파일로 내보낸다
-function exportAllData() {
+// (그림 전시관의 사용자 그림 파일은 IndexedDB에 있어 백업 파일에 들어가지 않는다)
+const BACKUP_NEVER = ['__quota_probe__'];
+function collectBackupData() {
   const data = {};
-  try {
-    for (let i = 0; i < localStorage.length; i++) {
-      const key = localStorage.key(i);
-      let val = localStorage.getItem(key);
-      if (key === 'aiGem') { try { const o = JSON.parse(val); delete o.key; val = JSON.stringify(o); } catch (e) {} }   // API 키는 백업 파일에 넣지 않는다
-      data[key] = val;
-    }
-  } catch (e) {
-    alert('데이터를 내보내는 중 문제가 발생했습니다.');
-    return;
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i); if (key == null || BACKUP_NEVER.indexOf(key) >= 0) continue;
+    let val = localStorage.getItem(key);
+    if (key === 'aiGem') { try { const o = JSON.parse(val); delete o.key; val = JSON.stringify(o); } catch (e) {} }   // API 키는 백업 파일에 넣지 않는다
+    data[key] = val;
   }
-  const payload = { app: 'classics-study-tool', exportedAt: new Date().toISOString(), data };
+  return data;
+}
+// 백업 내용을 사람이 읽을 수 있게 요약한다 (가져오기 전 확인창·내보낸 뒤 안내에 쓴다)
+function summarizeBackupData(data) {
+  const cnt = { memo: 0, mytrans: 0, edits: 0, bk: 0 }, bytes = {}; let total = 0, vocab = 0;
+  Object.keys(data).forEach(k => {
+    const v = typeof data[k] === 'string' ? data[k] : JSON.stringify(data[k]), n = k.length + v.length; total += n;
+    const c = lsCategory(k); bytes[c] = (bytes[c] || 0) + n;
+    if (c === 'memo' && v.trim()) cnt.memo++;
+    else if (c === 'mytrans' && v.trim()) cnt.mytrans++;
+    else if (k === 'vocabData') { try { const o = JSON.parse(v); vocab = Array.isArray(o) ? o.length : (o && typeof o === 'object' ? Object.keys(o).length : 0); } catch (e) {} }
+    else if (k === 'userLines') { try { const o = JSON.parse(v); cnt.edits = Object.keys(o || {}).reduce((s2, ck) => s2 + (o[ck] && typeof o[ck] === 'object' ? Object.keys(o[ck]).length : 0), 0); } catch (e) {} }
+  });
+  const parts = [];
+  if (vocab) parts.push('단어장 ' + vocab + '개');
+  if (cnt.memo) parts.push('메모 ' + cnt.memo + '개');
+  if (cnt.mytrans) parts.push('내 번역 ' + cnt.mytrans + '개');
+  if (cnt.edits) parts.push('수정분 ' + cnt.edits + '행');
+  return { total, text: parts.length ? parts.join(', ') : '내용 없음', keys: Object.keys(data).length };
+}
+function saveJsonFile(name, payload) {
   const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
-  a.href = url;
-  a.download = 'classics-study-backup-' + new Date().toISOString().slice(0, 10) + '.json';
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
+  a.href = url; a.download = name;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(url), 4000);
+}
+function exportAllData() {
+  let data;
+  try { data = collectBackupData(); } catch (e) { alert('데이터를 내보내는 중 문제가 발생했습니다.'); return; }
+  const sum = summarizeBackupData(data);
+  saveJsonFile('classics-study-backup-' + new Date().toISOString().slice(0, 10) + '.json', { app: 'classics-study-tool', version: 2, exportedAt: new Date().toISOString(), data });
   try { localStorage.setItem('lastBackupAt', String(Date.now())); } catch (e) {}
   updateBackupHint();
+  const el = document.getElementById('backupLast');
+  if (el) el.textContent += ' · 방금 내보낸 파일: ' + sum.text + ' (' + fmtSize(sum.total) + '). 파일이 내려받기 폴더에 저장됐는지 꼭 확인하세요.';
 }
 
 function updateBackupHint() {
@@ -6905,6 +7056,7 @@ function updateBackupHint() {
   if (!t) { el.textContent = '아직 백업한 적이 없어요.'; return; }
   const d = Math.floor((Date.now() - t) / 86400000);
   el.textContent = '마지막 백업: ' + (d <= 0 ? '오늘' : d + '일 전') + (d >= 14 ? ' — 오래됐어요, 한 번 더 백업해 두세요.' : '');
+  try { const u = lsUsage(), lim = LS_FREE_MEASURED != null ? u.total + LS_FREE_MEASURED : LS_LIMIT_GUESS, pct = Math.round(u.total / lim * 100); if (pct >= 80) el.textContent += ' ⚠ 저장 공간 ' + pct + '% 사용 중 — 지금 내보내기를 권해요.'; } catch (e) {}
 }
 
 // 두 값을 합친다: 객체는 안쪽까지 합치고, 배열은 중복 없이 이어 붙이고, 글(메모 등)은 더 긴 쪽을 남긴다.
@@ -6930,37 +7082,50 @@ function mergeStored(existing, incoming) {
   return incoming.length > existing.length ? incoming : existing;
 }
 
-// 백업 파일을 읽어 localStorage에 되돌려 넣는다. 기존 데이터를 전부 대체하므로 확인을 거친다.
+// 백업 파일을 읽어 localStorage에 되돌려 넣는다. 넣기 전에 내용을 요약해 보여 주고, 저장 공간을 미리 점검하며,
+// 도중에 실패하면 가져오기 전 상태로 되돌린다(전체 대체는 현재 데이터를 먼저 파일로도 내려받는다).
+function snapshotLS() { const o = {}; for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k != null) o[k] = localStorage.getItem(k); } return o; }
+function restoreLS(snap) { try { localStorage.clear(); Object.keys(snap).forEach(k => localStorage.setItem(k, snap[k])); return true; } catch (e) { return false; } }
 function importAllData(file) {
   const reader = new FileReader();
   reader.onload = () => {
     let parsed;
-    try {
-      parsed = JSON.parse(reader.result);
-    } catch (e) {
-      alert('올바른 백업 파일이 아닙니다.');
-      return;
-    }
+    try { parsed = JSON.parse(reader.result); } catch (e) { alert('올바른 백업 파일이 아닙니다.'); return; }
     const data = parsed && typeof parsed === 'object' && parsed.data ? parsed.data : parsed;
-    if (!data || typeof data !== 'object') {
-      alert('올바른 백업 파일이 아닙니다.');
-      return;
-    }
-    const merge = confirm('[확인] 병합: 이 기기의 데이터는 그대로 두고 백업 내용을 합칩니다 (기기 간 옮길 때 추천)\n[취소] 다음 단계에서 "전체 대체"를 고를 수 있습니다');
-    if (!merge && !confirm('이 기기의 단어장·시험 기록·메모가 백업 파일 내용으로 모두 대체됩니다. 계속할까요?')) return;
+    if (!data || typeof data !== 'object' || Array.isArray(data)) { alert('올바른 백업 파일이 아닙니다.'); return; }
+    if (parsed.app && parsed.app !== 'classics-study-tool' && !confirm('이 앱의 백업 파일이 아닌 것 같아요 (' + parsed.app + '). 그래도 가져올까요?')) return;
+    Object.keys(data).forEach(k => { if (typeof data[k] !== 'string') data[k] = data[k] == null ? '' : JSON.stringify(data[k]); });
+    const sum = summarizeBackupData(data);
+    if (!sum.keys) { alert('백업 파일에 가져올 내용이 없어요.'); return; }
+    const when = parsed.exportedAt ? new Date(parsed.exportedAt).toLocaleString('ko-KR') : '날짜 정보 없음';
+    const head = '백업 파일: ' + when + '\n내용: ' + sum.text + ' (' + fmtSize(sum.total) + ')\n\n';
+    const merge = confirm(head + '[확인] 병합: 이 기기의 데이터는 그대로 두고 백업 내용을 합칩니다 (기기 간 옮길 때 추천)\n[취소] 다음 단계에서 "전체 대체"를 고를 수 있습니다');
+    if (!merge && !confirm(head + '이 기기의 단어장·시험 기록·메모가 백업 파일 내용으로 모두 대체됩니다.\n(대체 전에 지금 데이터를 안전 백업 파일로 먼저 내려받아요.) 계속할까요?')) return;
     const SKIP = ['theme', 'galleryBg', 'lastBackupAt'];
+    let snap;
+    try { snap = snapshotLS(); } catch (e) { alert('현재 데이터를 읽지 못해 가져오기를 중단했어요.'); return; }
+    // 저장 공간 점검: 병합은 (현재 + 백업)이 상한, 전체 대체는 백업 크기만큼 필요하다. 넘칠 수 있으면 미리 알린다.
+    const cur = lsUsage().total, limit = LS_FREE_MEASURED != null ? cur + LS_FREE_MEASURED : LS_LIMIT_GUESS, need = merge ? cur + sum.total : sum.total;
+    if (need > limit * 0.95 && !confirm('저장 공간이 부족할 수 있어요.\n필요 약 ' + fmtSize(need) + ' / 사용 가능 약 ' + fmtSize(limit) + '\n실패하면 가져오기 전 상태로 되돌려요. 계속할까요?')) return;
+    if (!merge) { try { saveJsonFile('classics-study-before-import-' + new Date().toISOString().slice(0, 10) + '.json', { app: 'classics-study-tool', version: 2, exportedAt: new Date().toISOString(), data: collectBackupData() }); } catch (e) {} }
     try {
       if (merge) {
         Object.keys(data).forEach(key => { if (SKIP.indexOf(key) < 0) localStorage.setItem(key, key === USER_LINES_KEY ? mergeUserLinesStore(localStorage.getItem(key), data[key]) : mergeStored(localStorage.getItem(key), data[key])); });
       } else {
+        // API 키는 백업 파일에 없으므로, 전체 대체로 지워지지 않게 현재 값을 다시 넣어 준다
+        let myKey = null; try { myKey = JSON.parse(snap.aiGem || '{}').key || null; } catch (e) {}
         localStorage.clear();
         Object.keys(data).forEach(key => localStorage.setItem(key, data[key]));
+        SKIP.forEach(k => { if (!(k in data) && snap[k] != null) localStorage.setItem(k, snap[k]); });
+        if (myKey) { let o = {}; try { o = JSON.parse(localStorage.getItem('aiGem') || '{}') || {}; } catch (e) {} o.key = myKey; localStorage.setItem('aiGem', JSON.stringify(o)); }
+        else if (!('aiGem' in data) && snap.aiGem != null) localStorage.setItem('aiGem', snap.aiGem);
       }
     } catch (e) {
-      alert('데이터를 가져오는 중 문제가 발생했습니다.');
+      const ok = restoreLS(snap);
+      alert('가져오는 중 저장 공간이 부족하거나 문제가 생겼어요. ' + (ok ? '가져오기 전 상태로 되돌렸어요. 필요 없는 메모·수정분 백업을 정리한 뒤 다시 시도하세요.' : '되돌리기에도 실패했어요. 방금 내려받은 안전 백업 파일을 다시 가져와 주세요.'));
       return;
     }
-    alert('가져오기가 완료되었습니다. 페이지를 새로고침합니다.');
+    alert('가져오기가 완료되었습니다 (' + sum.text + '). 페이지를 새로고침합니다.');
     location.reload();
   };
   reader.onerror = () => alert('파일을 읽는 중 문제가 발생했습니다.');
@@ -7025,8 +7190,13 @@ function bookUnitLabel(accentKey) {
   return accentKey === 'genesis' ? '장' : (accentKey === 'cid' ? '칸타르' : (accentKey === 'sanguo' ? '回' : '권'));
 }
 
-function showComingSoon(work, book, accentKey) {
+const CS_DESC_DEFAULT = '이 권은 아직 원문·문법 분석 데이터가 채워지지 않았습니다.<br>1권과 같은 형식으로 원문 데이터를 추가하면 자동으로 학습 화면이 완성됩니다.';
+function showComingSoon(work, book, accentKey, missingFile) {
   const view = document.getElementById('view-comingsoon');
+  const descEl = document.getElementById('csDesc');
+  if (descEl) descEl.innerHTML = missingFile
+    ? '<b>data/' + missingFile + '</b> 파일을 찾지 못했어요.<br>이 이름으로 파일을 shell.html과 같은 위치의 data 폴더에 넣고 다시 누르면 바로 열려요.'
+    : CS_DESC_DEFAULT;
   view.classList.remove('theme-iliad', 'theme-meta', 'theme-genesis', 'theme-cid', 'theme-lusiadas', 'theme-sanguo');
   const themeMap = { meta: 'theme-meta', genesis: 'theme-genesis', cid: 'theme-cid', lusiadas: 'theme-lusiadas', sanguo: 'theme-sanguo' };
   const themeClass = themeMap[accentKey] || 'theme-iliad';
@@ -7041,6 +7211,39 @@ function showComingSoon(work, book, accentKey) {
    색을 입힌 스쿼클 아이콘으로 구분해 "지금 읽을 수 있는 것"이 먼저 보이게 한다.
    접힌 shelf-head에도 컨테이너 id 규칙(xxxGrid → xxxReadySummary)을 따라
    같은 정보를 요약해 미리 보여준다. */
+/* ---------- 준비 중인 칸을 누르면: 파일 이름 규칙으로 data 폴더를 확인 ----------
+   규칙: data/data-lines + 작품명(EXTRA_WORKS.name) + 권 번호 .js  (예: 일리아드 2권 → data/data-linesIliad2.js)
+   파일이 있으면 그 권을 서재에 등록하고 바로 연다(이 브라우저는 기억해 두었다가 다음부터 처음부터 '학습 가능'으로 보인다).
+   없으면 '준비 중' 화면에 찾으려던 파일 이름을 알려 준다. */
+const FILE_BOOKS_KEY = 'fileBooks';
+function loadFileBooks() { try { const a = JSON.parse(localStorage.getItem(FILE_BOOKS_KEY) || '[]'); return Array.isArray(a) ? a : []; } catch (e) { return []; } }
+function rememberFileBook(workKey, book) {
+  const list = loadFileBooks();
+  if (list.some(e => e && e.workKey === workKey && e.book === book)) return;
+  list.push({ workKey, book });
+  try { localStorage.setItem(FILE_BOOKS_KEY, JSON.stringify(list)); } catch (e) {}
+}
+const __probingBooks = {};
+async function openBookFromFile(workKey, book, workName, tile) {
+  const W = (typeof EXTRA_WORKS !== 'undefined') ? EXTRA_WORKS[workKey] : null;
+  if (!W) { showComingSoon(workName, book, workKey); return; }
+  const fileId = 'data-lines' + W.name + book, key = workKey + ':' + book;
+  if (__probingBooks[key]) return;
+  __probingBooks[key] = true;
+  if (tile) tile.disabled = true;
+  try {
+    try { await loadChapterScript(fileId); }
+    catch (e) { delete __chapterScriptPromises[fileId]; showComingSoon(workName, book, workKey, fileId + '.js'); return; }
+    const ch = addExtraChapter(workKey, book, true);
+    if (!ch) { showComingSoon(workName, book, workKey, fileId + '.js'); return; }
+    rememberFileBook(workKey, book);
+    showStudyView(ch.viewId);
+  } finally {
+    __probingBooks[key] = false;
+    if (tile) tile.disabled = false;
+  }
+}
+
 function buildBookGrid(containerId, total, readyViewMap, workName, accentKey) {
   const grid = document.getElementById(containerId);
   grid.innerHTML = '';
@@ -7061,7 +7264,7 @@ function buildBookGrid(containerId, total, readyViewMap, workName, accentKey) {
     if (isReady) tile.dataset.view = readyViewMap[n];
     tile.textContent = n;
     tile.setAttribute('aria-label', workName + ' ' + n + unit + (isReady ? ' (학습 가능)' : ' (준비 중)'));
-    tile.addEventListener('click', () => isReady ? showStudyView(readyViewMap[n]) : showComingSoon(workName, n, accentKey));
+    tile.addEventListener('click', () => isReady ? showStudyView(readyViewMap[n]) : openBookFromFile(accentKey, n, workName, tile));
     group.appendChild(tile);
   }
   picker.appendChild(group);
@@ -7072,6 +7275,264 @@ function buildBookGrid(containerId, total, readyViewMap, workName, accentKey) {
     summaryEl.textContent = readyNums.length ? readyNums.map(n => n + unit).join(', ') + ' 학습 가능' : '';
   }
 }
+
+/* ---------- 메모 모아보기 · 저장 공간 ----------
+   메모는 localStorage에 'memoc::{containerId}::{ref}::{단어번호}'(권별) 또는 예전 형식 'memo::{ref}::{단어번호}'로 들어 있다.
+   여기서는 둘을 한 목록으로 모아 보여 주고, 검색·이동·삭제를 지원한다. 단어 글자·뜻은 권 데이터를 불러온 뒤 채운다. */
+const MEMO_NORM = t => String(t == null ? '' : t).normalize('NFD').replace(/[\u0300-\u036f\u0591-\u05c7]/g, '').toLowerCase();
+function chapterLabel(ch) {
+  if (!ch) return '권을 알 수 없음';
+  const vw = (typeof VOCAB_WORKS !== 'undefined') ? VOCAB_WORKS.find(w => w.key === ch.workKey) : null, W = EXTRA_WORKS[ch.workKey];
+  return (vw ? vw.label : ch.workKey) + ' ' + (W ? W.unit(ch.book) : ch.book);
+}
+// 예전 형식 키의 ref('Iliad 6.293', '삼국지연의 1回.3' …)에서 권을 짐작한다. 권 번호가 없는 ref는 null
+function inferChapterFromRef(ref) {
+  ref = String(ref || '');
+  if (isAmbigLegacyRef(ref)) return null;
+  for (const wk of Object.keys(REF_FMT)) {
+    const pre = REF_FMT[wk][0];
+    if (ref.indexOf(pre) !== 0) continue;
+    const m = ref.slice(pre.length).match(/^(\d+)\s*(?:回)?[.:]\s*\d/);
+    if (!m) return null;
+    return STUDY_CHAPTERS.find(c => c.workKey === wk && c.book === parseInt(m[1], 10)) || null;
+  }
+  return null;
+}
+function parseMemoKey(k) {
+  if (!k) return null;
+  const p = k.split('::');
+  if (p[0] === 'memoc' && p.length === 4 && /^\d+$/.test(p[3])) return { scoped: true, cid: p[1], ref: p[2], w: parseInt(p[3], 10) };
+  if (p[0] === 'memo' && p.length === 3 && /^\d+$/.test(p[2])) return { scoped: false, ref: p[1], w: parseInt(p[2], 10) };
+  return null;
+}
+// 예전 형식 메모를 (권을 짐작할 수 있으면) 권별 새 키로 복사해 둔다. 예전 키는 지우지 않는다.
+function seedLegacyMemos() {
+  const keys = [];
+  try { for (let i = 0; i < localStorage.length; i++) keys.push(localStorage.key(i)); } catch (e) { return; }
+  keys.forEach(k => {
+    if (!k || k.indexOf('memo::') !== 0) return;
+    const p = parseMemoKey(k); if (!p) return;
+    const ch = inferChapterFromRef(p.ref); if (!ch) return;
+    const nk = 'memoc::' + ch.containerId + '::' + p.ref + '::' + p.w;
+    try { if (localStorage.getItem(nk) === null) { const v = localStorage.getItem(k); if (v && v.trim()) localStorage.setItem(nk, v); } } catch (e) {}
+  });
+}
+function collectMemos() {
+  const out = [];
+  try {
+    for (let i = 0; i < localStorage.length; i++) {
+      const k = localStorage.key(i), p = parseMemoKey(k); if (!p) continue;
+      const v = localStorage.getItem(k); if (!v || !v.trim()) continue;   // 빈 값은 '지운 메모'(삭제 표시)라 목록에 안 낸다
+      if (p.scoped) out.push({ key: k, scoped: true, ch: STUDY_CHAPTERS.find(c => c.containerId === p.cid) || null, ref: p.ref, w: p.w, text: v });
+      else if (!inferChapterFromRef(p.ref)) out.push({ key: k, scoped: false, ch: null, ref: p.ref, w: p.w, text: v });   // 권을 짐작할 수 있는 건 위에서 새 키로 옮겨졌다
+    }
+  } catch (e) {}
+  const ord = e => e.ch ? STUDY_CHAPTERS.indexOf(e.ch) : 1e6;
+  out.sort((a, b) => ord(a) - ord(b) || (refLineNo(a.ref) || 0) - (refLineNo(b.ref) || 0) || a.w - b.w);
+  return out;
+}
+const MEMO_UI = { entries: [], sel: new Set(), q: '', chKey: '', token: 0 };
+function memoFiltered() {
+  const q = MEMO_NORM(MEMO_UI.q.trim()), f = MEMO_UI.chKey;
+  return MEMO_UI.entries.filter(e => {
+    if (f === '__unknown') { if (e.ch) return false; }
+    else if (f && (!e.ch || e.ch.containerId !== f)) return false;
+    if (!q) return true;
+    return MEMO_NORM([e.text, e.word, e.gloss, e.ref, chapterLabel(e.ch)].join(' ')).indexOf(q) >= 0;
+  });
+}
+function memoFillChapterSelect() {
+  const sel = document.getElementById('memoChapterSel'); if (!sel) return;
+  const counts = new Map(); MEMO_UI.entries.forEach(e => { const k = e.ch ? e.ch.containerId : '__unknown'; counts.set(k, (counts.get(k) || 0) + 1); });
+  sel.textContent = '';
+  const add = (v, t) => { const o = document.createElement('option'); o.value = v; o.textContent = t; sel.appendChild(o); };
+  add('', '전체 (' + MEMO_UI.entries.length + ')');
+  STUDY_CHAPTERS.forEach(c => { if (counts.has(c.containerId)) add(c.containerId, chapterLabel(c) + ' (' + counts.get(c.containerId) + ')'); });
+  if (counts.has('__unknown')) add('__unknown', '권을 알 수 없음 (' + counts.get('__unknown') + ')');
+  if (![...sel.options].some(o => o.value === MEMO_UI.chKey)) MEMO_UI.chKey = '';
+  sel.value = MEMO_UI.chKey;
+}
+function renderMemoList() {
+  const box = document.getElementById('memoList'); if (!box) return;
+  const list = memoFiltered(), CAP = 200;
+  box.textContent = '';
+  document.getElementById('memoCount').textContent = MEMO_UI.entries.length
+    ? (list.length === MEMO_UI.entries.length ? '메모 ' + list.length + '개' : '메모 ' + MEMO_UI.entries.length + '개 중 ' + list.length + '개') : '';
+  if (!list.length) {
+    const p = document.createElement('p'); p.className = 'memo-empty';
+    p.textContent = MEMO_UI.entries.length ? '검색 결과가 없어요.' : '아직 메모가 없어요. 원문의 단어를 눌러 정보 창 아래 Memo 칸에 적으면 여기에 모여요.';
+    box.appendChild(p);
+  }
+  list.slice(0, CAP).forEach(e => {
+    const item = document.createElement('div'); item.className = 'memo-item';
+    const cb = document.createElement('input'); cb.type = 'checkbox'; cb.className = 'memo-cb'; cb.checked = MEMO_UI.sel.has(e.key); cb.setAttribute('aria-label', '선택');
+    cb.addEventListener('change', () => { if (cb.checked) MEMO_UI.sel.add(e.key); else MEMO_UI.sel.delete(e.key); memoSelSync(); });
+    const main = document.createElement('div'); main.className = 'memo-main';
+    const head = document.createElement('div'); head.className = 'memo-head';
+    const loc = document.createElement('span'); loc.className = 'memo-loc';
+    loc.textContent = e.ch ? chapterLabel(e.ch) + ' · ' + fmtRef(e.ref, e.ch.workKey, e.ch.book) : e.ref;
+    const wd = document.createElement('span'); wd.className = 'memo-word';
+    wd.textContent = e.word ? e.word + (e.gloss ? ' — ' + e.gloss : '') : '단어 ' + (e.w + 1) + '번';
+    head.appendChild(loc); head.appendChild(wd);
+    const tx = document.createElement('div'); tx.className = 'memo-text'; tx.textContent = e.text;
+    const act = document.createElement('div'); act.className = 'memo-actions2';
+    if (e.ch) { const go = document.createElement('button'); go.type = 'button'; go.className = 'memo-link'; go.textContent = '그 행으로 이동'; go.addEventListener('click', () => memoGo(e)); act.appendChild(go); }
+    const del = document.createElement('button'); del.type = 'button'; del.className = 'memo-link danger'; del.textContent = '삭제';
+    del.addEventListener('click', () => {
+      if (!confirm('이 메모를 삭제할까요?\n\n' + (e.text.length > 80 ? e.text.slice(0, 80) + '…' : e.text))) return;
+      deleteMemoEntries([e]);
+    });
+    act.appendChild(del);
+    main.appendChild(head); main.appendChild(tx); main.appendChild(act);
+    item.appendChild(cb); item.appendChild(main); box.appendChild(item);
+  });
+  if (list.length > CAP) { const p = document.createElement('p'); p.className = 'memo-empty'; p.textContent = '앞의 ' + CAP + '개만 보여요. 검색이나 권 선택으로 좁혀 보세요.'; box.appendChild(p); }
+  memoSelSync();
+}
+function memoSelSync() {
+  const n = [...MEMO_UI.sel].filter(k => MEMO_UI.entries.some(e => e.key === k)).length, b = document.getElementById('memoDelSel');
+  if (b) { b.disabled = !n; b.textContent = n ? '선택 삭제 (' + n + ')' : '선택 삭제'; }
+}
+function deleteMemoEntries(list) {
+  const touched = new Set();
+  list.forEach(e => {
+    try {
+      if (e.scoped && localStorage.getItem('memo::' + e.ref + '::' + e.w) !== null) {
+        // 같은 행·단어의 예전 형식 메모가 남아 있으면 되살아나지 않게 빈 값(삭제 표시)으로 남긴다
+        try { localStorage.setItem(e.key, ''); } catch (err) { localStorage.removeItem(e.key); }
+      } else localStorage.removeItem(e.key);
+    } catch (err) {}
+    if (e.ch) touched.add(e.ch);
+    MEMO_UI.sel.delete(e.key);
+  });
+  touched.forEach(ch => { ch.built = false; });   // 화면에 그려 둔 '메모 있음' 점이 남지 않게 다음에 열 때 다시 그린다
+  const gone = new Set(list.map(e => e.key));
+  MEMO_UI.entries = MEMO_UI.entries.filter(e => !gone.has(e.key));
+  memoFillChapterSelect(); renderMemoList(); renderStorage();
+}
+async function memoGo(e) {
+  if (!e.ch) return;
+  if (e.idx == null) { try { const arr = await loadChapterData(e.ch.dataVar); const i = arr.findIndex(l => l.ref === e.ref); if (i >= 0) e.idx = i; } catch (err) {} }
+  if (e.idx == null) { showStudyView(e.ch.viewId); return; }
+  goToLine(e.ch.viewId, e.idx);
+}
+async function memoLoadWords(token) {
+  const chs = []; MEMO_UI.entries.forEach(e => { if (e.ch && chs.indexOf(e.ch) < 0) chs.push(e.ch); });
+  const st = document.getElementById('memoLoadState');
+  for (let n = 0; n < chs.length; n++) {
+    if (token !== MEMO_UI.token) return;
+    const ch = chs[n];
+    if (st) st.textContent = '단어 정보를 불러오는 중… (' + (n + 1) + '/' + chs.length + ')';
+    try {
+      const arr = await loadChapterData(ch.dataVar), byRef = new Map(arr.map((l, i) => [l.ref, { l, i }]));
+      MEMO_UI.entries.forEach(e => {
+        if (e.ch !== ch) return;
+        const f = byRef.get(e.ref); if (!f) return;
+        e.idx = f.i; const w = f.l.words && f.l.words[e.w];
+        if (w) { e.word = w.g || ''; e.gloss = w.gloss_kr || w.meaning || w.gloss || ''; }
+      });
+    } catch (err) {}
+    if (token !== MEMO_UI.token) return;
+    renderMemoList();
+  }
+  if (st && token === MEMO_UI.token) st.textContent = '';
+}
+function openMemoHome() {
+  seedLegacyMemos();
+  MEMO_UI.entries = collectMemos(); MEMO_UI.sel = new Set(); MEMO_UI.token++;
+  const q = document.getElementById('memoSearch'); if (q) q.value = ''; MEMO_UI.q = '';
+  memoFillChapterSelect(); renderMemoList(); renderStorage();
+  showView('view-memos');
+  memoLoadWords(MEMO_UI.token);
+}
+(function setupMemoView() {
+  const q = document.getElementById('memoSearch'), sel = document.getElementById('memoChapterSel');
+  if (q) q.addEventListener('input', () => { MEMO_UI.q = q.value; renderMemoList(); });
+  if (sel) sel.addEventListener('change', () => { MEMO_UI.chKey = sel.value; renderMemoList(); });
+  const all = document.getElementById('memoSelAll');
+  if (all) all.addEventListener('click', () => {
+    const vis = memoFiltered().slice(0, 200), every = vis.length && vis.every(e => MEMO_UI.sel.has(e.key));
+    vis.forEach(e => { if (every) MEMO_UI.sel.delete(e.key); else MEMO_UI.sel.add(e.key); });
+    renderMemoList();
+  });
+  const del = document.getElementById('memoDelSel');
+  if (del) del.addEventListener('click', () => {
+    const list = MEMO_UI.entries.filter(e => MEMO_UI.sel.has(e.key)); if (!list.length) return;
+    if (!confirm('선택한 메모 ' + list.length + '개를 삭제할까요?\n삭제하면 되돌릴 수 없어요. 필요하면 먼저 단어장 화면에서 백업 파일로 내보내 두세요.')) return;
+    deleteMemoEntries(list);
+  });
+})();
+
+/* ---------- 저장 공간 (localStorage 사용량) ----------
+   브라우저는 사이트마다 보통 5MB(약 500만 자)까지만 localStorage에 저장하게 한다.
+   모든 항목의 '키 + 값' 글자 수를 세어 분류별로 보여 주고, '정확히 재기'는 실제로 더 쓸 수 있는 양을 시험 저장으로 잰다. */
+const LS_LIMIT_GUESS = 5 * 1024 * 1024;
+const LS_CAT_LABEL = { vocab: '단어장', quiz: '시험·암기 기록', memo: '메모', mytrans: '내 번역', edits: '내 수정분 (정보 추가)', backup: '수정분 백업', other: '그 밖 (설정·읽던 위치 등)' };
+function lsCategory(k) {
+  if (k === 'vocabData') return 'vocab';
+  if (k === 'vocabQuizSessions' || k === 'vocabSrs' || k === 'vocabMemorized') return 'quiz';
+  if (k.indexOf('memo::') === 0 || k.indexOf('memoc::') === 0) return 'memo';
+  if (k.indexOf('mytrans::') === 0) return 'mytrans';
+  if (k === 'userLinesBackup') return 'backup';
+  if (k === 'userLines') return 'edits';
+  return 'other';
+}
+function lsUsage() {
+  const by = {}; Object.keys(LS_CAT_LABEL).forEach(c => { by[c] = 0; }); let total = 0;
+  try {
+    for (let i = 0; i < localStorage.length; i++) {
+      const k = localStorage.key(i); if (k == null) continue;
+      const n = k.length + (localStorage.getItem(k) || '').length;
+      total += n; by[lsCategory(k)] += n;
+    }
+  } catch (e) {}
+  return { total, by };
+}
+let LS_FREE_MEASURED = null;
+function lsProbeFree() {
+  const K = '__quota_probe__'; let lo = 0, hi = 16 * 1024 * 1024, best = 0;
+  try {
+    localStorage.removeItem(K);
+    while (hi - lo > 2048) {
+      const mid = (lo + hi) >> 1; let ok = true;
+      try { localStorage.setItem(K, 'x'.repeat(mid)); } catch (e) { ok = false; }
+      if (ok) { best = mid; lo = mid; } else hi = mid;
+    }
+  } finally { try { localStorage.removeItem(K); } catch (e) {} }
+  return best;
+}
+const fmtSize = n => n < 1024 ? n + '자' : (n < 1048576 ? Math.round(n / 1024) + ' KB' : (n / 1048576).toFixed(2) + ' MB');
+function renderStorage() {
+  const u = lsUsage(), limit = LS_FREE_MEASURED != null ? u.total + LS_FREE_MEASURED : LS_LIMIT_GUESS;
+  const pct = Math.min(100, Math.round(u.total / limit * 100)), measured = LS_FREE_MEASURED != null;
+  const set = (id, fn) => { const el = document.getElementById(id); if (el) fn(el); };
+  set('stFill', el => { el.style.width = Math.max(1, pct) + '%'; el.className = 'st-fill' + (pct >= 95 ? ' bad' : pct >= 80 ? ' warn' : ''); });
+  set('stSummary', el => { el.textContent = '— ' + pct + '% 사용' + (measured ? '' : ' (추정)'); });
+  set('stText', el => { el.textContent = fmtSize(u.total) + ' 사용 / ' + (measured ? '약 ' + fmtSize(limit) + ' 중 ' + fmtSize(LS_FREE_MEASURED) + ' 남음' : '보통 약 5 MB까지 (정확히 재기로 확인)'); });
+  set('stList', el => {
+    el.textContent = '';
+    Object.keys(LS_CAT_LABEL).filter(c => u.by[c] > 0).sort((a, b) => u.by[b] - u.by[a]).forEach(c => {
+      const li = document.createElement('li'), a = document.createElement('span'), b = document.createElement('span');
+      a.textContent = LS_CAT_LABEL[c]; b.textContent = fmtSize(u.by[c]); li.appendChild(a); li.appendChild(b); el.appendChild(li);
+    });
+  });
+  set('stWarn', el => {
+    el.hidden = pct < 80;
+    el.textContent = pct >= 95 ? '⚠ 저장 공간이 거의 다 찼어요. 곧 메모·번역·단어장이 저장되지 않을 수 있어요. 지금 백업 파일로 내보낸 뒤, 필요 없는 메모나 수정분 백업을 정리하세요.'
+      : '저장 공간이 ' + pct + '% 찼어요. 백업 파일로 내보내 두고, 필요 없는 메모나 수정분 백업을 정리해 두는 게 좋아요.';
+  });
+  set('memoStorageLine', el => { el.textContent = '저장 공간 ' + pct + '% 사용' + (measured ? '' : ' (추정)'); el.className = 'memo-storage' + (pct >= 80 ? ' warn' : ''); });
+}
+(function setupStorageUi() {
+  const b = document.getElementById('stProbeBtn');
+  if (b) b.addEventListener('click', () => {
+    b.disabled = true; b.textContent = '재는 중…';
+    setTimeout(() => {
+      try { LS_FREE_MEASURED = lsProbeFree(); } catch (e) { LS_FREE_MEASURED = null; }
+      b.disabled = false; b.textContent = '정확히 재기'; renderStorage();
+    }, 30);
+  });
+})();
 
 /* ---------- 초기화 ---------- */
 // 두 마이그레이션 함수는 이제 필요한 챕터 데이터만 지연 로드하는 비동기 함수라
@@ -7132,8 +7593,7 @@ const STUDY_CHAPTERS = [
    - 데이터 파일 이름 규칙: data/data-lines + 작품명 + 권 번호 .js
      (예: iliad 2권 → data/data-linesIliad2.js, genesis 2장 → data/data-linesGenesis2.js)
    - 이 브라우저에서 만든 새 권은 localStorage('userChapters')에 기억하고,
-     data/data-chapters.js (window.__EXTRA_CHAPTERS)에 올라 있는 권은 파일 기준으로 등록한다.
-   - 새 권을 파일로 확정하려면 data-linesXXX.js 와 data-chapters.js 를 data 폴더에 넣으면 끝
+   - 새 권을 파일로 확정하려면 data-linesXXX.js 를 data 폴더에 넣으면 끝
      (shell.html은 더 고칠 필요 없음).
    ============================================================ */
 let STUDY_READY = false;
@@ -7218,8 +7678,22 @@ function addUserChapter(workKey, book) {   // 정보 추가에서 새 권의 첫
   return ch;
 }
 (function registerExtraChaptersAtStartup() {
-  (Array.isArray(window.__EXTRA_CHAPTERS) ? window.__EXTRA_CHAPTERS : []).forEach(e => { if (e) addExtraChapter(e.workKey, e.book, true); });
   loadUserChapters().forEach(e => { if (e) addExtraChapter(e.workKey, e.book, false); });
+  loadFileBooks().forEach(e => { if (e) addExtraChapter(e.workKey, e.book, true); });
+  // 한 번만: 예전에 다른 권 메모가 이 구간 ref로 잘못 복사돼 들어온 것(권별 키 값이 예전 키 값과 같은 것)을 지운다
+  try {
+    if (!localStorage.getItem('memoAmbigCleanup1')) {
+      for (let i = localStorage.length - 1; i >= 0; i--) {
+        const k = localStorage.key(i); if (!k || k.indexOf('memoc::') !== 0) continue;
+        const p = k.split('::'); if (p.length !== 4 || !isAmbigLegacyRef(p[2])) continue;
+        const cc = STUDY_CHAPTERS.find(c => c.containerId === p[1]);
+        if (!cc || cc.book !== parseInt(p[2].split(' ')[1], 10)) continue;   // ref의 권과 같은 권 칸에 들어간 것만(다른 권 파일에 섞인 줄의 진짜 메모는 둔다)
+        const old = localStorage.getItem('memo::' + p[2] + '::' + p[3]);
+        if (old !== null && old === localStorage.getItem(k)) localStorage.removeItem(k);
+      }
+      localStorage.setItem('memoAmbigCleanup1', '1');
+    }
+  } catch (e) {}   // 서재에서 칸을 눌러 data 파일이 확인된 권
   // 예전에 '임시(draft)'로만 저장돼 있던 새 권의 행도 챕터로 올린다
   try {
     const st = loadUserLines();
@@ -8515,14 +8989,15 @@ function goToLine(viewId, idx) {
       + '// data-lines….json 도 따로 관리한다면 그쪽도 같은 내용으로 갱신하세요 (wrap_data.py가 json으로 이 파일을 덮어씁니다).\r\n'
       + "window.__RAW_CHAPTER_DATA = window.__RAW_CHAPTER_DATA || {};\r\n"
       + "window.__RAW_CHAPTER_DATA['" + fileId + "'] = " + body + ';\r\n';
-    return { ch, fileId, merged, body, js, mineN, fromBk };
+    const foreignN = ((window.__foreignDropped || {})[ch.dataVar] || 0) + (ch.extra ? Object.keys(userLinesFor(ch.dataVar)).filter(r => isForeignRow(ch, { ref: r })).length : 0);
+    return { ch, fileId, merged, body, js, mineN, fromBk, foreignN };
   }
   function exportPatch() {
     const ch = S.ch;
     if (!ch) { qMsg('이 권은 아직 등록된 챕터가 아니어서 동기화 코드를 만들 수 없어요.'); return null; }
     const fileId = CHAPTER_DATA_IDS[ch.dataVar];
     const mine = userLinesFor(ch.dataVar);
-    const updates = Object.keys(mine).map(ref => mine[ref]).filter(line => line && Array.isArray(line.words));
+    const updates = Object.keys(mine).map(ref => mine[ref]).filter(line => line && Array.isArray(line.words) && !isForeignRow(ch, line));
     if (!updates.length) { qMsg('이 권에 브라우저 수정분이 없어요. API 결과가 저장된 작품과 권을 선택했는지 확인하세요.'); return null; }
     const body = JSON.stringify(updates, (k, v) => (k && k[0] === '_' ? undefined : v), 2);
     const js = '\r\n// 정보 추가 동기화: 아래 코드는 이 파일의 기존 배열 대입문 다음에 추가하세요.\r\n'
@@ -8549,32 +9024,33 @@ function goToLine(viewId, idx) {
     S.ch = ch; S.storeKey = ch.dataVar; setBookList();
     return true;
   }
-  // 새 권을 shell.html이 불러오게 하는 목록 파일 (data/data-chapters.js)
-  function manifestText() {
-    const order = Object.keys(EXTRA_WORKS);
-    const list = STUDY_CHAPTERS.filter(c => c.extra).sort((a, b) => order.indexOf(a.workKey) - order.indexOf(b.workKey) || a.book - b.book);
-    return '// data-chapters.js — shell.html이 시작할 때 읽어서 서재에 새 권을 등록해요. (정보 추가 → ‘새 권 등록 파일 받기’로 만든 파일)\r\n'
-      + '// 새 권 하나는 data-lines + 작품명 + 권 번호 .js 파일과 짝이에요. 예: 일리아드 2권 → data-linesIliad2.js\r\n'
-      + 'window.__EXTRA_CHAPTERS = [\r\n' + list.map(c => '  { "workKey": "' + c.workKey + '", "book": ' + c.book + ' }').join(',\r\n') + '\r\n];\r\n';
-  }
   function saveSync() {
-    const btn = $('aiExpDl'), nb = $('aiExpNew'), hint = $('aiSaveHint'); if (!btn || !nb || !hint) return;
+    const btn = $('aiExpDl'), hint = $('aiSaveHint'); if (!btn || !hint) return;
     const ch = S.ch, others = newChs();
     btn.disabled = !ch;
-    btn.textContent = ch ? '⬇ 이 권 전체 받기 — ' + fileOf(ch) + (isNewCh(ch) ? ' (새 파일)' : ' (덮어쓰기용)') : '⬇ 이 권 전체 .js 받기';
-    nb.hidden = !others.length;
-    if (others.length) nb.textContent = '＋ 새 권 등록 파일 받기 — data-chapters.js (새 권 ' + others.length + '개)';
+    { const en = expectedFileName(); btn.textContent = ch ? '⬇ 이 권 전체 받기 — ' + fileOf(ch) + (isNewCh(ch) ? ' (새 파일)' : ' (덮어쓰기용)') : '⬇ 이 권 전체 .js 받기' + (en ? ' — ' + en : ''); }
     let h;
     if (!ch) h = isNaN(S.book) ? '위에서 ' + S.work.unit + ' 번호를 고르면 이 권의 파일을 받을 수 있어요.' : S.work.label + ' ' + S.book + S.work.unit + '은 아직 저장된 행이 없어요. 한 행이라도 코딩해서 저장하면 data 파일이 자동으로 만들어져요.';
-    else if (isNewCh(ch)) h = '새 권이에요. ' + fileOf(ch) + ' 와 data-chapters.js 두 파일을 shell.html과 같은 위치의 data 폴더에 넣고 새로고침하면 서재에서 바로 열려요.';
+    else if (isNewCh(ch)) h = '새 권이에요. ' + fileOf(ch) + ' 를 shell.html과 같은 위치의 data 폴더에 넣으면 끝이에요. 서재에서 이 권의 칸을 누르면 그 이름의 파일을 찾아 바로 열어요.';
     else h = '원본 + 내 수정본이 합쳐진 이 권 전체가 한 파일로 나와요. data 폴더의 같은 이름 파일을 이 파일로 통째로 교체하세요.';
-    if (ch && !isNewCh(ch) && others.length) h += ' 다른 새 권 ' + others.length + '개는 아직 data-chapters.js에 없어요.';
     hint.textContent = h;
   }
   function download(name, text, type) {
     const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], { type: type + ';charset=utf-8' })); a.download = name;
     document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 4000);
   }
+  // 저장 위치를 직접 고르는 창(지원 브라우저)으로 파일을 쓴다. 파일 이름은 권 번호가 들어간 data-lines….js 로 미리 채워 준다.
+  // 지원하지 않거나 창을 열 수 없으면 예전처럼 일반 다운로드로 받는다. 반드시 클릭 직후(비동기 작업 전)에 호출해야 창이 열린다.
+  async function pickSaveHandle(name) {
+    if (!window.showSaveFilePicker) return { handle: null };
+    try { return { handle: await window.showSaveFilePicker({ suggestedName: name, id: 'classicsData', types: [{ description: 'JavaScript data file', accept: { 'text/javascript': ['.js'] } }] }) }; }
+    catch (e) { return e && e.name === 'AbortError' ? { cancel: true } : { handle: null }; }
+  }
+  async function writeToHandle(handle, text) {
+    const w = await handle.createWritable();
+    try { await w.write(text); await w.close(); } catch (e) { try { await w.abort(); } catch (_) {} throw e; }
+  }
+  const expectedFileName = () => { const W = EXTRA_WORKS[S.work.key]; return S.ch ? CHAPTER_DATA_IDS[S.ch.dataVar] + '.js' : (W && !isNaN(S.book) ? 'data-lines' + W.name + S.book + '.js' : ''); };
   const BK_KEY = 'userLinesBackup';
   function bkLoad() { try { return JSON.parse(localStorage.getItem(BK_KEY) || '{}') || {}; } catch (e) { return {}; } }
   function bkSave(o) { try { localStorage.setItem(BK_KEY, JSON.stringify(o)); return true; } catch (e) { return false; } }
@@ -8656,20 +9132,24 @@ function goToLine(viewId, idx) {
     delete bk[S.storeKey]; bkSave(bk); bkSync(); qMsg('수정분 백업을 지웠어요.');
   });
   $('aiExpDl').addEventListener('click', async () => {
+    const want = expectedFileName();
+    // 저장 위치 선택창은 클릭 직후에 열어야 하므로 데이터를 만들기 전에 먼저 띄운다 (파일 이름에 권 번호 포함)
+    const pk = S.ch ? await pickSaveHandle(want) : { handle: null };
+    if (pk.cancel) { qMsg('저장 위치 선택을 취소했어요. 파일은 받지 않았고 수정분도 그대로예요.'); return; }
     const x = await exportBuild(true); if (!x) return;
     const name = x.fileId + '.js';
-    download(name, x.js, 'text/javascript');
+    let how = '받았어요';
+    if (pk.handle) {
+      try { await writeToHandle(pk.handle, x.js); how = '저장했어요 (' + pk.handle.name + ')'; }
+      catch (e) { qMsg('고른 위치에 저장하지 못했어요: ' + (e && e.message ? e.message : e) + ' — 다시 눌러 주세요. 수정분은 그대로 남겨 뒀어요.'); return; }
+    } else download(name, x.js, 'text/javascript');
     const moved = await rotateMine();
-    qMsg(name + ' 전체 파일을 받았어요 (' + x.merged.length + '행). data 폴더의 같은 이름 파일을 이 파일로 교체한 뒤 새로고침하세요.'
+    qMsg(name + ' 전체 파일을 ' + how + ' (' + x.merged.length + '행). ' + (pk.handle ? (pk.handle.name.toLowerCase() !== name.toLowerCase() ? '⚠ 파일 이름이 ' + name + ' 이 아니에요 — data 폴더에 넣을 때 이름을 확인하세요. ' : '') : 'data 폴더의 같은 이름 파일을 이 파일로 교체한 뒤 새로고침하세요.')
       + (x.fromBk ? '\n(이번엔 새 수정분이 없어서 직전 백업 ' + x.fromBk + '행을 포함해 받았어요.)' : '')
+      + (x.foreignN ? '\n이 파일은 ' + x.ch.book + '권 행만 담았어요. 다른 권 번호가 붙은 행 ' + x.foreignN + '개는 뺐어요.' : '')
       + (moved > 0 ? '\n수정분 ' + moved + '행은 백업(직전 1회)으로 옮겼어요 — ⋯ → ‘수정분 백업’에서 복원할 수 있어요. 파일을 교체하기 전까지는 화면에 예전 내용이 보일 수 있어요.' : '')
       + (moved < 0 ? '\n⚠ 브라우저 저장 공간 문제로 수정분을 백업으로 옮기지 못해 그대로 두었어요.' : '')
-      + (isNewCh(x.ch) ? '\n새 권이라 data-chapters.js도 필요해요 — 바로 아래 ‘새 권 등록 파일 받기’도 눌러 두 파일을 함께 data 폴더에 넣으세요.' : ''));
-  });
-  $('aiExpNew').addEventListener('click', () => {
-    const n = newChs().length;
-    download('data-chapters.js', manifestText(), 'text/javascript');
-    qMsg('data-chapters.js를 받았어요 (새 권 ' + n + '개 포함). shell.html과 같은 위치의 data 폴더에 넣고(기존 파일이 있으면 교체) 새로고침하면 새 권이 서재에 자리 잡아요. 각 새 권의 data-lines….js 파일도 함께 있어야 해요.');
+      );
   });
   // 더보기(구석 드롭다운): 바깥을 누르거나 항목을 고르면 닫는다
   document.addEventListener('click', e => { const mo = $('aiMore'); if (mo && mo.open && !mo.contains(e.target)) mo.open = false; });
@@ -9059,22 +9539,21 @@ function goToLine(viewId, idx) {
     auto.run = false; $('aiAutoGo').textContent = '자동 코딩 시작'; progEnd({ stopped: auto.stop, fatal });
     applyToChapter(); await loadLines(); refresh(true); qSync();
     let doneMsg = ((auto.stop ? '멈췄어요. ' : fatal ? '중단했어요. ' : '끝났어요. ') + '저장 ' + okN + '행' + (failed.length ? ', 실패 ' + failed.length + '행(' + failed.join(', ') + ')' : '') + '.\n' + log.slice(-6).join('\n')
-      + '\n다 끝나면 맨 아래 ‘이 권 전체 받기’로 파일을 받아 data 폴더의 같은 이름 파일을 교체하세요. (새 권이면 ‘새 권 등록 파일’도 함께)');
+      + '\n다 끝나면 맨 아래 ‘이 권 전체 받기’로 파일을 받아 data 폴더의 같은 이름 파일을 교체하세요.');
     // 선택한 경우 자동 코딩이 끝났을 때 변경분 동기화 코드도 내려받는다.
     const dlCb = $('aiGemAutoDl');
-    if (okN > 0 && dlCb && dlCb.checked) {
+    if (okN > 0 && dlCb && dlCb.checked && !window.showSaveFilePicker) {   // 저장 위치 선택창은 클릭으로만 열 수 있어서, 지원 브라우저에서는 아래 ‘지금까지 .js 받기’ 버튼으로 받게 한다
       try {
         const x = await exportBuild(true);
         if (x) {
           download(x.fileId + '.js', x.js, 'text/javascript'); doneMsg += '\n⬇ ' + x.fileId + '.js 전체 파일(' + x.merged.length + '행)을 내려받았어요. data 폴더의 같은 이름 파일을 교체하세요.';
           { const mv = await rotateMine(); if (mv > 0) doneMsg += '\n수정분 ' + mv + '행은 백업(직전 1회)으로 옮겼어요 (⋯ → 수정분 백업).'; }
-          if (isNewCh(x.ch)) { await sleep(600); download('data-chapters.js', manifestText(), 'text/javascript'); doneMsg += '\n⬇ 새 권이라 data-chapters.js도 내려받았어요. 두 파일을 함께 data 폴더에 넣으세요.'; }
         }
       } catch (e) { doneMsg += '\n⚠ .js 자동 다운로드 실패: ' + (e && e.message ? e.message : e) + ' — 맨 아래 ‘이 권 전체 받기’ 버튼으로 직접 받으세요.'; }
     }
     { const nb = $('aiAutoDlNow'); const auto_dl_done = doneMsg.indexOf('내려받았어요') >= 0;
       if (nb) nb.hidden = !(okN > 0 && !auto_dl_done);
-      if (nb && !nb.hidden) doneMsg += '\n⬇ ‘자동 코딩 시작’ 옆의 ‘지금까지 .js 받기’ 버튼으로 이 권의 파일을 받을 수 있어요.'; }
+      if (nb && !nb.hidden) doneMsg += '\n⬇ ‘자동 코딩 시작’ 옆의 ‘지금까지 .js 받기’ 버튼을 누르면 저장 위치를 골라 ' + (expectedFileName() || '이 권의 파일') + ' 로 저장할 수 있어요.'; }
     qMsg(doneMsg);
   }
   async function startAuto(onlyFailed) {
