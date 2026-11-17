@@ -3208,6 +3208,200 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   #bgCap { bottom: calc(12px + env(safe-area-inset-bottom, 0px)); right: max(14px, env(safe-area-inset-right, 0px)); background: color-mix(in srgb, var(--card-bg) 72%, transparent); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border: 0.5px solid var(--border); }
   @media (max-width: 480px) { #bgCap { max-width: min(220px, calc(100vw - 28px)); padding: 6px 8px; } #bgCap small { display: none; } }
   @media (prefers-reduced-motion: reduce) { #bgArt i { transition: none; will-change: auto; } }
+
+  /* ===== 북마크 ===== */
+  .line-ref { display: flex; align-items: center; gap: 4px; }
+  .bm-btn { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; margin: -4px 0 -4px -3px; padding: 0; border: none; border-radius: 50%; background: transparent; color: var(--text-faint); cursor: pointer; opacity: 0.55; transition: opacity var(--dur-press, .15s) ease, color var(--dur-press, .15s) ease, background-color var(--dur-press, .15s) ease, transform var(--dur-press, .15s) ease; -webkit-tap-highlight-color: transparent; }
+  .bm-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linejoin: round; stroke-linecap: round; }
+  .line-block:hover .bm-btn, .bm-btn:focus-visible { opacity: 1; }
+  .bm-btn:hover { color: var(--accent-dark, var(--accent)); background: color-mix(in srgb, var(--accent) 12%, transparent); }
+  .bm-btn:active { transform: scale(0.88); }
+  .bm-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .bm-btn[aria-pressed="true"] { opacity: 1; color: var(--accent); }
+  .bm-btn[aria-pressed="true"] svg { fill: currentColor; }
+  @media (pointer: coarse) { .bm-btn { width: 34px; height: 34px; opacity: 0.8; } .bm-btn svg { width: 18px; height: 18px; } }
+  .line-block.bookmarked .greek-line { border-left: 3px solid var(--accent); }
+  #bmChapterSel { font-family: var(--sans); font-size: 13.5px; color: var(--text-main); background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 9px 12px; max-width: 100%; }
+  .bm-greek { font-family: var(--serif); font-size: 19px; line-height: 1.6; color: var(--text-main); overflow-wrap: anywhere; margin: 2px 0 4px; }
+  .bm-greek[dir="rtl"] { text-align: right; }
+  .bm-trans { font-size: 13.5px; color: var(--text-sub); overflow-wrap: anywhere; }
+  .bm-item { align-items: flex-start; }
+  .bm-star { flex: none; color: var(--accent); margin-top: 2px; }
+  .bm-star svg { width: 18px; height: 18px; fill: currentColor; stroke: currentColor; stroke-width: 1.6; stroke-linejoin: round; }
+
+  /* ===== 정보 추가: 이미 코딩된 행 표시 · 로컬 저장분 지우기 ===== */
+  .ai-q .qs.done { color: var(--text-main); background: color-mix(in srgb, var(--text-faint) 26%, transparent); }
+  .ai-q .qs.redo { color: var(--bad); background: var(--bad-light); }
+  .ai-q.is-done { background: color-mix(in srgb, var(--text-faint) 9%, transparent); }
+  .ai-q.is-done .qt { opacity: 0.62; cursor: default; }
+  .ai-q.is-redo { background: color-mix(in srgb, var(--bad) 8%, transparent); border-color: color-mix(in srgb, var(--bad) 40%, transparent); }
+  .ai-q .qa { display: flex; flex: none; gap: 4px; align-items: center; }
+  .ai-q .qa[hidden] { display: none; }
+  .ai-q .qa .ai-link { font-size: 12px; padding: 3px 8px; border-radius: 7px; white-space: nowrap; }
+  .ai-q .qa .ai-link.on { color: var(--bad); font-weight: 700; }
+  .ai-qinfo { margin: 6px 10px 4px; padding: 8px 10px; border-radius: 10px; font-size: 12.5px; line-height: 1.55; color: var(--text-sub); background: color-mix(in srgb, var(--text-faint) 10%, transparent); display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; }
+  .ai-qinfo[hidden] { display: none; }
+  .ai-qinfo b { color: var(--text-main); }
+  .ai-qinfo .ai-link { margin-left: auto; }
+  @media (max-width: 640px) {
+    #aiQ .ai-q { grid-template-areas: "n s . go x" "t t t t t" "a a a a a"; }
+    #aiQ .ai-q .qa { grid-area: a; }
+    #aiQ .ai-q .qa[hidden] { display: none; }
+  }
+
+  /* ===== 정보 추가 맨 위: 작품 · 권 · 행(절) 한 줄 (스크롤해도 위에 고정) ===== */
+  .ai-body > .ai-pick { position: sticky; top: 0; z-index: 8; margin: -18px -20px 14px; padding: 10px 20px 8px; border: none; border-bottom: 1px solid var(--border); border-radius: 0; background: var(--card-bg); box-shadow: 0 8px 12px -12px rgba(0,0,0,.45);
+    grid-template-columns: minmax(0, 1.6fr) minmax(0, .75fr) minmax(0, .75fr); gap: 6px 10px; align-items: end; }
+  .ai-body > .ai-pick .ai-f { gap: 3px; }
+  .ai-body > .ai-pick .ai-f > span { font-size: 11.5px; font-weight: 600; opacity: .75; }
+  .ai-body > .ai-pick .ai-f input, .ai-body > .ai-pick .ai-f select:not(#_) { font-size: 14px; padding-top: 6px; padding-bottom: 6px; font-weight: 600; }
+  .ai-body > .ai-pick .ai-pk-book input, .ai-body > .ai-pick .ai-pk-line input { text-align: center; padding-left: 8px; }
+  .ai-pick .ai-pickinfo { grid-column: 1 / -1; margin: 0; min-height: 1.4em; font-size: 12.5px; line-height: 1.45; color: var(--text-sub); }
+  .ai-pick .ai-pickinfo:empty { display: none; }
+  @media (max-width: 640px) {
+    .ai-body > .ai-pick { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); margin: -18px -20px 12px; }
+    .ai-body > .ai-pick .ai-pk-work { grid-column: 1 / -1; }
+  }
+
+  /* =====================================================================
+     정보 추가 창 — 버튼·입력칸 크기 통일 + 번호 격자(행×열, 여러 개 선택)
+     맨 마지막에 둬서 앞의 크기·모양 규칙을 모두 덮어쓴다. 크기는 아래 변수 세 개로 한 번에 조절된다.
+       --ai-h-sm 작은 버튼(링크형·행 안) / --ai-h 보통 버튼·입력칸 / --ai-h-lg 큰 버튼(자동 코딩·.js 받기)
+     ===================================================================== */
+  #aiOverlay { --ai-h-sm: 28px; --ai-h: 34px; --ai-h-lg: 38px; --ai-r: 8px; --ai-link-c: var(--accent-dark); }
+  :root:not([data-theme="dark"]) #aiOverlay { --ai-link-c: #7a5c14; }
+  @media (max-width: 640px) { #aiOverlay { --ai-h-sm: 34px; --ai-h: 42px; --ai-h-lg: 46px; } }
+
+  /* 공통 틀: 글자 가운데, 줄 바꿈 없음, 같은 눌림·포커스 효과 */
+  #aiOverlay .ai-btn, #aiOverlay .ai-link, #aiOverlay .ai-chip, #aiOverlay .ai-x, #aiOverlay .ai-seg button, #aiOverlay .ai-more > summary {
+    box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+    font-family: var(--sans); line-height: 1; white-space: nowrap; cursor: pointer; -webkit-tap-highlight-color: transparent;
+    transition: background .14s var(--ease-mac), border-color .14s var(--ease-mac), color .14s var(--ease-mac), box-shadow .14s var(--ease-mac), transform .1s var(--ease-mac), filter .14s;
+  }
+  #aiOverlay .ai-btn:focus-visible, #aiOverlay .ai-link:focus-visible, #aiOverlay .ai-chip:focus-visible, #aiOverlay .ai-x:focus-visible,
+  #aiOverlay .ai-seg button:focus-visible, #aiOverlay .ai-more > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* 보통 버튼 */
+  #aiOverlay .ai-btn {
+    height: var(--ai-h); padding: 0 15px; font-size: 13px; font-weight: 600; letter-spacing: -.005em; border-radius: var(--ai-r);
+    color: var(--text-main); background: var(--card-bg); border: 1px solid var(--border); box-shadow: 0 1px 1.5px rgba(0,0,0,.06);
+  }
+  #aiOverlay .ai-btn:hover:not(:disabled) { background: color-mix(in srgb, var(--card-bg) 86%, var(--accent)); border-color: color-mix(in srgb, var(--accent) 55%, transparent); }
+  #aiOverlay .ai-btn:active:not(:disabled) { transform: scale(.97); }
+  #aiOverlay .ai-btn:disabled { opacity: .45; cursor: not-allowed; box-shadow: none; }
+  #aiOverlay .ai-btn[hidden] { display: none; }
+  /* 주 버튼 */
+  #aiOverlay .ai-btn.ai-primary, #aiOverlay .ai-btn.ai-primary:hover:not(:disabled) {
+    color: #fff; border-color: transparent; text-shadow: none;
+    background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 94%, #000), color-mix(in srgb, var(--accent-dark) 90%, #000));
+    box-shadow: inset 0 0.5px 0 rgba(255,255,255,.35), 0 1px 3px rgba(0,0,0,.22);
+  }
+  #aiOverlay .ai-btn.ai-primary:hover:not(:disabled) { filter: brightness(1.1); }
+  :root[data-theme="dark"] #aiOverlay .ai-btn.ai-primary, :root[data-theme="dark"] #aiOverlay .ai-btn.ai-primary:hover:not(:disabled) { color: #1d1409; background: linear-gradient(180deg, var(--accent-2), var(--accent)); }
+  /* 위험 버튼 */
+  #aiOverlay .ai-btn.ai-danger { color: var(--bad); border-color: color-mix(in srgb, var(--bad) 38%, var(--border)); }
+  #aiOverlay .ai-btn.ai-danger:hover:not(:disabled) { background: var(--bad-light); border-color: color-mix(in srgb, var(--bad) 60%, transparent); }
+  /* 큰 버튼: 자동 코딩 시작 · 이 권 .js 받기 — 가로로 꽉 차는 띠가 아니라 글자에 맞는 크기로 */
+  #aiOverlay .ai-main-act .ai-btn, #aiOverlay .ai-step .ai-main-act .ai-btn, #aiOverlay .ai-save-btns .ai-btn {
+    flex: 0 0 auto; width: auto; height: var(--ai-h-lg); padding: 0 20px; font-size: 14px; border-radius: 10px;
+  }
+  #aiOverlay .ai-main-act { display: flex; flex-wrap: wrap; gap: 8px; }
+  #aiOverlay .ai-save-btns { gap: 8px; }
+  #aiOverlay .ai-prog-btns .ai-btn { flex: 1; padding: 0 12px; }
+  #aiOverlay .ai-foot { gap: 8px; }
+  @media (max-width: 640px) {
+    #aiOverlay .ai-main-act .ai-btn, #aiOverlay .ai-step .ai-main-act .ai-btn, #aiOverlay .ai-save-btns .ai-btn, #aiOverlay .ai-dock .ai-main-act .ai-btn { flex: 1 1 auto; }
+  }
+
+  /* 작은 링크형 버튼: 글자만 둥둥 뜨던 것을 은은한 칩으로 */
+  #aiOverlay .ai-link {
+    height: var(--ai-h-sm); padding: 0 11px; font-size: 12.5px; font-weight: 600; border-radius: 7px;
+    color: var(--ai-link-c); border: 1px solid transparent; background: color-mix(in srgb, var(--accent) 9%, transparent);
+  }
+  #aiOverlay .ai-link:hover:not(:disabled) { background: color-mix(in srgb, var(--accent) 19%, transparent); }
+  #aiOverlay .ai-link:active:not(:disabled) { transform: scale(.96); }
+  #aiOverlay .ai-link.ai-danger, #aiOverlay .ai-wtools .ai-link[data-act="del"] { color: var(--bad); background: color-mix(in srgb, var(--bad) 8%, transparent); }
+  #aiOverlay .ai-link.ai-danger:hover:not(:disabled), #aiOverlay .ai-wtools .ai-link[data-act="del"]:hover { background: color-mix(in srgb, var(--bad) 17%, transparent); }
+  #aiOverlay .ai-status .ai-link { margin-left: 8px; }
+  #aiOverlay .ai-chip { height: 26px; padding: 0 11px; font-size: 12.5px; border-radius: 99px; }
+  #aiOverlay .ai-q .qa .ai-link { height: var(--ai-h-sm); padding: 0 10px; font-size: 12px; border-radius: 7px; }
+
+  /* 동그란 닫기 · 더보기 · 코딩 방식 고르기 */
+  #aiOverlay .ai-x { width: var(--ai-h); height: var(--ai-h); padding: 0; font-size: 13px; }
+  #aiOverlay .ai-more > summary { width: var(--ai-h); height: var(--ai-h); padding: 0; border-radius: var(--ai-r); font-size: 17px; }
+  #aiOverlay .ai-seg { padding: 3px; border-radius: 10px; }
+  #aiOverlay .ai-seg button { height: calc(var(--ai-h) - 8px); padding: 0 14px; font-size: 13px; border-radius: 7px; }
+
+  /* 입력칸·선택칸·행 번호 칸: 버튼과 같은 높이 */
+  #aiOverlay .ai-f input:not([type=checkbox]), #aiOverlay .ai-f select:not(#_) { height: var(--ai-h); box-sizing: border-box; padding-top: 0; padding-bottom: 0; min-height: 0; }
+  #aiOverlay .ai-body > .ai-pick .ai-f input, #aiOverlay .ai-body > .ai-pick .ai-f select:not(#_) { height: calc(var(--ai-h) + 2px); }
+  #aiOverlay #aiQ .ai-q { gap: 8px; }
+  #aiOverlay #aiQ .ai-q input.qt { height: var(--ai-h); padding-top: 0; padding-bottom: 0; }
+  #aiOverlay #aiQ .ai-q select.qn:not(#_) { height: var(--ai-h); min-height: 0; padding-top: 0; padding-bottom: 0; }
+  #aiOverlay #aiQ .ai-q [data-act="go"] { height: var(--ai-h); min-height: 0; padding: 0 15px; font-size: 13px; border-radius: var(--ai-r); color: var(--ai-link-c); border: 1px solid color-mix(in srgb, var(--accent) 50%, transparent); background: var(--accent-light); }
+  #aiOverlay #aiQ .ai-q [data-act="go"]:hover { background: color-mix(in srgb, var(--accent) 24%, var(--card-bg)); }
+  #aiOverlay #aiQ .ai-q [data-act="rm"] { width: var(--ai-h); height: var(--ai-h); min-height: 0; padding: 0; font-size: 13px; border-radius: var(--ai-r); color: var(--text-sub); background: color-mix(in srgb, var(--text-faint) 14%, transparent); border: 1px solid transparent; }
+  #aiOverlay #aiQ .ai-q [data-act="rm"]:hover { color: var(--bad); background: var(--bad-light); }
+
+  /* ---------- 번호 격자 팝업 (권·행 번호) ---------- */
+  .mac-ng {
+    position: fixed; z-index: 400; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; padding: 10px; max-width: calc(100vw - 16px);
+    font-family: var(--sans); color: var(--text-main);
+    background: color-mix(in srgb, var(--card-bg) 93%, transparent);
+    -webkit-backdrop-filter: blur(22px) saturate(1.6); backdrop-filter: blur(22px) saturate(1.6);
+    border: 0.5px solid color-mix(in srgb, var(--text-faint) 55%, transparent); border-radius: 13px;
+    box-shadow: 0 12px 34px -6px rgba(0,0,0,.38), 0 2px 6px rgba(0,0,0,.12); animation: macDdIn .12s ease-out;
+  }
+  .mac-ng-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 28px; }
+  .mac-ng-top[hidden], .mac-ng-jump[hidden], .mac-ng-foot[hidden], .mac-ng-seg[hidden] { display: none; }
+  .mac-ng-seg { display: flex; gap: 2px; padding: 2px; border: 1px solid var(--border); border-radius: 9px; background: color-mix(in srgb, var(--text-faint) 14%, var(--bg)); }
+  .mac-ng-seg button { height: 24px; padding: 0 11px; border: 0; border-radius: 7px; cursor: pointer; font: 600 12px var(--sans); color: var(--text-sub); background: transparent; }
+  .mac-ng-seg button.on { color: var(--text-main); background: var(--card-bg); box-shadow: 0 1px 2px rgba(0,0,0,.2); }
+  .mac-ng-legend { display: flex; align-items: center; gap: 10px; margin-left: auto; font-size: 11.5px; color: var(--text-sub); white-space: nowrap; }
+  .mac-ng-lg { display: inline-flex; align-items: center; gap: 5px; }
+  .mac-ng-lg i { width: 14px; height: 14px; border-radius: 4px; box-sizing: border-box; }
+  .mac-ng-lg i.ex { background: var(--accent-light); border: 1px solid color-mix(in srgb, var(--accent) 55%, transparent); }
+  .mac-ng-lg i.inq { background: transparent; border: 1px dashed var(--text-sub); }
+  .mac-ng-jump { display: flex; flex-wrap: wrap; gap: 4px; }
+  .mac-ng-jump button { height: 22px; padding: 0 9px; border: 1px solid var(--border); border-radius: 99px; cursor: pointer; font: 600 11px var(--sans); color: var(--text-sub); background: transparent; }
+  .mac-ng-jump button:hover { color: var(--text-main); border-color: var(--accent); }
+  .mac-ng-grid { position: relative; display: grid; gap: 4px; padding: 2px; overflow-y: auto; overscroll-behavior: contain; -webkit-user-select: none; user-select: none; }
+  .mac-ng-cell {
+    position: relative; box-sizing: border-box; min-width: 0; height: 32px; padding: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    font: 600 13px/1.1 var(--sans); font-variant-numeric: tabular-nums; color: var(--text-main); background: var(--bg);
+    border: 1px solid var(--border); border-radius: 7px; cursor: pointer; transition: background .08s, border-color .08s;
+  }
+  .mac-ng.cap .mac-ng-cell { height: 42px; }
+  .mac-ng-cell small { margin-top: 2px; font: 500 9.5px/1 var(--sans); opacity: .7; }
+  .mac-ng-cell:hover { border-color: var(--accent); background: color-mix(in srgb, var(--card-bg) 80%, var(--accent)); }
+  .mac-ng-cell.ex { background: var(--accent-light); border-color: color-mix(in srgb, var(--accent) 45%, transparent); }
+  .mac-ng-cell.ex::after { content: ""; position: absolute; top: 3px; right: 3px; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
+  .mac-ng-cell.inq { border-style: dashed; border-color: var(--text-sub); }
+  .mac-ng-cell.cur { box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 65%, transparent); }
+  .mac-ng-cell.hi { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .mac-ng-cell.sel, .mac-ng-cell.sel:hover {
+    color: #fff; border-color: transparent;
+    background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 94%, #000), color-mix(in srgb, var(--accent-dark) 90%, #000));
+  }
+  .mac-ng-cell.sel::after { background: #fff; }
+  :root[data-theme="dark"] .mac-ng-cell.sel, :root[data-theme="dark"] .mac-ng-cell.sel:hover { color: #1d1409; background: var(--accent-2); }
+  :root[data-theme="dark"] .mac-ng-cell.sel::after { background: #1d1409; }
+  .mac-ng-empty { grid-column: 1 / -1; padding: 14px 8px; text-align: center; font-size: 12.5px; color: var(--text-faint); }
+  .mac-ng-foot { display: flex; align-items: center; gap: 8px; padding-top: 9px; border-top: 1px solid var(--border-soft); }
+  .mac-ng-count { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; color: var(--text-sub); font-variant-numeric: tabular-nums; }
+  .mac-ng-count b { color: var(--text-main); }
+  .mac-ng-foot button { height: 30px; padding: 0 13px; border-radius: 8px; cursor: pointer; font: 600 12.5px var(--sans); color: var(--text-main); background: var(--card-bg); border: 1px solid var(--border); }
+  .mac-ng-foot button:hover:not(:disabled) { border-color: var(--accent); }
+  .mac-ng-foot button.go { color: #fff; border-color: transparent; background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 94%, #000), color-mix(in srgb, var(--accent-dark) 90%, #000)); }
+  :root[data-theme="dark"] .mac-ng-foot button.go { color: #1d1409; background: linear-gradient(180deg, var(--accent-2), var(--accent)); }
+  .mac-ng-foot button:disabled { opacity: .45; cursor: default; }
+  @media (max-width: 640px) {
+    .mac-ng-cell { height: 40px; font-size: 15px; }
+    .mac-ng.cap .mac-ng-cell { height: 48px; }
+    .mac-ng-seg button { height: 28px; font-size: 13px; }
+    .mac-ng-foot button { height: 36px; }
+    .mac-ng-jump button { height: 28px; }
+  }
 </style>
 </head>
 <body>
@@ -3235,17 +3429,18 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
     </div>
     <div class="ai-body">
       <div class="ai-pick">
-        <label class="ai-f"><span>작품</span><select id="aiWork"></select></label>
-        <label class="ai-f"><span id="aiBookLbl">권</span><input id="aiBook" type="text" inputmode="numeric" data-list="aiBookList" autocomplete="off" placeholder="번호"><datalist id="aiBookList"></datalist></label>
+        <label class="ai-f ai-pk-work"><span>작품</span><select id="aiWork"></select></label>
+        <label class="ai-f ai-pk-book"><span id="aiBookLbl">권</span><input id="aiBook" type="text" inputmode="numeric" data-list="aiBookList" autocomplete="off" placeholder="번호"><datalist id="aiBookList"></datalist></label>
+        <label class="ai-f ai-pk-line"><span id="aiLineLbl">행 (절)</span><input id="aiLine" type="text" inputmode="numeric" data-list="aiLineList" autocomplete="off" placeholder="번호"><datalist id="aiLineList"></datalist></label>
+        <p class="ai-status ai-pickinfo" id="aiStatus" aria-live="polite"></p>
       </div>
       <div class="ai-unsaved" id="aiUnsaved" hidden><span id="aiUnsavedTxt"></span><div class="ai-unsaved-actions"><button type="button" class="ai-btn ai-primary" id="aiUnsavedDl">지금 .js 받기</button><button type="button" class="ai-btn ai-danger" id="aiUnsavedClear">수정분 삭제</button></div></div>
-      <p class="ai-status" id="aiStatus" aria-live="polite"></p>
       <div class="ai-steps">
 
         <!-- 원문 넣기 · 코딩 · 저장 (예전 1·2단계를 하나로 합침) -->
         <section class="ai-step" id="aiStep1">
           <header class="ai-step-h">
-            <div class="ai-step-t"><h3>원문 넣기 · 코딩 · 저장</h3><p>행 번호는 목록에서 고르세요. 이미 있는 행(기존 행)을 고르면 그 원문이 자동으로 채워지고, 다시 코딩해서 업데이트할 수 있어요. 아직 없는 새 권도 똑같이 코딩하면 data 파일이 자동으로 만들어져요.</p></div>
+            <div class="ai-step-t"><h3>원문 넣기 · 코딩 · 저장</h3><p>맨 위에서 행을 고르면 이 목록에 놓여요. 원문을 붙여넣고 ‘자동 코딩 시작’을 누르세요. 이미 코딩된 행은 건너뛰어요.</p></div>
             <details class="ai-more" id="aiMore">
               <summary aria-label="더보기" title="더보기">⋯</summary>
               <div class="ai-more-panel">
@@ -3273,7 +3468,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
                     <summary>수정분 백업 <small id="aiBkCnt"></small></summary>
                     <div class="ai-manual-body">
                       <p class="ai-hint" id="aiBkInfo"></p>
-                      <div class="ai-qsend"><button type="button" class="ai-link" id="aiBkRestore">백업 복원</button><button type="button" class="ai-link ai-danger" id="aiBkDel">백업 삭제</button></div>
+                      <div class="ai-qsend"><select id="aiBkGen" aria-label="복원할 백업 회차"></select><button type="button" class="ai-link" id="aiBkRestore">백업 복원</button><button type="button" class="ai-link ai-danger" id="aiBkDel">백업 삭제</button></div>
                     </div>
                   </details>
                   <details class="ai-bulk ai-manual ai-settings" id="aiSettings">
@@ -3322,7 +3517,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
                   <details class="ai-bulk ai-manual" id="aiManual">
                     <summary>한 행씩 직접 입력·수정 <small>— 고급 · 위 목록 대신 한 행만 손으로 고칠 때</small></summary>
                     <div class="ai-manual-body">
-                      <label class="ai-f"><span>행</span><input id="aiLine" type="text" inputmode="numeric" data-list="aiLineList" autocomplete="off" placeholder="번호"><datalist id="aiLineList"></datalist></label>
+                       <p class="ai-hint">행 번호는 맨 위에서 고르세요.</p>
                       <label class="ai-f ai-wide"><span>원문</span><textarea id="aiSrc" class="ai-src" rows="3" spellcheck="false" placeholder="이 행의 원문을 그대로 붙여넣으세요"></textarea></label>
                       <div class="ai-row"><button type="button" class="ai-btn" id="aiSplit">단어로 나누기</button></div>
                       <label class="ai-f ai-wide"><span>번역 (행 전체)</span><textarea id="aiTrans" rows="2" spellcheck="false" placeholder="이 행 전체의 한국어 번역"></textarea></label>
@@ -3337,6 +3532,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
               </div>
             </details>
           </header>
+          <div class="ai-qinfo" id="aiQInfo" hidden></div>
           <div id="aiQ"></div>
           <div class="ai-go" id="aiGoWrap">
             <div class="ai-main-act"><button type="button" class="ai-btn ai-primary" id="aiAutoGo">자동 코딩 시작</button><button type="button" class="ai-btn" id="aiAutoDlNow" hidden>⬇ 지금까지 .js 받기</button></div>
@@ -3385,6 +3581,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
       </button>
       <div class="nav-more-menu" id="navMoreMenu">
         <button class="site-nav-link" id="memoViewBtn" onclick="openMemoHome()">메모 모아보기</button>
+        <button class="site-nav-link" id="bookmarkViewBtn" onclick="openBookmarks()">북마크 모아보기</button>
         <button class="site-nav-link" id="addInfoBtn" onclick="openAddInfo()">정보 추가</button>
         <button class="site-nav-link" id="bgToggle" onclick="toggleGalleryBg()">배경 끄기</button>
         <button class="site-nav-link" id="artViewBtn" onclick="openArtView()">명화 감상</button>
@@ -3888,7 +4085,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
 
 <!-- ================= 단어장: 작품 목록 화면 ================= -->
 <div id="view-vocab" class="view">
-  <button class="back-link" onclick="showView('view-hub')">← 서재로</button>
+  <button class="back-link" onclick="goBackView()">← 이전 화면</button>
   <h1>단어장</h1>
   <p class="subtitle">단어를 클릭한 뒤 저장하기 버튼을 누르면 이곳에 모입니다. 작품을 선택하세요.</p>
   <div class="vocab-work-list" id="vocabWorkList"></div>
@@ -3916,7 +4113,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
 
 <!-- ================= 메모 모아보기 ================= -->
 <div id="view-memos" class="view">
-  <button class="back-link" onclick="showView('view-hub')">← 서재로</button>
+  <button class="back-link" onclick="goBackView()">← 이전 화면</button>
   <h1>메모 모아보기</h1>
   <p class="subtitle">원문 단어에 적어 둔 메모를 한곳에서 찾고 지울 수 있어요.</p>
   <div class="memo-tools">
@@ -3933,6 +4130,24 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   </div>
   <div id="memoList" class="memo-list"></div>
   <p id="memoStorageLine" class="memo-storage"></p>
+</div>
+
+<div id="view-bookmarks" class="view">
+  <button class="back-link" onclick="goBackView()">← 이전 화면</button>
+  <h1>북마크 모아보기</h1>
+  <p class="subtitle">원문 행 번호 옆의 별(☆)을 눌러 표시해 둔 행을 한곳에서 찾고 바로 이동할 수 있어요.</p>
+  <div class="memo-tools">
+    <input id="bmSearch" class="memo-search" type="search" placeholder="행 번호·원문·번역 검색" autocomplete="off" spellcheck="false">
+    <select id="bmChapterSel" aria-label="권 선택"></select>
+  </div>
+  <div class="memo-bar">
+    <span id="bmCount" class="memo-count"></span>
+    <span id="bmLoadState" class="memo-count"></span>
+    <span class="memo-bar-btns">
+      <button type="button" class="vocab-backup-btn" id="bmClearAll">보이는 것 모두 해제</button>
+    </span>
+  </div>
+  <div id="bmList" class="memo-list"></div>
 </div>
 
 <!-- ================= 단어장: 챕터 목록 화면 ================= -->
@@ -4149,7 +4364,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
 
 <!-- ================= 준비 중 화면 ================= -->
 <div id="view-comingsoon" class="view">
-  <button class="back-link" onclick="showView('view-hub')">← 서재로</button>
+  <button class="back-link" onclick="goBackView()">← 이전 화면</button>
   <div class="cs-card">
     <div class="cs-badge" id="csBadge"></div>
     <h1>아직 준비 중입니다</h1>
@@ -4468,7 +4683,8 @@ function normalizeChapterData(data, ctxLabel) {
 const USER_LINES_KEY = 'userLines';
 const __baseLines = {};
 function loadUserLines() { try { return JSON.parse(localStorage.getItem(USER_LINES_KEY) || '{}') || {}; } catch (e) { return {}; } }
-function saveUserLines(o) { try { localStorage.setItem(USER_LINES_KEY, JSON.stringify(o)); return true; } catch (e) { return false; } }
+var __ulVer = 0;   // 수정본이 저장될 때마다 올라가는 번호 (정보 추가 목록이 상태를 다시 계산할 때 쓴다)
+function saveUserLines(o) { try { localStorage.setItem(USER_LINES_KEY, JSON.stringify(o)); __ulVer++; return true; } catch (e) { return false; } }
 function refLineNo(ref) { const m = String(ref || '').match(/(\d+)(?:\s*[-–]\s*\d+)?\s*$/); return m ? parseInt(m[1], 10) : NaN; }  // 앞 글자(작품·권 표기)가 틀려도 행 번호만 읽는다. 323-4 같은 합친 행은 323
 /* ---------- 행 표기 통일 ----------
    data 의 ref 문자열은 'Iliad 1.302', 'Metamorphoses 571', 'Verg. Aen. 2.561'처럼 앞부분(작품·권)이 제각각일 수 있다.
@@ -4892,7 +5108,10 @@ function buildLines(linesArr, containerId, showTransRef, showMyTransRef, workKey
   function fillLine(block, line, idx) {
     const ref = document.createElement('div');
     ref.className = 'line-ref';
-    ref.textContent = fmtRef(line.ref, workKey, book);
+    const refTxt = document.createElement('span');
+    refTxt.textContent = fmtRef(line.ref, workKey, book);
+    ref.appendChild(refTxt);
+    ref.appendChild(makeBookmarkBtn(containerId, line.ref, block));
     block.appendChild(ref);
 
     const greekLine = document.createElement('div');
@@ -7015,18 +7234,20 @@ function collectBackupData() {
 }
 // 백업 내용을 사람이 읽을 수 있게 요약한다 (가져오기 전 확인창·내보낸 뒤 안내에 쓴다)
 function summarizeBackupData(data) {
-  const cnt = { memo: 0, mytrans: 0, edits: 0, bk: 0 }, bytes = {}; let total = 0, vocab = 0;
+  const cnt = { memo: 0, mytrans: 0, edits: 0, bk: 0, bm: 0 }, bytes = {}; let total = 0, vocab = 0;
   Object.keys(data).forEach(k => {
     const v = typeof data[k] === 'string' ? data[k] : JSON.stringify(data[k]), n = k.length + v.length; total += n;
     const c = lsCategory(k); bytes[c] = (bytes[c] || 0) + n;
     if (c === 'memo' && v.trim()) cnt.memo++;
     else if (c === 'mytrans' && v.trim()) cnt.mytrans++;
+    else if (k === BM_KEY) { try { cnt.bm = Object.keys(JSON.parse(v) || {}).length; } catch (e) {} }
     else if (k === 'vocabData') { try { const o = JSON.parse(v); vocab = Array.isArray(o) ? o.length : (o && typeof o === 'object' ? Object.keys(o).length : 0); } catch (e) {} }
     else if (k === 'userLines') { try { const o = JSON.parse(v); cnt.edits = Object.keys(o || {}).reduce((s2, ck) => s2 + (o[ck] && typeof o[ck] === 'object' ? Object.keys(o[ck]).length : 0), 0); } catch (e) {} }
   });
   const parts = [];
   if (vocab) parts.push('단어장 ' + vocab + '개');
   if (cnt.memo) parts.push('메모 ' + cnt.memo + '개');
+  if (cnt.bm) parts.push('북마크 ' + cnt.bm + '개');
   if (cnt.mytrans) parts.push('내 번역 ' + cnt.mytrans + '개');
   if (cnt.edits) parts.push('수정분 ' + cnt.edits + '행');
   return { total, text: parts.length ? parts.join(', ') : '내용 없음', keys: Object.keys(data).length };
@@ -7170,9 +7391,11 @@ function toggleShelf(shelfId) {
 /* 메인(서재) 화면을 떠날 때 보던 위치를 기억해 두었다가, 돌아오면 그 자리로 되돌린다.
    (전에는 어떤 화면으로 가든, 돌아오든 항상 맨 위로 튀었다) */
 var hubScrollY = 0;
+var VIEW_HIST = [], __navBack = false;
 function showView(viewId) {
   const prevView = document.querySelector('.view.active');
   if (prevView && prevView.id === 'view-hub') hubScrollY = window.scrollY;
+  if (!__navBack && prevView && prevView.id !== viewId) { VIEW_HIST.push(prevView.id); if (VIEW_HIST.length > 40) VIEW_HIST.shift(); }
   document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
   const target = document.getElementById(viewId);
   target.classList.add('active');
@@ -7182,6 +7405,20 @@ function showView(viewId) {
   if (typeof updateBgArt === 'function') updateBgArt();
   window.scrollTo({ top: viewId === 'view-hub' ? hubScrollY : 0, behavior: 'instant' in window ? 'instant' : 'auto' });
   if (window.__updateCurLine) requestAnimationFrame(window.__updateCurLine);
+}
+
+/* 바로 전에 보던 화면으로 돌아간다 (메모·북마크 모아보기 등). 읽던 권이면 읽던 행으로, 없으면 서재로. */
+function goBackView() {
+  const cur = document.querySelector('.view.active');
+  let id = null;
+  while (VIEW_HIST.length) {
+    const c = VIEW_HIST.pop();
+    if (c && document.getElementById(c) && (!cur || c !== cur.id) && c !== 'view-comingsoon') { id = c; break; }
+  }
+  if (!id) id = 'view-hub';
+  __navBack = true;
+  try { if (STUDY_CHAPTERS.some(c => c.viewId === id)) showStudyView(id); else showView(id); }
+  finally { __navBack = false; }
 }
 
 /* ---------- 작품별 권/장 단위 라벨 ----------
@@ -7463,16 +7700,187 @@ function openMemoHome() {
   });
 })();
 
+/* ---------- 북마크 ----------
+   저장: localStorage 'bookmarks' = { "<containerId>::<ref>": { t: 저장 시각(ms) } }
+   (내 번역과 같은 '컨테이너 id + ref' 규칙. 객체라서 백업 병합 때 같은 행이 중복되지 않는다.) */
+const BM_KEY = 'bookmarks';
+let BM_CACHE = null;
+function bmLoad() {
+  if (BM_CACHE) return BM_CACHE;
+  let o = {};
+  try { const p = JSON.parse(localStorage.getItem(BM_KEY) || '{}'); if (p && typeof p === 'object' && !Array.isArray(p)) o = p; } catch (e) {}
+  return (BM_CACHE = o);
+}
+function bmSave() {
+  try { localStorage.setItem(BM_KEY, JSON.stringify(BM_CACHE || {})); return true; }
+  catch (e) { alert('북마크를 저장하지 못했어요. 저장 공간이 찼을 수 있어요 (단어장 화면 → 저장 공간).'); return false; }
+}
+const bmKey = (cid, ref) => cid + '::' + ref;
+const bmHas = (cid, ref) => !!bmLoad()[bmKey(cid, ref)];
+window.addEventListener('storage', e => { if (e.key === BM_KEY || e.key === null) { BM_CACHE = null; bmRepaint(); } });
+const BM_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 17l-5.4 2.9 1.1-6.1-4.5-4.2 6.1-.8z"/></svg>';
+function bmPaint(btn, on) {
+  btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+  btn.title = on ? '북마크 해제' : '북마크';
+  btn.setAttribute('aria-label', on ? '북마크 해제' : '북마크');
+  const blk = btn.closest('.line-block'); if (blk) blk.classList.toggle('bookmarked', on);
+}
+function makeBookmarkBtn(cid, ref, block) {
+  const b = document.createElement('button');
+  b.type = 'button'; b.className = 'bm-btn'; b.innerHTML = BM_SVG;
+  b.dataset.bk = bmKey(cid, ref);
+  const on = bmHas(cid, ref);
+  bmPaint(b, on);
+  if (block) block.classList.toggle('bookmarked', on);
+  b.addEventListener('click', ev => { ev.stopPropagation(); bmToggle(cid, ref); });
+  return b;
+}
+function bmSet(cid, ref, on) {
+  const m = bmLoad(), k = bmKey(cid, ref);
+  if (on) m[k] = { t: Date.now() }; else delete m[k];
+  if (!bmSave()) { BM_CACHE = null; return false; }
+  document.querySelectorAll('.bm-btn').forEach(b => { if (b.dataset.bk === k) bmPaint(b, on); });   // 나란히 보기로 같은 권이 두 칸이어도 함께 갱신
+  return true;
+}
+function bmToggle(cid, ref) { return bmSet(cid, ref, !bmHas(cid, ref)); }
+function bmRepaint() {
+  document.querySelectorAll('.bm-btn').forEach(b => bmPaint(b, !!bmLoad()[b.dataset.bk]));
+  if (document.getElementById('view-bookmarks') && document.getElementById('view-bookmarks').classList.contains('active')) bmCollectAndRender();
+}
+
+const BM_UI = { entries: [], q: '', chKey: '', token: 0 };
+function bmCollect() {
+  const out = [], m = bmLoad();
+  Object.keys(m).forEach(k => {
+    const p = k.indexOf('::'); if (p < 0) return;
+    const cid = k.slice(0, p), ref = k.slice(p + 2);
+    out.push({ key: k, cid, ref, t: (m[k] && m[k].t) || 0, ch: STUDY_CHAPTERS.find(c => c.containerId === cid) || null });
+  });
+  const ord = e => e.ch ? STUDY_CHAPTERS.indexOf(e.ch) : 1e6;
+  out.sort((a, b) => ord(a) - ord(b) || (refLineNo(a.ref) || 0) - (refLineNo(b.ref) || 0));
+  return out;
+}
+function bmFiltered() {
+  const q = MEMO_NORM(BM_UI.q.trim()), f = BM_UI.chKey;
+  return BM_UI.entries.filter(e => {
+    if (f && (!e.ch || e.ch.containerId !== f)) return false;
+    if (!q) return true;
+    return MEMO_NORM([e.ref, e.greek, e.trans, e.ch ? chapterLabel(e.ch) : ''].join(' ')).indexOf(q) >= 0;
+  });
+}
+function bmFillChapterSelect() {
+  const sel = document.getElementById('bmChapterSel'); if (!sel) return;
+  const keep = BM_UI.chKey, seen = [];
+  BM_UI.entries.forEach(e => { if (e.ch && seen.indexOf(e.ch) < 0) seen.push(e.ch); });
+  sel.textContent = '';
+  const all = document.createElement('option'); all.value = ''; all.textContent = '모든 권'; sel.appendChild(all);
+  seen.forEach(ch => { const o = document.createElement('option'); o.value = ch.containerId; o.textContent = chapterLabel(ch); sel.appendChild(o); });
+  if (keep && seen.some(c => c.containerId === keep)) sel.value = keep; else { sel.value = ''; BM_UI.chKey = ''; }
+}
+function renderBookmarkList() {
+  const box = document.getElementById('bmList'); if (!box) return;
+  const list = bmFiltered(), CAP = 200;
+  box.textContent = '';
+  document.getElementById('bmCount').textContent = BM_UI.entries.length
+    ? (list.length === BM_UI.entries.length ? '북마크 ' + list.length + '개' : '북마크 ' + BM_UI.entries.length + '개 중 ' + list.length + '개') : '';
+  const clr = document.getElementById('bmClearAll'); if (clr) clr.disabled = !list.length;
+  if (!list.length) {
+    const p = document.createElement('p'); p.className = 'memo-empty';
+    p.textContent = BM_UI.entries.length ? '검색 결과가 없어요.' : '아직 북마크가 없어요. 원문 행 번호 옆의 별(☆)을 누르면 여기에 모여요.';
+    box.appendChild(p);
+  }
+  list.slice(0, CAP).forEach(e => {
+    const item = document.createElement('div'); item.className = 'memo-item bm-item';
+    const star = document.createElement('span'); star.className = 'bm-star'; star.innerHTML = BM_SVG;
+    const main = document.createElement('div'); main.className = 'memo-main';
+    const head = document.createElement('div'); head.className = 'memo-head';
+    const loc = document.createElement('span'); loc.className = 'memo-loc';
+    loc.textContent = e.ch ? chapterLabel(e.ch) + ' · ' + fmtRef(e.ref, e.ch.workKey, e.ch.book) : e.ref;
+    head.appendChild(loc);
+    main.appendChild(head);
+    if (e.greek) { const g = document.createElement('div'); g.className = 'bm-greek'; g.textContent = e.greek; if (e.ch && e.ch.workKey === 'genesis') g.dir = 'rtl'; main.appendChild(g); }
+    if (e.trans) { const t = document.createElement('div'); t.className = 'bm-trans'; t.textContent = e.trans; main.appendChild(t); }
+    const act = document.createElement('div'); act.className = 'memo-actions2';
+    if (e.ch) { const go = document.createElement('button'); go.type = 'button'; go.className = 'memo-link'; go.textContent = '그 행으로 이동'; go.addEventListener('click', () => bmGo(e)); act.appendChild(go); }
+    const del = document.createElement('button'); del.type = 'button'; del.className = 'memo-link danger'; del.textContent = '북마크 해제';
+    del.addEventListener('click', () => bmRemove([e]));
+    act.appendChild(del);
+    main.appendChild(act);
+    item.appendChild(star); item.appendChild(main); box.appendChild(item);
+  });
+  if (list.length > CAP) { const p = document.createElement('p'); p.className = 'memo-empty'; p.textContent = '앞의 ' + CAP + '개만 보여요. 검색이나 권 선택으로 좁혀 보세요.'; box.appendChild(p); }
+}
+function bmRemove(list) {
+  const m = bmLoad(), backup = {};
+  list.forEach(e => { backup[e.key] = m[e.key]; delete m[e.key]; });
+  if (!bmSave()) { Object.assign(m, backup); return; }
+  const gone = new Set(list.map(e => e.key));
+  BM_UI.entries = BM_UI.entries.filter(e => !gone.has(e.key));
+  document.querySelectorAll('.bm-btn').forEach(b => { if (gone.has(b.dataset.bk)) bmPaint(b, false); });
+  bmFillChapterSelect(); renderBookmarkList();
+}
+async function bmGo(e) {
+  if (!e.ch) return;
+  if (e.idx == null) { try { const arr = await loadChapterData(e.ch.dataVar); const i = arr.findIndex(l => l.ref === e.ref); if (i >= 0) e.idx = i; } catch (err) {} }
+  if (e.idx == null) { showStudyView(e.ch.viewId); return; }
+  goToLine(e.ch.viewId, e.idx);
+}
+async function bmLoadTexts(token) {
+  const chs = []; BM_UI.entries.forEach(e => { if (e.ch && chs.indexOf(e.ch) < 0) chs.push(e.ch); });
+  const st = document.getElementById('bmLoadState');
+  for (let n = 0; n < chs.length; n++) {
+    if (token !== BM_UI.token) return;
+    const ch = chs[n];
+    if (st) st.textContent = '원문을 불러오는 중… (' + (n + 1) + '/' + chs.length + ')';
+    try {
+      const arr = await loadChapterData(ch.dataVar), byRef = new Map(arr.map((l, i) => [l.ref, { l, i }]));
+      BM_UI.entries.forEach(e => {
+        if (e.ch !== ch) return;
+        const f = byRef.get(e.ref); if (!f) return;
+        e.idx = f.i; e.trans = f.l.trans || '';
+        e.greek = (f.l.words || []).map(w => w.g).join(ch.workKey === 'sanguo' ? '' : ' ');
+      });
+    } catch (err) {}
+    if (token !== BM_UI.token) return;
+    renderBookmarkList();
+  }
+  if (st && token === BM_UI.token) st.textContent = '';
+}
+function bmCollectAndRender() {
+  const old = new Map(BM_UI.entries.map(e => [e.key, e]));
+  BM_UI.entries = bmCollect().map(e => { const o = old.get(e.key); return o ? Object.assign(e, { greek: o.greek, trans: o.trans, idx: o.idx }) : e; });
+  bmFillChapterSelect(); renderBookmarkList();
+}
+function openBookmarks() {
+  BM_CACHE = null;
+  BM_UI.entries = []; BM_UI.token++;
+  const q = document.getElementById('bmSearch'); if (q) q.value = ''; BM_UI.q = '';
+  bmCollectAndRender();
+  showView('view-bookmarks');
+  bmLoadTexts(BM_UI.token);
+}
+(function setupBookmarkView() {
+  const q = document.getElementById('bmSearch'), sel = document.getElementById('bmChapterSel'), clr = document.getElementById('bmClearAll');
+  if (q) q.addEventListener('input', () => { BM_UI.q = q.value; renderBookmarkList(); });
+  if (sel) sel.addEventListener('change', () => { BM_UI.chKey = sel.value; renderBookmarkList(); });
+  if (clr) clr.addEventListener('click', () => {
+    const list = bmFiltered(); if (!list.length) return;
+    if (!confirm('보이는 북마크 ' + list.length + '개를 모두 해제할까요?')) return;
+    bmRemove(list);
+  });
+})();
+
 /* ---------- 저장 공간 (localStorage 사용량) ----------
    브라우저는 사이트마다 보통 5MB(약 500만 자)까지만 localStorage에 저장하게 한다.
    모든 항목의 '키 + 값' 글자 수를 세어 분류별로 보여 주고, '정확히 재기'는 실제로 더 쓸 수 있는 양을 시험 저장으로 잰다. */
 const LS_LIMIT_GUESS = 5 * 1024 * 1024;
-const LS_CAT_LABEL = { vocab: '단어장', quiz: '시험·암기 기록', memo: '메모', mytrans: '내 번역', edits: '내 수정분 (정보 추가)', backup: '수정분 백업', other: '그 밖 (설정·읽던 위치 등)' };
+const LS_CAT_LABEL = { vocab: '단어장', quiz: '시험·암기 기록', memo: '메모', bookmark: '북마크', mytrans: '내 번역', edits: '내 수정분 (정보 추가)', backup: '수정분 백업', other: '그 밖 (설정·읽던 위치 등)' };
 function lsCategory(k) {
   if (k === 'vocabData') return 'vocab';
   if (k === 'vocabQuizSessions' || k === 'vocabSrs' || k === 'vocabMemorized') return 'quiz';
   if (k.indexOf('memo::') === 0 || k.indexOf('memoc::') === 0) return 'memo';
   if (k.indexOf('mytrans::') === 0) return 'mytrans';
+  if (k === BM_KEY) return 'bookmark';
   if (k === 'userLinesBackup') return 'backup';
   if (k === 'userLines') return 'edits';
   return 'other';
@@ -8511,8 +8919,8 @@ function goToLine(viewId, idx) {
     const nums = lineNos();
     if (isNaN(S.line)) {
       setStatus(nums.length
-        ? w.label + ' ' + S.book + w.unit + (bookLen() ? ' (전체 ' + bookLen() + '행)' : '') + ' — 지금 ' + nums.length + '개 행이 있고 마지막은 ' + Math.max.apply(null, nums) + '행이에요. 행 번호를 고르거나 새 번호를 입력하세요.'
-        : w.label + ' ' + S.book + w.unit + ' — 아직 행이 없어요. 행 번호를 입력하세요.');
+        ? w.label + ' ' + S.book + w.unit + (bookLen() ? ' · 전체 ' + bookLen() + '행' : '') + ' · 코딩된 행 ' + nums.length + '개 (마지막 ' + Math.max.apply(null, nums) + '행) — 행을 고르면 아래 목록에 놓여요.'
+        : w.label + ' ' + S.book + w.unit + ' — 아직 코딩된 행이 없어요. 행 번호를 고르거나 입력하세요.');
       return;
     }
     const found = S.lines.find(l => refLineNo(l.ref) === S.line) || null;
@@ -8520,9 +8928,9 @@ function goToLine(viewId, idx) {
     S.isUser = !!((loadUserLines()[S.storeKey] || {})[S.ref]);
     const where = w.label + ' ' + S.book + w.unit + ' ' + S.line + '행';
     let msg, link = null;
-    if (found && S.isUser) msg = where + ' — 내가 넣거나 고친 행이에요.';
-    else if (found) msg = where + ' — 이미 있는 행이에요. 저장하면 내 수정본으로 바뀌어 보여요 (원본 파일은 그대로).';
-    else if (S.ch) msg = where + ' — 새 행이에요. 저장하면 순서에 맞게 끼워 넣어요.';
+    if (found && S.isUser) msg = where + ' — 이 브라우저에 저장된 행이에요.';
+    else if (found) msg = where + ' — 이미 코딩된 행이에요.';
+    else if (S.ch) msg = where + ' — 새 행이에요.';
     else msg = where + ' — 아직 화면이 없는 권이에요. 저장해 두고 ‘JSON 복사’로 꺼낼 수 있어요.';
     btnSave.disabled = false; btnCopy.disabled = false; btnDel.hidden = !S.isUser;
     if (!keepForm) {
@@ -8557,7 +8965,7 @@ function goToLine(viewId, idx) {
   const numOf = el => { const n = parseInt(el.value, 10); return n > 0 ? n : NaN; };
   inBook.addEventListener('input', () => { clearTimeout(tBook); tBook = setTimeout(onBook, 200); });
   inBook.addEventListener('change', () => { clearTimeout(tBook); if (!Object.is(numOf(inBook), S.book)) onBook(); });
-  inLine.addEventListener('input', () => { if (inLine.value.trim()) $('aiManual').open = true; clearTimeout(tLine); tLine = setTimeout(() => refresh(), 150); });
+  inLine.addEventListener('input', () => { clearTimeout(tLine); tLine = setTimeout(() => refresh(), 150); });
   inLine.addEventListener('change', () => { clearTimeout(tLine); if (!Object.is(numOf(inLine), S.line)) refresh(); });
 
   // 원문 → 단어 칸
@@ -8678,7 +9086,7 @@ function goToLine(viewId, idx) {
   let Q = [], qKey = '', qi = -1;
   const qStore = () => { try { return JSON.parse(localStorage.getItem(QKEY) || '{}') || {}; } catch (e) { return {}; } };
   function qSave() {
-    const s = qStore(), rows = Q.filter(r => r.t.trim());
+    const s = qStore(), rows = Q.filter(r => r.t.trim()).map(r => Object.assign({}, r, { force: undefined }));
     if (rows.length) s[qKey] = rows; else delete s[qKey];
     try { localStorage.setItem(QKEY, JSON.stringify(s)); } catch (e) {}
   }
@@ -8688,17 +9096,32 @@ function goToLine(viewId, idx) {
     const nums = lineNos(); return nums.length ? Math.max.apply(null, nums) + 1 : 1;
   }
   function qTail() { if (!Q.length || Q[Q.length - 1].t.trim()) Q.push({ n: String(qNextFrom(Q.length - 1)), t: '' }); }
-  function qState(r) {
-    const n = parseInt(r.n, 10);
-    if (!(n > 0)) return ['번호 필요', 'warn'];
-    if (r.d) return ['저장됨 ✓', 'ok'];
-    if (r.f) return ['실패', 'warn'];
-    if (Q.filter(x => parseInt(x.n, 10) === n && x.t.trim()).length > 1) return ['번호 중복', 'warn'];
-    if (r.redo && r.t.trim()) return ['다시 코딩', ''];
-    const found = S.lines.find(l => refLineNo(l.ref) === n);
-    if (userLinesFor(S.storeKey)[found ? found.ref : refOf(n)]) return ['저장됨 ✓', 'ok'];
-    return found ? ['기존 행', ''] : (r.t.trim() ? ['새 행', ''] : ['', '']);
+  // 이 행 번호가 지금 어떤 상태인지: 이미 있는 행인지(found) / 이 브라우저에 내가 저장한 것이 있는지(mine) / data 파일(원본)에 있는지(base)
+  let _mineCache = null, _mineKey = '', _mineVer = -1;
+  function mineMap() {
+    if (_mineCache && _mineKey === S.storeKey && _mineVer === __ulVer) return _mineCache;
+    _mineCache = userLinesFor(S.storeKey); _mineKey = S.storeKey; _mineVer = __ulVer; return _mineCache;
   }
+  function qInfo(r) {
+    const n = parseInt(r.n, 10); if (!(n > 0)) return null;
+    const found = S.lines.find(l => refLineNo(l.ref) === n), ref = found ? found.ref : refOf(n);
+    const mine = !!mineMap()[ref];
+    const base = !!(S.ch && (__baseLines[S.ch.dataVar] || []).some(l => l.ref === ref));
+    return { n, found: !!found, ref, mine, base };
+  }
+  function qState(r) {
+    const inf = qInfo(r);
+    if (!inf) return ['번호 필요', 'warn'];
+    if (r.d && !r.force) return ['저장됨 ✓', 'ok'];
+    if (r.f) return ['실패', 'warn'];
+    if (Q.filter(x => parseInt(x.n, 10) === inf.n && x.t.trim()).length > 1) return ['번호 중복', 'warn'];
+    if (inf.found && r.force && r.t.trim()) return ['덮어쓰기 예정', 'redo'];
+    if (inf.mine) return ['저장됨 ✓', 'ok'];
+    if (inf.found) return r.t.trim() ? ['이미 코딩됨', 'done'] : ['', ''];
+    return r.t.trim() ? ['새 행', ''] : ['', ''];
+  }
+  // 자동 코딩·Claude 요청에 포함할 행인가: 이미 코딩된 행(파일에 있음/저장됨)은 ‘다시 코딩’을 눌러 허용한 것만
+  const qTodo = r => { const st = qState(r); return st[1] !== 'ok' && st[1] !== 'done' && st[0] !== '번호 중복'; };
   // 행 번호 드롭다운: 처음엔 고른 번호 하나만 넣어 두고, 포커스/클릭할 때 전체 목록(기존 행 · 새 행)을 채운다 (행이 많아도 가볍게)
   function qNumInit(sel, v) {
     const n = parseInt(v, 10), o = document.createElement('option');
@@ -8723,9 +9146,32 @@ function goToLine(viewId, idx) {
     return f && f.words && f.words.length ? f.words.map(w => w.g || '').join(joiner()).normalize('NFC') : '';
   }
   function paintQ(d, i) {
-    const st = qState(Q[i]), s = d.querySelector('.qs');
+    const r = Q[i], st = qState(r), s = d.querySelector('.qs'), inf = qInfo(r);
     s.textContent = st[0]; s.className = 'qs ' + st[1];
     d.classList.toggle('on', i === qi);
+    d.classList.toggle('is-done', st[1] === 'done' || (st[1] === 'ok' && !!inf && inf.found));
+    d.classList.toggle('is-redo', st[1] === 'redo');
+    const t = d.querySelector('.qt'); if (t) t.readOnly = !!inf && inf.found && !r.force && r.t.trim() !== '' && (st[1] === 'done' || st[1] === 'ok');
+    const qa = d.querySelector('.qa');
+    if (qa) {
+      const exists = !!inf && inf.found && !!r.t.trim(), fb = qa.querySelector('[data-act="force"]'), db = qa.querySelector('[data-act="del"]');
+      fb.hidden = !exists; fb.textContent = r.force ? '다시 코딩 취소' : '다시 코딩'; fb.classList.toggle('on', !!r.force);
+      db.hidden = !(inf && inf.mine); db.textContent = inf && inf.base ? '내 저장본 지우기' : '저장본 지우기';
+      qa.hidden = fb.hidden && db.hidden;
+    }
+  }
+  // 이 권의 현황 줄 + 브라우저에만 저장된 행 지우기
+  function qInfoBar() {
+    const el = $('aiQInfo'); if (!el) return;
+    if (isNaN(S.book) || !S.storeKey) { el.hidden = true; return; }
+    const base = S.ch ? (__baseLines[S.ch.dataVar] || []).length : 0, mine = Object.keys(mineMap()).length;
+    const done = Q.filter(r => r.t.trim() && qState(r)[1] === 'done').length;
+    el.textContent = '';
+    const t = document.createElement('span'); t.innerHTML = '이 ' + S.work.unit + ' — data 파일에 코딩된 행 <b>' + base + '</b>개 · 이 브라우저에만 저장된 행 <b>' + mine + '</b>개'
+      + (done ? ' · 목록의 <b>이미 코딩됨 ' + done + '행</b>은 자동 코딩에서 건너뛰어요' : '');
+    el.appendChild(t);
+    if (mine) { const b = document.createElement('button'); b.type = 'button'; b.className = 'ai-link ai-danger'; b.dataset.act = 'clearmine'; b.textContent = '브라우저 저장분 ' + mine + '행 모두 지우기'; el.appendChild(b); }
+    el.hidden = false;
   }
   function qRender(focusI, caret) {
     qEl.textContent = '';
@@ -8740,8 +9186,13 @@ function goToLine(viewId, idx) {
       const s = document.createElement('span'); s.className = 'qs';
       const go = document.createElement('button'); go.type = 'button'; go.className = 'ai-link'; go.dataset.act = 'go'; go.textContent = '코딩';
       const x = document.createElement('button'); x.type = 'button'; x.className = 'ai-link'; x.dataset.act = 'rm'; x.textContent = '✕'; x.setAttribute('aria-label', '행 지우기');
-      d.append(n, t, s, go, x); qEl.appendChild(d); paintQ(d, i);
+      const qa = document.createElement('span'); qa.className = 'qa'; qa.hidden = true;
+      const fb = document.createElement('button'); fb.type = 'button'; fb.className = 'ai-link'; fb.dataset.act = 'force'; fb.title = '이미 코딩된 행을 다시 코딩해 덮어쓰도록 허용';
+      const db = document.createElement('button'); db.type = 'button'; db.className = 'ai-link ai-danger'; db.dataset.act = 'del'; db.title = '이 브라우저에 저장된 이 행의 내용을 지움 (data 파일은 그대로)';
+      qa.append(fb, db);
+      d.append(n, t, s, qa, go, x); qEl.appendChild(d); paintQ(d, i);
     });
+    qInfoBar();
     const row = focusI != null ? qEl.children[focusI] : null, f = row && row.querySelector('.qt');
     if (f) { const c = caret == null ? f.value.length : Math.min(caret, f.value.length); f.focus(); f.setSelectionRange(c, c); f.scrollIntoView({ block: 'nearest' }); }
   }
@@ -8753,7 +9204,11 @@ function goToLine(viewId, idx) {
       qKey = key; qi = -1;
       Q = isNaN(S.book) ? [] : (qStore()[key] || []).map(r => ({ n: String(r.n), t: String(r.t), d: !!r.d, f: !!r.f, auto: !!r.auto, redo: !!r.redo }));
       qRender();
-    } else { qEl.querySelectorAll('select.qn').forEach(x => { delete x.dataset.full; }); qEl.querySelectorAll('.ai-q').forEach((d, i) => paintQ(d, i)); }
+    } else {
+      // 맨 끝의 빈 칸이 이미 있는 행 번호로 남아 있으면(권을 불러오기 전에 만들어진 칸) 다음 새 번호로 바꾼다
+      const L = Q[Q.length - 1];
+      if (L && !L.t.trim() && !L.touched && !L.d) { const inf = qInfo(L); if (inf && inf.found) { L.n = String(qNextFrom(Q.length - 2)); qRender(); return; } }
+      qEl.querySelectorAll('select.qn').forEach(x => { delete x.dataset.full; }); qEl.querySelectorAll('.ai-q').forEach((d, i) => paintQ(d, i)); qInfoBar(); }
   }
   window.__aiQRefresh = qSync;
   function qGo(i) {
@@ -8772,13 +9227,13 @@ function goToLine(viewId, idx) {
     const i = +d.dataset.i, r = Q[i];
     if (e.target.classList.contains('qn')) {
       // 번호를 고르면: 기존 행이면 그 원문을 불러오고(다시 코딩 가능), 새 행이면 자동으로 채운 글만 비운다
-      r.n = e.target.value.trim();
+      r.n = e.target.value.trim(); r.touched = true;
       const n = parseInt(r.n, 10), ex = n > 0 ? qExist(n) : '';
       if (!r.t.trim() || r.auto) { r.t = ex; r.auto = !!ex; d.querySelector('.qt').value = ex; }
       r.redo = !!ex;
     } else { r.t = e.target.value; r.auto = false; }
-    r.d = false; r.f = false;
-    qSave(); qEl.querySelectorAll('.ai-q').forEach((x, k) => paintQ(x, k));
+    r.d = false; r.f = false; if (e.target.classList.contains('qn')) r.force = false;
+    qSave(); qEl.querySelectorAll('.ai-q').forEach((x, k) => paintQ(x, k)); qInfoBar();
   });
   const qnOf = t => { if (!t || !t.closest) return null; if (t.matches('select.qn')) return t; const w = t.closest('.mac-dd'); return w ? w.querySelector('select.qn') : null; };
   ['click', 'focusin', 'keydown'].forEach(ev => qEl.addEventListener(ev, e => { const s = qnOf(e.target); if (s) qNumFill(s); }, true));
@@ -8817,6 +9272,12 @@ function goToLine(viewId, idx) {
   qEl.addEventListener('keydown', e => {
     const d = e.target.closest('.ai-q'); if (!d || !e.target.classList.contains('qt') || e.isComposing) return;
     const i = +d.dataset.i, el = e.target, a = el.selectionStart, b = el.selectionEnd;
+    if (el.readOnly && (e.key === 'Enter' || e.key === 'Backspace' || e.key === 'Delete') && !(e.key === 'Enter' && (e.ctrlKey || e.metaKey))) {
+      e.preventDefault();
+      if (e.key === 'Enter') { const nx = qEl.children[i + 1], f2 = nx && nx.querySelector('.qt'); if (f2) f2.focus(); }
+      else qMsg('이미 코딩된 행이에요. 고치려면 행의 ‘다시 코딩’을 먼저 누르세요.');
+      return;
+    }
     if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) { e.preventDefault(); if (Q[i].t.trim()) qGo(i); else setStatus('코딩할 원문을 먼저 입력하세요.'); return; }
     if ((e.key === 'ArrowUp' || e.key === 'ArrowDown') && !e.shiftKey && !e.altKey && !e.ctrlKey && !e.metaKey) {
       const to = qEl.children[i + (e.key === 'ArrowUp' ? -1 : 1)], f = to && to.querySelector('.qt');
@@ -8866,9 +9327,67 @@ function goToLine(viewId, idx) {
     const b = e.target.closest('[data-act]'); if (!b) return;
     const i = +b.closest('.ai-q').dataset.i;
     if (b.dataset.act === 'go') qGo(i);
+    else if (b.dataset.act === 'force') qForce(i);
+    else if (b.dataset.act === 'del') qDelLocal(i);
     else { Q.splice(i, 1); if (qi === i) qi = -1; else if (qi > i) qi--; qSave(); qRender(); }
   });
-  $('aiQDone').addEventListener('click', () => { Q = Q.filter(r => qState(r)[1] !== 'ok'); qi = -1; qSave(); qRender(); });
+  $('aiQDone').addEventListener('click', () => { Q = Q.filter(r => { const c = qState(r)[1]; return c !== 'ok' && c !== 'done'; }); qi = -1; qSave(); qRender(); });
+  $('aiQDone').textContent = '코딩된 행 치우기';
+  // 이미 코딩된 행을 다시 코딩해 덮어쓸지: 행마다 직접 눌러야 허용된다
+  function qForce(i) {
+    const r = Q[i], inf = qInfo(r); if (!inf || !inf.found) return;
+    if (!r.force) {
+      if (!confirm('이미 코딩된 ' + inf.n + '행(' + inf.ref + ')을 다시 코딩해서 덮어쓸까요?\n' + (inf.base ? 'data 파일에 있는 내용 대신 새 결과가 이 브라우저에 저장돼요.' : '이 브라우저에 저장된 내용이 새 결과로 바뀌어요.'))) return;
+      r.force = true; r.d = false; r.f = false;
+      if (!r.t.trim()) { const ex = qExist(inf.n); if (ex) { r.t = ex; r.auto = true; qSave(); qRender(i); return; } }
+    } else r.force = false;
+    qEl.querySelectorAll('.ai-q').forEach((d, k) => paintQ(d, k)); qInfoBar(); dockSync();
+  }
+  // 이 브라우저에 저장된(잘못 쌓인) 한 행을 지운다. data 파일에 있는 원본은 그대로.
+  async function qDelLocal(i) {
+    const r = Q[i], inf = qInfo(r); if (!inf || !inf.mine) return;
+    if (!confirm(inf.n + '행(' + inf.ref + ')의 이 브라우저 저장본을 지울까요?\n' + (inf.base ? '→ data 파일에 있는 원본 행으로 돌아가요.' : '→ 이 행이 사라져요.') + '\n(이미 data 파일에 반영한 내용은 그대로예요)')) return;
+    const store = loadUserLines(), ch = S.ch;
+    [S.storeKey, ch ? 'draft:' + ch.workKey + ':' + ch.book : null].forEach(k => { if (k && store[k]) { delete store[k][inf.ref]; if (!Object.keys(store[k]).length) delete store[k]; } });
+    if (!saveUserLines(store)) { qMsg('지우지 못했어요. 브라우저 저장 공간을 확인해 주세요.'); return; }
+    r.d = false; r.f = false; r.force = false; S.dirty = false;
+    applyToChapter(); await loadLines(); refresh(true); qSave(); qSync(); unsavedSync();
+    qMsg(inf.n + '행의 브라우저 저장본을 지웠어요' + (inf.base ? ' (원본 행으로 돌아갔어요).' : '.'));
+  }
+  // 맨 위에서 고른 행을 목록에 놓고 그 행으로 이동한다 (이미 있으면 그 행을 짚어 주고, 없으면 새 줄을 만든다)
+  function qPickLine(n) {
+    if (!(n > 0) || isNaN(S.book) || S.loading) return;
+    let i = Q.findIndex(r => parseInt(r.n, 10) === n);
+    if (i < 0) {
+      const ex = qExist(n), row = { n: String(n), t: ex, auto: !!ex }, last = Q.length - 1;
+      if (last >= 0 && !Q[last].t.trim()) Q.splice(last, 0, row); else Q.push(row);   // 맨 끝의 빈 칸 앞에 끼운다
+      i = Q.indexOf(row); qSave(); qRender();
+    }
+    qi = i;
+    const d = qEl.children[i]; if (!d) return;
+    qEl.querySelectorAll('.ai-q').forEach((x, k) => paintQ(x, k));
+    d.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    d.classList.remove('flash'); void d.offsetWidth; d.classList.add('flash'); setTimeout(() => d.classList.remove('flash'), 1600);
+    const f = d.querySelector('.qt'); if (f && !f.readOnly) f.focus({ preventScroll: true });
+  }
+  inLine.addEventListener('change', () => qPickLine(parseInt(inLine.value, 10)));
+  inLine.addEventListener('keydown', e => { if (e.key === 'Enter' && !e.isComposing) { const n = parseInt(inLine.value, 10); if (n > 0) { e.preventDefault(); qPickLine(n); } } });
+  // 번호 격자에서 여러 개를 골랐을 때: afterNum 행 바로 뒤(없으면 맨 끝 빈 칸 앞)에 새 줄을 끼운다. 이미 목록에 있는 번호는 건너뛴다.
+  window.__aiQInsertNums = (nums, afterNum) => {
+    if (isNaN(S.book) || S.loading) return;
+    const have = new Set(Q.map(r => parseInt(r.n, 10)).filter(n => n > 0)), full = new Set(Q.filter(r => r.t.trim()).map(r => parseInt(r.n, 10))), rows = []; let skip = 0;
+    (nums || []).map(n => parseInt(n, 10)).filter(n => n > 0).forEach(n => {
+      if (have.has(n)) { if (full.has(n)) skip++; return; }
+      have.add(n); const ex = qExist(n); rows.push({ n: String(n), t: ex, auto: !!ex });
+    });
+    if (rows.length) {
+      let at = Q.findIndex(r => parseInt(r.n, 10) === afterNum);
+      if (at >= 0) at += 1; else { at = Q.length; if (at > 0 && !Q[at - 1].t.trim()) at -= 1; }   // 맨 끝의 빈 칸 앞에 끼운다
+      Q.splice(at, 0, ...rows); qSave(); qRender(at);
+    }
+    qMsg((rows.length ? rows.length + '개 행을 목록에 추가했어요.' : '') + (skip ? (rows.length ? ' ' : '') + '이미 목록에 있는 ' + skip + '개 번호는 건너뛰었어요.' : ''));
+  };
+  $('aiQInfo').addEventListener('click', e => { if (e.target.closest('[data-act="clearmine"]')) clearMineFromBrowser(); });
   $('aiQClear').addEventListener('click', () => { if (Q.some(r => r.t.trim()) && !confirm('일괄 입력 목록을 모두 비울까요? (저장된 행 데이터는 그대로예요)')) return; Q = []; qi = -1; qSave(); qRender(); });
 
   // ---- 규칙 파일(같은 폴더의 classics_data_generation_prompt.md)을 읽어 요청에 붙이고, Claude의 JSON 답을 한꺼번에 가져온다 ----
@@ -8900,8 +9419,8 @@ function goToLine(viewId, idx) {
     if (isNaN(S.book)) { qMsg('먼저 위에서 ' + S.work.unit + ' 번호를 고르세요.'); return; }
     const rows = Q.filter(r => r.t.trim()), bad = rows.filter(r => !(parseInt(r.n, 10) > 0));
     if (bad.length) { qMsg('번호가 없는 행이 있어요: “' + bad[0].t.slice(0, 20) + '…” 번호를 먼저 넣어 주세요.'); return; }
-    const todo = rows.filter(r => qState(r)[1] !== 'ok');
-    if (!todo.length) { qMsg('보낼 행이 없어요. 원문을 입력하거나 붙여넣으세요 (이미 저장된 행은 빼요).'); return; }
+    const todo = rows.filter(qTodo);
+    if (!todo.length) { qMsg('보낼 행이 없어요. 원문을 입력하거나 붙여넣으세요 (이미 코딩됐거나 저장된 행은 빼요).'); return; }
     const withSpec = $('aiQWithSpec').checked;
     if (withSpec && !SPEC) await loadSpec();
     if (withSpec && !SPEC) { qMsg('규칙 파일(' + SPEC_FILE + ')을 찾지 못했어요. 이 파일과 같은 폴더에 두었는지 확인하거나, ‘규칙 파일 직접 선택’으로 한 번 불러오세요. (이미 대화에 규칙을 보낸 뒤라면 ‘규칙 전문 포함’을 끄고 복사하세요.)'); return; }
@@ -8959,7 +9478,7 @@ function goToLine(viewId, idx) {
       const line = Object.assign({ ref: want }, it, { ref: want, trans: String(it.trans || ''), words });
       mine[want] = line; saved.push(line);
       const row = Q.find(r => parseInt(r.n, 10) === n && r.t.trim());
-      if (row) row.d = true;
+      if (row) { row.d = true; row.force = false; }
       if (row && strip(row.t) !== strip(words.map(x => x.g).join(''))) warn.push(n);
     });
     if (!saved.length) { qMsg('저장한 행이 없어요.' + (skip.length ? '\n건너뜀: ' + skip.join(', ') : '')); return; }
@@ -8973,7 +9492,7 @@ function goToLine(viewId, idx) {
   });
 
   // ---- data 파일로 내보내기: 원본 행 + 내 수정본을 합쳐 data/data-lines….js 와 같은 형식(CRLF, 들여쓰기 2칸)으로 만든다 ----
-  async function exportBuild(allowNoChanges) {
+  async function exportBuild(allowNoChanges, extraRows) {
     const ch = S.ch;
     if (!ch) { qMsg('이 권은 아직 저장된 행이 없어요. 한 행이라도 코딩해서 저장하면 data 파일을 받을 수 있어요.'); return null; }
     if (S.loading) { qMsg('불러오는 중이에요. 잠시 뒤 다시 눌러 주세요.'); return null; }
@@ -8982,8 +9501,13 @@ function goToLine(viewId, idx) {
     const base = __baseLines[ch.dataVar] || [];
     const mineN = Object.keys(userLinesFor(ch.dataVar)).length;
     if (!mineN && !allowNoChanges) { qMsg('브라우저에 남아 있는 수정분이 없어요. 이 권은 현재 불러온 데이터 파일과 같은 상태예요.'); return null; }
-    const bkEntry = !mineN ? bkLoad()[ch.dataVar] : null, fromBk = bkEntry && bkEntry.lines ? Object.keys(bkEntry.lines).length : 0;
-    const merged = mergeUserLines(base, ch.dataVar, fromBk ? bkEntry.lines : null);   // 수정분이 없어도 직전 백업이 있으면 함께 담아, 다시 받아도 옛 내용으로 덮어쓰지 않게 한다
+    // 직전에 받은 파일로 옮겨 둔 백업 행 중 지금 원본(base)에 없는 행은 새 수정분이 있어도 함께 담는다 — 안 그러면 파일을 아직 교체/새로고침하지 않은 상태에서 한 행만 고쳐 받을 때 이전 행이 전부 사라진다
+    const mineAll = userLinesFor(ch.dataVar), bkE = bkLoad()[ch.dataVar], bkLines = bkE ? bkAllLines(bkE) : {};
+    const baseRefs = new Set(base.map(l => l && l.ref)), rescue = {};
+    Object.keys(bkLines).forEach(r => { if (!(r in mineAll) && !baseRefs.has(r)) rescue[r] = bkLines[r]; });
+    const fromBk = Object.keys(rescue).length;
+    const extraObj = {}; (extraRows || []).forEach(l => { if (l && l.ref && !baseRefs.has(l.ref) && !(l.ref in mineAll) && !(l.ref in rescue)) extraObj[l.ref] = l; });
+    const merged = mergeUserLines(base, ch.dataVar, Object.assign({}, extraObj, rescue, mineAll));
     const body = JSON.stringify(merged, (k, v) => (k && k[0] === '_' ? undefined : v), 2).replace(/\n/g, '\r\n');
     const js = '// 이 파일은 shell.html의 정보 추가 → data 파일로 내보내기로 만들었습니다 (' + new Date().toISOString().slice(0, 10) + ').\r\n'
       + '// data-lines….json 도 따로 관리한다면 그쪽도 같은 내용으로 갱신하세요 (wrap_data.py가 json으로 이 파일을 덮어씁니다).\r\n'
@@ -9050,6 +9574,17 @@ function goToLine(viewId, idx) {
     const w = await handle.createWritable();
     try { await w.write(text); await w.close(); } catch (e) { try { await w.abort(); } catch (_) {} throw e; }
   }
+  async function readExistingRows(handle) {   // 고른 위치에 이미 있는 data 파일의 행들(없거나 읽지 못하면 빈 배열)
+    try {
+      const t = await (await handle.getFile()).text(), a = t.indexOf('= ['), b = t.indexOf('\n];', a);
+      if (a < 0 || b < 0) return [];
+      const arr = JSON.parse(t.slice(a + 2, b + 2)); return Array.isArray(arr) ? arr : [];
+    } catch (e) { return []; }
+  }
+  function adoptExported(x) {   // 받은(저장한) 내용을 지금 화면의 원본으로 삼아, 파일을 교체·새로고침하기 전에 또 받아도 이전 행이 빠지지 않게 한다
+    __baseLines[x.ch.dataVar] = x.merged;
+    if (window.__RAW_CHAPTER_DATA) window.__RAW_CHAPTER_DATA[x.fileId] = x.merged;
+  }
   const expectedFileName = () => { const W = EXTRA_WORKS[S.work.key]; return S.ch ? CHAPTER_DATA_IDS[S.ch.dataVar] + '.js' : (W && !isNaN(S.book) ? 'data-lines' + W.name + S.book + '.js' : ''); };
   const BK_KEY = 'userLinesBackup';
   function bkLoad() { try { return JSON.parse(localStorage.getItem(BK_KEY) || '{}') || {}; } catch (e) { return {}; } }
@@ -9065,11 +9600,11 @@ function goToLine(viewId, idx) {
   }
   function dockSync() {
     const t = $('aiDockTxt'); if (!t) return;
-    const todo = Q.filter(r => r.t.trim() && parseInt(r.n, 10) > 0 && ['저장됨 ✓', '번호 중복'].indexOf(qState(r)[0]) < 0).length, f = Q.filter(r => r.f).length;
+    const todo = Q.filter(r => r.t.trim() && parseInt(r.n, 10) > 0 && qTodo(r)).length, f = Q.filter(r => r.f).length;
     t.textContent = auto.run ? '코딩 중…' : todo ? '코딩할 행 ' + todo + '개' + (f ? ' · 실패 ' + f : '') : '코딩할 행 없음 — 원문을 붙여넣으세요';
   }
   { const mv = document.querySelector('.ai-main-act'); if (mv) $('aiDockBtns').appendChild(mv); }
-  setInterval(() => { if (ov.classList.contains('show')) { unsavedSync(); dockSync(); specSync(); saveSync(); bkSync(); } }, 1000);
+  setInterval(() => { if (ov.classList.contains('show')) { unsavedSync(); dockSync(); specSync(); saveSync(); bkSync(); if (!auto.run) qInfoBar(); } }, 1000);
   $('aiUnsavedDl').addEventListener('click', () => $('aiExpDl').click());
   window.addEventListener('beforeunload', e => { if (auto.run || unsavedN() > 0) { e.preventDefault(); e.returnValue = ''; } });
   const ckInp = $('aiGemCk'); try { const v = localStorage.getItem('aiCk'); ckInp.value = v === null ? '25' : v; } catch (e) { ckInp.value = '25'; }
@@ -9093,7 +9628,10 @@ function goToLine(viewId, idx) {
     if (!saveUserLines(store)) throw new Error('브라우저 저장 공간 때문에 수정본을 비우지 못했어요.');
     applyToChapter(); await loadLines(); refresh(true); qSync();
   }
-  // ---- 수정분 백업(직전 1회): 전체 파일을 받으면 브라우저의 수정분을 여기로 옮기고, 이전 백업은 교체한다 ----
+  // ---- 수정분 백업(최근 3회): 전체 파일을 받을 때마다 브라우저의 수정분을 여기로 옮기고, 가장 오래된 회차부터 밀어낸다 ----
+  const BK_GENS = 3;
+  const bkGens = e => (e && e.lines ? [{ at: e.at, file: e.file, lines: e.lines }] : []).concat(e && Array.isArray(e.gens) ? e.gens.filter(g => g && g.lines) : []).slice(0, BK_GENS);   // 최신 회차가 앞
+  const bkAllLines = e => bkGens(e).slice().reverse().reduce((acc, g) => Object.assign(acc, g.lines), {});   // 모든 회차를 합친 행 (최신이 우선)
   const fmtAt = iso => { const d = new Date(iso); return isNaN(d) ? '' : d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0') + ' ' + String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0'); };
   async function rotateMine() {   // 반환: 백업으로 옮긴 행 수 (0 = 옮길 게 없음, -1 = 저장 공간 문제로 그대로 둠)
     const key = S.storeKey, ch = S.ch, mine = userLinesFor(key), n = Object.keys(mine).length;
@@ -9101,8 +9639,8 @@ function goToLine(viewId, idx) {
     const store = loadUserLines(), draftKey = ch ? 'draft:' + ch.workKey + ':' + ch.book : '', hold = { k: store[key], d: draftKey ? store[draftKey] : undefined };
     delete store[key]; if (draftKey) delete store[draftKey];
     if (!saveUserLines(store)) return -1;
-    const bk = bkLoad(), prev = bk[key];
-    bk[key] = { at: new Date().toISOString(), file: ch ? fileOf(ch) : '', lines: mine };
+    const bk = bkLoad(), prevG = bkGens(bk[key]);
+    bk[key] = { at: new Date().toISOString(), file: ch ? fileOf(ch) : '', lines: mine, gens: prevG.slice(0, BK_GENS - 1) };   // 직전 회차들은 한 칸씩 뒤로 밀고, 3회를 넘으면 가장 오래된 것을 버린다
     if (!bkSave(bk)) {   // 백업을 못 쓰면 원래대로 되돌려 수정분을 잃지 않게 한다
       const back = loadUserLines(); if (hold.k) back[key] = hold.k; if (hold.d && draftKey) back[draftKey] = hold.d; saveUserLines(back);
       return -1;
@@ -9112,23 +9650,31 @@ function goToLine(viewId, idx) {
   }
   function bkSync() {
     const box = $('aiBk'); if (!box) return;
-    const e = S.storeKey ? bkLoad()[S.storeKey] : null, n = e && e.lines ? Object.keys(e.lines).length : 0;
-    $('aiBkCnt').textContent = n ? '— ' + n + '행 · ' + fmtAt(e.at) : '— 없음';
+    const e = S.storeKey ? bkLoad()[S.storeKey] : null, gens = bkGens(e), n = gens.length, sel = $('aiBkGen');
+    const sig = gens.map(g => g.at + ':' + Object.keys(g.lines).length).join('|');
+    if (sel.dataset.sig !== sig) {   // 1초마다 불리므로 내용이 바뀐 때만 다시 그린다 (열어 둔 목록이 닫히지 않게)
+      const keep = sel.value;
+      sel.textContent = ''; sel.dataset.sig = sig;
+      gens.forEach((g, i) => { const o = document.createElement('option'); o.value = String(i); o.textContent = (i === 0 ? '최신' : i + '회 전') + ' · ' + Object.keys(g.lines).length + '행 · ' + fmtAt(g.at); sel.appendChild(o); });
+      if (keep && sel.querySelector('option[value="' + keep + '"]')) sel.value = keep;
+    }
+    sel.hidden = !n;
+    $('aiBkCnt').textContent = n ? '— ' + n + '회분 · 최신 ' + Object.keys(gens[0].lines).length + '행 · ' + fmtAt(gens[0].at) : '— 없음';
     $('aiBkInfo').textContent = n
-      ? (e.file || '이 권') + ' 전체 파일을 받으면서 보관한 직전 수정분이에요. 다음에 전체 파일을 받으면 이 백업은 그때의 수정분으로 교체돼요. 파일을 교체했는데 내용이 이상하면 ‘백업 복원’으로 브라우저에 되돌릴 수 있어요.'
-      : '아직 백업이 없어요. 이 권의 ‘이 권 전체 받기’를 누르면 그때의 수정분이 여기에 한 번분만 보관돼요.';
+      ? (gens[0].file || '이 권') + ' 전체 파일을 받을 때마다 그때의 수정분을 최근 ' + BK_GENS + '회까지 보관해요. 파일을 교체했는데 내용이 이상하면 회차를 골라 ‘백업 복원’으로 브라우저에 되돌릴 수 있어요.'
+      : '아직 백업이 없어요. 이 권의 ‘이 권 전체 받기’를 누를 때마다 그때의 수정분이 최근 ' + BK_GENS + '회까지 여기에 보관돼요.';
     $('aiBkRestore').disabled = !n; $('aiBkDel').disabled = !n;
   }
   $('aiBkRestore').addEventListener('click', async () => {
-    const bk = bkLoad(), e = bk[S.storeKey]; if (!e || !e.lines) return;
-    const store = loadUserLines(); store[S.storeKey] = Object.assign({}, e.lines, store[S.storeKey] || {});
+    const bk = bkLoad(), gens = bkGens(bk[S.storeKey]), g = gens[parseInt($('aiBkGen').value, 10) || 0]; if (!g) return;
+    const store = loadUserLines(); store[S.storeKey] = Object.assign({}, g.lines, store[S.storeKey] || {});
     if (!saveUserLines(store)) { qMsg('브라우저 저장 공간이 부족해서 복원하지 못했어요.'); return; }
     applyToChapter(); await loadLines(); refresh(true); qSync(); unsavedSync(); saveSync();
-    qMsg('백업 ' + Object.keys(e.lines).length + '행을 수정분으로 되돌렸어요 (지금 고친 행이 있으면 그쪽을 우선했어요). 백업은 그대로 남아 있어요.');
+    qMsg('백업(' + fmtAt(g.at) + ') ' + Object.keys(g.lines).length + '행을 수정분으로 되돌렸어요 (지금 고친 행이 있으면 그쪽을 우선했어요). 백업은 그대로 남아 있어요.');
   });
   $('aiBkDel').addEventListener('click', () => {
     const bk = bkLoad(), e = bk[S.storeKey]; if (!e) return;
-    if (!confirm('이 권의 수정분 백업 ' + Object.keys(e.lines || {}).length + '행을 지울까요?\n받은 data 파일을 이미 교체해서 확인했을 때만 지우세요.')) return;
+    if (!confirm('이 권의 수정분 백업 ' + bkGens(e).length + '회분(' + Object.keys(bkAllLines(e)).length + '행)을 모두 지울까요?\n받은 data 파일을 이미 교체해서 확인했을 때만 지우세요.')) return;
     delete bk[S.storeKey]; bkSave(bk); bkSync(); qMsg('수정분 백업을 지웠어요.');
   });
   $('aiExpDl').addEventListener('click', async () => {
@@ -9136,18 +9682,26 @@ function goToLine(viewId, idx) {
     // 저장 위치 선택창은 클릭 직후에 열어야 하므로 데이터를 만들기 전에 먼저 띄운다 (파일 이름에 권 번호 포함)
     const pk = S.ch ? await pickSaveHandle(want) : { handle: null };
     if (pk.cancel) { qMsg('저장 위치 선택을 취소했어요. 파일은 받지 않았고 수정분도 그대로예요.'); return; }
-    const x = await exportBuild(true); if (!x) return;
+    let x = await exportBuild(true); if (!x) return;
     const name = x.fileId + '.js';
-    let how = '받았어요';
+    let how = '받았어요', joined = 0;
     if (pk.handle) {
-      try { await writeToHandle(pk.handle, x.js); how = '저장했어요 (' + pk.handle.name + ')'; }
-      catch (e) { qMsg('고른 위치에 저장하지 못했어요: ' + (e && e.message ? e.message : e) + ' — 다시 눌러 주세요. 수정분은 그대로 남겨 뒀어요.'); return; }
+      try {
+        // 고른 파일에 이미 있는 행이 이번 내용에 없으면(예: 이 화면이 예전 원본을 들고 있을 때) 줄어든 채로 덮어쓰지 않게 먼저 확인한다
+        const have = new Set(x.merged.map(l => l && l.ref)), lost = (await readExistingRows(pk.handle)).filter(l => l && l.ref && !have.has(l.ref) && !isForeignRow(x.ch, l));
+        if (lost.length) {
+          if (confirm('고른 파일에는 있는데 이번 내용에는 없는 행이 ' + lost.length + '개 있어요 (' + lost.slice(0, 3).map(l => l.ref).join(', ') + (lost.length > 3 ? ' …' : '') + ').\n\n[확인] 그 행들을 합쳐서 저장 (추천)\n[취소] 이번 내용만으로 덮어쓰기 (그 행은 사라져요)')) { const x2 = await exportBuild(true, lost); if (x2) { x = x2; joined = lost.length; } }
+        }
+        await writeToHandle(pk.handle, x.js); how = '저장했어요 (' + pk.handle.name + ')';
+      } catch (e) { qMsg('고른 위치에 저장하지 못했어요: ' + (e && e.message ? e.message : e) + ' — 다시 눌러 주세요. 수정분은 그대로 남겨 뒀어요.'); return; }
     } else download(name, x.js, 'text/javascript');
+    adoptExported(x);
     const moved = await rotateMine();
     qMsg(name + ' 전체 파일을 ' + how + ' (' + x.merged.length + '행). ' + (pk.handle ? (pk.handle.name.toLowerCase() !== name.toLowerCase() ? '⚠ 파일 이름이 ' + name + ' 이 아니에요 — data 폴더에 넣을 때 이름을 확인하세요. ' : '') : 'data 폴더의 같은 이름 파일을 이 파일로 교체한 뒤 새로고침하세요.')
       + (x.fromBk ? '\n(이번엔 새 수정분이 없어서 직전 백업 ' + x.fromBk + '행을 포함해 받았어요.)' : '')
+      + (joined ? '\n고른 파일에만 있던 ' + joined + '행을 합쳐서 저장했어요.' : '')
       + (x.foreignN ? '\n이 파일은 ' + x.ch.book + '권 행만 담았어요. 다른 권 번호가 붙은 행 ' + x.foreignN + '개는 뺐어요.' : '')
-      + (moved > 0 ? '\n수정분 ' + moved + '행은 백업(직전 1회)으로 옮겼어요 — ⋯ → ‘수정분 백업’에서 복원할 수 있어요. 파일을 교체하기 전까지는 화면에 예전 내용이 보일 수 있어요.' : '')
+      + (moved > 0 ? '\n수정분 ' + moved + '행은 백업(최근 3회)으로 옮겼어요 — ⋯ → ‘수정분 백업’에서 복원할 수 있어요. 파일을 교체하기 전까지는 화면에 예전 내용이 보일 수 있어요.' : '')
       + (moved < 0 ? '\n⚠ 브라우저 저장 공간 문제로 수정분을 백업으로 옮기지 못해 그대로 두었어요.' : '')
       );
   });
@@ -9483,8 +10037,9 @@ function goToLine(viewId, idx) {
     if (S.loading) { qMsg('불러오는 중이에요. 잠시 뒤 다시 눌러 주세요.'); return; }
     if (!SPEC) await loadSpec();
     if (!SPEC) { $('aiSettings').open = true; qMsg('규칙 파일(' + SPEC_FILE + ')을 찾지 못했어요. 설정의 ‘규칙 파일 선택’으로 한 번 불러오면 이 브라우저에 저장돼서 다음부터는 묻지 않아요.'); const b = $('aiSpecPick2'); if (b) b.focus(); return; }
-    const rows = Q.filter(r => r.t.trim() && parseInt(r.n, 10) > 0 && ['저장됨 ✓', '번호 중복'].indexOf(qState(r)[0]) < 0 && (!onlyFailed || r.f)).map(r => ({ n: parseInt(r.n, 10), t: r.t.normalize('NFC').trim() }));
-    if (!rows.length) { qMsg(onlyFailed ? '다시 할 실패한 행이 없어요.' : '처리할 행이 없어요 (이미 저장됐거나 번호가 없는 행은 건너뛰어요).'); return; }
+    const rows = Q.filter(r => r.t.trim() && parseInt(r.n, 10) > 0 && qTodo(r) && (!onlyFailed || r.f)).map(r => ({ n: parseInt(r.n, 10), t: r.t.normalize('NFC').trim() }));
+    const skipDone = Q.filter(r => r.t.trim() && parseInt(r.n, 10) > 0 && qState(r)[1] === 'done').length;
+    if (!rows.length) { qMsg(onlyFailed ? '다시 할 실패한 행이 없어요.' : '처리할 행이 없어요 (이미 코딩됐거나 저장됐거나 번호가 없는 행은 건너뛰어요' + (skipDone ? ' — 이미 코딩됨 ' + skipDone + '행' : '') + '). 다시 코딩하려면 그 행의 ‘다시 코딩’을 누르세요.'); return; }
     auto.run = true; auto.stop = false; $('aiAutoGo').textContent = '멈추기';
     let lock = null; try { lock = await navigator.wakeLock.request('screen'); } catch (e) {}
     const log = [], failed = [], reasons = {}; let streak = 0, lastReq = 0, fatal = false, okN = 0, rotN = 0, curModel = g.model;
@@ -9495,6 +10050,7 @@ function goToLine(viewId, idx) {
     progStart(rows.length, g.gap, () => ({ ok: okN, failed })); auto.prog.reasons = reasons;
     for (const row of rows) {
       if (auto.stop || fatal) break;
+      { const cur0 = Q.find(r => parseInt(r.n, 10) === row.n && r.t.trim()); if (cur0) { const c0 = qState(cur0)[1]; if (c0 === 'ok' || c0 === 'done') continue; } }   // 실행 중에 직접 저장했거나 이미 코딩된 행은 덮어쓰지 않는다
       const want = refOf(row.n); let fb = '', saved = false, why = '', rate = 0;
       for (let a = 1; a <= 3 && !auto.stop; a++) {
         await pauseGate(); if (auto.stop) break; const wait = g.gap * 1000 - (Date.now() - lastReq); if (wait > 0) await sleep(wait); if (auto.stop) break; lastReq = Date.now();
@@ -9525,7 +10081,7 @@ function goToLine(viewId, idx) {
         const store = loadUserLines(); (store[S.storeKey] = store[S.storeKey] || {})[want] = line;
         if (!saveUserLines(store)) { fatal = true; why = '브라우저 저장 공간이 가득 찼어요'; break; }
         saved = true; okN++; rotN = 0; streak = 0; { const nb = $('aiAutoDlNow'); if (nb) nb.hidden = false; }
-        const qr = Q.find(r => parseInt(r.n, 10) === row.n && r.t.trim()); if (qr) { qr.d = true; qr.f = false; qSave(); }
+        const qr = Q.find(r => parseInt(r.n, 10) === row.n && r.t.trim()); if (qr) { qr.d = true; qr.f = false; qr.force = false; qSave(); }
         log.push('✓ ' + row.n + '행' + (chk.soft.length ? ' (문장 수 일부 미달)' : '')); qSync();
         if (ckEvery() && okN % ckEvery() === 0) { try { log.push(await checkpoint(okN + '행째')); } catch (e) { log.push('⚠ 변경분 다운로드 실패: ' + e.message); } }
         break;
@@ -9538,7 +10094,7 @@ function goToLine(viewId, idx) {
     if (auto.prog) { const cnt = {}; Object.keys(reasons).forEach(k => { cnt[reasons[k]] = (cnt[reasons[k]] || 0) + 1; }); auto.prog.why = Object.keys(cnt).map(r => r + ' (' + cnt[r] + '행)').join(' / '); }
     auto.run = false; $('aiAutoGo').textContent = '자동 코딩 시작'; progEnd({ stopped: auto.stop, fatal });
     applyToChapter(); await loadLines(); refresh(true); qSync();
-    let doneMsg = ((auto.stop ? '멈췄어요. ' : fatal ? '중단했어요. ' : '끝났어요. ') + '저장 ' + okN + '행' + (failed.length ? ', 실패 ' + failed.length + '행(' + failed.join(', ') + ')' : '') + '.\n' + log.slice(-6).join('\n')
+    let doneMsg = ((auto.stop ? '멈췄어요. ' : fatal ? '중단했어요. ' : '끝났어요. ') + (skipDone ? '이미 코딩된 ' + skipDone + '행은 건너뛰었어요. ' : '') + '저장 ' + okN + '행' + (failed.length ? ', 실패 ' + failed.length + '행(' + failed.join(', ') + ')' : '') + '.\n' + log.slice(-6).join('\n')
       + '\n다 끝나면 맨 아래 ‘이 권 전체 받기’로 파일을 받아 data 폴더의 같은 이름 파일을 교체하세요.');
     // 선택한 경우 자동 코딩이 끝났을 때 변경분 동기화 코드도 내려받는다.
     const dlCb = $('aiGemAutoDl');
@@ -9546,8 +10102,8 @@ function goToLine(viewId, idx) {
       try {
         const x = await exportBuild(true);
         if (x) {
-          download(x.fileId + '.js', x.js, 'text/javascript'); doneMsg += '\n⬇ ' + x.fileId + '.js 전체 파일(' + x.merged.length + '행)을 내려받았어요. data 폴더의 같은 이름 파일을 교체하세요.';
-          { const mv = await rotateMine(); if (mv > 0) doneMsg += '\n수정분 ' + mv + '행은 백업(직전 1회)으로 옮겼어요 (⋯ → 수정분 백업).'; }
+          download(x.fileId + '.js', x.js, 'text/javascript'); adoptExported(x); doneMsg += '\n⬇ ' + x.fileId + '.js 전체 파일(' + x.merged.length + '행)을 내려받았어요. data 폴더의 같은 이름 파일을 교체하세요.';
+          { const mv = await rotateMine(); if (mv > 0) doneMsg += '\n수정분 ' + mv + '행은 백업(최근 3회)으로 옮겼어요 (⋯ → 수정분 백업).'; }
         }
       } catch (e) { doneMsg += '\n⚠ .js 자동 다운로드 실패: ' + (e && e.message ? e.message : e) + ' — 맨 아래 ‘이 권 전체 받기’ 버튼으로 직접 받으세요.'; }
     }
@@ -9768,6 +10324,140 @@ document.addEventListener('keydown', e => {
     return api;
   }
 
+  /* ④ 번호 격자: 번호를 한 줄 목록이 아니라 행×열 격자로 한눈에 보여 주고, 여러 개를 한꺼번에 고르게 한다 */
+  const NG_KEY = 'aiNumMulti';
+  const ngFmt = vs => {   // 1,2,3,5 → "1–3, 5"
+    const a = vs.map(Number).filter(n => !isNaN(n)).sort((x, y) => x - y), out = [];
+    for (let i = 0; i < a.length;) { let j = i; while (j + 1 < a.length && a[j + 1] === a[j] + 1) j++; out.push(j - i >= 2 ? a[i] + '–' + a[j] : a.slice(i, j + 1).join(', ')); i = j + 1; }
+    return out.join(', ');
+  };
+  function NumGrid(o) {
+    if (active) active.close();
+    let multi = !!o.multi;
+    if (multi) { try { if (localStorage.getItem(NG_KEY) === '0') multi = false; } catch (e) {} }
+    const sel = new Set(), cur = new Set((o.current || []).filter(Boolean).map(String));
+    let items = [], cells = [], cols = 10, hi = -1, moved = false, lastIdx = -1, drag = null, supClick = false, filtered = !!o.filtered;
+    const mk = (tag, cls, txt) => { const n = document.createElement(tag); if (cls) n.className = cls; if (txt != null) n.textContent = txt; return n; };
+    const btn = (cls, txt) => { const b = mk('button', cls, txt); b.type = 'button'; return b; };
+    const menu = mk('div', 'mac-ng'), head = mk('div', 'mac-ng-top'), seg = mk('div', 'mac-ng-seg'), legend = mk('div', 'mac-ng-legend'),
+          jump = mk('div', 'mac-ng-jump'), grid = mk('div', 'mac-ng-grid'), foot = mk('div', 'mac-ng-foot'), count = mk('span', 'mac-ng-count'),
+          clr = btn('', '해제'), go = btn('go', '적용');
+    menu.setAttribute('role', 'dialog'); menu.setAttribute('aria-label', o.label || '번호 고르기'); grid.setAttribute('role', 'listbox');
+    menu.addEventListener('mousedown', e => { e.preventDefault(); e.stopPropagation(); });   // 입력칸에서 포커스가 빠져 닫히지 않게
+    ['pointerdown', 'touchstart', 'click'].forEach(ev => menu.addEventListener(ev, e => e.stopPropagation()));
+    const modeBtns = [['하나', false], ['여러 개', true]].map(([t, m]) => { const b = btn('', t); b.addEventListener('click', () => setMode(m)); seg.appendChild(b); return b; });
+    if (o.multi) head.appendChild(seg);
+    head.appendChild(legend); foot.append(count, clr, go); menu.append(head, jump, grid, foot);
+    document.body.appendChild(menu);
+
+    const setHi = (k, scroll) => { if (hi >= 0 && cells[hi]) cells[hi].classList.remove('hi'); hi = k; if (k >= 0 && cells[k]) { cells[k].classList.add('hi'); if (scroll) cells[k].scrollIntoView({ block: 'nearest' }); } };
+    const setCell = (k, on) => { const v = items[k].v; if (on) sel.add(v); else sel.delete(v); cells[k].classList.toggle('sel', on); };
+    const range = (a, b, on) => { for (let k = Math.min(a, b); k <= Math.max(a, b); k++) setCell(k, on); };
+    function sync() {
+      const vs = Array.from(sel); go.disabled = clr.disabled = !vs.length; count.textContent = '';
+      if (vs.length) { count.appendChild(mk('b', '', vs.length + '개 선택')); count.appendChild(document.createTextNode(' · ' + ngFmt(vs))); count.title = ngFmt(vs); }
+      else { count.textContent = fine ? '클릭 · Shift+클릭=범위 · 드래그로 여러 개' : '눌러서 여러 개 고르세요'; count.title = ''; }
+    }
+    function paintMode() { modeBtns.forEach((b, i) => b.classList.toggle('on', (i === 1) === multi)); foot.hidden = !(o.multi && multi); sync(); }
+    function setMode(m) {
+      multi = m; try { localStorage.setItem(NG_KEY, m ? '1' : '0'); } catch (e) {}
+      if (!m) { sel.clear(); cells.forEach(c => c.classList.remove('sel')); }
+      paintMode(); place();
+    }
+    function finish(vs) { const a = vs.slice().sort((x, y) => x - y); close(true); o.onApply(a); }
+    function onCell(k, e) {
+      if (!multi) { finish([items[k].v]); return; }
+      if (e.shiftKey && lastIdx >= 0) range(lastIdx, k, true); else setCell(k, !sel.has(items[k].v));
+      lastIdx = k; setHi(k); sync();
+    }
+    function render() {
+      grid.textContent = ''; cells = []; const n = items.length;
+      cols = o.cols || (n <= 30 ? 6 : 10);
+      grid.style.gridTemplateColumns = 'repeat(' + cols + ', minmax(0, 1fr))';
+      menu.classList.toggle('cap', !!o.captions);
+      menu.style.width = Math.min(cols * (o.captions ? 50 : 42) + 28, window.innerWidth - 16) + 'px';
+      if (!n) grid.appendChild(mk('div', 'mac-ng-empty', '해당하는 번호가 없어요'));
+      items.forEach((it, k) => {
+        const b = btn('mac-ng-cell' + (it.ex ? ' ex' : '') + (it.inq ? ' inq' : '') + (cur.has(it.v) ? ' cur' : '') + (sel.has(it.v) ? ' sel' : ''), it.v);
+        b.tabIndex = -1; b.dataset.k = String(k); b.setAttribute('role', 'option');
+        if (it.cap) b.appendChild(mk('small', '', it.cap));
+        if (it.tip) b.title = it.tip;
+        b.addEventListener('click', e => { if (supClick) return; onCell(k, e); });
+        cells.push(b); grid.appendChild(b);
+      });
+      legend.textContent = '';
+      const lg = (cls, t) => { const s = mk('span', 'mac-ng-lg'); s.appendChild(mk('i', cls)); s.appendChild(document.createTextNode(t)); legend.appendChild(s); };
+      if (o.exText && items.some(i => i.ex)) lg('ex', o.exText);
+      if (o.inqText && items.some(i => i.inq)) lg('inq', o.inqText);
+      head.hidden = !o.multi && !legend.childNodes.length;
+      jump.textContent = ''; jump.hidden = !(n > 100 && !filtered);
+      if (!jump.hidden) for (let s0 = 0; s0 < n; s0 += 100) {
+        const b = btn('', items[s0].v + '–' + items[Math.min(n, s0 + 100) - 1].v);
+        b.addEventListener('click', () => { grid.scrollTop = Math.max(0, cells[s0].offsetTop - 2); });
+        jump.appendChild(b);
+      }
+      hi = -1; paintMode();
+    }
+    function place() {
+      const r = o.anchor.getBoundingClientRect(), vh = window.innerHeight, vw = window.innerWidth, gap = 6;
+      grid.style.maxHeight = ''; menu.style.top = '0px'; menu.style.bottom = 'auto'; menu.style.left = '0px';
+      const chrome = menu.offsetHeight - grid.offsetHeight, want = grid.scrollHeight + chrome;
+      const below = vh - r.bottom - gap - 8, above = r.top - gap - 8, useBelow = below >= Math.min(want, 280) || below >= above;
+      grid.style.maxHeight = Math.max(80, Math.min(Math.max(120, useBelow ? below : above) - chrome, 380)) + 'px';
+      const h = menu.offsetHeight;
+      menu.style.left = Math.max(8, Math.min(r.left, vw - 8 - menu.offsetWidth)) + 'px';
+      menu.style.top = Math.max(8, useBelow ? r.bottom + gap : r.top - gap - h) + 'px';
+    }
+    function close(refocus) {
+      if (!menu.isConnected) return; menu.remove(); if (active === api) active = null;
+      document.removeEventListener('pointerdown', onDoc, true); document.removeEventListener('keydown', onKey, true);
+      document.removeEventListener('pointerup', onUp, true); document.removeEventListener('pointercancel', onUp, true);
+      window.removeEventListener('resize', place); document.removeEventListener('scroll', onScroll, true);
+      if (o.onClose) o.onClose(!!refocus);
+    }
+    function onDoc(e) { if (!menu.contains(e.target) && !(o.anchor && o.anchor.contains(e.target))) close(); }
+    function onScroll(e) { if (!menu.contains(e.target)) place(); }
+    function onUp() { if (drag && drag.moved) { supClick = true; setTimeout(() => { supClick = false; }, 0); } drag = null; }
+    function onKey(e) {
+      const k = e.key, n = items.length, d = { ArrowLeft: -1, ArrowRight: 1, ArrowUp: -cols, ArrowDown: cols }[k];
+      if (k === 'Escape') { e.preventDefault(); e.stopImmediatePropagation(); close(true); }
+      else if (d !== undefined) {
+        if (!n || ((k === 'ArrowLeft' || k === 'ArrowRight') && hi < 0 && o.anchorIsInput)) return;   // 입력칸의 커서 이동은 그대로 둔다
+        e.preventDefault(); e.stopPropagation(); moved = true;
+        let nk; if (hi < 0) { const c = items.findIndex(i => cur.has(i.v)); nk = c >= 0 ? c : 0; } else { nk = hi + d; if (nk < 0 || nk >= n) nk = hi; }
+        setHi(nk, true);
+      }
+      else if (k === 'Enter') {
+        if (multi && sel.size) { e.preventDefault(); e.stopImmediatePropagation(); finish(Array.from(sel)); }
+        else if (hi >= 0 && (moved || !o.enterNeedsMove)) { e.preventDefault(); e.stopImmediatePropagation(); finish([items[hi].v]); }
+        else close();
+      }
+      else if (k === ' ' && !o.anchorIsInput && hi >= 0) { e.preventDefault(); e.stopPropagation(); if (multi) { setCell(hi, !sel.has(items[hi].v)); lastIdx = hi; sync(); } else finish([items[hi].v]); }
+      else if (k === 'Tab') close();
+    }
+    clr.addEventListener('click', () => { sel.clear(); cells.forEach(c => c.classList.remove('sel')); sync(); });
+    go.addEventListener('click', () => { if (sel.size) finish(Array.from(sel)); });
+    // 마우스로 끌어서 연속 선택 (터치는 눌러서 하나씩 / Shift+클릭으로 범위)
+    grid.addEventListener('pointerdown', e => {
+      if (!multi || e.pointerType !== 'mouse' || e.button !== 0 || e.shiftKey) return;
+      const c = e.target.closest('.mac-ng-cell'); if (!c) return;
+      const k = +c.dataset.k; drag = { a: k, on: !sel.has(items[k].v), base: new Set(sel), moved: false };
+    });
+    grid.addEventListener('pointerover', e => {
+      if (!drag) return; const c = e.target.closest('.mac-ng-cell'); if (!c) return;
+      const k = +c.dataset.k; if (!drag.moved && k === drag.a) return;
+      drag.moved = true; sel.clear(); drag.base.forEach(v => sel.add(v));
+      cells.forEach((cc, j) => cc.classList.toggle('sel', sel.has(items[j].v)));
+      range(drag.a, k, drag.on); lastIdx = k; sync();
+    });
+    const api = { owner: o.owner, close, place, setRows(ni, flt) { items = ni; filtered = !!flt; render(); place(); } };
+    document.addEventListener('pointerdown', onDoc, true); document.addEventListener('keydown', onKey, true);
+    document.addEventListener('pointerup', onUp, true); document.addEventListener('pointercancel', onUp, true);
+    window.addEventListener('resize', place); document.addEventListener('scroll', onScroll, true);
+    active = api; items = o.items || []; render(); place();
+    return api;
+  }
+
   /* ① select */
   function enhance(sel) {
     if (sel._mac || sel.multiple || sel.size > 1 || sel.hasAttribute('data-native') || !sel.parentNode) return; sel._mac = true;
@@ -9783,6 +10473,20 @@ document.addEventListener('keydown', e => {
     function openIt() {
       if (sel.disabled) return;
       if (active && active.owner === sel) { active.close(true); return; }
+      if (sel.classList.contains('qn')) {   // 일괄 입력 목록의 행 번호: 격자 + 여러 개 선택
+        const used = new Set(Array.from(document.querySelectorAll('#aiQ .ai-q')).filter(d => d.querySelector('select.qn') !== sel && d.querySelector('.qt') && d.querySelector('.qt').value.trim()).map(d => d.querySelector('select.qn').value).filter(Boolean));
+        const items = [];
+        Array.from(sel.options).forEach(op => { if (!op.value) return; const og = op.parentNode && op.parentNode.tagName === 'OPTGROUP' ? op.parentNode.label : ''; items.push({ v: op.value, ex: og.indexOf('기존') === 0, inq: used.has(op.value) }); });
+        wrap.classList.add('open');
+        NumGrid({ owner: sel, anchor: wrap, items, current: [sel.value], multi: true, label: '행 번호 고르기', exText: '기존 행 (원문을 불러와요)', inqText: '다른 줄에 있음',
+          onApply: vals => {
+            const first = vals[0];
+            if (sel.value !== first && Array.from(sel.options).some(op => op.value === first)) { sel.value = first; sel.dispatchEvent(new Event('input', { bubbles: true })); sel.dispatchEvent(new Event('change', { bubbles: true })); }
+            if (vals.length > 1 && window.__aiQInsertNums) window.__aiQInsertNums(vals.slice(1), parseInt(first, 10));
+          },
+          onClose: refocus => { wrap.classList.remove('open'); if (refocus) sel.focus({ preventScroll: true }); } });
+        return;
+      }
       const rows = [], optRow = (o, g) => ({ t: 'item', text: o.textContent, disabled: o.disabled || !!(g && g.disabled), selected: o.selected, ref: o });
       Array.from(sel.children).forEach(ch => {
         if (ch.tagName === 'OPTGROUP') { if (rows.length) rows.push({ t: 'sep' }); rows.push({ t: 'group', text: ch.label }); Array.from(ch.children).forEach(o => { if (!o.hidden) rows.push(optRow(o, ch)); }); }
@@ -9810,10 +10514,19 @@ document.addEventListener('keydown', e => {
     if (v && !list.length) list = all.filter(x => x.value.indexOf(v) >= 0);
     if (list.length === 1 && list[0].value === v && !showAll) list = [];
     if (!list.length) { if (active && active.owner === el) active.close(); return; }
-    const rows = list.slice(0, 1000).map(x => ({ t: 'item', selected: x.value === v, text: x.value, hint: x.label && x.label !== x.value ? x.label : '' }));
-    if (active && active.owner === el) { active.setRows(rows); return; }
-    ListPopup({ owner: el, anchor: el, rows, minWidth: 110, noAutoHi: true, enterNeedsMove: true,
-      onPick: r => { picking = true; el.value = r.text; el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true })); picking = false; },
+    const isBook = el.id === 'aiBook', typed = !!v && !showAll;
+    const used = new Set(Array.from(document.querySelectorAll('#aiQ .ai-q')).filter(d => d.querySelector('.qt') && d.querySelector('.qt').value.trim()).map(d => d.querySelector('select.qn').value).filter(Boolean));
+    const items = list.slice(0, 1500).map(x => {
+      const lb = x.label && x.label !== x.value ? x.label : '';
+      return { v: x.value, ex: /^있음/.test(lb), inq: !isBook && used.has(x.value), cap: isBook ? lb.replace(/^있음\s*·?\s*/, '') : '', tip: lb };
+    });
+    if (active && active.owner === el) { active.setRows(items, typed); return; }
+    NumGrid({ owner: el, anchor: el, items, filtered: typed, current: [v], multi: !isBook, captions: isBook && items.some(i => i.cap), anchorIsInput: true, enterNeedsMove: true,
+      label: isBook ? '권 고르기' : '행 고르기', exText: isBook ? '코딩된 권' : '기존 행', inqText: '목록에 있음',
+      onApply: vals => {
+        picking = true; el.value = vals[0]; el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true })); picking = false;
+        if (vals.length > 1 && window.__aiQInsertNums) window.__aiQInsertNums(vals.slice(1), parseInt(vals[0], 10));   // 여러 개: 나머지도 목록에 한꺼번에
+      },
       onClose: refocus => { if (refocus) el.focus({ preventScroll: true }); } });
   };
   const isSug = t => t && t.matches && t.matches('input[data-list]');
@@ -9843,7 +10556,7 @@ document.addEventListener('keydown', e => {
   'use strict';
   /* ---------- 키보드 이동 ---------- */
   var cur = null;   // { cid, i, wi }
-  var OVERLAYS = '.ai-overlay.show, .vocab-flash-modal-overlay.show, .vocab-range-modal-overlay.show, #qsOverlay.show, .mac-dd-menu';
+  var OVERLAYS = '.ai-overlay.show, .vocab-flash-modal-overlay.show, .vocab-range-modal-overlay.show, #qsOverlay.show, .mac-dd-menu, .mac-ng';
   function activeView() { return document.querySelector('.study-view.active'); }
   function cidOf(block) { return block.id.replace(/-line-\d+$/, ''); }
   function blockAt(cid, i) { return document.getElementById(cid + '-line-' + i); }
