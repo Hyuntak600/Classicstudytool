@@ -231,10 +231,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#F8F3E5" id="themeColorMeta">
-<link rel="manifest" href="manifest.json">
-<link rel="icon" type="image/png" href="img/icon-192.png">
-<link rel="apple-touch-icon" href="img/icon-192.png">
+<meta name="theme-color" content="#F4F4F1" id="themeColorMeta">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="서재">
@@ -2190,7 +2187,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
 
   /* ---------- 기능용 추가 스타일 (야간 모드 토글, 포커스, 스크롤바, 단어장 표시 등) ---------- */
   body { transition: background-color var(--dur-panel) var(--ease-mac), color var(--dur-panel) var(--ease-mac); }
-  :root[data-theme="dark"] { --bg: #15110B; --bg-alt: #1D170F; --card-bg: #241C13; --border: #3C311E; --border-soft: #2B2216; --text-main: #F1E7D1; --text-sub: #B9AB86; --text-faint: #8B7D5E; --accent: #D9AC52; --accent-dark: #F0CE8C; --accent-light: #34280F; --accent-2: #C79A44; --ok: #85C293; --ok-light: #1C2C20; --bad: #E08E71; --bad-light: #33211B; --ink: #93A6CC; --ink-dark: #C3D0E8; --ink-light: #202B42; --gallery-wall: #241d13; --gallery-wall-deep: #16110a; --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35), 0 1px 1px rgba(0, 0, 0, 0.25); --shadow-md: 0 8px 24px -10px rgba(0, 0, 0, 0.55), 0 3px 8px -3px rgba(0, 0, 0, 0.35); --shadow-lg: 0 24px 56px -18px rgba(0, 0, 0, 0.65), 0 8px 20px -8px rgba(0, 0, 0, 0.4); --shadow-xl: 0 46px 90px -22px rgba(0, 0, 0, 0.72), 0 16px 36px -14px rgba(0, 0, 0, 0.48); --focus-ring: 0 0 0 3px color-mix(in srgb, var(--accent) 50%, transparent); color-scheme: dark; }
+  :root[data-theme="dark"] { --bg: #14151A; --bg-alt: #1D170F; --card-bg: #241C13; --border: #3C311E; --border-soft: #2B2216; --text-main: #F1E7D1; --text-sub: #B9AB86; --text-faint: #8B7D5E; --accent: #D9AC52; --accent-dark: #F0CE8C; --accent-light: #34280F; --accent-2: #C79A44; --ok: #85C293; --ok-light: #1C2C20; --bad: #E08E71; --bad-light: #33211B; --ink: #93A6CC; --ink-dark: #C3D0E8; --ink-light: #202B42; --gallery-wall: #241d13; --gallery-wall-deep: #16110a; --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35), 0 1px 1px rgba(0, 0, 0, 0.25); --shadow-md: 0 8px 24px -10px rgba(0, 0, 0, 0.55), 0 3px 8px -3px rgba(0, 0, 0, 0.35); --shadow-lg: 0 24px 56px -18px rgba(0, 0, 0, 0.65), 0 8px 20px -8px rgba(0, 0, 0, 0.4); --shadow-xl: 0 46px 90px -22px rgba(0, 0, 0, 0.72), 0 16px 36px -14px rgba(0, 0, 0, 0.48); --focus-ring: 0 0 0 3px color-mix(in srgb, var(--accent) 50%, transparent); color-scheme: dark; }
   html { scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
   [data-theme="dark"] body { background: var(--bg); }
   :focus-visible { outline: 2px solid var(--accent-dark); outline-offset: 2px; border-radius: 4px; }
@@ -3407,6 +3404,441 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
     .mac-ng-foot button { height: 36px; }
     .mac-ng-jump button { height: 28px; }
   }
+
+  /* ============================================================
+     클래식 스킨 v3 — 명화에서 뽑은 색: 시스티나의 회벽(바탕) · 움버 먹색 · 외투의 적색 · 휘장의 녹청 · 금박
+     (창세기·일리아스 머리글에는 서재에 깔아 둔 그 명화를 그대로 쓴다. 이 블록만 지우면 이전 디자인으로 돌아간다)
+     ============================================================ */
+  :root {
+    --bg: #dfd8c5; --bg-alt: #d5cdb8; --card-bg: #eae3d2;
+    --border: #c4b99f; --border-soft: #d3c9b0;
+    --text-main: #2a2319; --text-sub: #5a4f3e; --text-faint: #8f8369;
+    --accent: #8f2f2b; --accent-dark: #66201d; --accent-light: #e6d2c4; --accent-2: #b08d4a;
+    --shadow-sm: 0 1px 0 rgba(42, 30, 15, 0.08);
+    --shadow-md: 0 2px 8px -4px rgba(42, 30, 15, 0.3);
+    --shadow-lg: 0 14px 32px -14px rgba(42, 30, 15, 0.38);
+    --radius-sm: 3px; --radius-md: 5px; --radius-lg: 8px;
+  }
+  /* 다크: 프리아모스와 아킬레우스 그림의 숯빛 어둠 */
+  :root[data-theme="dark"] {
+    --bg: #1c1b1e; --bg-alt: #232126; --card-bg: #2a272a; --border: #433d3a; --border-soft: #332f2f;
+    --text-main: #ece3d0; --text-sub: #b8ac92; --text-faint: #867c68;
+    --accent: #cf6a5c; --accent-dark: #eba99d; --accent-light: #3b2624; --accent-2: #c9a35c;
+  }
+  ::selection { background: var(--accent-light); color: var(--accent-dark); }
+  :root:not([data-theme="dark"]) .shelf.theme-iliad { --accent: #8a6a2c; --accent-2: #c9a35c; }
+  :root:not([data-theme="dark"]) .shelf.theme-meta { --accent: #6d6a47; --accent-2: #b5ae85; }
+  :root:not([data-theme="dark"]) .shelf.theme-cid { --accent: #8f2f2b; --accent-2: #c98a78; }
+  :root:not([data-theme="dark"]) .shelf.theme-lusiadas { --accent: #3d5446; --accent-2: #7f9a88; }
+  :root:not([data-theme="dark"]) .shelf.theme-sanguo { --accent: #3f5f8f; --accent-2: #8fa6c8; }
+
+  /* 버튼: 광택 없이 단색 */
+  :root:not([data-theme="dark"]) .ai-primary,
+  :root:not([data-theme="dark"]) .ai-primary:hover:not(:disabled),
+  :root:not([data-theme="dark"]) .vocab-flash-start-btn,
+  :root:not([data-theme="dark"]) .vocab-quiz-btn,
+  :root:not([data-theme="dark"]) .quiz-start-btn { background: var(--accent); color: #f4ead6; border: none; box-shadow: none; }
+  :root:not([data-theme="dark"]) .ai-primary:hover:not(:disabled),
+  :root:not([data-theme="dark"]) .vocab-flash-start-btn:hover,
+  :root:not([data-theme="dark"]) .vocab-quiz-btn:hover,
+  :root:not([data-theme="dark"]) .quiz-start-btn:hover:not(:disabled) { background: var(--accent-dark); }
+  :root:not([data-theme="dark"]) .ai-seg button.on { color: var(--accent); }
+
+  /* ---------- 서재 첫 화면 ---------- */
+  .hub-kicker { background: none; -webkit-background-clip: border-box; background-clip: border-box; color: var(--text-faint); font-weight: 500; font-size: 13px; letter-spacing: 0.03em; text-transform: none; }
+  .hub-kicker::before { display: none; }
+  #view-hub h1 { font-size: 46px; font-weight: 600; letter-spacing: 0; }
+  .bookshelf { border-top: none; }
+  .shelf-group { display: flex; align-items: center; gap: 14px; margin: 34px 0 12px; font-family: var(--serif); font-style: italic; font-size: 16px; color: var(--text-sub); }
+  .shelf-group:first-child { margin-top: 0; }
+  .shelf-group::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+  /* 책등: 번호 대신 작품마다 다른 천 장정 색 + 금박 띠 */
+  .spine-bar { font-size: 0; min-width: 10px; width: 10px; min-height: 46px; align-self: stretch; padding: 0; border-radius: 2px; color: transparent;
+    background: linear-gradient(var(--accent-2), var(--accent-2)) 0 9px / 100% 1px no-repeat, linear-gradient(var(--accent-2), var(--accent-2)) 0 calc(100% - 9px) / 100% 1px no-repeat, var(--accent); }
+  .spine-bar::before { content: none; }
+  .shelf-head:hover .spine-bar { transform: none; text-shadow: none; }
+
+  /* 그림 표지: 왼쪽은 어두운 바탕에 제목, 오른쪽은 명화가 번져 나온다 */
+  #shelfGenesis, #shelfIliad { overflow: hidden; border-radius: var(--radius-lg); background: var(--card-bg); box-shadow: var(--shadow-md); }
+  #shelfGenesis .shelf-head, #shelfIliad .shelf-head { align-items: center; background-repeat: no-repeat; background-color: #1d1a16; }
+  #shelfGenesis .shelf-head::before, #shelfIliad .shelf-head::before { display: none; }
+  #shelfGenesis .shelf-head > .spine-bar, #shelfIliad .shelf-head > .spine-bar { display: none; }
+  #shelfGenesis .work-inscr { display: none; }
+  #shelfGenesis .work-title, #shelfIliad .work-title { letter-spacing: 0.04em; font-weight: 500; }
+  #shelfGenesis .work-title::after, #shelfIliad .work-title::after { background: #c9a35c; }
+  #shelfGenesis .shelf-chevron, #shelfGenesis .shelf-head:hover .shelf-chevron, #shelfGenesis.open .shelf-chevron,
+  #shelfIliad .shelf-chevron, #shelfIliad .shelf-head:hover .shelf-chevron, #shelfIliad.open .shelf-chevron { color: #e3c987; position: relative; z-index: 2; }
+
+  /* 성경: 검은 가죽 + 금박 이중 테두리 + 〈아담의 창조〉(오른쪽 하느님과 붉은 외투), 더 크고 높게 */
+  #shelfGenesis { border: 1px solid #1d1a16; margin-bottom: 6px; }
+  #shelfGenesis .shelf-head { padding: 38px 30px; min-height: 124px;
+    background-image: linear-gradient(90deg, #1d1a16 0%, #1d1a16 32%, rgba(29, 26, 22, 0.5) 48%, rgba(29, 26, 22, 0) 70%), url("img/genesis1.jpg");
+    background-size: 100% 100%, 200% auto; background-position: 0 0, 58% 18%;
+    box-shadow: inset 0 0 0 6px #1d1a16, inset 0 0 0 7px rgba(201, 163, 92, 0.65); }
+  #shelfGenesis .work-title { font-size: 36px; color: #e8cf8f; }
+  #shelfGenesis .shelf-head:hover .work-title { color: #f3dfa8; }
+  #shelfGenesis .work-lang, #shelfGenesis .shelf-head:hover .work-lang { color: #c4b383; }
+
+  /* 일리아스: 숯빛 바탕 + 〈프리아모스와 아킬레우스〉, 성경보다 한 단 낮게 (테두리 없음, 작은 제목) */
+  #shelfIliad { border: 1px solid #2e2c32; margin-bottom: 4px; }
+  #shelfIliad .shelf-head { padding: 24px 26px; background-color: #26242a;
+    background-image: linear-gradient(90deg, #26242a 0%, #26242a 36%, rgba(38, 36, 42, 0.5) 58%, rgba(38, 36, 42, 0) 100%), url("img/iliad24.jpg");
+    background-size: 100% 100%, 100% auto; background-position: 0 0, 100% 36%; }
+  #shelfIliad .work-title { font-size: 26px; color: #eadfc6; }
+  #shelfIliad .work-lang, #shelfIliad .shelf-head:hover .work-lang { color: #b9ad92; }
+  @media (max-width: 560px) { #shelfGenesis .shelf-head { padding: 28px 20px; min-height: 104px; } #shelfGenesis .work-title { font-size: 29px; } #shelfIliad .shelf-head { padding: 20px; } }
+
+  /* ================= 미술관 벽: 작품마다 금테 액자 + 명화 팔레트 + 황동 명패 ================= */
+  .bookshelf { display: flex; flex-direction: column; }
+  #view-hub .shelf { margin: 0 0 26px; border-radius: 0; overflow: hidden; background: var(--bg-alt);
+    border: 9px solid #a98336; border-image: linear-gradient(135deg, #ecd28c 0%, #9a7430 28%, #d9bd77 52%, #6b4f1d 78%, #c9a35c 100%) 1;
+    box-shadow: 0 18px 34px -18px rgba(30, 22, 10, 0.5), 0 3px 8px -3px rgba(30, 22, 10, 0.3); }
+  #view-hub .shelf-head { align-items: center; min-height: 112px; padding: 26px 28px; background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 2px rgba(20, 14, 6, 0.85), inset 0 0 28px rgba(0, 0, 0, 0.45); }
+  /* 캔버스 직조 질감: 모든 그림 표지 위에 얇게 */
+  #view-hub .shelf .shelf-head::before { inset: 0; border-radius: 0; opacity: 0.32 !important; z-index: 0; mix-blend-mode: overlay;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9 .6' numOctaves='3' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .4 0 0 0 0 .25 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E"); background-size: 160px 160px; }
+  #view-hub .shelf-head > .spine-bar { display: none; }
+  #view-hub .work-title { font-size: 30px; font-weight: 500; letter-spacing: 0.03em; }
+  #view-hub .work-title::after { background: #c9a35c; }
+  #view-hub .shelf-chevron, #view-hub .shelf-head:hover .shelf-chevron, #view-hub .shelf.open .shelf-chevron { color: #e3c987; }
+  #view-hub .shelf .work-inscr { display: none; }
+  /* 황동 명패 */
+  #view-hub .shelf-head::after { position: absolute; right: 54px; bottom: 9px; z-index: 2; max-width: 62%;
+    font-family: var(--serif); font-size: 11.5px; font-style: italic; line-height: 1.3; color: #2a2112; padding: 3px 10px 4px;
+    background: linear-gradient(#e2c880, #b08b3c); border: 1px solid #6b4f1d; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.45); }
+  #view-hub .shelf-body-inner { background: var(--bg-alt); border-top: 1px solid #6b4f1d; box-shadow: inset 0 10px 14px -12px rgba(30, 22, 10, 0.45); }
+  #view-hub .shelf-head { color: #eadfc6; }
+  #view-hub .work-lang, #view-hub .shelf-head:hover .work-lang { color: #cdbf9c; }
+  #view-hub .work-title, #view-hub .shelf-head:hover .work-title { color: #efdca0; }
+
+  /* 명패 문구 */
+  #shelfGenesis .shelf-head::after { content: "미켈란젤로 〈아담의 창조〉 1512"; }
+  #shelfIliad .shelf-head::after { content: "A. 이바노프 〈프리아모스와 아킬레우스〉 1824"; }
+  #shelfMeta .shelf-head::after { content: "팔레트 · 티치아노, 신화화"; }
+  #shelfCid .shelf-head::after { content: "팔레트 · 벨라스케스"; }
+  #shelfLusiadas .shelf-head::after { content: "팔레트 · 터너 〈전함 테메레르〉"; }
+  #shelfSanguo .shelf-head::after { content: "팔레트 · 송대 수묵 산수"; }
+
+  /* 변신 이야기: 티치아노의 진홍과 군청 */
+  #shelfMeta .shelf-head { background-color: #3a1411;
+    background-image: radial-gradient(ellipse 38% 90% at 88% 25%, rgba(214, 112, 70, 0.85), transparent 70%),
+      radial-gradient(ellipse 45% 80% at 66% 118%, rgba(36, 74, 122, 0.95), transparent 70%),
+      linear-gradient(90deg, #3a1411 0%, #531a16 55%, #2b3b4f 100%); }
+  /* 엘 시드: 벨라스케스의 은회색 흙빛과 갑옷의 은광 */
+  #shelfCid .shelf-head { background-color: #2b2520;
+    background-image: radial-gradient(ellipse 34% 100% at 84% 18%, rgba(205, 188, 160, 0.75), transparent 70%),
+      linear-gradient(90deg, #26211c 0%, #3b3229 55%, #6e6050 100%); }
+  /* 루지아다스: 터너의 해질녘 금빛 바다 */
+  #shelfLusiadas .shelf-head { background-color: #2b3a52;
+    background-image: radial-gradient(circle 120px at 84% 66%, #f6d27a 0%, rgba(232, 150, 72, 0.8) 38%, transparent 100%),
+      linear-gradient(180deg, #243349 0%, #5d7285 58%, #c79a5e 100%); }
+  /* 삼국지연의: 먹빛 산수와 비단 */
+  #shelfSanguo .shelf-head { background-color: #cfc4a4;
+    background-image: linear-gradient(90deg, #1f1d1a 0%, #1f1d1a 30%, rgba(31, 29, 26, 0.15) 68%, rgba(31, 29, 26, 0) 100%),
+      radial-gradient(ellipse 36% 64% at 88% 118%, #4f564d, transparent 72%),
+      radial-gradient(ellipse 30% 52% at 66% 124%, #7d8379, transparent 72%),
+      linear-gradient(180deg, #ddd3b6, #bdb293); }
+  #shelfSanguo .shelf-head::after { background: linear-gradient(#c8432f, #962a1c); color: #f6e7c8; border-color: #5f1a10; font-style: normal; }
+
+  /* 그림 표지(성경·일리아스)는 기존 이미지 위에 같은 액자 규칙만 얹는다 */
+  #shelfGenesis, #shelfIliad { border-radius: 0; }
+  #shelfGenesis { margin-bottom: 26px; } #shelfIliad { margin-bottom: 26px; }
+  #shelfGenesis .shelf-head { min-height: 140px; }
+
+  @media (max-width: 560px) {
+    #view-hub .shelf { border-width: 7px; margin-bottom: 20px; }
+    #view-hub .shelf-head { padding: 22px 18px 34px; min-height: 104px; }
+    #view-hub .work-title { font-size: 25px; }
+    #view-hub .shelf-head::after { right: 12px; bottom: 7px; font-size: 10.5px; max-width: 78%; }
+  }
+
+  /* ================= 명화 감상 모드: 누르고 있는 동안 글자와 덮개를 걷고 그림만 보인다 ================= */
+  #artDock { display: none; position: fixed; z-index: 60; right: max(14px, env(safe-area-inset-right, 0px)); bottom: calc(52px + env(safe-area-inset-bottom, 0px)); gap: 8px; align-items: center; }
+  body.gallery-mode #artDock { display: flex; }
+  body.art-peek #artDock .art-pick-btn { opacity: 0; pointer-events: none; }
+  #artPeekBtn { display: none; position: static;
+    align-items: center; gap: 7px; height: 40px; padding: 0 15px 0 12px; border-radius: 999px; cursor: pointer;
+    font: 600 12.5px var(--sans); color: #2a2112; border: 1px solid #6b4f1d;
+    background: linear-gradient(#e6cd86, #b08b3c); box-shadow: 0 6px 16px -6px rgba(30, 22, 10, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+    touch-action: none; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; -webkit-tap-highlight-color: transparent;
+    transition: transform var(--dur-press) var(--ease-mac), box-shadow var(--dur-press) var(--ease-mac); }
+  body[data-art="on"] #artPeekBtn { display: inline-flex; }
+  #artPeekBtn:focus-visible { outline: 2px solid var(--accent-dark); outline-offset: 3px; }
+  body.art-peek #artPeekBtn { transform: scale(0.94); box-shadow: 0 2px 6px -2px rgba(30, 22, 10, 0.6), inset 0 2px 4px rgba(30, 22, 10, 0.25); }
+  #artPeekBtn svg { flex: none; }
+  .view, .site-header, .site-footer, .info-panel.word-sheet { transition: opacity 0.4s var(--ease-mac); }
+  #bgArt, #bgArt::after { transition: opacity 0.5s var(--ease-mac); }
+  body.art-peek .view, body.art-peek .site-header, body.art-peek .site-footer, body.art-peek .info-panel.word-sheet { opacity: 0 !important; pointer-events: none !important; }
+  body.art-peek #bgArt { opacity: 1; }
+  body.art-peek #bgArt::after { opacity: 0; }
+  body.art-peek #bgArt i { filter: none !important; }
+  @media (prefers-reduced-motion: reduce) { .view, .site-header, .site-footer, .info-panel.word-sheet, #bgArt, #bgArt::after { transition: none; } }
+
+  .art-pick-btn { display: inline-flex; align-items: center; gap: 6px; height: 40px; padding: 0 13px; border-radius: 999px; cursor: pointer; font: 600 12.5px var(--sans);
+    color: #eadfc6; background: rgba(38, 32, 22, 0.86); border: 1px solid #8a6a26; box-shadow: 0 6px 16px -6px rgba(30, 22, 10, 0.55);
+    -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); transition: opacity 0.3s var(--ease-mac); }
+  .art-pick-btn:focus-visible, .art-opt:focus-visible { outline: 2px solid var(--accent-dark); outline-offset: 2px; }
+  #artPicker { position: fixed; z-index: 61; right: max(14px, env(safe-area-inset-right, 0px)); bottom: calc(100px + env(safe-area-inset-bottom, 0px));
+    width: min(310px, calc(100vw - 28px)); max-height: min(60vh, 460px); overflow: auto; padding: 8px; border: 1px solid #8a6a26; background: color-mix(in srgb, var(--card-bg) 94%, transparent);
+    -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); box-shadow: var(--shadow-lg); }
+  #artPicker[hidden] { display: none; }
+  #artPicker h3 { margin: 4px 6px 8px; font: 600 12.5px var(--serif); color: var(--text-sub); }
+  .art-opt { display: flex; align-items: center; gap: 10px; width: 100%; padding: 6px; margin: 0 0 4px; border: 1px solid transparent; background: none; cursor: pointer; text-align: left; color: var(--text-main); font: 500 13px/1.35 var(--sans); }
+  .art-opt:hover { background: var(--accent-light); }
+  .art-opt.on { border-color: var(--accent); background: var(--accent-light); }
+  .art-opt img, .art-opt .art-none { flex: none; width: 64px; height: 44px; object-fit: cover; border: 1px solid #6b4f1d; background: var(--bg-alt); }
+  .art-opt small { display: block; color: var(--text-sub); font-size: 11px; }
+
+  /* 현황 줄: 설명 다음에 ‘코딩된 행 치우기’·‘저장분 지우기’를 나란히 */
+  #aiQInfo { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; }
+  #aiQInfo > span { flex: 1 1 100%; }
+  #aiQInfo .ai-link { margin-left: 0; }
+
+  /* ===== 정보 추가 창 정리: 금빛 얇은 테두리 · 위에서 아래로 한 흐름 · 버튼 위계(자동 코딩 > 받기 > 나머지) ===== */
+  #aiOverlay { background: rgba(24, 18, 8, 0.46); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+  #aiOverlay .ai-card { max-width: 720px; border-radius: 14px; background: var(--bg);
+    border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--border));
+    box-shadow: 0 30px 70px -26px rgba(24, 18, 8, 0.55), 0 0 0 4px color-mix(in srgb, var(--accent) 9%, transparent); }
+  #aiOverlay .ai-head { padding: 14px 20px; background: var(--card-bg); border-bottom: 1px solid var(--border-soft); }
+  #aiOverlay .ai-head h2 { font-family: var(--serif); font-size: 21px; font-weight: 600; letter-spacing: 0.02em; }
+  #aiOverlay .ai-x { width: 32px; height: 32px; padding: 0; border-radius: 50%; background: transparent; color: var(--text-sub); border: 1px solid var(--border); }
+  #aiOverlay .ai-x:hover { color: var(--text-main); border-color: var(--accent-dark); }
+
+  /* 맨 위: 작품 · 권 · 행을 한 줄로 */
+  #aiOverlay .ai-body > .ai-pick { background: var(--card-bg); border-bottom: 1px solid var(--border-soft); box-shadow: 0 8px 12px -12px rgba(24, 18, 8, 0.35); }
+  #aiOverlay .ai-f > span { font-size: 11px; font-weight: 600; color: var(--text-sub); letter-spacing: 0.01em; }
+  #aiOverlay .ai-f input, #aiOverlay .ai-f select { border-radius: 8px; border: 1px solid var(--border); background: var(--bg); }
+  #aiOverlay .ai-f input:focus, #aiOverlay .ai-f select:focus, #aiOverlay #aiQ .qt:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent); }
+  #aiOverlay .ai-pickinfo { font-size: 12px; color: var(--text-sub); }
+
+  /* 본문 카드 */
+  #aiOverlay .ai-step { border-radius: 12px; border: 1px solid var(--border-soft); background: var(--card-bg); box-shadow: var(--shadow-sm); }
+  #aiOverlay .ai-step-t h3 { font-family: var(--serif); font-size: 16px; font-weight: 600; margin: 0; }
+  #aiOverlay .ai-step-t p { margin: 4px 0 0; font-size: 12px; line-height: 1.55; color: var(--text-faint); max-width: 56ch; }
+  #aiOverlay #aiQInfo { margin: 12px 0 8px; padding: 9px 12px; border-radius: 8px; font-size: 12px; line-height: 1.5; color: var(--text-sub);
+    background: color-mix(in srgb, var(--accent) 9%, var(--card-bg)); border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent); }
+  #aiOverlay #aiQ .ai-q .qt, #aiOverlay #aiQ .ai-q .qn { border-radius: 7px; }
+
+  /* 버튼 위계: 자동 코딩은 크게, 받기는 테두리만, 목록 정리는 글자 버튼 */
+  #aiOverlay .ai-main-act { display: flex; gap: 8px; margin-top: 12px; }
+  #aiOverlay #aiAutoGo { flex: 1 1 auto; height: var(--ai-h-lg); font-size: 14px; letter-spacing: 0.02em; }
+  #aiOverlay .ai-save { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border-soft); }
+  #aiOverlay #aiExpDl.ai-btn.ai-primary, #aiOverlay #aiExpDl.ai-btn.ai-primary:hover:not(:disabled) { background: transparent; color: var(--accent-dark); border: 1px solid var(--accent); box-shadow: none; }
+  #aiOverlay #aiExpDl.ai-btn.ai-primary:hover:not(:disabled) { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+  #aiOverlay .ai-foot { padding: 10px 20px; gap: 8px; background: var(--card-bg); border-top: 1px solid var(--border-soft); }
+  #aiOverlay #aiSave { min-width: 96px; height: var(--ai-h-lg); font-size: 13.5px; }
+
+  /* ⋯ 더보기: 항목을 세로로 가지런히 */
+  #aiOverlay .ai-more > summary { width: 32px; height: 32px; padding: 0; border-radius: 50%; border: 1px solid var(--border); color: var(--text-sub); background: transparent; }
+  #aiOverlay .ai-more-panel { padding: 10px; border-radius: 10px; background: var(--card-bg); border: 1px solid var(--border); box-shadow: var(--shadow-md); }
+  #aiOverlay .ai-more-grp { display: flex; flex-direction: column; align-items: stretch; gap: 2px; margin-bottom: 8px; }
+  #aiOverlay .ai-more-grp > b { margin: 0 0 2px 8px; font-size: 11px; font-weight: 600; color: var(--text-faint); }
+  #aiOverlay .ai-more-grp .ai-link { justify-content: flex-start; height: var(--ai-h); padding: 0 8px; border-radius: 6px; }
+  #aiOverlay .ai-more-grp .ai-link:hover { background: color-mix(in srgb, var(--accent) 10%, transparent); }
+
+  /* ================= 전체 업그레이드: 명화 전시실의 질감 — 양피지 바탕 · 금박 선 · 캔버스 결 · 명패 글씨 ================= */
+  :root:not([data-theme="dark"]) { --bg: #f8f3e6; --bg-alt: #f0e9d6; --card-bg: #fffdf7; --border: #e0d3ae; --border-soft: #ebe2c8; --text-sub: #7d7358; --accent-dark: #7d5f1c;
+    --shadow-sm: 0 1px 2px rgba(60, 44, 16, 0.06), 0 1px 1px rgba(60, 44, 16, 0.04);
+    --shadow-md: 0 8px 22px -10px rgba(60, 44, 16, 0.22), 0 2px 6px -2px rgba(60, 44, 16, 0.1); }
+  :root { --radius-md: 10px; --radius-lg: 14px; --gilt: linear-gradient(135deg, #ecd28c, #b08b3c 45%, #7d5f1c); }
+  html { scroll-behavior: smooth; }
+  body { font-feature-settings: "kern", "liga"; text-rendering: optimizeLegibility; }
+  /* 캔버스 결: 모든 화면 뒤에 아주 옅게 */
+  body::after { content: ''; position: fixed; inset: 0; z-index: 0; pointer-events: none; opacity: 0.05; mix-blend-mode: multiply;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9 .6' numOctaves='3' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .4 0 0 0 0 .25 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E"); background-size: 160px 160px; }
+  :root[data-theme="dark"] body::after { opacity: 0.07; mix-blend-mode: screen; }
+  ::selection { background: color-mix(in srgb, var(--accent) 30%, transparent); color: var(--text-main); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  * { scrollbar-width: thin; scrollbar-color: color-mix(in srgb, var(--accent) 40%, transparent) transparent; }
+
+  /* 헤더: 금박 모노그램 + 가는 금선 */
+  .site-header { border-bottom: 1px solid transparent;
+    background: linear-gradient(color-mix(in srgb, var(--card-bg) 92%, transparent), color-mix(in srgb, var(--card-bg) 92%, transparent)) padding-box,
+      linear-gradient(90deg, transparent, var(--accent-2) 20%, var(--accent) 50%, var(--accent-2) 80%, transparent) border-box; }
+  .brand-mark { background: var(--gilt); color: #fffaf0; border: none; border-radius: 7px; box-shadow: 0 1px 3px rgba(60, 44, 16, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.4); }
+  .brand:hover .brand-mark { transform: translateY(-1px) rotate(-3deg); }
+  .brand-text { font-family: var(--serif); font-size: 12.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: none; }
+  .site-nav-link { border-radius: 8px; }
+  .site-nav-link:hover { background: color-mix(in srgb, var(--accent) 10%, transparent); }
+  .site-footer { border-top: none; background: linear-gradient(90deg, transparent, var(--accent-2), transparent) top / 60% 1px no-repeat; }
+  .site-footer p { font-family: var(--serif); font-style: italic; font-size: 13px; }
+
+  /* 서재 첫 화면: 제목 아래 금 장식선 */
+  #view-hub h1 { font-size: 48px; letter-spacing: 0.02em; }
+  #view-hub h1::after { content: ''; display: block; width: 64px; height: 2px; margin-top: 14px; background: var(--gilt); border-radius: 2px; }
+  .shelf-group { font-size: 17px; color: var(--accent-dark); }
+  .shelf-group::after { background: linear-gradient(90deg, var(--accent-2), transparent); }
+  .mac-tile { border-radius: 12px; }
+
+  /* 읽기 화면: 원문 한 행 = 액자 속 한 장 */
+  .greek-line { border-radius: 4px 12px 12px 4px; border-left: 3px solid var(--accent-2); box-shadow: var(--shadow-sm), inset 0 0 0 1px rgba(255, 255, 255, 0.5); }
+  :root[data-theme="dark"] .greek-line { box-shadow: var(--shadow-sm); }
+  .greek-line:hover { box-shadow: var(--shadow-md); border-color: var(--border); border-left-color: var(--accent); }
+  .line-block { border-top: none; background: linear-gradient(90deg, transparent, var(--border) 18%, var(--border) 82%, transparent) top / 100% 1px no-repeat; }
+  .line-block:first-of-type { background: none; }
+  .line-ref { font-family: var(--serif); font-style: italic; font-size: 13px; font-weight: 500; letter-spacing: 0.02em; text-transform: none; color: var(--accent-dark); }
+
+  /* 단어 정보 패널: 금테 라벨 */
+  .info-panel-inner { border-left-width: 0; border-top: 2px solid var(--accent); border-radius: var(--radius-md); box-shadow: var(--shadow-md); }
+  .word-sheet .info-panel-inner { border-radius: 16px 16px 0 0; }
+
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .brand:hover .brand-mark { transform: none; } }
+
+  /* ================= 다듬기: 그라데이션·각진 상자·기울임 글꼴을 걷어내고, 움직임을 더한다 ================= */
+  :root { --gilt: #b08b3c; --soft-shadow: 0 10px 30px -14px rgba(60, 44, 16, 0.28), 0 2px 8px -3px rgba(60, 44, 16, 0.1); }
+  :root[data-theme="dark"] { --soft-shadow: 0 12px 32px -14px rgba(0, 0, 0, 0.6), 0 2px 8px -3px rgba(0, 0, 0, 0.35); }
+  body::after { content: none; }
+
+  /* 글꼴: 한글에는 기울임·자간 장식을 쓰지 않는다 (한글은 기울임 서체가 없어 억지로 비스듬해져 어색했음) */
+  .shelf-group, .site-footer p, .line-ref, #view-hub .shelf-head::after, #shelfSanguo .shelf-head::after { font-style: normal; }
+  .shelf-group { font-family: var(--sans); font-size: 14px; font-weight: 600; letter-spacing: 0.02em; color: var(--text-sub); }
+  .site-footer p { font-family: var(--sans); font-size: 12px; }
+  .line-ref { font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: 0.02em; color: var(--accent-dark); }
+  .brand-text { font-family: var(--sans); font-size: 12px; font-weight: 700; letter-spacing: 0.06em; }
+  #view-hub h1 { font-size: 44px; letter-spacing: 0; }
+  #view-hub .work-title, #view-hub .shelf-head:hover .work-title { font-size: 27px; font-weight: 600; letter-spacing: 0; }
+  #aiOverlay .ai-head h2 { letter-spacing: 0; }
+
+  /* 그라데이션 → 단색 */
+  .brand-mark { background: var(--gilt); box-shadow: none; }
+  .site-header { background: color-mix(in srgb, var(--card-bg) 90%, transparent); border-bottom: 1px solid var(--border-soft); }
+  .site-footer { background: none; border-top: 1px solid var(--border-soft); }
+  #view-hub h1::after { background: var(--accent-2); }
+  .shelf-group::after { background: var(--border-soft); }
+  .line-block { background: none; border-top: 1px solid var(--border-soft); }
+  .line-block:first-of-type { border-top: none; }
+  #artPeekBtn { background: var(--accent); color: #261c0a; border: none; box-shadow: var(--soft-shadow); }
+  #aiOverlay .ai-btn.ai-primary, #aiOverlay .ai-btn.ai-primary:hover:not(:disabled) { background: var(--accent); color: #261c0a; box-shadow: none; }
+  #aiOverlay .ai-btn.ai-primary:hover:not(:disabled) { filter: brightness(1.06); }
+
+  /* 서재 표지: 금테 액자 → 둥근 그림 카드, 황동 명패 → 반투명 알약 */
+  #view-hub .shelf, #view-hub #shelfGenesis, #view-hub #shelfIliad { border: 0; border-image: none; border-radius: 20px; box-shadow: var(--soft-shadow); background: var(--card-bg); }
+  #view-hub .shelf .shelf-head { box-shadow: none; border-radius: 0; }
+  #view-hub .shelf .shelf-head::before { display: none; }
+  #view-hub .shelf-head::after { right: 56px; bottom: 12px; padding: 4px 11px; border: 0; border-radius: 999px; box-shadow: none; font-family: var(--sans); font-size: 11px; font-weight: 500;
+    color: #f3e8cd; background: rgba(20, 14, 6, 0.55); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+  #view-hub #shelfSanguo .shelf-head::after { background: rgba(160, 52, 34, 0.85); color: #fbeed6; border: 0; }
+  #view-hub .shelf-body-inner { border-top: 0; box-shadow: none; background: var(--bg-alt); }
+  #view-hub #shelfMeta .shelf-head { background-image: none; background-color: #4a1a16; }
+  #view-hub #shelfCid .shelf-head { background-image: none; background-color: #3a3128; }
+  #view-hub #shelfLusiadas .shelf-head { background-image: none; background-color: #34475f; }
+  #view-hub #shelfSanguo .shelf-head { background-image: none; background-color: #2a2723; }
+
+  /* 읽기·패널·창: 모서리를 부드럽게, 윤곽선 대신 그림자 */
+  .greek-line { border: 1px solid var(--border-soft); border-left: 1px solid var(--border-soft); border-radius: 16px; box-shadow: var(--soft-shadow); }
+  .greek-line:hover { border-color: var(--border-soft); border-left-color: var(--border-soft); box-shadow: 0 14px 34px -14px rgba(60, 44, 16, 0.32); }
+  .info-panel-inner { border: 0; border-radius: 16px; box-shadow: var(--soft-shadow); }
+  .word-sheet .info-panel-inner { border-radius: 20px 20px 0 0; }
+  #aiOverlay .ai-card { border: 0; border-radius: 20px; box-shadow: 0 34px 80px -28px rgba(24, 18, 8, 0.6); }
+  #aiOverlay .ai-step { border: 0; border-radius: 16px; box-shadow: var(--soft-shadow); }
+  #aiOverlay .ai-body > .ai-pick { box-shadow: none; }
+  #aiOverlay .ai-f input, #aiOverlay .ai-f select, #aiOverlay .ai-btn { border-radius: 10px; }
+  #artPicker { border: 0; border-radius: 16px; box-shadow: var(--soft-shadow); }
+  .art-opt { border-radius: 10px; }
+  .art-opt img, .art-opt .art-none { border: 0; border-radius: 8px; }
+  .art-pick-btn { border: 0; }
+
+  /* 움직임: 서재 진입 한 번 · 표지 호버 · 원문 스크롤 등장 · 창 열림 */
+  @keyframes riseIn { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+  @keyframes popUp { from { opacity: 0; transform: translateY(8px) scale(0.96); } to { opacity: 1; transform: none; } }
+  @keyframes cardIn { from { opacity: 0; transform: translateY(14px) scale(0.98); } to { opacity: 1; transform: none; } }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  #view-hub.active .hub-header, #view-hub.active .bookshelf > * { animation: riseIn 0.7s var(--ease-mac) both; }
+  #view-hub.active .bookshelf > * { animation-delay: 120ms; }
+  .bookshelf > :nth-child(1) { animation-delay: 0ms; }
+  .bookshelf > :nth-child(2) { animation-delay: 60ms; }
+  .bookshelf > :nth-child(3) { animation-delay: 120ms; }
+  .bookshelf > :nth-child(4) { animation-delay: 180ms; }
+  .bookshelf > :nth-child(5) { animation-delay: 240ms; }
+  .bookshelf > :nth-child(6) { animation-delay: 300ms; }
+  .bookshelf > :nth-child(7) { animation-delay: 360ms; }
+  .bookshelf > :nth-child(8) { animation-delay: 420ms; }
+  .bookshelf > :nth-child(9) { animation-delay: 480ms; }
+  #view-hub .shelf { transition: transform 0.5s var(--ease-mac), box-shadow 0.5s var(--ease-mac); }
+  #view-hub .shelf:hover { transform: translateY(-3px); }
+  #view-hub .shelf.open:hover { transform: none; }
+  .mac-tile { transition: transform 0.25s var(--ease-mac), background 0.2s var(--ease-mac), color 0.2s var(--ease-mac); }
+  .mac-tile:hover { transform: translateY(-3px) scale(1.04); }
+  .mac-tile:active, .site-nav-link:active, #artPeekBtn:active, .art-pick-btn:active { transform: scale(0.95); }
+  #artPicker:not([hidden]) { animation: popUp 0.24s var(--ease-mac); transform-origin: 100% 100%; }
+  #aiOverlay.show { animation: fadeIn 0.25s ease both; }
+  #aiOverlay.show .ai-card { animation: cardIn 0.4s var(--ease-mac) both; }
+  @keyframes lineIn { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
+  @supports (animation-timeline: view()) {
+    .greek-line { animation: lineIn linear both; animation-timeline: view(); animation-range: entry 0% entry 40%; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #view-hub.active .hub-header, #view-hub.active .bookshelf > *, #artPicker, #aiOverlay.show, #aiOverlay.show .ai-card, .greek-line { animation: none !important; }
+    #view-hub .shelf:hover, .mac-tile:hover { transform: none; }
+  }
+
+  /* ================= 색 비율 60 · 30 · 10 =================
+     60% 바탕 — 차분한 돌빛 회백(노란기를 뺌): --bg / --bg-alt
+     30% 면과 글 — 흰 카드 · 먹빛 글자 · 슬레이트 회색 보조 글씨·선
+     10% 포인트 — 금색은 주 버튼 · 활성 표시 · 작은 장식에만 */
+  :root:not([data-theme="dark"]) { --bg: #f4f4f1; --bg-alt: #ebebe6; --card-bg: #ffffff; --border: #d9d9d1; --border-soft: #e7e7e1;
+    --text-main: #20232b; --text-sub: #5d626e; --text-faint: #9a9ea8; --accent: #b08b3c; --accent-dark: #86651f; --accent-light: #efe9d8; --accent-2: #cdb272;
+    --shadow-sm: 0 1px 2px rgba(20, 22, 30, 0.06), 0 1px 1px rgba(20, 22, 30, 0.04);
+    --shadow-md: 0 8px 22px -10px rgba(20, 22, 30, 0.2), 0 2px 6px -2px rgba(20, 22, 30, 0.08);
+    --shadow-lg: 0 20px 48px -16px rgba(20, 22, 30, 0.24), 0 6px 16px -6px rgba(20, 22, 30, 0.1);
+    --soft-shadow: 0 10px 30px -14px rgba(20, 22, 30, 0.26), 0 2px 8px -3px rgba(20, 22, 30, 0.08); }
+  :root[data-theme="dark"] { --bg: #14151a; --bg-alt: #1a1c22; --card-bg: #20232b; --border: #343845; --border-soft: #292c36;
+    --text-main: #ecebe6; --text-sub: #a3a7b3; --text-faint: #7a7f8c; --accent: #d9ac52; --accent-dark: #ecc984; --accent-light: #2b2a26; --accent-2: #b99245;
+    --gallery-wall: #1c1e25; --gallery-wall-deep: #121318; }
+  /* 금색이 번지던 곳을 중립색으로 되돌린다 (포인트는 10%만) */
+  .shelf-group, .line-ref { color: var(--text-sub); }
+  * { scrollbar-color: color-mix(in srgb, var(--text-faint) 55%, transparent) transparent; }
+  ::selection { background: color-mix(in srgb, var(--accent) 24%, transparent); }
+  .site-nav-link:hover, .art-opt:hover { background: color-mix(in srgb, var(--text-main) 6%, transparent); }
+  #aiOverlay .ai-f > span { color: var(--text-sub); }
+  #aiOverlay { background: rgba(16, 18, 24, 0.5); }
+
+  /* 화면 전환: 책을 열면 오른쪽에서 슬라이드로 들어오고, 서재로 돌아갈 땐 왼쪽에서 들어온다 */
+  @keyframes slideFromRight { from { opacity: 0; transform: translateX(64px); } to { opacity: 1; transform: none; } }
+  @keyframes slideFromLeft { from { opacity: 0; transform: translateX(-64px); } to { opacity: 1; transform: none; } }
+  body { overflow-x: clip; }
+  body[data-nav="fwd"] .view.active { animation: slideFromRight 0.55s cubic-bezier(0.22, 0.9, 0.25, 1) both; }
+  body[data-nav="back"] .view.active { animation: slideFromLeft 0.5s cubic-bezier(0.22, 0.9, 0.25, 1) both; }
+  @media (prefers-reduced-motion: reduce) { body[data-nav] .view.active { animation: none; } }
+
+  /* ===== 화면 점검 수정 (2026-11-18) ===== */
+  /* 1) 읽기 화면: content-visibility 가 그림자를 잘라 카드 아래에 회색 띠가 생기던 것 → 그림자가 들어갈 여백을 안쪽에 확보 */
+  .line-block { padding-left: 24px; padding-right: 24px; padding-bottom: 28px; margin-left: -24px; margin-right: -24px; margin-bottom: -28px; }
+  /* 2) 헤더: 메뉴가 간격을 두고 퍼지던 것 → 로고는 왼쪽, 메뉴는 오른쪽에 모아서 */
+  .site-header-inner { justify-content: flex-start; gap: 8px; }
+  .site-header-inner .brand { margin-right: auto; }
+  /* 3) 모바일 컨트롤 바: 글자가 …로 잘리던 것 → 줄바꿈으로 전부 보이게 */
+  @media (max-width: 480px) {
+    .controls-row { flex-wrap: wrap; row-gap: 6px; }
+    .controls-row { gap: 4px; }
+    .controls-row button:not(.font-pop-btn) { flex: 1 1 auto; overflow: visible; text-overflow: clip; white-space: nowrap; padding: 8px 6px; font-size: 11.5px; letter-spacing: -0.02em; }
+  }
+  /* 4) 정보 추가 창: 상단 고정 줄이 위로 18px 떠서 어두운 띠가 보이던 것 */
+  .ai-body > .ai-pick { top: -18px; }
+  /* 4-2) 정보 추가 창: 카드 안에 또 카드가 들어간 듯 보이던 머리글을 카드에 붙이고, 흐린 설명 글자 대비를 올림 */
+  #aiOverlay .ai-step > .ai-step-h { margin: -16px -16px 14px; border-radius: 16px 16px 0 0; }
+  #aiOverlay .ai-step-t p { color: var(--text-sub); max-width: none; }
+  #aiOverlay #aiExpDl { white-space: normal; line-height: 1.4; padding: 10px 14px; height: auto; }
+
+  /* ===== 단어장·시험·북마크·메모 화면: 서재와 같은 톤으로 통일 (2026-11-18) ===== */
+  #view-vocab, #view-vocab-chapters, #view-vocab-words, #view-vocab-quiz-home, #view-vocab-quiz-detail, #view-memos, #view-bookmarks { max-width: 780px; margin: 0 auto; padding: 28px 20px 90px; line-height: 1.6; }
+  #view-vocab h1, #view-vocab-chapters h1, #view-vocab-words h1, #view-vocab-quiz-home h1, #view-vocab-quiz-detail h1, #view-memos h1, #view-bookmarks h1 { font-family: var(--serif); font-size: 32px; font-weight: 600; letter-spacing: 0.01em; margin: 14px 0 6px; }
+  #view-vocab h1::after, #view-vocab-chapters h1::after, #view-vocab-words h1::after, #view-vocab-quiz-home h1::after, #view-vocab-quiz-detail h1::after, #view-memos h1::after, #view-bookmarks h1::after { content: ''; display: block; width: 48px; height: 2px; margin-top: 12px; background: var(--gilt, var(--accent)); border-radius: 2px; }
+  #view-vocab .subtitle, #view-vocab-chapters .subtitle, #view-vocab-words .subtitle, #view-vocab-quiz-home .subtitle, #view-vocab-quiz-detail .subtitle, #view-memos .subtitle, #view-bookmarks .subtitle { color: var(--text-sub); font-size: 14px; margin-bottom: 24px; }
+  #view-vocab .back-link, #view-vocab-chapters .back-link, #view-vocab-words .back-link, #view-vocab-quiz-home .back-link, #view-vocab-quiz-detail .back-link, #view-memos .back-link, #view-bookmarks .back-link { font-size: 13px; }
+  /* 6) 서재: 책 제목을 누르면 권 목록이 책장 아래에서 서랍처럼 스르륵 나오고, 닫을 땐 다시 밀려 들어감 */
+  .work-desc { display: none; }
+  .shelf-body { transition: grid-template-rows 0.7s cubic-bezier(0.32, 0.72, 0, 1); }
+  .shelf-body-inner { overflow: hidden; opacity: 1; transition: none; }
+  .shelf-body-inner > * { transform: translateY(-105%); opacity: 1 !important; animation: none !important;
+    transition: transform 0.7s cubic-bezier(0.32, 0.72, 0, 1); will-change: transform; }
+  .shelf.open .shelf-body-inner > * { transform: translateY(0); }
+  .shelf-body-inner > .legend { transition-delay: 0.04s; }
+  @media (prefers-reduced-motion: reduce) { .shelf-body, .shelf-body-inner > * { transition: none; } }
+  /* 5) 서재 카드: 그림 위에서 안 보이던 화살표에 은은한 받침 */
+  #view-hub .shelf-chevron { filter: drop-shadow(0 1px 3px rgba(0,0,0,.65)); }
 </style>
 </head>
 <body>
@@ -3418,7 +3850,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
       var theme = saved || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
       document.documentElement.setAttribute('data-theme', theme);
       var m = document.getElementById('themeColorMeta');
-      if (m) m.setAttribute('content', theme === 'dark' ? '#15110B' : '#F8F3E5');
+      if (m) m.setAttribute('content', theme === 'dark' ? '#14151A' : '#F4F4F1');
     } catch (e) { /* localStorage 접근 불가 시 기본(라이트)으로 둠 */ }
   })();
 </script>
@@ -3613,6 +4045,33 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
 
   <div class="bookshelf">
 
+    <div class="shelf-group">성경</div>
+
+    <div class="shelf theme-genesis" id="shelfGenesis">
+      <button class="shelf-head" onclick="toggleShelf('shelfGenesis')" aria-expanded="false">
+        <span class="spine-bar"></span>
+        <span class="shelf-head-text">
+          <h2 class="work-title">창세기</h2>
+          <span class="work-lang">구약성경 · 모세오경 · 고전 히브리어</span>
+        </span>
+        <span class="work-inscr" lang="he" dir="rtl" aria-hidden="true">בְּרֵאשִׁית</span>
+        <svg class="shelf-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="shelf-body">
+        <div class="shelf-body-inner">
+          <div class="book-grid" id="genesisGrid"></div>
+          <div class="legend">
+            <span><span class="dot ready"></span>학습 가능</span>
+            <span><span class="dot pending"></span>준비 중</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shelf-group">고전</div>
+
     <div class="shelf theme-iliad" id="shelfIliad">
       <button class="shelf-head" onclick="toggleShelf('shelfIliad')" aria-expanded="false">
         <span class="spine-bar"></span>
@@ -3626,7 +4085,6 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
       </button>
       <div class="shelf-body">
         <div class="shelf-body-inner">
-          <p class="work-desc">아킬레우스의 분노를 노래하는 서사시. 현재 1권 초반부(1~70행)가 준비되어 있습니다.</p>
           <div class="book-grid" id="iliadGrid"></div>
           <div class="legend">
             <span><span class="dot ready"></span>학습 가능</span>
@@ -3649,31 +4107,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
       </button>
       <div class="shelf-body">
         <div class="shelf-body-inner">
-          <p class="work-desc">태초부터 시인의 시대까지, 끊임없이 이어지는 변신의 노래. 현재 1권 서시(1~4행), 14권 도입부(1~20행)가 준비되어 있습니다.</p>
           <div class="book-grid" id="metaGrid"></div>
-          <div class="legend">
-            <span><span class="dot ready"></span>학습 가능</span>
-            <span><span class="dot pending"></span>준비 중</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="shelf theme-genesis" id="shelfGenesis">
-      <button class="shelf-head" onclick="toggleShelf('shelfGenesis')" aria-expanded="false">
-        <span class="spine-bar"></span>
-        <span class="shelf-head-text">
-          <h2 class="work-title">창세기</h2>
-          <span class="work-lang">고전 히브리어 · 구약성경(모세오경)</span>
-        </span>
-        <svg class="shelf-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
-      <div class="shelf-body">
-        <div class="shelf-body-inner">
-          <p class="work-desc">태초의 창조 이야기를 담은 토라의 첫 책. 현재 1장 도입부(1~3절)가 준비되어 있습니다.</p>
-          <div class="book-grid" id="genesisGrid"></div>
           <div class="legend">
             <span><span class="dot ready"></span>학습 가능</span>
             <span><span class="dot pending"></span>준비 중</span>
@@ -3695,7 +4129,6 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
       </button>
       <div class="shelf-body">
         <div class="shelf-body-inner">
-          <p class="work-desc">추방당한 기사 로드리고 디아스(엘 시드)의 무훈을 노래하는 카스티야어 서사시. 현재 제1 칸타르(추방, 1~20행)가 준비되어 있습니다.</p>
           <div class="book-grid" id="cidGrid"></div>
           <div class="legend">
             <span><span class="dot ready"></span>학습 가능</span>
@@ -3718,7 +4151,6 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
       </button>
       <div class="shelf-body">
         <div class="shelf-body-inner">
-          <p class="work-desc">바스쿠 다 가마의 인도 항로 개척을 노래하는 포르투갈의 국가 서사시. 현재 제1권 서시(1~8행, 1연)가 준비되어 있습니다.</p>
           <div class="book-grid" id="lusiadasGrid"></div>
           <div class="legend">
             <span><span class="dot ready"></span>학습 가능</span>
@@ -3741,7 +4173,6 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
       </button>
       <div class="shelf-body">
         <div class="shelf-body-inner">
-          <p class="work-desc">후한 말~삼국시대를 배경으로 한 중국 고전 장회소설. 현재 제1회가 준비되어 있습니다.</p>
           <div class="book-grid" id="sanguoGrid"></div>
           <div class="legend">
             <span><span class="dot ready"></span>학습 가능</span>
@@ -7380,7 +7811,7 @@ function toggleTheme() {
   const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
   root.setAttribute('data-theme', next);
   const m = document.getElementById('themeColorMeta');
-  if (m) m.setAttribute('content', next === 'dark' ? '#15110B' : '#F8F3E5');
+  if (m) m.setAttribute('content', next === 'dark' ? '#14151A' : '#F4F4F1');
   try { localStorage.setItem('theme', next); } catch (e) { /* 저장 실패 시 이번 방문에서만 적용 */ }
 }
 
@@ -7401,6 +7832,7 @@ function showView(viewId) {
   const prevView = document.querySelector('.view.active');
   if (prevView && prevView.id === 'view-hub') hubScrollY = window.scrollY;
   if (!__navBack && prevView && prevView.id !== viewId) { VIEW_HIST.push(prevView.id); if (VIEW_HIST.length > 40) VIEW_HIST.shift(); }
+  document.body.dataset.nav = (viewId === 'view-hub' || __navBack) ? 'back' : 'fwd';   // 책을 열 땐 오른쪽에서, 서재·뒤로 갈 땐 왼쪽에서 슬라이드
   document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
   const target = document.getElementById(viewId);
   target.classList.add('active');
@@ -8417,8 +8849,9 @@ Object.keys(EXTRA_WORKS).forEach(rebuildBookGrid);   // 기존 권 + 새로 등�
     document.removeEventListener('keydown', onKey, true);
   }
   window.openArtView = function () {
-    const g = GALLERY[document.body.dataset.bg];
-    if (!g || g.missing || ov) return;
+    const g0 = GALLERY[document.body.dataset.bg];
+    if (!g0 || g0.missing || ov) return;
+    const g = curArtEntry(g0);
     ov = document.createElement('div'); ov.id = 'artView'; ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-label', '명화 감상');
     ov.innerHTML = '<button type="button" class="av-x" aria-label="닫기"><svg viewBox="0 0 12 12" width="13" height="13" aria-hidden="true"><path d="M2 2l8 8M10 2l-8 8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg></button>' +
       '<div class="av-stage"><img alt=""></div><div class="av-cap">' + (g.cap || '') + '</div>';
@@ -8445,8 +8878,17 @@ function chLabel(viewId) { const h = document.querySelector('#' + viewId + ' h1'
    새 권에 그림을 넣으려면 img/ 폴더에 파일을 넣고 아래에 한 줄만 추가하면 된다.
    (세로/가로 비율은 그림 파일에서 자동으로 읽는다)
      'view-iliad1': { img: 'img/iliad1.jpg', cap: '<b>제목</b><em>Original title</em><br>작가 · 연도<br>소장처<small>출처: …</small>' }
-   view id: view-iliad1, view-iliad6, view-meta1, view-meta14, view-genesis1, view-cid1, view-lusiadas1 … */
+   view id: view-iliad1, view-iliad6, view-meta1, view-meta14, view-genesis1, view-cid1, view-lusiadas1 …
+
+   구간별 명화: 한 권 안에서 행 범위마다 다른 그림을 깔고 싶으면 img/cap 대신 sections 를 쓴다.
+   from/to 는 화면에 보이는 행 번호(Iliad 6.100 → 100, 창세기 1:5 → 5). 그 행을 읽는 동안 그림이 서서히 떠오르고,
+   구간을 벗어나면 서서히 사라진다. (화면에서는 ⋯ 메뉴 > 배경 그림 설정 > ‘행 구간만’ 으로도 넣을 수 있다)
+     'view-iliad6': { sections: [
+       { from: 1,   to: 118, img: 'img/iliad6a.jpg', cap: '<b>제목</b>…' },
+       { from: 119, to: 236, img: 'img/iliad6b.jpg', cap: '<b>제목</b>…' } ] } */
 const GALLERY = {
+  'view-iliad1': { img: 'img/iliad1.jpg',
+    cap: '<b>아가멤논과 아킬레우스의 다툼</b><em>The Quarrel between Agamemnon and Achilles</em><br>Giovanni Battista Gaulli (일 바치치오)<br>보베 우아즈 박물관' },
   'view-iliad24': { img: 'img/iliad24.jpg',
     cap: '<b>일리아드 24권</b>' },
   'view-iliad6': { img: 'img/iliad6.jpg',
@@ -8460,13 +8902,14 @@ function decorateGalleryTiles() {
   document.querySelectorAll('.mac-tile[data-view]').forEach(t => {
     const g = GALLERY[t.dataset.view];
     if (!g || t.classList.contains('has-art')) return;
+    const src = g.img || (g.sections && g.sections[0] && g.sections[0].img); if (!src) return;
     const im = new Image();
     im.onload = () => {
-      t.style.setProperty('--art', 'url("' + g.img + '")');
+      t.style.setProperty('--art', 'url("' + src + '")');
       t.classList.add('has-art');
       t.setAttribute('aria-label', (t.getAttribute('aria-label') || '') + ' · 명화 배경');
     };
-    im.src = g.img;
+    im.src = src;
   });
 }
 decorateGalleryTiles();
@@ -8489,16 +8932,101 @@ function toggleGalleryBg() {
 }
 
 let bgKey = '', bgTick = false;
+
+/* ---- 구간별 명화: 읽고 있는 행이 어느 구간(from~to 행)에 있는지 보고, 그 구간의 그림을 서서히 띄운다 ---- */
+let secShown = '', secWant = '', secTimer = 0, secCapTimer = 0, secObj = null, secTries = 0;
+const artRatio = {};   // 그림 주소 → 세로/가로 비율 (0: 읽는 중, -1: 못 읽음)
+const secKey = s => s.from + '-' + s.to + '|' + s.img;
+function baseLayer() { return document.querySelector('#bgArt i:not(.sec)'); }
+function secLayers() { return Array.prototype.slice.call(document.querySelectorAll('#bgArt i.sec')); }
+function clearSecLayers() {
+  clearTimeout(secTimer); clearTimeout(secCapTimer);
+  secShown = secWant = ''; secObj = null;
+  secLayers().forEach(l => l.remove());
+}
+function loadArt(url) {
+  if (artRatio[url] !== undefined) return;
+  artRatio[url] = 0;
+  const im = new Image();
+  im.onload = () => { artRatio[url] = im.naturalHeight / im.naturalWidth; updateBgArt(); };
+  im.onerror = () => { artRatio[url] = -1; updateBgArt(); };
+  im.src = url;
+}
+// 지금 읽는 행의 번호(화면 위쪽에 걸친 행). 아직 그려지지 않았으면 NaN
+function curLineNo() {
+  const v = document.body.dataset.bg, ch = v && chByView(v);
+  const box = ch && document.getElementById(ch.containerId), arr = ch && window[ch.dataVar];
+  if (!box || !arr) return NaN;
+  const blocks = box.children; let lo = 0, hi = blocks.length - 1;
+  if (hi < 0 || !blocks[0].classList.contains('line-block')) return NaN;
+  const edge = Math.max(150, window.innerHeight * 0.28);
+  while (lo < hi) { const mid = (lo + hi) >> 1; if (blocks[mid].getBoundingClientRect().bottom > edge) hi = mid; else lo = mid + 1; }
+  const idx = parseInt(blocks[lo].id.split('-line-')[1], 10);
+  return arr[idx] ? refLineNo(arr[idx].ref) : NaN;
+}
+window.__curLineNo = curLineNo;
+// 명화 감상 창이 크게 보여 줄 그림: 구간이 있으면 지금 떠 있는 구간(없으면 첫 구간)
+function curArtEntry(g) { return (g.sections && g.sections.length) ? (secObj || g.sections[0]) : g; }
+function initSections(g) {
+  clearSecLayers(); resetArtFade(); secTries = 0;
+  const b = baseLayer(); if (b) { b.style.width = '0px'; b.style.height = '0px'; }
+  const host = document.getElementById('bgArt');
+  g.sections.forEach(s => {
+    const i = document.createElement('i'); i.className = 'sec'; i.dataset.k = secKey(s);
+    i.style.backgroundImage = 'url("' + s.img + '")'; i.style.width = '0px'; i.style.height = '0px';
+    host.appendChild(i); loadArt(s.img);
+  });
+}
+function showSection(g, key) {
+  secShown = key;
+  const s = key ? g.sections.find(x => secKey(x) === key) : null; secObj = s;
+  const c = document.getElementById('bgCap');
+  clearTimeout(secCapTimer);
+  // 캡션은 그림이 사라지는 동안 기다렸다가, 새 그림이 떠오를 때 바꿔 단다
+  const delay = c && c.classList.contains('in') ? 1500 : 0;
+  if (c) { c.classList.remove('in'); c.classList.remove('open'); }
+  secCapTimer = setTimeout(() => {
+    if (secShown !== key || !c) return;
+    c.innerHTML = s ? '<span class="cap-dot" aria-hidden="true"></span><div class="cap-body">' + (s.cap || '') + '</div>' : '';
+    if (s) c.classList.add('in');
+  }, delay);
+  updateBgArt();
+}
+function updateSectionArt(v, g) {
+  const sig = v + '#' + g.sections.map(secKey).join(',');
+  if (bgKey !== sig) { bgKey = sig; initSections(g); }
+  const vw = window.innerWidth, vh = window.innerHeight;
+  const ln = curLineNo();
+  if (isNaN(ln) && secTries++ < 40) setTimeout(updateBgArt, 300);   // 본문이 아직 그려지는 중이면 잠시 뒤 다시 본다
+  const cur = isNaN(ln) ? null : (g.sections.find(x => ln >= x.from && ln <= x.to) || null);
+  const want = cur ? secKey(cur) : '';
+  if (want !== secWant) {
+    secWant = want; clearTimeout(secTimer);
+    // 스크롤을 빨리 넘길 때 그림이 번쩍이지 않도록, 새 구간에 잠깐 머문 뒤에 바꾼다
+    if (want !== secShown) secTimer = setTimeout(() => showSection(g, want), 320);
+  }
+  secLayers().forEach(l => {
+    const s = g.sections.find(x => secKey(x) === l.dataset.k); if (!s) return;
+    const r = artRatio[s.img];
+    l.classList.toggle('in', secShown === l.dataset.k && r > 0);
+    if (!(r > 0)) return;
+    const w = Math.max(vw, vh / r), h = w * r;
+    let p = parseFloat(l.dataset.p) || 0;   // 사라지는 그림은 마지막 자리에 그대로 둔다
+    if (cur === s) { p = s.to > s.from ? Math.min(1, Math.max(0, (ln - s.from) / (s.to - s.from))) : 0; l.dataset.p = p; }
+    l.style.width = w + 'px'; l.style.height = h + 'px';
+    l.style.transform = 'translate3d(' + (-(w - vw) * p) + 'px,' + (-(h - vh) * p) + 'px,0)';
+  });
+}
 // 그림이 갑자기 나타나지 않도록: 이미지가 준비된 뒤 서서히 떠오르게 한다. 캡션 점은 그보다 조금 늦게.
 function resetArtFade() {
-  const i = document.querySelector('#bgArt i'), c = document.getElementById('bgCap');
+  const i = baseLayer(), c = document.getElementById('bgCap');
   if (i) i.classList.remove('in');
   if (c) { c.classList.remove('in'); c.classList.remove('open'); }
 }
 function artFadeIn(g, v) {
   const show = () => requestAnimationFrame(() => requestAnimationFrame(() => {
     if (bgKey !== v) return;
-    const i = document.querySelector('#bgArt i'), c = document.getElementById('bgCap');
+    const i = baseLayer(), c = document.getElementById('bgCap');
     if (i) i.classList.add('in');
     if (c) c.classList.add('in');
   }));
@@ -8518,16 +9046,18 @@ function updateBgArt() {
   const v = document.body.dataset.bg, g = GALLERY[v];
   if (!g || g.missing) {   // 그림이 없는 권(또는 파일이 없을 때)
     delete document.body.dataset.art;
-    bgKey = ''; resetArtFade();
+    bgKey = ''; clearSecLayers(); resetArtFade();
     return;
   }
   const off = !!galleryOff[v];
   document.body.dataset.art = off ? 'off' : 'on';
   const tg = document.getElementById('bgToggle'); if (tg) tg.textContent = off ? '배경 켜기' : '배경 끄기';
-  if (off) { bgKey = ''; resetArtFade(); return; }
-  const i = document.querySelector('#bgArt i'); if (!i) return;
+  if (off) { bgKey = ''; clearSecLayers(); resetArtFade(); return; }
+  if (g.sections && g.sections.length) { updateSectionArt(v, g); return; }   // 구간별 그림
+  const i = baseLayer(); if (!i) return;
   if (bgKey !== v) {
     bgKey = v;
+    clearSecLayers();
     resetArtFade();
     document.getElementById('bgCap').innerHTML = '<span class="cap-dot" aria-hidden="true"></span><div class="cap-body">' + (g.cap || '') + '</div>';
     artFadeIn(g, v);
@@ -8560,6 +9090,10 @@ window.addEventListener('resize', updateBgArt);
 (function () {
   const DB = 'classicsArt', ST = 'art', CK = 'artChoice';
   const BASE = {}; Object.keys(GALLERY).forEach(k => { BASE[k] = GALLERY[k]; });
+  const SK = 'artSections';   // { viewId: [ { id, from, to, art: 올린 그림 id | 'base' } ] }
+  const secStore = () => { try { return JSON.parse(localStorage.getItem(SK) || '{}') || {}; } catch (e) { return {}; } };
+  const setSecStore = o => { try { localStorage.setItem(SK, JSON.stringify(o)); } catch (e) {} };
+  let scope = { mode: 'all', from: '', to: '' };   // 새 그림을 이 권 전체에 깔지, 행 구간에만 깔지
   const urls = {}; let lib = []; let dbp = null;
   const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   function db() { return dbp || (dbp = new Promise((res, rej) => { const r = indexedDB.open(DB, 1); r.onupgradeneeded = () => r.result.createObjectStore(ST, { keyPath: 'id' }); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); })); }
@@ -8570,10 +9104,15 @@ window.addEventListener('resize', updateBgArt);
   const urlOf = a => urls[a.id] || (urls[a.id] = URL.createObjectURL(a.blob));
 
   function apply() {   // 고른 그림을 GALLERY에 반영하고 화면·서재 아이콘을 갱신
-    const ch = choice();
-    Object.keys(BASE).concat(Object.keys(ch)).forEach(v => {
+    const ch = choice(), sc = secStore();
+    Object.keys(BASE).concat(Object.keys(ch), Object.keys(sc)).forEach(v => {
       const a = lib.find(x => x.id === ch[v]);
-      if (a) GALLERY[v] = { img: urlOf(a), cap: capOf(a), user: true };
+      const list = (sc[v] || []).map(q => {
+        if (q.art === 'base') { const b0 = BASE[v]; return b0 && b0.img ? { id: q.id, from: q.from, to: q.to, img: b0.img, cap: b0.cap } : null; }
+        const x = lib.find(y => y.id === q.art); return x ? { id: q.id, from: q.from, to: q.to, img: urlOf(x), cap: capOf(x) } : null;
+      }).filter(Boolean).sort((p, q) => p.from - q.from);
+      if (list.length) GALLERY[v] = { img: list[0].img, cap: list[0].cap, sections: list, user: true };   // 구간 그림이 있으면 권 전체 그림보다 우선
+      else if (a) GALLERY[v] = { img: urlOf(a), cap: capOf(a), user: true };
       else if (BASE[v]) GALLERY[v] = BASE[v]; else delete GALLERY[v];
     });
     document.querySelectorAll('.mac-tile.has-art').forEach(t => t.classList.remove('has-art'));
@@ -8596,22 +9135,41 @@ window.addEventListener('resize', updateBgArt);
   }
 
   let ov = null;
+  const ranged = () => scope.mode === 'range';
   function render() {
     const v = document.body.dataset.bg, ch = choice(), cur = ch[v];
+    const secs = (secStore()[v] || []).slice().sort((p, q) => p.from - q.from);
     const name = typeof chLabel === 'function' ? chLabel(v) : v;
+    const baseArt = BASE[v] && BASE[v].img ? BASE[v] : null;
+    const artOfSec = q => q.art === 'base' ? (baseArt && { src: baseArt.img, title: (baseArt.cap || '').replace(/<[^>]*>/g, ' ').trim().slice(0, 40) || '기본 그림' }) : (x => x && { src: urlOf(x), title: x.title || '제목 없음' })(lib.find(y => y.id === q.art));
+    const tile = (inner, extra) => '<div ' + (extra || '') + ' style="position:relative;border:2px solid var(--border);border-radius:10px;overflow:hidden;background:var(--card-bg)">' + inner + '</div>';
     ov.querySelector('.ai-card').innerHTML =
       '<div class="ai-head"><h2>배경 그림 · ' + esc(name) + '</h2><button type="button" class="ai-x" data-a="x" aria-label="닫기">✕</button></div>' +
       '<div class="ai-body">' +
-      '<section class="ai-step"><div class="ai-pick" style="grid-template-columns:1fr">' +
+      '<div class="ai-seg" role="group" aria-label="그림을 깔 범위">' +
+        '<button type="button" data-a="scope" data-m="all" class="' + (ranged() ? '' : 'on') + '">이 권 전체</button>' +
+        '<button type="button" data-a="scope" data-m="range" class="' + (ranged() ? 'on' : '') + '">행 구간만</button></div>' +
+      '<div class="ai-pane" id="secPane"' + (ranged() ? '' : ' hidden') + '>' +
+        '<div class="ai-grid2">' +
+        '<label class="ai-f"><span>시작 행</span><input id="secFrom" type="number" min="1" inputmode="numeric" placeholder="예: 1" value="' + esc(scope.from) + '"></label>' +
+        '<label class="ai-f"><span>끝 행</span><input id="secTo" type="number" min="1" inputmode="numeric" placeholder="예: 118" value="' + esc(scope.to) + '"></label></div>' +
+        '<p class="ai-status" style="min-height:0">화면에 보이는 행 번호 기준이에요. <button type="button" class="ai-link" data-a="here-from">지금 읽는 행을 시작으로</button><button type="button" class="ai-link" data-a="here-to">끝으로</button><br>그 행을 읽는 동안 그림이 서서히 떠오르고, 구간을 벗어나면 서서히 사라져요. 구간 그림이 있는 권은 구간 밖에서는 그림이 없어요.</p></div>' +
+      '<section class="ai-step" style="margin-top:12px"><div class="ai-pick" style="grid-template-columns:1fr">' +
       '<label class="ai-f"><span>그림 파일</span><input type="file" id="artFile" accept="image/*"></label>' +
       '<label class="ai-f"><span>제목</span><input id="artTitle" type="text" placeholder="예: 헥토르와 안드로마케의 작별"></label>' +
       '<label class="ai-f"><span>작가 · 연도 · 소장처 (선택)</span><input id="artBy" type="text"></label>' +
       '<label class="ai-f"><span>출처 (선택)</span><input id="artSrc" type="text" placeholder="예: Wikimedia Commons (퍼블릭 도메인)"></label>' +
-      '</div><p class="ai-status" id="artMsg"></p><div class="ai-qsend"><button type="button" class="ai-btn ai-primary" data-a="up">올리고 이 권에 적용</button></div></section>' +
-      '<div class="ai-words-head"><span>올린 그림 ' + lib.length + '개 — 눌러서 이 권에 적용</span><span class="ai-words-tools">' +
-      (BASE[v] || cur ? '<button type="button" class="ai-link" data-a="def">' + (BASE[v] ? '기본 그림으로' : '그림 해제') + '</button>' : '') + '</span></div>' +
-      (lib.length ? '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px;margin-top:8px">' +
-        lib.map(a => '<div style="position:relative;border:2px solid ' + (a.id === cur ? 'var(--accent)' : 'var(--border)') + ';border-radius:10px;overflow:hidden;background:var(--card-bg)">' +
+      '</div><p class="ai-status" id="artMsg"></p><div class="ai-qsend"><button type="button" class="ai-btn ai-primary" data-a="up" data-t-all="올리고 이 권 전체에 적용" data-t-range="올리고 이 구간에 넣기">' + (ranged() ? '올리고 이 구간에 넣기' : '올리고 이 권 전체에 적용') + '</button></div></section>' +
+      (secs.length ? '<div class="ai-words-head"><span>이 권의 구간 그림 ' + secs.length + '개</span><span class="ai-words-tools"><button type="button" class="ai-link" data-a="secclear">구간 모두 지우기</button></span></div>' +
+        '<div style="display:grid;gap:8px;margin-top:8px">' + secs.map(q => { const t = artOfSec(q); return '<div style="display:flex;align-items:center;gap:10px;border:1px solid var(--border);border-radius:10px;padding:6px 8px;background:var(--card-bg)">' +
+          (t ? '<img src="' + t.src + '" alt="" style="width:54px;height:38px;object-fit:cover;border-radius:6px;flex:none">' : '<span style="width:54px;height:38px;flex:none"></span>') +
+          '<span style="flex:1;min-width:0;font-size:13px;line-height:1.4;color:var(--text-main)"><b>' + q.from + '–' + q.to + '행</b><br><span style="color:var(--text-sub);font-size:12px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">' + esc(t ? t.title : '') + '</span></span>' +
+          '<button type="button" data-a="secdel" data-id="' + esc(q.id) + '" aria-label="이 구간 지우기" style="width:26px;height:26px;border:0;border-radius:50%;cursor:pointer;background:color-mix(in srgb,var(--text-faint) 22%,transparent);color:var(--text-sub);font-size:11px;flex:none">✕</button></div>'; }).join('') + '</div>' : '') +
+      '<div class="ai-words-head"><span>올린 그림 ' + lib.length + '개 — <span data-t-all="눌러서 이 권 전체에 적용" data-t-range="눌러서 이 구간에 넣기">' + (ranged() ? '눌러서 이 구간에 넣기' : '눌러서 이 권 전체에 적용') + '</span></span><span class="ai-words-tools">' +
+      (BASE[v] || cur ? '<button type="button" class="ai-link" data-only="all"' + (ranged() ? ' style="display:none"' : '') + ' data-a="def">' + (BASE[v] ? '기본 그림으로' : '그림 해제') + '</button>' : '') + '</span></div>' +
+      ((lib.length || baseArt) ? '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px;margin-top:8px">' +
+        (baseArt ? '<div data-only="range"' + (ranged() ? '' : ' style="display:none"') + '><button type="button" data-a="use" data-id="base" style="all:unset;cursor:pointer;display:block;width:100%;box-sizing:border-box;border:2px solid var(--border);border-radius:10px;overflow:hidden;background:var(--card-bg)"><img src="' + esc(baseArt.img) + '" alt="" style="display:block;width:100%;height:90px;object-fit:cover"><span style="display:block;padding:5px 8px;font-size:11.5px;line-height:1.35;color:var(--text-sub)">기본 그림</span></button></div>' : '') +
+        lib.map(a => '<div style="position:relative;border:2px solid ' + (!ranged() && a.id === cur ? 'var(--accent)' : 'var(--border)') + ';border-radius:10px;overflow:hidden;background:var(--card-bg)">' +
           '<button type="button" data-a="use" data-id="' + a.id + '" style="all:unset;cursor:pointer;display:block;width:100%">' +
           '<img src="' + urlOf(a) + '" alt="" style="display:block;width:100%;height:90px;object-fit:cover"><span style="display:block;padding:5px 8px;font-size:11.5px;line-height:1.35;color:var(--text-sub);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">' + esc(a.title || '제목 없음') + '</span></button>' +
           '<button type="button" data-a="del" data-id="' + a.id + '" aria-label="삭제" style="position:absolute;top:4px;right:4px;width:22px;height:22px;border:0;border-radius:50%;cursor:pointer;background:rgba(0,0,0,.55);color:#fff;font-size:11px">✕</button></div>').join('') + '</div>'
@@ -8620,24 +9178,66 @@ window.addEventListener('resize', updateBgArt);
   }
   const say = t => { const m = ov && ov.querySelector('#artMsg'); if (m) m.textContent = t; };
 
+  function syncScope() {
+    if (!ov) return; const f = ov.querySelector('#secFrom'), t = ov.querySelector('#secTo');
+    if (f) scope.from = f.value; if (t) scope.to = t.value;
+  }
+  function addSection(artId) {   // 입력한 행 범위에 그림을 넣는다. 성공하면 true
+    syncScope();
+    const v = document.body.dataset.bg, from = parseInt(scope.from, 10), to = parseInt(scope.to, 10);
+    if (!(from > 0) || !(to >= from)) { say('시작 행과 끝 행을 숫자로 넣어 주세요. (끝 행은 시작 행과 같거나 커야 해요)'); return false; }
+    const st = secStore(), list = st[v] || [];
+    const clash = list.find(q => from <= q.to && to >= q.from);
+    if (clash) { say('이미 ' + clash.from + '–' + clash.to + '행에 그림이 있어요. 겹치지 않게 범위를 바꾸거나 그 구간을 먼저 지워 주세요.'); return false; }
+    list.push({ id: 's' + Date.now().toString(36) + Math.random().toString(36).slice(2, 5), from, to, art: artId });
+    st[v] = list; setSecStore(st);
+    scope.from = String(to + 1); scope.to = '';   // 다음 구간을 이어서 넣기 편하게
+    apply(); render(); say(from + '–' + to + '행에 넣었어요.');
+    return true;
+  }
   async function act(e) {
     const b = e.target.closest('[data-a]'); if (!b) { if (e.target === ov) close(); return; }
     const v = document.body.dataset.bg, a = b.dataset.a, ch = choice();
     if (a === 'x') return close();
-    if (a === 'use') { ch[v] = b.dataset.id; setChoice(ch); apply(); render(); }
+    if (a === 'scope') {   // 범위 전환은 입력해 둔 내용이 지워지지 않게 일부만 바꾼다
+      syncScope(); scope.mode = b.dataset.m;
+      ov.querySelectorAll('[data-a="scope"]').forEach(x => x.classList.toggle('on', x === b));
+      const pane = ov.querySelector('#secPane'); if (pane) pane.hidden = !ranged();
+      ov.querySelectorAll('[data-t-all]').forEach(x => { x.textContent = ranged() ? x.dataset.tRange : x.dataset.tAll; });
+      ov.querySelectorAll('[data-only]').forEach(x => { x.style.display = (x.dataset.only === 'range') === ranged() ? '' : 'none'; });
+      return;
+    }
+    if (a === 'here-from' || a === 'here-to') {
+      const n = curLineNo(); if (isNaN(n)) return say('지금 읽는 행을 찾지 못했어요. 본문을 조금 스크롤한 뒤 다시 눌러 보세요.');
+      const el = ov.querySelector(a === 'here-from' ? '#secFrom' : '#secTo'); if (el) el.value = n; syncScope(); return;
+    }
+    if (a === 'use') {
+      if (ranged()) return void addSection(b.dataset.id);
+      ch[v] = b.dataset.id; setChoice(ch); apply(); render();
+    }
     else if (a === 'def') { delete ch[v]; setChoice(ch); apply(); render(); }
+    else if (a === 'secdel') { const st = secStore(); st[v] = (st[v] || []).filter(q => q.id !== b.dataset.id); if (!st[v].length) delete st[v]; setSecStore(st); apply(); render(); }
+    else if (a === 'secclear') { if (!confirm('이 권의 구간 그림을 모두 지울까요? (올려 둔 그림 파일은 남아요)')) return; const st = secStore(); delete st[v]; setSecStore(st); apply(); render(); }
     else if (a === 'del') {
-      if (!confirm('이 그림을 삭제할까요? 적용된 권은 기본 그림으로 돌아가요.')) return;
+      if (!confirm('이 그림을 삭제할까요? 적용된 권은 기본 그림으로 돌아가고, 구간에 쓰인 곳은 비워져요.')) return;
       await tx('readwrite', s => s.delete(b.dataset.id)); URL.revokeObjectURL(urls[b.dataset.id]); delete urls[b.dataset.id];
       Object.keys(ch).forEach(k => { if (ch[k] === b.dataset.id) delete ch[k]; }); setChoice(ch);
+      const st = secStore(); Object.keys(st).forEach(k => { st[k] = st[k].filter(q => q.art !== b.dataset.id); if (!st[k].length) delete st[k]; }); setSecStore(st);
       await reload(); apply(); render();
     } else if (a === 'up') {
       const f = ov.querySelector('#artFile').files[0]; if (!f) return say('그림 파일을 먼저 고르세요.');
+      if (ranged()) {   // 저장하기 전에 범위부터 확인해서, 범위가 잘못됐을 때 그림만 저장되는 일을 막는다
+        syncScope(); const fr = parseInt(scope.from, 10), to = parseInt(scope.to, 10), list = secStore()[v] || [];
+        if (!(fr > 0) || !(to >= fr)) return say('시작 행과 끝 행을 숫자로 넣어 주세요. (끝 행은 시작 행과 같거나 커야 해요)');
+        const clash = list.find(q => fr <= q.to && to >= q.from);
+        if (clash) return say('이미 ' + clash.from + '–' + clash.to + '행에 그림이 있어요. 겹치지 않게 범위를 바꾸거나 그 구간을 먼저 지워 주세요.');
+      }
       say('저장하는 중…');
       try {
         const blob = await shrink(f), id = 'a' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
         const rec = { id, blob, at: Date.now(), title: ov.querySelector('#artTitle').value.trim(), by: ov.querySelector('#artBy').value.trim(), src: ov.querySelector('#artSrc').value.trim() };
-        await tx('readwrite', s => s.put(rec)); await reload(); ch[v] = id; setChoice(ch); apply(); render();
+        await tx('readwrite', s => s.put(rec)); await reload();
+        if (ranged()) addSection(id); else { ch[v] = id; setChoice(ch); apply(); render(); }
       } catch (err) { say('저장하지 못했어요: ' + (err && err.message || '브라우저 저장 공간을 확인하세요')); }
     }
   }
@@ -8647,7 +9247,7 @@ window.addEventListener('resize', updateBgArt);
     if (ov) return; const m = document.getElementById('navMore'); if (m) m.classList.remove('open');
     await reload();
     ov = document.createElement('div'); ov.className = 'ai-overlay show'; ov.setAttribute('role', 'dialog');
-    ov.innerHTML = '<div class="ai-card"></div>'; ov.addEventListener('click', act);
+    ov.innerHTML = '<div class="ai-card"></div>'; ov.addEventListener('click', act); ov.addEventListener('input', syncScope);
     document.body.appendChild(ov); document.addEventListener('keydown', onKey, true); render();
   };
   reload().then(apply);
@@ -8948,6 +9548,7 @@ function goToLine(viewId, idx) {
   async function onBook() {
     const n = parseInt(inBook.value, 10);
     S.book = n > 0 ? n : NaN;
+    if (!isNaN(S.book)) { try { localStorage.setItem('aiLastPick', JSON.stringify({ work: S.work.key, book: S.book })); } catch (e) {} }   // 마지막 작품·권 기억
     if (isNaN(S.book)) { S.lines = []; S.ch = null; dlLine.textContent = ''; refresh(); return; }
     S.loading = true; refresh();
     const ok = await loadLines();
@@ -9175,6 +9776,7 @@ function goToLine(viewId, idx) {
     const t = document.createElement('span'); t.innerHTML = '이 ' + S.work.unit + ' — data 파일에 코딩된 행 <b>' + base + '</b>개 · 이 브라우저에만 저장된 행 <b>' + mine + '</b>개'
       + (done ? ' · 목록의 <b>이미 코딩됨 ' + done + '행</b>은 자동 코딩에서 건너뛰어요' : '');
     el.appendChild(t);
+    const qd = $('aiQDone'); if (qd) el.appendChild(qd);   // ⋯ 메뉴에 있던 ‘코딩된 행 치우기’를 저장분 지우기 바로 옆으로
     if (mine) { const b = document.createElement('button'); b.type = 'button'; b.className = 'ai-link ai-danger'; b.dataset.act = 'clearmine'; b.textContent = '브라우저 저장분 ' + mine + '행 모두 지우기'; el.appendChild(b); }
     el.hidden = false;
   }
@@ -10162,6 +10764,9 @@ function goToLine(viewId, idx) {
     const act = document.querySelector('.view.active');
     const ch = act ? STUDY_CHAPTERS.find(c => c.viewId === act.id) : null;
     if (ch) { selWork.value = ch.workKey; inBook.value = String(ch.book); }
+    else {   // 읽는 화면이 아니면(서재·앱을 새로 켠 직후 등) 마지막으로 작업하던 작품·권으로 연다
+      try { const lp = JSON.parse(localStorage.getItem('aiLastPick') || 'null'); if (lp && byKey[lp.work] && lp.book > 0) { selWork.value = lp.work; inBook.value = String(lp.book); } } catch (e) {}
+    }
     if (!S.dirty) { inLine.value = ''; fillForm(null); }
     await onWork(false);
     unsavedSync(); dockSync(); if (!SPEC) loadSpec().then(specSync); // (키가 없을 때의 안내는 ‘자동 코딩 시작’을 눌렀을 때만 설정을 열어 줌 — 열자마자 드롭다운이 입력칸을 가리지 않도록)
@@ -10674,6 +11279,79 @@ if ('serviceWorker' in navigator) {
     }).catch(function () {});
   });
 }
+</script>
+<div id="artDock">
+  <button id="artPickBtn" class="art-pick-btn" type="button" aria-haspopup="true" aria-expanded="false">그림 바꾸기</button>
+  <button id="artPeekBtn" type="button" aria-label="명화 감상 모드: 누르고 있는 동안 글자를 숨기고 그림만 보입니다">
+  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="1.5" y="2.5" width="15" height="13" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M3.5 13l3.8-4.2 2.7 2.8 2-2.1 2.5 3.5" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="12.2" cy="6.4" r="1.1" fill="currentColor"/></svg>
+  명화 감상
+</button>
+</div>
+<div id="artPicker" role="dialog" aria-label="배경 명화 고르기" hidden></div>
+<script>
+(function () {
+  const b = document.getElementById('artPeekBtn'), d = document.body;
+  const on = () => d.classList.add('art-peek'), off = () => d.classList.remove('art-peek');
+  b.addEventListener('pointerdown', e => { if (e.button > 0) return; try { b.setPointerCapture(e.pointerId); } catch (x) {} on(); });
+  ['pointerup', 'pointercancel', 'lostpointercapture'].forEach(t => b.addEventListener(t, off));
+  b.addEventListener('contextmenu', e => e.preventDefault());
+  b.addEventListener('keydown', e => { if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); on(); } });
+  b.addEventListener('keyup', off); b.addEventListener('blur', off);
+  window.addEventListener('blur', off);
+})();
+</script>
+<script>
+/* 명화 프리셋: 설정에서 파일을 올리지 않아도 바로 고를 수 있는 그림들. 새 그림은 img/ 폴더에 넣고 아래에 한 줄만 추가하면 된다. */
+(function () {
+  const PRESETS = [
+    { id: 'creation-adam', img: 'img/genesis1.jpg', title: '아담의 창조', by: '미켈란젤로 · 1512',
+      cap: '<b>아담의 창조</b><em>Creazione di Adamo</em><br>Michelangelo Buonarroti · 1512년경 · 프레스코<br>시스티나 성당 천장, 바티칸 시국<small>출처: Wikimedia Commons (퍼블릭 도메인)</small>' },
+    { id: 'quarrel-agamemnon', img: 'img/iliad1.jpg', title: '아가멤논과 아킬레우스의 다툼', by: '바치치오',
+      cap: '<b>아가멤논과 아킬레우스의 다툼</b><em>The Quarrel between Agamemnon and Achilles</em><br>Giovanni Battista Gaulli (일 바치치오)<br>보베 우아즈 박물관' },
+    { id: 'priam-achilles', img: 'img/iliad24.jpg', title: '프리아모스와 아킬레우스', by: '알렉산드르 이바노프 · 1824',
+      cap: '<b>프리아모스, 아킬레우스에게 헥토르의 시신을 청하다</b><em>Priam Begging Achilles for the Body of Hector</em><br>Alexander Ivanov · 1824<small>출처: Wikimedia Commons (퍼블릭 도메인)</small>' },
+    { id: 'hector-farewell', img: 'img/iliad6.jpg', title: '헥토르와 안드로마케의 작별', by: 'C. F. 데클러',
+      cap: '<b>헥토르와 안드로마케, 아스티아낙스의 작별</b><em>The Farewell of Hector to Andromache and Astyanax</em><br>Carl Friedrich Deckler (1838–1918)<small>출처: Wikimedia Commons (퍼블릭 도메인)</small>' }
+  ];
+  const PK = 'presetArt', base0 = {}; Object.keys(GALLERY).forEach(k => { base0[k] = GALLERY[k]; });
+  const get = () => { try { return JSON.parse(localStorage.getItem(PK) || '{}') || {}; } catch (e) { return {}; } };
+  const put = o => { try { localStorage.setItem(PK, JSON.stringify(o)); } catch (e) {} };
+  const drop = (key, v) => { try { const o = JSON.parse(localStorage.getItem(key) || '{}') || {}; if (o[v] !== undefined) { delete o[v]; localStorage.setItem(key, JSON.stringify(o)); } } catch (e) {} };
+  const find = id => PRESETS.find(p => p.id === id);
+  // 고른 프리셋을 GALLERY에 얹는다. (설정에서 올린 그림을 고른 권은 그쪽이 우선)
+  function impose() {
+    const v = document.body.dataset.bg, id = v && get()[v], p = id && find(id); if (!p) return;
+    const g = GALLERY[v]; if (g && (g.user || g.presetId === id)) return;
+    GALLERY[v] = { img: p.img, cap: p.cap, presetId: id }; bgKey = '';
+  }
+  const orig = updateBgArt;
+  updateBgArt = function () { impose(); return orig.apply(this, arguments); };
+
+  const box = document.getElementById('artPicker'), btn = document.getElementById('artPickBtn');
+  const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  function render() {
+    const v = document.body.dataset.bg, cur = get()[v], b = base0[v];
+    const name = typeof chLabel === 'function' ? chLabel(v) : '이 권';
+    box.innerHTML = '<h3>' + esc(name) + ' · 배경 명화</h3>' +
+      '<button type="button" class="art-opt' + (cur ? '' : ' on') + '" data-id=""><span class="art-none"></span><span>' + (b ? '처음 설정된 그림' : '그림 없음') + '</span></button>' +
+      PRESETS.map(p => '<button type="button" class="art-opt' + (cur === p.id ? ' on' : '') + '" data-id="' + p.id + '"><img src="' + p.img + '" alt="" onerror="this.closest(\'.art-opt\').remove()"><span>' + esc(p.title) + '<small>' + esc(p.by) + '</small></span></button>').join('');
+  }
+  function open() { render(); box.hidden = false; btn.setAttribute('aria-expanded', 'true'); }
+  function close() { box.hidden = true; btn.setAttribute('aria-expanded', 'false'); }
+  btn.addEventListener('click', () => { box.hidden ? open() : close(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !box.hidden) { close(); btn.focus(); } });
+  document.addEventListener('pointerdown', e => { if (!box.hidden && !e.target.closest('#artPicker, #artPickBtn')) close(); });
+  box.addEventListener('click', e => {
+    const o = e.target.closest('.art-opt'); if (!o) return;
+    const v = document.body.dataset.bg, id = o.dataset.id, picks = get();
+    drop('artChoice', v); drop('artSections', v);   // 설정에서 올린 그림·구간 설정은 이 권에서 내려놓는다
+    if (galleryOff[v]) { delete galleryOff[v]; try { localStorage.setItem('galleryBg', JSON.stringify(galleryOff)); } catch (x) {} }
+    if (id) { picks[v] = id; const p = find(id); GALLERY[v] = { img: p.img, cap: p.cap, presetId: id }; }
+    else { delete picks[v]; if (base0[v]) GALLERY[v] = base0[v]; else delete GALLERY[v]; }
+    put(picks); bgKey = ''; clearSecLayers(); updateBgArt(); render();
+  });
+  updateBgArt();
+})();
 </script>
 </body>
 </html>
