@@ -3828,17 +3828,120 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
   #view-vocab h1::after, #view-vocab-chapters h1::after, #view-vocab-words h1::after, #view-vocab-quiz-home h1::after, #view-vocab-quiz-detail h1::after, #view-memos h1::after, #view-bookmarks h1::after { content: ''; display: block; width: 48px; height: 2px; margin-top: 12px; background: var(--gilt, var(--accent)); border-radius: 2px; }
   #view-vocab .subtitle, #view-vocab-chapters .subtitle, #view-vocab-words .subtitle, #view-vocab-quiz-home .subtitle, #view-vocab-quiz-detail .subtitle, #view-memos .subtitle, #view-bookmarks .subtitle { color: var(--text-sub); font-size: 14px; margin-bottom: 24px; }
   #view-vocab .back-link, #view-vocab-chapters .back-link, #view-vocab-words .back-link, #view-vocab-quiz-home .back-link, #view-vocab-quiz-detail .back-link, #view-memos .back-link, #view-bookmarks .back-link { font-size: 13px; }
-  /* 6) 서재: 책 제목을 누르면 권 목록이 책장 아래에서 서랍처럼 스르륵 나오고, 닫을 땐 다시 밀려 들어감 */
+  /* 6) 서재 서랍 곡선: 황금비(0.618 / 0.382)로 천천히 출발해 가속했다가 부드럽게 멈춘다. 등속 아님.
+     6) 서재: 책 제목을 누르면 권 목록이 책장 아래에서 서랍처럼 스르륵 나오고, 닫을 땐 다시 밀려 들어감.
+        내용은 위쪽 기준으로 두어, 닫힐 때 권 버튼이 먼저 사라지지 않고 서랍 바닥이 올라오며 덮는다 */
   .work-desc { display: none; }
-  .shelf-body { transition: grid-template-rows 0.7s cubic-bezier(0.32, 0.72, 0, 1); }
-  .shelf-body-inner { overflow: hidden; opacity: 1; transition: none; }
-  .shelf-body-inner > * { transform: translateY(-105%); opacity: 1 !important; animation: none !important;
-    transition: transform 0.7s cubic-bezier(0.32, 0.72, 0, 1); will-change: transform; }
+  .shelf-body { transition: grid-template-rows 0.5s cubic-bezier(0.618, 0, 0.382, 1); }
+  .shelf-body-inner { overflow: hidden; opacity: 1; transition: none; display: flex; flex-direction: column; justify-content: flex-start; }
+  /* 내용은 위쪽을 기준으로 두고 서랍 바닥이 올라오며 가리게 한다(권 버튼이 먼저 사라지지 않음). 살짝만 같이 올라가고 내려와 드르륵 느낌만 준다 */
+  .shelf-body-inner > * { flex: none; transform: translateY(-14px); opacity: 1 !important; animation: none !important;
+    transition: transform 0.5s cubic-bezier(0.618, 0, 0.382, 1); }
   .shelf.open .shelf-body-inner > * { transform: translateY(0); }
-  .shelf-body-inner > .legend { transition-delay: 0.04s; }
-  @media (prefers-reduced-motion: reduce) { .shelf-body, .shelf-body-inner > * { transition: none; } }
+  /* 닫을 때 안쪽 권 버튼 묶음(.mac-picker)이 페이드용 기본값(투명)으로 먼저 돌아가 버튼이 먼저 사라지던 것 → 항상 보이게 고정 */
+  .shelf-body-inner .mac-picker, .shelf-body-inner .mac-tiles, .shelf-body-inner .legend { opacity: 1 !important; animation: none !important; }
+  /* 맥의 '동작 줄이기' 가 켜져 있으면 위쪽 전역 규칙이 모든 전환을 0.001ms 로 죽여서 서랍이 툭 열렸음 → 서랍 모션만은 그대로 살린다 */
+  @media (prefers-reduced-motion: reduce) {
+    .shelf-body, .shelf-body-inner > * { transition-duration: 0.5s !important; }
+    .shelf-chevron { transition-duration: 0.36s !important; }
+  }
+  /* 7) 서재 표지 설정: 권마다 올려 둔 그림 중 하나를 고르고, 표지 칸에 보일 부분을 직접 정한다 */
+  .shelf-set-btn { margin-left: auto; padding: 2px 4px; border: 0; background: none; font: inherit; font-size: 11.5px; color: var(--text-faint); cursor: pointer; border-radius: 6px; }
+  .shelf-set-btn:hover { color: var(--text-main); text-decoration: underline; text-underline-offset: 3px; }
+  .sc-overlay { position: fixed; inset: 0; z-index: 1200; display: flex; align-items: center; justify-content: center; padding: 20px; background: rgba(15, 13, 10, 0.55); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); opacity: 0; pointer-events: none; transition: opacity 0.25s ease; }
+  .sc-overlay.show { opacity: 1; pointer-events: auto; }
+  .sc-modal { width: min(600px, 100%); max-height: calc(100vh - 40px); display: flex; flex-direction: column; background: var(--card-bg); color: var(--text-main); border-radius: 18px; box-shadow: 0 24px 60px rgba(0,0,0,0.35); transform: translateY(10px); transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1); overflow: hidden; }
+  .sc-overlay.show .sc-modal { transform: none; }
+  .sc-head { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border-bottom: 1px solid var(--border-soft, var(--border)); font-size: 16px; }
+  .sc-x { width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--border); background: transparent; color: var(--text-sub); font-size: 16px; cursor: pointer; }
+  .sc-body { padding: 16px 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; }
+  .sc-label { font-size: 12.5px; font-weight: 600; color: var(--text-sub); }
+  .sc-label span { font-weight: 400; color: var(--text-faint); margin-left: 6px; }
+  .sc-thumbs { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 6px; }
+  .sc-thumb { flex: none; width: 96px; border: 2px solid transparent; border-radius: 10px; padding: 0; background: var(--bg-alt); cursor: pointer; overflow: hidden; text-align: left; font: inherit; color: var(--text-sub); }
+  .sc-thumb img { display: block; width: 100%; height: 62px; object-fit: cover; }
+  .sc-thumb span { display: block; padding: 4px 6px 5px; font-size: 10.5px; line-height: 1.25; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .sc-thumb.on { border-color: var(--accent, #b3903f); }
+  .sc-empty { font-size: 13px; color: var(--text-sub); padding: 18px 4px; line-height: 1.6; }
+  .sc-preview { position: relative; width: 100%; border-radius: 12px; overflow: hidden; background-color: #222; cursor: grab; touch-action: none; user-select: none; box-shadow: inset 0 0 0 2px rgba(20,14,6,0.85); }
+  .sc-preview.drag { cursor: grabbing; }
+  .sc-pv-text { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; padding: 0 5%; pointer-events: none; color: #efdca0; font-weight: 500; text-shadow: 0 1px 6px rgba(0,0,0,0.5); }
+  .sc-pv-text small { font-size: 0.42em; margin-top: 4px; color: #cdbf9c; font-weight: 600; }
+  .sc-zoom { display: flex; align-items: center; gap: 12px; font-size: 12.5px; color: var(--text-sub); }
+  .sc-zoom input { flex: 1; accent-color: var(--accent, #b3903f); }
+  .sc-hint { flex: none; font-size: 11px; color: var(--text-faint); white-space: nowrap; }
+  .sc-mini { padding: 5px 10px; font-size: 12px; white-space: nowrap; }
+  .sc-foot { display: flex; align-items: center; gap: 8px; padding: 14px 20px; border-top: 1px solid var(--border-soft, var(--border)); }
+  .sc-foot .sp { flex: 1; }
+  .sc-btn { padding: 9px 16px; border-radius: 10px; border: 1px solid var(--border); background: transparent; color: var(--text-main); font: inherit; font-size: 13.5px; cursor: pointer; }
+  .sc-btn.primary { background: var(--accent, #b3903f); border-color: transparent; color: #1d1409; font-weight: 600; }
+  .sc-btn.ghost { border-color: transparent; color: var(--text-sub); }
+  .sc-btn:disabled { opacity: 0.4; cursor: default; }
+  @media (prefers-reduced-motion: reduce) { .sc-overlay, .sc-modal { transition: none; } }
+
+  /* 8) 열릴 때 제목 카드 아래 모서리가 확 각지던 것 → 닫힌 상태의 둥근 모서리가 서랍과 같은 속도로 서서히 펴짐 (물방울이 커지듯) */
+  #view-hub .shelf, #view-hub #shelfGenesis, #view-hub #shelfIliad, #view-hub #shelfMeta, #view-hub #shelfCid, #view-hub #shelfLusiadas, #view-hub #shelfSanguo { background: var(--bg-alt); }   /* 둥근 모서리 뒤가 서랍과 같은 색이라 끊겨 보이지 않음 */
+  #view-hub .shelf .shelf-head { border-radius: 0 0 20px 20px;
+    transition: background 0.36s cubic-bezier(0.2, 0.8, 0.2, 1), border-radius 0.5s cubic-bezier(0.618, 0, 0.382, 1); }
+  #view-hub .shelf.open .shelf-head { border-radius: 0; }
+  @media (prefers-reduced-motion: reduce) { #view-hub .shelf .shelf-head { transition-duration: 0.36s, 0.5s !important; } }
   /* 5) 서재 카드: 그림 위에서 안 보이던 화살표에 은은한 받침 */
   #view-hub .shelf-chevron { filter: drop-shadow(0 1px 3px rgba(0,0,0,.65)); }
+
+  /* 출처 토글 = 명화 감상 아이콘. 올리면 출처가 위로 펼쳐지고, 아이콘을 누르고 있는 동안은 그림만 보인다 */
+  body #bgCap { width: 34px; height: 34px; max-width: none; padding: 0; border-radius: 50%; }
+  body #bgCap .cap-dot { display: none; }
+  body #bgCap .cap-peek { position: absolute; inset: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; padding: 0; border: 0; border-radius: 50%; background: transparent; color: var(--text-sub); cursor: pointer;
+    touch-action: none; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; -webkit-tap-highlight-color: transparent; transition: color 0.2s var(--ease-mac), transform var(--dur-press) var(--ease-mac); }
+  body #bgCap .cap-peek:hover { color: var(--text-main); }
+  body #bgCap .cap-peek:focus-visible { outline: 2px solid var(--accent-dark); outline-offset: 2px; }
+  body.art-peek #bgCap .cap-peek { transform: scale(0.88); color: var(--accent-dark); }
+  body #bgCap .cap-body { bottom: 40px; }
+  body.art-peek #bgCap .cap-body { opacity: 0 !important; }
+  #artPickBtn { display: none; }
+  body.gallery-mode #artPickBtn { display: block; }
+  /* 그림 고르기 창: 위쪽 ⋯ 메뉴 근처로 */
+  #artPicker { top: calc(64px + env(safe-area-inset-top, 0px)); bottom: auto; max-height: calc(100vh - 90px); max-height: calc(100dvh - 90px); }
+  #artPicker:not([hidden]) { transform-origin: 100% 0; }
+  /* 명화 감상: 그림 전체가 보이도록 카메라가 부드럽게 줌 아웃 / 줌 인 */
+  #bgArt i { transform-origin: 0 0; }
+  body.art-peek-anim #bgArt i { transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1), transform 1s cubic-bezier(0.45, 0, 0.15, 1); }
+  @media (prefers-reduced-motion: reduce) { body.art-peek-anim #bgArt i { transition: opacity 0.3s linear; } }
+
+  /* ===== 정보 추가: 작품·권·행 고르기를 ‘원문 넣기 · 코딩 · 저장’ 안으로 합침 · 황금비 폭 · 드롭다운 통일 ===== */
+  #aiOverlay .ai-pickwrap { margin: 0 0 14px; }
+  #aiOverlay .ai-step .ai-pick { position: static; display: grid; grid-template-columns: 1.618fr 1fr 1fr; gap: 8px 10px; align-items: end; width: 61.8%; min-width: 340px; max-width: 100%; box-sizing: border-box; margin: 0; padding: 10px 12px 11px; border: 1px solid var(--border-soft); border-radius: 12px; background: var(--card-bg); box-shadow: none; }
+  #aiOverlay .ai-step .ai-pick .ai-f { gap: 4px; }
+  #aiOverlay .ai-step .ai-pick .ai-f > span { font-size: 11px; font-weight: 600; opacity: .8; }
+  #aiOverlay .ai-step .ai-pick .ai-pickinfo { grid-column: 1 / -1; }
+  @media (max-width: 640px) {
+    #aiOverlay .ai-step .ai-pick { width: 100%; min-width: 0; grid-template-columns: 1fr 1fr; }
+    #aiOverlay .ai-step .ai-pick .ai-pk-work { grid-column: 1 / -1; }
+  }
+  /* 작품·권·행: 같은 높이 · 같은 글씨 · 같은 화살표 · 같은 마우스 올림/열림 표시 */
+  #aiOverlay .ai-pick .mac-dd { display: block; width: 100%; }
+  #aiOverlay .ai-pick select:not(#_), #aiOverlay .ai-pick input[data-list] {
+    display: block; width: 100%; height: var(--ai-h); box-sizing: border-box; margin: 0; padding: 0 28px 0 11px; text-align: left; cursor: pointer;
+    font: 600 13.5px var(--sans); color: var(--text-main); border: 1px solid var(--border); border-radius: 8px; background-color: var(--bg);
+    background-repeat: no-repeat; background-position: right 9px center; background-size: 12px 16px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='16' viewBox='0 0 12 16' fill='none' stroke='%238a8069' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 6l3-3 3 3M3 10l3 3 3-3'/%3E%3C/svg%3E");
+    box-shadow: none; transition: border-color var(--dur-press) var(--ease-mac), box-shadow var(--dur-press) var(--ease-mac), background-color var(--dur-press) var(--ease-mac); }
+  :root[data-theme="dark"] #aiOverlay .ai-pick select:not(#_), :root[data-theme="dark"] #aiOverlay .ai-pick input[data-list] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='16' viewBox='0 0 12 16' fill='none' stroke='%23B9AB86' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 6l3-3 3 3M3 10l3 3 3-3'/%3E%3C/svg%3E"); }
+  #aiOverlay .ai-pick select:not(#_):hover, #aiOverlay .ai-pick input[data-list]:hover { border-color: color-mix(in srgb, var(--accent) 70%, transparent); background-color: color-mix(in srgb, var(--card-bg) 94%, var(--accent)); }
+  #aiOverlay .ai-pick select:not(#_):focus, #aiOverlay .ai-pick input[data-list]:focus, #aiOverlay .ai-pick .mac-dd.open > select:not(#_) { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 24%, transparent); }
+  /* 열리는 목록(작품 목록 · 번호 격자)도 같은 모서리·바탕·테두리 */
+  .mac-dd-menu, .mac-ng { border: 1px solid var(--border); border-radius: 12px; background: color-mix(in srgb, var(--card-bg) 94%, transparent); box-shadow: 0 12px 32px -8px rgba(0,0,0,.36), 0 2px 6px rgba(0,0,0,.12); }
+  .mac-dd-menu { padding: 6px; }
+  /* 새 작품 추가 */
+  #aiOverlay .ai-newwork { margin: 0 0 14px; padding: 0 0 14px; border-bottom: 1px solid var(--border-soft); }
+  #aiOverlay .ai-newwork h4 { margin: 0 0 4px; font: 600 13px var(--sans); color: var(--text-main); }
+  #aiOverlay .ai-nw-list:empty { display: none; }
+  #aiOverlay .ai-nw-list { display: flex; flex-direction: column; gap: 2px; margin-top: 8px; }
+  #aiOverlay .ai-nw-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 3px 0; font-size: 12.5px; color: var(--text-sub); }
+  /* 이 권 .js 받기: 큰 띠가 아니라 작은 버튼으로 */
+  #aiOverlay .ai-save-btns { justify-content: flex-start; }
+  #aiOverlay #aiExpDl.ai-btn { flex: 0 0 auto; width: auto; height: var(--ai-h); padding: 0 12px; font-size: 12.5px; font-weight: 600; white-space: nowrap; line-height: 1; border-radius: var(--ai-r); }
 </style>
 </head>
 <body>
@@ -3865,19 +3968,13 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
       <button type="button" class="ai-x" onclick="closeAddInfo()" aria-label="닫기">✕</button>
     </div>
     <div class="ai-body">
-      <div class="ai-pick">
-        <label class="ai-f ai-pk-work"><span>작품</span><select id="aiWork"></select></label>
-        <label class="ai-f ai-pk-book"><span id="aiBookLbl">권</span><input id="aiBook" type="text" inputmode="numeric" data-list="aiBookList" autocomplete="off" placeholder="번호"><datalist id="aiBookList"></datalist></label>
-        <label class="ai-f ai-pk-line"><span id="aiLineLbl">행 (절)</span><input id="aiLine" type="text" inputmode="numeric" data-list="aiLineList" autocomplete="off" placeholder="번호"><datalist id="aiLineList"></datalist></label>
-        <p class="ai-status ai-pickinfo" id="aiStatus" aria-live="polite"></p>
-      </div>
       <div class="ai-unsaved" id="aiUnsaved" hidden><span id="aiUnsavedTxt"></span><div class="ai-unsaved-actions"><button type="button" class="ai-btn ai-primary" id="aiUnsavedDl">지금 .js 받기</button><button type="button" class="ai-btn ai-danger" id="aiUnsavedClear">수정분 삭제</button></div></div>
       <div class="ai-steps">
 
         <!-- 원문 넣기 · 코딩 · 저장 (예전 1·2단계를 하나로 합침) -->
         <section class="ai-step" id="aiStep1">
           <header class="ai-step-h">
-            <div class="ai-step-t"><h3>원문 넣기 · 코딩 · 저장</h3><p>맨 위에서 행을 고르면 이 목록에 놓여요. 원문을 붙여넣고 ‘자동 코딩 시작’을 누르세요. 이미 코딩된 행은 건너뛰어요.</p></div>
+            <div class="ai-step-t"><h3>원문 넣기 · 코딩 · 저장</h3><p>작품·권·행을 고르면 아래 목록에 놓여요. 원문을 붙여넣고 ‘자동 코딩 시작’을 누르세요. 이미 코딩된 행은 건너뛰어요.</p></div>
             <details class="ai-more" id="aiMore">
               <summary aria-label="더보기" title="더보기">⋯</summary>
               <div class="ai-more-panel">
@@ -3909,8 +4006,20 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
                     </div>
                   </details>
                   <details class="ai-bulk ai-manual ai-settings" id="aiSettings">
-                    <summary>설정 · 다른 방법 <small>— Gemini 키·모델, Claude로 코딩하기</small></summary>
+                    <summary>설정 · 다른 방법 <small>— 새 작품 추가, Gemini 키·모델, Claude로 코딩하기</small></summary>
                     <div class="ai-manual-body">
+                      <div class="ai-newwork" id="aiNewWork">
+                        <h4>새 작품 추가</h4>
+                        <p class="ai-hint">목록에 없는 책을 작품으로 등록해요. 등록하면 위 ‘작품’ 목록에 나타나고, 코딩한 행은 이 브라우저에 저장돼요. 파일(.js)로 받아 두면 나중에 서재에 연결할 수 있어요.</p>
+                        <div class="ai-grid2">
+                          <label class="ai-f"><span>작품 이름</span><input type="text" id="aiNwName" placeholder="예: 아이네이스" autocomplete="off"></label>
+                          <label class="ai-f"><span>글 종류</span><select id="aiNwKind"><option value="ltr">알파벳 · 띄어쓰기 있음 (왼→오)</option><option value="rtl">오른쪽→왼쪽 (히브리어 등)</option><option value="cjk">한자 · 띄어쓰기 없음</option></select></label>
+                          <label class="ai-f"><span>나누는 단위</span><input type="text" id="aiNwUnit" value="권" placeholder="권 · 장 · 회" autocomplete="off"></label>
+                          <label class="ai-f"><span>전체 개수</span><input type="number" id="aiNwMax" min="1" max="999" value="12"></label>
+                        </div>
+                        <div class="ai-qsend"><button type="button" class="ai-btn" id="aiNwAdd">작품 추가</button><span class="ai-hint" id="aiNwMsg" aria-live="polite"></span></div>
+                        <div class="ai-nw-list" id="aiNwList"></div>
+                      </div>
                       <div class="ai-seg" id="aiSeg" role="tablist" aria-label="코딩 방식">
                         <button type="button" role="tab" data-mode="gem" class="on">Gemini 자동</button>
                         <button type="button" role="tab" data-mode="claude">Claude에게 맡기기</button>
@@ -3954,7 +4063,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
                   <details class="ai-bulk ai-manual" id="aiManual">
                     <summary>한 행씩 직접 입력·수정 <small>— 고급 · 위 목록 대신 한 행만 손으로 고칠 때</small></summary>
                     <div class="ai-manual-body">
-                       <p class="ai-hint">행 번호는 맨 위에서 고르세요.</p>
+                       <p class="ai-hint">행 번호는 위 ‘행’ 칸에서 고르세요.</p>
                       <label class="ai-f ai-wide"><span>원문</span><textarea id="aiSrc" class="ai-src" rows="3" spellcheck="false" placeholder="이 행의 원문을 그대로 붙여넣으세요"></textarea></label>
                       <div class="ai-row"><button type="button" class="ai-btn" id="aiSplit">단어로 나누기</button></div>
                       <label class="ai-f ai-wide"><span>번역 (행 전체)</span><textarea id="aiTrans" rows="2" spellcheck="false" placeholder="이 행 전체의 한국어 번역"></textarea></label>
@@ -3969,6 +4078,14 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
               </div>
             </details>
           </header>
+          <div class="ai-pickwrap">
+        <div class="ai-pick">
+        <label class="ai-f ai-pk-work"><span>작품</span><select id="aiWork"></select></label>
+        <label class="ai-f ai-pk-book"><span id="aiBookLbl">권</span><input id="aiBook" type="text" inputmode="numeric" data-list="aiBookList" autocomplete="off" placeholder="번호"><datalist id="aiBookList"></datalist></label>
+        <label class="ai-f ai-pk-line"><span id="aiLineLbl">행 (절)</span><input id="aiLine" type="text" inputmode="numeric" data-list="aiLineList" autocomplete="off" placeholder="번호"><datalist id="aiLineList"></datalist></label>
+        <p class="ai-status ai-pickinfo" id="aiStatus" aria-live="polite"></p>
+      </div>
+          </div>
           <div class="ai-qinfo" id="aiQInfo" hidden></div>
           <div id="aiQ"></div>
           <div class="ai-go" id="aiGoWrap">
@@ -3984,7 +4101,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
           <p class="ai-status ai-result" id="aiQMsg" aria-live="polite"></p>
           <div class="ai-save" id="aiSaveBar">
             <div class="ai-save-btns">
-              <button type="button" class="ai-btn ai-primary" id="aiExpDl">⬇ 이 권 전체 .js 받기</button>
+              <button type="button" class="ai-btn ai-primary" id="aiExpDl">⬇ 이 권 .js 받기</button>
             </div>
             <p class="ai-hint" id="aiSaveHint"></p>
           </div>
@@ -4023,6 +4140,7 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
         <button class="site-nav-link" id="bgToggle" onclick="toggleGalleryBg()">배경 끄기</button>
         <button class="site-nav-link" id="artViewBtn" onclick="openArtView()">명화 감상</button>
         <button class="site-nav-link" id="artSetBtn" onclick="openArtSettings()">배경 그림 설정</button>
+        <button class="site-nav-link" id="artPickBtn" type="button" aria-haspopup="true" aria-expanded="false">그림 바꾸기</button>
         <div class="nav-more-row">
           <label for="themeToggle">야간 열람실</label>
           <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="야간 열람실 모드 전환" title="야간 열람실">
@@ -7823,6 +7941,197 @@ function toggleShelf(shelfId) {
   head.setAttribute('aria-expanded', String(nowOpen));
 }
 
+/* ---------- 서재 표지 설정 ---------- */
+// 서재 카드 위에 깔리는 그림을 권마다 올려 둔 그림 중에서 고르고, 보일 부분(위치·확대)을 직접 정한다.
+const SHELF_COVER_DEFAULT = {            // 설정을 하기 전, 지금 CSS 가 쓰고 있는 표지 값
+  shelfGenesis: { img: 'img/genesis1.jpg', x: 58, y: 18, z: 2 },
+  shelfIliad:   { img: 'img/iliad24.jpg',  x: 100, y: 36, z: 1 }
+};
+function loadShelfCovers() { try { return JSON.parse(localStorage.getItem('shelfCover') || '{}') || {}; } catch (e) { return {}; } }
+function saveShelfCovers(m) { try { localStorage.setItem('shelfCover', JSON.stringify(m)); } catch (e) {} }
+function shelfPrefix(shelfId) { return 'view-' + shelfId.replace(/^shelf/, '').toLowerCase(); }
+function shelfImages(shelfId) {          // 그 서재의 각 권에 등록된 그림
+  const pre = shelfPrefix(shelfId), out = [], seen = {};
+  Object.keys(GALLERY).forEach(k => {
+    if (k.indexOf(pre) !== 0) return;
+    const g = GALLERY[k], list = g.img ? [{ img: g.img, cap: g.cap }] : (g.sections || []).map(x => ({ img: x.img, cap: x.cap || g.cap }));
+    list.forEach(it => {
+      if (!it.img || seen[it.img]) return; seen[it.img] = 1;
+      const m = /<b>(.*?)<\/b>/.exec(it.cap || '');
+      out.push({ img: it.img, label: m ? m[1] : k.replace('view-', '') });
+    });
+  });
+  return out;
+}
+function coverFade(head) {               // 왼쪽 제목 글자가 읽히도록 서재 바탕색으로 덮는 그라데이션
+  const m = /rgba?\((\d+),\s*(\d+),\s*(\d+)/.exec(getComputedStyle(head).backgroundColor) || [0, 29, 26, 22];
+  const c = a => 'rgba(' + m[1] + ',' + m[2] + ',' + m[3] + ',' + a + ')';
+  return 'linear-gradient(90deg,' + c(1) + ' 0%,' + c(1) + ' 34%,' + c(0.5) + ' 52%,' + c(0) + ' 82%)';
+}
+function paintCover(el, grad, c) {
+  el.style.backgroundImage = grad + ', url("' + c.img + '")';
+  el.style.backgroundSize = '100% 100%, ' + (c.z * 100) + '% auto';
+  if (c.l === undefined) el.style.backgroundPosition = '0 0, ' + c.x + '% ' + c.y + '%';   // 예전에 저장한 값
+  else {                                  // 자유 위치: 칸 밖으로 밀어 여백을 만들 수 있다
+    const W = el.clientWidth || 1, H = el.clientHeight || 1;
+    el.style.backgroundPosition = '0 0, ' + (c.l * W).toFixed(1) + 'px ' + (c.t * H).toFixed(1) + 'px';
+  }
+  el.style.backgroundRepeat = 'no-repeat';
+}
+function applyShelfCover(shelfId) {
+  const head = document.querySelector('#' + shelfId + ' .shelf-head'); if (!head) return;
+  const c = loadShelfCovers()[shelfId];
+  if (!c) { ['backgroundImage', 'backgroundSize', 'backgroundPosition'].forEach(p => { head.style[p] = ''; }); return; }
+  paintCover(head, coverFade(head), c);
+  if (!head._coverRO && window.ResizeObserver) {
+    head._coverRO = new ResizeObserver(() => { const cc = loadShelfCovers()[shelfId]; if (cc && cc.l !== undefined) paintCover(head, coverFade(head), cc); });
+    head._coverRO.observe(head);
+  }
+}
+const scState = { shelf: '', cfg: null, nat: null, boxW: 1, boxH: 1, isDefault: false };
+function scLoad(cfg) {                   // 설정값을 미리보기에 불러온다
+  scState.cfg = { img: cfg.img, x: cfg.x, y: cfg.y, z: cfg.z, l: cfg.l, t: cfg.t };
+  document.querySelectorAll('#scThumbs .sc-thumb').forEach(b => b.classList.toggle('on', b.dataset.img === cfg.img));
+  const im = new Image();
+  im.onload = () => {
+    if (scState.cfg.img !== cfg.img) return; scState.nat = { w: im.naturalWidth, h: im.naturalHeight };
+    const c = scState.cfg;
+    if (c.l === undefined) {              // 퍼센트 값 → 자유 위치 값 (보이는 모습은 그대로)
+      const ihF = scImgH() / scState.boxH;
+      c.l = (1 - c.z) * (c.x / 100); c.t = (1 - ihF) * (c.y / 100);
+    }
+    scClamp(); scPaint();
+  };
+  im.src = cfg.img;
+}
+function scEls() {
+  let ov = document.getElementById('scOverlay');
+  if (ov) return ov;
+  ov = document.createElement('div'); ov.id = 'scOverlay'; ov.className = 'sc-overlay';
+  ov.innerHTML = '<div class="sc-modal" role="dialog" aria-modal="true" aria-label="서재 표지 설정">'
+    + '<div class="sc-head"><b id="scTitle">표지 설정</b><button class="sc-x" type="button" aria-label="닫기">×</button></div>'
+    + '<div class="sc-body"><div class="sc-label">표지에 쓸 그림</div><div class="sc-thumbs" id="scThumbs"></div>'
+    + '<div class="sc-label">보일 부분<span>끌어서 위치를 옮기세요 · 칸 밖으로 밀면 여백이 생기거나 그림이 잘려요</span></div>'
+    + '<div class="sc-preview" id="scPreview"><div class="sc-pv-text" id="scPvText"></div></div>'
+    + '<label class="sc-zoom">크기<input type="range" id="scZoom" min="0.1" max="3" step="0.01">'
+    + '<button class="sc-btn sc-mini" type="button" id="scFill">꽉 채우기</button><button class="sc-btn sc-mini" type="button" id="scFit">전체 보이기</button></label></div>'
+    + '<div class="sc-foot"><button class="sc-btn ghost" type="button" id="scReset">기본값으로</button><span class="sp"></span>'
+    + '<button class="sc-btn" type="button" id="scCancel">취소</button><button class="sc-btn primary" type="button" id="scSave">저장</button></div></div>';
+  document.body.appendChild(ov);
+  ov.addEventListener('mousedown', e => { if (e.target === ov) closeShelfCover(); });
+  ov.querySelector('.sc-x').onclick = closeShelfCover;
+  document.getElementById('scCancel').onclick = closeShelfCover;
+  document.getElementById('scSave').onclick = saveShelfCover;
+  document.getElementById('scReset').onclick = resetShelfCover;
+  document.getElementById('scFill').onclick = () => { if (!scState.nat) return; scState.isDefault = false; scState.cfg.z = scCoverZ(); scState.cfg.l = (1 - scState.cfg.z) / 2; scState.cfg.t = (1 - scImgH() / scState.boxH) / 2; scClamp(); scPaint(); };
+  document.getElementById('scFit').onclick = () => { if (!scState.nat) return; scState.isDefault = false; scState.cfg.z = scFitZ(); scState.cfg.l = 1 - scState.cfg.z; scState.cfg.t = (1 - scImgH() / scState.boxH) / 2; scClamp(); scPaint(); };
+  document.getElementById('scZoom').addEventListener('input', e => {   // 크기를 바꿔도 지금 칸 한가운데에 보이던 곳이 그대로 가운데에 남게
+    if (!scState.nat) return; scState.isDefault = false;
+    const c = scState.cfg, W = scState.boxW, H = scState.boxH, r = scState.nat.h / scState.nat.w;
+    const u = (0.5 - c.l) / c.z, v = (0.5 * H - c.t * H) / (c.z * W * r);
+    c.z = parseFloat(e.target.value);
+    c.l = 0.5 - u * c.z; c.t = (0.5 * H - v * c.z * W * r) / H;
+    scClamp(); scPaint();
+  });
+  const pv = document.getElementById('scPreview'); let drag = null;
+  pv.addEventListener('pointerdown', e => { if (!scState.nat) return; drag = { x: e.clientX, y: e.clientY, pl: scState.cfg.l, pt: scState.cfg.t }; pv.setPointerCapture(e.pointerId); pv.classList.add('drag'); });
+  pv.addEventListener('pointermove', e => {
+    if (!drag) return;
+    scState.cfg.l = drag.pl + (e.clientX - drag.x) / scState.boxW;   // 방향 제한 없이 가로·세로 모두 자유롭게
+    scState.cfg.t = drag.pt + (e.clientY - drag.y) / scState.boxH;
+    scState.isDefault = false; scClamp(); scPaint();
+  });
+  const end = () => { drag = null; pv.classList.remove('drag'); };
+  pv.addEventListener('pointerup', end); pv.addEventListener('pointercancel', end);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && ov.classList.contains('show')) closeShelfCover(); });
+  return ov;
+}
+function scCoverZ() {                    // 표지 칸을 빈틈없이 덮는 최소 확대값
+  return Math.max(1, (scState.boxH * scState.nat.w) / (scState.nat.h * scState.boxW));
+}
+function scFitZ() {                     // 그림 전체가 칸 안에 다 들어오는 확대값 (남는 곳은 여백)
+  return Math.min(1, (scState.boxH * scState.nat.w) / (scState.nat.h * scState.boxW));
+}
+function scImgH() { return scState.boxW * scState.cfg.z * scState.nat.h / scState.nat.w; }   // 지금 크기에서 그림의 높이(px)
+function scClamp() {
+  const c = scState.cfg; if (!c || !scState.nat) return;
+  const zr = document.getElementById('scZoom'), cz = scCoverZ();
+  zr.min = '0.1'; zr.max = Math.max(cz * 3, 1.5).toFixed(3);
+  c.z = Math.min(Math.max(c.z, 0.1), parseFloat(zr.max)); zr.value = c.z;
+  // 그림이 칸에서 완전히 사라지지 않게, 그림 자체의 5%만 칸 안에 남긴다. 그 안에서는 사방으로 밖에 나가 잘려도 자유
+  const keep = 0.05, ihF = scImgH() / scState.boxH;
+  const lMin = keep * c.z - c.z, lMax = 1 - keep * c.z, tMin = keep * ihF - ihF, tMax = 1 - keep * ihF;
+  c.l = Math.min(lMax, Math.max(lMin, c.l)); c.t = Math.min(tMax, Math.max(tMin, c.t));
+}
+function scPaint() {
+  const head = document.querySelector('#' + scState.shelf + ' .shelf-head');
+  paintCover(document.getElementById('scPreview'), coverFade(head), scState.cfg);
+}
+function scPick(img) {                   // 그림을 고르면 크기를 읽고 보이는 부분을 가운데로 시작
+  scState.isDefault = false;
+  scState.cfg = { img: img, z: 1, l: 0, t: 0 };
+  document.querySelectorAll('#scThumbs .sc-thumb').forEach(b => b.classList.toggle('on', b.dataset.img === img));
+  const im = new Image();
+  im.onload = () => { if (scState.cfg.img !== img) return; scState.nat = { w: im.naturalWidth, h: im.naturalHeight }; scState.cfg.t = (1 - scImgH() / scState.boxH) / 2; scClamp(); scPaint(); };
+  im.src = img;
+}
+function openShelfCover(shelfId) {
+  const ov = scEls(), shelf = document.getElementById(shelfId), head = shelf.querySelector('.shelf-head');
+  scState.shelf = shelfId; scState.nat = null; scState.isDefault = false;
+  const hw = head.offsetWidth || 740, hh = head.offsetHeight || 140;
+  const pw = Math.min(560, window.innerWidth - 80);
+  scState.boxW = pw; scState.boxH = Math.round(pw * hh / hw);
+  const pv = document.getElementById('scPreview'); pv.style.height = scState.boxH + 'px';
+  const t = shelf.querySelector('.work-title'), l = shelf.querySelector('.work-lang');
+  const pt = document.getElementById('scPvText');
+  pt.style.fontSize = Math.max(16, Math.round(parseFloat(getComputedStyle(t).fontSize) * pw / hw)) + 'px';
+  pt.innerHTML = (t ? t.textContent : '') + '<small>' + (l ? l.textContent : '') + '</small>';
+  document.getElementById('scTitle').textContent = (t ? t.textContent : '') + ' · 표지 설정';
+  const imgs = shelfImages(shelfId), th = document.getElementById('scThumbs');
+  const body = ov.querySelector('.sc-body');
+  body.querySelectorAll('.sc-empty').forEach(n => n.remove());
+  th.innerHTML = '';
+  const has = imgs.length > 0;
+  [].forEach.call(body.children, n => { if (n !== th && !n.classList.contains('sc-label') || false) n.style.display = has ? '' : 'none'; });
+  document.getElementById('scSave').disabled = !has; document.getElementById('scReset').disabled = !has;
+  if (!has) {
+    const d = document.createElement('div'); d.className = 'sc-empty';
+    d.textContent = '이 서재에는 아직 올려 둔 그림이 없어요. 각 권에 그림을 올리면 여기서 표지로 고를 수 있어요.';
+    body.insertBefore(d, th); th.style.display = 'none';
+    body.querySelectorAll('.sc-label').forEach(n => n.style.display = 'none');
+  } else {
+    th.style.display = ''; body.querySelectorAll('.sc-label').forEach(n => n.style.display = '');
+    imgs.forEach(it => {
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'sc-thumb'; b.dataset.img = it.img; b.title = it.label;
+      b.innerHTML = '<img alt="" src="' + it.img + '"><span></span>'; b.querySelector('span').textContent = it.label;
+      b.onclick = () => scPick(it.img); th.appendChild(b);
+    });
+    const saved = loadShelfCovers()[shelfId] || SHELF_COVER_DEFAULT[shelfId];
+    const start = saved && imgs.some(i => i.img === saved.img) ? saved : null;
+    if (start) { scState.isDefault = !loadShelfCovers()[shelfId] && !!SHELF_COVER_DEFAULT[shelfId]; scLoad(start);
+    } else scPick(imgs[0].img);
+  }
+  requestAnimationFrame(() => ov.classList.add('show'));
+}
+function closeShelfCover() { const ov = document.getElementById('scOverlay'); if (ov) ov.classList.remove('show'); }
+function saveShelfCover() {
+  const m = loadShelfCovers(); const c = scState.cfg; if (!c) return;
+  if (scState.isDefault) { delete m[scState.shelf]; saveShelfCovers(m); applyShelfCover(scState.shelf); closeShelfCover(); return; }
+  m[scState.shelf] = { img: c.img, l: +c.l.toFixed(4), t: +c.t.toFixed(4), z: +c.z.toFixed(3) };
+  saveShelfCovers(m); applyShelfCover(scState.shelf); closeShelfCover();
+}
+function resetShelfCover() {             // 창은 닫지 않고, 미리보기만 기본 표지로 되돌린다. 저장을 눌러야 적용된다
+  const d = SHELF_COVER_DEFAULT[scState.shelf]; if (!d) return;
+  scState.isDefault = true; scLoad({ img: d.img, x: d.x, y: d.y, z: d.z });
+}
+// 각 서재의 '학습 가능 / 준비 중' 줄 맨 오른쪽에 작은 (설정) 버튼을 붙이고, 저장해 둔 표지를 적용한다
+document.querySelectorAll('.shelf').forEach(sh => {
+  const lg = sh.querySelector('.legend'); if (!lg || lg.querySelector('.shelf-set-btn')) return;
+  const b = document.createElement('button'); b.type = 'button'; b.className = 'shelf-set-btn'; b.textContent = '설정';
+  b.setAttribute('aria-label', '표지 그림 설정'); b.onclick = () => openShelfCover(sh.id); lg.appendChild(b);
+  applyShelfCover(sh.id);
+});
+
 /* ---------- 화면 전환 ---------- */
 /* 메인(서재) 화면을 떠날 때 보던 위치를 기억해 두었다가, 돌아오면 그 자리로 되돌린다.
    (전에는 어떤 화면으로 가든, 돌아오든 항상 맨 위로 튀었다) */
@@ -8937,6 +9246,14 @@ let bgKey = '', bgTick = false;
 let secShown = '', secWant = '', secTimer = 0, secCapTimer = 0, secObj = null, secTries = 0;
 const artRatio = {};   // 그림 주소 → 세로/가로 비율 (0: 읽는 중, -1: 못 읽음)
 const secKey = s => s.from + '-' + s.to + '|' + s.img;
+// 평소: 화면을 꽉 채운 그림을 스크롤 진행률 p 에 따라 훑는다. 명화 감상 중: 그림 전체가 보이도록 부드럽게 줌 아웃해 가운데에 놓는다
+function artXform(w, h, vw, vh, p) {
+  if (document.body.classList.contains('art-peek')) {
+    const k = Math.min(vw / w, vh / h);
+    return 'translate3d(' + ((vw - w * k) / 2) + 'px,' + ((vh - h * k) / 2) + 'px,0) scale(' + k + ')';
+  }
+  return 'translate3d(' + (-(w - vw) * p) + 'px,' + (-(h - vh) * p) + 'px,0) scale(1)';
+}
 function baseLayer() { return document.querySelector('#bgArt i:not(.sec)'); }
 function secLayers() { return Array.prototype.slice.call(document.querySelectorAll('#bgArt i.sec')); }
 function clearSecLayers() {
@@ -8977,6 +9294,12 @@ function initSections(g) {
     host.appendChild(i); loadArt(s.img);
   });
 }
+/* 출처 토글: 작은 명화 감상 아이콘(누르고 있는 동안 그림만 보임) + 올리면 펼쳐지는 출처 */
+function capHTML(body) {
+  return '<button type="button" class="cap-peek" aria-label="명화 감상: 누르고 있는 동안 글자를 숨기고 그림만 보입니다" title="누르고 있는 동안 그림만 보기">'
+    + '<svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="1.5" y="2.5" width="15" height="13" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M3.5 13l3.8-4.2 2.7 2.8 2-2.1 2.5 3.5" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="12.2" cy="6.4" r="1.1" fill="currentColor"/></svg></button>'
+    + '<div class="cap-body">' + (body || '') + '</div>';
+}
 function showSection(g, key) {
   secShown = key;
   const s = key ? g.sections.find(x => secKey(x) === key) : null; secObj = s;
@@ -8987,7 +9310,7 @@ function showSection(g, key) {
   if (c) { c.classList.remove('in'); c.classList.remove('open'); }
   secCapTimer = setTimeout(() => {
     if (secShown !== key || !c) return;
-    c.innerHTML = s ? '<span class="cap-dot" aria-hidden="true"></span><div class="cap-body">' + (s.cap || '') + '</div>' : '';
+    c.innerHTML = s ? capHTML(s.cap) : '';
     if (s) c.classList.add('in');
   }, delay);
   updateBgArt();
@@ -9014,7 +9337,7 @@ function updateSectionArt(v, g) {
     let p = parseFloat(l.dataset.p) || 0;   // 사라지는 그림은 마지막 자리에 그대로 둔다
     if (cur === s) { p = s.to > s.from ? Math.min(1, Math.max(0, (ln - s.from) / (s.to - s.from))) : 0; l.dataset.p = p; }
     l.style.width = w + 'px'; l.style.height = h + 'px';
-    l.style.transform = 'translate3d(' + (-(w - vw) * p) + 'px,' + (-(h - vh) * p) + 'px,0)';
+    l.style.transform = artXform(w, h, vw, vh, p);
   });
 }
 // 그림이 갑자기 나타나지 않도록: 이미지가 준비된 뒤 서서히 떠오르게 한다. 캡션 점은 그보다 조금 늦게.
@@ -9037,7 +9360,7 @@ function artFadeIn(g, v) {
 }
 (function () {   // 캡션: 터치에서는 눌러서 펼치고, 다른 곳을 누르면 접는다 (마우스는 올리면 펼침)
   const c = document.getElementById('bgCap'); if (!c) return;
-  c.addEventListener('click', e => { c.classList.toggle('open'); e.stopPropagation(); });
+  c.addEventListener('click', e => { if (e.target.closest('.cap-peek')) { e.stopPropagation(); return; } c.classList.toggle('open'); e.stopPropagation(); });
   document.addEventListener('click', () => c.classList.remove('open'));
   c.addEventListener('keydown', e => { if (e.key === 'Escape') { c.classList.remove('open'); c.blur(); } });
 })();
@@ -9059,7 +9382,7 @@ function updateBgArt() {
     bgKey = v;
     clearSecLayers();
     resetArtFade();
-    document.getElementById('bgCap').innerHTML = '<span class="cap-dot" aria-hidden="true"></span><div class="cap-body">' + (g.cap || '') + '</div>';
+    document.getElementById('bgCap').innerHTML = capHTML(g.cap);
     artFadeIn(g, v);
     i.style.backgroundImage = 'url(' + g.img + ')';
     i.style.width = '0px'; i.style.height = '0px';
@@ -9077,7 +9400,7 @@ function updateBgArt() {
   const p = Math.min(1, Math.max(0, window.scrollY / max));
   i.style.width = w + 'px'; i.style.height = h + 'px';
   // 세로로 긴 그림은 위→아래로, 가로로 긴 그림은 왼→오른쪽으로 훑는다
-  i.style.transform = 'translate3d(' + (-(w - vw) * p) + 'px,' + (-(h - vh) * p) + 'px,0)';
+  i.style.transform = artXform(w, h, vw, vh, p);
 }
 window.addEventListener('scroll', () => { if (!bgTick) { bgTick = true; requestAnimationFrame(updateBgArt); } }, { passive: true });
 window.addEventListener('resize', updateBgArt);
@@ -9396,14 +9719,28 @@ function goToLine(viewId, idx) {
   const selWork = $('aiWork'), inBook = $('aiBook'), inLine = $('aiLine'), dlBook = $('aiBookList'), dlLine = $('aiLineList'),
         statusEl = $('aiStatus'), src = $('aiSrc'), trans = $('aiTrans'), wordsEl = $('aiWords'), countEl = $('aiWordCount'),
         btnDel = $('aiDelete'), btnSave = $('aiSave'), btnCopy = $('aiCopy'), btnSplit = $('aiSplit'), btnAll = $('aiToggleAll'), btnAdd = $('aiAddWord');
-  WORKS.forEach(w => { const o = document.createElement('option'); o.value = w.key; o.textContent = w.label; selWork.appendChild(o); });
+  // 내가 추가한 작품: 이름·단위·개수·글 종류를 localStorage('aiCustomWorks')에 기억한다
+  const CW_KEY = 'aiCustomWorks';
+  const loadCW = () => { try { const a = JSON.parse(localStorage.getItem(CW_KEY) || '[]'); return Array.isArray(a) ? a : []; } catch (e) { return []; } };
+  const saveCW = a => { try { localStorage.setItem(CW_KEY, JSON.stringify(a)); } catch (e) {} };
+  function regCW(c) {
+    if (!c || !c.key || !c.label || byKey[c.key]) return;
+    const w = { key: c.key, label: c.label, unit: c.unit || '권', max: c.max || 12, prefix: c.label + ' ', sep: '.', custom: true, name: c.name || 'Work', rtl: c.kind === 'rtl', nospace: c.kind === 'cjk' };
+    WORKS.push(w); byKey[w.key] = w;
+  }
+  function fillWorkSelect() {
+    selWork.textContent = '';
+    WORKS.forEach(w => { const o = document.createElement('option'); o.value = w.key; o.textContent = w.label; selWork.appendChild(o); });
+    const n = document.createElement('option'); n.value = '__new__'; n.textContent = '＋ 새 작품 추가…'; selWork.appendChild(n);
+  }
+  loadCW().forEach(regCW); fillWorkSelect();
 
   const S = { work: WORKS[0], book: NaN, line: NaN, ch: null, storeKey: '', lines: [], target: null, ref: '', isUser: false, words: [], dirty: false, token: 0, loading: false };
 
   const chFor = (wk, b) => STUDY_CHAPTERS.find(c => c.workKey === wk && c.book === b) || null;
-  const joiner = () => (S.work.key === 'sanguo' ? '' : ' ');
+  const joiner = () => ((S.work.key === 'sanguo' || !!S.work.nospace) ? '' : ' ');
   function fieldKeys() {
-    if (S.work.key === 'sanguo') return ['g', 'pos', 'lemma', 'pinyin', 'kr_reading', 'syntax', 'meaning', 'background', 'etymology', 'simplified'];
+    if ((S.work.key === 'sanguo' || !!S.work.nospace)) return ['g', 'pos', 'lemma', 'pinyin', 'kr_reading', 'syntax', 'meaning', 'background', 'etymology', 'simplified'];
     const k = ['g', 'pos', 'lemma'];
     if (S.work.key === 'genesis') k.push('root');
     if (S.work.key === 'iliad' || S.work.key === 'meta') k.push('principalParts');
@@ -9454,7 +9791,7 @@ function goToLine(viewId, idx) {
       dlBook.appendChild(o);
     }
     $('aiBookLbl').textContent = S.work.unit;
-    const rtl = S.work.key === 'genesis' ? 'rtl' : 'auto';
+    const rtl = (S.work.key === 'genesis' || S.work.rtl) ? 'rtl' : 'auto';
     src.dir = rtl;
   }
 
@@ -9495,7 +9832,7 @@ function goToLine(viewId, idx) {
         if (meta.area) el.rows = 3; else el.type = 'text';
         el.dataset.k = k; el.value = w[k] == null ? '' : String(w[k]);
         el.spellcheck = false; el.autocomplete = 'off';
-        if (S.work.key === 'genesis' && (k === 'g' || k === 'lemma' || k === 'root')) el.dir = 'rtl';
+        if ((S.work.key === 'genesis' || S.work.rtl) && (k === 'g' || k === 'lemma' || k === 'root')) el.dir = 'rtl';
         lab.appendChild(el); grid.appendChild(lab);
       });
       d.appendChild(grid);
@@ -9566,7 +9903,48 @@ function goToLine(viewId, idx) {
     await onBook();
   }
   let tBook = null, tLine = null;
-  selWork.addEventListener('change', () => onWork(true));
+  selWork.addEventListener('change', () => {
+    if (selWork.value === '__new__') { selWork.value = S.work.key; openNewWork(); return; }   // ‘＋ 새 작품 추가…’ → 설정의 추가 칸으로
+    onWork(true);
+  });
+  // ---- 새 작품 추가 (설정 · 다른 방법) ----
+  const nwName = $('aiNwName'), nwUnit = $('aiNwUnit'), nwMax = $('aiNwMax'), nwKind = $('aiNwKind'), nwMsg = $('aiNwMsg'), nwList = $('aiNwList');
+  function openNewWork() {
+    $('aiMore').open = true; $('aiSettings').open = true;
+    setTimeout(() => { $('aiNewWork').scrollIntoView({ block: 'center', behavior: 'smooth' }); nwName.focus({ preventScroll: true }); }, 60);
+  }
+  function nwRender() {
+    nwList.textContent = '';
+    loadCW().forEach(c => {
+      const row = document.createElement('div'); row.className = 'ai-nw-row';
+      const t = document.createElement('span'); t.textContent = c.label + ' · ' + c.max + c.unit + ' · ' + (c.kind === 'rtl' ? '오른쪽→왼쪽' : c.kind === 'cjk' ? '한자' : '알파벳');
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'ai-link ai-danger'; b.textContent = '삭제';
+      b.addEventListener('click', () => {
+        if (!confirm('‘' + c.label + '’ 작품을 목록에서 지울까요?\n이 브라우저에 저장해 둔 행은 지워지지 않아요.')) return;
+        saveCW(loadCW().filter(x => x.key !== c.key));
+        const i = WORKS.findIndex(w => w.key === c.key); if (i >= 0) WORKS.splice(i, 1); delete byKey[c.key];
+        const was = S.work.key === c.key; fillWorkSelect();
+        if (was) { selWork.value = WORKS[0].key; onWork(true); } else selWork.value = S.work.key;
+        nwRender(); nwMsg.textContent = '지웠어요.';
+      });
+      row.appendChild(t); row.appendChild(b); nwList.appendChild(row);
+    });
+  }
+  $('aiNwAdd').addEventListener('click', () => {
+    const label = nwName.value.trim();
+    if (!label) { nwMsg.textContent = '작품 이름을 적어 주세요.'; nwName.focus(); return; }
+    if (WORKS.some(w => w.label === label)) { nwMsg.textContent = '같은 이름의 작품이 이미 있어요.'; return; }
+    const unit = nwUnit.value.trim() || '권', max = Math.min(999, Math.max(1, parseInt(nwMax.value, 10) || 1));
+    const list = loadCW(), ascii = label.replace(/[^A-Za-z0-9]/g, '');
+    let name = ascii ? ascii.charAt(0).toUpperCase() + ascii.slice(1) : 'Work' + (list.length + 1);
+    while (list.some(x => x.name === name) || (typeof EXTRA_WORKS !== 'undefined' && Object.keys(EXTRA_WORKS).some(k => EXTRA_WORKS[k].name === name))) name += '2';   // 파일 이름이 겹치지 않게
+    const c = { key: 'cw_' + Date.now().toString(36), label, unit, max, kind: nwKind.value, name };
+    list.push(c); saveCW(list); regCW(c); fillWorkSelect(); selWork.value = c.key; onWork(true);
+    nwName.value = ''; nwMsg.textContent = '‘' + label + '’을(를) 추가했어요. 위 ‘작품’에서 골라 두었어요.'; nwRender();
+    ov.querySelector('.ai-pick').scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  });
+  nwName.addEventListener('keydown', e => { if (e.key === 'Enter' && !e.isComposing) { e.preventDefault(); $('aiNwAdd').click(); } });
+  nwRender();
   // change(포커스를 잃을 때)는 값이 실제로 바뀐 경우에만 다시 그린다 — 안 그러면 상태줄의 링크를 누르는 순간 링크가 지워져 클릭이 사라진다
   const numOf = el => { const n = parseInt(el.value, 10); return n > 0 ? n : NaN; };
   inBook.addEventListener('input', () => { clearTimeout(tBook); tBook = setTimeout(onBook, 200); });
@@ -9578,7 +9956,7 @@ function goToLine(viewId, idx) {
   const PUNCT = /[\s。，、；：！？「」『』（）〈〉《》．,.;:!?()"'“”‘’—…·]/;
   btnSplit.addEventListener('click', () => {
     const text = src.value.normalize('NFC');
-    const tokens = S.work.key === 'sanguo' ? Array.from(text).filter(c => !PUNCT.test(c)) : text.trim().split(/\s+/).filter(Boolean);
+    const tokens = (S.work.key === 'sanguo' || !!S.work.nospace) ? Array.from(text).filter(c => !PUNCT.test(c)) : text.trim().split(/\s+/).filter(Boolean);
     const pool = {};
     S.words.forEach(w => { (pool[w.g] = pool[w.g] || []).push(w); });
     S.words = tokens.map(t => (pool[t] && pool[t].length ? pool[t].shift() : { g: t }));
@@ -9788,7 +10166,7 @@ function goToLine(viewId, idx) {
       const d = document.createElement('div'); d.className = 'ai-q'; d.dataset.i = String(i);
       const n = document.createElement('select'); n.className = 'qn'; n.setAttribute('aria-label', '행 번호'); qNumInit(n, r.n);
       const t = document.createElement('input'); t.className = 'qt'; t.type = 'text'; t.autocomplete = 'off'; t.spellcheck = false;
-      t.dir = S.work.key === 'genesis' ? 'rtl' : 'auto'; t.value = r.t;
+      t.dir = (S.work.key === 'genesis' || S.work.rtl) ? 'rtl' : 'auto'; t.value = r.t;
       if (i === Q.length - 1) t.placeholder = '원문 한 행 입력 후 Enter';
       const s = document.createElement('span'); s.className = 'qs';
       const go = document.createElement('button'); go.type = 'button'; go.className = 'ai-link'; go.dataset.act = 'go'; go.textContent = '코딩';
@@ -9870,7 +10248,7 @@ function goToLine(viewId, idx) {
     const pn = parseInt(p.n, 10), cn = parseInt(c.n, 10);
     const chain = (pn > 0 && cn === pn + 1) ? qChain(i) : [];
     const pt = p.t.replace(/\s+$/, ''), ct = c.t.replace(/^\s+/, '');
-    const sep = (pt && ct && S.work.key !== 'sanguo') ? ' ' : '';   // 한문은 띄어쓰기 없음
+    const sep = (pt && ct && S.work.key !== 'sanguo' && !S.work.nospace) ? ' ' : '';   // 한문은 띄어쓰기 없음
     p.t = (pt + sep + ct).normalize('NFC'); p.d = false; p.f = false;
     chain.forEach(j => { Q[j].n = String(parseInt(Q[j].n, 10) - 1); Q[j].d = false; Q[j].f = false; Q[j].reviewed = false; });
     Q.splice(i, 1);
@@ -10157,11 +10535,30 @@ function goToLine(viewId, idx) {
     S.ch = ch; S.storeKey = ch.dataVar; setBookList();
     return true;
   }
+  // 내가 추가한 작품: 서재에 아직 연결된 화면이 없으므로, 브라우저에 저장된 행을 data 파일 모양으로 바로 내보낸다
+  function customLines() { const d = loadUserLines()['draft:' + S.work.key + ':' + S.book] || {}; return Object.keys(d).map(r => d[r]).filter(Boolean).sort((a, b) => refLineNo(a.ref) - refLineNo(b.ref)); }
+  const customFile = () => 'data-lines' + S.work.name + S.book;
+  function customSync(btn, hint) {
+    const n = isNaN(S.book) ? 0 : customLines().length;
+    btn.disabled = !n; btn.textContent = '⬇ 이 권 .js 받기'; btn.title = isNaN(S.book) ? '' : customFile() + '.js';
+    hint.textContent = isNaN(S.book) ? '위에서 ' + S.work.unit + ' 번호를 고르면 이 권의 파일을 받을 수 있어요.'
+      : n ? S.work.label + ' ' + S.book + S.work.unit + ' — ' + n + '행이 이 브라우저에 저장돼 있어요. 받은 ' + customFile() + '.js 는 shell.html과 같은 위치의 data 폴더에 보관하세요.'
+      : S.work.label + ' ' + S.book + S.work.unit + '은 아직 저장된 행이 없어요. 한 행이라도 코딩해서 저장하면 파일을 받을 수 있어요.';
+  }
+  function customExport() {
+    const rows = customLines(); if (!rows.length) { qMsg('저장된 행이 없어요. 한 행이라도 코딩해서 저장하면 파일을 받을 수 있어요.'); return; }
+    const id = customFile(), body = JSON.stringify(rows, (k, v) => (k && k[0] === '_' ? undefined : v), 2).replace(/\n/g, '\r\n');
+    const js = '// 이 파일은 shell.html의 정보 추가 → 새 작품(' + S.work.label + ')으로 만들었습니다 (' + new Date().toISOString().slice(0, 10) + ').\r\n'
+      + "window.__RAW_CHAPTER_DATA = window.__RAW_CHAPTER_DATA || {};\r\n"
+      + "window.__RAW_CHAPTER_DATA['" + id + "'] = " + body + ';\r\n';
+    download(id + '.js', js, 'text/javascript'); qMsg(id + '.js 를 받았어요 (' + rows.length + '행). 브라우저의 저장분은 그대로 남겨 뒀어요.');
+  }
   function saveSync() {
     const btn = $('aiExpDl'), hint = $('aiSaveHint'); if (!btn || !hint) return;
+    if (S.work.custom) { customSync(btn, hint); return; }
     const ch = S.ch, others = newChs();
     btn.disabled = !ch;
-    { const en = expectedFileName(); btn.textContent = ch ? '⬇ 이 권 전체 받기 — ' + fileOf(ch) + (isNewCh(ch) ? ' (새 파일)' : ' (덮어쓰기용)') : '⬇ 이 권 전체 .js 받기' + (en ? ' — ' + en : ''); }
+    { const en = expectedFileName(); btn.textContent = '⬇ 이 권 .js 받기'; btn.title = ch ? fileOf(ch) + (isNewCh(ch) ? ' (새 파일)' : ' (덮어쓰기용)') : (en || ''); }
     let h;
     if (!ch) h = isNaN(S.book) ? '위에서 ' + S.work.unit + ' 번호를 고르면 이 권의 파일을 받을 수 있어요.' : S.work.label + ' ' + S.book + S.work.unit + '은 아직 저장된 행이 없어요. 한 행이라도 코딩해서 저장하면 data 파일이 자동으로 만들어져요.';
     else if (isNewCh(ch)) h = '새 권이에요. ' + fileOf(ch) + ' 를 shell.html과 같은 위치의 data 폴더에 넣으면 끝이에요. 서재에서 이 권의 칸을 누르면 그 이름의 파일을 찾아 바로 열어요.';
@@ -10298,6 +10695,7 @@ function goToLine(viewId, idx) {
     delete bk[S.storeKey]; bkSave(bk); bkSync(); qMsg('수정분 백업을 지웠어요.');
   });
   $('aiExpDl').addEventListener('click', async () => {
+    if (S.work.custom) { customExport(); return; }
     const want = expectedFileName();
     // 저장 위치 선택창은 클릭 직후에 열어야 하므로 데이터를 만들기 전에 먼저 띄운다 (파일 이름에 권 번호 포함)
     const pk = S.ch ? await pickSaveHandle(want) : { handle: null };
@@ -10539,7 +10937,7 @@ function goToLine(viewId, idx) {
   const auto = { run: false, stop: false, pause: false, ctl: null, prog: null, tick: 0 };
   const FIELDS_STD = ['g', 'pos', 'lemma', 'root', 'principalParts', 'parse', 'gloss_kr', 'gloss_en', 'syntax', 'background', 'etymology', 'freq_prose'];
   const FIELDS_SG = ['g', 'pos', 'lemma', 'pinyin', 'kr_reading', 'syntax', 'meaning', 'background', 'etymology', 'simplified'];
-  const isSanguo = () => S.work && S.work.key === 'sanguo';
+  const isSanguo = () => S.work && (S.work.key === 'sanguo' || !!S.work.nospace);
   function sentN(s) {
     s = String(s == null ? '' : s).trim(); if (!s) return 0;
     s = s.replace(/([.!?]["'”’)]*)(\s+|$)/g, '$1\u0001').replace(/([。！？]+["'”’」』)]*)/g, '$1\u0001');
@@ -11280,23 +11678,23 @@ if ('serviceWorker' in navigator) {
   });
 }
 </script>
-<div id="artDock">
-  <button id="artPickBtn" class="art-pick-btn" type="button" aria-haspopup="true" aria-expanded="false">그림 바꾸기</button>
-  <button id="artPeekBtn" type="button" aria-label="명화 감상 모드: 누르고 있는 동안 글자를 숨기고 그림만 보입니다">
-  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="1.5" y="2.5" width="15" height="13" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M3.5 13l3.8-4.2 2.7 2.8 2-2.1 2.5 3.5" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="12.2" cy="6.4" r="1.1" fill="currentColor"/></svg>
-  명화 감상
-</button>
-</div>
 <div id="artPicker" role="dialog" aria-label="배경 명화 고르기" hidden></div>
 <script>
 (function () {
-  const b = document.getElementById('artPeekBtn'), d = document.body;
-  const on = () => d.classList.add('art-peek'), off = () => d.classList.remove('art-peek');
-  b.addEventListener('pointerdown', e => { if (e.button > 0) return; try { b.setPointerCapture(e.pointerId); } catch (x) {} on(); });
-  ['pointerup', 'pointercancel', 'lostpointercapture'].forEach(t => b.addEventListener(t, off));
-  b.addEventListener('contextmenu', e => e.preventDefault());
-  b.addEventListener('keydown', e => { if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); on(); } });
-  b.addEventListener('keyup', off); b.addEventListener('blur', off);
+  const c = document.getElementById('bgCap'), d = document.body; if (!c) return;
+  let animT = 0;
+  const on = () => { if (d.classList.contains('art-peek')) return; clearTimeout(animT); d.classList.add('art-peek-anim', 'art-peek'); if (typeof updateBgArt === 'function') updateBgArt(); };
+  const off = () => { if (!d.classList.contains('art-peek')) return; d.classList.remove('art-peek'); if (typeof updateBgArt === 'function') updateBgArt(); animT = setTimeout(() => d.classList.remove('art-peek-anim'), 1200); };
+  let t0 = 0;
+  c.addEventListener('pointerdown', e => { const b = e.target.closest('.cap-peek'); if (!b || e.button > 0) return; try { b.setPointerCapture(e.pointerId); } catch (x) {} t0 = Date.now(); on(); });
+  c.addEventListener('pointerup', e => {   // 마우스 없는 화면에서 짧게 톡 누르면 출처를 펼친다
+    if (!e.target.closest('.cap-peek')) return;
+    if (Date.now() - t0 < 220 && !(window.matchMedia && matchMedia('(hover: hover)').matches)) c.classList.toggle('open');
+  });
+  ['pointerup', 'pointercancel', 'lostpointercapture'].forEach(t => c.addEventListener(t, off));
+  c.addEventListener('contextmenu', e => { if (e.target.closest('.cap-peek')) e.preventDefault(); });
+  c.addEventListener('keydown', e => { if ((e.key === ' ' || e.key === 'Enter') && e.target.closest('.cap-peek')) { e.preventDefault(); on(); } });
+  c.addEventListener('keyup', off); c.addEventListener('focusout', off);
   window.addEventListener('blur', off);
 })();
 </script>
