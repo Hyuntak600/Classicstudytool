@@ -4140,7 +4140,6 @@ shell.html 안에 전혀 없고 오직 data/data-lines(챕터명).js 안에만 �
         <button class="site-nav-link" id="bgToggle" onclick="toggleGalleryBg()">배경 끄기</button>
         <button class="site-nav-link" id="artViewBtn" onclick="openArtView()">명화 감상</button>
         <button class="site-nav-link" id="artSetBtn" onclick="openArtSettings()">배경 그림 설정</button>
-        <button class="site-nav-link" id="artPickBtn" type="button" aria-haspopup="true" aria-expanded="false">그림 바꾸기</button>
         <div class="nav-more-row">
           <label for="themeToggle">야간 열람실</label>
           <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="야간 열람실 모드 전환" title="야간 열람실">
@@ -9416,7 +9415,8 @@ window.addEventListener('resize', updateBgArt);
   const SK = 'artSections';   // { viewId: [ { id, from, to, art: 올린 그림 id | 'base' } ] }
   const secStore = () => { try { return JSON.parse(localStorage.getItem(SK) || '{}') || {}; } catch (e) { return {}; } };
   const setSecStore = o => { try { localStorage.setItem(SK, JSON.stringify(o)); } catch (e) {} };
-  let scope = { mode: 'all', from: '', to: '' };   // 새 그림을 이 권 전체에 깔지, 행 구간에만 깔지
+  const sel = { ranges: [], pend: null, art: null };   // 격자에서 고른 행 구간들 [[시작,끝],…] 과, 시작만 눌러 둔 행
+  let nums = [];                            // 이 권의 행 번호 목록(화면에 보이는 번호 기준)
   const urls = {}; let lib = []; let dbp = null;
   const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   function db() { return dbp || (dbp = new Promise((res, rej) => { const r = indexedDB.open(DB, 1); r.onupgradeneeded = () => r.result.createObjectStore(ST, { keyPath: 'id' }); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); })); }
@@ -9429,13 +9429,13 @@ window.addEventListener('resize', updateBgArt);
   function apply() {   // 고른 그림을 GALLERY에 반영하고 화면·서재 아이콘을 갱신
     const ch = choice(), sc = secStore();
     Object.keys(BASE).concat(Object.keys(ch), Object.keys(sc)).forEach(v => {
-      const a = lib.find(x => x.id === ch[v]);
+      const a = ch[v] && artOf(ch[v]);
       const list = (sc[v] || []).map(q => {
-        if (q.art === 'base') { const b0 = BASE[v]; return b0 && b0.img ? { id: q.id, from: q.from, to: q.to, img: b0.img, cap: b0.cap } : null; }
-        const x = lib.find(y => y.id === q.art); return x ? { id: q.id, from: q.from, to: q.to, img: urlOf(x), cap: capOf(x) } : null;
+        const t = q.art === 'base' ? (BASE[v] && BASE[v].img ? { src: BASE[v].img, cap: BASE[v].cap } : null) : artOf(q.art);
+        return t ? { id: q.id, from: q.from, to: q.to, img: t.src, cap: t.cap } : null;
       }).filter(Boolean).sort((p, q) => p.from - q.from);
       if (list.length) GALLERY[v] = { img: list[0].img, cap: list[0].cap, sections: list, user: true };   // 구간 그림이 있으면 권 전체 그림보다 우선
-      else if (a) GALLERY[v] = { img: urlOf(a), cap: capOf(a), user: true };
+      else if (a) GALLERY[v] = { img: a.src, cap: a.cap, user: true };
       else if (BASE[v]) GALLERY[v] = BASE[v]; else delete GALLERY[v];
     });
     document.querySelectorAll('.mac-tile.has-art').forEach(t => t.classList.remove('has-art'));
@@ -9458,121 +9458,246 @@ window.addEventListener('resize', updateBgArt);
   }
 
   let ov = null;
-  const ranged = () => scope.mode === 'range';
+  /* 처음부터 들어 있는 명화(예전 ‘그림 바꾸기’ 목록). 새 그림은 img/ 폴더에 넣고 한 줄만 추가하면 된다. 파일이 없으면 목록에서 저절로 빠진다. */
+  const PRESETS = [
+    { id: 'creation-adam', img: 'img/genesis1.jpg', title: '아담의 창조', by: '미켈란젤로 · 1512',
+      cap: '<b>아담의 창조</b><em>Creazione di Adamo</em><br>Michelangelo Buonarroti · 1512년경 · 프레스코<br>시스티나 성당 천장, 바티칸 시국<small>출처: Wikimedia Commons (퍼블릭 도메인)</small>' },
+    { id: 'quarrel-agamemnon', img: 'img/iliad1.jpg', title: '아가멤논과 아킬레우스의 다툼', by: '바치치오',
+      cap: '<b>아가멤논과 아킬레우스의 다툼</b><em>The Quarrel between Agamemnon and Achilles</em><br>Giovanni Battista Gaulli (일 바치치오)<br>보베 우아즈 박물관' },
+    { id: 'priam-achilles', img: 'img/iliad24.jpg', title: '프리아모스와 아킬레우스', by: '알렉산드르 이바노프 · 1824',
+      cap: '<b>프리아모스, 아킬레우스에게 헥토르의 시신을 청하다</b><em>Priam Begging Achilles for the Body of Hector</em><br>Alexander Ivanov · 1824<small>출처: Wikimedia Commons (퍼블릭 도메인)</small>' },
+    { id: 'hector-farewell', img: 'img/iliad6.jpg', title: '헥토르와 안드로마케의 작별', by: 'C. F. 데클러',
+      cap: '<b>헥토르와 안드로마케, 아스티아낙스의 작별</b><em>The Farewell of Hector to Andromache and Astyanax</em><br>Carl Friedrich Deckler (1838–1918)<small>출처: Wikimedia Commons (퍼블릭 도메인)</small>' }
+  ];
+  function artOf(id) {   // 그림 id → { id, src, title, cap, preset }  ('p:…' = 처음부터 있는 그림, 그 밖 = 내가 올린 그림)
+    if (!id) return null;
+    if (String(id).indexOf('p:') === 0) { const p = PRESETS.find(x => 'p:' + x.id === id); return p && { id, src: p.img, title: p.title, cap: p.cap, preset: true }; }
+    const x = lib.find(y => y.id === id); return x && { id, src: urlOf(x), title: x.title || '제목 없음', cap: capOf(x) };
+  }
+  const newId = () => 's' + Date.now().toString(36) + Math.random().toString(36).slice(2, 5);
+  const rtxt = q => (q.from === q.to ? q.from : q.from + '–' + q.to);
+  function injectCss() {
+    if (document.getElementById('artGridCss')) return;
+    const st = document.createElement('style'); st.id = 'artGridCss';
+    st.textContent =
+      '.ag-grid{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:4px;margin-top:8px}' +
+      '.ag-c{position:relative;height:30px;padding:0;border:1.5px solid var(--border);border-radius:6px;background:var(--card-bg);color:var(--text-main);font:600 11.5px var(--sans);cursor:pointer;-webkit-tap-highlight-color:transparent}' +
+      '.ag-c.has{background:hsl(var(--h) 55% 52% / .30);border-color:hsl(var(--h) 55% 42%)}' +
+      '.ag-c.has::after{content:"";position:absolute;top:2px;right:2px;width:5px;height:5px;border-radius:50%;background:hsl(var(--h) 60% 40%)}' +
+      '.ag-c.sel{background:var(--accent);border-color:var(--accent-dark);color:#fff}' +
+      '.ag-c.pend{outline:2.5px dashed var(--accent-dark);outline-offset:1px;background:var(--accent-light)}' +
+      '.ag-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}' +
+      '.ag-chips:empty{display:none}' +
+      '.ag-chip{display:inline-flex;align-items:center;gap:4px;padding:3px 4px 3px 10px;border-radius:999px;background:var(--accent-light);color:var(--accent-dark);font:600 12.5px var(--sans)}' +
+      '.ag-chip button{width:20px;height:20px;border:0;border-radius:50%;background:transparent;color:inherit;cursor:pointer;font-size:10px}' +
+      '.ag-hint{margin:8px 0 0;font-size:12.5px;line-height:1.5;color:var(--text-sub)}' +
+      '.ag-key{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:8px;font-size:11.5px;color:var(--text-sub)}' +
+      '.ag-key i{display:inline-block;width:11px;height:11px;border-radius:3px;vertical-align:-1px;margin-right:4px}' +
+      '.ag-sec{margin-top:18px}' +
+      '.ag-lib{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:10px;margin-top:8px}' +
+      '.ag-pic{position:relative;border:2px solid var(--border);border-radius:10px;overflow:hidden;background:var(--card-bg);transition:box-shadow .15s,border-color .15s}' +
+      '.ag-pic.on{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 38%,transparent)}' +
+      '.ag-lib:has(.ag-pic.on) .ag-pic:not(.on) img{opacity:.55}' +
+      '.ag-pb{all:unset;cursor:pointer;display:block;width:100%;-webkit-tap-highlight-color:transparent}' +
+      '.ag-pb img{display:block;width:100%;height:84px;object-fit:cover;transition:opacity .15s}' +
+      '.ag-pt{display:block;padding:5px 8px;font-size:11.5px;line-height:1.35;color:var(--text-sub);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}' +
+      '.ag-pic.on .ag-pt{font-weight:700;color:var(--text-main)}' +
+      '.ag-ck{display:none;position:absolute;left:6px;top:6px;padding:2px 8px;border-radius:999px;background:var(--accent);color:#fff;font:700 11px var(--sans);pointer-events:none}' +
+      '.ag-pic.on .ag-ck{display:block}' +
+      '.ag-dot{position:absolute;right:6px;bottom:32px;width:11px;height:11px;border-radius:50%;border:1.5px solid #fff;pointer-events:none}' +
+      '.ag-pd{position:absolute;top:4px;right:4px;width:22px;height:22px;border:0;border-radius:50%;cursor:pointer;background:rgba(0,0,0,.55);color:#fff;font-size:11px}' +
+      '.ag-fold{margin-top:12px;border:1px solid var(--border);border-radius:10px;background:var(--card-bg)}' +
+      '.ag-fold>summary{padding:10px 12px;cursor:pointer;font:600 13px var(--sans);color:var(--text-main);list-style:none}' +
+      '.ag-fold>summary::-webkit-details-marker{display:none}' +
+      '.ag-fold>summary::before{content:"＋ ";color:var(--accent-dark)}' +
+      '.ag-fold[open]>summary::before{content:"－ "}' +
+      '.ag-fold>.ag-fb{display:grid;gap:8px;padding:0 12px 12px}' +
+      '.ag-msg{flex:1;min-width:0;font-size:12.5px;line-height:1.4;color:var(--text-sub)}' +
+      '.ag-foot .ai-btn{flex:none}' +
+      '.ag-foot .ai-btn:disabled{opacity:.5;cursor:default}';
+    document.head.appendChild(st);
+  }
   function render() {
     const v = document.body.dataset.bg, ch = choice(), cur = ch[v];
+    const body0 = ov.querySelector('.ai-body'), keep = body0 ? body0.scrollTop : 0;
     const secs = (secStore()[v] || []).slice().sort((p, q) => p.from - q.from);
     const name = typeof chLabel === 'function' ? chLabel(v) : v;
     const baseArt = BASE[v] && BASE[v].img ? BASE[v] : null;
-    const artOfSec = q => q.art === 'base' ? (baseArt && { src: baseArt.img, title: (baseArt.cap || '').replace(/<[^>]*>/g, ' ').trim().slice(0, 40) || '기본 그림' }) : (x => x && { src: urlOf(x), title: x.title || '제목 없음' })(lib.find(y => y.id === q.art));
-    const tile = (inner, extra) => '<div ' + (extra || '') + ' style="position:relative;border:2px solid var(--border);border-radius:10px;overflow:hidden;background:var(--card-bg)">' + inner + '</div>';
+    const tOf = id => id === 'base' ? (baseArt && { src: baseArt.img, title: (baseArt.cap || '').replace(/<[^>]*>/g, ' ').trim().slice(0, 40) || '처음 그림' }) : artOf(id);
+    const artIds = []; secs.forEach(q => { if (artIds.indexOf(q.art) < 0) artIds.push(q.art); });
+    const hueOf = id => { const i = artIds.indexOf(id); return i < 0 ? -1 : (i * 67 + 30) % 360; };
+    if (sel.art && !artOf(sel.art)) sel.art = null;
+    const cells = nums.map(n => { const q = secs.find(x => n >= x.from && n <= x.to);
+      return '<button type="button" class="ag-c' + (q ? ' has' : '') + '" data-a="cell" data-n="' + n + '"' + (q ? ' style="--h:' + hueOf(q.art) + '"' : '') + ' aria-label="' + n + '행' + (q ? ' · 그림 있음' : '') + '">' + n + '</button>'; }).join('');
+    const groups = artIds.map(id => { const rs = secs.filter(q => q.art === id), t = tOf(id), h = hueOf(id);
+      return '<div style="display:flex;align-items:center;gap:10px;border:1px solid var(--border);border-radius:10px;padding:6px 8px;background:var(--bg)">' +
+        '<span style="width:10px;height:10px;border-radius:50%;flex:none;background:hsl(' + h + ' 60% 40%)"></span>' +
+        (t ? '<img src="' + t.src + '" alt="" style="width:54px;height:38px;object-fit:cover;border-radius:6px;flex:none">' : '<span style="width:54px;height:38px;flex:none"></span>') +
+        '<span style="flex:1;min-width:0;font-size:13px;line-height:1.4;color:var(--text-main)"><b>' + rs.map(rtxt).join(', ') + '행</b><br><span style="color:var(--text-sub);font-size:12px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">' + esc(t ? t.title : '') + '</span></span>' +
+        '<button type="button" data-a="artdel" data-id="' + esc(id) + '" aria-label="이 그림이 걸린 행 모두 지우기" style="width:26px;height:26px;border:0;border-radius:50%;cursor:pointer;background:color-mix(in srgb,var(--text-faint) 22%,transparent);color:var(--text-sub);font-size:11px;flex:none">✕</button></div>'; }).join('');
+    const items = PRESETS.map(p => artOf('p:' + p.id)).concat(lib.map(a => artOf(a.id))).filter(Boolean);
+    const tiles = items.map(t => { const on = sel.art === t.id, h = hueOf(t.id);
+      return '<div class="ag-pic' + (on ? ' on' : '') + '" data-id="' + esc(t.id) + '">' +
+        '<button type="button" class="ag-pb" data-a="pick" data-id="' + esc(t.id) + '" aria-pressed="' + on + '"><img src="' + esc(t.src) + '" alt="" onerror="this.closest(\'.ag-pic\').remove()"><span class="ag-pt">' + esc(t.title) + '</span></button>' +
+        '<span class="ag-ck">✓ 선택됨</span>' +
+        (h >= 0 ? '<span class="ag-dot" style="background:hsl(' + h + ' 60% 40%)" title="이 권에 걸려 있어요"></span>' : '') +
+        (t.preset ? '' : '<button type="button" class="ag-pd" data-a="del" data-id="' + esc(t.id) + '" aria-label="삭제">✕</button>') + '</div>'; }).join('');
     ov.querySelector('.ai-card').innerHTML =
       '<div class="ai-head"><h2>배경 그림 · ' + esc(name) + '</h2><button type="button" class="ai-x" data-a="x" aria-label="닫기">✕</button></div>' +
       '<div class="ai-body">' +
-      '<div class="ai-seg" role="group" aria-label="그림을 깔 범위">' +
-        '<button type="button" data-a="scope" data-m="all" class="' + (ranged() ? '' : 'on') + '">이 권 전체</button>' +
-        '<button type="button" data-a="scope" data-m="range" class="' + (ranged() ? 'on' : '') + '">행 구간만</button></div>' +
-      '<div class="ai-pane" id="secPane"' + (ranged() ? '' : ' hidden') + '>' +
-        '<div class="ai-grid2">' +
-        '<label class="ai-f"><span>시작 행</span><input id="secFrom" type="number" min="1" inputmode="numeric" placeholder="예: 1" value="' + esc(scope.from) + '"></label>' +
-        '<label class="ai-f"><span>끝 행</span><input id="secTo" type="number" min="1" inputmode="numeric" placeholder="예: 118" value="' + esc(scope.to) + '"></label></div>' +
-        '<p class="ai-status" style="min-height:0">화면에 보이는 행 번호 기준이에요. <button type="button" class="ai-link" data-a="here-from">지금 읽는 행을 시작으로</button><button type="button" class="ai-link" data-a="here-to">끝으로</button><br>그 행을 읽는 동안 그림이 서서히 떠오르고, 구간을 벗어나면 서서히 사라져요. 구간 그림이 있는 권은 구간 밖에서는 그림이 없어요.</p></div>' +
-      '<section class="ai-step" style="margin-top:12px"><div class="ai-pick" style="grid-template-columns:1fr">' +
-      '<label class="ai-f"><span>그림 파일</span><input type="file" id="artFile" accept="image/*"></label>' +
-      '<label class="ai-f"><span>제목</span><input id="artTitle" type="text" placeholder="예: 헥토르와 안드로마케의 작별"></label>' +
-      '<label class="ai-f"><span>작가 · 연도 · 소장처 (선택)</span><input id="artBy" type="text"></label>' +
-      '<label class="ai-f"><span>출처 (선택)</span><input id="artSrc" type="text" placeholder="예: Wikimedia Commons (퍼블릭 도메인)"></label>' +
-      '</div><p class="ai-status" id="artMsg"></p><div class="ai-qsend"><button type="button" class="ai-btn ai-primary" data-a="up" data-t-all="올리고 이 권 전체에 적용" data-t-range="올리고 이 구간에 넣기">' + (ranged() ? '올리고 이 구간에 넣기' : '올리고 이 권 전체에 적용') + '</button></div></section>' +
-      (secs.length ? '<div class="ai-words-head"><span>이 권의 구간 그림 ' + secs.length + '개</span><span class="ai-words-tools"><button type="button" class="ai-link" data-a="secclear">구간 모두 지우기</button></span></div>' +
-        '<div style="display:grid;gap:8px;margin-top:8px">' + secs.map(q => { const t = artOfSec(q); return '<div style="display:flex;align-items:center;gap:10px;border:1px solid var(--border);border-radius:10px;padding:6px 8px;background:var(--card-bg)">' +
-          (t ? '<img src="' + t.src + '" alt="" style="width:54px;height:38px;object-fit:cover;border-radius:6px;flex:none">' : '<span style="width:54px;height:38px;flex:none"></span>') +
-          '<span style="flex:1;min-width:0;font-size:13px;line-height:1.4;color:var(--text-main)"><b>' + q.from + '–' + q.to + '행</b><br><span style="color:var(--text-sub);font-size:12px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">' + esc(t ? t.title : '') + '</span></span>' +
-          '<button type="button" data-a="secdel" data-id="' + esc(q.id) + '" aria-label="이 구간 지우기" style="width:26px;height:26px;border:0;border-radius:50%;cursor:pointer;background:color-mix(in srgb,var(--text-faint) 22%,transparent);color:var(--text-sub);font-size:11px;flex:none">✕</button></div>'; }).join('') + '</div>' : '') +
-      '<div class="ai-words-head"><span>올린 그림 ' + lib.length + '개 — <span data-t-all="눌러서 이 권 전체에 적용" data-t-range="눌러서 이 구간에 넣기">' + (ranged() ? '눌러서 이 구간에 넣기' : '눌러서 이 권 전체에 적용') + '</span></span><span class="ai-words-tools">' +
-      (BASE[v] || cur ? '<button type="button" class="ai-link" data-only="all"' + (ranged() ? ' style="display:none"' : '') + ' data-a="def">' + (BASE[v] ? '기본 그림으로' : '그림 해제') + '</button>' : '') + '</span></div>' +
-      ((lib.length || baseArt) ? '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px;margin-top:8px">' +
-        (baseArt ? '<div data-only="range"' + (ranged() ? '' : ' style="display:none"') + '><button type="button" data-a="use" data-id="base" style="all:unset;cursor:pointer;display:block;width:100%;box-sizing:border-box;border:2px solid var(--border);border-radius:10px;overflow:hidden;background:var(--card-bg)"><img src="' + esc(baseArt.img) + '" alt="" style="display:block;width:100%;height:90px;object-fit:cover"><span style="display:block;padding:5px 8px;font-size:11.5px;line-height:1.35;color:var(--text-sub)">기본 그림</span></button></div>' : '') +
-        lib.map(a => '<div style="position:relative;border:2px solid ' + (!ranged() && a.id === cur ? 'var(--accent)' : 'var(--border)') + ';border-radius:10px;overflow:hidden;background:var(--card-bg)">' +
-          '<button type="button" data-a="use" data-id="' + a.id + '" style="all:unset;cursor:pointer;display:block;width:100%">' +
-          '<img src="' + urlOf(a) + '" alt="" style="display:block;width:100%;height:90px;object-fit:cover"><span style="display:block;padding:5px 8px;font-size:11.5px;line-height:1.35;color:var(--text-sub);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">' + esc(a.title || '제목 없음') + '</span></button>' +
-          '<button type="button" data-a="del" data-id="' + a.id + '" aria-label="삭제" style="position:absolute;top:4px;right:4px;width:22px;height:22px;border:0;border-radius:50%;cursor:pointer;background:rgba(0,0,0,.55);color:#fff;font-size:11px">✕</button></div>').join('') + '</div>'
-        : '<p class="ai-empty">아직 올린 그림이 없어요.</p>') +
-      '</div>';
+      '<div class="ai-words-head"><span>① 그림을 걸 행 고르기</span><span class="ai-words-tools"><button type="button" class="ai-link" data-a="rclear">선택 해제</button><button type="button" class="ai-link ai-danger" data-a="erase">고른 행 그림 지우기</button></span></div>' +
+      '<p class="ag-hint" id="agHint"></p><div class="ag-chips" id="agChips"></div>' +
+      (nums.length ? '<div class="ag-grid">' + cells + '</div>' : '<p class="ai-empty">이 권의 행 목록을 불러오지 못했어요. 본문을 한 번 연 뒤 다시 시도해 주세요.</p>') +
+      '<div class="ag-key"><span><i style="background:var(--card-bg);border:1.5px solid var(--border)"></i>그림 없음</span><span><i style="background:hsl(40 55% 52% / .45);border:1.5px solid hsl(40 55% 42%)"></i>그림 있음 (그림마다 다른 색)</span><span><i style="background:var(--accent)"></i>고른 행</span></div>' +
+      (!secs.length && GALLERY[v] ? '<p class="ag-hint">지금은 이 권 전체에 그림이 깔려 있어요. 행을 골라 걸면 고른 행에만 깔려요.</p>' : '') +
+      '<div class="ag-sec"><div class="ai-words-head"><span>② 걸 그림 고르기</span></div>' +
+      '<div class="ag-lib">' + tiles + '</div>' +
+      '<details class="ag-fold" id="agNew"><summary>새 그림 올리기</summary><div class="ag-fb">' +
+        '<label class="ai-f"><span>그림 파일</span><input type="file" id="artFile" accept="image/*"></label>' +
+        '<label class="ai-f"><span>제목</span><input id="artTitle" type="text" placeholder="예: 헥토르와 안드로마케의 작별"></label>' +
+        '<label class="ai-f"><span>작가 · 연도 · 출처 (선택)</span><input id="artBy" type="text" placeholder="예: 앵그르 · 1811 · Wikimedia Commons"></label>' +
+        '<div class="ai-qsend"><button type="button" class="ai-btn" data-a="up">올리고 선택하기</button></div></div></details></div>' +
+      ((secs.length || cur) ? '<details class="ag-fold"><summary>이 권에 걸린 그림 관리' + (artIds.length ? ' (' + artIds.length + '개)' : '') + '</summary><div class="ag-fb">' +
+        (groups ? '<div style="display:grid;gap:8px">' + groups + '</div>' : '') +
+        '<div><button type="button" class="ai-link ai-danger" data-a="def">모두 지우고 처음 상태로</button></div></div></details>' : '') +
+      '</div>' +
+      '<div class="ai-foot ag-foot"><span class="ag-msg" id="artMsg"></span><button type="button" class="ai-btn ai-primary" data-a="apply" id="agApply" disabled></button></div>';
+    refreshSel();
+    const nb = ov.querySelector('.ai-body'); if (nb) nb.scrollTop = keep;
   }
   const say = t => { const m = ov && ov.querySelector('#artMsg'); if (m) m.textContent = t; };
-
-  function syncScope() {
-    if (!ov) return; const f = ov.querySelector('#secFrom'), t = ov.querySelector('#secTo');
-    if (f) scope.from = f.value; if (t) scope.to = t.value;
+  const inSel = n => sel.ranges.some(r => n >= r[0] && n <= r[1]);
+  function refreshSel() {   // 격자 전체를 다시 그리지 않고 선택 표시·안내·적용 버튼만 갱신 (스크롤·입력 중인 파일이 유지됨)
+    if (!ov) return;
+    ov.querySelectorAll('.ag-c').forEach(c => { const n = +c.dataset.n; c.classList.toggle('sel', inSel(n)); c.classList.toggle('pend', sel.pend === n); });
+    const chips = ov.querySelector('#agChips');
+    if (chips) chips.innerHTML = sel.ranges.map((r, i) => '<span class="ag-chip">' + (r[0] === r[1] ? r[0] : r[0] + '–' + r[1]) + '행<button type="button" data-a="rdel" data-i="' + i + '" aria-label="선택 해제">✕</button></span>').join('');
+    const h = ov.querySelector('#agHint');
+    if (h) h.textContent = sel.pend != null ? sel.pend + '행부터 — 끝 행을 눌러 주세요. (같은 행을 한 번 더 누르면 그 한 줄만)'
+      : sel.ranges.length ? sel.ranges.length + '개 구간을 골랐어요. 칠해진 행도 골라서 덮어쓸 수 있어요.'
+      : '시작 행 → 끝 행 순서로 누르면 구간이 돼요. 여러 구간을 골라도 되고, 고른 구간을 다시 누르면 해제돼요.';
+    const e = ov.querySelector('[data-a="erase"]'); if (e) e.disabled = !sel.ranges.length;
+    const ap = ov.querySelector('#agApply');
+    if (ap) {
+      let lab, ok = false;
+      if (sel.pend != null) lab = '끝 행을 눌러 주세요';
+      else if (!sel.ranges.length) lab = '① 행을 먼저 고르세요';
+      else if (!sel.art) lab = '② 그림을 고르세요';
+      else { lab = '고른 행 ' + sel.ranges.length + '개 구간에 걸기'; ok = true; }
+      ap.textContent = lab; ap.disabled = !ok;
+    }
   }
-  function addSection(artId) {   // 입력한 행 범위에 그림을 넣는다. 성공하면 true
-    syncScope();
-    const v = document.body.dataset.bg, from = parseInt(scope.from, 10), to = parseInt(scope.to, 10);
-    if (!(from > 0) || !(to >= from)) { say('시작 행과 끝 행을 숫자로 넣어 주세요. (끝 행은 시작 행과 같거나 커야 해요)'); return false; }
-    const st = secStore(), list = st[v] || [];
-    const clash = list.find(q => from <= q.to && to >= q.from);
-    if (clash) { say('이미 ' + clash.from + '–' + clash.to + '행에 그림이 있어요. 겹치지 않게 범위를 바꾸거나 그 구간을 먼저 지워 주세요.'); return false; }
-    list.push({ id: 's' + Date.now().toString(36) + Math.random().toString(36).slice(2, 5), from, to, art: artId });
-    st[v] = list; setSecStore(st);
-    scope.from = String(to + 1); scope.to = '';   // 다음 구간을 이어서 넣기 편하게
-    apply(); render(); say(from + '–' + to + '행에 넣었어요.');
+  function refreshPics() {   // 그림 목록의 ‘선택됨’ 표시만 갱신
+    if (!ov) return;
+    ov.querySelectorAll('.ag-pic').forEach(d => { const on = d.dataset.id === sel.art; d.classList.toggle('on', on); const b = d.querySelector('.ag-pb'); if (b) b.setAttribute('aria-pressed', on); });
+  }
+  function addRange(f, t) {   // 겹치거나 맞닿은 구간은 하나로 합친다
+    const all = sel.ranges.concat([[f, t]]).sort((p, q) => p[0] - q[0]), out = [];
+    all.forEach(r => { const l = out[out.length - 1]; if (l && r[0] <= l[1] + 1) l[1] = Math.max(l[1], r[1]); else out.push([r[0], r[1]]); });
+    sel.ranges = out;
+  }
+  function subtract(list, f, t) {   // 저장된 구간에서 [f,t] 를 빼고, 가운데가 잘리면 둘로 나눈다
+    const out = [];
+    list.forEach(q => {
+      if (t < q.from || f > q.to) { out.push(q); return; }
+      if (q.from < f) out.push({ id: q.id, from: q.from, to: f - 1, art: q.art });
+      if (q.to > t) out.push({ id: q.from < f ? newId() : q.id, from: t + 1, to: q.to, art: q.art });
+    });
+    return out;
+  }
+  function tidy(list) {   // 같은 그림이 이어지면 하나로
+    const a = list.slice().sort((p, q) => p.from - q.from), out = [];
+    a.forEach(q => { const l = out[out.length - 1]; if (l && l.art === q.art && q.from <= l.to + 1) l.to = Math.max(l.to, q.to); else out.push({ id: q.id, from: q.from, to: q.to, art: q.art }); });
+    return out;
+  }
+  function needRanges() {
+    if (sel.pend != null) { say(sel.pend + '행부터 시작했어요. 끝 행을 눌러 구간을 마무리해 주세요.'); return true; }
+    if (!sel.ranges.length) { say('먼저 위 격자에서 행(시작 → 끝)을 골라 주세요.'); return true; }
+    return false;
+  }
+  function paintRanges(artId) {   // 고른 구간 전부에 그림을 건다 (기존 그림은 덮어씀)
+    if (needRanges()) return false;
+    if (!artId || !artOf(artId)) { say('걸 그림을 먼저 골라 주세요.'); return false; }
+    const v = document.body.dataset.bg, st = secStore(); let list = st[v] || [];
+    const n = sel.ranges.length, txt = sel.ranges.map(r => r[0] === r[1] ? r[0] : r[0] + '–' + r[1]).join(', ');
+    sel.ranges.forEach(r => { list = subtract(list, r[0], r[1]); list.push({ id: newId(), from: r[0], to: r[1], art: artId }); });
+    st[v] = tidy(list); setSecStore(st); sel.ranges = []; sel.pend = null;
+    if (galleryOff[v]) { delete galleryOff[v]; try { localStorage.setItem('galleryBg', JSON.stringify(galleryOff)); } catch (x) {} }   // 배경을 꺼 둔 권이면 다시 켠다
+    apply(); render(); say(txt + '행에 걸었어요. (' + n + '개 구간) 다른 행에도 같은 그림을 이어서 걸 수 있어요.');
     return true;
   }
   async function act(e) {
     const b = e.target.closest('[data-a]'); if (!b) { if (e.target === ov) close(); return; }
     const v = document.body.dataset.bg, a = b.dataset.a, ch = choice();
     if (a === 'x') return close();
-    if (a === 'scope') {   // 범위 전환은 입력해 둔 내용이 지워지지 않게 일부만 바꾼다
-      syncScope(); scope.mode = b.dataset.m;
-      ov.querySelectorAll('[data-a="scope"]').forEach(x => x.classList.toggle('on', x === b));
-      const pane = ov.querySelector('#secPane'); if (pane) pane.hidden = !ranged();
-      ov.querySelectorAll('[data-t-all]').forEach(x => { x.textContent = ranged() ? x.dataset.tRange : x.dataset.tAll; });
-      ov.querySelectorAll('[data-only]').forEach(x => { x.style.display = (x.dataset.only === 'range') === ranged() ? '' : 'none'; });
-      return;
+    if (a === 'cell') {
+      const n = +b.dataset.n;
+      if (sel.pend == null) { const hit = sel.ranges.findIndex(r => n >= r[0] && n <= r[1]); if (hit >= 0) sel.ranges.splice(hit, 1); else sel.pend = n; }
+      else { const f = Math.min(sel.pend, n), t = Math.max(sel.pend, n); sel.pend = null; addRange(f, t); }
+      say(''); return refreshSel();
     }
-    if (a === 'here-from' || a === 'here-to') {
-      const n = curLineNo(); if (isNaN(n)) return say('지금 읽는 행을 찾지 못했어요. 본문을 조금 스크롤한 뒤 다시 눌러 보세요.');
-      const el = ov.querySelector(a === 'here-from' ? '#secFrom' : '#secTo'); if (el) el.value = n; syncScope(); return;
+    if (a === 'rdel') { sel.ranges.splice(+b.dataset.i, 1); return refreshSel(); }
+    if (a === 'rclear') { sel.ranges = []; sel.pend = null; say(''); return refreshSel(); }
+    if (a === 'pick') { sel.art = sel.art === b.dataset.id ? null : b.dataset.id; say(''); refreshPics(); return refreshSel(); }
+    if (a === 'apply') return void paintRanges(sel.art);
+    if (a === 'erase') {
+      if (needRanges()) return;
+      const st = secStore(); let list = st[v] || [];
+      if (!list.length) return say('이 권에는 걸린 그림이 없어요.');
+      sel.ranges.forEach(r => { list = subtract(list, r[0], r[1]); });
+      if (list.length) st[v] = list; else delete st[v];
+      setSecStore(st); sel.ranges = []; apply(); render(); say('고른 행의 그림을 지웠어요.'); return;
     }
-    if (a === 'use') {
-      if (ranged()) return void addSection(b.dataset.id);
-      ch[v] = b.dataset.id; setChoice(ch); apply(); render();
+    if (a === 'artdel') {
+      const st = secStore(); st[v] = (st[v] || []).filter(q => q.art !== b.dataset.id); if (!st[v].length) delete st[v];
+      setSecStore(st); apply(); render(); return;
     }
-    else if (a === 'def') { delete ch[v]; setChoice(ch); apply(); render(); }
-    else if (a === 'secdel') { const st = secStore(); st[v] = (st[v] || []).filter(q => q.id !== b.dataset.id); if (!st[v].length) delete st[v]; setSecStore(st); apply(); render(); }
-    else if (a === 'secclear') { if (!confirm('이 권의 구간 그림을 모두 지울까요? (올려 둔 그림 파일은 남아요)')) return; const st = secStore(); delete st[v]; setSecStore(st); apply(); render(); }
-    else if (a === 'del') {
-      if (!confirm('이 그림을 삭제할까요? 적용된 권은 기본 그림으로 돌아가고, 구간에 쓰인 곳은 비워져요.')) return;
+    if (a === 'def') {
+      if (!confirm('이 권에 걸어 둔 그림을 모두 지우고 처음 상태로 돌릴까요? (올려 둔 그림 파일은 남아요)')) return;
+      delete ch[v]; setChoice(ch); const st = secStore(); delete st[v]; setSecStore(st); sel.ranges = []; sel.pend = null; apply(); render(); return;
+    }
+    if (a === 'del') {
+      if (!confirm('이 그림을 삭제할까요? 걸려 있던 행에서는 그림이 빠져요.')) return;
       await tx('readwrite', s => s.delete(b.dataset.id)); URL.revokeObjectURL(urls[b.dataset.id]); delete urls[b.dataset.id];
       Object.keys(ch).forEach(k => { if (ch[k] === b.dataset.id) delete ch[k]; }); setChoice(ch);
       const st = secStore(); Object.keys(st).forEach(k => { st[k] = st[k].filter(q => q.art !== b.dataset.id); if (!st[k].length) delete st[k]; }); setSecStore(st);
+      if (sel.art === b.dataset.id) sel.art = null;
       await reload(); apply(); render();
     } else if (a === 'up') {
       const f = ov.querySelector('#artFile').files[0]; if (!f) return say('그림 파일을 먼저 고르세요.');
-      if (ranged()) {   // 저장하기 전에 범위부터 확인해서, 범위가 잘못됐을 때 그림만 저장되는 일을 막는다
-        syncScope(); const fr = parseInt(scope.from, 10), to = parseInt(scope.to, 10), list = secStore()[v] || [];
-        if (!(fr > 0) || !(to >= fr)) return say('시작 행과 끝 행을 숫자로 넣어 주세요. (끝 행은 시작 행과 같거나 커야 해요)');
-        const clash = list.find(q => fr <= q.to && to >= q.from);
-        if (clash) return say('이미 ' + clash.from + '–' + clash.to + '행에 그림이 있어요. 겹치지 않게 범위를 바꾸거나 그 구간을 먼저 지워 주세요.');
-      }
       say('저장하는 중…');
       try {
         const blob = await shrink(f), id = 'a' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
-        const rec = { id, blob, at: Date.now(), title: ov.querySelector('#artTitle').value.trim(), by: ov.querySelector('#artBy').value.trim(), src: ov.querySelector('#artSrc').value.trim() };
+        const rec = { id, blob, at: Date.now(), title: ov.querySelector('#artTitle').value.trim(), by: ov.querySelector('#artBy').value.trim(), src: '' };
         await tx('readwrite', s => s.put(rec)); await reload();
-        if (ranged()) addSection(id); else { ch[v] = id; setChoice(ch); apply(); render(); }
+        sel.art = id; render();
+        say('올렸어요. 그림이 선택돼 있으니 행을 고르고 [걸기]를 누르세요.');
       } catch (err) { say('저장하지 못했어요: ' + (err && err.message || '브라우저 저장 공간을 확인하세요')); }
     }
   }
   function onKey(e) { if (e.key === 'Escape') { e.stopPropagation(); close(); } }
   function close() { if (!ov) return; ov.remove(); ov = null; document.removeEventListener('keydown', onKey, true); }
+  async function loadNums() {   // 이 권의 행 번호(화면에 보이는 번호)를 데이터에서 읽는다
+    nums = [];
+    const ch = chByView(document.body.dataset.bg); if (!ch) return;
+    try {
+      const arr = window[ch.dataVar] || await loadChapterData(ch.dataVar);
+      nums = Array.from(new Set((arr || []).map(l => refLineNo(l.ref)).filter(n => n > 0))).sort((p, q) => p - q);
+    } catch (e) { nums = []; }
+  }
   window.openArtSettings = async function () {
     if (ov) return; const m = document.getElementById('navMore'); if (m) m.classList.remove('open');
-    await reload();
+    injectCss(); sel.ranges = []; sel.pend = null; sel.art = null;
+    await Promise.all([reload(), loadNums()]);
     ov = document.createElement('div'); ov.className = 'ai-overlay show'; ov.setAttribute('role', 'dialog');
-    ov.innerHTML = '<div class="ai-card"></div>'; ov.addEventListener('click', act); ov.addEventListener('input', syncScope);
+    ov.innerHTML = '<div class="ai-card"></div>'; ov.addEventListener('click', act);
     document.body.appendChild(ov); document.addEventListener('keydown', onKey, true); render();
   };
+  try {   // 예전 ‘그림 바꾸기’로 고른 그림은 이 설정의 권 전체 그림으로 옮긴다
+    const pa = JSON.parse(localStorage.getItem('presetArt') || '{}') || {}, c = choice(); let moved = false;
+    Object.keys(pa).forEach(k => { if (!c[k] && pa[k]) { c[k] = 'p:' + pa[k]; moved = true; } });
+    if (moved) setChoice(c); localStorage.removeItem('presetArt');
+  } catch (e) {}
   reload().then(apply);
 })();
 
@@ -10147,14 +10272,21 @@ function goToLine(viewId, idx) {
   // 이 권의 현황 줄 + 브라우저에만 저장된 행 지우기
   function qInfoBar() {
     const el = $('aiQInfo'); if (!el) return;
-    if (isNaN(S.book) || !S.storeKey) { el.hidden = true; return; }
+    // ‘코딩된 행 치우기’ 버튼은 이 줄 안으로 옮겨 오는데, 줄을 비우기 전에 먼저 붙잡아 둔다 (비우면 문서에서 떨어져 영영 못 찾게 됨)
+    const qd = $('aiQDone') || el.querySelector('#aiQDone');
+    if (isNaN(S.book) || !S.storeKey) { el.hidden = true; el.dataset.k = ''; return; }
     const base = S.ch ? (__baseLines[S.ch.dataVar] || []).length : 0, mine = Object.keys(mineMap()).length;
     const done = Q.filter(r => r.t.trim() && qState(r)[1] === 'done').length;
-    el.textContent = '';
+    const clearable = Q.filter(r => { const c = qState(r)[1]; return c === 'ok' || c === 'done'; }).length;
+    if (qd) qd.textContent = '코딩된 행 치우기' + (clearable ? ' (' + clearable + ')' : '');
+    // 내용이 그대로면 다시 그리지 않는다: 1초마다 버튼을 떼었다 붙이면 누르는 사이에 버튼이 바뀌어 클릭이 씹혀서 두 번 눌러야 했다
+    const key = [S.storeKey, base, mine, done, clearable].join('|');
+    if (el.dataset.k === key && !el.hidden && (!qd || qd.parentNode === el)) return;
+    el.dataset.k = key; el.textContent = '';
     const t = document.createElement('span'); t.innerHTML = '이 ' + S.work.unit + ' — data 파일에 코딩된 행 <b>' + base + '</b>개 · 이 브라우저에만 저장된 행 <b>' + mine + '</b>개'
       + (done ? ' · 목록의 <b>이미 코딩됨 ' + done + '행</b>은 자동 코딩에서 건너뛰어요' : '');
     el.appendChild(t);
-    const qd = $('aiQDone'); if (qd) el.appendChild(qd);   // ⋯ 메뉴에 있던 ‘코딩된 행 치우기’를 저장분 지우기 바로 옆으로
+    if (qd) el.appendChild(qd);   // ⋯ 메뉴에 있던 ‘코딩된 행 치우기’를 저장분 지우기 바로 옆으로
     if (mine) { const b = document.createElement('button'); b.type = 'button'; b.className = 'ai-link ai-danger'; b.dataset.act = 'clearmine'; b.textContent = '브라우저 저장분 ' + mine + '행 모두 지우기'; el.appendChild(b); }
     el.hidden = false;
   }
@@ -11677,79 +11809,6 @@ if ('serviceWorker' in navigator) {
     }).catch(function () {});
   });
 }
-</script>
-<div id="artPicker" role="dialog" aria-label="배경 명화 고르기" hidden></div>
-<script>
-(function () {
-  const c = document.getElementById('bgCap'), d = document.body; if (!c) return;
-  let animT = 0;
-  const on = () => { if (d.classList.contains('art-peek')) return; clearTimeout(animT); d.classList.add('art-peek-anim', 'art-peek'); if (typeof updateBgArt === 'function') updateBgArt(); };
-  const off = () => { if (!d.classList.contains('art-peek')) return; d.classList.remove('art-peek'); if (typeof updateBgArt === 'function') updateBgArt(); animT = setTimeout(() => d.classList.remove('art-peek-anim'), 1200); };
-  let t0 = 0;
-  c.addEventListener('pointerdown', e => { const b = e.target.closest('.cap-peek'); if (!b || e.button > 0) return; try { b.setPointerCapture(e.pointerId); } catch (x) {} t0 = Date.now(); on(); });
-  c.addEventListener('pointerup', e => {   // 마우스 없는 화면에서 짧게 톡 누르면 출처를 펼친다
-    if (!e.target.closest('.cap-peek')) return;
-    if (Date.now() - t0 < 220 && !(window.matchMedia && matchMedia('(hover: hover)').matches)) c.classList.toggle('open');
-  });
-  ['pointerup', 'pointercancel', 'lostpointercapture'].forEach(t => c.addEventListener(t, off));
-  c.addEventListener('contextmenu', e => { if (e.target.closest('.cap-peek')) e.preventDefault(); });
-  c.addEventListener('keydown', e => { if ((e.key === ' ' || e.key === 'Enter') && e.target.closest('.cap-peek')) { e.preventDefault(); on(); } });
-  c.addEventListener('keyup', off); c.addEventListener('focusout', off);
-  window.addEventListener('blur', off);
-})();
-</script>
-<script>
-/* 명화 프리셋: 설정에서 파일을 올리지 않아도 바로 고를 수 있는 그림들. 새 그림은 img/ 폴더에 넣고 아래에 한 줄만 추가하면 된다. */
-(function () {
-  const PRESETS = [
-    { id: 'creation-adam', img: 'img/genesis1.jpg', title: '아담의 창조', by: '미켈란젤로 · 1512',
-      cap: '<b>아담의 창조</b><em>Creazione di Adamo</em><br>Michelangelo Buonarroti · 1512년경 · 프레스코<br>시스티나 성당 천장, 바티칸 시국<small>출처: Wikimedia Commons (퍼블릭 도메인)</small>' },
-    { id: 'quarrel-agamemnon', img: 'img/iliad1.jpg', title: '아가멤논과 아킬레우스의 다툼', by: '바치치오',
-      cap: '<b>아가멤논과 아킬레우스의 다툼</b><em>The Quarrel between Agamemnon and Achilles</em><br>Giovanni Battista Gaulli (일 바치치오)<br>보베 우아즈 박물관' },
-    { id: 'priam-achilles', img: 'img/iliad24.jpg', title: '프리아모스와 아킬레우스', by: '알렉산드르 이바노프 · 1824',
-      cap: '<b>프리아모스, 아킬레우스에게 헥토르의 시신을 청하다</b><em>Priam Begging Achilles for the Body of Hector</em><br>Alexander Ivanov · 1824<small>출처: Wikimedia Commons (퍼블릭 도메인)</small>' },
-    { id: 'hector-farewell', img: 'img/iliad6.jpg', title: '헥토르와 안드로마케의 작별', by: 'C. F. 데클러',
-      cap: '<b>헥토르와 안드로마케, 아스티아낙스의 작별</b><em>The Farewell of Hector to Andromache and Astyanax</em><br>Carl Friedrich Deckler (1838–1918)<small>출처: Wikimedia Commons (퍼블릭 도메인)</small>' }
-  ];
-  const PK = 'presetArt', base0 = {}; Object.keys(GALLERY).forEach(k => { base0[k] = GALLERY[k]; });
-  const get = () => { try { return JSON.parse(localStorage.getItem(PK) || '{}') || {}; } catch (e) { return {}; } };
-  const put = o => { try { localStorage.setItem(PK, JSON.stringify(o)); } catch (e) {} };
-  const drop = (key, v) => { try { const o = JSON.parse(localStorage.getItem(key) || '{}') || {}; if (o[v] !== undefined) { delete o[v]; localStorage.setItem(key, JSON.stringify(o)); } } catch (e) {} };
-  const find = id => PRESETS.find(p => p.id === id);
-  // 고른 프리셋을 GALLERY에 얹는다. (설정에서 올린 그림을 고른 권은 그쪽이 우선)
-  function impose() {
-    const v = document.body.dataset.bg, id = v && get()[v], p = id && find(id); if (!p) return;
-    const g = GALLERY[v]; if (g && (g.user || g.presetId === id)) return;
-    GALLERY[v] = { img: p.img, cap: p.cap, presetId: id }; bgKey = '';
-  }
-  const orig = updateBgArt;
-  updateBgArt = function () { impose(); return orig.apply(this, arguments); };
-
-  const box = document.getElementById('artPicker'), btn = document.getElementById('artPickBtn');
-  const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-  function render() {
-    const v = document.body.dataset.bg, cur = get()[v], b = base0[v];
-    const name = typeof chLabel === 'function' ? chLabel(v) : '이 권';
-    box.innerHTML = '<h3>' + esc(name) + ' · 배경 명화</h3>' +
-      '<button type="button" class="art-opt' + (cur ? '' : ' on') + '" data-id=""><span class="art-none"></span><span>' + (b ? '처음 설정된 그림' : '그림 없음') + '</span></button>' +
-      PRESETS.map(p => '<button type="button" class="art-opt' + (cur === p.id ? ' on' : '') + '" data-id="' + p.id + '"><img src="' + p.img + '" alt="" onerror="this.closest(\'.art-opt\').remove()"><span>' + esc(p.title) + '<small>' + esc(p.by) + '</small></span></button>').join('');
-  }
-  function open() { render(); box.hidden = false; btn.setAttribute('aria-expanded', 'true'); }
-  function close() { box.hidden = true; btn.setAttribute('aria-expanded', 'false'); }
-  btn.addEventListener('click', () => { box.hidden ? open() : close(); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !box.hidden) { close(); btn.focus(); } });
-  document.addEventListener('pointerdown', e => { if (!box.hidden && !e.target.closest('#artPicker, #artPickBtn')) close(); });
-  box.addEventListener('click', e => {
-    const o = e.target.closest('.art-opt'); if (!o) return;
-    const v = document.body.dataset.bg, id = o.dataset.id, picks = get();
-    drop('artChoice', v); drop('artSections', v);   // 설정에서 올린 그림·구간 설정은 이 권에서 내려놓는다
-    if (galleryOff[v]) { delete galleryOff[v]; try { localStorage.setItem('galleryBg', JSON.stringify(galleryOff)); } catch (x) {} }
-    if (id) { picks[v] = id; const p = find(id); GALLERY[v] = { img: p.img, cap: p.cap, presetId: id }; }
-    else { delete picks[v]; if (base0[v]) GALLERY[v] = base0[v]; else delete GALLERY[v]; }
-    put(picks); bgKey = ''; clearSecLayers(); updateBgArt(); render();
-  });
-  updateBgArt();
-})();
 </script>
 </body>
 </html>
